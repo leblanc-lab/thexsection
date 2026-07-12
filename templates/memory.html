@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}The long view — {{ site.title }}{% endblock %}
+{% block content %}
+<h1 class="page-title">The long view</h1>
+<p class="lede">Rolling syntheses at four timescales — the memory the daily
+digest thinks with. Read these to catch up after time away.</p>
+{% for t in tiers %}
+<article class="issue tier">
+  <p class="kicker">{{ t.blurb }}</p>
+  <h2 class="issue-date">{{ t.label }}</h2>
+  {{ t.html }}
+</article>
+{% else %}
+<p class="empty">No syntheses yet — the week tier appears after the first digests.</p>
+{% endfor %}
+{% if archive %}
+<details class="memory-archive">
+  <summary>Archived syntheses ({{ archive|length }})</summary>
+  {% for a in archive %}
+  <article class="issue tier">
+    <p class="kicker">{{ a.tier }}</p>
+    <h2 class="issue-date">{{ a.label }}</h2>
+    {{ a.html }}
+  </article>
+  {% endfor %}
+</details>
+{% endif %}
+{% endblock %}

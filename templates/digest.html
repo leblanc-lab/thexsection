@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% set root = "../" %}
+{% block title %}{{ digest.pretty_date }} — {{ site.title }}{% endblock %}
+{% block content %}
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">{{ digest.pretty_date }}</h1>
+  <div class="meta">
+    <span class="count">{{ digest.paper_count }} papers read</span>
+    {% for t in digest.themes %}<span class="chip">{{ t }}</span>{% endfor %}
+  </div>
+  {{ digest.html }}
+</article>
+<nav class="pager">
+  {% if older %}<a class="prev" href="{{ older.date }}.html">&larr; {{ older.pretty_date }}</a>{% endif %}
+  {% if newer %}<a class="next" href="{{ newer.date }}.html">{{ newer.pretty_date }} &rarr;</a>{% endif %}
+</nav>
+{% endblock %}

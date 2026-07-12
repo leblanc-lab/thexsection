@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday, July 7, 2026 — arXiv Vibes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">arXiv&nbsp;<em>Vibes</em></a>
+  <p class="tagline">the daily zeitgeist of the preprint sky · hep-ex · hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../memory.html">Long view</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Tuesday, July 7, 2026</h1>
+  <div class="meta">
+    <span class="count">46 papers read</span>
+    <span class="chip">Machine Learning & Precision Run 3</span><span class="chip">Neutrino Non-Unitarity & Degeneracies</span><span class="chip">Heavy Flavor Precision & Exotic Hadrons</span><span class="chip">Axions & Evolving Dark Energy</span>
+  </div>
+  <h2>The vibe today</h2>
+<p>If yesterday was about realizing the stark experimental costs of our next-generation dreams, today is about putting our shoulders to the wheel to solve them. There is a palpable sense of momentum in today&rsquo;s postings, particularly in how quickly the field is moving from testing new tools to putting them to work. We see this most clearly in the LHC collaborations: barely twenty-four hours after ATLAS presented the performance of its transformer-based GN2 flavor-tagger, they have already deployed it in a simultaneous measurement of <span class="arithmatex">\(b\)</span>- and <span class="arithmatex">\(c\)</span>-jet efficiencies in <span class="arithmatex">\(t\bar{t}\)</span> events. It is a striking reminder of how rapidly machine learning is transitioning from a bench-top curiosity to the default, high-precision calibration pipeline of Run 3.</p>
+<p>Meanwhile, the neutrino community is facing a collective anxiety: the threat of &ldquo;fake&rdquo; signals. As long-baseline experiments like DUNE and Hyper-Kamiokande edge closer to reality, theorists and phenomenologists are pointing out that our search for leptonic CP violation is highly vulnerable to degeneracies. Whether it is standard non-unitarity of the PMNS matrix or exotic Lorentz-invariance violation, the message today is clear: a single experiment cannot do this alone. Only by combining the unique energy-dependent profiles of multiple detectors can we hope to distinguish genuine CP violation from BSM systematic mimics.</p>
+<h2>Themes</h2>
+<h3>Machine Learning &amp; Precision Run 3</h3>
+<p>The rapid operationalization of deep-learning algorithms is the defining feature of Run 3 analysis. Following yesterday&rsquo;s performance overview of the GN2 transformer-based flavor-tagger <a href="https://arxiv.org/abs/2607.05322">arXiv:2607.05322</a>, the ATLAS Collaboration has delivered a direct, physics-level calibration of this tool <a href="https://arxiv.org/abs/2607.06199">arXiv:2607.06199</a>. Utilizing <span class="arithmatex">\(56\text{ fb}^{-1}\)</span> of <span class="arithmatex">\(\sqrt{s} = 13.6\text{ TeV}\)</span> data, they perform a simultaneous measurement of <span class="arithmatex">\(b\)</span>-jet tagging efficiency and <span class="arithmatex">\(c\)</span>-jet mistagging rates in semi-leptonic and dileptonic <span class="arithmatex">\(t\bar{t}\)</span> events. Pushing <span class="arithmatex">\(b\)</span>-tagging uncertainties below 2% and <span class="arithmatex">\(c\)</span>-mistagging below 5% is a major milestone that will immediately feed back into high-priority Higgs and BSM searches.</p>
+<p>On the detector side, the hardware upgrades matching this software push are also showing mature performance. The CMS Collaboration reports on the Run 3 operational efficiency of its new triple-GEM GE1/1 chambers using 2023 collision data <a href="https://arxiv.org/abs/2607.06353">arXiv:2607.06353</a>. Achieving a stable <span class="arithmatex">\(96\%\)</span> efficiency for detectors without high-voltage shorts, they confirm that the system remains highly robust against the high-pileup environments that characterize late Run 3 and foreshadow the HL-LHC. </p>
+<p>Simultaneously, the software tools enabling precision QCD are scaling up. The introduction of the <code>ggxy</code> C++ library <a href="https://arxiv.org/abs/2607.06099">arXiv:2607.06099</a> provides a fast, flexible framework for computing NLO QCD corrections to top-mediated, gluon-initiated processes like <span class="arithmatex">\(gg \to HH\)</span>, <span class="arithmatex">\(ZH\)</span>, and <span class="arithmatex">\(ZZ\)</span> with exact top-quark mass dependence. By bypassing the traditional slow evaluation of two-loop virtual amplitudes via analytical approximations, <code>ggxy</code> can be easily matched to parton showers via POWHEG, allowing theorists and experimentalists alike to easily vary the top mass and its renormalization scheme.</p>
+<h3>Neutrino Non-Unitarity &amp; Degeneracies</h3>
+<p>As the next generation of neutrino experiments approaches, there is an urgent need to ensure that the signals we search for are not masquerading BSM effects. Today&rsquo;s papers showcase a concerted effort to dissect how non-standard scenarios can mimic CP violation. </p>
+<p>Pratima Singh et al. <a href="https://arxiv.org/abs/2607.06108">arXiv:2607.06108</a> examine the impact of non-unitary PMNS mixing on DUNE and Hyper-Kamiokande. They reveal a worrying reality: non-unitarity can generate &ldquo;fake&rdquo; CP asymmetries that are more than double the genuine Standard Model CP signal in specific intermediate energy windows (around <span class="arithmatex">\(1.5\text{--}1.6\text{ GeV}\)</span>). Crucially, they show that while individual experiments suffer from severe parameter degeneracies, a combined DUNE + Hyper-K analysis suppresses this allowed parameter space by up to a factor of 16 at <span class="arithmatex">\(3\sigma\)</span>, proving that joint fits are the only robust path to establishing true leptonic CP violation.</p>
+<p>This theme of BSM-induced CP degradation is echoed by Deka et al. <a href="https://arxiv.org/abs/2607.06513">arXiv:2607.06513</a>, who study the interplay of CPT-violating and CPT-conserving Lorentz Invariance Violation (LIV) at DUNE. They find that diagonal LIV parameters like <span class="arithmatex">\(a_{ee}\)</span> and <span class="arithmatex">\(a_{\tau\tau}\)</span> degrade DUNE&rsquo;s CP-discovery potential to below <span class="arithmatex">\(3\sigma\)</span> over a wide range of <span class="arithmatex">\(\delta_{CP}\)</span> values, introducing complex parameter degeneracies that complicate standard extractions. Furthermore, Boudjema et al. <a href="https://arxiv.org/abs/2607.06862">arXiv:2607.06862</a> look at Quasi-Dirac oscillations—where small Majorana masses split the active states into nearly degenerate sterile pairs—and use NOvA and T2K data to place stringent constraints on active-sterile mixing angles, providing a predictive forecast for how DUNE will eventually pin down the Dirac vs. Majorana nature of the neutrino.</p>
+<h3>Heavy Flavor Precision &amp; Exotic Hadrons</h3>
+<p>The heavy flavor sector is undergoing a parallel revolution in systematic control. For decades, the lifetime ratios of <span class="arithmatex">\(b\)</span>-baryons have been a source of mild tension and theoretical headache. Lenz et al. <a href="https://arxiv.org/abs/2607.06538">arXiv:2607.06538</a> present a major step forward, calculating the next-to-next-to-leading-order (NNLO) QCD corrections to the free <span class="arithmatex">\(b\)</span>-quark decay within the Heavy Quark Expansion (HQE), alongside the complete NLO QCD corrections to the dimension-five contributions. This massive computational effort dramatically reduces the theoretical uncertainty, shifting the predicted lifetime ratios into excellent, comfortable agreement with modern experimental measurements.</p>
+<p>At the same time, our understanding of exotic hadrons is solidifying around the molecular picture. The nature of the <span class="arithmatex">\(X(3872)\)</span> remains a premier puzzle, and today we see two papers treating it explicitly as a <span class="arithmatex">\(D\bar{D}^*\)</span> bound state. Cai et al. <a href="https://arxiv.org/abs/2607.06046">arXiv:2607.06046</a> compute its radiative decays (<span class="arithmatex">\(X(3872) \to D\bar{D}\gamma\)</span>) including <span class="arithmatex">\(D\bar{D}\)</span> final-state interactions, showing that rescattering suppresses the charged channel by 38% while enhancing the neutral channel by 6%. Song et al. <a href="https://arxiv.org/abs/2607.06317">arXiv:2607.06317</a> study the <span class="arithmatex">\(K X(3872)\)</span> interaction using the fixed-center approximation to the Faddeev equations, predicting a narrow three-body resonant state 50 MeV below the threshold. This provides a clear, testable prediction for femtoscopic correlation functions that can be directly compared to hadron-hadron correlation studies like those performed by ALICE for kaon-deuteron systems <a href="https://arxiv.org/abs/2607.06715">arXiv:2607.06715</a>.</p>
+<h3>Axions &amp; Evolving Dark Energy</h3>
+<p>On the cosmological frontier, the recent DESI results indicating a potential time-varying dark energy equation of state (<span class="arithmatex">\(w_a \neq 0\)</span>) have sent theorists searching for natural scalar field models. </p>
+<p>Delaunay et al. <a href="https://arxiv.org/abs/2607.06774">arXiv:2607.06774</a> offer a highly elegant solution: a &ldquo;natural phantom dark energy&rdquo; driven by a <span class="arithmatex">\(\mathbb{Z}_N\)</span>-axion coupled to <span class="arithmatex">\(N\)</span> copies of dark QCD. The exchange symmetry naturally suppresses the axion potential to generate the tiny dark-energy scale, while the finite density of dark-pion dark matter initially traps the axion. As the dark-pion density redshifts away, the axion is released to roll, naturally crossing the phantom divide (<span class="arithmatex">\(w &lt; -1\)</span>) without fine-tuned cancellations, matching the DESI preference.</p>
+<p>In parallel, James Unwin <a href="https://arxiv.org/abs/2607.06375">arXiv:2607.06375</a> addresses a long-standing theoretical hurdle for intermediate-scale R-axions: the Dine-Festuccia-Komargodski (DFK) superpotential bound, which usually forces the decay constant <span class="arithmatex">\(f_R\)</span> to the Planck scale. By utilizing a mixed F- and D-term uplift to tune the vacuum energy near zero, Unwin demonstrates that a stable, local minimum with a relaxed decay constant <span class="arithmatex">\(f_R \sim \sqrt{m_{3/2} M_{\rm Pl}}\)</span> is entirely viable. If the R-symmetry carries a QCD anomaly, this R-axion can double as the QCD axion, providing a natural dark matter candidate via the misalignment mechanism at <span class="arithmatex">\(f_R \sim 10^{11}\text{ GeV}\)</span>.</p>
+<h2>Worth a look</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">arXiv ID</th>
+<th style="text-align: left;">Why it stands out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[2607.06108]</strong></td>
+<td style="text-align: left;">A highly pragmatic and essential study showing that PMNS non-unitarity can generate fake CP asymmetries that dominate the genuine signal, emphasizing the need for a combined DUNE+Hyper-K program.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[2607.06538]</strong></td>
+<td style="text-align: left;">Pushes the Heavy Quark Expansion (HQE) predictions for <span class="arithmatex">\(b\)</span>-baryon lifetimes to NNLO-QCD, resolving a long-standing source of tension with high-precision theory.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[2607.06365]</strong></td>
+<td style="text-align: left;">Establishes a beautiful mathematical connection between Feynman integral integration-by-parts (IBP) syzygies and leading Landau singularities, offering a more compact way to compute multi-loop amplitudes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[2607.06774]</strong></td>
+<td style="text-align: left;">An incredibly creative, technically natural microscopic model for phantom dark energy using a <span class="arithmatex">\(\mathbb{Z}_N\)</span>-axion that nicely fits the latest DESI cosmological observations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[2607.06422]</strong></td>
+<td style="text-align: left;">A tour-de-force Heisenberg-Euler QED calculation that avoids the weak-field expansion, identifying vacuum-resonance observables in magnetars as the ultimate testbed for strong-field QED.</td>
+</tr>
+</tbody>
+</table>
+<h2>Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.05762">arXiv:2607.05762</a></strong> <em>Articulating Assumptions in AI-Generated Scientific Analyses through Task Decomposition</em> — Ahmed Hammad et al. (cs.SE)<br />
+  A fascinating multi-agent LLM framework designed to automatically trace, execute, and validate collider physics analysis code, correcting ambiguities in human instructions.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.06775">arXiv:2607.06775</a></strong> <em>Data Preservation in High Energy Physics: Global Report 2026</em> — Matthew Bellis et al. (hep-ex)<br />
+  The definitive status update on HEP data preservation, highlighting the successful reanalysis of legacy data and a major shift toward automated AI/ML curation.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.06811">arXiv:2607.06811</a></strong> <em>Particle Cosmology: 1980-2000</em> — Edward W. Kolb (hep-ph)<br />
+  A wonderful historical retrospective by &ldquo;Rocky&rdquo; Kolb on the birth of Particle Cosmology, chronicling the critical period from the 1984 Fermilab conference to the 1994 Snowmass study.</li>
+</ul>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-07-06.html">&larr; Monday, July 6, 2026</a>
+  <a class="next" href="2026-07-08.html">Wednesday, July 8, 2026 &rarr;</a>
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 14:15 ·
+     an experiment in reading the field's mood, not a substitute for the papers.</p>
+</footer>
+</body>
+</html>

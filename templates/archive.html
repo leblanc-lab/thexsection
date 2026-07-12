@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Back issues — {{ site.title }}{% endblock %}
+{% block content %}
+<h1 class="page-title">Back issues</h1>
+{% for m in months %}
+<section class="month">
+  <h2 class="section-label">{{ m.label }}</h2>
+  <ul class="issue-list">
+  {% for d in m.digests %}
+    <li>
+      <a href="digest/{{ d.date }}.html"><span class="date">{{ d.pretty_date }}</span></a>
+      <span class="themes">{% for t in d.themes %}<span class="chip">{{ t }}</span>{% endfor %}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% else %}
+<p class="empty">Nothing here yet.</p>
+{% endfor %}
+{% endblock %}

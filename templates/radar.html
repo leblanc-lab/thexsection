@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Citation radar — {{ site.title }}{% endblock %}
+{% block content %}
+<h1 class="page-title">Citation radar</h1>
+<p class="lede">A weekly sweep of INSPIRE-HEP for recent papers the community is
+citing heavily but the daily deep dives missed.</p>
+{% for p in posts %}
+<article class="issue radar-post">
+  <h2 class="issue-date">Week of {{ p.pretty_date }}</h2>
+  {{ p.html }}
+</article>
+{% else %}
+<p class="empty">No radar sweeps yet — they run on Fridays.</p>
+{% endfor %}
+{% endblock %}

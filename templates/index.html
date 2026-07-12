@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+{% if digest %}
+<article class="issue">
+  <p class="kicker">Latest issue</p>
+  <h1 class="issue-date">{{ digest.pretty_date }}</h1>
+  <div class="meta">
+    <span class="count">{{ digest.paper_count }} papers read</span>
+    {% for t in digest.themes %}<span class="chip">{{ t }}</span>{% endfor %}
+  </div>
+  {{ digest.html }}
+</article>
+{% if recent %}
+<section class="recent">
+  <h2 class="section-label">Previous issues</h2>
+  <ul class="issue-list">
+  {% for d in recent %}
+    <li>
+      <a href="digest/{{ d.date }}.html"><span class="date">{{ d.pretty_date }}</span></a>
+      <span class="themes">{% for t in d.themes %}<span class="chip">{{ t }}</span>{% endfor %}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% else %}
+<p class="empty">No issues yet — the first digest lands on the next arXiv announcement day.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,57 @@
+# arXiv Vibes configuration
+
+site:
+  title: "arXiv Vibes"
+  tagline: "the daily zeitgeist of the preprint sky"
+
+arxiv:
+  # arXiv category codes to track. Add/remove freely; papers cross-listed
+  # between tracked categories are deduplicated.
+  categories:
+    - hep-ex
+    - hep-ph
+  # Announcement types to keep from the feeds ("new" and "cross"; "replace" is noisy).
+  announce_types: [new, cross]
+
+llm:
+  # Active provider: "gemini" (free tier, dev/testing) or "anthropic" (production).
+  provider: gemini
+  providers:
+    gemini:
+      model: gemini-flash-latest   # alias tracking the current flash model
+      # AI Studio free tier — no cost.
+      input_price_per_mtok: 0.0
+      output_price_per_mtok: 0.0
+    anthropic:
+      model: claude-opus-4-8
+      input_price_per_mtok: 5.00
+      output_price_per_mtok: 25.00
+
+digest:
+  # How many recent daily digests are fed back in as short-term context.
+  daily_lookback: 7
+  # Hard cap on assembled prompt tokens; abstracts are truncated (not dropped) beyond it.
+  max_input_tokens: 400000
+  max_output_tokens: 8000
+
+deep_dive:
+  # Number of standout papers to expand via their arXiv HTML rendering. 0 disables.
+  count: 3
+  # Token cap per paper after HTML → text stripping.
+  max_tokens_per_paper: 25000
+  max_output_tokens: 4000
+
+memory:
+  # Rolling synthesis tiers. Academic-year seasons: Autumn (Sep–Jan),
+  # Spring (Feb–Apr), Summer (May–Aug). Year rolls on Sep 1.
+  week_lookback_days: 7
+  max_output_tokens: 3000
+
+radar:
+  # Weekly INSPIRE-HEP sweep for highly-cited recent papers we didn't deep-dive.
+  enabled: true
+  weekday: friday
+  window_days: 90
+  top_n: 5
+  min_citations: 5
+  max_output_tokens: 4000
