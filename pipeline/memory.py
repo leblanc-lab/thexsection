@@ -136,22 +136,22 @@ def main() -> int:
     )
     args = ap.parse_args()
 
+    from .common import digest_path
+
     cfg = load_config()
     date = parse_date(args.date)
-    llm = LLM(cfg)
 
     if args.tier:
         {"week": refresh_week, "month": refresh_month, "season": refresh_season, "year": refresh_year}[
             args.tier
-        ](llm, cfg, date)
+        ](LLM(cfg), cfg, date)
         return 0
-
-    from .common import digest_path
 
     if not digest_path(date).exists():
         print(f"No digest for {date} — memory unchanged.")
         return 0
 
+    llm = LLM(cfg)
     refresh_week(llm, cfg, date)
     if date.day == 1:
         refresh_month(llm, cfg, date)
