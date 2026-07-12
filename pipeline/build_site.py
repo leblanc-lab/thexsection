@@ -22,9 +22,10 @@ from .common import (
 )
 
 RADAR_DIR = DIGEST_DIR / "radar"
+WATCH_DIR = DIGEST_DIR.parent / "watch"
 
 MD = markdown.Markdown(
-    extensions=["tables", "smarty", "pymdownx.arithmatex"],
+    extensions=["tables", "smarty", "toc", "pymdownx.arithmatex"],
     extension_configs={"pymdownx.arithmatex": {"generic": True}},
 )
 
@@ -50,6 +51,7 @@ def load_posts(directory: Path) -> list[dict]:
                 "themes": post.get("themes", []),
                 "paper_count": post.get("paper_count"),
                 "citations": post.get("citations", {}),
+                "topics": list((post.get("topics") or {}).keys()),
                 "html": md_to_html(post.content),
             }
         )
@@ -87,14 +89,18 @@ def load_memory_archive() -> list[dict]:
 def main() -> int:
     cfg = load_config()
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=False)
+    watchlist_cfg = cfg.get("watchlist", {})
     env.globals.update(
         site=cfg["site"],
         categories=cfg["arxiv"]["categories"],
         built_at=dt.datetime.now().strftime("%Y-%m-%d %H:%M"),
+        watchlist=watchlist_cfg,
+        topic_names=[t["name"] for t in watchlist_cfg.get("topics", [])],
     )
 
     digests = load_posts(DIGEST_DIR)
     radar_posts = load_posts(RADAR_DIR) if RADAR_DIR.exists() else []
+    watch_posts = load_posts(WATCH_DIR) if WATCH_DIR.exists() else []
     memory_tiers = load_memory()
 
     # Group the archive by month for the back-issues page.
@@ -132,12 +138,14 @@ def main() -> int:
         "memory.html", "memory.html",
         tiers=memory_tiers, archive=load_memory_archive(),
     )
+    if watchlist_cfg.get("enabled"):
+        render("watch.html", "watch.html", posts=watch_posts)
 
     if STATIC_DIR.exists():
         shutil.copytree(STATIC_DIR, SITE_DIR / "static")
     print(
         f"Built site/ — {len(digests)} digests, {len(radar_posts)} radar posts, "
-        f"{len(memory_tiers)} memory tiers"
+        f"{len(watch_posts)} watch posts, {len(memory_tiers)} memory tiers"
     )
     return 0
 

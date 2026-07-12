@@ -55,3 +55,22 @@ radar:
   top_n: 5
   min_citations: 5
   max_output_tokens: 4000
+
+watchlist:
+  # Personal-interest keyword tracks. When a day's papers hit these keywords
+  # (case-insensitive, matched in title + abstract), a focused deep summary is
+  # written to a separate, subtly-linked page. Add topics/keywords freely.
+  enabled: true
+  page_title: "Standing waves"
+  max_tokens_per_paper: 20000
+  max_output_tokens: 4000
+  topics:
+    - name: "Muon collider"
+      keywords: ["muon collider", "muon-collider", "muon smasher", "MuC"]
+    - name: "Jet substructure"
+      keywords: ["jet substructure", "jet grooming", "groomed jet",
+                 "N-subjettiness", "nsubjettiness", "soft drop", "energy correlator",
+                 "jet shapes", "boosted jet tagging"]
+    - name: "Optimal transport"
+      keywords: ["optimal transport", "wasserstein", "earth mover",
+                 "energy mover", "sinkhorn"]

@@ -32,7 +32,8 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Synthesized daily from arXiv abstracts · built {{ built_at }} ·
-     an experiment in reading the field's mood, not a substitute for the papers.</p>
+     an experiment in reading the field's mood, not a substitute for the papers.{%
+     if watchlist and watchlist.enabled %} <a class="secret" href="{{ root|default('') }}watch.html" title="{{ watchlist.page_title }}" aria-label="{{ watchlist.page_title }}">◈</a>{% endif %}</p>
 </footer>
 </body>
 </html>

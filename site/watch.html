@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Standing waves — arXiv Vibes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="index.html">arXiv&nbsp;<em>Vibes</em></a>
+  <p class="tagline">the daily zeitgeist of the preprint sky · hep-ex · hep-ph</p>
+  <nav>
+    <a href="index.html">Today</a>
+    <a href="archive.html">Back issues</a>
+    <a href="radar.html">Radar</a>
+    <a href="memory.html">Long view</a>
+  </nav>
+</header>
+<main>
+
+<h1 class="page-title">Standing waves</h1>
+<p class="lede">Personal-interest tracks — focused briefings that fire only when
+the day's postings touch a watched topic. Watching:
+Muon collider · Jet substructure · Optimal transport.</p>
+
+<article class="issue watch-post">
+  <h2 class="issue-date">Thursday, July 9, 2026</h2>
+  <div class="meta">
+    <span class="chip">Optimal transport</span>
+  </div>
+  <h2 id="optimal-transport">Optimal transport</h2>
+<h3 id="arxiv260708723-optimal-transport-based-cell-resampling-for-negative-and-pathological-event-weights"><a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a> — Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h3>
+<p>The authors employ Optimal Transport (OT) metrics—specifically the Energy Mover’s Distance (EMD) and its 1D spectral projection, the Spectral EMD (sEMD)—to drive cell resampling algorithms that eliminate negative and pathological weights in NLO Monte Carlo simulations. Because EMD and sEMD are inherently infrared and collinear (IRC) safe, this approach bypasses the intermediate jet clustering required by previous Euclidean methods. Using <span class="arithmatex">\(10^5\)</span> simulated <span class="arithmatex">\(\sqrt{s} = 13\text{ TeV}\)</span> <span class="arithmatex">\(ZZ\)</span>+jets and <span class="arithmatex">\(t\bar{t}\)</span> events generated with <code>MadGraph5_aMC@NLO</code> + <code>Pythia 8</code>, the authors test resampling at three generation stages: Born-level Hard Scattering (HS), Parton Shower (PS), and Hadronization (HAD). HAD-level resampling yields the most stable performance across all monitored observables (<span class="arithmatex">\(H_T\)</span>, <span class="arithmatex">\(N_{\text{jets}}\)</span>, <span class="arithmatex">\(\Delta R(j_1, j_2)\)</span>, and <span class="arithmatex">\(m_{b,l}\)</span>), while also minimizing the overall sample-level distortion. </p>
+<p>A systematic scan of the EMD angular parameter <span class="arithmatex">\(\beta\)</span> shows that the first Wasserstein distance configuration (<span class="arithmatex">\(\beta = 1\)</span>) provides the optimal balance of accuracy and efficiency. Extremes like <span class="arithmatex">\(\beta=0\)</span> and <span class="arithmatex">\(\beta\to\infty\)</span> discard the spatial distribution of energy and induce kinematic biases of up to 50% in the <span class="arithmatex">\(H_T\)</span> spectrum. Comparing metric performance at a high reweighted fraction (<span class="arithmatex">\(f_{\text{rw}} = 0.75\)</span>), both EMD and sEMD significantly outperform the standard Euclidean-based metric of Andersen et al., which exhibits large biases in <span class="arithmatex">\(H_T\)</span> and <span class="arithmatex">\(N_{\text{jets}}\)</span>. </p>
+<p>To evaluate these biases in an unbinned, projection-independent manner, the authors introduce the Cross-Section Mover&rsquo;s Distance (<span class="arithmatex">\(\Sigma\)</span>MD) as a sample-level metric of distortion. To circumvent the mathematical breakdown of standard OT solvers under negative measures, they apply a constant offset <span class="arithmatex">\(c = |\min_{i}\sigma_i|\)</span> to the event weights of both samples. This maps the problem to a non-negative space while leaving the transport cost invariant due to the cancellation properties of the generalized Wasserstein distance under shared support.</p>
+<p><strong>Caveats:</strong> The key bottleneck remains computational complexity; exact EMD calculations scale as <span class="arithmatex">\(\mathcal{O}(N^3 \log N)\)</span>, and although the 1D sEMD approximation reduces this to <span class="arithmatex">\(\mathcal{O}(N^2 \log N)\)</span>, evaluating high-multiplicity final states remains intensive. Additionally, the authors note that the Euclidean benchmark was designed for larger, denser datasets; its degraded performance here may be partially driven by the sparseness of the <span class="arithmatex">\(10^5\)</span> event test samples.</p>
+</article>
+
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 14:38 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+</body>
+</html>

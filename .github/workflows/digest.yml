@@ -40,12 +40,13 @@ jobs:
             python -m pipeline.fetch
           fi
 
-      - name: Digest, deep dives, radar (Fridays), memory
+      - name: Digest, deep dives, watchlist, radar (Fridays), memory
         run: |
           DATE_ARG=""
           if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
           python -m pipeline.digest $DATE_ARG
           python -m pipeline.deep_dive $DATE_ARG
+          python -m pipeline.watchlist $DATE_ARG
           if [ "$(date -u +%u)" = "5" ] && [ -z "$DATE_ARG" ]; then
             python -m pipeline.radar
           fi
@@ -58,7 +59,7 @@ jobs:
         run: |
           git config user.name "arxiv-vibes bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data digests memory site
+          git add -A
           if git diff --cached --quiet; then
             echo "Nothing new to commit."
           else

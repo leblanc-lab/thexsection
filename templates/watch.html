@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ watchlist.page_title }} — {{ site.title }}{% endblock %}
+{% block content %}
+<h1 class="page-title">{{ watchlist.page_title }}</h1>
+<p class="lede">Personal-interest tracks — focused briefings that fire only when
+the day's postings touch a watched topic. Watching:
+{{ topic_names|join(' · ') }}.</p>
+{% for p in posts %}
+<article class="issue watch-post">
+  <h2 class="issue-date">{{ p.pretty_date }}</h2>
+  <div class="meta">
+    {% for t in p.topics %}<span class="chip">{{ t }}</span>{% endfor %}
+  </div>
+  {{ p.html }}
+</article>
+{% else %}
+<p class="empty">Nothing on the watchlist has fired yet.</p>
+{% endfor %}
+{% endblock %}

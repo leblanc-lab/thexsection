@@ -1,31 +1,38 @@
-/* arXiv Vibes — dark-first editorial. Vacuum-dark ground, synchrotron accents. */
+/* arXiv Vibes — tropical, vibey, auto light/dark. Coral, magenta, teal, mango. */
 
 :root {
-  --bg: #0d0f14;
-  --bg-raise: #14181f;
-  --ink: #e9e4d8;
-  --ink-muted: #97a0b0;
-  --hairline: #2a3140;
-  --beam-a: #ff5e78;   /* synchrotron magenta */
-  --beam-b: #ffb454;   /* amber */
-  --beam-c: #6fd3e8;   /* cherenkov cyan */
-  --link: #ffb454;
+  /* dark: deep tropical night */
+  --bg: #0c0a14;
+  --bg-raise: #16121f;
+  --ink: #f3ecec;
+  --ink-muted: #a89bb4;
+  --hairline: #2e2540;
+  --beam-a: #ff4d94;   /* magenta */
+  --beam-b: #ff7a5c;   /* coral */
+  --beam-c: #ffc24d;   /* mango */
+  --beam-d: #2ee6c6;   /* teal */
+  --link: #ff7a5c;
+  --accent: #2ee6c6;
   --serif: "Newsreader", Georgia, serif;
   --display: "Fraunces", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --grad: linear-gradient(100deg, var(--beam-a), var(--beam-b) 40%, var(--beam-c) 65%, var(--beam-d));
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f5f0e6;
-    --bg-raise: #ece5d6;
-    --ink: #201f24;
-    --ink-muted: #6a6455;
-    --hairline: #d8cfba;
-    --beam-a: #d63a5a;
-    --beam-b: #b06a10;
-    --beam-c: #1f7f99;
-    --link: #b06a10;
+    /* light: warm guava paper */
+    --bg: #fff6ef;
+    --bg-raise: #ffeee2;
+    --ink: #23131f;
+    --ink-muted: #8a5a6e;
+    --hairline: #f2d3cc;
+    --beam-a: #e11d74;   /* magenta */
+    --beam-b: #f0512f;   /* coral */
+    --beam-c: #e0900a;   /* mango */
+    --beam-d: #00a897;   /* teal */
+    --link: #e11d74;
+    --accent: #00a897;
   }
 }
 
@@ -41,8 +48,8 @@ body {
 }
 
 .beamline {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--beam-a) 20%, var(--beam-b) 55%, var(--beam-c) 85%, transparent);
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--beam-a) 15%, var(--beam-b) 40%, var(--beam-c) 62%, var(--beam-d) 85%, transparent);
 }
 
 /* ---------- masthead ---------- */
@@ -63,7 +70,7 @@ body {
 .wordmark em {
   font-style: italic;
   font-weight: 400;
-  background: linear-gradient(100deg, var(--beam-a), var(--beam-b) 60%, var(--beam-c));
+  background: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -188,9 +195,28 @@ main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.2rem 4rem; }
   font-size: 0.75rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--beam-c);
+  color: var(--accent);
   margin: 2.5rem 0 0.8rem;
 }
+
+/* "From the community" — set it apart with a teal edge. */
+.issue h2#from-the-community,
+.issue h2[id^="from-the-community"] {
+  border-top-color: var(--accent);
+}
+
+/* Watchlist page: give the topic briefings a coral spine. */
+.watch-post { border-left: 2px solid transparent; border-image: var(--grad) 1; padding-left: 1.2rem; }
+
+/* the subtle footer link to the watch page */
+.secret {
+  color: var(--ink-muted);
+  opacity: 0.35;
+  text-decoration: none;
+  padding: 0 0.15em;
+  transition: opacity 0.2s, color 0.2s;
+}
+.secret:hover { opacity: 1; color: var(--beam-a); }
 
 /* ---------- issue lists (index + archive) ---------- */
 

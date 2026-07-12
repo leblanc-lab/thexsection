@@ -17,6 +17,8 @@ themes:
 paper_count: <integer, total papers you were given>
 deep_dive_ids:
   - "2607.01234"   # 3-5 arXiv IDs, bare (no "arXiv:" prefix), your picks for deep dives
+community_ids:
+  - "2607.05678"   # 0-3 IDs of community/career/field-culture papers (see below); omit if none
 ---
 ```
 
@@ -27,6 +29,8 @@ Then these sections:
 **`## Themes`** — 3-6 subsections (`### Theme name`). For each: which papers (cite as `arXiv:ID` inline), what they collectively say, and — only when real — how this connects to prior days/weeks/season from the memory context. Never invent continuity; if today's theme is genuinely new, say that instead.
 
 **`## Worth a look`** — one line each for your 3-5 deep-dive picks: why this paper stands out (surprising result, new method, likely to be cited, unusually clear). These same IDs go in `deep_dive_ids`.
+
+**`## From the community`** — optional, and usually short or absent. Some days bring papers that are *about the field itself* rather than a physics result: early-career and job-market issues, community planning and collider-strategy white papers, diversity/culture/sociology-of-science pieces, computing-sustainability or open-science position papers, obituaries and reflections. When one or more of these appear, highlight them here in a sentence or two each (cite as `arXiv:ID`), and put their IDs in `community_ids`. There generally isn't much of this, so a light touch is right — one or two lines, or nothing at all. Do not stretch a physics paper into this section.
 
 **`## Also noted`** — optional; a few one-liners for papers that don't fit a theme but deserve a mention.
 

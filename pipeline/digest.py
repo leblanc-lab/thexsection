@@ -160,10 +160,12 @@ def main() -> int:
     dropped = len(post.get("deep_dive_ids", [])) - len(picks)
     if dropped:
         print(f"warning: dropped {dropped} hallucinated deep_dive_ids", file=sys.stderr)
+    community = [str(i) for i in post.get("community_ids", []) if str(i) in valid_ids]
 
     post["date"] = date.isoformat()
     post["paper_count"] = len(papers)
     post["deep_dive_ids"] = picks
+    post["community_ids"] = community
     post["generator"] = f"{llm.provider}/{llm.model}"
     post["cost_usd"] = round(result.cost, 4)
     post.content = linkify(post.content, valid_ids)
