@@ -1,7 +1,7 @@
-# arXiv Vibes configuration
+# The Cross Section configuration
 
 site:
-  title: "arXiv Vibes"
+  title: "The Cross Section"
   tagline: "the daily zeitgeist of the preprint sky"
 
 arxiv:
@@ -18,7 +18,7 @@ llm:
   provider: gemini
   providers:
     gemini:
-      model: gemini-flash-latest   # alias tracking the current flash model
+      model: gemini-3.1-flash-lite-preview   # alias tracking the current flash model
       # AI Studio free tier — no cost.
       input_price_per_mtok: 0.0
       output_price_per_mtok: 0.0
@@ -66,11 +66,20 @@ watchlist:
   max_output_tokens: 4000
   topics:
     - name: "Muon collider"
-      keywords: ["muon collider", "muon-collider", "muon smasher", "MuC"]
+      keywords: ["muon collider", "muon-collider", "muon smasher", "MuC", "MAIA Detector", "MUSIC Detector"]
     - name: "Jet substructure"
-      keywords: ["jet substructure", "jet grooming", "groomed jet",
-                 "N-subjettiness", "nsubjettiness", "soft drop", "energy correlator",
-                 "jet shapes", "boosted jet tagging"]
+      keywords: ["jet substructure", "soft drop", "energy-energy correlator", "jet shapes", "boosted jet tagging"]
     - name: "Optimal transport"
       keywords: ["optimal transport", "wasserstein", "earth mover",
-                 "energy mover", "sinkhorn"]
+                 "energy mover", "sinkhorn", "EMD"]
+
+substack:
+  # Cross-post issues to Substack via `python -m pipeline.substack`.
+  # There is no official posting API, so this uses a browser *session cookie*:
+  # set SUBSTACK_COOKIES to the "name=value; name=value" cookie string from your
+  # browser dev tools (Application → Cookies → substack.com). The default action
+  # creates a DRAFT; publishing is opt-in via --publish.
+  #
+  # Only needed if your account has more than one publication; otherwise the
+  # library uses your primary one. May also be set via SUBSTACK_PUBLICATION_URL.
+  publication_url: ""   # e.g. "https://yourname.substack.com"

@@ -1,4 +1,4 @@
-# arXiv Vibes
+# The Cross Section
 
 A daily zeitgeist digest of new arXiv postings — not a paper list, but a read on
 *what the field is collectively thinking about today* and how it connects to the
@@ -59,12 +59,38 @@ secret. Note: prompt tuning for digest voice/synthesis quality should be
 re-checked on the Claude backend — models write differently, and the prompts
 were drafted with Claude in mind.
 
+## Cross-posting to Substack
+
+Substack has no official posting API, so this uses the unofficial
+`python-substack` library, which authenticates with a browser **session
+cookie**. Copy your `substack.com` cookies from browser dev tools
+(Application → Cookies) as a `name=value; name=value` string:
+
+```sh
+export SUBSTACK_COOKIES='...'                    # your session cookie string
+python -m pipeline.substack --date 2026-07-09    # creates a DRAFT to review
+python -m pipeline.substack --date 2026-07-09 --dry-run   # preview markdown, no cookie needed
+python -m pipeline.substack --date 2026-07-09 --publish   # publish + email (opt-in)
+```
+
+The default action creates a **draft** you review in Substack's editor; nothing
+publishes without `--publish`. `--kind radar|watch` posts those instead, and
+`--dry-run` prints the cleaned, paste-ready Markdown (also handy for a manual
+copy-paste). Caveats: LaTeX math lands as literal text, and Markdown tables are
+converted to bullet lists (the library drops tables otherwise). Set
+`substack.publication_url` in `config.yaml` only if you have more than one
+publication.
+
+From CI, once the `SUBSTACK_COOKIES` repo secret is set (Settings → Secrets →
+Actions), the daily digest workflow automatically mirrors each new issue to
+Substack as a **draft** — so there's one waiting to review every morning without
+pushing anything. That step never publishes and never fails the run if the
+cookie is missing or expired. The separate **Post to Substack** workflow
+(`.github/workflows/substack.yml`) is the manual path for backfills, radar/watch
+posts, or actually publishing (`publish` input).
+
 ## Future ideas
 
-- **Substack**: no official posting API exists. First step is a paste-ready
-  export of a digest; full automation would rely on the unofficial
-  `python-substack` library (session-cookie based, fragile). The digest is
-  written newsletter-style from day one.
 - Hosted private site for the group: Cloudflare Pages + Cloudflare Access
   (free ≤ 50 users). If the site goes public: GitHub Pages toggle.
 - Batches API (halves API cost), email/RSS delivery, theme trend charts,

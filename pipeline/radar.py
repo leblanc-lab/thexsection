@@ -19,14 +19,26 @@ import httpx
 
 from .common import DIGEST_DIR, digest_path, load_config, load_prompt, parse_date
 from .deep_dive import fetch_paper_text
-from .digest import linkify
+from .digest import add_bylines, linkify
 from .llm import LLM
 
 RADAR_DIR = DIGEST_DIR / "radar"
 INSPIRE_URL = (
     "https://inspirehep.net/api/literature?sort=mostcited&size=25"
-    "&fields=titles,arxiv_eprints,citation_count,earliest_date&q={q}"
+    "&fields=titles,arxiv_eprints,citation_count,earliest_date,authors&q={q}"
 )
+
+
+def _inspire_authors(authors: list[dict]) -> list[str]:
+    names = []
+    for a in authors:
+        full = a.get("full_name", "")
+        if "," in full:
+            last, _, first = full.partition(",")
+            full = f"{first.strip()} {last.strip()}"
+        if full:
+            names.append(full)
+    return names
 
 
 def already_covered_ids() -> set[str]:
@@ -57,6 +69,7 @@ def inspire_top_cited(categories: list[str], date: dt.date, window_days: int) ->
                 "citations": m.get("citation_count", 0),
                 "earliest_date": m.get("earliest_date", ""),
                 "inspire_url": f"https://inspirehep.net/literature/{hit['id']}",
+                "authors": _inspire_authors(m.get("authors") or []),
             }
         )
     return papers
@@ -116,7 +129,8 @@ def main() -> int:
     result = llm.complete(
         load_prompt("radar_system"), "\n\n".join(blocks), rcfg["max_output_tokens"]
     )
-    body = linkify(result.text.strip(), {p["id"] for p in picks})
+    picks_by_id = {p["id"]: p for p in picks}
+    body = add_bylines(linkify(result.text.strip(), set(picks_by_id)), picks_by_id)
 
     post = frontmatter.Post(
         body,

@@ -1,4 +1,4 @@
-"""Shared config, paths, and date helpers for the arXiv Vibes pipeline."""
+"""Shared config, paths, and date helpers for The Cross Section pipeline."""
 
 from __future__ import annotations
 

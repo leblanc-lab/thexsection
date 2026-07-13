@@ -16,7 +16,7 @@ import httpx
 from bs4 import BeautifulSoup
 
 from .common import digest_path, load_config, load_papers, load_prompt, parse_date
-from .digest import linkify
+from .digest import add_bylines, linkify
 from .llm import LLM
 
 HTML_URL = "https://arxiv.org/html/{id}"
@@ -105,7 +105,7 @@ def main() -> int:
     content = post.content
     if "## Deep dives" in content:  # --force: replace the old section
         content = content.split("## Deep dives")[0].rstrip()
-    post.content = content + "\n\n## Deep dives\n\n" + linkify(body, set(papers))
+    post.content = content + "\n\n## Deep dives\n\n" + add_bylines(linkify(body, set(papers)), papers)
     post["cost_usd"] = round(post.get("cost_usd", 0) + result.cost, 4)
     path.write_text(frontmatter.dumps(post) + "\n")
     print(f"Appended {len(picks)} deep dives to {path} (${result.cost:.4f})")

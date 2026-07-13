@@ -16,7 +16,7 @@ import frontmatter
 
 from .common import DIGEST_DIR, load_config, load_papers, load_prompt, parse_date
 from .deep_dive import fetch_paper_text
-from .digest import linkify
+from .digest import add_bylines, linkify
 from .llm import LLM
 
 WATCH_DIR = DIGEST_DIR.parent / "watch"
@@ -105,8 +105,9 @@ def main() -> int:
     )
 
     valid = {p["id"] for ps in hits.values() for p in ps}
+    papers_by_id = {p["id"]: p for ps in hits.values() for p in ps}
     post = frontmatter.Post(
-        linkify(result.text.strip(), valid),
+        add_bylines(linkify(result.text.strip(), valid), papers_by_id),
         date=date.isoformat(),
         topics={t: [p["id"] for p in ps] for t, ps in hits.items()},
         generator=f"{llm.provider}/{llm.model}",
