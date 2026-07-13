@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Standing waves — arXiv Vibes</title>
+<title>Standing waves — The Cross Section</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
 <header class="masthead">
   <div class="beamline" aria-hidden="true"></div>
-  <a class="wordmark" href="index.html">arXiv&nbsp;<em>Vibes</em></a>
+  <a class="wordmark" href="index.html">The Cross&nbsp;<em>Section</em></a>
   <p class="tagline">the daily zeitgeist of the preprint sky · hep-ex · hep-ph</p>
   <nav>
     <a href="index.html">Today</a>
@@ -39,7 +39,7 @@ Muon collider · Jet substructure · Optimal transport.</p>
     <span class="chip">Optimal transport</span>
   </div>
   <h2 id="optimal-transport">Optimal transport</h2>
-<h3 id="arxiv260708723-optimal-transport-based-cell-resampling-for-negative-and-pathological-event-weights"><a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a> — Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h3>
+<h3 id="arxiv260708723-optimal-transport-based-cell-resampling-for-negative-and-pathological-event-weights-regan-doherty-et-al"><a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a> — Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights (Regan Doherty et al.)</h3>
 <p>This paper replaces the modified-Euclidean metric in Andersen et al.&rsquo;s cell-resampling afterburner with two OT-based metrics — the Energy Mover&rsquo;s Distance (EMD, i.e. the first Wasserstein distance with β=1, R=11.64) and the Spectral EMD (sEMD) — to redistribute negative MC weights among phase-space neighbors. The central OT payoff is IRC-safety by construction: because EMD/sEMD are insensitive to soft/collinear radiation, resampling can run directly on particles without prior jet clustering, eliminating the jet-definition dependence that contaminated all downstream observables in the Euclidean approach. They test on NLO MC@NLO Z+jets (37.6% negative weights) and tt̄ (22.8%), 10⁵ events each, resampling at three generation stages (hard-scatter, post-shower, post-hadronization).</p>
 <p>Concrete results: hadronization-level resampling gives the lowest bias across all observables and the lowest ΣMD (see below). At f_rw=0.25 and 0.75, 1/f_ESS drops from 16 to 12 and 6 respectively for Z+jets — a real statistical-power gain. On the β scan, β=0 and β→∞ (which reduce to H_T-only distances, ignoring intra-event energy geometry) introduce ~50% biases in H_T/N_jets; β=0.5,1,2 are comparable, with β=1 chosen for accuracy/speed. EMD modestly outperforms sEMD; both clearly beat the Andersen Euclidean metric, whose ΣMD is nearly double EMD&rsquo;s at high f_rw.</p>
 <p>Second OT contribution: they repurpose the Cross-Section Mover&rsquo;s Distance (ΣMD) — an event-level EMD used as ground metric in a sample-level OT problem — as an unbinned, observable-agnostic figure of merit for reweighting bias, handling negative weights via a constant-offset (generalized-Wasserstein cancellation) trick requiring no solver modification. This is a genuinely reusable tool beyond this application.</p>
@@ -52,17 +52,41 @@ Muon collider · Jet substructure · Optimal transport.</p>
     <span class="chip">Jet substructure</span>
   </div>
   <h2 id="jet-substructure">Jet substructure</h2>
-<h3 id="arxiv260707792-dissecting-parton-showers-with-multi-point-energy-correlators"><a href="https://arxiv.org/abs/2607.07792">arXiv:2607.07792</a> — Dissecting Parton Showers with Multi-Point Energy Correlators</h3>
+<h3 id="arxiv260707792-dissecting-parton-showers-with-multi-point-energy-correlators-mark-gonzalez-et-al"><a href="https://arxiv.org/abs/2607.07792">arXiv:2607.07792</a> — Dissecting Parton Showers with Multi-Point Energy Correlators (Mark Gonzalez et al.)</h3>
 <p>The authors develop the four-point energy correlator (E⁴C) as a practical jet-substructure observable in the collinear limit, aimed squarely at diagnosing the ingredients of next-generation parton showers. The key move is defining three experimentally binnable projections of the otherwise 4D shape space (parameterized by size R_L and two complex variables z, w): the &ldquo;tee&rdquo; (three collinear detectors rotated against a dipole, probing the 1→2 splitting tensor × 1→3 splitting function factorization), the &ldquo;dipole&rdquo; (two dipoles of size r, R rotated by φ, probing 1→3 splitting tensor × 1→2 splitting function), and the &ldquo;tripole&rdquo; (fixed 3-4-5 triangle plus a roving fourth detector, probing the hard 1→4 structure away from factorized limits). They give explicit iterated-collinear factorization formulas (Eqs. 35–37) built from the known Del Duca et al. polarized triple-collinear splitting tensors, plus the geometric normalization 𝒩 and a clean LO closed form (Eq. 24) for the correlator in terms of splitting functions.</p>
 <p>Concretely: in accessible kinematics the genuine spin-interference (helicity h,h′ correlations, nonzero only when the intermediate parton is a gluon) is <em>small</em>, subdominant to sizable azimuthal modulations they attribute to kinematic power corrections to the factorization. This mirrors the earlier three-point finding of quark/gluon cancellation. The main deliverable is infrastructure: parameterizations, measurement algorithms, statistical-uncertainty treatment for multi-point correlators, and N=4 sYM baselines (where SUSY suppresses spin correlations). </p>
 <p>Caveat, stated plainly: the full four-point correlator has <em>not</em> been computed in QCD — all analytic input is from iterated limits and splitting functions — and this gap is precisely what they argue the measurement should motivate. This is a setup/benchmarking paper, not a measurement or a complete calculation.</p>
+</article>
+
+<article class="issue watch-post">
+  <h2 class="issue-date">Saturday, July 4, 2026</h2>
+  <div class="meta">
+    <span class="chip">Muon collider</span>
+  </div>
+  <h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv260703775-probing-fermion-portal-scalar-dark-matter-through-charged-vector-like-fermions-at-future-muon-colliders-songshaptak-de-et-al"><a href="https://arxiv.org/abs/2607.03775">arXiv:2607.03775</a> — Probing Fermion-Portal Scalar Dark Matter through Charged Vector-Like Fermions at Future Muon Colliders (Songshaptak De et al.)</h3>
+<p>This study investigates a dark matter (DM) model featuring a real singlet scalar (<span class="arithmatex">\(s\)</span>) and vector-like singlet/doublet charged fermions (<span class="arithmatex">\(E_S, F_D\)</span>), where the DM is stabilized by a <span class="arithmatex">\(Z_2\)</span> symmetry. By introducing Yukawa interactions (<span class="arithmatex">\(Y_f\)</span>), the authors successfully move away from the minimal Higgs-portal scenario, which is currently under extreme pressure from LZ direct-detection limits. The model reproduces the observed relic density via <span class="arithmatex">\(t\)</span>- and <span class="arithmatex">\(u\)</span>-channel processes (<span class="arithmatex">\(s s \to \nu \ell \bar{\nu} \ell\)</span>) and co-annihilations involving the new fermions.</p>
+<p>The paper provides a detailed collider sensitivity analysis for the process <span class="arithmatex">\(\mu^+ \mu^- \to E_1^+ E_1^- \to e^+ e^- + \cancel{E}_T\)</span>. Using detector-level simulation (Delphes), the authors demonstrate that a 3 TeV muon collider (<span class="arithmatex">\(\mathcal{L}=1\)</span> ab<span class="arithmatex">\(^{-1}\)</span>) can reach a <span class="arithmatex">\(5\sigma\)</span> discovery for charged fermion masses up to <span class="arithmatex">\(\sim 1.5\)</span> TeV. Scaling to 10 TeV (<span class="arithmatex">\(\mathcal{L}=10\)</span> ab<span class="arithmatex">\(^{-1}\)</span>) extends this reach to <span class="arithmatex">\(\sim 2\)</span> TeV, covering almost the entire parameter space favored by current relic density and direct-detection constraints.</p>
+<p>The results are significant because they highlight the complementarity of a muon collider in probing &ldquo;compressed&rdquo; or weakly-coupled regions that the HL-LHC cannot reach, specifically for <span class="arithmatex">\(Z_2\)</span>-odd states. A notable caveat is the reliance on the electron channel; the muon-associated Yukawa couplings are intentionally suppressed to evade <span class="arithmatex">\((g-2)_\mu\)</span> and <span class="arithmatex">\(\mu \to e \gamma\)</span> constraints, which justifies the focus on electron-rich final states but constrains the model&rsquo;s flavor structure.</p>
+</article>
+
+<article class="issue watch-post">
+  <h2 class="issue-date">Friday, July 3, 2026</h2>
+  <div class="meta">
+    <span class="chip">Optimal transport</span>
+  </div>
+  <h2 id="optimal-transport">Optimal transport</h2>
+<h3 id="arxiv260702867-studying-baryon-number-transport-dynamics-via-hyperon-kaon-correlations-in-p-mathrmau-collisions-at-sqrts__rm-nn20-39-and-62-gev-siyuan-ping-et-al"><a href="https://arxiv.org/abs/2607.02867">arXiv:2607.02867</a> — Studying baryon number transport dynamics via hyperon-kaon correlations in <span class="arithmatex">\(p + \mathrm{Au}\)</span> collisions at <span class="arithmatex">\(\sqrt{s_{_{\rm NN}}}=20\)</span>, <span class="arithmatex">\(39\)</span> and <span class="arithmatex">\(62\)</span> GeV (Siyuan Ping et al.)</h3>
+<p>This paper uses the Wasserstein distance (via the Python Optimal Transport library) to quantify the correlation strength between hyperons and kaons in <span class="arithmatex">\(p + \mathrm{Au}\)</span> simulations (AMPT and UrQMD). The authors construct a correlation function <span class="arithmatex">\(C^{\text{CBS}}(\Delta y)\)</span> using combinatorial background subtraction and apply an optimal transport framework to measure the &ldquo;Energy Mover&rsquo;s Distance&rdquo; (EMD) and &ldquo;Energy-Mover’s Displacement&rdquo; (EMDp). These metrics effectively track the &ldquo;migration&rdquo; of hyperon-kaon pairs from uncorrelated background regions to the correlated signal region. The study aims to distinguish between standard fragmentation and the gluon junction mechanism for baryon number transport (BNT).</p>
+<p>This work moves the topic forward by applying optimal transport metrics specifically to characterize the <em>rapidity dynamics</em> of BNT. By quantifying the displacement of hyperon-kaon pairs in relative-rapidity space, the authors establish a baseline for identifying the gluon junction mechanism; the EMDp provides a directional signature that distinguishes between models where the baryon number carrier is either &ldquo;slowed down&rdquo; (baryon junction) or &ldquo;speeded up&rdquo; (valence-quark fragmentation).</p>
+<p>A key caveat is that the results rely on the assumption of specific hyperon/kaon production scenarios (general associated vs. general pair production). The authors acknowledge that while their method is designed to isolate BNT, its sensitivity is heavily dependent on the chosen detector acceptance (<span class="arithmatex">\(|\eta| &lt; 1.5\)</span> vs. full acceptance), noting that the signals become significantly suppressed at mid-rapidity, potentially masking the very BNT effect they intend to measure.</p>
 </article>
 
 
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 20:37 ·
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 21:02 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 </body>

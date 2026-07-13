@@ -39,11 +39,9 @@ MEMORY_TIERS = [
 
 
 def format_paper(p: dict) -> str:
-    authors = p["authors"]
-    byline = authors[0] + (" et al." if len(authors) > 1 else "") if authors else "?"
     cross = [c for c in p["categories"] if c != p["primary_category"]]
     cats = p["primary_category"] + (f"; cross: {', '.join(cross)}" if cross else "")
-    return f"[arXiv:{p['id']}] {p['title']} — {byline} ({cats})\n{p['abstract']}"
+    return f"[arXiv:{p['id']}] {p['title']} — {byline(p['authors']) or '?'} ({cats})\n{p['abstract']}"
 
 
 def memory_context(date: dt.date, lookback: int) -> str:
@@ -87,6 +85,34 @@ def assemble(date: dt.date, papers: list[dict], cfg: dict) -> str:
         f"# Today's papers ({date.isoformat()}, {len(papers)} total)\n\n"
         + "\n\n".join(paper_blocks)
     )
+
+
+def byline(authors: list[str]) -> str:
+    if not authors:
+        return ""
+    return authors[0] + (" et al." if len(authors) > 1 else "")
+
+
+HEADING_RE = re.compile(
+    r"^(#{2,3}\s*\[arXiv:(\d{4}\.\d{4,5})\]\([^)]+\)\s*—\s*.+)$", re.MULTILINE
+)
+
+
+def add_bylines(text: str, papers: dict[str, dict]) -> str:
+    """Append '(Author et al.)' to every '### arXiv:ID — Title' heading.
+
+    These headings are LLM-authored prose and inconsistently name authors;
+    this guarantees every paper heading is followed by its byline from
+    ground-truth metadata, regardless of what the model wrote.
+    """
+
+    def add(m: re.Match) -> str:
+        line, arxiv_id = m.group(1), m.group(2)
+        paper = papers.get(arxiv_id)
+        b = byline(paper["authors"]) if paper else ""
+        return f"{line} ({b})" if b else line
+
+    return HEADING_RE.sub(add, text)
 
 
 def linkify(text: str, valid_ids: set[str]) -> str:

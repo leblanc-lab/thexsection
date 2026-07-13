@@ -1,0 +1,55 @@
+name: Post to Substack
+
+# Manual only. Cross-posts an existing issue to Substack. Defaults to a DRAFT
+# you review in Substack's editor; publishing is an explicit opt-in below.
+# Requires the SUBSTACK_COOKIES repo secret (your substack.com session cookie
+# string). Set SUBSTACK_PUBLICATION_URL too only if you have >1 publication.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Issue date YYYY-MM-DD (default: today)"
+        required: false
+      kind:
+        description: "Which post to send"
+        type: choice
+        options: [digest, radar, watch]
+        default: digest
+      publish:
+        description: "Publish (and email) instead of leaving a draft"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: substack
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    env:
+      SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
+      SUBSTACK_PUBLICATION_URL: ${{ secrets.SUBSTACK_PUBLICATION_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Post to Substack
+        run: |
+          if [ -z "$SUBSTACK_COOKIES" ]; then
+            echo "::error::SUBSTACK_COOKIES secret is not set. Add it under Settings → Secrets → Actions."
+            exit 1
+          fi
+          ARGS="--kind ${{ inputs.kind }}"
+          if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
+          if [ "${{ inputs.publish }}" = "true" ]; then ARGS="$ARGS --publish"; fi
+          python -m pipeline.substack $ARGS

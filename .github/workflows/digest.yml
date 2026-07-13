@@ -67,3 +67,22 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      # Mirror today's digest to Substack as a DRAFT for review. Never publishes
+      # (that stays a manual click in Substack). Skips quietly if the cookie
+      # secret is unset, and continue-on-error keeps a stale/expired cookie from
+      # failing the already-committed digest run. No digest on a no-paper day →
+      # the module no-ops. Add SUBSTACK_COOKIES under Settings → Secrets → Actions.
+      - name: Draft to Substack (review-only)
+        continue-on-error: true
+        env:
+          SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
+          SUBSTACK_PUBLICATION_URL: ${{ secrets.SUBSTACK_PUBLICATION_URL }}
+        run: |
+          if [ -z "$SUBSTACK_COOKIES" ]; then
+            echo "SUBSTACK_COOKIES not set — skipping Substack draft."
+            exit 0
+          fi
+          DATE_ARG=""
+          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
+          python -m pipeline.substack $DATE_ARG
