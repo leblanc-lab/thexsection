@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Monday, July 6, 2026 — arXiv Vibes</title>
+<title>Monday, July 6, 2026 — The Cross Section</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
 <header class="masthead">
   <div class="beamline" aria-hidden="true"></div>
-  <a class="wordmark" href="../index.html">arXiv&nbsp;<em>Vibes</em></a>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
   <p class="tagline">the daily zeitgeist of the preprint sky · hep-ex · hep-ph</p>
   <nav>
     <a href="../index.html">Today</a>
@@ -33,77 +33,57 @@
   <h1 class="issue-date">Monday, July 6, 2026</h1>
   <div class="meta">
     <span class="count">35 papers read</span>
-    <span class="chip">Electroweak Symmetry Breaking and New Physics Limits</span><span class="chip">Relic Echoes and Dark Sectors</span><span class="chip">Amplitude Methods and Hadron Structure</span><span class="chip">Software and Detector Optimization</span>
+    <span class="chip">Natural SUSY Evasion</span><span class="chip">Quantum Information Lenses</span><span class="chip">Small-x Gluon Wigner Distributions</span><span class="chip">Next-Gen Collider Precision</span><span class="chip">AI-Theory Co-piloting</span>
   </div>
   <h2 id="the-vibe-today">The vibe today</h2>
-<p>It is a day of sobering realities, clever workarounds, and major technical upgrades across the board. The mood of today’s postings is defined by a collective push to quantify exactly how difficult our most ambitious experimental dreams are, and then build the specialized machinery required to realize them anyway. We are confronting the steep thermodynamic and exposure costs of the next generation of physics, from the energy footprint of our event generators to the staggering scale of a relic neutrino detector.</p>
-<p>On the collider front, we see the LHC collaborations flexing their Run 3 muscles, trading heuristic tools for sophisticated machine-learning architectures that extract maximum sensitivity from high-luminosity environments. The theorists are matching this energy by finding elegant shortcuts—whether by adapting high-energy on-shell amplitude methods to low-energy nuclear astrophysics, or by mapping the complex inflationary histories needed to make vector dark matter models viable. It is a reminder that as the easy parameter space shrinks, the field’s ingenuity only sharpens.</p>
-<hr />
+<p>Today’s postings reflect a community that is rapidly modernizing its entire workflow, from deep theory calculations to the day-to-day coding pipeline. The overarching mood is one of rigorous preparation and infrastructure-building. Whether it is calculating cross-sections to unprecedented N<span class="arithmatex">\(^3\)</span>LO precision, rewriting old phenomenological engines to be navigated by LLM-based AI agents, or using quantum information metrics to resolve long-standing experimental tensions, the field is laying down the technical foundations required for the next decade of discovery. </p>
+<p>There is also a palpable sense of physical systems coming online. We see this in the first year of on-sky data from the massive LSST Camera array at the Rubin Observatory, and in the sharp, highly coordinated theoretical papers mapping out the small-<span class="arithmatex">\(x\)</span> gluon phase space in anticipation of the Electron-Ion Collider (EIC). Theorists are no longer just asking &ldquo;what if&rdquo; about new physics; they are building the high-precision machinery needed to extract it from the noise.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="electroweak-symmetry-breaking-and-new-physics-limits">Electroweak Symmetry Breaking and New Physics Limits</h3>
-<p>The search for the Higgs self-coupling and the broader scalar potential remains the definitive battleground of the LHC. Today, the CMS Collaboration pushes this search to its current limit with a search for nonresonant triple Higgs (<span class="arithmatex">\(HHH\)</span>) production in the highly challenging six-bottom-quark final state <a href="https://arxiv.org/abs/2607.05145">arXiv:2607.05145</a>. While the observed limit of 44 fb is still roughly 580 times the Standard Model cross-section, this work represents a major milestone: for the first time, experimental data is directly ruling out regions of the <span class="arithmatex">\((\kappa_3, \kappa_4)\)</span> coupling modifier space that were previously only constrained by theoretical perturbative unitarity bounds. </p>
-<p>To achieve this level of precision, the experiments are heavily relying on advanced flavor tagging. The ATLAS Collaboration showcases this transition with a performance study of the GN2 algorithm <a href="https://arxiv.org/abs/2607.05322">arXiv:2607.05322</a>, a transformer-based model for jet flavor tagging evaluated on <span class="arithmatex">\(\sqrt{s} = 13.6\)</span> TeV Run 3 data. GN2 achieves up to a factor of three improvement in charm rejection over the older DL1d tagger, demonstrating how deep learning is directly translating to better sensitivity in multi-jet final states.</p>
-<p>These experimental advancements are systematically squeezing traditional BSM scenarios. Baer et al. <a href="https://arxiv.org/abs/2607.05648">arXiv:2607.05648</a> deliver a tough verdict for natural supersymmetry, showing that recent LZ direct-detection limits have essentially cornered stable light higgsino dark matter. Even under the assumption that higgsinos form only a fraction of the total dark matter, the surviving &ldquo;blind spots&rdquo; in parameter space require fine-tuned, unnatural gaugino masses. This leaves us with a stark choice: either accept unstable higgsinos, or look for highly specific cosmological histories. Meanwhile, Ashanujjaman et al. <a href="https://arxiv.org/abs/2607.05499">arXiv:2607.05499</a> explore a clever, overlooked alternative for light charged Higgses below the top mass: the off-shell <span class="arithmatex">\(H^\pm \to t^*b\)</span> decay mode. By reinterpreting ATLAS dileptonic <span class="arithmatex">\(t\bar{t}\)</span> data, they show this channel provides powerful constraints in top-philic and aligned two-Higgs-doublet models that conventional searches miss.</p>
-<h3 id="relic-echoes-and-dark-sectors">Relic Echoes and Dark Sectors</h3>
-<p>Looking beyond colliders, the hunt is on for relic signatures of the early universe, but today&rsquo;s papers show that both the theory and the detection strategies require careful handling of dynamical assumptions. </p>
-<p>Nowhere is this clearer than in the search for the Cosmic Neutrino Background (CNB). Long et al. <a href="https://arxiv.org/abs/2607.05221">arXiv:2607.05221</a> analyze the feasibility of detecting the &ldquo;relic neutrino wind&rdquo;—the dipolar anisotropy in the CNB flux due to the Earth&rsquo;s movement. They calculate that detecting this anisotropy with a tritium <span class="arithmatex">\(\beta\)</span>-decay experiment demands an exposure at least <span class="arithmatex">\(10^5\)</span> times larger than that needed to simply observe the isotropic flux. Furthermore, they highlight a major physical hurdle: for Majorana neutrinos, the wind signal is suppressed relative to the Dirac case by a factor of <span class="arithmatex">\((m_\nu/T_\nu)^2\)</span>.</p>
-<p>In the dark matter sector, theorists are dissecting the initial conditions of vector dark matter. Khan et al. <a href="https://arxiv.org/abs/2607.05309">arXiv:2607.05309</a> show that the standard stochastic inflationary scenario for generating a dark Higgs condensate fails to provide the large initial displacement needed to seed parametric resonance for vector dark matter. Instead, they identify a robust, classically sourced branch driven by a negative Hubble-induced mass, establishing that vector dark matter relic abundance is a sensitive diagnostic of the inflationary epoch. </p>
-<p>Similarly, Nakano et al. <a href="https://arxiv.org/abs/2607.05517">arXiv:2607.05517</a> challenge a long-held cosmological assumption regarding global monopole networks. They demonstrate that these networks do not follow a constant scaling law; instead, they exhibit a logarithmic-like density evolution. This result has immediate consequences for the projected gravitational-wave signals and dark matter yields from these topological defects. </p>
-<h3 id="amplitude-methods-and-hadron-structure">Amplitude Methods and Hadron Structure</h3>
-<p>We are also seeing a fascinating cross-pollination of theoretical techniques. Modern on-shell amplitude methods, traditionally the domain of multi-loop perturbative QCD, are being brought to bear on low-energy nuclear physics. Tim M. P. Tait <a href="https://arxiv.org/abs/2607.05514">arXiv:2607.05514</a> uses on-shell techniques to construct an effective field theory for the <span class="arithmatex">\(d(p,\gamma)^3\mathrm{He}\)</span> fusion reaction, a critical component of Big Bang nucleosynthesis (BBN). By bypassing the traditional Lagrangian formulation, this approach fits the discrepant LUNA data and traces the systematic shift to a single, natural-sized next-to-leading-order contact term, offering a cleaner path to high-precision nuclear cross sections.</p>
-<p>On the nonperturbative QCD front, Chang et al. <a href="https://arxiv.org/abs/2607.04871">arXiv:2607.04871</a> report the first functional QCD calculation of the pion distribution amplitude using the functional renormalization group and large-momentum effective theory (LaMET). By reaching pion momenta of <span class="arithmatex">\(4.5\text{ GeV}\)</span>, they eliminate extrapolation errors to the light-cone limit, obtaining a second-order moment (<span class="arithmatex">\(\langle \xi^2 \rangle_\pi = 0.267\)</span>) that is significantly smaller than current lattice determinations. Additionally, Deur <a href="https://arxiv.org/abs/2607.05144">arXiv:2607.05144</a> connects the physical, running QCD effective charge to the analytic structure of partonic propagators, arguing that conjugate singularities in the long-distance limit naturally explain confinement as a spatial suppression of QCD Green’s functions.</p>
-<h3 id="software-and-detector-optimization">Software and Detector Optimization</h3>
-<p>As we approach the High-Luminosity LHC and next-generation intensity frontier experiments, computational and structural scaling limits are becoming central engineering challenges.</p>
-<p>In the software domain, Molnár et al. <a href="https://arxiv.org/abs/2607.05018">arXiv:2607.05018</a> introduce the &ldquo;Watts per event&rdquo; metric, benchmarking the HIJING++ heavy-ion event generator to optimize multithreading and CPU architecture choices. This systematic look at the energy footprint of event generation represents a necessary step toward sustainable computing in the HL-LHC era. On the reconstruction side, Varni et al. <a href="https://arxiv.org/abs/2607.04723">arXiv:2607.04723</a> propose a hybrid track-reconstruction algorithm that feeds a Hough transform&rsquo;s parameter space directly into a convolutional neural network. This pipeline successfully suppresses the massive flood of fake track candidates typical of HL-LHC pileup without resorting to expensive coordinate transformations.</p>
-<p>For detector R&amp;D, Soleti et al. <a href="https://arxiv.org/abs/2607.04944">arXiv:2607.04944</a> demonstrate that tetraphenyl butadiene (TPB)-coated wavelength-shifting fibers can reliably detect vacuum-ultraviolet scintillation light in high-pressure xenon and argon. This provides a crucial proof-of-concept for the light collection systems in the NEXT experiment&rsquo;s planned high-pressure time projection chambers.</p>
-<hr />
+<h3 id="light-higgsino-evasion-routes">Light Higgsino Evasion Routes</h3>
+<p>The community continues to grapple with the tightening net around natural supersymmetry. In the last week, we saw how LZ direct-detection limits have severely cornered traditional light Higgsino dark matter (as detailed by Baer et al. in <a href="https://arxiv.org/abs/2607.05648">arXiv:2607.05648</a> and <a href="https://arxiv.org/abs/2607.07921">arXiv:2607.07921</a>). Today, the search for a way out of this corner proceeds along two complementary fronts: future lepton colliders and specialized LHC topologies. </p>
+<p>Hamaguchi et al. <a href="https://arxiv.org/abs/2606.31013">arXiv:2606.31013</a> provides a powerful counter-strategy to the LZ limits. They point out that while direct detection is highly sensitive when gauginos are light, its sensitivity collapses for heavier gauginos because Higgsino-gaugino mixing is suppressed. In this exact regime—where the Higgsino scattering cross-section drops deep below the neutrino fog—precision electroweak measurements of oblique parameters (<span class="arithmatex">\(M_W\)</span> and <span class="arithmatex">\(\sin^2\theta_{\mathrm{eff}}\)</span>) at future <span class="arithmatex">\(e^+e^-\)</span> colliders can step in, cleanly probing highly compressed Higgsinos up to <span class="arithmatex">\(500\text{ GeV}\)</span>. On the LHC side, Belyaev et al. <a href="https://arxiv.org/abs/2607.00243">arXiv:2607.00243</a> tackles the difficult compressed limit using a two-component scalar dark matter model (using a 3-Higgs Doublet Model framework), demonstrating that a dedicated search for soft opposite-sign dimuons accompanied by a hard jet can probe these elusive, compressed mass spectra.</p>
+<h3 id="quantum-information-as-an-experimental-lens">Quantum Information as an Experimental Lens</h3>
+<p>Quantum information theory has transcended its role as a toy model framework and is now being deployed to solve practical, real-world issues in experimental data analysis. </p>
+<p>A prime example is the work of Dixit et al. <a href="https://arxiv.org/abs/2606.31996">arXiv:2606.31996</a>, which addresses the &ldquo;fake&rdquo; signals and degeneracies currently plaguing three-flavor neutrino analyses (a major theme in recent weeks, cf. <a href="https://arxiv.org/abs/2607.06108">arXiv:2607.06108</a>). By mapping three-flavor neutrino oscillations to qubit-like representations, they show that the local minima of entanglement concurrence identify energy regions where the flavor state is closest to separability. Aligning the benchmark oscillation regions of NO<span class="arithmatex">\(\nu\)</span>A and T2K with these minimum entanglement regions allows for a cleaner, joint parameter extraction that dramatically reduces the tension between the two experiments. </p>
+<p>Meanwhile, the concept of &ldquo;Magic&rdquo;—a measure of how far a state is from being a easily-simulated stabilizer state—is popping up across the spectrum. Li et al. <a href="https://arxiv.org/abs/2606.31501">arXiv:2606.31501</a> shows that direction-averaged Magic in low-energy neutron-proton scattering is minimized at the CP-conserving point. This suggests a deep connection between fundamental symmetries and quantum computational complexity. In a similar vein, Alvarado et al. <a href="https://arxiv.org/abs/2607.00229">arXiv:2607.00229</a> tracks the production of magic states through electroweak <span class="arithmatex">\(Z\)</span> bosons and dark photons, finding that Bhabha scattering is highly sensitive to electroweak effects on the underlying stabilizer state classes.</p>
+<h3 id="the-small-x-gluon-wigner-trilogy">The Small-<span class="arithmatex">\(x\)</span> Gluon Wigner Trilogy</h3>
+<p>In a remarkable single-author tour de force, Lei Wang has posted three papers <a href="https://arxiv.org/abs/2606.31708">arXiv:2606.31708</a>, <a href="https://arxiv.org/abs/2606.31712">arXiv:2606.31712</a>, <a href="https://arxiv.org/abs/2606.31754">arXiv:2606.31754</a> targeting the spatial and momentum distribution of gluons at small <span class="arithmatex">\(x\)</span>. This represents a massive theoretical push to prepare for the spatial imaging capabilities of the EIC. </p>
+<p>In <a href="https://arxiv.org/abs/2606.31708">arXiv:2606.31708</a>, Wang proposes using azimuthal energy-flow moments in DIS dijet production to cleanly extract the elliptic gluon Wigner distribution without the soft-radiation leakage that plagues exclusive diffractive dijets. In <a href="https://arxiv.org/abs/2606.31712">arXiv:2606.31712</a>, the author moves to the evolution of this distribution, demonstrating that the collinearly improved Balitsky-Kovchegov (IMST-BK) evolution alters the shape and node positions of the elliptic signal, rather than acting as a simple normalization shift. Finally, <a href="https://arxiv.org/abs/2606.31754">arXiv:2606.31754</a> constructs a normalized gluon Husimi phase-space distribution, showing that if you resolve it with a coarse-graining that adapts to the saturation scale <span class="arithmatex">\(Q_s(Y, b)\)</span>, the momentum distributions collapse onto a single scaling curve—revealing an emergent local scaling law in the high-density regime.</p>
+<h3 id="next-generation-high-energy-precision">Next-Generation High-Energy Precision</h3>
+<p>The push to sub-percent precision at colliders is forcing theorists to compute terms that were once deemed impossibly complex. </p>
+<p>Gehrmann-De Ridder et al. <a href="https://arxiv.org/abs/2606.31286">arXiv:2606.31286</a> presents the first fully differential calculation of boosted Higgs-strahlung (<span class="arithmatex">\(WH\)</span> production) at N<span class="arithmatex">\(^3\)</span>LO in QCD. This is a monumental achievement: the N<span class="arithmatex">\(^3\)</span>LO corrections alter the boosted regime by <span class="arithmatex">\(+2\%\)</span>, lying entirely outside the scale variation bands of the previous NNLO calculation, while reducing the residual scale uncertainty to under <span class="arithmatex">\(1\%\)</span>. </p>
+<p>On the experimental tracking front, Lee et al. <a href="https://arxiv.org/abs/2607.00087">arXiv:2607.00087</a> achieves a major milestone by presenting the first complete, collinear-logarithmically matched calculations of jet substructure observables <em>on tracks</em>. By leveraging track-level tracking information rather than calorimeter clusters, this framework bypasses the spatial resolution limits of calorimetry, opening up a new regime of high-precision QCD measurements at the LHC.</p>
+<h3 id="human-ai-co-piloting-in-the-theory-stack">Human-AI Co-Piloting in the Theory Stack</h3>
+<p>A quiet revolution is happening in how we build and execute our calculations. AI is moving from a tool for analyzing data to a co-developer of theoretical infrastructure. </p>
+<p>Xiao et al. <a href="https://arxiv.org/abs/2606.31214">arXiv:2606.31214</a> introduces <em>EasyScan_HEP 2</em>, an upgrade designed specifically to be &ldquo;agent-ready.&rdquo; It exposes machine-readable command-line and config interfaces, allowing an LLM AI assistant to convert natural-language user requests directly into complex, multi-program parameter scan workflows. </p>
+<p>On the calculation side, Kitazawa et al. <a href="https://arxiv.org/abs/2606.31492">arXiv:2606.31492</a> explicitly credits a human-AI collaboration for the development of high-order hopping-parameter expansion algorithms in lattice QCD. By utilizing a trie data structure designed in tandem with an AI coding agent, they successfully computed the daunting <span class="arithmatex">\(\kappa^{12}\)</span> term, demonstrating that AI can be a highly effective partner in pure mathematical physics.</p>
 <h2 id="worth-a-look">Worth a look</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">arXiv ID</th>
-<th style="text-align: left;">Why it stands out</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>[2607.05145]</strong></td>
-<td style="text-align: left;">It is the most stringent constraint to date on triple Higgs production, carving out the parameter space allowed by perturbative unitarity for the first time.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.05221]</strong></td>
-<td style="text-align: left;">A highly thorough and sober assessment of the &ldquo;holy grail&rdquo; of neutrino physics, detailing the massive <span class="arithmatex">\(10^5\)</span> exposure penalty for detecting the relic neutrino wind.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.05309]</strong></td>
-<td style="text-align: left;">A deep, consistent look at how the viability of Higgsed vector dark matter production is intrinsically tied to the physics of the inflationary sector.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.05514]</strong></td>
-<td style="text-align: left;">A beautiful demonstration of how modern high-energy on-shell amplitude methods can be successfully imported to solve low-energy BBN puzzles.</td>
-</tr>
-</tbody>
-</table>
-<hr />
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2606.31286">arXiv:2606.31286</a></strong> <em>Boosted Higgs-strahlung off a <span class="arithmatex">\(W\)</span> boson at next-to-next-to-next-to-leading order in QCD</em> — Gehrmann-De Ridder et al. (hep-ph)</li>
+<li><strong><a href="https://arxiv.org/abs/2607.00087">arXiv:2607.00087</a></strong> <em>Putting Jet Substructure on Track(s)</em> — Lee et al. (hep-ph)</li>
+<li><strong><a href="https://arxiv.org/abs/2606.31175">arXiv:2606.31175</a></strong> <em>Evidence for differential kinetic freeze-out of the <span class="arithmatex">\(\phi(1020)\)</span> meson in Pb-Pb collisions at <span class="arithmatex">\(\sqrt{s_{\rm NN}} = 2.76\)</span> TeV</em> — Neeraj et al. (hep-ph)</li>
+<li><strong><a href="https://arxiv.org/abs/2606.31996">arXiv:2606.31996</a></strong> <em>Quantum Information as a New Lens for Precision Neutrino Physics</em> — Dixit et al. (hep-ph)</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2606.31806">arXiv:2606.31806</a></strong> <em>The On-Sky Performance of the LSST Camera CCD Array</em> — MacBride et al. (astro-ph.IM): A vital engineering milestone for the Rubin Observatory, detailing the performance and troubleshooting of the largest focal plane in existence.</li>
+</ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2607.04932">arXiv:2607.04932</a></strong> <em>Beyond Half-Life Limits: Robust Operator-Level Interpretation of Multi-Isotope Neutrinoless Double-Beta Decay</em> — K. Ishidoshiro (hep-ph)<br />
-  An important study of how robust our low-energy LNV coefficient extractions actually are when varying both the isotope and the nuclear matrix element method.</li>
-<li><strong><a href="https://arxiv.org/abs/2607.05504">arXiv:2607.05504</a></strong> <em>A Novel Implementation of Self-Interacting Dark Matter in AREPO</em> — Oliver Zier et al. (astro-ph.CO)<br />
-  A new parallelized Monte-Carlo solver for SIDM that decouples scattering from gravity, vastly improving simulation speeds during gravothermal core collapse.</li>
-<li><strong><a href="https://arxiv.org/abs/2607.05288">arXiv:2607.05288</a></strong> <em>A three-step proposal for searching for light shining through walls in the X-ray band at the High Energy Photon Source</em> — R. T. Chang et al. (hep-ex)<br />
-  A concrete blueprint for utilizing high-brilliance X-rays at the HEPS facility to probe dark photons in the 1 eV to 400 keV mass range.</li>
+<li><strong><a href="https://arxiv.org/abs/2606.31362">arXiv:2606.31362</a></strong> <em>Running into tension: primordial black holes from ultra-slow-roll inflation, spectral running, and the Hubble tension</em> — Sabogal et al. (astro-ph.CO)</li>
+<li><strong><a href="https://arxiv.org/abs/2606.31823">arXiv:2606.31823</a></strong> <em>NNLO QCD predictions for <span class="arithmatex">\(t\bar{t}W\)</span> production at the LHC</em> — Chen et al. (hep-ph)</li>
+<li><strong><a href="https://arxiv.org/abs/2607.00096">arXiv:2607.00096</a></strong> <em>Escape from Ostrogradsky via Hidden Ghost Parity</em> — Bateman et al. (hep-th)</li>
 </ul>
 </article>
 <nav class="pager">
-  
+  <a class="prev" href="2026-07-05.html">&larr; Sunday, July 5, 2026</a>
   <a class="next" href="2026-07-07.html">Tuesday, July 7, 2026 &rarr;</a>
 </nav>
 
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 18:39 ·
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 16:31 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 </body>

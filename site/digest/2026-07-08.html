@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wednesday, July 8, 2026 — arXiv Vibes</title>
+<title>Wednesday, July 8, 2026 — The Cross Section</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
 <header class="masthead">
   <div class="beamline" aria-hidden="true"></div>
-  <a class="wordmark" href="../index.html">arXiv&nbsp;<em>Vibes</em></a>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
   <p class="tagline">the daily zeitgeist of the preprint sky · hep-ex · hep-ph</p>
   <nav>
     <a href="../index.html">Today</a>
@@ -33,65 +33,55 @@
   <h1 class="issue-date">Wednesday, July 8, 2026</h1>
   <div class="meta">
     <span class="count">41 papers read</span>
-    <span class="chip">SMEFT, PDFs, and QED Factorization</span><span class="chip">Accidental PQ and SUSY UV Completions</span><span class="chip">Axions and ALPs in the Crosshairs</span><span class="chip">Neutrino Oscillations and Modular Flavor</span>
+    <span class="chip">WIMP Evasion & Axions</span><span class="chip">Neutrino Precision & Degeneracy</span><span class="chip">Machine Learning in Reconstruction</span><span class="chip">Precision Heavy Flavor Theory</span>
   </div>
   <h2 id="the-vibe-today">The vibe today</h2>
-<p>If the start of this week was defined by confronting the cold realities of our experimental dreams and rapidly deploying machine-learning calibrations, today the field has retreated to the drawing board—not out of defeat, but with a sense of mature determination. There is a distinct &ldquo;architectural&rdquo; quality to today&rsquo;s postings. Theorists and phenomenologists are no longer merely proposing ad-hoc models or running simple fits; instead, they are erecting complete, mathematically elegant structures to resolve long-standing bottlenecks.</p>
-<p>On the high-energy side, we are seeing the classic limits of the Standard Model Effective Field Theory (SMEFT) being systematically dismantled. It is no longer enough to set flat Wilson coefficient limits. Today, the community is directly grappling with how parton distribution function (PDF) uncertainties and sub-percent QED radiative corrections can fake or dilute our heavy BSM signals. In the flavor and neutrino sectors, the trend is equally structural: we are shifting away from heuristic parameters toward modular symmetries and exact analytic resummations to map the PMNS and CKM matrices. It is a day of deep-cleaning our theoretical baselines to prepare for the hyper-precision of the late-2020s.</p>
-<hr />
+<p>The field is experiencing a sharp pivot toward structural consolidation. After years of exploring every corner of the MSSM and pushing the limits of LHC triggers, the collective mood has shifted toward &ldquo;forensic&rdquo; physics: reconciling theory with precision data, purging degeneracies, and quantifying the actual resource costs of our work. The overwhelming sentiment today is that we have transitioned from a era of &ldquo;discovery through breadth&rdquo; to &ldquo;discovery through fidelity.&rdquo;</p>
+<p>There is a palpable sense of architectural cleanup. Whether it’s applying LHC-style on-shell amplitude methods to resolve decades-old BBN tensions, or using transformer-based flavor tagging to squeeze the last percent of uncertainty out of Run 3 data, the community is hardening its infrastructure. The era of loose approximations is ending; when the theory error on <span class="arithmatex">\(b\)</span>-baryon lifetimes or the interpretation of <span class="arithmatex">\(0\nu\beta\beta\)</span> half-lives can lead us astray, our only recourse is to rebuild from first principles.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="smeft-pdfs-and-qed-factorization">SMEFT, PDFs, and QED Factorization</h3>
-<p>As we push deeper into the high-mass tails of Run 3 and look toward the High-Luminosity LHC, the traditional decoupling of BSM searches from Standard Model PDF fits is breaking down. Today’s papers signal a major push toward unified, joint fits to prevent new physics signals from being silently &ldquo;profiled&rdquo; away by PDF adjustments.</p>
-<p>Marzocca, Ubiali, and Yamamoto <a href="https://arxiv.org/abs/2607.07791">arXiv:2607.07791</a> demonstrate this danger in high-mass Drell-Yan SMEFT analyses. They perform a joint fit of four-fermion Wilson coefficients and PDF nuisance parameters, revealing a severe, highly flavor-dependent degradation in sensitivity. Because first-generation quark operators are highly correlated with the high-<span class="arithmatex">\(x\)</span> valence-quark luminosities that dominate the high-mass spectrum, profiling the PDFs substantially broadens the SMEFT limits. Operators involving heavier quarks escape relatively unscathed, but the message is clear: if we do not fit PDFs and SMEFT simultaneously, we risk hiding new physics in the PDF uncertainties.</p>
-<p>At the same time, the precision of our experimental measurements has surpassed the accuracy of pure QCD factorization. We now require joint QCD+QED factorization frameworks, introducing &ldquo;Lepton Distribution Functions&rdquo; (LDFs) to model collision-induced QED radiation. Mantry et al. <a href="https://arxiv.org/abs/2607.07811">arXiv:2607.07811</a> study this impact on SMEFT constraints in deep-inelastic scattering (DIS), showing that while cross sections receive order-one QED corrections, longitudinal spin asymmetries remain highly robust, making them the ultimate clean observables for future SoLID and Electron-Ion Collider (EIC) runs. A parallel paper by Qiu et al. <a href="https://arxiv.org/abs/2607.07664">arXiv:2607.07664</a> sets up the formal joint QCD+QED factorization theorems for single inclusive hadron and jet production, deriving the default set of LDFs needed for this next-to-leading-precision era.</p>
-<h3 id="accidental-pq-and-susy-uv-completions">Accidental PQ and SUSY UV Completions</h3>
-<p>On Monday, Baer et al. delivered a tough verdict showing that LZ direct-detection limits have cornered natural, light higgsino dark matter <a href="https://arxiv.org/abs/2607.05648">arXiv:2607.05648</a>. Today, Baer is back with a highly elegant solution to a broader suite of MSSM headaches <a href="https://arxiv.org/abs/2607.07921">arXiv:2607.07921</a>. Rather than treating the MSSM’s <span class="arithmatex">\(\mu\)</span> problem, rapid proton decay, and the strong CP problem as isolated issues, they show that imposing anomaly-free discrete <span class="arithmatex">\(Z_n^R\)</span> symmetries solves them all at once. Crucially, when the <span class="arithmatex">\(\mu\)</span> term is forbidden by the <span class="arithmatex">\(Z_n^R\)</span> symmetry, the theory develops an accidental global <span class="arithmatex">\(U(1)_{\rm PQ}\)</span> symmetry. Breaking this symmetry via a Kim-Nilles mechanism naturally regenerates a weak-scale <span class="arithmatex">\(\mu\)</span> while producing a DFSZ axion that solves the strong CP problem. </p>
-<p>This theme of linking electroweak-scale SUSY to cosmological relics is echoed by Frolovsky et al. <a href="https://arxiv.org/abs/2607.07193">arXiv:2607.07193</a>. Working in Starobinsky supergravity coupled to the MSSM, they show that the scale of cosmic inflation directly fixes the MSSM soft terms. Under this framework, the measured Higgs boson mass and relic dark matter density uniquely converge on a 3 TeV pure thermal wino. This model is highly testable: its direct-detection cross section lies just below LZ but within reach of next-generation liquid xenon, and its disappearing-track signature would be a definitive target for a 100 TeV collider. To tie this together with UV-complete flavor structures, Fileviez Perez et al. <a href="https://arxiv.org/abs/2607.07794">arXiv:2607.07794</a> propose a universal seesaw based on a new Abelian gauge symmetry. By forbidding ordinary Yukawa couplings (except for the top quark), they explain fermion mass hierarchies through mixing with a vector-like sector, whilst using a Nelson-Barr block structure to keep the tree-level strong CP phase at zero.</p>
-<h3 id="axions-and-alps-in-the-crosshairs">Axions and ALPs in the Crosshairs</h3>
-<p>The search for axion-like particles (ALPs) continues to accelerate, with experimentalists and phenomenologists collaborating to carve out the remaining parameter space.</p>
-<p>On the experimental front, the Belle II Collaboration <a href="https://arxiv.org/abs/2607.07800">arXiv:2607.07800</a> has published a leading constraint on ALPs decaying to two photons (<span class="arithmatex">\(e^+e^- \to \gamma a, a \to \gamma\gamma\)</span>) using a massive <span class="arithmatex">\(408\text{ fb}^{-1}\)</span> dataset. They search for a narrow di-photon resonance, finding no excess and setting the most restrictive limits to date over the <span class="arithmatex">\(0.17 &lt; m_a &lt; 5.00\text{ GeV}\)</span> range—improving on previous limits by up to a factor of 9.</p>
-<p>Meanwhile, Darcy Newmark’s doctoral work <a href="https://arxiv.org/abs/2607.07476">arXiv:2607.07476</a> showcases the future of liquid argon detectors at beam dumps. Utilizing the 10-ton Coherent CAPTAIN-Mills (CCM) detector, the thesis demonstrates the first event-by-event separation of sub-MeV Cherenkov radiation from scintillation light in LAr. By exploiting this hybrid Cherenkov-scintillation signature, the work achieves unprecedented background rejection, carving out new exclusions for MeV-scale ALPs. This hybrid technique represents a massive step forward for the DUNE and dark sector communities alike. In the astrophysical regime, Cappiello et al. <a href="https://arxiv.org/abs/2607.07297">arXiv:2607.07297</a> point out that heavy ALPs produced in gamma-ray bursts would decay and form a secondary <span class="arithmatex">\(e^+e^-\)</span> fireball, reprocessing gamma-rays into isotropic <span class="arithmatex">\(X\)</span>-rays that future wide-field telescopes can detect even without pointing directly at the GRB jet.</p>
-<h3 id="symmetric-scaffolding-for-neutrino-flavor">Symmetric Scaffolding for Neutrino Flavor</h3>
-<p>Following yesterday&rsquo;s focus on neutrino degeneracies and PMNS non-unitarity <a href="https://arxiv.org/abs/2607.06108">arXiv:2607.06108</a>, today&rsquo;s papers focus on the underlying mathematical elegance of neutrino mixing. </p>
-<p>Chaulagain et al. <a href="https://arxiv.org/abs/2607.07213">arXiv:2607.07213</a> dissect the algebraic structure of three-flavor neutrino oscillations in constant-density matter. By applying the Cayley-Hamilton theorem to the evolution operator and using the Denton-Minakata-Parke (DMP) resummation, they construct closed-form Jacobians in the NuFIT parameter basis. This mathematical work removes the divergence that plagues standard expansion schemes near the MSW resonance, providing the analytical continuity and parameter limits required for the next generation of global fits.</p>
-<p>For those trying to explain the mixing patterns from first principles, Hao et al. <a href="https://arxiv.org/abs/2607.07865">arXiv:2607.07865</a> present the first model-independent study of Modular Littlest Seesaw models based on the finite modular group <span class="arithmatex">\(\Delta(96)\)</span>. By scanning the symmetry-preserving fixed points, they identify 35 highly predictive breaking patterns that yield narrow ranges for neutrino masses and CP phases, offering concrete targets for JUNO, DUNE, and T2HK. Additionally, Xing <a href="https://arxiv.org/abs/2607.07311">arXiv:2607.07311</a> introduces a novel &ldquo;flavor cuboid&rdquo; parametrization for normal ordering, showing that its cubic limit naturally accommodates both neutrino mass degeneracy and tribimaximal flavor mixing.</p>
-<hr />
+<h3 id="the-end-of-the-wimp-blind-spot">The End of the WIMP &ldquo;Blind Spot&rdquo;</h3>
+<p>The net around natural SUSY is tightening into a noose. Baer et al. <a href="https://arxiv.org/abs/2607.05648">arXiv:2607.05648</a> effectively closed the final remaining door for &ldquo;natural&rdquo; neutralino dark matter: the blind spot. By scanning the parameter space for gravity-mediated models, they show that any parametric cancellation suppressing direct-detection signals is fundamentally incompatible with the naturalness condition <span class="arithmatex">\(\Delta_{\text{EW}} \le 30\)</span>. This is a major turning point: it forces the community to choose between abandoning electroweak naturalness or accepting that the LSP must be unstable (or the dark matter sector entirely non-WIMP). This is complemented by the work of Baer et al. <a href="https://arxiv.org/abs/2607.07921">arXiv:2607.07921</a>, which explores how discrete <span class="arithmatex">\(Z_n^R\)</span> symmetries simultaneously solve the <span class="arithmatex">\(\mu\)</span>-problem and naturally yield DFSZ axions, signaling a pivot toward axionic dark matter as the primary theoretical successor to WIMPs.</p>
+<h3 id="neutrino-degeneracy-and-the-fake-cp-signal">Neutrino Degeneracy and the &ldquo;Fake&rdquo; CP Signal</h3>
+<p>As we move toward the operational phase of DUNE and Hyper-Kamiokande, the neutrino community is increasingly haunted by the threat of &ldquo;fake&rdquo; signals. Singh et al. <a href="https://arxiv.org/abs/2607.06108">arXiv:2607.06108</a> provide a sobering analysis of how PMNS non-unitarity can generate CP asymmetries that mimic genuine SM signals, potentially degrading discovery potential by over 60% in certain energy windows. The message is unanimous: single-detector analyses are no longer sufficient. Only by performing joint fits that leverage different matter-effect profiles—as explored in the analytic resummation framework by Chaulagain et al. <a href="https://arxiv.org/abs/2607.07213">arXiv:2607.07213</a>—can we hope to distinguish between CP violation and BSM-induced mimics.</p>
+<h3 id="machine-learning-at-the-reconstruction-edge">Machine Learning at the Reconstruction Edge</h3>
+<p>We are witnessing the rapid operationalization of ML, moving from &ldquo;performance papers&rdquo; to &ldquo;calibration results.&rdquo; ATLAS&rsquo;s deployment of the GN2 transformer-based tagger in a simultaneous measurement of <span class="arithmatex">\(b\)</span>- and <span class="arithmatex">\(c\)</span>-tagging efficiencies <a href="https://arxiv.org/abs/2607.06199">arXiv:2607.06199</a> is a masterclass in how to move ML into the high-precision pipeline. This is not just a software update; it is a fundamental change in how we estimate systematic uncertainties in heavy flavor tagging. The infrastructure is maturing, as evidenced by Varni et al. <a href="https://arxiv.org/abs/2607.04723">arXiv:2607.04723</a>, who are pushing hybrid Hough-CNN tracking pipelines to manage the extreme pileup environment of the HL-LHC.</p>
+<h3 id="heavy-flavor-precision">Heavy Flavor Precision</h3>
+<p>The theory community is finally resolving the &ldquo;lifetime tension&rdquo; in the heavy-flavor sector. Lenz et al. <a href="https://arxiv.org/abs/2607.06538">arXiv:2607.06538</a> presented NNLO-QCD corrections to the <span class="arithmatex">\(b\)</span>-quark decay that bring predicted <span class="arithmatex">\(b\)</span>-baryon lifetime ratios into alignment with experiment, effectively ending a long-standing headache. This high-precision approach is echoed in the work of Tait <a href="https://arxiv.org/abs/2607.05514">arXiv:2607.05514</a>, who used LHC-style on-shell amplitude methods to resolve the <span class="arithmatex">\(d(p,\gamma)^3\text{He}\)</span> discrepancy in BBN. It is a striking example of cross-pollination: high-energy formal machinery is the key to solving the most stubborn problems in low-energy nuclear physics.</p>
 <h2 id="worth-a-look">Worth a look</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">arXiv ID</th>
-<th style="text-align: left;">Why it stands out</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>[2607.07791]</strong></td>
-<td style="text-align: left;">Shows how PDF profiling can accidentally &ldquo;absorb&rdquo; high-mass SMEFT signals, highlighting the urgent need for joint PDF+SMEFT fits at the HL-LHC.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.07476]</strong></td>
-<td style="text-align: left;">A masterclass in hybrid detector physics, showing event-by-event Cherenkov/scintillation separation in LAr to search for ALPs at beam dumps.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.07921]</strong></td>
-<td style="text-align: left;">A highly satisfying, unified SUSY solution where an anomaly-free discrete R-symmetry naturally gives rise to the accidental PQ symmetry needed for the DFSZ axion.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[2607.07865]</strong></td>
-<td style="text-align: left;">An exhaustive, highly predictive mapping of the <span class="arithmatex">\(\Delta(96)\)</span> modular flavor symmetry, producing concrete predictions for the leptonic CP phase that will be tested soon.</td>
-</tr>
-</tbody>
-</table>
-<hr />
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.05648">arXiv:2607.05648</a></strong> <em>Can blind spots save neutralino dark matter in natural supersymmetry models?</em> — Howard Baer et al.<ul>
+<li>The definitive sanity check that effectively kills the WIMP-blind-spot loophole in natural SUSY.</li>
+</ul>
+</li>
+<li><strong><a href="https://arxiv.org/abs/2607.05514">arXiv:2607.05514</a></strong> <em>Deuterium-Proton Fusion in an Effective Field Theory Constructed from On-Shell Amplitudes</em> — Tim M. P. Tait<ul>
+<li>A brilliant application of amplitude techniques to fix a fundamental BBN tension.</li>
+</ul>
+</li>
+<li><strong><a href="https://arxiv.org/abs/2607.04932">arXiv:2607.04932</a></strong> <em>Beyond Half-Life Limits: Robust Operator-Level Interpretation of Multi-Isotope Neutrinoless Double-Beta Decay</em> — K. Ishidoshiro<ul>
+<li>Provides the essential framework for comparing <span class="arithmatex">\(0\nu\beta\beta\)</span> targets without getting fooled by NME method-dependence.</li>
+</ul>
+</li>
+<li><strong><a href="https://arxiv.org/abs/2607.06108">arXiv:2607.06108</a></strong> <em>Non-Unitarity Effects and Fake CP Violation in Neutrino Oscillation Experiments</em> — Pratima Singh et al.<ul>
+<li>Crucial for anyone working on the DUNE/Hyper-K joint physics program.</li>
+</ul>
+</li>
+<li><strong><a href="https://arxiv.org/abs/2607.06538">arXiv:2607.06538</a></strong> <em>Predictions for <span class="arithmatex">\(b\)</span>-baryon lifetimes at NNLO-QCD</em> — Alexander Lenz et al.<ul>
+<li>Resolves a decades-old tension in flavor physics; required reading for precision heavy-quark studies.</li>
+</ul>
+</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.05018">arXiv:2607.05018</a></strong> <em>Watts per event: evaluating Sustainability of HEP Event Generators beyond the LHC era</em> — Szabolcs Molnár et al.<ul>
+<li>A critical look at the carbon footprint of our simulation stack, arguing that &ldquo;watts per event&rdquo; should become a core metric for code optimization in the post-LHC era.</li>
+</ul>
+</li>
+</ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2607.06938">arXiv:2607.06938</a></strong> <em>First constraint on Born-rule violations at high-energy colliders</em> — Antony Valentini et al. (hep-ph)<br />
-  A highly unusual and welcome paper using PEP Bhabha scattering data at <span class="arithmatex">\(29\text{ GeV}\)</span> to place the first direct high-energy constraint on possible Born-rule violations.</li>
-<li><strong><a href="https://arxiv.org/abs/2607.07668">arXiv:2607.07668</a></strong> <em>Subsolar-mass binary mergers of strange stars and neutron stars: gravitational waves and ejecta</em> — Yong Gao et al. (astro-ph.HE)<br />
-  Numerical-relativity simulations showing that the self-bound nature of subsolar strange stars prevents tidal deformation during inspiral, leaving a unique GW and ejecta signature that can distinguish them from neutron stars.</li>
-<li><strong><a href="https://arxiv.org/abs/2607.07969">arXiv:2607.07969</a></strong> <em>Experimental access to the gluonic origin of the proton mass</em> — Zein-Eddine Meziani et al. (hep-ph)<br />
-  A beautifully clear proposal for reconstructing the gluonic trace anomaly (and thus the origin of visible mass) by combining DVCS, near-threshold quarkonium, and sigma-term measurements.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.05221">arXiv:2607.05221</a></strong> <em>Pathways and impediments towards a detection of the relic neutrino wind</em> — Andrew J. Long et al. </li>
+<li><strong><a href="https://arxiv.org/abs/2607.05572">arXiv:2607.05572</a></strong> <em>Linear Breit-Wheeler pair production in the search for axion-like particles</em> — Thomas Rook et al.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.05504">arXiv:2607.05504</a></strong> <em>A Novel Implementation of Self-Interacting Dark Matter in AREPO</em> — Oliver Zier et al.</li>
 </ul>
 </article>
 <nav class="pager">
@@ -102,7 +92,7 @@
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 18:39 ·
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-12 16:31 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 </body>
