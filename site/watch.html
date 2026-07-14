@@ -34,6 +34,18 @@ the day's postings touch a watched topic. Watching:
 Muon collider · Jet substructure · Optimal transport.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Tuesday, July 14, 2026</h2>
+  <div class="meta">
+    <span class="chip">Jet substructure</span>
+  </div>
+  <h2 id="jet-substructure">Jet substructure</h2>
+<h3 id="arxiv260711016-search-for-dark-matter-in-a-signature-with-a-four-prong-large-radius-jet-at-s-13-tev-cms-collaboration"><a href="https://arxiv.org/abs/2607.11016">arXiv:2607.11016</a> — Search for dark matter in a signature with a four-prong large-radius jet at √s = 13 TeV (CMS Collaboration)</h3>
+<p>CMS (EXO-24-001, 138 fb⁻¹) searches for a boosted, potentially displaced dark-sector topology: Y₁ → χ₂χ₂, each χ₂ → χ₁ + Y₀(→qq̄), with Y₀ fixed at 1 GeV so that the four light-quark prongs merge into a single AK8 jet recoiling against an ISR jet. No excess; limits set on the χ₂χ₁Y₀ coupling and Y₁ mass for the benchmark points in their scan (mediator 100–500 GeV, Lxy from O(0.1) to O(10³) mm).</p>
+<p>The substructure content is the reason to read this. The tagger is an <strong>interaction network</strong> (not ParticleNet), chosen explicitly so that secondary-vertex information can be added as heterogeneous graph inputs alongside PF-candidate four-momenta — the argument being that displaced multiprong jets carry nonlocal constituent correlations that local-neighborhood architectures capture less well. Fully connected graph, SV-augmented nodes. Reported AUC ranges 0.95 (light, prompt) down to 0.88 (heaviest + most displaced), with the degradation attributed both to boost (four prongs overlapping) and to displacement (track association / SV reconstruction / subjet-parton matching breaking down). SR is sGNN &gt; 0.8; QCD estimated via a 0.4 &lt; sGNN &lt; 0.8 sideband with per-bin MC transfer factors.</p>
+<p>The more transferable methodological point: they <strong>extend Lund-jet-plane substructure reweighting (<a href="https://arxiv.org/abs/2507.07775">arXiv:2507.07775</a>) to displaced large-radius jets for the first time</strong>, applying per-prong data/MC corrections. The caveat is stark — resulting tagger-efficiency uncertainties are <strong>50–70%</strong>, dominated by subjet-matching failures (quarks near the AK8 boundary, unmatched or ambiguous subjets) that worsen at low mediator mass where prongs collimate. So the technique is demonstrated but not yet precise for highly boosted displaced substructure; treat the AUC numbers as the achievable ceiling and the 50–70% SF uncertainty as the real limitation.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, July 9, 2026</h2>
   <div class="meta">
     <span class="chip">Optimal transport</span>
@@ -86,7 +98,7 @@ Muon collider · Jet substructure · Optimal transport.</p>
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts · built 2026-07-13 11:54 ·
+  <p>Synthesized daily from arXiv abstracts · built 2026-07-14 10:32 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 </body>
