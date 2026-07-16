@@ -89,11 +89,20 @@ def load_source(kind: str, date: dt.date) -> tuple[frontmatter.Post, Path]:
     return frontmatter.load(path), path
 
 
+def theme_text(theme) -> str:
+    """A theme is normally a string, but a theme containing a colon (e.g.
+    "Hadron spectroscopy: new states") is parsed by YAML as a one-key mapping.
+    Flatten that back to "key: value" so it renders as the author intended."""
+    if isinstance(theme, dict):
+        return "; ".join(f"{k}: {v}" for k, v in theme.items())
+    return str(theme)
+
+
 def build_title_subtitle(kind: str, post: frontmatter.Post, cfg: dict) -> tuple[str, str]:
     when = pretty_date(post.get("date") or post.metadata.get("date"))
     site_title = cfg["site"]["title"]
     if kind == "digest":
-        themes = post.get("themes", []) or []
+        themes = [theme_text(t) for t in (post.get("themes", []) or [])]
         return when, " · ".join(themes) if themes else cfg["site"]["tagline"]
     if kind == "radar":
         return f"Citation radar — week of {when}", f"{site_title}: what the field is citing"
