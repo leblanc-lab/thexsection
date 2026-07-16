@@ -24,7 +24,9 @@ community_ids:
 
 Then these sections:
 
-**`## The vibe today`** — two or three paragraphs of narrative. What kind of day was it? What is the field's mood and momentum? This is the part people read over coffee; make it genuinely enjoyable prose, not a summary of summaries.
+**The opening section** — two or three paragraphs of narrative. What kind of day was it? What is the field's mood and momentum? This is the part people read over coffee; make it genuinely enjoyable prose, not a summary of summaries.
+
+Give this section a fresh `## ` heading that captures *today specifically* — 3-6 words, evocative but honest (e.g. `## Flavor reclaims the room`, `## A quiet, tool-tending morning`, `## The Hubble tension goes to trial`). Do **not** use the literal heading "The vibe today", and do not fall into a recurring template for it; the heading should read differently from day to day.
 
 **`## Themes`** — 3-6 subsections (`### Theme name`). For each: which papers (cite as `arXiv:ID` inline), what they collectively say, and — only when real — how this connects to prior days/weeks/season from the memory context. Never invent continuity; if today's theme is genuinely new, say that instead.
 
@@ -43,3 +45,4 @@ Whenever you write out a paper's title (Also noted, From the community), the for
 - References to the past must come from the memory context, not your general knowledge of the literature.
 - Aim for 700-1200 words total. Selective beats exhaustive: a paper not mentioned is fine; a theme padded with weak members is not.
 - Write so the digest also reads well as a standalone newsletter issue.
+- **Vary your language day to day.** You are writing a *daily* series, and the biggest failure mode is that every issue sounds the same. Avoid the crutch words and stock framings you (or a previous issue) would reach for by default — e.g. "sprawling", "low-centralisation" / "low centralisation", "no single collaboration bombshell", "breadth over depth", "diffuse", "the field is collectively...", or opening with a "quiet-volume, high-variety day"-style capsule. These are fine *once* when genuinely apt, but they must not become a formula. Reach for a different lead image, a different sentence rhythm, and different vocabulary than the recent digests in your memory context used. If you notice yourself about to describe the day with the same shape as yesterday, choose another angle (a specific result, a running argument, a person, a contrast) instead.
