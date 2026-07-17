@@ -6,9 +6,9 @@ name: Deploy site
 # Three ways it runs:
 #   - workflow_dispatch : deploy on demand (used for the very first publish)
 #   - push to content   : redeploy when templates/CSS/build code change
-#   - workflow_run       : after each nightly "Daily digest" so new digests go live.
-#     (A digest's bot commit uses GITHUB_TOKEN, which by design can't trigger the
-#     `push` event above — workflow_run is how we catch it.)
+#   - workflow_run       : after "Daily digest" or "Refresh Long View" so new
+#     digests / re-synthesized memory go live. (Those bot commits use GITHUB_TOKEN,
+#     which by design can't trigger the `push` event above — workflow_run catches it.)
 #
 # Rebuilds the site from the data already committed in the repo, so it needs no
 # arXiv fetch and no LLM calls — cheap and safe to run often.
@@ -23,7 +23,7 @@ on:
       - "pipeline/build_site.py"
       - ".github/workflows/pages.yml"
   workflow_run:
-    workflows: ["Daily digest"]
+    workflows: ["Daily digest", "Refresh Long View"]
     types: [completed]
 
 permissions:
