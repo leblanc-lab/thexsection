@@ -91,16 +91,20 @@ body {
   padding: 0.55rem 1.4rem;
   border: 1px solid var(--hairline);
   border-radius: 99px;
+  /* Gradient painted across the whole nav, then clipped to the link text so
+     the spectrum spans the bar as one sweep (rather than repeating per link). */
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .masthead nav a {
   font-family: var(--mono);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: var(--grad);
-  -webkit-background-clip: text;
-  background-clip: text;
+  /* Transparent fill lets the nav's clipped gradient show through the glyphs. */
   color: transparent;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   white-space: nowrap;
   transition: filter 0.15s ease;
