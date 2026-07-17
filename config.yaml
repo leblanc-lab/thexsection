@@ -16,6 +16,11 @@ arxiv:
 llm:
   # Active provider: "gemini" (free tier, dev/testing) or "anthropic" (production).
   provider: anthropic
+  # Route calls through the async Batches API: 50% cheaper token rates in exchange
+  # for higher latency (usually minutes, cap 24h) — a good trade for the scheduled
+  # overnight run. Gemini has no batch path here and falls back to synchronous
+  # calls. Set false for snappy local iteration.
+  batch: true
   providers:
     gemini:
       model: gemini-3.1-flash-lite-preview   # alias tracking the current flash model

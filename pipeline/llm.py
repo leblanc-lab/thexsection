@@ -21,6 +21,9 @@ class LLMResult:
 
 
 class AnthropicBackend:
+    # The Batches API bills all token usage at 50% of standard rates.
+    batch_cost_multiplier = 0.5
+
     def __init__(self, model: str):
         import anthropic
 
@@ -42,6 +45,70 @@ class AnthropicBackend:
         text = "".join(b.text for b in msg.content if b.type == "text")
         return text, msg.usage.input_tokens, msg.usage.output_tokens
 
+    def complete_batch(
+        self, jobs: dict[str, tuple[str, str, int]], poll_seconds: int = 15
+    ) -> dict[str, tuple[str, int, int]]:
+        """Submit one async batch, block until it finishes, return per-job results.
+
+        `jobs` maps a caller-chosen id to (system, user, max_tokens); the return
+        maps the same ids to (text, input_tokens, output_tokens). Delivery is
+        async (no held HTTP connection), so the large-`max_tokens` streaming
+        caveat doesn't apply — non-streaming params are fine here.
+        """
+        import time
+
+        from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+        from anthropic.types.messages.batch_create_params import Request
+
+        batch = self.client.messages.batches.create(
+            requests=[
+                Request(
+                    custom_id=cid,
+                    params=MessageCreateParamsNonStreaming(
+                        model=self.model,
+                        max_tokens=max_tokens,
+                        thinking={"type": "adaptive"},
+                        output_config={"effort": "high"},
+                        system=[{"type": "text", "text": system}],
+                        messages=[{"role": "user", "content": user}],
+                    ),
+                )
+                for cid, (system, user, max_tokens) in jobs.items()
+            ]
+        )
+        print(
+            f"[llm] batch {batch.id}: submitted {len(jobs)} request(s)",
+            file=sys.stderr,
+        )
+        while True:
+            b = self.client.messages.batches.retrieve(batch.id)
+            if b.processing_status == "ended":
+                break
+            print(
+                f"[llm] batch {batch.id}: {b.processing_status}, "
+                f"{b.request_counts.processing} still processing",
+                file=sys.stderr,
+            )
+            time.sleep(poll_seconds)
+
+        # Results arrive in arbitrary order — key by custom_id, never by position.
+        out: dict[str, tuple[str, int, int]] = {}
+        for r in self.client.messages.batches.results(batch.id):
+            if r.result.type != "succeeded":
+                raise RuntimeError(
+                    f"batch request {r.custom_id} {r.result.type} (not succeeded)"
+                )
+            msg = r.result.message
+            if msg.stop_reason == "refusal":
+                raise RuntimeError(f"model refused ({r.custom_id}): {msg.stop_details}")
+            text = "".join(b.text for b in msg.content if b.type == "text")
+            out[r.custom_id] = (text, msg.usage.input_tokens, msg.usage.output_tokens)
+
+        missing = set(jobs) - set(out)
+        if missing:
+            raise RuntimeError(f"batch {batch.id} returned no result for {sorted(missing)}")
+        return out
+
     def count_tokens(self, system: str, user: str) -> int:
         resp = self.client.messages.count_tokens(
             model=self.model,
@@ -52,6 +119,10 @@ class AnthropicBackend:
 
 
 class GeminiBackend:
+    # No batch endpoint wired up here; complete_batch loops synchronously, so
+    # there's no discount to apply (the free tier is $0 anyway).
+    batch_cost_multiplier = 1.0
+
     def __init__(self, model: str):
         from google import genai
 
@@ -85,6 +156,16 @@ class GeminiBackend:
         )
         return resp.text or "", usage.prompt_token_count or 0, out_tokens
 
+    def complete_batch(
+        self, jobs: dict[str, tuple[str, str, int]]
+    ) -> dict[str, tuple[str, int, int]]:
+        # No Gemini batch endpoint here — just run the jobs synchronously so the
+        # interface matches AnthropicBackend. Keeps the free-tier dev path simple.
+        return {
+            cid: self.complete(system, user, max_tokens)
+            for cid, (system, user, max_tokens) in jobs.items()
+        }
+
     def count_tokens(self, system: str, user: str) -> int:
         resp = self.client.models.count_tokens(
             model=self.model, contents=[system, user]
@@ -96,6 +177,9 @@ class LLM:
     def __init__(self, cfg: dict | None = None):
         llm_cfg = (cfg or load_config())["llm"]
         self.provider = llm_cfg["provider"]
+        # When true, route calls through the async Batches API (50% cheaper,
+        # higher latency). Off by default so local runs stay synchronous/snappy.
+        self.batch = llm_cfg.get("batch", False)
         pcfg = llm_cfg["providers"][self.provider]
         self.model = pcfg["model"]
         self.in_price = pcfg["input_price_per_mtok"]
@@ -105,18 +189,38 @@ class LLM:
         ]
         self.backend = backend_cls(self.model)
 
-    def complete(self, system: str, user: str, max_tokens: int) -> LLMResult:
-        text, tokens_in, tokens_out = self.backend.complete(system, user, max_tokens)
-        cost = (tokens_in * self.in_price + tokens_out * self.out_price) / 1e6
+    def _finish(
+        self, tokens_in: int, tokens_out: int, text: str, multiplier: float
+    ) -> LLMResult:
+        cost = (tokens_in * self.in_price + tokens_out * self.out_price) / 1e6 * multiplier
+        tag = " (batch -50%)" if multiplier < 1 else ""
         print(
             f"[llm] {self.provider}/{self.model}: {tokens_in} in, "
-            f"{tokens_out} out, ${cost:.4f}",
+            f"{tokens_out} out, ${cost:.4f}{tag}",
             file=sys.stderr,
         )
         return LLMResult(text, tokens_in, tokens_out, cost)
+
+    def complete(self, system: str, user: str, max_tokens: int) -> LLMResult:
+        if self.batch:
+            return self.complete_batch({"request": (system, user, max_tokens)})["request"]
+        text, tokens_in, tokens_out = self.backend.complete(system, user, max_tokens)
+        return self._finish(tokens_in, tokens_out, text, 1.0)
+
+    def complete_batch(
+        self, jobs: dict[str, tuple[str, str, int]]
+    ) -> dict[str, LLMResult]:
+        """Run several independent completions as one batch; keyed by caller id."""
+        raw = self.backend.complete_batch(jobs)
+        mult = self.backend.batch_cost_multiplier
+        return {
+            cid: self._finish(tokens_in, tokens_out, text, mult)
+            for cid, (text, tokens_in, tokens_out) in raw.items()
+        }
 
     def count_tokens(self, system: str, user: str) -> int:
         return self.backend.count_tokens(system, user)
 
     def estimate_cost(self, input_tokens: int, output_tokens: int) -> float:
-        return (input_tokens * self.in_price + output_tokens * self.out_price) / 1e6
+        mult = self.backend.batch_cost_multiplier if self.batch else 1.0
+        return (input_tokens * self.in_price + output_tokens * self.out_price) / 1e6 * mult
