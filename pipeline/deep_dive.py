@@ -20,7 +20,7 @@ from .digest import add_bylines, linkify
 from .llm import LLM
 
 HTML_URL = "https://arxiv.org/html/{id}"
-UA = {"User-Agent": "arxiv-vibes/0.1 (daily digest builder)"}
+UA = {"User-Agent": "thexsection/0.1 (daily digest builder)"}
 
 
 def fetch_paper_text(arxiv_id: str, max_chars: int) -> str | None:

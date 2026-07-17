@@ -1,0 +1,68 @@
+name: Deploy site
+
+# Publishes the static site to GitHub Pages (https://leblanc-lab.github.io/thexsection/).
+# The repo is private; the Pages site is public — allowed on the org's Team plan.
+#
+# Three ways it runs:
+#   - workflow_dispatch : deploy on demand (used for the very first publish)
+#   - push to content   : redeploy when templates/CSS/build code change
+#   - workflow_run       : after each nightly "Daily digest" so new digests go live.
+#     (A digest's bot commit uses GITHUB_TOKEN, which by design can't trigger the
+#     `push` event above — workflow_run is how we catch it.)
+#
+# Rebuilds the site from the data already committed in the repo, so it needs no
+# arXiv fetch and no LLM calls — cheap and safe to run often.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "templates/**"
+      - "static/**"
+      - "site/**"
+      - "pipeline/build_site.py"
+      - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["Daily digest"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Serialize deploys; a newer build supersedes an in-flight one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # For the workflow_run trigger, only deploy if the digest actually succeeded.
+    # Other triggers have no workflow_run context, so the condition passes.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build site
+        run: python -m pipeline.build_site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
