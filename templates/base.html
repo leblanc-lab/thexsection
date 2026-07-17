@@ -18,7 +18,7 @@
 <header class="masthead">
   <div class="beamline" aria-hidden="true"></div>
   <a class="wordmark" href="{{ root|default('') }}index.html">The Cross&nbsp;<em>Section</em></a>
-  <p class="tagline">{{ site.tagline }} · {{ categories|join(' · ') }}</p>
+  <p class="tagline">{{ site.tagline }}</p>
   <nav>
     <a href="{{ root|default('') }}index.html">Today</a>
     <a href="{{ root|default('') }}archive.html">Back issues</a>
@@ -31,7 +31,7 @@
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts · built {{ built_at }} ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built {{ built_at }} ·
      an experiment in reading the field's mood, not a substitute for the papers.{%
      if watchlist and watchlist.enabled %} <a class="secret" href="{{ root|default('') }}watch.html" title="{{ watchlist.page_title }}" aria-label="{{ watchlist.page_title }}">◈</a>{% endif %}</p>
 </footer>
