@@ -22,6 +22,9 @@ jobs:
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Present only when the SMTP secrets are configured; the reminder step
+      # below checks env.MAIL_USERNAME and skips itself when they're absent.
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
     steps:
       - uses: actions/checkout@v4
 
@@ -56,16 +59,22 @@ jobs:
         run: python -m pipeline.build_site
 
       - name: Commit results
+        id: commit
         run: |
           git config user.name "arxiv-vibes bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
             echo "Nothing new to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
           else
+            DIGEST_DATE="${{ inputs.date }}"
+            [ -n "$DIGEST_DATE" ] || DIGEST_DATE="$(date -u +%F)"
             git commit -m "digest: $(date -u +%F)"
             git pull --rebase origin main
             git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+            echo "date=$DIGEST_DATE" >> "$GITHUB_OUTPUT"
           fi
 
       # Mirror today's digest to Substack as a DRAFT for review. Never publishes
@@ -86,3 +95,34 @@ jobs:
           DATE_ARG=""
           if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
           python -m pipeline.substack $DATE_ARG
+
+      # Nudge to go publish the draft. Only fires when a digest was actually
+      # committed, and self-skips unless the SMTP secrets are set: MAIL_USERNAME
+      # + MAIL_PASSWORD (a Gmail app password work well) and MAIL_TO (recipient).
+      - name: Email a publish reminder
+        if: steps.commit.outputs.committed == 'true' && env.MAIL_USERNAME != ''
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: ${{ secrets.MAIL_PORT || 465 }}
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: The Cross Section <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "The Cross Section — draft ready to publish (${{ steps.commit.outputs.date }})"
+          body: |
+            A new digest for ${{ steps.commit.outputs.date }} is committed and drafted to Substack.
+
+            To publish it (and email subscribers), do either:
+
+            • Run the "Post to Substack" workflow with publish = true:
+              https://github.com/${{ github.repository }}/actions/workflows/substack.yml
+
+            • Or from a local checkout:
+              python -m pipeline.substack --date ${{ steps.commit.outputs.date }} --publish
+
+            Review the draft in Substack's editor first, then publish.
+
+            — arxiv-vibes bot

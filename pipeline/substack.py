@@ -14,8 +14,10 @@ network or needing a cookie — useful for a manual copy-paste, or to preview
 exactly what would be sent.
 
 Known limitations of the Markdown → Substack conversion:
-  - LaTeX math ($...$) lands as literal text; fix it in the draft editor, or
-    leave it — Substack renders inline $...$ in its own editor for many cases.
+  - Substack has no LaTeX/math node we can post to via this library, so inline
+    `$...$` math is flattened to Unicode instead (μ, →, Λ, √, superscripts…);
+    see `latex_to_unicode` below. Subscripts stay as literal `_x` (Unicode has
+    no uppercase subscripts) — standard in plain-text physics writing.
   - Markdown tables aren't supported by the library, so we convert them to
     bullet lists before sending (otherwise they'd be silently dropped).
 """
@@ -38,6 +40,46 @@ RADAR_DIR = DIGEST_DIR / "radar"
 
 TABLE_ROW_RE = re.compile(r"^\s*\|(.+)\|\s*$")
 TABLE_SEP_RE = re.compile(r"^\s*\|?[\s:|-]+\|?\s*$")
+
+# Inline math spans: `$ ... $`, ignoring escaped `\$` (e.g. a literal dollar).
+INLINE_MATH_RE = re.compile(r"(?<!\\)\$(.+?)(?<!\\)\$", re.S)
+# Chars that have Unicode superscript forms; a run right after `^` becomes them
+# (pylatexenc strips the TeX braces, so `10^{-9}` reaches us as `10^-9`).
+_SUPERSCRIPT = str.maketrans("0123456789+-=()n", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ")
+_SUPERSCRIPT_RUN_RE = re.compile(r"\^([0-9+\-=()n]+)")
+# Symbol-diacritic accents outside math (mostly author names: Sch\"oneberg).
+# Only the punctuation accents — the letter macros (\c \v \u …) collide with
+# math command names like \chi, \varepsilon, so we deliberately skip those.
+_ACCENT_RE = re.compile(r"""\\(["'`^~])\{?([A-Za-z])\}?""")
+
+
+def latex_to_unicode(md: str) -> str:
+    """Flatten inline `$...$` LaTeX to readable Unicode for Substack.
+
+    Substack exposes no math node through python-substack, so left alone the TeX
+    shows up raw (``$K_L\\to\\mu\\mu$``). pylatexenc turns the body of each span
+    into Unicode (Greek letters, →, √, accents…), then we lift digit/charge
+    superscripts (``B^+`` → ``B⁺``, ``m^2`` → ``m²``) that pylatexenc leaves as
+    ``^``. Subscripts stay literal — Unicode has no uppercase subscripts, and
+    ``K_L`` reads fine. Raw accents in author names outside math (``Sch\\"o``)
+    are folded too. If pylatexenc isn't installed we only drop the ``$``
+    delimiters, so the text is still cleaner than raw math.
+    """
+    try:
+        from pylatexenc.latex2text import LatexNodes2Text
+    except ImportError:
+        return INLINE_MATH_RE.sub(lambda m: m.group(1), md)
+
+    converter = LatexNodes2Text(math_mode="text", keep_comments=True)
+
+    def render_math(match: re.Match) -> str:
+        text = converter.latex_to_text(match.group(1)).strip()
+        return _SUPERSCRIPT_RUN_RE.sub(lambda m: m.group(1).translate(_SUPERSCRIPT), text)
+
+    # Math spans first; that clears every in-math backslash, so the accent pass
+    # below only ever sees stray accents in ordinary prose (e.g. author names).
+    md = INLINE_MATH_RE.sub(render_math, md)
+    return _ACCENT_RE.sub(lambda m: converter.latex_to_text("\\" + m.group(1) + m.group(2)), md)
 
 
 def pretty_date(iso: str) -> str:
@@ -136,7 +178,7 @@ def main() -> int:
         title = title or auto_title
         subtitle = subtitle or auto_subtitle
 
-    body = tables_to_lists(post.content.strip())
+    body = tables_to_lists(latex_to_unicode(post.content.strip()))
 
     if args.dry_run:
         print(f"# {title}\n_{subtitle}_\n\n{body}")
