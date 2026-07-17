@@ -24,6 +24,7 @@
     <a href="{{ root|default('') }}archive.html">Back issues</a>
     <a href="{{ root|default('') }}radar.html">Radar</a>
     <a href="{{ root|default('') }}memory.html">Long view</a>
+    {% if site.subscribe_url %}<a class="subscribe" href="{{ site.subscribe_url }}" target="_blank" rel="noopener">Subscribe</a>{% endif %}
   </nav>
 </header>
 <main>
