@@ -1,4 +1,4 @@
-"""Push a digest (or radar / watch post) to Substack as a draft.
+"""Push a digest (or radar / watch / longview post) to Substack as a draft.
 
 Uses the unofficial `python-substack` library, which authenticates with a
 browser *session cookie* — Substack has no official posting API. Supply the
@@ -33,10 +33,15 @@ from pathlib import Path
 
 import frontmatter
 
-from .common import DIGEST_DIR, digest_path, load_config, parse_date
+from .common import DIGEST_DIR, MEMORY_DIR, digest_path, load_config, parse_date
 
 WATCH_DIR = DIGEST_DIR.parent / "watch"
 RADAR_DIR = DIGEST_DIR / "radar"
+# The rolling weekly "Long View" synthesis. Unlike the issue kinds it isn't
+# date-keyed on disk — memory/week.md always holds the current week — and it
+# carries no frontmatter, so its title/date are derived from the content below.
+LONGVIEW_SRC = MEMORY_DIR / "week.md"
+WEEK_ENDING_RE = re.compile(r"Week Ending\s+(\d{4}-\d{2}-\d{2})", re.I)
 
 TABLE_ROW_RE = re.compile(r"^\s*\|(.+)\|\s*$")
 TABLE_SEP_RE = re.compile(r"^\s*\|?[\s:|-]+\|?\s*$")
@@ -122,10 +127,12 @@ def tables_to_lists(md: str) -> str:
 
 
 KIND_DIRS = {"digest": DIGEST_DIR, "radar": RADAR_DIR, "watch": WATCH_DIR}
+# CLI-selectable kinds: the date-keyed issue dirs plus the rolling Long View.
+KINDS = [*KIND_DIRS, "longview"]
 
 
 def load_source(kind: str, date: dt.date) -> tuple[frontmatter.Post, Path]:
-    path = KIND_DIRS[kind] / f"{date.isoformat()}.md"
+    path = LONGVIEW_SRC if kind == "longview" else KIND_DIRS[kind] / f"{date.isoformat()}.md"
     if not path.exists():
         raise FileNotFoundError(path)
     return frontmatter.load(path), path
@@ -140,9 +147,14 @@ def theme_text(theme) -> str:
     return str(theme)
 
 
-def build_title_subtitle(kind: str, post: frontmatter.Post, cfg: dict) -> tuple[str, str]:
-    when = pretty_date(post.get("date") or post.metadata.get("date"))
+def build_title_subtitle(kind: str, post: frontmatter.Post, cfg: dict, date: dt.date) -> tuple[str, str]:
     site_title = cfg["site"]["title"]
+    if kind == "longview":
+        # No frontmatter: read the "week ending" date off the H1, fall back to the run date.
+        m = WEEK_ENDING_RE.search(post.content)
+        iso = m.group(1) if m else date.isoformat()
+        return f"The long view — week ending {pretty_date(iso)}", cfg["site"]["tagline"]
+    when = pretty_date(post.get("date") or post.metadata.get("date"))
     if kind == "digest":
         themes = [theme_text(t) for t in (post.get("themes", []) or [])]
         return when, " · ".join(themes) if themes else cfg["site"]["tagline"]
@@ -154,7 +166,8 @@ def build_title_subtitle(kind: str, post: frontmatter.Post, cfg: dict) -> tuple[
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today)")
-    ap.add_argument("--kind", choices=list(KIND_DIRS), default="digest", help="which post to send")
+    ap.add_argument("--kind", choices=KINDS, default="digest",
+                    help="which post to send (longview = the rolling weekly synthesis)")
     ap.add_argument("--title", help="override the draft title")
     ap.add_argument("--subtitle", help="override the draft subtitle")
     ap.add_argument("--dry-run", action="store_true", help="print cleaned markdown; no network, no cookie needed")
@@ -174,11 +187,15 @@ def main() -> int:
     title = args.title or None
     subtitle = args.subtitle or None
     if not title or not subtitle:
-        auto_title, auto_subtitle = build_title_subtitle(args.kind, post, cfg)
+        auto_title, auto_subtitle = build_title_subtitle(args.kind, post, cfg, date)
         title = title or auto_title
         subtitle = subtitle or auto_subtitle
 
-    body = tables_to_lists(latex_to_unicode(post.content.strip()))
+    content = post.content.strip()
+    if args.kind == "longview":
+        # Drop the leading "# Rolling Synthesis — …" H1; it's redundant with the draft title.
+        content = re.sub(r"\A#[^\n]*\n+", "", content, count=1)
+    body = tables_to_lists(latex_to_unicode(content))
 
     if args.dry_run:
         print(f"# {title}\n_{subtitle}_\n\n{body}")

@@ -1,0 +1,64 @@
+name: Refresh Long View
+
+# Manually regenerate a rolling-memory tier (week / month / season / year) and
+# rebuild the site from it. Runs the same code path as the nightly digest's
+# memory step, so it uses the production provider + Batches API from config.yaml
+# (Opus at 50% token cost). Use it to re-synthesize a tier after a prompt/config
+# change — e.g. bumping memory.max_output_tokens after a truncated week.
+on:
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Which tier to re-synthesize"
+        type: choice
+        default: week
+        options: [week, month, season, year]
+      date:
+        description: "Period-end date YYYY-MM-DD (default: today)"
+        required: false
+
+permissions:
+  contents: write
+
+# Serialize with the nightly digest so the two never race on a push to main.
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  memory:
+    runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Re-synthesize memory tier
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
+          python -m pipeline.memory --tier ${{ inputs.tier }} $DATE_ARG
+
+      - name: Build site
+        run: python -m pipeline.build_site
+
+      - name: Commit results
+        run: |
+          git config user.name "The Cross Section bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No memory changes to commit."
+          else
+            git commit -m "memory: refresh ${{ inputs.tier }}"
+            git pull --rebase origin main
+            git push
+          fi

@@ -52,7 +52,9 @@ memory:
   # Rolling synthesis tiers. Academic-year seasons: Autumn (Sep–Jan),
   # Spring (Feb–Apr), Summer (May–Aug). Year rolls on Sep 1.
   week_lookback_days: 7
-  max_output_tokens: 3000
+  # Matches the digest cap: the week synthesis is dense, token-expensive physics
+  # Unicode, and the old 3000 cap truncated it mid-bullet (2026-07-17).
+  max_output_tokens: 8000
 
 radar:
   # Weekly INSPIRE-HEP sweep for highly-cited recent papers we didn't deep-dive.

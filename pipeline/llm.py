@@ -42,6 +42,12 @@ class AnthropicBackend:
             msg = stream.get_final_message()
         if msg.stop_reason == "refusal":
             raise RuntimeError(f"model refused: {msg.stop_details}")
+        if msg.stop_reason == "max_tokens":
+            print(
+                f"[llm] warning: output hit max_tokens ({max_tokens}) — response "
+                f"truncated; raise the stage's max_output_tokens in config.yaml",
+                file=sys.stderr,
+            )
         text = "".join(b.text for b in msg.content if b.type == "text")
         return text, msg.usage.input_tokens, msg.usage.output_tokens
 
@@ -101,6 +107,13 @@ class AnthropicBackend:
             msg = r.result.message
             if msg.stop_reason == "refusal":
                 raise RuntimeError(f"model refused ({r.custom_id}): {msg.stop_details}")
+            if msg.stop_reason == "max_tokens":
+                print(
+                    f"[llm] warning: {r.custom_id} hit max_tokens "
+                    f"({jobs[r.custom_id][2]}) — response truncated; raise the "
+                    f"stage's max_output_tokens in config.yaml",
+                    file=sys.stderr,
+                )
             text = "".join(b.text for b in msg.content if b.type == "text")
             out[r.custom_id] = (text, msg.usage.input_tokens, msg.usage.output_tokens)
 

@@ -79,6 +79,12 @@ jobs:
             git push
             echo "committed=true" >> "$GITHUB_OUTPUT"
             echo "date=$DIGEST_DATE" >> "$GITHUB_OUTPUT"
+            # Friday is the week's last posting day (no weekend arXiv), so the
+            # rolling Long View is now final for the week — flag it for the
+            # weekend Substack post. Real cron Fridays only, not date backfills.
+            if [ "$(date -u +%u)" = "5" ] && [ -z "${{ inputs.date }}" ]; then
+              echo "friday=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       # Mirror today's digest to Substack as a DRAFT for review. Never publishes
@@ -126,6 +132,54 @@ jobs:
 
             • Or from a local checkout:
               python -m pipeline.substack --date ${{ steps.commit.outputs.date }} --publish
+
+            Review the draft in Substack's editor first, then publish.
+
+            — The Cross Section bot
+
+      # Fridays only: the week's Long View is now final. Draft it to Substack as
+      # a review-only draft, mirroring the daily-digest draft above. Skips
+      # quietly without a cookie; continue-on-error keeps a stale cookie from
+      # failing the committed run.
+      - name: Draft the Long View to Substack (Fridays)
+        if: steps.commit.outputs.friday == 'true'
+        continue-on-error: true
+        env:
+          SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
+          SUBSTACK_PUBLICATION_URL: ${{ secrets.SUBSTACK_PUBLICATION_URL }}
+        run: |
+          if [ -z "$SUBSTACK_COOKIES" ]; then
+            echo "SUBSTACK_COOKIES not set — skipping Long View draft."
+            exit 0
+          fi
+          python -m pipeline.substack --kind longview
+
+      # Fridays only: nudge to publish the Long View over the weekend, when
+      # there's no daily digest to post. Same SMTP self-skip as the digest one.
+      - name: Email a Long View reminder (Fridays)
+        if: steps.commit.outputs.friday == 'true' && env.MAIL_USERNAME != ''
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: ${{ secrets.MAIL_PORT || 465 }}
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: The Cross Section <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "The Cross Section — this week's Long View is ready (${{ steps.commit.outputs.date }})"
+          body: |
+            This week's Long View (the rolling weekly synthesis) is now final and
+            drafted to Substack — a good weekend post for the days with no daily digest.
+
+            To publish it (and email subscribers), do either:
+
+            • Run the "Post to Substack" workflow with kind = longview, publish = true:
+              https://github.com/${{ github.repository }}/actions/workflows/substack.yml
+
+            • Or from a local checkout:
+              python -m pipeline.substack --kind longview --publish
 
             Review the draft in Substack's editor first, then publish.
 
