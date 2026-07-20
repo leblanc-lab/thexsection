@@ -39,7 +39,10 @@ digest:
   daily_lookback: 7
   # Hard cap on assembled prompt tokens; abstracts are truncated (not dropped) beyond it.
   max_input_tokens: 400000
-  max_output_tokens: 8000
+  # Adaptive thinking counts against this, so it is not a prose budget: on
+  # 2026-07-20 thinking consumed the entire 8000 and no text block was emitted.
+  # The digest itself targets 400-600 words (~900 tokens); the rest is headroom.
+  max_output_tokens: 10000
 
 deep_dive:
   # Number of standout papers to expand via their arXiv HTML rendering. 0 disables.

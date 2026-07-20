@@ -18,6 +18,9 @@ class LLMResult:
     input_tokens: int
     output_tokens: int
     cost: float
+    # True when the response hit max_tokens. Callers that can still use a
+    # partial answer should degrade rather than discard it.
+    truncated: bool = False
 
 
 class AnthropicBackend:
@@ -30,7 +33,9 @@ class AnthropicBackend:
         self.client = anthropic.Anthropic()
         self.model = model
 
-    def complete(self, system: str, user: str, max_tokens: int) -> tuple[str, int, int]:
+    def complete(
+        self, system: str, user: str, max_tokens: int
+    ) -> tuple[str, int, int, bool]:
         with self.client.messages.stream(
             model=self.model,
             max_tokens=max_tokens,
@@ -42,18 +47,19 @@ class AnthropicBackend:
             msg = stream.get_final_message()
         if msg.stop_reason == "refusal":
             raise RuntimeError(f"model refused: {msg.stop_details}")
-        if msg.stop_reason == "max_tokens":
+        truncated = msg.stop_reason == "max_tokens"
+        if truncated:
             print(
                 f"[llm] warning: output hit max_tokens ({max_tokens}) — response "
                 f"truncated; raise the stage's max_output_tokens in config.yaml",
                 file=sys.stderr,
             )
         text = "".join(b.text for b in msg.content if b.type == "text")
-        return text, msg.usage.input_tokens, msg.usage.output_tokens
+        return text, msg.usage.input_tokens, msg.usage.output_tokens, truncated
 
     def complete_batch(
         self, jobs: dict[str, tuple[str, str, int]], poll_seconds: int = 15
-    ) -> dict[str, tuple[str, int, int]]:
+    ) -> dict[str, tuple[str, int, int, bool]]:
         """Submit one async batch, block until it finishes, return per-job results.
 
         `jobs` maps a caller-chosen id to (system, user, max_tokens); the return
@@ -98,7 +104,7 @@ class AnthropicBackend:
             time.sleep(poll_seconds)
 
         # Results arrive in arbitrary order — key by custom_id, never by position.
-        out: dict[str, tuple[str, int, int]] = {}
+        out: dict[str, tuple[str, int, int, bool]] = {}
         for r in self.client.messages.batches.results(batch.id):
             if r.result.type != "succeeded":
                 raise RuntimeError(
@@ -107,7 +113,8 @@ class AnthropicBackend:
             msg = r.result.message
             if msg.stop_reason == "refusal":
                 raise RuntimeError(f"model refused ({r.custom_id}): {msg.stop_details}")
-            if msg.stop_reason == "max_tokens":
+            truncated = msg.stop_reason == "max_tokens"
+            if truncated:
                 print(
                     f"[llm] warning: {r.custom_id} hit max_tokens "
                     f"({jobs[r.custom_id][2]}) — response truncated; raise the "
@@ -115,7 +122,12 @@ class AnthropicBackend:
                     file=sys.stderr,
                 )
             text = "".join(b.text for b in msg.content if b.type == "text")
-            out[r.custom_id] = (text, msg.usage.input_tokens, msg.usage.output_tokens)
+            out[r.custom_id] = (
+                text,
+                msg.usage.input_tokens,
+                msg.usage.output_tokens,
+                truncated,
+            )
 
         missing = set(jobs) - set(out)
         if missing:
@@ -142,7 +154,9 @@ class GeminiBackend:
         self.client = genai.Client()  # reads GEMINI_API_KEY
         self.model = model
 
-    def complete(self, system: str, user: str, max_tokens: int) -> tuple[str, int, int]:
+    def complete(
+        self, system: str, user: str, max_tokens: int
+    ) -> tuple[str, int, int, bool]:
         from google.genai import types
 
         # Gemini counts internal "thinking" tokens against max_output_tokens,
@@ -155,23 +169,23 @@ class GeminiBackend:
                 max_output_tokens=max(max_tokens * 8, 32000),
             ),
         )
+        truncated = False
         if resp.candidates and str(resp.candidates[0].finish_reason) not in (
             "FinishReason.STOP",
             "STOP",
         ):
-            print(
-                f"[llm] warning: finish_reason={resp.candidates[0].finish_reason}",
-                file=sys.stderr,
-            )
+            finish = str(resp.candidates[0].finish_reason)
+            truncated = finish.endswith("MAX_TOKENS")
+            print(f"[llm] warning: finish_reason={finish}", file=sys.stderr)
         usage = resp.usage_metadata
         out_tokens = (usage.candidates_token_count or 0) + (
             usage.thoughts_token_count or 0
         )
-        return resp.text or "", usage.prompt_token_count or 0, out_tokens
+        return resp.text or "", usage.prompt_token_count or 0, out_tokens, truncated
 
     def complete_batch(
         self, jobs: dict[str, tuple[str, str, int]]
-    ) -> dict[str, tuple[str, int, int]]:
+    ) -> dict[str, tuple[str, int, int, bool]]:
         # No Gemini batch endpoint here — just run the jobs synchronously so the
         # interface matches AnthropicBackend. Keeps the free-tier dev path simple.
         return {
@@ -203,7 +217,12 @@ class LLM:
         self.backend = backend_cls(self.model)
 
     def _finish(
-        self, tokens_in: int, tokens_out: int, text: str, multiplier: float
+        self,
+        tokens_in: int,
+        tokens_out: int,
+        text: str,
+        multiplier: float,
+        truncated: bool = False,
     ) -> LLMResult:
         cost = (tokens_in * self.in_price + tokens_out * self.out_price) / 1e6 * multiplier
         tag = " (batch -50%)" if multiplier < 1 else ""
@@ -212,13 +231,15 @@ class LLM:
             f"{tokens_out} out, ${cost:.4f}{tag}",
             file=sys.stderr,
         )
-        return LLMResult(text, tokens_in, tokens_out, cost)
+        return LLMResult(text, tokens_in, tokens_out, cost, truncated)
 
     def complete(self, system: str, user: str, max_tokens: int) -> LLMResult:
         if self.batch:
             return self.complete_batch({"request": (system, user, max_tokens)})["request"]
-        text, tokens_in, tokens_out = self.backend.complete(system, user, max_tokens)
-        return self._finish(tokens_in, tokens_out, text, 1.0)
+        text, tokens_in, tokens_out, truncated = self.backend.complete(
+            system, user, max_tokens
+        )
+        return self._finish(tokens_in, tokens_out, text, 1.0, truncated)
 
     def complete_batch(
         self, jobs: dict[str, tuple[str, str, int]]
@@ -227,8 +248,8 @@ class LLM:
         raw = self.backend.complete_batch(jobs)
         mult = self.backend.batch_cost_multiplier
         return {
-            cid: self._finish(tokens_in, tokens_out, text, mult)
-            for cid, (text, tokens_in, tokens_out) in raw.items()
+            cid: self._finish(tokens_in, tokens_out, text, mult, truncated)
+            for cid, (text, tokens_in, tokens_out, truncated) in raw.items()
         }
 
     def count_tokens(self, system: str, user: str) -> int:

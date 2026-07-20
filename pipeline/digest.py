@@ -181,6 +181,19 @@ def main() -> int:
     result = llm.complete(system, user, cfg["digest"]["max_output_tokens"])
     post = parse_output(result.text)
 
+    # A truncated digest is still worth publishing — a short issue beats no
+    # issue. An *empty* body is not: it means the model spent the whole budget
+    # on thinking and never emitted text (2026-07-20), and writing it out would
+    # ship a blank page and poison the memory context that reads it back.
+    if not post.content.strip():
+        print(
+            f"error: model returned no digest body ({result.output_tokens} output "
+            f"tokens, truncated={result.truncated}). Nothing written — raise "
+            f"digest.max_output_tokens in config.yaml or simplify the prompt.",
+            file=sys.stderr,
+        )
+        return 1
+
     valid_ids = {p["id"] for p in papers}
     picks = [str(i) for i in post.get("deep_dive_ids", []) if str(i) in valid_ids]
     dropped = len(post.get("deep_dive_ids", [])) - len(picks)
@@ -194,11 +207,16 @@ def main() -> int:
     post["community_ids"] = community
     post["generator"] = f"{llm.provider}/{llm.model}"
     post["cost_usd"] = round(result.cost, 4)
+    if result.truncated:
+        post["truncated"] = True
     post.content = linkify(post.content, valid_ids)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(frontmatter.dumps(post) + "\n")
-    print(f"Wrote {out_path} ({result.output_tokens} tokens, ${result.cost:.4f})")
+    note = " [TRUNCATED]" if result.truncated else ""
+    print(
+        f"Wrote {out_path} ({result.output_tokens} tokens, ${result.cost:.4f}){note}"
+    )
     return 0
 
 
