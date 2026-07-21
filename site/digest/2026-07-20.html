@@ -34,19 +34,44 @@
   <h1 class="issue-date">Monday, July 20, 2026</h1>
   <div class="meta">
     <span class="count">27 papers read</span>
-    
+    <span class="chip">Generative ML learning physics from data</span><span class="chip">Novel dark-matter detection targets</span><span class="chip">Dark energy and primordial non-Gaussianity</span><span class="chip">Scotogenic neutrino-mass model-building</span>
   </div>
-  
+  <h2 id="what-the-data-teaches-without-being-told">What the data teaches without being told</h2>
+<p>A modest-volume day (27 papers) with no collaboration headline, but the center of gravity has shifted from reconstructing physics with ML to <em>learning it</em> — three generative/graph models today extract Standard Model structure, tagger knowledge, and robust tracking straight from data or across experiments. The other real weight is cosmological: Khoury et al.&rsquo;s dark-axion/dark-baryon model (<a href="https://arxiv.org/abs/2607.16191">arXiv:2607.16191</a>) fits DESI DR2 phantom-crossing with Δχ²=−14.48, and two non-Gaussianity papers push the excursion-set and bispectrum machinery into strongly non-Gaussian tails. Underneath, a steady stream of novel dark-matter detection proposals and scotogenic neutrino model-building. A tool-and-idea day rather than a measurement one.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="machine-learning-that-discovers-rather-than-reconstructs">Machine learning that discovers rather than reconstructs</h3>
+<p>The month&rsquo;s ML thread — trigger GNNs, transformer calorimetry, LQCDMaster — takes a conceptual step today. Kato et al.&rsquo;s ShellFlow <a href="https://arxiv.org/abs/2607.16144">arXiv:2607.16144</a> is the standout: a Riemannian flow-matching model trained on ~10⁹ real ATLAS 13 TeV open-data events, given only the on-shell condition and the invariant-mass formula, that recovers the J/ψ, Υ, Z, W and top masses at their PDG values and the leptonic Weinberg angle — none of it a training target. Gao et al.&rsquo;s JetCoRD <a href="https://arxiv.org/abs/2607.15531">arXiv:2607.15531</a> distills ATLAS GN2 and CMS ParT into a single 82k-parameter student that <em>beats</em> both teachers at high-purity working points, notably by building in teacher unreliability. And Reuter et al. <a href="https://arxiv.org/abs/2607.15361">arXiv:2607.15361</a> show a Belle II GNN track finder treats detector ageing as a domain shift — halving the efficiency loss of baseline tracking after retraining.</p>
+<h3 id="novel-dark-matter-detection-targets">Novel dark-matter detection targets</h3>
+<p>A cluster of &ldquo;new target class&rdquo; proposals. Zhang et al. <a href="https://arxiv.org/abs/2607.15338">arXiv:2607.15338</a> propose metallic carbon nanotubes as a 1D Luttinger-liquid plasmon target reaching the keV freeze-in benchmark, with sidereal-day modulation from the aligned geometry. Li et al. <a href="https://arxiv.org/abs/2607.15612">arXiv:2607.15612</a> push chip-scale Rydberg-atom superheterodyne detection of &gt;10 GHz hidden photons 3–4 orders below current limits. And Dev et al. <a href="https://arxiv.org/abs/2607.15368">arXiv:2607.15368</a> turn the collimated muon beam at neutrino facilities into a bremsstrahlung source for HNLs beyond meson-decay kinematic reach at SBND/DUNE. The diversifying-search mood the memory has tracked, now on the detection side.</p>
+<h3 id="dark-energy-and-non-gaussian-cosmology">Dark energy and non-Gaussian cosmology</h3>
+<p>Khoury et al. <a href="https://arxiv.org/abs/2607.16191">arXiv:2607.16191</a> give the day&rsquo;s most consequential cosmology entry — a concrete dark-sector realization of apparent phantom crossing that improves on ΛCDM by Δχ²=−14.48, with an EDE-like injection near equality that is, honestly, too small to move H₀. Natural sequel to the H₀ World Cup&rsquo;s early-dark-energy verdict. On non-Gaussianity, Yang et al. <a href="https://arxiv.org/abs/2607.15337">arXiv:2607.15337</a> forecast folded PNG from the galaxy bispectrum, and Teuscher et al. <a href="https://arxiv.org/abs/2607.16152">arXiv:2607.16152</a> apply large-deviation theory to halo/void abundances beyond perturbative moment expansion. Cembranos et al. <a href="https://arxiv.org/abs/2607.15354">arXiv:2607.15354</a> raise Starobinsky&rsquo;s n_s toward ACT-preferred values via a tunnelling exit — the latest in the running effort to rescue Starobinsky from ACT data.</p>
+<h3 id="scotogenic-neutrino-masses">Scotogenic neutrino masses</h3>
+<p>Two minimal-model entries: Rizzo <a href="https://arxiv.org/abs/2607.15965">arXiv:2607.15965</a> generates ~0.05 eV Dirac masses at one loop from E₆-like portal matter, and Peinado et al. <a href="https://arxiv.org/abs/2607.16049">arXiv:2607.16049</a> find D₄ the smallest flavor symmetry unifying seesaw-scotogenic masses with a 50–200 GeV dark-matter candidate.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.16144">arXiv:2607.16144</a></strong> — ShellFlow learns W, top, Z masses and the Weinberg angle from raw ATLAS open data with only two physics priors; a genuinely surprising demonstration.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.16191">arXiv:2607.16191</a></strong> — Khoury et al.&rsquo;s dark-axion/dark-baryon model fits DESI phantom crossing at Δχ²=−14.48; the concrete particle realization the DESI-anomaly literature needed.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.15338">arXiv:2607.15338</a></strong> — Carbon nanotubes as a 1D plasmon target reaching the keV freeze-in benchmark, with a built-in directional handle.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.15392">arXiv:2607.15392</a></strong> — Solar-system p-nuclide abundances (Mo, Ru, ⁹²Nb) as a fossil signature of fast collective neutrino oscillations in supernovae; an unexpected observational handle on an elusive phenomenon.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.15531">arXiv:2607.15531</a></strong> — First cross-experiment tagger distillation in HEP, with a reliability signal that lets the 82k-param student beat its ATLAS and CMS teachers.</li>
+</ul>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.15985">arXiv:2607.15985</a></strong> <em>Gluon Saturation</em> — Mueller (hep-ph) — a review from the field&rsquo;s originator; occupancies capped at (1/α)^{3/2} once Sudakov effects enter.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.15927">arXiv:2607.15927</a></strong> <em>Operation and performance of ProtoDUNE Dual Phase</em> — DUNE Collaboration (physics.ins-det) — candid post-mortem on the CRP/LEM problems that reshaped the Vertical Drift design.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.16041">arXiv:2607.16041</a></strong> <em>P_c(4312/4440/4457) productions in e⁺e⁻</em> — Guo et al. (hep-ph) — predicts a resolvable Pc(4440)/Pc(4457) splitting in the J/ψp spectrum at √s=6 GeV.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.16182">arXiv:2607.16182</a></strong> <em>Geometric scaling in elastic pp collisions</em> — Praszałowicz (hep-ph) — the ISR-era bump/dip ratio holds constant from 23 GeV to 13 TeV.</li>
+</ul>
 </article>
 <nav class="pager">
   <a class="prev" href="2026-07-17.html">&larr; Friday, July 17, 2026</a>
-  
+  <a class="next" href="2026-07-21.html">Tuesday, July 21, 2026 &rarr;</a>
 </nav>
 
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-07-20 06:18 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-07-21 06:13 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
