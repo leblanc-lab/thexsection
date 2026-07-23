@@ -1,43 +1,44 @@
-# Rolling Synthesis — Week Ending 2026-07-22
+# The Cross Section — Week Ending 2026-07-23
 
-A week without a single dominant bombshell, but with clear tidal patterns. Flavor precision — especially rare kaons — was the strongest through-line, culminating in NA62's golden-mode measurement and its immediate phenomenological sequel. Cosmology consolidated around a refereed verdict on the Hubble tension and its dark-energy fallout. Two methodological currents kept building: dark-matter searches diversified aggressively on the *detection* side (with real limits now attached), and machine learning shifted from reconstructing physics to *discovering* it. Underneath ran a persistent, systematics-obsessed conversation about first-order phase transitions and their gravitational-wave signatures, plus a quiet vindication of the data-preservation ethos.
+This week ran on method more than discovery: the field spent it building tools, sharpening systematics, and squeezing precision out of hard channels. Two experimental turning points bookended it — NA62's golden-mode kaon measurement (mid-week) and a pair of polarization results from ATLAS and BESIII (Thursday) — while the connective tissue was a steady diet of dark-matter detection proposals, first-order-transition/GW modeling, and a maturing machine-learning thread that has shifted from reconstructing physics to *learning* it. Detector hardware reasserted itself twice, and the UHE-neutrino anomaly finally got a number.
 
-## Running Themes
+## Running themes
 
-**Rare kaons & flavor precision (heating).** Opened the week broad — a structural CKM blind spot exposed by Dery ([arXiv:2607.13136](https://arxiv.org/abs/2607.13136), with $\varepsilon_K$ as leading probe), QED-corrected $B\to\tau\nu$ ([arXiv:2607.13144](https://arxiv.org/abs/2607.13144)), and lattice $K_L\to\mu\mu$ work — then sharpened to a point with NA62's $K^+\to\pi^+\nu\bar\nu$ result ([arXiv:2607.16413](https://arxiv.org/abs/2607.16413)) and Blanke et al.'s KOTO II sequel ([arXiv:2607.19055](https://arxiv.org/abs/2607.19055)). The mood is precision-as-new-physics-reach, not bump-hunting.
+**ML that discovers, not just reconstructs — heating.** The month's ML thread took a conceptual leap. After LQCDMaster's agentic lattice workflows ([arXiv:2607.15001](https://arxiv.org/abs/2607.15001), Jul 17), ShellFlow ([arXiv:2607.16144](https://arxiv.org/abs/2607.16144), Jul 20) recovered W/Z/top masses and the Weinberg angle from raw ATLAS open data with only two physics priors; JetCoRD ([arXiv:2607.15531](https://arxiv.org/abs/2607.15531)) achieved the first cross-experiment tagger distillation; and SymbolFit ([arXiv:2607.19750](https://arxiv.org/abs/2607.19750), Jul 23) rediscovered published dijet fit functions via symbolic regression. The trajectory is toward models that extract structure autonomously.
 
-**Dark-matter detection diversification (heating).** All week, new target classes and thresholds: carbon-nanotube plasmon targets ([arXiv:2607.15338](https://arxiv.org/abs/2607.15338)), Rydberg-atom hidden-photon detection, the "Earth transducer" review ([arXiv:2607.16342](https://arxiv.org/abs/2607.16342)), and — by week's end — actual limits from QUALIPHIDE's 13 meV MKID array ([arXiv:2607.19319](https://arxiv.org/abs/2607.19319)) and RES-NOVA. Earlier in the week the mood was exclusionary (strongest DM–neutrino scattering bound, [arXiv:2607.15020](https://arxiv.org/abs/2607.15020)).
+**Dark-matter detection diversification — steady, now with limits attached.** A month-long "new target class" mood matured from proposals into bounds. Early-week exclusions (DM–neutrino scattering, [arXiv:2607.15020](https://arxiv.org/abs/2607.15020); N-naturalness tower, [arXiv:2607.14243](https://arxiv.org/abs/2607.14243)) gave way to novel targets (carbon-nanotube plasmons [arXiv:2607.15338](https://arxiv.org/abs/2607.15338); Rydberg-atom hidden-photon detection [arXiv:2607.15368](https://arxiv.org/abs/2607.15368)) and finally to QUALIPHIDE's 13 meV MKID array ([arXiv:2607.19319](https://arxiv.org/abs/2607.19319), Jul 22) setting the strongest hidden-photon limits in its band. The Earth-as-transducer review ([arXiv:2607.16342](https://arxiv.org/abs/2607.16342)) anchors the ultralight end.
 
-**Phase transitions & GW backgrounds (steady, systematics-driven).** A recurring drumbeat that the GW "signal" hinges on poorly controlled non-equilibrium inputs: wall-friction thermal masses ([arXiv:2607.14867](https://arxiv.org/abs/2607.14867)), LISA cosmic-string reach degraded 10⁵× by foregrounds ([arXiv:2607.15219](https://arxiv.org/abs/2607.15219)), fluid-ansatz vs. WallGo ([arXiv:2607.18207](https://arxiv.org/abs/2607.18207)), daisy-resummation error swamping LISA reconstruction ([arXiv:2607.18233](https://arxiv.org/abs/2607.18233)). Late-week shifted toward domain-wall model-building.
+**Phase transitions & GW backgrounds — steady, systematics-dominated.** The recurring message: GW "signals" hinge on poorly controlled non-equilibrium inputs. Wall-friction thermal-mass treatment ([arXiv:2607.14867](https://arxiv.org/abs/2607.14867)), cosmic-string reach degraded 10⁵× by foregrounds ([arXiv:2607.15219](https://arxiv.org/abs/2607.15219)), the fluid-ansatz-vs-WallGo discrepancy ([arXiv:2607.18207](https://arxiv.org/abs/2607.18207)), and the daisy-resummation verdict for supercooled transitions ([arXiv:2607.18233](https://arxiv.org/abs/2607.18233)) all sharpen the microphysics-to-spectrum map rather than deliver signals. Late week added model-building (domain walls, stasis) atop the systematics drumbeat.
 
-**ML that discovers, not reconstructs (heating).** From LQCDMaster's agentic lattice workflows ([arXiv:2607.15001](https://arxiv.org/abs/2607.15001)) to the conceptual leap of ShellFlow learning W/Z/top masses and the Weinberg angle from raw ATLAS open data ([arXiv:2607.16144](https://arxiv.org/abs/2607.16144)) and cross-experiment tagger distillation ([arXiv:2607.15531](https://arxiv.org/abs/2607.15531)).
+**Hadron spectroscopy & QCD structure — steady.** Heavy-flavor spectroscopy consolidated around LHCb's recent Σ_c states (HQET sum rules, [arXiv:2607.17923](https://arxiv.org/abs/2607.17923)), the Tcc pole re-examined with proper left-hand-cut treatment ([arXiv:2607.19009](https://arxiv.org/abs/2607.19009)), and glueball claims: N_f=1 lattice mixing ([arXiv:2607.17294](https://arxiv.org/abs/2607.17294), Jul 21) and BESIII's X(2370)-as-lightest-0⁻⁺-glueball argument ([arXiv:2607.20366](https://arxiv.org/abs/2607.20366), Jul 23). The EIC-facing structure program (proton gluon-cloud shape, [arXiv:2607.14955](https://arxiv.org/abs/2607.14955)) ran strong early, fading by week's end to lattice gravitational form factors ([arXiv:2607.20337](https://arxiv.org/abs/2607.20337)).
 
-**Quantum information at colliders (steady).** Consolidating from novelty into working vocabulary — spin/entanglement as ordinary observables in $\tau\tau\gamma$, $Z'$-mediated $t\bar t$, and closing the week with entanglement entropy in DIS against H1 data ([arXiv:2607.18464](https://arxiv.org/abs/2607.18464)).
+**Quantum information at colliders — steady.** Now ordinary vocabulary: three collider entanglement papers Jul 17 ([arXiv:2607.15153](https://arxiv.org/abs/2607.15153), [arXiv:2607.14558](https://arxiv.org/abs/2607.14558)), and DIS entanglement entropy against H1 data ([arXiv:2607.18464](https://arxiv.org/abs/2607.18464), Jul 22).
 
-**Heavy-flavor spectroscopy (steady).** Ongoing consolidation: sum-rule assignments linking $\Xi_c/\Omega_c$ to new $\Sigma_c$ states ([arXiv:2607.17923](https://arxiv.org/abs/2607.17923)), and $T_{cc}^+$ revisited on the lattice with pion exchange handled correctly ([arXiv:2607.19009](https://arxiv.org/abs/2607.19009)).
+## Turning points
 
-## Turning Points
+- **NA62's K⁺→π⁺νν̄ at 20% precision, SM-consistent ([arXiv:2607.16413](https://arxiv.org/abs/2607.16413), Jul 21)** — immediately spawned the Blanke et al. phenomenology sequel ([arXiv:2607.19055](https://arxiv.org/abs/2607.19055)) mapping what room remains for KOTO II's K_L→π⁰νν̄ (tenfold enhancement still allowed with new phases + right-handed current).
+- **COMPASS/JPAC first high-energy observation of an exotic Reggeon ([arXiv:2607.17850](https://arxiv.org/abs/2607.17850), Jul 21)**, >5σ, tied to π₁(1600) — a production-side foothold for the spin-exotic program.
+- **UHE-neutrino anomaly quantified ([arXiv:2607.19487](https://arxiv.org/abs/2607.19487), Jul 23)** — joint ANITA-IV/KM3NeT/IceCube fit puts diffuse-flux tension at 7.5σ, rare transients at 5.9σ, hardening the KM3-230213A puzzle.
+- **ATLAS longitudinal-Z in WZjj-EW at 4.0σ ([arXiv:2607.20246](https://arxiv.org/abs/2607.20246), Jul 23)** — direct sequel to the July 15 ZZ polarization milestone; the EWSB polarization program is now a genuine thread.
+- **BESIII's secondary-scattering polarimetry ([arXiv:2607.19927](https://arxiv.org/abs/2607.19927) / [arXiv:2607.19948](https://arxiv.org/abs/2607.19948), Jul 23)** — turns a general spectrometer into a large-acceptance polarimeter; method with broad reuse value.
 
-- **The H₀ World Cup** ([arXiv:2607.13282](https://arxiv.org/abs/2607.13282), [arXiv:2607.13283](https://arxiv.org/abs/2607.13283)) delivered a refereed verdict — early dark energy and early modified gravity win, cutting the SH0ES discrepancy to ~2.5–3.6σ. Khoury et al.'s dark-axion/dark-baryon model ([arXiv:2607.16191](https://arxiv.org/abs/2607.16191)) then supplied a concrete DESI phantom-crossing realization (Δχ²=−14.48), though too weak to move H₀.
-- **NA62's golden-mode number** ([arXiv:2607.16413](https://arxiv.org/abs/2607.16413)) at 20% precision, SM-consistent — now the reference value, immediately reframing the KOTO II discovery space.
-- **COMPASS/JPAC's first exotic Reggeon** (>5σ, [arXiv:2607.17850](https://arxiv.org/abs/2607.17850)) gave the spin-exotic $\pi_1(1600)$ program a production-side foothold.
-- **N-naturalness GUT benchmark excluded** ([arXiv:2607.14243](https://arxiv.org/abs/2607.14243)) — first experimental test kills the framework's tidy selling point.
+## Open questions
 
-## Open Questions
+- **UHE-neutrino tension** — 7.5σ for diffuse flux, unresolved by any standard population; watch for exotic-source or systematics follow-ups.
+- **KOTO II room** — how much K_L→π⁰νν̄ enhancement survives the SM-consistent K⁺ result.
+- **Phase-transition systematics** — daisy-resummation error swamps LISA reconstruction for supercooled models; can the universe even be matter-dominated post-transition ([arXiv:2607.19469](https://arxiv.org/abs/2607.19469) says not immediately)?
+- **Glueball identity** — is X(2370) truly the lightest 0⁻⁺ glueball? Cross-check against the N_f=1 mixing result.
+- **Tcc pole character** — pion-exchange treatment turns the pole complex; predicted to move toward the real axis at physical mₚᵢ.
+- **Neutrino energy reconstruction** — interaction-model-dependent calorimetric bias ([arXiv:2607.20419](https://arxiv.org/abs/2607.20419)) adds to the ongoing generator-spread anxiety.
 
-- How much room remains for $K_L\to\pi^0\nu\bar\nu$ enhancement (tenfold, per Blanke) given SM-like $K^+$ and $\varepsilon_K$? A live watch for KOTO II.
-- The Belle II $B^+\to K^+\nu\nu$ excess still lacks a clean explanation absent a light right-handed neutrino ([arXiv:2607.13142](https://arxiv.org/abs/2607.13142)).
-- Whether GW-based cosmology can survive its systematics — wall velocities, resummation schemes, and astrophysical foregrounds keep degrading reach.
-- Residual H₀ tension (2.5–3.6σ) persists even with the winning EDE scenarios.
-- Can gravitational-wave polarimetry actually discriminate among gauge gravities? (July 16 coalescence — [arXiv:2607.13146](https://arxiv.org/abs/2607.13146) et al. — has not yet recurred; watch whether it builds.)
+## Recurring references
 
-## Recurring References
-
-- [arXiv:2607.13282](https://arxiv.org/abs/2607.13282) / [arXiv:2607.13283](https://arxiv.org/abs/2607.13283) — H₀ World Cup; the tension bake-off future work will cite.
-- [arXiv:2607.16413](https://arxiv.org/abs/2607.16413) — NA62 golden mode.
-- [arXiv:2607.19055](https://arxiv.org/abs/2607.19055) — Blanke KOTO II sequel.
-- [arXiv:2607.16191](https://arxiv.org/abs/2607.16191) — Khoury dark-energy realization.
-- [arXiv:2607.13136](https://arxiv.org/abs/2607.13136) — CKM $b$-column blind spot.
-- [arXiv:2607.16144](https://arxiv.org/abs/2607.16144) — ShellFlow.
-- [arXiv:2607.17850](https://arxiv.org/abs/2607.17850) — First exotic Reggeon.
-- [arXiv:2607.15020](https://arxiv.org/abs/2607.15020) — Strongest DM–neutrino scattering bound.
+- [arXiv:2607.16413](https://arxiv.org/abs/2607.16413) — NA62 golden mode (anchor for kaon thread)
+- [arXiv:2607.19055](https://arxiv.org/abs/2607.19055) — Blanke et al. KOTO II sequel
+- [arXiv:2607.16144](https://arxiv.org/abs/2607.16144) — ShellFlow (ML-discovery anchor)
+- [arXiv:2607.15020](https://arxiv.org/abs/2607.15020) — strongest DM–neutrino bound
+- [arXiv:2607.14243](https://arxiv.org/abs/2607.14243) — N-naturalness tower exclusion
+- [arXiv:2607.18233](https://arxiv.org/abs/2607.18233) — daisy-resummation/LISA systematics
+- [arXiv:2607.19487](https://arxiv.org/abs/2607.19487) — UHE-neutrino tension quantified
+- [arXiv:2607.20246](https://arxiv.org/abs/2607.20246) — ATLAS WZjj longitudinal-Z
+- [arXiv:2607.17850](https://arxiv.org/abs/2607.17850) — COMPASS exotic Reggeon
