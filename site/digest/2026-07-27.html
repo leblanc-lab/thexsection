@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday, July 27, 2026 — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Monday, July 27, 2026</h1>
+  <div class="meta">
+    <span class="count">32 papers read</span>
+    <span class="chip">AI agents driving analysis</span><span class="chip">Lattice precision milestones</span><span class="chip">EFT recasts of LHC searches</span><span class="chip">Topological defects and gravitational waves</span>
+  </div>
+  <h2 id="lattice-precision-and-code-that-writes-itself">Lattice precision, and code that writes itself</h2>
+<p>Two currents carry the day. The first is precision lattice: Boyle et al. <a href="https://arxiv.org/abs/2607.22358">arXiv:2607.22358</a> deliver the first lattice QCD+QED calculation of the structure-dependent radiative correction to the <span class="arithmatex">\(\pi\)</span> and <span class="arithmatex">\(K\)</span> lepton-universality ratios <span class="arithmatex">\(R_{e/\mu}\)</span> — the exact input PIONEER and NA62 need to interpret their measurements. The second is the automation thread the memory has tracked since LQCDMaster: two more papers hand LLM agents the keyboard, this time for amplitude computation and full SMEFT collider pipelines. Around them, ATLAS reports evidence for boosted <span class="arithmatex">\(H\to\tau\tau\)</span> (<a href="https://arxiv.org/abs/2607.22193">arXiv:2607.22193</a>) and Auger sharpens the muon puzzle into a concrete demand on hadronic interactions (<a href="https://arxiv.org/abs/2607.22323">arXiv:2607.22323</a>).</p>
+<h2 id="themes">Themes</h2>
+<h3 id="agents-at-the-console">Agents at the console</h3>
+<p>Gu et al. <a href="https://arxiv.org/abs/2607.21629">arXiv:2607.21629</a> treat scattering amplitudes as programs and let coding agents search over analytic representations, reporting an 805× speed-up on a scored grid and matrix-element engines that close the gap to compiled MadGraph. Guo et al.&rsquo;s SMEFT-Pheno-Agent <a href="https://arxiv.org/abs/2607.22331">arXiv:2607.22331</a> wraps the whole MadGraph/Pythia/Delphes chain in a natural-language agent with locked configs and audit manifests. This is the next step past LQCDMaster (July 17): agents no longer just checking work but orchestrating it, with reproducibility as the explicit selling point. Dax et al.&rsquo;s SBI review <a href="https://arxiv.org/abs/2607.21702">arXiv:2607.21702</a> and the LHCb topological-trigger decorrelation study <a href="https://arxiv.org/abs/2607.22281">arXiv:2607.22281</a> round out the ML end.</p>
+<h3 id="lattice-precision-from-lfu-to-the-thermal-medium">Lattice precision, from LFU to the thermal medium</h3>
+<p>Beyond Boyle et al.&rsquo;s <span class="arithmatex">\(R_{e/\mu}\)</span>, the lattice cluster spans the QGP: Bala et al. <a href="https://arxiv.org/abs/2607.21729">arXiv:2607.21729</a> extract non-perturbatively, for the first time, the imaginary part of the spin-dependent heavy-quark potential — different for pseudoscalar vs. vector charmonium. Hoffmann et al. <a href="https://arxiv.org/abs/2607.22346">arXiv:2607.22346</a> build a finite-temperature quantization condition for two-particle scattering via thermoparticles. Separately, Mendizabal Morentin et al. <a href="https://arxiv.org/abs/2607.22390">arXiv:2607.22390</a> fit top mass, <span class="arithmatex">\(\alpha_s\)</span>, the weak mixing angle and PDFs simultaneously in xFitter — a global-interpretation template.</p>
+<h3 id="eft-recasts-as-the-default-language">EFT recasts as the default language</h3>
+<p>Two more weak-scale searches get read through EFT, as the memory flagged this becoming standard. Duarte et al. <a href="https://arxiv.org/abs/2607.21711">arXiv:2607.21711</a> recast a CMS same-sign-dimuon heavy-neutrino search into the first exclusion limits on the agnostic <span class="arithmatex">\(\nu\)</span>SMEFT parameter space. Brivio et al. <a href="https://arxiv.org/abs/2607.21712">arXiv:2607.21712</a> study ALP pair production, including the previously unanalyzed non-resonant <span class="arithmatex">\(gg\to aa\)</span> four-photon channel, and reinterpret an ATLAS Higgs-resonant search in three-parameter space.</p>
+<h3 id="topological-defects-and-their-waves">Topological defects and their waves</h3>
+<p>Yamada <a href="https://arxiv.org/abs/2607.21701">arXiv:2607.21701</a> simulates global <span class="arithmatex">\(\mathbb{Z}_N\)</span> string networks with baryon-vertex junctions, finding scaling (not frustration) and <span class="arithmatex">\(\Omega_{\rm GW}\propto\mu^2(N^2-1)^2\)</span> for <span class="arithmatex">\(N\lesssim8\)</span>. Kanda et al. <a href="https://arxiv.org/abs/2607.22481">arXiv:2607.22481</a> show global-monopole annihilation emits Nambu-Goldstone bosons peaking at horizon scale, with a pNG dark-matter estimate. A quiet continuation of the defect-network thread that has run through July.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.22358">arXiv:2607.22358</a></strong> — First lattice QCD+QED SD correction to <span class="arithmatex">\(R_{e/\mu}\)</span> for <span class="arithmatex">\(\pi\)</span> and <span class="arithmatex">\(K\)</span>; the SM benchmark PIONEER/NA62 will quote.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.22193">arXiv:2607.22193</a></strong> — ATLAS evidence (3.8σ) for boosted <span class="arithmatex">\(H\to\tau\tau\)</span> above 300 GeV, with dedicated di-<span class="arithmatex">\(\tau\)</span> reconstruction.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.21629">arXiv:2607.21629</a></strong> — Amplitude optimization as self-evolving program search; 805× speed-ups and a genuinely new take on generator internals.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.22323">arXiv:2607.22323</a></strong> — Auger maps its <span class="arithmatex">\(X_{\max}\)</span> deficit at <span class="arithmatex">\(\sqrt{s}\simeq100\)</span> TeV onto a demanded 2.8–4.6× amplification of hadronic energy fraction — the muon puzzle, quantified.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.22390">arXiv:2607.22390</a></strong> — First simultaneous NNLO fit of PDFs, top mass, <span class="arithmatex">\(\alpha_s\)</span> and the weak mixing angle, with SMEFT operators — a global-interpretation blueprint.</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<p>Scomparin&rsquo;s overview of the CERN SPS fixed-target future <a href="https://arxiv.org/abs/2607.22328">arXiv:2607.22328</a> lays out the NA61 and newly approved NA60+/DiCE program for finite-<span class="arithmatex">\(\mu_B\)</span> QGP studies — a facility-roadmap contribution amid the ongoing strategy discussions.</p>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.22102">arXiv:2607.22102</a></strong> <em>Updated E141 constraints on a long-lived <span class="arithmatex">\(X_{17}\)</span> vector boson</em> — Celentano et al. (hep-ph) — a refined recast that tightens the tension with ATOMKI&rsquo;s preliminary lifetime.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.22497">arXiv:2607.22497</a></strong> <em>Dilatonic states, phase transitions, and criticality in holography</em> — Elander et al. (hep-th) — first holographic examples of a parametrically light dilaton near a critical point.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.22507">arXiv:2607.22507</a></strong> <em>Born cross section for <span class="arithmatex">\(e^+e^-\to K_S^0\bar\Xi^+\Sigma^-\)</span></em> — BESIII (hep-ex) — no charmonium-like signal; isospin ratio ≈1.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv260722358-first-lattice-qcd-determination-of-lepton-flavor-universality-ratios-in-light-meson-leptonic-decays-peter-boyle-et-al"><a href="https://arxiv.org/abs/2607.22358">arXiv:2607.22358</a> — First Lattice QCD Determination of Lepton-Flavor-Universality Ratios in Light-Meson Leptonic Decays (Peter Boyle et al.)</h3>
+<p><em>(abstract only)</em> Boyle et al. deliver the first lattice QCD+QED calculation of the structure-dependent (SD) radiative correction to <span class="arithmatex">\(R_{e/\mu}\)</span> — the electron-to-muon leptonic-width ratio — for both <span class="arithmatex">\(\pi\)</span> and <span class="arithmatex">\(K\)</span>, working at the physical pion mass and in the continuum limit. Using the infinite-volume reconstruction method with Coulomb-gauge photons to suppress statistical noise and finite-volume effects, they obtain SM predictions <span class="arithmatex">\(R_{e/\mu}^\pi = 1.23501(10)\times10^{-4}\)</span> and <span class="arithmatex">\(R_{e/\mu}^K = 2.47653(34)\times10^{-5}\)</span> — sub-permille precision on the previously dominant hadronic uncertainty.</p>
+<p>Why it matters: <span class="arithmatex">\(R_{e/\mu}\)</span> is a benchmark LFU test, and the <span class="arithmatex">\(O(0.1\%)\)</span> SD correction was the limiting theory input as PIONEER and NA62 push toward matching precision. This calculation supplies exactly that ingredient from first principles, replacing model-dependent estimates. It is the SM number those experiments will now quote against. As an abstract-only entry, the systematic budget of the continuum/QED extrapolations isn&rsquo;t visible here, but the quoted errors already sit well below current experimental sensitivity.</p>
+<h3 id="arxiv260722193-boosted-htotautau-cross-section-measurements-with-atlas-atlas-collaboration"><a href="https://arxiv.org/abs/2607.22193">arXiv:2607.22193</a> — Boosted <span class="arithmatex">\(H\to\tau\tau\)</span> cross-section measurements with ATLAS (ATLAS Collaboration)</h3>
+<p><em>(abstract only)</em> ATLAS reports evidence for Higgs production at <span class="arithmatex">\(p_T^H &gt; 300\)</span> GeV in the di-hadronic-<span class="arithmatex">\(\tau\)</span> final state, combining full Run 2 (140 fb<span class="arithmatex">\(^{-1}\)</span>, 13 TeV) with a partial Run 3 sample (162 fb<span class="arithmatex">\(^{-1}\)</span>, 13.6 TeV). Standard hadronic-<span class="arithmatex">\(\tau\)</span> reconstruction loses efficiency when the two <span class="arithmatex">\(\tau\)</span>s collapse into a single large-radius jet, so the analysis deploys dedicated boosted di-<span class="arithmatex">\(\tau\)</span> reconstruction and identification plus multivariate discriminants. The inclusive boosted measurement reaches observed (expected) significance of 3.8 (3.3)σ — evidence-level.</p>
+<p>Why it matters: this extends <span class="arithmatex">\(H\to\tau\tau\)</span> sensitivity into a high-<span class="arithmatex">\(p_T\)</span> regime that probes the Higgs coupling structure and is sensitive to BSM contributions that grow with momentum transfer. Results are cast in the simplified-template-cross-section framework, with differential <span class="arithmatex">\(p_T^H\)</span> measurements for gluon fusion and an inclusive VBF cross section — directly usable for EFT interpretation. The observed significance modestly exceeds expectation, consistent with SM within the still-limited boosted statistics.</p>
+<h3 id="arxiv260721629-scattering-amplitudes-as-programs-self-evolving-search-for-theory-and-event-generation-yi-gu-et-al"><a href="https://arxiv.org/abs/2607.21629">arXiv:2607.21629</a> — Scattering Amplitudes as Programs: Self-Evolving Search for Theory and Event Generation (Yi Gu et al.)</h3>
+<p>Gu and Krippendorf treat amplitude evaluation as a program-search problem: a repository-scale coding agent (OpenAI Codex) acts as mutation operator inside an external generate–evaluate–select loop with <em>frozen</em> correctness gates and objectives, evolving executable amplitude programs. Three benchmarks. (1) Scaling: from a BCFW seed, search rediscovers Berends–Giele currents, then CSW, then a fixed-<span class="arithmatex">\(k\)</span> split-helicity transfer dynamic program with <span class="arithmatex">\(O(n)\)</span> source work, hitting an 805× geometric-mean speed-up over 34 timing cells. (2) Structural: NMHV rational forms are reorganised into R-invariant-style cells and glued supercells, lifting a cancellation-conditioning score from 0.376 to 0.605 and collapsing 8–13 terms to 2–3. (3) Tree complexity: across twenty QCD/EW processes, exact arithmetic falls 47.7× (geometric mean 11.68×), with a 5.9× post-hoc Python runtime gain. In matched pure-gluon tests (<span class="arithmatex">\(n=4\to6\)</span>), the evolved engine&rsquo;s lead over a Sherpa-Comix exact-sum call grows 10×→277×, while its gap to <code>-O3</code>-compiled MadGraph Fortran narrows 77.7×→13.7×. Total cost: 115 candidates, ~$112, 8.15 agent-hours.</p>
+<p>Why it matters: with HL-LHC projections assigning ~20% of ATLAS CPU to event generation, matrix-element kernels are a real bottleneck, and this shows agent-driven search can traverse genuine changes of <em>representation</em> — not just tuning — with fully archived, inspectable lineages. This is the digest&rsquo;s &ldquo;agents orchestrating&rdquo; thread made concrete. Caveats are stated plainly: these are tree-level, single-stack, isolated-kernel benchmarks; the Comix comparison targets exact colour/helicity sums (Comix can sample), no symbolic divisibility proof accompanies the gluing, and native generator integration plus end-to-end throughput remain untested.</p>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-07-24.html">&larr; Friday, July 24, 2026</a>
+  
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-07-27 06:19 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
