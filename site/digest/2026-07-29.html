@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wednesday, July 29, 2026 — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Wednesday, July 29, 2026</h1>
+  <div class="meta">
+    <span class="count">58 papers read</span>
+    <span class="chip">Electroweak diboson production and aQGC</span><span class="chip">Galactic neutrino astronomy</span><span class="chip">Early-universe simulation tooling</span><span class="chip">Flavor and CP probes</span>
+  </div>
+  <h2 id="galactic-neutrinos-and-electroweak-photons">Galactic neutrinos and electroweak photons</h2>
+<p>The day&rsquo;s weight sits on two clean observations at opposite scales. IceCube establishes high-energy neutrino emission from the Milky Way&rsquo;s plane at 5.7σ using all three flavor morphologies over 12 years (<a href="https://arxiv.org/abs/2607.25966">arXiv:2607.25966</a>) — the Galactic diffuse signal, now robustly in hand and feeding the multi-messenger machinery the week&rsquo;s UHE-neutrino tension papers have been circling. At the LHC, ATLAS observes electroweak <span class="arithmatex">\(\gamma\gamma jj\)</span> production at 6.2σ (<a href="https://arxiv.org/abs/2607.25869">arXiv:2607.25869</a>), extending the electroweak-boson program that ran through last week&rsquo;s <span class="arithmatex">\(WZjj\)</span> polarization and <span class="arithmatex">\(ZZ\)</span> work, and casting the result in dimension-8 aQGC limits. Around these, a cluster of early-universe simulation-code releases and a scattering of flavor/CP methods.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="electroweak-boson-production-and-quartic-couplings">Electroweak boson production and quartic couplings</h3>
+<p>ATLAS&rsquo;s <span class="arithmatex">\(\gamma\gamma jj\)</span> observation <a href="https://arxiv.org/abs/2607.25869">arXiv:2607.25869</a> lands slightly below the SM cross section (13.8 vs 17.1 fb) and sets aQGC bounds — the same dim-8 EFT language the memory has flagged as the default for VBS-adjacent searches. Yilmaz et al. <a href="https://arxiv.org/abs/2607.25935">arXiv:2607.25935</a> project <span class="arithmatex">\(ZZ\gamma\)</span> aQGC reach at FCC-hh an order of magnitude past current LHC limits, and ATLAS&rsquo;s Run 2 large-radius jet calibration <a href="https://arxiv.org/abs/2607.25893">arXiv:2607.25893</a> (1% JES/JMS to 1 TeV) is the enabling infrastructure for the boosted end.</p>
+<h3 id="galactic-neutrino-astronomy">Galactic neutrino astronomy</h3>
+<p>Beyond the 5.7σ plane detection, IceCube <a href="https://arxiv.org/abs/2607.25966">arXiv:2607.25966</a> finds the inner Galaxy a prominent source — 217 shower events above 5 TeV against 154 expected. This is the constructive counterpart to the week&rsquo;s UHE-neutrino anomaly (the 7.5σ ANITA/KM3NeT-vs-IceCube tension): the diffuse Galactic component is exactly what those joint fits assume as background.</p>
+<h3 id="early-universe-simulation-tooling">Early-universe simulation tooling</h3>
+<p>Three code-facing entries. CosmoLattice 2.0 <a href="https://arxiv.org/abs/2607.24978">arXiv:2607.24978</a> adds non-minimal gravity couplings, axion-gauge sectors, defect-network initial conditions and O(10) GPU speedups; TempLat <a href="https://arxiv.org/abs/2607.24908">arXiv:2607.24908</a> is a performance-portable Kokkos-based lattice engine powering that release. Dankovsky et al. <a href="https://arxiv.org/abs/2607.25073">arXiv:2607.25073</a> use CosmoLattice to fix the spurious IR wiggles in domain-wall GW spectra — directly relevant to the NANOGrav-band defect thread that has run all month.</p>
+<h3 id="flavor-and-cp-probes">Flavor and CP probes</h3>
+<p>Belle/Belle II post the first search for <span class="arithmatex">\(B^0\to K^0_S\tau^+\tau^-\)</span> <a href="https://arxiv.org/abs/2607.25607">arXiv:2607.25607</a>, <span class="arithmatex">\(\mathcal{B}&lt;8.3\times10^{-4}\)</span>, tightening the <span class="arithmatex">\(B\to K\tau\tau\)</span> combination — a new corner of the <span class="arithmatex">\(b\to s\)</span> program. Heuser et al. <a href="https://arxiv.org/abs/2607.25764">arXiv:2607.25764</a> show, via a dispersive method, that LHCb&rsquo;s large localized CP asymmetry in <span class="arithmatex">\(B^\pm\to K^\pm\pi^+\pi^-\)</span> is driven by suppression of the CP-conserving part, not an enhancement. And Lamba et al. build a quantum-information framework for CP violation in <span class="arithmatex">\(t\bar t\)</span>, split across production <a href="https://arxiv.org/abs/2607.25029">arXiv:2607.25029</a> and tomography <a href="https://arxiv.org/abs/2607.25034">arXiv:2607.25034</a>.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.25966">arXiv:2607.25966</a></strong> — IceCube&rsquo;s 5.7σ Galactic-plane neutrino emission with all-flavor morphology; a genuine milestone for Galactic multi-messenger astronomy.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.25869">arXiv:2607.25869</a></strong> — ATLAS observes EW <span class="arithmatex">\(\gamma\gamma jj\)</span> at 6.2σ, with dim-8 aQGC interpretation; the electroweak program&rsquo;s next channel.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.24930">arXiv:2607.24930</a></strong> — Blas et al. argue coherent GWs decay into photon pairs, a purely quantum (∝<span class="arithmatex">\(N^2\)</span>) effect, and derive first CMB/photofission constraints — a surprising new handle worth a read.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.25607">arXiv:2607.25607</a></strong> — Belle/Belle II&rsquo;s first <span class="arithmatex">\(B^0\to K^0_S\tau^+\tau^-\)</span> search; a fresh <span class="arithmatex">\(b\to s\tau\tau\)</span> limit.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.24933">arXiv:2607.24933</a></strong> — Lin et al.&rsquo;s solvable 1D lattice model pins down exactly what separates coherent from incoherent sub-GeV DM-nucleus scattering: crystal-momentum conservation, fading as multiphonons grow.</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<p>Watson&rsquo;s history of high-energy neutrino and cosmic-ray detector construction from 1980–2000 <a href="https://arxiv.org/abs/2607.25535">arXiv:2607.25535</a> — DUMAND, Baikal, IceCube and Auger, with candor about the difficulties and the role the (retracted) Cygnus X-3 PeV claims played. A fitting companion to today&rsquo;s IceCube result.</p>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2607.24928">arXiv:2607.24928</a></strong> <em>Bound-state beta decay of tritium</em> — Akhmedov et al. (hep-ph) — a novel Doppler-based route to direct neutrino mass and sterile searches.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.25653">arXiv:2607.25653</a></strong> <em>Fragmentation of jets containing <span class="arithmatex">\(\Upsilon\)</span>(nS)</em> — CMS Collaboration (hep-ex) — MC quarkonium-in-parton-shower modeling found unsatisfactory.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.24935">arXiv:2607.24935</a></strong> <em>Top-quark mass interpretation from top-flavoured mesons</em> — Corcella et al. (hep-ph) — the pole-mass ambiguity pinned at 200–300 MeV, order <span class="arithmatex">\(\Lambda_{\rm QCD}\)</span>.</li>
+<li><strong><a href="https://arxiv.org/abs/2607.25606">arXiv:2607.25606</a></strong> <em>Virtual state and two-pole structure of <span class="arithmatex">\(\Xi(1690)/\Xi(1820)\)</span></em> — He (hep-ph) — a <span class="arithmatex">\(\Lambda(1405)\)</span>-like two-pole reading from BESIII data.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv260725966-high-energy-neutrino-emission-from-the-milky-way-r-abbasi-et-al"><a href="https://arxiv.org/abs/2607.25966">arXiv:2607.25966</a> — High-energy neutrino emission from the Milky Way (R. Abbasi et al.)</h3>
+<p>Abstract only. Combining all three neutrino-flavor event morphologies with updated ice modelling, calibration and reconstruction over 12 years of IceCube data, a predefined global analysis establishes high-energy neutrino emission from the Galactic plane at <strong>5.7σ</strong>. A follow-up study identifies the inner Galaxy as a prominent source: <strong>217 shower events above 5 TeV visible energy against an expected background of 154.4 ± 4.1</strong>. The multi-flavor approach is what pushes this over the discovery threshold — earlier IceCube plane hints leaned on cascades alone.</p>
+<p>Why it matters: this is the constructive counterpart to the week&rsquo;s UHE-neutrino tension thread. The diffuse Galactic component is precisely the background assumed in the ANITA/KM3NeT-vs-IceCube joint fits, so having it in hand at &gt;5σ tightens those interpretations while opening Galactic multi-messenger astronomy — cosmic-ray propagation and neutrino properties probed over kiloparsec baselines. As an abstract-only entry, the systematic treatment of the diffuse-emission modelling (which sets whether the inner-Galaxy excess is source-like or propagation-driven) can&rsquo;t be assessed here.</p>
+<h3 id="arxiv260725869-observation-of-electroweak-gammagamma-jj-production-at-13-tev-in-140-fb1-with-atlas-atlas-collaboration"><a href="https://arxiv.org/abs/2607.25869">arXiv:2607.25869</a> — Observation of electroweak <span class="arithmatex">\(\gamma\gamma jj\)</span> production at 13 TeV in 140 fb⁻¹ with ATLAS (ATLAS Collaboration)</h3>
+<p>Abstract only. ATLAS observes the electroweak production of two isolated photons plus two jets at <strong>6.2σ</strong>, with a fiducial cross section of <strong><span class="arithmatex">\(13.8^{+3.0}_{-2.6}\)</span> fb</strong>, sitting below but consistent with the SM prediction of <strong><span class="arithmatex">\(17.1 \pm 2.4\)</span> fb</strong>. Fiducial and differential cross sections are measured for both the EW-only and combined QCD+EW <span class="arithmatex">\(\gamma\gamma jj\)</span> processes, and the data are interpreted in EFT, setting limits on several dimension-8 Wilson coefficients parameterising anomalous quartic gauge couplings.</p>
+<p>Why it matters: this extends the ATLAS electroweak-boson program — following recent <span class="arithmatex">\(WZjj\)</span> polarization and <span class="arithmatex">\(ZZ\)</span> work — into a new VBS-adjacent channel, using the same dim-8 aQGC language that is now the default for these searches (and the framework Yilmaz et al. project forward to FCC-hh). The measured central value ~20% below SM is within the ~2 fb uncertainties, so no tension, but the modest downward pull is the kind of thing differential distributions and more data will need to pin down.</p>
+<h3 id="arxiv260724930-gravitational-waves-decay-in-vacuum-a-low-energy-effect-of-quantized-gravitation-diego-blas-et-al"><a href="https://arxiv.org/abs/2607.24930">arXiv:2607.24930</a> — Gravitational waves decay in vacuum: a low-energy effect of quantized gravitation (Diego Blas et al.)</h3>
+<p>Blas and Oller argue that GWs, treated as coherent graviton states rather than classical fields, decay into photon pairs via graviton fusion (<span class="arithmatex">\(gg\to\gamma\gamma\)</span>, Skobelev amplitude) — a process forbidden classically and semiclassically, vanishing as <span class="arithmatex">\(\hbar\to0\)</span>, and enhanced by the graviton number squared <span class="arithmatex">\(N^2\)</span>. The key technical point (Supplement SA): the coherent-state mode cannot propagate in the internal graviton line because momentum conservation forces it on-shell at <span class="arithmatex">\(s=0\)</span>, where the derivative coupling vanishes. The radiated power scales as <span class="arithmatex">\(W_\gamma \propto G^2 E_{\rm rel}^2\omega_s^2\sigma_\omega^2\)</span>, giving a compact form <span class="arithmatex">\(W_\gamma=\tfrac{3}{50\pi}(r_m/\ell)^2\hbar\omega^2\)</span>. They derive first constraints on recurrent GW populations from CMB <span class="arithmatex">\(\mu\)</span>/<span class="arithmatex">\(y\)</span> distortions (COBE/FIRAS: <span class="arithmatex">\(|\mu|&lt;9\times10^{-5}\)</span>, <span class="arithmatex">\(|y|&lt;1.5\times10^{-5}\)</span>), UV/X-ray and <span class="arithmatex">\(\gamma\)</span>-ray backgrounds, and D/⁴He photofission, all cast as bounds on <span class="arithmatex">\(\sqrt{\Gamma}\,\epsilon E_{\rm rel}/M_\odot\)</span> vs <span class="arithmatex">\(\omega_s\)</span>.</p>
+<p>Why it matters: a genuinely new, purely quantum-gravitational handle on GW sources, whose detection would evidence quantized gravity. The honest caveat is front and center: for astrophysical binaries the photon luminosity is minuscule (comparable to Hawking radiation of the equivalent mass, number luminosity <span class="arithmatex">\(\sim10^6\,{\rm s}^{-1}\)</span> at merger), and SGWB depletion is negligible (<span class="arithmatex">\(\sim10^{-110}\,{\rm m}^{-3}{\rm s}^{-1}\)</span>; <span class="arithmatex">\(|\Phi|\approx10^{-25}\,{\rm Hz}^{-1}\)</span> to the GUT scale). Only in ultralight-dark-matter scenarios, where huge occupation numbers boost <span class="arithmatex">\(gg\leftrightarrow\phi\phi\)</span>, do rates reach <span class="arithmatex">\(\sim10^{54}\,{\rm s}^{-1}\)</span> — and that requires the exotic light-scalar sector to exist.</p>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-07-28.html">&larr; Tuesday, July 28, 2026</a>
+  
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-07-29 06:12 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
