@@ -1,40 +1,36 @@
-# The Cross Section — Rolling Synthesis, week ending 2026-08-03
+# The Cross Section — Weekly Synthesis, week ending 2026-08-04
 
-**Overview.** Flavor dominated the week from three directions at once: precision CKM measurements (BESIII charm, NA62 kaon propagation), a genuine anomaly (a >7σ SU(3)$_F$ discrepancy in charmless $B\to VV$), and a speculative wave of CKM-structure model-building. Around it, dark-sector model-building crowded the final day, quantum-information language matured from demonstration into actual measurements, and the month-long early-universe defect/GW drumbeat kept running. Two clean experimental milestones anchored the week — IceCube's Galactic-plane neutrino detection and CMS's new Higgs-mass benchmark — and a general no-go quietly closed off the "quantized gravity from GWs" program.
+**Overview.** A week that rewarded precision and coincidence more than discovery. Neutrino astronomy hit a genuine milestone (IceCube's Galactic plane) and immediately spawned a novel cosmological application (a neutrino distance ladder), while the electroweak-boson program consolidated from single-channel observations toward global combination. The loudest theory thread was a top-down flavor wave — several independent attempts to explain CKM/Yukawa structure — running in parallel with a hardening hadronic-amplitude anomaly ($B\to VV$ past $7\sigma$). Quantum-information language crossed from demonstration into real collider and hadron observables. And a much-hyped "quantum gravity from GWs" idea was walled off within 48 hours. Underneath, the month-long defect/phase-transition GW drumbeat and a heavy-ion pivot to Run 3 oxygen data both continued steadily.
 
 ## Running themes
 
-**Flavor — heating, and now three-layered.** The kaon-to-charm precision thread continued with Allwicher et al. propagating NA62's $K^+\to\pi^+\nu\bar\nu$ into $B\to K\nu\bar\nu$/$B_s\to\mu\mu$ ([arXiv:2607.24494](https://arxiv.org/abs/2607.24494)) and BESIII's record $D\to\pi\ell\nu$ ([arXiv:2607.23945](https://arxiv.org/abs/2607.23945)). A distinct hadronic-amplitude anomaly then emerged: Bhattacharya et al.'s $B\to VV$ fit pushing the SU(3)$_F$ discrepancy past 7σ ([arXiv:2607.27202](https://arxiv.org/abs/2607.27202)). Separately, a CKM-texture speculation wave ran two days straight — Lin's geometric reparameterization ([arXiv:2607.26681](https://arxiv.org/abs/2607.26681)) then Arkani-Hamed et al.'s π/8-angle textures ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315)), with radiative-mass and seesaw-texture papers ([arXiv:2607.29331](https://arxiv.org/abs/2607.29331), [arXiv:2607.28549](https://arxiv.org/abs/2607.28549)) in the same key.
-
-**Dark sectors — heating (end of week).** Small-scale-structure-as-DM-lab (07-31: SatGen dwarf-density tension at ~2.4σ, [arXiv:2607.27316](https://arxiv.org/abs/2607.27316)) gave way to a dark-photon-DM cluster ([arXiv:2607.29131](https://arxiv.org/abs/2607.29131), [arXiv:2607.29149](https://arxiv.org/abs/2607.29149), [arXiv:2607.29682](https://arxiv.org/abs/2607.29682)), a monopole-DM model, and novel detection concepts (Gravity Probe-DM, [arXiv:2607.28722](https://arxiv.org/abs/2607.28722); molecular-cloud ionization bounds).
-
-**Quantum information as a real observable — heating.** The $t\bar t$-entanglement program moved to measurement: full 15-parameter top tomography constraining CP violation in the top Yukawa ([arXiv:2607.28761](https://arxiv.org/abs/2607.28761)), plus QI measures as EIC probes of the proton tensor charge ([arXiv:2607.28724](https://arxiv.org/abs/2607.28724)).
-
-**Early-universe defects & GW — steady.** CosmoLattice 2.0 ([arXiv:2607.24978](https://arxiv.org/abs/2607.24978)) and downstream domain-wall spectrum work ([arXiv:2607.25073](https://arxiv.org/abs/2607.25073), [arXiv:2607.28214](https://arxiv.org/abs/2607.28214)), GUT-scale biased walls + monopoles ([arXiv:2607.27158](https://arxiv.org/abs/2607.27158)), and cosmic-superstring signals kept the NANOGrav-band thread alive all week.
-
-**Tooling/automation — steady.** Agentic workflows spread across subfields (SFitter recast; CLVisc Agent for heavy-ion hydro, [arXiv:2607.27822](https://arxiv.org/abs/2607.27822)), alongside jet-foundation-model scaling laws ([arXiv:2607.23377](https://arxiv.org/abs/2607.23377)) and symbolic-regression TMD extraction.
-
-**Hubble tension / neutrino mass — steady, unresolved.** Roy Choudhury's 6.85σ ladder result ([arXiv:2607.24443](https://arxiv.org/abs/2607.24443)), Qu et al.'s late-Universe-free neutrino-mass relaxation to <0.41 eV, and Tedesco's Bianchi-I null all reinforced the week's "walls against tension-solvers."
+- **Top-down flavor structure — heating up.** Four consecutive days of attacks on the origin of Yukawa/CKM texture: Lin's geometric CKM reparameterization ([arXiv:2607.26681](https://arxiv.org/abs/2607.26681)), Arkani-Hamed et al.'s $\pi/8$ nine-link textures ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315)), then Singh's exceptional-Jordan "candidate texture skeleton" ([arXiv:2608.01445](https://arxiv.org/abs/2608.01445)) explicitly citing the former, plus SU(15) composites ([arXiv:2608.00166](https://arxiv.org/abs/2608.00166)) and radiative-mass classifications. Different machinery, one target.
+- **Hadronic flavor anomaly — heating up.** Bhattacharya et al. push the charmless SU(3)$_F$ discrepancy from $B\to PP$ into $B\to VV$, now $>7\sigma$ ([arXiv:2607.27202](https://arxiv.org/abs/2607.27202)), with minimal theory input. Distinct from the FCNC $b\to s$ program (Belle II's first $B^0\to K^0_S\tau\tau$, [arXiv:2607.25607](https://arxiv.org/abs/2607.25607)).
+- **Electroweak/VBS consolidation — steady.** ATLAS observes EW $\gamma\gamma jj$ at 6.2σ with dim-8 aQGC limits ([arXiv:2607.25869](https://arxiv.org/abs/2607.25869)); by week's end CMS delivers a global leptonic-VBS combination ([arXiv:2608.01289](https://arxiv.org/abs/2608.01289)). The "precision-couplings-as-BSM-constraint" EFT-recast move recurs ($\kappa_V$→composite Higgs, [arXiv:2608.01353](https://arxiv.org/abs/2608.01353)).
+- **Quantum information as observable — heating up.** $t\bar t$ tomography moved from demo to measurement: full 15-parameter density matrix constraining top-Yukawa CP violation ([arXiv:2607.28761](https://arxiv.org/abs/2607.28761)), and QI measures in DIS probing the proton tensor charge at the EIC ([arXiv:2607.28724](https://arxiv.org/abs/2607.28724)).
+- **Defect / phase-transition GWs — steady, month-long.** CosmoLattice 2.0 ([arXiv:2607.24978](https://arxiv.org/abs/2607.24978)) and Dankovsky's domain-wall spectrum fixes ([arXiv:2607.25073](https://arxiv.org/abs/2607.25073), [arXiv:2607.28214](https://arxiv.org/abs/2607.28214)); GUT-scale biased walls/monopoles ([arXiv:2607.27158](https://arxiv.org/abs/2607.27158)); Gould et al.'s nucleation prefactor with dominant non-perturbative pieces ([arXiv:2608.00169](https://arxiv.org/abs/2608.00169)).
+- **Small-system QGP / Run 3 OO — new, watch.** Oxygen data landing: LHCb's $\Upsilon(2S)$ suppression as deconfinement-like screening ([arXiv:2608.00182](https://arxiv.org/abs/2608.00182)) and ALICE's first charm baryon-meson $v_2$ splitting ([arXiv:2608.02161](https://arxiv.org/abs/2608.02161)).
+- **Automation drumbeat — steady.** LLM/agent tooling spread to nuclear hydro (CLVisc Agent), detector reconstruction (JUNO 8× speedup, [arXiv:2608.00461](https://arxiv.org/abs/2608.00461)) and bound-state MC (MadSONS).
 
 ## Turning points
 
-- **CMS $m_H=125.13\pm0.15$ GeV** ([arXiv:2607.28396](https://arxiv.org/abs/2607.28396)) — new single-channel precision benchmark.
-- **IceCube Galactic-plane emission at 5.7σ** ([arXiv:2607.25966](https://arxiv.org/abs/2607.25966)) — the constructive counterpart to the unresolved UHE-neutrino tension.
-- **Bao et al.'s no-go** ([arXiv:2607.27313](https://arxiv.org/abs/2607.27313)) — weakly coupled waves stay classical, explicitly killing "quantized gravity from GWs" proposals and cold-watering Blas–Oller's GW→γγ decay claim ([arXiv:2607.24930](https://arxiv.org/abs/2607.24930)) one day after it appeared.
-- **Direct-detection-as-solar-neutrino-observatory** consolidated into a program (SNuDD, [arXiv:2607.22817](https://arxiv.org/abs/2607.22817); invisible-$\nu_2$-decay bound rivaling SNO, [arXiv:2607.24584](https://arxiv.org/abs/2607.24584)).
+- **IceCube's 5.7σ Galactic-plane neutrino emission** ([arXiv:2607.25966](https://arxiv.org/abs/2607.25966)) — a milestone that also fixes the diffuse Galactic background assumed by the week's UHE-neutrino joint fits.
+- **Bao et al.'s no-go** ([arXiv:2607.27313](https://arxiv.org/abs/2607.27313)) closed off "quantized gravity from GW observations" just one day after the GW→$\gamma\gamma$ decay claim ([arXiv:2607.24930](https://arxiv.org/abs/2607.24930)) — enthusiasm and cold water in 48 hours.
+- **CMS $m_H = 125.13\pm0.15$ GeV** in diphoton ([arXiv:2607.28396](https://arxiv.org/abs/2607.28396)) — new single-channel precision benchmark.
+- **Neutrino distance ladder** ([arXiv:2608.00923](https://arxiv.org/abs/2608.00923)) — first $H_0$ from astrophysical neutrinos; huge error bar but propagation-systematic-free, a new rung rather than another tension wall.
 
 ## Open questions
 
-- Does ~30% SU(3)$_F$-breaking rescue the >7σ $B\to VV$ discrepancy ([arXiv:2607.27202](https://arxiv.org/abs/2607.27202))? Watch for breaking estimates and independent fits.
-- Is the CKM π/8-angle pattern ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315)) a real texture or numerology? It offers near-term-testable unitarity-triangle deviations.
-- The UHE-neutrino ANITA/KM3NeT-vs-IceCube tension (~7.5σ) remains unresolved; Glashow-resonance flavor handles ([arXiv:2607.26128](https://arxiv.org/abs/2607.26128)) are emerging.
-- Mild upward pulls in $HH\to b\bar b\tau\tau$ ($\mu=2.6$, [arXiv:2607.26879](https://arxiv.org/abs/2607.26879)) and $tH$ ($\mu_{tH}=3.3$, [arXiv:2607.27708](https://arxiv.org/abs/2607.27708)) — statistics or signal?
-- Hubble tension hardening rather than softening (6.85σ); no viable resolution surfaced.
+- Does ~30% SU(3)$_F$ breaking rescue the $B\to VV$ anomaly, or is it real BSM? ([arXiv:2607.27202](https://arxiv.org/abs/2607.27202))
+- Is the CKM-angle $\pi/8$ clustering a genuine mechanism or coincidence? Awaiting a derivation, not a fit. ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315))
+- The UHE-neutrino tension (7.5σ ANITA/KM3NeT-vs-IceCube) remains unresolved; watch Glashow-resonance handles ([arXiv:2607.26128](https://arxiv.org/abs/2607.26128)).
+- Persistent mild upward pulls in di-Higgs: $\mu_{HH}=2.6^{+1.4}_{-1.0}$ ([arXiv:2607.26879](https://arxiv.org/abs/2607.26879)), $\mu_{tH}=3.3^{+1.7}_{-1.5}$ ([arXiv:2607.27708](https://arxiv.org/abs/2607.27708)) — statistics-limited, worth tracking.
+- "How small can QGP be" now a live experimental question with Run 3 OO data.
 
 ## Recurring references
 
-- [arXiv:2607.24494](https://arxiv.org/abs/2607.24494) — NA62 kaon result propagated into $b\to s$; anchor of the month-long kaon-to-charm thread.
-- [arXiv:2607.26681](https://arxiv.org/abs/2607.26681) & [arXiv:2607.27315](https://arxiv.org/abs/2607.27315) — the two-day CKM-texture wave (geometric reparameterization, then π/8 textures).
-- [arXiv:2607.24930](https://arxiv.org/abs/2607.24930) & [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) — the GW-decay claim and the no-go that answered it.
-- [arXiv:2607.27202](https://arxiv.org/abs/2607.27202) — the >7σ SU(3)$_F$ $B\to VV$ result; the flavor anomaly to track.
-- [arXiv:2607.25966](https://arxiv.org/abs/2607.25966) — IceCube Galactic plane, feeding multi-messenger and UHE-tension discussion.
+- [arXiv:2607.25966](https://arxiv.org/abs/2607.25966) — IceCube Galactic-plane neutrinos (anchors neutrino-astronomy + distance-ladder threads).
+- [arXiv:2607.25869](https://arxiv.org/abs/2607.25869) — ATLAS EW $\gamma\gamma jj$ (VBS/aQGC anchor).
+- [arXiv:2607.27202](https://arxiv.org/abs/2607.27202) — $B\to VV$ SU(3)$_F$ $>7\sigma$ (flavor-anomaly anchor).
+- [arXiv:2607.26681](https://arxiv.org/abs/2607.26681) & [arXiv:2607.27315](https://arxiv.org/abs/2607.27315) — geometric-CKM and $\pi/8$ textures (flavor-structure wave).
+- [arXiv:2607.24930](https://arxiv.org/abs/2607.24930) & [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) — GW→$\gamma\gamma$ claim and its no-go rebuttal (paired).
