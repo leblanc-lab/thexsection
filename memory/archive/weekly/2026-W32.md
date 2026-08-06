@@ -1,37 +1,44 @@
-The flavor-structure question dominated the week: a hard SU(3)$_F$ anomaly on one side and a cluster of CKM-texture "coincidence" papers on the other kept returning across all five days. Collider quantum-information tomography spread steadily into new final states, small-system QGP moved from proposal to real Run 3 OO measurements, and the month-long phase-transition/defect–GW drumbeat continued. The week closed with a genuinely new thread — the neutrino-physics case for a 10 TeV muon collider — and several pointed recast/no-go papers that redrew existing conversations.
+This week clustered around a handful of durable programs: collider quantum-information tomography spreading into new final states, a persistent top-down assault on flavor/CP structure, first Run-3 oxygen-collision results reopening the "how small can QGP be" question, and a fresh muon-collider-as-neutrino-factory thread. Beneath these, hadron spectroscopy remained the daily numerical ballast, and the LLM-agent drumbeat kept advancing across theory, reconstruction, and analysis. Several results acted as walls or firsts rather than incremental updates.
 
 ## Running themes
 
-**Flavor & CKM structure (heating up).** Two parallel strands. First, a hadronic-amplitude anomaly: Bhattacharya et al. [arXiv:2607.27202](https://arxiv.org/abs/2607.27202) pushed the charmless $B\to VV$ SU(3)$_F$ discrepancy past $7\sigma$ with minimal theory input. Second, a wave of top-down attempts to explain the CKM pattern — Lin's geometric reparameterization [arXiv:2607.26681](https://arxiv.org/abs/2607.26681), Arkani-Hamed et al.'s $\pi/8$ "nine-link textures" [arXiv:2607.27315](https://arxiv.org/abs/2607.27315), and Singh's exceptional-Jordan skeleton [arXiv:2608.01445](https://arxiv.org/abs/2608.01445), which explicitly framed itself as a candidate for the Arkani-Hamed texture. Radiative-mass and seesaw-texture fits orbit the same target.
+- **Collider quantum information (heating, spreading).** From [arXiv:2607.28761](https://arxiv.org/abs/2607.28761) (first full one-loop t̄t density matrix → top-Yukawa CP constraint) and [arXiv:2607.28724](https://arxiv.org/abs/2607.28724) (entanglement/discord/magic in DIS → proton tensor charge), the program moved to invisible final states ([arXiv:2607.28346](https://arxiv.org/abs/2607.28346), τ-pair spin tomography surviving missing neutrinos via a POVM argument) and hyperons at BESIII ([arXiv:2608.03131](https://arxiv.org/abs/2608.03131)). Clear trajectory: from demonstration to measurement.
 
-**Collider quantum information (spreading).** From demonstration to measurement: DIS entanglement/magic as a tensor-charge probe [arXiv:2607.28724](https://arxiv.org/abs/2607.28724), the full $t\bar t$ density matrix turned into a top-Yukawa CP constraint [arXiv:2607.28761](https://arxiv.org/abs/2607.28761), a POVM argument that spin tomography survives missing neutrinos in $\tau\tau$ [arXiv:2607.28346](https://arxiv.org/abs/2607.28346), and BESIII hyperon-pair Bell/concurrence calculations [arXiv:2608.03131](https://arxiv.org/abs/2608.03131). One program, now touching hadrons, tops, taus and hyperons.
+- **Flavor/CP from the top down (steady, crowded).** Anchored by Arkani-Hamed et al.'s π/8 CKM textures ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315)), following Lin's geometric CKM ([arXiv:2607.26681](https://arxiv.org/abs/2607.26681)). Successive entrants recast the same target: Singh's exceptional-Jordan "texture skeleton" ([arXiv:2608.01445](https://arxiv.org/abs/2608.01445)), SU(15) composites ([arXiv:2608.00166](https://arxiv.org/abs/2608.00166)), Nelson-Barr inflation ([arXiv:2608.00498](https://arxiv.org/abs/2608.00498)), radiative b,c,τ mass models ([arXiv:2607.29331](https://arxiv.org/abs/2607.29331)).
 
-**Small-system QGP / OO collisions (heating up).** Run 3 oxygen data landing: LHCb's $\Upsilon(2S)$ suppression in OO as evidence of deconfinement-like screening [arXiv:2608.00182](https://arxiv.org/abs/2608.00182), ALICE's first charm baryon-meson $v_2$ splitting [arXiv:2608.02161](https://arxiv.org/abs/2608.02161), ALICE strangeness enhancement in OO [arXiv:2608.02874](https://arxiv.org/abs/2608.02874), and ATLAS's first forward-rapidity jet $R_{AA}$ [arXiv:2608.03261](https://arxiv.org/abs/2608.03261). Backed by jet-as-medium-probe theory (Kurkela et al. [arXiv:2607.26851](https://arxiv.org/abs/2607.26851), Soudi et al. [arXiv:2607.26143](https://arxiv.org/abs/2607.26143)).
+- **Small-system QGP / OO collisions (heating).** Run-3 data landing: LHCb Υ(2S) suppression in OO ([arXiv:2608.00182](https://arxiv.org/abs/2608.00182)), ALICE charm v₂ splitting ([arXiv:2608.02161](https://arxiv.org/abs/2608.02161)) and strangeness enhancement ([arXiv:2608.02874](https://arxiv.org/abs/2608.02874)), plus ATLAS's first forward-rapidity jet suppression in Pb+Pb ([arXiv:2608.03261](https://arxiv.org/abs/2608.03261)), stronger than central.
 
-**Phase transitions & defects → GW (steady).** GUT-scale defects [arXiv:2607.27158](https://arxiv.org/abs/2607.27158), superstring signals [arXiv:2607.26124](https://arxiv.org/abs/2607.26124), rippled-wall resonant production [arXiv:2607.26569](https://arxiv.org/abs/2607.26569), EoS-independent domain-wall spectra [arXiv:2607.28214](https://arxiv.org/abs/2607.28214), a general nucleation-prefactor formula [arXiv:2608.00169](https://arxiv.org/abs/2608.00169), and bubble-wall light-scalar radiation beating freeze-in [arXiv:2608.02729](https://arxiv.org/abs/2608.02729).
+- **Muon collider, two faces (new).** A neutrino-factory case emerged from two independent flux re-evaluations ([arXiv:2608.02714](https://arxiv.org/abs/2608.02714); [arXiv:2608.02718](https://arxiv.org/abs/2608.02718), the MINT MC) finding ~2 orders of magnitude more flux than prior estimates. Precision physics persisted in a minor key (Higgs self-coupling [arXiv:2608.01888](https://arxiv.org/abs/2608.01888), top partners [arXiv:2608.04399](https://arxiv.org/abs/2608.04399)).
 
-**Muon-collider neutrinos (new).** Burk et al. [arXiv:2608.02714](https://arxiv.org/abs/2608.02714) and Choi et al.'s MINT simulation [arXiv:2608.02718](https://arxiv.org/abs/2608.02718) independently found forward neutrino fluxes ~two orders above prior estimates — an accidental neutrino factory. Watch whether this becomes a standard part of the muon-collider case.
+- **Phase transitions & GW spectra (steady, month-long).** Nucleation prefactors ([arXiv:2608.00169](https://arxiv.org/abs/2608.00169)), bubble-wall scalar/axion radiation beating freeze-in ([arXiv:2608.02729](https://arxiv.org/abs/2608.02729)), domain-wall spectra ([arXiv:2607.28214](https://arxiv.org/abs/2607.28214)), and resummation-scheme sensitivity of predicted spectra ([arXiv:2608.04102](https://arxiv.org/abs/2608.04102)).
+
+- **Quantum-detection no-go debate (recurring).** Bao et al.'s doubly-suppressed nonclassicality result ([arXiv:2607.27313](https://arxiv.org/abs/2607.27313)), landing against the Blas–Oller GW→γγ claim ([arXiv:2607.24930](https://arxiv.org/abs/2607.24930)), gained a formal companion in the generalized Glauber theorem for axion/graviton detection ([arXiv:2608.05082](https://arxiv.org/abs/2608.05082)).
+
+- **Automation / LLM agents (steady drumbeat).** CLVisc heavy-ion agent ([arXiv:2607.27822](https://arxiv.org/abs/2607.27822)), JUNO reconstruction speedup ([arXiv:2608.00461](https://arxiv.org/abs/2608.00461)), and a SMEFT hypothesis-generation LLM ([arXiv:2608.04100](https://arxiv.org/abs/2608.04100), in the LeWRON/CLVisc/SFitter lineage).
 
 ## Turning points
 
-- CMS set a new Higgs-mass benchmark, $m_H=125.13\pm0.15$ GeV in diphoton [arXiv:2607.28396](https://arxiv.org/abs/2607.28396).
-- Bao et al. [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) closed off the "quantized gravity from GW observations" program with a doubly-suppressed no-go — cold water one day after the GW$\to\gamma\gamma$ decay enthusiasm [arXiv:2607.24930](https://arxiv.org/abs/2607.24930).
-- ATLAS's forward jet suppression stronger than central [arXiv:2608.03261](https://arxiv.org/abs/2608.03261) — new geometry handle.
-- Ghosh et al. [arXiv:2608.03988](https://arxiv.org/abs/2608.03988) argued the ATLAS four-lepton doubly-charged-Higgs efficiency exceeds a strict bound, shifting the mass limit down ~100 GeV — flag before quoting that number.
+- **CMS m_H = 125.13 ± 0.15 GeV** in diphoton ([arXiv:2607.28396](https://arxiv.org/abs/2607.28396)) — new single-channel precision benchmark.
+- **BESIII's charged X(3790)⁻** at D⁰D⁻ threshold, 5.3σ ([arXiv:2607.29138](https://arxiv.org/abs/2607.29138)) — cleanest new observation of the week.
+- **First Run-3 OO results** ([arXiv:2608.00182](https://arxiv.org/abs/2608.00182), [arXiv:2608.02161](https://arxiv.org/abs/2608.02161)) pushed small-system deconfinement onto real data.
+- **DUNE's first leptonic Jarlskog-invariant sensitivity** ([arXiv:2608.04059](https://arxiv.org/abs/2608.04059)), with a sharp θ23-octant gain under a reactor θ13 prior.
+- **Neutrino distance ladder** ([arXiv:2608.00923](https://arxiv.org/abs/2608.00923)) — first H₀ from IceCube Seyferts; huge error bars, but propagation-systematic-free.
+- **Doubly-charged-Higgs recast** ([arXiv:2608.03988](https://arxiv.org/abs/2608.03988)) — argues ATLAS four-lepton efficiency exceeds a strict bound, shifting the mass limit down ~100 GeV. Flag before quoting that number.
 
 ## Open questions
 
-- Can ~30% SU(3)-breaking rescue the $7\sigma$ $B\to VV$ discrepancy? [arXiv:2607.27202](https://arxiv.org/abs/2607.27202) flags this explicitly; watch for follow-ups.
-- Is the CKM $\pi/8$ pattern a mechanism or a coincidence? Arkani-Hamed et al. offer near-term-testable unitarity-triangle deviations [arXiv:2607.27315](https://arxiv.org/abs/2607.27315).
-- "How small can QGP be?" — sequential melting and flow in OO now demand explanation.
-- Herrera et al.'s neutrino distance ladder gives $H_0=49^{+40}_{-30}$ [arXiv:2608.00923](https://arxiv.org/abs/2608.00923): propagation-systematic-free but error-bar-limited; a new rung to watch, not yet a tension probe.
-- Two-loop $t\bar tW$ amplitudes appeared twice in three days (Pozzoli [arXiv:2608.02527](https://arxiv.org/abs/2608.02527), Becchetti et al. [arXiv:2608.03746](https://arxiv.org/abs/2608.03746)) — cross-check territory.
+- **How small can QGP be?** OO Υ-melting and charm flow vs. strangeness enhancement — watch for convergence or tension across LHCb/ALICE/ATLAS.
+- **Are the π/8 CKM angles real structure or coincidence?** Arkani-Hamed et al. claim near-term-testable unitarity-triangle deviations ([arXiv:2607.27315](https://arxiv.org/abs/2607.27315)); the texture wave needs a derivation, not just fits.
+- **Small-scale DM tensions:** the ~2.4σ dwarf central-density diversity ([arXiv:2607.27316](https://arxiv.org/abs/2607.27316)) and Cloud-9's ~7σ-in-CDM RELHIC concentration ([arXiv:2608.04362](https://arxiv.org/abs/2608.04362), eased to ~3σ by SIDM). Watch for SIDM follow-ups.
+- **Can weakly-coupled waves ever show nonclassicality?** The Bao/Glauber no-go line is hardening; any counter-proposal is now the news.
+- **Muon-collider neutrino byproduct:** does the flux re-evaluation change detector/shielding design cases?
 
 ## Recurring references
 
-- [arXiv:2607.27202](https://arxiv.org/abs/2607.27202) — $B\to VV$ SU(3)$_F$ $>7\sigma$ anomaly.
-- [arXiv:2607.26681](https://arxiv.org/abs/2607.26681), [arXiv:2607.27315](https://arxiv.org/abs/2607.27315), [arXiv:2608.01445](https://arxiv.org/abs/2608.01445) — the CKM-texture thread.
-- [arXiv:2607.28761](https://arxiv.org/abs/2607.28761), [arXiv:2607.28346](https://arxiv.org/abs/2607.28346), [arXiv:2607.28724](https://arxiv.org/abs/2607.28724) — collider-QI anchors.
-- [arXiv:2608.00182](https://arxiv.org/abs/2608.00182) — OO $\Upsilon$ suppression, small-system QGP anchor.
-- [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) — the GW quantization no-go.
-- [arXiv:2607.28396](https://arxiv.org/abs/2607.28396) — CMS Higgs-mass benchmark.
+- [arXiv:2607.27315](https://arxiv.org/abs/2607.27315) — Arkani-Hamed et al., π/8 CKM textures (flavor-thread anchor).
+- [arXiv:2607.26681](https://arxiv.org/abs/2607.26681) — Lin, geometric CKM reparameterization.
+- [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) — Bao et al., no-go on nonclassical weakly-coupled waves.
+- [arXiv:2607.28761](https://arxiv.org/abs/2607.28761) — first full one-loop t̄t density matrix / top-Yukawa CP.
+- [arXiv:2608.00182](https://arxiv.org/abs/2608.00182) — LHCb OO Υ(2S) suppression.
+- [arXiv:2608.02718](https://arxiv.org/abs/2608.02718) — MINT muon-collider forward neutrino flux.
+- [arXiv:2608.04059](https://arxiv.org/abs/2608.04059) — DUNE Bayesian Jarlskog sensitivity.
