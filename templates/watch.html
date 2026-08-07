@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% block title %}{{ watchlist.page_title }} — {{ site.title }}{% endblock %}
 {% block content %}
+{#- `mirrored` is a global: {topic name: slug} for topics with their own page. -#}
 <h1 class="page-title">{{ watchlist.page_title }}</h1>
 <p class="lede">Personal-interest tracks — focused briefings that fire only when
 the day's postings touch a watched topic. Watching:
-{{ topic_names|join(' · ') }}.</p>
+{{ topic_names|join(' · ') }}.
+{% if mirrored %}{{ 'Some tracks have' if mirrored|length > 1 else 'One track has' }} a page of
+{{ 'their' if mirrored|length > 1 else 'its' }} own:
+{% for name, slug in mirrored.items() %}<a href="{{ slug }}/index.html">{{ name }}</a>{{ ", " if not loop.last }}{% endfor %}.{% endif %}</p>
 {% for p in posts %}
 <article class="issue watch-post">
   <h2 class="issue-date">{{ p.pretty_date }}</h2>
   <div class="meta">
-    {% for t in p.topics %}<span class="chip">{{ t }}</span>{% endfor %}
+    {% for t in p.topics %}{% if t in mirrored %}<a class="chip chip-link" href="{{ mirrored[t] }}/index.html">{{ t }}</a>{% else %}<span class="chip">{{ t }}</span>{% endif %}{% endfor %}
   </div>
   {{ p.html }}
 </article>

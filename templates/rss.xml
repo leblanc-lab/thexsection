@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{#- Shared RSS 2.0 feed. The environment has autoescape off (page templates emit
+    pre-rendered HTML), so every text node here escapes explicitly with `|xml`
+    and item bodies ride in CDATA. -#}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ channel.title|xml }}</title>
+  <link>{{ channel.link|xml }}</link>
+  <atom:link href="{{ channel.self|xml }}" rel="self" type="application/rss+xml"/>
+  <description>{{ channel.description|xml }}</description>
+  <language>en</language>
+  <generator>The Cross Section (pipeline.build_site)</generator>
+  <lastBuildDate>{{ items[0].pub_date if items else '' }}</lastBuildDate>
+{% for item in items %}
+  <item>
+    <title>{{ item.title|xml }}</title>
+    <link>{{ item.link|xml }}</link>
+    <guid isPermaLink="{{ item.guid_permalink }}">{{ item.guid|xml }}</guid>
+    <pubDate>{{ item.pub_date }}</pubDate>
+    {%- if item.author %}
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">{{ item.author|xml }}</dc:creator>
+    {%- endif %}
+    <description><![CDATA[{{ item.html|replace(']]>', ']]&gt;') }}]]></description>
+  </item>
+{% endfor %}
+</channel>
+</rss>

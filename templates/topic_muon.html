@@ -1,0 +1,41 @@
+{% extends "muon_base.html" %}
+{% block content %}
+{% set total_papers = days|map(attribute='papers')|map('length')|sum %}
+
+<section class="readout" aria-label="Track summary">
+  <div class="cell">
+    <span class="value">{{ total_papers }}</span>
+    <span class="label">Papers</span>
+  </div>
+  <div class="cell">
+    <span class="value">{{ days|length }}</span>
+    <span class="label">Days fired</span>
+  </div>
+  <div class="cell">
+    <span class="value">{{ days[0].date if days else '—' }}</span>
+    <span class="label">Last signal</span>
+  </div>
+</section>
+
+{% for day in days %}
+<section class="run">
+  <h2 class="run-date"><span class="tick" aria-hidden="true"></span>{{ day.pretty_date }}</h2>
+  {% if day.intro_html %}<div class="run-intro">{{ day.intro_html }}</div>{% endif %}
+
+  {% for p in day.papers %}
+  <article class="paper" id="{{ p.anchor }}">
+    <div class="paper-id">
+      {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">arXiv:{{ p.id }}</a>
+      {% else %}<span>preprint</span>{% endif %}
+      <a class="permalink" href="#{{ p.anchor }}" aria-label="Permalink to this paper">§</a>
+    </div>
+    <h3 class="paper-title">{{ p.title }}</h3>
+    {% if p.byline %}<p class="byline">{{ p.byline }}</p>{% endif %}
+    <div class="paper-body">{{ p.html }}</div>
+  </article>
+  {% endfor %}
+</section>
+{% else %}
+<p class="empty">The beam is cold — nothing on this track yet.</p>
+{% endfor %}
+{% endblock %}

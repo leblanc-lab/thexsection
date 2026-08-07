@@ -161,6 +161,15 @@ main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.2rem 4rem; }
   white-space: nowrap;
 }
 
+/* a chip that leads to a topic's own mirrored page */
+.chip-link {
+  text-decoration: none;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--hairline));
+  color: var(--accent);
+  transition: border-color 0.15s, color 0.15s;
+}
+.chip-link:hover { border-color: var(--accent); color: var(--ink); }
+
 /* ---------- article typography ---------- */
 
 .issue h2 {

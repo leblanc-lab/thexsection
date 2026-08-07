@@ -5,6 +5,9 @@ site:
   tagline: "An AI-powered digest and trend analysis of hep-ex and hep-ph"
   # Public Substack URL for the "Subscribe" nav link. Leave blank to hide it.
   subscribe_url: "https://thexsection.substack.com"
+  # Canonical published URL, trailing slash. RSS needs absolute links, so this is
+  # the one place the deployed location is written down.
+  base_url: "https://leblanc-lab.github.io/thexsection/"
 
 arxiv:
   # arXiv category codes to track. Add/remove freely; papers cross-listed
@@ -72,12 +75,24 @@ watchlist:
   # Personal-interest keyword tracks. When a day's papers hit these keywords
   # (case-insensitive, matched in title + abstract), a focused deep summary is
   # written to a separate, subtly-linked page. Add topics/keywords freely.
+  #
+  # A topic may additionally be mirrored to its own page and RSS feed, split out
+  # of the shared watch entries at build time:
+  #   page: true      mirror this topic to site/<slug>/index.html + feed.xml
+  #   slug:           URL segment for that directory
+  #   theme:          renders with templates/topic_<theme>.html + static/<theme>.css
+  #   tagline:        subtitle on the topic page and in its feed
+  # Topics without `page` stay watch-page-only.
   enabled: true
   page_title: "Standing waves"
   max_tokens_per_paper: 20000
   max_output_tokens: 4000
   topics:
     - name: "Muon collider"
+      page: true
+      slug: muon
+      theme: muon
+      tagline: "The 10 TeV frontier, one posting at a time"
       keywords: ["muon collider", "muon-collider", "muon smasher", "MuC", "MAIA Detector", "MUSIC Detector"]
     - name: "Jet substructure"
       keywords: ["jet substructure", "soft drop", "energy-energy correlator", "jet shapes", "boosted jet tagging"]

@@ -19,7 +19,8 @@ Once a day (GitHub Actions cron), the pipeline:
 5. **Citation radar** (Fridays): queries INSPIRE-HEP for highly-cited recent
    papers the deep dives missed and covers them.
 6. **Rebuilds the static site** into `site/` (committed — the repo is private,
-   so open `site/index.html` locally, or read the digests right in GitHub).
+   so open `site/index.html` locally, or read the digests right in GitHub),
+   including `feed.xml` and any topic mirrors (below).
 
 All state is files in this repo; the digests and memory tiers double as the
 model's context. No server, no database.
@@ -89,9 +90,45 @@ cookie is missing or expired. The separate **Post to Substack** workflow
 (`.github/workflows/substack.yml`) is the manual path for backfills, radar/watch
 posts, or actually publishing (`publish` input).
 
+## Watchlist tracks and topic pages
+
+`watchlist.topics` in `config.yaml` defines keyword tracks matched against each
+day's titles and abstracts. When one fires, a focused technical briefing lands in
+`watch/<date>.md` and renders on the "Standing waves" page (linked only from the
+◈ in the footer).
+
+A track can additionally be mirrored to a page and feed of its own — the same
+briefings, split out of the shared watch entries at build time, no extra LLM
+calls:
+
+```yaml
+- name: "Muon collider"
+  page: true      # mirror to site/muon/index.html + site/muon/feed.xml
+  slug: muon      # URL segment
+  theme: muon     # renders with templates/topic_muon.html + static/muon.css
+  tagline: "The 10 TeV frontier, one posting at a time"
+  keywords: [...]
+```
+
+Topics without `page` stay watch-page-only. A new theme means a new
+`templates/topic_<theme>.html` (plus the shell it extends) and a matching
+`static/<theme>.css`; the muon theme is a fully standalone shell, deliberately
+sharing nothing with `base.html` but the KaTeX and analytics snippets.
+
+## Feeds
+
+`site/feed.xml` carries the last 30 daily issues, one item each. Every mirrored
+topic gets `site/<slug>/feed.xml` with **one item per paper**, keyed on a stable
+`arxiv:<id>` guid. Feed bodies get the `latex_to_unicode` treatment from
+`pipeline/substack.py` — readers don't run KaTeX, so the math is flattened to
+Unicode rather than left as raw `\(…\)`.
+
+Both feeds need absolute URLs, so `site.base_url` in `config.yaml` is the one
+place the deployed location is recorded; change it if the site moves.
+
 ## Future ideas
 
 - Hosted private site for the group: Cloudflare Pages + Cloudflare Access
   (free ≤ 50 users). If the site goes public: GitHub Pages toggle.
-- Batches API (halves API cost), email/RSS delivery, theme trend charts,
+- Batches API (halves API cost), email delivery, theme trend charts,
   semantic search over the archive.
