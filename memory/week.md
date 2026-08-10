@@ -1,42 +1,42 @@
-# Rolling Synthesis — Week Ending 2026-08-07
+# Rolling Synthesis — Week Ending 2026-08-10
 
-**Overview.** A theory-weighted week whose spine was flavor and CP structure: a late-July CKM-texture wave matured into a full baryogenesis cluster, culminating in a provocative claim that CKM phases alone might suffice. The collider quantum-information program kept metastasizing into new final states, reaching all the way down to low-energy Compton scattering. Run 3 oxygen-collision data began landing, pushing the "how small can QGP be" question onto real measurements. Two coincident papers opened a new thread — the muon collider as an accidental neutrino factory — and hadron spectroscopy remained the steady numerical ballast underneath everything. Automation/LLM tooling and phase-transition GW work ticked along as background hums.
+The week split its weight between two precision capstones and a diffuse but persistent set of model-building and methods threads. ATLAS's full Run 2 Higgs combination [arXiv:2608.07332](https://arxiv.org/abs/2608.07332) and Eskilt's $4.8\sigma$ cosmic-birefringence result [arXiv:2608.06480](https://arxiv.org/abs/2608.06480) bookended the field — one a now-theory-limited reference document, the other the most argue-worthy hint of the week. Beneath them, Run 3 oxygen data began landing in force, the flavor/CP top-down program pivoted into an active baryogenesis debate, collider quantum information kept colonizing new final states, and hadron spectroscopy remained the steady numerical ballast throughout.
 
-## Running themes
+## Running Themes
 
-**Flavor/CP structure → baryogenesis (heating up).** The strongest through-line. The CKM-texture wave (Singh's Jordan-algebra skeleton [arXiv:2608.01445](https://arxiv.org/abs/2608.01445), SU(15) composites [arXiv:2608.00166](https://arxiv.org/abs/2608.00166), radiative-mass models [arXiv:2607.29331](https://arxiv.org/abs/2607.29331)) fed into a three-paper baryogenesis cluster on the final day: Bigaran et al.'s MFV-leptoquark claim of baryogenesis from CKM phases alone ([arXiv:2608.05269](https://arxiv.org/abs/2608.05269)), axion-driven spontaneous leptogenesis ([arXiv:2608.05279](https://arxiv.org/abs/2608.05279)), and dim-8 CP operators in sphalerogenesis ([arXiv:2608.05950](https://arxiv.org/abs/2608.05950)). Watch whether the CKM claim survives scrutiny.
+- **Small-system QGP (heating up).** Run 3 OO measurements arrived across the week: LHCb $\Upsilon(2S)$ suppression [arXiv:2608.00182](https://arxiv.org/abs/2608.00182), ALICE charm baryon-meson $v_2$ splitting [arXiv:2608.02161](https://arxiv.org/abs/2608.02161) and strangeness enhancement [arXiv:2608.02874](https://arxiv.org/abs/2608.02874), plus ATLAS's first forward-rapidity jet suppression [arXiv:2608.03261](https://arxiv.org/abs/2608.03261). "How small can QGP be" moved from question to data-driven program.
 
-**Collider quantum information (heating up / spreading).** Now a fully established program, migrating final state by final state: from Erdogan et al.'s complete one-loop $t\bar t$ density matrix as a top-Yukawa CP probe ([arXiv:2607.28761](https://arxiv.org/abs/2607.28761)) and DIS tensor-charge access ([arXiv:2607.28724](https://arxiv.org/abs/2607.28724)), to a POVM proof of what's recoverable under missing neutrinos ([arXiv:2607.28346](https://arxiv.org/abs/2607.28346)), to BESIII hyperon pairs ([arXiv:2608.03131](https://arxiv.org/abs/2608.03131)), and finally to photon-nucleon entanglement in Compton scattering with a no-go theorem and neutron-polarizability control ([arXiv:2608.05330](https://arxiv.org/abs/2608.05330)). The program has now reached low-energy nucleon structure.
+- **Flavor/CP top-down → baryogenesis (heating up).** July's CKM-texture wave (Singh [arXiv:2608.01445](https://arxiv.org/abs/2608.01445), Assi [arXiv:2608.00166](https://arxiv.org/abs/2608.00166), Takahashi [arXiv:2608.00498](https://arxiv.org/abs/2608.00498)) fed directly into an Aug-07 baryogenesis cluster — Bigaran's CKM/MFV leptoquark counterexample [arXiv:2608.05269](https://arxiv.org/abs/2608.05269), Kuckenberg [arXiv:2608.05279](https://arxiv.org/abs/2608.05279), Ogawa [arXiv:2608.05950](https://arxiv.org/abs/2608.05950) — with leptogenesis still active on Aug-10 (Fodroci [arXiv:2608.06983](https://arxiv.org/abs/2608.06983)).
 
-**Small-system QGP / Run 3 oxygen data (heating up).** The freshest experimental thread. LHCb's ~2× $\Upsilon(2S)$ suppression in OO ([arXiv:2608.00182](https://arxiv.org/abs/2608.00182)), ALICE's charm baryon-meson $v_2$ splitting ([arXiv:2608.02161](https://arxiv.org/abs/2608.02161)) and strangeness enhancement ([arXiv:2608.02874](https://arxiv.org/abs/2608.02874)), and ATLAS's first forward-rapidity jet suppression — stronger than central ([arXiv:2608.03261](https://arxiv.org/abs/2608.03261)). ALICE's three-proton femtoscopy as an effective 3→3 scattering experiment ([arXiv:2608.05708](https://arxiv.org/abs/2608.05708)) extends the small-system toolkit.
+- **Collider quantum information (steady, spreading).** From $t\bar t$ tomography the program reached hyperons [arXiv:2608.03131](https://arxiv.org/abs/2608.03131), invisible-neutrino final states via POVM [arXiv:2607.28346](https://arxiv.org/abs/2607.28346), and — notably — low-energy Compton scattering, where Hatta et al. [arXiv:2608.05330](https://arxiv.org/abs/2608.05330) tie photon-nucleon entanglement to neutron polarizabilities.
 
-**Muon collider as neutrino factory (new).** Two coincident re-evaluations (Burk et al. [arXiv:2608.02714](https://arxiv.org/abs/2608.02714); Choi et al.'s MINT MC [arXiv:2608.02718](https://arxiv.org/abs/2608.02718)) find forward neutrino fluxes ~2 orders of magnitude above prior estimates at 10 TeV — an accidental neutrino-physics case for an energy-frontier machine. Persisted into 06 in a minor key (top-partner study [arXiv:2608.04399](https://arxiv.org/abs/2608.04399)).
+- **Axions, every angle (steady).** A wide uncoordinated spread (misalignment, thermal-alignment bounds, TRGB limit [arXiv:2608.04801](https://arxiv.org/abs/2608.04801), PQ-seesaw links [arXiv:2608.05150](https://arxiv.org/abs/2608.05150)), now gaining a possible observational anchor if the birefringence signal points at an axion-like Chern-Simons coupling.
 
-**Hadron spectroscopy (steady, high volume).** The reliable numerical bulk. Anchored by real data — BESIII's charged $X(3790)^-$ at 5.3σ ([arXiv:2607.29138](https://arxiv.org/abs/2607.29138)) — and organized by Brambilla et al.'s BOEFT survey of near-threshold quarkoniumlike states ([arXiv:2608.04105](https://arxiv.org/abs/2608.04105)), likely to become a reference multiplet assignment.
+- **Automation/ML methodology (steady drumbeat).** JUNO reconstruction speedup via AI agent [arXiv:2608.00461](https://arxiv.org/abs/2608.00461), the SMEFT LLM tool [arXiv:2608.04100](https://arxiv.org/abs/2608.04100) (joining LeWRON/CLVisc/SFitter), equivariant-transformer benchmarking [arXiv:2608.02735](https://arxiv.org/abs/2608.02735), and Krämer's reflection [arXiv:2608.05812](https://arxiv.org/abs/2608.05812).
 
-## Turning points
+- **Hadron spectroscopy (bulk, steady).** Persistent daily volume; organizing references are Brambilla's BOEFT near-threshold survey [arXiv:2608.04105](https://arxiv.org/abs/2608.04105) and Constantinou's lattice-PDF review [arXiv:2608.00251](https://arxiv.org/abs/2608.00251).
 
-- **BESIII's $X(3790)^-$** ([arXiv:2607.29138](https://arxiv.org/abs/2607.29138)) — a clean 5.3σ charged charmoniumlike observation extending the exotic-hadron run.
-- **Ghosh et al.'s doubly-charged-Higgs recast** ([arXiv:2608.03988](https://arxiv.org/abs/2608.03988)) — argues the ATLAS four-lepton efficiency exceeds a strict bound, shifting the mass limit down ~100 GeV. Cite the original number with care.
-- **Material-agnostic DM-electron ceiling** ([arXiv:2608.05282](https://arxiv.org/abs/2608.05282)) — a first-principles upper bound on scattering rates for the entire direct-detection program.
-- **DUNE's first Jarlskog-invariant sensitivity** ([arXiv:2608.04059](https://arxiv.org/abs/2608.04059)) — parametrization-independent leptonic CP, plus a sharp θ23-octant gain under a reactor θ13 prior.
-- **CMS semivisible-jet / $Z'\to t\bar t$ limits** ([arXiv:2608.05323](https://arxiv.org/abs/2608.05323), [arXiv:2608.01251](https://arxiv.org/abs/2608.01251)) — SM-consistent, tightening BSM mediator space.
+## Turning Points
 
-## Open questions
+- **ATLAS Run 2 Higgs combination** [arXiv:2608.07332](https://arxiv.org/abs/2608.07332) — closes the incremental $HH$/$tH$ updates the memory tracked; signal strength now theory-limited, first ATLAS running-$b$-mass extraction.
+- **Cosmic birefringence to $4.8\sigma$** [arXiv:2608.06480](https://arxiv.org/abs/2608.06480) — joint ACT DR6 + Planck DR4 elevates two prior hints into a parity-violation claim; the CMB acting as a particle-physics instrument.
+- **Doubly-charged-Higgs recast** [arXiv:2608.03988](https://arxiv.org/abs/2608.03988) — argues the ATLAS four-lepton efficiency violates a strict bound, shifting the mass limit down ~100 GeV; flag before quoting that number.
+- **Two-loop $t\bar tW$ amplitude** — first exact result (Pozzoli [arXiv:2608.02527](https://arxiv.org/abs/2608.02527)) followed within two days by Becchetti et al. [arXiv:2608.03746](https://arxiv.org/abs/2608.03746); a genuine calculational milestone converged on twice.
 
-- **Can CKM CP violation alone drive baryogenesis?** The Bigaran et al. counterexample ([arXiv:2608.05269](https://arxiv.org/abs/2608.05269)) directly contradicts conventional wisdom — the week's most argue-worthy claim.
-- **How small can QGP be?** Sequential melting and flow now appearing in OO; awaiting more Run 3 OO analyses.
-- **The doubly-charged-Higgs mass limit** — is the ATLAS efficiency bound ([arXiv:2608.03988](https://arxiv.org/abs/2608.03988)) accepted?
-- **Hubble tension** — neutrino distance ladder ([arXiv:2608.00923](https://arxiv.org/abs/2608.00923)) offers a propagation-systematic-free rung (huge error bars); Bianchi-anisotropy route ruled out ([arXiv:2607.29197](https://arxiv.org/abs/2607.29197)). New probes, no resolution.
-- **Phase-transition GW predictions** remain scheme-sensitive (nucleation prefactor [arXiv:2608.00169](https://arxiv.org/abs/2608.00169); resummation [arXiv:2608.04102](https://arxiv.org/abs/2608.04102); wall radiation [arXiv:2608.02729](https://arxiv.org/abs/2608.02729)).
+## Open Questions
 
-## Recurring references
+- **Does the birefringence signal survive dust systematics?** ($3.5\sigma$ post-mitigation) — the key follow-up to watch.
+- **Can CKM CP violation alone drive baryogenesis?** Bigaran's counterexample [arXiv:2608.05269](https://arxiv.org/abs/2608.05269) needs scrutiny.
+- **Falsifiable spectroscopy predictions:** the narrow $1^+$ beauty-strange state at $5747\pm2$ MeV (Nowak, chiral doubling of new LHCb $B_{s0}^*(5700)^0$) [arXiv:2608.07268](https://arxiv.org/abs/2608.07268); and the isovector $X(3872)$ partner $W_{c1}$ via femtoscopy [arXiv:2608.01237](https://arxiv.org/abs/2608.01237).
+- **The muon-collider-as-neutrino-factory case** — fluxes ~2 orders above prior estimates ([arXiv:2608.02714](https://arxiv.org/abs/2608.02714), [arXiv:2608.02718](https://arxiv.org/abs/2608.02718)); new thread, watch for a physics-program response.
+- **Neutrino distance ladder** [arXiv:2608.00923](https://arxiv.org/abs/2608.00923) — propagation-systematic-free $H_0$, but error bars vast; watch for refinement.
+- **Phase-transition GW predictions** remain resummation-scheme-sensitive ([arXiv:2608.04102](https://arxiv.org/abs/2608.04102), [arXiv:2608.00169](https://arxiv.org/abs/2608.02729)).
 
-- **[arXiv:2607.28761](https://arxiv.org/abs/2607.28761)** — complete $t\bar t$ density matrix / top-Yukawa CP; QI-program anchor.
-- **[arXiv:2607.28346](https://arxiv.org/abs/2607.28346)** — POVM spin tomography under missing neutrinos.
-- **[arXiv:2608.05330](https://arxiv.org/abs/2608.05330)** — Compton-scattering entanglement; QI's low-energy turn.
-- **[arXiv:2608.05269](https://arxiv.org/abs/2608.05269)** — CKM-alone baryogenesis; the week's central provocation.
-- **[arXiv:2608.00182](https://arxiv.org/abs/2608.00182)** — LHCb OO $\Upsilon$ suppression; small-system QGP anchor.
-- **[arXiv:2608.02718](https://arxiv.org/abs/2608.02718)** — MINT muon-collider neutrino flux.
-- **[arXiv:2608.04105](https://arxiv.org/abs/2608.04105)** — BOEFT near-threshold exotics reference.
-- **Background threads to watch:** hep-ph LLM/automation agents ([arXiv:2608.04100](https://arxiv.org/abs/2608.04100), [arXiv:2608.00461](https://arxiv.org/abs/2608.00461), [arXiv:2608.05812](https://arxiv.org/abs/2608.05812)) and FCC-ee/collider-strategy SMEFT accounting ([arXiv:2608.05874](https://arxiv.org/abs/2608.05874), [arXiv:2608.01888](https://arxiv.org/abs/2608.01888), [arXiv:2607.29352](https://arxiv.org/abs/2607.29352)).
+## Recurring References
+
+- [arXiv:2608.07332](https://arxiv.org/abs/2608.07332) — ATLAS Run 2 Higgs combination (new coupling/width reference).
+- [arXiv:2608.06480](https://arxiv.org/abs/2608.06480) — ACT+Planck cosmic birefringence, $4.8\sigma$.
+- [arXiv:2608.05269](https://arxiv.org/abs/2608.05269) — CKM/MFV-leptoquark baryogenesis.
+- [arXiv:2608.04105](https://arxiv.org/abs/2608.04105) — BOEFT near-threshold exotics organization.
+- [arXiv:2608.00182](https://arxiv.org/abs/2608.00182) — LHCb OO $\Upsilon$ suppression (small-system QGP anchor).
+- [arXiv:2608.02527](https://arxiv.org/abs/2608.02527) / [arXiv:2608.03746](https://arxiv.org/abs/2608.03746) — two-loop $t\bar tW$ pair.
