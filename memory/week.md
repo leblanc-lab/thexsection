@@ -1,40 +1,43 @@
-# The Cross Section — Rolling Synthesis, week ending 2026-08-17
+# The Cross Section — Rolling Synthesis, week ending 2026-08-18
 
-The week's center of gravity was flavor, which traced a full arc: opening in neutrino/quark-mixing numerology, flaring mid-week into a genuine data-side $B$-anomaly cluster, then settling into precision and theory consolidation by Friday. Running underneath that were four steadier threads the memory has carried all season — collider precision (SMEFT/FCC-ee), the collider quantum-information program, a hardening no-go on quantum-gravitational-wave detection, and a methodological reckoning in ML for HEP. A recurring motif was closure: warnings raised one day answered by measurements the next.
+The week belonged to flavor, which traced a full arc: from neutrino-mixing numerology, through a mid-week flare of data-side $B$ anomalies, into a CP-violation harvest, and finally to consolidation with SM-consistent nulls and the theory control the anomalies need. Running underneath, two durable threads held steady — the collider quantum-information/tomography program (now aimed at CP) and the FCC-ee/SMEFT precision effort — while the week closed on a genuinely novel precision-EW observable mined from LEP archival data. Dark-matter and axion searches supplied constant background; QCD-matter/small-systems faded after Monday.
 
 ## Running themes
 
-**Flavor, from numerology to anomaly to consolidation (was hot, now cooling to precision).** The week opened on model-building — Barger's $\pi/12$ ([arXiv:2608.08394](https://arxiv.org/abs/2608.08394)) and commensurate quark-lepton mixing ([arXiv:2608.10312](https://arxiv.org/abs/2608.10312)), both offering falsifiable $\delta_{\rm CP}$. Then the data side flared: LHCb's model-independent $C_9$ from transversity amplitudes at 4.3–4.8σ ([arXiv:2608.12215](https://arxiv.org/abs/2608.12215)) and Bouchard et al.'s $B\to PP$ fit demanding ~1000% SU(3)$_F$ breaking ([arXiv:2608.11298](https://arxiv.org/abs/2608.11298)) landed same-day, followed by LHCb's charmless three-body harvest establishing six CPV phenomena at once ([arXiv:2608.12614](https://arxiv.org/abs/2608.12614)). By week's end the register shifted to consolidation: a precise, SM-consistent $\phi_s$ ([arXiv:2608.14119](https://arxiv.org/abs/2608.14119)) and Huang et al.'s completion of the last leading-power factorization piece for $b\to s\ell\ell$ ([arXiv:2608.14341](https://arxiv.org/abs/2608.14341)) — the theory control the $C_9$ interpretation needs.
+**Flavor — the week's spine (flared, then consolidating).** Opened with Barger's commensurate quark-lepton mixing numerology ([arXiv:2608.10312](https://arxiv.org/abs/2608.10312), falsifiable $\delta_{\rm CP}$). Flared hard on 08-13 with two independent data-side anomalies: LHCb's model-independent $C_9$ from transversity amplitudes at 4.3–4.8σ ([arXiv:2608.12215](https://arxiv.org/abs/2608.12215)) and Bouchard et al.'s $B\to PP$ SU(3)$_F$ fit demanding ~1000% breaking ([arXiv:2608.11298](https://arxiv.org/abs/2608.11298)). Peaked 08-14 with LHCb's $B^+\to K^+\pi^+\pi^-$ trio establishing six CP-violation phenomena at once, including CP violation in $\rho(770)^0K^+$ and in wave interference ([arXiv:2608.12614](https://arxiv.org/abs/2608.12614)). By 08-17 the tone turned to consolidation: SM-consistent $\phi_s$ ([arXiv:2608.14119](https://arxiv.org/abs/2608.14119)) and the last leading-power factorization piece for $b\to s\ell\ell$ ([arXiv:2608.14341](https://arxiv.org/abs/2608.14341)) — the theory control the $C_9$ interpretation was missing.
 
-**Collider precision — SMEFT & FCC-ee (steady, building).** Haisch et al.'s full-NLL EWPO across all 210 Wilson coefficients ([arXiv:2608.10064](https://arxiv.org/abs/2608.10064)) is emerging as the reference basis; FCC-ee reaching 4 MeV Higgs-mass precision ([arXiv:2608.12071](https://arxiv.org/abs/2608.12071)) and VLF loop effects at per-mille Higgs-strahlung ([arXiv:2608.14538](https://arxiv.org/abs/2608.14538)) keep extending the thread from earlier Celada FCC-ee accounting.
+**Collider QI / tomography (steady, evolving toward CP).** Tracked from top-pair tomography into TauPolaris' normalizing-flow tau polarimetry ($4.3\sigma$ $H\to\tau\tau$ entanglement, [arXiv:2608.10961](https://arxiv.org/abs/2608.10961)), then Perelstein et al. turning spin tomography into optimal CP-dipole observables reaching 40–200 TeV ([arXiv:2608.12463](https://arxiv.org/abs/2608.12463)). The program is migrating from entanglement demonstration to CP-sensitivity as a working tool.
 
-**Collider quantum information (heating, maturing into tools).** The program moved from entanglement demonstration toward practical CP-sensitivity: TauPolaris' normalizing-flow tau polarimetry with 4.3σ entanglement discrimination in $H\to\tau\tau$ ([arXiv:2608.10961](https://arxiv.org/abs/2608.10961)), then Perelstein et al. turning spin tomography into optimal CP-dipole observables reaching 40–200 TeV ([arXiv:2608.12463](https://arxiv.org/abs/2608.12463)).
+**FCC-ee / SMEFT precision (steady).** A continuous strand: NLL EWPO across all 210 Wilson coefficients ([arXiv:2608.10064](https://arxiv.org/abs/2608.10064)), FCC-ee 4 MeV Higgs-mass recoil enabling the electron Yukawa ([arXiv:2608.12071](https://arxiv.org/abs/2608.12071)), and VLF one-loop shifts to Higgs-strahlung at per-mille level ([arXiv:2608.14538](https://arxiv.org/abs/2608.14538), Yukawa-driven scenarios the live target).
 
-**ML methodology reckoning (building).** A conceptual center formed around misspecification and honesty: the Living Guide freezing the exhaustive-review model ([arXiv:2608.09531](https://arxiv.org/abs/2608.09531)), Pagno's coverage-failure index ([arXiv:2608.09203](https://arxiv.org/abs/2608.09203)), and Cruz-Martinez et al.'s "unknown unknowns" disposition ([arXiv:2608.13633](https://arxiv.org/abs/2608.13633)).
+**Dark matter / axions (steady background).** Broad and continuous: singlet-doublet DM mapped across all production mechanisms ([arXiv:2608.12480](https://arxiv.org/abs/2608.12480)), XENONnT's inelastic-DM null with novel directional cuts ([arXiv:2608.15149](https://arxiv.org/abs/2608.15149)), plus haloscopes, NaI hardware, superradiance, and AQN exotica.
 
-**Quantum GW detection (converging on a wall, fading).** Miyauchi et al. ([arXiv:2608.08803](https://arxiv.org/abs/2608.08803)) extended the Bao et al. no-go ([arXiv:2607.27313](https://arxiv.org/abs/2607.27313)) from haloscopes to squeezing — the second such closure in two weeks.
+**Hadron spectroscopy (heating late-week).** Light early, then a dense 08-18 cluster: continuum-limit exotic $B_s$ states ([arXiv:2608.15377](https://arxiv.org/abs/2608.15377)), Dudek's gluonic-excitation review ([arXiv:2608.16784](https://arxiv.org/abs/2608.16784)), and a first estimate of where the radial quarkonium ladder truncates ([arXiv:2608.16875](https://arxiv.org/abs/2608.16875)).
 
 ## Turning points
 
-- **Two independent $B$ anomalies in one day** ([arXiv:2608.12215](https://arxiv.org/abs/2608.12215), [arXiv:2608.11298](https://arxiv.org/abs/2608.11298)) reopened the semileptonic-vs-nonleptonic tension after a week of pure model-building — unanticipated by prior memory.
-- **NOvA's most-precise $\bar\nu_\mu$–H CCQE cross section** ([arXiv:2608.12293](https://arxiv.org/abs/2608.12293)) directly answers the Puhan et al. DUNE systematics warning ([arXiv:2608.08609](https://arxiv.org/abs/2608.08609)) that flagged 25–30% sensitivity shifts — the field pinning down its own inputs.
-- **Huang et al.'s factorization completion** ([arXiv:2608.14341](https://arxiv.org/abs/2608.14341)) plus SM-consistent $\phi_s$ ([arXiv:2608.14119](https://arxiv.org/abs/2608.14119)) reframe the $C_9$ story from "growing tension" toward "now testable with theory control."
-- **Fermilab g-2 muon EDM limit** $|d_\mu|<1.1\times10^{-19}\,e$cm ([arXiv:2608.11124](https://arxiv.org/abs/2608.11124)) — a clean new null.
+- **08-13 anomaly flare** — two independent $B$ anomalies in one day ([arXiv:2608.12215](https://arxiv.org/abs/2608.12215), [arXiv:2608.11298](https://arxiv.org/abs/2608.11298)), unanticipated by prior weeks of numerology.
+- **08-14 CP discovery** — LHCb established charmless three-body CP violation as measurement, not tension ([arXiv:2608.12614](https://arxiv.org/abs/2608.12614)).
+- **08-17 theory catch-up** — [arXiv:2608.14341](https://arxiv.org/abs/2608.14341) supplies the factorization ingredient that determines whether $C_9$ survives as new physics; $\phi_s$ null tempers the flare.
+- **08-18 new observable** — Zhang et al.'s one-point charge correlator, a jet-free EW asymmetry from 61 pb⁻¹ of DELPHI open data ([arXiv:2608.15357](https://arxiv.org/abs/2608.15357), theory [arXiv:2608.14779](https://arxiv.org/abs/2608.14779)), pitched at the hadronic-asymmetry tensions — the archival-data route is itself the innovation.
 
 ## Open questions
 
-- **Is $C_9$ genuine new physics?** With factorization now controlled and $\phi_s$ SM-consistent, watch for global fits absorbing the transversity result. The $B\to PP$ ~5σ SU(3) breaking remains unexplained.
-- **Absolute neutrino mass from oscillations.** Alves et al. ([arXiv:2608.13736](https://arxiv.org/abs/2608.13736)) claim NLO $m_i/E$ sensitivity, with JUNO reaching few-hundred-keV on a novel mass combination — genuinely surprising; watch for scrutiny/follow-up.
-- **Kaon sector two NP minima** — KOTO-II/NA62 discrimination is the concrete near-term target ([arXiv:2608.14474](https://arxiv.org/abs/2608.14474)).
-- **ALICE ultra-central $v_3/v_2$ puzzle** ([arXiv:2608.11199](https://arxiv.org/abs/2608.11199)) still open; small-system scaling program continuing.
-- **Small-instanton breaking of the $m_a$–$f_a$–$g_{a\gamma\gamma}$ relation** ([arXiv:2608.08602](https://arxiv.org/abs/2608.08602)) opening new axion search regions.
+- **Does $C_9$ survive theory control?** With [arXiv:2608.14341](https://arxiv.org/abs/2608.14341) now in hand, watch for global fits reassessing the 4.3–4.8σ deviation and the absurd $B\to PP$ SU(3) breaking.
+- **Gravitational parity violation** — Gharibyan et al.'s extraordinary claim from HERA Compton-polarimeter spectra ([arXiv:2608.14703](https://arxiv.org/abs/2608.14703)); flag any confirmation/rebuttal.
+- **Absolute neutrino mass in oscillations** — Alves et al. argue oscillations carry mass information at NLO, JUNO-reachable ([arXiv:2608.13736](https://arxiv.org/abs/2608.13736)); a surprising conceptual claim to watch.
+- **Hadronic-asymmetry tensions** — whether the one-point charge correlator gains traction against them.
+- **ALICE ultra-central $v_3/v_2$ puzzle** ([arXiv:2608.11199](https://arxiv.org/abs/2608.11199)) — unresolved, small-system program otherwise quiet.
+- **Barger's $\delta_{\rm CP}\simeq296^\circ$** — a numerology prediction for DUNE/Hyper-K to eventually falsify.
+- **Kaon NP discrimination** — KOTO-II can separate the two surviving minima ([arXiv:2608.14474](https://arxiv.org/abs/2608.14474)); a concrete near-term target.
 
 ## Recurring references
 
-- [arXiv:2607.27313](https://arxiv.org/abs/2607.27313) — Bao et al., quantum-GW no-go anchor (extended by [arXiv:2608.08803](https://arxiv.org/abs/2608.08803)).
-- [arXiv:2608.08609](https://arxiv.org/abs/2608.08609) — Puhan, DUNE cross-section systematics (answered by [arXiv:2608.12293](https://arxiv.org/abs/2608.12293)).
-- [arXiv:2608.12215](https://arxiv.org/abs/2608.12215) / [arXiv:2608.12614](https://arxiv.org/abs/2608.12614) — LHCb $C_9$ and charmless CPV, the week's flavor anchors.
-- [arXiv:2608.14341](https://arxiv.org/abs/2608.14341) — factorization theory counterpart to $C_9$.
-- [arXiv:2608.10064](https://arxiv.org/abs/2608.10064) — SMEFT NLL EWPO reference basis.
-- [arXiv:2608.10961](https://arxiv.org/abs/2608.10961) / [arXiv:2608.12463](https://arxiv.org/abs/2608.12463) — collider-QI thread (tomography → CP).
-- [arXiv:2608.09531](https://arxiv.org/abs/2608.09531) / [arXiv:2608.13633](https://arxiv.org/abs/2608.13633) — ML-methodology reckoning.
+- [arXiv:2608.12215](https://arxiv.org/abs/2608.12215) — LHCb $C_9$ transversity anomaly (the week's flavor anchor)
+- [arXiv:2608.11298](https://arxiv.org/abs/2608.11298) — $B\to PP$ SU(3)$_F$ anomaly
+- [arXiv:2608.12614](https://arxiv.org/abs/2608.12614) — LHCb charmless three-body CP violation
+- [arXiv:2608.14341](https://arxiv.org/abs/2608.14341) — leading-power $b\to s\ell\ell$ factorization
+- [arXiv:2608.14119](https://arxiv.org/abs/2608.14119) — SM-consistent $\phi_s$
+- [arXiv:2608.12463](https://arxiv.org/abs/2608.12463) — tomography turned to CP dipoles
+- [arXiv:2608.10064](https://arxiv.org/abs/2608.10064) — NLL SMEFT EWPO basis
+- [arXiv:2608.15357](https://arxiv.org/abs/2608.15357) / [arXiv:2608.14779](https://arxiv.org/abs/2608.14779) — one-point charge correlator
