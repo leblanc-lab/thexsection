@@ -38,6 +38,19 @@ its own:
 <a href="muon/index.html">Muon collider</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Thursday, August 20, 2026</h2>
+  <div class="meta">
+    <span class="chip">Optimal transport</span>
+  </div>
+  <h2 id="optimal-transport">Optimal transport</h2>
+<h3 id="arxiv260818233-transferable-fast-calorimeter-shower-generation-via-multi-geometry-pre-training-thorsten-buss-et-al"><a href="https://arxiv.org/abs/2608.18233">arXiv:2608.18233</a> — Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training (Thorsten Buss et al.)</h3>
+<p>Be aware up front: OT is instrumental here, not the subject. The paper is a transfer-learning study — pre-training a point-cloud calorimeter shower generator (the <code>AllShowers</code> flow-matching backbone) on synthetic geometry variation (<code>SimpleBox</code>, 10⁴ box calorimeters spanning sampling fraction f_s ∈ [0.01,0.05] and N_layers ∈ {15,…,45}) and fine-tuning on unseen detectors. OT enters in two distinct roles.</p>
+<p>First, on the training side: the coordinate stage is conditional flow matching &ldquo;with an exact optimal-transport coupling between the prior and the data points.&rdquo; This is inherited unchanged from the <code>AllShowers</code> release (Ref. 52) — no new OT methodology, and the OT coupling noise is regenerable and not released.</p>
+<p>Second, and more relevant, OT distances are the evaluation currency, and the paper makes a methodologically useful distinction. They use W1/σ_ref (Wasserstein-1 normalized by the Geant4 reference std) on <em>pooled</em> histograms, and separately a <strong>sliced Wasserstein distance</strong> (256 random 1D projections, normalized by the Geant4 cloud&rsquo;s RMS dispersion) on <em>per-shower</em> vectors. Because each SWD projection mixes bins, it is sensitive to inter-bin correlations and shower-to-shower fluctuations that pooled W1 or mean-profile comparisons cannot see. This is exactly what exposes the key physics result: on the held-out FCCee-ALLEGRO target, the LEMURS prior&rsquo;s longitudinal SWD falls to 0.016 at D=10³ then <em>rises</em> to 0.059 at D=10⁵ (an &ldquo;ossification&rdquo;-like imprint), invisible in mean occupancy and only detectable via the distributional (SWD) metric. Ablating the multiplicity stage (Geant4 counts) restores monotonic convergence toward the 0.0079 statistical-resolution floor, and a KL cross-check reproduces the effect — so the SWD finding is metric-robust, localizing the residual to <code>PointCountFM</code> rather than the OT-coupled coordinate model.</p>
+<p>Headline transfer numbers (aggregated SWD geometric mean d̄): at D=10³, both priors beat from-scratch, reducing d̄ to Geant4 by 8.0× (LEMURS) and 5.2× (SimpleBox); synthetic pre-training overtakes the realistic prior at larger D. Caveat for this topic: no new OT technique is introduced — the value is a careful demonstration that per-shower sliced-Wasserstein is the diagnostic that catches transfer pathologies pooled metrics miss. Also restricted to EM photon showers only.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Tuesday, August 18, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -207,7 +220,7 @@ its own:
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-08-19 16:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-08-20 11:14 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
