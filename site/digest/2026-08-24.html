@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday, August 24, 2026 — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" type="application/rss+xml" title="The Cross Section" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Monday, August 24, 2026</h1>
+  <div class="meta">
+    <span class="count">35 papers read</span>
+    <span class="chip">Novel dark-matter detection hardware</span><span class="chip">Flavor nulls hold</span><span class="chip">ML, GPU, and quantum-simulation tooling</span><span class="chip">Precision for lepton colliders</span>
+  </div>
+  <h2 id="new-instruments-for-old-dark-matter-questions">New instruments for old dark-matter questions</h2>
+<p>The day&rsquo;s weight sits on detection methodology, not results — two leading limits arrive from unconventional apparatus. POLONAISE (<a href="https://arxiv.org/abs/2608.20464">arXiv:2608.20464</a>) runs the first ultraheavy-DM search with a magnetically levitated milligram ferromagnet, pushing seven orders of magnitude in mass past optical levitation; and a HFIR cold-neutron-beam search (<a href="https://arxiv.org/abs/2608.21120">arXiv:2608.21120</a>) improves the <span class="arithmatex">\(n\to n'\)</span> transformation limit by an order of magnitude — the same mirror-neutron channel that surfaced on 08-13. Flavor stayed quiet and consistent: LHCb&rsquo;s first <span class="arithmatex">\(\Lambda_b^0\to\Lambda(1520)\mu\mu\)</span> angular analysis (<a href="https://arxiv.org/abs/2608.21082">arXiv:2608.21082</a>) lands on the SM, and Pich et al. reaffirm the data-driven approach can&rsquo;t reach the observed charm CPV. A tooling-heavy day rounds it out.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="dark-matter-new-detection-handles">Dark matter: new detection handles</h3>
+<p>POLONAISE <a href="https://arxiv.org/abs/2608.20464">arXiv:2608.20464</a> resolves TeV-scale impulses with a levitated ferromagnet, setting leading composite-DM cross-section limits across <span class="arithmatex">\(10^6\)</span>–<span class="arithmatex">\(10^{15}\)</span> GeV. On the wave-like end, Moroi&rsquo;s pedagogical review <a href="https://arxiv.org/abs/2608.20745">arXiv:2608.20745</a> lays out qubit-based DM sensing, and Liang et al. <a href="https://arxiv.org/abs/2608.20715">arXiv:2608.20715</a> finally compute the transverse dielectric response for light-DM–electron scattering in silicon — 4–6 orders below the longitudinal, giving the first rigorous justification for the standard approximation. With the HFIR <span class="arithmatex">\(n\to n'\)</span> result <a href="https://arxiv.org/abs/2608.21120">arXiv:2608.21120</a>, four distinct hardware routes into hidden sectors in one day.</p>
+<h3 id="flavor-nulls-hold">Flavor nulls hold</h3>
+<p>LHCb&rsquo;s <span class="arithmatex">\(\Lambda_b^0\to\Lambda(1520)\mu\mu\)</span> angular analysis <a href="https://arxiv.org/abs/2608.21082">arXiv:2608.21082</a> — <span class="arithmatex">\(A_{\rm FB}\)</span> and <span class="arithmatex">\(S_{1cc}\)</span> over 0.1–12.5 GeV² — agrees with the SM, a baryonic complement to the mesonic <span class="arithmatex">\(b\to s\ell\ell\)</span> picture that has been consolidating rather than tensioning since the mid-month <span class="arithmatex">\(C_9\)</span> flare. Pich et al. <a href="https://arxiv.org/abs/2608.21212">arXiv:2608.21212</a> tighten the two-channel rescattering treatment of charm CPV with a single well-determined strong-scattering input and conclude the Standard Model still falls short — the anomaly stays unexplained, not resolved.</p>
+<h3 id="tooling-gpu-quantum-simulation-rl">Tooling: GPU, quantum simulation, RL</h3>
+<p>Bothmann et al. <a href="https://arxiv.org/abs/2608.21338">arXiv:2608.21338</a> present the first end-to-end GPU-resident event generator with normalizing-flow proposals feeding Pepper, turning billion-event high-multiplicity samples from multi-week to sub-day jobs. Davoudi et al. <a href="https://arxiv.org/abs/2608.21258">arXiv:2608.21258</a> strip a factor of ~<span class="arithmatex">\(10^{14}\)</span> from product-formula QCD quantum-simulation cost estimates — a reminder the field&rsquo;s headline gate counts are still algorithm-limited. And Jha et al.&rsquo;s CDRL <a href="https://arxiv.org/abs/2608.20686">arXiv:2608.20686</a> uses symbolic certificates to steer reinforcement learning through a <span class="arithmatex">\(&gt;10^{26}\)</span> neutrino-flavor-model space, extracting reusable rules along the way.</p>
+<h3 id="precision-for-lepton-colliders">Precision for lepton colliders</h3>
+<p>Frixione et al. <a href="https://arxiv.org/abs/2608.21181">arXiv:2608.21181</a> compute the electron PDFs at NNLO in QED, and show the <span class="arithmatex">\(\Delta\)</span> scheme kills the <span class="arithmatex">\(\overline{\rm MS}\)</span> soft-log enhancement — arguing NNLO is needed for the <span class="arithmatex">\(10^{-4}\)</span> precision targets of hundred-GeV lepton colliders. This feeds directly into the season&rsquo;s running FCC-ee precision thread.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2608.20464">arXiv:2608.20464</a></strong> — POLONAISE: first ultraheavy-DM search with a levitated magnet; leading composite-DM limits and a genuinely new mass reach.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21082">arXiv:2608.21082</a></strong> — LHCb&rsquo;s first <span class="arithmatex">\(\Lambda_b\to\Lambda(1520)\mu\mu\)</span> angular analysis, SM-consistent; the baryonic <span class="arithmatex">\(b\to s\ell\ell\)</span> counterpart.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21120">arXiv:2608.21120</a></strong> — Order-of-magnitude improvement on <span class="arithmatex">\(n\to n'\)</span> from a cold-neutron beam; the mirror-neutron channel again.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21181">arXiv:2608.21181</a></strong> — NNLO QED electron PDFs and an all-order <span class="arithmatex">\(\Delta\)</span> scheme; enabling infrastructure for lepton-collider precision.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21258">arXiv:2608.21258</a></strong> — A ~<span class="arithmatex">\(10^{14}\)</span> cut in QCD quantum-simulation gate cost; algorithmic headroom that matters for near-term feasibility.</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<p>Moroi <strong><a href="https://arxiv.org/abs/2608.20745">arXiv:2608.20745</a></strong> <em>Qubits for Dark Matter Hunting</em> — Takeo Moroi (hep-ph) is an introductory review of qubit- and quantum-sensing-based DM detection — pedagogical field-building for a subfield that keeps recurring in these pages.</p>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2608.21006">arXiv:2608.21006</a></strong> <em>Evidence for <span class="arithmatex">\(\eta_c(2S)\to p\bar p\pi^+\pi^-\pi^0\)</span></em> — BESIII Collaboration (hep-ex) — plus first observation of the <span class="arithmatex">\(\chi_{cJ}\)</span> modes and improved <span class="arithmatex">\(\chi_{cJ}\to p\bar p\omega\)</span>.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.20458">arXiv:2608.20458</a></strong> <em>Poles in <span class="arithmatex">\(\pi N\)</span> scattering from forward dispersion relations</em> — Peláez et al. (hep-ph) — model-independent Roper and <span class="arithmatex">\(\Delta(1232)\)</span> poles from revised total cross sections.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21145">arXiv:2608.21145</a></strong> <em>Unraveling QCD dynamics with heavy quark energy correlators</em> — Vitev (hep-ph) — dead-cone imprint on EECs and its medium modification.</li>
+<li><strong><a href="https://arxiv.org/abs/2608.21033">arXiv:2608.21033</a></strong> <em>The ABC of RPV III</em> — Dreiner et al. (hep-ph) — LHC coverage of <span class="arithmatex">\(LQ\bar D\)</span> signatures, flagging gaps for wino/higgsino LSPs and unconstrained slepton LSPs.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv260820464-first-search-for-ultraheavy-dark-matter-using-a-magnetically-levitated-particle-dennis-g-uitenbroek-et-al"><a href="https://arxiv.org/abs/2608.20464">arXiv:2608.20464</a> — First Search for Ultraheavy Dark Matter Using a Magnetically Levitated Particle (Dennis G. Uitenbroek et al.)</h3>
+<p><em>(abstract only)</em> POLONAISE uses a milligram-scale ferromagnet levitated in a superconducting trap as an impulse sensor, reaching a force sensitivity of 0.07 fN Hz⁻¹ᐟ² and resolving momentum kicks as small as 1 TeV/c. Treating every candidate impulse as a possible DM scatter, the collaboration sets optimum-interval upper limits on the neutron coupling for DM interacting via a light mediator: for masses 10⁶–10¹⁵ GeV/c² and mediators below 30 meV/c², they exclude couplings down to α_n = 3.2×10⁻⁹ at 95% CL, giving leading constraints on the DM–neutron cross section for composite DM.</p>
+<p>The headline is the apparatus, not a signal. Magnetic levitation extends the mass reach of levitated-sensor DM searches seven orders of magnitude beyond optical levitation, opening the ultraheavy frontier where composite/dark-nugget candidates deposit resolvable single-scatter impulses. This is the mechanical-sensor counterpart to the day&rsquo;s other hidden-sector hardware routes (qubit sensing, the HFIR mirror-neutron beam). With only the abstract available, the exposure, background model, and impulse-candidate treatment can&rsquo;t be assessed here — but the quoted sensitivity and mass span are the concrete takeaways.</p>
+<h3 id="arxiv260821082-angular-analysis-of-the-decay-_b0-1520-lhcb-collaboration-et-al"><a href="https://arxiv.org/abs/2608.21082">arXiv:2608.21082</a> — Angular analysis of the decay Λ_b⁰ → Λ(1520)μ⁺μ⁻ (LHCb collaboration et al.)</h3>
+<p>First angular analysis of this baryonic b→sℓℓ mode, using LHCb&rsquo;s full Run 1+2 9 fb⁻¹ sample. The leptonic forward-backward asymmetry A^ℓ_FB,3/2 and the CP-averaged S_1cc are extracted in four narrow q² bins (0.1–12.5 GeV²/c⁴) plus the wide [1.1,6.0] bin, with the Λ(1520) reconstructed in pK⁻ and spin-1/2 Λ* contributions plus their interferences modelled explicitly. All measured values agree with SM predictions built on lattice-QCD and dispersive form factors — e.g. A^ℓ_FB,3/2 = 0.16±0.15±0.06 and S_1cc = 0.19±0.30±0.18 in [1.1,6.0]. The single mild outlier is S_1cc = 1.35±0.54±0.17 in [6.0,8.0], but statistics dominate throughout.</p>
+<p>This is the baryonic complement to the mesonic b→sℓℓ program, probing the same FCNC transition with different hadronic structure and spin content — a useful cross-check as the mesonic picture has consolidated rather than sharpened since the mid-month C₉ discussion. Caveats are candid: the measurement is statistics-limited, the fit sits near physical boundaries (biases up to ~18% of the statistical error, corrected via pseudoexperiments), and systematics are dominated by combinatorial and Λ_c⁺-feeddown backgrounds. Discriminating among form-factor predictions awaits larger samples.</p>
+<h3 id="arxiv260821120-new-limits-on-nn-transformation-from-hfir-cold-neutron-beam-james-m-rogers-et-al"><a href="https://arxiv.org/abs/2608.21120">arXiv:2608.21120</a> — New Limits on n→n′ Transformation from HFIR Cold Neutron Beam (James M. Rogers et al.)</h3>
+<p>A neutron-regeneration search at HFIR&rsquo;s CG-2/GP-SANS cold beam pushes the mirror-neutron transformation limit an order of magnitude below the prior SNS results. A 3.5 mm cadmium wafer at the center of a 6.6 T split-pair magnet absorbs all beam neutrons (to &lt;10⁻²⁰); any n→n′ conversion in the first magnet half lets sterile n′ pass the cadmium and regenerate to detectable neutrons in the second half, caught by the low-background ³He detector 20 m downstream. No signal appears above background: 95% CL regeneration-probability limits reach ~1.25×10⁻¹¹ per neutron (B=0) up to a few×10⁻¹¹ at nonzero field, translating to an order-of-magnitude improvement in 2θ₀² across Δm = 0.1–1000 neV.</p>
+<p>The gains come from HFIR&rsquo;s ~400× higher average intensity, colder/wider spectrum, and the facility ³He detector. This is the same mirror-neutron channel flagged on 08-13, and one of four hidden-sector hardware routes in the day&rsquo;s digest. Honest caveats: the 2021 run (~40 h) suffered detector activation of ⁵⁵Mn→⁵⁶Mn, raising and time-varying the background, so it carries reduced weight; the 2024 run (~90 h) is cleaner but background still crept up ~8% over the run. Beam-intensity normalization carries ~4–6% systematics reconciled across multiple monitors. Further reach demands higher intensity, longer beam time, and hard background reduction.</p>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-08-21.html">&larr; Friday, August 21, 2026</a>
+  
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-08-24 09:50 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

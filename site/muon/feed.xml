@@ -6,7 +6,18 @@
   <description>The 10 TeV frontier, one paper at a time</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>On-Detector Machine Learning for Beam-Induced Background Rejection at a 10 TeV Muon Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/muon/#a2608-21327</link>
+    <guid isPermaLink="false">arxiv:2608.21327</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Abadjiev et al.</dc:creator>
+    <description><![CDATA[<p>This is the smart-pixels concept ported from HL-LHC to the muon collider BIB problem, and it&rsquo;s squarely on-topic for detector R&amp;D at √s = 10 TeV. The concrete driver: innermost vertex layer occupancy of O(10⁴) hits/cm²/BX at 30 kHz translates to &gt;50 Gbps/chip (2×2 cm², 40-bit hits) — ~10× the HL-LHC pixel readout ceiling. The pitch is to reject BIB <em>in the pixel front-end</em> using cluster shape rather than relying solely on O(30) ps timing, which they argue is fragile at 25×25 µm² pitch (needs ~10× front-end power reduction) and vulnerable to calibration/radiation drift. Physics handle: collision particles hit at IP-consistent incidence angles (x_size grows with z_global), whereas BIB e± loop in at large angles regardless of position, giving distinct cluster sizes/profiles.</p>
+<p>They train three quantized NN classes — engineered scalars (Model 1), 1D charge profiles (Model 2), full 21×13 CNN (Model 3) — via QKeras QAT, Pareto-scanned over architecture and 3–10 bit weights, with hls4ml→Vitis (FPGA) and Catapult/SAED32 (32 nm ASIC) resource estimates. Headline: 88–90% data reduction at 99% signal efficiency for Models 1–2 with ASIC area &lt;1 mm² and 160–250 ns latency; Model 3 reaches 90.5% cluster rejection / 94.4% data reduction but at prohibitive area (~8 mm²). Crucially, cluster-shape rejection is shown orthogonal to timing — BIB is rejected across the full t_corr spectrum, and stacking a [3σ,5σ] window pushes data reduction to 98.5–98.9%.</p>
+<p>Caveats are stated plainly and are significant: PIXELAV assumes a single isolated cluster in a clean ROI (no overlapping/warped BIB clusters, no edge effects, ROI-finding assumed upstream) — unrealistic at true muon-collider occupancy. Incoherent pair production is absent from the BIB sample (they argue IPP clusters look similar and should be rejectable if trained on). Signal is single muons, not physics events; geometry is MuColl_v1 / lattice v0.4; ASIC numbers are open-library first-pass, not manufacturable. So: a credible feasibility demonstration and benchmark (88–90% @ 99% eff, sub-mm² ASIC), not yet a validated occupancy-realistic result.</p>]]></description>
+  </item>
 
   <item>
     <title>Probing the ALP–Photon–Dark Photon Interaction through the Mono-Photon plus Missing-Energy Signature at a Muon Collider</title>
