@@ -3,6 +3,10 @@
 Fetches https://arxiv.org/html/<id> (available for most >=2024 submissions),
 strips it to text, and writes one short expert deep dive per pick, appended to
 the daily digest under "## Deep dives".
+
+`--prompt-out` writes the assembled prompt (paper fetches included) and
+`--from-file` appends a completion produced anywhere else, so the section can be
+written by hand when the API path is unavailable.
 """
 
 from __future__ import annotations
@@ -10,6 +14,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from pathlib import Path
 
 import frontmatter
 import httpx
@@ -17,7 +22,7 @@ from bs4 import BeautifulSoup
 
 from .common import digest_path, load_config, load_papers, load_prompt, parse_date
 from .digest import add_bylines, linkify
-from .llm import LLM
+from .llm import LLM, LLMResult
 
 HTML_URL = "https://arxiv.org/html/{id}"
 UA = {"User-Agent": "thexsection/0.1 (daily digest builder)"}
@@ -66,6 +71,16 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today)")
     ap.add_argument("--force", action="store_true", help="regenerate existing section")
+    ap.add_argument(
+        "--prompt-out",
+        metavar="PATH",
+        help="write the assembled system+user prompt here and exit (no API call)",
+    )
+    ap.add_argument(
+        "--from-file",
+        metavar="PATH",
+        help="append deep dives from this file instead of calling the API",
+    )
     args = ap.parse_args()
 
     cfg = load_config()
@@ -96,10 +111,27 @@ def main() -> int:
     )
     print(f"Fetched HTML for {fetched}/{len(picks)} picks", file=sys.stderr)
 
-    llm = LLM(cfg)
-    result = llm.complete(
-        load_prompt("deep_dive_system"), user, ddcfg["max_output_tokens"]
-    )
+    system = load_prompt("deep_dive_system")
+
+    if args.prompt_out:
+        sep = "=" * 72
+        Path(args.prompt_out).write_text(
+            f"{sep}\nSYSTEM PROMPT\n{sep}\n\n{system}\n\n"
+            f"{sep}\nUSER PROMPT ({len(picks)} picks, {date})\n{sep}\n\n{user}\n"
+        )
+        print(
+            f"Wrote prompt for {len(picks)} picks to {args.prompt_out}.\n"
+            f"Save the reply verbatim, then: "
+            f"python -m pipeline.deep_dive --date {date} --from-file REPLY.md"
+        )
+        return 0
+
+    if args.from_file:
+        # No LLM constructed at all — this path needs no API key.
+        result = LLMResult(Path(args.from_file).read_text(), 0, 0, 0.0, False)
+    else:
+        llm = LLM(cfg)
+        result = llm.complete(system, user, ddcfg["max_output_tokens"])
 
     body = re.sub(r"^## Deep dives\s*\n", "", result.text.strip())
     content = post.content
