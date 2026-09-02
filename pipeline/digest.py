@@ -1,7 +1,9 @@
 """Pass 1: today's abstracts + rolling memory context -> the daily digest.
 
 `--dry-run` assembles the full prompt and reports token count + cost estimate
-without calling the API.
+without calling the API. `--prompt-out` writes that prompt to a file and
+`--from-file` turns a completion produced anywhere else back into a digest, so
+the day can be recovered by hand when the API path is unavailable.
 """
 
 from __future__ import annotations
@@ -10,6 +12,7 @@ import argparse
 import datetime as dt
 import re
 import sys
+from pathlib import Path
 
 import frontmatter
 
@@ -22,7 +25,7 @@ from .common import (
     load_prompt,
     parse_date,
 )
-from .llm import LLM
+from .llm import LLM, LLMResult
 
 BACKTICKED_ID_RE = re.compile(r"`((?:arXiv:)?\d{4}\.\d{4,5})`")
 BRACKETED_ID_RE = re.compile(r"\[arXiv:(\d{4}\.\d{4,5})\](?!\()")
@@ -145,7 +148,20 @@ def main() -> int:
     ap.add_argument("--date", help="YYYY-MM-DD (default: today)")
     ap.add_argument("--dry-run", action="store_true", help="token/cost estimate only")
     ap.add_argument("--force", action="store_true", help="overwrite an existing digest")
+    ap.add_argument(
+        "--prompt-out",
+        metavar="PATH",
+        help="write the assembled system+user prompt here and exit (no API call)",
+    )
+    ap.add_argument(
+        "--from-file",
+        metavar="PATH",
+        help="build the digest from a completion in this file instead of calling "
+        "the API (pairs with --prompt-out for a hand-run day)",
+    )
     args = ap.parse_args()
+    if args.from_file and args.dry_run:
+        ap.error("--from-file has nothing to estimate; drop --dry-run")
 
     cfg = load_config()
     date = parse_date(args.date)
@@ -161,7 +177,30 @@ def main() -> int:
 
     system = load_prompt("daily_system")
     user = assemble(date, papers, cfg)
-    llm = LLM(cfg)
+
+    if args.prompt_out:
+        # Two prompts, one file: everything above the rule is the system prompt.
+        # Paste the whole thing wherever you can get a completion.
+        sep = "=" * 72
+        Path(args.prompt_out).write_text(
+            f"{sep}\nSYSTEM PROMPT\n{sep}\n\n{system}\n\n"
+            f"{sep}\nUSER PROMPT ({len(papers)} papers, {date})\n{sep}\n\n{user}\n"
+        )
+        print(
+            f"Wrote prompt for {date} ({len(papers)} papers) to {args.prompt_out}.\n"
+            f"Save the model's reply verbatim, then: "
+            f"python -m pipeline.digest --date {date} --from-file REPLY.md"
+        )
+        return 0
+
+    if args.from_file:
+        # No LLM constructed at all — this path needs no API key.
+        raw = Path(args.from_file).read_text()
+        result = LLMResult(raw, 0, 0, 0.0, False)
+        generator = "manual"
+    else:
+        llm = LLM(cfg)
+        generator = f"{llm.provider}/{llm.model}"
 
     if args.dry_run:
         try:
@@ -178,7 +217,8 @@ def main() -> int:
         )
         return 0
 
-    result = llm.complete(system, user, cfg["digest"]["max_output_tokens"])
+    if not args.from_file:
+        result = llm.complete(system, user, cfg["digest"]["max_output_tokens"])
     post = parse_output(result.text)
 
     # A truncated digest is still worth publishing — a short issue beats no
@@ -205,7 +245,7 @@ def main() -> int:
     post["paper_count"] = len(papers)
     post["deep_dive_ids"] = picks
     post["community_ids"] = community
-    post["generator"] = f"{llm.provider}/{llm.model}"
+    post["generator"] = generator
     post["cost_usd"] = round(result.cost, 4)
     if result.truncated:
         post["truncated"] = True

@@ -23,6 +23,14 @@ class LLMResult:
     truncated: bool = False
 
 
+class BatchTimeout(RuntimeError):
+    """A batch outran its wall-clock deadline and was cancelled.
+
+    Raised by a backend's complete_batch; LLM.complete_batch catches it and
+    re-runs the jobs synchronously when llm.batch_fallback_sync is on.
+    """
+
+
 class AnthropicBackend:
     # The Batches API bills all token usage at 50% of standard rates.
     batch_cost_multiplier = 0.5
@@ -58,7 +66,10 @@ class AnthropicBackend:
         return text, msg.usage.input_tokens, msg.usage.output_tokens, truncated
 
     def complete_batch(
-        self, jobs: dict[str, tuple[str, str, int]], poll_seconds: int = 15
+        self,
+        jobs: dict[str, tuple[str, str, int]],
+        poll_seconds: int = 15,
+        deadline_seconds: float | None = None,
     ) -> dict[str, tuple[str, int, int, bool]]:
         """Submit one async batch, block until it finishes, return per-job results.
 
@@ -66,6 +77,11 @@ class AnthropicBackend:
         maps the same ids to (text, input_tokens, output_tokens). Delivery is
         async (no held HTTP connection), so the large-`max_tokens` streaming
         caveat doesn't apply — non-streaming params are fine here.
+
+        `deadline_seconds` caps the wait: the API allows a batch up to 24h, far
+        longer than a CI job lives, so an unbounded poll turns one slow batch
+        into a lost run. On expiry the batch is cancelled (so we aren't billed
+        for output nobody reads) and BatchTimeout is raised.
         """
         import time
 
@@ -92,13 +108,31 @@ class AnthropicBackend:
             f"[llm] batch {batch.id}: submitted {len(jobs)} request(s)",
             file=sys.stderr,
         )
+        started = time.monotonic()
         while True:
             b = self.client.messages.batches.retrieve(batch.id)
             if b.processing_status == "ended":
                 break
+            waited = time.monotonic() - started
+            if deadline_seconds is not None and waited >= deadline_seconds:
+                # Cancel so in-flight requests stop billing; already-finished
+                # ones in this batch are lost either way since we can't wait.
+                try:
+                    self.client.messages.batches.cancel(batch.id)
+                except Exception as exc:  # cancellation is best-effort
+                    print(
+                        f"[llm] batch {batch.id}: cancel failed ({exc})",
+                        file=sys.stderr,
+                    )
+                raise BatchTimeout(
+                    f"batch {batch.id} still {b.processing_status} after "
+                    f"{waited / 60:.1f} min (deadline {deadline_seconds / 60:.0f} min); "
+                    f"cancelled with {b.request_counts.processing} request(s) unfinished"
+                )
             print(
                 f"[llm] batch {batch.id}: {b.processing_status}, "
-                f"{b.request_counts.processing} still processing",
+                f"{b.request_counts.processing} still processing "
+                f"({waited / 60:.1f} min elapsed)",
                 file=sys.stderr,
             )
             time.sleep(poll_seconds)
@@ -184,10 +218,14 @@ class GeminiBackend:
         return resp.text or "", usage.prompt_token_count or 0, out_tokens, truncated
 
     def complete_batch(
-        self, jobs: dict[str, tuple[str, str, int]]
+        self,
+        jobs: dict[str, tuple[str, str, int]],
+        poll_seconds: int = 15,
+        deadline_seconds: float | None = None,
     ) -> dict[str, tuple[str, int, int, bool]]:
         # No Gemini batch endpoint here — just run the jobs synchronously so the
         # interface matches AnthropicBackend. Keeps the free-tier dev path simple.
+        # Runs inline, so there is no deadline to enforce.
         return {
             cid: self.complete(system, user, max_tokens)
             for cid, (system, user, max_tokens) in jobs.items()
@@ -207,6 +245,11 @@ class LLM:
         # When true, route calls through the async Batches API (50% cheaper,
         # higher latency). Off by default so local runs stay synchronous/snappy.
         self.batch = llm_cfg.get("batch", False)
+        # Cap the batch wait well under the CI job limit, and decide what to do
+        # when we hit it: fall back to synchronous calls (full price, but the
+        # run still produces a digest) or fail the run outright.
+        self.batch_deadline_seconds = llm_cfg.get("batch_deadline_minutes", 45) * 60
+        self.batch_fallback_sync = llm_cfg.get("batch_fallback_sync", True)
         pcfg = llm_cfg["providers"][self.provider]
         self.model = pcfg["model"]
         self.in_price = pcfg["input_price_per_mtok"]
@@ -244,9 +287,29 @@ class LLM:
     def complete_batch(
         self, jobs: dict[str, tuple[str, str, int]]
     ) -> dict[str, LLMResult]:
-        """Run several independent completions as one batch; keyed by caller id."""
-        raw = self.backend.complete_batch(jobs)
-        mult = self.backend.batch_cost_multiplier
+        """Run several independent completions as one batch; keyed by caller id.
+
+        A batch that outruns its deadline degrades to synchronous calls rather
+        than stalling the run: the digest is worth more than the 50% discount.
+        """
+        try:
+            raw = self.backend.complete_batch(
+                jobs, deadline_seconds=self.batch_deadline_seconds
+            )
+            mult = self.backend.batch_cost_multiplier
+        except BatchTimeout as exc:
+            if not self.batch_fallback_sync:
+                raise
+            print(
+                f"[llm] {exc}\n[llm] falling back to synchronous calls for "
+                f"{len(jobs)} request(s) at full price",
+                file=sys.stderr,
+            )
+            raw = {
+                cid: self.backend.complete(system, user, max_tokens)
+                for cid, (system, user, max_tokens) in jobs.items()
+            }
+            mult = 1.0
         return {
             cid: self._finish(tokens_in, tokens_out, text, mult, truncated)
             for cid, (text, tokens_in, tokens_out, truncated) in raw.items()

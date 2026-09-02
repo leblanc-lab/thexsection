@@ -23,6 +23,10 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
+    # The default is 6h; a stalled run should surface in minutes, not burn a
+    # whole runner-day. Comfortably above a normal run (under 30 min) and above
+    # the 45 min llm.batch_deadline_minutes plus a synchronous retry.
+    timeout-minutes: 120
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

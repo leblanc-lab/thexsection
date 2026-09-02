@@ -26,6 +26,13 @@ llm:
   # overnight run. Gemini has no batch path here and falls back to synchronous
   # calls. Set false for snappy local iteration.
   batch: true
+  # Batches normally land in 1-8 min, but the API's own cap is 24h — longer than
+  # a CI job can live, so an unbounded wait turns one slow batch into a lost run
+  # (this happened 2026-09-02). Give up well short of the 6h GitHub limit.
+  batch_deadline_minutes: 45
+  # On timeout, re-run the jobs synchronously at full price rather than losing
+  # the day's digest. Set false to fail loudly instead.
+  batch_fallback_sync: true
   providers:
     gemini:
       model: gemini-3.1-flash-lite-preview   # alias tracking the current flash model
@@ -68,7 +75,7 @@ radar:
   weekday: friday
   window_days: 90
   top_n: 5
-  min_citations: 5
+  min_citations: 10
   max_output_tokens: 4000
 
 watchlist:
@@ -92,7 +99,7 @@ watchlist:
       page: true
       slug: muon
       theme: muon
-      tagline: "The 10 TeV frontier, one paper at a time"
+      tagline: "Towards 10 TeV, one paper at a time"
       keywords: ["muon collider", "muon-collider", "muon smasher", "MuC", "MAIA Detector", "MUSIC Detector"]
     - name: "Jet substructure"
       keywords: ["jet substructure", "soft drop", "energy-energy correlator", "jet shapes", "boosted jet tagging"]
