@@ -42,19 +42,39 @@
 
 <section class="readout" aria-label="Track summary">
   <div class="cell">
-    <span class="value">15</span>
+    <span class="value">16</span>
     <span class="label">Papers</span>
   </div>
   <div class="cell">
-    <span class="value">13</span>
+    <span class="value">14</span>
     <span class="label">Days fired</span>
   </div>
   <div class="cell">
-    <span class="value">2026-09-11</span>
+    <span class="value">2026-09-14</span>
     <span class="label">Last signal</span>
   </div>
 </section>
 
+
+<section class="run">
+  <h2 class="run-date"><span class="tick" aria-hidden="true"></span>Monday, September 14, 2026</h2>
+  
+
+  
+  <article class="paper" id="a2609-12054">
+    <div class="paper-id">
+      <a href="https://arxiv.org/abs/2609.12054" target="_blank" rel="noopener">arXiv:2609.12054</a>
+      
+      <a class="permalink" href="#a2609-12054" aria-label="Permalink to this paper">§</a>
+    </div>
+    <h3 class="paper-title">Fast BIB simulation at a future Muon Collider with generative machine learning</h3>
+    <p class="byline">Radha Mastandrea et al.</p>
+    <div class="paper-body"><p>First generative-ML surrogate for beam-induced-background hits in the <em>tracking</em> detectors of a 10 TeV muon collider (MAIA concept), targeting the FLUKA+Geant4 bottleneck (~10⁶ HS23·hr for the ~10% bunch-crossing sample currently used for overlay, ~100 GB/beam). They train per-subdetector (6 subdetectors) models that generate the five continuous hit observables (log E, t, r, φ, z) conditioned on cell-ID indices (side, layer, module, sensor), in a local-φ basis, followed by geometry masking/rejection and KD-tree cell-ID assignment. Two architectures: a TabDDPM-based tabular diffusion model (higher fidelity, slow sampling: 6–36 hr/subdetector) and a neural circular spline flow (lower fidelity, &lt;2 min/subdetector). Both beat full sim by &gt;1 order of magnitude in generation time.</p>
+<p>Validation is thorough: hit-level marginals agree well (both struggle with log E details — diffusion misses the Geant4 1e-6 GeV cutoff peak, flow overshoots high-E tail); BDT classifier AUCs ~0.52–0.56 for diffusion, up to 0.61 for two flow barrel models; after ACTS CKF reconstruction, Loose-track counts match to ~3% (1.07M vs 1.03M) and hits-per-track distributions are nearly identical. r (barrel) and z (endcap) are the hardest features, localized to sensor boundaries.</p>
+<p>Central caveat, stated plainly: only one &ldquo;unique&rdquo; training event exists — itself just 10% of a real BIB event replicated via 42 rigid azimuthal rotations — so inter-event correlations cannot be modeled or validated, and the 42 copies aren&rsquo;t statistically independent. Weights/code/data are released; authors flag calorimeter and post-digitization generation as follow-ups.</p></div>
+  </article>
+  
+</section>
 
 <section class="run">
   <h2 class="run-date"><span class="tick" aria-hidden="true"></span>Friday, September 11, 2026</h2>
@@ -344,7 +364,7 @@
     this topic, read and summarized by AI, unedited.<br>
     Not a substitute for the papers.
   </p>
-  <p class="stamp">built 2026-09-13 05:19 · <a href="feed.xml">feed.xml</a></p>
+  <p class="stamp">built 2026-09-14 05:32 · <a href="feed.xml">feed.xml</a></p>
 </footer>
 
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
