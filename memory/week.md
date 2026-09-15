@@ -1,37 +1,38 @@
-# The Cross Section — Rolling Synthesis, week ending 2026-09-14
+# The Cross Section — Weekly Synthesis, week ending 2026-09-15
 
-The week was dominated, then progressively released, by one xenon recoil: the LZ 248 keV event (LZ230616). It opened consuming a quarter of the daily listings and closed as a handful of model-building follow-ups. The decisive movement was a pivot from *fitting* the event to *falsifying* readings of it — driven by repeated confirmations of the solar-capture bound, which exiled the thermal higgsino to $10^5$–$10^6$ GeV and forced surviving models into evasion (light mediators, exothermic/two-component spectra, cosmic-ray boosting, isospin violation, or exotic mechanisms). By Sunday the empirical center of gravity shifted back to the LHC (Athron's Run 2 electroweakino global fit), while axion detection and a new gravitational-wave dark-sector cluster carried the week's genuine breadth.
+The week was dominated, for a fourth straight week, by the LZ 248 keV xenon recoil (LZ230616), but the *mode* of engagement completed a decisive arc: from model-fitting, through bound-setting, to concrete experimental discriminators. The thermal Higgsino reading was progressively strangled by solar-capture constraints and is now effectively dead at ordinary scales; surviving interpretations are inelastic/exothermic/boosted variants kept alive only by evasion mechanisms. By week's end the volume of LZ papers was visibly thinning and genuine breadth returned elsewhere — a growing axion-detection wing, the collider quantum-information program, a GW dark-sector cluster, precision QCD/nucleon structure, and ML colonizing detector plumbing.
 
 ## Running themes
 
-- **The LZ higgsino saga (heating → fading).** The arc of the week. Fits saturated early; the useful papers became bounds and tests. Solar capture (Super-K/IceCube) killed the thermal higgsino, and by 09-14 LZ traffic had thinned sharply. Escape routes remain live but under mounting counter-pressure.
-- **Axions, lab to cosmology (steady, broadening).** A continuous thread: real haloscope limits (Lee HTS cavity, Kim higher-order-mode, DALI dark-photon), a cosmology cluster (JWST decaying-axion exclusion 0.5–2.5 eV, cosmological-axion EFT), and flavored-DFSZ model-building. The strong-CP/axion thread tracked since August now has a firm detection wing.
-- **Gravitational waves as a dark-sector ledger (emerging).** New cluster on 09-14: NLO nucleation shifting PTA-inferred couplings 9–13%, LVK constraints on PBH/scalar-induced GWs, superradiance, DM equation-of-state from inspirals. Worth watching for growth.
-- **Collider quantum information & spin tomography (steady).** Entanglement certification extended to qubit-qutrit hadronic systems; top-spin correlations deployed as a pseudoscalar-vs-$Z'$ discriminant. The QI-at-colliders program keeps widening.
-- **ML/tooling wave (steady, diffuse).** Self-supervised transformer tagging at LHCb, RL over SMEFT operator space, quantum Fisher information for JUNO, metric-aware EMD surrogates. Methodological, not headline, but persistent.
+- **LZ230616, sorted by test not model (fading from peak, maturing).** The model zoo saturated early (inert doublets, singlet-doublets, $B{-}L$ scalars, GUTs, extra dimensions, sneutrinos, KK gravitons) and kept refilling all week, but the useful papers shifted to falsifiability. The dominant late-week mode is discriminators: argon target-scaling, xenon-isotope kinematic filters, and spectral separation of boosted vs inelastic readings ([arXiv:2609.15985](https://arxiv.org/abs/2609.15985), [arXiv:2609.14799](https://arxiv.org/abs/2609.14799)). Traffic dropped sharply after mid-week.
+- **The solar-capture noose (heating → conclusive).** The single most consequential thread: repeated re-execution and generalization of the solar-capture/IceCube argument steadily eliminated escape routes. This is the counter-pressure that turned the whole conversation.
+- **Axion detection wing (steady, widening).** A real experimental momentum built: HTS and higher-order-mode haloscopes ([arXiv:2609.08144](https://arxiv.org/abs/2609.08144), [arXiv:2609.09717](https://arxiv.org/abs/2609.09717)), the DALI dark-photon exclusion ([arXiv:2609.12775](https://arxiv.org/abs/2609.12775)), axion-EDM NMR bounds, and JWST/RGB astrophysical limits — plus a cosmology cluster and flavored-DFSZ model-building. The strong-CP/axion thread tracked since August now has a live detection arm.
+- **Collider quantum information (steady, expanding scope).** The QI program reached qubit-qutrit hadronic final states ([arXiv:2609.11151](https://arxiv.org/abs/2609.11151)) and, by week's end, small-$x$ saturation physics ([arXiv:2609.14700](https://arxiv.org/abs/2609.14700)) — a genuinely widening methodological front.
+- **Precision QCD / nucleon structure (steady).** Nucleon strong-interaction radius from charmonium ([arXiv:2609.09318](https://arxiv.org/abs/2609.09318)), first N³LO polarized SIDIS, a fourfold-tighter isovector-polarizability sum rule ([arXiv:2609.15154](https://arxiv.org/abs/2609.15154)), NNPDF4.1 progress.
+- **ML in the plumbing (steady, persistent).** Self-supervised transformer tagging at LHCb ([arXiv:2609.09275](https://arxiv.org/abs/2609.09275)), FPGA normalizing-flow distillation for CMS L1, metric-aware EMD surrogates, neural SBI — the autodiff wave keeps spreading into infrastructure.
 
 ## Turning points
 
-- **Solar capture becomes the executioner.** Bose et al. [arXiv:2609.07807](https://arxiv.org/abs/2609.07807) and Di Mauro et al. [arXiv:2609.06760](https://arxiv.org/abs/2609.06760) re-executed the argument that kills the thermal higgsino; Langhoff [arXiv:2609.09385](https://arxiv.org/abs/2609.09385) pushed it to its conclusion ($10^5$–$10^6$ GeV via early matter domination); Nguyen et al. [arXiv:2609.11833](https://arxiv.org/abs/2609.11833) generalized the bound across the whole inelastic-DM class. This reframed the entire conversation from "which model" to "which model survives."
-- **Neutrino-scattering explanations closed off.** Chattaraj et al. [arXiv:2609.10504](https://arxiv.org/abs/2609.10504) ruled out coherent neutrino scattering (SM/BSM/exotic) as the LZ source — removing the mundane fallback.
-- **The event dragged back to the LHC.** Athron et al. [arXiv:2609.12914](https://arxiv.org/abs/2609.12914) — a 34-search, 63-measurement Run 2 global fit — supplied the collider backdrop the halo fits had ignored ($m_{\tilde\chi_2^0}\gtrsim760$ GeV bino; ~650 GeV Higgsino-dominated). A genuine change of register.
-- **LZ-to-collider bridges adopted.** Cheung et al. [arXiv:2609.08712](https://arxiv.org/abs/2609.08712) (sub-cm disappearing tracks) established the template for making the higgsino reading testable rather than merely fitted.
+- **Langhoff [arXiv:2609.09385](https://arxiv.org/abs/2609.09385)** took the thermal-Higgsino reading to its logical end: survivable only at $10^5$–$10^6$ GeV via early matter domination, tying it to strong CP — reframing the "ordinary Higgsino" as untenable.
+- **Nguyen et al. [arXiv:2609.11833](https://arxiv.org/abs/2609.11833)** generalized the Pospelov–Ramani solar-neutrino bound across the entire inelastic-DM class, forcing evasion strategies to work much harder.
+- **Chattaraj et al. [arXiv:2609.10504](https://arxiv.org/abs/2609.10504)** ruled out all neutrino-scattering explanations (SM/BSM/exotic) of the recoil — closing the mundane alternative.
+- **Athron et al. [arXiv:2609.12914](https://arxiv.org/abs/2609.12914)** delivered the definitive Run 2 collider picture of MSSM electroweakinos ($m_{\tilde\chi_2^0}\gtrsim760$ GeV for light bino), the empirical backdrop most LZ fits had ignored.
+- **Ghosh et al. [arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** closed the astrophysical escape hatch: no halo modeling (incl. LMC-aware N-body) rescues the higgsino from solar capture.
+- **Baer et al. [arXiv:2609.15782](https://arxiv.org/abs/2609.15782)** proposed the cleanest single adjudicator — argon predicts a 336 keV line (endothermic) or nothing (exothermic), and DEAP-3600 already has the exposure.
 
 ## Open questions
 
-- **Which LZ escape route, if any, survives?** Competing evasions remain unfalsified: light-mediator isospin suppression, two-component exothermic scattering (Fan et al. [arXiv:2609.10491](https://arxiv.org/abs/2609.10491)), cosmic-ray boosting, low-reheating freeze-in, and the distinctive neutron-pair annihilation reading (Lee et al. [arXiv:2609.12045](https://arxiv.org/abs/2609.12045)). Watch for the proposed **argon target-scaling** and **multi-isotope mass-reconstruction** tests to start discriminating.
-- **Toponium vs. CP-odd scalar** in $t\bar t$ — Bellagroudi et al. [arXiv:2609.11641](https://arxiv.org/abs/2609.11641) made it quantitative via top-spin correlations; unresolved.
-- **$\Xi_c^0\to\Xi^-e^+\nu$** persistent ~4% theory/lattice-vs-experiment discrepancy (Ni et al. [arXiv:2609.09802](https://arxiv.org/abs/2609.09802)).
-- **First-order-PT interpretations of NANOGrav** now carry a 9–13% coupling shift from NLO nucleation — a caution for future PTA claims.
-- **Compressed-spectrum LHC excesses** can each be fit individually but not simultaneously (Athron) — a standing tension.
+- **Endothermic vs exothermic vs boosted DM** for LZ230616 — now claimed spectrally separable and testable in argon/xenon isotopes. Watch DEAP-3600 and directional follow-ups; also Asadi et al.'s coincident-photon signature [arXiv:2609.09107](https://arxiv.org/abs/2609.09107).
+- **Toponium vs CP-odd scalar** in $t\bar t$ — Bellagroudi et al. [arXiv:2609.11641](https://arxiv.org/abs/2609.11641) made the discriminant quantitative via top-spin correlations; unresolved.
+- **The $C_9$ anomaly** persists — a $Z'$-portal fit driving $\Delta C_9\simeq-1.2$ [arXiv:2609.15026](https://arxiv.org/abs/2609.15026).
+- **$\Xi_c^0\to\Xi^- e^+\nu$ discrepancy** (~4% theory/lattice vs experiment) flagged by Ni et al. [arXiv:2609.09802](https://arxiv.org/abs/2609.09802).
+- **First-order phase-transition interpretations of NANOGrav** — Puchades-Ibáñez et al. [arXiv:2609.12098](https://arxiv.org/abs/2609.12098) show NLO nucleation shifts inferred gauge coupling 9–13%; a caution for PTA dark-sector claims.
 
 ## Recurring references
 
-- [arXiv:2609.07807](https://arxiv.org/abs/2609.07807) (Bose) & [arXiv:2609.06760](https://arxiv.org/abs/2609.06760) (Di Mauro) — solar-capture bounds killing the thermal higgsino.
-- [arXiv:2609.09385](https://arxiv.org/abs/2609.09385) (Langhoff) — higgsino exiled to $10^5$–$10^6$ GeV.
-- [arXiv:2609.11833](https://arxiv.org/abs/2609.11833) (Nguyen) — solar-neutrino bound generalized across inelastic DM.
-- [arXiv:2609.10504](https://arxiv.org/abs/2609.10504) (Chattaraj) — neutrino-scattering explanations excluded.
-- [arXiv:2609.12914](https://arxiv.org/abs/2609.12914) (Athron) — definitive Run 2 electroweakino global fit.
-- [arXiv:2609.08712](https://arxiv.org/abs/2609.08712) (Cheung) — the LZ-to-disappearing-track bridge.
-- [arXiv:2609.12045](https://arxiv.org/abs/2609.12045) (Lee) — neutron-pair annihilation reading with a clean isotope test.
-- [arXiv:2609.10491](https://arxiv.org/abs/2609.10491) (Fan) — two-component exothermic evasion.
+- **[arXiv:2609.07807](https://arxiv.org/abs/2609.07807)** (Bose et al.) & **[arXiv:2609.06760](https://arxiv.org/abs/2609.06760)** (Di Mauro et al.) — foundational solar-capture bounds that killed the thermal Higgsino.
+- **[arXiv:2609.09385](https://arxiv.org/abs/2609.09385)** (Langhoff) — Higgsino exiled to $10^{5\text{–}6}$ GeV.
+- **[arXiv:2609.11833](https://arxiv.org/abs/2609.11833)** (Nguyen et al.) — generalized solar-neutrino bound on inelastic DM.
+- **[arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** (Ghosh et al.) — halo-modeling escape closed.
+- **[arXiv:2609.06153](https://arxiv.org/abs/2609.06153)** & **[arXiv:2609.15782](https://arxiv.org/abs/2609.15782)** (Baer et al.) — argon as the decisive endo/exo discriminator.
+- **[arXiv:2609.12914](https://arxiv.org/abs/2609.12914)** (Athron et al.) — Run 2 electroweakino global fit.
