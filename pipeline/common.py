@@ -10,6 +10,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
+BACKFILL_DIR = DATA_DIR / "backfill"  # export-API history, gitignored
 DIGEST_DIR = ROOT / "digests"
 MEMORY_DIR = ROOT / "memory"
 MEMORY_ARCHIVE_DIR = MEMORY_DIR / "archive"
@@ -32,12 +33,29 @@ def data_path(date: dt.date) -> Path:
     return DATA_DIR / f"{date.isoformat()}.jsonl"
 
 
+def backfill_path(date: dt.date) -> Path:
+    """Export-API history from `pipeline.backfill`: gitignored, rebuilt on demand."""
+    return BACKFILL_DIR / f"{date.isoformat()}.jsonl"
+
+
+def paper_dates() -> list[dt.date]:
+    """Every day with paper data, committed or backfilled."""
+    return sorted(
+        {dt.date.fromisoformat(p.stem)
+         for d in (DATA_DIR, BACKFILL_DIR) if d.exists()
+         for p in d.glob("????-??-??.jsonl")}
+    )
+
+
 def digest_path(date: dt.date) -> Path:
     return DIGEST_DIR / f"{date.isoformat()}.md"
 
 
 def load_papers(date: dt.date) -> list[dict]:
+    """The day's papers: the committed fetch if there is one, else the backfill."""
     path = data_path(date)
+    if not path.exists():
+        path = backfill_path(date)
     if not path.exists():
         return []
     with open(path) as f:

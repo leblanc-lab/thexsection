@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{#- House-style mirror: a paper stream (one watched topic, or the digests' deep
+    dives) rendered inside the main site's shell. Contrast topic_muon.html, which
+    is a standalone sister publication. Rendered with root="../" from site/<slug>/. -#}
+{% block title %}{{ topic.name }} — {{ site.title }}{% endblock %}
+{% block content %}
+{% set total_papers = days|map(attribute='papers')|map('length')|sum %}
+<h1 class="page-title">{{ topic.name }}</h1>
+<p class="lede">{{ topic.tagline }}{% if topic.blurb %} — {{ topic.blurb }}{% endif %}
+{% if not topic.blurb %}— every hep-ex/hep-ph posting matching this
+<a href="{{ root }}watch.html">{{ watchlist.page_title }}</a> track, read and summarized by AI.{% endif %}</p>
+
+<div class="readout meta" aria-label="Stream summary">
+  <span class="count">{{ total_papers }} papers</span>
+  <span class="count">{{ days|length }} days</span>
+  {% if days %}<span class="count">last {{ days[0].date }}</span>{% endif %}
+  <a class="chip chip-link" href="feed.xml">RSS feed</a>
+</div>
+
+{% for day in days %}
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    {% if day.source %}<a href="{{ root }}{{ day.source }}">{{ day.pretty_date }}</a>
+    {% else %}{{ day.pretty_date }}{% endif %}
+  </h2>
+  {% if day.intro_html %}<div class="topic-intro">{{ day.intro_html }}</div>{% endif %}
+
+  {% for p in day.papers %}
+  <article class="paper" id="{{ p.anchor }}">
+    <p class="paper-id">
+      {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">arXiv:{{ p.id }}</a>
+      {% else %}<span>preprint</span>{% endif %}
+      <a class="permalink" href="#{{ p.anchor }}" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">{{ p.title }}</h3>
+    {% if p.byline %}<p class="byline">{{ p.byline }}</p>{% endif %}
+    <div class="paper-body">{{ p.html }}</div>
+  </article>
+  {% endfor %}
+</section>
+{% else %}
+<p class="empty">Nothing on this stream yet.</p>
+{% endfor %}
+{% endblock %}

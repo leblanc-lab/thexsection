@@ -24,6 +24,7 @@
     <a href="index.html">Today</a>
     <a href="archive.html">Back issues</a>
     <a href="radar.html">Radar</a>
+    <a href="deep-dives/index.html">Deep dives</a>
     <a href="memory.html">Long view</a>
     <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
   </nav>
@@ -32,17 +33,17 @@
 <h1 class="page-title">Standing waves</h1>
 <p class="lede">Personal-interest tracks — focused briefings that fire only when
 the day's postings touch a watched topic. Watching:
-Muon collider · Jet substructure · Optimal transport.
-One track has a page of
-its own:
-<a href="muon/index.html">Muon collider</a>.</p>
+Muon collider · Jets and jet substructure · Optimal transport.
+Some tracks have a page of
+their own:
+<a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>.</p>
 
 <article class="issue watch-post">
   <h2 class="issue-date">Thursday, September 17, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
-  <h2 id="jet-substructure">Jet substructure</h2>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260916276-psiche-probabilistic-structure-intrinsic-clustering-with-a-hierarchical-embedding-margaret-lazarovits-et-al"><a href="https://arxiv.org/abs/2609.16276">arXiv:2609.16276</a> — PSICHE: Probabilistic, Structure-Intrinsic Clustering with a Hierarchical Embedding (Margaret Lazarovits et al.)</h3>
 <p>This introduces a jet clustering algorithm that abandons fixed cone size and fixed multiplicity, instead learning both jointly. The core is a variational Gaussian mixture model (vGMM) embedded inside Bayesian Hierarchical Clustering: BHC handles jet-level associations via tree-consistent merges (restricted to Voronoi/Delaunay nearest neighbors, giving N ln N scaling as in FastJet), while each embedded vGMM models subcluster substructure. Key design choices for substructure: energy-proportional data weights ωₙ = ω·Eₙ preserve four-vector sums (Eqs. 10–11) and give IRC safety at jet level; a subcluster-inheritance + L2-overlap-based merge scheme regulates subcluster multiplicity and provides &ldquo;IRC protection&rdquo; at subcluster level (tested by injecting ghost subclusters, none survive). The transfer factor ω = 4 GeV acts as a soft lower resolution bound rather than a hard cone. Notably, PSICHE clusters in space <em>and</em> time (η, φ, t), natively ingesting per-cell measurement precisions Λ*ₙ matched to simulated energy/timing resolutions (σ_t ≈ 100 ps beam spread, CMS-ECAL-like geometry).</p>
 <p>Concrete results: on Pythia 8.3 dijets it reproduces AK4/8/15 multiplicity and jet mass/energy/time spectra; on tt̄ it dynamically shrinks jet size ∝ m_jet/p_T, recovering a W/top admixture that no single AK radius captures. On single boosted W it consistently finds two-subcluster structure where a vGMM seeded on AK constituents fails to regulate multiplicity.</p>
@@ -61,7 +62,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Wednesday, September 16, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h1 id="muon-collider">Muon collider</h1>
 <h3 id="arxiv260916769-probing-the-tau-neutrino-magnetic-moment-via-at-future-muon-colliders-d-yilmaz-et-al"><a href="https://arxiv.org/abs/2609.16769">arXiv:2609.16769</a> — Probing the Tau Neutrino Magnetic Moment via μ⁻γ → μ⁻νν̄ at Future Muon Colliders (D. Yilmaz et al.)</h3>
@@ -70,7 +71,7 @@ its own:
 <h3 id="arxiv260917530-vanilla-scotogenic-model-at-the-future-muon-collider-niloy-mondal-et-al"><a href="https://arxiv.org/abs/2609.17530">arXiv:2609.17530</a> — Vanilla Scotogenic Model at the Future Muon Collider (Niloy Mondal et al.)</h3>
 <p>Central to the topic. The authors revive the vanilla scotogenic model (inert doublet + 3 RHNs, Z₂-odd) by exploiting a Casas-Ibarra choice (z₂₃=0+7i) that inflates 2nd/3rd-generation Yukawas to O(0.1), boosting the N₁ CP asymmetry and lowering successful leptogenesis to m_N₁≳1.4 TeV — set by the interplay of sphaleron decoupling (m_N₁/10≳131 GeV) and ΔL=2 washout (fails for λ″_ηH≲10⁻⁴). This brings the spectrum into muon-collider range while remaining consistent with LZ-2025, MEG II (BR(μ→eγ)&lt;1.5×10⁻¹³), and relic density (DM mass pinned to ~550–650 GeV, or heavier with large Yukawas via t-channel ηη†→LL̄).</p>
 <p>The muon-collider content is the paper&rsquo;s payoff. Compressed spectra make η⁺ long-lived, so pair production (μ⁺μ⁻→η⁺η⁻ and same-sign μ⁺μ⁺→η⁺η⁺) is analyzed at 3/10 TeV (opposite-sign) and 6/10 TeV (same-sign). A key observable: s–t interference in μ⁺μ⁻ produces a cross-section dip whose position tracks m_N₂ and |h_μ2|, while the same-sign channel (only t-channel via Majorana RHN) has no dip and is a direct LNV signature unique to the scotogenic mechanism. Prompt mono-γ + MET searches are found largely insensitive — for the benchmark, no exclusion at 1 ab⁻¹, with μ⁺μ⁺ runs outperforming μ⁺μ⁻ due to absence of gauge-mediated production. LLP/displaced-vertex searches are the promising avenue, subject to timing/vertex reconstruction. Caveat: the text cuts off mid-sentence in the prompt-search results, and quantitative LLP reach at the collider is not fully shown in the provided excerpt (HL-LHC DT projections reach ~700 GeV for δm≃0.02–0.2 GeV).</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260916276-psiche-probabilistic-structure-intrinsic-clustering-with-hierarchical-embedding-for-jet-reconstruction-margaret-lazarovits-et-al"><a href="https://arxiv.org/abs/2609.16276">arXiv:2609.16276</a> — PSICHE: Probabilistic, Structure-Intrinsic Clustering with Hierarchical Embedding for Jet Reconstruction (Margaret Lazarovits et al.)</h3>
 <p>A genuinely new clustering paradigm rather than a substructure measurement. PSICHE embeds a variational Gaussian mixture model (vGMM) inside Bayesian Hierarchical Clustering, so that jet multiplicity/scale (tree level) and internal substructure (mixture level) are inferred jointly and unsupervised, with no pre-set cone size or prong count. Key novelties for substructure: (i) dynamically learned, variable jet sizes; (ii) simultaneous multi-scale learning of subclusters; (iii) clustering in space <em>and time</em> (η,φ,t), with per-cell energy/time measurement precisions Λ*_n folded directly into the likelihood; (iv) energy-proportional data weights ω_n=ω·E_n that give jet-level IRC safety and preserve four-vector sums. Subcluster proliferation is controlled by hierarchical inheritance (child multiplicity seeded to sum of parents) plus explicit pairwise merge comparisons via L2 Gaussian overlap. Nearest-neighbor (Voronoi/Delaunay, FastJet 3.4-based) merge restriction brings scaling to ~N ln N.</p>
 <p>Concrete substructure results: on boosted single-W samples PSICHE consistently resolves the two-prong parton structure as two subclusters, where a vGMM run post-hoc on AK-jet constituents fails to regulate multiplicity. In tt̄, it dynamically reconstructs both resolved and boosted top/W jets, tracking jet size ∝ m_jet/p_T across p̂_T^min=200→500 GeV, whereas AK jets impose hard cone cutoffs. A top-jet decomposes into three localized prongs (bb + W→qq) plus a dispersive soft-radiation component. The hyperparameter ω (=4 GeV here) softly sets the resolved scale — this replaces the cone parameter but is not eliminated. Validation is against anti-k_T (R=0.4/0.8/1.5) on Pythia 8.3 + idealized CMS-ECAL-like calo/PF simulation; there is no comparison yet to standard substructure taggers (N-subjettiness, soft drop) or performance under realistic detector/BIB effects. The time dimension enabling new time-based substructure observables (subcluster times, space-time covariance) is the most distinctive extension for the field.</p>
@@ -79,7 +80,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Monday, September 14, 2026</h2>
   <div class="meta">
-    <a class="chip chip-link" href="muon/index.html">Muon collider</a><span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="muon/index.html">Muon collider</a><a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260912054-fast-bib-simulation-at-a-future-muon-collider-with-generative-machine-learning-radha-mastandrea-et-al"><a href="https://arxiv.org/abs/2609.12054">arXiv:2609.12054</a> — Fast BIB simulation at a future Muon Collider with generative machine learning (Radha Mastandrea et al.)</h3>
@@ -97,13 +98,13 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Friday, September 11, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260911386-connecting-vector-like-muons-pngb-dark-matter-and-electroweak-phase-transition-through-collider-and-gravitational-wave-jaydeb-das-et-al"><a href="https://arxiv.org/abs/2609.11386">arXiv:2609.11386</a> — Connecting Vector-like Muons, pNGB Dark Matter and Electroweak Phase Transition through Collider and Gravitational Wave (Jaydeb Das et al.)</h3>
 <p>The muon-collider content (Sec. 3) is genuinely central, not incidental. The model adds two complex singlets (Z₂, Z₃) plus a muon-philic SU(2) singlet vector-like lepton ψ sharing the Z₃ charge of S₃, so the only renormalizable new Yukawa is ψ̄_L μ&rsquo;_R S₃. The stable pNGB η₂ (from S₂) is DM; η₃ decays to muons. For a multi-TeV μ⁺μ⁻ collider they argue the discovery channel is VLM pair production μ⁺μ⁻→vl⁺vl⁻, since associated production is suppressed by tanθ_L = (m_μ/m_vl)tanθ_R. The novel handle is the scalar-mediated <em>t</em>-channel (via h₃, η₃), which does <em>not</em> carry the sinθ_L suppression and, for sinθ_R=0.3, dominates the gauge s-channel by orders of magnitude; there is visible destructive interference with γ/Z for sinθ_R=0.1. LO cross sections (m_vl=1.4 TeV) reach 17.3 fb at 3 TeV (BP9) vs ~2.2 fb at 10 TeV — the 3 TeV rate is larger because the t-channel grows with m_vl despite phase-space loss.</p>
 <p>The collider study is a full Delphes + XGBoost BDT analysis of the 2-opposite-sign-muon + E̸_T signature (vl→μh₃, h₃→η₂η₂), with seven observables (M_eff, L_T, ΔR_μμ, p_T^{l1}, E̸_T, M_μμ, M_T^{μμ}), a jet veto, and dominant irreducible background μ⁺μ⁻→μ⁺μ⁻ν ν̄. They quote test AUC = 0.982 and, at D_BDT&gt;0.924 with 500 fb⁻¹, statistical significance Z∼12 for BP9. Caveat stated explicitly: Z is purely statistical, no background systematics; Δa_μ from the new states remains negligible across their benchmarks, so no g−2 tension or motivation is claimed.</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260910679-computationally-efficient-description-of-medium-response-to-jets-in-heavy-ion-collisions-jorge-casalderrey-solana-et-al"><a href="https://arxiv.org/abs/2609.10679">arXiv:2609.10679</a> — Computationally Efficient Description of Medium Response to Jets in Heavy Ion Collisions (Jorge Casalderrey-Solana et al.)</h3>
 <p>Only tangential to jet substructure per se: the paper computes the hydrodynamic wake (medium response) that contaminates the <em>soft</em> component of reconstructed jets in heavy-ion collisions, not substructure observables directly. Its relevance is that this soft contribution cannot be groomed away for most observables, so a correct wake description is a prerequisite for computing jet/substructure observables in AA. The concrete advance is an &ldquo;Efficient Wake&rdquo; procedure: precompute a library of 34 template (Green&rsquo;s-function) solutions to (1+1)D linearized hydro on a Bjorken background for unit energy-momentum deposition (deposition times τ_temp^d = kΔτ, Δτ=0.4 fm/c, τ₀=0.4 to τ_f=13.6 fm/c, T_f=145 MeV ⇒ T₀=446 MeV), then reconstruct wakes in a radially expanding droplet by superposing templates with suitable rotations/boosts to fold in transverse radial flow at freezeout.</p>
 <p>Benchmarked against full nonlinear (3+1)D MUSIC hydro for 50 representative partons at two energies, they find reasonable agreement and — the headline — a speedup of &ldquo;at least tens of thousands&rdquo; up to a factor 200,000, while giving a much better p_T spectrum (harder, matching data&rsquo;s demand for more particles above ~2 GeV) than the constant+cosine Hybrid-Model treatment. Caveats stated: the approximations are <em>not</em> controlled by smallness of the perturbation (validity assessed only empirically via the 50-event comparison), and implementation in a jet Monte Carlo (where 10⁵–10⁶ wakes per analysis are needed) remains future work.</p>
@@ -115,7 +116,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Wednesday, September 9, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260908392-prospects-for-precision-higgs-boson-measurements-at-a-10-tev-muon-collider-paolo-andreetto-et-al"><a href="https://arxiv.org/abs/2609.08392">arXiv:2609.08392</a> — Prospects for precision Higgs boson measurements at a 10 TeV muon collider (Paolo Andreetto et al.)</h3>
@@ -124,7 +125,7 @@ its own:
 <h3 id="arxiv260908918-probing-the-inert-scalar-sector-of-the-inert-doublet-model-via-vector-boson-fusion-at-a-muon-collider-abdesslam-arhrib-et-al"><a href="https://arxiv.org/abs/2609.08918">arXiv:2609.08918</a> — Probing the Inert Scalar Sector of the Inert Doublet Model via Vector-Boson Fusion at a Muon Collider (Abdesslam Arhrib et al.)</h3>
 <p>Studies three previously-unexamined 2→4 VBF channels in the IDM at √s = 3, 10, 20 TeV: μ⁺μ⁻→H⁺H⁻νν̄ (WW fusion), and the associated HH±μ∓ν and AH±μ∓ν (WZ/Wγ fusion), with full 2→4 matrix elements in MadGraph5 (no EVBA). They first dissect the WW→H⁺H⁻ and WV→H⁺S_i subprocesses, showing longitudinal WLWL dominance and a strong destructive interference among diagrams (individual contributions ~10³ pb collapse to ~1 pb in the full amplitude), enforcing correct high-energy behavior. Cross sections rise sharply with energy: H⁺H⁻νν̄ reaches O(10) fb at 10 TeV and tens of fb at 20 TeV; the associated channels reach O(10³) fb. Delphes-level cut-based analysis (no BIB/pileup) for three benchmark points with BR(H±→HW±)=1 gives, at 10 ab⁻¹: [WH][WH]νν̄ significance 33 (10 TeV) / 58 (20 TeV); [WH]Hμν a huge 2000–4000 (dominated by large signal σ); [WH][ZH]μν 164 / 276. The 3 TeV stage is marginal for H⁺H⁻ (S=1.37) but strong for the associated modes.</p>
 <p>For the muon-collider topic this extends the VBF new-physics program beyond the earlier AAνν̄ study to charged and mixed inert states, establishing 10/20 TeV as decisive. Caveat, stated by the authors: this is an idealized sensitivity — pileup and MuC beam-induced background are not simulated, and the enormous significances (especially BP2) reflect raw signal rates under optimistic detector assumptions rather than a realistic backgrounded analysis.</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260906686-likelihood-based-unsupervised-anomaly-detection-in-cms-dijet-events-bhavishya-chebrolu-vit-ap-university-et-al"><a href="https://arxiv.org/abs/2609.06686">arXiv:2609.06686</a> — Likelihood-Based Unsupervised Anomaly Detection in CMS Dijet Events (Bhavishya Chebrolu (VIT-AP University et al.)</h3>
 <p>Trains a rational-quadratic neural spline flow (10 blocks, 256 hidden units, 8 bins) on 61 high-level dijet/event observables from CMS 2011B HT AOD open data (√s=7 TeV, 378,278 events, ~0.5 fb⁻¹), scoring events by −log p(x) with no signal model, MC, or sidebands. Selecting the 99.9th percentile (379 events) and running KS tests across all 61 features, the largest population-level deviations are overwhelmingly jet-substructure variables: leading-jet girth (D=0.575), τ₁/τ₂/τ₃ (0.548/0.541/0.518), the ECF ratio (0.508), τ₃₂ (0.498), τ₂₁ (0.441), width (0.386), then jet mass (0.373) and HT (0.343). The anomalous events show no m_jj resonance — a sliding-window bump hunt gives a look-elsewhere-corrected global p=6.0×10⁻⁴ (test stat 8.79), which they explicitly decline to call evidence.</p>
 <p>For jet substructure the relevance is real but the framing is honest: substructure observables emerge as the dominant discriminants of the &ldquo;non-QCD-like&rdquo; tail, and the paper gives a useful discussion of why ECFs (recoil-free, subjet-free, IRC-safe) and N-subjettiness give coherent signals. Important self-stated caveats: the flow is trained and scored in-sample (no held-out split, acknowledged likelihood-scale bias); selecting the tail of a multivariate density trivially sculpts the marginals, so KS p-values (e.g. 10⁻¹¹⁹ for girth) are diagnostic only, not significances; and the τ₂₁/τ₃₂=0 spikes are known PF low-multiplicity artifacts. Methodological/exploratory contribution rather than a substructure measurement per se.</p>
@@ -133,13 +134,13 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Friday, September 4, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260903648-light-leptoquarks-in-a-dark-sector-scalar-dark-matter-neutrino-mass-and-collider-signatures-priyotosh-bandyopadhyay-et-al"><a href="https://arxiv.org/abs/2609.03648">arXiv:2609.03648</a> — Light Leptoquarks in a Dark Sector: Scalar Dark Matter, Neutrino Mass, and Collider Signatures (Priyotosh Bandyopadhyay et al.)</h3>
 <p>The muon collider is genuinely only the final probe in an otherwise DM/neutrino-mass model paper, so calibrate expectations: Sections 2–4 build a Z₂-odd dark sector (two scalar LQs S₁ and R̃₂, a VLQ doublet + down-type singlet, and a real singlet scalar φ as DM), generate Majorana neutrino mass at one loop via the T1-2 topology (requiring κ~10⁻³ GeV for TeV masses and O(10⁻²–1) Yukawas), and satisfy relic density through LQ–φ co-annihilation with compressed splittings ΔM~38–55 GeV. The Z₂-odd assignment kills the usual ℓq/νq LQ decays, so LHC pair-production bounds drop from ~1.5 TeV to a few hundred GeV; CheckMATE recasts of soft-lepton (CMS-SUS-16-048) and jets+MET searches leave sub-TeV LQ eigenstates viable for M_φ ≳ 500 GeV.</p>
 <p>The muon-collider content (Sec. 5) is the motivated but not-yet-executed part: they argue a 10 TeV MuC is the right machine to measure the compressed S₁→ℓqφ system because M_T2 fails when invisible daughters aren&rsquo;t light relative to the parent, whereas the known √s lets you use visible-energy endpoints and the cusp technique. They set up the two-body-like kinematics S₁→V+φ with V=jℓ, giving the Lorentz-invariant endpoint m_jℓ^max = M_{S₁}−M_φ = ΔM as a robust handle on the splitting. Caveat: no signal-vs-background simulation, detector effects, or cusp-fit sensitivity study is actually presented — the MuC analysis is a proposal/kinematic sketch, and displaced-vertex R-hadron-like regions are explicitly excluded from scope. For MuC-tracking purposes, the takeaway is a concrete use-case for endpoint/cusp reconstruction of compressed colored-parent spectra at 10 TeV, not a new reach result.</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260903072-energy-energy-correlators-in-z-tagged-jets-in-pp-collisions-joao-barata-et-al"><a href="https://arxiv.org/abs/2609.03072">arXiv:2609.03072</a> — Energy-Energy Correlators in Z-Tagged Jets in pp Collisions (Jo\~{a}o Barata et al.)</h3>
 <p>This is squarely a jet-substructure paper and a clean methodological advance. They compute the collinear EEC inside forward Z-tagged jets by grafting an exclusive differential EEC jet function 𝒢_c^EEC onto the back-to-back Z+jet TMD factorization (replacing the unmeasured exclusive jet function, leaving TMD PDFs, hard, and soft functions intact). The EEC jet function is built from the inclusive one via one-loop anti-k_T matching coefficients, evolved with NLO timelike splitting functions from a b_χ-dependent boundary condition to μ_J, and the whole thing is run at NLL′ with a variable-flavor-number scheme. The key physics lever is retaining <strong>separate quark and gluon non-perturbative scales</strong>, a_q = 2.31 GeV (from e⁺e⁻ global fit, quark-dominated) and a_g = 3.8 GeV (from CMS inclusive-jet EEC, gluon-dominated).</p>
 <p>The concrete result: predictions for LHCb-like forward kinematics (2.5&lt;η_J&lt;4.0, R=0.5) at √s=8 and 13 TeV in p_JT bins (20,30), (30,50), (50,100) GeV. The EEC shows a finite small-z_χ plateau (from the exponential large-b_χ suppression making the Hankel transform finite as z_χ→0) and, in angular representation, the characteristic confinement turnover, with the quark contribution turning over at smaller ⟨p_JT⟩χ than the gluon (reflecting a_q&lt;a_g). The flavor decomposition shows quark dominance growing with p_JT and with √s. The physics case: because a_q is fixed independently from e⁺e⁻, measuring this quark-enriched sample tests universality of the confinement transition scale across collision environments. Caveat stated plainly: a_g is poorly constrained (extracted at LL with a single flavor-averaged parameter), and the factorization is unreliable for k_χ≥Q_J (z_χ≥0.063 at R=0.5); NP-parameter uncertainties are not included in the bands.</p>
@@ -160,14 +161,14 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Monday, August 24, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260821327-on-detector-machine-learning-for-beam-induced-background-rejection-at-a-10-tev-muon-collider-daniel-abadjiev-et-al"><a href="https://arxiv.org/abs/2608.21327">arXiv:2608.21327</a> — On-Detector Machine Learning for Beam-Induced Background Rejection at a 10 TeV Muon Collider (Daniel Abadjiev et al.)</h3>
 <p>This is the smart-pixels concept ported from HL-LHC to the muon collider BIB problem, and it&rsquo;s squarely on-topic for detector R&amp;D at √s = 10 TeV. The concrete driver: innermost vertex layer occupancy of O(10⁴) hits/cm²/BX at 30 kHz translates to &gt;50 Gbps/chip (2×2 cm², 40-bit hits) — ~10× the HL-LHC pixel readout ceiling. The pitch is to reject BIB <em>in the pixel front-end</em> using cluster shape rather than relying solely on O(30) ps timing, which they argue is fragile at 25×25 µm² pitch (needs ~10× front-end power reduction) and vulnerable to calibration/radiation drift. Physics handle: collision particles hit at IP-consistent incidence angles (x_size grows with z_global), whereas BIB e± loop in at large angles regardless of position, giving distinct cluster sizes/profiles.</p>
 <p>They train three quantized NN classes — engineered scalars (Model 1), 1D charge profiles (Model 2), full 21×13 CNN (Model 3) — via QKeras QAT, Pareto-scanned over architecture and 3–10 bit weights, with hls4ml→Vitis (FPGA) and Catapult/SAED32 (32 nm ASIC) resource estimates. Headline: 88–90% data reduction at 99% signal efficiency for Models 1–2 with ASIC area &lt;1 mm² and 160–250 ns latency; Model 3 reaches 90.5% cluster rejection / 94.4% data reduction but at prohibitive area (~8 mm²). Crucially, cluster-shape rejection is shown orthogonal to timing — BIB is rejected across the full t_corr spectrum, and stacking a [3σ,5σ] window pushes data reduction to 98.5–98.9%.</p>
 <p>Caveats are stated plainly and are significant: PIXELAV assumes a single isolated cluster in a clean ROI (no overlapping/warped BIB clusters, no edge effects, ROI-finding assumed upstream) — unrealistic at true muon-collider occupancy. Incoherent pair production is absent from the BIB sample (they argue IPP clusters look similar and should be rejectable if trained on). Signal is single muons, not physics events; geometry is MuColl_v1 / lattice v0.4; ASIC numbers are open-library first-pass, not manufacturable. So: a credible feasibility demonstration and benchmark (88–90% @ 99% eff, sub-mm² ASIC), not yet a validated occupancy-realistic result.</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260821145-unraveling-qcd-dynamics-with-heavy-quark-energy-correlators-ivan-vitev"><a href="https://arxiv.org/abs/2608.21145">arXiv:2608.21145</a> — Unraveling QCD dynamics with heavy quark energy correlators (Ivan Vitev)</h3>
 <p>A proceedings-style theory writeup (Vitev, summarizing work with Ke and Meçaj) extending the energy-energy correlator jet-substructure program to massive quarks in vacuum and in QCD matter — genuinely central to jet substructure, specifically the EEC/dead-cone axis. Vacuum baseline: they give a compact closed-form one-loop heavy-quark EEC jet function at nonzero angle with δ = i m_Q/(p_T R_L), which reproduces massless twist-two scaling at R_L ≫ m_Q/p_T and turns over at R_L ~ m_Q/p_T. The heavy-to-light EEC ratio is thus the EEC realization of the dead cone, perturbatively controlled (bottom turnover at larger R_L than charm), with the argument that above the nonperturbative scale, deviations are medium effects rather than hadronization.</p>
 <p>In matter, they add medium-induced jet functions in SCET_G via a first-order opacity expansion (RR+RV+VR+VV), with the heavy-quark mass entering three ways: channel-dependent eikonal regulator ν [(1−x)M, xM, M for Q→Qg, Q→gQ, g→QQ̄], a genuinely new helicity-flip amplitude A⁻ ∝ M/(Q²+ν²), and modified LPM formation-time phases. The key competition is θ_dc ~ M/E vs θ_LPM ~ √(8π/p_T L), parametrically comparable when M ~ √(P⁺/L⁺). The moment-space RGE anomalous dimension γ_Q = γ_vac + δγ_med interpolates across three regimes (ν²≪, ~, ≫ Q²_LPM), with the M²-proportional helicity-flip piece reshaping the dead-cone region most strongly. Phenomenologically the channels behave oppositely: Q→Qg gives extra small-angle suppression (deepened dead cone), while g→QQ̄ can <em>enhance</em> near θ_LPM — offering a handle to separate an identified heavy shower from gluon-initiated heavy flavor, complementary to the earlier soft-drop mass-hierarchy-inversion result.</p>
@@ -177,7 +178,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Thursday, August 20, 2026</h2>
   <div class="meta">
-    <span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="optimal-transport">Optimal transport</h2>
 <h3 id="arxiv260818233-transferable-fast-calorimeter-shower-generation-via-multi-geometry-pre-training-thorsten-buss-et-al"><a href="https://arxiv.org/abs/2608.18233">arXiv:2608.18233</a> — Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training (Thorsten Buss et al.)</h3>
@@ -202,7 +203,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Friday, August 14, 2026</h2>
   <div class="meta">
-    <span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="optimal-transport">Optimal transport</h2>
 <h3 id="arxiv260812795-fine-tuned-normalizing-flows-for-alice-zero-degree-calorimeter-fast-simulation-emilia-majerz-et-al"><a href="https://arxiv.org/abs/2608.12795">arXiv:2608.12795</a> — Fine-tuned Normalizing Flows for ALICE Zero Degree Calorimeter Fast Simulation (Emilia Majerz et al.)</h3>
@@ -214,7 +215,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Thursday, August 6, 2026</h2>
   <div class="meta">
-    <a class="chip chip-link" href="muon/index.html">Muon collider</a><span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="muon/index.html">Muon collider</a><a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260804399-production-of-the-top-partner-t-of-the-bestest-little-higgs-model-at-the-future-muon-collider-e-cruz-albaro-et-al"><a href="https://arxiv.org/abs/2608.04399">arXiv:2608.04399</a> — Production of the top partner <span class="arithmatex">\(T\)</span> of the Bestest Little Higgs Model at the future muon collider (E. Cruz-Albaro et al.)</h3>
@@ -246,13 +247,13 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Wednesday, July 29, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260726020-probing-lepton-flavor-violating-four-lepton-operators-at-a-muon-collider-sukanta-dutta-et-al"><a href="https://arxiv.org/abs/2607.26020">arXiv:2607.26020</a> — Probing Lepton-Flavor-Violating Four-Lepton Operators at a Muon Collider (Sukanta Dutta et al.)</h3>
 <p><strong>Abstract only.</strong> A SMEFT study of charged LFV from dimension-six four-lepton operators in <span class="arithmatex">\(\mu^+\mu^-\to e^\pm\tau^\mp\)</span>, <span class="arithmatex">\(e^\pm\mu^\mp\)</span>, <span class="arithmatex">\(\mu^\pm\tau^\mp\)</span> at <span class="arithmatex">\(\sqrt{s}=3,10,14\)</span> TeV, with beam polarization and hadronic <span class="arithmatex">\(\tau\)</span> reconstruction. Using an optimal-observable analysis of angular distributions and a global fit over the relevant operator set, they project sensitivities of <span class="arithmatex">\(C/\Lambda^2\sim(0.6\text{–}1.6)\times10^{-11}\,\mathrm{GeV}^{-2}\)</span>, up to an order of magnitude beyond current limits. The multi-energy, multi-polarization combination is highlighted as the lever that breaks correlations among Wilson coefficients — the concrete methodological point for anyone tracking how a muon collider&rsquo;s LFV reach depends on running scenario.</p>
 <p>For this topic the paper is squarely on-target: it&rsquo;s a projection specific to a multi-TeV muon collider, exploiting the <span class="arithmatex">\(s\)</span>-channel LFV production that only a muon-beam machine gives directly. Caveats limited by abstract-only: no statement of assumed integrated luminosity per energy point, no detail on the <span class="arithmatex">\(\tau\)</span>-reconstruction efficiency/background model behind the quoted reach, and the sensitivities are presumably from a truth- or fast-sim level fit rather than full detector simulation. The &ldquo;exceeds current limits by an order of magnitude&rdquo; claim should be read against which specific low-energy LFV constraint (e.g. <span class="arithmatex">\(\mu\to e\)</span>, <span class="arithmatex">\(\tau\to\ell\)</span>) each operator direction is compared to.</p>
-<h2 id="jet-substructure">Jet substructure</h2>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260725893-the-calibration-of-large-radius-jets-using-the-run-2-dataset-with-the-atlas-detector-atlas-collaboration"><a href="https://arxiv.org/abs/2607.25893">arXiv:2607.25893</a> — The calibration of large-radius jets using the Run 2 dataset with the ATLAS detector (ATLAS Collaboration)</h3>
 <p><strong>Abstract only.</strong> ATLAS Run 2 (<span class="arithmatex">\(\sqrt{s}=13\)</span> TeV) calibration of large-radius jets built from Unified Flow Objects and Soft Drop–groomed. Combines an MC-based jet energy/mass response correction with in-situ methods validating the JES/JMS and their resolutions in data. Residual JES/JMS uncertainty is ~1% for <span class="arithmatex">\(p_T\)</span> up to 1 TeV and 2–3% up to 2 TeV.</p>
 <p>Central to the topic on the systematics side rather than the algorithm side: this is the calibration input that sets the achievable precision for boosted <span class="arithmatex">\(W/Z/t/H\)</span> tagging and BSM searches using groomed substructure. The UFO+Soft Drop combination and the sub-percent-to-few-percent JMS control are the numbers to carry forward when assessing substructure-based analyses&rsquo; systematic floors. Abstract gives no breakdown of the in-situ methods used or the mass-scale behavior across the grooming parameter space, so the per-observable substructure calibration detail (e.g. <span class="arithmatex">\(D_2\)</span>, <span class="arithmatex">\(\tau_{32}\)</span>) isn&rsquo;t visible here.</p>
@@ -295,9 +296,9 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Tuesday, July 14, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
   </div>
-  <h2 id="jet-substructure">Jet substructure</h2>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260711016-search-for-dark-matter-in-a-signature-with-a-four-prong-large-radius-jet-at-s-13-tev-cms-collaboration"><a href="https://arxiv.org/abs/2607.11016">arXiv:2607.11016</a> — Search for dark matter in a signature with a four-prong large-radius jet at √s = 13 TeV (CMS Collaboration)</h3>
 <p>CMS (EXO-24-001, 138 fb⁻¹) searches for a boosted, potentially displaced dark-sector topology: Y₁ → χ₂χ₂, each χ₂ → χ₁ + Y₀(→qq̄), with Y₀ fixed at 1 GeV so that the four light-quark prongs merge into a single AK8 jet recoiling against an ISR jet. No excess; limits set on the χ₂χ₁Y₀ coupling and Y₁ mass for the benchmark points in their scan (mediator 100–500 GeV, Lxy from O(0.1) to O(10³) mm).</p>
 <p>The substructure content is the reason to read this. The tagger is an <strong>interaction network</strong> (not ParticleNet), chosen explicitly so that secondary-vertex information can be added as heterogeneous graph inputs alongside PF-candidate four-momenta — the argument being that displaced multiprong jets carry nonlocal constituent correlations that local-neighborhood architectures capture less well. Fully connected graph, SV-augmented nodes. Reported AUC ranges 0.95 (light, prompt) down to 0.88 (heaviest + most displaced), with the degradation attributed both to boost (four prongs overlapping) and to displacement (track association / SV reconstruction / subjet-parton matching breaking down). SR is sGNN &gt; 0.8; QCD estimated via a 0.4 &lt; sGNN &lt; 0.8 sideband with per-bin MC transfer factors.</p>
@@ -307,7 +308,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Thursday, July 9, 2026</h2>
   <div class="meta">
-    <span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="optimal-transport">Optimal transport</h2>
 <h3 id="arxiv260708723-optimal-transport-based-cell-resampling-for-negative-and-pathological-event-weights-regan-doherty-et-al"><a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a> — Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights (Regan Doherty et al.)</h3>
@@ -320,9 +321,9 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Wednesday, July 8, 2026</h2>
   <div class="meta">
-    <span class="chip">Jet substructure</span>
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
   </div>
-  <h2 id="jet-substructure">Jet substructure</h2>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260707792-dissecting-parton-showers-with-multi-point-energy-correlators-mark-gonzalez-et-al"><a href="https://arxiv.org/abs/2607.07792">arXiv:2607.07792</a> — Dissecting Parton Showers with Multi-Point Energy Correlators (Mark Gonzalez et al.)</h3>
 <p>The authors develop the four-point energy correlator (E⁴C) as a practical jet-substructure observable in the collinear limit, aimed squarely at diagnosing the ingredients of next-generation parton showers. The key move is defining three experimentally binnable projections of the otherwise 4D shape space (parameterized by size R_L and two complex variables z, w): the &ldquo;tee&rdquo; (three collinear detectors rotated against a dipole, probing the 1→2 splitting tensor × 1→3 splitting function factorization), the &ldquo;dipole&rdquo; (two dipoles of size r, R rotated by φ, probing 1→3 splitting tensor × 1→2 splitting function), and the &ldquo;tripole&rdquo; (fixed 3-4-5 triangle plus a roving fourth detector, probing the hard 1→4 structure away from factorized limits). They give explicit iterated-collinear factorization formulas (Eqs. 35–37) built from the known Del Duca et al. polarized triple-collinear splitting tensors, plus the geometric normalization 𝒩 and a clean LO closed form (Eq. 24) for the correlator in terms of splitting functions.</p>
 <p>Concretely: in accessible kinematics the genuine spin-interference (helicity h,h′ correlations, nonzero only when the intermediate parton is a gluon) is <em>small</em>, subdominant to sizable azimuthal modulations they attribute to kinematic power corrections to the factorization. This mirrors the earlier three-point finding of quark/gluon cancellation. The main deliverable is infrastructure: parameterizations, measurement algorithms, statistical-uncertainty treatment for multi-point correlators, and N=4 sYM baselines (where SUSY suppresses spin correlations). </p>
@@ -344,7 +345,7 @@ its own:
 <article class="issue watch-post">
   <h2 class="issue-date">Friday, July 3, 2026</h2>
   <div class="meta">
-    <span class="chip">Optimal transport</span>
+    <a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
   </div>
   <h2 id="optimal-transport">Optimal transport</h2>
 <h3 id="arxiv260702867-studying-baryon-number-transport-dynamics-via-hyperon-kaon-correlations-in-p-mathrmau-collisions-at-sqrts__rm-nn20-39-and-62-gev-siyuan-ping-et-al"><a href="https://arxiv.org/abs/2607.02867">arXiv:2607.02867</a> — Studying baryon number transport dynamics via hyperon-kaon correlations in <span class="arithmatex">\(p + \mathrm{Au}\)</span> collisions at <span class="arithmatex">\(\sqrt{s_{_{\rm NN}}}=20\)</span>, <span class="arithmatex">\(39\)</span> and <span class="arithmatex">\(62\)</span> GeV (Siyuan Ping et al.)</h3>
@@ -357,7 +358,7 @@ its own:
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-17 09:49 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-17 11:47 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

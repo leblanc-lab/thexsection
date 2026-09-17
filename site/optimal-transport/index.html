@@ -1,0 +1,1619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimal transport — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" type="application/rss+xml" title="The Cross Section" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../deep-dives/index.html">Deep dives</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+
+<h1 class="page-title">Optimal transport</h1>
+<p class="lede">Moving earth between distributions
+— every hep-ex/hep-ph posting matching this
+<a href="../watch.html">Standing waves</a> track, read and summarized by AI.</p>
+
+<div class="readout meta" aria-label="Stream summary">
+  <span class="count">74 papers</span>
+  <span class="count">73 days</span>
+  <span class="count">last 2026-09-17</span>
+  <a class="chip chip-link" href="feed.xml">RSS feed</a>
+</div>
+
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Thursday, September 17, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-17738">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.17738" target="_blank" rel="noopener">arXiv:2609.17738</a>
+      
+      <a class="permalink" href="#a2609-17738" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Similarity Pairing with Energy Mover's Distance for Self-Supervised Pre-Training at the LHC</h3>
+    <p class="byline">Ho Fung Tsoi et al.</p>
+    <div class="paper-body"><p>Tsoi and Rankin use EMD (the Komiske–Metodiev–Thaler optimal-transport metric on energy flow) as a <em>replacement for data augmentation</em> in self-supervised jet pre-training. Rather than distorting a jet to make two views, they pair two distinct real jets falling within an EMD window (0.01, 0.05) after normalizing p_T and scaling angular distances by R = 0.8 — treating &ldquo;two genuinely similar events&rdquo; as augmented views, so physics content and detector constraints are never violated. This extends MACK&rsquo;s data/MC EMD-pairing idea to generic embedding learning. Pairs feed a jBOT/iBOT self-distillation teacher-student transformer (3 layers, 4 heads, 32-dim particle embeddings, [CLS] jet token) pre-trained on JetNet q/g jets.</p>
+<p>Results: t-SNE shows clean class separation not only for q/g but for held-out W/Z/t. Probing anomaly detection (kNN, cosine, Mahalanobis scores against the QCD bulk), random pairing wins (combined AUC 0.8188 ± 0.0076), with same-class compatible and different-class worse — the interpretation being that unconstrained pairing broadens the invariance space. Versus the augmentation-based jBOT baseline (combined 0.8269), their cosine-score model reaches 0.8309 ± 0.0067, beating baseline on W and t individually.</p>
+<p>For the optimal-transport topic, this is a concrete new <em>use</em> of EMD: not as a discriminant or a geometry probe but as the positive-pair sampler for contrastive/distillation pre-training, collapsing the large augmentation design space to a single window hyperparameter (found stable under moderate variation). Caveats: gains over the augmentation baseline are marginal (~0.4% AUC, within roughly 1σ on combined); pairwise EMD computation across the training set is O(N²) and its cost/scaling is not discussed; demonstrated only on JetNet ~1 TeV jets with ≤30 particles.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Monday, September 14, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-12024">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.12024" target="_blank" rel="noopener">arXiv:2609.12024</a>
+      
+      <a class="permalink" href="#a2609-12024" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Learning the Geometry of Collider Events with Metric-Aware Deep Sets</h3>
+    <p class="byline">Lauren Hay et al.</p>
+    <div class="paper-body"><p>A supervised Deep Sets surrogate (MA-PFN) for the Energy Mover&rsquo;s Distance that bakes in three metric axioms — non-negativity, exchange symmetry, zero self-distance — while leaving the triangle inequality and IRC safety <em>unconstrained</em>, then measures how much of the remaining geometry is recovered &ldquo;for free.&rdquo; The construction uses the Multiset Deep Sets theorem: separate shared-encoder latent sums z_E, z_G, recombined into Σ=z_E+z_G, Δ=z_E−z_G, with the predicted distance factored as an exact latent pseudometric ρ=‖Δ‖₁/L (which identically satisfies the triangle inequality) times a symmetrized positive gauge g=softplus(a_sym). Any metric violation is carried entirely by the pair-dependent g.</p>
+<p>Results are the interesting part for OT-in-HEP. Against a matched unconstrained PFN, MA-PFN gets 0.89% MAPE (vs 1.12%), a ~20% error reduction. The enforced axioms improve the <em>unenforced</em> triangle inequality: across 10⁶ held-out triplets, violations drop 199→2 and the max violation 149.5→5.8 GeV; exchange symmetry goes from 0.1% to ~100% of pairs within tolerance. IRC safety is only partially learned — under soft-emission and 50/50 collinear splits both networks plateau at a nonzero floor rather than tracking the exact EMD, though MA-PFN follows the exact response to smaller perturbation scales. Timing: amortized single-encode-per-event gives a flat pair-stage cost (17–26M pairs/s on one A40), with the advantage over the fastest 48-core exact solver growing from 1.5× at multiplicity 4 to 1.8×10³ at multiplicity 202; it Pareto-dominates Sinkhorn (ε=10⁻³, 3.4% error) and sliced-Wasserstein.</p>
+<p>Caveat as authors state: identity of indiscernibles, the triangle inequality, and IRC safety are not guaranteed, and relative error grows at small EMD — so it remains an approximate surrogate, not a drop-in metric for downstream nearest-neighbor/clustering work. Timing is not hardware-normalized (GPU vs 48 CPU cores).</p>
+<p>Note both papers share the LeBlanc/Brown-IAIFI group and the same EMD samples appear in the cell-resampling reference — the OT paper is squarely about OT, not tangential.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Thursday, August 20, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2608-18233">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2608.18233" target="_blank" rel="noopener">arXiv:2608.18233</a>
+      
+      <a class="permalink" href="#a2608-18233" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training</h3>
+    <p class="byline">Thorsten Buss et al.</p>
+    <div class="paper-body"><p>Be aware up front: OT is instrumental here, not the subject. The paper is a transfer-learning study — pre-training a point-cloud calorimeter shower generator (the <code>AllShowers</code> flow-matching backbone) on synthetic geometry variation (<code>SimpleBox</code>, 10⁴ box calorimeters spanning sampling fraction f_s ∈ [0.01,0.05] and N_layers ∈ {15,…,45}) and fine-tuning on unseen detectors. OT enters in two distinct roles.</p>
+<p>First, on the training side: the coordinate stage is conditional flow matching &ldquo;with an exact optimal-transport coupling between the prior and the data points.&rdquo; This is inherited unchanged from the <code>AllShowers</code> release (Ref. 52) — no new OT methodology, and the OT coupling noise is regenerable and not released.</p>
+<p>Second, and more relevant, OT distances are the evaluation currency, and the paper makes a methodologically useful distinction. They use W1/σ_ref (Wasserstein-1 normalized by the Geant4 reference std) on <em>pooled</em> histograms, and separately a <strong>sliced Wasserstein distance</strong> (256 random 1D projections, normalized by the Geant4 cloud&rsquo;s RMS dispersion) on <em>per-shower</em> vectors. Because each SWD projection mixes bins, it is sensitive to inter-bin correlations and shower-to-shower fluctuations that pooled W1 or mean-profile comparisons cannot see. This is exactly what exposes the key physics result: on the held-out FCCee-ALLEGRO target, the LEMURS prior&rsquo;s longitudinal SWD falls to 0.016 at D=10³ then <em>rises</em> to 0.059 at D=10⁵ (an &ldquo;ossification&rdquo;-like imprint), invisible in mean occupancy and only detectable via the distributional (SWD) metric. Ablating the multiplicity stage (Geant4 counts) restores monotonic convergence toward the 0.0079 statistical-resolution floor, and a KL cross-check reproduces the effect — so the SWD finding is metric-robust, localizing the residual to <code>PointCountFM</code> rather than the OT-coupled coordinate model.</p>
+<p>Headline transfer numbers (aggregated SWD geometric mean d̄): at D=10³, both priors beat from-scratch, reducing d̄ to Geant4 by 8.0× (LEMURS) and 5.2× (SimpleBox); synthetic pre-training overtakes the realistic prior at larger D. Caveat for this topic: no new OT technique is introduced — the value is a careful demonstration that per-shower sliced-Wasserstein is the diagnostic that catches transfer pathologies pooled metrics miss. Also restricted to EM photon showers only.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Friday, August 14, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2608-12795">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2608.12795" target="_blank" rel="noopener">arXiv:2608.12795</a>
+      
+      <a class="permalink" href="#a2608-12795" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Fine-tuned Normalizing Flows for ALICE Zero Degree Calorimeter Fast Simulation</h3>
+    <p class="byline">Emilia Majerz et al.</p>
+    <div class="paper-body"><p><strong>Centrality caveat up front:</strong> this is a fast-simulation/normalizing-flows paper, not an OT paper. &ldquo;Optimal transport&rdquo; enters only through the evaluation metric — the mean 1-Wasserstein distance between per-photomultiplier photon-count distributions (Eq. 2, averaged over m=5 checkerboard-mask channels via inverse-CDF integration). There is no OT-based training objective, no Sinkhorn regularization in this work, and no transport-map machinery; W₁ is used purely as a scalar figure of merit. (Note ref. [3] in their bibliography is a Sinkhorn autoencoder, but that is prior art, not this paper.)</p>
+<p>What they actually did: MAF-based conditional NF with rational-quadratic-spline transforms, pre-trained on the full imbalanced GEANT4 ZN dataset (306,780 samples) then fine-tuned per particle type (γ, n, Λ, K⁰_S, Σ⁺) via two gradual-unfreezing schemes. A two-stage pipeline (NF for normalized shower shape + BNN for total photon count) plus a four-way ensemble reaches W₁ = 1.61 ± 0.02 over the full test set, beating baselines (1.70, 1.76).</p>
+<p>The genuinely useful OT-adjacent contribution is their critique of W₁ as a ZDC surrogate metric: because the same input maps to many valid responses, a global 1-Wasserstein score can reward marginal distributional match while ignoring conditional input→output structure. They introduce conditional weighted MAE, a shrinkage-stabilized dispersion ratio, and a Jaccard co-activation error to capture what W₁ misses. Caveat they flag: bootstrap significance is weak outside γ (small per-input samples), and photon-count prediction, not the flow, is the accuracy bottleneck.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Thursday, August 6, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2608-04541">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2608.04541" target="_blank" rel="noopener">arXiv:2608.04541</a>
+      
+      <a class="permalink" href="#a2608-04541" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Holographic light quark jet quenching in flavor resolved QCD plasmas</h3>
+    <p class="byline">Huwei Zhu et al.</p>
+    <div class="paper-body"><p>Keyword false positive. This paper is about holographic (Einstein-Maxwell-dilaton) jet quenching — light-quark thermalization stopping distances from falling-string null geodesics on a lattice-calibrated EMD background for <span class="arithmatex">\(N_f=0,2,2+1\)</span>, cross-checked against shooting-string <span class="arithmatex">\(dE/dx\)</span>. The &ldquo;transport&rdquo; hits are &ldquo;heavy-ion transport codes,&rdquo; &ldquo;transport coefficients,&rdquo; and &ldquo;parton transport models&rdquo;; &ldquo;optimal&rdquo; appears only in &ldquo;machine-learning optimized&rdquo; metric fits. There is no optimal-transport (Monge–Kantorovich/Wasserstein) content whatsoever. Nothing here bears on your optimal-transport track — safe to skip.</p>
+<p>(For completeness, the actual physics: near <span class="arithmatex">\(T_c\)</span> more dynamical flavors shorten <span class="arithmatex">\(x_{\rm stop}\)</span>/enhance quenching, with the ordering <span class="arithmatex">\(x_{N_f=0}&gt;x_{N_f=2}&gt;x_{N_f=2+1}\)</span> reversing in the conformal high-<span class="arithmatex">\(T\)</span> limit; finite <span class="arithmatex">\(\mu_B\)</span> universally shortens stopping distance, sharply so near the CEP — e.g. <span class="arithmatex">\(x/x_{\rm SYM}\)</span> dropping from ~3.1 to ~1.5 over <span class="arithmatex">\(\mu\in[0,0.5]\)</span> GeV at <span class="arithmatex">\(T=0.15\)</span> GeV for <span class="arithmatex">\(N_f=2\)</span>.)</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Thursday, July 9, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2607-08723">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2607.08723" target="_blank" rel="noopener">arXiv:2607.08723</a>
+      
+      <a class="permalink" href="#a2607-08723" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h3>
+    <p class="byline">Regan Doherty et al.</p>
+    <div class="paper-body"><p>This paper replaces the modified-Euclidean metric in Andersen et al.&rsquo;s cell-resampling afterburner with two OT-based metrics — the Energy Mover&rsquo;s Distance (EMD, i.e. the first Wasserstein distance with β=1, R=11.64) and the Spectral EMD (sEMD) — to redistribute negative MC weights among phase-space neighbors. The central OT payoff is IRC-safety by construction: because EMD/sEMD are insensitive to soft/collinear radiation, resampling can run directly on particles without prior jet clustering, eliminating the jet-definition dependence that contaminated all downstream observables in the Euclidean approach. They test on NLO MC@NLO Z+jets (37.6% negative weights) and tt̄ (22.8%), 10⁵ events each, resampling at three generation stages (hard-scatter, post-shower, post-hadronization).</p>
+<p>Concrete results: hadronization-level resampling gives the lowest bias across all observables and the lowest ΣMD (see below). At f_rw=0.25 and 0.75, 1/f_ESS drops from 16 to 12 and 6 respectively for Z+jets — a real statistical-power gain. On the β scan, β=0 and β→∞ (which reduce to H_T-only distances, ignoring intra-event energy geometry) introduce ~50% biases in H_T/N_jets; β=0.5,1,2 are comparable, with β=1 chosen for accuracy/speed. EMD modestly outperforms sEMD; both clearly beat the Andersen Euclidean metric, whose ΣMD is nearly double EMD&rsquo;s at high f_rw.</p>
+<p>Second OT contribution: they repurpose the Cross-Section Mover&rsquo;s Distance (ΣMD) — an event-level EMD used as ground metric in a sample-level OT problem — as an unbinned, observable-agnostic figure of merit for reweighting bias, handling negative weights via a constant-offset (generalized-Wasserstein cancellation) trick requiring no solver modification. This is a genuinely reusable tool beyond this application.</p>
+<p>Caveats stated by the authors: the Euclidean metric was designed for much larger samples, so its poor showing here may partly reflect the sparse 10⁵-event metric space; exact EMD scales as O(N³log N), and runtime optimization is deferred. Bias at fixed f_rw is small but exaggerated relative to production-scale samples.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Friday, July 3, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2607-02867">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2607.02867" target="_blank" rel="noopener">arXiv:2607.02867</a>
+      
+      <a class="permalink" href="#a2607-02867" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Studying baryon number transport dynamics via hyperon-kaon correlations in p + Au collisions at √(s__NN)=20, 39 and 62 GeV</h3>
+    <p class="byline">Siyuan Ping et al.</p>
+    <div class="paper-body"><p>This paper uses the Wasserstein distance (via the Python Optimal Transport library) to quantify the correlation strength between hyperons and kaons in <span class="arithmatex">\(p + \mathrm{Au}\)</span> simulations (AMPT and UrQMD). The authors construct a correlation function <span class="arithmatex">\(C^{\text{CBS}}(\Delta y)\)</span> using combinatorial background subtraction and apply an optimal transport framework to measure the &ldquo;Energy Mover&rsquo;s Distance&rdquo; (EMD) and &ldquo;Energy-Mover’s Displacement&rdquo; (EMDp). These metrics effectively track the &ldquo;migration&rdquo; of hyperon-kaon pairs from uncorrelated background regions to the correlated signal region. The study aims to distinguish between standard fragmentation and the gluon junction mechanism for baryon number transport (BNT).</p>
+<p>This work moves the topic forward by applying optimal transport metrics specifically to characterize the <em>rapidity dynamics</em> of BNT. By quantifying the displacement of hyperon-kaon pairs in relative-rapidity space, the authors establish a baseline for identifying the gluon junction mechanism; the EMDp provides a directional signature that distinguishes between models where the baryon number carrier is either &ldquo;slowed down&rdquo; (baryon junction) or &ldquo;speeded up&rdquo; (valence-quark fragmentation).</p>
+<p>A key caveat is that the results rely on the assumption of specific hyperon/kaon production scenarios (general associated vs. general pair production). The authors acknowledge that while their method is designed to isolate BNT, its sensitivity is heavily dependent on the chosen detector acceptance (<span class="arithmatex">\(|\eta| &lt; 1.5\)</span> vs. full acceptance), noting that the signals become significantly suppressed at mid-rapidity, potentially masking the very BNT effect they intend to measure.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, June 22, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2606-23924">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2606.23924" target="_blank" rel="noopener">arXiv:2606.23924</a>
+      
+      <a class="permalink" href="#a2606-23924" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Event isotropy in perturbative QCD</h3>
+    <p class="byline">Daniele Atzori et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>It has recently been proposed that collider events can be equipped with a metric, the Energy Mover&rsquo;s Distance (EMD), which allows one to rephrase multiple aspects of collider physics in a geometric language. Further, the EMD can be exploited to define new observables. In this context, event isotropy quantifies the resemblance of an event to a uniform energy distribution. We present the first theoretical study of event isotropy within the framework of perturbative QCD. In particular, we first obtain the isotropy distribution in <span class="arithmatex">\(e^+e^-\)</span> collisions semi-analytically at <span class="arithmatex">\(O(α_s)\)</span> (leading-order) and numerically at <span class="arithmatex">\(O(α_s^2)\)</span> (next-to-leading order, NLO). Furthermore, we obtain all-order theoretical predictions by resumming the contributions of soft and collinear emissions, at next-to-leading logarithmic (NLL) accuracy. By matching resummed and fixed-order predictions we reach NLL+NLO accuracy.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, June 4, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2606-06603">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2606.06603" target="_blank" rel="noopener">arXiv:2606.06603</a>
+      
+      <a class="permalink" href="#a2606-06603" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Reweighting Adversarial Networks for Unbinned Unfolding</h3>
+    <p class="byline">Umar Sohail Qureshi et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Differential cross sections are the currency of scientific exchange in particle and nuclear physics. Recently, machine learning methods have enabled unbinned and high-dimensional cross section measurements through new approaches to unfolding. A key challenge with unfolding is that it is a bi-level optimization problem where constraints are available at the detector level while the target is at the particle level, linked by a stochastic detector response. Further complications arise when the particle-level and detector-level distributions have non-overlapping or only partially overlapping support, which can destabilize training and degrade unfolding performance. In this paper, we introduce a new unbinned unfolding technique called the Reweighting Adversarial Network (RAN), which can be viewed as a generalization of the Moment Unfolding protocol to accommodate full phase-space unfolding. RANs address the bi-level optimization problem through a particle-level reweighting function steered by a Wasserstein critic at the detector level. RANs do not require overlapping support at the detector level, nor multiple iterations of training. We evaluate the performance of RANs with Gaussian data and jet substructure studies, including cases specifically designed to stress test the method under vanishing support overlap. We demonstrate that RANs outperform state-of-the-art methods in accuracy and have a lower computational overhead.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, May 27, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2605-28940">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2605.28940" target="_blank" rel="noopener">arXiv:2605.28940</a>
+      
+      <a class="permalink" href="#a2605-28940" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Neural Scaling Laws for Jet Generation</h3>
+    <p class="byline">Oz Amram et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Recently observed empirical scaling laws describe the performance of foundation-type models as three independent key quantities &ndash; dataset size, compute, and model parameters &ndash; are modified. Extracting these scaling laws informs the training of large complex models for which the tuning of hyperparameters in traditional ways is not feasible. This work for the first time explores if scaling laws can also be observed for the task of particle jet generation &ndash; both relevant as a pre-training objective for foundation models and as in-situ simulation by itself. We indeed replicate the key logarithmic scaling law behavior for model-size scaling. Beyond studying the next token prediction validation loss of the generative model, we also study the sliced Wasserstein distance of five physical quantities that are not immediately available to the model during training. Our study shows that this quantity is monotonically related to the next token prediction validation loss, meaning that this loss is indeed a good proxy for the physics performance. For the scaling with dataset size and compute, we observe substantially weaker scaling behavior of both the loss and the sliced Wasserstein distance. We analyze this behavior by introducing the concept of a learnable window, and argue that autoregressive next token prediction on jet constituents exhibits comparatively rapid saturation relative to language-model studies. We discuss possible origins of this behavior, including the stochastic nature of QCD radiation and differences between generative and supervised learning tasks in collider physics.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Saturday, May 2, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2605-01363">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2605.01363" target="_blank" rel="noopener">arXiv:2605.01363</a>
+      
+      <a class="permalink" href="#a2605-01363" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Data-Driven, Geometry-Aware Optimal-Transport Calibration of Flavor Tagger</h3>
+    <p class="byline">Yeonjoon Kim et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, optimal-transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Flavor-tagging calibrations are often provided either as scale factors measured at a finite set of working points or as binned corrections to a chosen one-dimensional discriminant. However, this approach falls short of providing continuous, event-level calibration across the full multicomponent outputs of modern taggers. This limitation leads to information loss in analyses that demand high-performance flavor tagging, restricting analyses to a limited set of predefined variables. In this work, we propose a geometry-aware framework that formulates flavor-tagger calibration as an optimal transport problem on the probability simplex. The transport maps are parameterized and trained in the isometric log-ratio coordinate system. Because the quadratic Euclidean cost of Brenier transport in this coordinate system is equivalent to the Aitchison distance on the simplex, the learned map induces a minimal deformation under the Aitchison geometry. Furthermore, we extract flavor-conditional target distributions directly from control-region data using an expectation-maximization (EM) technique that simultaneously fits multiple control regions, models each flavor component with a normalizing flow, and estimates the regional mixture fractions. The extracted targets are subsequently used to learn flavor-factorized transport maps. Because the joint estimation of mixture fractions and flexible component densities admits weakly constrained directions, we further introduce a linearized feedback-operator analysis that propagates the fitted composition covariance into the extracted component densities, separating data-constrained modes from those dominated by the composition prior. The simulation-based closure study demonstrates improved closure in dedicated control regions and in independent validation mixtures.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, March 26, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2603-25785">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2603.25785" target="_blank" rel="noopener">arXiv:2603.25785</a>
+      
+      <a class="permalink" href="#a2603-25785" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Mapping quark-level kinematics to hadrons in a new hybrid model of semileptonic B meson decays</h3>
+    <p class="byline">Philipp Horak et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>The need to map parton-level processes to color-neutral hadrons in a way that respects quark-hadron duality arises in several areas of physics, including in the semileptonic decays of <span class="arithmatex">\(B\)</span> mesons. Integrated over large regions of phase space, the quark-level and hadron-level quantities are expected to be equal. However, the breakdown of duality is manifest at low hadron-system invariant masses, where discrete resonances dominate. In practice, this means independent simulations of decays to low-lying resonances and to higher-mass hadronic systems must be merged into a coherent model. We present a novel method to combine these resonant and non-resonant components in simulations of inclusive <span class="arithmatex">\(b \to u\ellν\)</span> decays that uses an optimal transport algorithm. The method currently used in measurements of inclusive semileptonic <span class="arithmatex">\(B\)</span> decay branching fractions introduces unphysical features in kinematic spectra such as large discontinuities and negative yields. The optimal transport method solves both of these issues and can be easily implemented in experimental studies of <span class="arithmatex">\(B \to X_u \ell ν\)</span> decays.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, March 23, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2603-21599">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2603.21599" target="_blank" rel="noopener">arXiv:2603.21599</a>
+      
+      <a class="permalink" href="#a2603-21599" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Conditional Wasserstein GAN for Simulating Neutrino Event Summaries using Incident Energy of Electron Neutrinos</h3>
+    <p class="byline">Dipthi S. et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Event simulation for electron neutrino interactions plays a foundational role in precision measurements in particle physics experiments, yet the computational demand of traditional Monte Carlo methods remains a significant challenge, especially for complete, high-dimensional event reconstruction. In this study, we present a generative model based on the Conditional Wasserstein Generative Adversarial Network (CW-GAN) framework. This architecture is conditioned on the input neutrino energy. It utilizes a Wasserstein loss function, stabilized by a gradient penalty, to learn the complex mapping from a latent space to structured kinematic data. Our model is tailored to replicate the full multidimensional kinematics of electron neutrino interactions as described by the GENIE event generator. Our focus is specifically on the Inverse Beta Decay (IBD-CC), Neutral Current (NC), and nue-e-elastic scattering processes (NuEElastic), spanning an energy window of 10-31 MeV. Our approach abandons variable reduction schemes and instead generates the entire summary ntuple, enabling holistic event-by-event modeling. Training is performed separately for each of the three interaction types, with rigorous convergence monitoring over 100-300 epochs per channel. We perform a rigorous quantitative validation against held-out GENIE test datasets. The generated samples demonstrate fidelity, reproducing the 1D marginal distributions for all kinematic variables with statistical compatibility, and successfully capturing the complex non-linear correlations between them. This work offers a scalable and efficient alternative to traditional MC event generation, providing full-spectrum kinematic simulation for key electron neutrino interaction channels while drastically reducing computational overhead.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Saturday, March 21, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2603-20903">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2603.20903" target="_blank" rel="noopener">arXiv:2603.20903</a>
+      
+      <a class="permalink" href="#a2603-20903" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Unfolding with a Wasserstein Loss</h3>
+    <p class="byline">Katy Craig et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein, sinkhorn, transport map) — abstract only, not yet read for a briefing.</em></p>
+<p>Data unfolding &ndash; the removal of noise or artifacts from measurements &ndash; is a fundamental task across the experimental sciences. Of particular interest are applications in physics, where the dominant approach is Richardson-Lucy (RL) deconvolution. The classical RL approach aims to find denoised data that, once passed through the noise model, is as close as possible to the measured data in terms of Kullback-Leibler (KL) divergence. This requires that the support of the measured data overlaps with the output of the noise model, a hypothesis typically enforced by binning, which introduces numerical error. As a counterpoint, the present work studies an alternative formulation using a Wasserstein loss. We establish sharp conditions for existence and uniqueness of optimizers, answering open questions of Li, et al., regarding necessary conditions for uniqueness in the case of transport map noise models. We then develop a provably convergent generalized Sinkhorn algorithm to compute approximate optimizers. Our algorithm requires only empirical observations of the noise model and measured data and scales with the size of the data, rather than the ambient dimension. Numerical experiments on one- and two-dimensional problems inspired by jet mass unfolding in particle physics demonstrate that the optimal transport approach offers robust, accurate performance compared to classical RL deconvolution, particularly when binning artifacts are significant.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, January 16, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2601-11716">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2601.11716" target="_blank" rel="noopener">arXiv:2601.11716</a>
+      
+      <a class="permalink" href="#a2601-11716" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">AllShowers: One model for all calorimeter showers</h3>
+    <p class="byline">Thorsten Buss et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Accurate and efficient detector simulation is essential for modern collider experiments. To reduce the high computational cost, various fast machine learning surrogate models have been proposed. Traditional surrogate models for calorimeter shower modeling train separate networks for each particle species, limiting scalability and reuse. We introduce AllShowers, a unified generative model that simulates calorimeter showers across multiple particle types using a single generative model. AllShowers is a continuous normalizing flow model with a Transformer architecture, enabling it to generate complex spatial and energy correlations in variable-length point cloud representations of showers. Trained on a diverse dataset of simulated showers in the highly granular ILD detector, the model demonstrates the ability to generate realistic showers for electrons, photons, and charged and neutral hadrons across a wide range of incident energies and angles without retraining. In addition to unifying shower generation for multiple particle types, AllShowers surpasses the fidelity of previous single-particle-type models for hadronic showers. Key innovations include the use of a layer embedding, allowing the model to learn all relevant calorimeter layer properties; a custom attention masking scheme to reduce computational demands and introduce a helpful inductive bias; and a shower- and layer-wise optimal transport mapping to improve training convergence and sample quality. AllShowers marks a significant step towards a universal model for calorimeter shower simulations in collider experiments.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, December 22, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2512-19913">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2512.19913" target="_blank" rel="noopener">arXiv:2512.19913</a>
+      
+      <a class="permalink" href="#a2512-19913" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Quasiprobabilistic Density Ratio Estimation with a Reverse Engineered Classification Loss Function</h3>
+    <p class="byline">Matthew Drnevich et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We consider a generalization of the classifier-based density-ratio estimation task to a quasiprobabilistic setting where probability densities can be negative. The problem with most loss functions used for this task is that they implicitly define a relationship between the optimal classifier and the target quasiprobabilistic density ratio which is discontinuous or not surjective. We address these problems by introducing a convex loss function that is well-suited for both probabilistic and quasiprobabilistic density ratio estimation. To quantify performance, an extended version of the Sliced-Wasserstein distance is introduced which is compatible with quasiprobability distributions. We demonstrate our approach on a real-world example from particle physics, of di-Higgs production in association with jets via gluon-gluon fusion, and achieve state-of-the-art results.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, December 4, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2512-04839">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2512.04839" target="_blank" rel="noopener">arXiv:2512.04839</a>
+      
+      <a class="permalink" href="#a2512-04839" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal Transport Event Representation for Anomaly Detection</h3>
+    <p class="byline">Tianji Cai et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce optimal transport (OT) as a physics-based intermediate event representation for weakly supervised anomaly detection. With only <span class="arithmatex">\(0.5\%\)</span> injection of resonant signals in the LHC Olympics benchmark datasets, the OT-augmented feature set achieves nearly twice the significance improvement of the standard high-level observables using an idealized setup, while end-to-end deep learning on low-level four-momenta is less effective in this low-signal regime. The observed gains persist across signal types and classifiers considered in this study, suggesting that structured, physics-informed representations can provide a useful complement to existing approaches for anomaly detection.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, November 28, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2512-00187">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2512.00187" target="_blank" rel="noopener">arXiv:2512.00187</a>
+      
+      <a class="permalink" href="#a2512-00187" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Cross-Geometry Transfer Learning in Fast Electromagnetic Shower Simulation</h3>
+    <p class="byline">Frank Gaede et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Accurate particle shower simulation remains a critical computational bottleneck for high-energy physics. Traditional Monte Carlo methods, such as Geant4, are computationally prohibitive, while existing machine learning surrogates are tied to specific detector geometries and require complete retraining for each design change or alternative detector. We present a transfer learning methodology for generative calorimeter simulation models that enables adaptation across diverse geometries with high data efficiency. Using point cloud representations and pre-training on the International Large Detector, our approach handles new configurations without re-voxelizing showers for each geometry. On the CaloChallenge dataset, transfer learning with only 100 target-domain samples achieves a <span class="arithmatex">\(51\%\)</span> improvement on the geometric mean of Wasserstein distance over training from scratch. Parameter-efficient fine-tuning with bias-only adaptation achieves competitive performance while updating only <span class="arithmatex">\(17\%\)</span> of model parameters. Our analysis provides insight into adaptation mechanisms for particle shower development, establishing a baseline for future progress of point cloud approaches in calorimeter simulation.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, November 10, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2511-07518">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2511.07518" target="_blank" rel="noopener">arXiv:2511.07518</a>
+      
+      <a class="permalink" href="#a2511-07518" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Information Criteria for Selecting Parton Distribution Function Solutions</h3>
+    <p class="byline">Aurore Courtoy et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal-transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>In data-driven determination of Parton Distribution Functions (PDFs) in global QCD analyses, uncovering the true underlying distributions is complicated by a highly convoluted inverse problem. The determination of PDFs can be understood as the inference of a function supported on <span class="arithmatex">\([0,1]\)</span>, a problem that admits multiple acceptable solutions. An ensemble of solutions exists that pass all standard goodness-of-fit criteria. In this paper, we propose algorithms for the classification, clustering, and selection of solutions to the determination of PDFs, or any functions on <span class="arithmatex">\([0,1]\)</span>, based on the characterization of their shape. We explore information-theoretic based (Rényi entropy and divergence) and optimal-transport based (Wasserstein distance) criteria. In particular, we advocate for the use of the Rényi entropy as an {\it absolute} estimator per solution, as opposed to {\it relative} estimators that compare solutions pairwise. We show that the Rényi entropy can characterize the space of solutions {\it w.r.t.} the PDF shapes. Paired with the identification of the optimal combination of solutions via Pareto fronts, it provides a plausible and minimalist selection algorithm. Moreover, Rényi entropy proves versatile for use in clustering applications.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, October 2, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2510-02168">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2510.02168" target="_blank" rel="noopener">arXiv:2510.02168</a>
+      
+      <a class="permalink" href="#a2510-02168" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Wasserstein normalized autoencoder for anomaly detection</h3>
+    <p class="byline">CMS Collaboration</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>A novel anomaly detection algorithm is presented. The Wasserstein normalized autoencoder (WNAE) is a normalized probabilistic model that minimizes the Wasserstein distance between the learned probability distribution&ndash;a Boltzmann distribution where the energy is the reconstruction error of the autoencoder&ndash;and the distribution of the training data. This algorithm has been developed and applied to the identification of semivisible jets&ndash;conical sprays of visible standard model particles and invisible dark matter states&ndash;with the CMS experiment at the CERN LHC. Trained on jets of particles from simulated standard model processes, the WNAE is shown to learn the probability distribution of the input data in a fully unsupervised fashion, such that it effectively identifies new physics jets as anomalies. The model exhibits stable, convergent training and recovers strong classification performance for a wide range of signals against the selected background process, for which a standard autoencoder fails because of outlier reconstruction. In addition, the model improves upon standard normalized autoencoders while remaining fully agnostic to the signal. The WNAE directly tackles the problem of outlier reconstruction, a common failure mode of autoencoders in anomaly detection tasks.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, July 9, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2507-08867">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2507.08867" target="_blank" rel="noopener">arXiv:2507.08867</a>
+      
+      <a class="permalink" href="#a2507-08867" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Mind the Gap: Navigating Inference with Optimal Transport Maps</h3>
+    <p class="byline">Malte Algren et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Machine learning (ML) techniques have recently enabled enormous gains in sensitivity to new phenomena across the sciences. In particle physics, much of this progress has relied on excellent simulations of a wide range of physical processes. However, due to the sophistication of modern machine learning algorithms and their reliance on high-quality training samples, discrepancies between simulation and experimental data can significantly limit their effectiveness. In this work, we present a solution to this <code>misspecification'' problem: a model calibration approach based on optimal transport, which we apply to high-dimensional simulations for the first time. We demonstrate the performance of our approach through jet tagging, using a dataset inspired by the CMS experiment at the Large Hadron Collider. A 128-dimensional internal jet representation from a powerful general-purpose classifier is studied; after calibrating this internal</code>latent&rsquo;&rsquo; representation, we find that a wide variety of quantities derived from it for downstream tasks are also properly calibrated: using this calibrated high-dimensional representation, powerful new applications of jet flavor information can be utilized in LHC analyses. This is a key step toward allowing the unbiased use of ``foundation models&rsquo;&rsquo; in particle physics. More broadly, this calibration framework has broad applications for correcting high-dimensional simulations across the sciences.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, June 10, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2506-09238">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2506.09238" target="_blank" rel="noopener">arXiv:2506.09238</a>
+      
+      <a class="permalink" href="#a2506-09238" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal Transport for e/π⁰ Particle Classification in LArTPC Neutrino Experiments</h3>
+    <p class="byline">David Caratelli et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>The efficient classification of electromagnetic activity from <span class="arithmatex">\(π^0\)</span> and electrons remains an open problem in the reconstruction of neutrino interactions in Liquid Argon Time Projection Chamber (LArTPC) detectors. We address this problem using the mathematical framework of Optimal Transport (OT), which has been successfully employed for event classification in other HEP contexts and is ideally suited to the high-resolution calorimetry of LArTPCs. Using a publicly available simulated dataset from the MicroBooNE collaboration, we show that OT methods achieve state-of-the-art reconstruction performance in <span class="arithmatex">\(e/π^0\)</span> classification. The success of this first application indicates the broader promise of OT methods for LArTPC-based neutrino experiments.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, April 16, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2504-12380">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2504.12380" target="_blank" rel="noopener">arXiv:2504.12380</a>
+      
+      <a class="permalink" href="#a2504-12380" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Factorization for Collider Dataspace Correlators</h3>
+    <p class="byline">Andrew J. Larkoski</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>A metric on the space of collider physics data enables analysis of its geometrical properties, like dimensionality or curvature, as well as quantifying the density with which a finite, discrete ensemble of data samples the space. We provide the first systematically-improvable precision calculations on this dataspace, presenting predictions resummed to next-to-leading logarithmic accuracy, using the Spectral Energy Mover&rsquo;s Distance (SEMD) as its metric. This is accomplished by demonstration of factorization of soft and collinear contributions to the metric at leading power and renormalization group evolution of the single-scale functions that are present in the factorization theorem. As applications of this general framework, we calculate the two-point correlator between pairs of jets on the dataspace, and the measure of the non-Gaussian fluctuations in a finite dataset. For the non-Gaussianities, our calculations validate the existence of a universal structure that had been previously observed in simulated data. As byproducts of this analysis, we also calculate the two-loop anomalous dimension of the SEMD metric and show that the original Energy Mover&rsquo;s Distance metric is identical to the SEMD through next-to-next-to-leading logarithmic accuracy.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Saturday, January 18, 2025
+  </h2>
+  
+
+  
+  <article class="paper" id="a2501-10681">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2501.10681" target="_blank" rel="noopener">arXiv:2501.10681</a>
+      
+      <a class="permalink" href="#a2501-10681" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Multi-scale Optimal Transport for Complete Collider Events</h3>
+    <p class="byline">Tianji Cai et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Building upon the success of optimal transport metrics defined for single collinear jets, we develop a multi-scale framework that models entire collider events as distributions on the manifold of their constituent jets, which are themselves distributions on the ground space of the calorimeter. This hierarchical structure of optimal transport effectively captures relevant physics at different scales. We demonstrate the versatility of our method in two event classification tasks, which respectively emphasize intra-jet substructure and inter-jet spatial correlations. Our results highlight the relevance of a nested structure of manifolds in the treatment of full collider events, broadening the applicability of optimal transport methods in collider analyses.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, November 8, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2411-05996">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2411.05996" target="_blank" rel="noopener">arXiv:2411.05996</a>
+      
+      <a class="permalink" href="#a2411-05996" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Fast multi-geometry calorimeter simulation with conditional self-attention variational autoencoders</h3>
+    <p class="byline">Dylan Smith et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>The simulation of detector response is a vital aspect of data analysis in particle physics, but current Monte Carlo methods are computationally expensive. Machine learning methods, which learn a mapping from incident particle to detector response, are much faster but require a model for every detector element with unique geometry. Complex geometries may require many models, each with their own training samples and hyperparameter tuning tasks. A promising approach is the use of geometry-aware models, which condition the response on the geometry, but current efforts typically require cumbersome full geometry specification. We present a geometry-aware model that takes advantage of the regularity of detector segments, requiring only the definition of cell sizes across regular segments. This model outperforms the current state of the art by over 70% across several key metrics including the Wasserstein distance metric.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 9, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2410-06539">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2410.06539" target="_blank" rel="noopener">arXiv:2410.06539</a>
+      
+      <a class="permalink" href="#a2410-06539" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">DeepMuon: Accelerating Cosmic-Ray Muon Simulation Based on Optimal Transport</h3>
+    <p class="byline">Ao-Bo Wang et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Cosmic muon imaging technology is increasingly being applied in various fields. However, simulating cosmic muons typically requires the rapid generation of a large number of muons and tracking their complex trajectories through intricate structures. This process is highly computationally demanding and consumes significant CPU time. To address these challenges, we introduce DeepMuon, an innovative deep learning model designed to efficiently and accurately generate cosmic muon distributions. In our approach, we employ the inverse Box-Cox transformation to reduce the kurtosis of the muon energy distribution, making it more statistically manageable for the model to learn. Additionally, we utilize the Sliced Wasserstein Distance (SWD) as a loss function to ensure precise simulation of the high-dimensional distributions of cosmic muons. We also demonstrate that DeepMuon can accurately learn muon distribution patterns from a limited set of data, enabling it to simulate real-world cosmic muon distributions as captured by detectors. Compared to traditional tools like CRY, DeepMuon significantly increases the speed of muon generation at sea level. Furthermore, we have developed a pipeline using DeepMuon that directly simulates muon distributions in underwater environments, dramatically accelerating simulations for underwater muon radiography and tomography. For more details on our open-source project, please visit https://github.com/wangab0/deepmuon.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, October 7, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2410-05379">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2410.05379" target="_blank" rel="noopener">arXiv:2410.05379</a>
+      
+      <a class="permalink" href="#a2410-05379" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SPECTER: Efficient Evaluation of the Spectral EMD</h3>
+    <p class="byline">Rikab Gambhir et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>The Energy Mover&rsquo;s Distance (EMD) has seen use in collider physics as a metric between events and as a geometric method of defining infrared and collinear safe observables. Recently, the Spectral Energy Mover&rsquo;s Distance (SEMD) has been proposed as a more analytically tractable alternative to the EMD. In this work, we obtain a closed-form expression for the Riemannian-like p = 2 SEMD metric between events, eliminating the need to numerically solve an optimal transport problem. Additionally, we show how the SEMD can be used to define event and jet shape observables by minimizing the distance between events and parameterized energy flows (similar to the EMD), and we obtain closed-form expressions for several of these observables. We also present the SPECTER framework, an efficient and highly parallelized implementation of the SEMD metric and SEMD-derived shape observables as an analogue of the previously-introduced SHAPER for EMD-based computations. We demonstrate that computing the SEMD with SPECTER can be up to a thousand times faster than computing the EMD with standard optimal transport libraries.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 24, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-16336">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.16336" target="_blank" rel="noopener">arXiv:2409.16336</a>
+      
+      <a class="permalink" href="#a2409-16336" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Refereeing the Referees: Evaluating Two-Sample Tests for Validating Generators in Precision Sciences</h3>
+    <p class="byline">Samuele Grossi et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a robust methodology to evaluate the performance and computational efficiency of non-parametric two-sample tests, specifically designed for high-dimensional generative models in scientific applications such as in particle physics. The study focuses on tests built from univariate integral probability measures: the sliced Wasserstein distance and the mean of the Kolmogorov-Smirnov statistics, already discussed in the literature, and the novel sliced Kolmogorov-Smirnov statistic. These metrics can be evaluated in parallel, allowing for fast and reliable estimates of their distribution under the null hypothesis. We also compare these metrics with the recently proposed unbiased Fréchet Gaussian Distance and the unbiased quadratic Maximum Mean Discrepancy, computed with a quartic polynomial kernel. We evaluate the proposed tests on various distributions, focusing on their sensitivity to deformations parameterized by a single parameter <span class="arithmatex">\(ε\)</span>. Our experiments include correlated Gaussians and mixtures of Gaussians in 5, 20, and 100 dimensions, and a particle physics dataset of gluon jets from the JetNet dataset, considering both jet- and particle-level features. Our results demonstrate that one-dimensional-based tests provide a level of sensitivity comparable to other multivariate metrics, but with significantly lower computational cost, making them ideal for evaluating generative models in high-dimensional settings. This methodology offers an efficient, standardized tool for model comparison and can serve as a benchmark for more advanced tests, including machine-learning-based approaches.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, September 20, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-13150">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.13150" target="_blank" rel="noopener">arXiv:2409.13150</a>
+      
+      <a class="permalink" href="#a2409-13150" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Field Guide to Event-Shape Observables Using Optimal Transport</h3>
+    <p class="byline">Cari Cesarotti et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We lay out the phenomenological behavior of event-shape observables evaluated by solving optimal transport problems between collider events and reference geometries &ndash; which we name &lsquo;manifold distances&rsquo; &ndash; to provide guidance regarding their use in future studies. This discussion considers several choices related to the metric used to quantify these distances. We explore the differences between the various options, using a combination of analytical studies and simulated minimum-bias and multi-jet events. Making judicious choices when defining the metric and reference geometry can improve sensitivity to interesting signal features and reduce sensitivity to non-perturbative effects in QCD. The goal of this article is to provide a &lsquo;field guide&rsquo; that can inform how choices made when defining a manifold distance can be tailored for the analysis at-hand.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 10, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-06399">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.06399" target="_blank" rel="noopener">arXiv:2409.06399</a>
+      
+      <a class="permalink" href="#a2409-06399" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Robust semi-parametric signal detection in particle physics with classifiers decorrelated via optimal transport</h3>
+    <p class="byline">Purvasha Chakravarti et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, transport map) — abstract only, not yet read for a briefing.</em></p>
+<p>Searches for signals of new physics in particle physics are usually done by training a supervised classifier to separate a signal model from the known Standard Model physics (also called the background model). However, even when the signal model is correct, systematic errors in the background model can influence supervised classifiers and might adversely affect the signal detection procedure. To tackle this problem, one approach is to use the (possibly misspecified) classifier only to perform a preliminary signal-enrichment step and then to carry out a signal detection test on the signal-rich sample. For this procedure to work, we need a classifier constrained to be decorrelated with one or more protected variables used for the signal-detection step. We do this by considering an optimal transport map of the classifier output that makes it independent of the protected variable(s) for the background. We then fit a semiparametric mixture model to the distribution of the protected variable after making cuts on the transformed classifier to detect the presence of a signal. We compare and contrast this decorrelation method with previous approaches, show that the decorrelation procedure is robust to moderate background misspecification, and analyze the power and validity of the signal detection test as a function of the cut on the classifier both with and without decorrelation. We conclude that decorrelation and signal enrichment help produce a stable, robust, valid, and more powerful test.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, July 29, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-19818">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.19818" target="_blank" rel="noopener">arXiv:2407.19818</a>
+      
+      <a class="permalink" href="#a2407-19818" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Accelerating template generation in resonant anomaly detection searches with optimal transport</h3>
+    <p class="byline">Matthew Leigh et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce Resonant Anomaly Detection with Optimal Transport (RAD-OT), a method for generating signal templates in resonant anomaly detection searches. RAD-OT leverages the fact that the conditional probability density of the target features vary approximately linearly along the optimal transport path connecting the resonant feature. This does not assume that the conditional density itself is linear with the resonant feature, allowing RAD-OT to efficiently capture multimodal relationships, changes in resolution, etc. By solving the optimal transport problem, RAD-OT can quickly build a template by interpolating between the background distributions in two sideband regions. We demonstrate the performance of RAD-OT using the LHC Olympics R\&amp;D dataset, where we find comparable sensitivity and improved stability with respect to deep learning-based approaches.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, July 16, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-11917">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.11917" target="_blank" rel="noopener">arXiv:2407.11917</a>
+      
+      <a class="permalink" href="#a2407-11917" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Global Optimisation of Black-Box Functions with Generative Models in the Wasserstein Space</h3>
+    <p class="byline">Tigran Ramazyan et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a new uncertainty estimator for gradient-free optimisation of black-box simulators using deep generative surrogate models. Optimisation of these simulators is especially challenging for stochastic simulators and higher dimensions. To address these issues, we utilise a deep generative surrogate approach to model the black box response for the entire parameter space. We then leverage this knowledge to estimate the proposed uncertainty based on the Wasserstein distance - the Wasserstein uncertainty. This approach is employed in a posterior agnostic gradient-free optimisation algorithm that minimises regret over the entire parameter space. A series of tests were conducted to demonstrate that our method is more robust to the shape of both the black box function and the stochastic response of the black box than state-of-the-art methods, such as efficient global optimisation with a deep Gaussian process surrogate.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, July 10, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-16704">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.16704" target="_blank" rel="noopener">arXiv:2407.16704</a>
+      
+      <a class="permalink" href="#a2407-16704" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Applying generative neural networks for fast simulations of the ALICE (CERN) experiment</h3>
+    <p class="byline">Maksymilian Wojnar</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>This thesis investigates the application of state-of-the-art advances in generative neural networks for fast simulation of the Zero Degree Calorimeter (ZDC) neutron detector in the ALICE experiment at CERN. Traditional simulation methods using the GEANT Monte Carlo toolkit, while accurate, are computationally demanding. With increasing computational needs at CERN, efficient simulation techniques are essential. The thesis provides a comprehensive literature review on the application of neural networks in computer vision, fast simulations using machine learning, and generative neural networks in high-energy physics. The theory of the analyzed models is also discussed, along with technical aspects and the challenges associated with a practical implementation. The experiments evaluate various neural network architectures, including convolutional neural networks, vision transformers, and MLP-Mixers, as well as generative frameworks such as autoencoders, generative adversarial networks, vector quantization models, and diffusion models. Key contributions include the implementation and evaluation of these models, a significant improvement in the Wasserstein metric compared to existing methods with a low generation time of 5 milliseconds per sample, and the formulation of a list of recommendations for developing models for fast ZDC simulation. Open-source code and detailed hyperparameter settings are provided for reproducibility. Additionally, the thesis outlines future research directions to further enhance simulation fidelity and efficiency.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Sunday, June 2, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2406-01635">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2406.01635" target="_blank" rel="noopener">arXiv:2406.01635</a>
+      
+      <a class="permalink" href="#a2406-01635" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SwdFold:A Reweighting and Unfolding method based on Optimal Transport Theory</h3>
+    <p class="byline">Chu-Cheng Pan et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>High-energy physics experiments rely heavily on precise measurements of energy and momentum, yet face significant challenges due to detector limitations, calibration errors, and the intrinsic nature of particle interactions. Traditional unfolding techniques have been employed to correct for these distortions, yet they often suffer from model dependency and stability issues. We present a novel method, SwdFold, which utilizes the principles of optimal transport to provide a robust, model-independent framework to estimate the probability density ratio for data unfolding. It not only unfold the toy experimental event by reweighted simulated data distributions closely with true distributions but also maintains the integrity of physical features across various observables. We can expect it can enable more reliable predictions and comprehensive analyses as a high precision reweighting and unfolding tool in high-energy physics.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, February 26, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2402-16270">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2402.16270" target="_blank" rel="noopener">arXiv:2402.16270</a>
+      
+      <a class="permalink" href="#a2402-16270" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Peak finding algorithm for cluster counting with domain adaptation</h3>
+    <p class="byline">Guang Zhao et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Cluster counting in drift chamber is the most promising breakthrough in particle identification (PID) technique in particle physics experiment. Reconstruction algorithm is one of the key challenges in cluster counting. In this paper, a semi-supervised domain adaptation (DA) algorithm is developed and applied on the peak finding problem in cluster counting. The algorithm uses optimal transport (OT), which provides geometric metric between distributions, to align the samples between the source (simulation) and target (data) samples, and performs semi-supervised learning with the samples in target domain that are partially labeled with the continuous wavelet transform (CWT) algorithm. The model is validated by the pseudo data with labels, which achieves performance close to the fully supervised model. When applying the algorithm on real experimental data, taken at CERN with a 180 GeV/c muon beam, it shows better classification power than the traditional derivative-based algorithm, and the performance is stable for experimental data samples across varying track lengths.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Sunday, January 28, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2401-15542">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2401.15542" target="_blank" rel="noopener">arXiv:2401.15542</a>
+      
+      <a class="permalink" href="#a2401-15542" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Exploring Optimal Transport for Event-Level Anomaly Detection at the Large Hadron Collider</h3>
+    <p class="byline">Nathaniel Craig et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Anomaly detection is a promising, model-agnostic strategy to find physics beyond the Standard Model. State-of-the-art machine learning methods offer impressive performance on anomaly detection tasks, but interpretability, resource, and memory concerns motivate considering a wide range of alternatives. We explore using the 2-Wasserstein distance from optimal transport theory, both as an anomaly score and as input to interpretable machine learning methods, for event-level anomaly detection at the Large Hadron Collider. The choice of ground space plays a key role in optimizing performance. We comment on the feasibility of implementing these methods in the L1 trigger system.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, December 12, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2312-06948">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2312.06948" target="_blank" rel="noopener">arXiv:2312.06948</a>
+      
+      <a class="permalink" href="#a2312-06948" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Unsupervised learning in the metric space of jets</h3>
+    <p class="byline">Tejes Gaertner et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>In the first part of this work, we demonstrate how the metric space structure induced by the energy mover&rsquo;s distance can be leveraged for the unsupervised tagging of jets according to their progenitor. Namely, we focus on the task of tagging jets initiated by a top quark from a background of jets initiated by light quarks and gluons. By examining the local neighborhood structure of this metric space, we find that the jets of each class populate the landscape in differing densities. This characteristic can be exploited to accurately cluster jets according to their densities through unsupervised clustering algorithms, such as DBSCAN. In the second part of this work, we modify the metric space by reducing the global notion of connectivity down to a local one and, in the process of doing so, modify our distance metric to be that corresponding to geodesics on an underlying graph. We demonstrate how this modification induces regions of both positive and negative values of curvature, which are then exacerbated through a Ricci flow algorithm. Differences in the curvatures averaged over local patches of the new graph metric space then lead to a flow which separates the signal top jets from the background in a fashion that is completely agnostic to any pre-determined jet labels.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, November 2, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2311-01385">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2311.01385" target="_blank" rel="noopener">arXiv:2311.01385</a>
+      
+      <a class="permalink" href="#a2311-01385" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Ultra-Fast Generation of Air Shower Images for Imaging Air Cherenkov Telescopes using Generative Adversarial Networks</h3>
+    <p class="byline">Christian Elflein et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>For the analysis of data taken by Imaging Air Cherenkov Telescopes (IACTs), a large number of air shower simulations are needed to derive the instrument response. The simulations are very complex, involving computational and memory-intensive calculations, and are usually performed repeatedly for different observation intervals to take into account the varying optical sensitivity of the instrument. The use of generative models based on deep neural networks offers the prospect for memory-efficient storing of huge simulation libraries and cost-effective generation of a large number of simulations in an extremely short time. In this work, we use Wasserstein Generative Adversarial Networks to generate photon showers for an IACT equipped with the FlashCam design, which has more than <span class="arithmatex">\(1{,}500\)</span> pixels. Using simulations of the H.E.S.S. experiment, we demonstrate the successful generation of high-quality IACT images. The analysis includes a comprehensive study of the generated image quality based on low-level observables and the well-known Hillas parameters that describe the shower shape. We demonstrate for the first time that the generated images have high fidelity with respect to low-level observables, the Hillas parameters, their physical properties, as well as their correlations. The found increase in generation speed in the order of <span class="arithmatex">\(10^5\)</span> yields promising prospects for fast and memory-efficient simulations of air showers for IACTs.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, October 27, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2310-17897">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2310.17897" target="_blank" rel="noopener">arXiv:2310.17897</a>
+      
+      <a class="permalink" href="#a2310-17897" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Event generation and consistency tests with sliced Wasserstein distance in high-energy physics</h3>
+    <p class="byline">Chu-Cheng Pan et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>In the field of modern high-energy physics research, there is a growing emphasis on utilizing deep learning techniques to optimize event simulation, thereby expanding the statistical sample size for more accurate physical analysis. Traditional simulation methods often encounter challenges when dealing with complex physical processes and high-dimensional data distributions, resulting in slow performance. To overcome these limitations, we propose a solution based on deep learning with the sliced Wasserstein distance as the loss function. By employing an advanced transformer learning architecture, we initiate the learning process from a Monte Carlo sample and generate high-dimensional data. Through the integration of the sliced Wasserstein distance with the permutation test, we introduce a novel, statistically rigorous, and more sensitive metric for assessing the distribution differences, which significantly outperforms other metrics in detecting subtle distributional shifts, further validating its effectiveness for precise evaluation in high-energy physics generative models and high-dimensional consistency test. The generated data samples maintain all the original distribution features from a limited number of training samples, as evidenced by their successful passage of all common consistency tests using a test sample size of the same order of statistical magnitude. This development opens up new possibilities for improving event simulation and high-dimensional consistency tests in high-energy physics research.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, September 29, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2310-00049">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2310.00049" target="_blank" rel="noopener">arXiv:2310.00049</a>
+      
+      <a class="permalink" href="#a2310-00049" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">EPiC-ly Fast Particle Cloud Generation with Flow-Matching and Diffusion</h3>
+    <p class="byline">Erik Buhmann et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Jets at the LHC, typically consisting of a large number of highly correlated particles, are a fascinating laboratory for deep generative modeling. In this paper, we present two novel methods that generate LHC jets as point clouds efficiently and accurately. We introduce \epcjedi, which combines score-matching diffusion models with the Equivariant Point Cloud (EPiC) architecture based on the deep sets framework. This model offers a much faster alternative to previous transformer-based diffusion models without reducing the quality of the generated jets. In addition, we introduce \epcfm, the first permutation equivariant continuous normalizing flow (CNF) for particle cloud generation. This model is trained with {\it flow-matching}, a scalable and easy-to-train objective based on optimal transport that directly regresses the vector fields connecting the Gaussian noise prior to the data distribution. Our experiments demonstrate that \epcjedi and \epcfm both achieve state-of-the-art performance on the top-quark JetNet datasets whilst maintaining fast generation speed. Most notably, we find that the \epcfm model consistently outperforms all the other generative models considered here across every metric. Finally, we also introduce two new particle cloud performance metrics: the first based on the Kullback-Leibler divergence between feature distributions, the second is the negative log-posterior of a multi-model ParticleNet classifier.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, August 23, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2308-12339">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2308.12339" target="_blank" rel="noopener">arXiv:2308.12339</a>
+      
+      <a class="permalink" href="#a2308-12339" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Refining Fast Calorimeter Simulations with a Schrödinger Bridge</h3>
+    <p class="byline">Sascha Diefenbacher et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (Schrödinger bridge) — abstract only, not yet read for a briefing.</em></p>
+<p>Machine learning-based simulations, especially calorimeter simulations, are promising tools for approximating the precision of classical high energy physics simulations with a fraction of the generation time. Nearly all methods proposed so far learn neural networks that map a random variable with a known probability density, like a Gaussian, to realistic-looking events. In many cases, physics events are not close to Gaussian and so these neural networks have to learn a highly complex function. We study an alternative approach: Schrödinger bridge Quality Improvement via Refinement of Existing Lightweight Simulations (SQuIRELS). SQuIRELS leverages the power of diffusion-based neural networks and Schrödinger bridges to map between samples where the probability density is not known explicitly. We apply SQuIRELS to the task of refining a classical fast simulation to approximate a full classical simulation. On simulated calorimeter events, we find that SQuIRELS is able to reproduce highly non-trivial features of the full simulation with a fraction of the generation time.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, July 24, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2307-13096">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2307.13096" target="_blank" rel="noopener">arXiv:2307.13096</a>
+      
+      <a class="permalink" href="#a2307-13096" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Precision measurements of jet and photon production at ATLAS</h3>
+    <p class="byline">Daniel Camarero Muñoz</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>The production of jets and prompt isolated photons at hadron colliders provides stringent tests of perturbative QCD. The latest measurements performed by the ATLAS Collaboration at the LHC are presented in these proceedings. The inclusive prompt-photon production is measured for two distinct photon isolation cones, <span class="arithmatex">\(R = 0.2\)</span> and <span class="arithmatex">\(0.4\)</span>, as well as for their ratio. This measurement is sensitive to the gluon parton density distribution in the proton. In addition, a measurement of variables probing the properties of the multijet energy flow which are used to determine the strong coupling constant is presented. These measurements are compared to state-of-the-art NLO and NNLO predictions. Lastly, a measurement of new event-shape jet observables defined in terms of reference geometries with cylindrical and circular symmetries using the energy mover&rsquo;s distance is discussed.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, July 11, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2307-05187">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2307.05187" target="_blank" rel="noopener">arXiv:2307.05187</a>
+      
+      <a class="permalink" href="#a2307-05187" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Decorrelation using Optimal Transport</h3>
+    <p class="byline">Malte Algren et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Being able to decorrelate a feature space from protected attributes is an area of active research and study in ethics, fairness, and also natural sciences. We introduce a novel decorrelation method using Convex Neural Optimal Transport Solvers (Cnots) that is able to decorrelate a continuous feature space against protected attributes with optimal transport. We demonstrate how well it performs in the context of jet classification in high energy physics, where classifier scores are desired to be decorrelated from the mass of a jet. The decorrelation achieved in binary classification approaches the levels achieved by the state-of-the-art using conditional normalising flows. When moving to multiclass outputs the optimal transport approach performs significantly better than the state-of-the-art, suggesting substantial gains at decorrelating multidimensional feature spaces.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, June 7, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2306-04712">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2306.04712" target="_blank" rel="noopener">arXiv:2306.04712</a>
+      
+      <a class="permalink" href="#a2306-04712" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Differentiable Earth Mover's Distance for Data Compression at the High-Luminosity LHC</h3>
+    <p class="byline">Rohan Shenoy et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (earth mover) — abstract only, not yet read for a briefing.</em></p>
+<p>The Earth mover&rsquo;s distance (EMD) is a useful metric for image recognition and classification, but its usual implementations are not differentiable or too slow to be used as a loss function for training other algorithms via gradient descent. In this paper, we train a convolutional neural network (CNN) to learn a differentiable, fast approximation of the EMD and demonstrate that it can be used as a substitute for computing-intensive EMD implementations. We apply this differentiable approximation in the training of an autoencoder-inspired neural network (encoder NN) for data compression at the high-luminosity LHC at CERN. The goal of this encoder NN is to compress the data while preserving the information related to the distribution of energy deposits in particle detectors. We demonstrate that the performance of our encoder NN trained using the differentiable EMD CNN surpasses that of training with loss functions based on mean squared error.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, May 26, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2305-16930">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2305.16930" target="_blank" rel="noopener">arXiv:2305.16930</a>
+      
+      <a class="permalink" href="#a2305-16930" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Measurements of multijet event isotropies using optimal transport with the ATLAS detector</h3>
+    <p class="byline">ATLAS Collaboration</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>A measurement of novel event shapes quantifying the isotropy of collider events is performed in 140 fb<span class="arithmatex">\(^{-1}\)</span> of proton-proton collisions with <span class="arithmatex">\(\sqrt s=13\)</span> TeV centre-of-mass energy recorded with the ATLAS detector at CERN&rsquo;s Large Hadron Collider. These event shapes are defined as the Wasserstein distance between collider events and isotropic reference geometries. This distance is evaluated by solving optimal transport problems, using the &lsquo;Energy-Mover&rsquo;s Distance&rsquo;. Isotropic references with cylindrical and circular symmetries are studied, to probe the symmetries of interest at hadron colliders. The novel event-shape observables defined in this way are infrared- and collinear-safe, have improved dynamic range and have greater sensitivity to isotropic radiation patterns than other event shapes. The measured event-shape variables are corrected for detector effects, and presented in inclusive bins of jet multiplicity and the scalar sum of the two leading jets&rsquo; transverse momenta. The measured distributions are provided as inputs to future Monte Carlo tuning campaigns and other studies probing fundamental properties of QCD and the production of hadronic final states up to the TeV-scale.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, May 19, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2305-11531">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2305.11531" target="_blank" rel="noopener">arXiv:2305.11531</a>
+      
+      <a class="permalink" href="#a2305-11531" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Generalizing to new geometries with Geometry-Aware Autoregressive Models (GAAMs) for fast calorimeter simulation</h3>
+    <p class="byline">Junze Liu et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Generation of simulated detector response to collision products is crucial to data analysis in particle physics, but computationally very expensive. One subdetector, the calorimeter, dominates the computational time due to the high granularity of its cells and complexity of the interactions. Generative models can provide more rapid sample production, but currently require significant effort to optimize performance for specific detector geometries, often requiring many models to describe the varying cell sizes and arrangements, without the ability to generalize to other geometries. We develop a <span class="arithmatex">\(\textit{geometry-aware}\)</span> autoregressive model, which learns how the calorimeter response varies with geometry, and is capable of generating simulated responses to unseen geometries without additional training. The geometry-aware model outperforms a baseline unaware model by over <span class="arithmatex">\(50\%\)</span> in several metrics such as the Wasserstein distance between the generated and the true distributions of key quantities which summarize the simulated response. A single geometry-aware model could replace the hundreds of generative models currently designed for calorimeter simulation by physicists analyzing data collected at the Large Hadron Collider. This proof-of-concept study motivates the design of a foundational model that will be a crucial tool for the study of future detectors, dramatically reducing the large upfront investment usually needed to develop generative calorimeter models.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, May 8, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2305-04646">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2305.04646" target="_blank" rel="noopener">arXiv:2305.04646</a>
+      
+      <a class="permalink" href="#a2305-04646" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">CURTAINs Flows For Flows: Constructing Unobserved Regions with Maximum Likelihood Estimation</h3>
+    <p class="byline">Debajyoti Sengupta et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Model independent techniques for constructing background data templates using generative models have shown great promise for use in searches for new physics processes at the LHC. We introduce a major improvement to the CURTAINs method by training the conditional normalizing flow between two side-band regions using maximum likelihood estimation instead of an optimal transport loss. The new training objective improves the robustness and fidelity of the transformed data and is much faster and easier to train. We compare the performance against the previous approach and the current state of the art using the LHC Olympics anomaly detection dataset, where we see a significant improvement in sensitivity over the original CURTAINs method. Furthermore, CURTAINsF4F requires substantially less computational resources to cover a large number of signal regions than other fully data driven approaches. When using an efficient configuration, an order of magnitude more models can be trained in the same time required for ten signal regions, without a significant drop in performance.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, May 5, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2305-03751">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2305.03751" target="_blank" rel="noopener">arXiv:2305.03751</a>
+      
+      <a class="permalink" href="#a2305-03751" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Spectral Metric for Collider Geometry</h3>
+    <p class="byline">Andrew J. Larkoski et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>By quantifying the distance between two collider events, one can triangulate a metric space and reframe collider data analysis as computational geometry. One popular geometric approach is to first represent events as an energy flow on an idealized celestial sphere and then define the metric in terms of optimal transport in two dimensions. In this paper, we advocate for representing events in terms of a spectral function that encodes pairwise particle angles and products of particle energies, which enables a metric distance defined in terms of one-dimensional optimal transport. This approach has the advantage of automatically incorporating obvious isometries of the data, like rotations about the colliding beam axis. It also facilitates first-principles calculations, since there are simple closed-form expressions for optimal transport in one dimension. Up to isometries and event sets of measure zero, the spectral representation is unique, so the metric on the space of spectral functions is a metric on the space of events. At lowest order in perturbation theory in electron-positron collisions, our metric is simply the summed squared invariant masses of the two event hemispheres. Going to higher orders, we present predictions for the distribution of metric distances between jets in fixed-order and resummed perturbation theory as well as in parton-shower generators. Finally, we speculate on whether the spectral approach could furnish a useful metric on the space of quantum field theories.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, May 1, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2305-00989">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2305.00989" target="_blank" rel="noopener">arXiv:2305.00989</a>
+      
+      <a class="permalink" href="#a2305-00989" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Pileup and Infrared Radiation Annihilation (PIRANHA): A Paradigm for Continuous Jet Grooming</h3>
+    <p class="byline">Samuel Alipour-Fard et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>Jet grooming is an important strategy for analyzing relativistic particle collisions in the presence of contaminating radiation. Most jet grooming techniques introduce hard cutoffs to remove soft radiation, leading to discontinuous behavior and associated experimental and theoretical challenges. In this paper, we introduce Pileup and Infrared Radiation Annihilation (PIRANHA), a paradigm for continuous jet grooming that overcomes the discontinuity and infrared sensitivity of hard-cutoff grooming procedures. We motivate PIRANHA from the perspective of optimal transport and the Energy Mover&rsquo;s Distance and review Apollonius Subtraction and Iterated Voronoi Subtraction as examples of PIRANHA-style grooming. We then introduce a new tree-based implementation of PIRANHA, Recursive Subtraction, with reduced computational costs. Finally, we demonstrate the performance of Recursive Subtraction in mitigating sensitivity to soft distortions from hadronization and detector effects, and additive contamination from pileup and the underlying event.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Saturday, March 11, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2303-06311">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2303.06311" target="_blank" rel="noopener">arXiv:2303.06311</a>
+      
+      <a class="permalink" href="#a2303-06311" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Generative Adversarial Networks for Scintillation Signal Simulation in EXO-200</h3>
+    <p class="byline">S. Li et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Generative Adversarial Networks trained on samples of simulated or actual events have been proposed as a way of generating large simulated datasets at a reduced computational cost. In this work, a novel approach to perform the simulation of photodetector signals from the time projection chamber of the EXO-200 experiment is demonstrated. The method is based on a Wasserstein Generative Adversarial Network - a deep learning technique allowing for implicit non-parametric estimation of the population distribution for a given set of objects. Our network is trained on real calibration data using raw scintillation waveforms as input. We find that it is able to produce high-quality simulated waveforms an order of magnitude faster than the traditional simulation approach and, importantly, generalize from the training sample and discern salient high-level features of the data. In particular, the network correctly deduces position dependency of scintillation light response in the detector and correctly recognizes dead photodetector channels. The network output is then integrated into the EXO-200 analysis framework to show that the standard EXO-200 reconstruction routine processes the simulated waveforms to produce energy distributions comparable to that of real waveforms. Finally, the remaining discrepancies and potential ways to improve the approach further are highlighted.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, February 23, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2302-12024">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2302.12024" target="_blank" rel="noopener">arXiv:2302.12024</a>
+      
+      <a class="permalink" href="#a2302-12024" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Comparison of Affine and Rational Quadratic Spline Coupling and Autoregressive Flows through Robust Statistical Tests</h3>
+    <p class="byline">Andrea Coccaro et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Normalizing flows have emerged as a powerful brand of generative models, as they not only allow for efficient sampling of complicated target distributions but also deliver density estimation by construction. We propose here an in-depth comparison of coupling and autoregressive flows, both based on symmetric (affine) and non-symmetric (rational quadratic spline) bijectors, considering four different architectures: real-valued non-Volume preserving (RealNVP), masked autoregressive flow (MAF), coupling rational quadratic spline (C-RQS), and autoregressive rational quadratic spline (A-RQS). We focus on a set of multimodal target distributions of increasing dimensionality ranging from 4 to 400. The performances were compared by means of different test statistics for two-sample tests, built from known distance measures: the sliced Wasserstein distance, the dimension-averaged one-dimensional Kolmogorov&ndash;Smirnov test, and the Frobenius norm of the difference between correlation matrices. Furthermore, we included estimations of the variance of both the metrics and the trained models. Our results indicate that the A-RQS algorithm stands out both in terms of accuracy and training speed. Nonetheless, all the algorithms are generally able, without too much fine-tuning, to learn complicated distributions with limited training data and in a reasonable time of the order of hours on a Tesla A40 GPU. The only exception is the C-RQS, which takes significantly longer to train, does not always provide good accuracy, and becomes unstable for large dimensionalities. All algorithms were implemented using \textsc{TensorFlow2} and \textsc{TensorFlow Probability} and have been made available on \href{https://github.com/NF4HEP/NormalizingFlowsHD}{GitHub}.</p></div>
+  </article>
+  
+  <article class="paper" id="a2302-12266">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2302.12266" target="_blank" rel="noopener">arXiv:2302.12266</a>
+      
+      <a class="permalink" href="#a2302-12266" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SHAPER: Can You Hear the Shape of a Jet?</h3>
+    <p class="byline">Demba Ba et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein, energy mover, sinkhorn) — abstract only, not yet read for a briefing.</em></p>
+<p>The identification of interesting substructures within jets is an important tool for searching for new physics and probing the Standard Model at colliders. Many of these substructure tools have previously been shown to take the form of optimal transport problems, in particular the Energy Mover&rsquo;s Distance (EMD). In this work, we show that the EMD is in fact the natural structure for comparing collider events, which accounts for its recent success in understanding event and jet substructure. We then present a Shape Hunting Algorithm using Parameterized Energy Reconstruction (SHAPER), which is a general framework for defining and computing shape-based observables. SHAPER generalizes N-jettiness from point clusters to any extended, parametrizable shape. This is accomplished by efficiently minimizing the EMD between events and parameterized manifolds of energy flows representing idealized shapes, implemented using the dual-potential Sinkhorn approximation of the Wasserstein metric. We show how the geometric language of observables as manifolds can be used to define novel observables with built-in infrared-and-collinear safety. We demonstrate the efficacy of the SHAPER framework by performing empirical jet substructure studies using several examples of new shape-based observables.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, January 30, 2023
+  </h2>
+  
+
+  
+  <article class="paper" id="a2301-13211">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2301.13211" target="_blank" rel="noopener">arXiv:2301.13211</a>
+      
+      <a class="permalink" href="#a2301-13211" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Earth mover's distance as a measure of CP violation</h3>
+    <p class="byline">Adam Davis et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein, earth mover, transport plan) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce a new unbinned two sample test statistic sensitive to CP violation utilizing the optimal transport plan associated with the Wasserstein (earth mover&rsquo;s) distance. The efficacy of the test statistic is shown via two examples of CP asymmetric distributions with varying sample sizes: the Dalitz distributions of <span class="arithmatex">\(B^0 \rightarrow K^+π^-π^0\)</span> and of <span class="arithmatex">\(D^0 \rightarrow π^+π^-π^0\)</span> decays. The windowed version of the Wasserstein distance test statistic is shown to have comparable sensitivity to CP violation as the commonly used energy test statistic, but also retains information about the localized distributions of CP asymmetry over the Dalitz plot. For large statistic datasets we introduce two modified Wasserstein distance based test statistics &ndash; the binned and the sliced Wasserstein distance statistics, which show comparable sensitivity to CP violation, but improved computing time and memory scalings. Finally, general extensions and applications of the introduced statistics are discussed.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, December 12, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2212-06155">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2212.06155" target="_blank" rel="noopener">arXiv:2212.06155</a>
+      
+      <a class="permalink" href="#a2212-06155" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Efficiently Moving Instead of Reweighting Collider Events with Machine Learning</h3>
+    <p class="byline">Radha Mastandrea et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>There are many cases in collider physics and elsewhere where a calibration dataset is used to predict the known physics and / or noise of a target region of phase space. This calibration dataset usually cannot be used out-of-the-box but must be tweaked, often with conditional importance weights, to be maximally realistic. Using resonant anomaly detection as an example, we compare a number of alternative approaches based on transporting events with normalizing flows instead of reweighting them. We find that the accuracy of the morphed calibration dataset depends on the degree to which the transport task is set up to carry out optimal transport, which motivates future research into this area.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, November 18, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2211-10295">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2211.10295" target="_blank" rel="noopener">arXiv:2211.10295</a>
+      
+      <a class="permalink" href="#a2211-10295" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Evaluating generative models in high energy physics</h3>
+    <p class="byline">Raghav Kansal et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>There has been a recent explosion in research into machine-learning-based generative modeling to tackle computational challenges for simulations in high energy physics (HEP). In order to use such alternative simulators in practice, we need well-defined metrics to compare different generative models and evaluate their discrepancy from the true distributions. We present the first systematic review and investigation into evaluation metrics and their sensitivity to failure modes of generative models, using the framework of two-sample goodness-of-fit testing, and their relevance and viability for HEP. Inspired by previous work in both physics and computer vision, we propose two new metrics, the Fréchet and kernel physics distances (FPD and KPD, respectively), and perform a variety of experiments measuring their performance on simple Gaussian-distributed, and simulated high energy jet datasets. We find FPD, in particular, to be the most sensitive metric to all alternative jet distributions tested and recommend its adoption, along with the KPD and Wasserstein distances between individual feature distributions, for evaluating generative models in HEP. We finally demonstrate the efficacy of these proposed metrics in evaluating and comparing a novel attention-based generative adversarial particle transformer to the state-of-the-art message-passing generative adversarial network jet simulation model. The code for our proposed metrics is provided in the open source JetNet Python library.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, November 3, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2211-02029">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2211.02029" target="_blank" rel="noopener">arXiv:2211.02029</a>
+      
+      <a class="permalink" href="#a2211-02029" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal transport for a novel event description at hadron colliders</h3>
+    <p class="byline">Loukas Gouskos et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a novel strategy for disentangling proton collisions at hadron colliders such as the LHC that considerably improves over the current state of the art. Employing a metric inspired by optimal transport problems as the cost function of a graph neural network, our algorithm is able to compare two particle collections with different noise levels and learns to flag particles originating from the main interaction amidst products from up to 200 simultaneous pileup collisions. We thereby sidestep the critical task of obtaining a ground truth by labeling particles and avoid arduous human annotation in favor of labels derived in situ through a self-supervised process. We demonstrate how our approach - which, unlike competing algorithms, is trivial to implement - improves the resolution in key objects used in precision measurements and searches alike and present large sensitivity gains in searching for exotic Higgs boson decays at the High-Luminosity LHC.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, October 20, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2210-11489">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2210.11489" target="_blank" rel="noopener">arXiv:2210.11489</a>
+      
+      <a class="permalink" href="#a2210-11489" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Machine-Learning Compression for Particle Physics Discoveries</h3>
+    <p class="byline">Jack H. Collins et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal-transport) — abstract only, not yet read for a briefing.</em></p>
+<p>In collider-based particle and nuclear physics experiments, data are produced at such extreme rates that only a subset can be recorded for later analysis. Typically, algorithms select individual collision events for preservation and store the complete experimental response. A relatively new alternative strategy is to additionally save a partial record for a larger subset of events, allowing for later specific analysis of a larger fraction of events. We propose a strategy that bridges these paradigms by compressing entire events for generic offline analysis but at a lower fidelity. An optimal-transport-based <span class="arithmatex">\(β\)</span> Variational Autoencoder (VAE) is used to automate the compression and the hyperparameter <span class="arithmatex">\(β\)</span> controls the compression fidelity. We introduce a new approach for multi-objective learning functions by simultaneously learning a VAE appropriate for all values of <span class="arithmatex">\(β\)</span> through parameterization. We present an example use case, a di-muon resonance search at the Large Hadron Collider (LHC), where we show that simulated data compressed by our <span class="arithmatex">\(β\)</span>-VAE has enough fidelity to distinguish distinct signal morphologies.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, September 30, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2209-15624">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2209.15624" target="_blank" rel="noopener">arXiv:2209.15624</a>
+      
+      <a class="permalink" href="#a2209-15624" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Finding NEEMo: Geometric Fitting using Neural Estimation of the Energy Mover's Distance</h3>
+    <p class="byline">Ouail Kitouni et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, wasserstein, earth mover, energy mover, Kantorovich) — abstract only, not yet read for a briefing.</em></p>
+<p>A novel neural architecture was recently developed that enforces an exact upper bound on the Lipschitz constant of the model by constraining the norm of its weights in a minimal way, resulting in higher expressiveness compared to other techniques. We present a new and interesting direction for this architecture: estimation of the Wasserstein metric (Earth Mover&rsquo;s Distance) in optimal transport by employing the Kantorovich-Rubinstein duality to enable its use in geometric fitting applications. Specifically, we focus on the field of high-energy particle physics, where it has been shown that a metric for the space of particle-collider events can be defined based on the Wasserstein metric, referred to as the Energy Mover&rsquo;s Distance (EMD). This metrization has the potential to revolutionize data-driven collider phenomenology. The work presented here represents a major step towards realizing this goal by providing a differentiable way of directly calculating the EMD. We show how the flexibility that our approach enables can be used to develop novel clustering algorithms.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Thursday, August 4, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2208-02807">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2208.02807" target="_blank" rel="noopener">arXiv:2208.02807</a>
+      
+      <a class="permalink" href="#a2208-02807" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Background Modeling for Double Higgs Boson Production: Density Ratios and Optimal Transport</h3>
+    <p class="byline">Tudor Manole et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We study the problem of data-driven background estimation, arising in the search of physics signals predicted by the Standard Model at the Large Hadron Collider. Our work is motivated by the search for the production of pairs of Higgs bosons decaying into four bottom quarks. A number of other physical processes, known as background, also share the same final state. The data arising in this problem is therefore a mixture of unlabeled background and signal events, and the primary aim of the analysis is to determine whether the proportion of unlabeled signal events is nonzero. A challenging but necessary first step is to estimate the distribution of background events. Past work in this area has determined regions of the space of collider events where signal is unlikely to appear, and where the background distribution is therefore identifiable. The background distribution can be estimated in these regions, and extrapolated into the region of primary interest using transfer learning with a multivariate classifier. We build upon this existing approach in two ways. First, we revisit this method by developing a customized residual neural network which is tailored to the structure and symmetries of collider data. Second, we develop a new method for background estimation, based on the optimal transport problem, which relies on modeling assumptions distinct from earlier work. These two methods can serve as cross-checks for each other in particle physics analyses, due to the complementarity of their underlying assumptions. We compare their performance on simulated double Higgs boson data.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, March 9, 2022
+  </h2>
+  
+
+  
+  <article class="paper" id="a2203-04983">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2203.04983" target="_blank" rel="noopener">arXiv:2203.04983</a>
+      
+      <a class="permalink" href="#a2203-04983" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Modeling hadronization using machine learning</h3>
+    <p class="byline">Phil Ilten et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We present the first steps in the development of a new class of hadronization models utilizing machine learning techniques. We successfully implement, validate, and train a conditional sliced-Wasserstein autoencoder to replicate the Pythia generated kinematic distributions of first-hadron emissions, when the Lund string model of hadronization implemented in Pythia is restricted to the emissions of pions only. The trained models are then used to generate the full hadronization chains, with an IR cutoff energy imposed externally. The hadron multiplicities and cumulative kinematic distributions are shown to match the Pythia generated ones. We also discuss possible future generalizations of our results.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, November 24, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2111-12849">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2111.12849" target="_blank" rel="noopener">arXiv:2111.12849</a>
+      
+      <a class="permalink" href="#a2111-12849" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance</h3>
+    <p class="byline">Steven Tsan et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>Autoencoders have useful applications in high energy physics in anomaly detection, particularly for jets - collimated showers of particles produced in collisions such as those at the CERN Large Hadron Collider. We explore the use of graph-based autoencoders, which operate on jets in their &ldquo;particle cloud&rdquo; representations and can leverage the interdependencies among the particles within a jet, for such tasks. Additionally, we develop a differentiable approximation to the energy mover&rsquo;s distance via a graph neural network, which may subsequently be used as a reconstruction loss function for autoencoders.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, November 5, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2111-03670">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2111.03670" target="_blank" rel="noopener">arXiv:2111.03670</a>
+      
+      <a class="permalink" href="#a2111-03670" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Which Metric on the Space of Collider Events?</h3>
+    <p class="byline">Tianji Cai et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, energy mover, Kantorovich) — abstract only, not yet read for a briefing.</em></p>
+<p>Which is the best metric for the space of collider events? Motivated by the success of the Energy Mover&rsquo;s Distance in characterizing collider events, we explore the larger space of unbalanced optimal transport distances, of which the Energy Mover&rsquo;s Distance is a particular case. Geometric and computational considerations favor an unbalanced optimal transport distance known as the Hellinger-Kantorovich distance, which possesses a Riemannian structure that lends itself to efficient linearization. We develop the particle linearized unbalanced Optimal Transport (pluOT) framework for collider events based on the linearized Hellinger-Kantorovich distance and demonstrate its efficacy in boosted jet tagging. This provides a flexible and computationally efficient optimal transport framework ideally suited for collider physics applications.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 13, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2110-06948">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2110.06948" target="_blank" rel="noopener">arXiv:2110.06948</a>
+      
+      <a class="permalink" href="#a2110-06948" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Challenges for Unsupervised Anomaly Detection in Particle Physics</h3>
+    <p class="byline">Katherine Fraser et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Anomaly detection relies on designing a score to determine whether a particular event is uncharacteristic of a given background distribution. One way to define a score is to use autoencoders, which rely on the ability to reconstruct certain types of data (background) but not others (signals). In this paper, we study some challenges associated with variational autoencoders, such as the dependence on hyperparameters and the metric used, in the context of anomalous signal (top and <span class="arithmatex">\(W\)</span>) jets in a QCD background. We find that the hyperparameter choices strongly affect the network performance and that the optimal parameters for one signal are non-optimal for another. In exploring the networks, we uncover a connection between the latent space of a variational autoencoder trained using mean-squared-error and the optimal transport distances within the dataset. We then show that optimal transport distances to representative events in the background dataset can be used directly for anomaly detection, with performance comparable to the autoencoders. Whether using autoencoders or optimal transport distances for anomaly detection, we find that the choices that best represent the background are not necessarily best for signal identification. These challenges with unsupervised anomaly detection bolster the case for additional exploration of semi-supervised or alternative approaches.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, July 19, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2107-08648">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2107.08648" target="_blank" rel="noopener">arXiv:2107.08648</a>
+      
+      <a class="permalink" href="#a2107-08648" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Transport away your problems: Calibrating stochastic simulations with optimal transport</h3>
+    <p class="byline">Chris Pollard et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Stochastic simulators are an indispensable tool in many branches of science. Often based on first principles, they deliver a series of samples whose distribution implicitly defines a probability measure to describe the phenomena of interest. However, the fidelity of these simulators is not always sufficient for all scientific purposes, necessitating the construction of ad-hoc corrections to &ldquo;calibrate&rdquo; the simulation and ensure that its output is a faithful representation of reality. In this paper, we leverage methods from transportation theory to construct such corrections in a systematic way. We use a neural network to compute minimal modifications to the individual samples produced by the simulator such that the resulting distribution becomes properly calibrated. We illustrate the method and its benefits in the context of experimental particle physics, where the need for calibrated stochastic simulators is particularly pronounced.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, June 22, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2106-11535">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2106.11535" target="_blank" rel="noopener">arXiv:2106.11535</a>
+      
+      <a class="permalink" href="#a2106-11535" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Particle Cloud Generation with Message Passing Generative Adversarial Networks</h3>
+    <p class="byline">Raghav Kansal et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>In high energy physics (HEP), jets are collections of correlated particles produced ubiquitously in particle collisions such as those at the CERN Large Hadron Collider (LHC). Machine learning (ML)-based generative models, such as generative adversarial networks (GANs), have the potential to significantly accelerate LHC jet simulations. However, despite jets having a natural representation as a set of particles in momentum-space, a.k.a. a particle cloud, there exist no generative models applied to such a dataset. In this work, we introduce a new particle cloud dataset (JetNet), and apply to it existing point cloud GANs. Results are evaluated using (1) 1-Wasserstein distances between high- and low-level feature distributions, (2) a newly developed Fréchet ParticleNet Distance, and (3) the coverage and (4) minimum matching distance metrics. Existing GANs are found to be inadequate for physics applications, hence we develop a new message passing GAN (MPGAN), which outperforms existing point cloud GANs on virtually every metric and shows promise for use in HEP. We propose JetNet as a novel point-cloud-style dataset for the ML community to experiment with, and set MPGAN as a benchmark to improve upon for future generative models. Additionally, to facilitate research and improve accessibility and reproducibility in this area, we release the open-source JetNet Python package with interfaces for particle cloud datasets, implementations for evaluation and loss metrics, and more tools for ML in HEP development.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, May 31, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2105-14933">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2105.14933" target="_blank" rel="noopener">arXiv:2105.14933</a>
+      
+      <a class="permalink" href="#a2105-14933" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">The use of Generative Adversarial Networks to characterise new physics in multi-lepton final states at the LHC</h3>
+    <p class="byline">Thabang Lebese et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Semi-supervision in Machine Learning can be used in searches for new physics where the signal plus background regions are not labelled. This strongly reduces model dependency in the search for signals Beyond the Standard Model. This approach displays the drawback in that over-fitting can give rise to fake signals. Tossing toy Monte Carlo (MC) events can be used to estimate the corresponding trials factor through a frequentist inference. However, MC events that are based on full detector simulations are resource intensive. Generative Adversarial Networks (GANs) can be used to mimic MC generators. GANs are powerful generative models, but often suffer from training instability. We henceforth show a review of GANs. We advocate the use of Wasserstein GAN (WGAN) with weight clipping and WGAN with gradient penalty (WGAN-GP) where the norm of gradient of the critic is penalized with respect to its input. Following the emergence of multi-lepton anomalies, we apply GANs for the generation of di-leptons final states in association with <span class="arithmatex">\(b\)</span>-quarks at the LHC. A good agreement between the MC and the WGAN-GP generated events is found for the observables selected in the study.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, February 23, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2102-11524">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2102.11524" target="_blank" rel="noopener">arXiv:2102.11524</a>
+      
+      <a class="permalink" href="#a2102-11524" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Data-driven Event Generator for Hadron Colliders using Wasserstein Generative Adversarial Network</h3>
+    <p class="byline">Suyong Choi et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Highly reliable Monte-Carlo event generators and detector simulation programs are important for the precision measurement in the high energy physics. Huge amounts of computing resources are required to produce a sufficient number of simulated events. Moreover, simulation parameters have to be fine-tuned to reproduce situations in the high energy particle interactions which is not trivial in some phase spaces in physics interests. In this paper, we suggest a new method based on the Wasserstein Generative Adversarial Network (WGAN) that can learn the probability distribution of the real data. Our method is capable of event generation at a very short computing time compared to the traditional MC generators. The trained WGAN is able to reproduce the shape of the real data with high fidelity.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, January 22, 2021
+  </h2>
+  
+
+  
+  <article class="paper" id="a2101-08944">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2101.08944" target="_blank" rel="noopener">arXiv:2101.08944</a>
+      
+      <a class="permalink" href="#a2101-08944" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Learning to Simulate High Energy Particle Collisions from Unlabeled Data</h3>
+    <p class="byline">Jessica N. Howard et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal-transport) — abstract only, not yet read for a briefing.</em></p>
+<p>In many scientific fields which rely on statistical inference, simulations are often used to map from theoretical models to experimental data, allowing scientists to test model predictions against experimental results. Experimental data is often reconstructed from indirect measurements causing the aggregate transformation from theoretical models to experimental data to be poorly-described analytically. Instead, numerical simulations are used at great computational cost. We introduce Optimal-Transport-based Unfolding and Simulation (OTUS), a fast simulator based on unsupervised machine-learning that is capable of predicting experimental data from theoretical models. Without the aid of current simulation information, OTUS trains a probabilistic autoencoder to transform directly between theoretical models and experimental data. Identifying the probabilistic autoencoder&rsquo;s latent space with the space of theoretical models causes the decoder network to become a fast, predictive simulator with the potential to replace current, computationally-costly simulators. Here, we provide proof-of-principle results on two particle physics examples, <span class="arithmatex">\(Z\)</span>-boson and top-quark decays, but stress that OTUS can be widely applied to other fields.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, November 30, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2012-00173">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2012.00173" target="_blank" rel="noopener">arXiv:2012.00173</a>
+      
+      <a class="permalink" href="#a2012-00173" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Graph Generative Adversarial Networks for Sparse Data Generation in High Energy Physics</h3>
+    <p class="byline">Raghav Kansal et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We develop a graph generative adversarial network to generate sparse data sets like those produced at the CERN Large Hadron Collider (LHC). We demonstrate this approach by training on and generating sparse representations of MNIST handwritten digit images and jets of particles in proton-proton collisions like those at the LHC. We find the model successfully generates sparse MNIST digits and particle jet data. We quantify agreement between real and generated data with a graph-based Fréchet Inception distance, and the particle and jet feature-level 1-Wasserstein distance for the MNIST and jet datasets respectively.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, September 23, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2009-14017">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2009.14017" target="_blank" rel="noopener">arXiv:2009.14017</a>
+      
+      <a class="permalink" href="#a2009-14017" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SARM: Sparse Autoregressive Model for Scalable Generation of Sparse Images in Particle Physics</h3>
+    <p class="byline">Yadong Lu et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Generation of simulated data is essential for data analysis in particle physics, but current Monte Carlo methods are very computationally expensive. Deep-learning-based generative models have successfully generated simulated data at lower cost, but struggle when the data are very sparse. We introduce a novel deep sparse autoregressive model (SARM) that explicitly learns the sparseness of the data with a tractable likelihood, making it more stable and interpretable when compared to Generative Adversarial Networks (GANs) and other methods. In two case studies, we compare SARM to a GAN model and a non-sparse autoregressive model. As a quantitative measure of performance, we compute the Wasserstein distance (<span class="arithmatex">\(W_p\)</span>) between the distributions of physical quantities calculated on the generated images and on the training images. In the first study, featuring images of jets in which 90% of the pixels are zero-valued, SARM produces images with <span class="arithmatex">\(W_p\)</span> scores that are 24-52% better than the scores obtained with other state-of-the-art generative models. In the second study, on calorimeter images in the vicinity of muons where 98% of the pixels are zero-valued, SARM produces images with <span class="arithmatex">\(W_p\)</span> scores that are 66-68% better. Similar observations made with other metrics confirm the usefulness of SARM for sparse data in particle physics. Original data and software will be made available upon acceptance of the manuscript from the UCI Machine Learning in Physics web portal at: http://mlphysics.ics.uci.edu/.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, August 19, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2008-08604">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2008.08604" target="_blank" rel="noopener">arXiv:2008.08604</a>
+      
+      <a class="permalink" href="#a2008-08604" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Linearized Optimal Transport for Collider Events</h3>
+    <p class="byline">Tianji Cai et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (optimal transport, energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce an efficient framework for computing the distance between collider events using the tools of Linearized Optimal Transport (LOT). This preserves many of the advantages of the recently-introduced Energy Mover&rsquo;s Distance, which quantifies the &ldquo;work&rdquo; required to rearrange one event into another, while significantly reducing the computational cost. It also furnishes a Euclidean embedding amenable to simple machine learning algorithms and visualization techniques, which we demonstrate in a variety of jet tagging examples. The LOT approximation lowers the threshold for diverse applications of the theory of optimal transport to collider physics.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, April 20, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2004-09360">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2004.09360" target="_blank" rel="noopener">arXiv:2004.09360</a>
+      
+      <a class="permalink" href="#a2004-09360" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Use of a Generalized Energy Mover's Distance in the Search for Rare Phenomena at Colliders</h3>
+    <p class="byline">M. Crispim Romao et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>In this paper, we expand on the previously proposed concept of Energy Mover&rsquo;s Distance. The resulting observables are shown to provide a way of identifying rare processes in proton-proton collider experiments. It is shown that different processes are grouped together differently and that this can contribute to the improvement of experimental analyses. The <span class="arithmatex">\(t\bar{t}Z\)</span> production at the Large Hadron Collider is used as a benchmark to illustrate the applicability of the method. Furthermore, we study the use of these observables as new features which can be used in the training of Deep Neural Networks.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, April 13, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2004-06125">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2004.06125" target="_blank" rel="noopener">arXiv:2004.06125</a>
+      
+      <a class="permalink" href="#a2004-06125" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Robust Measure of Event Isotropy at Colliders</h3>
+    <p class="byline">Cari Cesarotti et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce a new event shape observable &ndash; event isotropy &ndash; that quantifies how close the radiation pattern of a collider event is to a uniform distribution. This observable is based on a normalized version of the energy mover&rsquo;s distance, which is the minimum &ldquo;work&rdquo; needed to rearrange one radiation pattern into another of equal energy. We investigate the utility of event isotropy both at electron-positron colliders, where events are compared to a perfectly spherical radiation pattern, as well as at proton-proton colliders, where the natural comparison is to either cylindrical or ring-like patterns. Compared to traditional event shape observables like sphericity and thrust, event isotropy exhibits a larger dynamic range for high-multiplicity events. This enables event isotropy to not only distinguish between dijet and multijet processes but also separate uniform N-body phase space configurations for different values of N. As a key application of this new observable, we study its performance to characterize strongly-coupled new physics scenarios with isotropic collider signatures.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, April 8, 2020
+  </h2>
+  
+
+  
+  <article class="paper" id="a2004-04159">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2004.04159" target="_blank" rel="noopener">arXiv:2004.04159</a>
+      
+      <a class="permalink" href="#a2004-04159" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">The Hidden Geometry of Particle Collisions</h3>
+    <p class="byline">Patrick T. Komiske et al.</p>
+    <div class="paper-body"><p><em>Keyword hit (energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>We establish that many fundamental concepts and techniques in quantum field theory and collider physics can be naturally understood and unified through a simple new geometric language. The idea is to equip the space of collider events with a metric, from which other geometric objects can be rigorously defined. Our analysis is based on the energy mover&rsquo;s distance, which quantifies the &ldquo;work&rdquo; required to rearrange one event into another. This metric, which operates purely at the level of observable energy flow information, allows for a clarified definition of infrared and collinear safety and related concepts. A number of well-known collider observables can be exactly cast as the minimum distance between an event and various manifolds in this space. Jet definitions, such as exclusive cone and sequential recombination algorithms, can be directly derived by finding the closest few-particle approximation to the event. Several area- and constituent-based pileup mitigation strategies are naturally expressed in this formalism as well. Finally, we lift our reasoning to develop a precise distance between theories, which are treated as collections of events weighted by cross sections. In all of these various cases, a better understanding of existing methods in our geometric language suggests interesting new ideas and generalizations.</p></div>
+  </article>
+  
+</section>
+
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-17 11:47 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

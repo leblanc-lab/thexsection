@@ -110,16 +110,51 @@ calls:
   keywords: [...]
 ```
 
-Topics without `page` stay watch-page-only. A new theme means a new
-`templates/topic_<theme>.html` (plus the shell it extends) and a matching
-`static/<theme>.css`; the muon theme is a fully standalone shell, deliberately
-sharing nothing with `base.html` but the KaTeX and analytics snippets.
+Topics without `page` stay watch-page-only. Two themes ship: `default` (the
+house-style stream, `templates/topic_default.html` extending `base.html`, used
+by the jet-substructure and optimal-transport mirrors) and `muon`, a fully
+standalone shell that deliberately shares nothing with `base.html` but the
+KaTeX and analytics snippets. A new theme means a new
+`templates/topic_<theme>.html` (plus whatever shell it extends) and, if it
+doesn't reuse `style.css`, a matching `static/<theme>.css`.
+
+### Backfilling a mirror without the LLM
+
+`python -m pipeline.scan` re-runs the keyword match over every day of raw
+paper data in `data/` and writes the hits no briefing covers to
+`watch/scan/<date>.md`: same shape as a watch entry, but each paper's body is
+its abstract with a "keyword hit" note. `build_site` merges these under the
+day's briefing on mirrored topic pages and feeds (briefed papers win; the scan
+fills gaps). The watch page itself ignores them. Zero API calls, so it is the
+cheap way to seed a new track or a broadened keyword list with history, and
+it is idempotent — rerun it after changing keywords.
+
+For history before `data/` begins, `python -m pipeline.backfill --since
+YYYY-MM-DD [--until YYYY-MM-DD]` pulls the raw hep-ex/hep-ph listings from the
+arXiv export API (the RSS feeds carry only the current day), writes them to
+the **gitignored** `data/backfill/<date>.jsonl`, and scans them. That
+directory is a local database: after a fresh clone, rerun the backfill to
+rebuild it; the small `watch/scan/` markdown it produces is what gets
+committed, because the Pages build only sees the repo. Papers are filed by
+*submission* day, a day or two ahead of announcement, and carry
+`"source": "export-api"`. Roughly 10k papers, 17 MB and 3 minutes per year;
+still no LLM. Existing days are left alone unless `--overwrite`.
+
+## Deep-dive mirror
+
+The same split applies to the digests themselves: with `deep_dive.page: true`,
+every issue's `## Deep dives` section is lifted out at build time into
+`site/<slug>/index.html` (default `deep-dives/`, linked from the nav) plus a
+per-paper feed. Each day links back to its issue. An issue whose deep-dive
+section has no `### arXiv:…` headings (a malformed completion) is reported
+and skipped rather than emitted as a garbage item.
 
 ## Feeds
 
-`site/feed.xml` carries the last 30 daily issues, one item each. Every mirrored
-topic gets `site/<slug>/feed.xml` with **one item per paper**, keyed on a stable
-`arxiv:<id>` guid. Feed bodies get the `latex_to_unicode` treatment from
+`site/feed.xml` carries the last 30 daily issues, one item each. Every mirror
+(watched topic or the deep dives) gets `site/<slug>/feed.xml` with **one item
+per paper**, keyed on a stable `arxiv:<id>` guid. Currently: `muon/`, `jets/`,
+`optimal-transport/`, `deep-dives/`. Feed bodies get the `latex_to_unicode` treatment from
 `pipeline/substack.py` — readers don't run KaTeX, so the math is flattened to
 Unicode rather than left as raw `\(…\)`.
 

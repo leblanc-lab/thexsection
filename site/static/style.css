@@ -298,3 +298,41 @@ footer p {
 
 /* KaTeX sizing relative to body text */
 .katex { font-size: 1.02em; }
+
+/* ---------- mirrors (topic_default.html): a per-paper stream in house style ---------- */
+
+.readout { margin: 0.6rem 0 1.2rem; }
+.readout .chip-link { margin-left: auto; }
+.topic-day .issue-date { font-size: clamp(1.4rem, 3.5vw, 1.9rem); }
+.topic-day .issue-date a { color: var(--ink); text-decoration: none; }
+.topic-day .issue-date a:hover { color: var(--link); }
+.topic-intro { color: var(--ink-muted); }
+
+.paper { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 2px solid var(--hairline); }
+.paper:target { border-left-color: var(--accent); }
+.paper-id {
+  margin: 0 0 0.2rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+.paper-id a { color: var(--beam-c); text-decoration: none; }
+.paper-id a:hover { color: var(--link); }
+.paper-id .permalink { margin-left: 0.5rem; opacity: 0.4; }
+.paper-id .permalink:hover { opacity: 1; }
+/* Override the .issue h3 italic: paper titles are the primary heading here. */
+.topic-day .paper-title {
+  font-family: var(--display);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+}
+.byline {
+  margin: 0 0 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}

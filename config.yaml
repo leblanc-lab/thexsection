@@ -67,6 +67,13 @@ deep_dive:
   # Token cap per paper after HTML → text stripping.
   max_tokens_per_paper: 25000
   max_output_tokens: 4000
+  # Mirror every digest's "## Deep dives" section to its own page and RSS feed
+  # (one item per paper), split out at build time — same knobs as a watchlist
+  # topic below. Adds a "Deep dives" nav link. Remove `page` to turn it off.
+  page: true
+  slug: deep-dives
+  theme: default
+  tagline: "The standout papers, read in full"
 
 memory:
   # Rolling synthesis tiers. Academic-year seasons: Autumn (Sep–Jan),
@@ -94,7 +101,10 @@ watchlist:
   # of the shared watch entries at build time:
   #   page: true      mirror this topic to site/<slug>/index.html + feed.xml
   #   slug:           URL segment for that directory
-  #   theme:          renders with templates/topic_<theme>.html + static/<theme>.css
+  #   theme:          renders with templates/topic_<theme>.html. `default` (or
+  #                   omitted) is the house-style stream inside the main site's
+  #                   shell; `muon` is a standalone sister publication with its
+  #                   own static/muon.css.
   #   tagline:        subtitle on the topic page and in its feed
   # Topics without `page` stay watch-page-only.
   enabled: true
@@ -108,11 +118,145 @@ watchlist:
       theme: muon
       tagline: "Towards 10 TeV, one paper at a time"
       keywords: ["muon collider", "muon-collider", "muon smasher", "MuC", "MAIA Detector", "MUSIC Detector"]
-    - name: "Jet substructure"
-      keywords: ["jet substructure", "soft drop", "energy-energy correlator", "jet shapes", "boosted jet tagging"]
+    # Hadronic final-state reconstruction broadly: substructure, clustering,
+    # tagging, calibration, and the observables built on them. Deliberately no
+    # bare "jet"/"dijet"/"quark-gluon"/"hadronization" — those pull in resonance
+    # searches, QGP and freeze-out papers by the dozen.
+    - name: "Jets and jet substructure"
+      page: true
+      slug: jets
+      theme: default
+      tagline: "Hadronic final states, from clustering to correlators"
+      keywords:
+        # substructure & observables
+        - "jet substructure"
+        - "soft drop"
+        - "soft-drop"
+        - "jet grooming"
+        - "groomed"
+        - "jet trimming"
+        - "jet pruning"
+        - "energy-energy correlator"
+        - "energy correlator"
+        - "energy correlators"
+        - "energy flow"
+        - "jet shape"
+        - "jet shapes"
+        - "jet mass"
+        - "jet charge"
+        - "jet angularity"
+        - "jet angularities"
+        - "N-subjettiness"
+        - "subjet"
+        - "subjets"
+        - "Lund plane"
+        - "Lund jet plane"
+        - "track function"
+        - "track functions"
+        - "jet function"
+        - "jet functions"
+        - "winner-take-all"
+        - "jet axis"
+        - "jet axes"
+        - "event shape"
+        - "event shapes"
+        - "thrust axis"
+        - "thrust distribution"
+        - "thrust distributions"
+        - "IRC safe"
+        - "IRC-safe"
+        - "infrared and collinear safe"
+        - "Sudakov safe"
+        # clustering & reconstruction
+        - "jet clustering"
+        - "jet algorithm"
+        - "jet algorithms"
+        - "anti-kt"
+        - "anti-k_t"
+        - "Cambridge/Aachen"
+        - "jet reconstruction"
+        - "jet radius"
+        - "large-radius jet"
+        - "large-radius jets"
+        - "large-R jet"
+        - "large-R jets"
+        - "fat jet"
+        - "fat jets"
+        - "particle flow"
+        - "particle-flow"
+        - "topological clustering"
+        - "topo-cluster"
+        - "topoclusters"
+        - "calorimeter clustering"
+        - "hadronic energy reconstruction"
+        - "jet energy scale"
+        - "jet energy resolution"
+        - "jet calibration"
+        - "pileup mitigation"
+        - "pileup subtraction"
+        - "pile-up mitigation"
+        - "hadronic final-state reconstruction"
+        - "hadronic final state reconstruction"
+        - "hadronic tau"
+        - "jet fragmentation"
+        - "jet constituents"
+        # tagging & flavour
+        - "jet tagging"
+        - "jet tagger"
+        - "jet taggers"
+        - "boosted jet"
+        - "boosted jets"
+        - "boosted object"
+        - "boosted objects"
+        - "boosted top"
+        - "boosted W"
+        - "boosted Higgs"
+        - "top tagging"
+        - "top tagger"
+        - "W tagging"
+        - "two-prong"
+        - "three-prong"
+        - "four-prong"
+        - "b-tagging"
+        - "b tagging"
+        - "b-jet"
+        - "b-jets"
+        - "c-jet"
+        - "c-jets"
+        - "flavor tagging"
+        - "flavour tagging"
+        - "jet flavor"
+        - "jet flavour"
+        - "heavy-flavor jet"
+        - "heavy-flavour jet"
+        - "jet identification"
+        - "quark/gluon"
+        - "quark-gluon discrimination"
+        - "quark-gluon tagging"
+        - "quark and gluon jets"
+        - "quark jet"
+        - "quark jets"
+        - "gluon jet"
+        - "gluon jets"
+        - "semi-visible jet"
+        - "semi-visible jets"
+        - "dark jets"
+        - "emerging jets"
+        - "jet image"
+        - "jet images"
+        - "ParticleNet"
+        - "particle transformer"
+    # No bare "EMD": it matched early-matter-domination and
+    # Einstein-Maxwell-dilaton papers. "energy mover" covers the real ones.
     - name: "Optimal transport"
-      keywords: ["optimal transport", "wasserstein", "earth mover",
-                 "energy mover", "sinkhorn", "EMD"]
+      page: true
+      slug: optimal-transport
+      theme: default
+      tagline: "Moving earth between distributions"
+      keywords: ["optimal transport", "optimal-transport", "wasserstein", "earth mover",
+                 "energy mover", "sinkhorn", "Kantorovich", "Monge", "transport map",
+                 "transport plan", "Schrödinger bridge", "Schrodinger bridge",
+                 "unbalanced transport", "Gromov"]
 
 substack:
   # Cross-post issues to Substack via `python -m pipeline.substack`.
