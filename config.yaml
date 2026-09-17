@@ -113,10 +113,11 @@ watchlist:
   # Topics without `page` stay watch-page-only. Mirror pages paginate by year.
   #
   # A topic matches on `keywords` (title + abstract) and/or `authors`. An author
-  # entry is a name, or a list of one person's name variants ("Ben"/"Benjamin");
-  # middle names and initials are ignored automatically, and initials-only forms
-  # ("J. Thaler") count only on author lists of <=25 so collaboration papers
-  # don't fire on every "M. Williams". `brief: false` keeps a topic out of the
+  # entry is a name, or a list of one person's name variants ("Ben"/"Benjamin").
+  # Middle names and initials are ignored automatically. Initials-only forms
+  # ("J. Thaler") match only if listed as a variant, and then only on author
+  # lists of <=25 — list them for rare surnames, never for Lee/Chen/Zhang/
+  # Harris/Cohen, where "J. Zhang" is someone else. `brief: false` keeps a topic out of the
   # LLM briefing entirely: it becomes a scan-only abstract stream, filled daily
   # by pipeline.scan at zero cost.
   enabled: true
@@ -278,20 +279,66 @@ watchlist:
       tagline: "New from people worth following"
       brief: false
       authors:
-        - "Jesse Thaler"
-        - "Tilman Plehn"
-        - ["Ben Nachman", "Benjamin Nachman"]
-        - "Ian Moult"
-        - "Nathaniel Craig"
-        - "Andrew Larkoski"
-        - "Rikab Gambhir"
-        - "Cari Cesarotti"
-        - "Simone Marzani"
-        - "Gavin Salam"
-        - "Vinicius Mikuni"
-        - "Mariel Pettee"
+        - ["Jesse Thaler", "J. Thaler"]
+        - ["Tilman Plehn", "T. Plehn"]
+        - ["Ben Nachman", "Benjamin Nachman", "B. Nachman"]
+        - ["Ian Moult", "I. Moult"]
+        - ["Nathaniel Craig", "N. Craig"]
+        - ["Andrew Larkoski", "A. Larkoski"]
+        - ["Rikab Gambhir", "R. Gambhir"]
+        - ["Cari Cesarotti", "C. Cesarotti"]
+        - ["Simone Marzani", "S. Marzani"]
+        - ["Gavin Salam", "G. Salam"]
+        - ["Vinicius Mikuni", "V. Mikuni"]
+        - ["Mariel Pettee", "M. Pettee"]
         - ["Mike Williams", "Michael Williams"]
-        - "Gregory Soyez"
+        - ["Gregory Soyez", "G. Soyez"]
+        - "Kyle Lee"
+        - ["Patrick Meade", "P. Meade"]
+        - "David Shih"
+        - "Marcel Vos"
+        # ML for HEP
+        - ["Gregor Kasieczka", "G. Kasieczka"]
+        - ["Anja Butter", "A. Butter"]
+        - ["Ramon Winterhalder", "R. Winterhalder"]
+        - ["Radha Mastandrea", "R. Mastandrea"]
+        - ["Daniel Whiteson", "D. Whiteson"]
+        - "Nhan Tran"
+        - "Aishik Ghosh"
+        - ["Manuel Szewc", "M. Szewc"]
+        - ["Philip Harris", "Phil Harris"]
+        - ["Michael Kagan", "M. Kagan"]
+        # EMD, energy correlators, SCET
+        - ["Patrick Komiske", "P. Komiske"]
+        - ["Eric Metodiev", "E. Metodiev"]
+        - ["Duff Neill", "D. Neill"]
+        - ["Wouter Waalewijn", "W. Waalewijn"]
+        - "Iain Stewart"
+        - ["Timothy Cohen", "Tim Cohen"]
+        # QCD, jet algorithms, showers
+        - ["Mrinal Dasgupta", "M. Dasgupta"]
+        - ["Matteo Cacciari", "M. Cacciari"]
+        - ["Giulia Zanderighi", "G. Zanderighi"]
+        - ["Andrea Banfi", "A. Banfi"]
+        - ["Ludovic Scyboz", "L. Scyboz"]
+        - ["Daniel Reichelt", "D. Reichelt"]
+        - ["Simone Caletti", "S. Caletti"]
+        - ["Andrzej Siodmok", "A. Siodmok"]
+        - ["Peter Skands", "P. Skands"]
+        - ["Stefan Höche", "Stefan Hoeche", "S. Höche", "S. Hoeche"]
+        - ["Juan Rojo", "J. Rojo"]
+        # phenomenology
+        - ["Matthew Strassler", "M. Strassler"]
+        - ["Michael Krämer", "Michael Kraemer"]
+        # e+e- / heavy-ion energy-correlator program
+        - "Yen-Jie Lee"
+        - "Yi Chen"
+        - ["Austin Baty", "A. Baty"]
+        - ["Anthony Badea", "A. Badea"]
+        - ["Hannah Bossi", "H. Bossi"]
+        - ["Gian Michele Innocenti", "G. Innocenti"]
+        - ["Marcello Maggi", "M. Maggi"]
+        - "Jingyu Zhang"
 
 substack:
   # Cross-post issues to Substack via `python -m pipeline.substack`.

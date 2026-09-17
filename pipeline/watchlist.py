@@ -29,9 +29,11 @@ def _compile(keyword: str) -> re.Pattern:
     return re.compile(r"\b" + re.escape(keyword) + r"\b", re.IGNORECASE)
 
 
-# Initials-only author strings ("J. Thaler") are accepted only on short author
-# lists. Collaboration papers list hundreds of initialled names, and "M. Williams"
-# is on every LHCb paper; on those, only a full first name counts.
+# An initials-only variant ("J. Thaler") listed for a watched author counts only
+# on short author lists. Collaboration papers list hundreds of initialled names,
+# and "M. Williams" is on every LHCb paper; on those, only a full first name
+# counts. Initials are never inferred from a full-name entry: "J. Zhang" on a
+# five-author paper is almost never the Jingyu Zhang you meant.
 INITIALS_MAX_AUTHORS = 25
 
 
@@ -46,7 +48,8 @@ def _author_spec(spec) -> tuple[str, list[tuple[str, str]]]:
 
     Returns (display name, [(first, last), ...]). Middle names/initials are
     ignored on both sides, so "Gavin Salam" already covers "Gavin P. Salam";
-    list variants for genuinely different first names ("Ben"/"Benjamin").
+    list variants for genuinely different first names ("Ben"/"Benjamin") and,
+    for surnames rare enough to be unambiguous, the initial form ("J. Thaler").
     """
     names = [spec] if isinstance(spec, str) else list(spec)
     variants = [(t[0], t[-1]) for n in names if (t := _name_tokens(n))]
@@ -77,7 +80,7 @@ class TopicMatcher:
             matched = [k for k, pat in patterns if pat.search(text)]
             for display, variants in authors:
                 if any(
-                    last == L and (first == F or (allow_initials and len(first) == 1 and first == F[0]))
+                    last == L and first == F and (len(F) > 1 or allow_initials)
                     for first, last in names
                     for F, L in variants
                 ):

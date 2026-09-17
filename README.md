@@ -112,9 +112,10 @@ calls:
 
 A topic matches on `keywords` and/or `authors`. An author entry is a name or
 a list of one person's variants (`["Ben Nachman", "Benjamin Nachman"]`);
-middle names and initials are ignored, and initials-only forms count only on
-author lists of 25 or fewer so collaboration papers don't fire on every
-"M. Williams". `brief: false` keeps a topic out of the LLM briefing: it is a
+middle names and initials are ignored. Initials-only forms ("J. Thaler") match
+only when listed as a variant, and then only on author lists of 25 or fewer,
+so collaboration papers don't fire on every "M. Williams" and a bare
+"J. Zhang" never counts for anyone. `brief: false` keeps a topic out of the LLM briefing: it is a
 scan-only abstract stream, which is how the "Authors to watch" track runs.
 
 Topics without `page` stay watch-page-only. Mirror pages paginate by year
