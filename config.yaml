@@ -19,7 +19,9 @@ arxiv:
   announce_types: [new, cross]
 
 llm:
-  # Active provider: "gemini" (free tier, dev/testing) or "anthropic" (production).
+  # Active provider: "gemini" (free tier, dev/testing), "anthropic" (production),
+  # or "claude-cli" (shells out to a logged-in `claude -p`; billed to the local
+  # Claude subscription, not API credit — laptop-only fallback, not for CI).
   provider: anthropic
   # Route calls through the async Batches API: 50% cheaper token rates in exchange
   # for higher latency (usually minutes, cap 24h) — a good trade for the scheduled
@@ -43,6 +45,11 @@ llm:
       model: claude-opus-4-8
       input_price_per_mtok: 5.00
       output_price_per_mtok: 25.00
+    claude-cli:
+      model: claude-opus-4-8
+      # Subscription usage, so no marginal API cost to account for.
+      input_price_per_mtok: 0.0
+      output_price_per_mtok: 0.0
 
 digest:
   # How many recent daily digests are fed back in as short-term context.

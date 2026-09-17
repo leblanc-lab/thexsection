@@ -1,5 +1,7 @@
-"""Provider layer: one completion interface over Anthropic (production) and
-Gemini (free-tier dev/testing). Selected by `llm.provider` in config.yaml.
+"""Provider layer: one completion interface over Anthropic (production),
+Gemini (free-tier dev/testing) and the Claude Code CLI (`claude -p`, billed to
+the local subscription rather than API credit). Selected by `llm.provider` in
+config.yaml.
 
 Prompts are plain markdown in/out; nothing provider-specific leaks upstream.
 """
@@ -238,10 +240,98 @@ class GeminiBackend:
         return resp.total_tokens or 0
 
 
+class ClaudeCLIBackend:
+    """Shell out to the Claude Code CLI (`claude -p`) for each completion.
+
+    A fallback for when API credit runs out: the CLI is authenticated against
+    the local subscription, so runs cost nothing on the API balance. No batch
+    endpoint; complete_batch loops synchronously. Only usable where the CLI is
+    installed and logged in, i.e. a laptop, not CI.
+    """
+
+    batch_cost_multiplier = 1.0
+
+    def __init__(self, model: str, binary: str = "claude"):
+        import shutil
+
+        self.binary = shutil.which(binary) or binary
+        self.model = model
+
+    def complete(
+        self, system: str, user: str, max_tokens: int
+    ) -> tuple[str, int, int, bool]:
+        import json
+        import os
+        import subprocess
+
+        # Running inside a Claude Code session sets CLAUDECODE; a nested `claude`
+        # refuses to start unless it is cleared.
+        env = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
+        cmd = [
+            self.binary,
+            "-p",
+            "--model", self.model,
+            "--system-prompt", system,
+            "--tools", "",
+            "--output-format", "json",
+        ]
+        proc = subprocess.run(
+            cmd, input=user, capture_output=True, text=True, env=env, check=False
+        )
+        if proc.returncode != 0:
+            raise RuntimeError(
+                f"claude CLI exited {proc.returncode}: {proc.stderr.strip()[:2000]}"
+            )
+        try:
+            payload = json.loads(proc.stdout)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(
+                f"claude CLI returned non-JSON output: {proc.stdout[:500]}"
+            ) from exc
+        if payload.get("is_error") or payload.get("subtype") != "success":
+            raise RuntimeError(f"claude CLI error: {payload.get('result', payload)}")
+        text = payload.get("result") or ""
+        usage = payload.get("usage") or {}
+        tokens_in = (
+            (usage.get("input_tokens") or 0)
+            + (usage.get("cache_creation_input_tokens") or 0)
+            + (usage.get("cache_read_input_tokens") or 0)
+        )
+        tokens_out = usage.get("output_tokens") or 0
+        # The CLI has its own output ceiling; report truncation only when the
+        # model itself stopped for length.
+        truncated = payload.get("stop_reason") == "max_tokens"
+        if truncated:
+            print(
+                f"[llm] warning: CLI response stopped at max_tokens — truncated",
+                file=sys.stderr,
+            )
+        return text, tokens_in, tokens_out, truncated
+
+    def complete_batch(
+        self,
+        jobs: dict[str, tuple[str, str, int]],
+        poll_seconds: int = 15,
+        deadline_seconds: float | None = None,
+    ) -> dict[str, tuple[str, int, int, bool]]:
+        return {
+            cid: self.complete(system, user, max_tokens)
+            for cid, (system, user, max_tokens) in jobs.items()
+        }
+
+    def count_tokens(self, system: str, user: str) -> int:
+        # No counting endpoint through the CLI; callers fall back to chars/4.
+        raise NotImplementedError("claude CLI cannot count tokens")
+
+
 class LLM:
     def __init__(self, cfg: dict | None = None):
+        import os
+
         llm_cfg = (cfg or load_config())["llm"]
-        self.provider = llm_cfg["provider"]
+        # LLM_PROVIDER overrides config.yaml for one run (e.g. a hand-run day on
+        # `claude-cli` while the committed default stays `anthropic` for CI).
+        self.provider = os.environ.get("LLM_PROVIDER") or llm_cfg["provider"]
         # When true, route calls through the async Batches API (50% cheaper,
         # higher latency). Off by default so local runs stay synchronous/snappy.
         self.batch = llm_cfg.get("batch", False)
@@ -254,9 +344,11 @@ class LLM:
         self.model = pcfg["model"]
         self.in_price = pcfg["input_price_per_mtok"]
         self.out_price = pcfg["output_price_per_mtok"]
-        backend_cls = {"anthropic": AnthropicBackend, "gemini": GeminiBackend}[
-            self.provider
-        ]
+        backend_cls = {
+            "anthropic": AnthropicBackend,
+            "gemini": GeminiBackend,
+            "claude-cli": ClaudeCLIBackend,
+        }[self.provider]
         self.backend = backend_cls(self.model)
 
     def _finish(
