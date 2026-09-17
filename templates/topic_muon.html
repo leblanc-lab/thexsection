@@ -1,14 +1,12 @@
 {% extends "muon_base.html" %}
 {% block content %}
-{% set total_papers = days|map(attribute='papers')|map('length')|sum %}
-
 <section class="readout" aria-label="Track summary">
   <div class="cell">
-    <span class="value">{{ total_papers }}</span>
+    <span class="value">{{ totals.papers }}</span>
     <span class="label">Papers</span>
   </div>
   <div class="cell">
-    <span class="value">{{ days|length }}</span>
+    <span class="value">{{ totals.days }}</span>
     <span class="label">Days fired</span>
   </div>
   <div class="cell">
@@ -16,6 +14,12 @@
     <span class="label">Last signal</span>
   </div>
 </section>
+
+{% if years|length > 1 %}
+<nav class="years" aria-label="By year">
+  {% for y in years %}<a href="{{ y.href }}"{% if y.year == year %} class="current" aria-current="page"{% endif %}>{{ y.year }} <span class="n">{{ y.papers }}</span></a>{% endfor %}
+</nav>
+{% endif %}
 
 {% for day in days %}
 <section class="run">

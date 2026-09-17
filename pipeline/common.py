@@ -20,6 +20,12 @@ TEMPLATE_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 
 
+# An arXiv identifier: new-style "2609.12345" (April 2007 on) or old-style
+# "hep-ph/0603004" / "math.PR/0601001". Anchors and file names must not assume
+# the id is dot-and-digits only.
+ARXIV_ID = r"(?:\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Za-z-]+)?/\d{7})"
+
+
 def load_config() -> dict:
     with open(ROOT / "config.yaml") as f:
         return yaml.safe_load(f)

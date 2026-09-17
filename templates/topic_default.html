@@ -4,18 +4,22 @@
     is a standalone sister publication. Rendered with root="../" from site/<slug>/. -#}
 {% block title %}{{ topic.name }} — {{ site.title }}{% endblock %}
 {% block content %}
-{% set total_papers = days|map(attribute='papers')|map('length')|sum %}
 <h1 class="page-title">{{ topic.name }}</h1>
 <p class="lede">{{ topic.tagline }}{% if topic.blurb %} — {{ topic.blurb }}{% endif %}
 {% if not topic.blurb %}— every hep-ex/hep-ph posting matching this
 <a href="{{ root }}watch.html">{{ watchlist.page_title }}</a> track, read and summarized by AI.{% endif %}</p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">{{ total_papers }} papers</span>
-  <span class="count">{{ days|length }} days</span>
-  {% if days %}<span class="count">last {{ days[0].date }}</span>{% endif %}
+  <span class="count">{{ totals.papers }} papers</span>
+  <span class="count">{{ totals.days }} days</span>
+  {% if years %}<span class="count">since {{ years[-1].year }}</span>{% endif %}
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
+{% if years|length > 1 %}
+<nav class="years" aria-label="By year">
+  {% for y in years %}<a href="{{ y.href }}"{% if y.year == year %} class="current" aria-current="page"{% endif %}>{{ y.year }} <span class="n">{{ y.papers }}</span></a>{% endfor %}
+</nav>
+{% endif %}
 
 {% for day in days %}
 <section class="issue topic-day">
@@ -39,6 +43,6 @@
   {% endfor %}
 </section>
 {% else %}
-<p class="empty">Nothing on this stream yet.</p>
+<p class="empty">Nothing on this stream{% if year %} in {{ year }}{% endif %} yet.</p>
 {% endfor %}
 {% endblock %}

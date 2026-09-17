@@ -77,14 +77,23 @@ def latex_to_unicode(md: str) -> str:
 
     converter = LatexNodes2Text(math_mode="text", keep_comments=True)
 
+    def to_text(latex: str) -> str:
+        # Malformed TeX (a truncated arXiv title ending in a bare `\sqrt`, say)
+        # makes pylatexenc raise from deep inside its macro table. A readable
+        # fallback beats a failed site build: return the span as written.
+        try:
+            return converter.latex_to_text(latex)
+        except Exception:
+            return latex
+
     def render_math(match: re.Match) -> str:
-        text = converter.latex_to_text(match.group(1)).strip()
+        text = to_text(match.group(1)).strip()
         return _SUPERSCRIPT_RUN_RE.sub(lambda m: m.group(1).translate(_SUPERSCRIPT), text)
 
     # Math spans first; that clears every in-math backslash, so the accent pass
     # below only ever sees stray accents in ordinary prose (e.g. author names).
     md = INLINE_MATH_RE.sub(render_math, md)
-    return _ACCENT_RE.sub(lambda m: converter.latex_to_text("\\" + m.group(1) + m.group(2)), md)
+    return _ACCENT_RE.sub(lambda m: to_text("\\" + m.group(1) + m.group(2)), md)
 
 
 def pretty_date(iso: str) -> str:

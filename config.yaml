@@ -8,6 +8,10 @@ site:
   # Canonical published URL, trailing slash. RSS needs absolute links, so this is
   # the one place the deployed location is written down.
   base_url: "https://leblanc-lab.github.io/thexsection/"
+  # Per-paper mirror feeds (topics, deep dives) carry only this many newest
+  # items; readers keep what they've already fetched and the paginated page is
+  # the archive. Uncapped, the jets feed had passed 4 MB.
+  mirror_feed_items: 200
 
 arxiv:
   # arXiv category codes to track. Add/remove freely; papers cross-listed
@@ -106,7 +110,15 @@ watchlist:
   #                   shell; `muon` is a standalone sister publication with its
   #                   own static/muon.css.
   #   tagline:        subtitle on the topic page and in its feed
-  # Topics without `page` stay watch-page-only.
+  # Topics without `page` stay watch-page-only. Mirror pages paginate by year.
+  #
+  # A topic matches on `keywords` (title + abstract) and/or `authors`. An author
+  # entry is a name, or a list of one person's name variants ("Ben"/"Benjamin");
+  # middle names and initials are ignored automatically, and initials-only forms
+  # ("J. Thaler") count only on author lists of <=25 so collaboration papers
+  # don't fire on every "M. Williams". `brief: false` keeps a topic out of the
+  # LLM briefing entirely: it becomes a scan-only abstract stream, filled daily
+  # by pipeline.scan at zero cost.
   enabled: true
   page_title: "Standing waves"
   max_tokens_per_paper: 20000
@@ -254,9 +266,32 @@ watchlist:
       theme: default
       tagline: "Moving earth between distributions"
       keywords: ["optimal transport", "optimal-transport", "wasserstein", "earth mover",
-                 "energy mover", "sinkhorn", "Kantorovich", "Monge", "transport map",
+                 "energy mover", "sinkhorn", "Monge-Kantorovich", "Kantorovich distance",
+                 "Kantorovich-Rubinstein", "Monge problem", "Monge map", "transport map",
                  "transport plan", "Schrödinger bridge", "Schrodinger bridge",
                  "unbalanced transport", "Gromov"]
+    # People whose new papers are worth a look regardless of topic. Extend freely.
+    - name: "Authors to watch"
+      page: true
+      slug: authors
+      theme: default
+      tagline: "New from people worth following"
+      brief: false
+      authors:
+        - "Jesse Thaler"
+        - "Tilman Plehn"
+        - ["Ben Nachman", "Benjamin Nachman"]
+        - "Ian Moult"
+        - "Nathaniel Craig"
+        - "Andrew Larkoski"
+        - "Rikab Gambhir"
+        - "Cari Cesarotti"
+        - "Simone Marzani"
+        - "Gavin Salam"
+        - "Vinicius Mikuni"
+        - "Mariel Pettee"
+        - ["Mike Williams", "Michael Williams"]
+        - "Gregory Soyez"
 
 substack:
   # Cross-post issues to Substack via `python -m pipeline.substack`.

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimal transport — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" type="application/rss+xml" title="The Cross Section" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../deep-dives/index.html">Deep dives</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<h1 class="page-title">Optimal transport</h1>
+<p class="lede">Moving earth between distributions
+— every hep-ex/hep-ph posting matching this
+<a href="../watch.html">Standing waves</a> track, read and summarized by AI.</p>
+
+<div class="readout meta" aria-label="Stream summary">
+  <span class="count">78 papers</span>
+  <span class="count">77 days</span>
+  <span class="count">since 2018</span>
+  <a class="chip chip-link" href="feed.xml">RSS feed</a>
+</div>
+
+<nav class="years" aria-label="By year">
+  <a href="2026.html">2026 <span class="n">15</span></a><a href="2025.html">2025 <span class="n">9</span></a><a href="2024.html" class="current" aria-current="page">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
+</nav>
+
+
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, November 8, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2411-05996">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2411.05996" target="_blank" rel="noopener">arXiv:2411.05996</a>
+      
+      <a class="permalink" href="#a2411-05996" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Fast multi-geometry calorimeter simulation with conditional self-attention variational autoencoders</h3>
+    <p class="byline">Dylan Smith et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>The simulation of detector response is a vital aspect of data analysis in particle physics, but current Monte Carlo methods are computationally expensive. Machine learning methods, which learn a mapping from incident particle to detector response, are much faster but require a model for every detector element with unique geometry. Complex geometries may require many models, each with their own training samples and hyperparameter tuning tasks. A promising approach is the use of geometry-aware models, which condition the response on the geometry, but current efforts typically require cumbersome full geometry specification. We present a geometry-aware model that takes advantage of the regularity of detector segments, requiring only the definition of cell sizes across regular segments. This model outperforms the current state of the art by over 70% across several key metrics including the Wasserstein distance metric.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 9, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2410-06539">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2410.06539" target="_blank" rel="noopener">arXiv:2410.06539</a>
+      
+      <a class="permalink" href="#a2410-06539" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">DeepMuon: Accelerating Cosmic-Ray Muon Simulation Based on Optimal Transport</h3>
+    <p class="byline">Ao-Bo Wang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Cosmic muon imaging technology is increasingly being applied in various fields. However, simulating cosmic muons typically requires the rapid generation of a large number of muons and tracking their complex trajectories through intricate structures. This process is highly computationally demanding and consumes significant CPU time. To address these challenges, we introduce DeepMuon, an innovative deep learning model designed to efficiently and accurately generate cosmic muon distributions. In our approach, we employ the inverse Box-Cox transformation to reduce the kurtosis of the muon energy distribution, making it more statistically manageable for the model to learn. Additionally, we utilize the Sliced Wasserstein Distance (SWD) as a loss function to ensure precise simulation of the high-dimensional distributions of cosmic muons. We also demonstrate that DeepMuon can accurately learn muon distribution patterns from a limited set of data, enabling it to simulate real-world cosmic muon distributions as captured by detectors. Compared to traditional tools like CRY, DeepMuon significantly increases the speed of muon generation at sea level. Furthermore, we have developed a pipeline using DeepMuon that directly simulates muon distributions in underwater environments, dramatically accelerating simulations for underwater muon radiography and tomography. For more details on our open-source project, please visit https://github.com/wangab0/deepmuon.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, October 7, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2410-05379">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2410.05379" target="_blank" rel="noopener">arXiv:2410.05379</a>
+      
+      <a class="permalink" href="#a2410-05379" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SPECTER: Efficient Evaluation of the Spectral EMD</h3>
+    <p class="byline">Rikab Gambhir et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport, energy mover) — abstract only, not yet read for a briefing.</em></p>
+<p>The Energy Mover&rsquo;s Distance (EMD) has seen use in collider physics as a metric between events and as a geometric method of defining infrared and collinear safe observables. Recently, the Spectral Energy Mover&rsquo;s Distance (SEMD) has been proposed as a more analytically tractable alternative to the EMD. In this work, we obtain a closed-form expression for the Riemannian-like p = 2 SEMD metric between events, eliminating the need to numerically solve an optimal transport problem. Additionally, we show how the SEMD can be used to define event and jet shape observables by minimizing the distance between events and parameterized energy flows (similar to the EMD), and we obtain closed-form expressions for several of these observables. We also present the SPECTER framework, an efficient and highly parallelized implementation of the SEMD metric and SEMD-derived shape observables as an analogue of the previously-introduced SHAPER for EMD-based computations. We demonstrate that computing the SEMD with SPECTER can be up to a thousand times faster than computing the EMD with standard optimal transport libraries.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 24, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-16336">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.16336" target="_blank" rel="noopener">arXiv:2409.16336</a>
+      
+      <a class="permalink" href="#a2409-16336" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Refereeing the Referees: Evaluating Two-Sample Tests for Validating Generators in Precision Sciences</h3>
+    <p class="byline">Samuele Grossi et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a robust methodology to evaluate the performance and computational efficiency of non-parametric two-sample tests, specifically designed for high-dimensional generative models in scientific applications such as in particle physics. The study focuses on tests built from univariate integral probability measures: the sliced Wasserstein distance and the mean of the Kolmogorov-Smirnov statistics, already discussed in the literature, and the novel sliced Kolmogorov-Smirnov statistic. These metrics can be evaluated in parallel, allowing for fast and reliable estimates of their distribution under the null hypothesis. We also compare these metrics with the recently proposed unbiased Fréchet Gaussian Distance and the unbiased quadratic Maximum Mean Discrepancy, computed with a quartic polynomial kernel. We evaluate the proposed tests on various distributions, focusing on their sensitivity to deformations parameterized by a single parameter <span class="arithmatex">\(ε\)</span>. Our experiments include correlated Gaussians and mixtures of Gaussians in 5, 20, and 100 dimensions, and a particle physics dataset of gluon jets from the JetNet dataset, considering both jet- and particle-level features. Our results demonstrate that one-dimensional-based tests provide a level of sensitivity comparable to other multivariate metrics, but with significantly lower computational cost, making them ideal for evaluating generative models in high-dimensional settings. This methodology offers an efficient, standardized tool for model comparison and can serve as a benchmark for more advanced tests, including machine-learning-based approaches.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, September 20, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-13150">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.13150" target="_blank" rel="noopener">arXiv:2409.13150</a>
+      
+      <a class="permalink" href="#a2409-13150" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Field Guide to Event-Shape Observables Using Optimal Transport</h3>
+    <p class="byline">Cari Cesarotti et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We lay out the phenomenological behavior of event-shape observables evaluated by solving optimal transport problems between collider events and reference geometries &ndash; which we name &lsquo;manifold distances&rsquo; &ndash; to provide guidance regarding their use in future studies. This discussion considers several choices related to the metric used to quantify these distances. We explore the differences between the various options, using a combination of analytical studies and simulated minimum-bias and multi-jet events. Making judicious choices when defining the metric and reference geometry can improve sensitivity to interesting signal features and reduce sensitivity to non-perturbative effects in QCD. The goal of this article is to provide a &lsquo;field guide&rsquo; that can inform how choices made when defining a manifold distance can be tailored for the analysis at-hand.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 10, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2409-06399">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2409.06399" target="_blank" rel="noopener">arXiv:2409.06399</a>
+      
+      <a class="permalink" href="#a2409-06399" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Robust semi-parametric signal detection in particle physics with classifiers decorrelated via optimal transport</h3>
+    <p class="byline">Purvasha Chakravarti et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport, transport map) — abstract only, not yet read for a briefing.</em></p>
+<p>Searches for signals of new physics in particle physics are usually done by training a supervised classifier to separate a signal model from the known Standard Model physics (also called the background model). However, even when the signal model is correct, systematic errors in the background model can influence supervised classifiers and might adversely affect the signal detection procedure. To tackle this problem, one approach is to use the (possibly misspecified) classifier only to perform a preliminary signal-enrichment step and then to carry out a signal detection test on the signal-rich sample. For this procedure to work, we need a classifier constrained to be decorrelated with one or more protected variables used for the signal-detection step. We do this by considering an optimal transport map of the classifier output that makes it independent of the protected variable(s) for the background. We then fit a semiparametric mixture model to the distribution of the protected variable after making cuts on the transformed classifier to detect the presence of a signal. We compare and contrast this decorrelation method with previous approaches, show that the decorrelation procedure is robust to moderate background misspecification, and analyze the power and validity of the signal detection test as a function of the cut on the classifier both with and without decorrelation. We conclude that decorrelation and signal enrichment help produce a stable, robust, valid, and more powerful test.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, July 29, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-19818">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.19818" target="_blank" rel="noopener">arXiv:2407.19818</a>
+      
+      <a class="permalink" href="#a2407-19818" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Accelerating template generation in resonant anomaly detection searches with optimal transport</h3>
+    <p class="byline">Matthew Leigh et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>We introduce Resonant Anomaly Detection with Optimal Transport (RAD-OT), a method for generating signal templates in resonant anomaly detection searches. RAD-OT leverages the fact that the conditional probability density of the target features vary approximately linearly along the optimal transport path connecting the resonant feature. This does not assume that the conditional density itself is linear with the resonant feature, allowing RAD-OT to efficiently capture multimodal relationships, changes in resolution, etc. By solving the optimal transport problem, RAD-OT can quickly build a template by interpolating between the background distributions in two sideband regions. We demonstrate the performance of RAD-OT using the LHC Olympics R\&amp;D dataset, where we find comparable sensitivity and improved stability with respect to deep learning-based approaches.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, July 16, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-11917">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.11917" target="_blank" rel="noopener">arXiv:2407.11917</a>
+      
+      <a class="permalink" href="#a2407-11917" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Global Optimisation of Black-Box Functions with Generative Models in the Wasserstein Space</h3>
+    <p class="byline">Tigran Ramazyan et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a new uncertainty estimator for gradient-free optimisation of black-box simulators using deep generative surrogate models. Optimisation of these simulators is especially challenging for stochastic simulators and higher dimensions. To address these issues, we utilise a deep generative surrogate approach to model the black box response for the entire parameter space. We then leverage this knowledge to estimate the proposed uncertainty based on the Wasserstein distance - the Wasserstein uncertainty. This approach is employed in a posterior agnostic gradient-free optimisation algorithm that minimises regret over the entire parameter space. A series of tests were conducted to demonstrate that our method is more robust to the shape of both the black box function and the stochastic response of the black box than state-of-the-art methods, such as efficient global optimisation with a deep Gaussian process surrogate.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, July 10, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2407-16704">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2407.16704" target="_blank" rel="noopener">arXiv:2407.16704</a>
+      
+      <a class="permalink" href="#a2407-16704" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Applying generative neural networks for fast simulations of the ALICE (CERN) experiment</h3>
+    <p class="byline">Maksymilian Wojnar</p>
+    <div class="paper-body"><p><em>Watchlist hit (wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>This thesis investigates the application of state-of-the-art advances in generative neural networks for fast simulation of the Zero Degree Calorimeter (ZDC) neutron detector in the ALICE experiment at CERN. Traditional simulation methods using the GEANT Monte Carlo toolkit, while accurate, are computationally demanding. With increasing computational needs at CERN, efficient simulation techniques are essential. The thesis provides a comprehensive literature review on the application of neural networks in computer vision, fast simulations using machine learning, and generative neural networks in high-energy physics. The theory of the analyzed models is also discussed, along with technical aspects and the challenges associated with a practical implementation. The experiments evaluate various neural network architectures, including convolutional neural networks, vision transformers, and MLP-Mixers, as well as generative frameworks such as autoencoders, generative adversarial networks, vector quantization models, and diffusion models. Key contributions include the implementation and evaluation of these models, a significant improvement in the Wasserstein metric compared to existing methods with a low generation time of 5 milliseconds per sample, and the formulation of a list of recommendations for developing models for fast ZDC simulation. Open-source code and detailed hyperparameter settings are provided for reproducibility. Additionally, the thesis outlines future research directions to further enhance simulation fidelity and efficiency.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Sunday, June 2, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2406-01635">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2406.01635" target="_blank" rel="noopener">arXiv:2406.01635</a>
+      
+      <a class="permalink" href="#a2406-01635" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SwdFold:A Reweighting and Unfolding method based on Optimal Transport Theory</h3>
+    <p class="byline">Chu-Cheng Pan et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>High-energy physics experiments rely heavily on precise measurements of energy and momentum, yet face significant challenges due to detector limitations, calibration errors, and the intrinsic nature of particle interactions. Traditional unfolding techniques have been employed to correct for these distortions, yet they often suffer from model dependency and stability issues. We present a novel method, SwdFold, which utilizes the principles of optimal transport to provide a robust, model-independent framework to estimate the probability density ratio for data unfolding. It not only unfold the toy experimental event by reweighted simulated data distributions closely with true distributions but also maintains the integrity of physical features across various observables. We can expect it can enable more reliable predictions and comprehensive analyses as a high precision reweighting and unfolding tool in high-energy physics.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, February 26, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2402-16270">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2402.16270" target="_blank" rel="noopener">arXiv:2402.16270</a>
+      
+      <a class="permalink" href="#a2402-16270" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Peak finding algorithm for cluster counting with domain adaptation</h3>
+    <p class="byline">Guang Zhao et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport) — abstract only, not yet read for a briefing.</em></p>
+<p>Cluster counting in drift chamber is the most promising breakthrough in particle identification (PID) technique in particle physics experiment. Reconstruction algorithm is one of the key challenges in cluster counting. In this paper, a semi-supervised domain adaptation (DA) algorithm is developed and applied on the peak finding problem in cluster counting. The algorithm uses optimal transport (OT), which provides geometric metric between distributions, to align the samples between the source (simulation) and target (data) samples, and performs semi-supervised learning with the samples in target domain that are partially labeled with the continuous wavelet transform (CWT) algorithm. The model is validated by the pseudo data with labels, which achieves performance close to the fully supervised model. When applying the algorithm on real experimental data, taken at CERN with a 180 GeV/c muon beam, it shows better classification power than the traditional derivative-based algorithm, and the performance is stable for experimental data samples across varying track lengths.</p></div>
+  </article>
+  
+</section>
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Sunday, January 28, 2024
+  </h2>
+  
+
+  
+  <article class="paper" id="a2401-15542">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2401.15542" target="_blank" rel="noopener">arXiv:2401.15542</a>
+      
+      <a class="permalink" href="#a2401-15542" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Exploring Optimal Transport for Event-Level Anomaly Detection at the Large Hadron Collider</h3>
+    <p class="byline">Nathaniel Craig et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (optimal transport, wasserstein) — abstract only, not yet read for a briefing.</em></p>
+<p>Anomaly detection is a promising, model-agnostic strategy to find physics beyond the Standard Model. State-of-the-art machine learning methods offer impressive performance on anomaly detection tasks, but interpretability, resource, and memory concerns motivate considering a wide range of alternatives. We explore using the 2-Wasserstein distance from optimal transport theory, both as an anomaly score and as input to interpretable machine learning methods, for event-level anomaly detection at the Large Hadron Collider. The choice of ground space plays a key role in optimizing performance. We comment on the feasibility of implementing these methods in the L1 trigger system.</p></div>
+  </article>
+  
+</section>
+
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-17 14:31 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

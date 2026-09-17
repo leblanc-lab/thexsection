@@ -1,7 +1,7 @@
 """Personal-interest keyword tracks.
 
-Scans the day's papers for configured topic keywords (title + abstract), and
-when any fire, writes a focused technical briefing for the matched papers to
+Scans the day's papers for configured topic keywords (title + abstract) and
+watched authors, and when any fire, writes a focused technical briefing for the matched papers to
 watch/YYYY-MM-DD.md (rendered on the subtly-linked watch page). One LLM call
 per day, only on days something matches.
 """
@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+import unicodedata
 
 import frontmatter
 
@@ -28,18 +29,71 @@ def _compile(keyword: str) -> re.Pattern:
     return re.compile(r"\b" + re.escape(keyword) + r"\b", re.IGNORECASE)
 
 
+# Initials-only author strings ("J. Thaler") are accepted only on short author
+# lists. Collaboration papers list hundreds of initialled names, and "M. Williams"
+# is on every LHCb paper; on those, only a full first name counts.
+INITIALS_MAX_AUTHORS = 25
+
+
+def _name_tokens(name: str) -> list[str]:
+    """Lower-cased, accent-stripped tokens: 'Grégory  Soyez' -> ['gregory', 'soyez']."""
+    flat = "".join(c for c in unicodedata.normalize("NFKD", name) if not unicodedata.combining(c))
+    return re.sub(r"[.,]", " ", flat).lower().split()
+
+
+def _author_spec(spec) -> tuple[str, list[tuple[str, str]]]:
+    """A watched author: a name, or a list of that person's name variants.
+
+    Returns (display name, [(first, last), ...]). Middle names/initials are
+    ignored on both sides, so "Gavin Salam" already covers "Gavin P. Salam";
+    list variants for genuinely different first names ("Ben"/"Benjamin").
+    """
+    names = [spec] if isinstance(spec, str) else list(spec)
+    variants = [(t[0], t[-1]) for n in names if (t := _name_tokens(n))]
+    return names[0], variants
+
+
+class TopicMatcher:
+    """Match papers against watchlist topics by `keywords` (title+abstract,
+    word-bounded, case-insensitive) and/or `authors` (see _author_spec)."""
+
+    def __init__(self, topics: list[dict]):
+        self.topics = [
+            (
+                t,
+                [(k, _compile(k)) for k in t.get("keywords", [])],
+                [_author_spec(a) for a in t.get("authors", [])],
+            )
+            for t in topics
+        ]
+
+    def hits(self, paper: dict) -> dict[str, list[str]]:
+        """topic name -> what matched (keywords and/or watched authors' names)."""
+        text = f"{paper['title']} {paper['abstract']}"
+        names = [(t[0], t[-1]) for a in paper.get("authors", []) if (t := _name_tokens(a))]
+        allow_initials = len(names) <= INITIALS_MAX_AUTHORS
+        out: dict[str, list[str]] = {}
+        for topic, patterns, authors in self.topics:
+            matched = [k for k, pat in patterns if pat.search(text)]
+            for display, variants in authors:
+                if any(
+                    last == L and (first == F or (allow_initials and len(first) == 1 and first == F[0]))
+                    for first, last in names
+                    for F, L in variants
+                ):
+                    matched.append(display)
+            if matched:
+                out[topic["name"]] = matched
+        return out
+
+
 def match_topics(papers: list[dict], topics: list[dict]) -> dict[str, list[dict]]:
     """topic name -> matching papers (a paper may match several topics)."""
+    matcher = TopicMatcher(topics)
     hits: dict[str, list[dict]] = {}
-    for topic in topics:
-        patterns = [_compile(k) for k in topic["keywords"]]
-        matched = [
-            p
-            for p in papers
-            if any(pat.search(f"{p['title']} {p['abstract']}") for pat in patterns)
-        ]
-        if matched:
-            hits[topic["name"]] = matched
+    for p in papers:
+        for name in matcher.hits(p):
+            hits.setdefault(name, []).append(p)
     return hits
 
 
@@ -79,6 +133,10 @@ def main() -> int:
         return 0
 
     hits = match_topics(papers, wcfg["topics"])
+    # `brief: false` topics are scan-only streams (pipeline.scan): matched, but
+    # never sent to the LLM.
+    briefable = {t["name"] for t in wcfg["topics"] if t.get("brief", True)}
+    hits = {t: ps for t, ps in hits.items() if t in briefable}
     if not hits:
         print("No watched topics fired today.")
         return 0

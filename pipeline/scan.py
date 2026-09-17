@@ -1,7 +1,7 @@
 """Zero-LLM keyword scan: abstract-only entries for the topic mirrors.
 
 `watchlist.py` only writes a briefing on days it runs, and only for the keyword
-set in force that day. This re-runs the same keyword match over every day of
+set in force that day. This re-runs the same keyword/author match over every day of
 raw paper data (data/ and the gitignored data/backfill/) and writes the hits that no briefing covers to
 watch/scan/YYYY-MM-DD.md — same frontmatter and heading shape as a watch
 entry, but each paper's body is its abstract with a "keyword hit" note, so the
@@ -26,7 +26,7 @@ import frontmatter
 
 from .common import load_config, load_papers, paper_dates, parse_date
 from .digest import byline
-from .watchlist import WATCH_DIR, _compile
+from .watchlist import WATCH_DIR, TopicMatcher
 
 SCAN_DIR = WATCH_DIR / "scan"
 GENERATOR = "keyword-scan"
@@ -43,16 +43,11 @@ def briefed_ids(date_iso: str) -> dict[str, set[str]]:
 def scan_day(papers: list[dict], topics: list[dict], covered: dict[str, set[str]]) -> dict[str, list[tuple[dict, list[str]]]]:
     """topic name -> [(paper, matched keywords)] for hits with no briefing."""
     hits: dict[str, list[tuple[dict, list[str]]]] = {}
-    for topic in topics:
-        patterns = [(k, _compile(k)) for k in topic["keywords"]]
-        done = covered.get(topic["name"], set())
-        for p in papers:
-            if p["id"] in done:
-                continue
-            text = f"{p['title']} {p['abstract']}"
-            matched = [k for k, pat in patterns if pat.search(text)]
-            if matched:
-                hits.setdefault(topic["name"], []).append((p, matched))
+    matcher = TopicMatcher(topics)
+    for p in papers:
+        for name, matched in matcher.hits(p).items():
+            if p["id"] not in covered.get(name, set()):
+                hits.setdefault(name, []).append((p, matched))
     return hits
 
 
@@ -68,7 +63,7 @@ def render(date_iso: str, hits: dict[str, list[tuple[dict, list[str]]]]) -> str:
                 f"{heading} ({b})" if b else heading
             )
             parts.append(
-                f"_Keyword hit ({', '.join(matched)}) — abstract only, not yet read for a briefing._\n\n"
+                f"_Watchlist hit ({', '.join(matched)}) — abstract only, not yet read for a briefing._\n\n"
                 + re.sub(r"\s+", " ", p["abstract"]).strip()
             )
         sections.append("\n\n".join(parts))

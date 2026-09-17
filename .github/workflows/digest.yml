@@ -58,6 +58,9 @@ jobs:
           python -m pipeline.digest $DATE_ARG
           python -m pipeline.deep_dive $DATE_ARG
           python -m pipeline.watchlist $DATE_ARG
+          # Zero-LLM keyword/author scan: abstract-only entries for mirrored
+          # streams the briefing didn't cover (and brief:false topics).
+          python -m pipeline.scan $DATE_ARG
           if [ "$(date -u +%u)" = "5" ] && [ -z "$DATE_ARG" ]; then
             python -m pipeline.radar
           fi

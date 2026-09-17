@@ -15,6 +15,7 @@ import markdown
 from jinja2 import Environment, FileSystemLoader
 
 from .common import (
+    ARXIV_ID,
     DIGEST_DIR,
     MEMORY_ARCHIVE_DIR,
     MEMORY_DIR,
@@ -68,7 +69,7 @@ def load_posts(directory: Path) -> list[dict]:
 
 # The paper heading `watchlist.py` produces via digest.add_bylines/linkify:
 # "### [arXiv:2608.02714](https://arxiv.org/abs/2608.02714) — Title (First Author et al.)"
-ID_LINK_RE = re.compile(r"\[arXiv:(\d{4}\.\d{4,5})\]\([^)]*\)")
+ID_LINK_RE = re.compile(rf"\[arXiv:({ARXIV_ID})\]\([^)]*\)")
 BYLINE_RE = re.compile(r"\s*\(([^()]+)\)\s*$")
 
 
@@ -172,9 +173,9 @@ def paper_day(date: str, body: str, source: str = "") -> dict:
         "papers": [
             {
                 "id": pid,
-                # Fragment ids can't contain a dot, and this also avoids the
-                # duplicate-id collision watch.html has from repeated headings.
-                "anchor": f"a{pid.replace('.', '-')}" if pid else f"p{i}",
+                # Fragment ids can't contain a dot or slash, and this also avoids
+                # the duplicate-id collision watch.html has from repeated headings.
+                "anchor": "a" + re.sub(r"[^A-Za-z0-9]", "-", pid) if pid else f"p{i}",
                 "title": title,
                 "byline": byline,
                 "url": f"https://arxiv.org/abs/{pid}" if pid else "",
@@ -236,15 +237,20 @@ def feed_html(md_text: str) -> str:
 
 
 def topic_feed_items(days: list[dict], base: str, slug: str) -> list[dict]:
-    """One item per paper, so the feed reads as a stream of paper alerts."""
+    """One item per paper, so the feed reads as a stream of paper alerts.
+
+    Links point at the paper's year page, which is stable; index.html only
+    mirrors the latest year.
+    """
     items = []
     for day in days:
+        page = f"{base}{slug}/{day['date'][:4]}.html"
         for p in day["papers"]:
             items.append(
                 {
                     "title": p["title"] or f"arXiv:{p['id']}",
-                    "link": f"{base}{slug}/#{p['anchor']}",
-                    "guid": f"arxiv:{p['id']}" if p["id"] else f"{base}{slug}/#{p['anchor']}",
+                    "link": f"{page}#{p['anchor']}",
+                    "guid": f"arxiv:{p['id']}" if p["id"] else f"{page}#{p['anchor']}",
                     "guid_permalink": "false",
                     "pub_date": rfc822(day["date"]),
                     "author": p["byline"],
@@ -394,15 +400,32 @@ def main() -> int:
     # feed with one item per paper. Any watched topic flagged `page: true` is one;
     # so is the digests' deep-dive section when `deep_dive.page` is set.
     topic_pages = []
+    feed_limit = int(cfg["site"].get("mirror_feed_items", 200))
 
     def mirror(topic: dict, days: list[dict]) -> None:
         slug, name = topic["slug"], topic["name"]
         (SITE_DIR / slug).mkdir(parents=True, exist_ok=True)
-        render(
-            f"topic_{topic.get('theme', 'default')}.html", f"{slug}/index.html",
-            topic=topic, days=days, root="../",
-        )
-        items = topic_feed_items(days, base_url, slug)
+        # One page per year plus index.html showing the latest year; the feed
+        # is capped to the newest items and links into the year pages.
+        by_year: dict[str, list[dict]] = {}
+        for d in days:
+            by_year.setdefault(d["date"][:4], []).append(d)
+        years = [
+            {"year": y, "href": f"{y}.html", "days": len(ds),
+             "papers": sum(len(d["papers"]) for d in ds)}
+            for y, ds in sorted(by_year.items(), reverse=True)
+        ]
+        totals = {"papers": sum(y["papers"] for y in years), "days": len(days)}
+        template = f"topic_{topic.get('theme', 'default')}.html"
+        latest = years[0]["year"] if years else None
+        pages = {f"{slug}/index.html": latest, **{f"{slug}/{y}.html": y for y in by_year}}
+        for out, year in pages.items():
+            render(
+                template, out,
+                topic=topic, days=by_year.get(year, []), years=years, year=year,
+                totals=totals, root="../",
+            )
+        items = topic_feed_items(days, base_url, slug)[:feed_limit]
         render(
             "rss.xml", f"{slug}/feed.xml",
             channel={
@@ -413,7 +436,10 @@ def main() -> int:
             },
             items=items,
         )
-        topic_pages.append(f"{slug} ({len(days)} days, {len(items)} papers)")
+        topic_pages.append(
+            f"{slug} ({len(days)} days, {totals['papers']} papers, "
+            f"{len(years)} year pages, {len(items)} in feed)"
+        )
 
     if watchlist_cfg.get("enabled"):
         for topic in topics:

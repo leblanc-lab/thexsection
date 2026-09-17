@@ -110,7 +110,16 @@ calls:
   keywords: [...]
 ```
 
-Topics without `page` stay watch-page-only. Two themes ship: `default` (the
+A topic matches on `keywords` and/or `authors`. An author entry is a name or
+a list of one person's variants (`["Ben Nachman", "Benjamin Nachman"]`);
+middle names and initials are ignored, and initials-only forms count only on
+author lists of 25 or fewer so collaboration papers don't fire on every
+"M. Williams". `brief: false` keeps a topic out of the LLM briefing: it is a
+scan-only abstract stream, which is how the "Authors to watch" track runs.
+
+Topics without `page` stay watch-page-only. Mirror pages paginate by year
+(`<slug>/index.html` is the latest year, `<slug>/<year>.html` the archive).
+Two themes ship: `default` (the
 house-style stream, `templates/topic_default.html` extending `base.html`, used
 by the jet-substructure and optimal-transport mirrors) and `muon`, a fully
 standalone shell that deliberately shares nothing with `base.html` but the
@@ -135,7 +144,9 @@ arXiv export API (the RSS feeds carry only the current day), writes them to
 the **gitignored** `data/backfill/<date>.jsonl`, and scans them. That
 directory is a local database: after a fresh clone, rerun the backfill to
 rebuild it; the small `watch/scan/` markdown it produces is what gets
-committed, because the Pages build only sees the repo. Papers are filed by
+committed, because the Pages build only sees the repo. The daily workflow also
+runs the scan after the briefing, so `brief: false` topics and any hits the
+LLM step missed land the same day. Papers are filed by
 *submission* day, a day or two ahead of announcement, and carry
 `"source": "export-api"`. Roughly 10k papers, 17 MB and 3 minutes per year;
 still no LLM. Existing days are left alone unless `--overwrite`.
@@ -153,8 +164,9 @@ and skipped rather than emitted as a garbage item.
 
 `site/feed.xml` carries the last 30 daily issues, one item each. Every mirror
 (watched topic or the deep dives) gets `site/<slug>/feed.xml` with **one item
-per paper**, keyed on a stable `arxiv:<id>` guid. Currently: `muon/`, `jets/`,
-`optimal-transport/`, `deep-dives/`. Feed bodies get the `latex_to_unicode` treatment from
+per paper**, keyed on a stable `arxiv:<id>` guid and capped at the newest
+`site.mirror_feed_items` (200); items link into the year pages. Currently:
+`muon/`, `jets/`, `optimal-transport/`, `authors/`, `deep-dives/`. Feed bodies get the `latex_to_unicode` treatment from
 `pipeline/substack.py` — readers don't run KaTeX, so the math is flattened to
 Unicode rather than left as raw `\(…\)`.
 

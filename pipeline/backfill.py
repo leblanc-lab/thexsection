@@ -20,6 +20,8 @@ Examples:
   python -m pipeline.backfill --since 2025-09-01 --until 2025-12-31
 Days that already have a data file are left alone unless --overwrite.
 Files are written window by window, so an interrupted run can simply be rerun.
+Pre-April-2007 papers carry old-style ids ("hep-ph/0603004"); common.ARXIV_ID
+accepts both, so history reaches back to the archive's start (1992 for hep-ph).
 """
 
 from __future__ import annotations

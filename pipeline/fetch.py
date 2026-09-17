@@ -17,7 +17,7 @@ import time
 
 import feedparser
 
-from .common import data_path, load_config, parse_date
+from .common import ARXIV_ID, data_path, load_config, parse_date
 
 FEED_URL = "https://rss.arxiv.org/atom/{cat}"
 EXPORT_URL = (
@@ -25,7 +25,7 @@ EXPORT_URL = (
     "&start={start}&max_results=200&sortBy=submittedDate&sortOrder=descending"
 )
 
-ID_RE = re.compile(r"(\d{4}\.\d{4,5})")
+ID_RE = re.compile(f"({ARXIV_ID})")
 
 
 def _clean_abstract(summary: str) -> str:
