@@ -1,42 +1,40 @@
-# The Cross Section — Rolling Synthesis, week ending 2026-09-16
+# The Cross Section — Week ending 2026-09-17
 
-The week was dominated, then progressively un-dominated, by the LZ 248 keV xenon recoil (event LZ230616). It began owning a sixth of daily listings and ended as three cosmology follow-ups, its register climbing the whole way: from fits, to bounds, to concrete discriminators, to early-universe selection. As LZ receded, the field's center of gravity moved decisively into precision QCD and nucleon structure, capped by a landmark four-loop calculation. Axion detection/cosmology, collider quantum information, and ML-in-the-plumbing ran as steady background currents; flavor stayed a consolidating-null picture with a couple of live threads.
+The week's dominant story was the slow-motion decline of the LZ 248 keV xenon recoil from front-page obsession to background hum: over four weeks it migrated from fits, to bounds, to falsifiable discriminators, and finally to early-universe model-building, ceding the front page to a genuine precision-QCD surge (four-loop splitting functions, NNLO $b$-jets, DIS tooling). Alongside these two megatrends ran steadier threads — an axion program widening from lattice into cosmology and haloscopes, the collider quantum-information project reaching new final states, and a relentless ML-in-the-plumbing wave — plus a sharp end-of-week debunking of the 17 MeV Atomki boson.
 
 ## Running themes
 
-- **The LZ event (fading in volume, maturing in method).** The month-long spectacle lost its front-page grip this week. The methodological arc is the real story: model-fits gave way to evasion strategies (light mediators, cosmic-ray boosting, two-component exothermic), then to falsifiability tests (target-scaling, xenon-isotope kinematic filters), and finally to cosmology, where the endo/exo character is argued to be *dynamically selected* rather than fit. Traffic is now a trickle.
-- **Precision QCD / nucleon structure / DIS (heating up).** Built all week toward the four-loop non-singlet splitting functions, embedded in a dense, largely EIC/FCC-facing program: N³LO polarized SIDIS, NNLO dimuon/strange-PDF, energy correlators generalized to charged-hadron "detectors," small-$x$ CGC/BFKL/TMD tooling.
-- **Axions: detection + cosmology (steady, broadening).** Haloscopes kept producing real limits (higher-order-mode TM₀₂₀ coverage, DALI's dark-photon bound); a parallel axion-cosmology cluster (EFT wavefunctions, JWST QCD-axion exclusion, flavoured DFSZ) widened the strong-CP thread past the lattice program.
-- **Collider quantum information (steady, spreading).** From qubit-qutrit hadronic tomography to Bell nonlocality tied to small-$x$ saturation — the QI program keeps reaching new final states and kinematic regimes.
-- **ML/autodiff tooling (steady).** Colonizing both analysis (self-supervised LHCb tagging, RL over SMEFT space, metric-aware EMD surrogates) and detector plumbing (normalizing-flow distillation into CMS L1 firmware, EM-shower calibration).
-- **Precision flavor (steady, mostly nulls).** BESIII/LHCb first-observations and LFU checks holding SM; two live exceptions below.
+- **The LZ event, fading.** The single recoil owned ~1/6 of listings early in the week and dwindled to three papers by the 17th. The register shifted decisively: escape-route model-building (isospin violation, freeze-in, boosting) gave way to *discriminators* (target choice, isotope kinematics), then to *cosmological framing* — whether the signal is endo- or exothermic is now argued to be dynamically selected in the early universe. Clearly cooling, but not dead.
+- **Precision QCD & nucleon structure — heating up, now the center of gravity.** Four-loop non-singlet splitting functions (Gehrmann), NNLO+PS $b$-jets (Gauld), NLO EW for $gg\to\gamma\gamma$ (Chen), plus a dense EIC/FCC-facing DIS-tooling and small-$x$ stack. This took over the front page in the week's back half.
+- **Axions & haloscopes — steady, widening.** The strong-CP/axion thread kept broadening past lattice into cosmology (Luu EFT wavefunctions, Gemmell JWST limits) and detection (DALI dark-photon/haloscope results, flavoured DFSZ models).
+- **Collider quantum information — steady expansion.** The QI program reached qubit-qutrit hadronic systems (Kanachova) and then small-$x$/saturation physics (Fucilla), a consistent methodological creep.
+- **ML in detector plumbing & reconstruction — steady, pervasive.** From L1-trigger normalizing-flow distillation and calibration to joint jet/neutrino hypergraph reconstruction (VyPER, PSICHE) and self-supervised pre-training.
 
 ## Turning points
 
-- **[arXiv:2609.09385](https://arxiv.org/abs/2609.09385) (Langhoff)** pushed the thermal-higgsino reading to $10^5$–$10^6$ GeV via early matter domination — the first move from fitting to exiling.
-- **[arXiv:2609.11833](https://arxiv.org/abs/2609.11833) (Nguyen et al.)** generalized the Pospelov–Ramani solar-neutrino bound across the whole inelastic-DM class, forcing evasion models to work hard.
-- **[arXiv:2609.12914](https://arxiv.org/abs/2609.12914) (Athron et al.)** delivered the definitive Run 2 electroweakino global fit — the LHC counterweight the LZ higgsino fits had been ignoring ($m_{\tilde\chi_2^0}\gtrsim760$ GeV bino-like).
-- **[arXiv:2609.15321](https://arxiv.org/abs/2609.15321) (Ghosh et al.)** closed the astrophysical escape hatch: no halo modeling (incl. LMC-aware $N$-body) rescues the higgsino from solar capture.
-- **[arXiv:2609.15782](https://arxiv.org/abs/2609.15782) (Baer et al.)** made the endo/exo question empirical — argon predicts a 336 keV line or nothing, and DEAP-3600 already has the exposure.
-- **[arXiv:2609.17412](https://arxiv.org/abs/2609.17412) (An et al.)** reframed endo/exo as dynamically selected by early-universe $\chi_2\chi_2\leftrightarrow\chi_1\chi_1$ conversion, migrating the whole debate into cosmology.
-- **[arXiv:2609.17267](https://arxiv.org/abs/2609.17267) (Gehrmann et al.)** completed the four-loop non-singlet splitting functions — a reference the field will cite for years.
+- **Athron et al. [arXiv:2609.12914](https://arxiv.org/abs/2609.12914)** dragged the higgsino back from the halo to Run 2: a global fit over 34 searches + 63 measurements, the empirical backdrop the LZ fits had been ignoring ($m_{\tilde\chi_2^0}\gtrsim760$ GeV).
+- **Ghosh et al. [arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** closed the astrophysical escape hatch — no halo modeling rescues the thermal higgsino from solar capture.
+- **Baer et al. [arXiv:2609.15782](https://arxiv.org/abs/2609.15782)** turned argon (DEAP-3600) into a clean endo-vs-exo test: a 336 keV line or nothing.
+- **An et al. [arXiv:2609.17412](https://arxiv.org/abs/2609.17412)** reframed endo/exo as *dynamically selected* by dark-sector cosmology rather than halo kinematics — the pivot's terminus.
+- **Gehrmann et al. [arXiv:2609.17267](https://arxiv.org/abs/2609.17267)** completed four-loop non-singlet splitting functions — a years-long reference.
+- **Benmansour et al. [arXiv:2609.18383](https://arxiv.org/abs/2609.18383)** showed cosmic-ray muons reproduce the Atomki opening-angle peaks (cosmic-to-signal ratio >1) — the strongest challenge yet to the 17 MeV boson, burden now on beam-off studies.
 
 ## Open questions
 
-- **LZ endo vs exo.** Now a concrete experimental question; watch DEAP-3600 argon and multi-isotope mass-reconstruction tests for follow-up. The cosmological-selection picture ([arXiv:2609.17412](https://arxiv.org/abs/2609.17412)) needs cross-checks.
-- **Charm CPV gap.** [arXiv:2609.16219](https://arxiv.org/abs/2609.16219) (Mohamed et al.) enhanced the SM bound via QCD penguins, narrowing the theory–experiment gap — a standing open question that just moved.
-- **$b\to s$ $C_9$ anomaly.** Still alive; a $Z'$-portal fit ([arXiv:2609.15026](https://arxiv.org/abs/2609.15026)) drives $\Delta C_9\simeq-1.2$.
-- **Toponium vs scalar in $t\bar t$.** Top-spin discriminant proposed ([arXiv:2609.11641](https://arxiv.org/abs/2609.11641)); interpretation unresolved.
-- **$\Xi_c^0\to\Xi^-e^+\nu$ discrepancy** ([arXiv:2609.09802](https://arxiv.org/abs/2609.09802)) — theory/lattice vs experiment ~4%, persistent.
-- **Strangeness asymmetry / dimuon-vs-LHC tension** — NNOL dimuon work ([arXiv:2609.17120](https://arxiv.org/abs/2609.17120)) may ease it; $W$+charm data ([arXiv:2609.12800](https://arxiv.org/abs/2609.12800)) favor zero asymmetry.
-- **Dark-sector attacks on cosmological tensions** — dark-QCD viscous radiation for $H_0$ ([arXiv:2609.16120](https://arxiv.org/abs/2609.16120)) and dark equivalence-principle violation for DESI ([arXiv:2609.17423](https://arxiv.org/abs/2609.17423)), both speculative but with real posteriors and residual $3\sigma$.
+- **Endo vs exo LZ reading:** the cleanest tests (argon at DEAP, multi-isotope mass reconstruction) are proposed but unreported. Ge et al. [arXiv:2609.16529](https://arxiv.org/abs/2609.16529) relativistic Xe response functions could shift any fit — watch for uptake.
+- **17 MeV boson:** debunking is not closure; beam-off Atomki data is the deciding follow-up.
+- **Toponium vs scalar:** Bellagroudi et al. [arXiv:2609.11641](https://arxiv.org/abs/2609.11641) offer a top-spin discriminant for the $t\bar t$ resonance interpretation — unresolved.
+- **$b\to s\ell\ell$ / $C_9$:** still alive — Gupta et al. [arXiv:2609.15026](https://arxiv.org/abs/2609.15026) drive $\Delta C_9\simeq-1.2$ via a $Z'$ portal.
+- **Charm CPV:** Mohamed et al. [arXiv:2609.16219](https://arxiv.org/abs/2609.16219) narrow the SM-vs-experiment gap — progress on a standing anomaly.
+- **f0(980) structure:** independent low- and high-energy methods triangulated toward $s\bar s$-dominant (BESIII, Kumano, Lacey) — a rare convergence worth confirming.
+- **Cosmological tensions:** speculative dark-sector fixes (dark QCD for $H_0$, EP-violation for DESI) with residual ~$3\sigma$ — flagged, not settled.
 
 ## Recurring references
 
-- **[arXiv:2609.09385](https://arxiv.org/abs/2609.09385)** — Langhoff: higgsino exiled to $10^5$–$10^6$ GeV.
-- **[arXiv:2609.11833](https://arxiv.org/abs/2609.11833)** — Nguyen et al.: generalized solar-neutrino bound on inelastic DM.
-- **[arXiv:2609.12914](https://arxiv.org/abs/2609.12914)** — Athron et al.: Run 2 electroweakino global fit.
-- **[arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** — Ghosh et al.: astrophysical escape hatch closed.
-- **[arXiv:2609.15782](https://arxiv.org/abs/2609.15782)** — Baer et al.: argon endo/exo test.
-- **[arXiv:2609.17412](https://arxiv.org/abs/2609.17412)** — An et al.: cosmological endo/exo selection.
-- **[arXiv:2609.17267](https://arxiv.org/abs/2609.17267)** — Gehrmann et al.: four-loop non-singlet splitting functions.
+- **[arXiv:2609.11833](https://arxiv.org/abs/2609.11833)** — Nguyen et al., generalized solar-neutrino bound across the inelastic-DM class (the counter-pressure anchor).
+- **[arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** — Ghosh et al., halo escape route closed.
+- **[arXiv:2609.15782](https://arxiv.org/abs/2609.15782)** — Baer et al., argon endo/exo test.
+- **[arXiv:2609.17412](https://arxiv.org/abs/2609.17412)** — An et al., endo/exo fixed by cosmology.
+- **[arXiv:2609.16529](https://arxiv.org/abs/2609.16529)** — Ge et al., relativistic inelastic Xe response (cited two days running).
+- **[arXiv:2609.12914](https://arxiv.org/abs/2609.12914)** — Athron et al., Run 2 electroweakino global fit.
+- **[arXiv:2609.17267](https://arxiv.org/abs/2609.17267)** — Gehrmann et al., four-loop splitting functions.
