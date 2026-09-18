@@ -8,9 +8,14 @@ site:
   # Canonical published URL, trailing slash. RSS needs absolute links, so this is
   # the one place the deployed location is written down.
   base_url: "https://leblanc-lab.github.io/thexsection/"
-  # Per-paper mirror feeds (topics, deep dives) carry only this many newest
-  # items; readers keep what they've already fetched and the paginated page is
-  # the archive. Uncapped, the jets feed had passed 4 MB.
+  # All feeds are paginated: feed.xml, feed-2.xml, feed-3.xml, ... chained via
+  # <atom:link rel="next"> in each page's <channel> (omitted on the last page).
+  # Distinct file paths rather than ?page=N, since GitHub Pages serves static
+  # files and ignores query strings. `digest_feed_items` is the page size for
+  # the main feed.xml (one item per daily issue); `mirror_feed_items` is the
+  # page size for the per-paper topic/deep-dive feeds. Unpaginated, the jets
+  # feed had passed 4 MB in one file.
+  digest_feed_items: 30
   mirror_feed_items: 200
 
 arxiv:

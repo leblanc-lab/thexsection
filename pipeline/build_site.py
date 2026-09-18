@@ -260,8 +260,8 @@ def topic_feed_items(days: list[dict], base: str, slug: str) -> list[dict]:
     return items
 
 
-def digest_feed_items(digests: list[dict], base: str, limit: int = 30) -> list[dict]:
-    """One item per daily issue."""
+def digest_feed_items(digests: list[dict], base: str) -> list[dict]:
+    """One item per daily issue, newest first (pagination slices this, not this)."""
     return [
         {
             "title": d["pretty_date"],
@@ -272,8 +272,35 @@ def digest_feed_items(digests: list[dict], base: str, limit: int = 30) -> list[d
             "author": "",
             "html": feed_html(d["md"]),
         }
-        for d in digests[:limit]
+        for d in digests
     ]
+
+
+def write_feed_pages(
+    render, out_prefix: str, base_url: str, channel: dict, items: list[dict], page_size: int,
+) -> int:
+    """Render `items` as feed.xml, feed-2.xml, feed-3.xml, ... under out_prefix.
+
+    GitHub Pages serves static files and ignores query strings, so pagination
+    can't be `?page=2` — each page is its own file instead. Pages chain forward
+    via `<atom:link rel="next">` (absolute URL), omitted on the last page, so a
+    reader can walk the whole history without knowing the naming scheme
+    up front. `channel` needs `title`/`link`/`description`; `self` and
+    `last_build_date` are filled in per page here.
+    """
+    page_size = max(page_size, 1)
+    pages = [items[i : i + page_size] for i in range(0, len(items), page_size)] or [[]]
+    feed_base = f"{base_url}{out_prefix}"
+    last_build_date = items[0]["pub_date"] if items else ""
+    for i, page_items in enumerate(pages, start=1):
+        filename = "feed.xml" if i == 1 else f"feed-{i}.xml"
+        render(
+            "rss.xml", f"{out_prefix}{filename}",
+            channel={**channel, "self": f"{feed_base}{filename}", "last_build_date": last_build_date},
+            items=page_items,
+            next_href=f"{feed_base}feed-{i + 1}.xml" if i < len(pages) else None,
+        )
+    return len(pages)
 
 
 MEMORY_TIERS = [
@@ -385,22 +412,22 @@ def main() -> int:
     if watchlist_cfg.get("enabled"):
         render("watch.html", "watch.html", posts=watch_posts)
 
-    render(
-        "rss.xml", "feed.xml",
-        channel={
+    write_feed_pages(
+        render, "", base_url,
+        {
             "title": cfg["site"]["title"],
             "link": base_url,
             "description": cfg["site"]["tagline"],
-            "self": f"{base_url}feed.xml",
         },
-        items=digest_feed_items(digests, base_url),
+        digest_feed_items(digests, base_url),
+        int(cfg["site"].get("digest_feed_items", 30)),
     )
 
     # Mirrors: a paper stream rendered as its own page, in its own theme, plus a
     # feed with one item per paper. Any watched topic flagged `page: true` is one;
     # so is the digests' deep-dive section when `deep_dive.page` is set.
     topic_pages = []
-    feed_limit = int(cfg["site"].get("mirror_feed_items", 200))
+    mirror_page_size = int(cfg["site"].get("mirror_feed_items", 200))
 
     def mirror(topic: dict, days: list[dict]) -> None:
         slug, name = topic["slug"], topic["name"]
@@ -425,20 +452,19 @@ def main() -> int:
                 topic=topic, days=by_year.get(year, []), years=years, year=year,
                 totals=totals, root="../",
             )
-        items = topic_feed_items(days, base_url, slug)[:feed_limit]
-        render(
-            "rss.xml", f"{slug}/feed.xml",
-            channel={
+        items = topic_feed_items(days, base_url, slug)
+        page_count = write_feed_pages(
+            render, f"{slug}/", base_url,
+            {
                 "title": f"{name} — {cfg['site']['title']}",
                 "link": f"{base_url}{slug}/",
                 "description": topic.get("tagline", f"{name} papers from arXiv, summarized daily."),
-                "self": f"{base_url}{slug}/feed.xml",
             },
-            items=items,
+            items, mirror_page_size,
         )
         topic_pages.append(
             f"{slug} ({len(days)} days, {totals['papers']} papers, "
-            f"{len(years)} year pages, {len(items)} in feed)"
+            f"{len(years)} year pages, {len(items)} in feed across {page_count} page(s))"
         )
 
     if watchlist_cfg.get("enabled"):

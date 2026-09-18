@@ -163,13 +163,22 @@ and skipped rather than emitted as a garbage item.
 
 ## Feeds
 
-`site/feed.xml` carries the last 30 daily issues, one item each. Every mirror
-(watched topic or the deep dives) gets `site/<slug>/feed.xml` with **one item
-per paper**, keyed on a stable `arxiv:<id>` guid and capped at the newest
-`site.mirror_feed_items` (200); items link into the year pages. Currently:
-`muon/`, `jets/`, `optimal-transport/`, `authors/`, `deep-dives/`. Feed bodies get the `latex_to_unicode` treatment from
-`pipeline/substack.py` — readers don't run KaTeX, so the math is flattened to
-Unicode rather than left as raw `\(…\)`.
+`site/feed.xml` carries the daily issues, one item each. Every mirror (watched
+topic or the deep dives) gets `site/<slug>/feed.xml` with **one item per
+paper**, keyed on a stable `arxiv:<id>` guid; items link into the year pages.
+Currently: `muon/`, `jets/`, `optimal-transport/`, `authors/`, `deep-dives/`.
+Feed bodies get the `latex_to_unicode` treatment from `pipeline/substack.py` —
+readers don't run KaTeX, so the math is flattened to Unicode rather than left
+as raw `\(…\)`.
+
+All feeds are paginated rather than truncated: newest items land on
+`feed.xml`, older ones spill to `feed-2.xml`, `feed-3.xml`, etc., with
+`site.digest_feed_items` (30) / `site.mirror_feed_items` (200) items per page.
+Pages chain forward with `<atom:link rel="next">` in the `<channel>`
+(absolute URL, omitted on the last page) so a reader can walk the full
+archive without knowing the naming scheme up front. It's distinct file paths
+rather than `?page=2` because GitHub Pages serves static files and ignores
+query strings.
 
 Both feeds need absolute URLs, so `site.base_url` in `config.yaml` is the one
 place the deployed location is recorded; change it if the site moves.
