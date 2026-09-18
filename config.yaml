@@ -271,11 +271,17 @@ watchlist:
       slug: optimal-transport
       theme: default
       tagline: "Moving earth between distributions"
-      keywords: ["optimal transport", "optimal-transport", "wasserstein", "earth mover",
-                 "energy mover", "sinkhorn", "Monge-Kantorovich", "Kantorovich distance",
-                 "Kantorovich-Rubinstein", "Monge problem", "Monge map", "transport map",
-                 "transport plan", "Schrödinger bridge", "Schrodinger bridge",
-                 "unbalanced transport", "Gromov"]
+      # "optimal transport" is word-bounded, so it doesn't cover "optimal
+      # transportation" (the -ation suffix breaks the boundary) — that's a real
+      # phrasing some papers use (e.g. 2505.13063). Bare "Monge"/"Kantorovich"
+      # were tried and dropped: they pull in unrelated GR "Monge patch" and
+      # Newton-Kantorovich numerical-method papers.
+      keywords: ["optimal transport", "optimal transportation", "optimal-transport",
+                 "wasserstein", "earth mover", "energy mover", "sinkhorn",
+                 "Monge-Kantorovich", "Kantorovich distance", "Kantorovich-Rubinstein",
+                 "Monge problem", "Monge map", "transport map", "transport plan",
+                 "Schrödinger bridge", "Schrodinger bridge", "unbalanced transport",
+                 "Gromov"]
     # People whose new papers are worth a look regardless of topic. Extend freely.
     - name: "Authors to watch"
       page: true
