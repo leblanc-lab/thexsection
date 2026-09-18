@@ -34,817 +34,76 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Thursday, September 17, 2026</h1>
+  <h1 class="issue-date">Friday, September 18, 2026</h1>
   <div class="meta">
-    <span class="count">49 papers read</span>
-    <span class="chip">Precision QCD and structure</span><span class="chip">The f0(980) under a microscope</span><span class="chip">LZ evasion goes cosmological</span><span class="chip">ML in event reconstruction</span>
+    <span class="count">56 papers read</span>
+    <span class="chip">Nucleon structure and GPDs</span><span class="chip">HEP statistics ecosystem</span><span class="chip">Composite-Higgs resonances and portals</span><span class="chip">Hadron spectroscopy convergence</span>
   </div>
-  <h2 id="the-17-mev-boson-meets-cosmic-muons">The 17 MeV boson meets cosmic muons</h2>
-<p>The day&rsquo;s sharpest single paper is a debunking: Benmansour et al. <a href="https://arxiv.org/abs/2609.18383">arXiv:2609.18383</a> show that Geant4 simulations of cosmic-ray muon coincidences in the Atomki five- and six-arm spectrometers reproduce the very opening-angle peaks — near 140° in the ⁸Be window, 120° in the ⁴He window — long read as evidence for a 17 MeV boson, with a cosmic-to-signal ratio above unity. It doesn&rsquo;t close the case, but it puts the burden squarely back on the beam-off studies. Around it the weight sits where it did yesterday, in precision QCD and nucleon structure, plus a genuine f0(980) convergence and a quiet continuation of the LZ story — now down to three papers, all cosmological escape routes rather than fits.</p>
+  <h2 id="structure-again-and-a-direct-higgs-width">Structure again, and a direct Higgs width</h2>
+<p>The day&rsquo;s weight sits where it has for three days running — nucleon structure and precision QCD — but the sharpest single result is elsewhere: ATLAS <a href="https://arxiv.org/abs/2609.19948">arXiv:2609.19948</a> sets a direct, coupling-independent bound <span class="arithmatex">\(\Gamma_H&lt;307\)</span> MeV from on-shell <span class="arithmatex">\(H\to\gamma\gamma\)</span> interference, a genuinely complementary handle to the off-shell method. Underneath, a large GPD/structure stack and a distinct cluster of statistical-inference infrastructure papers — the autodiff/tooling thread the memory has tracked all season, now surfacing as RooFit-AD, JAX interoperability, and HS3 serialization. LZ has thinned to a single follow-up. Collider BSM shows up as composite-Higgs resonance phenomenology rather than anomaly-chasing.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="precision-qcd-and-structure">Precision QCD and structure</h3>
-<p>A dense fixed-order/structure day. Gauld et al. <a href="https://arxiv.org/abs/2609.17812">arXiv:2609.17812</a> deliver bottom-flavoured jets through <span class="arithmatex">\(b\bar b\)</span> production at NNLO+PS with full mass effects, confronting ATLAS/CMS/LHCb and pinning the jet-algorithm differences to <span class="arithmatex">\(g\to b\bar b\)</span> splittings. Chen et al. <a href="https://arxiv.org/abs/2609.18828">arXiv:2609.18828</a> complete the NLO electroweak corrections to <span class="arithmatex">\(gg\to\gamma\gamma\)</span> — sub-percent inclusive but −10% in the tails, with a dip-bump at the Higgs threshold. On the formal side, Skands <a href="https://arxiv.org/abs/2609.18102">arXiv:2609.18102</a> proposes &ldquo;Cat&rsquo;s Cradle&rdquo; diagrams as an intermediate power counting for resolved jet substructure, Rainaldi <a href="https://arxiv.org/abs/2609.18627">arXiv:2609.18627</a> recasts DGLAP scheme transformations as a gauge group, and Prygarin et al. <a href="https://arxiv.org/abs/2609.18269">arXiv:2609.18269</a> give a Lévy-process reading of the forward BFKL kernel. This extends yesterday&rsquo;s four-loop/splitting-function center of gravity.</p>
-<h3 id="the-f0980-under-a-microscope">The f0(980) under a microscope</h3>
-<p>Three independent angles on the same scalar, a day after BESIII&rsquo;s <span class="arithmatex">\(D_s\to f_0(980)\)</span> favored an <span class="arithmatex">\(s\bar s\)</span>-dominant picture. Kumano <a href="https://arxiv.org/abs/2609.17974">arXiv:2609.17974</a> argues from Belle fragmentation functions that f0(980) looks like <span class="arithmatex">\(q\bar q\)</span> (<span class="arithmatex">\(s\bar s\)</span>) at high energy even if it is <span class="arithmatex">\(K\bar K\)</span>-molecular at low energy — structure that depends on the probing scale. Lacey <a href="https://arxiv.org/abs/2609.17765">arXiv:2609.17765</a> reaches a compatible conclusion via anisotropy-response scaling in p+Pb, finding a single-meson-like response distinct from the molecular benchmark. Zheng et al. <a href="https://arxiv.org/abs/2609.18890">arXiv:2609.18890</a> work the heavier f0(1500) in rare <span class="arithmatex">\(B_s\)</span> decays. A rare case of low- and high-energy methods triangulating one state.</p>
-<h3 id="lz-evasion-goes-cosmological">LZ evasion goes cosmological</h3>
-<p>The recoil traffic is a trickle, and the surviving papers all target the IceCube/solar-capture bound. Nagata et al. <a href="https://arxiv.org/abs/2609.18564">arXiv:2609.18564</a> set the relic abundance by a primordial asymmetry rather than freeze-out, so there is no antiparticle population to annihilate in the Sun — the cleanest structural escape yet. Xing <a href="https://arxiv.org/abs/2609.17935">arXiv:2609.17935</a> produces the excited state by galactic self-scattering and detects it exothermically; Ge et al. <a href="https://arxiv.org/abs/2609.16529">arXiv:2609.16529</a> supply relativistic inelastic Xe response functions that could shift any of these fits. The falsifiability pivot the memory tracked has fully given way to model cosmology.</p>
-<h3 id="ml-in-event-reconstruction">ML in event reconstruction</h3>
-<p>The tooling wave keeps colonizing reconstruction. Mao et al. <a href="https://arxiv.org/abs/2609.18928">arXiv:2609.18928</a> introduce VyPER, a hypergraph-plus-diffusion framework doing jet assignment and neutrino kinematics jointly; Lazarovits et al. <a href="https://arxiv.org/abs/2609.16276">arXiv:2609.16276</a> offer PSICHE, probabilistic clustering with learned variable jet sizes in space and time. Two Tsoi et al. papers push self-supervised pre-training — VICReg-based mass regression <a href="https://arxiv.org/abs/2609.17726">arXiv:2609.17726</a> and augmentation-free EMD pairing <a href="https://arxiv.org/abs/2609.17738">arXiv:2609.17738</a> — and Benne et al. <a href="https://arxiv.org/abs/2609.17659">arXiv:2609.17659</a> use domain adaptation to kill background sculpting in weakly-supervised anomaly searches.</p>
+<h3 id="nucleon-structure-and-gpds">Nucleon structure and GPDs</h3>
+<p>A dense structure day anchored by two references: Guo et al.&rsquo;s comprehensive GPD review <a href="https://arxiv.org/abs/2609.19544">arXiv:2609.19544</a>, the first in two decades, and Su et al. <a href="https://arxiv.org/abs/2609.20545">arXiv:2609.20545</a>, who show the large-momentum expansion can be relaxed near <span class="arithmatex">\(x=\pm\xi\)</span>, opening the DA-like region to the lattice and recovering the expected partonic threshold kink for the first time. Around them: Melnitchouk&rsquo;s higher-twist overview <a href="https://arxiv.org/abs/2609.19620">arXiv:2609.19620</a>, Tezgin&rsquo;s invertible Breit-frame/IMF map for spin-1 hadrons <a href="https://arxiv.org/abs/2609.20714">arXiv:2609.20714</a>, a Drell-Yan angular-coefficient comparison favoring TMD at low <span class="arithmatex">\(Q_T\)</span> <a href="https://arxiv.org/abs/2609.20362">arXiv:2609.20362</a>, and a variational-quantum-circuit representation of pion FFs <a href="https://arxiv.org/abs/2609.20557">arXiv:2609.20557</a>. This extends the four-loop/DIS center of gravity from the past two days.</p>
+<h3 id="the-hep-statistics-ecosystem">The HEP statistics ecosystem</h3>
+<p>A coordinated cluster on statistical infrastructure. Galli <a href="https://arxiv.org/abs/2609.19761">arXiv:2609.19761</a> and the IRIS-HEP blueprint white paper <a href="https://arxiv.org/abs/2609.19992">arXiv:2609.19992</a> lay out the migration from RooFit/RooStats toward autodiff, JAX interoperability, and HS3; Fackeldey et al. <a href="https://arxiv.org/abs/2609.19753">arXiv:2609.19753</a> integrate CMS&rsquo;s Combine into the PyHEP ecosystem via the Analysis Grand Challenge. The conceptual standout is Dorigo <a href="https://arxiv.org/abs/2609.20007">arXiv:2609.20007</a>, who shows a covariance matrix can change not just a fit but the likelihood-ratio <em>ordering</em> — ~7.6% of experiments flip their confidence decision even under exact calibration. This is the tooling wave from August maturing into the statistics layer.</p>
+<h3 id="composite-higgs-resonances-and-portals">Composite-Higgs resonances and portals</h3>
+<p>Collider BSM today is model-building, not excess-fitting. Kunkel <a href="https://arxiv.org/abs/2609.19918">arXiv:2609.19918</a> and Caliri <a href="https://arxiv.org/abs/2609.19919">arXiv:2609.19919</a> work the exotic spectrum of gauge-fermionic composite Higgs — colour-sextet baryons (<span class="arithmatex">\(\lesssim2.64\)</span> TeV) and spin-1 resonances down to 1.5 TeV. Detering et al. <a href="https://arxiv.org/abs/2609.19258">arXiv:2609.19258</a> show HL-LHC + FCC-ee + FCC-hh can in principle distinguish marginal from higher-dimensional Higgs portals above threshold, and Dey et al. <a href="https://arxiv.org/abs/2609.19305">arXiv:2609.19305</a> contrast SUSY and compositeness benchmarks in resonant <span class="arithmatex">\(b\bar b\tau\tau\)</span> di-Higgs. The EFT-and-future-collider framing runs throughout.</p>
+<h3 id="hadron-spectroscopy-converging">Hadron spectroscopy converging</h3>
+<p>Several independent handles on the same states. BESIII observes double-<span class="arithmatex">\(s\bar s\)</span> production at 40% of the inclusive <span class="arithmatex">\(\phi\)</span> rate <a href="https://arxiv.org/abs/2609.20154">arXiv:2609.20154</a>, in line with the double-<span class="arithmatex">\(c\bar c\)</span> surprise and a challenge to hadronization theory. Molecular readings recur — <span class="arithmatex">\(P_c\)</span> pentaquarks <a href="https://arxiv.org/abs/2609.19749">arXiv:2609.19749</a>, <span class="arithmatex">\(\Omega(2012)\)</span> line shapes <a href="https://arxiv.org/abs/2609.20654">arXiv:2609.20654</a> — while Peng et al. <a href="https://arxiv.org/abs/2609.19673">arXiv:2609.19673</a> argue the <span class="arithmatex">\(\psi(4160)\)</span> mass shift is a coherent-interference artifact, not a real shift.</p>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.18383">arXiv:2609.18383</a></strong> — Benmansour et al.: cosmic muons reproduce the Atomki opening-angle peaks at cosmic-to-signal ratio above unity; the strongest challenge yet to the 17 MeV boson.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.18564">arXiv:2609.18564</a></strong> — Nagata et al.: asymmetric inelastic DM removes the IceCube constraint by construction, the cleanest LZ escape route.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.17812">arXiv:2609.17812</a></strong> — Gauld et al.: <span class="arithmatex">\(b\)</span>-jets at NNLO+PS with full mass effects, resolving jet-flavour-algorithm differences against LHC data.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.17974">arXiv:2609.17974</a></strong> — Kumano: f0(980) looks <span class="arithmatex">\(s\bar s\)</span> at high energy, molecular at low — scale-dependent hadron structure, testable in fragmentation.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.18892">arXiv:2609.18892</a></strong> — Du et al.: transverse tau spin correlations gain a factor of ~26 on the weak EDM at FCC-ee/CEPC, three orders beyond ALEPH.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.19948">arXiv:2609.19948</a></strong> — ATLAS&rsquo;s direct <span class="arithmatex">\(\Gamma_H&lt;307\)</span> MeV from <span class="arithmatex">\(H\to\gamma\gamma\)</span> interference; no coupling assumptions, complementary to off-shell bounds.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20545">arXiv:2609.20545</a></strong> — Su et al. extend lattice GPD computability into the <span class="arithmatex">\(x\sim\pm\xi\)</span> region and see the threshold kink for the first time.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20154">arXiv:2609.20154</a></strong> — BESIII&rsquo;s double-<span class="arithmatex">\(s\bar s\)</span> observation; a clean hadronization number that echoes the double-charm puzzle.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20007">arXiv:2609.20007</a></strong> — Dorigo: coverage is not ordering. A foundational warning about covariance-as-model, with a concrete failure rate.</li>
 </ul>
 <h2 id="from-the-community">From the community</h2>
-<p>The ESPPU Electroweak WG documents its collider-comparison assumptions and theory-uncertainty treatment for the 2026 Physics Briefing Book (de Blas et al. <strong><a href="https://arxiv.org/abs/2609.18607">arXiv:2609.18607</a></strong>) — the reproducibility backbone behind the future-collider SMEFT fits. And Cabrera et al. <strong><a href="https://arxiv.org/abs/2609.18799">arXiv:2609.18799</a></strong> <em>After 60 years, here comes the Sun</em> argue that reactor-pinned oscillation parameters finally let solar neutrinos probe the Sun itself, if the field builds detectors that can breach the ¹⁴C wall on the pp flux.</p>
+<p>Benslama <strong><a href="https://arxiv.org/abs/2609.19658">arXiv:2609.19658</a></strong> <em>Proposing, never assigning: fair allocation of control-room shifts</em> — Benslama (physics.ins-det) formalizes shift scheduling as ranked-wish allocation under institutional quotas, with an independent rule-checker — a rare, concrete piece of collaboration plumbing. And the IRIS-HEP statistical blueprint <strong><a href="https://arxiv.org/abs/2609.19992">arXiv:2609.19992</a></strong> — Feickert et al. (hep-ex) sets the community&rsquo;s inference-tooling agenda through 2026.</p>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.18906">arXiv:2609.18906</a></strong> <em>New Dynamics (?) of <span class="arithmatex">\(J/\psi J/\psi\)</span> and <span class="arithmatex">\(\Upsilon\Upsilon\)</span> families from QCD Laplace sum rules</em> — Narison (hep-ph) — reads X(6600) as a molecule ground state and X(6900)/X(7100) as radial mixtures.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.17952">arXiv:2609.17952</a></strong> <em><span class="arithmatex">\(D^{(*)}\Delta\)</span> interactions and the molecular <span class="arithmatex">\(\Sigma_c(3200)^0\)</span></em> — Rui Chen et al. (hep-ph) — a one-boson-exchange molecular reading of LHCb&rsquo;s new charmed baryon, with predicted partners.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20448">arXiv:2609.20448</a></strong> <em>A comprehensive theory framework for <span class="arithmatex">\(\delta_C\)</span> in superallowed beta decays</em> — Seng (nucl-th) — argues the standard isospin-breaking split violates nucleon-basis independence, bearing on <span class="arithmatex">\(|V_{ud}|\)</span> and Cabibbo unitarity.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20500">arXiv:2609.20500</a></strong> <em>Particle Physics Driven by Quantum Technology</em> — Bloch et al. (hep-ph) — a review of quantum simulation and sensing for BSM searches.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.20135">arXiv:2609.20135</a></strong> <em>Heterogeneous vectorized tracking for the HL-LHC</em> — Vourliotis for CMS (hep-ex) — the Phase-2 GPU+CPU tracking baseline.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<p>_</p>
-<p>k
-t
-{}<em>{k</em>{t}}
- grooming algorithm at LHCb</p>
-<p>.</p>
-<p>External Links: 
-2503.19969</p>
-<p>Cited by: 
-§1
-,</p>
-<p>§5
-.</p>
-<p>[15]</p>
-<p>F. Abe 
-et al.
- (1993)</p>
-<p>A Measurement of the 
-b
-b
- quark cross-section 
-p
-​
-p
-¯
-p\bar{p}
- collisions at 
-s
-=
-1.8
-\sqrt{s}=1.8
- TeV
-.</p>
-<p>Phys. Rev. Lett.</p>
-<p>71
-, 
-pp. 500–504
-.</p>
-<p>External Links: 
-Document</p>
-<p>Cited by: 
-§1
-.</p>
-<p>[16]</p>
-<p>S. Abachi 
-et al.
- (1993)</p>
-<p>Inclusive 
-μ
-\mu
- and 
-b
-b
- quark production cross-sections in 
-p
-​
-p
-¯
-p\bar{p}
- collisions at 
-s
-=
-1.8
-\sqrt{s}=1.8
- TeV
-.</p>
-<p>Phys. Rev. Lett.</p>
-<p>71
-, 
-pp. 3421–3425
-.</p>
-<p>External Links: 
-Document</p>
-<p>Cited by: 
-§1
-.</p>
-<p>[17]</p>
-<p>B. B. Abelev 
-et al.
- (2012)</p>
-<p>Measurement of the inclusive differential jet cross section in 
-p
-​
-p
-pp
- collisions at 
-s
-=
-2.76
-\sqrt{s}=2.76
- TeV
-.</p>
-<p>Phys. Lett. B</p>
-<p>722
-, 
-pp. 262–272
-.</p>
-<p>External Links: 
-1301.3475
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§1
-.</p>
-<p>[18]</p>
-<p>C. Albajar 
-et al.
- (1988)</p>
-<p>Beauty production at the CERN 
-p
-​
-p
-pp
- collider
-.</p>
-<p>Phys. Lett. B</p>
-<p>213
-, 
-pp. 405–412
-.</p>
-<p>External Links: 
-Document</p>
-<p>Cited by: 
-§1
-.</p>
-<p>[19]</p>
-<p>J. R. Andersen 
-et al.
- (2024)</p>
-<p>Les Houches 2023: Physics at TeV Colliders: Standard Model Working Group Report
-.
-In 
-Physics of the TeV Scale and Beyond the Standard Model: Intensifying the Quest for New Physics
-,</p>
-<p>External Links: 
-2406.00708</p>
-<p>Cited by: 
-§4
-.</p>
-<p>[20]</p>
-<p>J. R. Andersen, T. Hapola, A. Maier, and J. M. Smillie
- (2016)</p>
-<p>Higgs boson plus dijets: higher order corrections
-.</p>
-<p>JHEP</p>
-<p>09
-, 
-pp. 065
-.</p>
-<p>External Links: 
-1606.01988
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§1
-.</p>
-<p>[21]</p>
-<p>S. Alioli, P. Nason, C. Oleari, and E. Re
- (2010)</p>
-<p>A general framework for implementing NLO calculations in shower Monte Carlo programs: the POWHEG BOX
-.</p>
-<p>JHEP</p>
-<p>06
-, 
-pp. 043
-.</p>
-<p>External Links: 
-1002.2581
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§2
-.</p>
-<p>[22]</p>
-<p>J. Alwall, R. Frederix, S. Frixione, V. Hirschi, F. Maltoni, O. Mattelaer, H. S. Shao, T. Stelzer, P. Torrielli, and M. Zaro
- (2014)</p>
-<p>The automated computation of tree-level and next-to-leading order differential cross sections, and their matching to parton shower simulations
-.</p>
-<p>JHEP</p>
-<p>07
-, 
-pp. 079
-.</p>
-<p>External Links: 
-1405.0301
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§1
-,</p>
-<p>§5
-.</p>
-<p>[23]</p>
-<p>R. D. Ball 
-et al.
- (2017)</p>
-<p>Parton distributions from high-precision collider data
-.</p>
-<p>Eur. Phys. J. C</p>
-<p>77
- (
-10
-), 
-pp. 663
-.</p>
-<p>External Links: 
-1706.00428
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§4
-.</p>
-<p>[24]</p>
-<p>A. Banfi, G. P. Salam, and G. Zanderighi
- (2006)</p>
-<p>Infrared safe definition of jet flavor
-.</p>
-<p>Eur. Phys. J. C</p>
-<p>47
-, 
-pp. 113–124
-.</p>
-<p>External Links: 
-hep-ph/0601139
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§5
-,</p>
-<p>§A.1
-.</p>
-<p>[25]</p>
-<p>R. Gauld, A. Gehrmann-De Ridder, E. W. N. Glover, A. Huss, and I. Majer
- (2020)</p>
-<p>Predictions for 
-Z
-Z
--Boson Production in Association with a b-Jet at 
-𝒪
-⁡
-(
-α
-s
-3
-)
-\mathcal{O}(\alpha_{s}^{3})
-.</p>
-<p>Phys. Rev. Lett.</p>
-<p>125
- (
-22
-), 
-pp. 222002
-.</p>
-<p>External Links: 
-2005.03016
-,</p>
-<p>Document</p>
-<p>Cited by: 
-§A.1
-,</p>
-<p>§A.1
-,</p>
-<p>§A
-.</p>
-<p>[26] </p>
-<p>… (truncated) …</p>
-<h1 id="paper-arxiv260917974">Paper <a href="https://arxiv.org/abs/2609.17974">arXiv:2609.17974</a></h1>
-<p>Title: Structure of <span class="arithmatex">\(\Lambda(1405)\)</span> and <span class="arithmatex">\(f_0(980)\)</span> shown in fragmentation functions</p>
-<p>FULL TEXT (from arXiv HTML rendering):
-Structure of 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- shown in fragmentation functions</p>
-<p>S. Kumano</p>
-<p>Email: 
-shunzo.kumano@ozyegin.edu.tr</p>
-<p>Affiliation: 
-Department of Natural and Mathematical Sciences, Faculty of Engineering, Özyeğin University,
-Çekmeköy, Istanbul 34794, Türkiye</p>
-<p>Affiliation: 
-KEK Theory Center, Institute of Particle and Nuclear Studies, KEK,
-and J-PARC Branch, KEK Theory Center,
-Institute of Particle and Nuclear Studies, KEK,
-203-1, Shirakata, Tokai, Ibaraki, 319-1106, Japan</p>
-<p>September 16, 2026</p>
-<p>Abstract</p>
-<p>The internal quark-gluon configuration of the exotic hadron candidates 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is investigated by using their fragmentation functions. 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- is one of the most probable candidates for an exotic hadron with an internal structure of a meson-baryon molecule or a five-quark state, and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- could be a tetraquark, a 
-K
-​
-K
-¯
-K\bar{K}
- molecule, or an ordinary quark-antiquark meson. There were experimental indications that the second moment of the 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- fragmentation function has an anomalously small value in comparison with the ordinary hadrons from the electron-positron annihilation measurements. We explain this fact by the meson-baryon molecular configuration or the compact five-quark state, and this proposal opened a field of exotic-hadron studies by the fragmentation functions. The details of these fragmentation-function studies are explained in this proceedings for 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
-, together with the studies of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
-. These fragmentation functions can be measured at various facilities in the near future including the LHC, Belle II, EIC, and EicC, so that the internal structure of these particles will be clarified.</p>
-<p>1 
-Introduction</p>
-<p>Hadron mass is one of the fundamental quantities in physics; however, it has not been understood yet at the level of elementary particle physics 
-[
-1
-, 
-2
-]
-. There are two mass systems in our universe. One is the Higgs mass system for quarks and leptons, and the other is the hadron mass system for protons, neutrons, and other hadrons. The Higgs mechanism explains only a few percent of the nucleon mass, and the remaining part comes from the strong interaction. Currently, the origin of hadron masses is understood by the trace anomaly of the energy-momentum tensor and the quark condensate 
-[
-1
-, 
-2
-]
-. However, this explanation is not complete, so that the origins of hadron masses and hadron spins are the topics of current investigations both theoretically and experimentally 
-[
-3
-]
-. In particular, the internal structure of exotic hadron candidates, such as 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
-, is one of the most interesting topics because their structure cannot be explained by the ordinary quark model.</p>
-<p>The fragmentation function indicates a probability of finding a hadron from a parton (quark or gluon), and it is expressed by the variable 
-z
-z
-, which is the energy fraction of the hadron from the parton. The fragmentation functions are used generally for explaining hadron-production cross sections in high-energy reactions, and they are also valuable for finding the internal structure of exotic hadron candidates. In this proceedings, the internal structure of 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is investigated by using their fragmentation functions.</p>
-<p>2 
-Determination of fragmentation functions</p>
-<p>The fragmentation functions are determined from the experimental data of hadron-production cross sections, mainly by the electron-positron annihilation processes 
-e
-+
-​
-e
-−
-→
-h
-​
-X
-e^{+}e^{-}\to hX
-. The fragmentation functions are then obtained by the global analysis of these experimental data, in the same way used for determining the parton distribution functions.</p>
-<p>The fragmentation function is expressed by two terms, one is the singlet fragmentation function 
-D
-S
-D_{S}
- and the other is the non-singlet fragmentation function 
-D
-N
-​
-S
-D_{NS}
-, in terms of the flavor-singlet and non-singlet distributions. Here, the singlet and non-singlet fragmentation functions are given by the quark and antiquark fragmentation functions.</p>
-<p>The 
-z
-z
- dependence of the fragmentation function is generally parametrized by the following form at the initial scale 
-Q
-0
-2
-Q_{0}^{2}
-:</p>
-<p>D
-i
-h
-​
-(
-z
-,
-Q
-0
-2
-)
-=
-N
-i
-​
-z
-α
-i
-​
-(
-1
-−
-z
-)
-β
-i
-,
-\displaystyle D_{i}^{h}(z,Q_{0}^{2})=N_{i}\,z^{\alpha_{i}}(1-z)^{\beta_{i}},</p>
-<p>(1)</p>
-<p>where 
-N
-i
-N_{i}
- is the normalization constant, and 
-α
-i
-\alpha_{i}
- and 
-β
-i
-\beta_{i}
- are the parameters to be determined by the experimental data. The subscript 
-i
-i
- indicates the quark flavor or gluon. The fragmentation functions are evolved from the initial scale 
-Q
-0
-2
-Q_{0}^{2}
- to the experimental scale 
-Q
-2
-Q^{2}
- by the DGLAP evolution equations 
-[
-4
-]
-.</p>
-<p>The second moment of the fragmentation function is defined by</p>
-<p>⟨
-z
-⟩
-=
-∫
-0
-1
-𝑑
-z
-​
-z
-​
-D
-​
-(
-z
-)
-∫
-0
-1
-𝑑
-z
-​
-D
-​
-(
-z
-)
-.
-\displaystyle\langle z\rangle=\frac{\int_{0}^{1}dz\,z\,D(z)}{\int_{0}^{1}dz\,D(z)}.</p>
-<p>(2)</p>
-<p>This quantity indicates the average energy fraction of the hadron from the parton. The second moment is a useful quantity for investigating the internal structure of hadrons.</p>
-<p>3 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)</p>
-<p>The 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- is a hyperon with spin-parity 
-J
-P
-=
-1
-/
-2
-−
-J^{P}=1/2^{-}
-, and it is one of the most probable candidates for an exotic hadron. The 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- is considered to be a meson-baryon molecular state of 
-N
-​
-K
-¯
-N\bar{K}
- or a compact five-quark state. The internal structure of 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- is investigated by using the fragmentation functions.</p>
-<p>The fragmentation function of 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- was determined from the electron-positron annihilation data. There were experimental indications that the second moment of the 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- fragmentation function has an anomalously small value in comparison with the ordinary hadrons 
-[
-5
-]
-. This fact is explained by the meson-baryon molecular configuration or the compact five-quark state.</p>
-<p>The 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is a scalar meson with spin-parity 
-J
-P
-=
-0
-+
-J^{P}=0^{+}
-. The internal structure of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is not well understood, and it is considered to be a tetraquark, a 
-K
-​
-K
-¯
-K\bar{K}
- molecule, or an ordinary quark-antiquark meson. The internal structure of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is investigated by using the fragmentation functions.</p>
-<p>The fragmentation functions of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- were determined from the Belle experimental data 
-[
-6
-]
-. The second moment of the 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- fragmentation function was obtained, and the internal structure of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is discussed.</p>
-<p>4 
-Summary</p>
-<p>The internal structure of exotic hadron candidates 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- and 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- was investigated by using their fragmentation functions. The second moment of the 
-Λ
-​
-(
-1405
-)
-\Lambda(1405)
- fragmentation function has an anomalously small value in comparison with the ordinary hadrons, and this fact is explained by the meson-baryon molecular configuration or the compact five-quark state. The internal structure of 
-f
-0
-​
-(
-980
-)
-f_{0}(980)
- is also investigated by using the fragmentation functions.</p>
-<p>These fragmentation functions can be measured at various facilities in the near future including the LHC, Belle II, EIC, and EicC, so that the internal structure of these particles will be clarified.</p>
-<p>Acknowledgments</p>
-<p>This work was partially supported by the Japan Society for the Promotion of Science (JSPS) Grant-in-Aid for Scientific Research (KAKENHI) Grant Number 19K03830.</p>
-<h1 id="paper-arxiv260918892">Paper <a href="https://arxiv.org/abs/2609.18892">arXiv:2609.18892</a></h1>
-<p>Title: Probing tau weak dipole couplings via transverse spin correlations at the CEPC/FCC-ee</p>
-<p>FULL TEXT (from arXiv HTML rendering):
-Only the abstract was available for this paper.</p>
-<p>Abstract:  We propose a novel strategy to probe the tau weak dipole couplings—the weak
-anomalous magnetic dipole moment
-a
-τ
-W
-a_{\tau}^{W}
-and the weak electric dipole
-moment
-d
-τ
-W
-d_{\tau}^{W}
-—via transverse spin correlations in
-e
-+
-e
-−
-→
-Z
-→
-τ
-+
-τ
-−
-e^{+}e^{-}\to Z\to\tau^{+}\tau^{-}
-at future lepton colliders. Focusing on the transverse and normal polarization
-components, we construct dedicated asymmetry observables that isolate the
-dipole-induced effects with enhanced sensitivity. Using semileptonic
-tau-decay channels, we show that the transverse spin correlations offer
-markedly improved precision, with the achievable sensitivity reaching the
-level of
-∼
-10
-−
-4
-\sim 10^{-4}
-for
-a
-τ
-W
-a_{\tau}^{W}
-and
-∼
-10
-−
-20</p>
-<p>e
-​</p>
-<p>cm
-\sim 10^{-20}\,e\,\text{cm}
-for the CP-violating
-d
-τ
-W
-d_{\tau}^{W}
-at the
-CEPC/FCC-ee. This corresponds to nearly three orders of magnitude improvement
-over existing ALEPH limits, providing a powerful and complementary probe of
-new physics in the tau sector.</p>
-<p>Note: The digest mentioned this as <a href="https://arxiv.org/abs/2609.18892">arXiv:2609.18892</a> (Du et al.) with a factor ~26 gain on the weak EDM. The abstract here is what was retrievable.</p>
+<h3 id="arxiv260919948-constraints-on-the-higgs-boson-total-width-from-on-shell-signalbackground-interference-in-htogammagamma-atlas-collaboration"><a href="https://arxiv.org/abs/2609.19948">arXiv:2609.19948</a> — Constraints on the Higgs boson total width from on-shell signal–background interference in <span class="arithmatex">\(H\to\gamma\gamma\)</span> (ATLAS Collaboration)</h3>
+<p>ATLAS extracts a direct, coupling-independent bound on <span class="arithmatex">\(\Gamma_H\)</span> from the interference between the resonant <span class="arithmatex">\(gg\to H\to\gamma\gamma\)</span> amplitude and the continuum diphoton background, which distorts the <span class="arithmatex">\(m_{\gamma\gamma}\)</span> lineshape — an antisymmetric peak shift (~<span class="arithmatex">\(-70\)</span> MeV at the SM width) plus a ~<span class="arithmatex">\(-1.7\%\)</span> yield reduction, both scaling as <span class="arithmatex">\(\sqrt{\mu\,\Gamma_H/\Gamma_H^{\rm SM}}\)</span>. Using the full 140 fb<span class="arithmatex">\(^{-1}\)</span> Run 2 dataset in two <span class="arithmatex">\(p_T^{\gamma\gamma}\)</span> categories, with <span class="arithmatex">\(m_H\)</span> externally constrained from <span class="arithmatex">\(H\to ZZ^*\to4\ell\)</span> and <span class="arithmatex">\(\mu\)</span> profiled, they set an observed (expected) 95% CL limit <span class="arithmatex">\(\Gamma_H&lt;307\,(258)\)</span> MeV, ~75× the SM value; the best fit is <span class="arithmatex">\(\hat\Gamma_H=13^{+75}_{-13}\)</span> MeV and <span class="arithmatex">\(\mu=1.08\pm0.12\)</span>. Statistics-only, the limit tightens to 105 (87) MeV.</p>
+<p>Why it matters: unlike the off-shell <span class="arithmatex">\(ZZ/WW\)</span> method (ATLAS combined <span class="arithmatex">\(\Gamma_H=3.6^{+2.1}_{-1.6}\)</span> MeV), this probe makes no assumption that on- and off-shell couplings coincide, so it remains valid under exotic or invisible decays — a genuinely orthogonal handle even at ~30× weaker sensitivity. The caveat is explicit and dominant: the measurement is systematics-limited, with the largest single contribution (49 MeV at 68% CL) from the 39% theory uncertainty on the <span class="arithmatex">\(gg\)</span>-interference <span class="arithmatex">\(K\)</span>-factor (<span class="arithmatex">\(K_I=1.64\)</span>, NLO→NNLOsv), followed by the <span class="arithmatex">\(m_H\)</span> constraint (43 MeV). Because interference scales as <span class="arithmatex">\(\sqrt{\Gamma_H}\)</span>, the <span class="arithmatex">\(K_I\)</span> uncertainty dominates entirely near the limit. The authors flag that interference calculations matched to parton showers are the needed improvement, and note only two <span class="arithmatex">\(p_T^{\gamma\gamma}\)</span> bins are justified given current modelling.</p>
+<h3 id="arxiv260920545-computability-of-gpds-near-xpmxi-in-lattice-qcd-yushan-su-et-al"><a href="https://arxiv.org/abs/2609.20545">arXiv:2609.20545</a> — Computability of GPDs near <span class="arithmatex">\(x=\pm\xi\)</span> in Lattice QCD (Yushan Su et al.)</h3>
+<p>Su, Ji, Liu, and Zhang argue that the LaMET large-momentum expansion for GPDs does <em>not</em> require the naive EFT condition <span class="arithmatex">\(2|x\pm\xi|P^z\gg\Lambda_{\rm QCD}\)</span> near the transition points <span class="arithmatex">\(x=\pm\xi\)</span>, where one parton momentum vanishes. Their argument parallels DVCS factorization: soft contributions associated with the vanishing scale are power-suppressed, just as photon-DA physics enters DVCS only at <span class="arithmatex">\(O(\Lambda_{\rm QCD}^2/Q^2)\)</span>. The condition reduces to keeping at least one hard scale, <span class="arithmatex">\(2(|x|+|\xi|)P^z\gg\Lambda_{\rm QCD}\)</span>, dramatically enlarging the computable window that would otherwise exclude bands of width ~0.4 around <span class="arithmatex">\(x=\pm\xi\)</span> for realistic <span class="arithmatex">\(P^z\sim2\)</span>–3 GeV.</p>
+<p>Reanalyzing four existing nonzero-skewness datasets (ETMC20/21/25, MSULat23) with complete one-loop matching and a carefully ordered regulator hierarchy (<span class="arithmatex">\(\epsilon_2\ll|\epsilon_1|\to0\)</span>, the only convergent ordering), they recover GPDs that are continuous at <span class="arithmatex">\(x=\pm\xi\)</span> but with discontinuous derivatives — the expected partonic threshold kink from soft-quark zero modes, seen on the lattice for the first time and consistent with polynomiality-preserving GPD models. The previously reported discontinuities are attributed to regulator artifacts in the matching. This yields the first first-principles prediction of GPDs in the distribution-amplitude-like region (<span class="arithmatex">\(|x|&lt;\xi\)</span>), smoothly connecting quark and antiquark PDF-like regimes — directly relevant to DVCS extractions and the GUMP global-analysis program.</p>
+<p>Caveats: the result rests on one-loop matching applied to existing data at coarse pion masses (mostly 260 MeV) and modest momenta, and the region remains uncomputable when both <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(\xi\)</span> are small (near <span class="arithmatex">\(x=0\)</span>) or near the endpoints <span class="arithmatex">\(x=\pm1\)</span>.</p>
+<h3 id="arxiv260920154-observation-of-double-sbars-production-in-ee-collision-at-sqrts308-gev-besiii-collaboration-et-al"><a href="https://arxiv.org/abs/2609.20154">arXiv:2609.20154</a> — Observation of double <span class="arithmatex">\(s\bar{s}\)</span> production in <span class="arithmatex">\(e^+e^-\)</span> collision at <span class="arithmatex">\(\sqrt{s}=3.08\)</span> GeV (BESIII Collaboration et al.)</h3>
+<p>BESIII reports the first systematic observation of double-<span class="arithmatex">\(s\bar{s}\)</span> production in the <span class="arithmatex">\(e^+e^-\)</span> continuum, tagging a prompt <span class="arithmatex">\(\phi\)</span> recoiling against a second strangeness-carrying system <span class="arithmatex">\(X(s\bar{s}) \in \{\eta,\eta',K^+K^-,K^+K^{*-},K^-K^{*+},K^0\bar{K}^0,K^0\bar{K}^{*0}\}\)</span>. From 167 pb<span class="arithmatex">\(^{-1}\)</span>, they measure <span class="arithmatex">\(\sigma(e^+e^-\to\phi+\text{anything})=506.3\pm6.9\pm19.7\)</span> pb (a first) plus the individual <span class="arithmatex">\(\phi+X(s\bar{s})\)</span> cross sections, with <span class="arithmatex">\(\phi K^+K^{*-}\)</span>, <span class="arithmatex">\(\phi K^-K^{*+}\)</span>, <span class="arithmatex">\(\phi K^0\bar{K}^0\)</span>, <span class="arithmatex">\(\phi K^0\bar{K}^{*0}\)</span> reported for the first time. After subtracting ISR (<span class="arithmatex">\(\phi\gamma_{\rm ISR}\)</span>) to isolate the QCD-driven part, the ratio is <span class="arithmatex">\(R_{s\bar{s}}=(40.4\pm1.7_{\rm stat}\pm1.5_{\rm syst})\%\)</span>.</p>
+<p>Why it matters: this large ratio directly echoes the double-<span class="arithmatex">\(c\bar{c}\)</span> surprise seen by Belle and BABAR at 10.6 GeV, where <span class="arithmatex">\(R_{c\bar{c}}\)</span> exceeded early NRQCD predictions and drove years of theory refinement. Extending the phenomenon to the strange sector — in the deep non-perturbative regime — supplies a clean hadronization number that challenges the frameworks tuned to <span class="arithmatex">\(R_{c\bar{c}}\)</span> and opens a window on possible flavor correlations in fragmentation. The synergy of strange and charm &ldquo;flavor portals&rdquo; is the framing.</p>
+<p>Caveat, stated by the authors: the measurement omits higher-multiplicity final states (e.g. <span class="arithmatex">\(\phi K^+K^-\pi^0\)</span>), so <span class="arithmatex">\(R_{s\bar{s}}\)</span> is a lower bound on total double-<span class="arithmatex">\(s\bar{s}\)</span> rate; <span class="arithmatex">\(f_{s\bar{s}}\)</span> assumptions for <span class="arithmatex">\(\eta/\eta'\)</span> and <span class="arithmatex">\(f\)</span>-states carry model dependence, and several sub-channels have 6–11% systematics dominated by efficiency and background modelling.</p>
+<h2 id="citation-radar">Citation radar</h2>
+<p>This week&rsquo;s radar is dominated by a single experimental spark: LUX-ZEPLIN&rsquo;s report of one anomalous ~248 keV nuclear-recoil event (LZ230616), with a 3.4σ local / 2.6σ global significance. All five heavily-cited papers below are theory responses posted within days of the LZ preprint, and together they map the interpretive landscape that has formed almost overnight—endothermic vs. exothermic vs. neutrino-upscattering, Higgsino vs. inert-doublet vs. axion-portal. The rapid, cross-citing cluster (these papers reference each other extensively) is itself the story: a genuine community pile-on around a possible first direct-detection signal, with everyone racing to stake a mechanism and stress-test it against solar-capture and halo-tail constraints.</p>
+<h3 id="arxiv260904186-axion-portal-dark-matter-and-the-lux-zeplin-high-recoil-event-james-unwin"><a href="https://arxiv.org/abs/2609.04186">arXiv:2609.04186</a> — Axion Portal Dark Matter and the LUX-ZEPLIN High-Recoil Event (James Unwin)</h3>
+<p>Unwin proposes an <em>elastic</em> explanation of the LZ event, in deliberate contrast to the inelastic Higgsino interpretations dominating the early literature. The paper UV-completes the pseudoscalar-pseudoscalar operator ℒ₄ = (χ̄iγ⁵χ)(N̄iγ⁵N)—one of the templates for which LZ reported its largest local significances—via an axion portal: Dirac fermion dark matter (m_χ ≈ 400 GeV) coupled to a GeV-scale pNGB mediator, with a single multi-TeV vectorlike quark completing the up-quark coupling. The hard recoil spectrum arises from momentum dependence (moderated by a pion pole) rather than inelastic kinematics, so it is insensitive to the uncertain high-velocity halo tail; the model reproduces the relic abundance via p-wave freeze-out and brackets the LZ significance at 2.6–3.2σ.</p>
+<p>At ~43 citations since early September, its pull likely comes from being the first full elastic UV completion of a favored LZ operator—offering a distinct, halo-robust alternative just as the field worried the Higgsino reading was fragile. The bonus correlation with the first-row CKM unitarity deficit adds cross-sector appeal.</p>
+<h3 id="arxiv260904163-tev-higgsino-interpretation-of-the-lz-high-recoil-event-with-intermediate-scale-electroweak-gauginos-xiaokang-du-et-al"><a href="https://arxiv.org/abs/2609.04163">arXiv:2609.04163</a> — TeV Higgsino Interpretation of the LZ High-Recoil Event with Intermediate-Scale Electroweak Gauginos (Xiaokang Du et al.)</h3>
+<p>Du and Wang address a specific tension in the popular TeV-Higgsino reading: reproducing a sub-MeV neutral-Higgsino splitting normally pushes electroweak-gaugino masses toward ~10⁷ GeV. They show that with opposite-sign bino and wino masses, the non-universal SU(5) GUT boundary condition M₁ᴳ/M₂ᴳ = −3/5 cancels the leading dimension-five contribution, and homogeneous one-loop running preserves this down to the Higgsino scale. The residual finite-gaugino terms then yield a controlled branch with a wino near 120 TeV for a 350 keV gap, μ = 1.091 TeV, tanβ = 10. They classify the mixed SU(5) representations (1+24, 1+75, 1+200) that realize the ratio, but candidly note the small gap is far more sensitive to bino–wino alignment than to overall scale, and that the inelastic Z coupling remains unsuppressed—so the full-density thermal Higgsino stays in tension with solar-capture bounds.</p>
+<p>The ~42 citations reflect its role as the top-down SUSY-model-building companion to the phenomenological Higgsino fits: it supplies a concrete GUT-scale mechanism others can cite when invoking small Higgsino splittings.</p>
+<h3 id="arxiv260904185-atmospheric-neutrino-up-scattering-explanation-of-lz-2026-excess-sk-jeesun-et-al"><a href="https://arxiv.org/abs/2609.04185">arXiv:2609.04185</a> — Atmospheric neutrino up-scattering explanation of LZ 2026 excess (Sk Jeesun et al.)</h3>
+<p>Jeesun and Majumdar break from the dark-matter framing entirely: they explain the isolated high-recoil event via atmospheric neutrinos up-scattering into a massive BSM fermion χ (ν𝒩→χ𝒩) through a scalar mediator. The key kinematic feature is that producing a ~GeV-mass χ requires a minimum recoil energy of ~200 keV, naturally cutting off the low-energy tail and mimicking an isolated event exactly where LZ sees one. They identify a closed 90% CL band—m_χ ≈ 0.7–2 GeV, coupling √(y_χy_q)/m_φ ≈ 2×10⁻² GeV⁻¹—bounded below by the low-recoil veto and above by the falling atmospheric flux, and argue collider/beam-dump/supernova limits evade this region.</p>
+<p>At ~40 citations, this is the field&rsquo;s principal <em>non-dark-matter</em> alternative, keeping the interpretation space honest. Its value is providing a distinct testable hypothesis (a sterile-neutrino-like signal) that upcoming low-background experiments could distinguish from the halo-DM readings.</p>
+<h3 id="arxiv260902505-dark-matter-as-the-z2-partner-of-the-standard-model-higgs-boson-yasunori-nomura"><a href="https://arxiv.org/abs/2609.02505">arXiv:2609.02505</a> — Dark Matter as the Z₂ Partner of the Standard Model Higgs Boson (Yasunori Nomura)</h3>
+<p>Nomura connects the LZ event to an inert-doublet model previously selected—in prior work—to fit a Fermi-LAT Galactic-halo gamma-ray excess at several-hundred-GeV mass. The conceptual hook is that the inert Z₂ parity is exactly equivalent (by field redefinition) to an interchange symmetry between two Higgs doublets, making dark matter the Z₂-odd partner of the SM Higgs. Phenomenologically, gauge invariance fixes the off-diagonal Z coupling, and the halo-plus-thermal mass window (440–600 GeV) selects a narrow strip of ~350 keV neutral splittings near the kinematic boundary where inelastic Z-exchange can produce the recoil. A sharp prediction follows: because scattering probes the extreme halo tail, future events should show large annual modulation peaking near early summer—and LZ230616 occurred June 16.</p>
+<p>The ~32 citations track the paper&rsquo;s ambition to unify two anomalies (gamma-ray excess + LZ event) under one minimal, technically-natural model. The v2 note honestly concedes the solar-capture (Pospelov–Ramani) constraint may require δ ≳ 500 keV, showing the interpretation under active pressure.</p>
+<h3 id="arxiv260905204-exothermic-dark-matter-at-lz-carlos-henrique-de-lima"><a href="https://arxiv.org/abs/2609.05204">arXiv:2609.05204</a> — Exothermic Dark Matter at LZ (Carlos Henrique de Lima)</h3>
+<p>de Lima pursues the <em>exothermic</em> route: a metastable excited state χ_H down-scatters (χ_H𝒩→χ_L𝒩), releasing the mass splitting δ into the recoil so the signal does not require the halo&rsquo;s high-velocity tail—the chief liability of endothermic Higgsino readings. Realized in a minimal inelastic dark-photon model, the fit favors m_χ ~ 30–200 GeV and δ ~ 0.5–1 MeV (bounded by δ &lt; 2m_e for cosmological stability), with GeV-scale mediators and ε ~ 10⁻⁶. Both secluded freeze-out (yielding a small excited fraction f_H) and low-reheating freeze-in can supply the rate. The standout prediction is target dependence: because xenon is being probed near its diffraction minimum, argon and germanium should see ~3× more events at higher recoil energies (Table 1), giving DEAP-3600 and DarkSide-20k a clean cross-check.</p>
+<p>At ~31 citations, its appeal is offering the halo-robust, testable counterpoint to endothermic models—and explicitly evading the solar-capture bound because χ_L is kinematically inert. Its dense cross-referencing of the whole LZ-interpretation cluster makes it a natural hub in this fast-moving conversation.</p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-09-17.html"><span class="date">Thursday, September 17, 2026</span></a>
+      <span class="themes"><span class="chip">Precision QCD and structure</span><span class="chip">The f0(980) under a microscope</span><span class="chip">LZ evasion goes cosmological</span><span class="chip">ML in event reconstruction</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-09-16.html"><span class="date">Wednesday, September 16, 2026</span></a>
@@ -876,11 +135,6 @@ new physics in the tau sector.</p>
       <span class="themes"><span class="chip">LZ interpretations turn testable</span><span class="chip">Jet quenching color decoherence</span><span class="chip">Axions, lab to starlight</span><span class="chip">Neutrino experiments post nulls</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-09-07.html"><span class="date">Monday, September 7, 2026</span></a>
-      <span class="themes"><span class="chip">LZ event turns exothermic</span><span class="chip">Long-lived particles, borrowed detectors</span><span class="chip">CMS clean measurements</span><span class="chip">Precision from EFT and lattice</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -889,7 +143,7 @@ new physics in the tau sector.</p>
 </main>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-17 21:57 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-18 05:34 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
