@@ -58,7 +58,8 @@ def _author_spec(spec) -> tuple[str, list[tuple[str, str]]]:
 
 class TopicMatcher:
     """Match papers against watchlist topics by `keywords` (title+abstract,
-    word-bounded, case-insensitive) and/or `authors` (see _author_spec)."""
+    word-bounded, case-insensitive), `title_keywords` (title only), and/or
+    `authors` (see _author_spec)."""
 
     def __init__(self, topics: list[dict]):
         self.topics = [
@@ -66,6 +67,7 @@ class TopicMatcher:
                 t,
                 [(k, _compile(k)) for k in t.get("keywords", [])],
                 [_author_spec(a) for a in t.get("authors", [])],
+                [(k, _compile(k)) for k in t.get("title_keywords", [])],
             )
             for t in topics
         ]
@@ -76,8 +78,9 @@ class TopicMatcher:
         names = [(t[0], t[-1]) for a in paper.get("authors", []) if (t := _name_tokens(a))]
         allow_initials = len(names) <= INITIALS_MAX_AUTHORS
         out: dict[str, list[str]] = {}
-        for topic, patterns, authors in self.topics:
+        for topic, patterns, authors, title_patterns in self.topics:
             matched = [k for k, pat in patterns if pat.search(text)]
+            matched += [f"title: {k}" for k, pat in title_patterns if pat.search(paper["title"])]
             for display, variants in authors:
                 if any(
                     last == L and first == F and (len(F) > 1 or allow_initials)

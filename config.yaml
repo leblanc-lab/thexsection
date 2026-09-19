@@ -28,22 +28,40 @@ arxiv:
   announce_types: [new, cross]
 
 # Separate abstract-only streams. Never added to arxiv.categories (paid digest).
-# Each feed inherits all watchlist keywords/authors. Optional keywords: and
+# Feeds inherit watchlist keywords/authors; CS excludes general OT keywords.
+# exclude_keyword_topics affects keywords only, never watched authors.
+# Optional keywords: and
 # authors: lists replace that criterion for one feed; [] disables that criterion.
 category_scan:
   enabled: true
-  extra_keywords: ["LHC", "Large Hadron Collider", "collider", "colliders"]
+  extra_keywords: ["LHC", "Large Hadron Collider", "collider", "colliders", "energy mover"]
   feeds:
     - category: physics.ins-det
       slug: physics-ins-det
       tagline: "Instrumentation and detectors"
     - category: cs.CV
+      exclude_keyword_topics: ["Optimal transport"]
+      # Keep focused OT titles, not incidental metric mentions in abstracts.
+      title_keywords: &cs_ot_titles
+        - "optimal transport"
+        - "optimal transportation"
+        - "optimal-transport"
+        - "wasserstein"
+        - "sinkhorn"
+        - "earth mover"
+        - "Gromov-Wasserstein"
+        - "Schrödinger bridge"
+        - "Schrodinger bridge"
       slug: cs-cv
       tagline: "Computer vision and pattern recognition"
     - category: cs.AI
+      exclude_keyword_topics: ["Optimal transport"]
+      title_keywords: *cs_ot_titles
       slug: cs-ai
       tagline: "Artificial intelligence"
     - category: cs.LG
+      exclude_keyword_topics: ["Optimal transport"]
+      title_keywords: *cs_ot_titles
       slug: cs-lg
       tagline: "Machine learning"
 

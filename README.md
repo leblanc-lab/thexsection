@@ -199,9 +199,17 @@ place the deployed location is recorded; change it if the site moves.
 the footer. Entries contain the original abstract, authors, arXiv link, and the
 matching keywords/author names. There are no model calls or LLM API charges.
 
-All existing watchlist keywords and author variants are inherited, plus `LHC`,
-`Large Hadron Collider`, `collider`, and `colliders`. A keyword **or** author
-match is sufficient. Set `category_scan.extra_keywords` to extend the shared
+Author variants are inherited for every feed. Detector keywords inherit the
+whole watchlist; the three CS feeds exclude the `Optimal transport` topic's
+abstract/title keywords through `exclude_keyword_topics`. A separate
+`title_keywords` list retains OT-focused titles (optimal transport, Wasserstein,
+Sinkhorn, earth mover, Gromov-Wasserstein, and Schrödinger bridge, including listed
+spelling variants). These terms appearing only in the abstract do not qualify a
+CS paper. Title-only matches are explicitly labelled `title: ...` in the feed. Muon/jet keywords and the
+shared `LHC`, `Large Hadron Collider`, `collider`, `colliders`, and `energy mover`
+terms still qualify, as does any watched author. A keyword **or** author match
+is sufficient; authors are not filtered by `exclude_keyword_topics`. This is an
+interest filter, not an automatic assessment of scientific importance. Set `category_scan.extra_keywords` to extend the shared
 criteria. Optional `keywords` and `authors` lists on a feed replace the inherited
 list for that criterion (`[]` disables it). Cross-listed papers may appear in
 more than one category feed; each feed deduplicates by arXiv ID.

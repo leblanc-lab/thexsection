@@ -27,16 +27,22 @@ def category_topics(cfg: dict) -> list[dict]:
     if not section.get("enabled", False):
         return []
     watched = cfg.get("watchlist", {}).get("topics", [])
-    keywords = list(dict.fromkeys(
-        [k for t in watched for k in t.get("keywords", [])]
-        + section.get("extra_keywords", [])
-    ))
     authors = [a for t in watched for a in t.get("authors", [])]
-    return [dict(t, name=t["category"], page=True, brief=False, theme="default",
-                 keywords=t.get("keywords", keywords), authors=t.get("authors", authors),
-                 blurb="Keyword and author matches. Original abstracts, no AI summaries.",
-                 tagline=t.get("tagline", t["category"]))
-            for t in section.get("feeds", [])]
+    topics = []
+    for feed in section.get("feeds", []):
+        excluded = set(feed.get("exclude_keyword_topics", []))
+        unknown = excluded - {t["name"] for t in watched}
+        if unknown:
+            raise ValueError(f"Unknown excluded keyword topics: {sorted(unknown)}")
+        keywords = list(dict.fromkeys(
+            [k for t in watched if t["name"] not in excluded for k in t.get("keywords", [])]
+            + section.get("extra_keywords", [])
+        ))
+        topics.append(dict(feed, name=feed["category"], page=True, brief=False, theme="default",
+                           keywords=feed.get("keywords", keywords), authors=feed.get("authors", authors),
+                           blurb="Keyword and author matches. Original abstracts, no AI summaries.",
+                           tagline=feed.get("tagline", feed["category"])))
+    return topics
 
 
 def fetch_category(category: str, announce_types: list[str]) -> list[dict]:
