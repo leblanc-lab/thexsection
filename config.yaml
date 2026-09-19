@@ -27,6 +27,26 @@ arxiv:
   # Announcement types to keep from the feeds ("new" and "cross"; "replace" is noisy).
   announce_types: [new, cross]
 
+# Separate abstract-only streams. Never added to arxiv.categories (paid digest).
+# Each feed inherits all watchlist keywords/authors. Optional keywords: and
+# authors: lists replace that criterion for one feed; [] disables that criterion.
+category_scan:
+  enabled: true
+  extra_keywords: ["LHC", "Large Hadron Collider", "collider", "colliders"]
+  feeds:
+    - category: physics.ins-det
+      slug: physics-ins-det
+      tagline: "Instrumentation and detectors"
+    - category: cs.CV
+      slug: cs-cv
+      tagline: "Computer vision and pattern recognition"
+    - category: cs.AI
+      slug: cs-ai
+      tagline: "Artificial intelligence"
+    - category: cs.LG
+      slug: cs-lg
+      tagline: "Machine learning"
+
 llm:
   # Active provider: "gemini" (free tier, dev/testing), "anthropic" (production),
   # or "claude-cli" (shells out to a logged-in `claude -p`; billed to the local

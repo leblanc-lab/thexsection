@@ -1,0 +1,44 @@
+name: Category scan
+
+on:
+  schedule:
+    - cron: "37 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Serialize writes with the digest, but run independently of its LLM results.
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # No LLM credentials: this job only fetches abstracts and matches text.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch and match extra categories
+        run: python -m pipeline.category_scan
+      - name: Build site
+        run: python -m pipeline.build_site
+      - name: Commit results
+        run: |
+          git config user.name "The Cross Section bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/category-scan watch/category-scan
+          git add data/category-scan watch/category-scan site
+          if git diff --cached --quiet; then
+            echo "No scan changes."
+          else
+            git commit -m "scan: category abstracts $(date -u +%F)"
+            git pull --rebase origin main
+            git push
+          fi

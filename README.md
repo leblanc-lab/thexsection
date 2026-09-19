@@ -22,8 +22,9 @@ Once a day (GitHub Actions cron), the pipeline:
    so open `site/index.html` locally, or read the digests right in GitHub),
    including `feed.xml` and any topic mirrors (below).
 
-All state is files in this repo; the digests and memory tiers double as the
-model's context. No server, no database.
+Published content is files in this repo; the digests and memory tiers double as
+the model's context. No server. The optional full-history category harvest uses
+a local SQLite metadata cache.
 
 ## Cost
 
@@ -189,3 +190,95 @@ place the deployed location is recorded; change it if the site moves.
   (free ≤ 50 users). If the site goes public: GitHub Pages toggle.
 - Batches API (halves API cost), email delivery, theme trend charts,
   semantic search over the archive.
+
+## Extra category feeds (no LLM)
+
+`category_scan` creates separate keyword-and-author feeds for `physics.ins-det`,
+`cs.CV`, `cs.AI`, and `cs.LG`, at `physics-ins-det/feed.xml`, `cs-cv/feed.xml`,
+`cs-ai/feed.xml`, and `cs-lg/feed.xml`. Each has a matching web page linked from
+the footer. Entries contain the original abstract, authors, arXiv link, and the
+matching keywords/author names. There are no model calls or LLM API charges.
+
+All existing watchlist keywords and author variants are inherited, plus `LHC`,
+`Large Hadron Collider`, `collider`, and `colliders`. A keyword **or** author
+match is sufficient. Set `category_scan.extra_keywords` to extend the shared
+criteria. Optional `keywords` and `authors` lists on a feed replace the inherited
+list for that criterion (`[]` disables it). Cross-listed papers may appear in
+more than one category feed; each feed deduplicates by arXiv ID.
+
+```sh
+python -m pipeline.category_scan          # fetch current announcements and match
+python -m pipeline.category_scan --rescan # reapply criteria to all saved batches
+python -m pipeline.build_site            # render the pages and RSS
+```
+
+`--rescan --date YYYY-MM-DD` selects one stored day. Live feeds only provide
+current announcements; use `pipeline.category_backfill` below for historical papers.
+Raw batches live in `data/category-scan/<slug>/`, and matched entries in
+`watch/category-scan/<slug>/`. Neither is loaded by the paid digest or watchlist
+briefing, and `arxiv.categories` remains hep-ex/hep-ph. A paper independently
+announced in those HEP categories can still enter their existing digest.
+
+The separate **Category scan** workflow runs daily without LLM credentials and
+triggers Pages after success, independently of the paid digest. Changes to
+criteria can be applied locally with `--rescan` before publishing.
+
+### Backfill extra categories
+
+```sh
+python -m pipeline.category_backfill --since 1991-01-01
+# Or choose a smaller inclusive interval:
+python -m pipeline.category_backfill --since 2025-01-01 --until 2025-12-31
+python -m pipeline.build_site
+```
+
+The full-history start is a query lower bound, not a claim that every category
+has records from 1991. Queries fetch metadata/abstracts only, serially and with
+rate limiting. Historical entries use first-submission dates and current category
+assignments, rather than reconstructing past daily announcements. No LLM calls.
+
+Validated windows are checkpointed, including empty days. Rerunning the same
+command resumes completed downloads and reapplies the current matching criteria.
+Malformed responses, HTTP failures, and incomplete pagination fail visibly;
+they are never saved as empty history. Raw history stays in gitignored
+`data/category-scan/backfill/`; matched entries in
+`watch/category-scan/<slug>/history/` are retained for publishing. `category_scan
+--rescan` also processes this history. Live announcements and history merge by
+arXiv ID, keeping the earliest occurrence in each category feed.
+
+### Full-history bulk harvest (preferred)
+
+arXiv's [OAI-PMH interface](https://info.arxiv.org/help/oa/index.html) supports
+complete category harvesting. It works independently of the search API and
+provides continuation tokens. Use it for the full-history run:
+
+```sh
+python -m pipeline.category_harvest --max-pages 20
+# Repeat the identical command for the next chunk; omit the limit to finish all.
+python -m pipeline.category_harvest --rescan  # offline, after criteria changes
+python -m pipeline.build_site
+```
+
+Without `--max-pages`, the full run uses 20-page chunks with a one-minute rest
+between chunks (`--chunk-pages` changes the chunk size). A local lock prevents
+concurrent harvest/rescan processes.
+
+Requests are serial with five-second gaps, exceeding arXiv's required
+[three-second minimum](https://info.arxiv.org/help/api/tou.html). Each response
+page and its continuation token are saved together in a transaction in
+`data/category-scan/backfill/oai.sqlite3` (gitignored). Do not run multiple
+harvesters or other arXiv fetchers concurrently. Refusals and server-requested
+pauses stop the run instead of repeatedly requesting the same page. Run again
+later to resume. Expired continuation tokens restart that category safely;
+stored IDs prevent duplicate records. Completed categories are skipped.
+
+Matched abstracts are rendered to `watch/category-scan/<slug>/history/oai/`
+after each completed category or bounded chunk, and also on a handled network
+failure. They merge into the category pages and RSS with the live scan and any
+search-API backfill. OAI harvests by metadata-update order, but we use each
+paper's original `created` date for the historical feeds. A partially downloaded
+category is not a complete historical date interval; only exhausting its
+continuation token establishes full coverage at harvest time.
+
+The search-API backfiller also accepts `--max-windows N` for bounded date chunks.
+Both routes use no LLM calls.

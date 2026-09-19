@@ -25,6 +25,7 @@ from .common import (
     load_config,
 )
 from .substack import latex_to_unicode
+from .category_scan import category_topics, SCAN_DIR as CATEGORY_SCAN_DIR
 
 RADAR_DIR = DIGEST_DIR / "radar"
 WATCH_DIR = DIGEST_DIR.parent / "watch"
@@ -129,7 +130,7 @@ def topic_section(path: Path, topic_name: str) -> str | None:
     return body
 
 
-def load_topic_days(topic_name: str) -> list[dict]:
+def load_topic_days(topic_name: str, scan_dir: Path | None = None) -> list[dict]:
     """Every day that covered `topic_name`, newest first, split per paper.
 
     A day is the LLM briefing from watch/ when there is one, with any
@@ -137,6 +138,21 @@ def load_topic_days(topic_name: str) -> list[dict]:
     day with only a scan entry is all abstracts. Briefed papers win the dedupe.
     """
     days = []
+    if scan_dir is not None:
+        # Feeds can repeat a batch across weekends. Keep its first appearance
+        # so RSS GUIDs and page anchors remain unique and dates stay stable.
+        seen = set()
+        for path in sorted(scan_dir.rglob("????-??-??.md"), key=lambda p: (p.stem, str(p))):
+            if (body := topic_section(path, topic_name)) is not None:
+                day = paper_day(path.stem, body)
+                day["papers"] = [p for p in day["papers"] if p["id"] not in seen]
+                seen.update(p["id"] for p in day["papers"])
+                if day["papers"]:
+                    if days and days[-1]["date"] == day["date"]:
+                        days[-1]["papers"].extend(day["papers"])
+                    else:
+                        days.append(day)
+        return list(reversed(days))
     if not WATCH_DIR.exists():
         return days
     dates = {p.stem for d in (WATCH_DIR, SCAN_DIR) if d.exists() for p in d.glob("????-??-??.md")}
@@ -338,6 +354,7 @@ def main() -> int:
     # RSS template escapes its own text nodes through this filter.
     env.filters["xml"] = xml_escape
     watchlist_cfg = cfg.get("watchlist", {})
+    scan_topics = category_topics(cfg)
     topics = watchlist_cfg.get("topics", [])
     base_url = cfg["site"].get("base_url", "")
     deep_dive_cfg = cfg.get("deep_dive", {})
@@ -364,6 +381,7 @@ def main() -> int:
         built_at=dt.datetime.now().strftime("%Y-%m-%d %H:%M"),
         watchlist=watchlist_cfg,
         topics=topics,
+        category_feeds=scan_topics,
         topic_names=[t["name"] for t in topics],
         mirrored={t["name"]: t["slug"] for t in topics if t.get("page")},
         deep_dives=deep_dive_topic,
@@ -471,6 +489,8 @@ def main() -> int:
         for topic in topics:
             if topic.get("page"):
                 mirror(topic, load_topic_days(topic["name"]))
+    for topic in scan_topics:
+        mirror(topic, load_topic_days(topic["name"], CATEGORY_SCAN_DIR / topic["slug"]))
     if deep_dive_topic:
         mirror(deep_dive_topic, load_deep_dive_days(digests))
 

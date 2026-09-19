@@ -21,12 +21,13 @@ on:
       - "static/**"
       - "site/**"
       - "pipeline/build_site.py"
+      - "pipeline/category_scan.py"
       # Drives the nav, the watchlist topics, and which topics get their own
       # page + feed — editing it changes the built site with no new content.
       - "config.yaml"
       - ".github/workflows/pages.yml"
   workflow_run:
-    workflows: ["Daily digest", "Refresh Long View"]
+    workflows: ["Daily digest", "Refresh Long View", "Category scan"]
     types: [completed]
 
 permissions:
