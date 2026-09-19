@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import json
 import re
 import shutil
 import sys
@@ -16,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader
 
 from .common import (
     ARXIV_ID,
+    DATA_DIR,
     DIGEST_DIR,
     MEMORY_ARCHIVE_DIR,
     MEMORY_DIR,
@@ -25,6 +27,7 @@ from .common import (
     load_config,
 )
 from .substack import latex_to_unicode
+from .scan import render as render_abstracts
 from .category_scan import category_topics, SCAN_DIR as CATEGORY_SCAN_DIR
 
 RADAR_DIR = DIGEST_DIR / "radar"
@@ -172,6 +175,49 @@ def load_topic_days(topic_name: str, scan_dir: Path | None = None) -> list[dict]
         if day is not None:
             days.append(day)
     return days
+
+
+def load_hep_ex_days(topic: dict) -> list[dict]:
+    """Only stored new primary hep-ex announcements; never export-API history."""
+    days, seen = [], set()
+    for path in sorted(DATA_DIR.glob('????-??-??.jsonl')):
+        papers = []
+        for line in path.read_text().splitlines():
+            if not line.strip():
+                continue
+            paper = json.loads(line)
+            if (paper.get('primary_category') != 'hep-ex'
+                    or paper.get('announce_type') != 'new'
+                    or paper.get('source') in ('export-api', 'oai-pmh')
+                    or paper['id'] in seen):
+                continue
+            seen.add(paper['id'])
+            papers.append((paper, ['new hep-ex announcement']))
+        if papers:
+            body = frontmatter.loads(render_abstracts(path.stem, {topic['name']: papers})).content
+            body = body.removeprefix(f"## {topic['name']}").strip().replace(
+                '_Watchlist hit (new hep-ex announcement) — abstract only, not yet read for a briefing._',
+                '_New hep-ex announcement — original abstract; no AI summary._')
+            days.append(paper_day(path.stem, body))
+    return list(reversed(days))
+
+
+def merge_topic_days(primary: list[dict], extra: list[dict]) -> list[dict]:
+    """Append new abstract hits; existing briefings/scans win by ID across dates."""
+    merged = {d['date']: dict(d, papers=list(d['papers'])) for d in primary}
+    seen = {p['id'] for d in primary for p in d['papers']}
+    for day in sorted(extra, key=lambda d: d['date']):
+        papers = []
+        for paper in day['papers']:
+            if paper['id'] not in seen:
+                papers.append(paper)
+                seen.add(paper['id'])
+        if papers:
+            if day['date'] in merged:
+                merged[day['date']]['papers'].extend(papers)
+            else:
+                merged[day['date']] = dict(day, papers=papers)
+    return [merged[date] for date in sorted(merged, reverse=True)]
 
 
 def paper_day(date: str, body: str, source: str = "") -> dict:
@@ -354,7 +400,15 @@ def main() -> int:
     # RSS template escapes its own text nodes through this filter.
     env.filters["xml"] = xml_escape
     watchlist_cfg = cfg.get("watchlist", {})
-    scan_topics = category_topics(cfg)
+    hep_ex_cfg = cfg.get('hep_ex_feed', {})
+    hep_ex_topic = (dict(name='Experimental HEP', slug=hep_ex_cfg.get('slug', 'hep-ex'),
+                        theme='default', brief=False, announcement_only=True,
+                        tagline='New experimental high-energy physics papers',
+                        blurb='Every new primary hep-ex announcement. Original abstracts; no cross-listings or replacements.')
+                    if hep_ex_cfg.get('enabled', False) else None)
+    scan_sources = category_topics(cfg)
+    scan_topics = list({t['slug']: t for t in scan_sources if not t.get('merge_into_watch')}.values())
+    watch_additions = {t['name']: t for t in scan_sources if t.get('merge_into_watch')}
     topics = watchlist_cfg.get("topics", [])
     base_url = cfg["site"].get("base_url", "")
     deep_dive_cfg = cfg.get("deep_dive", {})
@@ -381,7 +435,7 @@ def main() -> int:
         built_at=dt.datetime.now().strftime("%Y-%m-%d %H:%M"),
         watchlist=watchlist_cfg,
         topics=topics,
-        category_feeds=scan_topics,
+        category_feeds=([hep_ex_topic] if hep_ex_topic else []) + scan_topics,
         topic_names=[t["name"] for t in topics],
         mirrored={t["name"]: t["slug"] for t in topics if t.get("page")},
         deep_dives=deep_dive_topic,
@@ -488,7 +542,12 @@ def main() -> int:
     if watchlist_cfg.get("enabled"):
         for topic in topics:
             if topic.get("page"):
-                mirror(topic, load_topic_days(topic["name"]))
+                days = load_topic_days(topic["name"])
+                if extra := watch_additions.get(topic['name']):
+                    days = merge_topic_days(days, load_topic_days(extra['name'], CATEGORY_SCAN_DIR / extra['slug']))
+                mirror(topic, days)
+    if hep_ex_topic:
+        mirror(hep_ex_topic, load_hep_ex_days(hep_ex_topic))
     for topic in scan_topics:
         mirror(topic, load_topic_days(topic["name"], CATEGORY_SCAN_DIR / topic["slug"]))
     if deep_dive_topic:

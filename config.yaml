@@ -27,6 +27,12 @@ arxiv:
   # Announcement types to keep from the feeds ("new" and "cross"; "replace" is noisy).
   announce_types: [new, cross]
 
+# Unfiltered new primary hep-ex announcements, rendered from existing data/.
+# No keywords, cross-listings, replacements, extra fetches, or LLM calls.
+hep_ex_feed:
+  enabled: true
+  slug: hep-ex
+
 # Separate abstract-only streams. Never added to arxiv.categories (paid digest).
 # Feeds inherit watchlist keywords/authors; CS excludes general OT keywords.
 # exclude_keyword_topics affects keywords only, never watched authors.
@@ -64,6 +70,25 @@ category_scan:
       title_keywords: *cs_ot_titles
       slug: cs-lg
       tagline: "Machine learning"
+
+    - name: "Data & computational methods"
+      categories: [physics.data-an, physics.comp-ph]
+      slug: methods
+      tagline: "Data analysis, simulation, and computational physics"
+      exclude_keyword_topics: ["Optimal transport"]
+      title_keywords: *cs_ot_titles
+    - name: "Physics perspectives"
+      categories: [physics.gen-ph, physics.hist-ph, physics.pop-ph, physics.ed-ph]
+      slug: physics-perspectives
+      tagline: "General physics, history, outreach, and education"
+      exclude_keyword_topics: ["Optimal transport"]
+      title_keywords: *cs_ot_titles
+    # Add only MuC-topic hits to the existing muon page/feed, with no briefing.
+    - category: physics.acc-ph
+      name: "Muon collider"
+      slug: muon
+      match_topic: "Muon collider"
+      merge_into_watch: true
 
 llm:
   # Active provider: "gemini" (free tier, dev/testing), "anthropic" (production),

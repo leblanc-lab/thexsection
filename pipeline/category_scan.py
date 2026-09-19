@@ -29,7 +29,12 @@ def category_topics(cfg: dict) -> list[dict]:
     watched = cfg.get("watchlist", {}).get("topics", [])
     authors = [a for t in watched for a in t.get("authors", [])]
     topics = []
-    for feed in section.get("feeds", []):
+    feeds = [dict(feed, category=category,
+                  source_slug=(f"{feed['slug']}/{category.lower().replace('.', '-')}"
+                               if 'categories' in feed else feed['slug']))
+             for feed in section.get("feeds", [])
+             for category in feed.get('categories', [feed.get('category')])]
+    for feed in feeds:
         excluded = set(feed.get("exclude_keyword_topics", []))
         unknown = excluded - {t["name"] for t in watched}
         if unknown:
@@ -38,11 +43,23 @@ def category_topics(cfg: dict) -> list[dict]:
             [k for t in watched if t["name"] not in excluded for k in t.get("keywords", [])]
             + section.get("extra_keywords", [])
         ))
-        topics.append(dict(feed, name=feed["category"], page=True, brief=False, theme="default",
+        matching_topic = next((t for t in watched if t['name'] == feed.get('match_topic')), None)
+        if feed.get('match_topic') and matching_topic is None:
+            raise ValueError(f"Unknown match_topic: {feed['match_topic']}")
+        if matching_topic is not None:
+            keywords = matching_topic.get('keywords', [])
+            feed = dict(feed, authors=matching_topic.get('authors', []),
+                        title_keywords=matching_topic.get('title_keywords', []))
+        topics.append(dict(feed, name=feed.get('name', feed["category"]), page=True, brief=False, theme="default",
                            keywords=feed.get("keywords", keywords), authors=feed.get("authors", authors),
                            blurb="Keyword and author matches. Original abstracts, no AI summaries.",
                            tagline=feed.get("tagline", feed["category"])))
     return topics
+
+
+def source_slug(topic: dict) -> str:
+    """Keep grouped categories in independent caches beneath their shared route."""
+    return topic.get('source_slug', topic['slug'])
 
 
 def fetch_category(category: str, announce_types: list[str]) -> list[dict]:
@@ -62,7 +79,7 @@ def fetch_category(category: str, announce_types: list[str]) -> list[dict]:
 def scan_file(path: Path, topic: dict, *, history: bool = False) -> int:
     papers = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
     hits = scan_day(papers, [topic], {})
-    out = SCAN_DIR / topic["slug"]
+    out = SCAN_DIR / source_slug(topic)
     if history:
         out = out / "history"
     out = out / f"{path.stem}.md"
@@ -85,9 +102,9 @@ def main() -> int:
         ap.error("--date requires --rescan; live feeds only contain current announcements")
     cfg = load_config()
     for topic in category_topics(cfg):
-        directory = DATA_DIR / topic["slug"]
+        directory = DATA_DIR / source_slug(topic)
         if args.rescan:
-            history_dir = DATA_DIR / "backfill" / topic["slug"]
+            history_dir = DATA_DIR / "backfill" / source_slug(topic)
             history_paths = ([history_dir / f"{parse_date(args.date)}.jsonl"] if args.date
                              else sorted(history_dir.glob("????-??-??.jsonl")))
             for path in history_paths:

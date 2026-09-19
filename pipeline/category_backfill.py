@@ -14,7 +14,7 @@ import sys
 import feedparser
 import httpx
 
-from .category_scan import DATA_DIR, category_topics, scan_file
+from .category_scan import DATA_DIR, category_topics, scan_file, source_slug
 from .common import load_config, parse_date
 from .fetch import _entry_to_paper
 
@@ -92,7 +92,7 @@ def backfill(topics, since, until, window=7, max_windows=None):
     while start <= until:
         end = min(start + dt.timedelta(days=window - 1), until)
         days = [start + dt.timedelta(days=i) for i in range((end-start).days+1)]
-        paths = [(t, day, HISTORY_DIR/t['slug']/f'{day}.jsonl') for t in topics for day in days]
+        paths = [(t, day, HISTORY_DIR/source_slug(t)/f'{day}.jsonl') for t in topics for day in days]
         if not all(path.exists() for _, _, path in paths):
             rows = fetch_window([t['category'] for t in topics], start, end)
             # Only complete validated windows reach disk. Empty days are checkpoints too.

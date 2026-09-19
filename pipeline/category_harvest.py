@@ -19,7 +19,7 @@ from pathlib import Path
 import httpx
 
 from .category_backfill import HEADERS, HISTORY_DIR, PAUSE
-from .category_scan import SCAN_DIR, category_topics
+from .category_scan import SCAN_DIR, category_topics, source_slug
 from .common import load_config
 from .scan import render
 from .watchlist import TopicMatcher
@@ -27,7 +27,9 @@ from .watchlist import TopicMatcher
 URL = 'https://oaipmh.arxiv.org/oai'
 NS = {'o': 'http://www.openarchives.org/OAI/2.0/', 'a': 'http://arxiv.org/OAI/arXiv/'}
 SETS = {'physics.ins-det': 'physics:physics:ins-det',
-        'cs.CV': 'cs:cs:CV', 'cs.AI': 'cs:cs:AI', 'cs.LG': 'cs:cs:LG'}
+        'cs.CV': 'cs:cs:CV', 'cs.AI': 'cs:cs:AI', 'cs.LG': 'cs:cs:LG',
+        **{f'physics.{c}': f'physics:physics:{c}' for c in
+           ['data-an', 'comp-ph', 'acc-ph', 'gen-ph', 'hist-ph', 'pop-ph', 'ed-ph']}}
 DB_PATH = HISTORY_DIR / 'oai.sqlite3'
 
 
@@ -106,7 +108,7 @@ def save_page(db, category, content):
 
 def render_history(db, topic):
     """Rebuild only this harvester's entries, separate from live/API scan files."""
-    directory = SCAN_DIR / topic['slug'] / 'history' / 'oai'
+    directory = SCAN_DIR / source_slug(topic) / 'history' / 'oai'
     directory.mkdir(parents=True, exist_ok=True)
     matcher = TopicMatcher([topic])
     day, entries, written, count = None, [], set(), 0

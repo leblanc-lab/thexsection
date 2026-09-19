@@ -290,3 +290,43 @@ continuation token establishes full coverage at harvest time.
 
 The search-API backfiller also accepts `--max-windows N` for bounded date chunks.
 Both routes use no LLM calls.
+
+### Grouped physics feeds and accelerator coverage
+
+The following additional streams use the same free category scan:
+
+- `methods/feed.xml` (**Data & computational methods**) combines
+  `physics.data-an` and `physics.comp-ph`.
+- `physics-perspectives/feed.xml` (**Physics perspectives**) combines
+  `physics.gen-ph`, `physics.hist-ph`, `physics.pop-ph`, and `physics.ed-ph`.
+- `physics.acc-ph` contributes only matches to the **Muon collider** topic's
+  criteria to the existing `muon/feed.xml`. General LHC/collider keywords and
+  unrelated watched-author matches do not qualify this accelerator source.
+  These additional entries are original abstracts, with no LLM briefing.
+
+The two grouped feeds use the watched authors, collider keywords, and title-only
+OT rules. Configure multiple source categories with `categories: [...]` and a
+shared `name` and `slug`. Each category has independent raw/scan storage beneath
+that slug; the page and RSS merge and deduplicate their papers. `match_topic`
+reuses one existing watchlist topic's criteria, and `merge_into_watch: true`
+adds the results to its existing page/feed. Existing watch entries take
+precedence over supplemental abstracts, even when their dates differ.
+
+The initial grouped streams were seeded from metadata updated since 2026-08-19,
+including revisions, not a complete historical backfill. The seed metadata is
+cached without marking those categories as fully harvested. The existing daily
+workflow fetches future announcements; `pipeline.category_harvest` can backfill
+the remaining history using the same resumable, paced downloads.
+
+### New experimental HEP announcements
+
+`hep-ex/feed.xml` (**Experimental HEP**) contains every new primary `hep-ex`
+announcement, with its original abstract. It excludes cross-listings and
+replacements and does not require a keyword or watched-author match.
+
+Enable it with `hep_ex_feed.enabled` in `config.yaml`. The site build reads
+existing daily announcement snapshots in `data/`, so this feed requires no
+additional fetching or LLM calls. Its initial coverage is limited to those
+stored snapshots; export-API and OAI history are excluded because historical
+metadata does not reconstruct daily announcement types. Future daily builds
+include newly fetched announcements automatically.

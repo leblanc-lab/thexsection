@@ -20,6 +20,8 @@ class CategoryScanTests(unittest.TestCase):
                       ("LHC measurements", []), ("Future colliders", []),
                       ("Unrelated", []), ("much better", [])])]
         for topic in self.topics:
+            if topic.get("merge_into_watch"):
+                continue
             hits = scan.scan_day(papers, [topic], {})[topic['name']]
             expected = range(1,4)
             self.assertEqual([p['id'] for p, _ in hits], [f"2609.{i:05}" for i in expected])

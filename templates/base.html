@@ -35,7 +35,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   {% if category_feeds %}<p>Abstract feeds: {% for feed in category_feeds %}<a href="{{ root|default('') }}{{ feed.slug }}/index.html">{{ feed.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
-  <p>{% if topic is defined and topic.brief is defined and not topic.brief %}Original arXiv abstracts selected by keywords and authors. No AI summaries. · built {{ built_at }}{% else %}Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built {{ built_at }} ·
+  <p>{% if topic is defined and topic.brief is defined and not topic.brief %}{% if topic.announcement_only|default(false) %}Original arXiv abstracts from new hep-ex announcements.{% else %}Original arXiv abstracts selected by keywords and authors.{% endif %} No AI summaries. · built {{ built_at }}{% else %}Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built {{ built_at }} ·
      an experiment in reading the field's mood, not a substitute for the papers.{% endif %}{%
      if watchlist and watchlist.enabled %} <a class="secret" href="{{ root|default('') }}watch.html" title="{{ watchlist.page_title }}" aria-label="{{ watchlist.page_title }}">◈</a>{% endif %}</p>
 </footer>
