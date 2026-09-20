@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>cs.CV — The Cross Section</title>
+  <link>https://leblanc-lab.github.io/thexsection/cs-cv/</link>
+  <atom:link href="https://leblanc-lab.github.io/thexsection/cs-cv/feed-4.xml" rel="self" type="application/rss+xml"/>
+  <description>Computer vision and pattern recognition</description>
+  <language>en</language>
+  <generator>The Cross Section (pipeline.build_site)</generator>
+  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Progressive Wasserstein Barycenters of Persistence Diagrams</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1907-04565</link>
+    <guid isPermaLink="false">arxiv:1907.04565</guid>
+    <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jules Vidal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper presents an efficient algorithm for the progressive approximation of Wasserstein barycenters of persistence diagrams, with applications to the visual analysis of ensemble data. Given a set of scalar fields, our approach enables the computation of a persistence diagram which is representative of the set, and which visually conveys the number, data ranges and saliences of the main features of interest found in the set. Such representative diagrams are obtained by computing explicitly the discrete Wasserstein barycenter of the set of persistence diagrams, a notoriously computationally intensive task. In particular, we revisit efficient algorithms for Wasserstein distance approximation [12,51] to extend previous work on barycenter estimation [94]. We present a new fast algorithm, which progressively approximates the barycenter by iteratively increasing the computation accuracy as well as the number of persistent features in the output diagram. Such a progressivity drastically improves convergence in practice and allows to design an interruptible algorithm, capable of respecting computation time constraints. This enables the approximation of Wasserstein barycenters within interactive times. We present an application to ensemble clustering where we revisit the k-means algorithm to exploit our barycenters and compute, within execution time constraints, meaningful clusters of ensemble data along with their barycenter diagram. Extensive experiments on synthetic and real-life data sets report that our algorithm converges to barycenters that are qualitatively meaningful with regard to the applications, and quantitatively comparable to previous techniques, while offering an order of magnitude speedup when run until convergence (without time constraint). Our algorithm can be trivially parallelized to provide additional speedups in practice on standard workstations. [&hellip;]</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Fusion of Elliptic Extended Target Estimates based on the Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1904-00708</link>
+    <guid isPermaLink="false">arxiv:1904.00708</guid>
+    <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kolja Thormann et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper considers the fusion of multiple estimates of a spatially extended object, where the object extent is modeled as an ellipse parameterized by the orientation and semiaxes lengths. For this purpose, we propose a novel systematic approach that employs a distance measure for ellipses, i.e., the Gaussian Wasserstein distance, as a cost function. We derive an explicit approximate expression for the Minimum Mean Gaussian Wasserstein distance (MMGW) estimate. Based on the concept of a MMGW estimator, we develop efficient methods for the fusion of extended target estimates. The proposed fusion methods are evaluated in a simulated experiment and the benefits of the novel methods are discussed.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stacked Wasserstein Autoencoder</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1910-02560</link>
+    <guid isPermaLink="false">arxiv:1910.02560</guid>
+    <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenju Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Approximating distributions over complicated manifolds, such as natural images, are conceptually attractive. The deep latent variable model, trained using variational autoencoders and generative adversarial networks, is now a key technique for representation learning. However, it is difficult to unify these two models for exact latent-variable inference and parallelize both reconstruction and sampling, partly due to the regularization under the latent variables, to match a simple explicit prior distribution. These approaches are prone to be oversimplified, and can only characterize a few modes of the true distribution. Based on the recently proposed Wasserstein autoencoder (WAE) with a new regularization as an optimal transport. The paper proposes a stacked Wasserstein autoencoder (SWAE) to learn a deep latent variable model. SWAE is a hierarchical model, which relaxes the optimal transport constraints at two stages. At the first stage, the SWAE flexibly learns a representation distribution, i.e., the encoded prior; and at the second stage, the encoded representation distribution is approximated with a latent variable model under the regularization encouraging the latent distribution to match the explicit prior. This model allows us to generate natural textual outputs as well as perform manipulations in the latent space to induce changes in the output space. Both quantitative and qualitative results demonstrate the superior performance of SWAE compared with the state-of-the-art approaches in terms of faithful reconstruction and generation quality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distance Based Domain Adaptation for Object Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1909-08675</link>
+    <guid isPermaLink="false">arxiv:1909.08675</guid>
+    <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pengcheng Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we present an adversarial unsupervised domain adaptation framework for object detection. Prior approaches utilize adversarial training based on cross entropy between the source and target domain distributions to learn a shared feature mapping that minimizes the domain gap. Here, we minimize the Wasserstein distance between the two distributions instead of cross entropy or Jensen-Shannon divergence to improve the stability of domain adaptation in high-dimensional feature spaces that are inherent to object detection task. Additionally, we remove the exact consistency constraint of the shared feature mapping between the source and target domains, so that the target feature mapping can be optimized independently, which is necessary in the case of significant domain gap. We empirically show that the proposed framework can mitigate domain shift in different scenarios, and provide improved target domain object detection performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Diffusion Tikhonov Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1909-06860</link>
+    <guid isPermaLink="false">arxiv:1909.06860</guid>
+    <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Tong Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose regularization strategies for learning discriminative models that are robust to in-class variations of the input data. We use the Wasserstein-2 geometry to capture semantically meaningful neighborhoods in the space of images, and define a corresponding input-dependent additive noise data augmentation model. Expanding and integrating the augmented loss yields an effective Tikhonov-type Wasserstein diffusion smoothness regularizer. This approach allows us to apply high levels of regularization and train functions that have low variability within classes but remain flexible across classes. We provide efficient methods for computing the regularizer at a negligible cost in comparison to training with adversarial data augmentation. Initial experiments demonstrate improvements in generalization performance under adversarial perturbations and also large in-class variations of the input data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Joint Wasserstein Autoencoders for Aligning Multimodal Embeddings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1909-06635</link>
+    <guid isPermaLink="false">arxiv:1909.06635</guid>
+    <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shweta Mahajan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>One of the key challenges in learning joint embeddings of multiple modalities, e.g. of images and text, is to ensure coherent cross-modal semantics that generalize across datasets. We propose to address this through joint Gaussian regularization of the latent representations. Building on Wasserstein autoencoders (WAEs) to encode the input in each domain, we enforce the latent embeddings to be similar to a Gaussian prior that is shared across the two domains, ensuring compatible continuity of the encoded semantic representations of images and texts. Semantic alignment is achieved through supervision from matching image-text pairs. To show the benefits of our semi-supervised representation, we apply it to cross-modal retrieval and phrase localization. We not only achieve state-of-the-art accuracy, but significantly better generalization across datasets, owing to the semantic continuity of the latent space.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adaptive Wasserstein Hourglass for Weakly Supervised Hand Pose Estimation from Monocular RGB</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1909-05666</link>
+    <guid isPermaLink="false">arxiv:1909.05666</guid>
+    <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yumeng Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Insufficient labeled training datasets is one of the bottlenecks of 3D hand pose estimation from monocular RGB images. Synthetic datasets have a large number of images with precise annotations, but the obvious difference with real-world datasets impacts the generalization. Little work has been done to bridge the gap between two domains over their wide difference. In this paper, we propose a domain adaptation method called Adaptive Wasserstein Hourglass (AW Hourglass) for weakly-supervised 3D hand pose estimation, which aims to distinguish the difference and explore the common characteristics (e.g. hand structure) of synthetic and real-world datasets. Learning the common characteristics helps the network focus on pose-related information. The similarity of the characteristics makes it easier to enforce domain-invariant constraints. During training, based on the relation between these common characteristics and 3D pose learned from fully-annotated synthetic datasets, it is beneficial for the network to restore the 3D pose of weakly labeled real-world datasets with the aid of 2D annotations and depth images. While in testing, the network predicts the 3D pose with the input of RGB.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Potential Flow Generator with L_2 Optimal Transport Regularity for Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1908-11462</link>
+    <guid isPermaLink="false">arxiv:1908.11462</guid>
+    <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liu Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose a potential flow generator with L_2 optimal transport regularity, which can be easily integrated into a wide range of generative models including different versions of GANs and flow-based models. We show the correctness and robustness of the potential flow generator in several 2D problems, and illustrate the concept of &ldquo;proximity&rdquo; due to the L_2 optimal transport regularity. Subsequently, we demonstrate the effectiveness of the potential flow generator in image translation tasks with unpaired training data from the MNIST dataset and the CelebA dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning representations of irregular particle-detector geometry with distance-weighted graph networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1902-07987</link>
+    <guid isPermaLink="false">arxiv:1902.07987</guid>
+    <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shah Rukh Qasim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>We explore the use of graph networks to deal with irregular-geometry detectors in the context of particle reconstruction. Thanks to their representation-learning capabilities, graph networks can exploit the full detector granularity, while natively managing the event sparsity and arbitrarily complex detector geometries. We introduce two distance-weighted graph network architectures, dubbed GarNet and GravNet layers, and apply them to a typical particle reconstruction task. The performance of the new architectures is evaluated on a data set of simulated particle interactions on a toy model of a highly granular calorimeter, loosely inspired by the endcap calorimeter to be installed in the CMS detector for the High-Luminosity LHC phase. We study the clustering of energy depositions, which is the basis for calorimetric particle reconstruction, and provide a quantitative comparison to alternative approaches. The proposed algorithms provide an interesting alternative to existing methods, offering equally performing or less resource-demanding solutions with less underlying assumptions on the detector geometry and, consequently, the possibility to generalize to other detectors.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn AutoEncoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1810-01118</link>
+    <guid isPermaLink="false">arxiv:1810.01118</guid>
+    <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giorgio Patrini et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Optimal transport offers an alternative to maximum likelihood for learning generative autoencoding models. We show that minimizing the p-Wasserstein distance between the generator and the true data distribution is equivalent to the unconstrained min-min optimization of the p-Wasserstein distance between the encoder aggregated posterior and the prior in latent space, plus a reconstruction error. We also identify the role of its trade-off hyperparameter as the capacity of the generator: its Lipschitz constant. Moreover, we prove that optimizing the encoder over any class of universal approximators, such as deterministic neural networks, is enough to come arbitrarily close to the optimum. We therefore advertise this framework, which holds for any metric space and prior, as a sweet-spot of current generative autoencoding objectives. We then introduce the Sinkhorn auto-encoder (SAE), which approximates and minimizes the p-Wasserstein distance in latent space via backprogation through the Sinkhorn algorithm. SAE directly works on samples, i.e. it models the aggregated posterior as an implicit distribution, with no need for a reparameterization trick for gradients estimations. SAE is thus able to work with different metric spaces and priors with minimal adaptations. We demonstrate the flexibility of SAE on latent spaces with different geometries and priors and compare with other methods on benchmark data sets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Extension of Sinkhorn Method: Optimal Movement Estimation of Agents Moving at Constant Velocity</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1907-05036</link>
+    <guid isPermaLink="false">arxiv:1907.05036</guid>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daigo Okada et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>In the field of bioimaging, an important part of analyzing the motion of objects is tracking. We propose a method that applies the Sinkhorn distance for solving the optimal transport problem to track objects. The advantage of this method is that it can flexibly incorporate various assumptions in tracking as a cost matrix. First, we extend the Sinkhorn distance from two dimensions to three dimensions. Using this three-dimensional distance, we compare the performance of two types of tracking technique, namely tracking that associates objects that are close to each other, which conventionally uses the nearest-neighbor method, and tracking that assumes that the object is moving at constant velocity, using three types of simulation data. The results suggest that when tracking objects moving at constant velocity, our method is superior to conventional nearest-neighbor tracking as long as the added noise is not excessively large. We show that the Sinkhorn method can be applied effectively to object tracking. Our simulation data analysis suggests that when objects are moving at constant velocity, our method, which sets acceleration as a cost, outperforms the traditional nearest-neighbor method in terms of tracking objects. To apply the proposed method to real bioimaging data, it is necessary to set an appropriate cost indicator based on the movement features.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning in Competitive Network with Haeusslers Equation adapted using FIREFLY algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1907-04160</link>
+    <guid isPermaLink="false">arxiv:1907.04160</guid>
+    <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">N. Joshi</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Many of the competitive neural network consists of spatially arranged neurons. The weigh matrix that connects cells represents local excitation and long-range inhibition. They are known as soft-winner-take-all networks and shown to exhibit desirable information-processing. The local excitatory connections are many times predefined hand-wired based depending on spatial arrangement which is chosen using the previous knowledge of data. Here we present learning in recurrent network through Haeusslers equation and modified wiring scheme based on biologically based Firefly algorithm. Following results show learning in such network from input patterns without hand-wiring with fixed topology.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Style Transfer</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1905-12828</link>
+    <guid isPermaLink="false">arxiv:1905.12828</guid>
+    <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Youssef Mroueh</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose Gaussian optimal transport for Image style transfer in an Encoder/Decoder framework. Optimal transport for Gaussian measures has closed forms Monge mappings from source to target distributions. Moreover interpolates between a content and a style image can be seen as geodesics in the Wasserstein Geometry. Using this insight, we show how to mix different target styles , using Wasserstein barycenter of Gaussian measures. Since Gaussians are closed under Wasserstein barycenter, this allows us a simple style transfer and style mixing and interpolation. Moreover we show how mixing different styles can be achieved using other geodesic metrics between gaussians such as the Fisher Rao metric, while the transport of the content to the new interpolate style is still performed with Gaussian OT maps. Our simple methodology allows to generate new stylized content interpolating between many artistic styles. The metric used in the interpolation results in different stylizations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Entropic Regularisation of Robust Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1905-12678</link>
+    <guid isPermaLink="false">arxiv:1905.12678</guid>
+    <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rozenn Dahyot et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Grogan et al [11,12] have recently proposed a solution to colour transfer by minimising the Euclidean distance L2 between two probability density functions capturing the colour distributions of two images (palette and target). It was shown to be very competitive to alternative solutions based on Optimal Transport for colour transfer. We show that in fact Grogan et al&rsquo;s formulation can also be understood as a new robust Optimal Transport based framework with entropy regularisation over marginals.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Denoising of 3-D Magnetic Resonance Images Using a Residual Encoder-Decoder Wasserstein Generative Adversarial Network</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1808-03941</link>
+    <guid isPermaLink="false">arxiv:1808.03941</guid>
+    <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maosong Ran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Structure-preserved denoising of 3D magnetic resonance imaging (MRI) images is a critical step in medical image analysis. Over the past few years, many algorithms with impressive performances have been proposed. In this paper, inspired by the idea of deep learning, we introduce an MRI denoising method based on the residual encoder-decoder Wasserstein generative adversarial network (RED-WGAN). Specifically, to explore the structure similarity between neighboring slices, a 3D configuration is utilized as the basic processing unit. Residual autoencoders combined with deconvolution operations are introduced into the generator network. Furthermore, to alleviate the oversmoothing shortcoming of the traditional mean squared error (MSE) loss function, the perceptual similarity, which is implemented by calculating the distances in the feature space extracted by a pretrained VGG-19 network, is incorporated with the MSE and adversarial losses to form the new loss function. Extensive experiments are implemented to assess the performance of the proposed method. The experimental results show that the proposed RED-WGAN achieves performance superior to several state-of-the-art methods in both simulated and real clinical data. In particular, our method demonstrates powerful abilities in both noise suppression and structure preservation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Remote measurement of sea ice dynamics with regularized optimal transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1905-00989</link>
+    <guid isPermaLink="false">arxiv:1905.00989</guid>
+    <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. D. Parno et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>As Arctic conditions rapidly change, human activity in the Arctic will continue to increase and so will the need for high-resolution observations of sea ice. While satellite imagery can provide high spatial resolution, it is temporally sparse and significant ice deformation can occur between observations. This makes it difficult to apply feature tracking or image correlation techniques that require persistent features to exist between images. With this in mind, we propose a technique based on optimal transport, which is commonly used to measure differences between probability distributions. When little ice enters or leaves the image scene, we show that regularized optimal transport can be used to quantitatively estimate ice deformation. We discuss the motivation for our approach and describe efficient computational implementations. Results are provided on a combination of synthetic and MODIS imagery to demonstrate the ability of our approach to estimate dynamics properties at the original image resolution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Semi-Supervised Multitask Learning on Multispectral Satellite Images Using Wasserstein Generative Adversarial Networks (GANs) for Predicting Poverty</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1902-11110</link>
+    <guid isPermaLink="false">arxiv:1902.11110</guid>
+    <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Perez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Obtaining reliable data describing local poverty metrics at a granularity that is informative to policy-makers requires expensive and logistically difficult surveys, particularly in the developing world. Not surprisingly, the poverty stricken regions are also the ones which have a high probability of being a war zone, have poor infrastructure and sometimes have governments that do not cooperate with internationally funded development efforts. We train a CNN on free and publicly available daytime satellite images of the African continent from Landsat 7 to build a model for predicting local economic livelihoods. Only 5% of the satellite images can be associated with labels (which are obtained from DHS Surveys) and thus a semi-supervised approach using a GAN (similar to the approach of Salimans, et al. (2016)), albeit with a more stable-to-train flavor of GANs called the Wasserstein GAN regularized with gradient penalty(Gulrajani, et al. (2017)) is used. The method of multitask learning is employed to regularize the network and also create an end-to-end model for the prediction of multiple poverty metrics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1706-02631</link>
+    <guid isPermaLink="false">arxiv:1706.02631</guid>
+    <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiqing Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In generative modeling, the Wasserstein distance (WD) has emerged as a useful metric to measure the discrepancy between generated and real data distributions. Unfortunately, it is challenging to approximate the WD of high-dimensional distributions. In contrast, the sliced Wasserstein distance (SWD) factorizes high-dimensional distributions into their multiple one-dimensional marginal distributions and is thus easier to approximate. In this paper, we introduce novel approximations of the primal and dual SWD. Instead of using a large number of random projections, as it is done by conventional SWD approximation methods, we propose to approximate SWDs with a small number of parameterized orthogonal projections in an end-to-end deep learning fashion. As concrete applications of our SWD approximations, we design two types of differentiable SWD blocks to equip modern generative frameworks&mdash;Auto-Encoders (AE) and Generative Adversarial Networks (GAN). In the experiments, we not only show the superiority of the proposed generative models on standard image synthesis benchmarks, but also demonstrate the state-of-the-art performance on challenging high resolution image and video generation in an unsupervised manner.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1904-05408</link>
+    <guid isPermaLink="false">arxiv:1904.05408</guid>
+    <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiqing Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In generative modeling, the Wasserstein distance (WD) has emerged as a useful metric to measure the discrepancy between generated and real data distributions. Unfortunately, it is challenging to approximate the WD of high-dimensional distributions. In contrast, the sliced Wasserstein distance (SWD) factorizes high-dimensional distributions into their multiple one-dimensional marginal distributions and is thus easier to approximate. In this paper, we introduce novel approximations of the primal and dual SWD. Instead of using a large number of random projections, as it is done by conventional SWD approximation methods, we propose to approximate SWDs with a small number of parameterized orthogonal projections in an end-to-end deep learning fashion. As concrete applications of our SWD approximations, we design two types of differentiable SWD blocks to equip modern generative frameworks&mdash;Auto-Encoders (AE) and Generative Adversarial Networks (GAN). In the experiments, we not only show the superiority of the proposed generative models on standard image synthesis benchmarks, but also demonstrate the state-of-the-art performance on challenging high resolution image and video generation in an unsupervised manner.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Automatic Target Recognition Using Discrimination Based on Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1904-03534</link>
+    <guid isPermaLink="false">arxiv:1904.03534</guid>
+    <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ali Sadeghian et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The use of distances based on optimal transportation has recently shown promise for discrimination of power spectra. In particular, spectral estimation methods based on l1 regularization as well as covariance based methods can be shown to be robust with respect to such distances. These transportation distances provide a geometric framework where geodesics corresponds to smooth transition of spectral mass, and have been useful for tracking. In this paper, we investigate the use of these distances for automatic target recognition. We study the use of the Monge-Kantorovich distance compared to the standard l2 distance for classifying civilian vehicles based on SAR images. We use a version of the Monge-Kantorovich distance that applies also for the case where the spectra may have different total mass, and we formulate the optimization problem as a minimum flow problem that can be computed using efficient algorithms.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning with Batch-wise Optimal Transport Loss for 3D Shape Recognition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1903-08923</link>
+    <guid isPermaLink="false">arxiv:1903.08923</guid>
+    <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lin Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep metric learning is essential for visual recognition. The widely used pair-wise (or triplet) based loss objectives cannot make full use of semantical information in training samples or give enough attention to those hard samples during optimization. Thus, they often suffer from a slow convergence rate and inferior performance. In this paper, we show how to learn an importance-driven distance metric via optimal transport programming from batches of samples. It can automatically emphasize hard examples and lead to significant improvements in convergence. We propose a new batch-wise optimal transport loss and combine it in an end-to-end deep metric learning manner. We use it to learn the distance metric and deep feature representation jointly for recognition. Empirical results on visual retrieval and classification tasks with six benchmark datasets, i.e., MNIST, CIFAR10, SHREC13, SHREC14, ModelNet10, and ModelNet40, demonstrate the superiority of the proposed method. It can accelerate the convergence rate significantly while achieving a state-of-the-art recognition performance. For example, in 3D shape recognition experiments, we show that our method can achieve better recognition performance within only 5 epochs than what can be obtained by mainstream 3D shape recognition approaches after 200 epochs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Discrepancy for Unsupervised Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1903-04064</link>
+    <guid isPermaLink="false">arxiv:1903.04064</guid>
+    <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chen-Yu Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this work, we connect two distinct concepts for unsupervised domain adaptation: feature distribution alignment between domains by utilizing the task-specific decision boundary and the Wasserstein metric. Our proposed sliced Wasserstein discrepancy (SWD) is designed to capture the natural notion of dissimilarity between the outputs of task-specific classifiers. It provides a geometrically meaningful guidance to detect target samples that are far from the support of the source and enables efficient distribution alignment in an end-to-end trainable fashion. In the experiments, we validate the effectiveness and genericness of our method on digit and sign recognition, image classification, semantic segmentation, and object detection.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Single Image Haze Removal Using Conditional Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1903-00395</link>
+    <guid isPermaLink="false">arxiv:1903.00395</guid>
+    <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joshua Peter Ebenezer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present a method to restore a clear image from a haze-affected image using a Wasserstein generative adversarial network. As the problem is ill-conditioned, previous methods have required a prior on natural images or multiple images of the same scene. We train a generative adversarial network to learn the probability distribution of clear images conditioned on the haze-affected images using the Wasserstein loss function, using a gradient penalty to enforce the Lipschitz constraint. The method is data-adaptive, end-to-end, and requires no further processing or tuning of parameters. We also incorporate the use of a texture-based loss metric and the L1 loss to improve results, and show that our results are better than the current state-of-the-art.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Infrared Safety of a Neural-Net Top Tagging Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1806-01263</link>
+    <guid isPermaLink="false">arxiv:1806.01263</guid>
+    <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Suyong Choi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, jet tagger, boosted top, top tagging) — original abstract; no AI summary.</em></p>
+<p>Neural network-based algorithms provide a promising approach to jet classification problems, such as boosted top jet tagging. To date, NN-based top taggers demonstrated excellent performance in Monte Carlo studies. In this paper, we construct a top-jet tagger based on a Convolutional Neural Network (CNN), and apply it to parton-level boosted top samples, with and without an additional gluon in the final state. We show that the jet observable defined by the CNN obeys the canonical definition of infrared safety: it is unaffected by the presence of the extra gluon, as long as it is soft or collinear with one of the quarks. Our results indicate that the CNN tagger is robust with respect to possible mis-modeling of soft and collinear final-state radiation by Monte Carlo generators.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Modeling the Biological Pathology Continuum with HSIC-regularized Wasserstein Auto-encoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1901-06618</link>
+    <guid isPermaLink="false">arxiv:1901.06618</guid>
+    <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Denny Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>A crucial challenge in image-based modeling of biomedical data is to identify trends and features that separate normality and pathology. In many cases, the morphology of the imaged object exhibits continuous change as it deviates from normality, and thus a generative model can be trained to model this morphological continuum. Moreover, given side information that correlates to certain trend in morphological change, a latent variable model can be regularized such that its latent representation reflects this side information. In this work, we use the Wasserstein Auto-encoder to model this pathology continuum, and apply the Hilbert-Schmitt Independence Criterion (HSIC) to enforce dependency between certain latent features and the provided side information. We experimentally show that the model can provide disentangled and interpretable latent representations and also generate a continuum of morphological changes that corresponds to change in the side information.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Banach Wasserstein GAN</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1806-06621</link>
+    <guid isPermaLink="false">arxiv:1806.06621</guid>
+    <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Adler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein Generative Adversarial Networks (WGANs) can be used to generate realistic samples from complicated image distributions. The Wasserstein metric used in WGANs is based on a notion of distance between individual images, which induces a notion of distance between probability distributions of images. So far the community has considered ℓ² as the underlying distance. We generalize the theory of WGAN with gradient penalty to Banach spaces, allowing practitioners to select the features to emphasize in the generator. We further discuss the effect of some particular choices of underlying norms, focusing on Sobolev norms. Finally, we demonstrate a boost in performance for an appropriate choice of norm on CIFAR-10 and CelebA.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Manifold-valued Image Generation with Wasserstein Generative Adversarial Nets</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1712-01551</link>
+    <guid isPermaLink="false">arxiv:1712.01551</guid>
+    <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiwu Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Generative modeling over natural images is one of the most fundamental machine learning problems. However, few modern generative models, including Wasserstein Generative Adversarial Nets (WGANs), are studied on manifold-valued images that are frequently encountered in real-world applications. To fill the gap, this paper first formulates the problem of generating manifold-valued images and exploits three typical instances: hue-saturation-value (HSV) color image generation, chromaticity-brightness (CB) color image generation, and diffusion-tensor (DT) image generation. For the proposed generative modeling problem, we then introduce a theorem of optimal transport to derive a new Wasserstein distance of data distributions on complete manifolds, enabling us to achieve a tractable objective under the WGAN framework. In addition, we recommend three benchmark datasets that are CIFAR-10 HSV/CB color images, ImageNet HSV/CB color images, UCL DT image datasets. On the three datasets, we experimentally demonstrate the proposed manifold-aware WGAN model can generate more plausible manifold-valued images than its competitors.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Lifted Wasserstein Matcher for Fast and Robust Topology Tracking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1808-05870</link>
+    <guid isPermaLink="false">arxiv:1808.05870</guid>
+    <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxime Soler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper presents a robust and efficient method for tracking topological features in time-varying scalar data. Structures are tracked based on the optimal matching between persistence diagrams with respect to the Wasserstein metric. This fundamentally relies on solving the assignment problem, a special case of optimal transport, for all consecutive timesteps. Our approach relies on two main contributions. First, we revisit the seminal assignment algorithm by Kuhn and Munkres which we specifically adapt to the problem of matching persistence diagrams in an efficient way. Second, we propose an extension of the Wasserstein metric that significantly improves the geometrical stability of the matching of domain-embedded persistence pairs. We show that this geometrical lifting has the additional positive side-effect of improving the assignment matrix sparsity and therefore computing time. The global framework implements a coarse-grained parallelism by computing persistence diagrams and finding optimal matchings in parallel for every couple of consecutive timesteps. Critical trajectories are constructed by associating successively matched persistence pairs over time. Merging and splitting events are detected with a geometrical threshold in a post-processing stage. Extensive experiments on real-life datasets show that our matching approach is an order of magnitude faster than the seminal Munkres algorithm. Moreover, compared to a modern approximation method, our method provides competitive runtimes while yielding exact results. We demonstrate the utility of our global framework by extracting critical point trajectories from various simulated time-varying datasets and compare it to the existing methods based on associated overlaps of volumes. Robustness to noise and temporal resolution downsampling is empirically demonstrated.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Classifier: Defending Against Adversarial Attacks by Regularized Deep Embedding</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1811-07950</link>
+    <guid isPermaLink="false">arxiv:1811.07950</guid>
+    <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Recent studies have demonstrated the vulnerability of deep convolutional neural networks against adversarial examples. Inspired by the observation that the intrinsic dimension of image data is much smaller than its pixel space dimension and the vulnerability of neural networks grows with the input dimension, we propose to embed high-dimensional input images into a low-dimensional space to perform classification. However, arbitrarily projecting the input images to a low-dimensional space without regularization will not improve the robustness of deep neural networks. Leveraging optimal transport theory, we propose a new framework, Optimal Transport Classifier (OT-Classifier), and derive an objective that minimizes the discrepancy between the distribution of the true label and the distribution of the OT-Classifier output. Experimental results on several benchmark datasets show that, our proposed framework achieves state-of-the-art performance against strong adversarial attack methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards High Resolution Video Generation with Progressive Growing of Sliced Wasserstein GANs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1810-02419</link>
+    <guid isPermaLink="false">arxiv:1810.02419</guid>
+    <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinesh Acharya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The extension of image generation to video generation turns out to be a very difficult task, since the temporal dimension of videos introduces an extra challenge during the generation process. Besides, due to the limitation of memory and training stability, the generation becomes increasingly challenging with the increase of the resolution/duration of videos. In this work, we exploit the idea of progressive growing of Generative Adversarial Networks (GANs) for higher resolution video generation. In particular, we begin to produce video samples of low-resolution and short-duration, and then progressively increase both resolution and duration alone (or jointly) by adding new spatiotemporal convolutional layers to the current networks. Starting from the learning on a very raw-level spatial appearance and temporal movement of the video distribution, the proposed progressive method learns spatiotemporal information incrementally to generate higher resolution videos. Furthermore, we introduce a sliced version of Wasserstein GAN (SWGAN) loss to improve the distribution learning on the video data of high-dimension and mixed-spatiotemporal distribution. SWGAN loss replaces the distance between joint distributions by that of one-dimensional marginal distributions, making the loss easier to compute. We evaluate the proposed model on our collected face video dataset of 10,900 videos to generate photorealistic face videos of 256x256x32 resolution. In addition, our model also reaches a record inception score of 14.57 in unsupervised action recognition dataset UCF-101.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Wasserstein GAN model with the total variational regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1812-00810</link>
+    <guid isPermaLink="false">arxiv:1812.00810</guid>
+    <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lijun Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>It is well known that the generative adversarial nets (GANs) are remarkably difficult to train. The recently proposed Wasserstein GAN (WGAN) creates principled research directions towards addressing these issues. But we found in practice that gradient penalty WGANs (GP-WGANs) still suffer from training instability. In this paper, we combine a Total Variational (TV) regularizing term into the WGAN formulation instead of weight clipping or gradient penalty, which implies that the Lipschitz constraint is enforced on the critic network. Our proposed method is more stable at training than GP-WGANs and works well across varied GAN architectures. We also present a method to control the trade-off between image diversity and visual quality. It does not bring any computation burden.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Semantic Image Inpainting Through Improved Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1812-01071</link>
+    <guid isPermaLink="false">arxiv:1812.01071</guid>
+    <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patricia Vitoria et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Image inpainting is the task of filling-in missing regions of a damaged or incomplete image. In this work we tackle this problem not only by using the available visual data but also by incorporating image semantics through the use of generative models. Our contribution is twofold: First, we learn a data latent space by training an improved version of the Wasserstein generative adversarial network, for which we incorporate a new generator and discriminator architecture. Second, the learned semantic information is combined with a new optimization loss for inpainting whose minimization infers the missing content conditioned by the available data. It takes into account powerful contextual and perceptual content inherent in the image itself. The benefits include the ability to recover large regions by accumulating semantic information even it is not fully present in the damaged image. Experiments show that the presented method obtains qualitative and quantitative top-tier results in different experimental situations and also achieves accurate photo-realism comparable to state-of-the-art works.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Guiding the One-to-one Mapping in CycleGAN via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1811-06284</link>
+    <guid isPermaLink="false">arxiv:1811.06284</guid>
+    <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guansong Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>CycleGAN is capable of learning a one-to-one mapping between two data distributions without paired examples, achieving the task of unsupervised data translation. However, there is no theoretical guarantee on the property of the learned one-to-one mapping in CycleGAN. In this paper, we experimentally find that, under some circumstances, the one-to-one mapping learned by CycleGAN is just a random one within the large feasible solution space. Based on this observation, we explore to add extra constraints such that the one-to-one mapping is controllable and satisfies more properties related to specific tasks. We propose to solve an optimal transport mapping restrained by a task-specific cost function that reflects the desired properties, and use the barycenters of optimal transport mapping to serve as references for CycleGAN. Our experiments indicate that the proposed algorithm is capable of learning a one-to-one mapping with the desired properties.</p>]]></description>
+  </item>
+
+  <item>
+    <title>An Entropic Optimal Transport Loss for Learning Deep Neural Networks under Label Noise in Remote Sensing Images</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1810-01163</link>
+    <guid isPermaLink="false">arxiv:1810.01163</guid>
+    <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bharath Bhushan Damodaran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep neural networks have established as a powerful tool for large scale supervised classification tasks. The state-of-the-art performances of deep neural networks are conditioned to the availability of large number of accurately labeled samples. In practice, collecting large scale accurately labeled datasets is a challenging and tedious task in most scenarios of remote sensing image analysis, thus cheap surrogate procedures are employed to label the dataset. Training deep neural networks on such datasets with inaccurate labels easily overfits to the noisy training labels and degrades the performance of the classification tasks drastically. To mitigate this effect, we propose an original solution with entropic optimal transportation. It allows to learn in an end-to-end fashion deep neural networks that are, to some extent, robust to inaccurately labeled samples. We empirically demonstrate on several remote sensing datasets, where both scene and pixel-based hyperspectral images are considered for classification. Our method proves to be highly tolerant to significant amounts of label noise and achieves favorable results against state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Divergence for GANs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1712-01026</link>
+    <guid isPermaLink="false">arxiv:1712.01026</guid>
+    <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiqing Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In many domains of computer vision, generative adversarial networks (GANs) have achieved great success, among which the family of Wasserstein GANs (WGANs) is considered to be state-of-the-art due to the theoretical contributions and competitive qualitative performance. However, it is very challenging to approximate the k-Lipschitz constraint required by the Wasserstein-1 metric~(W-met). In this paper, we propose a novel Wasserstein divergence~(W-div), which is a relaxed version of W-met and does not require the k-Lipschitz constraint. As a concrete application, we introduce a Wasserstein divergence objective for GANs~(WGAN-div), which can faithfully approximate W-div through optimization. Under various settings, including progressive growing training, we demonstrate the stability of the proposed WGAN-div owing to its theoretical and practical advantages over WGANs. Also, we study the quantitative and visual performance of WGAN-div on standard image synthesis benchmarks of computer vision, showing the superior performance of WGAN-div compared to the state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DeepJDOT: Deep Joint Distribution Optimal Transport for Unsupervised Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1803-10081</link>
+    <guid isPermaLink="false">arxiv:1803.10081</guid>
+    <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bharath Bhushan Damodaran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In computer vision, one is often confronted with problems of domain shifts, which occur when one applies a classifier trained on a source dataset to target data sharing similar characteristics (e.g. same classes), but also different latent data structures (e.g. different acquisition conditions). In such a situation, the model will perform poorly on the new data, since the classifier is specialized to recognize visual cues specific to the source domain. In this work we explore a solution, named DeepJDOT, to tackle this problem: through a measure of discrepancy on joint deep representations/labels based on optimal transport, we not only learn new data representations aligned between the source and target domain, but also simultaneously preserve the discriminative information used by the classifier. We applied DeepJDOT to a series of visual recognition tasks, where it compares favorably against state-of-the-art deep domain adaptation methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GlymphVIS: Visualizing Glymphatic Transport Pathways Using Regularized Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1808-08304</link>
+    <guid isPermaLink="false">arxiv:1808.08304</guid>
+    <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rena Elkin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The glymphatic system (GS) is a transit passage that facilitates brain metabolic waste removal and its dysfunction has been associated with neurodegenerative diseases such as Alzheimer&rsquo;s disease. The GS has been studied by acquiring temporal contrast enhanced magnetic resonance imaging (MRI) sequences of a rodent brain, and tracking the cerebrospinal fluid injected contrast agent as it flows through the GS. We present here a novel visualization framework, GlymphVIS, which uses regularized optimal transport (OT) to study the flow behavior between time points at which the images are taken. Using this regularized OT approach, we can incorporate diffusion, handle noise, and accurately capture and visualize the time varying dynamics in GS transport. Moreover, we are able to reduce the registration mean-squared and infinity-norm error across time points by up to a factor of 5 as compared to the current state-of-the-art method. Our visualization pipeline yields flow patterns that align well with experts&rsquo; current findings of the glymphatic system.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variational Wasserstein Clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1806-09045</link>
+    <guid isPermaLink="false">arxiv:1806.09045</guid>
+    <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liang Mi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a new clustering method based on optimal transportation. We solve optimal transportation with variational principles, and investigate the use of power diagrams as transportation plans for aggregating arbitrary domains into a fixed number of clusters. We iteratively drive centroids through target domains while maintaining the minimum clustering energy by adjusting the power diagrams. Thus, we simultaneously pursue clustering and the Wasserstein distances between the centroids and the target domains, resulting in a measure-preserving mapping. We demonstrate the use of our method in domain adaptation, remeshing, and representation learning on synthetic and real data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Classification of lung nodules in CT images based on Wasserstein distance in differential geometry</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1807-00094</link>
+    <guid isPermaLink="false">arxiv:1807.00094</guid>
+    <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Min Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Lung nodules are commonly detected in screening for patients with a risk for lung cancer. Though the status of large nodules can be easily diagnosed by fine needle biopsy or bronchoscopy, small nodules are often difficult to classify on computed tomography (CT). Recent works have shown that shape analysis of lung nodules can be used to differentiate benign lesions from malignant ones, though existing methods are limited in their sensitivity and specificity. In this work we introduced a new 3D shape analysis within the framework of differential geometry to calculate the Wasserstein distance between benign and malignant lung nodules to derive an accurate classification scheme. The Wasserstein distance between the nodules is calculated based on our new spherical optimal mass transport, this new algorithm works directly on sphere by using spherical metric, which is much more accurate and efficient than previous methods. In the process of deformation, the area-distortion factor gives a probability measure on the unit sphere, which forms the Wasserstein space. From known cases of benign and malignant lung nodules, we can calculate a unique optimal mass transport map between their correspondingly deformed Wasserstein spaces. This transportation cost defines the Wasserstein distance between them and can be used to classify new lung nodules into either the benign or malignant class. To the best of our knowledge, this is the first work that utilizes Wasserstein distance for lung nodule classification. The advantages of Wasserstein distance are it is invariant under rigid motions and scalings, thus it intrinsically measures shape distance even when the underlying shapes are of high complexity, making it well suited to classify lung nodules as they have different sizes, orientations, and appearances.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast inference of deep neural networks in FPGAs for particle physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1804-06913</link>
+    <guid isPermaLink="false">arxiv:1804.06913</guid>
+    <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier Duarte et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, LHC, Large Hadron Collider, collider, Nhan Tran, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Recent results at the Large Hadron Collider (LHC) have pointed to enhanced physics capabilities through the improvement of the real-time event processing techniques. Machine learning methods are ubiquitous and have proven to be very powerful in LHC physics, and particle physics as a whole. However, exploration of the use of such techniques in low-latency, low-power FPGA hardware has only just begun. FPGA-based trigger and data acquisition (DAQ) systems have extremely low, sub-microsecond latency requirements that are unique to particle physics. We present a case study for neural network inference in FPGAs focusing on a classifier for jet substructure which would enable, among many other physics scenarios, searches for new dark sector particles and novel measurements of the Higgs boson. While we focus on a specific example, the lessons are far-reaching. We develop a package based on High-Level Synthesis (HLS) called hls4ml to build machine learning models in FPGAs. The use of HLS increases accessibility across a broad user community and allows for a drastic decrease in firmware development time. We map out FPGA resource usage and latency versus neural network hyperparameters to identify the problems in particle physics that would benefit from performing neural network inference with FPGAs. For our example jet substructure model, we fit well within the available resources of modern FPGAs with a latency on the scale of 100 ns.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Visual Feature Attribution using Wasserstein GANs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1711-08998</link>
+    <guid isPermaLink="false">arxiv:1711.08998</guid>
+    <pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Christian F. Baumgartner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Attributing the pixels of an input image to a certain category is an important and well-studied problem in computer vision, with applications ranging from weakly supervised localisation to understanding hidden effects in the data. In recent years, approaches based on interpreting a previously trained neural network classifier have become the de facto state-of-the-art and are commonly used on medical as well as natural image datasets. In this paper, we discuss a limitation of these approaches which may lead to only a subset of the category specific features being detected. To address this problem we develop a novel feature attribution technique based on Wasserstein Generative Adversarial Networks (WGAN), which does not suffer from this limitation. We show that our proposed method performs substantially better than the state-of-the-art for visual attribution on a synthetic dataset and on real 3D neuroimaging data from patients with mild cognitive impairment (MCI) and Alzheimer&rsquo;s disease (AD). For AD patients the method produces compellingly realistic disease effect maps which are very close to the observed effects.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low Dose CT Image Denoising Using a Generative Adversarial Network with Wasserstein Distance and Perceptual Loss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1708-00961</link>
+    <guid isPermaLink="false">arxiv:1708.00961</guid>
+    <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qingsong Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we introduce a new CT image denoising method based on the generative adversarial network (GAN) with Wasserstein distance and perceptual similarity. The Wasserstein distance is a key concept of the optimal transform theory, and promises to improve the performance of the GAN. The perceptual loss compares the perceptual features of a denoised output against those of the ground truth in an established feature space, while the GAN helps migrate the data noise distribution from strong to weak. Therefore, our proposed method transfers our knowledge of visual perception to the image denoising task, is capable of not only reducing the image noise level but also keeping the critical information at the same time. Promising results have been obtained in our experiments with clinical CT images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unsupervised and semi-supervised learning with Categorical Generative Adversarial Networks assisted by Wasserstein distance for dermoscopy image Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1804-03700</link>
+    <guid isPermaLink="false">arxiv:1804.03700</guid>
+    <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xin Yi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Melanoma is a curable aggressive skin cancer if detected early. Typically, the diagnosis involves initial screening with subsequent biopsy and histopathological examination if necessary. Computer aided diagnosis offers an objective score that is independent of clinical experience and the potential to lower the workload of a dermatologist. In the recent past, success of deep learning algorithms in the field of general computer vision has motivated successful application of supervised deep learning methods in computer aided melanoma recognition. However, large quantities of labeled images are required to make further improvements on the supervised method. A good annotation generally requires clinical and histological confirmation, which requires significant effort. In an attempt to alleviate this constraint, we propose to use categorical generative adversarial network to automatically learn the feature representation of dermoscopy images in an unsupervised and semi-supervised manner. Thorough experiments on ISIC 2016 skin lesion chal- lenge demonstrate that the proposed feature learning method has achieved an average precision score of 0.424 with only 140 labeled images. Moreover, the proposed method is also capable of generating real-world like dermoscopy images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Monge's Optimal Transport Distance for Image Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1612-00181</link>
+    <guid isPermaLink="false">arxiv:1612.00181</guid>
+    <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Snow et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper focuses on a similarity measure, known as the Wasserstein distance, with which to compare images. The Wasserstein distance results from a partial differential equation (PDE) formulation of Monge&rsquo;s optimal transport problem. We present an efficient numerical solution method for solving Monge&rsquo;s problem. To demonstrate the measure&rsquo;s discriminatory power when comparing images, we use a 1-Nearest Neighbour (1-NN) machine learning algorithm to illustrate the measure&rsquo;s potential benefits over other more traditional distance metrics and also the Tangent Space distance, designed to perform excellently on the well-known MNIST dataset. To our knowledge, the PDE formulation of the Wasserstein metric has not been presented for dealing with image comparison, nor has the Wasserstein distance been used within the 1-nearest neighbour architecture.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Monge-Kantorovich Optimal Transport Distance for Image Comparison</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1804-03531</link>
+    <guid isPermaLink="false">arxiv:1804.03531</guid>
+    <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Snow et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper focuses on the Monge-Kantorovich formulation of the optimal transport problem and the associated L² Wasserstein distance. We use the L² Wasserstein distance in the Nearest Neighbour (NN) machine learning architecture to demonstrate the potential power of the optimal transport distance for image comparison. We compare the Wasserstein distance to other established distances - including the partial differential equation (PDE) formulation of the optimal transport problem - and demonstrate that on the well known MNIST optical character recognition dataset, it achieves excellent results.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Introspective Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1711-08875</link>
+    <guid isPermaLink="false">arxiv:1711.08875</guid>
+    <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kwonjoon Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present Wasserstein introspective neural networks (WINN) that are both a generator and a discriminator within a single model. WINN provides a significant improvement over the recent introspective neural networks (INN) method by enhancing INN&rsquo;s generative modeling capability. WINN has three interesting properties: (1) A mathematical connection between the formulation of the INN algorithm and that of Wasserstein generative adversarial networks (WGAN) is made. (2) The explicit adoption of the Wasserstein distance into INN results in a large enhancement to INN, achieving compelling results even with a single classifier &mdash; e.g., providing nearly a 20 times reduction in model size over INN for unsupervised generative modeling. (3) When applied to supervised classification, WINN also gives rise to improved robustness against adversarial examples in terms of the error reduction. In the experiments, we report encouraging results on unsupervised learning problems including texture, face, and object modeling, as well as a supervised classification task against adversarial attacks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Visual Tracking Using Sparse Coding and Earth Mover's Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1804-02470</link>
+    <guid isPermaLink="false">arxiv:1804.02470</guid>
+    <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gang Yao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>An efficient iterative Earth Mover&rsquo;s Distance (iEMD) algorithm for visual tracking is proposed in this paper. The Earth Mover&rsquo;s Distance (EMD) is used as the similarity measure to search for the optimal template candidates in feature-spatial space in a video sequence. The computation of the EMD is formulated as the transportation problem from linear programming. The efficiency of the EMD optimization problem limits its use for visual tracking. To alleviate this problem, a transportation-simplex method is used for EMD optimization and a monotonically convergent iterative optimization algorithm is developed. The local sparse representation is used as the appearance models for the iEMD tracker. The maximum-alignment-pooling method is used for constructing a sparse coding histogram which reduces the computational complexity of the EMD optimization. The template update algorithm based on the EMD is also presented. The iEMD tracking algorithm assumes small inter-frame movement in order to guarantee convergence. When the camera is mounted on a moving robot, e.g., a flying quadcopter, the camera could experience a sudden and rapid motion leading to large inter-frame movements. To ensure that the tracking algorithm converges, a gyro-aided extension of the iEMD tracker is presented, where synchronized gyroscope information is utilized to compensate for the rotation of the camera. The iEMD algorithm&rsquo;s performance is evaluated using eight publicly available datasets. The performance of the iEMD algorithm is compared with seven state-of-the-art tracking algorithms based on relative percentage overlap. The robustness of this algorithm for large inter-frame displacements is also illustrated.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generative Modeling using the Sliced Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1803-11188</link>
+    <guid isPermaLink="false">arxiv:1803.11188</guid>
+    <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ishan Deshpande et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Generative Adversarial Nets (GANs) are very successful at modeling distributions from given samples, even in the high-dimensional case. However, their formulation is also known to be hard to optimize and often not stable. While this is particularly true for early GAN formulations, there has been significant empirically motivated and theoretically founded progress to improve stability, for instance, by using the Wasserstein distance rather than the Jenson-Shannon divergence. Here, we consider an alternative formulation for generative modeling based on random projections which, in its simplest form, results in a single objective rather than a saddle-point formulation. By augmenting this approach with a discriminator we improve its accuracy. We found our approach to be significantly more stable compared to even the improved Wasserstein GAN. Further, unlike the traditional GAN loss, the loss formulated in our method is a good measure of the actual distance between the distributions and, for the first time for GAN training, we are able to show estimates for the same.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Framework for Wasserstein-1-Type Metrics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1701-01945</link>
+    <guid isPermaLink="false">arxiv:1701.01945</guid>
+    <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernhard Schmitzer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a unifying framework for generalising the Wasserstein-1 metric to a discrepancy measure between nonnegative measures of different mass. This generalization inherits the convexity and computational efficiency from the Wasserstein-1 metric, and it includes several previous approaches from the literature as special cases. For various specific instances of the generalized Wasserstein-1 metric we furthermore demonstrate their usefulness in applications by numerical experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Improving the Improved Training of Wasserstein GANs: A Consistency Term and Its Dual Effect</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1803-01541</link>
+    <guid isPermaLink="false">arxiv:1803.01541</guid>
+    <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Wei et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Despite being impactful on a variety of problems and applications, the generative adversarial nets (GANs) are remarkably difficult to train. This issue is formally analyzed by \cite{arjovsky2017towards}, who also propose an alternative direction to avoid the caveats in the minmax two-player training of GANs. The corresponding algorithm, called Wasserstein GAN (WGAN), hinges on the 1-Lipschitz continuity of the discriminator. In this paper, we propose a novel approach to enforcing the Lipschitz continuity in the training procedure of WGANs. Our approach seamlessly connects WGAN with one of the recent semi-supervised learning methods. As a result, it gives rise to not only better photo-realistic samples than the previous methods but also state-of-the-art semi-supervised learning results. In particular, our approach gives rise to the inception score of more than 5.0 with only 1,000 CIFAR-10 images and is the first that exceeds the accuracy of 90% on the CIFAR-10 dataset using only 4,000 labeled images, to the best of our knowledge.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal transport maps for distribution preserving operations on latent spaces of Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1711-01970</link>
+    <guid isPermaLink="false">arxiv:1711.01970</guid>
+    <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eirikur Agustsson et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Generative models such as Variational Auto Encoders (VAEs) and Generative Adversarial Networks (GANs) are typically trained for a fixed prior distribution in the latent space, such as uniform or Gaussian. After a trained model is obtained, one can sample the Generator in various forms for exploration and understanding, such as interpolating between two samples, sampling in the vicinity of a sample or exploring differences between a pair of samples applied to a third sample. In this paper, we show that the latent space operations used in the literature so far induce a distribution mismatch between the resulting outputs and the prior distribution the model was trained on. To address this, we propose to use distribution matching transport maps to ensure that such latent space operations preserve the prior distribution, while minimally modifying the original operation. Our experimental results validate that the proposed operations give higher quality samples compared to the original operations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Brenier approach for optimal transportation between a quasi-discrete measure and a discrete measure</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1801-05574</link>
+    <guid isPermaLink="false">arxiv:1801.05574</guid>
+    <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ying Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transportation) — original abstract; no AI summary.</em></p>
+<p>Correctly estimating the discrepancy between two data distributions has always been an important task in Machine Learning. Recently, Cuturi proposed the Sinkhorn distance which makes use of an approximate Optimal Transport cost between two distributions as a distance to describe distribution discrepancy. Although it has been successfully adopted in various machine learning applications (e.g. in Natural Language Processing and Computer Vision) since then, the Sinkhorn distance also suffers from two unnegligible limitations. The first one is that the Sinkhorn distance only gives an approximation of the real Wasserstein distance, the second one is the `divide by zero&rsquo; problem which often occurs during matrix scaling when setting the entropy regularization coefficient to a small value. In this paper, we introduce a new Brenier approach for calculating a more accurate Wasserstein distance between two discrete distributions, this approach successfully avoids the two limitations shown above for Sinkhorn distance and gives an alternative way for estimating distribution discrepancy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Image Labeling Based on Graphical Models Using Wasserstein Messages and Geometric Assignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2018.html#a1710-01493</link>
+    <guid isPermaLink="false">arxiv:1710.01493</guid>
+    <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruben Hühnerbein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce a novel approach to Maximum A Posteriori inference based on discrete graphical models. By utilizing local Wasserstein distances for coupling assignment measures across edges of the underlying graph, a given discrete objective function is smoothly approximated and restricted to the assignment manifold. A corresponding multiplicative update scheme combines in a single process (i) geometric integration of the resulting Riemannian gradient flow and (ii) rounding to integral solutions that represent valid labelings. Throughout this process, local marginalization constraints known from the established LP relaxation are satisfied, whereas the smooth geometric setting results in rapidly converging iterations that can be carried out in parallel for every edge.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Aggregated Wasserstein Metric and State Registration for Hidden Markov Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1711-05792</link>
+    <guid isPermaLink="false">arxiv:1711.05792</guid>
+    <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yukun Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a framework, named Aggregated Wasserstein, for computing a dissimilarity measure or distance between two Hidden Markov Models with state conditional distributions being Gaussian. For such HMMs, the marginal distribution at any time position follows a Gaussian mixture distribution, a fact exploited to softly match, aka register, the states in two HMMs. We refer to such HMMs as Gaussian mixture model-HMM (GMM-HMM). The registration of states is inspired by the intrinsic relationship of optimal transport and the Wasserstein metric between distributions. Specifically, the components of the marginal GMMs are matched by solving an optimal transport problem where the cost between components is the Wasserstein metric for Gaussian distributions. The solution of the optimization problem is a fast approximation to the Wasserstein metric between two GMMs. The new Aggregated Wasserstein distance is a semi-metric and can be computed without generating Monte Carlo samples. It is invariant to relabeling or permutation of states. The distance is defined meaningfully even for two HMMs that are estimated from data of different dimensionality, a situation that can arise due to missing variables. This distance quantifies the dissimilarity of GMM-HMMs by measuring both the difference between the two marginal GMMs and that between the two transition matrices. Our new distance is tested on tasks of retrieval, classification, and t-SNE visualization of time series. Experiments on both synthetic and real data have demonstrated its advantages in terms of accuracy as well as efficiency in comparison with existing distances based on the Kullback-Leibler divergence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Distance for Learning Gaussian Mixture Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1711-05376</link>
+    <guid isPermaLink="false">arxiv:1711.05376</guid>
+    <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheil Kolouri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Gaussian mixture models (GMM) are powerful parametric tools with many applications in machine learning and computer vision. Expectation maximization (EM) is the most popular algorithm for estimating the GMM parameters. However, EM guarantees only convergence to a stationary point of the log-likelihood function, which could be arbitrarily worse than the optimal solution. Inspired by the relationship between the negative log-likelihood function and the Kullback-Leibler (KL) divergence, we propose an alternative formulation for estimating the GMM parameters using the sliced Wasserstein distance, which gives rise to a new algorithm. Specifically, we propose minimizing the sliced-Wasserstein distance between the mixture model and the data distribution with respect to the GMM parameters. In contrast to the KL-divergence, the energy landscape for the sliced-Wasserstein distance is more well-behaved and therefore more suitable for a stochastic gradient descent scheme to obtain the optimal GMM parameters. We show that our formulation results in parameter estimates that are more robust to random initializations and demonstrate that it can estimate high-dimensional data distributions more faithfully than the EM algorithm.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning to solve inverse problems using Wasserstein loss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1710-10898</link>
+    <guid isPermaLink="false">arxiv:1710.10898</guid>
+    <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Adler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose using the Wasserstein loss for training in inverse problems. In particular, we consider a learned primal-dual reconstruction scheme for ill-posed inverse problems using the Wasserstein distance as loss function in the learning. This is motivated by miss-alignments in training data, which when using standard mean squared error loss could severely degrade reconstruction quality. We prove that training with the Wasserstein loss gives a reconstruction operator that correctly compensates for miss-alignments in certain cases, whereas training with the mean squared error gives a smeared reconstruction. Moreover, we demonstrate these effects by training a reconstruction algorithm using both mean squared error and optimal transport loss for a problem in computerized tomography.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning Wasserstein Embeddings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1710-07457</link>
+    <guid isPermaLink="false">arxiv:1710.07457</guid>
+    <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Courty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein distance received a lot of attention recently in the community of machine learning, especially for its principled way of comparing distributions. It has found numerous applications in several hard problems, such as domain adaptation, dimensionality reduction or generative models. However, its use is still limited by a heavy computational cost. Our goal is to alleviate this problem by providing an approximation mechanism that allows to break its inherent complexity. It relies on the search of an embedding where the Euclidean distance mimics the Wasserstein distance. We show that such an embedding can be found with a siamese architecture associated with a decoder network that allows to move from the embedding space back to the original input space. Once this embedding has been found, computing optimization problems in the Wasserstein space (e.g. barycenters, principal directions or even archetypes) can be conducted extremely fast. Numerical experiments supporting this idea are conducted on image datasets, and show the wide potential benefits of our method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Numerical optimization for Artificial Retina Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1709-08610</link>
+    <guid isPermaLink="false">arxiv:1709.08610</guid>
+    <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxim Borisyak et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>High-energy physics experiments rely on reconstruction of the trajectories of particles produced at the interaction point. This is a challenging task, especially in the high track multiplicity environment generated by p-p collisions at the LHC energies. A typical event includes hundreds of signal examples (interesting decays) and a significant amount of noise (uninteresting examples). This work describes a modification of the Artificial Retina algorithm for fast track finding: numerical optimization methods were adopted for fast local track search. This approach allows for considerable reduction of the total computational time per event. Test results on simplified simulated model of LHCb VELO (VErtex LOcator) detector are presented. Also this approach is well-suited for implementation of paralleled computations as GPGPU which look very attractive in the context of upcoming detector upgrades.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport for Deep Joint Transfer Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1709-02995</link>
+    <guid isPermaLink="false">arxiv:1709.02995</guid>
+    <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ying Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Training a Deep Neural Network (DNN) from scratch requires a large amount of labeled data. For a classification task where only small amount of training data is available, a common solution is to perform fine-tuning on a DNN which is pre-trained with related source data. This consecutive training process is time consuming and does not consider explicitly the relatedness between different source and target tasks. In this paper, we propose a novel method to jointly fine-tune a Deep Neural Network with source data and target data. By adding an Optimal Transport loss (OT loss) between source and target classifier predictions as a constraint on the source classifier, the proposed Joint Transfer Learning Network (JTLN) can effectively learn useful knowledge for target classification from source data. Furthermore, by using different kind of metric as cost matrix for the OT loss, JTLN can incorporate different prior knowledge about the relatedness between target categories and source categories. We carried out experiments with JTLN based on Alexnet on image classification datasets and the results verify the effectiveness of the proposed JTLN in comparison with standard consecutive fine-tuning. This Joint Transfer Learning with OT loss is general and can also be applied to other kind of Neural Networks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generalised Wasserstein Dice Score for Imbalanced Multi-class Segmentation using Holistic Convolutional Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1707-00478</link>
+    <guid isPermaLink="false">arxiv:1707.00478</guid>
+    <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucas Fidon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Dice score is widely used for binary segmentation due to its robustness to class imbalance. Soft generalisations of the Dice score allow it to be used as a loss function for training convolutional neural networks (CNN). Although CNNs trained using mean-class Dice score achieve state-of-the-art results on multi-class segmentation, this loss function does neither take advantage of inter-class relationships nor multi-scale information. We argue that an improved loss function should balance misclassifications to favour predictions that are semantically meaningful. This paper investigates these issues in the context of multi-class brain tumour segmentation. Our contribution is threefold. 1) We propose a semantically-informed generalisation of the Dice score for multi-class segmentation based on the Wasserstein distance on the probabilistic label space. 2) We propose a holistic CNN that embeds spatial information at multiple scales with deep supervision. 3) We show that the joint use of holistic CNNs and generalised Wasserstein Dice scores achieves segmentations that are more semantically meaningful for brain tumour segmentation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Application of a Convolutional Neural Network for image classification to the analysis of collisions in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1708-07034</link>
+    <guid isPermaLink="false">arxiv:1708.07034</guid>
+    <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Celia Fernández Madrazo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The application of deep learning techniques using convolutional neural networks to the classification of particle collisions in High Energy Physics is explored. An intuitive approach to transform physical variables, like momenta of particles and jets, into a single image that captures the relevant information, is proposed. The idea is tested using a well known deep learning framework on a simulation dataset, including leptonic ttbar events and the corresponding background at 7 TeV from the CMS experiment at LHC, available as Open Data. This initial test shows competitive results when compared to more classical approaches, like those using feedforward neural networks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein CNN: Learning Invariant Features for NIR-VIS Face Recognition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1708-02412</link>
+    <guid isPermaLink="false">arxiv:1708.02412</guid>
+    <pubDate>Tue, 08 Aug 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ran He et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Heterogeneous face recognition (HFR) aims to match facial images acquired from different sensing modalities with mission-critical applications in forensics, security and commercial sectors. However, HFR is a much more challenging problem than traditional face recognition because of large intra-class variations of heterogeneous face images and limited training samples of cross-modality face image pairs. This paper proposes a novel approach namely Wasserstein CNN (convolutional neural networks, or WCNN for short) to learn invariant features between near-infrared and visual face images (i.e. NIR-VIS face recognition). The low-level layers of WCNN are trained with widely available face images in visual spectrum. The high-level layer is divided into three parts, i.e., NIR layer, VIS layer and NIR-VIS shared layer. The first two layers aims to learn modality-specific features and NIR-VIS shared layer is designed to learn modality-invariant feature subspace. Wasserstein distance is introduced into NIR-VIS shared layer to measure the dissimilarity between heterogeneous feature distributions. So W-CNN learning aims to achieve the minimization of Wasserstein distance between NIR distribution and VIS distribution for invariant deep feature representation of heterogeneous face images. To avoid the over-fitting problem on small-scale heterogeneous face data, a correlation prior is introduced on the fully-connected layers of WCNN network to reduce parameter space. This prior is implemented by a low-rank constraint in an end-to-end network. The joint formulation leads to an alternating minimization for deep feature representation at training stage and an efficient computation for heterogeneous data at testing stage. Extensive experiments on three challenging NIR-VIS face recognition databases demonstrate the significant superiority of Wasserstein CNN over state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Squared Earth Mover's Distance-based Loss for Training Deep Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1611-05916</link>
+    <guid isPermaLink="false">arxiv:1611.05916</guid>
+    <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Le Hou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>In the context of single-label classification, despite the huge success of deep learning, the commonly used cross-entropy loss function ignores the intricate inter-class relationships that often exist in real-life tasks such as age classification. In this work, we propose to leverage these relationships between classes by training deep nets with the exact squared Earth Mover&rsquo;s Distance (also known as Wasserstein distance) for single-label classification. The squared EMD loss uses the predicted probabilities of all classes and penalizes the miss-predictions according to a ground distance matrix that quantifies the dissimilarities between classes. We demonstrate that on datasets with strong inter-class relationships such as an ordering between classes, our exact squared EMD losses yield new state-of-the-art results. Furthermore, we propose a method to automatically learn this matrix using the CNN&rsquo;s own features during training. We show that our method can learn a ground distance matrix efficiently with no inter-class relationship priors and yield the same performance gain. Finally, we show that our method can be generalized to applications that lack strong inter-class relationships and still maintain state-of-the-art performance. Therefore, with limited computational overhead, one can always deploy the proposed loss function on any dataset over the conventional cross-entropy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>PSF field learning based on Optimal Transport Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1703-06066</link>
+    <guid isPermaLink="false">arxiv:1703.06066</guid>
+    <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">F. M. Ngolè Mboula et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Context: in astronomy, observing large fractions of the sky within a reasonable amount of time implies using large field-of-view (fov) optical instruments that typically have a spatially varying Point Spread Function (PSF). Depending on the scientific goals, galaxies images need to be corrected for the PSF whereas no direct measurement of the PSF is available. Aims: given a set of PSFs observed at random locations, we want to estimate the PSFs at galaxies locations for shapes measurements correction. Contributions: we propose an interpolation framework based on Sliced Optimal Transport. A non-linear dimension reduction is first performed based on local pairwise approximated Wasserstein distances. A low dimensional representation of the unknown PSFs is then estimated, which in turn is used to derive representations of those PSFs in the Wasserstein metric. Finally, the interpolated PSFs are calculated as approximated Wasserstein barycenters. Results: the proposed method was tested on simulated monochromatic PSFs of the Euclid space mission telescope (to be launched in 2020). It achieves a remarkable accuracy in terms of pixels values and shape compared to standard methods such as Inverse Distance Weighting or Radial Basis Function based interpolation methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exploiting Spatio-Temporal Structure with Recurrent Winner-Take-All Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1611-00050</link>
+    <guid isPermaLink="false">arxiv:1611.00050</guid>
+    <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eder Santana et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>We propose a convolutional recurrent neural network, with Winner-Take-All dropout for high dimensional unsupervised feature learning in multi-dimensional time series. We apply the proposedmethod for object recognition with temporal context in videos and obtain better results than comparable methods in the literature, including the Deep Predictive Coding Networks previously proposed by Chalasani and Principe.Our contributions can be summarized as a scalable reinterpretation of the Deep Predictive Coding Networks trained end-to-end with backpropagation through time, an extension of the previously proposed Winner-Take-All Autoencoders to sequences in time, and a new technique for initializing and regularizing convolutional-recurrent neural networks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Joint Epipolar Tracking (JET): Simultaneous optimization of epipolar geometry and feature correspondences</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2017.html#a1703-05065</link>
+    <guid isPermaLink="false">arxiv:1703.05065</guid>
+    <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henry Bradler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet algorithm) — original abstract; no AI summary.</em></p>
+<p>Traditionally, pose estimation is considered as a two step problem. First, feature correspondences are determined by direct comparison of image patches, or by associating feature descriptors. In a second step, the relative pose and the coordinates of corresponding points are estimated, most often by minimizing the reprojection error (RPE). RPE optimization is based on a loss function that is merely aware of the feature pixel positions but not of the underlying image intensities. In this paper, we propose a sparse direct method which introduces a loss function that allows to simultaneously optimize the unscaled relative pose, as well as the set of feature correspondences directly considering the image intensity values. Furthermore, we show how to integrate statistical prior information on the motion into the optimization process. This constructive inclusion of a Bayesian bias term is particularly efficient in application cases with a strongly predictable (short term) dynamic, e.g. in a driving scenario. In our experiments, we demonstrate that the JET algorithm we propose outperforms the classical reprojection error optimization on two synthetic datasets and on the KITTI dataset. The JET algorithm runs in real-time on a single CPU thread.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Kernel classification of connectomes based on earth mover's distance between graph spectra</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1611-08812</link>
+    <guid isPermaLink="false">arxiv:1611.08812</guid>
+    <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yulia Dodonova et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>In this paper, we tackle a problem of predicting phenotypes from structural connectomes. We propose that normalized Laplacian spectra can capture structural properties of brain networks, and hence graph spectral distributions are useful for a task of connectome-based classification. We introduce a kernel that is based on earth mover&rsquo;s distance (EMD) between spectral distributions of brain networks. We access performance of an SVM classifier with the proposed kernel for a task of classification of autism spectrum disorder versus typical development based on a publicly available dataset. Classification quality (area under the ROC-curve) obtained with the EMD-based kernel on spectral distributions is 0.71, which is higher than that based on simpler graph embedding methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Relaxed Earth Mover's Distances for Chain- and Tree-connected Spaces and their use as a Loss Function in Deep Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1611-07573</link>
+    <guid isPermaLink="false">arxiv:1611.07573</guid>
+    <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Manuel Martinez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>The Earth Mover&rsquo;s Distance (EMD) computes the optimal cost of transforming one distribution into another, given a known transport metric between them. In deep learning, the EMD loss allows us to embed information during training about the output space structure like hierarchical or semantic relations. This helps in achieving better output smoothness and generalization. However EMD is computationally expensive.Moreover, solving EMD optimization problems usually require complex techniques like lasso. These properties limit the applicability of EMD-based approaches in large scale machine learning. We address in this work the difficulties facing incorporation of EMD-based loss in deep learning frameworks. Additionally, we provide insight and novel solutions on how to integrate such loss function in training deep neural networks. Specifically, we make three main contributions: (i) we provide an in-depth analysis of the fastest state-of-the-art EMD algorithm (Sinkhorn Distance) and discuss its limitations in deep learning scenarios. (ii) we derive fast and numerically stable closed-form solutions for the EMD gradient in output spaces with chain- and tree- connectivity; and (iii) we propose a relaxed form of the EMD gradient with equivalent computational complexity but faster convergence rate. We support our claims with experiments on real datasets. In a restricted data setting on the ImageNet dataset, we train a model to classify 1000 categories using 50K images, and demonstrate that our relaxed EMD loss achieves better Top-1 accuracy than the cross entropy loss. Overall, we show that our relaxed EMD loss criterion is a powerful asset for deep learning in the small data regime.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DOTmark - A Benchmark for Discrete Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1610-03368</link>
+    <guid isPermaLink="false">arxiv:1610.03368</guid>
+    <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jörn Schrieber et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein metric or earth mover&rsquo;s distance (EMD) is a useful tool in statistics, machine learning and computer science with many applications to biological or medical imaging, among others. Especially in the light of increasingly complex data, the computation of these distances via optimal transport is often the limiting factor. Inspired by this challenge, a variety of new approaches to optimal transport has been proposed in recent years and along with these new methods comes the need for a meaningful comparison. In this paper, we introduce a benchmark for discrete optimal transport, called DOTmark, which is designed to serve as a neutral collection of problems, where discrete optimal transport methods can be tested, compared to one another, and brought to their limits on large-scale instances. It consists of a variety of grayscale images, in various resolutions and classes, such as several types of randomly generated images, classical test images and real data from microscopy. Along with the DOTmark we present a survey and a performance test for a cross section of established methods ranging from more traditional algorithms, such as the transportation simplex, to recently developed approaches, such as the shielding neighborhood method, and including also a comparison with commercial solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convex Histogram-Based Joint Image Segmentation with Regularized Optimal Transport Cost</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1610-01400</link>
+    <guid isPermaLink="false">arxiv:1610.01400</guid>
+    <pubDate>Wed, 05 Oct 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Papadakis et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We investigate in this work a versatile convex framework for multiple image segmentation, relying on the regularized optimal mass transport theory. In this setting, several transport cost functions are considered and used to match statistical distributions of features. In practice, global multidimensional histograms are estimated from the segmented image regions, and are compared to referring models that are either fixed histograms given a priori, or directly inferred in the non-supervised case. The different convex problems studied are solved efficiently using primal-dual algorithms. The proposed approach is generic and enables multi-phase segmentation as well as co-segmentation of multiple images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stochastic Learning of Multi-Instance Dictionary for Earth Mover's Distance based Histogram Comparison</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1609-00817</link>
+    <guid isPermaLink="false">arxiv:1609.00817</guid>
+    <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jihong Fan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>Dictionary plays an important role in multi-instance data representation. It maps bags of instances to histograms. Earth mover&rsquo;s distance (EMD) is the most effective histogram distance metric for the application of multi-instance retrieval. However, up to now, there is no existing multi-instance dictionary learning methods designed for EMD based histogram comparison. To fill this gap, we develop the first EMD-optimal dictionary learning method using stochastic optimization method. In the stochastic learning framework, we have one triplet of bags, including one basic bag, one positive bag, and one negative bag. These bags are mapped to histograms using a multi-instance dictionary. We argue that the EMD between the basic histogram and the positive histogram should be smaller than that between the basic histogram and the negative histogram. Base on this condition, we design a hinge loss. By minimizing this hinge loss and some regularization terms of the dictionary, we update the dictionary instances. The experiments over multi-instance retrieval applications shows its effectiveness when compared to other dictionary learning methods over the problems of medical image retrieval and natural language relation classification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Top-down Neural Attention by Excitation Backprop</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1608-00507</link>
+    <guid isPermaLink="false">arxiv:1608.00507</guid>
+    <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianming Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>We aim to model the top-down attention of a Convolutional Neural Network (CNN) classifier for generating task-specific attention maps. Inspired by a top-down human visual attention model, we propose a new backpropagation scheme, called Excitation Backprop, to pass along top-down signals downwards in the network hierarchy via a probabilistic Winner-Take-All process. Furthermore, we introduce the concept of contrastive attention to make the top-down attention maps more discriminative. In experiments, we demonstrate the accuracy and generalizability of our method in weakly supervised localization tasks on the MS COCO, PASCAL VOC07 and ImageNet datasets. The usefulness of our method is further validated in the text-to-region association task. On the Flickr30k Entities dataset, we achieve promising performance in phrase localization by leveraging the top-down attention of a CNN model that has been trained on weakly labeled web images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Alternative Technique to Asymmetry Analysis-Based Overlapping for Foot Ulcer Examination: Scalable Scanning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2016.html#a1606-03578</link>
+    <guid isPermaLink="false">arxiv:1606.03578</guid>
+    <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naima Kaabouch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Asymmetry analysis based on the overlapping of thermal images proved able to detect inflammation and, predict foot ulceration. This technique involves three main steps: segmentation, geometric transformation, and overlapping. However, the overlapping technique, which consists of subtracting the intensity levels of the right foot from those of the left foot, can also detect false abnormal areas if the projections of the left and right feet are not the same. In this paper, we present an alternative technique to asymmetry analysis-based overlapping. The proposed technique, scalable scanning, allows for an effective comparison even if the shapes and sizes of the feet projections appear differently in the image. The tested results show that asymmetry analysis- based scalable scanning provides fewer false abnormal areas than does asymmetry analysis -based overlapping.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning with a Wasserstein Loss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2015.html#a1506-05439</link>
+    <guid isPermaLink="false">arxiv:1506.05439</guid>
+    <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Charlie Frogner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Learning to predict multi-label outputs is challenging, but in many problems there is a natural metric on the outputs that can be used to improve predictions. In this paper we develop a loss function for multi-label learning, based on the Wasserstein distance. The Wasserstein distance provides a natural notion of dissimilarity for probability measures. Although optimizing with respect to the exact Wasserstein distance is costly, recent work has described a regularized approximation that is efficiently computed. We describe an efficient learning algorithm based on this regularization, as well as a novel extension of the Wasserstein distance from probability measures to unnormalized measures. We also describe a statistical learning bound for the loss. The Wasserstein loss can encourage smoothness of the predictions with respect to a chosen metric on the output space. We demonstrate this property on a real-data tag prediction problem, using the Yahoo Flickr Creative Commons dataset, outperforming a baseline that doesn&rsquo;t use the metric.</p>]]></description>
+  </item>
+
+  <item>
+    <title>HFirst: A Temporal Approach to Object Recognition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2015.html#a1508-01176</link>
+    <guid isPermaLink="false">arxiv:1508.01176</guid>
+    <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Garrick Orchard et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>This paper introduces a spiking hierarchical model for object recognition which utilizes the precise timing information inherently present in the output of biologically inspired asynchronous Address Event Representation (AER) vision sensors. The asynchronous nature of these systems frees computation and communication from the rigid predetermined timing enforced by system clocks in conventional systems. Freedom from rigid timing constraints opens the possibility of using true timing to our advantage in computation. We show not only how timing can be used in object recognition, but also how it can in fact simplify computation. Specifically, we rely on a simple temporal-winner-take-all rather than more computationally intensive synchronous operations typically used in biologically inspired neural networks for object recognition. This approach to visual computation represents a major paradigm shift from conventional clocked systems and can find application in other sensory modalities and computational tasks. We showcase effectiveness of the approach by achieving the highest reported accuracy to date (97.5\%±3.5\%) for a previously published four class card pip recognition task and an accuracy of 84.9\%±1.9\% for a new more difficult 36 class character recognition task.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast Optimal Transport Averaging of Neuroimaging Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2015.html#a1503-08596</link>
+    <guid isPermaLink="false">arxiv:1503.08596</guid>
+    <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Gramfort et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Knowing how the Human brain is anatomically and functionally organized at the level of a group of healthy individuals or patients is the primary goal of neuroimaging research. Yet computing an average of brain imaging data defined over a voxel grid or a triangulation remains a challenge. Data are large, the geometry of the brain is complex and the between subjects variability leads to spatially or temporally non-overlapping effects of interest. To address the problem of variability, data are commonly smoothed before group linear averaging. In this work we build on ideas originally introduced by Kantorovich to propose a new algorithm that can average efficiently non-normalized data defined over arbitrary discrete domains using transportation metrics. We show how Kantorovich means can be linked to Wasserstein barycenters in order to take advantage of an entropic smoothing approach. It leads to a smooth convex optimization problem and an algorithm with strong convergence guarantees. We illustrate the versatility of this tool and its empirical behavior on functional neuroimaging data, functional MRI and magnetoencephalography (MEG) source estimates, defined on voxel grids and triangulations of the folded cortical surface.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convex Color Image Segmentation with Optimal Transport Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2015.html#a1503-01986</link>
+    <guid isPermaLink="false">arxiv:1503.01986</guid>
+    <pubDate>Mon, 16 Mar 2015 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Rabin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This work is about the use of regularized optimal-transport distances for convex, histogram-based image segmentation. In the considered framework, fixed exemplar histograms define a prior on the statistical features of the two regions in competition. In this paper, we investigate the use of various transport-based cost functions as discrepancy measures and rely on a primal-dual algorithm to solve the obtained convex optimization problem.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Globally Optimal Joint Image Segmentation and Shape Matching Based on Wasserstein Modes</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2014.html#a1407-3956</link>
+    <guid isPermaLink="false">arxiv:1407.3956</guid>
+    <pubDate>Mon, 29 Dec 2014 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernhard Schmitzer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>A functional for joint variational object segmentation and shape matching is developed. The formulation is based on optimal transport w.r.t. geometric distance and local feature similarity. Geometric invariance and modelling of object-typical statistical variations is achieved by introducing degrees of freedom that describe transformations and deformations of the shape template. The shape model is mathematically equivalent to contour-based approaches but inference can be performed without conversion between the contour and region representations, allowing combination with other convex segmentation approaches and simplifying optimization. While the overall functional is non-convex, non-convexity is confined to a low-dimensional variable. We propose a locally optimal alternating optimization scheme and a globally optimal branch and bound scheme, based on adaptive convex relaxation. Combining both methods allows to eliminate the delicate initialization problem inherent to many contour based approaches while remaining computationally practical. The properties of the functional, its ability to adapt to a wide range of input data structures and the different optimization schemes are illustrated and compared by numerical experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Shortlist Method for Fast Computation of the Earth Mover's Distance and Finding Optimal Solutions to Transportation Problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2014.html#a1405-7903</link>
+    <guid isPermaLink="false">arxiv:1405.7903</guid>
+    <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Gottschlich et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>Finding solutions to the classical transportation problem is of great importance, since this optimization problem arises in many engineering and computer science applications. Especially the Earth Mover&rsquo;s Distance is used in a plethora of applications ranging from content-based image retrieval, shape matching, fingerprint recognition, object tracking and phishing web page detection to computing color differences in linguistics and biology. Our starting point is the well-known revised simplex algorithm, which iteratively improves a feasible solution to optimality. The Shortlist Method that we propose substantially reduces the number of candidates inspected for improving the solution, while at the same time balancing the number of pivots required. Tests on simulated benchmarks demonstrate a considerable reduction in computation time for the new method as compared to the usual revised simplex algorithm implemented with state-of-the-art initialization and pivot strategies. As a consequence, the Shortlist Method facilitates the computation of large scale transportation problems in viable time. In addition we describe a novel method for finding an initial feasible solution which we coin Modified Russell&rsquo;s Method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Binary Stereo Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2014.html#a1402-2020</link>
+    <guid isPermaLink="false">arxiv:1402.2020</guid>
+    <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kang Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>In this paper, we propose a novel binary-based cost computation and aggregation approach for stereo matching problem. The cost volume is constructed through bitwise operations on a series of binary strings. Then this approach is combined with traditional winner-take-all strategy, resulting in a new local stereo matching algorithm called binary stereo matching (BSM). Since core algorithm of BSM is based on binary and integer computations, it has a higher computational efficiency than previous methods. Experimental results on Middlebury benchmark show that BSM has comparable performance with state-of-the-art local stereo methods in terms of both quality and speed. Furthermore, experiments on images with radiometric differences demonstrate that BSM is more robust than previous methods under these changes, which is common under real illumination.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Contour Manifolds and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2013.html#a1309-2240</link>
+    <guid isPermaLink="false">arxiv:1309.2240</guid>
+    <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernhard Schmitzer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Describing shapes by suitable measures in object segmentation, as proposed in [24], allows to combine the advantages of the representations as parametrized contours and indicator functions. The pseudo-Riemannian structure of optimal transport can be used to model shapes in ways similar as with contours, while the Kantorovich functional enables the application of convex optimization methods for global optimality of the segmentation functional. In this paper we provide a mathematical study of the shape measure representation and its relation to the contour description. In particular we show that the pseudo-Riemannian structure of optimal transport, when restricted to the set of shape measures, yields a manifold which is diffeomorphic to the manifold of closed contours. A discussion of the metric induced by optimal transport and the corresponding geodesic equation is given.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Regularized Discrete Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2013.html#a1307-5551</link>
+    <guid isPermaLink="false">arxiv:1307.5551</guid>
+    <pubDate>Sun, 21 Jul 2013 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sira Ferradans et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This article introduces a generalization of the discrete optimal transport, with applications to color image manipulations. This new formulation includes a relaxation of the mass conservation constraint and a regularization term. These two features are crucial for image processing tasks, which necessitate to take into account families of multimodal histograms, with large mass variation across modes. The corresponding relaxed and regularized transportation problem is the solution of a convex optimization problem. Depending on the regularization used, this minimization can be solved using standard linear programming methods or first order proximal splitting schemes. The resulting transportation plan can be used as a color transfer map, which is robust to mass variation across images color palettes. Furthermore, the regularization of the transport plan helps to remove colorization artifacts due to noise amplification. We also extend this framework to the computation of barycenters of distributions. The barycenter is the solution of an optimization problem, which is separately convex with respect to the barycenter and the transportation plans, but not jointly convex. A block coordinate descent scheme converges to a stationary point of the energy. We show that the resulting algorithm can be used for color normalization across several images. The relaxed and regularized barycenter defines a common color palette for those images. Applying color transfer toward this average palette performs a color normalization of the input images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multi-column Deep Neural Networks for Image Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2012.html#a1202-2745</link>
+    <guid isPermaLink="false">arxiv:1202.2745</guid>
+    <pubDate>Mon, 13 Feb 2012 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dan Cireşan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Traditional methods of computer vision and machine learning cannot match human performance on tasks such as the recognition of handwritten digits or traffic signs. Our biologically plausible deep artificial neural network architectures can. Small (often minimal) receptive fields of convolutional winner-take-all neurons yield large network depth, resulting in roughly as many sparsely connected neural layers as found in mammals between retina and visual cortex. Only winner neurons are trained. Several deep neural columns become experts on inputs preprocessed in different ways; their predictions are averaged. Graphics cards allow for fast training. On the very competitive MNIST handwriting benchmark, our method is the first to achieve near-human performance. On a traffic sign recognition benchmark it outperforms humans by a factor of two. We also improve the state-of-the-art on a plethora of common image classification benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discriminative Local Sparse Representations for Robust Face Recognition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2011.html#a1111-1947</link>
+    <guid isPermaLink="false">arxiv:1111.1947</guid>
+    <pubDate>Tue, 08 Nov 2011 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>A key recent advance in face recognition models a test face image as a sparse linear combination of a set of training face images. The resulting sparse representations have been shown to possess robustness against a variety of distortions like random pixel corruption, occlusion and disguise. This approach however makes the restrictive (in many scenarios) assumption that test faces must be perfectly aligned (or registered) to the training data prior to classification. In this paper, we propose a simple yet robust local block-based sparsity model, using adaptively-constructed dictionaries from local features in the training data, to overcome this misalignment problem. Our approach is inspired by human perception: we analyze a series of local discriminative features and combine them to arrive at the final classification decision. We propose a probabilistic graphical model framework to explicitly mine the conditional dependencies between these distinct sparse local features. In particular, we learn discriminative graphs on sparse representations obtained from distinct local slices of a face. Conditional correlations between these sparse features are first discovered (in the training phase), and subsequently exploited to bring about significant improvements in recognition rates. Experimental results obtained on benchmark face databases demonstrate the effectiveness of the proposed algorithms in the presence of multiple registration errors (such as translation, rotation, and scaling) as well as under variations of pose and illumination.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Tensor-SIFT based Earth Mover's Distance for Contour Tracking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2010.html#a1011-3174</link>
+    <guid isPermaLink="false">arxiv:1011.3174</guid>
+    <pubDate>Sun, 14 Nov 2010 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peihua Li</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>Contour tracking in adverse environments is a challenging problem due to cluttered background, illumination variation, occlusion, and noise, among others. This paper presents a robust contour tracking method by contributing to some of the key issues involved, including (a) a region functional formulation and its optimization; (b) design of a robust and effective feature; and (c) development of an integrated tracking algorithm. First, we formulate a region functional based on robust Earth Mover&rsquo;s distance (EMD) with kernel density for distribution modeling, and propose a two-phase method for its optimization. In the first phase, letting the candidate contour be fixed, we express EMD as the transportation problem and solve it by the simplex algorithm. Next, using the theory of shape derivative, we make a perturbation analysis of the contour around the best solution to the transportation problem. This leads to a partial differential equation (PDE) that governs the contour evolution. Second, we design a novel and effective feature for tracking applications. We propose a dimensionality reduction method by tensor decomposition, achieving a low-dimensional description of SIFT features called Tensor-SIFT for characterizing local image region properties. Applicable to both color and gray-level images, Tensor-SIFT is very distinctive, insensitive to illumination changes, and noise. Finally, we develop an integrated algorithm that combines various techniques of the simplex algorithm, narrow-band level set and fast marching algorithms. Particularly, we introduce an inter-frame initialization method and a stopping criterion for the termination of PDE iteration. Experiments in challenging image sequences show that the proposed work has promising performance.</p>]]></description>
+  </item>
+
+</channel>
+</rss>
