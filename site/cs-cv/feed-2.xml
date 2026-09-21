@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Robust Incomplete-Modality Alignment for Ophthalmic Disease Grading and Diagnosis via Labeled Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-04999</link>
+    <guid isPermaLink="false">arxiv:2507.04999</guid>
+    <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qinkai Yu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multimodal ophthalmic imaging-based diagnosis integrates color fundus image with optical coherence tomography (OCT) to provide a comprehensive view of ocular pathologies. However, the uneven global distribution of healthcare resources often results in real-world clinical scenarios encountering incomplete multimodal data, which significantly compromises diagnostic accuracy. Existing commonly used pipelines, such as modality imputation and distillation methods, face notable limitations: 1)Imputation methods struggle with accurately reconstructing key lesion features, since OCT lesions are localized, while fundus images vary in style. 2)distillation methods rely heavily on fully paired multimodal training data. To address these challenges, we propose a novel multimodal alignment and fusion framework capable of robustly handling missing modalities in the task of ophthalmic diagnostics. By considering the distinctive feature characteristics of OCT and fundus images, we emphasize the alignment of semantic features within the same category and explicitly learn soft matching between modalities, allowing the missing modality to utilize existing modality information, achieving robust cross-modal feature alignment under the missing modality. Specifically, we leverage the Optimal Transport for multi-scale modality feature alignment: class-wise alignment through predicted class prototypes and feature-wise alignment via cross-modal shared feature transport. Furthermore, we propose an asymmetric fusion strategy that effectively exploits the distinct characteristics of OCT and fundus modalities. Extensive evaluations on three large ophthalmic multimodal datasets demonstrate our model&rsquo;s superior performance under various modality-incomplete scenarios, achieving Sota performance in both complete modality and inter-modality incompleteness conditions. Code is available at https://github.com/Qinkaiyu/RIMA</p>]]></description>
+  </item>
 
   <item>
     <title>Bridging Vision and Language: Optimal Transport-Driven Radiology Report Generation via LLMs</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kwanyoung Kim et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Recent success of large-scale Contrastive Language-Image Pre-training (CLIP) has led to great promise in zero-shot semantic segmentation by transferring image-text aligned knowledge to pixel-level classification. However, existing methods usually require an additional image encoder or retraining/tuning the CLIP module. Here, we propose a novel Zero-shot segmentation with Optimal Transport (ZegOT) method that matches multiple text prompts with frozen image embeddings through optimal transport. In particular, we introduce a novel Multiple Prompt Optimal Transport Solver (MPOT), which is designed to learn an optimal mapping between multiple text prompts and visual feature maps of the frozen image encoder hidden layers. This unique mapping method facilitates each of the multiple text prompts to effectively focus on distinct visual semantic attributes. Through extensive experiments on benchmark datasets, we show that our method achieves the state-of-the-art (SOTA) performance over existing Zero-shot Semantic Segmentation (ZS3) approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>I²SB: Image-to-Image Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2302-05872</link>
-    <guid isPermaLink="false">arxiv:2302.05872</guid>
-    <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guan-Horng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We propose Image-to-Image Schrödinger Bridge (I²SB), a new class of conditional diffusion models that directly learn the nonlinear diffusion processes between two given distributions. These diffusion bridges are particularly useful for image restoration, as the degraded images are structurally informative priors for reconstructing the clean images. I²SB belongs to a tractable class of Schrödinger bridge, the nonlinear extension to score-based models, whose marginal distributions can be computed analytically given boundary pairs. This results in a simulation-free framework for nonlinear diffusions, where the I²SB training becomes scalable by adopting practical techniques used in standard diffusion models. We validate I²SB in solving various image restoration tasks, including inpainting, super-resolution, deblurring, and JPEG restoration on ImageNet 256x256 and show that I²SB surpasses standard conditional diffusion models with more interpretable generative processes. Moreover, I²SB matches the performance of inverse methods that additionally require the knowledge of the corruption operators. Our work opens up new algorithmic opportunities for developing efficient nonlinear diffusion models on a large scale. scale. Project page and codes: https://i2sb.github.io/</p>]]></description>
   </item>
 
 </channel>
