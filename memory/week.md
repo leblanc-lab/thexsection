@@ -1,43 +1,45 @@
-# The Cross Section — Rolling Synthesis, week ending 2026-09-18
+# Rolling synthesis — week ending 2026-09-21
 
-The week that began still orbiting a single LZ xenon recoil ended firmly in precision QCD. The month-long dark-matter spectacle completed its full arc — from global fits, to falsifiability tests, to cosmological escape routes — and by week's end had thinned to a trickle, its front-page grip broken. In its place a dense nucleon-structure and fixed-order QCD program became the field's center of gravity, anchored by a four-loop landmark and a GPD revival. Running underneath: the season's autodiff/ML wave matured from detector plumbing into the statistics layer, hadron spectroscopy converged on several states from independent directions, and a sharp cosmic-muon result put the 17 MeV Atomki boson back on the defensive.
+The week's center of gravity was **precision QCD and nucleon structure**, which anchored four straight days, while the LZ xenon recoil — the story that owned late August — completed its arc from model-fitting to falsifiability to cosmology to, finally, constraint-and-complementarity, and is now clearly fading. The flavor experiments provided the sharpest single results: a landmark four-loop QCD calculation, a direct Higgs-width bound, and a week-closing Belle II $R(D^{(*)})$ that nudged the long-watched LFU tension *downward* rather than up. Underneath ran steady tooling and hadron-spectroscopy threads.
 
 ## Running themes
 
-**The LZ higgsino/inelastic-DM saga — fading, arc complete.** The dominant multi-week thread ran its full course this week. It moved from Athron et al.'s collider counterweight ([arXiv:2609.12914](https://arxiv.org/abs/2609.12914)), to Ghosh et al. closing the astrophysical escape hatch ([arXiv:2609.15321](https://arxiv.org/abs/2609.15321)), to a falsifiability pivot (discriminators over models), and finally to purely cosmological survival strategies — early-universe conversion fixing endo/exo (An et al. [arXiv:2609.17412](https://arxiv.org/abs/2609.17412)) and asymmetric DM removing the IceCube bound by construction (Nagata et al. [arXiv:2609.18564](https://arxiv.org/abs/2609.18564)). By 09-18 it was a single follow-up. Watch for whether it revives on an experimental result or stays dormant.
+- **Precision QCD / nucleon structure (heating, dominant).** The week's spine. Gehrmann et al. completed the non-singlet splitting functions at four loops [arXiv:2609.17267](https://arxiv.org/abs/2609.17267) — the anchor calculation — with DIS machinery (NNLO dimuon/strange-PDF [arXiv:2609.17120](https://arxiv.org/abs/2609.17120), $b$-jets at NNLO+PS [arXiv:2609.17812](https://arxiv.org/abs/2609.17812), EW corrections to $gg\to\gamma\gamma$ [arXiv:2609.18828](https://arxiv.org/abs/2609.18828)) and a large GPD stack (Guo et al. review [arXiv:2609.19544](https://arxiv.org/abs/2609.19544); Su et al. extending lattice into $x\sim\pm\xi$ [arXiv:2609.20545](https://arxiv.org/abs/2609.20545)) clustering around it. Closed the week with Blümlein et al.'s three-loop massive gluonic form factors [arXiv:2609.22034](https://arxiv.org/abs/2609.22034). Energy-correlator and small-$x$/CGC programs, much EIC/FCC-facing, ran throughout.
 
-**Precision QCD & nucleon structure — heating, now the center.** Emerged mid-week and dominated the back half. Gehrmann et al.'s complete four-loop non-singlet splitting functions ([arXiv:2609.17267](https://arxiv.org/abs/2609.17267)) anchored a broad DIS/structure program, followed by Guo et al.'s first GPD review in two decades ([arXiv:2609.19544](https://arxiv.org/abs/2609.19544)) and Su et al. extending lattice GPD computability into the $x\sim\pm\xi$ region ([arXiv:2609.20545](https://arxiv.org/abs/2609.20545)). Much of it is EIC/FCC-facing. This thread shows no sign of cooling.
+- **The LZ xenon event (fading, now constraint-mode).** Traffic thinned from ~1/6 of listings to a trickle. The register migrated: discriminators (Ghosh, Baer) → dark-sector cosmology (An et al. [arXiv:2609.17412](https://arxiv.org/abs/2609.17412); asymmetric-DM escape, Nagata et al. [arXiv:2609.18564](https://arxiv.org/abs/2609.18564)) → hard bounds (Bose et al. ruling out weak-scale elastic operators via solar capture [arXiv:2609.21823](https://arxiv.org/abs/2609.21823); O'Hare pinning the lab-frame max DM speed [arXiv:2609.21444](https://arxiv.org/abs/2609.21444)). Ge et al.'s relativistic inelastic Xe response functions [arXiv:2609.16529](https://arxiv.org/abs/2609.16529) recurred as the tool that could shift any of these fits.
 
-**Statistical & ML tooling — steady, maturing upward.** The autodiff wave colonized successive layers: plumbing (FPGA trigger distillation, calibration) → reconstruction (VyPER, PSICHE, self-supervised pretraining) → the inference layer itself, surfacing as RooFit-AD, JAX interop, and HS3 in the IRIS-HEP blueprint ([arXiv:2609.19992](https://arxiv.org/abs/2609.19992)). Dorigo's demonstration that a covariance matrix can flip likelihood-ratio *ordering* ([arXiv:2609.20007](https://arxiv.org/abs/2609.20007)) was the conceptual standout.
+- **Heavy-flavor at the experiments (steady, high-signal).** BESIII LFU test in $D_s^+\to f_0(980)\mu\nu$ [arXiv:2609.15655](https://arxiv.org/abs/2609.15655), LHCb $\Xi_b^0\to\Xi^0 J/\psi$ [arXiv:2609.15251](https://arxiv.org/abs/2609.15251), charm CPV progress [arXiv:2609.16219](https://arxiv.org/abs/2609.16219), and week-end: Belle II $R(D^{(*)})$ [arXiv:2609.21947](https://arxiv.org/abs/2609.21947) and LHCb's $\Omega_{cc}^+$ discovery [arXiv:2609.21921](https://arxiv.org/abs/2609.21921).
 
-**Hadron spectroscopy — converging.** Independent methods triangulating single states: f0(980) read as scale-dependent ($s\bar s$ at high energy, molecular at low) from BESIII $D_s\to f_0$, fragmentation (Kumano), and flow response (Lacey). BESIII's double-$s\bar s$ production ([arXiv:2609.20154](https://arxiv.org/abs/2609.20154)) echoed the double-charm puzzle; molecular readings of pentaquarks/exotics recurred.
+- **ML / statistics / automation tooling (steady, colonizing).** From FPGA trigger firmware [arXiv:2609.15295](https://arxiv.org/abs/2609.15295) and reconstruction frameworks (VyPER, PSICHE) mid-week, to the HEP statistics-infrastructure cluster (RooFit-AD, IRIS-HEP blueprint [arXiv:2609.19992](https://arxiv.org/abs/2609.19992); Dorigo on covariance-as-model [arXiv:2609.20007](https://arxiv.org/abs/2609.20007)), to AutoTherm bringing automation to thermal field theory [arXiv:2609.20936](https://arxiv.org/abs/2609.20936).
 
-**Precision flavor — steady, consolidating nulls.** BESIII and LHCb kept delivering firsts (LFU intact in $D_s\to f_0\mu\nu$; $\Xi_b^0\to\Xi^0 J/\psi$). The $C_9$ anomaly stayed alive via $Z'$ fits ([arXiv:2609.15026](https://arxiv.org/abs/2609.15026)); charm CPV narrowed toward experiment ([arXiv:2609.16219](https://arxiv.org/abs/2609.16219)).
+- **Hadron spectroscopy (steady).** f0(980) triangulated across scales [arXiv:2609.17974](https://arxiv.org/abs/2609.17974); double-$s\bar s$ production echoing the double-charm puzzle [arXiv:2609.20154](https://arxiv.org/abs/2609.20154); molecular readings recurring.
 
 ## Turning points
 
-- **[arXiv:2609.15321](https://arxiv.org/abs/2609.15321)** (Ghosh et al.) closed the halo-modeling escape for the thermal higgsino, forcing the whole DM conversation into either target-based tests or cosmological model-building.
-- **[arXiv:2609.17267](https://arxiv.org/abs/2609.17267)** (Gehrmann et al.) — four-loop non-singlet splitting functions completed; a durable reference that helped shift the week's weight into QCD.
-- **[arXiv:2609.18383](https://arxiv.org/abs/2609.18383)** (Benmansour et al.) — Geant4 shows cosmic muons reproduce the Atomki opening-angle peaks (cosmic-to-signal ratio above unity), reopening the 17 MeV boson question and shifting the burden to beam-off studies.
-- **[arXiv:2609.19948](https://arxiv.org/abs/2609.19948)** (ATLAS) — direct, coupling-independent $\Gamma_H<307$ MeV from on-shell $H\to\gamma\gamma$ interference, a complementary handle to the off-shell width method.
+- **Gehrmann et al. [arXiv:2609.17267](https://arxiv.org/abs/2609.17267)** — four-loop non-singlet splitting functions completed; the reference the field will cite for years.
+- **Benmansour et al. [arXiv:2609.18383](https://arxiv.org/abs/2609.18383)** — Geant4 cosmic-muon simulations reproduce the Atomki opening-angle peaks (cosmic-to-signal ratio >1), shifting the burden of the 17 MeV boson back onto beam-off studies.
+- **ATLAS [arXiv:2609.19948](https://arxiv.org/abs/2609.19948)** — direct, coupling-independent $\Gamma_H<307$ MeV from $H\to\gamma\gamma$ interference; a new complementary handle to off-shell methods.
+- **Belle II [arXiv:2609.21947](https://arxiv.org/abs/2609.21947)** — most precise hadronic-tag $R(D^{(*)})$; $R(D^*)$ central value slightly below SM, easing rather than reinforcing the LFU anomaly.
+- **LHCb [arXiv:2609.21921](https://arxiv.org/abs/2609.21921)** — $\Omega_{cc}^+$ observed at $8.7\sigma$, another rung of the doubly-charmed spectrum.
 
 ## Open questions
 
-- **17 MeV boson**: does the beam-off dataset survive the cosmic-muon background reinterpretation? ([arXiv:2609.18383](https://arxiv.org/abs/2609.18383))
-- **Endo vs exo LZ direction**: now theoretically argued to be dynamically selected ([arXiv:2609.17412](https://arxiv.org/abs/2609.17412)), but the clean experimental test — argon's 336 keV line at DEAP-3600 ([arXiv:2609.15782](https://arxiv.org/abs/2609.15782)) — remains unreported. Watch for a result.
-- **Strangeness asymmetry / dimuon-vs-LHC tension**: W+charm favors zero asymmetry ([arXiv:2609.12800](https://arxiv.org/abs/2609.12800)); NNLO dimuon suppression may ease it ([arXiv:2609.17120](https://arxiv.org/abs/2609.17120)). Unresolved.
-- **$C_9$ and charm CPV**: both threads still live and narrowing ([arXiv:2609.15026](https://arxiv.org/abs/2609.15026), [arXiv:2609.16219](https://arxiv.org/abs/2609.16219)).
-- **Cosmological-tension dark sectors**: dark-QCD Hubble fits ([arXiv:2609.16120](https://arxiv.org/abs/2609.16120)) and DESI equivalence-principle violation both land at residual ~3σ — speculative, watch for pushback.
+- **R(D*)/LFU tension** — flagged all year as *the* flavor follow-up. Belle II's new central value eases it; watch whether future combinations confirm the downward drift.
+- **B→Kππ CP anomaly** — August's flare made mechanistic by Guo et al. [arXiv:2609.21464](https://arxiv.org/abs/2609.21464) (resonance interference); does this survive independent channels?
+- **$\Delta C_9$ thread** — still alive via $Z'$-portal fits [arXiv:2609.15026](https://arxiv.org/abs/2609.15026).
+- **17 MeV boson** — not closed, but the cosmic-muon explanation demands a rebuttal from beam-off data.
+- **Double-$s\bar s$ / double-$c\bar c$ hadronization puzzle** — [arXiv:2609.20154](https://arxiv.org/abs/2609.20154) challenges hadronization theory; awaiting explanation.
+- **f0(980) structure** — scale-dependent ($s\bar s$ high-energy vs $K\bar K$-molecular low-energy) picture testable in fragmentation.
+- **LZ endo/exo direction** — claimed dynamically selected by dark-sector cosmology [arXiv:2609.17412](https://arxiv.org/abs/2609.17412); the argon 336 keV line test [arXiv:2609.15782](https://arxiv.org/abs/2609.15782) remains the cleanest proposed discriminator (DEAP-3600 has exposure).
+- **$|V_{ud}|$/Cabibbo unitarity** — Seng's $\delta_C$ framework [arXiv:2609.20448](https://arxiv.org/abs/2609.20448) questions the standard isospin-breaking split.
 
 ## Recurring references
 
-- [arXiv:2609.12914](https://arxiv.org/abs/2609.12914) — Athron et al., Run 2 electroweakino global fit (collider anchor for the DM thread)
-- [arXiv:2609.15321](https://arxiv.org/abs/2609.15321) — Ghosh et al., solar-capture closure of the higgsino
-- [arXiv:2609.15782](https://arxiv.org/abs/2609.15782) — Baer et al., argon as the clean endo/exo test (pending)
-- [arXiv:2609.17412](https://arxiv.org/abs/2609.17412) — An et al., cosmological selection of endo/exo
-- [arXiv:2609.16529](https://arxiv.org/abs/2609.16529) — Ge et al., relativistic inelastic Xe response functions (cited across three days)
+- [arXiv:2609.15321](https://arxiv.org/abs/2609.15321) — Ghosh et al., higgsino solar-capture escape closed
+- [arXiv:2609.16529](https://arxiv.org/abs/2609.16529) — Ge et al., relativistic inelastic Xe response functions (cited across multiple days)
 - [arXiv:2609.17267](https://arxiv.org/abs/2609.17267) — Gehrmann et al., four-loop splitting functions
-- [arXiv:2609.19544](https://arxiv.org/abs/2609.19544) — Guo et al., GPD review
-- [arXiv:2609.20545](https://arxiv.org/abs/2609.20545) — Su et al., lattice GPDs near $x=\pm\xi$
-- [arXiv:2609.19992](https://arxiv.org/abs/2609.19992) — IRIS-HEP statistical blueprint
-- [arXiv:2609.18383](https://arxiv.org/abs/2609.18383) — Benmansour et al., Atomki cosmic-muon reinterpretation
+- [arXiv:2609.18383](https://arxiv.org/abs/2609.18383) — Benmansour et al., cosmic muons and the Atomki peaks
+- [arXiv:2609.19948](https://arxiv.org/abs/2609.19948) — ATLAS direct Higgs width
+- [arXiv:2609.21947](https://arxiv.org/abs/2609.21947) — Belle II $R(D^{(*)})$
+- [arXiv:2609.21921](https://arxiv.org/abs/2609.21921) — LHCb $\Omega_{cc}^+$
+- [arXiv:2609.19992](https://arxiv.org/abs/2609.19992) — IRIS-HEP statistics blueprint (tooling agenda through 2026)
