@@ -7,7 +7,27 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Exact Amplitude Reconstruction in the Real Common-Phase Sector of Small-x Diffractive Energy Flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2609-22899</link>
+    <guid isPermaLink="false">arxiv:2609.22899</guid>
+    <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanskriti Agrawal et al.</dc:creator>
+    <description><![CDATA[<p>This is a formal small-x/EIC tomography paper; the jet connection runs through energy-flow operators and coherent diffractive dijet production rather than jet substructure in the collider-QCD sense. The authors set up an operator-level map from the impact-parameter-dependent dipole amplitude T_Y(r,b,ϕ) (C-even, real, even cosine harmonics T_2n) to the gluon Wigner harmonics W_2n (via a rotationally diagonal Bessel transform, ∝∫r dr J_2n(kr)T̃_2n) and to the longitudinal-photon diffractive dijet amplitude harmonics A_2n∝∫∫ψ_L T_2n J_2n(Pr)J_2n(Δb). Their central claim: in the Born leading-eikonal, longitudinal, C-even sector all harmonics share a common overall phase, so A_2n/A_0∈ℝ, and in a node-free bin the normalized amplitude is recovered exactly as √(p_E(θ)), with harmonic ratios from a direct Fourier projection (Eq. 25). For generic complex amplitudes the energy-flow intensity only yields autocorrelations s_N=∑_l a_l+Na_l^* — the standard phase-retrieval non-uniqueness.</p>
+<p>The genuinely new content for energy-flow observables: they treat the diffractive dijet energy-flow distribution as an intensity and give an explicit deconvolution (generating function X(t)=√(1+𝒞(t)), plus a logarithmic/cumulant representation) that systematically subtracts reducible lower-harmonic mixing — e.g. clarifying that the measured cos4ϕ moment contains 2x_2+x_1², so the &ldquo;true&rdquo; A_4 requires subtracting the elliptic x_1². Caveats are stated forthrightly: the common-phase property is not an all-order theorem — nodes leave a sign ambiguity, odderon/C-odd exchange, dispersive real-part corrections with harmonic-dependent slopes λ_2n, and 𝒪(α_s) radiation all break it. No numerical EIC projections are given; this is a formalism/feasibility paper.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multitask Jet Analysis with Vision-Language Models: A Physics-Informed Four-Panel Representation</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2609-24334</link>
+    <guid isPermaLink="false">arxiv:2609.24334</guid>
+    <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lu Zhang et al.</dc:creator>
+    <description><![CDATA[<p>Squarely on jet tagging/substructure, but the novelty is representational rather than physics-reach. Each JetClass jet is rendered as a 224×224 RGB image of four aligned (Δη,Δϕ) panels encoding: (P1) p_T flow all/charged/neutral; (P2) charged-hadron/neutral-hadron/EM composition; (P3) p_T-weighted transverse and longitudinal impact-parameter significances plus displaced-track multiplicity (s≥2); (P4) signed-track p_T densities and local p_T^κ-weighted (κ=0.5) jet-charge asymmetry. Jets are canonicalized (centroid, PCA rotation for a_PCA≥0.05, deterministic reflections), Gaussian-deposited (σ=0.03) and log-compressed. Four open VLMs are LoRA-adapted for three tasks (10-class tagging, 6-field attribute prediction, panel-consistency/localization).</p>
+<p>Results: zero-shot is at chance (3.33–10.57% macro recall); after adaptation on 200k jets (0.2% of JetClass) Gemma4-E4B hits 75.05% macro recall / 74.87% F_1, 93.31% Task-2 field-mean, 99.88%/99.75% consistency/localization. Panel ablations are the physics-relevant payoff: relative to p_T-flow alone (57.50%), adding species→61.29%, then displacement→67.47% (the dominant handle, via b/c lifetime), while jet-charge (P4) specifically lifts the near-degenerate hadronic Z→qq̅ (Zqq 22.5→34.2%). Fixed-budget WZ reallocation buys up to +9.83 pts on Zqq at ~constant macro recall. Transfer to JetClass-II and real-data Aspen Open Jets holds (&gt;70% Task 1, &gt;92% Task 2/3 with 3k target jets). Caveat, stated by the authors: this is not competitive with ParticleTransformer/ParticleNet on discrimination — 75% 10-class recall is well below dedicated taggers — and the appeal is a single instruction-conditioned multitask interface, not raw performance. Pixelization also discards constituent-level information by construction.</p>]]></description>
+  </item>
 
   <item>
     <title>PSICHE: Probabilistic, Structure-Intrinsic Clustering with a Hierarchical Embedding</title>
@@ -1991,26 +2011,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rong-Jun Fu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (winner-take-all, jet axes, jet radius) — abstract only, not yet read for a briefing.</em></p>
 <p>We present a theoretical study of the azimuthal decorrelation δφ and transverse momentum imbalance q_T in dijet production at the LHC, offering intriguing insights into the dynamics of quantum chromodynamics. We define the jet axes using the recoil-free winner-take-all (WTA) recombination scheme. For the azimuthal decorrelation δφ, this axis choice eliminates non-global logarithms (NGLs) entirely. For the transverse momentum imbalance q_T, NGLs emerge specifically in the small jet radius limit (R ≪1). In this regime, the WTA scheme simplifies the theoretical framework by restricting jet radius logarithms to the soft sector. We derive factorization formulae for both observables within soft-collinear effective theory. To address the small-R NGLs in the q_T distribution, we refactorize the soft function into global soft, collinear-soft, and ultra-collinear-soft modes. We perform the resummation of global large logarithms ln(δφ) and ln(q_T/Q) up to next-to-next-to-leading logarithmic accuracy. For the q_T distribution, this is combined with a leading-logarithmic resummation of the non-global lnR terms. We match our predictions to leading fixed-order O(α_s³⁾ calculations. We also numerically investigate the structure of the first subleading power corrections. Comparisons with PYTHIA8 simulations demonstrate that the observables we consider are robust against non-perturbative multi-parton interactions and hadronization effects.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Next-to-Leading Order QCD Corrections to Λ_b →p Form Factors from Light-Cone Sum Rules</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2602-18050</link>
-    <guid isPermaLink="false">arxiv:2602.18050</guid>
-    <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiang-Lin Zhou et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet function) — abstract only, not yet read for a briefing.</em></p>
-<p>In this study, we compute the radiative corrections to the Λ_b →p transition form factors at next-to-leading logarithmic accuracy, employing the framework of QCD light-cone sum rules with the light-cone distribution amplitudes of the Λ_b baryon. The factorization formulae of the vacuum-to-Λ_b correlation function, constructed from the interpolating current for the proton, are derived at leading power in m_p / m_Λ_b, using the method of regions. With our specific choice of interpolating current, only the twist-4 distribution amplitude of the Λ_b baryon contributes to the form factors. Numerically, we find that the next-to-leading order QCD perturbative corrections reduce the tree-level form factors to approximately 65% of their original value, with the next-to-leading-order jet function providing the dominant contribution. In the large-energy limit (E_p →∞), the form factors exhibit a clear 1/E_p³ scaling, consistent with the expected power-counting behavior. By applying the z-series parameterization to perform a combined fit of the form factors from our results and available lattice QCD simulations, we further investigate the decay rate of Λ_b →p ℓ⁻ _ℓ and extract the CKM matrix element |V_ub| = (3.33±0.43 ) ×10⁻³.</p>]]></description>
-  </item>
-
-  <item>
-    <title>First measurement of jet axis decorrelation with photon-tagged jets in pp and PbPb collisions at 5.02 TeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2602-18279</link>
-    <guid isPermaLink="false">arxiv:2602.18279</guid>
-    <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet axis, jet constituents) — abstract only, not yet read for a briefing.</em></p>
-<p>The first measurement of the jet axis decorrelation in events with jets recoiling from an isolated photon is presented for lead-lead (PbPb) and proton-proton (pp) collisions at a nucleon-nucleon center-of-mass energy of 5.02 TeV. The jet axis decorrelation is the angular difference (Δj) between two definitions of the jet axis. This quantity is expected to be sensitive to the scattering of jet constituents in the quark-gluon plasma (QGP). Events which have a leading isolated photon with transverse momentum 60  p_T^γ  200 GeV and recoiling jets with 30  p_T^jet  100 GeV are selected for the analysis. The PbPb result is reported as a function of collision centrality and compared to pp reference data. Jets with p_T^jet  60 GeV have consistent Δj shapes for pp and PbPb collisions. However, a narrowing is observed for jets with p_T^jet  60 GeV in central PbPb collisions. The results are compared to predictions from the JEWEL, PYQUEN, and HYBRID theoretical models, which include different descriptions of parton energy loss in the QGP.</p>]]></description>
   </item>
 
 </channel>
