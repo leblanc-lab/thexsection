@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Semi-Discrete Optimal Transport: Hardness, Regularization and Numerical Solution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2103-06263</link>
+    <guid isPermaLink="false">arxiv:2103.06263</guid>
+    <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bahar Taskesen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Semi-discrete optimal transport problems, which evaluate the Wasserstein distance between a discrete and a generic (possibly non-discrete) probability measure, are believed to be computationally hard. Even though such problems are ubiquitous in statistics, machine learning and computer vision, however, this perception has not yet received a theoretical justification. To fill this gap, we prove that computing the Wasserstein distance between a discrete probability measure supported on two points and the Lebesgue measure on the standard hypercube is already #P-hard. This insight prompts us to seek approximate solutions for semi-discrete optimal transport problems. We thus perturb the underlying transportation cost with an additive disturbance governed by an ambiguous probability distribution, and we introduce a distributionally robust dual optimal transport problem whose objective function is smoothed with the most adverse disturbance distributions from within a given ambiguity set. We further show that smoothing the dual objective function is equivalent to regularizing the primal objective function, and we identify several ambiguity sets that give rise to several known and new regularization schemes. As a byproduct, we discover an intimate relation between semi-discrete optimal transport problems and discrete choice models traditionally studied in psychology and economics. To solve the regularized optimal transport problems efficiently, we use a stochastic gradient descent algorithm with imprecise stochastic gradient oracles. A new convergence analysis reveals that this algorithm improves the best known convergence guarantee for semi-discrete optimal transport problems with entropic regularizers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport for Unsupervised Denoising Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2108-02574</link>
+    <guid isPermaLink="false">arxiv:2108.02574</guid>
+    <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Recently, much progress has been made in unsupervised denoising learning. However, existing methods more or less rely on some assumptions on the signal and/or degradation model, which limits their practical performance. How to construct an optimal criterion for unsupervised denoising learning without any prior knowledge on the degradation model is still an open question. Toward answering this question, this work proposes a criterion for unsupervised denoising learning based on the optimal transport theory. This criterion has favorable properties, e.g., approximately maximal preservation of the information of the signal, whilst achieving perceptual reconstruction. Furthermore, though a relaxed unconstrained formulation is used in practical implementation, we prove that the relaxed formulation in theory has the same solution as the original constrained formulation. Experiments on synthetic and real-world data, including realistic photographic, microscopy, depth, and raw depth images, demonstrate that the proposed method even compares favorably with supervised methods, e.g., approaching the PSNR of supervised methods while having better perceptual quality. Particularly, for spatially correlated noise and realistic microscopy images, the proposed method not only achieves better perceptual quality but also has higher PSNR than supervised methods. Besides, it shows remarkable superiority in harsh practical conditions with complex noise, e.g., raw depth images. Code is available at https://github.com/wangweiSJTU/OTUR.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Physics-Driven Learning of Wasserstein GAN for Density Reconstruction in Dynamic Tomography</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2110-15424</link>
+    <guid isPermaLink="false">arxiv:2110.15424</guid>
+    <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhishen Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Object density reconstruction from projections containing scattered radiation and noise is of critical importance in many applications. Existing scatter correction and density reconstruction methods may not provide the high accuracy needed in many applications and can break down in the presence of unmodeled or anomalous scatter and other experimental artifacts. Incorporating machine-learned models could prove beneficial for accurate density reconstruction particularly in dynamic imaging, where the time-evolution of the density fields could be captured by partial differential equations or by learning from hydrodynamics simulations. In this work, we demonstrate the ability of learned deep neural networks to perform artifact removal in noisy density reconstructions, where the noise is imperfectly characterized. We use a Wasserstein generative adversarial network (WGAN), where the generator serves as a denoiser that removes artifacts in densities obtained from traditional reconstruction algorithms. We train the networks from large density time-series datasets, with noise simulated according to parametric random distributions that may mimic noise in experiments. The WGAN is trained with noisy density frames as generator inputs, to match the generator outputs to the distribution of clean densities (time-series) from simulations. A supervised loss is also included in the training, which leads to improved density restoration performance. In addition, we employ physics-based constraints such as mass conservation during network training and application to further enable highly accurate density reconstructions. Our preliminary numerical results show that the models trained in our frameworks can remove significant portions of unknown noise in density time-series data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A New Parallel Algorithm for Sinkhorn Word-Movers Distance and Its Performance on PIUMA and Xeon CPU</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2107-06433</link>
+    <guid isPermaLink="false">arxiv:2107.06433</guid>
+    <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesmin Jahan Tithi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>The Word Movers Distance (WMD) measures the semantic dissimilarity between two text documents by computing the cost of optimally moving all words of a source/query document to the most similar words of a target document. Computing WMD between two documents is costly because it requires solving an O(V³log(V)) optimization problem where V is the number of unique words in the document. Fortunately, WMD can be framed as an Earth Mover&rsquo;s Distance (EMD) for which the algorithmic complexity can be reduced to O(V²⁾ by adding an entropy penalty to the optimization problem and solving it using the Sinkhorn-Knopp algorithm. Additionally, the computation can be made highly parallel by adopting a batching approach, i.e., computing the WMD of a single query document against multiple target documents at once. Sinkhorn WMD is a key kernel used in many ML/NLP applications. and usually gets implemented in Python. However, a straightforward Python implementation may leave significant performance on the table even though it may internally call optimized C++ BLAS routines. We present a new sparse {P}arallel {A}lgorithm for {S}inkhorn-Knopp {W}ord-movers {D}istance to compute the semantic distance of one document to many other documents by adopting the O(V²⁾ EMD algorithm. We algorithmically transform O(V²⁾ dense compute-heavy EMD version into an equivalent sparse one using new fused SDDMM-SpMM (sparse selection of dense-dense matrix-, sparse-dense matrix-multiplication) kernels. We implemented and optimized this algorithm for two very different architectures &ndash; the new Intel Programmable Integrated Unified Memory Architecture (PIUMA) and Intel Xeon CPUs. We show that we were able to reach close to peak performance on both platforms.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Reliable Neural Generative Modeling of Detectors</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2204-09947</link>
+    <guid isPermaLink="false">arxiv:2204.09947</guid>
+    <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucio Anderlini et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The increasing luminosities of future data taking at Large Hadron Collider and next generation collider experiments require an unprecedented amount of simulated events to be produced. Such large scale productions demand a significant amount of valuable computing resources. This brings a demand to use new approaches to event generation and simulation of detector responses. In this paper, we discuss the application of generative adversarial networks (GANs) to the simulation of the LHCb experiment events. We emphasize main pitfalls in the application of GANs and study the systematic effects in detail. The presented results are based on the Geant4 simulation of the LHCb Cherenkov detector.</p>]]></description>
+  </item>
 
   <item>
     <title>Deep learning techniques for energy clustering in the CMS ECAL</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiong Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>When a population exhibits heterogeneity, we often model it via a finite mixture: decompose it into several different but homogeneous subpopulations. Contemporary practice favors learning the mixtures by maximizing the likelihood for statistical efficiency and the convenient EM-algorithm for numerical computation. Yet the maximum likelihood estimate (MLE) is not well defined for the most widely used finite normal mixture in particular and for finite location-scale mixture in general. We hence investigate feasible alternatives to MLE such as minimum distance estimators. Recently, the Wasserstein distance has drawn increased attention in the machine learning community. It has intuitive geometric interpretation and is successfully employed in many new applications. Do we gain anything by learning finite location-scale mixtures via a minimum Wasserstein distance estimator (MWDE)? This paper investigates this possibility in several respects. We find that the MWDE is consistent and derive a numerical solution under finite location-scale mixtures. We study its robustness against outliers and mild model mis-specifications. Our moderate scaled simulation study shows the MWDE suffers some efficiency loss against a penalized version of MLE in general without noticeable gain in robustness. We reaffirm the general superiority of the likelihood based learning strategies even for the non-regular finite location-scale mixtures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Data-driven mapping between functional connectomes using optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-01303</link>
-    <guid isPermaLink="false">arxiv:2107.01303</guid>
-    <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javid Dadashkarimi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Functional connectomes derived from functional magnetic resonance imaging have long been used to understand the functional organization of the brain. Nevertheless, a connectome is intrinsically linked to the atlas used to create it. In other words, a connectome generated from one atlas is different in scale and resolution compared to a connectome generated from another atlas. Being able to map connectomes and derived results between different atlases without additional pre-processing is a crucial step in improving interpretation and generalization between studies that use different atlases. Here, we use optimal transport, a powerful mathematical technique, to find an optimum mapping between two atlases. This mapping is then used to transform time series from one atlas to another in order to reconstruct a connectome. We validate our approach by comparing transformed connectomes against their &ldquo;gold-standard&rdquo; counterparts (i.e., connectomes generated directly from an atlas) and demonstrate the utility of transformed connectomes by applying these connectomes to predictive models based on a different atlas. We show that these transformed connectomes are significantly similar to their &ldquo;gold-standard&rdquo; counterparts and maintain individual differences in brain-behavior associations, demonstrating both the validity of our approach and its utility in downstream analyses. Overall, our approach is a promising avenue to increase the generalization of connectome-based results across different atlases.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Differentiable Particle Filtering via Entropy-Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-07850</link>
-    <guid isPermaLink="false">arxiv:2102.07850</guid>
-    <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adrien Corenflos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Particle Filtering (PF) methods are an established class of procedures for performing inference in non-linear state-space models. Resampling is a key ingredient of PF, necessary to obtain low variance likelihood and states estimates. However, traditional resampling methods result in PF-based loss functions being non-differentiable with respect to model and PF parameters. In a variational inference context, resampling also yields high variance gradient estimates of the PF-based evidence lower bound. By leveraging optimal transport ideas, we introduce a principled differentiable particle filter and provide convergence results. We demonstrate this novel method on a variety of applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Adversarial Regularization (WAR) on label noise</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a1904-03936</link>
-    <guid isPermaLink="false">arxiv:1904.03936</guid>
-    <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Fatras et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Noisy labels often occur in vision datasets, especially when they are obtained from crowdsourcing or Web scraping. We propose a new regularization method, which enables learning robust classifiers in presence of noisy data. To achieve this goal, we propose a new adversarial regularization scheme based on the Wasserstein distance. Using this distance allows taking into account specific relations between classes by leveraging the geometric properties of the labels space. Our Wasserstein Adversarial Regularization (WAR) encodes a selective regularization, which promotes smoothness of the classifier between some classes, while preserving sufficient complexity of the decision boundary between others. We first discuss how and why adversarial regularization can be used in the context of label noise and then show the effectiveness of our method on five datasets corrupted with noisy labels: in both benchmarks and real datasets, WAR outperforms the state-of-the-art competitors.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Partial Wasserstein and Maximum Mean Discrepancy distances for bridging the gap between outlier detection and drift detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-12893</link>
-    <guid isPermaLink="false">arxiv:2106.12893</guid>
-    <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Viehmann</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>With the rise of machine learning and deep learning based applications in practice, monitoring, i.e. verifying that these operate within specification, has become an important practical problem. An important aspect of this monitoring is to check whether the inputs (or intermediates) have strayed from the distribution they were validated for, which can void the performance assurances obtained during testing. There are two common approaches for this. The, perhaps, more classical one is outlier detection or novelty detection, where, for a single input we ask whether it is an outlier, i.e. exceedingly unlikely to have originated from a reference distribution. The second, perhaps more recent approach, is to consider a larger number of inputs and compare its distribution to a reference distribution (e.g. sampled during testing). This is done under the label drift detection. In this work, we bridge the gap between outlier detection and drift detection through comparing a given number of inputs to an automatically chosen part of the reference distribution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>LSMI-Sinkhorn: Semi-supervised Mutual Information Estimation with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a1909-02373</link>
-    <guid isPermaLink="false">arxiv:1909.02373</guid>
-    <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yanbin Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Estimating mutual information is an important statistics and machine learning problem. To estimate the mutual information from data, a common practice is preparing a set of paired samples {(𝐱_i,𝐲_i)}_i=1ⁿ i.i.d.∼ p(𝐱,𝐲). However, in many situations, it is difficult to obtain a large number of data pairs. To address this problem, we propose the semi-supervised Squared-loss Mutual Information (SMI) estimation method using a small number of paired samples and the available unpaired ones. We first represent SMI through the density ratio function, where the expectation is approximated by the samples from marginals and its assignment parameters. The objective is formulated using the optimal transport problem and quadratic programming. Then, we introduce the Least-Squares Mutual Information with Sinkhorn (LSMI-Sinkhorn) algorithm for efficient optimization. Through experiments, we first demonstrate that the proposed method can estimate the SMI without a large number of paired samples. Then, we show the effectiveness of the proposed LSMI-Sinkhorn algorithm on various types of machine learning problems such as image matching and photo album summarization. Code can be found at https://github.com/csyanbin/LSMI-Sinkhorn.</p>]]></description>
   </item>
 
 </channel>

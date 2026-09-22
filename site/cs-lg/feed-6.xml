@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FedPIA -- Permuting and Integrating Adapters leveraging Wasserstein Barycenters for Finetuning Foundation Models in Multi-Modal Federated Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-14424</link>
+    <guid isPermaLink="false">arxiv:2412.14424</guid>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pramit Saha et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Large Vision-Language Models typically require large text and image datasets for effective fine-tuning. However, collecting data from various sites, especially in healthcare, is challenging due to strict privacy regulations. An alternative is to fine-tune these models on end-user devices, such as in medical clinics, without sending data to a server. These local clients typically have limited computing power and small datasets, which are not enough for fully fine-tuning large VLMs on their own. A naive solution to these scenarios is to leverage parameter-efficient fine-tuning (PEFT) strategies and apply federated learning (FL) algorithms to combine the learned adapter weights, thereby respecting the resource limitations and data privacy. However, this approach does not fully leverage the knowledge from multiple adapters trained on diverse data distributions and for diverse tasks. The adapters are adversely impacted by data heterogeneity and task heterogeneity across clients resulting in suboptimal convergence. To this end, we propose a novel framework called FedPIA that improves upon the naive combinations of FL and PEFT by introducing Permutation and Integration of the local Adapters in the server and global Adapters in the clients exploiting Wasserstein barycenters for improved blending of client-specific and client-agnostic knowledge. This layerwise permutation helps to bridge the gap in the parameter space of local and global adapters before integration. We conduct over 2000 client-level experiments utilizing 48 medical image datasets across five different medical vision-language FL task settings encompassing visual question answering as well as image and report-based multi-label disease detection. Our experiments involving diverse client settings, ten different modalities, and two VLM backbones demonstrate that FedPIA consistently outperforms the state-of-the-art PEFT-FL baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Computing Gram Matrix for SMILES Strings using RDKFingerprint and Sinkhorn-Knopp Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-14717</link>
+    <guid isPermaLink="false">arxiv:2412.14717</guid>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sarwan Ali et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>In molecular structure data, SMILES (Simplified Molecular Input Line Entry System) strings are used to analyze molecular structure design. Numerical feature representation of SMILES strings is a challenging task. This work proposes a kernel-based approach for encoding and analyzing molecular structures from SMILES strings. The proposed approach involves computing a kernel matrix using the Sinkhorn-Knopp algorithm while using kernel principal component analysis (PCA) for dimensionality reduction. The resulting low-dimensional embeddings are then used for classification and regression analysis. The kernel matrix is computed by converting the SMILES strings into molecular structures using the Morgan Fingerprint, which computes a fingerprint for each molecule. The distance matrix is computed using the pairwise kernels function. The Sinkhorn-Knopp algorithm is used to compute the final kernel matrix that satisfies the constraints of a probability distribution. This is achieved by iteratively adjusting the kernel matrix until the marginal distributions of the rows and columns match the desired marginal distributions. We provided a comprehensive empirical analysis of the proposed kernel method to evaluate its goodness with greater depth. The suggested method is assessed for drug subcategory prediction (classification task) and solubility AlogPS ``Aqueous solubility and Octanol/Water partition coefficient&rdquo; (regression task) using the benchmark SMILES string dataset. The outcomes show the proposed method outperforms several baseline methods in terms of supervised analysis and has potential uses in molecular design and drug discovery. Overall, the suggested method is a promising avenue for kernel methods-based molecular structure analysis and design.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Preventing Local Pitfalls in Vector Quantization via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-15195</link>
+    <guid isPermaLink="false">arxiv:2412.15195</guid>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Borui Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Vector-quantized networks (VQNs) have exhibited remarkable performance across various tasks, yet they are prone to training instability, which complicates the training process due to the necessity for techniques such as subtle initialization and model distillation. In this study, we identify the local minima issue as the primary cause of this instability. To address this, we integrate an optimal transport method in place of the nearest neighbor search to achieve a more globally informed assignment. We introduce OptVQ, a novel vector quantization method that employs the Sinkhorn algorithm to optimize the optimal transport problem, thereby enhancing the stability and efficiency of the training process. To mitigate the influence of diverse data distributions on the Sinkhorn algorithm, we implement a straightforward yet effective normalization strategy. Our comprehensive experiments on image reconstruction tasks demonstrate that OptVQ achieves 100% codebook utilization and surpasses current state-of-the-art VQNs in reconstruction quality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conditioned quantum-assisted deep generative surrogate for particle-calorimeter interactions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2410-22870</link>
+    <guid isPermaLink="false">arxiv:2410.22870</guid>
+    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Quetzalcoatl Toledo-Marin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Particle collisions at accelerators such as the Large Hadron Collider, recorded and analyzed by experiments such as ATLAS and CMS, enable exquisite measurements of the Standard Model and searches for new phenomena. Simulations of collision events at these detectors have played a pivotal role in shaping the design of future experiments and analyzing ongoing ones. However, the quest for accuracy in Large Hadron Collider (LHC) collisions comes at an imposing computational cost, with projections estimating the need for millions of CPU-years annually during the High Luminosity LHC (HL-LHC) run \cite{collaboration2022atlas}. Simulating a single LHC event with \textsc{Geant4} currently devours around 1000 CPU seconds, with simulations of the calorimeter subdetectors in particular imposing substantial computational demands \cite{rousseau2023experimental}. To address this challenge, we propose a conditioned quantum-assisted deep generative model. Our model integrates a conditioned variational autoencoder (VAE) on the exterior with a conditioned Restricted Boltzmann Machine (RBM) in the latent space, providing enhanced expressiveness compared to conventional VAEs. The RBM nodes and connections are meticulously engineered to enable the use of qubits and couplers on D-Wave&rsquo;s Pegasus-structured \textit{Advantage} quantum annealer (QA) for sampling. We introduce a novel method for conditioning the quantum-assisted RBM using \textit{flux biases}. We further propose a novel adaptive mapping to estimate the effective inverse temperature in quantum annealers. The effectiveness of our framework is illustrated using Dataset 2 of the CaloChallenge \cite{calochallenge}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sum-of-Squares Programming for Ma-Trudinger-Wang Regularity of Optimal Transport Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-13372</link>
+    <guid isPermaLink="false">arxiv:2412.13372</guid>
+    <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sachin Shivakumar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>For a given ground cost, approximating the Monge optimal transport map that pushes forward a given probability measure onto another has become a staple in several modern machine learning algorithms. The fourth-order Ma-Trudinger-Wang (MTW) tensor associated with this ground cost function provides a notion of curvature in optimal transport. The non-negativity of this tensor plays a crucial role for establishing continuity for the Monge optimal transport map. It is, however, generally difficult to analytically verify this condition for any given ground cost. To expand the class of cost functions for which MTW non-negativity can be verified, we propose a provably correct computational approach which provides certificates of non-negativity for the MTW tensor using Sum-of-Squares (SOS) programming. We further show that our SOS technique can also be used to compute an inner approximation of the region where MTW non-negativity holds. We apply our proposed SOS programming method to several practical ground cost functions to approximate the regions of regularity of their corresponding optimal transport maps.</p>]]></description>
+  </item>
 
   <item>
     <title>xVal: A Continuous Numerical Tokenization for Scientific Language Models</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roy T. Forestano et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Machine learning algorithms are heavily relied on to understand the vast amounts of data from high-energy particle collisions at the CERN Large Hadron Collider (LHC). The data from such collision events can naturally be represented with graph structures. Therefore, deep geometric methods, such as graph neural networks (GNNs), have been leveraged for various data analysis tasks in high-energy physics. One typical task is jet tagging, where jets are viewed as point clouds with distinct features and edge connections between their constituent particles. The increasing size and complexity of the LHC particle datasets, as well as the computational models used for their analysis, greatly motivate the development of alternative fast and efficient computational paradigms such as quantum computation. In addition, to enhance the validity and robustness of deep networks, one can leverage the fundamental symmetries present in the data through the use of invariant inputs and equivariant layers. In this paper, we perform a fair and comprehensive comparison between classical graph neural networks (GNNs) and equivariant graph neural networks (EGNNs) and their quantum counterparts: quantum graph neural networks (QGNNs) and equivariant quantum graph neural networks (EQGNN). The four architectures were benchmarked on a binary classification task to classify the parton-level particle initiating the jet. Based on their AUC scores, the quantum networks were shown to outperform the classical networks. However, seeing the computational advantage of the quantum networks in practice may have to wait for the further development of quantum technology and its associated APIs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>COTET: Cross-view Optimal Transport for Knowledge Graph Entity Typing</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-13602</link>
-    <guid isPermaLink="false">arxiv:2405.13602</guid>
-    <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiwei Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Knowledge graph entity typing (KGET) aims to infer missing entity type instances in knowledge graphs. Previous research has predominantly centered around leveraging contextual information associated with entities, which provides valuable clues for inference. However, they have long ignored the dual nature of information inherent in entities, encompassing both high-level coarse-grained cluster knowledge and fine-grained type knowledge. This paper introduces Cross-view Optimal Transport for knowledge graph Entity Typing (COTET), a method that effectively incorporates the information on how types are clustered into the representation of entities and types. COTET comprises three modules: i) Multi-view Generation and Encoder, which captures structured knowledge at different levels of granularity through entity-type, entity-cluster, and type-cluster-type perspectives; ii) Cross-view Optimal Transport, transporting view-specific embeddings to a unified space by minimizing the Wasserstein distance from a distributional alignment perspective; iii) Pooling-based Entity Typing Prediction, employing a mixture pooling mechanism to aggregate prediction scores from diverse neighbors of an entity. Additionally, we introduce a distribution-based loss function to mitigate the occurrence of false negatives during training. Extensive experiments demonstrate the effectiveness of COTET when compared to existing baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Task agnostic continual learning with Pairwise layer architecture</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-13632</link>
-    <guid isPermaLink="false">arxiv:2405.13632</guid>
-    <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Santtu Keskinen</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Most of the dominant approaches to continual learning are based on either memory replay, parameter isolation, or regularization techniques that require task boundaries to calculate task statistics. We propose a static architecture-based method that doesn&rsquo;t use any of these. We show that we can improve the continual learning performance by replacing the final layer of our networks with our pairwise interaction layer. The pairwise interaction layer uses sparse representations from a Winner-take-all style activation function to find the relevant correlations in the hidden layer representations. The networks using this architecture show competitive performance in MNIST and FashionMNIST-based continual image classification experiments. We demonstrate this in an online streaming continual learning setup where the learning system cannot access task labels or boundaries.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bayesian Inverse Problems with Conditional Sinkhorn Generative Adversarial Networks in Least Volume Latent Spaces</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-14008</link>
-    <guid isPermaLink="false">arxiv:2405.14008</guid>
-    <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiuyi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Solving inverse problems in scientific and engineering fields has long been intriguing and holds great potential for many applications, yet most techniques still struggle to address issues such as high dimensionality, nonlinearity and model uncertainty inherent in these problems. Recently, generative models such as Generative Adversarial Networks (GANs) have shown great potential in approximating complex high dimensional conditional distributions and have paved the way for characterizing posterior densities in Bayesian inverse problems, yet the problems&rsquo; high dimensionality and high nonlinearity often impedes the model&rsquo;s training. In this paper we show how to tackle these issues with Least Volume&ndash;a novel unsupervised nonlinear dimension reduction method&ndash;that can learn to represent the given datasets with the minimum number of latent variables while estimating their intrinsic dimensions. Once the low dimensional latent spaces are identified, efficient and accurate training of conditional generative models becomes feasible, resulting in a latent conditional GAN framework for posterior inference. We demonstrate the power of the proposed methodology on a variety of applications including inversion of parameters in systems of ODEs and high dimensional hydraulic conductivities in subsurface flow problems, and reveal the impact of the observables&rsquo; and unobservables&rsquo; intrinsic dimensions on inverse problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Particle physics DL-simulation with control over generated data properties</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-14049</link>
-    <guid isPermaLink="false">arxiv:2405.14049</guid>
-    <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Karol Rogoziński et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The research of innovative methods aimed at reducing costs and shortening the time needed for simulation, going beyond conventional approaches based on Monte Carlo methods, has been sparked by the development of collision simulations at the Large Hadron Collider at CERN. Deep learning generative methods including VAE, GANs and diffusion models have been used for this purpose. Although they are much faster and simpler than standard approaches, they do not always keep high fidelity of the simulated data. This work aims to mitigate this issue, by providing an alternative solution to currently employed algorithms by introducing the mechanism of control over the generated data properties. To achieve this, we extend the recently introduced CorrVAE, which enables user-defined parameter manipulation of the generated output. We adapt the model to the problem of particle physics simulation. The proposed solution achieved promising results, demonstrating control over the parameters of the generated output and constituting an alternative for simulating the ZDC calorimeter in the ALICE experiment at CERN.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Landscape of Unfolding with Machine Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-18807</link>
-    <guid isPermaLink="false">arxiv:2404.18807</guid>
-    <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nathan Huetsch et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Tilman Plehn, Ben Nachman, Vinicius Mikuni, Anja Butter, Daniel Whiteson) — original abstract; no AI summary.</em></p>
-<p>Recent innovations from machine learning allow for data unfolding, without binning and including correlations across many dimensions. We describe a set of known, upgraded, and new methods for ML-based unfolding. The performance of these approaches are evaluated on the same two datasets. We find that all techniques are capable of accurately reproducing the particle-level spectra across complex observables. Given that these approaches are conceptually diverse, they offer an exciting toolkit for a new class of measurements that can probe the Standard Model with an unprecedented level of detail and may enable sensitivity to new phenomena.</p>]]></description>
   </item>
 
 </channel>

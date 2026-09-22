@@ -36,17 +36,50 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">686 papers</span>
-  <span class="count">596 days</span>
+  <span class="count">688 papers</span>
+  <span class="count">597 days</span>
   <span class="count">since 2010</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">131</span></a><a href="2025.html">2025 <span class="n">135</span></a><a href="2024.html">2024 <span class="n">91</span></a><a href="2023.html">2023 <span class="n">66</span></a><a href="2022.html">2022 <span class="n">68</span></a><a href="2021.html">2021 <span class="n">47</span></a><a href="2020.html">2020 <span class="n">53</span></a><a href="2019.html">2019 <span class="n">38</span></a><a href="2018.html">2018 <span class="n">25</span></a><a href="2017.html">2017 <span class="n">13</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">4</span></a><a href="2014.html">2014 <span class="n">3</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">133</span></a><a href="2025.html">2025 <span class="n">135</span></a><a href="2024.html">2024 <span class="n">91</span></a><a href="2023.html">2023 <span class="n">66</span></a><a href="2022.html">2022 <span class="n">68</span></a><a href="2021.html">2021 <span class="n">47</span></a><a href="2020.html">2020 <span class="n">53</span></a><a href="2019.html">2019 <span class="n">38</span></a><a href="2018.html">2018 <span class="n">25</span></a><a href="2017.html">2017 <span class="n">13</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">4</span></a><a href="2014.html">2014 <span class="n">3</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 22, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-23182">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.23182" target="_blank" rel="noopener">arXiv:2609.23182</a>
+      
+      <a class="permalink" href="#a2609-23182" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">GrapeSplat: Geometry-Grounded Reconstruction via Amalgamated Pose-Free Encoding for Feed-Forward 3D Gaussian Splatting</h3>
+    <p class="byline">Si-Yu Lu et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Feed-forward 3D Gaussian Splatting now reconstructs renderable scenes from unposed, uncalibrated images. Yet, most models supervise only photometric consistency and predict Gaussians pixel by pixel, which leaves global structure fragile and ties primitive count to image resolution and view count. To this end, GrapeSplat amalgamates multi-view cues into a voxel-aligned scene representation and decodes Gaussians directly from the learned grid, requiring no per-scene optimization or post-processing. An Atlas Encoder lifts all views into pixel-wise geometry-and-appearance features anchored at predicted 3D points. PEACH-Vox compands the unbounded scene into a bounded sparse grid through a smooth per-axis map with an exact closed-form inverse. The Sparse Decoder then consolidates the grid with sparse convolutions and decodes the full scene as multiple Gaussians per occupied cell. This amalgamated representation exploits sparse voxel occupancy, where the Gaussian count follows the occupied cells and saturates as views cover the scene, while grid resolution sets its ceiling. GrapeSplat turns unposed images into a renderable Gaussian scene in a single forward pass. Trained with 2D and 3D supervision on 8-view sequences, it generalizes zero-shot from 4 to 64 views across indoor and unbounded scenes. Code and trained weights are available at https://github.com/VAISR/GrapeSplat</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-24125">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.24125" target="_blank" rel="noopener">arXiv:2609.24125</a>
+      
+      <a class="permalink" href="#a2609-24125" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Positive Pair Geometry Matters: Optimal Transport for Contrastive Learning of Visual Representations</h3>
+    <p class="byline">Akshit Nanda et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Contrastive self-supervised learning has achieved strong performance by learning representations from multiple augmented views of the same image. However, most existing methods construct positive pairs using independently sampled stochastic augmentations, which may alter semantic content and ignore the intrinsic geometry of the data distribution. In this work, we propose OTCLR, an optimal transport-aware framework for contrastive learning representations that generates geometry-consistent positive samples. Instead of directly contrasting two randomly augmented views, we construct intermediate views between the original image and its augmented variants through entropic optimal-transport displacement interpolation. These transport-interpolated samples serve as positive views that better preserve image structure while explicitly modeling spatial distributional geometry. To further promote smooth representation learning, we evaluate auxiliary Sinkhorn regularization terms that encourage transport-interpolated views to remain consistent with their endpoint images. The proposed method can be incorporated into standard contrastive learning pipelines without modifying the encoder architecture. Experiments on multiple benchmark datasets show that our approach improves representation quality and transfer learning performance compared with conventional augmentation-based contrastive learning baselines.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -2534,7 +2567,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-22 05:33 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-22 05:44 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

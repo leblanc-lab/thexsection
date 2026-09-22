@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Novel Sliced Fused Gromov-Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-02364</link>
+    <guid isPermaLink="false">arxiv:2508.02364</guid>
+    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Moritz Piening et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov&ndash;Wasserstein (GW) distance and its fused extension (FGW) are powerful tools for comparing heterogeneous data. Their computation is, however, challenging since both distances are based on non-convex, quadratic optimal transport (OT) problems. Leveraging 1D OT, a sliced version of GW has been proposed to lower the computational burden. Unfortunately, this sliced version is restricted to Euclidean geometry and loses invariance to isometries, strongly limiting its application in practice. To overcome these issues, we propose a novel slicing technique for GW as well as for FGW that is based on an appropriate lower bound, hierarchical OT, and suitable quadrature rules for the underlying 1D OT problems. Our novel sliced FGW significantly reduces the numerical effort while remaining invariant to isometric transformations and allowing the comparison of arbitrary geometries. We show that our new distance actually defines a pseudo-metric for structured spaces that bounds FGW from below and study its interpolation properties between sliced Wasserstein and GW. Since we avoid the underlying quadratic program, our sliced distance is numerically more robust and reliable than the original GW and FGW distance; especially in the context of shape retrieval and graph isomorphism testing.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convergence of Deterministic and Stochastic Diffusion-Model Samplers: A Simple Analysis in Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-03210</link>
+    <guid isPermaLink="false">arxiv:2508.03210</guid>
+    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eliot Beyler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We provide new convergence guarantees in Wasserstein distance for diffusion-based generative models, covering both stochastic (DDPM-like) and deterministic (DDIM-like) sampling methods. We introduce a simple framework to analyze discretization, initialization, and score estimation errors. Notably, we derive the first Wasserstein convergence bound for the Heun sampler and improve existing results for the Euler sampler of the probability flow ODE. Our analysis emphasizes the importance of spatial regularity of the learned score function and argues for controlling the score error with respect to the true reverse process, in line with denoising score matching. We also incorporate recent results on smoothed Wasserstein distances to sharpen initialization error bounds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neural Local Wasserstein Regression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-10824</link>
+    <guid isPermaLink="false">arxiv:2511.10824</guid>
+    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Inga Girshfeld et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the estimation problem of distribution-on-distribution regression, where both predictors and responses are probability measures. Existing approaches typically rely on a global optimal transport map or tangent-space linearization, which can be restrictive in approximation capacity and distort geometry in multivariate underlying domains. In this paper, we propose the \emph{Neural Local Wasserstein Regression}, a flexible nonparametric framework that models regression through locally defined transport maps in Wasserstein space. Our method builds on the analogy with classical kernel regression: kernel weights based on the 2-Wasserstein distance localize estimators around reference measures, while neural networks parameterize transport operators that adapt flexibly to complex data geometries. This localized perspective broadens the class of admissible transformations and avoids the limitations of global map assumptions and linearization structures. We develop a practical training procedure using DeepSets-style architectures and Sinkhorn-approximated losses, combined with a greedy reference selection strategy for scalability. Through synthetic experiments on Gaussian and mixture models, as well as distributional prediction tasks on MNIST, we demonstrate that our approach effectively captures nonlinear and high-dimensional distributional relationships that elude existing methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Dynamic Diffusion Schrödinger Bridge in Astrophysical Observational Inversions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-08065</link>
+    <guid isPermaLink="false">arxiv:2506.08065</guid>
+    <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ye Zhu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We study Diffusion Schrödinger Bridge (DSB) models in the context of dynamical astrophysical systems, specifically tackling observational inverse prediction tasks within Giant Molecular Clouds (GMCs) for star formation. We introduce the Astro-DSB model, a variant of DSB with the pairwise domain assumption tailored for astrophysical dynamics. By investigating its learning process and prediction performance in both physically simulated data and in real observations (the Taurus B213 data), we present two main takeaways. First, from the astrophysical perspective, our proposed paired DSB method improves interpretability, learning efficiency, and prediction performance over conventional astrostatistical and other machine learning methods. Second, from the generative modeling perspective, probabilistic generative modeling reveals improvements over discriminative pixel-to-pixel modeling in Out-Of-Distribution (OOD) testing cases of physical simulations with unseen initial conditions and different dominant physical processes. Our study expands research into diffusion models beyond the traditional visual synthesis application and provides evidence of the models&rsquo; learning abilities beyond pure data statistics, paving a path for future physics-aware generative models which can align dynamics between machine learning and real (astro)physical systems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Nonparametric Regression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-07967</link>
+    <guid isPermaLink="false">arxiv:2505.07967</guid>
+    <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Changyu Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distributionally robust optimization (WDRO) strengthens statistical learning under model uncertainty by minimizing the local worst-case risk within a prescribed ambiguity set. Although WDRO has been extensively studied in parametric settings, its theoretical properties in nonparametric frameworks remain underexplored. This paper investigates WDRO for nonparametric regression. We first establish a structural distinction based on the order k of the Wasserstein distance, showing that k=1 induces Lipschitz-type regularization, whereas k &gt; 1 corresponds to gradient-norm regularization. To address model misspecification, we analyze the excess local worst-case risk, deriving non-asymptotic error bounds for estimators constructed using norm-constrained feedforward neural networks. This analysis is supported by new covering number and approximation bounds that simultaneously control both the function and its gradient. The proposed estimator achieves a convergence rate of n⁻²β/(d+2β) up to logarithmic factors, where β depends on the target&rsquo;s smoothness and network parameters. This rate is shown to be minimax optimal under conditions commonly satisfied in high-dimensional settings. Moreover, these bounds on the excess local worst-case risk imply guarantees on the excess natural risk, ensuring robustness against any distribution within the ambiguity set. We show the framework&rsquo;s generality across regression and classification problems. Simulation studies and an application to the MNIST dataset further illustrate the estimator&rsquo;s robustness.</p>]]></description>
+  </item>
 
   <item>
     <title>Gromov-Wasserstein Graph Coarsening</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Many applications in machine learning involve data represented as probability distributions. The emergence of such data requires radically novel techniques to design tractable gradient flows on probability distributions over this type of (infinite-dimensional) objects. For instance, being able to flow labeled datasets is a core task for applications ranging from domain adaptation to transfer learning or dataset distillation. In this setting, we propose to represent each class by the associated conditional distribution of features, and to model the dataset as a mixture distribution supported on these classes (which are themselves probability distributions), meaning that labeled datasets can be seen as probability distributions over probability distributions. We endow this space with a metric structure from optimal transport, namely the Wasserstein over Wasserstein (WoW) distance, derive a differential structure on this space, and define WoW gradient flows. The latter enables to design dynamics over this space that decrease a given objective functional. We apply our framework to transfer learning and dataset distillation tasks, leveraging our gradient flow construction as well as novel tractable functionals that take the form of Maximum Mean Discrepancies with Sliced-Wasserstein based kernels between probability distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Do Large Language Models Reason Causally Like Us? Even Better?</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-10215</link>
-    <guid isPermaLink="false">arxiv:2502.10215</guid>
-    <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanna M. Dettki et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Causal reasoning is a core component of intelligence. Large language models (LLMs) have shown impressive capabilities in generating human-like text, raising questions about whether their responses reflect true understanding or statistical patterns. We compared causal reasoning in humans and four LLMs using tasks based on collider graphs, rating the likelihood of a query variable occurring given evidence from other variables. LLMs&rsquo; causal inferences ranged from often nonsensical (GPT-3.5) to human-like to often more normatively aligned than those of humans (GPT-4o, Gemini-Pro, and Claude). Computational model fitting showed that one reason for GPT-4o, Gemini-Pro, and Claude&rsquo;s superior performance is they didn&rsquo;t exhibit the &ldquo;associative bias&rdquo; that plagues human causal reasoning. Nevertheless, even these LLMs did not fully capture subtler reasoning patterns associated with collider graphs, such as &ldquo;explaining away&rdquo;.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distributional Matrix Completion via Nearest Neighbors in the Wasserstein Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-13112</link>
-    <guid isPermaLink="false">arxiv:2410.13112</guid>
-    <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jacob Feitelberg et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the problem of distributional matrix completion: Given a sparsely observed matrix of empirical distributions, we seek to impute the true distributions associated with both observed and unobserved matrix entries. This is a generalization of traditional matrix completion, where the observations per matrix entry are scalar-valued. To do so, we utilize tools from optimal transport to generalize the nearest neighbors method to the distributional setting. Under a suitable latent factor model on probability distributions, we establish that our method recovers the distributions in the Wasserstein metric. We demonstrate through simulations that our method (i) provides better distributional estimates for an entry compared to using observed samples for that entry alone, (ii) yields accurate estimates of distributional quantities such as standard deviation and value-at-risk, and (iii) inherently supports heteroscedastic distributions. In addition, we demonstrate our method on a real-world dataset of quarterly earnings prediction distributions. We also prove novel asymptotic results for Wasserstein barycenters over one-dimensional distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport-based Domain Alignment as a Preprocessing Step for Federated Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-04071</link>
-    <guid isPermaLink="false">arxiv:2506.04071</guid>
-    <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luiz Manella Pereira et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Federated learning (FL) is a subfield of machine learning that avoids sharing local data with a central server, which can enhance privacy and scalability. The inability to consolidate data leads to a unique problem called dataset imbalance, where agents in a network do not have equal representation of the labels one is trying to learn to predict. In FL, fusing locally-trained models with unbalanced datasets may deteriorate the performance of global model aggregation, and reduce the quality of updated local models and the accuracy of the distributed agents&rsquo; decisions. In this work, we introduce an Optimal Transport-based preprocessing algorithm that aligns the datasets by minimizing the distributional discrepancy of data along the edge devices. We accomplish this by leveraging Wasserstein barycenters when computing channel-wise averages. These barycenters are collected in a trusted central server where they collectively generate a target RGB space. By projecting our dataset towards this target space, we minimize the distributional discrepancy on a global level, which facilitates the learning process due to a minimization of variance across the samples. We demonstrate the capabilities of the proposed approach over the CIFAR-10 dataset, where we show its capability of reaching higher degrees of generalization in fewer communication rounds.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient and Accurate Optimal Transport with Mirror Descent and Conjugate Gradients</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2307-08507</link>
-    <guid isPermaLink="false">arxiv:2307.08507</guid>
-    <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mete Kemertas et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose Mirror Descent Optimal Transport (MDOT), a novel method for solving discrete optimal transport (OT) problems with high precision, by unifying temperature annealing in entropic-regularized OT (EOT) with mirror descent techniques. In this framework, temperature annealing produces a sequence of EOT dual problems, whose solution gradually gets closer to the solution of the original OT problem. We solve each problem efficiently using a GPU-parallel nonlinear conjugate gradients algorithm (PNCG) that outperforms traditional Sinkhorn iterations under weak regularization. Moreover, our investigation also reveals that the theoretical convergence rate of Sinkhorn iterations can exceed existing non-asymptotic bounds when its stopping criterion is tuned in a manner analogous to MDOT. Our comprehensive ablation studies of MDOT-PNCG affirm its robustness across a wide range of algorithmic parameters. Benchmarking on 24 problem sets of size n=4096 in a GPU environment demonstrate that our method attains high-precision, feasible solutions significantly faster than a representative set of existing OT solvers, including accelerated gradient methods and advanced Sinkhorn variants, in both wall-clock time and number of operations. Empirical convergence rates range between O(n² ε⁻¹/4) and O(n² ε⁻¹⁾, where ε is the optimality gap. For problem sizes up to n=16384, the empirical runtime scales as O(n²⁾ for moderate precision and as O(n⁵/2) at worst for high precision. These findings establish MDOT-PNCG as a compelling alternative to current OT solvers, particularly in challenging weak-regularization regimes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Diffusion models for Gaussian distributions: Exact solutions and Wasserstein errors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-14250</link>
-    <guid isPermaLink="false">arxiv:2405.14250</guid>
-    <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Emile Pierret et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Diffusion or score-based models recently showed high performance in image generation. They rely on a forward and a backward stochastic differential equations (SDE). The sampling of a data distribution is achieved by numerically solving the backward SDE or its associated flow ODE. Studying the convergence of these models necessitates to control four different types of error: the initialization error, the truncation error, the discretization error and the score approximation. In this paper, we theoretically study the behavior of diffusion models and their numerical implementation when the data distribution is Gaussian. Our first contribution is to derive the analytical solutions of the backward SDE and the probability flow ODE and to prove that these solutions and their discretizations are all Gaussian processes. Our second contribution is to compute the exact Wasserstein errors between the target and the numerically sampled distributions for any numerical scheme. This allows us to monitor convergence directly in the data space, while experimental works limit their empirical analysis to Inception features. An implementation of our code is available online.</p>]]></description>
   </item>
 
 </channel>

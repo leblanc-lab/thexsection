@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>An Explicit Surrogate for Gaussian Mixture Flow Matching with Wasserstein Gap Bounds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-28992</link>
+    <guid isPermaLink="false">arxiv:2603.28992</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elham Rostami et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study training-free flow matching between two Gaussian mixture models (GMMs) using explicit velocity fields that transport one mixture into the other over time. Our baseline approach constructs component-wise Gaussian paths with affine velocity fields satisfying the continuity equation, which yields to a closed-form surrogate for the pairwise kinetic transport cost. In contrast to the exact Gaussian Wasserstein cost, which relies on matrix square-root computations, the surrogate admits a simple analytic expression derived from the kinetic energy of the induced flow. We then analyze how closely this surrogate approximates the exact cost. We prove second-order agreement in a local commuting regime and derive an explicit cubic error bound in the local commuting regime. To handle nonlocal regimes, we introduce a path-splitting strategy that localizes the covariance evolution and enables piecewise application of the bound. We finally compare the surrogate with an exact construction based on the Gaussian Wasserstein geodesic and summarize the results in a practical regime map showing when the surrogate is accurate and the exact method is preferable.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical Guarantees for Distributionally Robust Optimization with Optimal Transport and OT-Regularized Divergences</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-27871</link>
+    <guid isPermaLink="false">arxiv:2603.27871</guid>
+    <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremiah Birrell et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study finite-sample statistical performance guarantees for distributionally robust optimization (DRO) with optimal transport (OT) and OT-regularized divergence model neighborhoods. Specifically, we derive concentration inequalities for supervised learning via DRO-based adversarial training, as commonly employed to enhance the adversarial robustness of machine learning models. Our results apply to a wide range of OT cost functions, beyond the p-Wasserstein case studied by previous authors. In particular, our results are the first to: 1) cover soft-constraint norm-ball OT cost functions; soft-constraint costs have been shown empirically to enhance robustness when used in adversarial training, 2) apply to the combination of adversarial sample generation and adversarial reweighting that is induced by using OT-regularized f-divergence model neighborhoods; the added reweighting mechanism has also been shown empirically to further improve performance. In addition, even in the p-Wasserstein case, our bounds exhibit better behavior as a function of the DRO neighborhood size than previous results when applied to the adversarial setting.</p>]]></description>
+  </item>
+
+  <item>
+    <title>cc-Shapley: Measuring Multivariate Feature Importance Needs Causal Context</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-20396</link>
+    <guid isPermaLink="false">arxiv:2602.20396</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jörg Martin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Explainable artificial intelligence promises to yield insights into relevant features, thereby enabling humans to examine and scrutinize machine learning models or even facilitating scientific discovery. Considering the widespread technique of Shapley values, we find that purely data-driven operationalization of multivariate feature importance is unsuitable for such purposes. Even for simple problems with two features, spurious associations due to collider bias and suppression arise from considering one feature only in the observational context of the other, which can lead to misinterpretations. Causal knowledge about the data-generating process is required to identify and correct such misleading feature attributions. We propose cc-Shapley (causal context Shapley), an interventional modification of conventional observational Shapley values leveraging knowledge of the data&rsquo;s causal structure, thereby analyzing the relevance of a feature in the causal context of the remaining features. We show theoretically that this eradicates spurious association induced by collider bias. We compare the behavior of Shapley and cc-Shapley values on various, synthetic, and real-world datasets. We observe nullification or reversal of associations compared to univariate feature importance when moving from observational to cc-Shapley.</p>]]></description>
+  </item>
+
+  <item>
+    <title>PQuantML: A Tool for End-to-End Hardware-aware Model Compression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-26595</link>
+    <guid isPermaLink="false">arxiv:2603.26595</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roope Niemi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, jet tagging, LHC, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>PQuantML is a new open-source, hardware-aware neural network model compression library tailored to end-to-end workflows. Motivated by the need to deploy performant models to environments with strict latency constraints, PQuantML simplifies training of compressed models by providing a unified interface to apply pruning and quantization, either jointly or individually. The library implements multiple pruning methods with different granularities, as well as fixed-point quantization with support for High-Granularity Quantization. We evaluate PQuantML on representative tasks such as the jet substructure classification, so-called jet tagging, an on-edge problem related to real-time LHC data processing. Using various pruning methods with fixed-point quantization, PQuantML achieves substantial parameter and bit-width reductions while maintaining accuracy. The resulting compression is further compared against existing tools, such as QKeras and HGQ.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hardware-Aware Tensor Networks for Real-Time Quantum-Inspired Anomaly Detection at Particle Colliders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-26604</link>
+    <guid isPermaLink="false">arxiv:2603.26604</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sagar Addepalli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>Quantum machine learning offers the ability to capture complex correlations in high-dimensional feature spaces, crucial for the challenge of detecting beyond the Standard Model physics in collider events, along with the potential for unprecedented computational efficiency in future quantum processors. Near-term utilization of these benefits can be achieved by developing quantum-inspired algorithms for deployment in classical hardware to enable applications at the &ldquo;edge&rdquo; of current scientific experiments. This work demonstrates the use of tensor networks for real-time anomaly detection in collider detectors. A spaced matrix product operator (SMPO) is developed that provides sensitivity to a variety beyond the Standard Model benchmarks, and can be implemented in field programmable gate array hardware with resources and latency consistent with trigger deployment. The cascaded SMPO architecture is introduced as an SMPO variation that affords greater flexibility and efficiency in ways that are key to edge applications in resource-constrained environments. These results reveal the benefit and near-term feasibility of deploying quantum-inspired ML in high energy colliders.</p>]]></description>
+  </item>
 
   <item>
     <title>Generalizable Foundation Models for Calorimetry via Mixtures-of-Experts and Parameter Efficient Fine Tuning</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudius Krause et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Tilman Plehn, Ben Nachman, Vinicius Mikuni, David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
 <p>We present the results of the &ldquo;Fast Calorimeter Simulation Challenge 2022&rdquo; - the CaloChallenge. We study state-of-the-art generative models on four calorimeter shower datasets of increasing dimensionality, ranging from a few hundred voxels to a few tens of thousand voxels. The 31 individual submissions span a wide range of current popular generative architectures, including Variational AutoEncoders (VAEs), Generative Adversarial Networks (GANs), Normalizing Flows, Diffusion models, and models based on Conditional Flow Matching. We compare all submissions in terms of quality of generated calorimeter showers, as well as shower generation time and model size. To assess the quality we use a broad range of different metrics including differences in 1-dimensional histograms of observables, KPD/FPD scores, AUCs of binary classifiers, and the log-posterior of a multiclass classifier. The results of the CaloChallenge provide the most complete and comprehensive survey of cutting-edge approaches to calorimeter fast simulation to date. In addition, our work provides a uniquely detailed perspective on the important problem of how to evaluate generative models. As such, the results presented here should be applicable for other domains that use generative AI and require fast and faithful generation of samples in a large phase space.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Novel Sliced Fused Gromov-Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-02364</link>
-    <guid isPermaLink="false">arxiv:2508.02364</guid>
-    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Moritz Piening et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov&ndash;Wasserstein (GW) distance and its fused extension (FGW) are powerful tools for comparing heterogeneous data. Their computation is, however, challenging since both distances are based on non-convex, quadratic optimal transport (OT) problems. Leveraging 1D OT, a sliced version of GW has been proposed to lower the computational burden. Unfortunately, this sliced version is restricted to Euclidean geometry and loses invariance to isometries, strongly limiting its application in practice. To overcome these issues, we propose a novel slicing technique for GW as well as for FGW that is based on an appropriate lower bound, hierarchical OT, and suitable quadrature rules for the underlying 1D OT problems. Our novel sliced FGW significantly reduces the numerical effort while remaining invariant to isometric transformations and allowing the comparison of arbitrary geometries. We show that our new distance actually defines a pseudo-metric for structured spaces that bounds FGW from below and study its interpolation properties between sliced Wasserstein and GW. Since we avoid the underlying quadratic program, our sliced distance is numerically more robust and reliable than the original GW and FGW distance; especially in the context of shape retrieval and graph isomorphism testing.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence of Deterministic and Stochastic Diffusion-Model Samplers: A Simple Analysis in Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-03210</link>
-    <guid isPermaLink="false">arxiv:2508.03210</guid>
-    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eliot Beyler et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We provide new convergence guarantees in Wasserstein distance for diffusion-based generative models, covering both stochastic (DDPM-like) and deterministic (DDIM-like) sampling methods. We introduce a simple framework to analyze discretization, initialization, and score estimation errors. Notably, we derive the first Wasserstein convergence bound for the Heun sampler and improve existing results for the Euler sampler of the probability flow ODE. Our analysis emphasizes the importance of spatial regularity of the learned score function and argues for controlling the score error with respect to the true reverse process, in line with denoising score matching. We also incorporate recent results on smoothed Wasserstein distances to sharpen initialization error bounds.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural Local Wasserstein Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-10824</link>
-    <guid isPermaLink="false">arxiv:2511.10824</guid>
-    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Inga Girshfeld et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the estimation problem of distribution-on-distribution regression, where both predictors and responses are probability measures. Existing approaches typically rely on a global optimal transport map or tangent-space linearization, which can be restrictive in approximation capacity and distort geometry in multivariate underlying domains. In this paper, we propose the \emph{Neural Local Wasserstein Regression}, a flexible nonparametric framework that models regression through locally defined transport maps in Wasserstein space. Our method builds on the analogy with classical kernel regression: kernel weights based on the 2-Wasserstein distance localize estimators around reference measures, while neural networks parameterize transport operators that adapt flexibly to complex data geometries. This localized perspective broadens the class of admissible transformations and avoids the limitations of global map assumptions and linearization structures. We develop a practical training procedure using DeepSets-style architectures and Sinkhorn-approximated losses, combined with a greedy reference selection strategy for scalability. Through synthetic experiments on Gaussian and mixture models, as well as distributional prediction tasks on MNIST, we demonstrate that our approach effectively captures nonlinear and high-dimensional distributional relationships that elude existing methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dynamic Diffusion Schrödinger Bridge in Astrophysical Observational Inversions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-08065</link>
-    <guid isPermaLink="false">arxiv:2506.08065</guid>
-    <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ye Zhu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We study Diffusion Schrödinger Bridge (DSB) models in the context of dynamical astrophysical systems, specifically tackling observational inverse prediction tasks within Giant Molecular Clouds (GMCs) for star formation. We introduce the Astro-DSB model, a variant of DSB with the pairwise domain assumption tailored for astrophysical dynamics. By investigating its learning process and prediction performance in both physically simulated data and in real observations (the Taurus B213 data), we present two main takeaways. First, from the astrophysical perspective, our proposed paired DSB method improves interpretability, learning efficiency, and prediction performance over conventional astrostatistical and other machine learning methods. Second, from the generative modeling perspective, probabilistic generative modeling reveals improvements over discriminative pixel-to-pixel modeling in Out-Of-Distribution (OOD) testing cases of physical simulations with unseen initial conditions and different dominant physical processes. Our study expands research into diffusion models beyond the traditional visual synthesis application and provides evidence of the models&rsquo; learning abilities beyond pure data statistics, paving a path for future physics-aware generative models which can align dynamics between machine learning and real (astro)physical systems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Nonparametric Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-07967</link>
-    <guid isPermaLink="false">arxiv:2505.07967</guid>
-    <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Changyu Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distributionally robust optimization (WDRO) strengthens statistical learning under model uncertainty by minimizing the local worst-case risk within a prescribed ambiguity set. Although WDRO has been extensively studied in parametric settings, its theoretical properties in nonparametric frameworks remain underexplored. This paper investigates WDRO for nonparametric regression. We first establish a structural distinction based on the order k of the Wasserstein distance, showing that k=1 induces Lipschitz-type regularization, whereas k &gt; 1 corresponds to gradient-norm regularization. To address model misspecification, we analyze the excess local worst-case risk, deriving non-asymptotic error bounds for estimators constructed using norm-constrained feedforward neural networks. This analysis is supported by new covering number and approximation bounds that simultaneously control both the function and its gradient. The proposed estimator achieves a convergence rate of n⁻²β/(d+2β) up to logarithmic factors, where β depends on the target&rsquo;s smoothness and network parameters. This rate is shown to be minimax optimal under conditions commonly satisfied in high-dimensional settings. Moreover, these bounds on the excess local worst-case risk imply guarantees on the excess natural risk, ensuring robustness against any distribution within the ambiguity set. We show the framework&rsquo;s generality across regression and classification problems. Simulation studies and an application to the MNIST dataset further illustrate the estimator&rsquo;s robustness.</p>]]></description>
   </item>
 
 </channel>

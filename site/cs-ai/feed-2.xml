@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Supercharging Simulation-Based Inference for Bayesian Optimal Experimental Design</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-06900</link>
+    <guid isPermaLink="false">arxiv:2602.06900</guid>
+    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Klein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Bayesian optimal experimental design (BOED) seeks to maximize the expected information gain (EIG) of experiments. This requires a likelihood estimate, which in many settings is intractable. Simulation-based inference (SBI) provides powerful tools for this regime. However, existing work explicitly connecting SBI and BOED is restricted to a single contrastive EIG bound. We show that the EIG admits multiple formulations which can directly leverage modern SBI density estimators, encompassing neural posterior, likelihood, and ratio estimation. Building on this perspective, we define a novel EIG estimator using neural likelihood estimation. Further, we identify optimization as a key bottleneck of gradient based EIG maximization and show that a simple multi-start parallel gradient ascent procedure can substantially improve reliability and performance. With these innovations, our SBI-based BOED methods are able to match or outperform by up to 22% existing state-of-the-art approaches across standard BOED benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Solving Prior Distribution Mismatch in Diffusion Models via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2410-13431</link>
+    <guid isPermaLink="false">arxiv:2410.13431</guid>
+    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhanpeng Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Diffusion Models (DMs) have achieved remarkable progress in generative modeling. However, the mismatch between the forward terminal distribution and reverse initial distribution introduces prior error, leading to deviations of sampling trajectories from the true distribution and severely limiting model performance. This issue further triggers cascading problems, including non-zero Signal-to-Noise Ratio, accumulated denoising errors, degraded generation quality, and constrained sampling efficiency. To address this issue, this paper proposes a prior error elimination framework based on Optimal Transport (OT). Specifically, an OT map from the reverse initial distribution to the forward terminal distribution is constructed to achieve precise matching of the two distributions. Meanwhile, the upper bound of the prior error is quantified using the Wasserstein distance, proving that the prior error can be effectively eliminated via the OT map. Additionally, by deriving the asymptotic consistency between dynamic OT and probability flow, this method is revealed to be highly compatible with the intrinsic mechanism of the diffusion process. Experimental results demonstrate that the proposed method completely eliminates the prior error both theoretically and practically, providing a universal and rigorous solution for optimizing the performance of DMs.</p>]]></description>
+  </item>
 
   <item>
     <title>Making Avatars Interact: Towards Text-Driven Human-Object Interaction for Controllable Talking Avatars</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei-Di Chang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Imitation Learning from Observation (ILfO) is a setting in which a learner tries to imitate the behavior of an expert, using only observational data and without the direct guidance of demonstrated actions. In this paper, we re-examine optimal transport for IL, in which a reward is generated based on the Wasserstein distance between the state trajectories of the learner and expert. We show that existing methods can be simplified to generate a reward function without requiring learned models or adversarial learning. Unlike many other state-of-the-art methods, our approach can be integrated with any RL algorithm and is amenable to ILfO. We demonstrate the effectiveness of this simple approach on a variety of continuous control tasks and find that it surpasses the state of the art in the IlfO setting, achieving expert-level performance across a range of evaluation domains even when observing only a single expert trajectory without actions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adaptive Learning of the Latent Space of Wasserstein Generative Adversarial Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2409-18374</link>
-    <guid isPermaLink="false">arxiv:2409.18374</guid>
-    <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Qiu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Generative models based on latent variables, such as generative adversarial networks (GANs) and variational auto-encoders (VAEs), have gained lots of interests due to their impressive performance in many fields. However, many data such as natural images usually do not populate the ambient Euclidean space but instead reside in a lower-dimensional manifold. Thus an inappropriate choice of the latent dimension fails to uncover the structure of the data, possibly resulting in mismatch of latent representations and poor generative qualities. Towards addressing these problems, we propose a novel framework called the latent Wasserstein GAN (LWGAN) that fuses the Wasserstein auto-encoder and the Wasserstein GAN so that the intrinsic dimension of the data manifold can be adaptively learned by a modified informative latent distribution. We prove that there exist an encoder network and a generator network in such a way that the intrinsic dimension of the learned encoding distribution is equal to the dimension of the data manifold. We theoretically establish that our estimated intrinsic dimension is a consistent estimate of the true dimension of the data manifold. Meanwhile, we provide an upper bound on the generalization error of LWGAN, implying that we force the synthetic data distribution to be similar to the real data distribution from a population perspective. Comprehensive empirical experiments verify our framework and show that LWGAN is able to identify the correct intrinsic dimension under several scenarios, and simultaneously generate high-quality synthetic data by sampling from the learned latent distribution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Riemannian Approach to Ground Metric Learning for Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2409-10085</link>
-    <guid isPermaLink="false">arxiv:2409.10085</guid>
-    <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Jawanpuria et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) theory has attracted much attention in machine learning and signal processing applications. OT defines a notion of distance between probability distributions of source and target data points. A crucial factor that influences OT-based distances is the ground metric of the embedding space in which the source and target data points lie. In this work, we propose to learn a suitable latent ground metric parameterized by a symmetric positive definite matrix. We use the rich Riemannian geometry of symmetric positive definite matrices to jointly learn the OT distance along with the ground metric. Empirical results illustrate the efficacy of the learned metric in OT-based domain adaptation.</p>]]></description>
   </item>
 
 </channel>

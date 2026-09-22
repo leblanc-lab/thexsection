@@ -6,7 +6,27 @@
   <description>Data analysis, simulation, and computational physics</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>MadVfold: accelerating NLO event generation and reducing negative weights with SIMD vectorization and GPUs</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2609-23500</link>
+    <guid isPermaLink="false">arxiv:2609.23500</guid>
+    <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Valassi</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>NLO simulations are essential for LHC physics analyses but are expensive, as they are not only slow but also lead to negative weights, which imply the need to simulate much larger samples of events. Folding is a powerful technique to reduce negative weights but is itself expensive. In this paper I propose ``vectorized folding&rsquo;&rsquo; as a new idea to speed up these calculations using SIMD and GPUs, and I present its CUDACPP-based implementation for MG5aMC in MadVfold, including its extension for unfolded NLO event generation. Preliminary results show overall speedups around 6x to 9x with folding and 3x without it. This work is based on a test-centric, LLM-assisted software development process.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multitask Jet Analysis with Vision-Language Models: A Physics-Informed Four-Panel Representation</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2609-24334</link>
+    <guid isPermaLink="false">arxiv:2609.24334</guid>
+    <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lu Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (energy flow, jet charge, jet tagging, flavor tagging, collider, colliders) — original abstract; no AI summary.</em></p>
+<p>The enormous recorded data at high-energy physics (HEP) colliders make the accurate identification of physics objects a bottleneck in disentangling event topologies, where machine learning has become a standard tool for jet tagging. In this work, we examine whether Vision-Language Models (VLMs) can provide a common interface for structured jet analysis from a single physics-informed image. Each JetClass jet becomes a 224x224 RGB image with four panels encoding p_T flow of all constituents; charged-hadron, neutral-hadron, and electromagnetic composition; p_T-weighted impact-parameter significances with displaced-track multiplicity; and signed-track p_T densities with local p_T^k-weighted jet-charge asymmetry. Four open VLMs are adapted with low-rank adaptation (LoRA) for class classification across QCD, Higgs, W/Z, and top jets, six-field attribute prediction, and cross-panel consistency with replaced-panel localization, evaluated on 24000 balanced JetClass test jets. Ablations identify the impact-parameter lifetime signature of heavy-flavor tagging as dominant, with jet charge separating the nearly mass-degenerate hadronic W and Z. Zero-shot recall stays near chance (3.33%-10.57%), once adapted, Task 1 Macro recall grows monotonically with training size, and Gemma4-E4B reaches 75.05% (74.87% F_1), 93.31% Task 2 field-mean, and 99.88%/99.75% binary/localization recall. Reallocating budget toward W/Z jets raises Zqq recall by up to 9.83 points at near-constant Macro recall. Transfer to broader-topology JetClass-II and real-data Aspen Open Jets (probing the simulation-to-data gap) is retained: with 3000 target jets, Task 1 recall exceeds 70% on JetClass-II and every Task 2/3 metric exceeds 92%. Thus rasterizing energy flow, species, displacement, and jet charge, with parameter-efficient adaptation, supports jet analysis through one instruction-conditioned interface for future collider data.</p>]]></description>
+  </item>
 
   <item>
     <title>Comparison of Image Processing Models in Quark Gluon Jet Classification</title>

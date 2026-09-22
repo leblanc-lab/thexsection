@@ -36,17 +36,50 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">20 papers</span>
-  <span class="count">15 days</span>
+  <span class="count">22 papers</span>
+  <span class="count">16 days</span>
   <span class="count">since 2024</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">19</span></a><a href="2024.html">2024 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">21</span></a><a href="2024.html">2024 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 22, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-23500">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.23500" target="_blank" rel="noopener">arXiv:2609.23500</a>
+      
+      <a class="permalink" href="#a2609-23500" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">MadVfold: accelerating NLO event generation and reducing negative weights with SIMD vectorization and GPUs</h3>
+    <p class="byline">Andrea Valassi</p>
+    <div class="paper-body"><p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>NLO simulations are essential for LHC physics analyses but are expensive, as they are not only slow but also lead to negative weights, which imply the need to simulate much larger samples of events. Folding is a powerful technique to reduce negative weights but is itself expensive. In this paper I propose ``vectorized folding&rsquo;&rsquo; as a new idea to speed up these calculations using SIMD and GPUs, and I present its CUDACPP-based implementation for MG5aMC in MadVfold, including its extension for unfolded NLO event generation. Preliminary results show overall speedups around 6x to 9x with folding and 3x without it. This work is based on a test-centric, LLM-assisted software development process.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-24334">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.24334" target="_blank" rel="noopener">arXiv:2609.24334</a>
+      
+      <a class="permalink" href="#a2609-24334" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Multitask Jet Analysis with Vision-Language Models: A Physics-Informed Four-Panel Representation</h3>
+    <p class="byline">Lu Zhang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (energy flow, jet charge, jet tagging, flavor tagging, collider, colliders) — original abstract; no AI summary.</em></p>
+<p>The enormous recorded data at high-energy physics (HEP) colliders make the accurate identification of physics objects a bottleneck in disentangling event topologies, where machine learning has become a standard tool for jet tagging. In this work, we examine whether Vision-Language Models (VLMs) can provide a common interface for structured jet analysis from a single physics-informed image. Each JetClass jet becomes a 224x224 RGB image with four panels encoding p_T flow of all constituents; charged-hadron, neutral-hadron, and electromagnetic composition; p_T-weighted impact-parameter significances with displaced-track multiplicity; and signed-track p_T densities with local p_T^k-weighted jet-charge asymmetry. Four open VLMs are adapted with low-rank adaptation (LoRA) for class classification across QCD, Higgs, W/Z, and top jets, six-field attribute prediction, and cross-panel consistency with replaced-panel localization, evaluated on 24000 balanced JetClass test jets. Ablations identify the impact-parameter lifetime signature of heavy-flavor tagging as dominant, with jet charge separating the nearly mass-degenerate hadronic W and Z. Zero-shot recall stays near chance (3.33%-10.57%), once adapted, Task 1 Macro recall grows monotonically with training size, and Gemma4-E4B reaches 75.05% (74.87% F_1), 93.31% Task 2 field-mean, and 99.88%/99.75% binary/localization recall. Reallocating budget toward W/Z jets raises Zqq recall by up to 9.83 points at near-constant Macro recall. Transfer to broader-topology JetClass-II and real-data Aspen Open Jets (probing the simulation-to-data gap) is retained: with 3000 target jets, Task 1 recall exceeds 70% on JetClass-II and every Task 2/3 metric exceeds 92%. Thus rasterizing energy flow, species, displacement, and jet charge, with parameter-efficient adaptation, supports jet analysis through one instruction-conditioned interface for future collider data.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -407,7 +440,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-22 05:33 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-22 05:44 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

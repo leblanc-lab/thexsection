@@ -7,7 +7,27 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>MADPOT: Medical Anomaly Detection with CLIP Adaptation and Partial Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-06733</link>
+    <guid isPermaLink="false">arxiv:2507.06733</guid>
+    <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mahshid Shiri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Medical anomaly detection (AD) is challenging due to diverse imaging modalities, anatomical variations, and limited labeled data. We propose a novel approach combining visual adapters and prompt learning with Partial Optimal Transport (POT) and contrastive learning (CL) to improve CLIP&rsquo;s adaptability to medical images, particularly for AD. Unlike standard prompt learning, which often yields a single representation, our method employs multiple prompts aligned with local features via POT to capture subtle abnormalities. CL further enforces intra-class cohesion and inter-class separation. Our method achieves state-of-the-art results in few-shot, zero-shot, and cross-dataset scenarios without synthetic data or memory banks. The code is available at https://github.com/mahshid1998/MADPOT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>An Optimal Transport Perspective on Unpaired Image Super-Resolution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2202-01116</link>
+    <guid isPermaLink="false">arxiv:2202.01116</guid>
+    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Milena Gazdieva et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Real-world image super-resolution (SR) tasks often do not have paired datasets, which limits the application of supervised techniques. As a result, the tasks are usually approached by unpaired techniques based on Generative Adversarial Networks (GANs), which yield complex training losses with several regularization terms, e.g., content or identity losses. While GANs usually provide good practical performance, they are used heuristically, i.e., theoretical understanding of their behaviour is yet rather limited. We theoretically investigate optimization problems which arise in such models and find two surprising observations. First, the learned SR map is always an optimal transport (OT) map. Second, we theoretically prove and empirically show that the learned map is biased, i.e., it does not actually transform the distribution of low-resolution images to high-resolution ones. Inspired by these findings, we investigate recent advances in neural OT field to resolve the bias issue. We establish an intriguing connection between regularized GANs and neural OT approaches. We show that unlike the existing GAN-based alternatives, these algorithms aim to learn an unbiased OT map. We empirically demonstrate our findings via a series of synthetic and real-world unpaired SR experiments. Our source code is publicly available at https://github.com/milenagazdieva/OT-Super-Resolution.</p>]]></description>
+  </item>
 
   <item>
     <title>Robust Incomplete-Modality Alignment for Ophthalmic Disease Grading and Diagnosis via Labeled Optimal Transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xingjian Bai et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Deep neural networks are known to be vulnerable to adversarial attacks (AA). For an image recognition task, this means that a small perturbation of the original can result in the image being misclassified. Design of such attacks as well as methods of adversarial training against them are subject of intense research. We re-cast the problem using techniques of Wasserstein distributionally robust optimization (DRO) and obtain novel contributions leveraging recent insights from DRO sensitivity analysis. We consider a set of distributional threat models. Unlike the traditional pointwise attacks, which assume a uniform bound on perturbation of each input data point, distributional threat models allow attackers to perturb inputs in a non-uniform way. We link these more general attacks with questions of out-of-sample performance and Knightian uncertainty. To evaluate the distributional robustness of neural networks, we propose a first-order AA algorithm and its multi-step version. Our attack algorithms include Fast Gradient Sign Method (FGSM) and Projected Gradient Descent (PGD) as special cases. Furthermore, we provide a new asymptotic estimate of the adversarial accuracy against distributional threat models. The bound is fast to compute and first-order accurate, offering new insights even for the pointwise AA. It also naturally yields out-of-sample performance guarantees. We conduct numerical experiments on the CIFAR-10 dataset using DNNs on RobustBench to illustrate our theoretical results. Our code is available at https://github.com/JanObloj/W-DRO-Adversarial-Methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unlocking Slot Attention by Changing Optimal Transport Costs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2301-13197</link>
-    <guid isPermaLink="false">arxiv:2301.13197</guid>
-    <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yan Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Slot attention is a powerful method for object-centric modeling in images and videos. However, its set-equivariance limits its ability to handle videos with a dynamic number of objects because it cannot break ties. To overcome this limitation, we first establish a connection between slot attention and optimal transport. Based on this new perspective we propose MESH (Minimize Entropy of Sinkhorn): a cross-attention module that combines the tiebreaking properties of unregularized optimal transport with the speed of regularized optimal transport. We evaluate slot attention using MESH on multiple object-centric learning benchmarks and find significant improvements over slot attention in every setting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ZegOT: Zero-shot Segmentation Through Optimal Transport of Text Prompts</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2301-12171</link>
-    <guid isPermaLink="false">arxiv:2301.12171</guid>
-    <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kwanyoung Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Recent success of large-scale Contrastive Language-Image Pre-training (CLIP) has led to great promise in zero-shot semantic segmentation by transferring image-text aligned knowledge to pixel-level classification. However, existing methods usually require an additional image encoder or retraining/tuning the CLIP module. Here, we propose a novel Zero-shot segmentation with Optimal Transport (ZegOT) method that matches multiple text prompts with frozen image embeddings through optimal transport. In particular, we introduce a novel Multiple Prompt Optimal Transport Solver (MPOT), which is designed to learn an optimal mapping between multiple text prompts and visual feature maps of the frozen image encoder hidden layers. This unique mapping method facilitates each of the multiple text prompts to effectively focus on distinct visual semantic attributes. Through extensive experiments on benchmark datasets, we show that our method achieves the state-of-the-art (SOTA) performance over existing Zero-shot Semantic Segmentation (ZS3) approaches.</p>]]></description>
   </item>
 
 </channel>
