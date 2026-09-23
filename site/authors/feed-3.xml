@@ -7,7 +7,17 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SIGMA: Single Interpolated Generative Model for Anomalies</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2024.html#a2410-20537</link>
+    <guid isPermaLink="false">arxiv:2410.20537</guid>
+    <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ranit Das et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (David Shih) — abstract only, not yet read for a briefing.</em></p>
+<p>A key step in any resonant anomaly detection search is accurate modeling of the background distribution in each signal region. Data-driven methods like CATHODE accomplish this by training separate generative models on the complement of each signal region, and interpolating them into their corresponding signal regions. Having to re-train the generative model on essentially the entire dataset for each signal region is a major computational cost in a typical sliding window search with many signal regions. Here, we present SIGMA, a new, fully data-driven, computationally-efficient method for estimating background distributions. The idea is to train a single generative model on all of the data and interpolate its parameters in sideband regions in order to obtain a model for the background in the signal region. The SIGMA method significantly reduces the computational cost compared to previous approaches, while retaining a similar high quality of background modeling and sensitivity to anomalous signals.</p>]]></description>
+  </item>
 
   <item>
     <title>SKATR: A Self-Supervised Summary Transformer for SKA</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Golling et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Radha Mastandrea) — abstract only, not yet read for a briefing.</em></p>
 <p>Many components of data analysis in high energy physics and beyond require morphing one dataset into another. This is commonly solved via reweighting, but there are many advantages of preserving weights and shifting the data points instead. Normalizing flows are machine learning models with impressive precision on a variety of particle physics tasks. Naively, normalizing flows cannot be used for morphing because they require knowledge of the probability density of the starting dataset. In most cases in particle physics, we can generate more examples, but we do not know densities explicitly. We propose a protocol called flows for flows for training normalizing flows to morph one dataset into another even if the underlying probability density of neither dataset is known explicitly. This enables a morphing strategy trained with maximum likelihood estimation, a setup that has been shown to be highly effective in related tasks. We study variations on this protocol to explore how far the data points are moved to statistically match the two datasets. Furthermore, we show how to condition the learned flows on particular features in order to create a morphing function for every value of the conditioning feature. For illustration, we demonstrate flows for flows for toy examples as well as a collider physics example involving dijet events</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloClouds II: Ultra-Fast Geometry-Independent Highly-Granular Calorimeter Simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2023.html#a2309-05704</link>
-    <guid isPermaLink="false">arxiv:2309.05704</guid>
-    <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erik Buhmann et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
-<p>Fast simulation of the energy depositions in high-granular detectors is needed for future collider experiments with ever-increasing luminosities. Generative machine learning (ML) models have been shown to speed up and augment the traditional simulation chain in physics analysis. However, the majority of previous efforts were limited to models relying on fixed, regular detector readout geometries. A major advancement is the recently introduced CaloClouds model, a geometry-independent diffusion model, which generates calorimeter showers as point clouds for the electromagnetic calorimeter of the envisioned International Large Detector (ILD). In this work, we introduce CaloClouds II which features a number of key improvements. This includes continuous time score-based modelling, which allows for a 25-step sampling with comparable fidelity to CaloClouds while yielding a 6× speed-up over Geant4 on a single CPU (5× over CaloClouds). We further distill the diffusion model into a consistency model allowing for accurate sampling in a single step and resulting in a 46× (37× over CaloClouds) speed-up. This constitutes the first application of consistency distillation for the generation of calorimeter showers.</p>]]></description>
   </item>
 
 </channel>
