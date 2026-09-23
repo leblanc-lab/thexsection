@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Music-to-Dance Generation with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2112-01806</link>
+    <guid isPermaLink="false">arxiv:2112.01806</guid>
+    <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuang Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Dance choreography for a piece of music is a challenging task, having to be creative in presenting distinctive stylistic dance elements while taking into account the musical theme and rhythm. It has been tackled by different approaches such as similarity retrieval, sequence-to-sequence modeling and generative adversarial networks, but their generated dance sequences are often short of motion realism, diversity and music consistency. In this paper, we propose a Music-to-Dance with Optimal Transport Network (MDOT-Net) for learning to generate 3D dance choreographies from music. We introduce an optimal transport distance for evaluating the authenticity of the generated dance distribution and a Gromov-Wasserstein distance to measure the correspondence between the dance distribution and the input music. This gives a well defined and non-divergent training objective that mitigates the limitation of standard GAN training which is frequently plagued with instability and divergent generator loss issues. Extensive experiments demonstrate that our MDOT-Net can synthesize realistic and diverse dances which achieve an organic unity with the input music, reflecting the shared intentionality and matching the rhythmic articulation. Sample results are found at https://www.youtube.com/watch?v=dErfBkrlUO8.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Finite-Sample Guarantees for Wasserstein Distributionally Robust Optimization: Breaking the Curse of Dimensionality</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2009-04382</link>
+    <guid isPermaLink="false">arxiv:2009.04382</guid>
+    <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Gao</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distributionally robust optimization (DRO) aims to find robust and generalizable solutions by hedging against data perturbations in Wasserstein distance. Despite its recent empirical success in operations research and machine learning, existing performance guarantees for generic loss functions are either overly conservative due to the curse of dimensionality, or plausible only in large sample asymptotics. In this paper, we develop a non-asymptotic framework for analyzing the out-of-sample performance for Wasserstein robust learning and the generalization bound for its related Lipschitz and gradient regularization problems. To the best of our knowledge, this gives the first finite-sample guarantee for generic Wasserstein DRO problems without suffering from the curse of dimensionality. Our results highlight that Wasserstein DRO, with a properly chosen radius, balances between the empirical mean of the loss and the variation of the loss, measured by the Lipschitz norm or the gradient norm of the loss. Our analysis is based on two novel methodological developments that are of independent interest: 1) a new concentration inequality controlling the decay rate of large deviation probabilities by the variation of the loss and, 2) a localized Rademacher complexity theory based on the variation of the loss.</p>]]></description>
+  </item>
 
   <item>
     <title>Semi-Discrete Optimal Transport: Hardness, Regularization and Numerical Solution</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alain Rakotomamonjy et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Developing machine learning methods that are privacy preserving is today a central topic of research, with huge practical impacts. Among the numerous ways to address privacy-preserving learning, we here take the perspective of computing the divergences between distributions under the Differential Privacy (DP) framework &ndash; being able to compute divergences between distributions is pivotal for many machine learning problems, such as learning generative models or domain adaptation problems. Instead of resorting to the popular gradient-based sanitization method for DP, we tackle the problem at its roots by focusing on the Sliced Wasserstein Distance and seamlessly making it differentially private. Our main contribution is as follows: we analyze the property of adding a Gaussian perturbation to the intrinsic randomized mechanism of the Sliced Wasserstein Distance, and we establish the sensitivityof the resulting differentially private mechanism. One of our important findings is that this DP mechanism transforms the Sliced Wasserstein distance into another distance, that we call the Smoothed Sliced Wasserstein Distance. This new differentially private distribution distance can be plugged into generative models and domain adaptation algorithms in a transparent way, and we empirically show that it yields highly competitive performance compared with gradient-based DP approaches from the literature, with almost no loss in accuracy for the domain adaptation problems that we consider.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Particle Convolution for High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-02908</link>
-    <guid isPermaLink="false">arxiv:2107.02908</guid>
-    <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chase Shimmin</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy flow, jet axis, IRC-safe, top tagging, ParticleNet) — original abstract; no AI summary.</em></p>
-<p>We introduce the Particle Convolution Network (PCN), a new type of equivariant neural network layer suitable for many tasks in jet physics. The particle convolution layer can be viewed as an extension of Deep Sets and Energy Flow network architectures, in which the permutation-invariant operator is promoted to a group convolution. While the PCN can be implemented for various kinds of symmetries, we consider the specific case of rotation about the jet axis the η- ϕ plane. In two standard benchmark tasks, q/g tagging and top tagging, we show that the rotational PCN (rPCN) achieves performance comparable to graph networks such as ParticleNet. Moreover, we show that it is possible to implement an IRC-safe rPCN, which significantly outperforms existing IRC-safe tagging methods on both tasks. We speculate that by generalizing the PCN to include additional convolutional symmetries relevant to jet physics, it may outperform the current state-of-the-art set by graph networks, while offering a new degree of control over physically-motivated inductive biases.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Minimum Wasserstein Distance Estimator under Finite Location-scale Mixtures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-01323</link>
-    <guid isPermaLink="false">arxiv:2107.01323</guid>
-    <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiong Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>When a population exhibits heterogeneity, we often model it via a finite mixture: decompose it into several different but homogeneous subpopulations. Contemporary practice favors learning the mixtures by maximizing the likelihood for statistical efficiency and the convenient EM-algorithm for numerical computation. Yet the maximum likelihood estimate (MLE) is not well defined for the most widely used finite normal mixture in particular and for finite location-scale mixture in general. We hence investigate feasible alternatives to MLE such as minimum distance estimators. Recently, the Wasserstein distance has drawn increased attention in the machine learning community. It has intuitive geometric interpretation and is successfully employed in many new applications. Do we gain anything by learning finite location-scale mixtures via a minimum Wasserstein distance estimator (MWDE)? This paper investigates this possibility in several respects. We find that the MWDE is consistent and derive a numerical solution under finite location-scale mixtures. We study its robustness against outliers and mild model mis-specifications. Our moderate scaled simulation study shows the MWDE suffers some efficiency loss against a penalized version of MLE in general without noticeable gain in robustness. We reaffirm the general superiority of the likelihood based learning strategies even for the non-regular finite location-scale mixtures.</p>]]></description>
   </item>
 
 </channel>

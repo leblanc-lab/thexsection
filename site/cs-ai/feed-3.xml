@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Align Your Intents: Offline Imitation Learning via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2402-13037</link>
+    <guid isPermaLink="false">arxiv:2402.13037</guid>
+    <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maksim Bobrin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Offline Reinforcement Learning (RL) addresses the problem of sequential decision-making by learning optimal policy through pre-collected data, without interacting with the environment. As yet, it has remained somewhat impractical, because one rarely knows the reward explicitly and it is hard to distill it retrospectively. Here, we show that an imitating agent can still learn the desired behavior merely from observing the expert, despite the absence of explicit rewards or action labels. In our method, AILOT (Aligned Imitation Learning via Optimal Transport), we involve special representation of states in a form of intents that incorporate pairwise spatial distances within the data. Given such representations, we define intrinsic reward function via optimal transport distance between the expert&rsquo;s and the agent&rsquo;s trajectories. We report that AILOT outperforms state-of-the art offline imitation learning algorithms on D4RL benchmarks and improves the performance of other offline RL algorithms by dense reward relabelling in the sparse-reward tasks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Imitation Learning from Observation through Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2310-01632</link>
+    <guid isPermaLink="false">arxiv:2310.01632</guid>
+    <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei-Di Chang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Imitation Learning from Observation (ILfO) is a setting in which a learner tries to imitate the behavior of an expert, using only observational data and without the direct guidance of demonstrated actions. In this paper, we re-examine optimal transport for IL, in which a reward is generated based on the Wasserstein distance between the state trajectories of the learner and expert. We show that existing methods can be simplified to generate a reward function without requiring learned models or adversarial learning. Unlike many other state-of-the-art methods, our approach can be integrated with any RL algorithm and is amenable to ILfO. We demonstrate the effectiveness of this simple approach on a variety of continuous control tasks and find that it surpasses the state of the art in the IlfO setting, achieving expert-level performance across a range of evaluation domains even when observing only a single expert trajectory without actions.</p>]]></description>
+  </item>
 
   <item>
     <title>Adaptive Learning of the Latent Space of Wasserstein Generative Adversarial Networks</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Several real-world applications could be modeled as Mixed-Integer Non-Linear Programming (MINLP) problems, and some prominent examples include portfolio optimization, remote sensing technology, and so on. Most of the models for these applications are non-convex and always involve some conflicting objectives. The mathematical and heuristic methods have their advantages in solving this category of problems. In this work, we turn to Multi-Objective Evolutionary Algorithms (MOEAs) for finding elegant solutions for such problems. In this framework, we investigate a multi-objective constrained portfolio optimization problem, which can be cast as a classical financial problem and can also be naturally modeled as an MINLP problem. Consequently, we point out one challenge, faced by a direct coding scheme for MOEAs, to this problem. It is that the dependence among variables, like the selection and weights for one same asset, will likely make the search difficult. We thus, propose a Compressed Coding Scheme (CCS), compressing the two dependent variables into one variable to utilize the dependence and thereby meeting this challenge. Subsequently, we carry out a detailed empirical study on two sets of instances. The first part consists of 5 instances from OR-Library, which is solvable for the general mathematical optimizer, like CPLEX, while the remaining 15 instances from NGINX are addressed only by MOEAs. The two benchmarks, involving the number of assets from 31 to 2235, consistently indicate that CCS is not only efficient but also robust for dealing with the constrained multi-objective portfolio optimization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Variable Division and Optimization for Constrained Multiobjective Portfolio Problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2101-08552</link>
-    <guid isPermaLink="false">arxiv:2101.08552</guid>
-    <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Variable division and optimization (D\&amp;O) is a frequently utilized algorithm design paradigm in Evolutionary Algorithms (EAs). A D\&amp;O EA divides a variable into partial variables and then optimize them respectively. A complicated problem is thus divided into simple subtasks. For example, a variable of portfolio problem can be divided into two partial variables, i.e. the selection of assets and the allocation of capital. Thereby, we optimize these two partial variables respectively. There is no formal discussion about how are the partial variables iteratively optimized and why can it work for both single- and multi-objective problems in D\&amp;O. In this paper, this gap is filled. According to the discussion, an elitist selection method for partial variables in multiobjective problems is developed. Then this method is incorporated into the Decomposition-Based Multiobjective Evolutionary Algorithm (D\&amp;O-MOEA/D). With the help of a mathematical programming optimizer, it is achieved on the constrained multiobjective portfolio problems. In the empirical study, D\&amp;O-MOEA/D is implemented for 20 instances and recent Chinese stock markets. The results show the superiority and versatility of D\&amp;O-MOEA/D on large-scale instances while the performance of it on small-scale problems is also not bad. The former targets convergence towards the Pareto front and the latter helps promote diversity among the non-dominated solutions during the search process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Disentangled Recurrent Wasserstein Autoencoder</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2101-07496</link>
-    <guid isPermaLink="false">arxiv:2101.07496</guid>
-    <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Han et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Learning disentangled representations leads to interpretable models and facilitates data generation with style transfer, which has been extensively studied on static data such as images in an unsupervised learning framework. However, only a few works have explored unsupervised disentangled sequential representation learning due to challenges of generating sequential data. In this paper, we propose recurrent Wasserstein Autoencoder (R-WAE), a new framework for generative modeling of sequential data. R-WAE disentangles the representation of an input sequence into static and dynamic factors (i.e., time-invariant and time-varying parts). Our theoretical analysis shows that, R-WAE minimizes an upper bound of a penalized form of the Wasserstein distance between model distribution and sequential data distribution, and simultaneously maximizes the mutual information between input data and different disentangled latent factors, respectively. This is superior to (recurrent) VAE which does not explicitly enforce mutual information maximization between input data and disentangled latent representations. When the number of actions in sequential data is available as weak supervision information, R-WAE is extended to learn a categorical latent representation of actions to improve its disentanglement. Experiments on a variety of datasets show that our models outperform other baselines with the same settings in terms of disentanglement and unconditional video generation both quantitatively and qualitatively.</p>]]></description>
   </item>
 
 </channel>

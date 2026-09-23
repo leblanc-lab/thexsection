@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Tree-Sliced Wasserstein Distance with Nonlinear Projection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-00968</link>
+    <guid isPermaLink="false">arxiv:2505.00968</guid>
+    <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thanh Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Tree-Sliced methods have recently emerged as an alternative to the traditional Sliced Wasserstein (SW) distance, replacing one-dimensional lines with tree-based metric spaces and incorporating a splitting mechanism for projecting measures. This approach enhances the ability to capture the topological structures of integration domains in Sliced Optimal Transport while maintaining low computational costs. Building on this foundation, we propose a novel nonlinear projectional framework for the Tree-Sliced Wasserstein (TSW) distance, substituting the linear projections in earlier versions with general projections, while ensuring the injectivity of the associated Radon Transform and preserving the well-definedness of the resulting metric. By designing appropriate projections, we construct efficient metrics for measures on both Euclidean spaces and spheres. Finally, we validate our proposed metric through extensive numerical experiments for Euclidean and spherical datasets. Applications include gradient flows, self-supervised learning, and generative models, where our methods demonstrate significant improvements over recent SW and TSW variants.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Flowing Datasets with Wasserstein over Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-07534</link>
+    <guid isPermaLink="false">arxiv:2506.07534</guid>
+    <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Many applications in machine learning involve data represented as probability distributions. The emergence of such data requires radically novel techniques to design tractable gradient flows on probability distributions over this type of (infinite-dimensional) objects. For instance, being able to flow labeled datasets is a core task for applications ranging from domain adaptation to transfer learning or dataset distillation. In this setting, we propose to represent each class by the associated conditional distribution of features, and to model the dataset as a mixture distribution supported on these classes (which are themselves probability distributions), meaning that labeled datasets can be seen as probability distributions over probability distributions. We endow this space with a metric structure from optimal transport, namely the Wasserstein over Wasserstein (WoW) distance, derive a differential structure on this space, and define WoW gradient flows. The latter enables to design dynamics over this space that decrease a given objective functional. We apply our framework to transfer learning and dataset distillation tasks, leveraging our gradient flow construction as well as novel tractable functionals that take the form of Maximum Mean Discrepancies with Sliced-Wasserstein based kernels between probability distributions.</p>]]></description>
+  </item>
 
   <item>
     <title>Do Large Language Models Reason Causally Like Us? Even Better?</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qihao Cheng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Given a graph pair (G¹, G²⁾, graph edit distance (GED) is defined as the minimum number of edit operations converting G¹ to G². GED is a fundamental operation widely used in many applications, but its exact computation is NP-hard, so the approximation of GED has gained a lot of attention. Data-driven learning-based methods have been found to provide superior results compared to classical approximate algorithms, but they directly fit the coupling relationship between a pair of vertices from their vertex features. We argue that while pairwise vertex features can capture the coupling cost (discrepancy) of a pair of vertices, the vertex coupling matrix should be derived from the vertex-pair cost matrix through a more well-established method that is aware of the global context of the graph pair, such as optimal transport. In this paper, we propose an ensemble approach that integrates a supervised learning-based method and an unsupervised method, both based on optimal transport. Our learning method, GEDIOT, is based on inverse optimal transport that leverages a learnable Sinkhorn algorithm to generate the coupling matrix. Our unsupervised method, GEDGW, models GED computation as a linear combination of optimal transport and its variant, Gromov-Wasserstein discrepancy, for node and edge operations, respectively, which can be solved efficiently without needing the ground truth. Our ensemble method, GEDHOT, combines GEDIOT and GEDGW to further boost the performance. Extensive experiments demonstrate that our methods significantly outperform the existing methods in terms of the performance of GED computation, edit path generation, and model generalizability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An efficient search-and-score algorithm for ancestral graphs using multivariate information scores</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-17508</link>
-    <guid isPermaLink="false">arxiv:2412.17508</guid>
-    <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikita Lagrange et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>We propose a greedy search-and-score algorithm for ancestral graphs, which include directed as well as bidirected edges, originating from unobserved latent variables. The normalized likelihood score of ancestral graphs is estimated in terms of multivariate information over relevant ``ac-connected subsets&rsquo;&rsquo; of vertices, C, that are connected through collider paths confined to the ancestor set of C. For computational efficiency, the proposed two-step algorithm relies on local information scores limited to the close surrounding vertices of each node (step 1) and edge (step 2). This computational strategy, although restricted to information contributions from ac-connected subsets containing up to two-collider paths, is shown to outperform state-of-the-art causal discovery methods on challenging benchmark datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Generalization and Regularization via Wasserstein Distributionally Robust Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2212-05716</link>
-    <guid isPermaLink="false">arxiv:2212.05716</guid>
-    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qinyu Wu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distributionally robust optimization (DRO) has gained prominence in operations research and machine learning as a powerful method for achieving solutions with favorable out-of-sample performance. Two compelling explanations for its success are the generalization bounds derived from Wasserstein DRO and its equivalence to regularization schemes commonly used in machine learning. However, existing results on generalization bounds and regularization equivalence are largely limited to settings where the Wasserstein ball is of a specific type, and the decision criterion takes certain forms of expected functions. In this paper, we show that generalization bounds and regularization equivalence can be obtained in a significantly broader setting, where the Wasserstein ball is of a general type and the decision criterion accommodates any form, including general risk measures. This not only addresses important machine learning and operations management applications but also expands to general decision-theoretical frameworks previously unaddressed by Wasserstein DRO. Our results are strong in that the generalization bounds do not suffer from the curse of dimensionality and the equivalency to regularization is exact. As a by-product, we show that Wasserstein DRO coincides with the recent max-sliced Wasserstein DRO for {\it any} decision criterion under affine decision rules &ndash; resulting in both being efficiently solvable as convex programs via our general regularization results. These general assurances provide a strong foundation for expanding the application of Wasserstein DRO across diverse domains of data-driven decision problems.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Generalization Properties of Optimal Transport GANs with Latent Distribution Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2007-14641</link>
+    <guid isPermaLink="false">arxiv:2007.14641</guid>
+    <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giulia Luise et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Generative Adversarial Networks (GAN) framework is a well-established paradigm for probability matching and realistic sample generation. While recent attention has been devoted to studying the theoretical properties of such models, a full theoretical understanding of the main building blocks is still missing. Focusing on generative models with Optimal Transport metrics as discriminators, in this work we study how the interplay between the latent distribution and the complexity of the pushforward map (generator) affects performance, from both statistical and modelling perspectives. Motivated by our analysis, we advocate learning the latent distribution as well as the pushforward map within the GAN paradigm. We prove that this can lead to significant advantages in terms of sample complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unsupervised Multilingual Alignment using Wasserstein Barycenter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-00743</link>
+    <guid isPermaLink="false">arxiv:2002.00743</guid>
+    <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xin Lian et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study unsupervised multilingual alignment, the problem of finding word-to-word translations between multiple languages without using any parallel data. One popular strategy is to reduce multilingual alignment to the much simplified bilingual setting, by picking one of the input languages as the pivot language that we transit through. However, it is well-known that transiting through a poorly chosen pivot language (such as English) may severely degrade the translation quality, since the assumed transitive relations among all pairs of languages may not be enforced in the training process. Instead of going through a rather arbitrarily chosen pivot language, we propose to use the Wasserstein barycenter as a more informative &ldquo;mean&rdquo; language: it encapsulates information from all languages and minimizes all pairwise transportation costs. We evaluate our method on standard benchmarks and demonstrate state-of-the-art performances.</p>]]></description>
+  </item>
 
   <item>
     <title>Domain Adaptation with Optimal Transport on the Manifold of SPD matrices</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kubilay Atasu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
 <p>The Earth Mover&rsquo;s Distance (EMD) is a state-of-the art metric for comparing discrete probability distributions, but its high distinguishability comes at a high cost in computational complexity. Even though linear-complexity approximation algorithms have been proposed to improve its scalability, these algorithms are either limited to vector spaces with only a few dimensions or they become ineffective when the degree of overlap between the probability distributions is high. We propose novel approximation algorithms that overcome both of these limitations, yet still achieve linear time complexity. All our algorithms are data parallel, and thus, we take advantage of massively parallel computing engines, such as Graphics Processing Units (GPUs). On the popular text-based 20 Newsgroups dataset, the new algorithms are four orders of magnitude faster than a multi-threaded CPU implementation of Word Mover&rsquo;s Distance and match its nearest-neighbors-search accuracy. On MNIST images, the new algorithms are four orders of magnitude faster than a GPU implementation of the Sinkhorn&rsquo;s algorithm while offering a slightly higher nearest-neighbors-search accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Kernel Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-09314</link>
-    <guid isPermaLink="false">arxiv:1905.09314</guid>
-    <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jung Hun Oh et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Wasserstein distance is a powerful metric based on the theory of optimal transport. It gives a natural measure of the distance between two distributions with a wide range of applications. In contrast to a number of the common divergences on distributions such as Kullback-Leibler or Jensen-Shannon, it is (weakly) continuous, and thus ideal for analyzing corrupted data. To date, however, no kernel methods for dealing with nonlinear data have been proposed via the Wasserstein distance. In this work, we develop a novel method to compute the L2-Wasserstein distance in a kernel space implemented using the kernel trick. The latter is a general method in machine learning employed to handle data in a nonlinear manner. We evaluate the proposed approach in identifying computerized tomography (CT) slices with dental artifacts in head and neck cancer, performing unsupervised hierarchical clustering on the resulting Wasserstein distance matrix that is computed on imaging texture features extracted from each CT slice. Our experiments show that the kernel approach outperforms classical non-kernel approaches in identifying CT slices with artifacts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Accelerated Linear Convergence of Stochastic Momentum Methods in Wasserstein Distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1901-07445</link>
-    <guid isPermaLink="false">arxiv:1901.07445</guid>
-    <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bugra Can et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Momentum methods such as Polyak&rsquo;s heavy ball (HB) method, Nesterov&rsquo;s accelerated gradient (AG) as well as accelerated projected gradient (APG) method have been commonly used in machine learning practice, but their performance is quite sensitive to noise in the gradients. We study these methods under a first-order stochastic oracle model where noisy estimates of the gradients are available. For strongly convex problems, we show that the distribution of the iterates of AG converges with the accelerated O(log(1/ε)) linear rate to a ball of radius ε centered at a unique invariant distribution in the 1-Wasserstein metric where κ is the condition number as long as the noise variance is smaller than an explicit upper bound we can provide. Our analysis also certifies linear convergence rates as a function of the stepsize, momentum parameter and the noise variance; recovering the accelerated rates in the noiseless case and quantifying the level of noise that can be tolerated to achieve a given performance. In the special case of strongly convex quadratic objectives, we can show accelerated linear rates in the p-Wasserstein metric for any p≥1 with improved sensitivity to noise for both AG and HB through a non-asymptotic analysis under some additional assumptions on the noise structure. Our analysis for HB and AG also leads to improved non-asymptotic convergence bounds in suboptimality for both deterministic and stochastic settings which is of independent interest. To the best of our knowledge, these are the first linear convergence results for stochastic momentum methods under the stochastic oracle model. We also extend our results to the APG method and weakly convex functions showing accelerated rates when the noise magnitude is sufficiently small.</p>]]></description>
   </item>
 
 </channel>

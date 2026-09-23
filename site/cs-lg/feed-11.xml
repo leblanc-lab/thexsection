@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Particle Convolution for High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-02908</link>
+    <guid isPermaLink="false">arxiv:2107.02908</guid>
+    <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chase Shimmin</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (energy flow, jet axis, IRC-safe, top tagging, ParticleNet) — original abstract; no AI summary.</em></p>
+<p>We introduce the Particle Convolution Network (PCN), a new type of equivariant neural network layer suitable for many tasks in jet physics. The particle convolution layer can be viewed as an extension of Deep Sets and Energy Flow network architectures, in which the permutation-invariant operator is promoted to a group convolution. While the PCN can be implemented for various kinds of symmetries, we consider the specific case of rotation about the jet axis the η- ϕ plane. In two standard benchmark tasks, q/g tagging and top tagging, we show that the rotational PCN (rPCN) achieves performance comparable to graph networks such as ParticleNet. Moreover, we show that it is possible to implement an IRC-safe rPCN, which significantly outperforms existing IRC-safe tagging methods on both tasks. We speculate that by generalizing the PCN to include additional convolutional symmetries relevant to jet physics, it may outperform the current state-of-the-art set by graph networks, while offering a new degree of control over physically-motivated inductive biases.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Minimum Wasserstein Distance Estimator under Finite Location-scale Mixtures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-01323</link>
+    <guid isPermaLink="false">arxiv:2107.01323</guid>
+    <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiong Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>When a population exhibits heterogeneity, we often model it via a finite mixture: decompose it into several different but homogeneous subpopulations. Contemporary practice favors learning the mixtures by maximizing the likelihood for statistical efficiency and the convenient EM-algorithm for numerical computation. Yet the maximum likelihood estimate (MLE) is not well defined for the most widely used finite normal mixture in particular and for finite location-scale mixture in general. We hence investigate feasible alternatives to MLE such as minimum distance estimators. Recently, the Wasserstein distance has drawn increased attention in the machine learning community. It has intuitive geometric interpretation and is successfully employed in many new applications. Do we gain anything by learning finite location-scale mixtures via a minimum Wasserstein distance estimator (MWDE)? This paper investigates this possibility in several respects. We find that the MWDE is consistent and derive a numerical solution under finite location-scale mixtures. We study its robustness against outliers and mild model mis-specifications. Our moderate scaled simulation study shows the MWDE suffers some efficiency loss against a penalized version of MLE in general without noticeable gain in robustness. We reaffirm the general superiority of the likelihood based learning strategies even for the non-regular finite location-scale mixtures.</p>]]></description>
+  </item>
 
   <item>
     <title>Data-driven mapping between functional connectomes using optimal transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François-Pierre Paty et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Regularizing the optimal transport (OT) problem has proven crucial for OT theory to impact the field of machine learning. For instance, it is known that regularizing OT problems with entropy leads to faster computations and better differentiation using the Sinkhorn algorithm, as well as better sample complexity bounds than classic OT. In this work we depart from this practical perspective and propose a new interpretation of regularization as a robust mechanism, and show using Fenchel duality that any convex regularization of OT can be interpreted as ground cost adversarial. This incidentally gives access to a robust dissimilarity measure on the ground space, which can in turn be used in other applications. We propose algorithms to compute this robust cost, and illustrate the interest of this approach empirically.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generalization Properties of Optimal Transport GANs with Latent Distribution Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2007-14641</link>
-    <guid isPermaLink="false">arxiv:2007.14641</guid>
-    <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giulia Luise et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The Generative Adversarial Networks (GAN) framework is a well-established paradigm for probability matching and realistic sample generation. While recent attention has been devoted to studying the theoretical properties of such models, a full theoretical understanding of the main building blocks is still missing. Focusing on generative models with Optimal Transport metrics as discriminators, in this work we study how the interplay between the latent distribution and the complexity of the pushforward map (generator) affects performance, from both statistical and modelling perspectives. Motivated by our analysis, we advocate learning the latent distribution as well as the pushforward map within the GAN paradigm. We prove that this can lead to significant advantages in terms of sample complexity.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Multilingual Alignment using Wasserstein Barycenter</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-00743</link>
-    <guid isPermaLink="false">arxiv:2002.00743</guid>
-    <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xin Lian et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study unsupervised multilingual alignment, the problem of finding word-to-word translations between multiple languages without using any parallel data. One popular strategy is to reduce multilingual alignment to the much simplified bilingual setting, by picking one of the input languages as the pivot language that we transit through. However, it is well-known that transiting through a poorly chosen pivot language (such as English) may severely degrade the translation quality, since the assumed transitive relations among all pairs of languages may not be enforced in the training process. Instead of going through a rather arbitrarily chosen pivot language, we propose to use the Wasserstein barycenter as a more informative &ldquo;mean&rdquo; language: it encapsulates information from all languages and minimizes all pairwise transportation costs. We evaluate our method on standard benchmarks and demonstrate state-of-the-art performances.</p>]]></description>
   </item>
 
 </channel>

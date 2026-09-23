@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The Pareto Frontier of Resilient Jet Tagging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-19431</link>
+    <guid isPermaLink="false">arxiv:2509.19431</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rikab Gambhir et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, collider, Rikab Gambhir) — original abstract; no AI summary.</em></p>
+<p>Classifying hadronic jets using their constituents&rsquo; kinematic information is a critical task in modern high-energy collider physics. Often, classifiers are designed by targeting the best performance using metrics such as accuracy, AUC, or rejection rates. However, the use of a single metric can lead to the use of architectures that are more model-dependent than competitive alternatives, leading to potential uncertainty and bias in analysis. We explore such trade-offs and demonstrate the consequences of using networks with high performance metrics but low resilience.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Symbolic Density Estimation: A Decompositional Approach</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-27955</link>
+    <guid isPermaLink="false">arxiv:2603.27955</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Angelo Rajendram et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>We introduce AI-Kolmogorov, a novel framework for Symbolic Density Estimation (SymDE). Symbolic regression (SR) has been effectively used to produce interpretable models in standard regression settings but its applicability to density estimation tasks has largely been unexplored. To address the SymDE task we introduce a multi-stage pipeline: (i) problem decomposition through clustering and/or probabilistic graphical model structure learning; (ii) nonparametric density estimation; (iii) support estimation; and finally (iv) SR on the density estimate. We demonstrate the efficacy of AI-Kolmogorov on synthetic mixture models, multivariate normal distributions, and three exotic distributions, two of which are motivated by applications in high-energy physics. We show that AI-Kolmogorov can discover underlying distributions or otherwise provide valuable insight into the mathematical expressions describing them.</p>]]></description>
+  </item>
 
   <item>
     <title>An Explicit Surrogate for Gaussian Mixture Flow Matching with Wasserstein Gap Bounds</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dara Varam et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Flow Matching (FM) generative models offer efficient simulation-free training and deterministic sampling, but their practical deployment is challenged by high-precision parameter requirements. We adapt optimal transport (OT)-based post-training quantization to FM models, minimizing the 2-Wasserstein distance between quantized and original weights, and systematically compare its effectiveness against uniform, piecewise, and logarithmic quantization schemes. Our theoretical analysis provides upper bounds on generative degradation under quantization, and empirical results across five benchmark datasets of varying complexity show that OT-based quantization preserves both visual generation quality and latent space stability down to 2-3 bits per parameter, where alternative methods fail. This establishes OT-based quantization as a principled, effective approach to compress FM generative models for edge and embedded AI applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards Mitigating Systematics in Large-Scale Surveys via Few-Shot Optimal Transport-Based Feature Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-11787</link>
-    <guid isPermaLink="false">arxiv:2511.11787</guid>
-    <pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sultan Hassan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Systematics contaminate observables, leading to distribution shifts relative to theoretically simulated signals-posing a major challenge for using pre-trained models to label such observables. Since systematics are often poorly understood and difficult to model, removing them directly and entirely may not be feasible. To address this challenge, we propose a novel method that aligns learned features between in-distribution (ID) and out-of-distribution (OOD) samples by optimizing a feature-alignment loss on the representations extracted from a pre-trained ID model. We first experimentally validate the method on the MNIST dataset using possible alignment losses, including mean squared error and optimal transport, and subsequently apply it to large-scale maps of neutral hydrogen. Our results show that optimal transport is particularly effective at aligning OOD features when parity between ID and OOD samples is unknown, even with limited data-mimicking real-world conditions in extracting information from large-scale surveys. Our code is available at https://github.com/sultan-hassan/feature-alignment-for-OOD-generalization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloChallenge 2022: A Community Challenge for Fast Calorimeter Simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-21611</link>
-    <guid isPermaLink="false">arxiv:2410.21611</guid>
-    <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudius Krause et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Tilman Plehn, Ben Nachman, Vinicius Mikuni, David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>We present the results of the &ldquo;Fast Calorimeter Simulation Challenge 2022&rdquo; - the CaloChallenge. We study state-of-the-art generative models on four calorimeter shower datasets of increasing dimensionality, ranging from a few hundred voxels to a few tens of thousand voxels. The 31 individual submissions span a wide range of current popular generative architectures, including Variational AutoEncoders (VAEs), Generative Adversarial Networks (GANs), Normalizing Flows, Diffusion models, and models based on Conditional Flow Matching. We compare all submissions in terms of quality of generated calorimeter showers, as well as shower generation time and model size. To assess the quality we use a broad range of different metrics including differences in 1-dimensional histograms of observables, KPD/FPD scores, AUCs of binary classifiers, and the log-posterior of a multiclass classifier. The results of the CaloChallenge provide the most complete and comprehensive survey of cutting-edge approaches to calorimeter fast simulation to date. In addition, our work provides a uniquely detailed perspective on the important problem of how to evaluate generative models. As such, the results presented here should be applicable for other domains that use generative AI and require fast and faithful generation of samples in a large phase space.</p>]]></description>
   </item>
 
 </channel>

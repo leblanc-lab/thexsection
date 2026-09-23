@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>When Riemann flows with Wasserstein: Generative Modeling of Probability Distributions on Manifolds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-25659</link>
+    <guid isPermaLink="false">arxiv:2609.25659</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Doron Haviv et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Many scientific datasets, such as molecular conformational ensembles or single-cell tissue measurements, are naturally modeled as meta-distributions: distributions over probability measures on non-Euclidean domains. Existing generative methods largely assume Euclidean geometry and fail to capture this structure. We introduce Riemannian Wasserstein Entropic Flow Matching (RWEFM), a generative framework on the Wasserstein space 𝒫_2(ℳ) of a Riemannian manifold (ℳ,g). RWEFM is trained by regressing a neural vector field onto Riemannian optimal transport velocities, using McCann displacement interpolations as conditional paths. We confirm theoretically that this construction leads to a valid flow matching approach on 𝒫_2(ℳ) and introduce the Riemannian Entropic Map, a GPU-efficient approximation of the optimal transport map on manifolds. Our experiments show that by respecting the intrinsic geometry of the data, RWEFM can generate whole single-cell samples in hyperspherical latent spaces and protein conformational ensembles on the torus. As RWEFM requires only a geodesic distance and a projection operator, it is not restricted to manifolds with closed-form geometry, which we demonstrate by generating distributions on a general triangulated mesh.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical Rates for Entropic Optimal Transport in the Discrete to SubGaussian Regime</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-26647</link>
+    <guid isPermaLink="false">arxiv:2609.26647</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tomas Gonzalez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study statistical rates in entropic optimal transport in the semi-discrete regime where one measure has finite support and the other is subGaussian. Our main result establishes parametric convergence rates for the empirical dual potentials to their population counterparts, with no dimension dependence in the leading term. Our result relies on tailored strong concavity analysis of the semi-dual objective, coupled with specialized bounds for the semi-discrete potentials. As a consequence, we obtain fast rates for downstream quantities derived from the optimal coupling. Chiefly, the empirical barycentric projection achieves a squared-error rate n⁻¹, matching the fully compact case and improving over the less favorable n⁻¹/2 rate known for fully subGaussian settings. Altogether, these results may indicate a lower complexity adaptation phenomenon whereby the statistical complexity of the barycentric projection is governed by the discrete measure. As an application, we analyze Sinkhorn-EM, an EM-type algorithm in which the E-step is replaced by an entropic optimal transport problem. In a well-specified and balanced two-component Gaussian mixture model, we prove √(n)-consistency of the empirical iterates to their population counterparts for any fixed number of iterations, matching classical EM rates up to a √(logn) factor. Simulations support the theory.</p>]]></description>
+  </item>
 
   <item>
     <title>Statistical Inference for Adversarial Training: Central Limit Theorems via Optimal Transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jay Agarwal et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet mass, N-subjettiness, jet taggers) — original abstract; no AI summary.</em></p>
 <p>We study what Lorentz-equivariant jet taggers learn internally, using equivariance tests, linear probes and grade ablations across five models including L-GATr, L-GATr-slim and LLoCa-T. Linear probes show that equivariant models suppress frame-dependent pseudorapidity to zero while encoding jet mass and N-subjettiness strongly. Grade ablations on L-GATr reveal that bivector channels are negligible for top-quark tagging while vector-like channels are dominant but seed variable, consistent with the network exploiting multiple representational pathways. These results characterize which physical features and algebraic grade structures carry discriminative information in equivariant taggers and may inform future development of such models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Mixture-of-Experts Graph Transformers for Interpretable Particle Collision Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2501-03432</link>
-    <guid isPermaLink="false">arxiv:2501.03432</guid>
-    <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donatella Genovese et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The Large Hadron Collider at CERN produces immense volumes of complex data from high-energy particle collisions, demanding sophisticated analytical techniques for effective interpretation. Neural Networks, including Graph Neural Networks, have shown promise in tasks such as event classification and object identification by representing collisions as graphs. However, while Graph Neural Networks excel in predictive accuracy, their &ldquo;black box&rdquo; nature often limits their interpretability, making it difficult to trust their decision-making processes. In this paper, we propose a novel approach that combines a Graph Transformer model with Mixture-of-Expert layers to achieve high predictive performance while embedding interpretability into the architecture. By leveraging attention maps and expert specialization, the model offers insights into its internal decision-making, linking predictions to physics-informed features. We evaluate the model on simulated events from the ATLAS experiment, focusing on distinguishing rare Supersymmetric signal events from Standard Model background. Our results highlight that the model achieves competitive classification accuracy while providing interpretable outputs that align with known physics, demonstrating its potential as a robust and transparent tool for high-energy physics data analysis. This approach underscores the importance of explainability in machine learning methods applied to high energy physics, offering a path toward greater trust in AI-driven discoveries.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Beyond Reasoning Gains: Mitigating General-Capability Forgetting in Large Reasoning Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-21978</link>
-    <guid isPermaLink="false">arxiv:2510.21978</guid>
-    <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Reinforcement learning with verifiable rewards (RLVR) has delivered impressive gains in mathematical and multimodal reasoning and has become a standard post-training paradigm for contemporary language and vision-language models. However, the RLVR recipe introduces a significant risk of capability regression, in which models forget foundational skills after prolonged training without employing regularization strategies. We empirically confirm this concern, observing that open-source reasoning models suffer performance degradation on core capabilities such as perception and faithfulness. While imposing regularization terms like KL divergence can help prevent deviation from the base model, these terms are computed on the current task and therefore do not guarantee preservation of broader knowledge. Meanwhile, commonly used experience replay across heterogeneous domains makes it nontrivial to decide how much training emphasis each objective should receive. To address this, we propose RECAP-a replay strategy with dynamic objective reweighting for general knowledge preservation. Our reweighting mechanism adapts online using short-horizon signals of convergence and instability, shifting the post-training focus away from saturated objectives and toward underperforming or volatile ones. Our method is end-to-end and readily applicable to existing RLVR pipelines without training additional models or heavy tuning. Extensive experiments on benchmarks using Qwen2.5-VL-3B and Qwen2.5-VL-7B demonstrate the effectiveness of our method, which not only preserves general capabilities but also improves reasoning by enabling more flexible trade-offs among in-task rewards.</p>]]></description>
   </item>
 
 </channel>

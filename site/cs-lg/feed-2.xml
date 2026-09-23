@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Mixture-of-Experts Graph Transformers for Interpretable Particle Collision Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2501-03432</link>
+    <guid isPermaLink="false">arxiv:2501.03432</guid>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donatella Genovese et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The Large Hadron Collider at CERN produces immense volumes of complex data from high-energy particle collisions, demanding sophisticated analytical techniques for effective interpretation. Neural Networks, including Graph Neural Networks, have shown promise in tasks such as event classification and object identification by representing collisions as graphs. However, while Graph Neural Networks excel in predictive accuracy, their &ldquo;black box&rdquo; nature often limits their interpretability, making it difficult to trust their decision-making processes. In this paper, we propose a novel approach that combines a Graph Transformer model with Mixture-of-Expert layers to achieve high predictive performance while embedding interpretability into the architecture. By leveraging attention maps and expert specialization, the model offers insights into its internal decision-making, linking predictions to physics-informed features. We evaluate the model on simulated events from the ATLAS experiment, focusing on distinguishing rare Supersymmetric signal events from Standard Model background. Our results highlight that the model achieves competitive classification accuracy while providing interpretable outputs that align with known physics, demonstrating its potential as a robust and transparent tool for high-energy physics data analysis. This approach underscores the importance of explainability in machine learning methods applied to high energy physics, offering a path toward greater trust in AI-driven discoveries.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond Reasoning Gains: Mitigating General-Capability Forgetting in Large Reasoning Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-21978</link>
+    <guid isPermaLink="false">arxiv:2510.21978</guid>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Reinforcement learning with verifiable rewards (RLVR) has delivered impressive gains in mathematical and multimodal reasoning and has become a standard post-training paradigm for contemporary language and vision-language models. However, the RLVR recipe introduces a significant risk of capability regression, in which models forget foundational skills after prolonged training without employing regularization strategies. We empirically confirm this concern, observing that open-source reasoning models suffer performance degradation on core capabilities such as perception and faithfulness. While imposing regularization terms like KL divergence can help prevent deviation from the base model, these terms are computed on the current task and therefore do not guarantee preservation of broader knowledge. Meanwhile, commonly used experience replay across heterogeneous domains makes it nontrivial to decide how much training emphasis each objective should receive. To address this, we propose RECAP-a replay strategy with dynamic objective reweighting for general knowledge preservation. Our reweighting mechanism adapts online using short-horizon signals of convergence and instability, shifting the post-training focus away from saturated objectives and toward underperforming or volatile ones. Our method is end-to-end and readily applicable to existing RLVR pipelines without training additional models or heavy tuning. Extensive experiments on benchmarks using Qwen2.5-VL-3B and Qwen2.5-VL-7B demonstrate the effectiveness of our method, which not only preserves general capabilities but also improves reasoning by enabling more flexible trade-offs among in-task rewards.</p>]]></description>
+  </item>
 
   <item>
     <title>Active Causal Experimentalist (ACE): Learning Intervention Strategies via Direct Preference Optimization</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Bright-Thonney et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler) — original abstract; no AI summary.</em></p>
 <p>We introduce Sven (Singular Value dEsceNt), a new optimization algorithm for neural networks that exploits the natural decomposition of loss functions into a sum over individual data points, rather than reducing the full loss to a single scalar before computing a parameter update. Sven treats each data point&rsquo;s residual as a separate condition to be satisfied simultaneously, using the Moore-Penrose pseudoinverse of the loss Jacobian to find the minimum-norm parameter update that best satisfies all conditions at once. In practice, this pseudoinverse is approximated via a truncated singular value decomposition, retaining only the k most significant directions and incurring a computational overhead of only a factor of k relative to stochastic gradient descent. This is in comparison to traditional natural gradient methods, which scale as the square of the number of parameters. We show that Sven can be understood as a natural gradient method generalized to the over-parametrized regime, recovering natural gradient descent in the under-parametrized limit. On regression tasks, Sven significantly outperforms standard first-order methods including Adam, converging faster and to a lower final loss, while remaining competitive with LBFGS at a fraction of the wall-time cost. We discuss the primary challenge to scaling, namely memory overhead, and propose mitigation strategies. Beyond standard machine learning benchmarks, we anticipate that Sven will find natural application in scientific computing settings where custom loss functions decompose into several conditions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Pareto Frontier of Resilient Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-19431</link>
-    <guid isPermaLink="false">arxiv:2509.19431</guid>
-    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rikab Gambhir et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, collider, Rikab Gambhir) — original abstract; no AI summary.</em></p>
-<p>Classifying hadronic jets using their constituents&rsquo; kinematic information is a critical task in modern high-energy collider physics. Often, classifiers are designed by targeting the best performance using metrics such as accuracy, AUC, or rejection rates. However, the use of a single metric can lead to the use of architectures that are more model-dependent than competitive alternatives, leading to potential uncertainty and bias in analysis. We explore such trade-offs and demonstrate the consequences of using networks with high performance metrics but low resilience.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Symbolic Density Estimation: A Decompositional Approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-27955</link>
-    <guid isPermaLink="false">arxiv:2603.27955</guid>
-    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Angelo Rajendram et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>We introduce AI-Kolmogorov, a novel framework for Symbolic Density Estimation (SymDE). Symbolic regression (SR) has been effectively used to produce interpretable models in standard regression settings but its applicability to density estimation tasks has largely been unexplored. To address the SymDE task we introduce a multi-stage pipeline: (i) problem decomposition through clustering and/or probabilistic graphical model structure learning; (ii) nonparametric density estimation; (iii) support estimation; and finally (iv) SR on the density estimate. We demonstrate the efficacy of AI-Kolmogorov on synthetic mixture models, multivariate normal distributions, and three exotic distributions, two of which are motivated by applications in high-energy physics. We show that AI-Kolmogorov can discover underlying distributions or otherwise provide valuable insight into the mathematical expressions describing them.</p>]]></description>
   </item>
 
 </channel>
