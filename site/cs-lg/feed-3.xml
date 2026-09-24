@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Random Coordinate Descent on the Wasserstein Space of Probability Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01606</link>
+    <guid isPermaLink="false">arxiv:2604.01606</guid>
+    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yewei Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimization over the space of probability measures endowed with the Wasserstein-2 geometry is central to modern machine learning and mean-field modeling. However, traditional methods relying on full Wasserstein gradients often suffer from high computational overhead in high-dimensional or ill-conditioned settings. We propose a randomized coordinate descent framework specifically designed for the Wasserstein manifold, introducing both Random Wasserstein Coordinate Descent (RWCD) and Random Wasserstein Coordinate Proximal{-Gradient} (RWCP) for composite objectives. By exploiting coordinate-wise structures, our methods adapt to anisotropic objective landscapes where full-gradient approaches typically struggle. We provide a rigorous convergence analysis across various landscape geometries, establishing guarantees under non-convex, Polyak-Łojasiewicz, and geodesically convex conditions. Our theoretical results mirror the classic convergence properties found in Euclidean space, revealing a compelling symmetry between coordinate descent on vectors and on probability measures. The developed techniques are inherently adaptive to the Wasserstein geometry and offer a robust analytical template that can be extended to other optimization solvers within the space of measures. Numerical experiments on ill-conditioned energies demonstrate that our framework offers significant speedups over conventional full-gradient methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Taming the Exponential: A Fast Softmax Surrogate for Integer-Native Edge Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02292</link>
+    <guid isPermaLink="false">arxiv:2604.02292</guid>
+    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dimitrios Danopoulos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Softmax can become a computational bottleneck in the Transformer model&rsquo;s Multi-Head Attention (MHA) block, particularly in small models under low-precision inference, where exponentiation and normalization incur significant overhead. As such, we suggest using Head-Calibrated Clipped-Linear Softmax (HCCS), a bounded, monotone surrogate to the exponential softmax function, which uses a clipped linear mapping of the max centered attention logits. This approximation produces a stable probability distribution, maintains the ordering of the original logits and has non-negative values. HCCS differs from previous softmax surrogates as it includes a set of lightweight calibration parameters that are optimized offline based on a representative dataset and calibrated for each individual attention head to preserve the statistical properties of the individual heads. We describe a hardware-motivated implementation of HCCS for high-throughput scenarios targeting the AMD Versal AI Engines. The current reference implementations from AMD for this platform rely upon either bfloat16 arithmetic or LUTs to perform the exponential operation, which might limit the throughput of the platform and fail to utilize the high-throughput integer vector processing units of the AI Engine. In contrast, HCCS provides a natural mapping to the AI Engines&rsquo; int8 multiply accumulate (MAC) units. To the best of our knowledge, this is the first int8 optimized softmax surrogate for AMD AI engines that significantly exceeds the speed performance of other reference implementations while maintaining competitive task accuracy on small or heavily quantized MHA workloads after quantization-aware retraining.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01279</link>
+    <guid isPermaLink="false">arxiv:2604.01279</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Bright-Thonney et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler) — original abstract; no AI summary.</em></p>
+<p>We introduce Sven (Singular Value dEsceNt), a new optimization algorithm for neural networks that exploits the natural decomposition of loss functions into a sum over individual data points, rather than reducing the full loss to a single scalar before computing a parameter update. Sven treats each data point&rsquo;s residual as a separate condition to be satisfied simultaneously, using the Moore-Penrose pseudoinverse of the loss Jacobian to find the minimum-norm parameter update that best satisfies all conditions at once. In practice, this pseudoinverse is approximated via a truncated singular value decomposition, retaining only the k most significant directions and incurring a computational overhead of only a factor of k relative to stochastic gradient descent. This is in comparison to traditional natural gradient methods, which scale as the square of the number of parameters. We show that Sven can be understood as a natural gradient method generalized to the over-parametrized regime, recovering natural gradient descent in the under-parametrized limit. On regression tasks, Sven significantly outperforms standard first-order methods including Adam, converging faster and to a lower final loss, while remaining competitive with LBFGS at a fraction of the wall-time cost. We discuss the primary challenge to scaling, namely memory overhead, and propose mitigation strategies. Beyond standard machine learning benchmarks, we anticipate that Sven will find natural application in scientific computing settings where custom loss functions decompose into several conditions.</p>]]></description>
+  </item>
 
   <item>
     <title>The Pareto Frontier of Resilient Jet Tagging</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deniz Yilmaz et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>Drift chambers have long been central to collider tracking, but future machines like a Higgs factory motivate higher granularity and cluster counting for particle ID, posing new data processing challenges. Machine learning (ML) at the &ldquo;edge&rdquo;, or in cell-level readout, can dramatically reduce the off-detector data rate for high-granularity drift chambers by performing cluster counting at-source. We present machine learning algorithms for cluster counting in real-time readout of future drift chambers. These algorithms outperform traditional derivative-based techniques based on achievable pion-kaon separation. When synthesized to FPGA resources, they can achieve latencies consistent with real-time operation in a future Higgs factory scenario, thus advancing both R&amp;D for future collider detectors as well as hardware-based ML for edge applications in high energy physics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CellStream: Dynamical Optimal Transport Informed Embeddings for Reconstructing Cellular Trajectories from Snapshots Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-13786</link>
-    <guid isPermaLink="false">arxiv:2511.13786</guid>
-    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yue Ling et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Single-cell RNA sequencing (scRNA-seq), especially temporally resolved datasets, enables genome-wide profiling of gene expression dynamics at single-cell resolution across discrete time points. However, current technologies provide only sparse, static snapshots of cell states and are inherently influenced by technical noise, complicating the inference and representation of continuous transcriptional dynamics. Although embedding methods can reduce dimensionality and mitigate technical noise, the majority of existing approaches typically treat trajectory inference separately from embedding construction, often neglecting temporal structure. To address this challenge, here we introduce CellStream, a novel deep learning framework that jointly learns embedding and cellular dynamics from single-cell snapshot data by integrating an autoencoder with unbalanced dynamical optimal transport. Compared to existing methods, CellStream generates dynamics-informed embeddings that robustly capture temporal developmental processes while maintaining high consistency with the underlying data manifold. We demonstrate CellStream&rsquo;s effectiveness on both simulated datasets and real scRNA-seq data, including spatial transcriptomics. Our experiments indicate significant quantitative improvements over state-of-the-art methods in representing cellular trajectories with enhanced temporal coherence and reduced noise sensitivity. Overall, CellStream provides a new tool for learning and representing continuous streams from the noisy, static snapshots of single-cell gene expression.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Treatment Stitching with Schrödinger Bridge for Enhancing Offline Reinforcement Learning in Adaptive Treatment Strategies</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-12075</link>
-    <guid isPermaLink="false">arxiv:2511.12075</guid>
-    <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dong-Hee Shin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Adaptive treatment strategies (ATS) are sequential decision-making processes that enable personalized care by dynamically adjusting treatment decisions in response to evolving patient symptoms. While reinforcement learning (RL) offers a promising approach for optimizing ATS, its conventional online trial-and-error learning mechanism is not permissible in clinical settings due to risks of harm to patients. Offline RL tackles this limitation by learning policies exclusively from historical treatment data, but its performance is often constrained by data scarcity-a pervasive challenge in clinical domains. To overcome this, we propose Treatment Stitching (TreatStitch), a novel data augmentation framework that generates clinically valid treatment trajectories by intelligently stitching segments from existing treatment data. Specifically, TreatStitch identifies similar intermediate patient states across different trajectories and stitches their respective segments. Even when intermediate states are too dissimilar to stitch directly, TreatStitch leverages the Schrödinger bridge method to generate smooth and energy-efficient bridging trajectories that connect dissimilar states. By augmenting these synthetic trajectories into the original dataset, offline RL can learn from a more diverse dataset, thereby improving its ability to optimize ATS. Extensive experiments across multiple treatment datasets demonstrate the effectiveness of TreatStitch in enhancing offline RL performance. Furthermore, we provide a theoretical justification showing that TreatStitch maintains clinical validity by avoiding out-of-distribution transitions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Low-Bit, High-Fidelity: Optimal Transport Quantization for Flow Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-11418</link>
-    <guid isPermaLink="false">arxiv:2511.11418</guid>
-    <pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dara Varam et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Flow Matching (FM) generative models offer efficient simulation-free training and deterministic sampling, but their practical deployment is challenged by high-precision parameter requirements. We adapt optimal transport (OT)-based post-training quantization to FM models, minimizing the 2-Wasserstein distance between quantized and original weights, and systematically compare its effectiveness against uniform, piecewise, and logarithmic quantization schemes. Our theoretical analysis provides upper bounds on generative degradation under quantization, and empirical results across five benchmark datasets of varying complexity show that OT-based quantization preserves both visual generation quality and latent space stability down to 2-3 bits per parameter, where alternative methods fail. This establishes OT-based quantization as a principled, effective approach to compress FM generative models for edge and embedded AI applications.</p>]]></description>
   </item>
 
 </channel>

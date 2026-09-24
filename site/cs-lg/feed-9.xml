@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Projection Pursuit of Non-Gaussian Signals</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-12693</link>
+    <guid isPermaLink="false">arxiv:2302.12693</guid>
+    <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Satyaki Mukherjee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider the general dimensionality reduction problem of locating in a high-dimensional data cloud, a k-dimensional non-Gaussian subspace of interesting features. We use a projection pursuit approach &ndash; we search for mutually orthogonal unit directions which maximise the 2-Wasserstein distance of the empirical distribution of data-projections along these directions from a standard Gaussian. Under a generative model, where there is a underlying (unknown) low-dimensional non-Gaussian subspace, we prove rigorous statistical guarantees on the accuracy of approximating this unknown subspace by the directions found by our projection pursuit approach. Our results operate in the regime where the data dimensionality is comparable to the sample size, and thus supplement the recent literature on the non-feasibility of locating interesting directions via projection pursuit in the complementary regime where the data dimensionality is much larger than the sample size.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discrete Langevin Sampler via Wasserstein Gradient Flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2206-14897</link>
+    <guid isPermaLink="false">arxiv:2206.14897</guid>
+    <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoran Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>It is known that gradient-based MCMC samplers for continuous spaces, such as Langevin Monte Carlo (LMC), can be derived as particle versions of a gradient flow that minimizes KL divergence on a Wasserstein manifold. The superior efficiency of such samplers has motivated several recent attempts to generalize LMC to discrete spaces. However, a fully principled extension of Langevin dynamics to discrete spaces has yet to be achieved, due to the lack of well-defined gradients in the sample space. In this work, we show how the Wasserstein gradient flow can be generalized naturally to discrete spaces. Given the proposed formulation, we demonstrate how a discrete analogue of Langevin dynamics can subsequently be developed. With this new understanding, we reveal how recent gradient-based samplers in discrete spaces can be obtained as special cases by choosing particular discretizations. More importantly, the framework also allows for the derivation of novel algorithms, one of which, \textit{Discrete Langevin Monte Carlo} (DLMC), is obtained by a factorized estimate of the transition matrix. The DLMC method admits a convenient parallel implementation and time-uniform sampling that achieves larger jump distances. We demonstrate the advantages of DLMC on various binary and categorical distributions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Internal Wasserstein Distance for Adversarial Attack and Defense</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2103-07598</link>
+    <guid isPermaLink="false">arxiv:2103.07598</guid>
+    <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qicheng Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Deep neural networks (DNNs) are known to be vulnerable to adversarial attacks that would trigger misclassification of DNNs but may be imperceptible to human perception. Adversarial defense has been an important way to improve the robustness of DNNs. Existing attack methods often construct adversarial examples relying on some metrics like the ℓ_p distance to perturb samples. However, these metrics can be insufficient to conduct adversarial attacks due to their limited perturbations. In this paper, we propose a new internal Wasserstein distance (IWD) to capture the semantic similarity of two samples, and thus it helps to obtain larger perturbations than currently used metrics such as the ℓ_p distance. We then apply the internal Wasserstein distance to perform adversarial attack and defense. In particular, we develop a novel attack method relying on IWD to calculate the similarities between an image and its adversarial examples. In this way, we can generate diverse and semantically similar adversarial examples that are more difficult to defend by existing defense methods. Moreover, we devise a new defense method relying on IWD to learn robust models against unseen adversarial examples. We provide both thorough theoretical and empirical evidence to support our methods.</p>]]></description>
+  </item>
 
   <item>
     <title>Wassmap: Wasserstein Isometric Mapping for Image Manifold Learning</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Robert Lizée</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
 <p>Neural networks promote a distributed representation with no clear place for symbols. Despite this, we propose that symbols are manufactured simply by training a sparse random noise as a self-sustaining attractor in a feedback spiking neural network. This way, we can generate many of what we shall call prime attractors, and the networks that support them are like registers holding a symbolic value, and we call them registers. Like symbols, prime attractors are atomic and devoid of any internal structure. Moreover, the winner-take-all mechanism naturally implemented by spiking neurons enables registers to recover a prime attractor within a noisy signal. Using this faculty, when considering two connected registers, an input one and an output one, it is possible to bind in one shot using a Hebbian rule the attractor active on the output to the attractor active on the input. Thus, whenever an attractor is active on the input, it induces its bound attractor on the output; even though the signal gets blurrier with more bindings, the winner-take-all filtering faculty can recover the bound prime attractor. However, the capacity is still limited. It is also possible to unbind in one shot, restoring the capacity taken by that binding. This mechanism serves as a basis for working memory, turning prime attractors into variables. Also, we use a random second-order network to amalgamate the prime attractors held by two registers to bind the prime attractor held by a third register to them in one shot, de facto implementing a hash table. Furthermore, we introduce the register switch box composed of registers to move the content of one register to another. Then, we use spiking neurons to build a toy symbolic computer based on the above. The technics used suggest ways to design extrapolating, reusable, sample-efficient deep learning networks at the cost of structural priors.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal transport weights for causal inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2109-01991</link>
-    <guid isPermaLink="false">arxiv:2109.01991</guid>
-    <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric Dunipace</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Imbalance in covariate distributions leads to biased estimates of causal effects. Weighting methods attempt to correct this imbalance but rely on specifying models for the treatment assignment mechanism, which is unknown in observational studies. This leaves researchers to choose the proper weighting method and the appropriate covariate functions for these models without knowing the correct combination to achieve distributional balance. In response to these difficulties, we propose a nonparametric generalization of several other weighting schemes found in the literature: Causal Optimal Transport. This new method directly targets distributional balance by minimizing optimal transport distances between treatment and control groups or, more generally, between any source and target population. Our approach is semiparametrically efficient and model-free but can also incorporate moments or any other important functions of covariates that a researcher desires to balance. Moreover, our method can provide nonparametric estimate the conditional mean outcome function and we give rates for the convergence of this estimator. Moreover, we show how this method can provide nonparametric imputations of the missing potential outcomes and give rates of convergence for this estimator. We find that Causal Optimal Transport outperforms competitor methods when both the propensity score and outcome models are misspecified, indicating it is a robust alternative to common weighting methods. Finally, we demonstrate the utility of our method in an external control trial examining the effect of misoprostol versus oxytocin for the treatment of post-partum hemorrhage.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTFPF: Optimal Transport-Based Feature Pyramid Fusion Network for Brain Age Estimation with 3D Overlapped ConvNeXt</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-04684</link>
-    <guid isPermaLink="false">arxiv:2205.04684</guid>
-    <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu Fu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Chronological age of healthy brain is able to be predicted using deep neural networks from T1-weighted magnetic resonance images (T1 MRIs), and the predicted brain age could serve as an effective biomarker for detecting aging-related diseases or disorders. In this paper, we propose an end-to-end neural network architecture, referred to as optimal transport based feature pyramid fusion (OTFPF) network, for the brain age estimation with T1 MRIs. The OTFPF consists of three types of modules: Optimal Transport based Feature Pyramid Fusion (OTFPF) module, 3D overlapped ConvNeXt (3D OL-ConvNeXt) module and fusion module. These modules strengthen the OTFPF network&rsquo;s understanding of each brain&rsquo;s semi-multimodal and multi-level feature pyramid information, and significantly improve its estimation performances. Comparing with recent state-of-the-art models, the proposed OTFPF converges faster and performs better. The experiments with 11,728 MRIs aged 3-97 years show that OTFPF network could provide accurate brain age estimation, yielding mean absolute error (MAE) of 2.097, Pearson&rsquo;s correlation coefficient (PCC) of 0.993 and Spearman&rsquo;s rank correlation coefficient (SRCC) of 0.989, between the estimated and chronological ages. Widespread quantitative experiments and ablation experiments demonstrate the superiority and rationality of OTFPF network. The codes and implement details will be released on GitHub: https://github.com/ZJU-Brain/OTFPF after final decision.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Wasserstein distance approach for concentration of empirical risk estimates</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a1902-10709</link>
-    <guid isPermaLink="false">arxiv:1902.10709</guid>
-    <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Prashanth L. A. et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper presents a unified approach based on Wasserstein distance to derive concentration bounds for empirical estimates for two broad classes of risk measures defined in the paper. The classes of risk measures introduced include as special cases well known risk measures from the finance literature such as conditional value at risk (CVaR), optimized certainty equivalent risk, spectral risk measures, utility-based shortfall risk, cumulative prospect theory (CPT) value, rank dependent expected utility and distorted risk measures. Two estimation schemes are considered, one for each class of risk measures. One estimation scheme involves applying the risk measure to the empirical distribution function formed from a collection of i.i.d. samples of the random variable (r.v.), while the second scheme involves applying the same procedure to a truncated sample. The bounds provided apply to three popular classes of distributions, namely sub-Gaussian, sub-exponential and heavy-tailed distributions. The bounds are derived by first relating the estimation error to the Wasserstein distance between the true and empirical distributions, and then using recent concentration bounds for the latter. Previous concentration bounds are available only for specific risk measures such as CVaR and CPT-value. The bounds derived in this paper are shown to either match or improve upon previous bounds in cases where they are available. The usefulness of the bounds is illustrated through an algorithm and the corresponding regret bound for a stochastic bandit problem involving a general risk measure from each of the two classes introduced in the paper.</p>]]></description>
   </item>
 
 </channel>

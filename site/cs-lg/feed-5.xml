@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Training-Free Voice Conversion with Factorized Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09709</link>
+    <guid isPermaLink="false">arxiv:2506.09709</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Lobashev et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper introduces Factorized MKL-VC, a training-free modification for kNN-VC pipeline. In contrast with original pipeline, our algorithm performs high quality any-to-any cross-lingual voice conversion with only 5 second of reference audio. MKL-VC replaces kNN regression with a factorized optimal transport map in WavLM embedding subspaces, derived from Monge-Kantorovich Linear solution. Factorization addresses non-uniform variance across dimensions, ensuring effective feature transformation. Experiments on LibriSpeech and FLEURS datasets show MKL-VC significantly improves content preservation and robustness with short reference audio, outperforming kNN-VC. MKL-VC achieves performance comparable to FACodec, especially in cross-lingual voice conversion domain.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Guided Graph Compression for Quantum Graph Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09862</link>
+    <guid isPermaLink="false">arxiv:2506.09862</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikel Casals et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
+<p>Graph Neural Networks (GNNs) are effective for processing graph-structured data but face challenges with large graphs due to high memory requirements and inefficient sparse matrix operations on GPUs. Quantum Computing (QC) offers a promising avenue to address these issues and inspires new algorithmic approaches. In particular, Quantum Graph Neural Networks (QGNNs) have been explored in recent literature. However, current quantum hardware limits the dimension of the data that can be effectively encoded. Existing approaches either simplify datasets manually or use artificial graph datasets. This work introduces the Guided Graph Compression (GGC) framework, which uses a graph autoencoder to reduce both the number of nodes and the dimensionality of node features. The compression is guided to enhance the performance of a downstream classification task, which can be applied either with a quantum or a classical classifier. The framework is evaluated on the Jet Tagging task, a classification problem of fundamental importance in high energy physics that involves distinguishing particle jets initiated by quarks from those by gluons. The GGC is compared against using the autoencoder as a standalone preprocessing step and against a baseline classical GNN classifier. Our numerical results demonstrate that GGC outperforms both alternatives, while also facilitating the testing of novel QGNN ansatzes on realistic datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Tree-Sliced Wasserstein Distance: A Geometric Perspective</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-13725</link>
+    <guid isPermaLink="false">arxiv:2406.13725</guid>
+    <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Viet-Hoang Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Many variants of Optimal Transport (OT) have been developed to address its heavy computation. Among them, notably, Sliced Wasserstein (SW) is widely used for application domains by projecting the OT problem onto one-dimensional lines, and leveraging the closed-form expression of the univariate OT to reduce the computational burden. However, projecting measures onto low-dimensional spaces can lead to a loss of topological information. To mitigate this issue, in this work, we propose to replace one-dimensional lines with a more intricate structure, called tree systems. This structure is metrizable by a tree metric, which yields a closed-form expression for OT problems on tree systems. We provide an extensive theoretical analysis to formally define tree systems with their topological properties, introduce the concept of splitting maps, which operate as the projection mechanism onto these structures, then finally propose a novel variant of Radon transform for tree systems and verify its injectivity. This framework leads to an efficient metric between measures, termed Tree-Sliced Wasserstein distance on Systems of Lines (TSW-SL). By conducting a variety of experiments on gradient flows, image style transfer, and generative models, we illustrate that our proposed approach performs favorably compared to SW and its variants.</p>]]></description>
+  </item>
 
   <item>
     <title>Tree-Sliced Wasserstein Distance with Nonlinear Projection</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mariia Baidachna et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (quark and gluon jets, gluon jet, gluon jets, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Diffusion models have demonstrated remarkable success in image generation, but they are computationally intensive and time-consuming to train. In this paper, we introduce a novel diffusion model that benefits from quantum computing techniques in order to mitigate computational challenges and enhance generative performance within high energy physics data. The fully quantum diffusion model replaces Gaussian noise with random unitary matrices in the forward process and incorporates a variational quantum circuit within the U-Net in the denoising architecture. We run evaluations on the structurally complex quark and gluon jets dataset from the Large Hadron Collider. The results demonstrate that the fully quantum and hybrid models are competitive with a similar classical model for jet generation, highlighting the potential of using quantum techniques for machine learning problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Neural Network-Based Search for Unmodeled Transients in LIGO-Virgo-KAGRA's Third Observing Run</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-19883</link>
-    <guid isPermaLink="false">arxiv:2412.19883</guid>
-    <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Raikman et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>This paper presents the results of a Neural Network (NN)-based search for short-duration gravitational-wave transients in data from the third observing run of LIGO, Virgo, and KAGRA. The search targets unmodeled transients with durations of milliseconds to a few seconds in the 30-1500 Hz frequency band, without assumptions about the incoming signal direction, polarization, or morphology. Using the Gravitational Wave Anomalous Knowledge (GWAK) method, three compact binary coalescences (CBCs) identified by existing pipelines are successfully detected, along with a range of detector glitches. The algorithm constructs a low-dimensional embedded space to capture the physical features of signals, enabling the detection of CBCs, detector glitches, and unmodeled transients. This study demonstrates GWAK&rsquo;s ability to enhance gravitational-wave searches beyond the limits of existing pipelines, laying the groundwork for future detection strategies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards Better Spherical Sliced-Wasserstein Distance Learning with Data-Adaptive Discriminative Projection Direction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-19212</link>
-    <guid isPermaLink="false">arxiv:2412.19212</guid>
-    <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongliang Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Spherical Sliced-Wasserstein (SSW) has recently been proposed to measure the discrepancy between spherical data distributions in various fields, such as geology, medical domains, computer vision, and deep representation learning. However, in the original SSW, all projection directions are treated equally, which is too idealistic and cannot accurately reflect the importance of different projection directions for various data distributions. To address this issue, we propose a novel data-adaptive Discriminative Spherical Sliced-Wasserstein (DSSW) distance, which utilizes a projected energy function to determine the discriminative projection direction for SSW. In our new DSSW, we introduce two types of projected energy functions to generate the weights for projection directions with complete theoretical guarantees. The first type employs a non-parametric deterministic function that transforms the projected Wasserstein distance into its corresponding weight in each projection direction. This improves the performance of the original SSW distance with negligible additional computational overhead. The second type utilizes a neural network-induced function that learns the projection direction weight through a parameterized neural network based on data projections. This further enhances the performance of the original SSW distance with less extra computational overhead. Finally, we evaluate the performance of our proposed DSSW by comparing it with several state-of-the-art methods across a variety of machine learning tasks, including gradient flows, density estimation on real earth data, and self-supervised learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Computing Approximate Graph Edit Distance via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-18857</link>
-    <guid isPermaLink="false">arxiv:2412.18857</guid>
-    <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qihao Cheng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Given a graph pair (G¹, G²⁾, graph edit distance (GED) is defined as the minimum number of edit operations converting G¹ to G². GED is a fundamental operation widely used in many applications, but its exact computation is NP-hard, so the approximation of GED has gained a lot of attention. Data-driven learning-based methods have been found to provide superior results compared to classical approximate algorithms, but they directly fit the coupling relationship between a pair of vertices from their vertex features. We argue that while pairwise vertex features can capture the coupling cost (discrepancy) of a pair of vertices, the vertex coupling matrix should be derived from the vertex-pair cost matrix through a more well-established method that is aware of the global context of the graph pair, such as optimal transport. In this paper, we propose an ensemble approach that integrates a supervised learning-based method and an unsupervised method, both based on optimal transport. Our learning method, GEDIOT, is based on inverse optimal transport that leverages a learnable Sinkhorn algorithm to generate the coupling matrix. Our unsupervised method, GEDGW, models GED computation as a linear combination of optimal transport and its variant, Gromov-Wasserstein discrepancy, for node and edge operations, respectively, which can be solved efficiently without needing the ground truth. Our ensemble method, GEDHOT, combines GEDIOT and GEDGW to further boost the performance. Extensive experiments demonstrate that our methods significantly outperform the existing methods in terms of the performance of GED computation, edit path generation, and model generalizability.</p>]]></description>
   </item>
 
 </channel>

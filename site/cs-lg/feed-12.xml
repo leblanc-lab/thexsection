@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Graph Wasserstein Correlation Analysis for Movie Retrieval</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-02648</link>
+    <guid isPermaLink="false">arxiv:2008.02648</guid>
+    <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xueya Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Movie graphs play an important role to bridge heterogenous modalities of videos and texts in human-centric retrieval. In this work, we propose Graph Wasserstein Correlation Analysis (GWCA) to deal with the core issue therein, i.e, cross heterogeneous graph comparison. Spectral graph filtering is introduced to encode graph signals, which are then embedded as probability distributions in a Wasserstein space, called graph Wasserstein metric learning. Such a seamless integration of graph signal filtering together with metric learning results in a surprise consistency on both learning processes, in which the goal of metric learning is just to optimize signal filters or vice versa. Further, we derive the solution of the graph comparison model as a classic generalized eigenvalue decomposition problem, which has an exactly closed-form solution. Finally, GWCA together with movie/text graphs generation are unified into the framework of movie retrieval to evaluate our proposed method. Extensive experiments on MovieGrpahs dataset demonstrate the effectiveness of our GWCA as well as the entire framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stronger and Faster Wasserstein Adversarial Attacks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-02883</link>
+    <guid isPermaLink="false">arxiv:2008.02883</guid>
+    <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaiwen Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Deep models, while being extremely flexible and accurate, are surprisingly vulnerable to &ldquo;small, imperceptible&rdquo; perturbations known as adversarial attacks. While the majority of existing attacks focus on measuring perturbations under the ℓ_p metric, Wasserstein distance, which takes geometry in pixel space into account, has long been known to be a suitable metric for measuring image quality and has recently risen as a compelling alternative to the ℓ_p metric in adversarial attacks. However, constructing an effective attack under the Wasserstein metric is computationally much more challenging and calls for better optimization algorithms. We address this gap in two ways: (a) we develop an exact yet efficient projection operator to enable a stronger projected gradient attack; (b) we show that the Frank-Wolfe method equipped with a suitable linear minimization oracle works extremely fast under Wasserstein constraints. Our algorithms not only converge faster but also generate much stronger attacks. For instance, we decrease the accuracy of a residual network on CIFAR-10 to 3.4% within a Wasserstein perturbation ball of radius 0.005, in contrast to 65.6% using the previous Wasserstein attack based on an \emph{approximate} projection operator. Furthermore, employing our stronger attacks in adversarial training significantly improves the robustness of adversarially trained models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Regularized Optimal Transport is Ground Cost Adversarial</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-03967</link>
+    <guid isPermaLink="false">arxiv:2002.03967</guid>
+    <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François-Pierre Paty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Regularizing the optimal transport (OT) problem has proven crucial for OT theory to impact the field of machine learning. For instance, it is known that regularizing OT problems with entropy leads to faster computations and better differentiation using the Sinkhorn algorithm, as well as better sample complexity bounds than classic OT. In this work we depart from this practical perspective and propose a new interpretation of regularization as a robust mechanism, and show using Fenchel duality that any convex regularization of OT can be interpreted as ground cost adversarial. This incidentally gives access to a robust dissimilarity measure on the ground space, which can in turn be used in other applications. We propose algorithms to compute this robust cost, and illustrate the interest of this approach empirically.</p>]]></description>
+  </item>
 
   <item>
     <title>Generalization Properties of Optimal Transport GANs with Latent Distribution Learning</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giulia Luise et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>We present a novel algorithm to estimate the barycenter of arbitrary probability distributions with respect to the Sinkhorn divergence. Based on a Frank-Wolfe optimization strategy, our approach proceeds by populating the support of the barycenter incrementally, without requiring any pre-allocation. We consider discrete as well as continuous distributions, proving convergence rates of the proposed algorithm in both settings. Key elements of our analysis are a new result showing that the Sinkhorn divergence on compact domains has Lipschitz continuous gradient with respect to the Total Variation and a characterization of the sample complexity of Sinkhorn potentials. Experiments validate the effectiveness of our method in practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Solving graph compression via optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-12158</link>
-    <guid isPermaLink="false">arxiv:1905.12158</guid>
-    <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vikas K. Garg et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose a new approach to graph compression by appeal to optimal transport. The transport problem is seeded with prior information about node importance, attributes, and edges in the graph. The transport formulation can be setup for either directed or undirected graphs, and its dual characterization is cast in terms of distributions over the nodes. The compression pertains to the support of node distributions and makes the problem challenging to solve directly. To this end, we introduce Boolean relaxations and specify conditions under which these relaxations are exact. The relaxations admit algorithms with provably fast convergence. Moreover, we provide an exact O(d logd) algorithm for the subproblem of projecting a d-dimensional vector to transformed simplex constraints. Our method outperforms state-of-the-art compression methods on graph classification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Entropic Regularisation of Robust Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-12678</link>
-    <guid isPermaLink="false">arxiv:1905.12678</guid>
-    <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rozenn Dahyot et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Grogan et al [11,12] have recently proposed a solution to colour transfer by minimising the Euclidean distance L2 between two probability density functions capturing the colour distributions of two images (palette and target). It was shown to be very competitive to alternative solutions based on Optimal Transport for colour transfer. We show that in fact Grogan et al&rsquo;s formulation can also be understood as a new robust Optimal Transport based framework with entropy regularisation over marginals.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Low-Complexity Data-Parallel Earth Mover's Distance Approximations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1812-02091</link>
-    <guid isPermaLink="false">arxiv:1812.02091</guid>
-    <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kubilay Atasu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>The Earth Mover&rsquo;s Distance (EMD) is a state-of-the art metric for comparing discrete probability distributions, but its high distinguishability comes at a high cost in computational complexity. Even though linear-complexity approximation algorithms have been proposed to improve its scalability, these algorithms are either limited to vector spaces with only a few dimensions or they become ineffective when the degree of overlap between the probability distributions is high. We propose novel approximation algorithms that overcome both of these limitations, yet still achieve linear time complexity. All our algorithms are data parallel, and thus, we take advantage of massively parallel computing engines, such as Graphics Processing Units (GPUs). On the popular text-based 20 Newsgroups dataset, the new algorithms are four orders of magnitude faster than a multi-threaded CPU implementation of Word Mover&rsquo;s Distance and match its nearest-neighbors-search accuracy. On MNIST images, the new algorithms are four orders of magnitude faster than a GPU implementation of the Sinkhorn&rsquo;s algorithm while offering a slightly higher nearest-neighbors-search accuracy.</p>]]></description>
   </item>
 
 </channel>

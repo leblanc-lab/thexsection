@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Neural Network-Based Search for Unmodeled Transients in LIGO-Virgo-KAGRA's Third Observing Run</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-19883</link>
+    <guid isPermaLink="false">arxiv:2412.19883</guid>
+    <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Raikman et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>This paper presents the results of a Neural Network (NN)-based search for short-duration gravitational-wave transients in data from the third observing run of LIGO, Virgo, and KAGRA. The search targets unmodeled transients with durations of milliseconds to a few seconds in the 30-1500 Hz frequency band, without assumptions about the incoming signal direction, polarization, or morphology. Using the Gravitational Wave Anomalous Knowledge (GWAK) method, three compact binary coalescences (CBCs) identified by existing pipelines are successfully detected, along with a range of detector glitches. The algorithm constructs a low-dimensional embedded space to capture the physical features of signals, enabling the detection of CBCs, detector glitches, and unmodeled transients. This study demonstrates GWAK&rsquo;s ability to enhance gravitational-wave searches beyond the limits of existing pipelines, laying the groundwork for future detection strategies.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Better Spherical Sliced-Wasserstein Distance Learning with Data-Adaptive Discriminative Projection Direction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-19212</link>
+    <guid isPermaLink="false">arxiv:2412.19212</guid>
+    <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongliang Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Spherical Sliced-Wasserstein (SSW) has recently been proposed to measure the discrepancy between spherical data distributions in various fields, such as geology, medical domains, computer vision, and deep representation learning. However, in the original SSW, all projection directions are treated equally, which is too idealistic and cannot accurately reflect the importance of different projection directions for various data distributions. To address this issue, we propose a novel data-adaptive Discriminative Spherical Sliced-Wasserstein (DSSW) distance, which utilizes a projected energy function to determine the discriminative projection direction for SSW. In our new DSSW, we introduce two types of projected energy functions to generate the weights for projection directions with complete theoretical guarantees. The first type employs a non-parametric deterministic function that transforms the projected Wasserstein distance into its corresponding weight in each projection direction. This improves the performance of the original SSW distance with negligible additional computational overhead. The second type utilizes a neural network-induced function that learns the projection direction weight through a parameterized neural network based on data projections. This further enhances the performance of the original SSW distance with less extra computational overhead. Finally, we evaluate the performance of our proposed DSSW by comparing it with several state-of-the-art methods across a variety of machine learning tasks, including gradient flows, density estimation on real earth data, and self-supervised learning.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Computing Approximate Graph Edit Distance via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-18857</link>
+    <guid isPermaLink="false">arxiv:2412.18857</guid>
+    <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qihao Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Given a graph pair (G¹, G²⁾, graph edit distance (GED) is defined as the minimum number of edit operations converting G¹ to G². GED is a fundamental operation widely used in many applications, but its exact computation is NP-hard, so the approximation of GED has gained a lot of attention. Data-driven learning-based methods have been found to provide superior results compared to classical approximate algorithms, but they directly fit the coupling relationship between a pair of vertices from their vertex features. We argue that while pairwise vertex features can capture the coupling cost (discrepancy) of a pair of vertices, the vertex coupling matrix should be derived from the vertex-pair cost matrix through a more well-established method that is aware of the global context of the graph pair, such as optimal transport. In this paper, we propose an ensemble approach that integrates a supervised learning-based method and an unsupervised method, both based on optimal transport. Our learning method, GEDIOT, is based on inverse optimal transport that leverages a learnable Sinkhorn algorithm to generate the coupling matrix. Our unsupervised method, GEDGW, models GED computation as a linear combination of optimal transport and its variant, Gromov-Wasserstein discrepancy, for node and edge operations, respectively, which can be solved efficiently without needing the ground truth. Our ensemble method, GEDHOT, combines GEDIOT and GEDGW to further boost the performance. Extensive experiments demonstrate that our methods significantly outperform the existing methods in terms of the performance of GED computation, edit path generation, and model generalizability.</p>]]></description>
+  </item>
 
   <item>
     <title>An efficient search-and-score algorithm for ancestral graphs using multivariate information scores</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenjia Bai et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Unsupervised Reinforcement Learning (RL) provides a promising paradigm for learning useful behaviors via reward-free per-training. Existing methods for unsupervised RL mainly conduct empowerment-driven skill discovery or entropy-based exploration. However, empowerment often leads to static skills, and pure exploration only maximizes the state coverage rather than learning useful behaviors. In this paper, we propose a novel unsupervised RL framework via an ensemble of skills, where each skill performs partition exploration based on the state prototypes. Thus, each skill can explore the clustered area locally, and the ensemble skills maximize the overall state coverage. We adopt state-distribution constraints for the skill occupancy and the desired cluster for learning distinguishable skills. Theoretical analysis is provided for the state entropy and the resulting skill distributions. Based on extensive experiments on several challenging tasks, we find our method learns well-explored ensemble skills and achieves superior performance in various downstream tasks compared to previous methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal transport for automatic alignment of untargeted metabolomic data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2306-03218</link>
-    <guid isPermaLink="false">arxiv:2306.03218</guid>
-    <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marie Breeur et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Untargeted metabolomic profiling through liquid chromatography-mass spectrometry (LC-MS) measures a vast array of metabolites within biospecimens, advancing drug development, disease diagnosis, and risk prediction. However, the low throughput of LC-MS poses a major challenge for biomarker discovery, annotation, and experimental comparison, necessitating the merging of multiple datasets. Current data pooling methods encounter practical limitations due to their vulnerability to data variations and hyperparameter dependence. Here we introduce GromovMatcher, a flexible and user-friendly algorithm that automatically combines LC-MS datasets using optimal transport. By capitalizing on feature intensity correlation structures, GromovMatcher delivers superior alignment accuracy and robustness compared to existing approaches. This algorithm scales to thousands of features requiring minimal hyperparameter tuning. Manually curated datasets for validating alignment algorithms are limited in the field of untargeted metabolomics, and hence we develop a dataset split procedure to generate pairs of validation datasets to test the alignments produced by GromovMatcher and other methods. Applying our method to experimental patient studies of liver and pancreatic cancer, we discover shared metabolic features related to patient alcohol intake, demonstrating how GromovMatcher facilitates the search for biomarkers associated with lifestyle risk factors linked to several cancer types.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Revisiting Counterfactual Regression through the Lens of Gromov-Wasserstein Information Bottleneck</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-15505</link>
-    <guid isPermaLink="false">arxiv:2405.15505</guid>
-    <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>As a promising individualized treatment effect (ITE) estimation method, counterfactual regression (CFR) maps individuals&rsquo; covariates to a latent space and predicts their counterfactual outcomes. However, the selection bias between control and treatment groups often imbalances the two groups&rsquo; latent distributions and negatively impacts this method&rsquo;s performance. In this study, we revisit counterfactual regression through the lens of information bottleneck and propose a novel learning paradigm called Gromov-Wasserstein information bottleneck (GWIB). In this paradigm, we learn CFR by maximizing the mutual information between covariates&rsquo; latent representations and outcomes while penalizing the kernelized mutual information between the latent representations and the covariates. We demonstrate that the upper bound of the penalty term can be implemented as a new regularizer consisting of i) the fused Gromov-Wasserstein distance between the latent representations of different groups and ii) the gap between the transport cost generated by the model and the cross-group Gromov-Wasserstein distance between the latent representations and the covariates. GWIB effectively learns the CFR model through alternating optimization, suppressing selection bias while avoiding trivial latent distributions. Experiments on ITE estimation tasks show that GWIB consistently outperforms state-of-the-art CFR methods. To promote the research community, we release our project at https://github.com/peteryang1031/Causal-GWIB.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GeONet: a neural operator for learning the Wasserstein geodesic</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2209-14440</link>
-    <guid isPermaLink="false">arxiv:2209.14440</guid>
-    <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrew Gracyk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) offers a versatile framework to compare complex data distributions in a geometrically meaningful way. Traditional methods for computing the Wasserstein distance and geodesic between probability measures require mesh-specific domain discretization and suffer from the curse-of-dimensionality. We present GeONet, a mesh-invariant deep neural operator network that learns the non-linear mapping from the input pair of initial and terminal distributions to the Wasserstein geodesic connecting the two endpoint distributions. In the offline training stage, GeONet learns the saddle point optimality conditions for the dynamic formulation of the OT problem in the primal and dual spaces that are characterized by a coupled PDE system. The subsequent inference stage is instantaneous and can be deployed for real-time predictions in the online learning setting. We demonstrate that GeONet achieves comparable testing accuracy to the standard OT solvers on simulation examples and the MNIST dataset with considerably reduced inference-stage computational cost by orders of magnitude.</p>]]></description>
   </item>
 
 </channel>

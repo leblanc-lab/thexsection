@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>AI Agents Can Already Autonomously Perform Experimental High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-20179</link>
+    <guid isPermaLink="false">arxiv:2603.20179</guid>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric A. Moreno et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Lund plane, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Large language model-based AI agents are now able to autonomously execute substantial portions of a high energy physics (HEP) analysis pipeline with minimal expert-curated input. Given access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find that Claude Code succeeds in automating all stages of a typical analysis: event selection, background estimation, uncertainty quantification, statistical inference, and paper drafting. We argue that the experimental HEP community is underestimating the current capabilities of these systems, and that most proposed agentic workflows are too narrowly scoped or scaffolded to specific analysis structures. We present a proof-of-concept framework, Just Furnish Context (JFC), that integrates autonomous analysis agents with literature-based knowledge retrieval and multi-agent review, and show that this is sufficient to plan, execute, and document a credible high energy physics analysis. We demonstrate this by conducting analyses on open data from ALEPH, DELPHI, and CMS to perform electroweak, QCD, and Higgs boson measurements. We present two of those results in a condensed short paper form &ndash; a CMS Run1 Open Data H→τ⁺τ⁻ to demonstrate performance on a well-established result, and the first Lund plane measurement on LEP data &ndash; a genuinely novel result and, to our knowledge, the first produced autonomously by an AI agent. Rather than replacing physicists, these tools promise to offload the repetitive technical burden of analysis code development, freeing researchers to focus on physics insight, truly novel method development, and rigorous validation. Given these developments, we advocate for new strategies for how the community trains students, organizes analysis efforts, and allocates human expertise.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Ultrafast On-Chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-02056</link>
+    <guid isPermaLink="false">arxiv:2602.02056</guid>
+    <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Duc Hoang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Field-Programmable Gate Arrays (FPGAs), a representative platform for on-chip computation, we demonstrate that KAN-based online learners are significantly more efficient and expressive than MLPs across a range of low-latency and resource-constrained tasks. To our knowledge, this work is the first to demonstrate model-free online learning at sub-microsecond latencies.</p>]]></description>
+  </item>
+
+  <item>
+    <title>What Do Lorentz-Equivariant Jet Taggers Learn?</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-21790</link>
+    <guid isPermaLink="false">arxiv:2606.21790</guid>
+    <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jay Agarwal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet mass, N-subjettiness, jet taggers) — original abstract; no AI summary.</em></p>
+<p>We study what Lorentz-equivariant jet taggers learn internally, using equivariance tests, linear probes and grade ablations across five models including L-GATr, L-GATr-slim and LLoCa-T. Linear probes show that equivariant models suppress frame-dependent pseudorapidity to zero while encoding jet mass and N-subjettiness strongly. Grade ablations on L-GATr reveal that bivector channels are negligible for top-quark tagging while vector-like channels are dominant but seed variable, consistent with the network exploiting multiple representational pathways. These results characterize which physical features and algebraic grade structures carry discriminative information in equivariant taggers and may inform future development of such models.</p>]]></description>
+  </item>
 
   <item>
     <title>Mixture-of-Experts Graph Transformers for Interpretable Particle Collision Detection</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiangwei Peng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The Wasserstein-Fisher-Rao (WFR) metric extends dynamic optimal transport (OT) by coupling displacement with change of mass, providing a principled geometry for modeling unbalanced snapshot dynamics. Existing WFR solvers, however, are often unstable, computationally expensive, and difficult to scale. Here we introduce WFR Flow Matching (WFR-FM), a simulation-free training algorithm that unifies flow matching with dynamic unbalanced OT. Unlike classical flow matching which regresses only a transport vector field, WFR-FM simultaneously regresses a vector field for displacement and a scalar growth rate function for birth-death dynamics, yielding continuous flows under the WFR geometry. Theoretically, we show that minimizing the WFR-FM loss exactly recovers WFR geodesics. Empirically, WFR-FM yields more accurate and robust trajectory inference in single-cell biology, reconstructing consistent dynamics with proliferation and apoptosis, estimating time-varying growth fields, and applying to generative dynamics under imbalanced data. It outperforms state-of-the-art baselines in efficiency, stability, and reconstruction accuracy. Overall, WFR-FM establishes a unified and efficient paradigm for learning dynamical systems from unbalanced snapshots, where not only states but also mass evolve over time. The Python code is available at https://github.com/QiangweiPeng/WFR-FM.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Random Coordinate Descent on the Wasserstein Space of Probability Measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01606</link>
-    <guid isPermaLink="false">arxiv:2604.01606</guid>
-    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yewei Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Optimization over the space of probability measures endowed with the Wasserstein-2 geometry is central to modern machine learning and mean-field modeling. However, traditional methods relying on full Wasserstein gradients often suffer from high computational overhead in high-dimensional or ill-conditioned settings. We propose a randomized coordinate descent framework specifically designed for the Wasserstein manifold, introducing both Random Wasserstein Coordinate Descent (RWCD) and Random Wasserstein Coordinate Proximal{-Gradient} (RWCP) for composite objectives. By exploiting coordinate-wise structures, our methods adapt to anisotropic objective landscapes where full-gradient approaches typically struggle. We provide a rigorous convergence analysis across various landscape geometries, establishing guarantees under non-convex, Polyak-Łojasiewicz, and geodesically convex conditions. Our theoretical results mirror the classic convergence properties found in Euclidean space, revealing a compelling symmetry between coordinate descent on vectors and on probability measures. The developed techniques are inherently adaptive to the Wasserstein geometry and offer a robust analytical template that can be extended to other optimization solvers within the space of measures. Numerical experiments on ill-conditioned energies demonstrate that our framework offers significant speedups over conventional full-gradient methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Taming the Exponential: A Fast Softmax Surrogate for Integer-Native Edge Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02292</link>
-    <guid isPermaLink="false">arxiv:2604.02292</guid>
-    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dimitrios Danopoulos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Softmax can become a computational bottleneck in the Transformer model&rsquo;s Multi-Head Attention (MHA) block, particularly in small models under low-precision inference, where exponentiation and normalization incur significant overhead. As such, we suggest using Head-Calibrated Clipped-Linear Softmax (HCCS), a bounded, monotone surrogate to the exponential softmax function, which uses a clipped linear mapping of the max centered attention logits. This approximation produces a stable probability distribution, maintains the ordering of the original logits and has non-negative values. HCCS differs from previous softmax surrogates as it includes a set of lightweight calibration parameters that are optimized offline based on a representative dataset and calibrated for each individual attention head to preserve the statistical properties of the individual heads. We describe a hardware-motivated implementation of HCCS for high-throughput scenarios targeting the AMD Versal AI Engines. The current reference implementations from AMD for this platform rely upon either bfloat16 arithmetic or LUTs to perform the exponential operation, which might limit the throughput of the platform and fail to utilize the high-throughput integer vector processing units of the AI Engine. In contrast, HCCS provides a natural mapping to the AI Engines&rsquo; int8 multiply accumulate (MAC) units. To the best of our knowledge, this is the first int8 optimized softmax surrogate for AMD AI engines that significantly exceeds the speed performance of other reference implementations while maintaining competitive task accuracy on small or heavily quantized MHA workloads after quantization-aware retraining.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01279</link>
-    <guid isPermaLink="false">arxiv:2604.01279</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Bright-Thonney et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler) — original abstract; no AI summary.</em></p>
-<p>We introduce Sven (Singular Value dEsceNt), a new optimization algorithm for neural networks that exploits the natural decomposition of loss functions into a sum over individual data points, rather than reducing the full loss to a single scalar before computing a parameter update. Sven treats each data point&rsquo;s residual as a separate condition to be satisfied simultaneously, using the Moore-Penrose pseudoinverse of the loss Jacobian to find the minimum-norm parameter update that best satisfies all conditions at once. In practice, this pseudoinverse is approximated via a truncated singular value decomposition, retaining only the k most significant directions and incurring a computational overhead of only a factor of k relative to stochastic gradient descent. This is in comparison to traditional natural gradient methods, which scale as the square of the number of parameters. We show that Sven can be understood as a natural gradient method generalized to the over-parametrized regime, recovering natural gradient descent in the under-parametrized limit. On regression tasks, Sven significantly outperforms standard first-order methods including Adam, converging faster and to a lower final loss, while remaining competitive with LBFGS at a fraction of the wall-time cost. We discuss the primary challenge to scaling, namely memory overhead, and propose mitigation strategies. Beyond standard machine learning benchmarks, we anticipate that Sven will find natural application in scientific computing settings where custom loss functions decompose into several conditions.</p>]]></description>
   </item>
 
 </channel>

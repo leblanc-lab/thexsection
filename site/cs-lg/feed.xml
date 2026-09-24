@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Sharp Convergence of Wasserstein Gradient Flows for Spectrally Nonnegative Interaction Energies</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-27008</link>
+    <guid isPermaLink="false">arxiv:2609.27008</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhengjiang Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the long-time behavior of Wasserstein gradient flows for interaction energies [ \mathsf E[\mu] = \frac12\iint_{M\times M}K(x,y)\,\mathrm d\mu(x)\,\mathrm d\mu(y) ] on a closed manifold M. For kernels diagonal in a Laplace eigenbasis with nonnegative spectral coefficients, we prove a differential inequality relating the relative entropy to the energy gap. Consequently, for any nonnegative initial density u_0∈L^p(M), p&gt;1, the energy gap is integrable in time and satisfies [ \mathsf E[\mu_t]-\mathsf E_{\min}=o(t^{-1}). ] If all spectral coefficients are positive, the flow converges weakly to the constant measure. These interaction energies need not be geodesically convex in Wasserstein space, and the associated flows contain no diffusion; their global convergence therefore does not follow from standard Wasserstein gradient flow theory. The kernels covered by our results include zonal kernels on spheres, kernels arising in transformer models, regularized Riesz kernels, and inverse fractional Laplacian kernels. We also investigate the sharpness of the o(t⁻¹⁾ rate. For any smooth kernel in this class with infinitely many positive spectral coefficients and any δ&gt;0, we construct a solution of the linearized flow whose energy is comparable to t⁻¹⁻δ along a sequence of times tending to infinity. Moreover, for any δ&gt;0, by choosing a suitable inverse fractional Laplacian kernel on the flat torus, we construct an exact solution of the nonlinear Wasserstein gradient flow whose energy is comparable to t⁻¹⁻δ. The nonlinear construction is based on uniform-in-time estimates for the evolution of the dyadic Fourier coefficient blocks and a blockwise energy-persistence argument. These estimates also yield a uniform-in-time quantitative comparison between the nonlinear Wasserstein gradient flow and its linearization.</p>]]></description>
+  </item>
+
+  <item>
+    <title>WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-27033</link>
+    <guid isPermaLink="false">arxiv:2609.27033</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abbas Mammadov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Reward fine-tuning aims to update a pre-trained flow-based generative model to improve the downstream reward of its generated samples. Existing methods typically formulate this problem as sampling from a reward-tilted distribution, the solution to a KL-regularized reward-maximization problem. Here, we introduce an optimal transport regularizer built directly from the pre-trained drift. Unlike KL reward tilting, the resulting objective transports individual samples toward higher reward rather than reweighting the base distribution. We show that the resulting problem is equivalent to a deterministic optimal control problem on the flow. Given a pre-trained flow map, this equivalence yields a simulation-free reinforcement learning algorithm for fine-tuning generative flows. We call the resulting framework Wasserstein-Tilted Flow Maps (WTF), the first end-to-end fine-tuning recipe native to flow maps. The output is a fine-tuned flow map that retains strong reward-aligned performance at few-step inference budgets without post-hoc distillation. Experiments on ImageNet-256 and text-to-image show that WTF achieves higher reward with comparable or higher diversity than baselines, while requiring up to 280× less training compute. More broadly, we argue that accelerated samplers such as flow maps are essential infrastructure for efficient post-training, and that the dominant KL-regularized formulation is only one of many choices worth revisiting.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Pheno-GS: Phenoscape-scale Geodesic Sinkhorn</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-27633</link>
+    <guid isPermaLink="false">arxiv:2609.27633</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alistair Wilkinson et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>High-throughput single-cell data is now collected across large patient cohorts. Understanding patient-level heterogeneity from cellular-level data motivates phenoscaping: embedding each single-cell distribution as a &ldquo;datapoint,&rdquo; with distances given by optimal transport (OT). Computing geometry-aware OT at this scale, between all pairs of patient datasets, remains an open challenge, since existing methods either rely on Euclidean ground metrics that distort manifold structure or fail under sparse, unevenly sampled, or large-scale data. We present \textbf{Pheno-GS} (Phenoscape-scale Geodesic Sinkhorn), which computes accurate, scalable geodesic transport distances under noisy, unbalanced, large-scale settings via three components: (1) graph connectivity regularization for well-defined geodesics on sparse/disconnected manifolds; (2) an unbalanced OT formulation via KL marginal penalties; and (3) a batched matrix algorithm computing all pairwise distances in one heat diffusion (over 200 × faster than Geodesic Sinkhorn for 500 distributions). We validate Pheno-GS on synthetic benchmarks and a CyTOF perturbation dataset.</p>]]></description>
+  </item>
 
   <item>
     <title>When Riemann flows with Wasserstein: Generative Modeling of Probability Distributions on Manifolds</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eunho Koo et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Statistical matching combines partially overlapping datasets that share covariates X but observe the target Y and auxiliary variables Z separately. Classical approaches typically invoke the conditional independence assumption (CIA), which makes the problem identifiable but fundamentally implies that the imported auxiliary variable provides no additional predictive power for Y once X is known. To capture this latent Y&ndash;Z dependence, we propose a novel dependency-aware Schrödinger bridge for predictive statistical matching. Our approach couples the two separated databases by tilting the conservative CIA baseline with a transportation-based compatibility cost, recovering an informative joint distribution. The resulting statistical learning framework yields full probabilistic posterior rules for bidirectional imputation. Theoretically, we establish a sufficient condition under which the learned bridge strictly improves over the CIA baseline, alongside an exact joint recovery guarantee in the Gaussian setting under an appropriate cost. Across synthetic benchmarks and real-world datasets (CelebA and Adult), we demonstrate that our dependency-aware completion consistently improves downstream predictive utility, proving especially beneficial in settings like data recoding where the underlying population exhibits strong Y&ndash;Z dependence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AI Agents Can Already Autonomously Perform Experimental High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-20179</link>
-    <guid isPermaLink="false">arxiv:2603.20179</guid>
-    <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric A. Moreno et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Lund plane, Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Large language model-based AI agents are now able to autonomously execute substantial portions of a high energy physics (HEP) analysis pipeline with minimal expert-curated input. Given access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find that Claude Code succeeds in automating all stages of a typical analysis: event selection, background estimation, uncertainty quantification, statistical inference, and paper drafting. We argue that the experimental HEP community is underestimating the current capabilities of these systems, and that most proposed agentic workflows are too narrowly scoped or scaffolded to specific analysis structures. We present a proof-of-concept framework, Just Furnish Context (JFC), that integrates autonomous analysis agents with literature-based knowledge retrieval and multi-agent review, and show that this is sufficient to plan, execute, and document a credible high energy physics analysis. We demonstrate this by conducting analyses on open data from ALEPH, DELPHI, and CMS to perform electroweak, QCD, and Higgs boson measurements. We present two of those results in a condensed short paper form &ndash; a CMS Run1 Open Data H→τ⁺τ⁻ to demonstrate performance on a well-established result, and the first Lund plane measurement on LEP data &ndash; a genuinely novel result and, to our knowledge, the first produced autonomously by an AI agent. Rather than replacing physicists, these tools promise to offload the repetitive technical burden of analysis code development, freeing researchers to focus on physics insight, truly novel method development, and rigorous validation. Given these developments, we advocate for new strategies for how the community trains students, organizes analysis efforts, and allocates human expertise.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Ultrafast On-Chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-02056</link>
-    <guid isPermaLink="false">arxiv:2602.02056</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Duc Hoang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Field-Programmable Gate Arrays (FPGAs), a representative platform for on-chip computation, we demonstrate that KAN-based online learners are significantly more efficient and expressive than MLPs across a range of low-latency and resource-constrained tasks. To our knowledge, this work is the first to demonstrate model-free online learning at sub-microsecond latencies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>What Do Lorentz-Equivariant Jet Taggers Learn?</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-21790</link>
-    <guid isPermaLink="false">arxiv:2606.21790</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jay Agarwal et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet mass, N-subjettiness, jet taggers) — original abstract; no AI summary.</em></p>
-<p>We study what Lorentz-equivariant jet taggers learn internally, using equivariance tests, linear probes and grade ablations across five models including L-GATr, L-GATr-slim and LLoCa-T. Linear probes show that equivariant models suppress frame-dependent pseudorapidity to zero while encoding jet mass and N-subjettiness strongly. Grade ablations on L-GATr reveal that bivector channels are negligible for top-quark tagging while vector-like channels are dominant but seed variable, consistent with the network exploiting multiple representational pathways. These results characterize which physical features and algebraic grade structures carry discriminative information in equivariant taggers and may inform future development of such models.</p>]]></description>
   </item>
 
 </channel>
