@@ -29,10 +29,11 @@ a local SQLite metadata cache.
 ## Cost
 
 Development/testing runs on the **Gemini free tier** ($0). Production on
-**Claude Opus 4.8** costs roughly **$0.75/day (~$18/month)** for hep-ex+hep-ph:
-~40K input tokens for the digest, plus deep dives and the memory refresh.
-Levers, cheapest first: `deep_dive.count: 0`, switch `llm.provider`/model
-(e.g. `claude-sonnet-5`), or move calls to the Batches API (50% off, future work).
+**Claude Opus 5.5** ($4/$20 per MTok) costs roughly **$0.60/day (~$14/month)** for
+hep-ex+hep-ph before the Batches API discount: ~40K input tokens for the digest,
+plus deep dives and the memory refresh. Levers, cheapest first: `deep_dive.count: 0`,
+switch `llm.provider`/model (e.g. `claude-sonnet-5`), or keep `llm.batch: true`
+(50% off, already on for the nightly run).
 
 ## Running locally
 
