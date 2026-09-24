@@ -7,7 +7,48 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Towards Foundation Models on Hardware Accelerators for Particle Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2609-26899</link>
+    <guid isPermaLink="false">arxiv:2609.26899</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maya Benyas et al.</dc:creator>
+    <description><![CDATA[<p>The authors distil the 423M-parameter OmniLearned-Large model into Deep Sets students on the standard Pythia+Delphes top-tagging dataset (p_T 550–650 GeV). The teacher was pretrained on &gt;1B jets across 210 classes, then fine-tuned to AUC 0.9880 and 1/ϵ_B = 3365 at ϵ_S = 30%. The distillation loss uses α = β = 0.5 and T = 4.</p>
+<p>Results at 30% signal efficiency:</p>
+<table>
+<thead>
+<tr>
+<th>Change</th>
+<th>Rejection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adding one message-passing layer (logm_ij, logΔR_ij, logk_T,ij on the top-64 constituents; 11k → 17k params)</td>
+<td>748 → 1980</td>
+</tr>
+<tr>
+<td>Distillation vs. hard-label cross-entropy (same student)</td>
+<td>1216 → 1980</td>
+</tr>
+<tr>
+<td>Distilling from the pretrained teacher vs. a from-scratch teacher of the same architecture</td>
+<td>1020 → 1980</td>
+</tr>
+</tbody>
+</table>
+<p>Accuracy moves by only ~0.2–0.3 points across these comparisons, so the pretraining benefit sits almost entirely in the ROC tail. The pretrained teacher itself has ~4× better rejection than its from-scratch counterpart, and roughly half of that gain survives into the student. This is the first demonstration that the <em>pretraining</em> benefit, not just the teacher&rsquo;s capacity, transfers through distillation. The best student reaches 93.98% accuracy versus 94.38% for OmniLearned-Small, with 155× fewer parameters.</p>
+<p>Quantization:
+- <strong>Post-training quantization at 8 bits</strong> is destructive: 59% accuracy for the message-passing student, and chance level at 4 bits.
+- <strong>Quantization-aware training at 8 bits</strong> (Brevitas) recovers 93.95% accuracy and 1787 rejection.</p>
+<p>Caveats:
+- No HLS/FPGA synthesis, latency or resource numbers yet.
+- The message-passing student costs 14.3M MACs per jet versus 305k for plain Deep Sets. That 47× gap is what will matter against a µs-scale trigger budget, and the paper does not yet address it.
+- There is a single hyperparameter point, and K = 64 was not optimized.
+- Only the saturated top-tagging benchmark is tested.</p>]]></description>
+  </item>
 
   <item>
     <title>Search for boosted VBS W^±W^±H production with same-sign leptons and b-jets</title>
@@ -2001,16 +2042,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weizheng Song et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (particle flow) — abstract only, not yet read for a briefing.</em></p>
 <p>Crystal electromagnetic calorimeters (ECALs) are essential for high-precision measurements of electrons and photons in particle physics experiments. However, the conventional design, in which long crystal bars point radially toward the interaction region and lack longitudinal segmentation, is incompatible with the three-dimensional shower imaging required by Particle Flow Approach (PFA). We propose a novel perspective on crystal ECAL design to address this limitation. The key innovation is a geometric reconfiguration in which crystal bars are oriented to face the interaction region and arranged orthogonally in adjacent longitudinal layers. This layout achieves fine spatial segmentation of energy deposits by correlating measurements of orthogonal crystal bars. An interleaved structure of regular and inverted trapezoidal modules is incorporated to maximize structural uniformity and detector hermeticity. This design is engineered to preserve the excellent intrinsic energy resolution of crystal ECALs while simultaneously providing the detailed three-dimensional shower imaging essential for PFA. Simulation results confirm the feasibility of achieving excellent energy resolution of 1.14%/√(E) ⊕0.44%. Consequently, the proposed design repositions crystal ECAL as a foundational component for PFA-oriented detector systems at facilities such as the Circular Electron Positron Collider (CEPC), offering a new technical pathway to advance the physics goals of future colliders.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for pair production of heavy resonances in final states with a photon and large-radius jets in proton-proton collisions at √(s) = 13 TeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2602-20477</link>
-    <guid isPermaLink="false">arxiv:2602.20477</guid>
-    <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, large-radius jets) — abstract only, not yet read for a briefing.</em></p>
-<p>A search for the pair production of heavy spin-1/2 or spin-3/2 resonances (t^<em>) in proton-proton collisions at √(s) = 13 TeV is presented. Data collected with the CMS detector at the CERN LHC from 2016 to 2018 corresponding to an integrated luminosity of 138 fb⁻¹ are used. The analysis targets benchmark signal scenarios where one t^</em> decays into a top quark (t) and a photon (γ), and the other into a t quark and a gluon (g), i.e., pp → t^<em>t̅^</em> → ttγg. All-hadronic final states from the t pair decay chain are selected using jet substructure techniques. The signal is probed as a function of the t^<em> candidate mass, which is reconstructed using the photon and a top quark candidate jet. No significant deviation from the background-only hypothesis is found. Observed (expected) upper limits on the signal cross section at 95% confidence level are set, excluding masses of spin-1/2 t^</em> particles below 930 (930) GeV and spin-3/2 t^<em> particles below 1330 (1390) GeV. This analysis marks the first search for heavy resonances in the tt̅γg channel. Exploiting the high-energy photon to reduce the backgrounds, this search achieves sensitivity competitive with pp → t^</em>t̅^<em> → tt̅gg searches for spin-1/2 t^</em> despite the small expected t^* → tγ branching fraction.</p>]]></description>
   </item>
 
 </channel>

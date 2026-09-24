@@ -7,7 +7,17 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Towards Foundation Models on Hardware Accelerators for Particle Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2609-26899</link>
+    <guid isPermaLink="false">arxiv:2609.26899</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maya Benyas et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — abstract only, not yet read for a briefing.</em></p>
+<p>Bandwidth constraints require many particle physics experiments to make real-time decisions on custom hardware or firmware running simplified algorithms, unlike offline analysis, where latency is usually not a limiting factor. For example, for particle jet tagging at colliders, state-of-the-art performance is achieved by foundation models with hundreds of millions of parameters pre-trained with billions of jets. We use knowledge distillation to transfer what such models have learned into efficient networks towards deployment in hardware accelerators. The teacher is the OmniLearned foundation model fine-tuned on top quark jet tagging; the student is an attention-free Deep Sets network. We demonstrate three ways the student&rsquo;s performance improves: adding a message-passing layer to the Deep Sets architecture, training on the teacher&rsquo;s soft labels rather than on ground-truth labels alone, and distilling from a pretrained teacher rather than from the same architecture trained from scratch. In each case the gain is largest in the background rejection at low signal efficiency, the regime that is most relevant for a trigger.</p>]]></description>
+  </item>
 
   <item>
     <title>Cross-Detector Transfer Learning with Parnassus: From ALEPH to SLD</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yilun Wu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — abstract only, not yet read for a briefing.</em></p>
 <p>Jet quenching is a phenomenon in heavy-ion collisions arising from jet interactions with the quark-gluon plasma (QGP). Its study is complicated by the interplay of multiple physics processes that affect jet observables. In addition, detector effects may influence the results and must be accounted for when identifying quenched jets. We employ a Long Short-Term Memory (LSTM) neural network trained on jet substructure, incorporating parton shower history, to predict jet-by-jet quenching levels. Using photon-jet samples from the \textsc{Jewel} event generator, we show that the LSTM predictions strongly correlate with true jet energy loss. This validates that the model effectively learns the features of jet-QGP interaction. We simulate detector effects using \textsc{Delphes} simulation framework and demonstrate that the method identifies quenching effects in a realistic environment. We test the approach with photon-jet momentum imbalance, jet fragmentation function, and jet shape, which were not included in the training, confirming its ability to distinguish true quenching features.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Accelerated Sequential Posterior Inference via Reuse for Gravitational-Wave Analyses</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-04218</link>
-    <guid isPermaLink="false">arxiv:2511.04218</guid>
-    <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael J. Williams</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mike Williams) — abstract only, not yet read for a briefing.</em></p>
-<p>We introduce Accelerated Sequential Posterior Inference via Reuse (ASPIRE), a broadly applicable framework that transforms existing posterior samples and Bayesian evidence estimates into unbiased results under alternative models without rerunning the original analysis. ASPIRE combines normalizing flows with a generalized Sequential Monte Carlo (SMC) scheme, enabling efficient updates of existing results and reducing total likelihood evaluations and wall times by factors of up to 5.8 and 5.5, respectively, with larger gains per posterior sample. This addresses a growing problem in gravitational-wave astronomy, where events must be repeatedly reanalyzed under different models or physical hypotheses. We show that ASPIRE reproduces full Bayesian results when switching waveform models or adding physical effects such as spin precession and orbital eccentricity. With this statistical robustness, ASPIRE turns repeated reanalyses into fast, reliable updates-paving the way for systematic studies of waveform systematics, scalable reanalyses across large event catalogs, and broadly applicable Bayesian reanalysis across other scientific domains.</p>]]></description>
   </item>
 
 </channel>

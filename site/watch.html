@@ -39,6 +39,67 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Thursday, September 24, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv260926870-the-lhc-is-not-enough-the-lz-high-recoil-event-at-fcc-hh-and-a-muon-collider-benedikt-maier-et-al"><a href="https://arxiv.org/abs/2609.26870">arXiv:2609.26870</a> — The LHC is not enough: the LZ High-Recoil Event at FCC-hh and a Muon Collider (Benedikt Maier et al.)</h3>
+<p>Maier and Spannowsky take the LZ 248 keV nuclear-recoil candidate (2.6σ global) as motivation for a class of collider targets: pure <span class="arithmatex">\(Y\neq0\)</span> electroweak multiplets with endothermic <span class="arithmatex">\(Z\)</span>-mediated scattering and sub-<span class="arithmatex">\(2m_e\)</span> neutral splitting. That splitting makes the neutral transitions invisible. Thermal masses run from 0.58 TeV (scalar doublet) to 11.5 TeV (scalar quintuplet). Within the leading-operator EFT, a charged-state trace sum rule caps <span class="arithmatex">\(\Delta_{\rm min}\lesssim 0.17\)</span> GeV for the quadruplets and quintuplets, which implies <span class="arithmatex">\(c\tau\gtrsim 18\)</span>–27 mm. Most of the new quantitative work is FCC-hh: a disappearing-track rescaling model, plus monojet and Drell–Yan arguments. The muon-collider section is a <strong>compilation of published reaches</strong> (mainly Refs. [29, 32, 67]) mapped onto this benchmark set. There is no new muon-collider simulation.</p>
+<p>The muon-collider case, as mapped here:
+- <strong>Why it suits these targets:</strong> lifetime-independent mono-γ/mono-W recoil searches. Disappearing-track reach approaches <span class="arithmatex">\(\sqrt{s}/2\)</span> for long-lived states but only ~<span class="arithmatex">\(0.3\sqrt{s}\)</span> for the mm-scale doublet. Beam-induced-background-inclusive disappearing- and long-track studies cover the thermal Higgsino and wino at 10 TeV.
+- <strong>Coverage table:</strong>
+  - fermion doublet: ≥3 TeV
+  - scalar doublet: 6 TeV (disappearing tracks)
+  - fermion triplet: ≥10 TeV
+  - scalar triplet: 14 TeV (missing invariant mass; needs sub-percent systematics)
+  - fermion quadruplet: ≥14 TeV (recoil channel needs sub-percent systematics, otherwise tracks)
+  - fermion quintuplet: ≳20 TeV
+  - scalar quintuplet: not reached at 30 TeV
+- <strong>Headline:</strong> 30 TeV covers the full fermionic family.</p>
+<p>The useful framing is that recoil channels settle the doublet and triplet without knowing the charged spectrum, which is unpredicted once custodial-breaking operators are allowed.</p>
+<p>Caveats:
+- Recoil projections assume 0–1‰ systematics, with 1% quoted only where it changes the conclusion.
+- The HTML I received truncates mid-§VI, so the detailed muon-collider discussion and caveats section were not available.
+- The authors themselves note that a full-density thermal Higgsino is in tension with solar-capture limits (<span class="arithmatex">\(\delta m_0\gtrsim0.51\)</span> MeV) and with the empty LZ high-energy sideband.</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv260926899-towards-foundation-models-on-hardware-accelerators-for-particle-physics-maya-benyas-et-al"><a href="https://arxiv.org/abs/2609.26899">arXiv:2609.26899</a> — Towards Foundation Models on Hardware Accelerators for Particle Physics (Maya Benyas et al.)</h3>
+<p>The authors distil the 423M-parameter OmniLearned-Large model into Deep Sets students on the standard Pythia+Delphes top-tagging dataset (<span class="arithmatex">\(p_T\)</span> 550–650 GeV). The teacher was pretrained on &gt;1B jets across 210 classes, then fine-tuned to AUC 0.9880 and <span class="arithmatex">\(1/\epsilon_B\)</span> = 3365 at <span class="arithmatex">\(\epsilon_S\)</span> = 30%. The distillation loss uses α = β = 0.5 and T = 4.</p>
+<p>Results at 30% signal efficiency:</p>
+<table>
+<thead>
+<tr>
+<th>Change</th>
+<th>Rejection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adding one message-passing layer (<span class="arithmatex">\(\log m_{ij}\)</span>, <span class="arithmatex">\(\log\Delta R_{ij}\)</span>, <span class="arithmatex">\(\log k_{T,ij}\)</span> on the top-64 constituents; 11k → 17k params)</td>
+<td>748 → 1980</td>
+</tr>
+<tr>
+<td>Distillation vs. hard-label cross-entropy (same student)</td>
+<td>1216 → 1980</td>
+</tr>
+<tr>
+<td>Distilling from the pretrained teacher vs. a from-scratch teacher of the same architecture</td>
+<td>1020 → 1980</td>
+</tr>
+</tbody>
+</table>
+<p>Accuracy moves by only ~0.2–0.3 points across these comparisons, so the pretraining benefit sits almost entirely in the ROC tail. The pretrained teacher itself has ~4× better rejection than its from-scratch counterpart, and roughly half of that gain survives into the student. This is the first demonstration that the <em>pretraining</em> benefit, not just the teacher&rsquo;s capacity, transfers through distillation. The best student reaches 93.98% accuracy versus 94.38% for OmniLearned-Small, with 155× fewer parameters.</p>
+<p>Quantization:
+- <strong>Post-training quantization at 8 bits</strong> is destructive: 59% accuracy for the message-passing student, and chance level at 4 bits.
+- <strong>Quantization-aware training at 8 bits</strong> (Brevitas) recovers 93.95% accuracy and 1787 rejection.</p>
+<p>Caveats:
+- No HLS/FPGA synthesis, latency or resource numbers yet.
+- The message-passing student costs 14.3M MACs per jet versus 305k for plain Deep Sets. That 47× gap is what will matter against a µs-scale trigger budget, and the paper does not yet address it.
+- There is a single hyperparameter point, and K = 64 was not optimized.
+- Only the saturated top-tagging benchmark is tested.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Wednesday, September 23, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -388,7 +449,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-24 07:23 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-24 08:42 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
