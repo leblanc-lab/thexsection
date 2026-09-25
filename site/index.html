@@ -34,88 +34,106 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Thursday, September 24, 2026</h1>
+  <h1 class="issue-date">Friday, September 25, 2026</h1>
   <div class="meta">
-    <span class="count">52 papers read</span>
-    <span class="chip">Sterile neutrinos re-examined</span><span class="chip">Supercooled transitions meet BBN</span><span class="chip">LZ versus solar capture</span><span class="chip">Trigger-grade ML</span>
+    <span class="count">46 papers read</span>
+    <span class="chip">LZ models go heavy</span><span class="chip">Inclusive |V_cb| still stuck</span><span class="chip">Inference and generator tooling</span><span class="chip">Initial state vs energy loss</span>
   </div>
-  <h2 id="no-discoveries-one-careful-fit">No discoveries, one careful fit</h2>
-<p>After three days of experimental spectroscopy, today brings no new data. The most useful paper is a reanalysis. Woodward et al. <a href="https://arxiv.org/abs/2609.26965">arXiv:2609.26965</a> fit MiniBooNE and MicroBooNE jointly within 3+1 using simulation-based inference, with all data-driven factors removed. The preference for a sterile neutrino drops to 2.7σ, and the two experiments disagree with each other at ≥2.5σ inside the model. Elsewhere, the day&rsquo;s cosmology papers find BBN deuterium constraining supercooled phase transitions, and the LZ papers now mostly work around solar capture rather than fit the event.</p>
+  <h2 id="inclusive-v_cb-holds-lz-goes-heavy">Inclusive |V_cb| holds, LZ goes heavy</h2>
+<p>Fael et al. <a href="https://arxiv.org/abs/2609.28752">arXiv:2609.28752</a> run a global HQE fit that treats perturbative scales as correlated nuisances and get <span class="arithmatex">\(|V_{cb}|=(42.32\pm0.30)\times10^{-3}\)</span>. That is a tight inclusive anchor against the exclusive determination that has kept <span class="arithmatex">\(R(D^{(*)})\)</span> awkward since August (<a href="https://arxiv.org/abs/2608.24332">arXiv:2608.24332</a>). The fit to the full moment set is poor, though, and the authors say so. The LZ recoil still accounts for five papers. Yesterday&rsquo;s move was to engineer around solar capture, and today&rsquo;s is to move out of its reach, with mass scales from 250 MeV to <span class="arithmatex">\(10^{11}\)</span> GeV.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="sterile-neutrinos-under-a-sharper-lens">Sterile neutrinos under a sharper lens</h3>
-<p>Woodward et al. <a href="https://arxiv.org/abs/2609.26965">arXiv:2609.26965</a> also introduce an SBI method that makes trials-calibrated parameter-goodness-of-fit tension tractable. This continues last week&rsquo;s statistics-tooling thread (coverage, ordering), here applied to a physics question. Around it:
-- Koranga et al. <a href="https://arxiv.org/abs/2609.27540">arXiv:2609.27540</a> trace δ₁₃ bias under PREM Earth profiles in 3+1.
-- Sengupta et al. <a href="https://arxiv.org/abs/2609.27670">arXiv:2609.27670</a> put visible-decay CP asymmetry on IBM hardware.
-- Chauhan et al. <a href="https://arxiv.org/abs/2609.26908">arXiv:2609.26908</a> propose the supernova 511 keV echo as an astrophysical &ldquo;near detector&rdquo; for pseudo-Dirac splittings.</p>
-<h3 id="supercooling-baryons-and-deuterium">Supercooling, baryons, and deuterium</h3>
-<p>This thread is new. Tanaka <a href="https://arxiv.org/abs/2609.28348">arXiv:2609.28348</a> finds that deuterium disfavors NANOGrav-compatible first-order transitions if the baryon asymmetry predates them. Girmohanta et al. <a href="https://arxiv.org/abs/2609.27978">arXiv:2609.27978</a> arrive at the same conclusion from the other side: in darkogenesis, dark-sector transport erases the inhomogeneity before it reaches visible baryons. Taken together, these papers make the timing of baryogenesis a gravitational-wave observable. Cervantes et al. <a href="https://arxiv.org/abs/2609.27073">arXiv:2609.27073</a> add a related effect, inverse phase transitions driven by chemical equilibration in freeze-in sectors.</p>
-<h3 id="lz-designing-around-the-sun">LZ: designing around the Sun</h3>
-<p>Four papers today, and in three of them solar capture is the constraint being engineered around:
-- Girmohanta et al. <a href="https://arxiv.org/abs/2609.28129">arXiv:2609.28129</a> make the splitting density-dependent via an ultralight scalar, and admit to severe fine-tuning.
-- Tang et al. <a href="https://arxiv.org/abs/2609.28415">arXiv:2609.28415</a> go exothermic through a loop-generated dark photon.
-- Capolupo et al. <a href="https://arxiv.org/abs/2609.28218">arXiv:2609.28218</a> show that fermionic and scalar doublets matched in xenon produce distinct solar neutrino spectra.</p>
-<p>The fourth, Maier et al., is covered in the picks below.</p>
-<h3 id="ml-that-fits-in-a-trigger">ML that fits in a trigger</h3>
-<p>Benyas et al. <a href="https://arxiv.org/abs/2609.26899">arXiv:2609.26899</a> distill the OmniLearned foundation model into a Deep Sets student, with the largest gains at low signal efficiency, where triggers operate. Cardini et al. <a href="https://arxiv.org/abs/2609.28144">arXiv:2609.28144</a> give a bit-exact INT8 GraphSAGE path to 53 ns on a VU13P. This follows the CMS L1 flow distillation from 09-15 and yesterday&rsquo;s HL-LHC tracking cluster (see also D&rsquo;Anzi <a href="https://arxiv.org/abs/2609.28043">arXiv:2609.28043</a>).</p>
+<h3 id="lz-escaping-by-mass-scale">LZ: escaping by mass scale</h3>
+<p>Murayama et al. <a href="https://arxiv.org/abs/2609.28819">arXiv:2609.28819</a> push the inert doublet to 11–20 TeV. The lower number density still yields the event through exponential velocity sensitivity, and the higher infall velocity suppresses solar capture. Langhoff et al. <a href="https://arxiv.org/abs/2609.28616">arXiv:2609.28616</a> keep an MRSSM sneutrino near 360 GeV and use singlet mixing to evade the capture bound. Unwin <a href="https://arxiv.org/abs/2609.28740">arXiv:2609.28740</a> ties PeV Higgsinos to the vanishing-quartic scale. At the light end, Brdar et al. <a href="https://arxiv.org/abs/2609.30255">arXiv:2609.30255</a> propose a two-step <span class="arithmatex">\(\nu\to N_1\to N_2\)</span> chain that is kinematically forbidden on the oxygen and carbon targets of neutrino experiments. Kalita <a href="https://arxiv.org/abs/2609.29462">arXiv:2609.29462</a> contributes the useful null: Hawking-boosted DM overproduces low-energy recoils, so the event can instead be turned into a bound on <span class="arithmatex">\(f_{\rm PBH}\)</span>.</p>
+<h3 id="flavor-by-theory">Flavor, by theory</h3>
+<p>Beyond the <span class="arithmatex">\(|V_{cb}|\)</span> number, Fael et al. find that predicted <span class="arithmatex">\(B\)</span> widths sit 1.1–1.2σ below measurement, while the lifetime ratio agrees with experiment. Their closing call for new correlated moment measurements is the actionable part. Fleischer <a href="https://arxiv.org/abs/2609.29314">arXiv:2609.29314</a> provides a compact status-and-prospects overview heading into HL-LHC, Belle II and FCC-ee.</p>
+<h3 id="tooling-sbi-generators-ufos">Tooling: SBI, generators, UFOs</h3>
+<p>Lopes de Sa et al. <a href="https://arxiv.org/abs/2609.30196">arXiv:2609.30196</a> combine a flow reference with classifier ratios to build an exact unbinned Asimov dataset. This continues the SBI thread from yesterday&rsquo;s sterile-neutrino fit. Buss et al. <a href="https://arxiv.org/abs/2609.28661">arXiv:2609.28661</a> show that CaloClouds II transfers across geometries with only 100 target showers, and they directly test for model collapse under self-retraining. Hourtz et al. <a href="https://arxiv.org/abs/2609.28619">arXiv:2609.28619</a> extend Matchete to UFO export, including a full dim-8 SMEFT. This reinforces EFT as the default language for BSM work.</p>
+<h3 id="small-systems-initial-state-isnt-enough">Small systems: initial state isn&rsquo;t enough</h3>
+<p>Faraday et al. <a href="https://arxiv.org/abs/2609.29886">arXiv:2609.29886</a> tune IP-Glasma only to HERA. It reproduces the multiplicities and <span class="arithmatex">\(R_{pA}\)</span> but underpredicts the suppression measured in O+O and Pb+Pb, which points to final-state energy loss. That is consistent with the oxygen payoff the season tracked. Liu et al. <a href="https://arxiv.org/abs/2609.29237">arXiv:2609.29237</a> add ZDC neutron ratios as a probe of short-range correlations, following yesterday&rsquo;s SRC-in-O+O paper.</p>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.26965">arXiv:2609.26965</a></strong>: The most defensible MiniBooNE-vs-MicroBooNE comparison yet, reaching 2.7σ for 3+1 without asymptotic shortcuts.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.28457">arXiv:2609.28457</a></strong>: Drewes et al. run the first νMSM scan with complete quantum kinetics. The viable region is bounded on all sides and sits within SHiP and LHC reach.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.28348">arXiv:2609.28348</a></strong>: Tanaka shows BBN deuterium constraining supercooled-PT readings of NANOGrav. Baryogenesis timing becomes testable.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.26870">arXiv:2609.26870</a></strong>: Maier et al. argue that thermal electroweak multiplets fitting LZ sit beyond the HL-LHC. FCC-hh disappearing tracks and a 10–30 TeV muon collider are the program that can test them.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.26888">arXiv:2609.26888</a></strong>: Gruzinov et al. treat a Higgsed photon mass as environment-dependent, with Type I and Type II phases. Lab bounds may not apply in space.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.28752">arXiv:2609.28752</a></strong>: An inclusive <span class="arithmatex">\(|V_{cb}|\)</span> at 0.7% with an honest leave-one-out diagnosis of the bad fit. This is the reference number for the next round of the <span class="arithmatex">\(|V_{cb}|\)</span> puzzle.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.28819">arXiv:2609.28819</a></strong>: Murayama et al. give the simplest answer yet to the IceCube problem, which is to go heavier. The catch is a large Higgs coupling with roughly one decade of headroom below the Landau pole.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.28700">arXiv:2609.28700</a></strong>: Toll et al. fit a Clem vortex profile to 104 HERA exclusive <span class="arithmatex">\(J/\psi\)</span> points and extract dual-superconductor lengths, finding type-II (<span class="arithmatex">\(\kappa=2.7\)</span>). Their <span class="arithmatex">\(1/\lambda\)</span> matches the lattice gluelump. The idea is unusual and the fit is clean.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.29442">arXiv:2609.29442</a></strong>: Gardi&rsquo;s Hidden Region Finder derives the Minkowski regions that Newton-polytope methods miss from pinch/Landau conditions. It is likely to become standard method-of-regions infrastructure.</li>
 </ul>
 <h2 id="from-the-community">From the community</h2>
-<p><strong><a href="https://arxiv.org/abs/2609.28204">arXiv:2609.28204</a></strong> <em>Study of the properties of sustainable materials for shielding against ionizing radiations</em> — Faivre (physics.ins-det) finds that rammed earth needs about 20% more thickness than concrete for the same photon attenuation. This is a small, concrete data point for lower-carbon facility construction.</p>
+<p><strong><a href="https://arxiv.org/abs/2609.30180">arXiv:2609.30180</a></strong> <em>Climate, Science, and the FCC: Think Clearly, Choose Wisely, Act Swiftly</em> — Patrick Janot et al. (hep-ex). The authors take the French and Swiss public-debate objections to the FCC one at a time, using orders of magnitude. It is written for non-physicists, and worth reading for exactly that reason.</p>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.27098">arXiv:2609.27098</a></strong> <em>Anomalous soft photon production can be understood as photon emission during hadronisation</em> — Völkl et al. (hep-ph) — isotropic emission during hadronisation reproduces the long-standing excess.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.28223">arXiv:2609.28223</a></strong> <em>Exclusive photoproduction of vector toponium within the color dipole picture</em> — Goncalves et al. (hep-ph) — feasible in ultraperipheral pp only at FCC-hh; a footnote to the toponium thread.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.27566">arXiv:2609.27566</a></strong> <em>Exploring the short-range correlations in ¹⁶O+¹⁶O collisions at the LHC</em> — Qi Liu et al. (nucl-th) — short-range correlations suppress central v₂{4}, so the oxygen runs double as a probe of the nuclear force.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.29911">arXiv:2609.29911</a></strong> <em>Plasma Effects Suppress Mixing-Induced Collisional Freeze-In</em> — Shao-Ping Li et al. (hep-ph). They claim that SM-plasma production cannot make keV–MeV sterile-neutrino DM. The claim is broad, and it is worth reading alongside yesterday&rsquo;s resonant νMSM scan.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.28617">arXiv:2609.28617</a></strong> <em>Half-ladder partial waves for all <span class="arithmatex">\(n,d\)</span> with applications to string theory</em> — Jeffrey V. Backus (hep-th). Multi-particle positivity singles out the open bosonic string at <span class="arithmatex">\(d\le26\)</span>, and Z-theory fails.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.22470">arXiv:2609.22470</a></strong> <em>Stress-testing the spatially flat Universe</em> — Hannah C. Turner et al. (astro-ph.CO). A nonparametric DESI DR2 fit mildly prefers <span class="arithmatex">\(\Omega_K&gt;0\)</span>.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<h3 id="arxiv260926965-tension-between-miniboone-and-microboone-within-a-31-sterile-neutrino-framework-using-simulation-based-inference-julia-p-woodward-massachusetts-institute-of-technology-et-al"><a href="https://arxiv.org/abs/2609.26965">arXiv:2609.26965</a> — Tension between MiniBooNE and MicroBooNE within a 3+1 Sterile Neutrino Framework using Simulation-Based Inference (Julia P. Woodward (Massachusetts Institute of Technology) et al.)</h3>
-<p>With MiniBooNE&rsquo;s f_π pion-flux correction removed, adding MicroBooNE BNB+NuMI data lowers the trials-calibrated 3+1 preference from ≥3.6σ (MiniBooNE alone) to <strong>2.7σ</strong>. The two experiments sit in <strong>≥2.5σ</strong> parameter-goodness-of-fit tension inside 3+1. The frequentist fit uses an SBI likelihood-ratio estimator (DNRE) with a normalizing-flow posterior (SNPE-C) to locate the best fit. The new ingredient is an SBI analogue of the Maltoni–Schwetz PG statistic, built from Δχ² differences relative to null. With it, 48,000 null trials become affordable.</p>
-<p>The Wilks&rsquo; comparison shows why calibration matters. Without f_π, Wilks gives 7.1σ for MiniBooNE, 5.2σ for the joint fit, and 4.4σ tension. With f_π kept, the SBI joint preference drops to 1.8σ, but the tension rises to ≥3.2σ. In every f_π combination the BNB-only Wilks tension stays above 2σ, so the disagreement is not an artifact of inconsistent flux corrections.</p>
+<h3 id="arxiv260928752-inclusive-b-decays-lifetimes-and-v_cb-a-unified-heavy-quark-expansion-analysis-matteo-fael-et-al"><a href="https://arxiv.org/abs/2609.28752">arXiv:2609.28752</a> — Inclusive <span class="arithmatex">\(B\)</span> decays, lifetimes, and <span class="arithmatex">\(|V_{cb}|\)</span>: a unified heavy-quark expansion analysis (Matteo Fael et al.)</h3>
+<p>The default fit gives <span class="arithmatex">\(|V_{cb}|=(42.32\pm0.28_{\rm fit}\pm0.10_{\rm h.o.})\times10^{-3}\)</span>. Two methodological choices produce it. First, <span class="arithmatex">\(\mu_{\alpha_s}\)</span>, <span class="arithmatex">\(\mu_{m_b^{\rm kin}}\)</span> and <span class="arithmatex">\(\mu_{\overline m_c}\)</span> are floated as fully correlated nuisances under a flat Rfit penalty. Second, no ad hoc power-correction covariance is added; missing orders are instead probed by refitting at <span class="arithmatex">\(\mathcal O(1/m_b^{4,5})\)</span>. Across those orders <span class="arithmatex">\(|V_{cb}|\)</span> moves by 0.2%, while <span class="arithmatex">\(\mu_G^2\)</span> shifts by up to 43%.</p>
+<p>The fit quality is poor: <span class="arithmatex">\(\chi^2/{\rm dof}=119.5/67\)</span>, <span class="arithmatex">\(p=8.4\times10^{-5}\)</span>. Leave-one-out isolates the Belle <span class="arithmatex">\(q^2\)</span> moments, and dropping them gives <span class="arithmatex">\(p=0.23\)</span>. The higher-order coefficients appear to absorb data tension rather than measure genuine power corrections. The fit also finds <span class="arithmatex">\(\mu_G^2\)</span> about a factor 3 below the <span class="arithmatex">\(B^*\)</span>–<span class="arithmatex">\(B\)</span> splitting relation.</p>
+<p>The central value is about 1σ above the recent <span class="arithmatex">\(41.64\pm0.47\)</span>, which includes <span class="arithmatex">\(\mathcal O(\alpha_{\rm em})\)</span> effects that lower <span class="arithmatex">\(|V_{cb}|\)</span>. For the digest&rsquo;s inclusive-vs-exclusive tension, this is a tighter but method-dependent inclusive number. The authors caution that:
+- <span class="arithmatex">\(\mu_{\alpha_s}=9.13\)</span> GeV sits on the boundary of its range.
+- The reduced uncertainty &ldquo;is inherent to the model&rdquo; and not due to improved inputs.
+- With scales fixed, <span class="arithmatex">\(|V_{cb}|=43.18\)</span> with a <span class="arithmatex">\(^{+1.4}_{-0.7}\)</span> scale variation.</p>
+<p>Lifetimes come out 13% below experiment (1.1–1.2σ), rescued only by a strongly asymmetric non-leptonic scale error. The ratio <span class="arithmatex">\(\tau_{B^+}/\tau_{B^0}=1.082^{+0.031}_{-0.013}\)</span> agrees with <span class="arithmatex">\(1.0832\pm0.0034\)</span>. The actionable output is the call for new correlated moment and branching-fraction measurements.</p>
+<h3 id="arxiv260928819-heavy-inert-doublet-reconciles-lz-and-icecube-hitoshi-murayama-et-al"><a href="https://arxiv.org/abs/2609.28819">arXiv:2609.28819</a> — Heavy Inert Doublet Reconciles LZ and IceCube (Hitoshi Murayama et al.)</h3>
+<p>Murayama and Noether reuse the Fan–Reece likelihood and find that the inert-doublet <span class="arithmatex">\(\phi_0\to\phi_3\)</span> upscatter matches the higgsino phenomenology to <span class="arithmatex">\(\mathcal O(10^{-9})\)</span>. The LZ data fix the splitting, <span class="arithmatex">\(\delta_0=368^{+12}_{-8}\)</span> keV, essentially independently of mass; they do not select a mass. The <span class="arithmatex">\(1/M\)</span> number-density loss is offset by the halo integral as <span class="arithmatex">\(v_{\rm min}\)</span> falls.</p>
+<p>The mass window comes entirely from other constraints:
+- <strong>Lower edge, 11.3 TeV:</strong> an independent re-implementation of the Bose et al. IceCube <span class="arithmatex">\(\nu_\mu\)</span> solar limit (at <span class="arithmatex">\(\sigma_{\rm SI}^{\rm loop}=0\)</span>) agrees with that analysis to 1–6%.
+- <strong>Upper edge, 20.3 TeV:</strong> freeze-out through longitudinal <span class="arithmatex">\(W/Z\)</span> requires <span class="arithmatex">\(\kappa\approx6.92\,(M/11.3\,{\rm TeV})\)</span>, which hits the unitarity bound <span class="arithmatex">\(\kappa&lt;4\pi\)</span>.</p>
+<p>Expected yields are 0.05–0.72 events in the 215–270 keV window, compared with 0.93 for the 1.08 TeV higgsino.</p>
+<p>The caveats are substantive:
+- Solar escape requires <span class="arithmatex">\(|\eta|\lesssim0.013\)</span>, but <span class="arithmatex">\(\kappa^2\)</span> running of <span class="arithmatex">\(\eta\)</span> demands percent-level tuning of its initial condition.
+- The Landau pole sits at only <span class="arithmatex">\(\sim23M\)</span> down to <span class="arithmatex">\(6M\)</span>, or <span class="arithmatex">\(2.6M\)</span> at large <span class="arithmatex">\(\lambda_\Phi\)</span>.
+- Neutrino spectra were generated at 1080 GeV and reused at all masses; the authors bound the resulting yield error to a factor 1.1–1.7.</p>
+<p><span class="arithmatex">\(\Delta T\simeq0.0015\)</span> is harmless. The model is also untestable at FCC-hh.</p>
+<h3 id="arxiv260928700-measuring-dual-superconductor-length-scales-in-the-qcd-vacuum-at-hera-tobias-toll-et-al"><a href="https://arxiv.org/abs/2609.28700">arXiv:2609.28700</a> — Measuring Dual-Superconductor Length Scales in the QCD Vacuum at HERA (Tobias Toll et al.)</h3>
+<p>Toll and Vasim replace Gaussian hotspots with Clem&rsquo;s vortex profile, <span class="arithmatex">\(K_0(\sqrt{b^2+\xi_v^2}/\lambda)\)</span>, in a Good–Walker dipole model. Coherent and incoherent moments are computed analytically, with log-normal saturation-scale fluctuations. They fit all 104 H1/ZEUS <span class="arithmatex">\(J/\psi\)</span> photoproduction points (67 coherent, 37 incoherent; <span class="arithmatex">\(|t|&lt;30\)</span> GeV², <span class="arithmatex">\(40\le W\le251\)</span> GeV) and get <span class="arithmatex">\(\chi^2/{\rm ndf}=70.8/98\)</span> at <span class="arithmatex">\(N_{hs}=8\)</span>.</p>
+<p>The extracted vacuum parameters are:
+- <span class="arithmatex">\(\lambda=0.191(5)(19)\)</span> fm and <span class="arithmatex">\(\xi_v=0.087(5)(12)\)</span> fm.
+- <span class="arithmatex">\(\kappa=2.7(3)(7)\)</span>, which is type-II.
+- <span class="arithmatex">\(1/\lambda=1.03(11)\)</span> GeV, compared with the lattice <span class="arithmatex">\(1^{+-}\)</span> gluelump at 0.87(15) GeV. The authors note that the gluelump value is scheme-dependent.</p>
+<p>The Ginzburg–Landau string tension reproduces <span class="arithmatex">\(\sqrt{\sigma_0}\)</span> for <span class="arithmatex">\(\alpha_S=0.37(9)\)</span>, close to <span class="arithmatex">\(\alpha_S(1/\lambda^2)=0.36(2)\)</span>. Alternative tails (stretched exponential, power law) worsen the fit by <span class="arithmatex">\(\Delta\chi^2=30\)</span>. A floating tail exponent returns <span class="arithmatex">\(n=1.17(15)\)</span>, consistent with the <span class="arithmatex">\(K_0\)</span> value of 1.</p>
 <p>Caveats:
-- <strong>Trial cap.</strong> 48k trials cap resolvable significance at ~4.25σ, so anything above 3.5σ is quoted as a lower bound.
-- <strong>Reconstructed NuMI prediction.</strong> MicroBooNE has released no event-level MC. The authors rebuilt the NuMI prediction from g4numi/PPFX/GENIE with a tuned approximate detector response (10-knot efficiencies per sample). Along the way they fixed a decay-at-rest flux bug worth up to 10% below 250 MeV.
-- <strong>Suspicious goodness of fit.</strong> MicroBooNE&rsquo;s own χ²/dof of 86.62/179 is anomalously low.
-- <strong>Unexplained ν_μ excess.</strong> The low-energy ν_μ excess seen in both detectors is not understood, and the authors warn that quantitative comparisons should be read with care.</p>
-<h3 id="arxiv260928457-sterile-neutrino-dark-matter-cries-for-gev-heavy-neutral-leptons-marco-drewes-et-al"><a href="https://arxiv.org/abs/2609.28457">arXiv:2609.28457</a> — Sterile Neutrino Dark Matter Cries for GeV Heavy Neutral Leptons (Marco Drewes et al.)</h3>
-<p>This is the first νMSM scan using full quantum kinetic equations from baryogenesis through dark-matter production. The kinetics include chirality-flip effects, lepton-asymmetry back-reaction, and, decisively, the charge-odd (MSW-like) part of the HNL Hamiltonian. At the M₁ = 7 keV benchmark, the requirement to produce the QCD-epoch lepton asymmetry needed for Shi–Fuller conversion confines the HNL pair to a closed island.</p>
-<p><strong>Viable mass ranges:</strong>
-- <strong>Normal ordering (NO):</strong> the resonant-decay mechanism survives for 4 ≲ M ≲ 50 GeV. The 50 GeV upper bound is new.
-- <strong>Ignition mechanism (new):</strong> a self-amplifying MSW-driven instability that boosts μ_α by ~3 orders of magnitude, to |μ_α| ≃ 10⁻³. It reopens M &lt; 5 GeV down to just above the kaon mass.
-- <strong>Inverted ordering (IO):</strong> only 0.8–7 GeV survives.</p>
-<p><strong>Experimental reach:</strong>
-- In the meson-accessible range, U² sits at least an order of magnitude above the seesaw floor.
-- SHiP covers the entire region below 2 GeV and much of 2–5 GeV. HL-LHC and Tera-Z machines cover the rest.
-- The predicted ΔM_phys adds a DM-specific test. For NO, HNL oscillation lengths can fall inside the SHiP decay volume; for IO, the pair looks Dirac-like.</p>
-<p><strong>Caveats:</strong>
-- A single DM mass is studied.
-- The scan uses momentum-averaged equations and neglects asymmetry depletion by N₁ production; both are checked only on the island boundaries.
-- Rates come from Fermi theory with free quarks, so the mass edges are uncertain below ~500 MeV and above ~50 GeV.
-- Structure-formation bounds on the computed spectra are deferred.</p>
-<h3 id="arxiv260928348-big-bang-nucleosynthesis-as-a-probe-of-first-order-phase-transitions-masanori-tanaka"><a href="https://arxiv.org/abs/2609.28348">arXiv:2609.28348</a> — Big Bang Nucleosynthesis as a Probe of First-Order Phase Transitions (Masanori Tanaka)</h3>
-<p>Tanaka adds the reheating (α_n) dependence to BBN bounds on baryon inhomogeneity from supercooled transitions. The local reheating map is nonlinear, the spectral shape comes from the finite-bubble transition-time power spectrum, and proton/neutron diffusion is included. The result is imposed through the deuterium bound ε_BBN &lt; 0.28 (1σ).</p>
-<p><strong>Results:</strong>
-- No bound exists for α_n &lt; 0.1 with an optimistic k_cut = ∞, or for α_n &lt; 0.5 with a conservative cut at the mean bubble separation.
-- For large α_n and 0.5 &lt; T_n &lt; 100 GeV, the disfavored region is β/H_n ≲ 5–6 (conservative) or ≲ 10–13 (optimistic).
-- Above ~10² GeV, diffusion weakens the bound.</p>
-<p><strong>NANOGrav:</strong> the NANOGrav-compatible region survives the conservative cut. It is largely disfavored only if the spectrum holds at sub-bubble scales, though much of it is still excluded keeping just modes with k &lt; 2k_th. Evading the bound requires baryogenesis after reheating, or during the transition with baryon production tracking local entropy injection. That is the basis for the digest&rsquo;s &ldquo;baryogenesis timing&rdquo; claim.</p>
-<p><strong>Caveats:</strong>
-- The result is 1σ only.
-- The baryon power spectrum is an admitted effective parametrization, and the bound is highly sensitive to the cutoff.
-- It assumes a pure exponential nucleation rate and energy release into the SM sector.
-- The paper is internally loose on bubble-wall baryogenesis. The abstract allows it if production tracks entropy, while Sec. 3 says the bound is &ldquo;not evaded in general.&rdquo;
-- A concurrent linearized analysis (Elahi et al.) finds β/H ≳ 10.3 α/(1+α), which Tanaka calls qualitatively consistent.</p>
-<p><em>Full text was not supplied for the other two picks (Maier et al. <a href="https://arxiv.org/abs/2609.26870">arXiv:2609.26870</a>, Gruzinov et al. <a href="https://arxiv.org/abs/2609.26888">arXiv:2609.26888</a>), so no deep dives are given for them.</em></p>
+- The scalar sector fits less well. <span class="arithmatex">\(m_S=\sqrt2/\xi=3.9(7)\)</span> GeV is 2.4(4)× the <span class="arithmatex">\(0^{++}\)</span> glueball.
+- The dominant uncertainty comes from the weak sensitivity to <span class="arithmatex">\(N_{hs}\)</span>.
+- A free normalization, about 1.2, is floated.
+- The type-II prediction of vortex repulsion cannot be tested, because saturation fluctuations are degenerate with geometric variance at <span class="arithmatex">\(|t|\sim1\)</span> GeV². <span class="arithmatex">\(M_Y\)</span> tagging at the EIC would break this degeneracy.</p>
+<p>The claimed <span class="arithmatex">\(Q^2\)</span> independence is a clean EIC/LHeC test.</p>
+<h3 id="arxiv260929442-hidden-region-finder-einan-gardi"><a href="https://arxiv.org/abs/2609.29442">arXiv:2609.29442</a> — Hidden Region Finder (Einan Gardi)</h3>
+<p>Neither the full text nor the abstract of this paper was supplied, so there is no deep dive. See the digest line for why it</p>
+<h2 id="citation-radar">Citation radar</h2>
+<p>The radar this week is a single story. All four papers are responses to LZ230616, the lone ~248 keV nuclear recoil LZ reported at 2.6σ global (3.4σ local) significance, and all four were posted within about 48 hours of one another. Their bibliographies overlap almost completely, and much of each count probably reflects the reflexive &ldquo;see also Refs. [x–y]&rdquo; citing typical of a fast anomaly literature. Still, the sequence is instructive. The first wave asked whether a TeV electroweak multiplet with a few-hundred-keV splitting fits the event. This batch shifts to whether anything like that survives the Sun.</p>
+<h3 id="arxiv260907807-not-so-good-s-for-higgsino-dark-matter-as-lz-excess-stringent-limits-from-super-kamiokande-and-icecube-debajit-bose-et-al"><a href="https://arxiv.org/abs/2609.07807">arXiv:2609.07807</a> — Not so good νs for Higgsino dark matter as LZ excess: stringent limits from Super-Kamiokande and IceCube (Debajit Bose et al.)</h3>
+<p>The authors compute solar capture of Higgsino DM through inelastic scattering on heavy solar nuclei, followed by annihilation to WW/ZZ. They confront the resulting neutrino flux with angular-cut atmospheric ν_e and ν_μ data from Super-K and IceCube. For the 1.08 TeV thermal Higgsino, splittings δ ≲ 557 keV are excluded, which covers the LZ-preferred 340–360 keV band. The strongest and weakest datasets differ by only ~20%. They also map limits for non-thermal Higgsino masses, where Super-K overtakes IceCube near 100 GeV.</p>
+<p>The paper has drawn ~39 citations since 7 September. The most likely reason is that it is an independent cross-check of Pospelov–Ramani&rsquo;s solar bound using different datasets and arriving at a comparable limit. That makes it the second half of the standard &ldquo;solar capture disfavors Higgsinos&rdquo; citation pair. The authors are candid that the thermal Higgsino survives if the local velocity distribution is non-standard, for example through LMC motion or streams. They also flag that the Helm form factor oscillates rapidly near 250 keV in xenon. An abstract-level note that one author thinks the event is background, sitting too close to the upper energy cut, may make the paper more memorable, but that is speculation.</p>
+<h3 id="arxiv260906571-the-inert-doublet-model-of-dark-matter-and-the-lux-zeplin-high-recoil-event-lei-wang-et-al"><a href="https://arxiv.org/abs/2609.06571">arXiv:2609.06571</a> — The Inert Doublet Model of Dark Matter and the LUX-ZEPLIN High-Recoil Event (Lei Wang et al.)</h3>
+<p>This paper realizes the endothermic transition H N → A N through the off-diagonal Z coupling of the inert doublet. Because that coupling is fixed by electroweak strength, the scattering normalization is not a free parameter. The authors impose relic density, perturbativity, oblique parameters, elastic LZ limits and dwarf-galaxy limits. A profile likelihood on the event then gives a best fit at m_H = 1080 GeV and δ = 369 keV, with a GeV-scale charged splitting and λ_L ≈ −2×10⁻⁴. They stress that the event constrains δ far more tightly than the mass.</p>
+<p>The ~35 citations likely come from its role as the canonical scalar counterpart to the Higgsino fit, with the full IDM constraint stack applied. The paper does not address solar capture, which is the main vulnerability of fixed-coupling interpretations. Lee–Youn (below) note that an inert-doublet fit lies in the same region as the Z₂-doublet case they estimate at roughly 10⁴ times the IceCube limit. The authors also acknowledge that the LZ likelihood cannot be fully reconstructed from public information.</p>
+<h3 id="arxiv260907800-inelastic-singlet-doublet-fermion-dark-matter-in-light-of-the-248-kev-lz-event-debasish-borah-et-al"><a href="https://arxiv.org/abs/2609.07800">arXiv:2609.07800</a> — Inelastic Singlet-Doublet Fermion Dark Matter in light of the 248 keV LZ event (Debasish Borah et al.)</h3>
+<p>Here a singlet-doublet fermion is split into pseudo-Dirac states by a hypercharge-1 scalar triplet, and the same triplet generates neutrino masses via type-II seesaw. The Majorana lightest state has no diagonal Z coupling, so the Z-mediated inelastic rate scales as sin⁴θ and the mixing sets the normalization. The preferred region moves with mixing:
+- At sinθ = 0.7, the fit prefers δ ~ 310–370 keV and masses of 10⁴–10^5.8 GeV.
+- At sinθ = 0.0135, it prefers δ ~ 30–180 keV and masses of 10^2.5–10^3.8 GeV.</p>
+<p>Only the two small-mixing benchmarks evade elastic LZ bounds.</p>
+<p>The ~34 citations likely reflect membership in the standard list of LZ interpretations. It also appears to be a direct precursor to the mixing-suppression mechanism developed in <a href="https://arxiv.org/abs/2609.09138">arXiv:2609.09138</a>, which cites it. On substance it is thin:
+- The fit is a signal-only extended likelihood.
+- Relic density is taken from earlier work.
+- There is no solar or sideband analysis.</p>
+<h3 id="arxiv260909138-mixing-suppressed-inelastic-dark-matter-a-minimal-model-for-the-lz-248-kev-event-seung-j-lee-et-al"><a href="https://arxiv.org/abs/2609.09138">arXiv:2609.09138</a> — Mixing-suppressed inelastic dark matter: a minimal model for the LZ 248 keV event (Seung J. Lee et al.)</h3>
+<p>This is the most thorough of the four. The authors show that a full-strength Z transition at the recoil-inferred splitting predicts ~4000 events. Fixed-coupling models such as the Higgsino must therefore push δ deep into the halo tail, but solar gravitational acceleration undoes that suppression. A Majorana singlet mixed with a vector-like doublet instead suppresses the rate through sin⁴θ without shifting the spectrum. The same mixing drives capture as sin⁴θ and out-of-equilibrium annihilation as sin¹²θ, and weak Higgs cooling keeps the captured population extended.</p>
+<p>With relic density and a one-event normalization imposed, they find δ = 302–305 keV conservatively (thermalized population). Under their cooling ansatz this rises to 331–343 keV near a 730–733 GeV endpoint. Falsifiable predictions include:
+- a tungsten rate ~46 times the xenon rate at the nominal ceiling;
+- no germanium or argon signal;
+- June-to-December rate ratios up to ~56.</p>
+<p>Its ~34 citations are probably earned by its common-assumption comparison table, which places the Higgsino at ~4×10³ times the IceCube limit. That makes it a natural reference point for later papers.</p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-09-24.html"><span class="date">Thursday, September 24, 2026</span></a>
+      <span class="themes"><span class="chip">Sterile neutrinos re-examined</span><span class="chip">Supercooled transitions meet BBN</span><span class="chip">LZ versus solar capture</span><span class="chip">Trigger-grade ML</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-09-23.html"><span class="date">Wednesday, September 23, 2026</span></a>
@@ -147,11 +165,6 @@
       <span class="themes"><span class="chip">Precision QCD and DIS</span><span class="chip">Nucleon structure and small-x</span><span class="chip">LZ event goes cosmological</span><span class="chip">Dark sectors vs Hubble/DESI</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-09-15.html"><span class="date">Tuesday, September 15, 2026</span></a>
-      <span class="themes"><span class="chip">LZ event, sorted by test</span><span class="chip">Precision flavor at BESIII/LHCb</span><span class="chip">Nucleon structure and precision QCD</span><span class="chip">ML in detector plumbing</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -161,7 +174,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-24 08:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-25 05:38 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

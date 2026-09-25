@@ -37,17 +37,52 @@
 <a href="../watch.html">Standing waves</a> track, read and summarized by AI.</p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">79 papers</span>
-  <span class="count">78 days</span>
+  <span class="count">80 papers</span>
+  <span class="count">79 days</span>
   <span class="count">since 2018</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">15</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">16</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Friday, September 25, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-28661">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.28661" target="_blank" rel="noopener">arXiv:2609.28661</a>
+      
+      <a class="permalink" href="#a2609-28661" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</h3>
+    <p class="byline">Thorsten Buss et al.</p>
+    <div class="paper-body"><p><strong>Relevance to this topic is weak.</strong> Optimal transport enters only as the evaluation metric: the Wasserstein-1 distance to Geant4 on six shower observables, combined by geometric mean. There is no OT-based training, coupling, or methodology.</p>
+<p>The paper is a proceedings summary of JINST 21 (2026) P07037. The authors pre-train CaloClouds II on 524k ILD ECAL photon showers (10–90 GeV) and adapt it to CaloChallenge DS3. The target differs in several ways at once:
+- electrons instead of photons;
+- a cylindrical rather than planar geometry, with 45 instead of 30 layers;
+- a log-uniform 1 GeV–1 TeV energy range;
+- point clouds more than three times larger at high energy.</p>
+<p>At 10² target showers, full fine-tuning reaches a geometric-mean W₁ of 0.064±0.006, against 0.132±0.018 from scratch (about 51% lower). The advantage fades with more data: at 10⁵ it is 4.7 vs 4.5, i.e. no gain.</p>
+<p>Among parameter-efficient methods:
+- <strong>BitFit:</strong> updates 17% of the diffusion parameters and lands within 5% of full fine-tuning (mean 6.2 vs 5.9 ×10⁻²).
+- <strong>LoRA at rank 106:</strong> underperforms (8.4). The authors attribute this to high-rank weight updates, with some layers needing rank above 200.</p>
+<p>A self-consuming retraining study shows progressive collapse in both ShowerFlow and the diffusion model. It is reported only qualitatively via figures.</p>
+<p>Caveats:
+- There is no comparison to multi-detector pre-training such as CaloDiT-2.
+- A residual per-observable mismatch at 10⁴ showers is hidden in the geometric mean.
+- The claim of adaptation to arbitrary geometry is explicitly not demonstrated here.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -385,7 +420,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-24 08:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-25 05:38 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

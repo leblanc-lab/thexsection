@@ -1,54 +1,67 @@
-# The Cross Section: rolling synthesis, week ending 2026-09-24
+# The Cross Section: rolling synthesis, week ending 2026-09-25
 
-This week the experiments led the conversation. A run of hadron-spectroscopy discoveries (LHCb's $\Omega_{cc}^+$, then a light, narrow beauty-strange state, plus BESIII's η(2600) and double-$s\bar s$) was the dominant experimental story. Belle II's $R(D^{(*)})$ eased the flavor tension rather than feeding it. The LZ 248 keV recoil kept producing theory, but it changed modes almost daily: bounds, then confining dark sectors, then elastic form factors, then models engineered around solar capture. The statistics and tooling thread matured from infrastructure into physics use, culminating in a simulation-based-inference (SBI) reanalysis that cut the MiniBooNE+MicroBooNE sterile-neutrino preference to 2.7σ. Precision multiloop QCD ran steadily underneath. Nucleon structure, which led early in the week, faded after 09-18.
+The week had one persistent theme and three solid experimental ones. The LZ 248 keV recoil drew five to seven papers a day, and the modelling strategy changed almost daily. Most of that churn was shaped by one constraint: solar capture at IceCube and Super-K. Flavor physics moved the other way. Belle II's most precise $R(D^{(*)})$ eased the long-flagged lepton-flavor-universality (LFU) tension rather than sharpening it. A new inclusive $|V_{cb}|$ reframed the problem as a $|V_{cb}|$ puzzle. Spectroscopy had its strongest run of the season: $\Omega_{cc}^+$, a light exotic beauty-strange state and $\eta(2600)$. Precision multiloop QCD and simulation-based inference (SBI) tooling ran steadily underneath. A new cosmology thread appeared late in the week, linking BBN deuterium, supercooled phase transitions and the timing of baryogenesis.
 
 ## Running themes
 
-- **LZ recoil interpretation: steady in volume, changing in character.** On 09-21 the papers were constraint and complementarity work: solar capture at IceCube/Super-K ruled out weak-scale elastic operators ([arXiv:2609.21823](https://arxiv.org/abs/2609.21823)), and halo co-rotation does not rescue the high-velocity tail ([arXiv:2609.21444](https://arxiv.org/abs/2609.21444)).
-  - 09-22 brought composite inelastic dark-QCD readings ([arXiv:2609.24988](https://arxiv.org/abs/2609.24988), [arXiv:2609.23477](https://arxiv.org/abs/2609.23477)).
-  - 09-23 brought elastic composite form-factor readings ([arXiv:2609.25723](https://arxiv.org/abs/2609.25723)).
-  - 09-24 brought models designed around solar capture, one admitting severe fine-tuning ([arXiv:2609.28129](https://arxiv.org/abs/2609.28129)).
-  - Maier et al. place thermal electroweak multiplets beyond HL-LHC reach ([arXiv:2609.26870](https://arxiv.org/abs/2609.26870)). The trend is more model-building under tightening constraints.
-- **Heavy-flavor spectroscopy: heating up.**
-  - LHCb observed $\Omega_{cc}^+$ at 8.7σ ([arXiv:2609.21921](https://arxiv.org/abs/2609.21921)) and a >7σ beauty-strange state with a quark-model mass deficit ([arXiv:2609.25178](https://arxiv.org/abs/2609.25178)).
-  - BESIII added η(2600) ([arXiv:2609.25158](https://arxiv.org/abs/2609.25158)) and the $\Omega_b^-$ lifetime ([arXiv:2609.25370](https://arxiv.org/abs/2609.25370)).
-  - Earlier, BESIII's double-$s\bar s$ result at 40% of the inclusive φ rate ([arXiv:2609.20154](https://arxiv.org/abs/2609.20154)) echoed the double-charm puzzle.
-  - The digests read the pace as experiments filling in, and now breaking out of, the conventional spectrum.
-- **Statistics and inference tooling: steady, now reaching physics.**
-  - Infrastructure on 09-18: IRIS-HEP blueprint ([arXiv:2609.19992](https://arxiv.org/abs/2609.19992)), RooFit→autodiff/JAX/HS3 ([arXiv:2609.19761](https://arxiv.org/abs/2609.19761)), Combine in PyHEP ([arXiv:2609.19753](https://arxiv.org/abs/2609.19753)).
-  - Conceptual turn: Dorigo shows ordering can fail even under exact calibration ([arXiv:2609.20007](https://arxiv.org/abs/2609.20007)).
-  - Physics application on 09-24 via the SBI sterile-neutrino fit ([arXiv:2609.26965](https://arxiv.org/abs/2609.26965)).
-  - AutoTherm ([arXiv:2609.20936](https://arxiv.org/abs/2609.20936)) carried the automation ethos into thermal field theory.
-- **Precision multiloop QCD: steady.** Blümlein et al. completed the gluonic three-loop massive form factors ([arXiv:2609.22034](https://arxiv.org/abs/2609.22034), with methods in [arXiv:2609.24279](https://arxiv.org/abs/2609.24279)). Kidonakis pushed the four-loop massive cusp anomalous dimension ([arXiv:2609.23247](https://arxiv.org/abs/2609.23247)). Klann et al. flagged up-to-20% errors in DIS heavy-quark parametrisations ([arXiv:2609.23452](https://arxiv.org/abs/2609.23452)).
-- **Trigger ML and HL-LHC tracking: heating up.** CMS converged on a heterogeneous mkFit+Patatrack+LST tracking baseline ([arXiv:2609.26695](https://arxiv.org/abs/2609.26695)). The FPGA ML papers were a foundation-model distillation ([arXiv:2609.26899](https://arxiv.org/abs/2609.26899)) and INT8 GraphSAGE at 53 ns ([arXiv:2609.28144](https://arxiv.org/abs/2609.28144)). Both extend the CMS L1 distillation work from 09-15.
-- **Nucleon structure and GPDs: fading.** This thread peaked 09-18 with the first comprehensive GPD review in two decades ([arXiv:2609.19544](https://arxiv.org/abs/2609.19544)). The same day, Su et al. opened the lattice $x\sim\pm\xi$ region ([arXiv:2609.20545](https://arxiv.org/abs/2609.20545)). It had little presence afterward.
+- **LZ recoil: high volume, steady, with a new strategy each day.** The sequence ran as follows:
+  - **09-21, constraints and complementarity:** Bose et al. [arXiv:2609.21823](https://arxiv.org/abs/2609.21823); O'Hare [arXiv:2609.21444](https://arxiv.org/abs/2609.21444) showed halo co-rotation does not rescue the high-velocity tail.
+  - **09-22, confining dark sectors:** Sannino et al. [arXiv:2609.24988](https://arxiv.org/abs/2609.24988); Sheng et al. [arXiv:2609.23477](https://arxiv.org/abs/2609.23477).
+  - **09-23, elastic composite form factors:** Jung et al. [arXiv:2609.25723](https://arxiv.org/abs/2609.25723).
+  - **09-24, engineering around solar capture:** Girmohanta et al. [arXiv:2609.28129](https://arxiv.org/abs/2609.28129), with admitted fine-tuning.
+  - **09-25, moving out of capture reach by mass scale:** Murayama et al. pushed the inert doublet to 11–20 TeV [arXiv:2609.28819](https://arxiv.org/abs/2609.28819); proposals spanned 250 MeV to $10^{11}$ GeV.
+
+  Useful nulls kept appearing alongside the models. Kalita [arXiv:2609.29462](https://arxiv.org/abs/2609.29462) turned the event into an $f_{\rm PBH}$ bound, and Zurowski et al. [arXiv:2609.24764](https://arxiv.org/abs/2609.24764) quantified the nuclear form-factor caveat.
+
+- **LFU anomaly cooling; $|V_{cb}|$ puzzle heating.**
+  - Belle II's $R(D^*)=0.242\pm0.019\pm0.016$ [arXiv:2609.21947](https://arxiv.org/abs/2609.21947) sits slightly below the SM.
+  - Fael et al.'s inclusive $|V_{cb}|=(42.32\pm0.30)\times10^{-3}$ [arXiv:2609.28752](https://arxiv.org/abs/2609.28752) is a tight anchor against the exclusive value [arXiv:2608.24332](https://arxiv.org/abs/2608.24332). However, the fit to the full moment set is poor, and predicted $B$ widths come out 1.1–1.2σ low.
+  - The August $B^\pm\to K^\pm\pi^+\pi^-$ CP flare now has a mechanism: $\bar K_0^*(1430)$–$\rho$ interference, from Guo et al. [arXiv:2609.21464](https://arxiv.org/abs/2609.21464).
+
+- **Hadron spectroscopy: heating.**
+  - LHCb observed $\Omega_{cc}^+$ at 8.7σ [arXiv:2609.21921](https://arxiv.org/abs/2609.21921).
+  - LHCb reported a light, narrow beauty-strange state at >7σ with a quark-model mass deficit [arXiv:2609.25178](https://arxiv.org/abs/2609.25178). It is billed as the first nonconventional single-beauty hadron.
+  - BESIII observed $\eta(2600)$ [arXiv:2609.25158](https://arxiv.org/abs/2609.25158) and measured the $\Omega_b^-$ lifetime [arXiv:2609.25370](https://arxiv.org/abs/2609.25370).
+
+- **Precision multiloop QCD: steady.**
+  - Blümlein et al. gave gluonic three-loop massive form factors [arXiv:2609.22034](https://arxiv.org/abs/2609.22034), plus the method paper [arXiv:2609.24279](https://arxiv.org/abs/2609.24279).
+  - Kidonakis pushed the massive cusp anomalous dimension to four loops [arXiv:2609.23247](https://arxiv.org/abs/2609.23247).
+  - Gardi's Hidden Region Finder [arXiv:2609.29442](https://arxiv.org/abs/2609.29442) is flagged as likely standard method-of-regions infrastructure.
+
+- **SBI, automation and trigger ML: steady to heating.**
+  - Woodward et al. [arXiv:2609.26965](https://arxiv.org/abs/2609.26965) applied SBI to a physics question. Lopes de Sa et al. [arXiv:2609.30196](https://arxiv.org/abs/2609.30196) built an exact unbinned Asimov dataset.
+  - AutoTherm automates thermal production rates [arXiv:2609.20936](https://arxiv.org/abs/2609.20936).
+  - Foundation-model distillation for triggers: [arXiv:2609.26899](https://arxiv.org/abs/2609.26899), [arXiv:2609.28144](https://arxiv.org/abs/2609.28144).
+  - CMS converged on its HL-LHC tracking baseline [arXiv:2609.26695](https://arxiv.org/abs/2609.26695).
 
 ## Turning points
 
-- **Belle II $R(D^*)=0.242\pm0.019\pm0.016$** ([arXiv:2609.21947](https://arxiv.org/abs/2609.21947)). The central value sits slightly below the SM, a notable data point against the long-flagged LFU tension.
-- **ATLAS direct $\Gamma_H<307$ MeV** from on-shell γγ interference ([arXiv:2609.19948](https://arxiv.org/abs/2609.19948)). It needs no coupling assumptions and complements off-shell bounds.
-- **Lattice $\mathcal{C}_{\rm QCD}=1.965(35)$** ([arXiv:2609.22698](https://arxiv.org/abs/2609.22698)). This resolves a ChPT discrepancy and gives axion searches a benchmark.
-- **ATLAS top-philic $Z'$ excluded below 1150 GeV** ([arXiv:2609.24950](https://arxiv.org/abs/2609.24950)). It constrains the vector side of the toponium debate. Toponium production prospects look poor at muon colliders and in UPCs ([arXiv:2609.23576](https://arxiv.org/abs/2609.23576)), and feasible in ultraperipheral pp only at FCC-hh ([arXiv:2609.28223](https://arxiv.org/abs/2609.28223)).
-- **MiniBooNE+MicroBooNE 3+1 preference drops to 2.7σ** ([arXiv:2609.26965](https://arxiv.org/abs/2609.26965)), with ≥2.5σ internal disagreement between the two experiments.
+- **Solar capture became the organizing constraint for LZ models.** After Bose et al. [arXiv:2609.21823](https://arxiv.org/abs/2609.21823), most of the week's model-building was defined by evading it.
+- **Belle II $R(D^{(*)})$ [arXiv:2609.21947](https://arxiv.org/abs/2609.21947)** is the first major data point this season that weakens, rather than sustains, the LFU tension.
+- **The sterile-neutrino preference dropped.** Woodward et al.'s joint MiniBooNE+MicroBooNE 3+1 fit gives 2.7σ, with the two experiments in ≥2.5σ internal tension [arXiv:2609.26965](https://arxiv.org/abs/2609.26965).
+- **Lattice axion-photon coupling.** Lin et al. obtained $\mathcal{C}_{\rm QCD}=1.965(35)$ [arXiv:2609.22698](https://arxiv.org/abs/2609.22698), resolving the ChPT discrepancy. This is a benchmark for axion searches.
+- **ATLAS top-philic $Z'$ excluded below 1150 GeV** for $c_t=1$ [arXiv:2609.24950](https://arxiv.org/abs/2609.24950). This constrains the vector side of the toponium debate.
 
 ## Open questions
 
-- **LZ recoil:** will the decisive 271–800 keV sideband search ([arXiv:2609.26698](https://arxiv.org/abs/2609.26698)) arrive? Watch whether fine-tuning pressure from solar capture thins the model zoo. Nuclear form-factor uncertainties also sit under every limit ([arXiv:2609.24764](https://arxiv.org/abs/2609.24764)).
-- **Nature of the LHCb beauty-strange state** ([arXiv:2609.25178](https://arxiv.org/abs/2609.25178)): watch for theory interpretations, molecular or otherwise, and whether it is a first open-beauty counterpart to the charm exotics.
-- **LFU after Belle II:** does the tension survive the next combination?
-- **Short-baseline anomaly:** can the MiniBooNE–MicroBooNE internal tension be resolved within 3+1?
-- **Hadronization:** the double-$s\bar s$ and double-$c\bar c$ rates remain unexplained.
-- **Baryogenesis timing as a gravitational-wave observable:** BBN deuterium disfavors NANOGrav-compatible supercooled transitions if the asymmetry came first ([arXiv:2609.28348](https://arxiv.org/abs/2609.28348), [arXiv:2609.27978](https://arxiv.org/abs/2609.27978)). This thread is new on 09-24. Related: Co et al.'s rotating-axion link between CMB birefringence and the baryon asymmetry ([arXiv:2609.25202](https://arxiv.org/abs/2609.25202)).
-- **Collider quantum information:** the NAQC certification proposal for τ pairs ([arXiv:2609.25214](https://arxiv.org/abs/2609.25214)) is in tension with tomography positivity failures at NLO ([arXiv:2609.25217](https://arxiv.org/abs/2609.25217)).
+- **LZ: which escape route survives?**
+  - The decisive test is a 271–800 keV LZ sideband search probing inelastic $\delta\gtrsim330$ keV (Delepine et al. [arXiv:2609.26698](https://arxiv.org/abs/2609.26698)).
+  - Heavy thermal multiplets may sit beyond HL-LHC reach and need FCC-hh or a muon collider (Maier et al. [arXiv:2609.26870](https://arxiv.org/abs/2609.26870)).
+  - Murayama et al.'s heavy doublet requires a large Higgs coupling, with only about one decade of headroom below the Landau pole.
+- **$|V_{cb}|$:** Is the poor inclusive fit a sign of missing theory? Fael et al. call for new correlated moment measurements.
+- **The beauty-strange mass deficit** [arXiv:2609.25178](https://arxiv.org/abs/2609.25178): watch for interpretation papers and for partner states.
+- **Sterile neutrinos:**
+  - The νMSM viable region is closed on all sides and sits within SHiP and LHC reach (Drewes et al. [arXiv:2609.28457](https://arxiv.org/abs/2609.28457)).
+  - A broad counter-claim says SM-plasma freeze-in cannot produce keV–MeV sterile-neutrino DM (Li et al. [arXiv:2609.29911](https://arxiv.org/abs/2609.29911)).
+- **New thread: BBN deuterium disfavors NANOGrav-compatible supercooled transitions if baryogenesis came first** (Tanaka [arXiv:2609.28348](https://arxiv.org/abs/2609.28348); Girmohanta et al. [arXiv:2609.27978](https://arxiv.org/abs/2609.27978)). Watch whether it grows.
+- **Collider quantum information:** The case for certifying Nonlocal Advantage of Quantum Coherence in τ pairs (Afik et al. [arXiv:2609.25214](https://arxiv.org/abs/2609.25214)) sits against a warning that standard tomography can fail at NLO (Del Gratta et al. [arXiv:2609.25217](https://arxiv.org/abs/2609.25217)).
 
 ## Recurring references
 
-- [arXiv:2609.21947](https://arxiv.org/abs/2609.21947): Belle II $R(D^{(*)})$
-- [arXiv:2609.25178](https://arxiv.org/abs/2609.25178): LHCb beauty-strange state
-- [arXiv:2609.21921](https://arxiv.org/abs/2609.21921): LHCb $\Omega_{cc}^+$
-- [arXiv:2609.22034](https://arxiv.org/abs/2609.22034) and [arXiv:2609.24279](https://arxiv.org/abs/2609.24279): three-loop gluonic form factors
-- [arXiv:2609.20007](https://arxiv.org/abs/2609.20007): Dorigo, coverage vs. ordering
-- [arXiv:2609.26965](https://arxiv.org/abs/2609.26965): SBI sterile-neutrino fit
-- [arXiv:2609.21823](https://arxiv.org/abs/2609.21823): LZ solar-capture constraint
-- [arXiv:2609.24988](https://arxiv.org/abs/2609.24988): dark-QCD LZ reading
-- [arXiv:2609.22698](https://arxiv.org/abs/2609.22698): lattice axion-photon coupling
+- [arXiv:2609.21823](https://arxiv.org/abs/2609.21823): solar-capture bound on LZ readings.
+- [arXiv:2609.21947](https://arxiv.org/abs/2609.21947): Belle II $R(D^{(*)})$.
+- [arXiv:2609.28752](https://arxiv.org/abs/2609.28752): inclusive $|V_{cb}|$. Pair with [arXiv:2608.24332](https://arxiv.org/abs/2608.24332) (exclusive).
+- [arXiv:2609.22034](https://arxiv.org/abs/2609.22034) and [arXiv:2609.24279](https://arxiv.org/abs/2609.24279): three-loop massive form factors.
+- [arXiv:2609.26965](https://arxiv.org/abs/2609.26965): SBI 3+1 fit, the anchor for both the SBI and sterile-neutrino threads.
+- [arXiv:2609.25178](https://arxiv.org/abs/2609.25178): exotic beauty-strange state.
+- [arXiv:2609.26306](https://arxiv.org/abs/2609.24306) is not an anchor; the sustainability thread is carried by [arXiv:2609.24306](https://arxiv.org/abs/2609.24306) (Jevons' paradox in generative simulation) and [arXiv:2609.30180](https://arxiv.org/abs/2609.30180) (FCC climate debate).

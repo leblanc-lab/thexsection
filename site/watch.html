@@ -39,6 +39,123 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Friday, September 25, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
+  </div>
+  <h2 id="optimal-transport">Optimal transport</h2>
+<h3 id="arxiv260928661-cross-geometry-transfer-and-model-collapse-in-point-cloud-calorimeter-shower-generation-thorsten-buss-et-al"><a href="https://arxiv.org/abs/2609.28661">arXiv:2609.28661</a> — Cross-geometry transfer and model collapse in point cloud calorimeter shower generation (Thorsten Buss et al.)</h3>
+<p><strong>Relevance to this topic is weak.</strong> Optimal transport enters only as the evaluation metric: the Wasserstein-1 distance to Geant4 on six shower observables, combined by geometric mean. There is no OT-based training, coupling, or methodology.</p>
+<p>The paper is a proceedings summary of JINST 21 (2026) P07037. The authors pre-train CaloClouds II on 524k ILD ECAL photon showers (10–90 GeV) and adapt it to CaloChallenge DS3. The target differs in several ways at once:
+- electrons instead of photons;
+- a cylindrical rather than planar geometry, with 45 instead of 30 layers;
+- a log-uniform 1 GeV–1 TeV energy range;
+- point clouds more than three times larger at high energy.</p>
+<p>At 10² target showers, full fine-tuning reaches a geometric-mean W₁ of 0.064±0.006, against 0.132±0.018 from scratch (about 51% lower). The advantage fades with more data: at 10⁵ it is 4.7 vs 4.5, i.e. no gain.</p>
+<p>Among parameter-efficient methods:
+- <strong>BitFit:</strong> updates 17% of the diffusion parameters and lands within 5% of full fine-tuning (mean 6.2 vs 5.9 ×10⁻²).
+- <strong>LoRA at rank 106:</strong> underperforms (8.4). The authors attribute this to high-rank weight updates, with some layers needing rank above 200.</p>
+<p>A self-consuming retraining study shows progressive collapse in both ShowerFlow and the diffusion model. It is reported only qualitatively via figures.</p>
+<p>Caveats:
+- There is no comparison to multi-detector pre-training such as CaloDiT-2.
+- A residual per-observable mismatch at 10⁴ showers is hidden in the geometric mean.
+- The claim of adaptation to arbitrary geometry is explicitly not demonstrated here.</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv260929025-impact-of-soft-qcd-effects-over-intrajet-azimuthal-anisotropies-jesus-alberto-v-corral-et-al"><a href="https://arxiv.org/abs/2609.29025">arXiv:2609.29025</a> — Impact of soft QCD effects over intrajet azimuthal anisotropies (Jesus Alberto V. Corral et al.)</h3>
+<p>This is a generator-level reinterpretation of the CMS intrajet v₂ measurement (<a href="https://arxiv.org/abs/2312.17103">arXiv:2312.17103</a>), using PYTHIA 8.309 with the Monash, CP5 and QCD-scheme CR tunes. The setup is anti-kT R=0.8 jets with pT&gt;550 GeV and |η|&lt;1.6, particles with 0.3&lt;j_T&lt;3 GeV, and a long-range cut |Δη*|&gt;2.</p>
+<p>Tune spectra: CP5 gives a softer N_ch spectrum (inclusive ⟨N_ch⟩ 27.3, vs 31.2 for Monash and 30.0 for QCD-CR), with fewer jets at high N_ch.</p>
+<p>v₂ agreement with data (χ²/ndof):</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>N_ch &lt; 80</th>
+<th>N_ch ≥ 80</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QCD-scheme CR</td>
+<td>0.32</td>
+<td>10.21</td>
+</tr>
+<tr>
+<td>Sherpa (from CMS)</td>
+<td>1.02</td>
+<td>21.93</td>
+</tr>
+<tr>
+<td>Monash</td>
+<td>2.28</td>
+<td>10.20</td>
+</tr>
+<tr>
+<td>CP5</td>
+<td>4.69</td>
+<td>23.55</td>
+</tr>
+</tbody>
+</table>
+<p>The high-N_ch excess persists for all tunes. The authors frame QCD-CR and Monash as &ldquo;consistent at 2.3σ&rdquo; in the top bin. That framing sits awkwardly with χ²/ndof ≈ 10 over those two points, and should not be read as agreement.</p>
+<p>The new ingredient is rotating into the WTA-axis frame:
+- WTA lowers v₂ at the lowest N_ch for all tunes.
+- At high N_ch, Monash and CP5 shift away from their E-scheme values, while QCD-CR is the most frame-stable.
+- The authors tie the Monash shift to ⟨η*⟩ differences (2.08 for E-scheme vs 2.12 for WTA, at N_ch&gt;80).</p>
+<p>This argues that part of the high-N_ch &ldquo;signal&rdquo; is sensitive to soft-recoil effects on the jet axis, and it motivates a WTA-frame measurement.</p>
+<p>Caveats:
+- No detector simulation.
+- The WTA predictions have no data to compare against.
+- The fit uses only three Fourier terms.
+- Differences between tunes are attributed to colour reconnection, but CP5 also differs in its ISR, FSR, MPI and α_s settings.</p>
+<h3 id="arxiv260929620-event-level-classification-of-boosted-multi-tau-signatures-in-scnmssm-di-higgs-production-marwa-telba"><a href="https://arxiv.org/abs/2609.29620">arXiv:2609.29620</a> — Event-Level Classification of Boosted Multi-Tau Signatures in scNMSSM Di-Higgs Production (Marwa Telba)</h3>
+<p>The signal is h₁h₁→4a₁→8τ with m_a₁=8.2 GeV (γ≈7.5, ΔR_ττ≈0.27), with Z(→ττ)+jet at pT^ττ&gt;100 GeV as the main background. It is simulated with MG5+Pythia8+Delphes, using R=0.8 fat jets with the threshold lowered from 200 to 30 GeV. Without that change only 18% of signal events contain any fat jet.</p>
+<p><strong>Negative result for jet substructure.</strong> Standard two-prong discriminants fail against a background that is itself a ditau jet:
+- The separation power is S=0.016 for m_J and 0.09 for τ₂₁.
+- Neutrino losses (Z) and soft contamination (a₁) push both jet-mass distributions to about 18 GeV, despite parents at 8.2 and 91 GeV.
+- The best single variables are z_sub (S=0.36) and τ₁ (0.33). Normalising into τ₂₁ throws away information.
+- Energy correlation functions were not available from Delphes.</p>
+<p><strong>Performance</strong> (AUC):</p>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>AUC</th>
+<th>ε_S at ε_B=10%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-jet BDT vs Z</td>
+<td>0.759</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Event-level (32 inputs) vs Z</td>
+<td>0.941</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>Event-level vs tt̄→bb̄ττ</td>
+<td>0.855</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Cross-section-weighted combination</td>
+<td>0.908</td>
+<td>71%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The event-level gain is driven by fat-jet multiplicity and the soft-drop masses of the second and third jets.</li>
+<li>tt̄ mimics the multiplicity and subleading masses; discrimination against it relies on N_τ and E_T^miss instead.</li>
+<li>tt̄ makes up 66% of the surviving background at ε_B=1%, despite being under a quarter of the combined background cross section.</li>
+</ul>
+<p>Caveats:
+- A str</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, September 24, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -449,7 +566,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-24 08:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-25 05:38 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

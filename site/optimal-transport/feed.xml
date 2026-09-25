@@ -6,7 +6,30 @@
   <description>Moving earth between distributions</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2609-28661</link>
+    <guid isPermaLink="false">arxiv:2609.28661</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><strong>Relevance to this topic is weak.</strong> Optimal transport enters only as the evaluation metric: the Wasserstein-1 distance to Geant4 on six shower observables, combined by geometric mean. There is no OT-based training, coupling, or methodology.</p>
+<p>The paper is a proceedings summary of JINST 21 (2026) P07037. The authors pre-train CaloClouds II on 524k ILD ECAL photon showers (10–90 GeV) and adapt it to CaloChallenge DS3. The target differs in several ways at once:
+- electrons instead of photons;
+- a cylindrical rather than planar geometry, with 45 instead of 30 layers;
+- a log-uniform 1 GeV–1 TeV energy range;
+- point clouds more than three times larger at high energy.</p>
+<p>At 10² target showers, full fine-tuning reaches a geometric-mean W₁ of 0.064±0.006, against 0.132±0.018 from scratch (about 51% lower). The advantage fades with more data: at 10⁵ it is 4.7 vs 4.5, i.e. no gain.</p>
+<p>Among parameter-efficient methods:
+- <strong>BitFit:</strong> updates 17% of the diffusion parameters and lands within 5% of full fine-tuning (mean 6.2 vs 5.9 ×10⁻²).
+- <strong>LoRA at rank 106:</strong> underperforms (8.4). The authors attribute this to high-rank weight updates, with some layers needing rank above 200.</p>
+<p>A self-consuming retraining study shows progressive collapse in both ShowerFlow and the diffusion model. It is reported only qualitatively via figures.</p>
+<p>Caveats:
+- There is no comparison to multi-detector pre-training such as CaloDiT-2.
+- A residual per-observable mismatch at 10⁴ showers is hidden in the geometric mean.
+- The claim of adaptation to arbitrary geometry is explicitly not demonstrated here.</p>]]></description>
+  </item>
 
   <item>
     <title>Similarity Pairing with Energy Mover's Distance for Self-Supervised Pre-Training at the LHC</title>

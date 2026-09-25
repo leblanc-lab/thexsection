@@ -7,7 +7,17 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2609-28661</link>
+    <guid isPermaLink="false">arxiv:2609.28661</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
+<p>Particle shower simulation is a major computational cost in high-energy physics. Monte Carlo methods such as Geant4 are accurate but expensive, while most machine learning surrogates are tied to specific detector geometries and require retraining for each design change. We study cross-geometry transfer learning with CaloClouds II, a generative model that produces point clouds rather than voxels and can project onto arbitrary detector readouts. We pre-train on photon showers in the International Large Detector (ILD) and adapt to electron showers in the cylindrical CaloChallenge Dataset 3. With only 100 target showers, fine-tuning reduces the geometric mean Wasserstein distance to Geant4 by about 51% over training from scratch. Bias-only fine-tuning (BitFit) stays within 5% of full fine-tuning while updating only 17% of the diffusion network parameters. We also examine model collapse in CaloClouds II by retraining its normalising flow and diffusion model on its own generated showers across successive generations.</p>]]></description>
+  </item>
 
   <item>
     <title>Towards Foundation Models on Hardware Accelerators for Particle Physics</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benedetta Belfatto et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Michael Krämer) — abstract only, not yet read for a briefing.</em></p>
 <p>We present a comprehensive framework for the study of flavored dark matter models, combining relic density calculations with direct and indirect detection limits, collider constraints, and a global analysis of flavor observables based on SMEFT matching and renormalization-group evolution. The framework applies to scalar or fermionic dark matter, including both self-conjugate and non-self-conjugate cases. As a proof of principle, we analyze two scenarios with Majorana dark matter coupling to right-handed charged leptons and to right-handed down-type quarks, assuming a thermal freeze-out. In the leptophilic case, flavor-violating decays such as μ→e γ dominate the constraints, while LHC searches still leave sizable parameter space. For quark couplings, direct detection bounds and meson mixing severely restrict the allowed couplings, favoring hierarchical flavor structures. The toolchain presented in this paper is publicly available on GitHub (https://github.com/lena-ra/Flavored-Dark-Matter).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Validating a Machine Learning Approach to Identify Quenched Jets in Heavy-Ion Collisions</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-04005</link>
-    <guid isPermaLink="false">arxiv:2511.04005</guid>
-    <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yilun Wu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — abstract only, not yet read for a briefing.</em></p>
-<p>Jet quenching is a phenomenon in heavy-ion collisions arising from jet interactions with the quark-gluon plasma (QGP). Its study is complicated by the interplay of multiple physics processes that affect jet observables. In addition, detector effects may influence the results and must be accounted for when identifying quenched jets. We employ a Long Short-Term Memory (LSTM) neural network trained on jet substructure, incorporating parton shower history, to predict jet-by-jet quenching levels. Using photon-jet samples from the \textsc{Jewel} event generator, we show that the LSTM predictions strongly correlate with true jet energy loss. This validates that the model effectively learns the features of jet-QGP interaction. We simulate detector effects using \textsc{Delphes} simulation framework and demonstrate that the method identifies quenching effects in a realistic environment. We test the approach with photon-jet momentum imbalance, jet fragmentation function, and jet shape, which were not included in the training, confirming its ability to distinguish true quenching features.</p>]]></description>
   </item>
 
 </channel>
