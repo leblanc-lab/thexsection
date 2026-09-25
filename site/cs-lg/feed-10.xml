@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Real-time semantic segmentation on FPGAs for autonomous vehicles with hls4ml</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-07690</link>
+    <guid isPermaLink="false">arxiv:2205.07690</guid>
+    <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolò Ghielmetti et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>In this paper, we investigate how field programmable gate arrays can serve as hardware accelerators for real-time semantic segmentation tasks relevant for autonomous driving. Considering compressed versions of the ENet convolutional neural network architecture, we demonstrate a fully-on-chip deployment with a latency of 4.9 ms per image, using less than 30% of the available resources on a Xilinx ZCU102 evaluation board. The latency is reduced to 3 ms per image when increasing the batch size to ten, corresponding to the use case where the autonomous vehicle receives inputs from multiple cameras simultaneously. We show, through aggressive filter reduction and heterogeneous quantization-aware training, and an optimized implementation of convolutional layers, that the power consumption and resource utilization can be significantly reduced while maintaining accuracy on the Cityscapes dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2202-04258</link>
+    <guid isPermaLink="false">arxiv:2202.04258</guid>
+    <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jie Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Hypothesis testing for small-sample scenarios is a practically important problem. In this paper, we investigate the robust hypothesis testing problem in a data-driven manner, where we seek the worst-case detector over distributional uncertainty sets centered around the empirical distribution from samples using Sinkhorn distance. Compared with the Wasserstein robust test, the corresponding least favorable distributions are supported beyond the training samples, which provides a more flexible detector. Various numerical experiments are conducted on both synthetic and real datasets to validate the competitive performances of our proposed method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Neuro-Symbolic Brain</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-13440</link>
+    <guid isPermaLink="false">arxiv:2205.13440</guid>
+    <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Robert Lizée</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Neural networks promote a distributed representation with no clear place for symbols. Despite this, we propose that symbols are manufactured simply by training a sparse random noise as a self-sustaining attractor in a feedback spiking neural network. This way, we can generate many of what we shall call prime attractors, and the networks that support them are like registers holding a symbolic value, and we call them registers. Like symbols, prime attractors are atomic and devoid of any internal structure. Moreover, the winner-take-all mechanism naturally implemented by spiking neurons enables registers to recover a prime attractor within a noisy signal. Using this faculty, when considering two connected registers, an input one and an output one, it is possible to bind in one shot using a Hebbian rule the attractor active on the output to the attractor active on the input. Thus, whenever an attractor is active on the input, it induces its bound attractor on the output; even though the signal gets blurrier with more bindings, the winner-take-all filtering faculty can recover the bound prime attractor. However, the capacity is still limited. It is also possible to unbind in one shot, restoring the capacity taken by that binding. This mechanism serves as a basis for working memory, turning prime attractors into variables. Also, we use a random second-order network to amalgamate the prime attractors held by two registers to bind the prime attractor held by a third register to them in one shot, de facto implementing a hash table. Furthermore, we introduce the register switch box composed of registers to move the content of one register to another. Then, we use spiking neurons to build a toy symbolic computer based on the above. The technics used suggest ways to design extrapolating, reusable, sample-efficient deep learning networks at the cost of structural priors.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal transport weights for causal inference</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stephen Y. Zhang</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Non-negative matrix and tensor factorisations are a classical tool for finding low-dimensional representations of high-dimensional datasets. In applications such as imaging, datasets can be regarded as distributions supported on a space with metric structure. In such a setting, a loss function based on the Wasserstein distance of optimal transportation theory is a natural choice since it incorporates the underlying geometry of the data. We introduce a general mathematical framework for computing non-negative factorisations of both matrices and tensors with respect to an optimal transport loss. We derive an efficient computational method for its solution using a convex dual formulation, and demonstrate the applicability of this approach with several numerical illustrations with both matrix and tensor-valued data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein GAN: Deep Generation applied on Bitcoins financial time series</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-06008</link>
-    <guid isPermaLink="false">arxiv:2107.06008</guid>
-    <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rikli Samuel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Modeling financial time series is challenging due to their high volatility and unexpected happenings on the market. Most financial models and algorithms trying to fill the lack of historical financial time series struggle to perform and are highly vulnerable to overfitting. As an alternative, we introduce in this paper a deep neural network called the WGAN-GP, a data-driven model that focuses on sample generation. The WGAN-GP consists of a generator and discriminator function which utilize an LSTM architecture. The WGAN-GP is supposed to learn the underlying structure of the input data, which in our case, is the Bitcoin. Bitcoin is unique in its behavior; the prices fluctuate what makes guessing the price trend hardly impossible. Through adversarial training, the WGAN-GP should learn the underlying structure of the bitcoin and generate very similar samples of the bitcoin distribution. The generated synthetic time series are visually indistinguishable from the real data. But the numerical results show that the generated data were close to the real data distribution but distinguishable. The model mainly shows a stable learning behavior. However, the model has space for optimization, which could be achieved by adjusting the hyperparameters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Robust Classification with Fairness Constraints</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-06828</link>
-    <guid isPermaLink="false">arxiv:2103.06828</guid>
-    <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yijie Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a distributionally robust classification model with a fairness constraint that encourages the classifier to be fair in view of the equality of opportunity criterion. We use a type-∞ Wasserstein ambiguity set centered at the empirical distribution to model distributional uncertainty and derive a conservative reformulation for the worst-case equal opportunity unfairness measure. We establish that the model is equivalent to a mixed binary optimization problem, which can be solved by standard off-the-shelf solvers. To improve scalability, we further propose a convex, hinge-loss-based model for large problem instances whose reformulation does not incur any binary variables. Moreover, we also consider the distributionally robust learning problem with a generic ground transportation cost to hedge against the uncertainties in the label and sensitive attribute. Finally, we numerically demonstrate that our proposed approaches improve fairness with negligible loss of predictive accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantum-inspired Machine Learning on high-energy physics data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2004-13747</link>
-    <guid isPermaLink="false">arxiv:2004.13747</guid>
-    <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Timo Felser et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (b-jets, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Tensor Networks, a numerical tool originally designed for simulating quantum many-body systems, have recently been applied to solve Machine Learning problems. Exploiting a tree tensor network, we apply a quantum-inspired machine learning technique to a very important and challenging big data problem in high energy physics: the analysis and classification of data produced by the Large Hadron Collider at CERN. In particular, we present how to effectively classify so-called b-jets, jets originating from b-quarks from proton-proton collisions in the LHCb experiment, and how to interpret the classification results. We exploit the Tensor Network approach to select important features and adapt the network geometry based on information acquired in the learning process. Finally, we show how to adapt the tree tensor network to achieve optimal precision or fast response in time without the need of repeating the learning process. These results pave the way to the implementation of high-frequency real-time applications, a key ingredient needed among others for current and future LHCb event classification able to trigger events at the tens of MHz scale.</p>]]></description>
   </item>
 
 </channel>

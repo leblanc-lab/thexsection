@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Contextual Counting: A Mechanistic Study of Transformers on a Quantitative Task</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-02585</link>
+    <guid isPermaLink="false">arxiv:2406.02585</guid>
+    <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siavash Golkar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
+<p>Transformers have revolutionized machine learning across diverse domains, yet understanding their behavior remains crucial, particularly in high-stakes applications. This paper introduces the contextual counting task, a novel toy problem aimed at enhancing our understanding of Transformers in quantitative and scientific contexts. This task requires precise localization and computation within datasets, akin to object detection or region-based scientific analysis. We present theoretical and empirical analysis using both causal and non-causal Transformer architectures, investigating the influence of various positional encodings on performance and interpretability. In particular, we find that causal attention is much better suited for the task, and that no positional embeddings lead to the best accuracy, though rotary embeddings are competitive and easier to train. We also show that out of distribution performance is tightly linked to which tokens it uses as a bias term.</p>]]></description>
+  </item>
+
+  <item>
+    <title>From Neurons to Neutrons: A Case Study in Interpretability</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-17425</link>
+    <guid isPermaLink="false">arxiv:2405.17425</guid>
+    <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Mike Williams) — original abstract; no AI summary.</em></p>
+<p>Mechanistic Interpretability (MI) promises a path toward fully understanding how neural networks make their predictions. Prior work demonstrates that even when trained to perform simple arithmetic, models can implement a variety of algorithms (sometimes concurrently) depending on initialization and hyperparameters. Does this mean neuron-level interpretability techniques have limited applicability? We argue that high-dimensional neural networks can learn low-dimensional representations of their training data that are useful beyond simply making good predictions. Such representations can be understood through the mechanistic interpretability lens and provide insights that are surprisingly faithful to human-derived domain knowledge. This indicates that such approaches to interpretability can be useful for deriving a new understanding of a problem from models trained to solve it. As a case study, we extract nuclear physics concepts by studying models trained to reproduce nuclear data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Constrained Ensemble Exploration for Unsupervised Skill Discovery</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-16030</link>
+    <guid isPermaLink="false">arxiv:2405.16030</guid>
+    <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenjia Bai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Unsupervised Reinforcement Learning (RL) provides a promising paradigm for learning useful behaviors via reward-free per-training. Existing methods for unsupervised RL mainly conduct empowerment-driven skill discovery or entropy-based exploration. However, empowerment often leads to static skills, and pure exploration only maximizes the state coverage rather than learning useful behaviors. In this paper, we propose a novel unsupervised RL framework via an ensemble of skills, where each skill performs partition exploration based on the state prototypes. Thus, each skill can explore the clustered area locally, and the ensemble skills maximize the overall state coverage. We adopt state-distribution constraints for the skill occupancy and the desired cluster for learning distinguishable skills. Theoretical analysis is provided for the state entropy and the resulting skill distributions. Based on extensive experiments on several challenging tasks, we find our method learns well-explored ensemble skills and achieves superior performance in various downstream tasks compared to previous methods.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal transport for automatic alignment of untargeted metabolomic data</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhong Yi Wan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We introduce a two-stage probabilistic framework for statistical downscaling using unpaired data. Statistical downscaling seeks a probabilistic map to transform low-resolution data from a biased coarse-grained numerical scheme to high-resolution data that is consistent with a high-fidelity scheme. Our framework tackles the problem by composing two transformations: (i) a debiasing step via an optimal transport map, and (ii) an upsampling step achieved by a probabilistic diffusion model with a posteriori conditional sampling. This approach characterizes a conditional distribution without needing paired data, and faithfully recovers relevant physical statistics from biased samples. We demonstrate the utility of the proposed approach on one- and two-dimensional fluid flow problems, which are representative of the core difficulties present in numerical simulations of weather and climate. Our method produces realistic high-resolution outputs from low-resolution inputs, by upsampling resolutions of 8x and 16x. Moreover, our procedure correctly matches the statistics of physical quantities, even when the low-frequency content of the inputs and outputs do not match, a crucial but difficult-to-satisfy assumption needed by current state-of-the-art alternatives. Code for this work is available at: https://github.com/google-research/swirl-dynamics/tree/main/swirl_dynamics/projects/probabilistic_diffusion.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-01770</link>
-    <guid isPermaLink="false">arxiv:2307.01770</guid>
-    <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillaume Mahey et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distance (WD) and the associated optimal transport plan have been proven useful in many applications where probability measures are at stake. In this paper, we propose a new proxy of the squared WD, coined min-SWGG, that is based on the transport map induced by an optimal one-dimensional projection of the two input distributions. We draw connections between min-SWGG and Wasserstein generalized geodesics in which the pivot measure is supported on a line. We notably provide a new closed form for the exact Wasserstein distance in the particular case of one of the distributions supported on a line allowing us to derive a fast computational scheme that is amenable to gradient descent optimization. We show that min-SWGG is an upper bound of WD and that it has a complexity similar to as Sliced-Wasserstein, with the additional feature of providing an associated transport plan. We also investigate some theoretical properties such as metricity, weak convergence, computational and topological properties. Empirical evidences support the benefits of min-SWGG in various contexts, from gradient flows, shape matching and image colorization, among others.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Estimating the Rate-Distortion Function by Wasserstein Gradient Descent</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2310-18908</link>
-    <guid isPermaLink="false">arxiv:2310.18908</guid>
-    <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yibo Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In the theory of lossy compression, the rate-distortion (R-D) function R(D) describes how much a data source can be compressed (in bit-rate) at any given level of fidelity (distortion). Obtaining R(D) for a given data source establishes the fundamental performance limit for all compression algorithms. We propose a new method to estimate R(D) from the perspective of optimal transport. Unlike the classic Blahut&ndash;Arimoto algorithm which fixes the support of the reproduction distribution in advance, our Wasserstein gradient descent algorithm learns the support of the optimal reproduction distribution by moving particles. We prove its local convergence and analyze the sample complexity of our R-D estimator based on a connection to entropic optimal transport. Experimentally, we obtain comparable or tighter bounds than state-of-the-art neural network methods on low-rate sources while requiring considerably less tuning and computation effort. We also highlight a connection to maximum-likelihood deconvolution and introduce a new class of sources that can be used as test cases with known solutions to the R-D problem.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Uniform-in-Time Wasserstein Stability Bounds for (Noisy) Stochastic Gradient Descent</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-12056</link>
-    <guid isPermaLink="false">arxiv:2305.12056</guid>
-    <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lingjiong Zhu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Algorithmic stability is an important notion that has proven powerful for deriving generalization bounds for practical algorithms. The last decade has witnessed an increasing number of stability bounds for different algorithms applied on different classes of loss functions. While these bounds have illuminated various properties of optimization algorithms, the analysis of each case typically required a different proof technique with significantly different mathematical tools. In this study, we make a novel connection between learning theory and applied probability and introduce a unified guideline for proving Wasserstein stability bounds for stochastic optimization algorithms. We illustrate our approach on stochastic gradient descent (SGD) and we obtain time-uniform stability bounds (i.e., the bound does not increase with the number of iterations) for strongly convex losses and non-convex losses with additive noise, where we recover similar results to the prior art or extend them to more general cases by using a single proof technique. Our approach is flexible and can be generalizable to other popular optimizers, as it mainly requires developing Lyapunov functions, which are often readily available in the literature. It also illustrates that ergodicity is an important component for obtaining time-uniform bounds &ndash; which might not be achieved for convex or non-convex losses unless additional noise is injected to the iterates. Finally, we slightly stretch our analysis technique and prove time-uniform bounds for SGD under convex and non-convex losses (without additional additive noise), which, to our knowledge, is novel.</p>]]></description>
   </item>
 
 </channel>

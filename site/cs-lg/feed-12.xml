@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Patient ADE Risk Prediction through Hierarchical Time-Aware Neural Network Using Claim Codes</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-08957</link>
+    <guid isPermaLink="false">arxiv:2008.08957</guid>
+    <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jinhe Shi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Adverse drug events (ADEs) are a serious health problem that can be life-threatening. While a lot of studies have been performed on detect correlation between a drug and an AE, limited studies have been conducted on personalized ADE risk prediction. Among treatment alternatives, avoiding the drug that has high likelihood of causing severe AE can help physicians to provide safer treatment to patients. Existing work on personalized ADE risk prediction uses the information obtained in the current medical visit. However, on the other hand, medical history reveals each patient&rsquo;s unique characteristics and comprehensive medical information. The goal of this study is to assess personalized ADE risks that a target drug may induce on a target patient, based on patient medical history recorded in claims codes, which provide information about diagnosis, drugs taken, related medical supplies besides billing information. We developed a HTNNR model (Hierarchical Time-aware Neural Network for ADE Risk) that capture characteristics of claim codes and their relationship. The empirical evaluation show that the proposed HTNNR model substantially outperforms the comparison methods, especially for rare drugs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conditional Wasserstein GAN-based Oversampling of Tabular Data for Imbalanced Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-09202</link>
+    <guid isPermaLink="false">arxiv:2008.09202</guid>
+    <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Justin Engelmann et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Class imbalance is a common problem in supervised learning and impedes the predictive performance of classification models. Popular countermeasures include oversampling the minority class. Standard methods like SMOTE rely on finding nearest neighbours and linear interpolations which are problematic in case of high-dimensional, complex data distributions. Generative Adversarial Networks (GANs) have been proposed as an alternative method for generating artificial minority examples as they can model complex distributions. However, prior research on GAN-based oversampling does not incorporate recent advancements from the literature on generating realistic tabular data with GANs. Previous studies also focus on numerical variables whereas categorical features are common in many business applications of classification methods such as credit scoring. The paper propoes an oversampling method based on a conditional Wasserstein GAN that can effectively model tabular datasets with numerical and categorical variables and pays special attention to the down-stream classification task through an auxiliary classifier loss. We benchmark our method against standard oversampling methods and the imbalanced baseline on seven real-world datasets. Empirical results evidence the competitiveness of GAN-based oversampling.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reinforced Wasserstein Training for Severity-Aware Semantic Segmentation in Autonomous Driving</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-04751</link>
+    <guid isPermaLink="false">arxiv:2008.04751</guid>
+    <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Semantic segmentation is important for many real-world systems, e.g., autonomous vehicles, which predict the class of each pixel. Recently, deep networks achieved significant progress w.r.t. the mean Intersection-over Union (mIoU) with the cross-entropy loss. However, the cross-entropy loss can essentially ignore the difference of severity for an autonomous car with different wrong prediction mistakes. For example, predicting the car to the road is much more servery than recognize it as the bus. Targeting for this difficulty, we develop a Wasserstein training framework to explore the inter-class correlation by defining its ground metric as misclassification severity. The ground metric of Wasserstein distance can be pre-defined following the experience on a specific task. From the optimization perspective, we further propose to set the ground metric as an increasing function of the pre-defined ground metric. Furthermore, an adaptively learning scheme of the ground matrix is proposed to utilize the high-fidelity CARLA simulator. Specifically, we follow a reinforcement alternative learning scheme. The experiments on both CamVid and Cityscapes datasets evidenced the effectiveness of our Wasserstein loss. The SegNet, ENet, FCN and Deeplab networks can be adapted following a plug-in manner. We achieve significant improvements on the predefined important classes, and much longer continuous playtime in our simulator.</p>]]></description>
+  </item>
 
   <item>
     <title>Graph Wasserstein Correlation Analysis for Movie Retrieval</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arun Jambulapati et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transportation, or computing the Wasserstein or ``earth mover&rsquo;s&rsquo;&rsquo; distance between two distributions, is a fundamental primitive which arises in many learning and statistical settings. We give an algorithm which solves this problem to additive ε with Õ(1/ε) parallel depth, and Õ(n²/ε) work. Barring a breakthrough on a long-standing algorithmic open problem, this is optimal for first-order methods. Blanchet et. al. &lsquo;18, Quanrud &lsquo;19 obtained similar runtimes through reductions to positive linear programming and matrix scaling. However, these reduction-based algorithms use complicated subroutines which may be deemed impractical due to requiring solvers for second-order iterations (matrix scaling) or non-parallelizability (positive LP). The fastest practical algorithms run in time Õ(min(n² / ε², n².5 / ε)) (Dvurechensky et. al. &lsquo;18, Lin et. al. &lsquo;19). We bridge this gap by providing a parallel, first-order, Õ(1/ε) iteration algorithm without worse dependence on dimension, and provide preliminary experimental evidence that our algorithm may enjoy improved practical performance. We obtain this runtime via a primal-dual extragradient method, motivated by recent theoretical improvements to maximum flow (Sherman &lsquo;17).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Statistical bounds for entropic optimal transport: sample complexity and the central limit theorem</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-11882</link>
-    <guid isPermaLink="false">arxiv:1905.11882</guid>
-    <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gonzalo Mena et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We prove several fundamental statistical bounds for entropic OT with the squared Euclidean cost between subgaussian probability measures in arbitrary dimension. First, through a new sample complexity result we establish the rate of convergence of entropic OT for empirical measures. Our analysis improves exponentially on the bound of Genevay et al. (2019) and extends their work to unbounded measures. Second, we establish a central limit theorem for entropic OT, based on techniques developed by Del Barrio and Loubes (2019). Previously, such a result was only known for finite metric spaces. As an application of our results, we develop and analyze a new technique for estimating the entropy of a random variable corrupted by gaussian noise.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Style Transfer</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-12828</link>
-    <guid isPermaLink="false">arxiv:1905.12828</guid>
-    <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Youssef Mroueh</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose Gaussian optimal transport for Image style transfer in an Encoder/Decoder framework. Optimal transport for Gaussian measures has closed forms Monge mappings from source to target distributions. Moreover interpolates between a content and a style image can be seen as geodesics in the Wasserstein Geometry. Using this insight, we show how to mix different target styles , using Wasserstein barycenter of Gaussian measures. Since Gaussians are closed under Wasserstein barycenter, this allows us a simple style transfer and style mixing and interpolation. Moreover we show how mixing different styles can be achieved using other geodesic metrics between gaussians such as the Fisher Rao metric, while the transport of the content to the new interpolate style is still performed with Gaussian OT maps. Our simple methodology allows to generate new stylized content interpolating between many artistic styles. The metric used in the interpolation results in different stylizations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sinkhorn Barycenters with Free Support via Frank-Wolfe Algorithm</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-13194</link>
-    <guid isPermaLink="false">arxiv:1905.13194</guid>
-    <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giulia Luise et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We present a novel algorithm to estimate the barycenter of arbitrary probability distributions with respect to the Sinkhorn divergence. Based on a Frank-Wolfe optimization strategy, our approach proceeds by populating the support of the barycenter incrementally, without requiring any pre-allocation. We consider discrete as well as continuous distributions, proving convergence rates of the proposed algorithm in both settings. Key elements of our analysis are a new result showing that the Sinkhorn divergence on compact domains has Lipschitz continuous gradient with respect to the Total Variation and a characterization of the sample complexity of Sinkhorn potentials. Experiments validate the effectiveness of our method in practice.</p>]]></description>
   </item>
 
 </channel>

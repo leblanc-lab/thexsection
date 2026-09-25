@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Physics Instrument Design with Reinforcement Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2412-10237</link>
+    <guid isPermaLink="false">arxiv:2412.10237</guid>
+    <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shah Rukh Qasim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>We present a case for the use of Reinforcement Learning (RL) for the design of physics instrument as an alternative to gradient-based instrument-optimization methods. It&rsquo;s applicability is demonstrated using two empirical studies. One is longitudinal segmentation of calorimeters and the second is both transverse segmentation as well longitudinal placement of trackers in a spectrometer. Based on these experiments, we propose an alternative approach that offers unique advantages over differentiable programming and surrogate-based differentiable design optimization methods. First, Reinforcement Learning (RL) algorithms possess inherent exploratory capabilities, which help mitigate the risk of convergence to local optima. Second, this approach eliminates the necessity of constraining the design to a predefined detector model with fixed parameters. Instead, it allows for the flexible placement of a variable number of detector components and facilitates discrete decision-making. We then discuss the road map of how this idea can be extended into designing very complex instruments. The presented study sets the stage for a novel framework in physics instrument design, offering a scalable and efficient framework that can be pivotal for future projects such as the Future Circular Collider (FCC), where most optimized detectors are essential for exploring physics at unprecedented energy scales.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Measuring the ATLAS ITk Pixel Detector Material via Multiple Scattering of Positrons at the CERN PS</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2412-04686</link>
+    <guid isPermaLink="false">arxiv:2412.04686</guid>
+    <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simon Florian Koch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The ITk is a new silicon tracker for the ATLAS experiment designed to increase detector resolution, readout capacity, and radiation hardness, in preparation for the larger number of simultaneous proton-proton interactions at the High Luminosity LHC. This paper presents the first direct measurement of the material budget of an ATLAS ITk pixel module, performed at a testbeam at the CERN Proton Synchrotron via the multiple scattering of low energy positrons within the module volume. Using a four plane telescope of thin monolithic pixel detectors from the MALTA collaboration, scattering datasets were recorded at a beam energy of 1.2 GeV. Kink angle distributions were extracted from tracks derived with and without information from the ITk pixel module, and were fit to extract the RMS scattering angle, which was converted to a fractional radiation length x/X_0. The average x/X_0 across the module was measured as [0.89 ±0.01  (resolution) ±0.01  (subtraction) ±0.08  (beam momentum band)]%, which agrees within uncertainties with an estimate of 0.88% derived from material component expectations.</p>]]></description>
+  </item>
 
   <item>
     <title>First experiences with the LHCb heterogeneous software trigger</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucio Anderlini et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Detailed detector simulation is the major consumer of CPU resources at LHCb, having used more than 90% of the total computing budget during Run 2 of the Large Hadron Collider at CERN. As data is collected by the upgraded LHCb detector during Run 3 of the LHC, larger requests for simulated data samples are necessary, and will far exceed the pledged resources of the experiment, even with existing fast simulation options. An evolution of technologies and techniques to produce simulated samples is mandatory to meet the upcoming needs of analysis to interpret signal versus background and measure efficiencies. In this context, we propose Lamarr, a Gaudi-based framework designed to offer the fastest solution for the simulation of the LHCb detector. Lamarr consists of a pipeline of modules parameterizing both the detector response and the reconstruction algorithms of the LHCb experiment. Most of the parameterizations are made of Deep Generative Models and Gradient Boosted Decision Trees trained on simulated samples or alternatively, where possible, on real data. Embedding Lamarr in the general LHCb Gauss Simulation framework allows combining its execution with any of the available generators in a seamless way. Lamarr has been validated by comparing key reconstructed quantities with Detailed Simulation. Good agreement of the simulated distributions is obtained with two-order-of-magnitude speed-up of the simulation phase.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Constructing the Hyper-Kamiokande Computing Model in the Build Up to Data Taking</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2309-11844</link>
-    <guid isPermaLink="false">arxiv:2309.11844</guid>
-    <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sophie King</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Hyper-Kamiokande is a next-generation multi-purpose neutrino experiment with a primary focus on constraining CP-violation in the lepton sector. It features a diverse science programme that includes neutrino oscillation studies, astrophysics, neutrino cross-section measurements, and searches for physics beyond the standard model, such as proton decay. Building on its predecessor, Super-Kamiokande, the Hyper-Kamiokande far detector has a total volume approximately 5 times larger and is estimated to collect nearly 2PB of data per year. The experiment will also include both on- and off-axis near detectors, including an Intermediate Water Cherenkov Detector. To manage the significant demands relating to the data from these detectors, and the associated Monte Carlo simulations for a range of physics studies, an efficient and scalable distributed computing model is essential. This model leverages Worldwide LHC Grid computing infrastructure and utilises the GridPP DIRAC instance for both workload management and for file cataloguing. In this report we forecast the computing requirements for the Hyper-K experiment, estimated to reach around 35PB (per replica) and 8,700 CPU cores (~ 100,000 HS06) by 2036. We outline the resources, tools, and workflow in place to satisfy this demand.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MiniCACTUS: A 65 ps Time Resolution Depleted Monolithic CMOS Sensor</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2309-08439</link>
-    <guid isPermaLink="false">arxiv:2309.08439</guid>
-    <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yavuz Degerli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>MiniCACTUS is a monolithic sensor prototype optimised for timing measurement of charged particles. It has been designed in a standard 150 nm CMOS process without dedicated amplification layer. It is intended as a demonstrator chip for future large scale timing detectors, like upgrades of timing detectors at LHC, or future high energy physics detector projects. The sensor features an active array of 2 x 4 diodes, analog and digital Front-Ends (FEs), a slow control interface, and bias circuitry programmable through internal DACs. The sensing element is a deep n-well/p-substrate diode. Thanks to the optimized guard-rings surrounding the whole chip, it is possible to apply safely more than 450 V on the high-resistivity substrate allowing fast charge collection. The baseline pixel dimensions are 1.0 mm x 1.0 mm and 0.5 mm x 1.0 mm. The analog FEs and the discriminators for each pixel are implemented outside the pixel, at the column level. The power consumption is approximately 300 mW/cm², which is compatible with cooling infrastructure available at LHC experiments, and making integration of this concept viable in future high energy physics experiments. After fabrication, the sensors have been thinned to 100 μm, 200 μm and 300 μm total thickness and then post-processed for backside biasing. The time resolution of several sensors with different thicknesses has been measured in 3 test-beam campaigns using high energy muons (Minimum Ionizing Particles) at CERN SPS in 2021 and 2022. A resolution of 65.3 ps has been measured with on-chip FE and discriminator. This paper will focus on the results of these test-beam campaigns.</p>]]></description>
   </item>
 
 </channel>

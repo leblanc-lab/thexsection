@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Rethinking Training &amp; Inference for Forecasting: Linking Winner-Take-All back to GMMs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-26424</link>
+    <guid isPermaLink="false">arxiv:2606.26424</guid>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiyuan Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Trajectory forecasting for autonomous driving has advanced rapidly, yet representative models often produce uninformative posteriors over forecast modes, causing problems for mode pruning. We trace this to a modeling-training mismatch: forecasters are typically modeled as conditional Gaussian mixture models (GMMs) but trained with a winner-take-all (WTA) loss that assigns each sample to its nearest mode. We argue that this K-means-like hard assignment (one-hot), while preventing mode collapse, is the source of uninformative mode probabilities: it over-segments the trajectory space, ignores relatedness among nearby modes, and yields assignment instability under small perturbations. Guided by this lens, we introduce two post-hoc treatments: (1) test-time posterior-weighted merging that aggregates nearby candidate trajectories; and (2) a one-step expectation-maximization (EM) update that replaces hard labels with soft responsibilities, sharing probability mass across neighboring modes. Across several WTA-trained architectures, these lightweight steps produce more informative, faithfully ranked mode posteriors and strengthen final forecasts on popular displacement metrics &ndash; without retraining. Our analysis unifies recent design choices through a GMM-vs-K-means perspective and offers principled, practical corrections that better align training objectives with inference.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Riemannian Approach to Low-Rank Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-12120</link>
+    <guid isPermaLink="false">arxiv:2606.12120</guid>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Jawanpuria et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Low-rank optimal transport (OT) mitigates the quadratic scaling of classical solvers, yet existing approaches rely heavily on first-order mirror-descent updates that require careful hyperparameter tuning and ignore the optimization landscape&rsquo;s curvature. To address these limitations, we propose a unified Riemannian geometric framework for low-rank OT, modeling balanced and unbalanced rank-r positive factored couplings as novel smooth embedded submanifolds of the positive orthant. By equipping these manifolds with the Fisher-Rao product metric, we derive tractable formulations for Riemannian projectors, retractions, and Hessian-vector products. Our cost-agnostic framework seamlessly extends to linear OT, Gromov-Wasserstein (GW), fused GW, and their unbalanced counterparts. For balanced OT, our geometric ingredients are computed via efficient conjugate-gradient and iterative Bregman updates. For the unbalanced OT, our operations elegantly reduce to closed-form scalings, completely eliminating inner iterative loops. In both regimes, per-iteration complexity scales linearly with dataset size, and we provide a rank-sufficiency certificate for global optimality verification. Extensive experiments across a range of problem sizes demonstrate that our regularization-free first- and second-order solvers achieve faster convergence and superior performance over existing state-of-the-art low-rank OT solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical Matching via Schrödinger Bridge beyond Conditional Independence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-22770</link>
+    <guid isPermaLink="false">arxiv:2606.22770</guid>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eunho Koo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Statistical matching combines partially overlapping datasets that share covariates X but observe the target Y and auxiliary variables Z separately. Classical approaches typically invoke the conditional independence assumption (CIA), which makes the problem identifiable but fundamentally implies that the imported auxiliary variable provides no additional predictive power for Y once X is known. To capture this latent Y&ndash;Z dependence, we propose a novel dependency-aware Schrödinger bridge for predictive statistical matching. Our approach couples the two separated databases by tilting the conservative CIA baseline with a transportation-based compatibility cost, recovering an informative joint distribution. The resulting statistical learning framework yields full probabilistic posterior rules for bidirectional imputation. Theoretically, we establish a sufficient condition under which the learned bridge strictly improves over the CIA baseline, alongside an exact joint recovery guarantee in the Gaussian setting under an appropriate cost. Across synthetic benchmarks and real-world datasets (CelebA and Adult), we demonstrate that our dependency-aware completion consistently improves downstream predictive utility, proving especially beneficial in settings like data recoding where the underlying population exhibits strong Y&ndash;Z dependence.</p>]]></description>
+  </item>
 
   <item>
     <title>AI Agents Can Already Autonomously Perform Experimental High Energy Physics</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Xiao</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>Entropic regularized optimal transport (OT) via the Sinkhorn algorithm has become a fundamental tool in machine learning, yet existing implementations either suffer from numerical instability for small regularization parameters or incur significant overhead from deep learning frameworks. We present FastSinkhorn, a lightweight, native CUDA implementation of the log-domain Sinkhorn algorithm that combines warp-level shuffle reductions with shared-memory tiling to achieve high GPU utilization without sacrificing numerical stability. Our solver operates entirely in the log-domain, enabling robust computation for regularization parameters as small as epsilon = 10^{-4} where standard-domain methods fail. On dense OT problems with n = m = 8192, our implementation achieves 12x speedup over the widely-used POT library and 5.9x speedup over GPU-accelerated PyTorch baselines, while consuming only 256 MB of GPU memory. We validate our solver on image color transfer, 3D point cloud matching, and convergence analysis, demonstrating that native CUDA kernels with careful numerical treatment provide a practical and efficient foundation for large-scale optimal transport computation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Structure-Preserving Multi-View Embedding Using Gromov-Wasserstein Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02610</link>
-    <guid isPermaLink="false">arxiv:2604.02610</guid>
-    <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Pereira Eufrazio et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Multi-view data analysis seeks to integrate multiple representations of the same samples in order to recover a coherent low-dimensional structure. Classical approaches often rely on feature concatenation or explicit alignment assumptions, which become restrictive under heterogeneous geometries or nonlinear distortions. In this work, we propose two geometry-aware multi-view embedding strategies grounded in Gromov-Wasserstein (GW) optimal transport. The first, termed Mean-GWMDS, aggregates view-specific relational information by averaging distance matrices and applying GW-based multidimensional scaling to obtain a representative embedding. The second strategy, referred to as Multi-GWMDS, adopts a selection-based paradigm in which multiple geometry-consistent candidate embeddings are generated via GW-based alignment and a representative embedding is selected. Experiments on synthetic manifolds and real-world datasets show that the proposed methods effectively preserve intrinsic relational structure across views. These results highlight GW-based approaches as a flexible and principled framework for multi-view representation learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conditional Sampling via Wasserstein Autoencoders and Triangular Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02644</link>
-    <guid isPermaLink="false">arxiv:2604.02644</guid>
-    <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammad Al-Jarrah et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We present Conditional Wasserstein Autoencoders (CWAEs), a framework for conditional simulation that exploits low-dimensional structure in both the conditioned and the conditioning variables. The key idea is to modify a Wasserstein autoencoder to use a (block-) triangular decoder and impose an appropriate independence assumption on the latent variables. We show that the resulting model gives an autoencoder that can exploit low-dimensional structure while simultaneously the decoder can be used for conditional simulation. We explore various theoretical properties of CWAEs, including their connections to conditional optimal transport (OT) problems. We also present alternative formulations that lead to three architectural variants forming the foundation of our algorithms. We present a series of numerical experiments that demonstrate that our different CWAE variants achieve substantial reductions in approximation error relative to the low-rank ensemble Kalman filter (LREnKF), particularly in problems where the support of the conditional measures is truly low-dimensional.</p>]]></description>
-  </item>
-
-  <item>
-    <title>WFR-FM: Simulation-Free Dynamic Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-06810</link>
-    <guid isPermaLink="false">arxiv:2601.06810</guid>
-    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiangwei Peng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The Wasserstein-Fisher-Rao (WFR) metric extends dynamic optimal transport (OT) by coupling displacement with change of mass, providing a principled geometry for modeling unbalanced snapshot dynamics. Existing WFR solvers, however, are often unstable, computationally expensive, and difficult to scale. Here we introduce WFR Flow Matching (WFR-FM), a simulation-free training algorithm that unifies flow matching with dynamic unbalanced OT. Unlike classical flow matching which regresses only a transport vector field, WFR-FM simultaneously regresses a vector field for displacement and a scalar growth rate function for birth-death dynamics, yielding continuous flows under the WFR geometry. Theoretically, we show that minimizing the WFR-FM loss exactly recovers WFR geodesics. Empirically, WFR-FM yields more accurate and robust trajectory inference in single-cell biology, reconstructing consistent dynamics with proliferation and apoptosis, estimating time-varying growth fields, and applying to generative dynamics under imbalanced data. It outperforms state-of-the-art baselines in efficiency, stability, and reconstruction accuracy. Overall, WFR-FM establishes a unified and efficient paradigm for learning dynamical systems from unbalanced snapshots, where not only states but also mass evolve over time. The Python code is available at https://github.com/QiangweiPeng/WFR-FM.</p>]]></description>
   </item>
 
 </channel>

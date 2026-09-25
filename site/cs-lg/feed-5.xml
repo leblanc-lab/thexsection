@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>OmniJet-α_C: Learning point cloud calorimeter simulations using generative transformers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-05534</link>
+    <guid isPermaLink="false">arxiv:2501.05534</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>We show the first use of generative transformers for generating calorimeter showers as point clouds in a high-granularity calorimeter. Using the tokenizer and generative part of the OmniJet-α model, we represent the hits in the detector as sequences of integers. This model allows variable-length sequences, which means that it supports realistic shower development and does not need to be conditioned on the number of hits. Since the tokenization represents the showers as point clouds, the model learns the geometry of the showers without being restricted to any particular voxel grid.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal Bounds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09681</link>
+    <guid isPermaLink="false">arxiv:2506.09681</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vahan Arsenyan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Generative modeling aims to produce new random examples from an unknown target distribution, given access to a finite collection of examples. Among the leading approaches, denoising diffusion probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion process driven by an estimated score function. In this work, we first provide empirical evidence that DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than previously known results. Furthermore, we observe that the obtained rates match those known in the Gaussian case, implying their optimality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Hypergraph Neural Network</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09682</link>
+    <guid isPermaLink="false">arxiv:2506.09682</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iulia Duta et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The ability to model relational information using machine learning has driven advancements across various domains, from medicine to social science. While graph representation learning has become mainstream over the past decade, representing higher-order relationships through hypergraphs is rapidly gaining momentum. In the last few years, numerous hypergraph neural networks have emerged, most of them falling under a two-stage, set-based framework. The messages are sent from nodes to edges and then from edges to nodes. However, most of the advancement still takes inspiration from the graph counterpart, often simplifying the aggregations to basic pooling operations. In this paper we are introducing Wasserstein Hypergraph Neural Network, a model that treats the nodes and hyperedge neighbourhood as distributions and aggregate the information using Sliced Wasserstein Pooling. Unlike conventional aggregators such as mean or sum, which only capture first-order statistics, our approach has the ability to preserve geometric properties like the shape and spread of distributions. This enables the learned embeddings to reflect how easily one hyperedge distribution can be transformed into another, following principles of optimal transport. Experimental results demonstrate that applying Wasserstein pooling in a hypergraph setting significantly benefits node classification tasks, achieving top performance on several real-world datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>Training-Free Voice Conversion with Factorized Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phuc Hau Luu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We study a class of optimization problems in the Wasserstein space (the space of probability measures) where the objective function is nonconvex along generalized geodesics. Specifically, the objective exhibits some difference-of-convex structure along these geodesics. The setting also encompasses sampling problems where the logarithm of the target distribution is difference-of-convex. We derive multiple convergence insights for a novel semi Forward-Backward Euler scheme under several nonconvex (and possibly nonsmooth) regimes. Notably, the semi Forward-Backward Euler is just a slight modification of the Forward-Backward Euler whose convergence is &ndash; to our knowledge &ndash; still unknown in our very general non-geodesically-convex setting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SymbolNet: Neural Symbolic Regression with Adaptive Dynamic Pruning for Compression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2401-09949</link>
-    <guid isPermaLink="false">arxiv:2401.09949</guid>
-    <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Compact symbolic expressions have been shown to be more efficient than neural network models in terms of resource consumption and inference speed when implemented on custom hardware such as FPGAs, while maintaining comparable accuracy~\cite{tsoi2023symbolic}. These capabilities are highly valuable in environments with stringent computational resource constraints, such as high-energy physics experiments at the CERN Large Hadron Collider. However, finding compact expressions for high-dimensional datasets remains challenging due to the inherent limitations of genetic programming, the search algorithm of most symbolic regression methods. Contrary to genetic programming, the neural network approach to symbolic regression offers scalability to high-dimensional inputs and leverages gradient methods for faster equation searching. Common ways of constraining expression complexity often involve multistage pruning with fine-tuning, which can result in significant performance loss. In this work, we propose SymbolNet, a neural network approach to symbolic regression specifically designed as a model compression technique, aimed at enabling low-latency inference for high-dimensional inputs on custom hardware such as FPGAs. This framework allows dynamic pruning of model weights, input features, and mathematical operators in a single training process, where both training loss and expression complexity are optimized simultaneously. We introduce a sparsity regularization term for each pruning type, which can adaptively adjust its strength, leading to convergence at a target sparsity ratio. Unlike most existing symbolic regression methods that struggle with datasets containing more than 𝒪(10) inputs, we demonstrate the effectiveness of our model on the LHC jet tagging task (16 inputs), MNIST (784 inputs), and SVHN (3072 inputs).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Variational Pseudo Marginal Methods for Jet Reconstruction in Particle Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-03242</link>
-    <guid isPermaLink="false">arxiv:2406.03242</guid>
-    <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanming Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, collider) — original abstract; no AI summary.</em></p>
-<p>Reconstructing jets, which provide vital insights into the properties and histories of subatomic particles produced in high-energy collisions, is a main problem in data analyses in collider physics. This intricate task deals with estimating the latent structure of a jet (binary tree) and involves parameters such as particle energy, momentum, and types. While Bayesian methods offer a natural approach for handling uncertainty and leveraging prior knowledge, they face significant challenges due to the super-exponential growth of potential jet topologies as the number of observed particles increases. To address this, we introduce a Combinatorial Sequential Monte Carlo approach for inferring jet latent structures. As a second contribution, we leverage the resulting estimator to develop a variational inference algorithm for parameter learning. Building on this, we introduce a variational family using a pseudo-marginal framework for a fully Bayesian treatment of all variables, unifying the generative model with the inference process. We illustrate our method&rsquo;s effectiveness through experiments using data generated with a collider physics generative model, highlighting superior speed and accuracy across a range of tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantum Diffusion Model for Quark and Gluon Jet Generation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-21082</link>
-    <guid isPermaLink="false">arxiv:2412.21082</guid>
-    <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mariia Baidachna et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (quark and gluon jets, gluon jet, gluon jets, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Diffusion models have demonstrated remarkable success in image generation, but they are computationally intensive and time-consuming to train. In this paper, we introduce a novel diffusion model that benefits from quantum computing techniques in order to mitigate computational challenges and enhance generative performance within high energy physics data. The fully quantum diffusion model replaces Gaussian noise with random unitary matrices in the forward process and incorporates a variational quantum circuit within the U-Net in the denoising architecture. We run evaluations on the structurally complex quark and gluon jets dataset from the Large Hadron Collider. The results demonstrate that the fully quantum and hybrid models are competitive with a similar classical model for jet generation, highlighting the potential of using quantum techniques for machine learning problems.</p>]]></description>
   </item>
 
 </channel>

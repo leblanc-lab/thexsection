@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Using Linearized Optimal Transport to Predict the Evolution of Stochastic Particle Systems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-01857</link>
+    <guid isPermaLink="false">arxiv:2408.01857</guid>
+    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicholas Karris et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We develop an Euler-type method to predict the evolution of a time-dependent probability measure without explicitly learning an operator that governs its evolution. We use linearized optimal transport theory to prove that the measure-valued analog of Euler&rsquo;s method is first-order accurate when the measure evolves <code>smoothly.'' In applications of interest, however, the measure is an empirical distribution of a system of stochastic particles whose behavior is only accessible through an agent-based micro-scale simulation. In such cases, this empirical measure does not evolve smoothly because the individual particles move chaotically on short time scales. However, we can still perform our Euler-type method, and when the particles' collective distribution approximates a measure that \emph{does} evolve smoothly, we observe that the algorithm still accurately predicts this collective behavior over relatively large Euler steps, thus reducing the number of micro-scale steps required to step forward in time. In this way, our algorithm provides a</code>macro-scale timestepper&rsquo;&rsquo; that requires less micro-scale data to still maintain accuracy, which we demonstrate with three illustrative examples: a biological agent-based model, a model of a PDE, and a model of Langevin dynamics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>JEDI-linear: Fast and Efficient Graph Neural Networks for Jet Tagging on FPGAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-15468</link>
+    <guid isPermaLink="false">arxiv:2508.15468</guid>
+    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiqiang Que et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Graph Neural Networks (GNNs), particularly Interaction Networks (INs), have shown exceptional performance for jet tagging at the CERN High-Luminosity Large Hadron Collider (HL-LHC). However, their computational complexity and irregular memory access patterns pose significant challenges for deployment on FPGAs in hardware trigger systems, where strict latency and resource constraints apply. In this work, we propose JEDI-linear, a novel GNN architecture with linear computational complexity that eliminates explicit pairwise interactions by leveraging shared transformations and global aggregation. To further enhance hardware efficiency, we introduce fine-grained quantization-aware training with per-parameter bitwidth optimization and employ multiplier-free multiply-accumulate operations via distributed arithmetic. Evaluation results show that our FPGA-based JEDI-linear achieves 3.7 to 11.5 times lower latency, up to 150 times lower initiation interval, and up to 6.2 times lower LUT usage compared to state-of-the-art GNN designs while also delivering higher model accuracy and eliminating the need for DSP blocks entirely. This is the first interaction-based GNN to achieve less than 60~ns latency and currently meets the requirements for use in the HL-LHC CMS Level-1 trigger system. This work advances the next-generation trigger systems by enabling accurate, scalable, and resource-efficient GNN inference in real-time environments. Our open-sourced templates will further support reproducibility and broader adoption across scientific applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Edge Machine Learning for Cluster Counting in Next-Generation Drift Chambers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-10540</link>
+    <guid isPermaLink="false">arxiv:2511.10540</guid>
+    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deniz Yilmaz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Drift chambers have long been central to collider tracking, but future machines like a Higgs factory motivate higher granularity and cluster counting for particle ID, posing new data processing challenges. Machine learning (ML) at the &ldquo;edge&rdquo;, or in cell-level readout, can dramatically reduce the off-detector data rate for high-granularity drift chambers by performing cluster counting at-source. We present machine learning algorithms for cluster counting in real-time readout of future drift chambers. These algorithms outperform traditional derivative-based techniques based on achievable pion-kaon separation. When synthesized to FPGA resources, they can achieve latencies consistent with real-time operation in a future Higgs factory scenario, thus advancing both R&amp;D for future collider detectors as well as hardware-based ML for edge applications in high energy physics.</p>]]></description>
+  </item>
 
   <item>
     <title>CellStream: Dynamical Optimal Transport Informed Embeddings for Reconstructing Cellular Trajectories from Snapshots Data</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aras Selvi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Adversarially robust optimization (ARO) has emerged as the <em>de facto</em> standard for training models that hedge against adversarial attacks in the test stage. While these models are robust against adversarial attacks, they tend to suffer severely from overfitting. To address this issue, some successful methods replace the empirical distribution in the training stage with alternatives including <em>(i)</em> a worst-case distribution residing in an ambiguity set, resulting in a distributionally robust (DR) counterpart of ARO; <em>(ii)</em> a mixture of the empirical distribution with a distribution induced by an auxiliary (<em>e.g.</em>, synthetic, external, out-of-domain) dataset. Inspired by the former, we study the Wasserstein DR counterpart of ARO for logistic regression and show it admits a tractable convex optimization reformulation. Adopting the latter setting, we revise the DR approach by intersecting its ambiguity set with another ambiguity set built using the auxiliary dataset, which offers a significant improvement whenever the Wasserstein distance between the data generating and auxiliary distributions can be estimated. We study the underlying optimization problem, develop efficient solution algorithms, and demonstrate that the proposed method outperforms benchmark approaches on standard datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OmniJet-α_C: Learning point cloud calorimeter simulations using generative transformers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-05534</link>
-    <guid isPermaLink="false">arxiv:2501.05534</guid>
-    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>We show the first use of generative transformers for generating calorimeter showers as point clouds in a high-granularity calorimeter. Using the tokenizer and generative part of the OmniJet-α model, we represent the hits in the detector as sequences of integers. This model allows variable-length sequences, which means that it supports realistic shower development and does not need to be conditioned on the number of hits. Since the tokenization represents the showers as point clouds, the model learns the geometry of the showers without being restricted to any particular voxel grid.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal Bounds</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09681</link>
-    <guid isPermaLink="false">arxiv:2506.09681</guid>
-    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vahan Arsenyan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Generative modeling aims to produce new random examples from an unknown target distribution, given access to a finite collection of examples. Among the leading approaches, denoising diffusion probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion process driven by an estimated score function. In this work, we first provide empirical evidence that DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than previously known results. Furthermore, we observe that the obtained rates match those known in the Gaussian case, implying their optimality.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Hypergraph Neural Network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-09682</link>
-    <guid isPermaLink="false">arxiv:2506.09682</guid>
-    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iulia Duta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The ability to model relational information using machine learning has driven advancements across various domains, from medicine to social science. While graph representation learning has become mainstream over the past decade, representing higher-order relationships through hypergraphs is rapidly gaining momentum. In the last few years, numerous hypergraph neural networks have emerged, most of them falling under a two-stage, set-based framework. The messages are sent from nodes to edges and then from edges to nodes. However, most of the advancement still takes inspiration from the graph counterpart, often simplifying the aggregations to basic pooling operations. In this paper we are introducing Wasserstein Hypergraph Neural Network, a model that treats the nodes and hyperedge neighbourhood as distributions and aggregate the information using Sliced Wasserstein Pooling. Unlike conventional aggregators such as mean or sum, which only capture first-order statistics, our approach has the ability to preserve geometric properties like the shape and spread of distributions. This enables the learned embeddings to reflect how easily one hyperedge distribution can be transformed into another, following principles of optimal transport. Experimental results demonstrate that applying Wasserstein pooling in a hypergraph setting significantly benefits node classification tasks, achieving top performance on several real-world datasets.</p>]]></description>
   </item>
 
 </channel>

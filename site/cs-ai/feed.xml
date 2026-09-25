@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Minimally Invasive Steering of Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-30218</link>
+    <guid isPermaLink="false">arxiv:2609.30218</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taha Entesari et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Pre-logit steering adapts a frozen language model to a test-time reward by adding vectors to its final hidden states. Unregularized reward optimization can substantially alter the output distribution and degrade generation quality. We propose Minimally Invasive Steering Vector Optimization (MISVO), which penalizes interventions using the local KL geometry of the induced token distribution. The resulting Fisher quadratic measures distributional sensitivity and admits an analytic gradient computed through matrix&ndash;vector products with the frozen language-model head. We derive an exact decomposition of the sequence-level KL gradient into an analytic Fisher term and a suffix score-function term. For a fixed generation horizon, we show that the suffix term is second order in the steering magnitude and that three Fisher surrogates agree with the full KL gradient to first order. MISVO uses the frozen-reference surrogate to optimize position-specific interventions without updating model parameters. Across preference and code-generation tasks on models with approximately 1B&ndash;14B parameters, MISVO achieves the highest mean reward in six of seven model&ndash;task settings, with diversity and coherence scores close to those of Best-of-N.</p>]]></description>
+  </item>
 
   <item>
     <title>CogenPVG: Cognitive-Enhanced Reflective Multi-Agent Framework for Persuasive Video Generation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sascha Diefenbacher et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Gregor Kasieczka, Michael Krämer) — original abstract; no AI summary.</em></p>
 <p>The substantial data volumes encountered in modern particle physics and other domains of fundamental physics research allow (and require) the use of increasingly complex data analysis tools and workflows. While the use of machine learning (ML) tools for data analysis has recently proliferated, these tools are typically special-purpose algorithms that rely, for example, on encoded physics knowledge to reach optimal performance. In this work, we investigate a new and orthogonal direction: Using recent progress in large language models (LLMs) to create a team of agents &ndash; instances of LLMs with specific subtasks &ndash; that jointly solve data analysis-based research problems in a way similar to how a human researcher might: by creating code to operate standard tools and libraries (including ML systems) and by building on results of previous iterations. If successful, such agent-based systems could be deployed to automate routine analysis components to counteract the increasing complexity of modern tool chains. To investigate the capabilities of current-generation commercial LLMs, we consider the task of anomaly detection via the publicly available and highly-studied LHC Olympics dataset. Several current models by OpenAI (GPT-4o, o4-mini, GPT-4.1, and GPT-5) are investigated and their stability tested. Overall, we observe the capacity of the agent-based system to solve this data analysis problem. The best agent-created solutions mirror the performance of human state-of-the-art results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unbalanced optimal transport for robust longitudinal lesion evolution with registration-aware and appearance-guided priors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-09933</link>
-    <guid isPermaLink="false">arxiv:2602.09933</guid>
-    <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Melika Qahqaie et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Evaluating lesion evolution in longitudinal CT scans of can cer patients is essential for assessing treatment response, yet establishing reliable lesion correspondence across time remains challenging. Standard bipartite matchers, which rely on geometric proximity, struggle when lesions appear, disappear, merge, or split. We propose a registration-aware matcher based on unbalanced optimal transport (UOT) that accommodates unequal lesion mass and adapts priors to patient-level tumor-load changes. Our transport cost blends (i) size-normalized geometry, (ii) local registration trust from the deformation-field Jacobian, and (iii) optional patch-level appearance consistency. The resulting transport plan is sparsified by relative pruning, yielding one-to-one matches as well as new, disappearing, merging, and splitting lesions without retraining or heuristic rules. On longitudinal CT data, our approach achieves consistently higher edge-detection precision and recall, improved lesion-state recall, and superior lesion-graph component F1 scores versus distance-only baselines.</p>]]></description>
   </item>
 
 </channel>

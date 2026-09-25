@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unbalanced optimal transport for robust longitudinal lesion evolution with registration-aware and appearance-guided priors</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-09933</link>
+    <guid isPermaLink="false">arxiv:2602.09933</guid>
+    <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Melika Qahqaie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Evaluating lesion evolution in longitudinal CT scans of can cer patients is essential for assessing treatment response, yet establishing reliable lesion correspondence across time remains challenging. Standard bipartite matchers, which rely on geometric proximity, struggle when lesions appear, disappear, merge, or split. We propose a registration-aware matcher based on unbalanced optimal transport (UOT) that accommodates unequal lesion mass and adapts priors to patient-level tumor-load changes. Our transport cost blends (i) size-normalized geometry, (ii) local registration trust from the deformation-field Jacobian, and (iii) optional patch-level appearance consistency. The resulting transport plan is sparsified by relative pruning, yielding one-to-one matches as well as new, disappearing, merging, and splitting lesions without retraining or heuristic rules. On longitudinal CT data, our approach achieves consistently higher edge-detection precision and recall, improved lesion-state recall, and superior lesion-graph component F1 scores versus distance-only baselines.</p>]]></description>
+  </item>
 
   <item>
     <title>Digital Twin and Agentic AI for Wild Fire Disaster Management: Intelligent Virtual Situation Room</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoran Cheng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Graph matching is one of the most significant graph analytic tasks, which aims to find the node correspondence across different graphs. Most existing graph matching approaches mainly rely on topological information, whose performances are often sub-optimal and sensitive to data noise because of not fully leveraging the multi-modal information hidden in graphs, such as node attributes, subgraph structures, etc. In this study, we propose a novel and robust graph matching method based on an unbalanced hierarchical optimal transport (UHOT) framework, which, to our knowledge, makes the first attempt to exploit cross-modal alignment in graph matching. In principle, applying multi-layer message passing, we represent each graph as layer-wise node embeddings corresponding to different modalities. Given two graphs, we align their node embeddings within the same modality and across different modalities, respectively. Then, we infer the node correspondence by the weighted average of all the alignment results. This method is implemented as computing the UHOT distance between the two graphs &ndash; each alignment is achieved by a node-level optimal transport plan between two sets of node embeddings, and the weights of all alignment results correspond to an unbalanced modality-level optimal transport plan. Experiments on various graph matching tasks demonstrate the superiority and robustness of our method compared to state-of-the-art approaches. Our implementation is available at https://github.com/Dixin-Lab/UHOT-GM.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Hybrid Sliced Wasserstein: A Scalable Metric for Heterogeneous Joint Distributions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2404-15378</link>
-    <guid isPermaLink="false">arxiv:2404.15378</guid>
-    <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Sliced Wasserstein (SW) and Generalized Sliced Wasserstein (GSW) have been widely used in applications due to their computational and statistical scalability. However, the SW and the GSW are only defined between distributions supported on a homogeneous domain. This limitation prevents their usage in applications with heterogeneous joint distributions with marginal distributions supported on multiple different domains. Using SW and GSW directly on the joint domains cannot make a meaningful comparison since their homogeneous slicing operator i.e., Radon Transform (RT) and Generalized Radon Transform (GRT) are not expressive enough to capture the structure of the joint supports set. To address the issue, we propose two new slicing operators i.e., Partial Generalized Radon Transform (PGRT) and Hierarchical Hybrid Radon Transform (HHRT). In greater detail, PGRT is the generalization of Partial Radon Transform (PRT), which transforms a subset of function arguments non-linearly while HHRT is the composition of PRT and multiple domain-specific PGRT on marginal domain arguments. By using HHRT, we extend the SW into Hierarchical Hybrid Sliced Wasserstein (H2SW) distance which is designed specifically for comparing heterogeneous joint distributions. We then discuss the topological, statistical, and computational properties of H2SW. Finally, we demonstrate the favorable performance of H2SW in 3D mesh deformation, deep 3D mesh autoencoders, and datasets comparison.</p>]]></description>
   </item>
 
 </channel>

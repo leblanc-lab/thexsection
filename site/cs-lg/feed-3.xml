@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Structure-Preserving Multi-View Embedding Using Gromov-Wasserstein Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02610</link>
+    <guid isPermaLink="false">arxiv:2604.02610</guid>
+    <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Pereira Eufrazio et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Multi-view data analysis seeks to integrate multiple representations of the same samples in order to recover a coherent low-dimensional structure. Classical approaches often rely on feature concatenation or explicit alignment assumptions, which become restrictive under heterogeneous geometries or nonlinear distortions. In this work, we propose two geometry-aware multi-view embedding strategies grounded in Gromov-Wasserstein (GW) optimal transport. The first, termed Mean-GWMDS, aggregates view-specific relational information by averaging distance matrices and applying GW-based multidimensional scaling to obtain a representative embedding. The second strategy, referred to as Multi-GWMDS, adopts a selection-based paradigm in which multiple geometry-consistent candidate embeddings are generated via GW-based alignment and a representative embedding is selected. Experiments on synthetic manifolds and real-world datasets show that the proposed methods effectively preserve intrinsic relational structure across views. These results highlight GW-based approaches as a flexible and principled framework for multi-view representation learning.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conditional Sampling via Wasserstein Autoencoders and Triangular Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-02644</link>
+    <guid isPermaLink="false">arxiv:2604.02644</guid>
+    <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammad Al-Jarrah et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present Conditional Wasserstein Autoencoders (CWAEs), a framework for conditional simulation that exploits low-dimensional structure in both the conditioned and the conditioning variables. The key idea is to modify a Wasserstein autoencoder to use a (block-) triangular decoder and impose an appropriate independence assumption on the latent variables. We show that the resulting model gives an autoencoder that can exploit low-dimensional structure while simultaneously the decoder can be used for conditional simulation. We explore various theoretical properties of CWAEs, including their connections to conditional optimal transport (OT) problems. We also present alternative formulations that lead to three architectural variants forming the foundation of our algorithms. We present a series of numerical experiments that demonstrate that our different CWAE variants achieve substantial reductions in approximation error relative to the low-rank ensemble Kalman filter (LREnKF), particularly in problems where the support of the conditional measures is truly low-dimensional.</p>]]></description>
+  </item>
+
+  <item>
+    <title>WFR-FM: Simulation-Free Dynamic Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-06810</link>
+    <guid isPermaLink="false">arxiv:2601.06810</guid>
+    <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiangwei Peng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein-Fisher-Rao (WFR) metric extends dynamic optimal transport (OT) by coupling displacement with change of mass, providing a principled geometry for modeling unbalanced snapshot dynamics. Existing WFR solvers, however, are often unstable, computationally expensive, and difficult to scale. Here we introduce WFR Flow Matching (WFR-FM), a simulation-free training algorithm that unifies flow matching with dynamic unbalanced OT. Unlike classical flow matching which regresses only a transport vector field, WFR-FM simultaneously regresses a vector field for displacement and a scalar growth rate function for birth-death dynamics, yielding continuous flows under the WFR geometry. Theoretically, we show that minimizing the WFR-FM loss exactly recovers WFR geodesics. Empirically, WFR-FM yields more accurate and robust trajectory inference in single-cell biology, reconstructing consistent dynamics with proliferation and apoptosis, estimating time-varying growth fields, and applying to generative dynamics under imbalanced data. It outperforms state-of-the-art baselines in efficiency, stability, and reconstruction accuracy. Overall, WFR-FM establishes a unified and efficient paradigm for learning dynamical systems from unbalanced snapshots, where not only states but also mass evolve over time. The Python code is available at https://github.com/QiangweiPeng/WFR-FM.</p>]]></description>
+  </item>
 
   <item>
     <title>Random Coordinate Descent on the Wasserstein Space of Probability Measures</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mary Chriselda Antony Oliver et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>The manifold hypothesis posits that high-dimensional data typically resides on low-dimensional sub spaces. In this paper, we assume manifold hypothesis to investigate graph-based semi-supervised learning methods. In particular, we examine Laplace Learning in the Wasserstein space, extending the classical notion of graph-based semi-supervised learning algorithms from finite-dimensional Euclidean spaces to an infinite-dimensional setting. To achieve this, we prove variational convergence of a discrete graph p- Dirichlet energy to its continuum counterpart. In addition, we characterize the Laplace-Beltrami operator on asubmanifold of the Wasserstein space. Finally, we validate the proposed theoretical framework through numerical experiments conducted on benchmark datasets, demonstrating the consistency of our classification performance in high-dimensional settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Using Linearized Optimal Transport to Predict the Evolution of Stochastic Particle Systems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-01857</link>
-    <guid isPermaLink="false">arxiv:2408.01857</guid>
-    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicholas Karris et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We develop an Euler-type method to predict the evolution of a time-dependent probability measure without explicitly learning an operator that governs its evolution. We use linearized optimal transport theory to prove that the measure-valued analog of Euler&rsquo;s method is first-order accurate when the measure evolves <code>smoothly.'' In applications of interest, however, the measure is an empirical distribution of a system of stochastic particles whose behavior is only accessible through an agent-based micro-scale simulation. In such cases, this empirical measure does not evolve smoothly because the individual particles move chaotically on short time scales. However, we can still perform our Euler-type method, and when the particles' collective distribution approximates a measure that \emph{does} evolve smoothly, we observe that the algorithm still accurately predicts this collective behavior over relatively large Euler steps, thus reducing the number of micro-scale steps required to step forward in time. In this way, our algorithm provides a</code>macro-scale timestepper&rsquo;&rsquo; that requires less micro-scale data to still maintain accuracy, which we demonstrate with three illustrative examples: a biological agent-based model, a model of a PDE, and a model of Langevin dynamics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>JEDI-linear: Fast and Efficient Graph Neural Networks for Jet Tagging on FPGAs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-15468</link>
-    <guid isPermaLink="false">arxiv:2508.15468</guid>
-    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiqiang Que et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Graph Neural Networks (GNNs), particularly Interaction Networks (INs), have shown exceptional performance for jet tagging at the CERN High-Luminosity Large Hadron Collider (HL-LHC). However, their computational complexity and irregular memory access patterns pose significant challenges for deployment on FPGAs in hardware trigger systems, where strict latency and resource constraints apply. In this work, we propose JEDI-linear, a novel GNN architecture with linear computational complexity that eliminates explicit pairwise interactions by leveraging shared transformations and global aggregation. To further enhance hardware efficiency, we introduce fine-grained quantization-aware training with per-parameter bitwidth optimization and employ multiplier-free multiply-accumulate operations via distributed arithmetic. Evaluation results show that our FPGA-based JEDI-linear achieves 3.7 to 11.5 times lower latency, up to 150 times lower initiation interval, and up to 6.2 times lower LUT usage compared to state-of-the-art GNN designs while also delivering higher model accuracy and eliminating the need for DSP blocks entirely. This is the first interaction-based GNN to achieve less than 60~ns latency and currently meets the requirements for use in the HL-LHC CMS Level-1 trigger system. This work advances the next-generation trigger systems by enabling accurate, scalable, and resource-efficient GNN inference in real-time environments. Our open-sourced templates will further support reproducibility and broader adoption across scientific applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Edge Machine Learning for Cluster Counting in Next-Generation Drift Chambers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-10540</link>
-    <guid isPermaLink="false">arxiv:2511.10540</guid>
-    <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deniz Yilmaz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Drift chambers have long been central to collider tracking, but future machines like a Higgs factory motivate higher granularity and cluster counting for particle ID, posing new data processing challenges. Machine learning (ML) at the &ldquo;edge&rdquo;, or in cell-level readout, can dramatically reduce the off-detector data rate for high-granularity drift chambers by performing cluster counting at-source. We present machine learning algorithms for cluster counting in real-time readout of future drift chambers. These algorithms outperform traditional derivative-based techniques based on achievable pion-kaon separation. When synthesized to FPGA resources, they can achieve latencies consistent with real-time operation in a future Higgs factory scenario, thus advancing both R&amp;D for future collider detectors as well as hardware-based ML for edge applications in high energy physics.</p>]]></description>
   </item>
 
 </channel>

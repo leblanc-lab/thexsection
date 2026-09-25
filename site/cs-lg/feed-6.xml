@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SymbolNet: Neural Symbolic Regression with Adaptive Dynamic Pruning for Compression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2401-09949</link>
+    <guid isPermaLink="false">arxiv:2401.09949</guid>
+    <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Compact symbolic expressions have been shown to be more efficient than neural network models in terms of resource consumption and inference speed when implemented on custom hardware such as FPGAs, while maintaining comparable accuracy~\cite{tsoi2023symbolic}. These capabilities are highly valuable in environments with stringent computational resource constraints, such as high-energy physics experiments at the CERN Large Hadron Collider. However, finding compact expressions for high-dimensional datasets remains challenging due to the inherent limitations of genetic programming, the search algorithm of most symbolic regression methods. Contrary to genetic programming, the neural network approach to symbolic regression offers scalability to high-dimensional inputs and leverages gradient methods for faster equation searching. Common ways of constraining expression complexity often involve multistage pruning with fine-tuning, which can result in significant performance loss. In this work, we propose SymbolNet, a neural network approach to symbolic regression specifically designed as a model compression technique, aimed at enabling low-latency inference for high-dimensional inputs on custom hardware such as FPGAs. This framework allows dynamic pruning of model weights, input features, and mathematical operators in a single training process, where both training loss and expression complexity are optimized simultaneously. We introduce a sparsity regularization term for each pruning type, which can adaptively adjust its strength, leading to convergence at a target sparsity ratio. Unlike most existing symbolic regression methods that struggle with datasets containing more than 𝒪(10) inputs, we demonstrate the effectiveness of our model on the LHC jet tagging task (16 inputs), MNIST (784 inputs), and SVHN (3072 inputs).</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variational Pseudo Marginal Methods for Jet Reconstruction in Particle Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-03242</link>
+    <guid isPermaLink="false">arxiv:2406.03242</guid>
+    <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanming Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, collider) — original abstract; no AI summary.</em></p>
+<p>Reconstructing jets, which provide vital insights into the properties and histories of subatomic particles produced in high-energy collisions, is a main problem in data analyses in collider physics. This intricate task deals with estimating the latent structure of a jet (binary tree) and involves parameters such as particle energy, momentum, and types. While Bayesian methods offer a natural approach for handling uncertainty and leveraging prior knowledge, they face significant challenges due to the super-exponential growth of potential jet topologies as the number of observed particles increases. To address this, we introduce a Combinatorial Sequential Monte Carlo approach for inferring jet latent structures. As a second contribution, we leverage the resulting estimator to develop a variational inference algorithm for parameter learning. Building on this, we introduce a variational family using a pseudo-marginal framework for a fully Bayesian treatment of all variables, unifying the generative model with the inference process. We illustrate our method&rsquo;s effectiveness through experiments using data generated with a collider physics generative model, highlighting superior speed and accuracy across a range of tasks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Quantum Diffusion Model for Quark and Gluon Jet Generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2412-21082</link>
+    <guid isPermaLink="false">arxiv:2412.21082</guid>
+    <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mariia Baidachna et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (quark and gluon jets, gluon jet, gluon jets, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Diffusion models have demonstrated remarkable success in image generation, but they are computationally intensive and time-consuming to train. In this paper, we introduce a novel diffusion model that benefits from quantum computing techniques in order to mitigate computational challenges and enhance generative performance within high energy physics data. The fully quantum diffusion model replaces Gaussian noise with random unitary matrices in the forward process and incorporates a variational quantum circuit within the U-Net in the denoising architecture. We run evaluations on the structurally complex quark and gluon jets dataset from the Large Hadron Collider. The results demonstrate that the fully quantum and hybrid models are competitive with a similar classical model for jet generation, highlighting the potential of using quantum techniques for machine learning problems.</p>]]></description>
+  </item>
 
   <item>
     <title>A Neural Network-Based Search for Unmodeled Transients in LIGO-Virgo-KAGRA's Third Observing Run</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu Cheng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
 <p>In the realm of globalized financial markets, commercial banks are confronted with an escalating magnitude of credit risk, thereby imposing heightened requisites upon the security of bank assets and financial stability. This study harnesses advanced neural network techniques, notably the Backpropagation (BP) neural network, to pioneer a novel model for preempting credit risk in commercial banks. The discourse initially scrutinizes conventional financial risk preemptive models, such as ARMA, ARCH, and Logistic regression models, critically analyzing their real-world applications. Subsequently, the exposition elaborates on the construction process of the BP neural network model, encompassing network architecture design, activation function selection, parameter initialization, and objective function construction. Through comparative analysis, the superiority of neural network models in preempting credit risk in commercial banks is elucidated. The experimental segment selects specific bank data, validating the model&rsquo;s predictive accuracy and practicality. Research findings evince that this model efficaciously enhances the foresight and precision of credit risk management.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Contextual Counting: A Mechanistic Study of Transformers on a Quantitative Task</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-02585</link>
-    <guid isPermaLink="false">arxiv:2406.02585</guid>
-    <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siavash Golkar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>Transformers have revolutionized machine learning across diverse domains, yet understanding their behavior remains crucial, particularly in high-stakes applications. This paper introduces the contextual counting task, a novel toy problem aimed at enhancing our understanding of Transformers in quantitative and scientific contexts. This task requires precise localization and computation within datasets, akin to object detection or region-based scientific analysis. We present theoretical and empirical analysis using both causal and non-causal Transformer architectures, investigating the influence of various positional encodings on performance and interpretability. In particular, we find that causal attention is much better suited for the task, and that no positional embeddings lead to the best accuracy, though rotary embeddings are competitive and easier to train. We also show that out of distribution performance is tightly linked to which tokens it uses as a bias term.</p>]]></description>
-  </item>
-
-  <item>
-    <title>From Neurons to Neutrons: A Case Study in Interpretability</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-17425</link>
-    <guid isPermaLink="false">arxiv:2405.17425</guid>
-    <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mike Williams) — original abstract; no AI summary.</em></p>
-<p>Mechanistic Interpretability (MI) promises a path toward fully understanding how neural networks make their predictions. Prior work demonstrates that even when trained to perform simple arithmetic, models can implement a variety of algorithms (sometimes concurrently) depending on initialization and hyperparameters. Does this mean neuron-level interpretability techniques have limited applicability? We argue that high-dimensional neural networks can learn low-dimensional representations of their training data that are useful beyond simply making good predictions. Such representations can be understood through the mechanistic interpretability lens and provide insights that are surprisingly faithful to human-derived domain knowledge. This indicates that such approaches to interpretability can be useful for deriving a new understanding of a problem from models trained to solve it. As a case study, we extract nuclear physics concepts by studying models trained to reproduce nuclear data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Constrained Ensemble Exploration for Unsupervised Skill Discovery</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-16030</link>
-    <guid isPermaLink="false">arxiv:2405.16030</guid>
-    <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenjia Bai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Unsupervised Reinforcement Learning (RL) provides a promising paradigm for learning useful behaviors via reward-free per-training. Existing methods for unsupervised RL mainly conduct empowerment-driven skill discovery or entropy-based exploration. However, empowerment often leads to static skills, and pure exploration only maximizes the state coverage rather than learning useful behaviors. In this paper, we propose a novel unsupervised RL framework via an ensemble of skills, where each skill performs partition exploration based on the state prototypes. Thus, each skill can explore the clustered area locally, and the ensemble skills maximize the overall state coverage. We adopt state-distribution constraints for the skill occupancy and the desired cluster for learning distinguishable skills. Theoretical analysis is provided for the state entropy and the resulting skill distributions. Based on extensive experiments on several challenging tasks, we find our method learns well-explored ensemble skills and achieves superior performance in various downstream tasks compared to previous methods.</p>]]></description>
   </item>
 
 </channel>

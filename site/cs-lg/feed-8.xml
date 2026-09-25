@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-01770</link>
+    <guid isPermaLink="false">arxiv:2307.01770</guid>
+    <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillaume Mahey et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distance (WD) and the associated optimal transport plan have been proven useful in many applications where probability measures are at stake. In this paper, we propose a new proxy of the squared WD, coined min-SWGG, that is based on the transport map induced by an optimal one-dimensional projection of the two input distributions. We draw connections between min-SWGG and Wasserstein generalized geodesics in which the pivot measure is supported on a line. We notably provide a new closed form for the exact Wasserstein distance in the particular case of one of the distributions supported on a line allowing us to derive a fast computational scheme that is amenable to gradient descent optimization. We show that min-SWGG is an upper bound of WD and that it has a complexity similar to as Sliced-Wasserstein, with the additional feature of providing an associated transport plan. We also investigate some theoretical properties such as metricity, weak convergence, computational and topological properties. Empirical evidences support the benefits of min-SWGG in various contexts, from gradient flows, shape matching and image colorization, among others.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Estimating the Rate-Distortion Function by Wasserstein Gradient Descent</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2310-18908</link>
+    <guid isPermaLink="false">arxiv:2310.18908</guid>
+    <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yibo Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In the theory of lossy compression, the rate-distortion (R-D) function R(D) describes how much a data source can be compressed (in bit-rate) at any given level of fidelity (distortion). Obtaining R(D) for a given data source establishes the fundamental performance limit for all compression algorithms. We propose a new method to estimate R(D) from the perspective of optimal transport. Unlike the classic Blahut&ndash;Arimoto algorithm which fixes the support of the reproduction distribution in advance, our Wasserstein gradient descent algorithm learns the support of the optimal reproduction distribution by moving particles. We prove its local convergence and analyze the sample complexity of our R-D estimator based on a connection to entropic optimal transport. Experimentally, we obtain comparable or tighter bounds than state-of-the-art neural network methods on low-rate sources while requiring considerably less tuning and computation effort. We also highlight a connection to maximum-likelihood deconvolution and introduce a new class of sources that can be used as test cases with known solutions to the R-D problem.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Uniform-in-Time Wasserstein Stability Bounds for (Noisy) Stochastic Gradient Descent</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-12056</link>
+    <guid isPermaLink="false">arxiv:2305.12056</guid>
+    <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lingjiong Zhu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Algorithmic stability is an important notion that has proven powerful for deriving generalization bounds for practical algorithms. The last decade has witnessed an increasing number of stability bounds for different algorithms applied on different classes of loss functions. While these bounds have illuminated various properties of optimization algorithms, the analysis of each case typically required a different proof technique with significantly different mathematical tools. In this study, we make a novel connection between learning theory and applied probability and introduce a unified guideline for proving Wasserstein stability bounds for stochastic optimization algorithms. We illustrate our approach on stochastic gradient descent (SGD) and we obtain time-uniform stability bounds (i.e., the bound does not increase with the number of iterations) for strongly convex losses and non-convex losses with additive noise, where we recover similar results to the prior art or extend them to more general cases by using a single proof technique. Our approach is flexible and can be generalizable to other popular optimizers, as it mainly requires developing Lyapunov functions, which are often readily available in the literature. It also illustrates that ergodicity is an important component for obtaining time-uniform bounds &ndash; which might not be achieved for convex or non-convex losses unless additional noise is injected to the iterates. Finally, we slightly stretch our analysis technique and prove time-uniform bounds for SGD under convex and non-convex losses (without additional additive noise), which, to our knowledge, is novel.</p>]]></description>
+  </item>
 
   <item>
     <title>Tree-Based Diffusion Schrödinger Bridge with Applications to Wasserstein Barycenters</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takeshi Koshizuka et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Population dynamics is the study of temporal and spatial variation in the size of populations of organisms and is a major part of population ecology. One of the main difficulties in analyzing population dynamics is that we can only obtain observation data with coarse time intervals from fixed-point observations due to experimental costs or measurement constraints. Recently, modeling population dynamics by using continuous normalizing flows (CNFs) and dynamic optimal transport has been proposed to infer the sample trajectories from a fixed-point observed population. While the sample behavior in CNFs is deterministic, the actual sample in biological systems moves in an essentially random yet directional manner. Moreover, when a sample moves from point A to point B in dynamical systems, its trajectory typically follows the principle of least action in which the corresponding action has the smallest possible value. To satisfy these requirements of the sample trajectories, we formulate the Lagrangian Schrödinger bridge (LSB) problem and propose to solve it approximately by modeling the advection-diffusion process with regularized neural SDE. We also develop a model architecture that enables faster computation of the loss function. Experimental results show that the proposed method can efficiently approximate the population-level dynamics even for high-dimensional data and that using the prior knowledge introduced by the Lagrangian enables us to estimate the sample-level dynamics with stochastic behavior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Immiscible Color Flows in Optimal Transport Networks for Image Classification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2205-02938</link>
-    <guid isPermaLink="false">arxiv:2205.02938</guid>
-    <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro Lonardi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In classification tasks, it is crucial to meaningfully exploit the information contained in data. While much of the work in addressing these tasks is devoted to building complex algorithmic infrastructures to process inputs in a black-box fashion, less is known about how to exploit the various facets of the data, before inputting this into an algorithm. Here, we focus on this latter perspective, by proposing a physics-inspired dynamical system that adapts Optimal Transport principles to effectively leverage color distributions of images. Our dynamics regulates immiscible fluxes of colors traveling on a network built from images. Instead of aggregating colors together, it treats them as different commodities that interact with a shared capacity on edges. The resulting optimal flows can then be fed into standard classifiers to distinguish images in different classes. We show how our method can outperform competing approaches on image classification tasks in datasets where color information matters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>How optimal transport can tackle gender biases in multi-class neural-network classifiers for job recommendations?</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-14063</link>
-    <guid isPermaLink="false">arxiv:2302.14063</guid>
-    <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fanny Jourdan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Automatic recommendation systems based on deep neural networks have become extremely popular during the last decade. Some of these systems can however be used for applications which are ranked as High Risk by the European Commission in the A.I. act, as for instance for online job candidate recommendation. When used in the European Union, commercial AI systems for this purpose will then be required to have to proper statistical properties with regard to potential discrimination they could engender. This motivated our contribution, where we present a novel optimal transport strategy to mitigate undesirable algorithmic biases in multi-class neural-network classification. Our stratey is model agnostic and can be used on any multi-class classification neural-network model. To anticipate the certification of recommendation systems using textual data, we then used it on the Bios dataset, for which the learning task consists in predicting the occupation of female and male individuals, based on their LinkedIn biography. Results show that it can reduce undesired algorithmic biases in this context to lower levels than a standard strategy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gromov-Wasserstein Autoencoders</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2209-07007</link>
-    <guid isPermaLink="false">arxiv:2209.07007</guid>
-    <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nao Nakagawa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Variational Autoencoder (VAE)-based generative models offer flexible representation learning by incorporating meta-priors, general premises considered beneficial for downstream tasks. However, the incorporated meta-priors often involve ad-hoc model deviations from the original likelihood architecture, causing undesirable changes in their training. In this paper, we propose a novel representation learning method, Gromov-Wasserstein Autoencoders (GWAE), which directly matches the latent and data distributions using the variational autoencoding scheme. Instead of likelihood-based objectives, GWAE models minimize the Gromov-Wasserstein (GW) metric between the trainable prior and given data distributions. The GW metric measures the distance structure-oriented discrepancy between distributions even with different dimensionalities, which provides a direct measure between the latent and data spaces. By restricting the prior family, we can introduce meta-priors into the latent space without changing their objective. The empirical comparisons with VAE-based models show that GWAE models work in two prominent meta-priors, disentanglement and clustering, with their GW objective unchanged.</p>]]></description>
   </item>
 
 </channel>

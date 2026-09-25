@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2609-28661</link>
+    <guid isPermaLink="false">arxiv:2609.28661</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (wasserstein, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Particle shower simulation is a major computational cost in high-energy physics. Monte Carlo methods such as Geant4 are accurate but expensive, while most machine learning surrogates are tied to specific detector geometries and require retraining for each design change. We study cross-geometry transfer learning with CaloClouds II, a generative model that produces point clouds rather than voxels and can project onto arbitrary detector readouts. We pre-train on photon showers in the International Large Detector (ILD) and adapt to electron showers in the cylindrical CaloChallenge Dataset 3. With only 100 target showers, fine-tuning reduces the geometric mean Wasserstein distance to Geant4 by about 51% over training from scratch. Bias-only fine-tuning (BitFit) stays within 5% of full fine-tuning while updating only 17% of the diffusion network parameters. We also examine model collapse in CaloClouds II by retraining its normalising flow and diffusion model on its own generated showers across successive generations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Ultrafast Electron Microscopy: A Quantitative Platform for Nonequilibrium Materials Research</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2609-30084</link>
+    <guid isPermaLink="false">arxiv:2609.30084</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David J. Flannigan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (energy flow) — original abstract; no AI summary.</em></p>
+<p>Macroscopic materials function is determined not merely by equilibrium structure, but by how carriers, phonons, fields, defects, interfaces, and collective order dynamically evolve after perturbation. Ultrafast electron microscopy (UEM) uniquely bridges this gap, coupling femtosecond-to-nanosecond timing with real-space, reciprocal-space, and energy-resolved contrast. Here, we review how these integrated capabilities now quantitatively map energy flow and conversion in electronic materials, decode electronic-structural coupling in quantum and correlated systems, and isolate the localized propagation of carriers, polaritons, strain, and phonons across optoelectronic and nanomechanical architectures. We emphasize the predictive design rules now emerging from direct metrology of carrier-lattice coupling, momentum-resolved phonon thermalization, defect-controlled phase transformations, and authentic operando switching. We critically assess UEM&rsquo;s ongoing maturation from a qualitative, proof-of-concept experiment into a rigorous, quantitative materials platform. This paradigm shift is actively driven by integrated multimodal detection, advanced energy-resolved spectroscopy, high-repetition-rate sources, multidimensional (4D and 5D) acquisition, and physically constrained forward modeling. Ultimately, the central opportunity lies in establishing a complete, causal link from initial excitation to localized energy flow, transient structure, and macroscopic device function. By prioritizing quantitative reproducibility and robust mechanistic interpretation, UEM is positioned to engineer materials in functional states that equilibrium thermodynamics simply cannot describe.</p>]]></description>
+  </item>
 
   <item>
     <title>DIRAC framework evaluation for the Fermi-LAT and CTA experiments</title>
@@ -1985,26 +2005,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Davis et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>Low-Gain Avalanche Detectors (LGADs) are characterized by a fast rise time (500 ps) and extremely good time resolution (down to 17 ps). The intrinsic low granularity of LGADs and the large power consumption of readout chips for precise timing are problematic in near-future experiments such as e+e- Higgs factories (FCC-ee) and the ePIC detector at the Electron-Ion Collider. AC-coupled LGADs, where the readout metal is AC-coupled through an insulating oxide layer, could solve both issues at the same time thanks to the 100% fill factor and charge-sharing capabilities. Charge sharing between electrodes allows a hit position resolution well below the pitch/√(1)2 of standard segmented detectors. At the same time, it relaxes the channel density and power consumption requirements of readout chips. Extensive laboratory characterization of AC-LGAD devices from the first full-size (up to 3x4 cm) production from HPK for ePIC will be shown in this contribution. Both pixel and strip geometry was produced and tested. This study was conducted within the scope of the ePIC detector time of flight (TOF) layer R&amp;D program at the EIC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improvements of the GPU Processing Framework for ALICE</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2511-17018</link>
-    <guid isPermaLink="false">arxiv:2511.17018</guid>
-    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Rohr</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>ALICE is the dedicated heavy ion experiment at the LHC at CERN and records lead-lead collisions at a rate of up to 50 kHz. The detector with the highest data rate of up to 3.4 TB/s is the TPC. ALICE performs the full online TPC processing corresponding to more than 95\% of the total workload on GPUs, and when there is no beam in the LHC, the online computing farm&rsquo;s GPUs are used to speed up the offline processing. After the deployment of the first version of the online TPC processing needed for data taking, ALICE has implemented many improvements to its GPU processing framework. These include a run time compilation mode applying on the fly optimizations, improvements to parallelize / speed up the GPU compilation, debugging modes to guarantee reproducible and deterministic results in concurrent reconstruction, and framework features to leverage common components in the code of different detectors. The proceedings give an overview of the ALICE experience with GPUs in online and offline processing and present the latest GPU processing framework features.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Performance of the front-end electronics of the CMS electromagnetic calorimeter barrel for the High-Luminosity LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2511-17261</link>
-    <guid isPermaLink="false">arxiv:2511.17261</guid>
-    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">The CMS Electromagnetic Calorimeter Group</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>The performance of the CMS electromagnetic calorimeter upgraded readout electronics, developed for the High-Luminosity phase of the LHC, is discussed. Data collected in two beam test campaigns conducted in 2018 and 2021 at the H4 and H2 beam lines of the CERN SPS are analyzed. Time and energy resolutions are measured on a 5×5 matrix of lead tungstate crystals equipped with prototypes of the new front end readout electronics, using electron and pion beams of energies spanning from 25 to 250 GeV. In both campaigns the constant term of the energy resolution is measured to be better than 0.6% and the time resolution for electrons with energies above 50 GeV is measured to be better than 30 ps, fulfilling the design requirements.</p>]]></description>
   </item>
 
 </channel>
