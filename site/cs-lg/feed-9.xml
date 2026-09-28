@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Deep Learning for Mean Field Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-14739</link>
+    <guid isPermaLink="false">arxiv:2302.14739</guid>
+    <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Baudelet et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Mean field control (MFC) problems have been introduced to study social optima in very large populations of strategic agents. The main idea is to consider an infinite population and to simplify the analysis by using a mean field approximation. These problems can also be viewed as optimal control problems for McKean-Vlasov dynamics. They have found applications in a wide range of fields, from economics and finance to social sciences and engineering. Usually, the goal for the agents is to minimize a total cost which consists in the integral of a running cost plus a terminal cost. In this work, we consider MFC problems in which there is no terminal cost but, instead, the terminal distribution is prescribed. We call such problems mean field optimal transport problems since they can be viewed as a generalization of classical optimal transport problems when mean field interactions occur in the dynamics or the running cost function. We propose three numerical methods based on neural networks. The first one is based on directly learning an optimal control. The second one amounts to solve a forward-backward PDE system characterizing the solution. The third one relies on a primal-dual approach. We illustrate these methods with numerical experiments conducted on two families of examples.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neural Lagrangian Schrödinger Bridge: Diffusion Modeling for Population Dynamics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2204-04853</link>
+    <guid isPermaLink="false">arxiv:2204.04853</guid>
+    <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takeshi Koshizuka et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Population dynamics is the study of temporal and spatial variation in the size of populations of organisms and is a major part of population ecology. One of the main difficulties in analyzing population dynamics is that we can only obtain observation data with coarse time intervals from fixed-point observations due to experimental costs or measurement constraints. Recently, modeling population dynamics by using continuous normalizing flows (CNFs) and dynamic optimal transport has been proposed to infer the sample trajectories from a fixed-point observed population. While the sample behavior in CNFs is deterministic, the actual sample in biological systems moves in an essentially random yet directional manner. Moreover, when a sample moves from point A to point B in dynamical systems, its trajectory typically follows the principle of least action in which the corresponding action has the smallest possible value. To satisfy these requirements of the sample trajectories, we formulate the Lagrangian Schrödinger bridge (LSB) problem and propose to solve it approximately by modeling the advection-diffusion process with regularized neural SDE. We also develop a model architecture that enables faster computation of the loss function. Experimental results show that the proposed method can efficiently approximate the population-level dynamics even for high-dimensional data and that using the prior knowledge introduced by the Lagrangian enables us to estimate the sample-level dynamics with stochastic behavior.</p>]]></description>
+  </item>
 
   <item>
     <title>Immiscible Color Flows in Optimal Transport Networks for Image Classification</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Many organizations have access to abundant data but lack the computational power to process the data. While they can outsource the computational task to other facilities, there are various constraints on the amount of data that can be shared. It is natural to ask what can data outsourcing accomplish under such constraints. We address this question from a machine learning perspective. When training a model with optimization algorithms, the quality of the results often relies heavily on the points where the algorithms are initialized. Random start is one of the most popular methods to tackle this issue, but it can be computationally expensive and not feasible for organizations lacking computing resources. Based on three different scenarios, we propose simulation-based algorithms that can utilize a small amount of outsourced data to find good initial points accordingly. Under suitable regularity conditions, we provide theoretical guarantees showing the algorithms can find good initial points with high probability. We also conduct numerical experiments to demonstrate that our algorithms perform significantly better than the random start approach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning quantum data with the quantum Earth Mover's distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2101-03037</link>
-    <guid isPermaLink="false">arxiv:2101.03037</guid>
-    <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bobak Toussi Kiani et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>Quantifying how far the output of a learning algorithm is from its target is an essential task in machine learning. However, in quantum settings, the loss landscapes of commonly used distance metrics often produce undesirable outcomes such as poor local minima and exponentially decaying gradients. To overcome these obstacles, we consider here the recently proposed quantum earth mover&rsquo;s (EM) or Wasserstein-1 distance as a quantum analog to the classical EM distance. We show that the quantum EM distance possesses unique properties, not found in other commonly used quantum distance metrics, that make quantum learning more stable and efficient. We propose a quantum Wasserstein generative adversarial network (qWGAN) which takes advantage of the quantum EM distance and provides an efficient means of performing learning on quantum data. We provide examples where our qWGAN is capable of learning a diverse set of quantum data with only resources polynomial in the number of qubits.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A scalable deep learning approach for solving high-dimensional dynamic optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-07521</link>
-    <guid isPermaLink="false">arxiv:2205.07521</guid>
-    <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Wan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The dynamic formulation of optimal transport has attracted growing interests in scientific computing and machine learning, and its computation requires to solve a PDE-constrained optimization problem. The classical Eulerian discretization based approaches suffer from the curse of dimensionality, which arises from the approximation of high-dimensional velocity field. In this work, we propose a deep learning based method to solve the dynamic optimal transport in high dimensional space. Our method contains three main ingredients: a carefully designed representation of the velocity field, the discretization of the PDE constraint along the characteristics, and the computation of high dimensional integral by Monte Carlo method in each time step. Specifically, in the representation of the velocity field, we apply the classical nodal basis function in time and the deep neural networks in space domain with the H1-norm regularization. This technique promotes the regularity of the velocity field in both time and space such that the discretization along the characteristic remains to be stable during the training process. Extensive numerical examples have been conducted to test the proposed method. Compared to other solvers of optimal transport, our method could give more accurate results in high dimensional cases and has very good scalability with respect to dimension. Finally, we extend our method to more complicated cases such as crowd motion problem.</p>]]></description>
   </item>
 
 </channel>

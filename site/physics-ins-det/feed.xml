@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Point-cloud generative models for fast calorimeter simulation across particles and geometries</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2609-30403</link>
+    <guid isPermaLink="false">arxiv:2609.30403</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, collider, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Detailed Geant4 simulation of calorimeter showers is the largest single computing cost of collider experiments, and the High-Luminosity LHC will need about ten times more simulated events than are currently produced. We summarise recent progress in generative point cloud fast simulation for highly granular calorimeters. CaloClouds3 generates photon (electromagnetic) showers, is geometry-independent, and runs on average about 120x faster than Geant4 on a single CPU. CaloHadronic uses transformer attention to extend the point cloud diffusion approach to pion (hadronic) showers spanning the electromagnetic and hadronic calorimeters. AllShowers unifies twelve particle types in a single model with far fewer parameters than the specialised baselines while matching or exceeding their fidelity. We close with cross-geometry transfer learning, which needs two to three orders of magnitude fewer training showers while preserving the generative performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Parnassus for the CLD Detector: A Generative Machine-Learning Surrogate for Detector Simulation and Reconstruction at the FCC-ee</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2609-30775</link>
+    <guid isPermaLink="false">arxiv:2609.30775</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Umar Sohail Qureshi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle-flow, collider, Ben Nachman) — original abstract; no AI summary.</em></p>
+<p>Detector simulation and event reconstruction will be computationally expensive for future e⁺e⁻ collider programs and are currently critical bottlenecks for accurate feasibility studies. To address this challenge, we build a Parnassus model for the CLD detector concept. Parnassus is a framework for automatically tuning a surrogate model, in our case, a conditional flow matching neural network, to emulate a full detector simulation and reconstruction. We train on e⁺e⁻→Z→qq̅ events at √(s)=91.2 GeV processed through a Geant4 simulation of the CLD detector concept and the Pandora particle-flow reconstruction and reproduce single-particle kinematics, particle-IDs, and impact-parameter distributions. We also examine jet- and event-level features, inclusively and split by flavor, and find excellent fidelity, significantly better than the parameterized program Delphes. Furthermore, we train a transformer-based flavor tagger on the reconstructed particle-flow constituents and show that the surrogate preserves the b/c/s/q discrimination of the full CLD reconstruction. The Parnassus CLD model achieves a generation cost of about 1.2 ms (40 ms) per event on a single GPU (CPU), over three (two) orders of magnitude faster than full simulation and reconstruction. Our model is publicly available for feasibility and design studies.</p>]]></description>
+  </item>
 
   <item>
     <title>Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</title>
@@ -1985,26 +2005,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrii Natochii</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>The Electron-Ion Collider (EIC) will operate at high luminosity with multi-GeV, high-current electron beams, resulting in substantial synchrotron radiation (SR) emission in the electron storage ring (ESR). A detailed understanding of SR photon transport in the complex three-dimensional interaction region (IR) geometry is critical for estimating backgrounds in the ePIC detector and for developing effective shielding and masking strategies. This paper presents SynradG4, an EIC-specific extension of Geant4 designed for fast photon tracking in vacuum using established SR reflection and rough surface scattering models. SynradG4 integrates the photon reflection models of Synrad+ within the Geant4 geometry and field framework, while disabling all bulk matter interactions to achieve high-statistics transport through the 50-m-long IR vacuum system. Absorbed photon coordinates are then passed to a second-stage DD4hep simulation, where full electromagnetic processes such as photoabsorption, Compton scattering, Rayleigh scattering, and fluorescence are enabled for propagation through the beam pipe and detector materials. SynradG4 is not intended to replace general SR simulation codes; rather, it complements them by providing the workflow and geometry integration capabilities needed for EIC-specific background studies. Benchmark tests against Synrad+, Synrad3D, and the native Geant4 X-ray reflection model demonstrate excellent agreement for specular and diffuse reflection regimes. Using the full IR geometry and machine lattice, we present the first SR background estimates for the ePIC detector and evaluate the impact of potential SR masks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Autoencoder-based time series anomaly detection for ATLAS Liquid Argon calorimeter data quality monitoring</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2512-05977</link>
-    <guid isPermaLink="false">arxiv:2512.05977</guid>
-    <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vilius Čepaitis</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>The ATLAS experiment at the LHC employs comprehensive data quality monitoring procedures to ensure high-quality physics data. This contribution presents a long short-term memory autoencoder-based algorithm for detecting anomalies in ATLAS Liquid Argon calorimeter data, represented as multidimensional time series of statistical moments of energy cluster properties. Trained on good-quality data, the model identifies anomalous intervals. Validation is performed using a known short-term issue of noise bursts, and the potential for broader application to transient calorimeter issues is discussed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Characterization of the first full-size production for ePIC TOF layers</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2511-02939</link>
-    <guid isPermaLink="false">arxiv:2511.02939</guid>
-    <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Davis et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Low-Gain Avalanche Detectors (LGADs) are characterized by a fast rise time (500 ps) and extremely good time resolution (down to 17 ps). The intrinsic low granularity of LGADs and the large power consumption of readout chips for precise timing are problematic in near-future experiments such as e+e- Higgs factories (FCC-ee) and the ePIC detector at the Electron-Ion Collider. AC-coupled LGADs, where the readout metal is AC-coupled through an insulating oxide layer, could solve both issues at the same time thanks to the 100% fill factor and charge-sharing capabilities. Charge sharing between electrodes allows a hit position resolution well below the pitch/√(1)2 of standard segmented detectors. At the same time, it relaxes the channel density and power consumption requirements of readout chips. Extensive laboratory characterization of AC-LGAD devices from the first full-size (up to 3x4 cm) production from HPK for ePIC will be shown in this contribution. Both pixel and strip geometry was produced and tested. This study was conducted within the scope of the ePIC detector time of flight (TOF) layer R&amp;D program at the EIC.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A User's Guide to Sampling Strategies for Sliced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-02275</link>
+    <guid isPermaLink="false">arxiv:2502.02275</guid>
+    <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keanu Sisouk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper serves as a user&rsquo;s guide to sampling strategies for sliced optimal transport. We provide reminders and additional regularity results on the Sliced Wasserstein distance. We detail the construction methods, generation time complexity, theoretical guarantees, and conditions for each strategy. Additionally, we provide insights into their suitability for sliced optimal transport in theory. Extensive experiments on both simulated and real-world data offer a representative comparison of the strategies, culminating in practical recommendations for their best usage.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Distributionally and Adversarially Robust Logistic Regression via Intersecting Wasserstein Balls</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2407-13625</link>
+    <guid isPermaLink="false">arxiv:2407.13625</guid>
+    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aras Selvi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Adversarially robust optimization (ARO) has emerged as the <em>de facto</em> standard for training models that hedge against adversarial attacks in the test stage. While these models are robust against adversarial attacks, they tend to suffer severely from overfitting. To address this issue, some successful methods replace the empirical distribution in the training stage with alternatives including <em>(i)</em> a worst-case distribution residing in an ambiguity set, resulting in a distributionally robust (DR) counterpart of ARO; <em>(ii)</em> a mixture of the empirical distribution with a distribution induced by an auxiliary (<em>e.g.</em>, synthetic, external, out-of-domain) dataset. Inspired by the former, we study the Wasserstein DR counterpart of ARO for logistic regression and show it admits a tractable convex optimization reformulation. Adopting the latter setting, we revise the DR approach by intersecting its ambiguity set with another ambiguity set built using the auxiliary dataset, which offers a significant improvement whenever the Wasserstein distance between the data generating and auxiliary distributions can be estimated. We study the underlying optimization problem, develop efficient solution algorithms, and demonstrate that the proposed method outperforms benchmark approaches on standard datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>OmniJet-α_C: Learning point cloud calorimeter simulations using generative transformers</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sina Moradi</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal Transport (OT) has established itself as a robust framework for quantifying differences between distributions, with applications that span fields such as machine learning, data science, and computer vision. This paper offers a detailed examination of the OT problem, beginning with its theoretical foundations, including the classical formulations of Monge and Kantorovich and their extensions to modern computational techniques. It explores cutting-edge algorithms, including Sinkhorn iterations, primal-dual strategies, and reduction-based approaches, emphasizing their efficiency and scalability in addressing high-dimensional problems. The paper also highlights emerging trends, such as integrating OT into machine learning frameworks, the development of novel problem variants, and ongoing theoretical advancements. Applications of OT are presented across a range of domains, with particular attention to its innovative application in time series data analysis via Optimal Transport Warping (OTW), a robust alternative to methods like Dynamic Time Warping. Despite the significant progress made, challenges related to scalability, robustness, and ethical considerations remain, necessitating further research. The paper underscores OT&rsquo;s potential to bridge theoretical depth and practical utility, fostering impactful advancements across diverse disciplines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Generative Modeling via Penalized Optimal Transport Network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2402-10456</link>
-    <guid isPermaLink="false">arxiv:2402.10456</guid>
-    <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenhui Sophia Lu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The generation of synthetic data with distributions that faithfully emulate the underlying data-generating mechanism holds paramount significance. Wasserstein Generative Adversarial Networks (WGANs) have emerged as a prominent tool for this task; however, due to the delicate equilibrium of the minimax formulation and the instability of Wasserstein distance in high dimensions, WGAN often manifests the pathological phenomenon of mode collapse. This results in generated samples that converge to a restricted set of outputs and fail to adequately capture the tail behaviors of the true distribution. Such limitations can lead to serious downstream consequences. To this end, we propose the Penalized Optimal Transport Network (POTNet), a versatile deep generative model based on the marginally-penalized Wasserstein (MPW) distance. Through the MPW distance, POTNet effectively leverages low-dimensional marginal information to guide the overall alignment of joint distributions. Furthermore, our primal-based framework enables direct evaluation of the MPW distance, thus eliminating the need for a critic network. This formulation circumvents training instabilities inherent in adversarial approaches and avoids the need for extensive parameter tuning. We derive a non-asymptotic bound on the generalization error of the MPW loss and establish convergence rates of the generative distribution learned by POTNet. Our theoretical analysis together with extensive empirical evaluations demonstrate the superior performance of POTNet in accurately capturing underlying data structures, including their tail behaviors and minor modalities. Moreover, our model achieves orders of magnitude speedup during the sampling stage compared to state-of-the-art alternatives, which enables computationally efficient large-scale synthetic data generation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Non-geodesically-convex optimization in the Wasserstein space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-00502</link>
-    <guid isPermaLink="false">arxiv:2406.00502</guid>
-    <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phuc Hau Luu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study a class of optimization problems in the Wasserstein space (the space of probability measures) where the objective function is nonconvex along generalized geodesics. Specifically, the objective exhibits some difference-of-convex structure along these geodesics. The setting also encompasses sampling problems where the logarithm of the target distribution is difference-of-convex. We derive multiple convergence insights for a novel semi Forward-Backward Euler scheme under several nonconvex (and possibly nonsmooth) regimes. Notably, the semi Forward-Backward Euler is just a slight modification of the Forward-Backward Euler whose convergence is &ndash; to our knowledge &ndash; still unknown in our very general non-geodesically-convex setting.</p>]]></description>
   </item>
 
 </channel>

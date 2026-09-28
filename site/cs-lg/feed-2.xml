@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>RECAST: Model Reconstruction via Counterfactual-Aware Wasserstein Geometry under Limited Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-27948</link>
+    <guid isPermaLink="false">arxiv:2606.27948</guid>
+    <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Zhao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Counterfactual explanations (CFs) help understand machine learning models by identifying minimal input changes that would lead to alternative model outcomes. Recent work demonstrates their utility for reconstructing black-box models, enabling third-party auditing of opaque decision systems for fairness and accountability. Still, CF-based reconstruction may suffer from decision boundary shifts, overfitting, and restrictive assumptions requiring online query access to target platforms. We propose REconstruction via Counterfactual-Aware waSserstein opTimization (RECAST) under limited data and restricted access, a behavioral surrogate model based on Wasserstein barycentric prototypes. Our approach addresses decision boundary shifts by incorporating CFs as informative, though less representative, samples for both classes, maintaining high surrogate fidelity in low-sample regimes without requiring online access during reconstruction. To enhance fairness auditing, our method enables systematic group fairness diagnostics. Experiments on real-world datasets and various setups show that RECAST effectively achieves high fidelity and query efficiency, as well as stable results even when the access is limited and noisy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>KIGNet: Physics-Motivated Multi-Graph Representation Learning for Explainable Jet Tagging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-07420</link>
+    <guid isPermaLink="false">arxiv:2512.07420</guid>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Md Raqibul Islam et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Lund jet plane, jet tagging, jet identification, collider) — original abstract; no AI summary.</em></p>
+<p>Jet identification plays a central role in analyzing data from high-energy collider experiments. While deep learning has improved jet classification, it often lacks interpretability. We introduce the Kinematic Interaction Graph Network (KIGNet), a graph neural network that integrates kinematic variables into jet classification by constructing four graph representations per jet, each weighted by a distinct variable: angular separation (Δ), relative transverse momentum (k_T), momentum fraction (z), and invariant mass squared (m²). Three of these (Δ, k_T, z) are motivated by the Lund jet plane, grounded in perturbative QCD factorization; the fourth (m²) adds complementary mass-scale sensitivity for heavy-flavor identification. Using Gradient-weighted Class Activation Mapping (Grad-CAM), we determine which variables dominate classification. Angular separation and relative transverse momentum account for about 76% of the total Grad-CAM attribution (40.72% and 35.67%), with momentum fraction and invariant mass contributing the remaining 24%. This hierarchy is consistent with the soft-collinear structure of QCD radiation in the training data, showing that the network learns physically interpretable representations rather than spurious correlations. On the JetClass dataset, KIGNet achieves a macro-accuracy of 95.07%, macro-AUC of 96.61%, and macro-AUPR of 81.52%, relative improvements of 2.45%, 3.40%, and 19.11% over the state-of-the-art baseline. On the Aspen Open Jets dataset of real CMS collision data, KIGNet produces substantially more structured latent representations than the baseline, reducing the Davies-Bouldin Index by 52.15% (0.8395 →0.4017) and increasing the Dunn Index by 42.33% (0.0189 →0.0269), confirming that physics-informed kinematic encoding generalizes beyond idealized simulation to experimental detector conditions.</p>]]></description>
+  </item>
 
   <item>
     <title>Rethinking Training &amp; Inference for Forecasting: Linking Winner-Take-All back to GMMs</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mengyu Li et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>Sinkhorn algorithm has been used pervasively to approximate the solution to optimal transport (OT) and unbalanced optimal transport (UOT) problems. However, its practical application is limited due to the high computational complexity. To alleviate the computational burden, we propose a novel importance sparsification method, called Spar-Sink, to efficiently approximate entropy-regularized OT and UOT solutions. Specifically, our method employs natural upper bounds for unknown optimal transport plans to establish effective sampling probabilities, and constructs a sparse kernel matrix to accelerate Sinkhorn iterations, reducing the computational cost of each iteration from O(n²⁾ to O(n) for a sample of size n. Theoretically, we show the proposed estimators for the regularized OT and UOT problems are consistent under mild regularity conditions. Experiments on various synthetic data demonstrate Spar-Sink outperforms mainstream competitors in terms of both estimation error and speed. A real-world echocardiogram data analysis shows Spar-Sink can effectively estimate and visualize cardiac cycles, from which one can identify heart failure and arrhythmia. To evaluate the numerical accuracy of cardiac cycle prediction, we consider the task of predicting the end-systole time point using the end-diastole one. Results show Spar-Sink performs as well as the classical Sinkhorn algorithm, requiring significantly less computational time.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On the Efficiency of Sinkhorn-Knopp for Entropically Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-03787</link>
-    <guid isPermaLink="false">arxiv:2604.03787</guid>
-    <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kun He</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>The Sinkhorn&ndash;Knopp (SK) algorithm is a cornerstone method for matrix scaling and entropically regularized optimal transport (EOT). Despite its empirical efficiency, existing theoretical guarantees to achieve a target marginal accuracy ε deteriorate severely in the presence of outliers, bottlenecked either by the global maximum regularized cost ηC_∞ (where η is the regularization parameter and C the cost matrix) or the matrix&rsquo;s minimum-to-maximum entry ratio ν. This creates a fundamental disconnect between theory and practice. In this paper, we resolve this discrepancy. For EOT, we introduce the novel concept of well-boundedness, a local bulk mass property that rigorously isolates the well-behaved portion of the data from extreme outliers. We prove that governed by this fundamental notion, SK recovers the target transport plan for a problem of dimension n in O(logn - logε) iterations, completely independent of the regularized cost ηC_∞. Furthermore, we show that a virtually cost-free pre-scaling step eliminates the dimensional dependence entirely, accelerating convergence to a strictly dimension-free O(log(1/ε)) iterations. Beyond EOT, we establish a sharp phase transition for general (u,v)-scaling governed by a critical matrix density threshold. We prove that when a matrix&rsquo;s density exceeds this threshold, the iteration complexity is strictly independent of ν. Conversely, when the density falls below this threshold, the dependence on ν becomes unavoidable; in this sub-critical regime, we construct instances where SK requires Ω(n/ε) iterations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast Log-Domain Sinkhorn Optimal Transport with Warp-Level GPU Reductions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-00837</link>
-    <guid isPermaLink="false">arxiv:2605.00837</guid>
-    <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Xiao</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Entropic regularized optimal transport (OT) via the Sinkhorn algorithm has become a fundamental tool in machine learning, yet existing implementations either suffer from numerical instability for small regularization parameters or incur significant overhead from deep learning frameworks. We present FastSinkhorn, a lightweight, native CUDA implementation of the log-domain Sinkhorn algorithm that combines warp-level shuffle reductions with shared-memory tiling to achieve high GPU utilization without sacrificing numerical stability. Our solver operates entirely in the log-domain, enabling robust computation for regularization parameters as small as epsilon = 10^{-4} where standard-domain methods fail. On dense OT problems with n = m = 8192, our implementation achieves 12x speedup over the widely-used POT library and 5.9x speedup over GPU-accelerated PyTorch baselines, while consuming only 256 MB of GPU memory. We validate our solver on image color transfer, 3D point cloud matching, and convergence analysis, demonstrating that native CUDA kernels with careful numerical treatment provide a practical and efficient foundation for large-scale optimal transport computation.</p>]]></description>
   </item>
 
 </channel>

@@ -36,17 +36,62 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">22 papers</span>
-  <span class="count">16 days</span>
+  <span class="count">25 papers</span>
+  <span class="count">17 days</span>
   <span class="count">since 2024</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">21</span></a><a href="2024.html">2024 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">24</span></a><a href="2024.html">2024 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, September 28, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-30357">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.30357" target="_blank" rel="noopener">arXiv:2609.30357</a>
+      
+      <a class="permalink" href="#a2609-30357" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</h3>
+    <p class="byline">Lauren Hay et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (IRC-safe, title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>As the accuracy of experimental results in high energy physics (HEP) increases, so does the demand for precision Monte Carlo (MC) simulation. Higher-accuracy event generation at next-to-leading order (NLO) and beyond brings with it negatively weighted events. These negatively weighted events reduce the statistical power of samples, increasing the number of events that need to be produced and straining already limited computational resources. We present a post-hoc reweighting scheme that employs cell-based resampling using an IRC-safe metric to define the cell radii. An optimal metric embeds kinematically similar events within the same cells, minimizing bias when reweighted. This motivates our exploration of a Optimal Transport (OT) based distance metrics. We compare the performance of the reweighting algorithm with different choices of metric, and explicitly demonstrate the performance on simulated Z+jets events produced at NLO accuracy.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-30418">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.30418" target="_blank" rel="noopener">arXiv:2609.30418</a>
+      
+      <a class="permalink" href="#a2609-30418" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Phase-Space Inclusive Figure of Merit Based in Optimal Transport for Validating Monte Carlo Reweightings</h3>
+    <p class="byline">Rishabh Jain et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Validating whether the underlying physics of a model has been retained after a full phase-space reweighting poses a unique challenge. Often, validation relies on comparing histograms of 1D observables; however, this can mask correlations and biases in the complete prediction. We present a novel, unbinned approach to comparing the performance of such reweighting schemes based on the &ldquo;Cross-Section-Mover&rsquo;s Distance&rdquo;, an application of Optimal Transport that quantifies the work required to transform one theoretical prediction into another and enables an interpretation of results in terms of metric spaces. We demonstrate its utility when benchmarking various reweighting schemes that mitigate the effects of negative weights in a Monte Carlo simulation. This approach can be broadly applied in other scenarios where biases in full phase-space reweighting schemes should be studied in an unbinned way.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-30775">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.30775" target="_blank" rel="noopener">arXiv:2609.30775</a>
+      
+      <a class="permalink" href="#a2609-30775" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Parnassus for the CLD Detector: A Generative Machine-Learning Surrogate for Detector Simulation and Reconstruction at the FCC-ee</h3>
+    <p class="byline">Umar Sohail Qureshi et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (particle-flow, collider, Ben Nachman) — original abstract; no AI summary.</em></p>
+<p>Detector simulation and event reconstruction will be computationally expensive for future <span class="arithmatex">\(e^+e^-\)</span> collider programs and are currently critical bottlenecks for accurate feasibility studies. To address this challenge, we build a Parnassus model for the CLD detector concept. Parnassus is a framework for automatically tuning a surrogate model, in our case, a conditional flow matching neural network, to emulate a full detector simulation and reconstruction. We train on <span class="arithmatex">\(e^+e^-\to Z\to q\bar q\)</span> events at <span class="arithmatex">\(\sqrt{s}=91.2\)</span> GeV processed through a Geant4 simulation of the CLD detector concept and the Pandora particle-flow reconstruction and reproduce single-particle kinematics, particle-IDs, and impact-parameter distributions. We also examine jet- and event-level features, inclusively and split by flavor, and find excellent fidelity, significantly better than the parameterized program Delphes. Furthermore, we train a transformer-based flavor tagger on the reconstructed particle-flow constituents and show that the surrogate preserves the <span class="arithmatex">\(b/c/s/q\)</span> discrimination of the full CLD reconstruction. The Parnassus CLD model achieves a generation cost of about 1.2 ms (40 ms) per event on a single GPU (CPU), over three (two) orders of magnitude faster than full simulation and reconstruction. Our model is publicly available for feasibility and design studies.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -440,7 +485,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-28 05:41 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-28 05:48 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

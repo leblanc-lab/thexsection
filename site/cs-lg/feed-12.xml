@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Parameter-Transferred Wasserstein Generative Adversarial Network (PT-WGAN) for Low-Dose PET Image Denoising</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1910-06749</link>
+    <guid isPermaLink="false">arxiv:1910.06749</guid>
+    <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu Gong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Due to the widespread use of positron emission tomography (PET) in clinical practice, the potential risk of PET-associated radiation dose to patients needs to be minimized. However, with the reduction in the radiation dose, the resultant images may suffer from noise and artifacts that compromise diagnostic performance. In this paper, we propose a parameter-transferred Wasserstein generative adversarial network (PT-WGAN) for low-dose PET image denoising. The contributions of this paper are twofold: i) a PT-WGAN framework is designed to denoise low-dose PET images without compromising structural details, and ii) a task-specific initialization based on transfer learning is developed to train PT-WGAN using trainable parameters transferred from a pretrained model, which significantly improves the training efficiency of PT-WGAN. The experimental results on clinical data show that the proposed network can suppress image noise more effectively while preserving better image fidelity than recently published state-of-the-art methods. We make our code available at https://github.com/90n9-yu/PT-WGAN.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Prototype-based interpretation of the functionality of neurons in winner-take-all neural networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-08750</link>
+    <guid isPermaLink="false">arxiv:2008.08750</guid>
+    <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ramin Zarei Sabzevar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Prototype-based learning (PbL) using a winner-take-all (WTA) network based on minimum Euclidean distance (ED-WTA) is an intuitive approach to multiclass classification. By constructing meaningful class centers, PbL provides higher interpretability and generalization than hyperplane-based learning (HbL) methods based on maximum Inner Product (IP-WTA) and can efficiently detect and reject samples that do not belong to any classes. In this paper, we first prove the equivalence of IP-WTA and ED-WTA from a representational point of view. Then, we show that naively using this equivalence leads to unintuitive ED-WTA networks in which the centers have high distances to data that they represent. We propose ±ED-WTA which models each neuron with two prototypes: one positive prototype representing samples that are modeled by this neuron and a negative prototype representing the samples that are erroneously won by that neuron during training. We propose a novel training algorithm for the ±ED-WTA network, which cleverly switches between updating the positive and negative prototypes and is essential to the emergence of interpretable prototypes. Unexpectedly, we observed that the negative prototype of each neuron is indistinguishably similar to the positive one. The rationale behind this observation is that the training data that are mistaken with a prototype are indeed similar to it. The main finding of this paper is this interpretation of the functionality of neurons as computing the difference between the distances to a positive and a negative prototype, which is in agreement with the BCM theory. In our experiments, we show that the proposed ±ED-WTA method constructs highly interpretable prototypes that can be successfully used for detecting outlier and adversarial examples.</p>]]></description>
+  </item>
 
   <item>
     <title>Patient ADE Risk Prediction through Hierarchical Time-Aware Neural Network Using Claim Codes</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saied Mahdian et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We propose a family of relaxations of the optimal transport problem which regularize the problem by introducing an additional minimization step over a small region around one of the underlying transporting measures. The type of regularization that we obtain is related to smoothing techniques studied in the optimization literature. When using our approach to estimate optimal transport costs based on empirical measures, we obtain statistical learning bounds which are useful to guide the amount of regularization, while maintaining good generalization properties. To illustrate the computational advantages of our regularization approach, we apply our method to training Wasserstein GANs. We obtain running time improvements, relative to current benchmarks, with no deterioration in testing performance (via FID). The running time improvement occurs because our new optimality-based threshold criterion reduces the number of expensive iterates of the generating networks, while increasing the number of actor-critic iterations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving Textual Network Embedding with Global Attention via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-01840</link>
-    <guid isPermaLink="false">arxiv:1906.01840</guid>
-    <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liqun Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Constituting highly informative network embeddings is an important tool for network analysis. It encodes network topology, along with other useful side information, into low-dimensional node-based feature representations that can be exploited by statistical modeling. This work focuses on learning context-aware network embeddings augmented with text data. We reformulate the network-embedding problem, and present two novel strategies to improve over traditional attention mechanisms: (i) a content-aware sparse attention module based on optimal transport, and (ii) a high-level attention parsing module. Our approach yields naturally sparse and self-normalized relational inference. It can capture long-term interactions between sequences, thus addressing the challenges faced by existing textual network embedding schemes. Extensive experiments are conducted to demonstrate our model can consistently outperform alternative state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Direct Õ(1/ε) Iteration Parallel Algorithm for Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-00618</link>
-    <guid isPermaLink="false">arxiv:1906.00618</guid>
-    <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arun Jambulapati et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transportation, or computing the Wasserstein or ``earth mover&rsquo;s&rsquo;&rsquo; distance between two distributions, is a fundamental primitive which arises in many learning and statistical settings. We give an algorithm which solves this problem to additive ε with Õ(1/ε) parallel depth, and Õ(n²/ε) work. Barring a breakthrough on a long-standing algorithmic open problem, this is optimal for first-order methods. Blanchet et. al. &lsquo;18, Quanrud &lsquo;19 obtained similar runtimes through reductions to positive linear programming and matrix scaling. However, these reduction-based algorithms use complicated subroutines which may be deemed impractical due to requiring solvers for second-order iterations (matrix scaling) or non-parallelizability (positive LP). The fastest practical algorithms run in time Õ(min(n² / ε², n².5 / ε)) (Dvurechensky et. al. &lsquo;18, Lin et. al. &lsquo;19). We bridge this gap by providing a parallel, first-order, Õ(1/ε) iteration algorithm without worse dependence on dimension, and provide preliminary experimental evidence that our algorithm may enjoy improved practical performance. We obtain this runtime via a primal-dual extragradient method, motivated by recent theoretical improvements to maximum flow (Sherman &lsquo;17).</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>On the Information Processing of One-Dimensional Wasserstein Distances with Finite Samples</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-12881</link>
+    <guid isPermaLink="false">arxiv:2511.12881</guid>
+    <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cheongjae Jang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Leveraging the Wasserstein distance &ndash; a summation of sample-wise transport distances in data space &ndash; is advantageous in many applications for measuring support differences between two underlying density functions. However, when supports significantly overlap while densities exhibit substantial pointwise differences, it remains unclear whether and how this transport information can accurately identify these differences, particularly their analytic characterization in finite-sample settings. We address this issue by conducting an analysis of the information processing capabilities of the one-dimensional Wasserstein distance with finite samples. By utilizing the Poisson process and isolating the rate factor, we demonstrate the capability of capturing the pointwise density difference with Wasserstein distances and how this information harmonizes with support differences. The analyzed properties are confirmed using neural spike train decoding and amino acid contact frequency data. The results reveal that the one-dimensional Wasserstein distance highlights meaningful density differences related to both rate and support.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Laplace Learning in Wasserstein Space</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-13229</link>
+    <guid isPermaLink="false">arxiv:2511.13229</guid>
+    <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mary Chriselda Antony Oliver et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The manifold hypothesis posits that high-dimensional data typically resides on low-dimensional sub spaces. In this paper, we assume manifold hypothesis to investigate graph-based semi-supervised learning methods. In particular, we examine Laplace Learning in the Wasserstein space, extending the classical notion of graph-based semi-supervised learning algorithms from finite-dimensional Euclidean spaces to an infinite-dimensional setting. To achieve this, we prove variational convergence of a discrete graph p- Dirichlet energy to its continuum counterpart. In addition, we characterize the Laplace-Beltrami operator on asubmanifold of the Wasserstein space. Finally, we validate the proposed theoretical framework through numerical experiments conducted on benchmark datasets, demonstrating the consistency of our classification performance in high-dimensional settings.</p>]]></description>
+  </item>
 
   <item>
     <title>Using Linearized Optimal Transport to Predict the Evolution of Stochastic Particle Systems</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Rupf et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Zero-shot imitation learning algorithms hold the promise of reproducing unseen behavior from as little as a single demonstration at test time. Existing practical approaches view the expert demonstration as a sequence of goals, enabling imitation with a high-level goal selector, and a low-level goal-conditioned policy. However, this framework can suffer from myopic behavior: the agent&rsquo;s immediate actions towards achieving individual goals may undermine long-term objectives. We introduce a novel method that mitigates this issue by directly optimizing the occupancy matching objective that is intrinsic to imitation learning. We propose to lift a goal-conditioned value function to a distance between occupancies, which are in turn approximated via a learned world model. The resulting method can learn from offline, suboptimal data, and is capable of non-myopic, zero-shot imitation, as we demonstrate in complex, continuous benchmarks. The code is available at https://github.com/martius-lab/zilot.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A User's Guide to Sampling Strategies for Sliced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-02275</link>
-    <guid isPermaLink="false">arxiv:2502.02275</guid>
-    <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keanu Sisouk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper serves as a user&rsquo;s guide to sampling strategies for sliced optimal transport. We provide reminders and additional regularity results on the Sliced Wasserstein distance. We detail the construction methods, generation time complexity, theoretical guarantees, and conditions for each strategy. Additionally, we provide insights into their suitability for sliced optimal transport in theory. Extensive experiments on both simulated and real-world data offer a representative comparison of the strategies, culminating in practical recommendations for their best usage.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distributionally and Adversarially Robust Logistic Regression via Intersecting Wasserstein Balls</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2407-13625</link>
-    <guid isPermaLink="false">arxiv:2407.13625</guid>
-    <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aras Selvi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Adversarially robust optimization (ARO) has emerged as the <em>de facto</em> standard for training models that hedge against adversarial attacks in the test stage. While these models are robust against adversarial attacks, they tend to suffer severely from overfitting. To address this issue, some successful methods replace the empirical distribution in the training stage with alternatives including <em>(i)</em> a worst-case distribution residing in an ambiguity set, resulting in a distributionally robust (DR) counterpart of ARO; <em>(ii)</em> a mixture of the empirical distribution with a distribution induced by an auxiliary (<em>e.g.</em>, synthetic, external, out-of-domain) dataset. Inspired by the former, we study the Wasserstein DR counterpart of ARO for logistic regression and show it admits a tractable convex optimization reformulation. Adopting the latter setting, we revise the DR approach by intersecting its ambiguity set with another ambiguity set built using the auxiliary dataset, which offers a significant improvement whenever the Wasserstein distance between the data generating and auxiliary distributions can be estimated. We study the underlying optimization problem, develop efficient solution algorithms, and demonstrate that the proposed method outperforms benchmark approaches on standard datasets.</p>]]></description>
   </item>
 
 </channel>

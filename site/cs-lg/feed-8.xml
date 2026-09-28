@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Outlier-Robust Gromov-Wasserstein for Graph Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-04610</link>
+    <guid isPermaLink="false">arxiv:2302.04610</guid>
+    <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lemin Kong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Gromov-Wasserstein (GW) distance is a powerful tool for comparing and aligning probability distributions supported on different metric spaces. Recently, GW has become the main modeling technique for aligning heterogeneous data for a wide range of graph learning tasks. However, the GW distance is known to be highly sensitive to outliers, which can result in large inaccuracies if the outliers are given the same weight as other samples in the objective function. To mitigate this issue, we introduce a new and robust version of the GW distance called RGW. RGW features optimistically perturbed marginal constraints within a Kullback-Leibler divergence-based ambiguity set. To make the benefits of RGW more accessible in practice, we develop a computationally efficient and theoretically provable procedure using Bregman proximal alternating linearized minimization algorithm. Through extensive experimentation, we validate our theoretical results and demonstrate the effectiveness of RGW on real-world graph learning tasks, such as subgraph matching and partial shape correspondence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Debias Coarsely, Sample Conditionally: Statistical Downscaling through Optimal Transport and Probabilistic Diffusion Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-15618</link>
+    <guid isPermaLink="false">arxiv:2305.15618</guid>
+    <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhong Yi Wan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce a two-stage probabilistic framework for statistical downscaling using unpaired data. Statistical downscaling seeks a probabilistic map to transform low-resolution data from a biased coarse-grained numerical scheme to high-resolution data that is consistent with a high-fidelity scheme. Our framework tackles the problem by composing two transformations: (i) a debiasing step via an optimal transport map, and (ii) an upsampling step achieved by a probabilistic diffusion model with a posteriori conditional sampling. This approach characterizes a conditional distribution without needing paired data, and faithfully recovers relevant physical statistics from biased samples. We demonstrate the utility of the proposed approach on one- and two-dimensional fluid flow problems, which are representative of the core difficulties present in numerical simulations of weather and climate. Our method produces realistic high-resolution outputs from low-resolution inputs, by upsampling resolutions of 8x and 16x. Moreover, our procedure correctly matches the statistics of physical quantities, even when the low-frequency content of the inputs and outputs do not match, a crucial but difficult-to-satisfy assumption needed by current state-of-the-art alternatives. Code for this work is available at: https://github.com/google-research/swirl-dynamics/tree/main/swirl_dynamics/projects/probabilistic_diffusion.</p>]]></description>
+  </item>
 
   <item>
     <title>Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The Wasserstein distance, rooted in optimal transport (OT) theory, is a popular discrepancy measure between probability distributions with various applications to statistics and machine learning. Despite their rich structure and demonstrated utility, Wasserstein distances are sensitive to outliers in the considered distributions, which hinders applicability in practice. We propose a new outlier-robust Wasserstein distance 𝖶_p^ε which allows for ε outlier mass to be removed from each contaminated distribution. Under standard moment assumptions, 𝖶_p^ε is shown to achieve strong robust estimation guarantees under the Huber ε-contamination model. Our formulation of this robust distance amounts to a highly regular optimization problem that lends itself better for analysis compared to previously considered frameworks. Leveraging this, we conduct a thorough theoretical study of 𝖶_p^ε, encompassing robustness guarantees, characterization of optimal perturbations, regularity, duality, and statistical estimation. In particular, by decoupling the optimization variables, we arrive at a simple dual form for 𝖶_p^ε that can be implemented via an elementary modification to standard, duality-based OT solvers. We illustrate the virtues of our framework via applications to generative modeling with contaminated datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Learning for Mean Field Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-14739</link>
-    <guid isPermaLink="false">arxiv:2302.14739</guid>
-    <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Baudelet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Mean field control (MFC) problems have been introduced to study social optima in very large populations of strategic agents. The main idea is to consider an infinite population and to simplify the analysis by using a mean field approximation. These problems can also be viewed as optimal control problems for McKean-Vlasov dynamics. They have found applications in a wide range of fields, from economics and finance to social sciences and engineering. Usually, the goal for the agents is to minimize a total cost which consists in the integral of a running cost plus a terminal cost. In this work, we consider MFC problems in which there is no terminal cost but, instead, the terminal distribution is prescribed. We call such problems mean field optimal transport problems since they can be viewed as a generalization of classical optimal transport problems when mean field interactions occur in the dynamics or the running cost function. We propose three numerical methods based on neural networks. The first one is based on directly learning an optimal control. The second one amounts to solve a forward-backward PDE system characterizing the solution. The third one relies on a primal-dual approach. We illustrate these methods with numerical experiments conducted on two families of examples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural Lagrangian Schrödinger Bridge: Diffusion Modeling for Population Dynamics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2204-04853</link>
-    <guid isPermaLink="false">arxiv:2204.04853</guid>
-    <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takeshi Koshizuka et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Population dynamics is the study of temporal and spatial variation in the size of populations of organisms and is a major part of population ecology. One of the main difficulties in analyzing population dynamics is that we can only obtain observation data with coarse time intervals from fixed-point observations due to experimental costs or measurement constraints. Recently, modeling population dynamics by using continuous normalizing flows (CNFs) and dynamic optimal transport has been proposed to infer the sample trajectories from a fixed-point observed population. While the sample behavior in CNFs is deterministic, the actual sample in biological systems moves in an essentially random yet directional manner. Moreover, when a sample moves from point A to point B in dynamical systems, its trajectory typically follows the principle of least action in which the corresponding action has the smallest possible value. To satisfy these requirements of the sample trajectories, we formulate the Lagrangian Schrödinger bridge (LSB) problem and propose to solve it approximately by modeling the advection-diffusion process with regularized neural SDE. We also develop a model architecture that enables faster computation of the loss function. Experimental results show that the proposed method can efficiently approximate the population-level dynamics even for high-dimensional data and that using the prior knowledge introduced by the Lagrangian enables us to estimate the sample-level dynamics with stochastic behavior.</p>]]></description>
   </item>
 
 </channel>

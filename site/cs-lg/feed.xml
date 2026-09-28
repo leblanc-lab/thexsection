@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Brenier Meets Adversarial Training: Optimal Transport Geometry for Robust Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31363</link>
+    <guid isPermaLink="false">arxiv:2609.31363</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alireza Abdollahpoorrostam et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Distributionally robust optimization (DRO) provides a principled framework for learning under distribution shift, but its practical use is hindered by the difficulty of evaluating worst-case risks for nonconvex loss functions. We study a penalized DRO formulation in which the adversary may choose any distribution but incurs a Wasserstein penalty for deviating from the empirical distribution. We show that the adversary&rsquo;s problem can be reformulated as an optimization problem over transport maps that push empirical samples to adversarial ones, and we prove that optimal maps are cyclically monotone. We also show that standard adversarial training&mdash;based on per-sample local optimization&mdash;violates cyclical monotonicity and wastes transport costs unless the adversary is severely restricted. We propose two remedies. First, we introduce multi-start particle ascent, which alternates parallel gradient ascent with reassignment to enforce cyclical monotonicity across samples. Second, we parameterize adversarial maps as gradients of input-convex neural networks, which guarantees cyclical monotonicity by construction. Experiments on robust regression, image classification, and robust control show that our methods consistently outperform standard adversarial training and state-of-the-art baselines, achieving improved robustness and better generalization under distribution shift.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31470</link>
+    <guid isPermaLink="false">arxiv:2609.31470</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haixiang Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Outliers are essential for evaluating and improving the robustness of machine learning systems, especially when future distributions may differ significantly from historical training data. In high-stakes applications, robustness often depends on rare cases that finite datasets fail to capture, making simple resampling or perturbation insufficient for stress scenario generation. Existing outlier synthesis methods typically rely on sparse neighborhoods, low support latent regions, or classifier boundary crossings, which can be heuristic, unstable, and tied to specific modalities or architectures. We therefore propose Sinkhorn Boundary Outlier Generation (SBOG), a structured framework for latent-space outlier generation that couples Sinkhorn optimal transport geometry with distributionally robust boundary modeling. The resulting Sinkhorn-induced support cost guides the sampler toward weakly supported boundary regions, while semantic constraints prevent uncontrolled drift from the intended context, yielding controlled deviations from the in-distribution reference measure rather than arbitrary sparse-region samples. Experiments on time series anomaly generation and image outlier synthesis show that our framework produces informative, semantically controlled outliers and improves downstream robustness evaluation across modalities, providing a foundation for stress scenario generation beyond empirical support.</p>]]></description>
+  </item>
 
   <item>
     <title>Reconstructing short-lived particles using hypergraph representation learning</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Optimizing functionals over the space of probability measures is now ubiquitous in machine learning. A widely used approach is to perform the optimization directly over the Wasserstein space, but many objective functionals of practical interest are non-convex along Wasserstein geodesics, making the analysis of standard first-order methods challenging. In this work, we study a class of objectives over the Wasserstein space that admit a difference-of-convex (DC) decomposition and we lift the classical convex-concave procedure (CCCP) to this setting. Under smoothness and strong convexity assumptions on the convex components of the decomposition, we prove almost stationarity along the iterates of the resulting algorithm. Our main focus is on the Maximum Mean Discrepancy (MMD) and the Energy Distance (ED) functionals, for which we develop explicit Wasserstein DC decompositions, and establish local convergence of the scheme under mild assumptions. Empirically, we show that well-chosen DC decompositions yield faster and more stable convergence than Wasserstein gradient descent on these MMD objectives.</p>]]></description>
-  </item>
-
-  <item>
-    <title>RECAST: Model Reconstruction via Counterfactual-Aware Wasserstein Geometry under Limited Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-27948</link>
-    <guid isPermaLink="false">arxiv:2606.27948</guid>
-    <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Zhao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Counterfactual explanations (CFs) help understand machine learning models by identifying minimal input changes that would lead to alternative model outcomes. Recent work demonstrates their utility for reconstructing black-box models, enabling third-party auditing of opaque decision systems for fairness and accountability. Still, CF-based reconstruction may suffer from decision boundary shifts, overfitting, and restrictive assumptions requiring online query access to target platforms. We propose REconstruction via Counterfactual-Aware waSserstein opTimization (RECAST) under limited data and restricted access, a behavioral surrogate model based on Wasserstein barycentric prototypes. Our approach addresses decision boundary shifts by incorporating CFs as informative, though less representative, samples for both classes, maintaining high surrogate fidelity in low-sample regimes without requiring online access during reconstruction. To enhance fairness auditing, our method enables systematic group fairness diagnostics. Experiments on real-world datasets and various setups show that RECAST effectively achieves high fidelity and query efficiency, as well as stable results even when the access is limited and noisy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>KIGNet: Physics-Motivated Multi-Graph Representation Learning for Explainable Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-07420</link>
-    <guid isPermaLink="false">arxiv:2512.07420</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Md Raqibul Islam et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Lund jet plane, jet tagging, jet identification, collider) — original abstract; no AI summary.</em></p>
-<p>Jet identification plays a central role in analyzing data from high-energy collider experiments. While deep learning has improved jet classification, it often lacks interpretability. We introduce the Kinematic Interaction Graph Network (KIGNet), a graph neural network that integrates kinematic variables into jet classification by constructing four graph representations per jet, each weighted by a distinct variable: angular separation (Δ), relative transverse momentum (k_T), momentum fraction (z), and invariant mass squared (m²). Three of these (Δ, k_T, z) are motivated by the Lund jet plane, grounded in perturbative QCD factorization; the fourth (m²) adds complementary mass-scale sensitivity for heavy-flavor identification. Using Gradient-weighted Class Activation Mapping (Grad-CAM), we determine which variables dominate classification. Angular separation and relative transverse momentum account for about 76% of the total Grad-CAM attribution (40.72% and 35.67%), with momentum fraction and invariant mass contributing the remaining 24%. This hierarchy is consistent with the soft-collinear structure of QCD radiation in the training data, showing that the network learns physically interpretable representations rather than spurious correlations. On the JetClass dataset, KIGNet achieves a macro-accuracy of 95.07%, macro-AUC of 96.61%, and macro-AUPR of 81.52%, relative improvements of 2.45%, 3.40%, and 19.11% over the state-of-the-art baseline. On the Aspen Open Jets dataset of real CMS collision data, KIGNet produces substantially more structured latent representations than the baseline, reducing the Davies-Bouldin Index by 52.15% (0.8395 →0.4017) and increasing the Dunn Index by 42.33% (0.0189 →0.0269), confirming that physics-informed kinematic encoding generalizes beyond idealized simulation to experimental detector conditions.</p>]]></description>
   </item>
 
 </channel>

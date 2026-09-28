@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Learning quantum data with the quantum Earth Mover's distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2101-03037</link>
+    <guid isPermaLink="false">arxiv:2101.03037</guid>
+    <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bobak Toussi Kiani et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>Quantifying how far the output of a learning algorithm is from its target is an essential task in machine learning. However, in quantum settings, the loss landscapes of commonly used distance metrics often produce undesirable outcomes such as poor local minima and exponentially decaying gradients. To overcome these obstacles, we consider here the recently proposed quantum earth mover&rsquo;s (EM) or Wasserstein-1 distance as a quantum analog to the classical EM distance. We show that the quantum EM distance possesses unique properties, not found in other commonly used quantum distance metrics, that make quantum learning more stable and efficient. We propose a quantum Wasserstein generative adversarial network (qWGAN) which takes advantage of the quantum EM distance and provides an efficient means of performing learning on quantum data. We provide examples where our qWGAN is capable of learning a diverse set of quantum data with only resources polynomial in the number of qubits.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A scalable deep learning approach for solving high-dimensional dynamic optimal transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-07521</link>
+    <guid isPermaLink="false">arxiv:2205.07521</guid>
+    <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Wan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The dynamic formulation of optimal transport has attracted growing interests in scientific computing and machine learning, and its computation requires to solve a PDE-constrained optimization problem. The classical Eulerian discretization based approaches suffer from the curse of dimensionality, which arises from the approximation of high-dimensional velocity field. In this work, we propose a deep learning based method to solve the dynamic optimal transport in high dimensional space. Our method contains three main ingredients: a carefully designed representation of the velocity field, the discretization of the PDE constraint along the characteristics, and the computation of high dimensional integral by Monte Carlo method in each time step. Specifically, in the representation of the velocity field, we apply the classical nodal basis function in time and the deep neural networks in space domain with the H1-norm regularization. This technique promotes the regularity of the velocity field in both time and space such that the discretization along the characteristic remains to be stable during the training process. Extensive numerical examples have been conducted to test the proposed method. Compared to other solvers of optimal transport, our method could give more accurate results in high dimensional cases and has very good scalability with respect to dimension. Finally, we extend our method to more complicated cases such as crowd motion problem.</p>]]></description>
+  </item>
 
   <item>
     <title>Real-time semantic segmentation on FPGAs for autonomous vehicles with hls4ml</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianyi Lin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) distances are increasingly used as loss functions for statistical inference, notably in the learning of generative models or supervised learning. Yet, the behavior of minimum Wasserstein estimators is poorly understood, notably in high-dimensional regimes or under model misspecification. In this work we adopt the viewpoint of projection robust (PR) OT, which seeks to maximize the OT cost between two measures by choosing a k-dimensional subspace onto which they can be projected. Our first contribution is to establish several fundamental statistical properties of PR Wasserstein distances, complementing and improving previous literature that has been restricted to one-dimensional and well-specified cases. Next, we propose the integral PR Wasserstein (IPRW) distance as an alternative to the PRW distance, by averaging rather than optimizing on subspaces. Our complexity bounds can help explain why both PRW and IPRW distances outperform Wasserstein distances empirically in high-dimensional inference tasks. Finally, we consider parametric inference using the PRW distance. We provide an asymptotic guarantee of two types of minimum PRW estimators and formulate a central limit theorem for max-sliced Wasserstein estimator under model misspecification. To enable our analysis on PRW with projection dimension larger than one, we devise a novel combination of variational analysis and statistical theory.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Point Cloud Transformers applied to Collider Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-05073</link>
-    <guid isPermaLink="false">arxiv:2102.05073</guid>
-    <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vinicius Mikuni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
-<p>Methods for processing point cloud information have seen a great success in collider physics applications. One recent breakthrough in machine learning is the usage of Transformer networks to learn semantic relationships between sequences in language processing. In this work, we apply a modified Transformer network called Point Cloud Transformer as a method to incorporate the advantages of the Transformer architecture to an unordered set of particles resulting from collision events. To compare the performance with other strategies, we study jet-tagging applications for highly-boosted particles.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A unified framework for non-negative matrix and tensor factorisations with a smoothed Wasserstein loss</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-01708</link>
-    <guid isPermaLink="false">arxiv:2104.01708</guid>
-    <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stephen Y. Zhang</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Non-negative matrix and tensor factorisations are a classical tool for finding low-dimensional representations of high-dimensional datasets. In applications such as imaging, datasets can be regarded as distributions supported on a space with metric structure. In such a setting, a loss function based on the Wasserstein distance of optimal transportation theory is a natural choice since it incorporates the underlying geometry of the data. We introduce a general mathematical framework for computing non-negative factorisations of both matrices and tensors with respect to an optimal transport loss. We derive an efficient computational method for its solution using a convex dual formulation, and demonstrate the applicability of this approach with several numerical illustrations with both matrix and tensor-valued data.</p>]]></description>
   </item>
 
 </channel>
