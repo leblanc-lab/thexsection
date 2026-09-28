@@ -6,7 +6,37 @@
   <description>Moving earth between distributions</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2609-30357</link>
+    <guid isPermaLink="false">arxiv:2609.30357</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lauren Hay et al.</dc:creator>
+    <description><![CDATA[<p>See the jets entry for numbers. From the OT side, this puts OT distances to work as a neighbourhood definition: EMD and SEMD serve as the metric for cell growth, not as an evaluation metric. The practical findings for OT users:
+- EMD β = 1 is the sweet spot for this job; the β = 0 and β = ∞ extremes are worst, per the companion paper.
+- SEMD (1D spectral representation) performs nearly as well as the full EMD, which matters for cost at scale.
+- Cost scaling for growing hyperspheres in EMD space over O(10⁵) events is not reported. Implementation is in OT-CReS and in <a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a>.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Phase-Space Inclusive Figure of Merit Based in Optimal Transport for Validating Monte Carlo Reweightings</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2609-30418</link>
+    <guid isPermaLink="false">arxiv:2609.30418</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rishabh Jain et al.</dc:creator>
+    <description><![CDATA[<p>This paper proposes the Cross-Section Mover&rsquo;s Distance (ΣMD, an OT distance between weighted event sets with EMD as ground metric) as an unbinned, IRC-safe global measure of bias from reweighting. The OT-technical content is how it handles signed weights:
+- It adopts the Piccoli–Rossi–Tournus construction, W_p(μ,ν) = W_p(μ⁺+ν⁻, μ⁻+ν⁺), which satisfies the triangle inequality only for p = 1.
+- In practice it uses the translation invariance of W₁: shift all weights by a constant K ≥ |min w|, then run standard OT.
+- The shift is valid only on shared support, which is trivially true when comparing the same events with different weights; otherwise zero-weight ghost events are added.</p>
+<p><strong>Results</strong> on cell-resampled samples (Z+jets with 37.6% negative weights; tt̄ with 22.8%; 10⁵ events each):
+- ΣMD grows monotonically with f_RW.
+- EMD β = 0 and β = ∞ resampling metrics are the most biased.
+- Hadron-level resampling is least biased for both processes.
+- Normalized by total cross section, tt̄ shows a smaller ΣMD, which the authors attribute to its lower negative fraction.</p>
+<p>This is a useful tool if you valid</p>]]></description>
+  </item>
 
   <item>
     <title>Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</title>

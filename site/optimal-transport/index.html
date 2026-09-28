@@ -37,17 +37,61 @@
 <a href="../watch.html">Standing waves</a> track, read and summarized by AI.</p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">80 papers</span>
-  <span class="count">79 days</span>
+  <span class="count">82 papers</span>
+  <span class="count">80 days</span>
   <span class="count">since 2018</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">16</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">18</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Monday, September 28, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-30357">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.30357" target="_blank" rel="noopener">arXiv:2609.30357</a>
+      
+      <a class="permalink" href="#a2609-30357" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</h3>
+    <p class="byline">Lauren Hay et al.</p>
+    <div class="paper-body"><p>See the jets entry for numbers. From the OT side, this puts OT distances to work as a neighbourhood definition: EMD and SEMD serve as the metric for cell growth, not as an evaluation metric. The practical findings for OT users:
+- EMD β = 1 is the sweet spot for this job; the β = 0 and β = ∞ extremes are worst, per the companion paper.
+- SEMD (1D spectral representation) performs nearly as well as the full EMD, which matters for cost at scale.
+- Cost scaling for growing hyperspheres in EMD space over O(10⁵) events is not reported. Implementation is in OT-CReS and in <a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a>.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-30418">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.30418" target="_blank" rel="noopener">arXiv:2609.30418</a>
+      
+      <a class="permalink" href="#a2609-30418" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Phase-Space Inclusive Figure of Merit Based in Optimal Transport for Validating Monte Carlo Reweightings</h3>
+    <p class="byline">Rishabh Jain et al.</p>
+    <div class="paper-body"><p>This paper proposes the Cross-Section Mover&rsquo;s Distance (ΣMD, an OT distance between weighted event sets with EMD as ground metric) as an unbinned, IRC-safe global measure of bias from reweighting. The OT-technical content is how it handles signed weights:
+- It adopts the Piccoli–Rossi–Tournus construction, W_p(μ,ν) = W_p(μ⁺+ν⁻, μ⁻+ν⁺), which satisfies the triangle inequality only for p = 1.
+- In practice it uses the translation invariance of W₁: shift all weights by a constant K ≥ |min w|, then run standard OT.
+- The shift is valid only on shared support, which is trivially true when comparing the same events with different weights; otherwise zero-weight ghost events are added.</p>
+<p><strong>Results</strong> on cell-resampled samples (Z+jets with 37.6% negative weights; tt̄ with 22.8%; 10⁵ events each):
+- ΣMD grows monotonically with f_RW.
+- EMD β = 0 and β = ∞ resampling metrics are the most biased.
+- Hadron-level resampling is least biased for both processes.
+- Normalized by total cross section, tt̄ shows a smaller ΣMD, which the authors attribute to its lower negative fraction.</p>
+<p>This is a useful tool if you valid</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -420,7 +464,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-27 05:44 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-28 05:41 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

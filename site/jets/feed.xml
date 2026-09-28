@@ -7,7 +7,57 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2609-30357</link>
+    <guid isPermaLink="false">arxiv:2609.30357</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lauren Hay et al.</dc:creator>
+    <description><![CDATA[<p>This paper replaces the modified-Euclidean metric in Andersen–Maier cell resampling with IRC-safe OT metrics: event-level EMD in (η,φ) with p_T weights, and the spectral EMD (SEMD). A negative-weight seed grows a hypersphere in metric space until the enclosed net weight is positive, then weights are redistributed as w_i → (Σw/Σ|w|)|w_i|.</p>
+<p>The test sample is MG5_aMC@NLO+Pythia 8.3 Z+jets at 13 TeV, with 37.6% negative weights and O(10⁵) events. The reweight fraction is set deliberately high at f_RW = 0.75. Findings:
+- <strong>β choice:</strong> β = 1 and 0.5 give the least bias. β = 1 was chosen on cost grounds.
+- <strong>Stage:</strong> resampling after hadronization beats parton-shower and Born-level resampling.
+- <strong>Metric comparison:</strong> EMD ≳ SEMD, both better than the original metric, most visibly in H_T and leading-jet p_T.
+- <strong>ΣMD:</strong> the distance to the original sample stays below the sample&rsquo;s statistical uncertainty (δσ/σ = 0.0127).
+- <strong>Statistical gain:</strong> all variants take 1/f_ESS from 16 to 6. The metric therefore controls bias, not the statistical gain.</p>
+<p>For jets specifically, the relevant change is that IRC safety comes from the metric itself. The previous jet-clustering step, and its dependence on algorithm and R, is no longer needed. Jets otherwise enter only as anti-k_t R = 0.4 validation observables, so this is not a substructure paper.</p>
+<p>Caveats:
+- This is proceedings-length and the evidence is mostly histogram comparisons.
+- Only one low-statistics sample is tested.
+- The ΣMD figure of merit (<a href="https://arxiv.org/abs/2609.30418">arXiv:2609.30418</a>) uses the EMD as its ground metric. That may flatter the EMD-based resampler relative to the Euclidean baseline; this is my inference, not addressed by the authors.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Parnassus for the CLD Detector: A Generative ML Surrogate for Detector Simulation and Reconstruction at the FCC-ee</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2609-30775</link>
+    <guid isPermaLink="false">arxiv:2609.30775</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Umar Sohail Qureshi et al.</dc:creator>
+    <description><![CDATA[<p><strong>Model.</strong> A two-stage conditional flow-matching surrogate for CLD_o2_v07 Geant4 + PandoraPFA, trained on Z→qq̄ (u,d) and bb̄ at 91.2 GeV:
+- An event-level MLP models N, H_T and missing-momentum components.
+- A cross-attention DiT (~5M parameters) generates the particles, each with species and d₀, z₀ and their significances.
+- Conditioning includes the truth production vertex, which is what lets it reproduce displaced heavy-flavour tails.
+- cc̄ and ss̄ are held out as out-of-distribution tests.</p>
+<p><strong>Jet-level results.</strong> After Durham exclusive 2-jet clustering, Parnassus beats Delphes on every observable and every metric. Examples:
+- Jet mass: W₁ = 0.247 vs 1.886 for Delphes.
+- e₂^(β=2): VLC 0.076 vs 0.865.
+- m_jj: VLC 0.52 vs 58.6.</p>
+<p><strong>Flavour tagging.</strong> A transformer tagger (b/c/s/q) trained on surrogate output gives:
+- Accuracy 0.684 vs 0.693 for full simulation.
+- b-vs-c mistag at 80% efficiency: 1.58% vs 1.00%, a ~60% relative excess.
+- Delphes overestimates separability (accuracy 0.732; b-vs-c mistag 0.24%).
+- A full-sim-trained tagger drops only 0.012 in accuracy when applied to Parnassus.</p>
+<p><strong>Speed.</strong> 1.3 ms/event on an A100 and 39 ms on a CPU core, vs 6.0 s for full simulation and reconstruction.</p>
+<p>This is a credible e⁺e⁻ jet-flavour benchmark. It shows directly that Delphes-based tagging projections are optimistic.</p>
+<p>Caveats:
+- Coordinates and substructure definitions (p_T, ΔR girth) are carried over from the CMS setup rather than e⁺e⁻-native variables; the authors acknowledge this.
+- Hyperparameters are untuned from the CMS configuration.
+- bb̄ reproduces worse than the held-out flavours.
+- The HitPF extension is qualitative and shows impact-parameter deviations.
+- No boosted or multi-prong substructure is tested.</p>]]></description>
+  </item>
 
   <item>
     <title>Impact of soft QCD effects over intrajet azimuthal anisotropies</title>
@@ -2108,26 +2158,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhong-Bo Kang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (energy correlator, energy flow) — abstract only, not yet read for a briefing.</em></p>
 <p>We derive the expressions for the one-point energy correlator (OPEC) in deep inelastic scattering in the high-energy (small-x) limit within the Color Glass Condensate framework. The OPEC is computed as a function of the angle between the energy flow and the target proton or nucleus, enabling a systematic exploration of different momentum scales in the scattering process. Owing to the momentum sum rule, the dependence on fragmentation functions cancels, leaving the dipole amplitude as the only nonperturbative input. As a result, the OPEC provides a clean and direct probe of gluon saturation dynamics at small x. We present numerical results for representative kinematic configurations relevant to the future Electron&ndash;Ion Collider, demonstrating sizable nuclear suppression effects and highlighting the sensitivity of this observable to saturation phenomena.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Latent Information Geometry of Jet Classification</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-02310</link>
-    <guid isPermaLink="false">arxiv:2603.02310</guid>
-    <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rebecca Maria Kuntz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (fat jet, jet tagging) — abstract only, not yet read for a briefing.</em></p>
-<p>Latent representations are an important theme in modern machine learning. Any network training with the notion of locality introduces a latent geometry which we can analyze with the help of differential geometry, specifically information geometry. We introduce the main concepts needed to analyze learned latent geometries, specifically curvature and nonmetricities, and show how they can be used for decoder and classifier geometries. We then apply our new methods to understand the physics behind binary quark-gluon classification and three-fold fat jet tagging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unfolding without Iterations, Adversaries, or Surrogates</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2602-24282</link>
-    <guid isPermaLink="false">arxiv:2602.24282</guid>
-    <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ayodele Ore et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure) — abstract only, not yet read for a briefing.</em></p>
-<p>Correcting measurements for detector effects and constructing appropriate public data representations is a pressing problem in LHC physics. Current methods solve this inverse problem by relying on iterations, minimax optimization, or a surrogate forward mapping. We introduce Adversary-free Unfolding SanS Iteration or Emulation (AUSSIE), which dispenses with these mechanisms while remaining asymptotically correct. AUSSIE replaces the second OmniFold step with a new loss function that directly yields solutions with minimal dependence on the reference simulation. We showcase AUSSIE on various unfolding tasks, including full-phase-space jet substructure.</p>]]></description>
   </item>
 
 </channel>
