@@ -34,137 +34,113 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Monday, September 28, 2026</h1>
+  <h1 class="issue-date">Tuesday, September 29, 2026</h1>
   <div class="meta">
-    <span class="count">25 papers read</span>
-    <span class="chip">Negative weights via optimal transport</span><span class="chip">Generative detector surrogates</span><span class="chip">Phase transitions and HFGWs</span><span class="chip">Spin observables and information bounds</span>
+    <span class="count">78 papers read</span>
+    <span class="chip">LZ recoil meets the halo</span><span class="chip">CKM bookkeeping and conventions</span><span class="chip">ML as infrastructure</span><span class="chip">Precision QCD frontiers</span>
   </div>
-  <h2 id="simulation-plumbing-and-a-quiet-lz">Simulation plumbing, and a quiet LZ</h2>
-<p>The LZ recoil drew five to seven papers a day all last week and none today. What remains is mostly infrastructure. The CaloClouds group summarizes point-cloud fast simulation, and a Parnassus surrogate arrives for FCC-ee&rsquo;s CLD detector. Two coordinated optimal-transport papers take on negative-weight mitigation. The one genuinely new kind of bound comes from neutron stars. Yin et al. <a href="https://arxiv.org/abs/2609.30335">arXiv:2609.30335</a> exclude a finite <em>interval</em> of dark-matter triggering rates, where earlier survival arguments gave one-sided limits.</p>
+  <h2 id="a-helicity-convention-corrected">A helicity convention, corrected</h2>
+<p>The day&rsquo;s cleanest result is Žlebčík <a href="https://arxiv.org/abs/2609.31828">arXiv:2609.31828</a>. The <span class="arithmatex">\(\rho\to\pi\pi\)</span> helicity convention in the time-dependent <span class="arithmatex">\(B^0\to(\rho\pi)^0\)</span> Dalitz analyses does not match the one the downstream isospin analysis assumes. Correcting it drops the direct-versus-indirect <span class="arithmatex">\(\alpha\)</span> tension from 2.9σ to 2.1σ. LZ produced no papers yesterday and seven today, and the new work is mostly about the velocity distribution rather than the particle content. Underneath, ML papers now read as infrastructure reports, and several precision-QCD results arrive together.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="optimal-transport-for-negative-weights">Optimal transport for negative weights</h3>
-<p>Hay et al. <a href="https://arxiv.org/abs/2609.30357">arXiv:2609.30357</a> resample NLO events in cells defined by an IRC-safe metric and find that OT-based distances group kinematically similar events best. The demonstration is on Z+jets. Jain et al. <a href="https://arxiv.org/abs/2609.30418">arXiv:2609.30418</a> supply the matching validation tool, a &ldquo;Cross-Section-Mover&rsquo;s Distance&rdquo; that compares full phase-space reweightings unbinned rather than through 1D histograms. Read them as method plus figure of merit. Nearby, Dimitrakopoulos <a href="https://arxiv.org/abs/2609.31296">arXiv:2609.31296</a> brings MiNLO to full off-shell <span class="arithmatex">\(t\bar tW^+\)</span> in HELAC-NLO. It lands a week after Pozzoli&rsquo;s two-loop <span class="arithmatex">\(t\bar tW\)</span> amplitude.</p>
-<h3 id="surrogates-replacing-geant4">Surrogates replacing Geant4</h3>
-<p>Qureshi et al. <a href="https://arxiv.org/abs/2609.30775">arXiv:2609.30775</a> train conditional flow matching on CLD Geant4+Pandora output. The surrogate beats Delphes and preserves <span class="arithmatex">\(b/c/s/q\)</span> tagging. It runs at 1.2 ms per event on a GPU and is public. This follows last week&rsquo;s ALEPH→SLD Parnassus transfer. Buss et al. <a href="https://arxiv.org/abs/2609.30403">arXiv:2609.30403</a> survey CaloClouds3 (120× Geant4 on one CPU), CaloHadronic, and AllShowers, which covers twelve particle types in one model. They report cross-geometry transfer needing two to three orders of magnitude fewer showers. This is the review companion to last week&rsquo;s CaloClouds II transfer paper, from the group that also raised the Jevons&rsquo;-paradox caution.</p>
-<h3 id="phase-transitions-heard-at-high-frequency">Phase transitions, heard at high frequency</h3>
-<p>Berthiaume et al. <a href="https://arxiv.org/abs/2609.30366">arXiv:2609.30366</a> present Hybrid Partial Dressing, a finite-temperature resummation that is two-loop exact at all temperatures. It avoids the overlapping-momentum problem and reproduces the two-loop dimensionally reduced potential where that applies. Chen et al. <a href="https://arxiv.org/abs/2609.31495">arXiv:2609.31495</a> add a microscopic high-frequency GW component from particle–graviton production off runaway walls. Jödicke et al. <a href="https://arxiv.org/abs/2609.30318">arXiv:2609.30318</a> propose MAGGIE, a lumped-element kHz–MHz detector on a 14 T Hamburg magnet projecting ~<span class="arithmatex">\(10^{-19}\)</span> strain after a year. Last week&rsquo;s BBN-deuterium papers constrained the same supercooled transitions from the cosmology side.</p>
-<h3 id="spin-and-information-in-hadronic-final-states">Spin and information in hadronic final states</h3>
-<p>Belmonte et al. <a href="https://arxiv.org/abs/2609.31425">arXiv:2609.31425</a> use <span class="arithmatex">\(t\bar t\)</span> spin correlation as a search variable for top-philic invisible mediators. Binned in visible mass, <span class="arithmatex">\(\mathcal D(M^{\rm vis}_{t\bar t})\)</span> beats rate and kinematics alone, for both exclusion and scalar/pseudoscalar discrimination. Adelaja et al. <a href="https://arxiv.org/abs/2609.31499">arXiv:2609.31499</a> bound a classical conditional mutual information between multiplicities in Mueller&rsquo;s dipole cascade. They report H1-derived cumulants far below the single-dipole cascade value, which reads as a caution for the entanglement-entropy picture of DIS.</p>
+<h3 id="the-lz-recoil-meets-the-halo">The LZ recoil meets the halo</h3>
+<p>Oliveira <a href="https://arxiv.org/abs/2609.35650">arXiv:2609.35650</a> rebuilds LZ&rsquo;s inference and allows a surviving excited-state fraction <span class="arithmatex">\(f\)</span>. For <span class="arithmatex">\(f\gtrsim10^{-5}\)</span>–<span class="arithmatex">\(10^{-2}\)</span> exothermic scattering dominates, and at <span class="arithmatex">\(f=1/2\)</span> the required cross section falls by factors of 80 to <span class="arithmatex">\(1.6\times10^4\)</span>. Das et al. <a href="https://arxiv.org/abs/2609.35737">arXiv:2609.35737</a> use a Gaia-informed halo with a suppressed high-velocity tail. Exothermic readings barely move, while endothermic ones need larger cross sections and smaller splittings, and the LMC partly restores the tail. This extends O&rsquo;Hare&rsquo;s halo null from last week. Model-building continues with Centelles Chuliá et al.&rsquo;s Majoron-mediated <span class="arithmatex">\(\mathcal O_6\)</span> <a href="https://arxiv.org/abs/2609.32435">arXiv:2609.32435</a> and Pallis&rsquo;s 0.1 PeV higgsino <a href="https://arxiv.org/abs/2609.33869">arXiv:2609.33869</a>. The testable addition is Dutra et al. <a href="https://arxiv.org/abs/2609.33952">arXiv:2609.33952</a>: if the excited state decays radiatively, a sub-MeV line at <span class="arithmatex">\(E_\gamma\simeq\delta\)</span> falls within COSI&rsquo;s reach.</p>
+<h3 id="ckm-through-careful-bookkeeping">CKM through careful bookkeeping</h3>
+<p>Feldmann et al. <a href="https://arxiv.org/abs/2609.34696">arXiv:2609.34696</a> build soft-collinear ChPT for <span class="arithmatex">\(B\to\pi\)</span> at large recoil. Its chiral logs are incompatible with Hard-Pion ChPT. On first-row unitarity, Gialidi et al. <a href="https://arxiv.org/abs/2609.31834">arXiv:2609.31834</a> find that only FCC-ee fully decouples <span class="arithmatex">\(V_{ud}\)</span> from SMEFT left-handed currents. Hayen <a href="https://arxiv.org/abs/2609.32873">arXiv:2609.32873</a> argues that the β-recoil spectrum is clean enough to serve as a BSM laboratory. Both continue the <span class="arithmatex">\(V_{ud}\)</span> thread that Seng&rsquo;s <span class="arithmatex">\(\delta_C\)</span> framework reopened on 09-18.</p>
+<h3 id="ml-as-plumbing">ML as plumbing</h3>
+<p>Vami et al. <a href="https://arxiv.org/abs/2609.31739">arXiv:2609.31739</a> report that CMS&rsquo;s AXOL1TL and CICADA triggers selected more than four billion events in 2024. Tong et al. <a href="https://arxiv.org/abs/2609.35755">arXiv:2609.35755</a> address systematics in the latent spaces those searches rely on. Kakati et al. <a href="https://arxiv.org/abs/2609.31862">arXiv:2609.31862</a> train one tokenized model in which particle flow and simulation are just different directions through shared weights. The quietest useful paper is Sakuma&rsquo;s Hypothesis-awkward <a href="https://arxiv.org/abs/2609.31820">arXiv:2609.31820</a>, which has found 37 bugs in Awkward Array so far.</p>
+<h3 id="precision-qcd-on-several-fronts">Precision QCD, on several fronts</h3>
+<p>Chala <a href="https://arxiv.org/abs/2609.33448">arXiv:2609.33448</a> completes the SM thermal masses at <span class="arithmatex">\(\mathcal O(g^6)\)</span>, direct input to last week&rsquo;s phase-transition thread. Moch <a href="https://arxiv.org/abs/2609.34837">arXiv:2609.34837</a> reports that the non-singlet four-loop splitting functions are complete. Abdolmaleki et al. <a href="https://arxiv.org/abs/2609.35344">arXiv:2609.35344</a> include resummation-scale uncertainty in PDF fits for the first time and find it matters for LHC observables.</p>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.30775">arXiv:2609.30775</a></strong>: A public FCC-ee surrogate that keeps flavor tagging intact at three orders of magnitude faster than full sim. Likely to show up in feasibility studies quickly.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.31425">arXiv:2609.31425</a></strong>: Collider QI used as a search tool: spin correlations add reach on top-philic DM mediators beyond rate and kinematics alone.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.30335">arXiv:2609.30335</a></strong>: Population depletion makes the neutron-star conversion rate nonmonotonic, so short-GRB rates exclude a window of triggering rates. This is a qualitatively new bound shape, applied to annihilation, decay, inelastic and macroscopic DM.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.30366">arXiv:2609.30366</a></strong>: A resummation scheme valid at all temperatures that matches two-loop dimensional reduction where it should. It is a candidate default for first-order-transition GW predictions.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.31828">arXiv:2609.31828</a></strong>: A convention mismatch worth 0.8σ, giving <span class="arithmatex">\(\alpha=(87.0^{+11.8}_{-4.7})^\circ\)</span>. Any isospin analysis built on a Dalitz fit should check its conventions.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.35650">arXiv:2609.35650</a></strong>: LZ&rsquo;s published intervals do not cover pseudo-Dirac halos. A <span class="arithmatex">\(\chi_1\)</span>-only benchmark sits 30× above the limit if half the halo is <span class="arithmatex">\(\chi_2\)</span>.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.34984">arXiv:2609.34984</a></strong>: Schalch gives the first Monte Carlo resummation of super-leading logarithms, a route to putting Glauber exchange into parton showers.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.31833">arXiv:2609.31833</a></strong>: Akita et al. show that momentum-averaged treatments can get the <em>sign</em> of <span class="arithmatex">\(\Delta N_{\rm eff}\)</span> wrong for strongly nonthermal neutrinos.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.33151">arXiv:2609.33151</a></strong>: Freese finds that the D-term sign follows the spin of the binding field, not mechanical stability. That makes the negative hadronic D-term the thing that needs explaining.</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2609.32307">arXiv:2609.32307</a></strong> <em>Hydrogen mon amour</em> — Christophe Grojean et al. (physics.soc-ph). The essay asks whether hydrogen could cover renewable gaps in the FCC&rsquo;s 1.3 TWh/yr supply. It pairs with last week&rsquo;s Janot et al. climate piece.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.32874">arXiv:2609.32874</a></strong> <em>Machine learning for the LHC physics program: a 2025-2026 stocktake</em> — Jesse Thaler (hep-ph). Most of the text was written by an agentic AI pipeline reading 569 papers. The method is as interesting as the headline claim that HEPML is now infrastructure.</li>
 </ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2609.31340">arXiv:2609.31340</a></strong> <em>Natural Saturation Of The Sterile Neutrino Dark Matter Resonant Production By a High Lepton Flavor Asymmetry In Primordial Plasma</em> — Dmitry Gorbunov et al. (hep-ph). Active oscillations can erase the asymmetry needed for resonant production. Read it alongside last week&rsquo;s Drewes et al. νMSM scan.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.31120">arXiv:2609.31120</a></strong> <em>Probing the Validity of EFT Approaches in Higgs + Jet Production at <span class="arithmatex">\(\sqrt{s}=13\)</span> TeV</em> — Shubham Yadav et al. (hep-ph). HEFT and SMEFT track the full loop-induced SM at low <span class="arithmatex">\(p_T\)</span> and break down at high <span class="arithmatex">\(p_T\)</span>. It is a useful reminder while EFT serves as the default reporting language.</li>
-<li><strong><a href="https://arxiv.org/abs/2609.30488">arXiv:2609.30488</a></strong> <em>Direct Neutrino Communication Through the Earth: NuMI-Calibrated Simulation and Far-Field Sensitivity</em> — Sven-Patrik Hallsjö (hep-ex). Five repetitions give 65.7% correct acceptance of 40-bit packets. The author is admirably explicit that this establishes no practical link.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.33990">arXiv:2609.33990</a></strong> <em>First measurement of the antihydrogen production cross section through the charge-exchange reaction of low-energy antiprotons with orthopositronium</em> — GBAR Collaboration et al. (hep-ex). The measured values agree with three-body theory.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.35133">arXiv:2609.35133</a></strong> <em>The <span class="arithmatex">\(D\pi\)</span> and <span class="arithmatex">\(D^*\pi\)</span> femtoscopy puzzle</em> — Pablo Encarnación et al. (hep-ph). ALICE&rsquo;s extracted scattering parameters depend on the choice of fitting window.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.34364">arXiv:2609.34364</a></strong> <em>NNLO QCD Corrections to <span class="arithmatex">\(\eta_t\to HZ\)</span></em> — Cai-Ping Jia et al. (hep-ph). The toponium width converges slowly, with NNLO at 52% of LO.</li>
+<li><strong><a href="https://arxiv.org/abs/2609.34155">arXiv:2609.34155</a></strong> <em>Comment on &ldquo;Fermi-LAT Galactic Center Excess Morphology…&rdquo;</em> — Kevork N. Abazajian et al. (astro-ph.HE). The original maps squared the projected mass instead of computing <span class="arithmatex">\(\int\rho^2\)</span>.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<h1 id="the-cross-section-deep-dives">The Cross Section — Deep dives</h1>
-<p><em>Note: of the four &ldquo;worth a look&rdquo; picks, full text was supplied for only three. There is no entry below for <a href="https://arxiv.org/abs/2609.30366">arXiv:2609.30366</a> (Hybrid Partial Dressing).</em></p>
-<h3 id="arxiv260930775-parnassus-for-the-cld-detector-a-generative-machine-learning-surrogate-for-detector-simulation-and-reconstruction-at-the-fcc-ee-umar-sohail-qureshi-et-al"><a href="https://arxiv.org/abs/2609.30775">arXiv:2609.30775</a> — Parnassus for the CLD Detector: A Generative Machine-Learning Surrogate for Detector Simulation and Reconstruction at the FCC-ee (Umar Sohail Qureshi et al.)</h3>
-<p><strong>What they did.</strong> A two-stage conditional flow-matching model maps generator-level particles to CLD PandoraPFA objects:</p>
-<ul>
-<li><strong>Event stage:</strong> a residual MLP generates multiplicity, <span class="arithmatex">\(H_T\)</span> and missing-momentum components.</li>
-<li><strong>Particle stage:</strong> a cross-attention DiT with about 5M parameters generates the objects themselves.</li>
-<li><strong>Outputs:</strong> kinematics, species, and <span class="arithmatex">\(d_0, z_0\)</span> with their significances.</li>
-<li><strong>Conditioning:</strong> the truth production vertex, which is what lets the model reproduce displaced heavy-flavor tails.</li>
-</ul>
-<p>It was trained on <span class="arithmatex">\(Z\to q\bar q\)</span> and <span class="arithmatex">\(b\bar b\)</span> at 91.2 GeV, with <span class="arithmatex">\(c\bar c\)</span> and <span class="arithmatex">\(s\bar s\)</span> held out as out-of-distribution tests.</p>
-<p><strong>Results.</strong></p>
-<ul>
-<li><strong>Distance to full simulation:</strong> Parnassus is closer than Delphes for every observable, metric and flavor, typically by an order of magnitude. For example, <span class="arithmatex">\(W_1(d_0/\sigma_{d_0})\)</span> runs 0.14→0.41 from <span class="arithmatex">\(q\bar q\)</span> to <span class="arithmatex">\(b\bar b\)</span>, against 2.06→4.94 for Delphes.</li>
-<li><strong>Tagging:</strong> a transformer tagger reproduces Pandora AUCs to within about 1%. For a tagger trained on full simulation and applied to surrogate jets, accuracy drops only from 0.694 to 0.682.</li>
-<li><strong>Speed:</strong> full simulation plus reconstruction costs 6.0 s per event. The surrogate costs about 39 ms per event on one CPU core and about 1.3 ms on an A100. The abstract quotes 1.2 ms.</li>
-</ul>
-<p><strong>Why it matters.</strong> Delphes&rsquo;s CLD card overestimates flavor separability: it reaches 0.732 accuracy against Pandora&rsquo;s 0.693. It also mis-models species fractions and <span class="arithmatex">\(m_{jj}\)</span>. FCC-ee flavor-physics projections built on Delphes may therefore be optimistic. The authors frame this as their own caution about compensating effects in the transfer test.</p>
-<p><strong>Caveats.</strong></p>
-<ul>
-<li>Parnassus slightly underestimates separability. At 80% <span class="arithmatex">\(b\)</span>-efficiency, the <span class="arithmatex">\(b\)</span>-vs-<span class="arithmatex">\(c\)</span> mistag is 1.58% against 1.00% for Pandora.</li>
-<li><span class="arithmatex">\(b\bar b\)</span> is reproduced worse than the held-out <span class="arithmatex">\(c\bar c\)</span> and <span class="arithmatex">\(s\bar s\)</span> channels.</li>
-<li>Validation covers only the Z pole.</li>
-<li>Hyperparameters are taken unchanged from the CMS configuration.</li>
-<li>The HitPF variant shows residual impact-parameter deviations.</li>
-</ul>
-<h3 id="arxiv260931425-quantum-probes-of-invisible-particles-in-top-quark-pair-production-at-the-lhc-blanca-belmonte-et-al"><a href="https://arxiv.org/abs/2609.31425">arXiv:2609.31425</a> — Quantum probes of invisible particles in top-quark pair production at the LHC (Blanca Belmonte et al.)</h3>
-<p><strong>What they did.</strong> This is a dileptonic <span class="arithmatex">\(t\bar t+Y_{0,1}\)</span> study at 14 TeV and 3 ab<span class="arithmatex">\(^{-1}\)</span>, with the invisible mediator at 10–100 GeV. The selection is <span class="arithmatex">\(E_T^{\rm miss}&gt;100\)</span> GeV and <span class="arithmatex">\(m_{T2}^{\ell\ell}&gt;90\)</span> GeV. It reduces <span class="arithmatex">\(t\bar t+tW\)</span> to 0.04% while keeping 1.3% (scalar) and 4.0% (vector) of the signal at 10 GeV.</p>
-<p>Four alternative analyses of the same sample are compared, and not combined:</p>
-<ul>
-<li>the inclusive yield;</li>
-<li><span class="arithmatex">\(dN/dM^{\rm vis}_{t\bar t}\)</span>;</li>
-<li><span class="arithmatex">\(dN/dD_{\rm evt}\)</span>;</li>
-<li>the fiducial <span class="arithmatex">\(\mathcal D(M^{\rm vis}_{t\bar t})\)</span>, fitted with a Gaussian likelihood.</li>
-</ul>
-<p><strong>Results.</strong></p>
-<ul>
-<li><strong>Exclusion ordering:</strong> yield &lt; <span class="arithmatex">\(M^{\rm vis}\)</span> &lt; <span class="arithmatex">\(D_{\rm evt}\)</span> &lt; <span class="arithmatex">\(\mathcal D(M^{\rm vis})\)</span>, for both mediator spins and all masses.</li>
-<li><strong>Robustness of the angular variable:</strong> <span class="arithmatex">\(D_{\rm evt}\)</span> with 50% shape uncertainty still beats <span class="arithmatex">\(M^{\rm vis}\)</span> with 20%.</li>
-<li><strong>Coupling structure:</strong> toy-calibrated scalar/pseudoscalar separation is also best with <span class="arithmatex">\(\mathcal D(M^{\rm vis})\)</span>. The advantage grows at higher mediator mass, where rate-based discrimination degrades.</li>
-</ul>
-<p><strong>Why it matters.</strong> Spin information carries reach that rate and kinematics alone do not capture, which moves collider QI from demonstration to search tool.</p>
-<p><strong>Caveats.</strong></p>
-<ul>
-<li>The helicity frame is built from generator-level top momenta, which is truth-assisted.</li>
-<li><span class="arithmatex">\(E_T^{\rm miss}\)</span> is generator-level.</li>
-<li>There is no detector simulation, and diboson and Z+jets backgrounds are neglected.</li>
-<li>The gain rests on <span class="arithmatex">\(\delta\mathcal D_{\rm syst}=0.015\)</span> and is lost at about 0.05.</li>
-<li>After cuts, <span class="arithmatex">\(\mathcal D\)</span> is no longer a density-matrix quantity.</li>
-<li>The axial-vector case is deferred because of unitarity issues.</li>
-</ul>
-<h3 id="arxiv260930335-metastable-neutron-stars-as-transient-rate-detectors-of-heavy-dark-matter-ziwen-yin-et-al"><a href="https://arxiv.org/abs/2609.30335">arXiv:2609.30335</a> — Metastable Neutron Stars as Transient-Rate Detectors of Heavy Dark Matter (Ziwen Yin et al.)</h3>
-<p><strong>What they did.</strong> For neutron stars in a metastable hadronic mass window, the present conversion rate is <span class="arithmatex">\(\mathcal R_{\rm tr}=n_{\rm NS}f_{\rm meta}\Gamma_\chi e^{-\Gamma_\chi t_{\rm meta}}\)</span>. This rate peaks at <span class="arithmatex">\(\Gamma_\chi=1/t_{\rm meta}\)</span>. The benchmarks are:</p>
-<ul>
-<li><span class="arithmatex">\(n_{\rm NS}=3\times10^{15}\)</span> Gpc<span class="arithmatex">\(^{-3}\)</span>;</li>
-<li><span class="arithmatex">\(f_{\rm meta}=0.01\)</span>;</li>
-<li><span class="arithmatex">\(t_{\rm meta}=1\)</span> Gyr;</li>
-<li><span class="arithmatex">\(\mathcal R_{\rm SGRB}=2\times10^3\)</span> Gpc<span class="arithmatex">\(^{-3}\)</span>yr<span class="arithmatex">\(^{-1}\)</span>.</li>
-</ul>
-<p>Requiring <span class="arithmatex">\(\mathcal R_{\rm tr}\)</span> below the SGRB rate excludes <span class="arithmatex">\(7\times10^{-11}&lt;\Gamma_\chi&lt;4\times10^{-9}\)</span> yr<span class="arithmatex">\(^{-1}\)</span>. An interval exists only if <span class="arithmatex">\(C&lt;1/e\)</span>; the benchmark gives <span class="arithmatex">\(C=0.067\)</span>.</p>
-<p><strong>Resulting DM bounds.</strong> With <span class="arithmatex">\(U_{\max}=10\)</span> GeV and gravitationally focused halo DM:</p>
+<h3 id="arxiv260931828-impact-of-helicityisospin-convention-matching-on-the-extraction-of-from-b00-radek-vzlebvcik"><a href="https://arxiv.org/abs/2609.31828">arXiv:2609.31828</a> — Impact of Helicity–Isospin Convention Matching on the Extraction of α from B⁰→(ρπ)⁰ (Radek \v{Z}leb\v{c}'{i}k)</h3>
+<p>Belle and BaBar both define the ρ→ππ helicity angles in the cyclic convention, in which the ρ⁰ angle is referenced to the π⁻. They then extract α with the Lipkin–Nir–Quinn–Snyder relation <span class="arithmatex">\(A^++A^-+2A^0\)</span>. That relation holds only if the ρ⁰ angle is referenced to the π⁺. The mismatch amounts to a sign flip of <span class="arithmatex">\(A^0\)</span> and <span class="arithmatex">\(\bar A^0\)</span>. Žlebčík corrects it by flipping the 12 of the 26 <span class="arithmatex">\(U/I\)</span> parameters that are linear in <span class="arithmatex">\(A^0\)</span> or <span class="arithmatex">\(\bar A^0\)</span>, along with the corresponding covariance off-diagonals. He first reproduces the public HFLAV ρπ and combined curves exactly, then reruns the scan.</p>
+<p>The corrected ρπ curve is much flatter near 90°. Its tension with the indirect value (91.2°) drops from 2.9σ to 2.1σ. The combined result becomes <span class="arithmatex">\(\alpha=(87.0^{+11.8}_{-4.7})^\circ\)</span>, compared with HFLAV&rsquo;s <span class="arithmatex">\((84.1^{+3.7}_{-3.0})^\circ\)</span>. The ππ+ρρ combination alone gives <span class="arithmatex">\((85.9^{+8.6}_{-3.9})^\circ\)</span>.</p>
+<p>The paper says every phenomenological treatment it examined carries the mismatch, including the Belle and BaBar papers, HFLAV/CKMfitter and UTfit. It traces the root cause to Snyder–Quinn never specifying the reference pion.</p>
+<p>Caveats:
+- The apparent precision was partly an artefact. The combined upper error roughly triples, and ρπ no longer improves precision; only the 2σ interval tightens slightly, to [79.1°, 108.1°].
+- The ρπ best-fit χ² rises from 8.4 to 9.5 (17 dof), although the combined χ² improves by 1.4.
+- A mirror solution near 0° persists.</p>
+<p>For Belle II and LHCb, the practical lesson is that the Dalitz convention must be fixed before the isospin fit.</p>
+<h3 id="arxiv260935650-the-lz-event-with-a-two-state-dark-matter-halo-vinicius-oliveira"><a href="https://arxiv.org/abs/2609.35650">arXiv:2609.35650</a> — The LZ event with a two-state dark matter halo (Vinicius Oliveira)</h3>
+<p>Oliveira rebuilds LZ&rsquo;s inference from public material. He uses a binned likelihood from the Fig. 5 projection (3 S1c slices × 32 bins), the shell-model nuclear response, and a toy-MC Neyman construction. The Helm form factor would overestimate the rate at 248 keV by a factor of 5, which is why the shell-model response matters. The recast matches LZ&rsquo;s endothermic upper limits within 26% at all 17 points with δ ≥ 50 keV, and within 5% at about half of them. Its local significances run 0.2–0.7σ low: Z = 2.5 versus 3.0 at 1 TeV and δ = 300 keV.</p>
+<p>The recast then allows a surviving excited-state fraction <span class="arithmatex">\(f\)</span>. Freeze-out or freeze-in naturally gives <span class="arithmatex">\(f\approx1/2\)</span> unless <span class="arithmatex">\(\chi_2\)</span> decays. Exothermic scattering dominates above a critical <span class="arithmatex">\(f\)</span> of <span class="arithmatex">\(6\times10^{-3}\)</span>, <span class="arithmatex">\(1.4\times10^{-3}\)</span> and <span class="arithmatex">\(3\times10^{-5}\)</span> at δ = 250, 300 and 350 keV. Above that point the required cross section scales as <span class="arithmatex">\(1/f\)</span>.</p>
+<p>At <span class="arithmatex">\(f=1/2\)</span> and 1 TeV:
+- The best-fit σ_N drops by 80, 360 and <span class="arithmatex">\(1.6\times10^4\)</span> at those three splittings.
+- σ_N stays within <span class="arithmatex">\(3.5\times10^{-45}\)</span>–<span class="arithmatex">\(3.6\times10^{-44}\)</span> cm² over 250–500 keV.
+- The endothermic cutoff disappears.
+- Di Mauro&rsquo;s thermal benchmark (297 keV, <span class="arithmatex">\(6.5\times10^{-43}\)</span> cm²) sits 30× above the upper limit.</p>
+<p>Caveats:
+- The exothermic intervals cannot be validated against any LZ result.
+- The likelihood is binned and the background is fixed.
+- Only the Standard Halo Model is used, which connects to Das et al. on halo dependence.
+- The paper does not impose the <span class="arithmatex">\(\chi_2\)</span> lifetime bound. Radiative decay could drive <span class="arithmatex">\(f\to0\)</span>, which is exactly what Dutra et al. propose to test with a line in COSI.
+- The paper also flags unexplained internal inconsistencies in where LZ&rsquo;s published lower limits turn on.</p>
+<h3 id="arxiv260934984-a-first-glimpse-at-super-leading-logarithms-in-monte-carlo-evolution-nicolas-schalch"><a href="https://arxiv.org/abs/2609.34984">arXiv:2609.34984</a> — A First Glimpse at Super-Leading Logarithms in Monte Carlo Evolution (Nicolas Schalch)</h3>
+<p>Schalch extends the EFT-based Marzili framework to resum the SLL tower <span class="arithmatex">\(\alpha_s^{n+3}L^{2n+3}\)</span>. The tower comes from two Glauber exchanges, arbitrarily many incoming-collinear emissions, and one terminal soft emission into the gap. The calculation is at the leading nonzero colour order, relative <span class="arithmatex">\(1/N_c^2\)</span>. The RG path-ordered exponential is turned into a shower-like sequence of Sudakov-sampled emissions acting on paired amplitude and conjugate-amplitude colour flows.</p>
+<p>The key technical point is that retaining <span class="arithmatex">\(h=d+p\le2\)</span> bounds the flow mismatch to at most two partner swaps at any multiplicity. Glauber interference therefore survives without the colour space blowing up. In qq′, any real emission between the Glaubers gives zero. In qg, such emissions and unequal final flows contribute.</p>
+<p>The validation is against analytic resummations at <span class="arithmatex">\(\Delta Y=2\)</span>, <span class="arithmatex">\(\xi=\alpha_sL^2=8\)</span>:</p>
 <table>
 <thead>
 <tr>
 <th>Channel</th>
-<th>Excluded band</th>
+<th>Marzili</th>
+<th>Analytic</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Annihilation (<span class="arithmatex">\(m_\chi\gtrsim5\)</span> GeV)</td>
-<td><span class="arithmatex">\(8\times10^{-34}&lt;\langle\sigma v\rangle(5\,{\rm GeV}/m_\chi)^2&lt;5\times10^{-32}\)</span> cm<span class="arithmatex">\(^3\)</span>/s; disfavors thermal relics at <span class="arithmatex">\(4\times10^3\)</span>–<span class="arithmatex">\(3\times10^4\)</span> GeV</td>
+<td>Octet (qq′)</td>
+<td><span class="arithmatex">\(C_O=6.2759(47)\)</span></td>
+<td>6.2754</td>
 </tr>
 <tr>
-<td>Decay</td>
-<td><span class="arithmatex">\(3\times10^{29}&lt;\tau_\chi(m_\chi/10\,{\rm GeV})&lt;2\times10^{31}\)</span> s</td>
+<td>Singlet (qq′)</td>
+<td><span class="arithmatex">\(C_S=-11.6853(45)\)</span></td>
+<td>−11.6804</td>
 </tr>
 <tr>
-<td>Inelastic scattering</td>
-<td><span class="arithmatex">\(\sigma_{\rm inel}(10\,{\rm GeV}/m_\chi)\)</span> between <span class="arithmatex">\(2\times10^{-80}\)</span> and <span class="arithmatex">\(10^{-78}\)</span> cm<span class="arithmatex">\(^2\)</span></td>
-</tr>
-<tr>
-<td>Macroscopic DM</td>
-<td>narrow band <span class="arithmatex">\(\sigma\approx(1.3\)</span>–<span class="arithmatex">\(1.6)\times10^{-27}\)</span> cm<span class="arithmatex">\(^2\)</span> (with weak <span class="arithmatex">\(m_\chi^{1/19}\)</span> scaling), for <span class="arithmatex">\(4\times10^{-7}\lesssim m_\chi\lesssim2\times10^{14}\)</span> g</td>
+<td>qg→qV</td>
+<td><span class="arithmatex">\(C_{qg}=0.1099(247)\)</span></td>
+<td>0.0971</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Why it matters.</strong> The bound needs no individual star to be identified as hadronic. The allowed rapid-trigger branch has no analogue in survival-based bounds.</p>
-<p><strong>Caveats.</strong></p>
-<ul>
-<li>Every conversion is assumed to yield an observable SGRB, and all SGRBs are attributed to isolated sources (<span class="arithmatex">\(f_{\rm iso}=1\)</span>).</li>
-<li>A single <span class="arithmatex">\(t_{\rm meta}\)</span> is used.</li>
-<li>Energy is assumed to couple maximally to the nucleation mode (<span class="arithmatex">\(\epsilon_{\rm bub}\sim1\)</span>).</li>
-<li>Only hadronic deposition counts; electromagnetic showers are too diffuse.</li>
-<li>The local halo density of 0.4</li>
-</ul>
+<p>The pronounced qg turnover is reproduced.</p>
+<p>Caveats:
+- The calculation uses fixed coupling, strict-forward geometry and a single soft emission. The NGL–SLL interplay is not yet included.
+- There is a real sign problem in qg: the mean absolute weight is about 52× the mean signed weight, hence the ~25% error.
+- A mapping to CVolver&rsquo;s cutoff-regulated Coulomb treatment is still open.</p>
+<p>A parallel parton-shower effort (Helliwell) is noted.</p>
+<p><em>The full texts of <a href="https://arxiv.org/abs/2609.31833">arXiv:2609.31833</a> and <a href="https://arxiv.org/abs/2609.33151">arXiv:2609.33151</a> were not supplied, so they are not expanded here.</em></p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-09-28.html"><span class="date">Monday, September 28, 2026</span></a>
+      <span class="themes"><span class="chip">Negative weights via optimal transport</span><span class="chip">Generative detector surrogates</span><span class="chip">Phase transitions and HFGWs</span><span class="chip">Spin observables and information bounds</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-09-25.html"><span class="date">Friday, September 25, 2026</span></a>
@@ -196,11 +172,6 @@
       <span class="themes"><span class="chip">Nucleon structure and GPDs</span><span class="chip">HEP statistics ecosystem</span><span class="chip">Composite-Higgs resonances and portals</span><span class="chip">Hadron spectroscopy convergence</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-09-17.html"><span class="date">Thursday, September 17, 2026</span></a>
-      <span class="themes"><span class="chip">Precision QCD and structure</span><span class="chip">The f0(980) under a microscope</span><span class="chip">LZ evasion goes cosmological</span><span class="chip">ML in event reconstruction</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -210,7 +181,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-28 05:48 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-29 05:56 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
