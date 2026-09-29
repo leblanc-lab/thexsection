@@ -7,7 +7,67 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unsupervised spiking feature learning for event-based pedestrian crossing detection: approaching supervised accuracy without labelled training data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-31671</link>
+    <guid isPermaLink="false">arxiv:2609.31671</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henok Teklu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Event cameras are well suited to pedestrian crossing detection, and spiking neural networks (SNNs) can process their output natively, but current SNN detectors are trained with supervised backpropagation and therefore require costly frame-level crossing labels. We investigate crossing detection with no labels in feature learning and report the first unsupervised results on the recent DVS-PedX pedestrian-crossing benchmark. A single spiking layer trained with winner-take-all spike-timing-dependent plasticity learns a dictionary from unlabelled event-frame patches; frames are encoded by cosine similarity to the learned filters with spatial pooling and read out by a linear classifier, the only supervised component. On the 24,454-frame test split the method attains 90.3% accuracy and an area under the receiver operating characteristic curve (AUROC) of 0.936, compared with 92.0% and 0.943 for a supervised spiking network trained end-to-end on the same frames; under adverse weather the AUROC is 0.913. The result is insensitive to the choice of plasticity rule but depends strongly on the readout protocol: with the classical neuron-assignment readout the same network attains only 0.70 AUROC. On the benchmark&rsquo;s real converted portion, a readout refit lifts performance from chance (0.53) to 0.67 AUROC, within the published supervised range. These findings indicate that the accuracy cost of removing labels from feature learning is small on this benchmark, and that reported weaknesses of unsupervised spiking networks may be attributable to the readout protocol rather than to the learning rule.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal transport meets speech: a tutorial review</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-31787</link>
+    <guid isPermaLink="false">arxiv:2609.31787</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xugang Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for comparing and transforming probability distributions while preserving geometric structure. Recently, OT has gained significant attention in machine learning due to its ability to measure discrepancies between distributions, even when their supports do not overlap, making it effective for tasks such as generative modeling, domain adaptation, and transfer learning. Despite its success in fields such as computer vision and natural language processing, OT remains relatively underexplored in speech research. Speech signals present unique challenges, including temporal dynamics, speaker variability, noise, reverberation, and heterogeneous multimodal representations involving audio, text, and visual information. These factors often lead to distribution mismatches, where OT offers a natural framework for alignment and interpretation. This work aims to promote broader adoption of OT in speech processing by: (1) reviewing OT foundations through intuitive physical interpretations and highlighting connections to modern generative models; (2) presenting computational algorithms suitable for deep learning frameworks; and (3) demonstrating OT applications in cross-domain and cross-modal speech tasks, including speech enhancement, automatic speech recognition, language and speaker recognition, and audio spoof detection. We highlight OT&rsquo;s strong potential for addressing distributional variations in real-world speech applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Resolving State-Representation Mismatch: State-Space Visual Reasoning for Open-Loop VLA Planning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-33412</link>
+    <guid isPermaLink="false">arxiv:2609.33412</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junhao Xiao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Despite rapid progress in vision-language-action (VLA) models, existing reasoning paradigms still face a fundamental \emph{state-representation mismatch} in open-loop planning. Given only an initial observation, models must internally simulate action-conditioned state transitions, whereas text-, pixel-, and latent-space reasoning can suffer from lossy spatial compression, error-accumulating visual generation, and bypass of intermediate latent tokens, respectively, undermining reliable long-horizon planning. We propose \textbf{State-Space Visual Reasoning} (SSVR), which decouples static visual context, language constraints, and a recurrent latent state. SSVR encodes the initial image and instruction once, then conditions each action prediction on the latent state and updates it with an action-conditioned GRU. Using Qwen2.5-VL as the backbone, SSVR achieves 99.5/99.6, 96.3/98.0, and 83.9/90.6 EM/PR on FrozenLake, Maze, and MiniBehavior, substantially outperforming prior methods. Extensive experiments support the effectiveness of recurrent state modeling for VLA open-loop planning across input transformations and transfer settings. By reusing static visual-textual context and updating a compact recurrent state, SSVR supports efficient multi-step inference, achieving up to 98.58× faster Maze decoding rollouts than the evaluated baselines with the prefix cache prebuilt.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OpenFC: Learning Verification Policies towards Open-Search Fact Checking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-33579</link>
+    <guid isPermaLink="false">arxiv:2609.33579</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinming Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Open-search fact checking is not merely retrieval followed by classification, but a sequential decision problem in which every query, source visit, and stopping decision reshapes the evidence available for verification. Yet existing systems often distribute these decisions across predefined pipelines or separately prompted modules rather than learning them as a unified task-specific policy. We introduce \textbf{OpenFC}, a unified verification-policy training framework that post-trains Qwen3-8B as a compact next-action controller over reasoning, evidence acquisition, and stopping. OpenFC learns this policy in two stages. \textbf{Stepwise-Calibrated Cold Start (SCCS)} uses a strong training-time supervisor to review post-initial reasoning, tool-use, and stopping proposals before execution, producing reliable trajectories for supervised fine-tuning without access to gold verdicts. \textbf{Verification-Aware Reinforcement Learning (VA-RL)} then improves the cold-start policy on unresolved claims through budget-aware tool rewards, label-aware advantage reweighting, and localized response masking. Across six fact-checking benchmarks, OpenFC achieves 70.39\% average accuracy and 63.30\% macro-F1, the highest overall averages among the evaluated methods. Stage-wise ablations further show that SCCS and VA-RL provide complementary gains, supporting the design of the two-stage training framework. These results position OpenFC as a strong and effective framework for open-search fact-checking. We will open-source our code and release the model checkpoints to support reproducibility.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Certificate-Driven Software Porting: A Self-Improving Agentic Harness for Scientific Program Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-34069</link>
+    <guid isPermaLink="false">arxiv:2609.34069</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyush Jha et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>The upgrade and rewriting of large scientific codebases has traditionally been a major challenge. While evolutionary search with large language models (LLMs) can port and accelerate legacy code, repair feedback in prompts alone does not prevent subsequent candidates from repeating the same errors. We introduce Certificate-Driven Evolutionary Search (CDES), which extends evolutionary search with enforceable restrictions derived from failed candidates, recorded as certificates of assumptions, checker evidence, and justified restrictions. Its control logic enforces these restrictions through rejection, backtracking, and targeted repair while preserving compatible edits. We apply CDES to CPU-to-GPU translation of two particle-simulation functions from the Geant4 toolkit, evaluated with a harness that goes beyond unit tests to combine formal checks, numerical comparisons, physics checks, and GPU safety tests. Generated implementations achieve 13.78x and 23.54x function-level speedups over CPU code, including data conversion and transfers; for one function, GPU throughput exceeds an expert implementation by 14.9%, reaching 16.1% when complementary components are combined. In an ablation over execution settings, certificate feedback increases the fraction of candidates passing required correctness checks from 55% to 90%.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Addressing Spatial Indistinguishability in Spatiotemporal Prediction via Optimal Transport-Guided Masking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-35021</link>
+    <guid isPermaLink="false">arxiv:2609.35021</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guangyu Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Spatiotemporal prediction aims to learn discriminative representations from correlated temporal signals over spatial structures for accurate future inference. A central challenge is \emph{spatial indistinguishability}: different nodes may share similar historical patterns yet evolve toward divergent futures, severely degrading forecasting performance in real-world sensor networks. Existing embedding-based and graph neural network (GNN)-based approaches can partially detect such ambiguous nodes but rely on historical similarity, struggling to capture \emph{future behavioral divergence}. We propose \textbf{STOT} (\textbf{S}patio\textbf{T}emporal \textbf{O}ptimal \textbf{T}ransport), a self-supervised framework that resolves spatiotemporal ambiguity via structured masking guided by optimal transport. Our key idea treats indistinguishability as a \emph{disambiguation} problem: future states are inferred by exploiting concurrent spatial correlations and their time-varying similarity. We design a similarity-aware metric for dynamic inter-node relationships and an optimal transport-based masking strategy to emphasize ambiguous positions during pre-training. A batch consistency constraint preserves semantic coherence, while a random-walk masking mechanism promotes structured context exploration. Experiments on six real-world datasets show that STOT performs competitively with state-of-the-art baselines on the evaluated benchmarks and improved interpretability through transport-plan visualizations.</p>]]></description>
+  </item>
 
   <item>
     <title>Minimally Invasive Steering of Language Models</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanping Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Cross-domain reinforcement learning (RL) aims to learn transferable policies under dynamics shifts between source and target domains. A key challenge lies in the lack of target-domain environment interaction and reward supervision, which prevents direct policy learning. To address this challenge, we propose Bridging Dynamics Gaps for Cross-Domain Reinforcement Learning (BDGxRL), a novel framework that leverages Diffusion Schrödinger Bridge (DSB) to align source transitions with target-domain dynamics encoded in offline demonstrations. Moreover, we introduce a reward modulation mechanism that estimates rewards based on state transitions, applying to DSB-aligned samples to ensure consistency between rewards and target-domain dynamics. BDGxRL performs target-oriented policy learning entirely within the source domain, without access to the target environment or its rewards. Experiments on MuJoCo cross-domain benchmarks demonstrate that BDGxRL outperforms state-of-the-art baselines and shows strong adaptability under transition dynamics shifts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unbiased Sliced Wasserstein Kernels for High-Quality Audio Captioning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2502-05435</link>
-    <guid isPermaLink="false">arxiv:2502.05435</guid>
-    <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Manh Luong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Audio captioning systems face a fundamental challenge: teacher-forcing training creates exposure bias that leads to caption degeneration during inference. While contrastive methods have been proposed as solutions, they typically fail to capture the crucial temporal relationships between acoustic and linguistic modalities. We address this limitation by introducing the unbiased sliced Wasserstein RBF (USW-RBF) kernel with rotary positional embedding, specifically designed to preserve temporal information across modalities. Our approach offers a practical advantage: the kernel enables efficient stochastic gradient optimization, making it computationally feasible for real-world applications. Building on this foundation, we develop a complete audio captioning framework that integrates stochastic decoding to further mitigate caption degeneration. Extensive experiments on AudioCaps and Clotho datasets demonstrate that our method significantly improves caption quality, lexical diversity, and text-to-audio retrieval accuracy. Furthermore, we demonstrate the generalizability of our USW-RBF kernel by applying it to audio reasoning tasks, where it enhances the reasoning capabilities of large audio language models on the CompA-R in terms of correctness and quality. Our kernel also improves the reasoning accuracy of the MMAU-test-mini benchmarks by 4%. These results establish our approach as a powerful and generalizable solution for cross-modal alignment challenges in audio-language tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>NuBench: An Open Benchmark for Deep Learning-Based Event Reconstruction in Neutrino Telescopes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2511-13111</link>
-    <guid isPermaLink="false">arxiv:2511.13111</guid>
-    <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rasmus F. Orsoe et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (ParticleNet) — original abstract; no AI summary.</em></p>
-<p>Neutrino telescopes are large-scale detectors designed to observe Cherenkov radiation produced from neutrino interactions in water or ice. They exist to identify extraterrestrial neutrino sources and to probe fundamental questions pertaining to the elusive neutrino itself. A central challenge common across neutrino telescopes is to solve a series of inverse problems known as event reconstruction, which seeks to resolve properties of the incident neutrino, based on the detected Cherenkov light. In recent times, significant efforts have been made in adapting advances from deep learning research to event reconstruction, as such techniques provide several benefits over traditional methods. While a large degree of similarity in reconstruction needs and low-level data exists, cross-experimental collaboration has been hindered by a lack of diverse open-source datasets for comparing methods. We present NuBench, an open benchmark for deep learning-based event reconstruction in neutrino telescopes. NuBench comprises seven large-scale simulated datasets containing nearly 130 million charged- and neutral-current muon-neutrino interactions spanning 10 GeV to 100 TeV, generated across six detector geometries inspired by existing and proposed experiments. These datasets provide pulse- and event-level information suitable for developing and comparing machine-learning reconstruction methods in both water and ice environments. Using NuBench, we evaluate four reconstruction algorithms - ParticleNeT and DynEdge, both actively used within the KM3NeT and IceCube collaborations, respectively, along with GRIT and DeepIce - on up to five core tasks: energy and direction reconstruction, topology classification, interaction vertex prediction, and inelasticity estimation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ViCLIP-OT: The First Foundation Vision-Language Model for Vietnamese Image-Text Retrieval with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-22678</link>
-    <guid isPermaLink="false">arxiv:2602.22678</guid>
-    <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quoc-Khang Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Image-text retrieval has become a fundamental component in intelligent multimedia systems; however, most existing vision-language models are optimized for highresource languages and remain suboptimal for low-resource settings such as Vietnamese. This work introduces ViCLIP-OT, a foundation vision-language model specifically designed for Vietnamese image-text retrieval. The proposed framework integrates CLIP-style contrastive learning with a Similarity-Graph Regularized Optimal Transport (SIGROT) loss to enhance global cross-modal consistency and mitigate modality gap issues. Extensive experiments on three Vietnamese benchmarks (UITOpenViIC, KTVIC, and Crossmodal-3600) demonstrate that ViCLIP-OT consistently outperforms CLIP and SigLIP baselines in both in-domain and zero-shot settings. On UIT-OpenViIC, the model achieves an average Recall@K of 67.34%, improving upon CLIP by 5.75 percentage points. In zero-shot evaluation on Crossmodal-3600, ViCLIPOT surpasses CLIP by 11.72 percentage points. Embedding-space analysis further confirms improved alignment and reduced modality gap. The results indicate that integrating SIGROT provides an effective and scalable strategy for cross-modal retrieval in low-resource languages, offering practical implications for intelligent multimedia retrieval systems in Vietnamese and other underrepresented linguistic contexts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Statistical Learning Perspective on Semi-dual Adversarial Neural Optimal Transport Solvers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2502-01310</link>
-    <guid isPermaLink="false">arxiv:2502.01310</guid>
-    <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roman Tarasov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Neural network-based optimal transport (OT) is a recent and fruitful direction in the generative modeling community. It finds its applications in various fields such as domain translation, image super-resolution, computational biology and others. Among the existing OT approaches, of considerable interest are adversarial minimax solvers based on semi-dual formulations of OT problems. While promising, these methods lack theoretical investigation from a statistical learning perspective. Our work fills this gap by establishing upper bounds on the generalization error of an approximate OT map recovered by the minimax quadratic OT solver. Importantly, the bounds we derive depend solely on some standard statistical and mathematical properties of the considered functional classes (neural nets). While our analysis focuses on the quadratic OT, we believe that similar bounds could be derived for general OT case, paving the promising direction for future research. Our experimental illustrations are available online https://github.com/milenagazdieva/StatOT.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Neuromorphic Architecture for Scalable Event-Based Control</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2511-11924</link>
-    <guid isPermaLink="false">arxiv:2511.11924</guid>
-    <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yongkang Huo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>This paper introduces the ``rebound Winner-Take-All (RWTA)&rdquo; motif as the basic element of a scalable neuromorphic control architecture. From the cellular level to the system level, the resulting architecture combines the reliability of discrete computation and the tunability of continuous regulation: it inherits the discrete computation capabilities of winner-take-all state machines and the continuous tuning capabilities of excitable biophysical circuits. The proposed event-based framework addresses continuous rhythmic generation and discrete decision-making in a unified physical modeling language. We illustrate the versatility, robustness, and modularity of the architecture through the nervous system design of a snake robot.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Agents of Discovery</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2509-08535</link>
-    <guid isPermaLink="false">arxiv:2509.08535</guid>
-    <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sascha Diefenbacher et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Gregor Kasieczka, Michael Krämer) — original abstract; no AI summary.</em></p>
-<p>The substantial data volumes encountered in modern particle physics and other domains of fundamental physics research allow (and require) the use of increasingly complex data analysis tools and workflows. While the use of machine learning (ML) tools for data analysis has recently proliferated, these tools are typically special-purpose algorithms that rely, for example, on encoded physics knowledge to reach optimal performance. In this work, we investigate a new and orthogonal direction: Using recent progress in large language models (LLMs) to create a team of agents &ndash; instances of LLMs with specific subtasks &ndash; that jointly solve data analysis-based research problems in a way similar to how a human researcher might: by creating code to operate standard tools and libraries (including ML systems) and by building on results of previous iterations. If successful, such agent-based systems could be deployed to automate routine analysis components to counteract the increasing complexity of modern tool chains. To investigate the capabilities of current-generation commercial LLMs, we consider the task of anomaly detection via the publicly available and highly-studied LHC Olympics dataset. Several current models by OpenAI (GPT-4o, o4-mini, GPT-4.1, and GPT-5) are investigated and their stability tested. Overall, we observe the capacity of the agent-based system to solve this data analysis problem. The best agent-created solutions mirror the performance of human state-of-the-art results.</p>]]></description>
   </item>
 
 </channel>

@@ -6,7 +6,147 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Implementation of batched Sinkhorn iterations for entropy-regularized Wasserstein loss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-01729</link>
+    <guid isPermaLink="false">arxiv:1907.01729</guid>
+    <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Viehmann</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>In this report, we review the calculation of entropy-regularised Wasserstein loss introduced by Cuturi and document a practical implementation in PyTorch. Code is available at https://github.com/t-vi/pytorch-tvmisc/blob/master/wasserstein-distance/Pytorch_Wasserstein.ipynb</p>]]></description>
+  </item>
+
+  <item>
+    <title>Understanding MCMC Dynamics as Flows on the Wasserstein Space</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-00282</link>
+    <guid isPermaLink="false">arxiv:1902.00282</guid>
+    <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chang Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>It is known that the Langevin dynamics used in MCMC is the gradient flow of the KL divergence on the Wasserstein space, which helps convergence analysis and inspires recent particle-based variational inference methods (ParVIs). But no more MCMC dynamics is understood in this way. In this work, by developing novel concepts, we propose a theoretical framework that recognizes a general MCMC dynamics as the fiber-gradient Hamiltonian flow on the Wasserstein space of a fiber-Riemannian Poisson manifold. The &ldquo;conservation + convergence&rdquo; structure of the flow gives a clear picture on the behavior of general MCMC dynamics. The framework also enables ParVI simulation of MCMC dynamics, which enriches the ParVI family with more efficient dynamics, and also adapts ParVI advantages to MCMCs. We develop two ParVI methods for a particular MCMC dynamics and demonstrate the benefits in experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Fast Proximal Point Method for Computing Exact Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1802-04307</link>
+    <guid isPermaLink="false">arxiv:1802.04307</guid>
+    <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujia Xie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distance plays increasingly important roles in machine learning, stochastic programming and image processing. Major efforts have been under way to address its high computational complexity, some leading to approximate or regularized variations such as Sinkhorn distance. However, as we will demonstrate, regularized variations with large regularization parameter will degradate the performance in several important machine learning applications, and small regularization parameter will fail due to numerical stability issues with existing algorithms. We address this challenge by developing an Inexact Proximal point method for exact Optimal Transport problem (IPOT) with the proximal operator approximately evaluated at each iteration using projections to the probability simplex. The algorithm (a) converges to exact Wasserstein distance with theoretical guarantee and robust regularization parameter selection, (b) alleviates numerical stability issue, (c) has similar computational complexity to Sinkhorn, and (d) avoids the shrinking problem when apply to generative models. Furthermore, a new algorithm is proposed based on IPOT to obtain sharper Wasserstein barycenter.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On Scalable and Efficient Computation of Large Scale Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-00158</link>
+    <guid isPermaLink="false">arxiv:1905.00158</guid>
+    <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujia Xie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) naturally arises in many machine learning applications, yet the heavy computational burden limits its wide-spread uses. To address the scalability issue, we propose an implicit generative learning-based framework called SPOT (Scalable Push-forward of Optimal Transport). Specifically, we approximate the optimal transport plan by a pushforward of a reference distribution, and cast the optimal transport problem into a minimax problem. We then can solve OT problems efficiently using primal dual stochastic gradient-type algorithms. We also show that we can recover the density of the optimal transport plan using neural ordinary differential equations. Numerical experiments on both synthetic and real datasets illustrate that SPOT is robust and has favorable convergence behavior. SPOT also allows us to efficiently sample from the optimal transport plan, which benefits downstream applications such as domain adaptation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adversarial Computation of Optimal Transport Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-09691</link>
+    <guid isPermaLink="false">arxiv:1906.09691</guid>
+    <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jacob Leygonie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Computing optimal transport maps between high-dimensional and continuous distributions is a challenging problem in optimal transport (OT). Generative adversarial networks (GANs) are powerful generative models which have been successfully applied to learn maps across high-dimensional domains. However, little is known about the nature of the map learned with a GAN objective. To address this problem, we propose a generative adversarial model in which the discriminator&rsquo;s objective is the 2-Wasserstein metric. We show that during training, our generator follows the W_2-geodesic between the initial and the target distributions. As a consequence, it reproduces an optimal map at the end of training. We validate our approach empirically in both low-dimensional and high-dimensional continuous settings, and show that it outperforms prior methods on image data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Adversarial Imitation Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-08113</link>
+    <guid isPermaLink="false">arxiv:1906.08113</guid>
+    <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huang Xiao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Imitation Learning describes the problem of recovering an expert policy from demonstrations. While inverse reinforcement learning approaches are known to be very sample-efficient in terms of expert demonstrations, they usually require problem-dependent reward functions or a (task-)specific reward-function regularization. In this paper, we show a natural connection between inverse reinforcement learning approaches and Optimal Transport, that enables more general reward functions with desirable properties (e.g., smoothness). Based on our observation, we propose a novel approach called Wasserstein Adversarial Imitation Learning. Our approach considers the Kantorovich potentials as a reward function and further leverages regularized optimal transport to enable large-scale applications. In several robotic experiments, our approach outperforms the baselines in terms of average cumulative rewards and shows a significant improvement in sample-efficiency, by requiring just one expert demonstration.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Local Bures-Wasserstein Transport: A Practical and Fast Mapping Approximation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-08227</link>
+    <guid isPermaLink="false">arxiv:1906.08227</guid>
+    <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrés Hoyos-Idrobo</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT)-based methods have a wide range of applications and have attracted a tremendous amount of attention in recent years. However, most of the computational approaches of OT do not learn the underlying transport map. Although some algorithms have been proposed to learn this map, they rely on kernel-based methods, which makes them prohibitively slow when the number of samples increases. Here, we propose a way to learn an approximate transport map and a parametric approximation of the Wasserstein barycenter. We build an approximated transport mapping by leveraging the closed-form of Gaussian (Bures-Wasserstein) transport; we compute local transport plans between matched pairs of the Gaussian components of each density. The learned map generalizes to out-of-sample examples. We provide experimental results on simulated and real data, comparing our proposed method with other mapping estimation algorithms. Preliminary experiments suggest that our proposed method is not only faster, with a factor 80 overall running time, but it also requires fewer components than state-of-the-art methods to recover the support of the barycenter. From a practical standpoint, it is straightforward to implement and can be used with a conventional machine learning pipeline.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Personalized Purchase Prediction of Market Baskets with Wasserstein-Based Sequence Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-13131</link>
+    <guid isPermaLink="false">arxiv:1905.13131</guid>
+    <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mathias Kraus et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Personalization in marketing aims at improving the shopping experience of customers by tailoring services to individuals. In order to achieve this, businesses must be able to make personalized predictions regarding the next purchase. That is, one must forecast the exact list of items that will comprise the next purchase, i.e., the so-called market basket. Despite its relevance to firm operations, this problem has received surprisingly little attention in prior research, largely due to its inherent complexity. In fact, state-of-the-art approaches are limited to intuitive decision rules for pattern extraction. However, the simplicity of the pre-coded rules impedes performance, since decision rules operate in an autoregressive fashion: the rules can only make inferences from past purchases of a single customer without taking into account the knowledge transfer that takes place between customers. In contrast, our research overcomes the limitations of pre-set rules by contributing a novel predictor of market baskets from sequential purchase histories: our predictions are based on similarity matching in order to identify similar purchase habits among the complete shopping histories of all customers. Our contributions are as follows: (1) We propose similarity matching based on subsequential dynamic time warping (SDTW) as a novel predictor of market baskets. Thereby, we can effectively identify cross-customer patterns. (2) We leverage the Wasserstein distance for measuring the similarity among embedded purchase histories. (3) We develop a fast approximation algorithm for computing a lower bound of the Wasserstein distance in our setting. An extensive series of computational experiments demonstrates the effectiveness of our approach. The accuracy of identifying the exact market baskets based on state-of-the-art decision rules from the literature is outperformed by a factor of 4.0.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Pileup mitigation at the Large Hadron Collider with Graph Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1810-07988</link>
+    <guid isPermaLink="false">arxiv:1810.07988</guid>
+    <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesus Arjona Martinez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (pileup mitigation, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>At the Large Hadron Collider, the high transverse-momentum events studied by experimental collaborations occur in coincidence with parasitic low transverse-momentum collisions, usually referred to as pileup. Pileup mitigation is a key ingredient of the online and offline event reconstruction as pileup affects the reconstruction accuracy of many physics observables. We present a classifier based on Graph Neural Networks, trained to retain particles coming from high-transverse-momentum collisions, while rejecting those coming from pileup collisions. This model is designed as a refinement of the PUPPI algorithm, employed in many LHC data analyses since 2015. Thanks to an extended basis of input information and the learning capabilities of the considered network architecture, we show an improvement in pileup-rejection performances with respect to state-of-the-art solutions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variational Autoencoders for New Physics Mining at the Large Hadron Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1811-10276</link>
+    <guid isPermaLink="false">arxiv:1811.10276</guid>
+    <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Olmo Cerri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Using variational autoencoders trained on known physics processes, we develop a one-sided threshold test to isolate previously unseen processes as outlier events. Since the autoencoder training does not depend on any specific new physics signature, the proposed procedure doesn&rsquo;t make specific assumptions on the nature of new physics. An event selection based on this algorithm would be complementary to classic LHC searches, typically based on model-dependent hypothesis testing. Such an algorithm would deliver a list of anomalous events, that the experimental collaborations could further scrutinize and even release as a catalog, similarly to what is typically done in other scientific domains. Event topologies repeating in this dataset could inspire new-physics model building and new experimental searches. Running in the trigger system of the LHC experiments, such an application could identify anomalous events that would be otherwise lost, extending the scientific reach of the LHC.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Iterative subtraction method for Feature Ranking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-05718</link>
+    <guid isPermaLink="false">arxiv:1906.05718</guid>
+    <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul Glaysher et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Training features used to analyse physical processes are often highly correlated and determining which ones are most important for the classification is a non-trivial tasks. For the use case of a search for a top-quark pair produced in association with a Higgs boson decaying to bottom-quarks at the LHC, we compare feature ranking methods for a classification BDT. Ranking methods, such as the BDT Selection Frequency commonly used in High Energy Physics and the Permutational Performance, are compared with the computationally expense Iterative Addition and Iterative Removal procedures, while the latter was found to be the most performant.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced-Wasserstein Flows: Nonparametric Generative Modeling via Optimal Transport and Diffusions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1806-08141</link>
+    <guid isPermaLink="false">arxiv:1806.08141</guid>
+    <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Liutkus et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>By building upon the recent theory that established the connection between implicit generative modeling (IGM) and optimal transport, in this study, we propose a novel parameter-free algorithm for learning the underlying distributions of complicated datasets and sampling from them. The proposed algorithm is based on a functional optimization problem, which aims at finding a measure that is close to the data distribution as much as possible and also expressive enough for generative modeling purposes. We formulate the problem as a gradient flow in the space of probability measures. The connections between gradient flows and stochastic differential equations let us develop a computationally efficient algorithm for solving the optimization problem. We provide formal theoretical analysis where we prove finite-time error guarantees for the proposed algorithm. To the best of our knowledge, the proposed algorithm is the first nonparametric IGM algorithm with explicit theoretical guarantees. Our experimental results support our theory and show that our algorithm is able to successfully capture the structure of different types of data distributions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A gradual, semi-discrete approach to generative network training via explicit Wasserstein minimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-03471</link>
+    <guid isPermaLink="false">arxiv:1906.03471</guid>
+    <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yucheng Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper provides a simple procedure to fit generative networks to target distributions, with the goal of a small Wasserstein distance (or other optimal transport costs). The approach is based on two principles: (a) if the source randomness of the network is a continuous distribution (the &ldquo;semi-discrete&rdquo; setting), then the Wasserstein distance is realized by a deterministic optimal transport mapping; (b) given an optimal transport mapping between a generator network and a target distribution, the Wasserstein distance may be decreased via a regression between the generated data and the mapped target points. The procedure here therefore alternates these two steps, forming an optimal transport and regressing against it, gradually adjusting the generator network towards the target distribution. Mathematically, this approach is shown to minimize the Wasserstein distance to both the empirical target distribution, and also its underlying population counterpart. Empirically, good performance is demonstrated on the training and testing sets of the MNIST and Thin-8 data. The paper closes with a discussion of the unsuitability of the Wasserstein distance for certain tasks, as has been identified in prior work [Arora et al., 2017, Huang et al., 2017].</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Relaxations with Application to Wasserstein GANs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-03317</link>
+    <guid isPermaLink="false">arxiv:1906.03317</guid>
+    <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saied Mahdian et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a family of relaxations of the optimal transport problem which regularize the problem by introducing an additional minimization step over a small region around one of the underlying transporting measures. The type of regularization that we obtain is related to smoothing techniques studied in the optimization literature. When using our approach to estimate optimal transport costs based on empirical measures, we obtain statistical learning bounds which are useful to guide the amount of regularization, while maintaining good generalization properties. To illustrate the computational advantages of our regularization approach, we apply our method to training Wasserstein GANs. We obtain running time improvements, relative to current benchmarks, with no deterioration in testing performance (via FID). The running time improvement occurs because our new optimality-based threshold criterion reduces the number of expensive iterates of the generating networks, while increasing the number of actor-critic iterations.</p>]]></description>
+  </item>
 
   <item>
     <title>Improving Textual Network Embedding with Global Attention via Optimal Transport</title>

@@ -7,7 +7,47 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unsupervised spiking feature learning for event-based pedestrian crossing detection: approaching supervised accuracy without labelled training data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2609-31671</link>
+    <guid isPermaLink="false">arxiv:2609.31671</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henok Teklu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Event cameras are well suited to pedestrian crossing detection, and spiking neural networks (SNNs) can process their output natively, but current SNN detectors are trained with supervised backpropagation and therefore require costly frame-level crossing labels. We investigate crossing detection with no labels in feature learning and report the first unsupervised results on the recent DVS-PedX pedestrian-crossing benchmark. A single spiking layer trained with winner-take-all spike-timing-dependent plasticity learns a dictionary from unlabelled event-frame patches; frames are encoded by cosine similarity to the learned filters with spatial pooling and read out by a linear classifier, the only supervised component. On the 24,454-frame test split the method attains 90.3% accuracy and an area under the receiver operating characteristic curve (AUROC) of 0.936, compared with 92.0% and 0.943 for a supervised spiking network trained end-to-end on the same frames; under adverse weather the AUROC is 0.913. The result is insensitive to the choice of plasticity rule but depends strongly on the readout protocol: with the classical neuron-assignment readout the same network attains only 0.70 AUROC. On the benchmark&rsquo;s real converted portion, a readout refit lifts performance from chance (0.53) to 0.67 AUROC, within the published supervised range. These findings indicate that the accuracy cost of removing labels from feature learning is small on this benchmark, and that reported weaknesses of unsupervised spiking networks may be attributable to the readout protocol rather than to the learning rule.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unlocking Geodesic Gromov-Wasserstein Distances for 3D Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2609-32824</link>
+    <guid isPermaLink="false">arxiv:2609.32824</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Krzysztof Marcin Choromanski et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>\textit{Gromov-Wasserstein Distances} (GWDs) provide quantitative ways of comparing probabilistic distributions defined on different metric spaces by applying techniques from the optimal transport theory. As such, GWD can be potentially useful in a large variety of applications ranging from graph matching problems to 3D object detection. However its practical use at scale is significantly limited by cubic time complexity computations involving dense intra-space distance matrices. Even though in the Euclidean metric spaces several techniques (e.g. involving scalable kernel methods) were proposed to address it, to the best of our knowledge, analogous techniques for general geodesic distances on manifolds, or shortest-path distance on graphs in their discretized variants, were not developed. In this paper, we present \textbf{E}fficient \textbf{G}eodesic \textbf{Gro}mov-\textbf{W}asserstein methods (EGGroW), a new class of efficient algorithms designed to calculate geodesic Gromov-Wasserstein distances with entropic Sinkhorn-like approaches, leveraging recently introduced \textit{GenusSink} methods \citep{genussink} and the theory of random features. We provide important downstream applications, namely: 3D pose estimation and 3D template detection. In the latter setting, we formulate a partial 3D template recovery as a staged problem: capacity-constrained scene selection is followed by semi-relaxed recovery of template visibility and correspondence. Our empirical findings show that EGGroW provides accurate solutions when standard Euclidean-based techniques fail and is characterized by light computational footprint, as our theoretical analysis predicts.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Resolving State-Representation Mismatch: State-Space Visual Reasoning for Open-Loop VLA Planning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2609-33412</link>
+    <guid isPermaLink="false">arxiv:2609.33412</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junhao Xiao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Despite rapid progress in vision-language-action (VLA) models, existing reasoning paradigms still face a fundamental \emph{state-representation mismatch} in open-loop planning. Given only an initial observation, models must internally simulate action-conditioned state transitions, whereas text-, pixel-, and latent-space reasoning can suffer from lossy spatial compression, error-accumulating visual generation, and bypass of intermediate latent tokens, respectively, undermining reliable long-horizon planning. We propose \textbf{State-Space Visual Reasoning} (SSVR), which decouples static visual context, language constraints, and a recurrent latent state. SSVR encodes the initial image and instruction once, then conditions each action prediction on the latent state and updates it with an action-conditioned GRU. Using Qwen2.5-VL as the backbone, SSVR achieves 99.5/99.6, 96.3/98.0, and 83.9/90.6 EM/PR on FrozenLake, Maze, and MiniBehavior, substantially outperforming prior methods. Extensive experiments support the effectiveness of recurrent state modeling for VLA open-loop planning across input transformations and transfer settings. By reusing static visual-textual context and updating a compact recurrent state, SSVR supports efficient multi-step inference, achieving up to 98.58× faster Maze decoding rollouts than the evaluated baselines with the prefix cache prebuilt.</p>]]></description>
+  </item>
+
+  <item>
+    <title>ColNanoVDR: Document-Free Query Distillation for Multi-Vector Visual Document Retrieval via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2609-34899</link>
+    <guid isPermaLink="false">arxiv:2609.34899</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhuchenyang Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multi-vector retrievers built on vision-language models lead visual document retrieval (VDR), but they run a multi-billion-parameter query encoder on every search. Distilling this encoder into a small student that queries the teacher&rsquo;s existing index would remove the bottleneck. The standard recipe, however, matches the teacher&rsquo;s MaxSim scores and so requires encoding and caching every training page, which can reach terabytes of page tokens. NanoVDR avoids pages entirely by training on the teacher&rsquo;s query embeddings alone, but only for single-vector retrievers. We present ColNanoVDR, to our knowledge the first framework to bring this document-free distillation to multi-vector VDR. Its objective, OTW (Optimal Transport with Learned Weights), aligns the student&rsquo;s query tokens with the teacher&rsquo;s by entropic optimal transport, with a learned weight for each student token, and needs no correspondence between the two tokenizations. We prove that the resulting alignment cost bounds the MaxSim score difference on every page. Distilled from five state-of-the-art teachers, the 149M text-only students retain about 95% of their teachers&rsquo; NDCG@5 on ViDoRe v1-v3 while encoding queries up to 26x faster. Under identical training, OTW matches score distillation while encoding no page and reading 12.6x less cached teacher data.</p>]]></description>
+  </item>
 
   <item>
     <title>WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shibo Gao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Video anomaly detection (VAD) aims to identify and ground anomalous behaviors or events in videos, serving as a core technology in the fields of intelligent surveillance and public safety. With the advancement of deep learning, the continuous evolution of deep model architectures has driven innovation in VAD methodologies, significantly enhancing feature representation and scene adaptability, thereby improving algorithm generalization and expanding application boundaries. More importantly, the rapid development of multi-modal large language (MLLMs) and large language models (LLMs) has introduced new opportunities and challenges to the VAD field. Under the support of MLLMs and LLMs, VAD has undergone significant transformations in terms of data annotation, input modalities, model architectures, and task objectives. The surge in publications and the evolution of tasks have created an urgent need for systematic reviews of recent advancements. This paper presents the first comprehensive survey analyzing VAD methods based on MLLMs and LLMs, providing an in-depth discussion of the changes occurring in the VAD field in the era of large models and their underlying causes. Additionally, this paper proposes a unified framework that encompasses both deep neural network (DNN)-based and LLM-based VAD methods, offering a thorough analysis of the new VAD paradigms empowered by LLMs, constructing a classification system, and comparing their strengths and weaknesses. Building on this foundation, this paper focuses on current VAD methods based on MLLMs/LLMs. Finally, based on the trajectory of technological advancements and existing bottlenecks, this paper distills key challenges and outlines future research directions, offering guidance for the VAD community.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PLOT-TAL: Prompt Learning with Optimal Transport for Few-Shot Temporal Action Localization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2403-18915</link>
-    <guid isPermaLink="false">arxiv:2403.18915</guid>
-    <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Edward Fish et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Few-shot temporal action localization (TAL) methods that adapt large models via single-prompt tuning often fail to produce precise temporal boundaries. This stems from the model learning a non-discriminative mean representation of an action from sparse data, which compromises generalization. We address this by proposing a new paradigm based on multi-prompt ensembles, where a set of diverse, learnable prompts for each action is encouraged to specialize on compositional sub-events. To enforce this specialization, we introduce PLOT-TAL, a framework that leverages Optimal Transport (OT) to find a globally optimal alignment between the prompt ensemble and the video&rsquo;s temporal features. Our method establishes a new state-of-the-art on the challenging few-shot benchmarks of THUMOS&lsquo;14 and EPIC-Kitchens, without requiring complex meta-learning. The significant performance gains, particularly at high IoU thresholds, validate our hypothesis and demonstrate the superiority of learning distributed, compositional representations for precise temporal localization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SIDDA: SInkhorn Dynamic Domain Adaptation for Image Classification with Equivariant Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2501-14048</link>
-    <guid isPermaLink="false">arxiv:2501.14048</guid>
-    <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sneh Pandya et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Modern neural networks (NNs) often do not generalize well in the presence of a &ldquo;covariate shift&rdquo;; that is, in situations where the training and test data distributions differ, but the conditional distribution of classification labels remains unchanged. In such cases, NN generalization can be reduced to a problem of learning more domain-invariant features. Domain adaptation (DA) methods include a range of techniques aimed at achieving this; however, these methods have struggled with the need for extensive hyperparameter tuning, which then incurs significant computational costs. In this work, we introduce SIDDA, an out-of-the-box DA training algorithm built upon the Sinkhorn divergence, that can achieve effective domain alignment with minimal hyperparameter tuning and computational overhead. We demonstrate the efficacy of our method on multiple simulated and real datasets of varying complexity, including simple shapes, handwritten digits, and real astronomical observations. SIDDA is compatible with a variety of NN architectures, and it works particularly well in improving classification accuracy and model calibration when paired with equivariant neural networks (ENNs). We find that SIDDA enhances the generalization capabilities of NNs, achieving up to a ≈40% improvement in classification accuracy on unlabeled target data. We also study the efficacy of DA on ENNs with respect to the varying group orders of the dihedral group D_N, and find that the model performance improves as the degree of equivariance increases. Finally, we find that SIDDA enhances model calibration on both source and target data&ndash;achieving over an order of magnitude improvement in the ECE and Brier score. SIDDA&rsquo;s versatility, combined with its automated approach to domain alignment, has the potential to advance multi-dataset studies by enabling the development of highly generalizable models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Human-Guided Shade Artifact Suppression in CBCT-to-MDCT Translation via Schrödinger Bridge with Conditional Diffusion</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-11025</link>
-    <guid isPermaLink="false">arxiv:2507.11025</guid>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sung Ho Kang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We present a novel framework for CBCT-to-MDCT translation, grounded in the Schrodinger Bridge (SB) formulation, which integrates GAN-derived priors with human-guided conditional diffusion. Unlike conventional GANs or diffusion models, our approach explicitly enforces boundary consistency between CBCT inputs and pseudo targets, ensuring both anatomical fidelity and perceptual controllability. Binary human feedback is incorporated via classifier-free guidance (CFG), effectively steering the generative process toward clinically preferred outcomes. Through iterative refinement and tournament-based preference selection, the model internalizes human preferences without relying on a reward model. Subtraction image visualizations reveal that the proposed method selectively attenuates shade artifacts in key anatomical regions while preserving fine structural detail. Quantitative evaluations further demonstrate superior performance across RMSE, SSIM, LPIPS, and Dice metrics on clinical datasets &ndash; outperforming prior GAN- and fine-tuning-based feedback methods &ndash; while requiring only 10 sampling steps. These findings underscore the effectiveness and efficiency of our framework for real-time, preference-aligned medical image translation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>When Schrödinger Bridge Meets Real-World Image Dehazing with Unpaired Training</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-09524</link>
-    <guid isPermaLink="false">arxiv:2507.09524</guid>
-    <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunwei Lan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Recent advancements in unpaired dehazing, particularly those using GANs, show promising performance in processing real-world hazy images. However, these methods tend to face limitations due to the generator&rsquo;s limited transport mapping capability, which hinders the full exploitation of their effectiveness in unpaired training paradigms. To address these challenges, we propose DehazeSB, a novel unpaired dehazing framework based on the Schrödinger Bridge. By leveraging optimal transport (OT) theory, DehazeSB directly bridges the distributions between hazy and clear images. This enables optimal transport mappings from hazy to clear images in fewer steps, thereby generating high-quality results. To ensure the consistency of structural information and details in the restored images, we introduce detail-preserving regularization, which enforces pixel-level alignment between hazy inputs and dehazed outputs. Furthermore, we propose a novel prompt learning to leverage pre-trained CLIP models in distinguishing hazy images and clear ones, by learning a haze-aware vision-language alignment. Extensive experiments on multiple real-world datasets demonstrate our method&rsquo;s superiority. Code: https://github.com/ywxjm/DehazeSB.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,147 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Template based Graph Neural Network with Optimal Transport Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-15733</link>
+    <guid isPermaLink="false">arxiv:2205.15733</guid>
+    <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cédric Vincent-Cuaz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Current Graph Neural Networks (GNN) architectures generally rely on two important components: node features embedding through message passing, and aggregation with a specialized form of pooling. The structural (or topological) information is implicitly taken into account in these two steps. We propose in this work a novel point of view, which places distances to some learnable graph templates at the core of the graph representation. This distance embedding is constructed thanks to an optimal transport distance: the Fused Gromov-Wasserstein (FGW) distance, which encodes simultaneously feature and structure dissimilarities by solving a soft graph-matching problem. We postulate that the vector of FGW distances to a set of template graphs has a strong discriminative power, which is then fed to a non-linear classifier for final predictions. Distance embedding can be seen as a new layer, and can leverage on existing message passing techniques to promote sensible feature representations. Interestingly enough, in our work the optimal set of template graphs is also learnt in an end-to-end fashion by differentiating through this layer. After describing the corresponding learning procedure, we empirically validate our claim on several synthetic and real life graph classification datasets, where our method is competitive or surpasses kernel and GNN state-of-the-art approaches. We complete our experiments by an ablation study and a sensitivity analysis to parameters.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Optimization with Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2203-12136</link>
+    <guid isPermaLink="false">arxiv:2203.12136</guid>
+    <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tim Tsz-Kit Lau et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In many applications in statistics and machine learning, the availability of data samples from multiple possibly heterogeneous sources has become increasingly prevalent. On the other hand, in distributionally robust optimization, we seek data-driven decisions which perform well under the most adverse distribution from a nominal distribution constructed from data samples within a certain discrepancy of probability distributions. However, it remains unclear how to achieve such distributional robustness in model learning and estimation when data samples from multiple sources are available. In this work, we propose constructing the nominal distribution in optimal transport-based distributionally robust optimization problems through the notion of Wasserstein barycenter as an aggregation of data samples from multiple sources. Under specific choices of the loss function, the proposed formulation admits a tractable reformulation as a finite convex program, with powerful finite-sample and asymptotic guarantees. As an illustrative example, we demonstrate with the problem of distributionally robust sparse inverse covariance matrix estimation for zero-mean Gaussian random vectors that our proposed scheme outperforms other widely used estimators in both the low- and high-dimensional regimes.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Supervised Training of Siamese Spiking Neural Networks with Earth Mover's Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2203-13207</link>
+    <guid isPermaLink="false">arxiv:2203.13207</guid>
+    <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mateusz Pabian et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>This study adapts the highly-versatile siamese neural network model to the event data domain. We introduce a supervised training framework for optimizing Earth Mover&rsquo;s Distance (EMD) between spike trains with spiking neural networks (SNN). We train this model on images of the MNIST dataset converted into spiking domain with novel conversion schemes. The quality of the siamese embeddings of input images was evaluated by measuring the classifier performance for different dataset coding types. The models achieved performance similar to existing SNN-based approaches (F1-score of up to 0.9386) while using only about 15% of hidden layer neurons to classify each example. Furthermore, models which did not employ a sparse neural code were about 45% slower than their sparse counterparts. These properties make the model suitable for low energy consumption and low prediction latency applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Block-coordinate Frank-Wolfe algorithm and convergence analysis for semi-relaxed optimal transport problem</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-13766</link>
+    <guid isPermaLink="false">arxiv:2205.13766</guid>
+    <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takumi Fukunaga et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The optimal transport (OT) problem has been used widely for machine learning. It is necessary for computation of an OT problem to solve linear programming with tight mass-conservation constraints. These constraints prevent its application to large-scale problems. To address this issue, loosening such constraints enables us to propose the relaxed-OT method using a faster algorithm. This approach has demonstrated its effectiveness for applications. However, it remains slow. As a superior alternative, we propose a fast block-coordinate Frank-Wolfe (BCFW) algorithm for a convex semi-relaxed OT. Specifically, we prove their upper bounds of the worst convergence iterations, and equivalence between the linearization duality gap and the Lagrangian duality gap. Additionally, we develop two fast variants of the proposed BCFW. Numerical experiments have demonstrated that our proposed algorithms are effective for color transfer and surpass state-of-the-art algorithms. This report presents a short version of arXiv:2103.05857.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Convergence of Semi-Relaxed Sinkhorn with Marginal Constraint and OT Distance Gaps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-13846</link>
+    <guid isPermaLink="false">arxiv:2205.13846</guid>
+    <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takumi Fukunaga et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>This paper presents consideration of the Semi-Relaxed Sinkhorn (SR-Sinkhorn) algorithm for the semi-relaxed optimal transport (SROT) problem, which relaxes one marginal constraint of the standard OT problem. For evaluation of how the constraint relaxation affects the algorithm behavior and solution, it is vitally necessary to present the theoretical convergence analysis in terms not only of the functional value gap, but also of the marginal constraint gap as well as the OT distance gap. However, no existing work has addressed all analyses simultaneously. To this end, this paper presents a comprehensive convergence analysis for SR-Sinkhorn. After presenting the ε-approximation of the functional value gap based on a new proof strategy and exploiting this proof strategy, we give the upper bound of the marginal constraint gap. We also provide its convergence to the ε-approximation when two distributions are in the probability simplex. Furthermore, the convergence analysis of the OT distance gap to the ε-approximation is given as assisted by the obtained marginal constraint gap. The latter two theoretical results are the first results presented in the literature related to the SROT problem.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Improving Human Image Synthesis with Residual Fast Fourier Transformation and Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-12022</link>
+    <guid isPermaLink="false">arxiv:2205.12022</guid>
+    <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianhan Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>With the rapid development of the Metaverse, virtual humans have emerged, and human image synthesis and editing techniques, such as pose transfer, have recently become popular. Most of the existing techniques rely on GANs, which can generate good human images even with large variants and occlusions. But from our best knowledge, the existing state-of-the-art method still has the following problems: the first is that the rendering effect of the synthetic image is not realistic, such as poor rendering of some regions. And the second is that the training of GAN is unstable and slow to converge, such as model collapse. Based on the above two problems, we propose several methods to solve them. To improve the rendering effect, we use the Residual Fast Fourier Transform Block to replace the traditional Residual Block. Then, spectral normalization and Wasserstein distance are used to improve the speed and stability of GAN training. Experiments demonstrate that the methods we offer are effective at solving the problems listed above, and we get state-of-the-art scores in LPIPS and PSNR.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Neural Network Approximation of Wasserstein Gradient Direction via Convex Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-13098</link>
+    <guid isPermaLink="false">arxiv:2205.13098</guid>
+    <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The computation of Wasserstein gradient direction is essential for posterior sampling problems and scientific computing. The approximation of the Wasserstein gradient with finite samples requires solving a variational problem. We study the variational problem in the family of two-layer networks with squared-ReLU activations, towards which we derive a semi-definite programming (SDP) relaxation. This SDP can be viewed as an approximation of the Wasserstein gradient in a broader function family including two-layer networks. By solving the convex SDP, we obtain the optimal approximation of the Wasserstein gradient direction in this class of functions. Numerical experiments including PDE-constrained Bayesian inference and parameter estimation in COVID-19 modeling demonstrate the effectiveness of the proposed method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal transport in multilayer networks for traffic flow optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2106-07202</link>
+    <guid isPermaLink="false">arxiv:2106.07202</guid>
+    <pubDate>Mon, 23 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abdullahi Adinoyi Ibrahim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Modeling traffic distribution and extracting optimal flows in multilayer networks is of utmost importance to design efficient multi-modal network infrastructures. Recent results based on optimal transport theory provide powerful and computationally efficient methods to address this problem, but they are mainly focused on modeling single-layer networks. Here we adapt these results to study how optimal flows distribute on multilayer networks. We propose a model where optimal flows on different layers contribute differently to the total cost to be minimized. This is done by means of a parameter that varies with layers, which allows to flexibly tune the sensitivity to traffic congestion of the various layers. As an application, we consider transportation networks, where each layer is associated to a different transportation system and show how the traffic distribution varies as we tune this parameter across layers. We show an example of this result on the real 2-layer network of the city of Bordeaux with bus and tram, where we find that in certain regimes the presence of the tram network significantly unburdens the traffic on the road network. Our model paves the way to further analysis of optimal flows and navigability strategies in real multilayer networks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Algorithms for Weak Optimal Transport with an Application to Economics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-09825</link>
+    <guid isPermaLink="false">arxiv:2205.09825</guid>
+    <pubDate>Mon, 23 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François-Pierre Paty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The theory of weak optimal transport (WOT), introduced by [Gozlan et al., 2017], generalizes the classic Monge-Kantorovich framework by allowing the transport cost between one point and the points it is matched with to be nonlinear. In the so-called barycentric version of WOT, the cost for transporting a point x only depends on x and on the barycenter of the points it is matched with. This aggregation property of WOT is appealing in machine learning, economics and finance. Yet algorithms to compute WOT have only been developed for the special case of quadratic barycentric WOT, or depend on neural networks with no guarantee on the computed value and matching. The main difficulty lies in the transportation constraints which are costly to project onto. In this paper, we propose to use mirror descent algorithms to solve the primal and dual versions of the WOT problem. We also apply our algorithms to the variant of WOT introduced by [Choné et al., 2022] where mass is distributed from one space to another through unnormalized kernels (WOTUK). We empirically compare the solutions of WOT and WOTUK with classical OT. We illustrate our numerical methods to the economic framework of [Choné and Kramarz, 2021], namely the matching between workers and firms on labor markets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Generative Adversarial Networks for Online Test Generation for Cyber Physical Systems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-11060</link>
+    <guid isPermaLink="false">arxiv:2205.11060</guid>
+    <pubDate>Mon, 23 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jarkko Peltomäki et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a novel online test generation algorithm WOGAN based on Wasserstein Generative Adversarial Networks. WOGAN is a general-purpose black-box test generator applicable to any system under test having a fitness function for determining failing tests. As a proof of concept, we evaluate WOGAN by generating roads such that a lane assistance system of a car fails to stay on the designated lane. We find that our algorithm has a competitive performance respect to previously published algorithms.</p>]]></description>
+  </item>
+
+  <item>
+    <title>AI-assisted Optimization of the ECCE Tracking System at the Electron Ion Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-09185</link>
+    <guid isPermaLink="false">arxiv:2205.09185</guid>
+    <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">C. Fanelli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>The Electron-Ion Collider (EIC) is a cutting-edge accelerator facility that will study the nature of the &ldquo;glue&rdquo; that binds the building blocks of the visible matter in the universe. The proposed experiment will be realized at Brookhaven National Laboratory in approximately 10 years from now, with detector design and R&amp;D currently ongoing. Notably, EIC is one of the first large-scale facilities to leverage Artificial Intelligence (AI) already starting from the design and R&amp;D phases. The EIC Comprehensive Chromodynamics Experiment (ECCE) is a consortium that proposed a detector design based on a 1.5T solenoid. The EIC detector proposal review concluded that the ECCE design will serve as the reference design for an EIC detector. Herein we describe a comprehensive optimization of the ECCE tracker using AI. The work required a complex parametrization of the simulated detector system. Our approach dealt with an optimization problem in a multidimensional design space driven by multiple objectives that encode the detector performance, while satisfying several mechanical constraints. We describe our strategy and show results obtained for the ECCE tracking system. The AI-assisted design is agnostic to the simulation framework and can be extended to other sub-detectors or to a system of sub-detectors to further optimize the performance of the EIC detector.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FlowPool: Pooling Graph Representations with Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2112-09990</link>
+    <guid isPermaLink="false">arxiv:2112.09990</guid>
+    <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Effrosyni Simou</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In several machine learning tasks for graph structured data, the graphs under consideration may be composed of a varying number of nodes. Therefore, it is necessary to design pooling methods that aggregate the graph representations of varying size to representations of fixed size which can be used in downstream tasks, such as graph classification. Existing graph pooling methods offer no guarantee with regards to the similarity of a graph representation and its pooled version. In this work, we address this limitation by proposing FlowPool, a pooling method that optimally preserves the statistics of a graph representation to its pooled counterpart by minimising their Wasserstein distance. This is achieved by performing a Wasserstein gradient flow with respect to the pooled graph representation. Our method relies on a versatile implementation which can take into account the geometry of the representation space through any ground cost and computes the gradient of the Wasserstein distance with automatic differentiation. We propose the differentiation of the Wasserstein flow layer using an implicit differentiation scheme. Therefore, our pooling method is amenable to automatic differentiation and can be integrated in end-to-end deep learning architectures. Further, FlowPool is invariant to permutations and can therefore be combined with permutation equivariant feature extraction layers in GNNs in order to obtain predictions that are independent of the ordering of the nodes. Experimental results demonstrate that our method leads to an increase in performance compared to existing pooling methods when evaluated on graph classification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Efficiency of Entropic Regularized Algorithms for Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a1906-01437</link>
+    <guid isPermaLink="false">arxiv:1906.01437</guid>
+    <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianyi Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We present several new complexity results for the entropic regularized algorithms that approximately solve the optimal transport (OT) problem between two discrete probability measures with at most n atoms. First, we improve the complexity bound of a greedy variant of Sinkhorn, known as \textit{Greenkhorn}, from O(n²ε⁻³⁾ to O(n²ε⁻²⁾. Notably, our result can match the best known complexity bound of Sinkhorn and help clarify why Greenkhorn significantly outperforms Sinkhorn in practice in terms of row/column updates as observed by~\citet{Altschuler-2017-Near}. Second, we propose a new algorithm, which we refer to as \textit{APDAMD} and which generalizes an adaptive primal-dual accelerated gradient descent (APDAGD) algorithm~\citep{Dvurechensky-2018-Computational} with a prespecified mirror mapping ϕ. We prove that APDAMD achieves the complexity bound of O(n²ε⁻¹⁾ in which δ&gt;0 stands for the regularity of ϕ. In addition, we show by a counterexample that the complexity bound of O(min{n⁹/4ε⁻¹, n²ε⁻²}) proved for APDAGD before is invalid and give a refined complexity bound of O(n⁵/2ε⁻¹⁾. Further, we develop a \textit{deterministic} accelerated variant of Sinkhorn via appeal to estimated sequence and prove the complexity bound of O(n⁷/3ε⁻⁴/3). As such, we see that accelerated variant of Sinkhorn outperforms Sinkhorn and Greenkhorn in terms of 1/ε and APDAGD and accelerated alternating minimization (AAM)~\citep{Guminov-2021-Combination} in terms of n. Finally, we conduct the experiments on synthetic and real data and the numerical results show the efficiency of Greenkhorn, APDAMD and accelerated Sinkhorn in practice.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Can We Do Better Than Random Start? The Power of Data Outsourcing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-08098</link>
+    <guid isPermaLink="false">arxiv:2205.08098</guid>
+    <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Many organizations have access to abundant data but lack the computational power to process the data. While they can outsource the computational task to other facilities, there are various constraints on the amount of data that can be shared. It is natural to ask what can data outsourcing accomplish under such constraints. We address this question from a machine learning perspective. When training a model with optimization algorithms, the quality of the results often relies heavily on the points where the algorithms are initialized. Random start is one of the most popular methods to tackle this issue, but it can be computationally expensive and not feasible for organizations lacking computing resources. Based on three different scenarios, we propose simulation-based algorithms that can utilize a small amount of outsourced data to find good initial points accordingly. Under suitable regularity conditions, we provide theoretical guarantees showing the algorithms can find good initial points with high probability. We also conduct numerical experiments to demonstrate that our algorithms perform significantly better than the random start approach.</p>]]></description>
+  </item>
 
   <item>
     <title>Learning quantum data with the quantum Earth Mover's distance</title>
@@ -1867,146 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anson Bastos et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Active learning has emerged as a standard paradigm in areas with scarcity of labeled training data, such as in the medical domain. Language models have emerged as the prevalent choice of several natural language tasks due to the performance boost offered by these models. However, in several domains, such as medicine, the scarcity of labeled training data is a common issue. Also, these models may not work well in cases where class imbalance is prevalent. Active learning may prove helpful in these cases to boost the performance with a limited label budget. To this end, we propose a novel method using sampling techniques based on submodular optimization and optimal transport for active learning in language models, dubbed ALLWAS. We construct a sampling strategy based on submodular optimization of the designed objective in the gradient domain. Furthermore, to enable learning from few samples, we propose a novel strategy for sampling from the Wasserstein barycenters. Our empirical evaluations on standard benchmark datasets for text classification show that our methods perform significantly better (&gt;20% relative increase in some cases) than existing approaches for active learning on language models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Graph Generative Models for Fast Detector Simulations in High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-01725</link>
-    <guid isPermaLink="false">arxiv:2104.01725</guid>
-    <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ali Hariri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Accurate and fast simulation of particle physics processes is crucial for the high-energy physics community. Simulating particle interactions with detectors is both time consuming and computationally expensive. With the proton-proton collision energy of 13 TeV, the Large Hadron Collider is uniquely positioned to detect and measure the rare phenomena that can shape our knowledge of new interactions. The High-Luminosity Large Hadron Collider (HL-LHC) upgrade will put a significant strain on the computing infrastructure due to increased event rate and levels of pile-up. Simulation of high-energy physics collisions needs to be significantly faster without sacrificing the physics accuracy. Machine learning approaches can offer faster solutions, while maintaining a high level of fidelity. We discuss a graph generative model that provides effective reconstruction of LHC events, paving the way for full detector level fast simulation for HL-LHC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MLPerf Tiny Benchmark</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-07597</link>
-    <guid isPermaLink="false">arxiv:2106.07597</guid>
-    <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Colby Banbury et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Advancements in ultra-low-power tiny machine learning (TinyML) systems promise to unlock an entirely new class of smart applications. However, continued progress is limited by the lack of a widely accepted and easily reproducible benchmark for these systems. To meet this need, we present MLPerf Tiny, the first industry-standard benchmark suite for ultra-low-power tiny machine learning systems. The benchmark suite is the collaborative effort of more than 50 organizations from industry and academia and reflects the needs of the community. MLPerf Tiny measures the accuracy, latency, and energy of machine learning inference to properly evaluate the tradeoffs between systems. Additionally, MLPerf Tiny implements a modular design that enables benchmark submitters to show the benefits of their product, regardless of where it falls on the ML deployment stack, in a fair and reproducible manner. The suite features four benchmarks: keyword spotting, visual wake words, image classification, and anomaly detection.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adversarial domain adaptation to reduce sample bias of a high energy physics classifier</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2005-00568</link>
-    <guid isPermaLink="false">arxiv:2005.00568</guid>
-    <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose M. Clavijo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>We apply adversarial domain adaptation in unsupervised setting to reduce sample bias in a supervised high energy physics events classifier training. We make use of a neural network containing event and domain classifier with a gradient reversal layer to simultaneously enable signal versus background events classification on the one hand, while on the other hand minimising the difference in response of the network to background samples originating from different MC models via adversarial domain classification loss. We show the successful bias removal on the example of simulated events at the LHC with tt̅H signal versus tt̅bb̅ background classification and discuss implications and limitations of the method</p>]]></description>
-  </item>
-
-  <item>
-    <title>Higgs Boson Classification: Brain-inspired BCPNN Learning with StreamBrain</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-06676</link>
-    <guid isPermaLink="false">arxiv:2107.06676</guid>
-    <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Svedin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>One of the most promising approaches for data analysis and exploration of large data sets is Machine Learning techniques that are inspired by brain models. Such methods use alternative learning rules potentially more efficiently than established learning rules. In this work, we focus on the potential of brain-inspired ML for exploiting High-Performance Computing (HPC) resources to solve ML problems: we discuss the BCPNN and an HPC implementation, called StreamBrain, its computational cost, suitability to HPC systems. As an example, we use StreamBrain to analyze the Higgs Boson dataset from High Energy Physics and discriminate between background and signal classes in collisions of high-energy particle colliders. Overall, we reach up to 69.15% accuracy and 76.4% Area Under the Curve (AUC) performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Statistical Analysis of Wasserstein Distributionally Robust Estimators</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2108-02120</link>
-    <guid isPermaLink="false">arxiv:2108.02120</guid>
-    <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose Blanchet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider statistical methods which invoke a min-max distributionally robust formulation to extract good out-of-sample performance in data-driven optimization and learning problems. Acknowledging the distributional uncertainty in learning from limited samples, the min-max formulations introduce an adversarial inner player to explore unseen covariate data. The resulting Distributionally Robust Optimization (DRO) formulations, which include Wasserstein DRO formulations (our main focus), are specified using optimal transportation phenomena. Upon describing how these infinite-dimensional min-max problems can be approached via a finite-dimensional dual reformulation, the tutorial moves into its main component, namely, explaining a generic recipe for optimally selecting the size of the adversary&rsquo;s budget. This is achieved by studying the limit behavior of an optimal transport projection formulation arising from an inquiry on the smallest confidence region that includes the unknown population risk minimizer. Incidentally, this systematic prescription coincides with those in specific examples in high-dimensional statistics and results in error bounds that are free from the curse of dimensions. Equipped with this prescription, we present a central limit theorem for the DRO estimator and provide a recipe for constructing compatible confidence regions that are useful for uncertainty quantification. The rest of the tutorial is devoted to insights into the nature of the optimizers selected by the min-max formulations and additional applications of optimal transport projections.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Generative Learning via Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-10410</link>
-    <guid isPermaLink="false">arxiv:2106.10410</guid>
-    <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gefei Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We propose to learn a generative model via entropy interpolation with a Schrödinger Bridge. The generative learning task can be formulated as interpolating between a reference distribution and a target distribution based on the Kullback-Leibler divergence. At the population level, this entropy interpolation is characterized via an SDE on [0,1] with a time-varying drift term. At the sample level, we derive our Schrödinger Bridge algorithm by plugging the drift term estimated by a deep score estimator and a deep density ratio estimator into the Euler-Maruyama method. Under some mild smoothness assumptions of the target distribution, we prove the consistency of both the score estimator and the density ratio estimator, and then establish the consistency of the proposed Schrödinger Bridge approach. Our theoretical results guarantee that the distribution learned by our approach converges to the target distribution. Experimental results on multimodal synthetic data and benchmark data support our theoretical findings and indicate that the generative model via Schrödinger Bridge is comparable with state-of-the-art GANs, suggesting a new formulation of generative learning. We demonstrate its usefulness in image interpolation and image inpainting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Invariant Representation Learning for Treatment Effect Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2011-12379</link>
-    <guid isPermaLink="false">arxiv:2011.12379</guid>
-    <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudia Shi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The defining challenge for causal inference from observational data is the presence of <code>confounders', covariates that affect both treatment assignment and the outcome. To address this challenge, practitioners collect and adjust for the covariates, hoping that they adequately correct for confounding. However, including every observed covariate in the adjustment runs the risk of including</code>bad controls&rsquo;, variables that induce bias when they are conditioned on. The problem is that we do not always know which variables in the covariate set are safe to adjust for and which are not. To address this problem, we develop Nearly Invariant Causal Estimation (NICE). NICE uses invariant risk minimization (IRM) [Arj19] to learn a representation of the covariates that, under some assumptions, strips out bad controls but preserves sufficient information to adjust for confounding. Adjusting for the learned representation, rather than the covariates themselves, avoids the induced bias and provides valid causal inferences. We evaluate NICE on both synthetic and semi-synthetic data. When the covariates contain unknown collider variables and other bad controls, NICE performs better than adjusting for all the covariates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Diffusion Earth Mover's Distance and Distribution Embeddings</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-12833</link>
-    <guid isPermaLink="false">arxiv:2102.12833</guid>
-    <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Tong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>We propose a new fast method of measuring distances between large numbers of related high dimensional datasets called the Diffusion Earth Mover&rsquo;s Distance (EMD). We model the datasets as distributions supported on common data graph that is derived from the affinity matrix computed on the combined data. In such cases where the graph is a discretization of an underlying Riemannian closed manifold, we prove that Diffusion EMD is topologically equivalent to the standard EMD with a geodesic ground distance. Diffusion EMD can be computed in Õ(n) time and is more accurate than similarly fast algorithms such as tree-based EMDs. We also show Diffusion EMD is fully differentiable, making it amenable to future uses in gradient-descent frameworks such as deep neural networks. Finally, we demonstrate an application of Diffusion EMD to single cell data collected from 210 COVID-19 patient samples at Yale New Haven Hospital. Here, Diffusion EMD can derive distances between patients on the manifold of cells at least two orders of magnitude faster than equally accurate methods. This distance matrix between patients can be embedded into a higher level patient manifold which uncovers structure and heterogeneity in patients. More generally, Diffusion EMD is applicable to all datasets that are massively collected in parallel in many medical and biological systems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein-Splitting Gaussian Process Regression for Heterogeneous Online Bayesian Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2107-12797</link>
-    <guid isPermaLink="false">arxiv:2107.12797</guid>
-    <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael E. Kepler et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gaussian processes (GPs) are a well-known nonparametric Bayesian inference technique, but they suffer from scalability problems for large sample sizes, and their performance can degrade for non-stationary or spatially heterogeneous data. In this work, we seek to overcome these issues through (i) employing variational free energy approximations of GPs operating in tandem with online expectation propagation steps; and (ii) introducing a local splitting step which instantiates a new GP whenever the posterior distribution changes significantly as quantified by the Wasserstein metric over posterior distributions. Over time, then, this yields an ensemble of sparse GPs which may be updated incrementally, and adapts to locality, heterogeneity, and non-stationarity in training data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Supervised Tree-Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2101-11520</link>
-    <guid isPermaLink="false">arxiv:2101.11520</guid>
-    <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuki Takezawa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>To measure the similarity of documents, the Wasserstein distance is a powerful tool, but it requires a high computational cost. Recently, for fast computation of the Wasserstein distance, methods for approximating the Wasserstein distance using a tree metric have been proposed. These tree-based methods allow fast comparisons of a large number of documents; however, they are unsupervised and do not learn task-specific distances. In this work, we propose the Supervised Tree-Wasserstein (STW) distance, a fast, supervised metric learning method based on the tree metric. Specifically, we rewrite the Wasserstein distance on the tree metric by the parent-child relationships of a tree and formulate it as a continuous optimization problem using a contrastive loss. Experimentally, we show that the STW distance can be computed fast, and improves the accuracy of document classification tasks. Furthermore, the STW distance is formulated by matrix multiplications, runs on a GPU, and is suitable for batch processing. Therefore, we show that the STW distance is extremely efficient when comparing a large number of documents.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Ps and Qs: Quantization-aware pruning for efficient low latency neural network inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-11289</link>
-    <guid isPermaLink="false">arxiv:2102.11289</guid>
-    <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Hawks et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Efficient machine learning implementations optimized for inference in hardware have wide-ranging benefits, depending on the application, from lower inference latency to higher data throughput and reduced energy consumption. Two popular techniques for reducing computation in neural networks are pruning, removing insignificant synapses, and quantization, reducing the precision of the calculations. In this work, we explore the interplay between pruning and quantization during the training of neural networks for ultra low latency applications targeting high energy physics use cases. Techniques developed for this study have potential applications across many other domains. We study various configurations of pruning during quantization-aware training, which we term quantization-aware pruning, and the effect of techniques like regularization, batch normalization, and different pruning schemes on performance, computational complexity, and information content metrics. We find that quantization-aware pruning yields more computationally efficient models than either pruning or quantization alone for our task. Further, quantization-aware pruning typically performs similar to or better in terms of computational efficiency compared to other neural architecture search techniques like Bayesian optimization. Surprisingly, while networks with different training configurations can have similar performance for the benchmark application, the information content in the network can vary significantly, affecting its generalizability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Optimal Transport Algorithm by Accelerated Gradient descent</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-05802</link>
-    <guid isPermaLink="false">arxiv:2104.05802</guid>
-    <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dongsheng An et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) plays an essential role in various areas like machine learning and deep learning. However, computing discrete optimal transport plan for large scale problems with adequate accuracy and efficiency is still highly challenging. Recently, methods based on the Sinkhorn algorithm add an entropy regularizer to the prime problem and get a trade off between efficiency and accuracy. In this paper, we propose a novel algorithm to further improve the efficiency and accuracy based on Nesterov&rsquo;s smoothing technique. Basically, the non-smooth c-transform of the Kantorovich potential is approximated by the smooth Log-Sum-Exp function, which finally smooths the original non-smooth Kantorovich dual functional (energy). The smooth Kantorovich functional can be optimized by the fast proximal gradient algorithm (FISTA) efficiently. Theoretically, the computational complexity of the proposed method is given by O(n⁵/2 √(logn) /ε), which is lower than that of the Sinkhorn algorithm. Empirically, compared with the Sinkhorn algorithm, our experimental results demonstrate that the proposed method achieves faster convergence and better accuracy with the same parameter.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Relaxed Wasserstein with Applications to GANs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a1705-07164</link>
-    <guid isPermaLink="false">arxiv:1705.07164</guid>
-    <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xin Guo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein Generative Adversarial Networks (WGANs) provide a versatile class of models, which have attracted great attention in various applications. However, this framework has two main drawbacks: (i) Wasserstein-1 (or Earth-Mover) distance is restrictive such that WGANs cannot always fit data geometry well; (ii) It is difficult to achieve fast training of WGANs. In this paper, we propose a new class of \textit{Relaxed Wasserstein} (RW) distances by generalizing Wasserstein-1 distance with Bregman cost functions. We show that RW distances achieve nice statistical properties while not sacrificing the computational tractability. Combined with the GANs framework, we develop Relaxed WGANs (RWGANs) which are not only statistically flexible but can be approximated efficiently using heuristic approaches. Experiments on real images demonstrate that the RWGAN with Kullback-Leibler (KL) cost function outperforms other competing approaches, e.g., WGANs, even with gradient penalty.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Projection Robust Optimal Transport: Sample Complexity and Model Misspecification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-12301</link>
-    <guid isPermaLink="false">arxiv:2006.12301</guid>
-    <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianyi Lin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) distances are increasingly used as loss functions for statistical inference, notably in the learning of generative models or supervised learning. Yet, the behavior of minimum Wasserstein estimators is poorly understood, notably in high-dimensional regimes or under model misspecification. In this work we adopt the viewpoint of projection robust (PR) OT, which seeks to maximize the OT cost between two measures by choosing a k-dimensional subspace onto which they can be projected. Our first contribution is to establish several fundamental statistical properties of PR Wasserstein distances, complementing and improving previous literature that has been restricted to one-dimensional and well-specified cases. Next, we propose the integral PR Wasserstein (IPRW) distance as an alternative to the PRW distance, by averaging rather than optimizing on subspaces. Our complexity bounds can help explain why both PRW and IPRW distances outperform Wasserstein distances empirically in high-dimensional inference tasks. Finally, we consider parametric inference using the PRW distance. We provide an asymptotic guarantee of two types of minimum PRW estimators and formulate a central limit theorem for max-sliced Wasserstein estimator under model misspecification. To enable our analysis on PRW with projection dimension larger than one, we devise a novel combination of variational analysis and statistical theory.</p>]]></description>
   </item>
 
 </channel>

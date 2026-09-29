@@ -7,7 +7,147 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Momentum Multi-Marginal Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-10168</link>
+    <guid isPermaLink="false">arxiv:2506.10168</guid>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Panagiotis Theodoropoulos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Understanding complex systems by inferring trajectories from sparse sample snapshots is a fundamental challenge in a wide range of domains, e.g., single-cell biology, meteorology, and economics. Despite advancements in Bridge and Flow matching frameworks, current methodologies rely on pairwise interpolation between adjacent snapshots. This hinders their ability to capture long-range temporal dependencies and potentially affects the coherence of the inferred trajectories. To address these issues, we introduce \textbf{Momentum Multi-Marginal Schrödinger Bridge Matching (3MSBM)}, a novel matching framework that learns smooth measure-valued splines for stochastic systems that satisfy multiple positional constraints. This is achieved by lifting the dynamics to phase space and generalizing stochastic bridges to be conditioned on several points, forming a multi-marginal conditional stochastic optimal control problem. The underlying dynamics are then learned by minimizing a variational objective, having fixed the path induced by the multi-marginal conditional bridge. As a matching approach, 3MSBM learns transport maps that preserve intermediate marginals throughout training, significantly improving convergence and scalability. Extensive experimentation in a series of real-world applications validates the superior performance of 3MSBM compared to existing methods in capturing complex dynamics with temporal dependencies, opening new avenues for training matching frameworks in multi-marginal settings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adjoint Schrödinger Bridge Sampler</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-22565</link>
+    <guid isPermaLink="false">arxiv:2506.22565</guid>
+    <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guan-Horng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Computational methods for learning to sample from the Boltzmann distribution &ndash; where the target distribution is known only up to an unnormalized energy function &ndash; have advanced significantly recently. Due to the lack of explicit target samples, however, prior diffusion-based methods, known as diffusion samplers, often require importance-weighted estimation or complicated learning processes. Both trade off scalability with extensive evaluations of the energy and model, thereby limiting their practical usage. In this work, we propose Adjoint Schrödinger Bridge Sampler (ASBS), a new diffusion sampler that employs simple and scalable matching-based objectives yet without the need to estimate target samples during training. ASBS is grounded on a mathematical model &ndash; the Schrödinger Bridge &ndash; which enhances sampling efficiency via kinetic-optimal transportation. Through a new lens of stochastic optimal control theory, we demonstrate how SB-based diffusion samplers can be learned at scale via Adjoint Matching and prove convergence to the global solution. Notably, ASBS generalizes the recent Adjoint Sampling (Havens et al., 2025) to arbitrary source distributions by relaxing the so-called memoryless condition that largely restricts the design space. Through extensive experiments, we demonstrate the effectiveness of ASBS on sampling from classical energy functions, amortized conformer generation, and molecular Boltzmann distributions. Code available at https://github.com/facebookresearch/adjoint_samplers</p>]]></description>
+  </item>
+
+  <item>
+    <title>Merging without Forgetting: Continual Fusion of Task-Specific Models via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-19561</link>
+    <guid isPermaLink="false">arxiv:2511.19561</guid>
+    <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zecheng Pan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Merging models fine-tuned for different tasks into a single unified model has become an increasingly important direction for building versatile, efficient multi-task systems. Existing approaches predominantly rely on parameter interpolation in weight space, which we show introduces significant distribution shift in the feature space and undermines task-specific knowledge. In this paper, we propose OTMF (Optimal Transport-based Masked Fusion), a novel model merging framework rooted in optimal transport theory to address the distribution shift that arises from naive parameter interpolation. Instead of directly aggregating features or weights, OTMF aligns the semantic geometry of task-specific models by discovering common masks applied to task vectors through optimal transport plans. These masks selectively extract transferable and task-agnostic components while preserving the unique structural identities of each task. To ensure scalability in real-world settings, OTMF further supports a continual fusion paradigm that incrementally integrates each new task vector without revisiting previous ones, maintaining a bounded memory footprint and enabling efficient fusion across a growing number of tasks. We conduct comprehensive experiments on multiple vision and language benchmarks, and results show that OTMF achieves state-of-the-art performance in terms of both accuracy and efficiency. These findings highlight the practical and theoretical value of our approach to model merging.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Efficient Dynamic and Momentum Aperture Optimization for Lattice Design Using Multipoint Bayesian Algorithm Execution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-17850</link>
+    <guid isPermaLink="false">arxiv:2511.17850</guid>
+    <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Z. Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
+<p>We demonstrate that multipoint Bayesian algorithm execution can overcome fundamental computational challenges in storage ring design optimization. Dynamic (DA) and momentum (MA) optimization is a multipoint, multiobjective design task for storage rings, ultimately informing the flux of x-ray sources and luminosity of colliders. Current state-of-art black-box optimization methods require extensive particle-tracking simulations for each trial configuration; the high computational cost restricts the extent of the search to ∼10³ configurations, and therefore limits the quality of the final design. We remove this bottleneck using multipointBAX, which selects, simulates, and models each trial configuration at the single particle level. We demonstrate our approach on a novel design for a fourth-generation light source, with neural-network powered multipointBAX achieving equivalent Pareto front results using more than two orders of magnitude fewer tracking computations compared to genetic algorithms. The significant reduction in cost positions multipointBAX as a promising alternative to black-box optimization, and we anticipate multipointBAX will be instrumental in the design of future light sources, colliders, and large-scale scientific facilities.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Minimax Statistical Estimation under Wasserstein Contamination</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2308-01853</link>
+    <guid isPermaLink="false">arxiv:2308.01853</guid>
+    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patrick Chao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Contaminations are a key concern in modern statistical learning, as small but systematic perturbations of all datapoints can substantially alter estimation results. Here, we study Wasserstein-r contaminations (r≥1) in an ℓ_q norm (q∈[1,∞]), in which each observation may undergo an adversarial perturbation with bounded cost, complementing the classical Huber model, corresponding to total variation norm, where only a fraction of observations is arbitrarily corrupted. We study both independent and joint (coordinated) contaminations and develop a minimax theory under ℓ_q^r losses. Our analysis encompasses several fundamental problems: location estimation, linear regression, and pointwise nonparametric density estimation. For joint contaminations in location estimation and for prediction in linear regression, we obtain the exact minimax risk, identify least favorable contaminations, and show that the sample mean and least squares predictor are respectively minimax optimal. For location estimation under independent contaminations, we give sharp upper and lower bounds, including exact minimaxity in the Euclidean Wasserstein contamination case, when q=r=2. For pointwise density estimation in any dimension, we derive the optimal rate, showing that it is achieved by kernel density estimation with a bandwidth that is possibly larger than the classical one. Our proofs leverage powerful tools from optimal transport developed over the last 20 years, including the dynamic Benamou-Brenier formulation. Taken together, our results suggest that in contrast to the Huber contamination model, for norm-based Wasserstein contaminations, classical estimators may be nearly optimally robust.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Differentiable Alignment Framework for Sequence-to-Sequence Modeling via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-01588</link>
+    <guid isPermaLink="false">arxiv:2502.01588</guid>
+    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yacouba Kaloga et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Accurate sequence-to-sequence (seq2seq) alignment is critical for applications like medical speech analysis and language learning tools relying on automatic speech recognition (ASR). State-of-the-art end-to-end (E2E) ASR systems, such as the Connectionist Temporal Classification (CTC) and transducer-based models, suffer from peaky behavior and alignment inaccuracies. In this paper, we propose a novel differentiable alignment framework based on one-dimensional optimal transport, enabling the model to learn a single alignment and perform ASR in an E2E manner. We introduce a pseudo-metric, called Sequence Optimal Transport Distance (SOTD), over the sequence space and discuss its theoretical properties. Based on the SOTD, we propose Optimal Temporal Transport Classification (OTTC) loss for ASR and contrast its behavior with CTC. Experimental results on the TIMIT, AMI, and LibriSpeech datasets show that our method considerably improves alignment performance compared to CTC and the more recently proposed Consistency-Regularized CTC, though with a trade-off in ASR performance. We believe this work opens new avenues for seq2seq alignment research, providing a solid foundation for further exploration and development within the community. Our code is publicly available at: https://github.com/idiap/OTTC</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multimodal Generative Flows for LHC Jets</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-01736</link>
+    <guid isPermaLink="false">arxiv:2509.01736</guid>
+    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Darius A. Faroughy et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Generative modeling of high-energy collisions at the Large Hadron Collider (LHC) offers a data-driven route to simulations, anomaly detection, among other applications. A central challenge lies in the hybrid nature of particle-cloud data: each particle carries continuous kinematic features and discrete quantum numbers such as charge and flavor. We introduce a transformer-based multimodal flow that extends flow-matching with a continuous-time Markov jump bridge to jointly model LHC jets with both modalities. Trained on CMS Open Data, our model can generate high fidelity jets with realistic kinematics, jet substructure and flavor composition.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A First Full Physics Benchmark for Highly Granular Calorimeter Surrogates</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-17293</link>
+    <guid isPermaLink="false">arxiv:2511.17293</guid>
+    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>The physics programs of current and future collider experiments necessitate the development of surrogate simulators for calorimeter showers. While much progress has been made in the development of generative models for this task, they have typically been evaluated in simplified scenarios and for single particles. This is particularly true for the challenging task of highly granular calorimeter simulation. For the first time, this work studies the use of highly granular generative calorimeter surrogates in a realistic simulation application. We introduce DDML, a generic library which enables the combination of generative calorimeter surrogates with realistic detectors implemented using the DD4hep toolkit. We compare two different generative models - one operating on a regular grid representation, and the other using a less common point cloud approach. In order to disentangle methodological details from model performance, we provide comparisons to idealized simulators which directly sample representations of different resolutions from the full simulation ground-truth. We then systematically evaluate model performance on post-reconstruction benchmarks for electromagnetic shower simulation. Beginning with a typical single particle study, we introduce a first multi-particle benchmark based on di-photon separations, before studying a first full-physics benchmark based on hadronic decays of the tau lepton. Our results indicate that models operating on a point cloud can achieve a favorable balance between speed and accuracy for highly granular calorimeter simulation compared to those which operate on a regular grid representation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Modelling Global Trade with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2409-06554</link>
+    <guid isPermaLink="false">arxiv:2409.06554</guid>
+    <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Gaskin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Global trade is shaped by a complex mix of factors beyond supply and demand, including tangible variables like transport costs and tariffs, as well as less quantifiable influences such as political and economic relations. Traditionally, economists model trade using gravity models, which rely on explicit covariates that might struggle to capture these subtler drivers of trade. In this work, we employ optimal transport and a deep neural network to learn a time-dependent cost function from data, without imposing a specific functional form. This approach consistently outperforms traditional gravity models in accuracy and has similar performance to three-way gravity models, while providing natural uncertainty quantification. Applying our framework to global food and agricultural trade, we show that the Global South suffered disproportionately from the war in Ukraine&rsquo;s impact on wheat markets. We also analyse the effects of free-trade agreements and trade disputes with China, as well as Brexit&rsquo;s impact on British trade with Europe, uncovering hidden patterns that trade volumes alone cannot reveal.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond Uncertainty Sets: Leveraging Optimal Transport to Extend Conformal Predictive Distribution to Multivariate Settings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-15146</link>
+    <guid isPermaLink="false">arxiv:2511.15146</guid>
+    <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eugene Ndiaye</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Conformal prediction (CP) constructs uncertainty sets for model outputs with finite-sample coverage guarantees. A candidate output is included in the prediction set if its non-conformity score is not considered extreme relative to the scores observed on a set of calibration examples. However, this procedure is only straightforward when scores are scalar-valued, which has limited CP to real-valued scores or ad-hoc reductions to one dimension. The problem of ordering vectors has been studied via optimal transport (OT), which provides a principled method for defining vector-ranks and multivariate quantile regions, though typically with only asymptotic coverage guarantees. We restore finite-sample, distribution-free coverage by conformalizing the vector-valued OT quantile region. Here, a candidate&rsquo;s rank is defined via a transport map computed for the calibration scores augmented with that candidate&rsquo;s score. This defines a continuum of OT problems for which we prove that the resulting optimal assignment is piecewise-constant across a fixed polyhedral partition of the score space. This allows us to characterize the entire prediction set tractably, and provides the machinery to address a deeper limitation of prediction sets: that they only indicate which outcomes are plausible, but not their relative likelihood. In one dimension, conformal predictive distributions (CPDs) fill this gap by producing a predictive distribution with finite-sample calibration. Extending CPDs beyond one dimension remained an open problem. We construct, to our knowledge, the first multivariate CPDs with finite-sample calibration, i.e., they define a valid multivariate distribution where any derived uncertainty region automatically has guaranteed coverage. We present both conservative and exact randomized versions, the latter resulting in a multivariate generalization of the classical Dempster-Hill procedure.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SURFing to the Fundamental Limit of Jet Tagging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-15779</link>
+    <guid isPermaLink="false">arxiv:2511.15779</guid>
+    <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ian Pang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, jet taggers, David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Beyond the practical goal of improving search and measurement sensitivity through better jet tagging algorithms, there is a deeper question: what are their upper performance limits? Generative surrogate models with learned likelihood functions offer a new approach to this problem, provided the surrogate correctly captures the underlying data distribution. In this work, we introduce the SUrrogate ReFerence (SURF) method, a new approach to validating generative models. This framework enables exact Neyman-Pearson tests by training the target model on samples from another tractable surrogate, which is itself trained on real data. We argue that the EPiC-FM generative model is a valid surrogate reference for JetClass jets and apply SURF to show that modern jet taggers may already be operating close to the true statistical limit. By contrast, we find that autoregressive GPT models unphysically exaggerate top vs. QCD separation power encoded in the surrogate reference, implying that they are giving a misleading picture of the fundamental limit.</p>]]></description>
+  </item>
+
+  <item>
+    <title>discretize_distributions: Efficient Quantization of Gaussian Mixtures with Guarantees in Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-15854</link>
+    <guid isPermaLink="false">arxiv:2511.15854</guid>
+    <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steven Adams et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present discretize_distributions, a Python package that efficiently constructs discrete approximations of Gaussian mixture distributions and provides guarantees on the approximation error in Wasserstein distance. The package implements state-of-the-art quantization methods for Gaussian mixture models and extends them to improve scalability. It further integrates complementary quantization strategies such as sigma-point methods and provides a modular interface that supports custom schemes and integration into control and verification pipelines for cyber-physical systems. We benchmark the package on various examples, including high-dimensional, large, and degenerate Gaussian mixtures, and demonstrate that discretize_distributions produces accurate approximations at low computational cost.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistically controllable microstructure reconstruction framework for heterogeneous materials using sliced-Wasserstein metric and neural networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-14268</link>
+    <guid isPermaLink="false">arxiv:2511.14268</guid>
+    <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhenchuan Ma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Heterogeneous porous materials play a crucial role in various engineering systems. Microstructure characterization and reconstruction provide effective means for modeling these materials, which are critical for conducting physical property simulations, structure-property linkage studies, and enhancing their performance across different applications. To achieve superior controllability and applicability with small sample sizes, we propose a statistically controllable microstructure reconstruction framework that integrates neural networks with sliced-Wasserstein metric. Specifically, our approach leverages local pattern distribution for microstructure characterization and employs a controlled sampling strategy to generate target distributions that satisfy given conditional parameters. A neural network-based model establishes the mapping from the input distribution to the target local pattern distribution, enabling microstructure reconstruction. Combinations of sliced-Wasserstein metric and gradient optimization techniques minimize the distance between these distributions, leading to a stable and reliable model. Our method can perform stochastic and controllable reconstruction tasks even with small sample sizes. Additionally, it can generate large-size (e.g. 512 and 1024) 3D microstructures using a chunking strategy. By introducing spatial location masks, our method excels at generating spatially heterogeneous and complex microstructures. We conducted experiments on stochastic reconstruction, controllable reconstruction, heterogeneous reconstruction, and large-size microstructure reconstruction across various materials. Comparative analysis through visualization, statistical measures, and physical property simulations demonstrates the effectiveness, providing new insights and possibilities for research on structure-property linkage and material inverse design.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Deep Joint Distribution Optimal Transport for Universal Domain Adaptation on Time Series</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-11217</link>
+    <guid isPermaLink="false">arxiv:2503.11217</guid>
+    <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Romain Mussard et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Universal Domain Adaptation (UniDA) aims to transfer knowledge from a labeled source domain to an unlabeled target domain, even when their classes are not fully shared. Few dedicated UniDA methods exist for Time Series (TS), which remains a challenging case. In general, UniDA approaches align common class samples and detect unknown target samples from emerging classes. Such detection often results from thresholding a discriminability metric. The threshold value is typically either a fine-tuned hyperparameter or a fixed value, which limits the ability of the model to adapt to new data. Furthermore, discriminability metrics exhibit overconfidence for unknown samples, leading to misclassifications. This paper introduces UniJDOT, an optimal-transport-based method that accounts for the unknown target samples in the transport cost. Our method also proposes a joint decision space to improve the discriminability of the detection module. In addition, we use an auto-thresholding algorithm to reduce the dependence on fixed or fine-tuned thresholds. Finally, we rely on a Fourier transform-based layer inspired by the Fourier Neural Operator for better TS representation. Experiments on TS benchmarks demonstrate the discriminability, robustness, and state-of-the-art performance of UniJDOT.</p>]]></description>
+  </item>
 
   <item>
     <title>On the Information Processing of One-Dimensional Wasserstein Distances with Finite Samples</title>
@@ -1867,146 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (particle-flow, collider, colliders, Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>We demonstrate transfer learning capabilities in a machine-learned algorithm trained for particle-flow reconstruction in high energy particle colliders. This paper presents a cross-detector fine-tuning study, where we initially pretrain the model on a large full simulation dataset from one detector design, and subsequently fine-tune the model on a sample with a different collider and detector design. Specifically, we use the Compact Linear Collider detector (CLICdet) model for the initial training set and demonstrate successful knowledge transfer to the CLIC-like detector (CLD) proposed for the Future Circular Collider in electron-positron mode. We show that with an order of magnitude less samples from the second dataset, we can achieve the same performance as a costly training from scratch, across particle-level and event-level performance metrics, including jet and missing transverse momentum resolution. Furthermore, we find that the fine-tuned model achieves comparable performance to the traditional rule-based particle-flow approach on event-level metrics after training on 100,000 CLD events, whereas a model trained from scratch requires at least 1 million CLD events to achieve similar reconstruction performance. To our knowledge, this represents the first full-simulation cross-detector transfer learning study for particle-flow reconstruction. These findings offer valuable insights towards building large foundation models that can be fine-tuned across different detector designs and geometries, helping to accelerate the development cycle for new detectors and opening the door to rapid detector design and optimization using machine learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unscrambling disease progression at scale: fast inference of event permutations with optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-14388</link>
-    <guid isPermaLink="false">arxiv:2410.14388</guid>
-    <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter A. Wijeratne et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Disease progression models infer group-level temporal trajectories of change in patients&rsquo; features as a chronic degenerative condition plays out. They provide unique insight into disease biology and staging systems with individual-level clinical utility. Discrete models consider disease progression as a latent permutation of events, where each event corresponds to a feature becoming measurably abnormal. However, permutation inference using traditional maximum likelihood approaches becomes prohibitive due to combinatoric explosion, severely limiting model dimensionality and utility. Here we leverage ideas from optimal transport to model disease progression as a latent permutation matrix of events belonging to the Birkhoff polytope, facilitating fast inference via optimisation of the variational lower bound. This enables a factor of 1000 times faster inference than the current state of the art and, correspondingly, supports models with several orders of magnitude more features than the current state of the art can consider. Experiments demonstrate the increase in speed, accuracy and robustness to noise in simulation. Further experiments with real-world imaging data from two separate datasets, one from Alzheimer&rsquo;s disease patients, the other age-related macular degeneration, showcase, for the first time, pixel-level disease progression events in the brain and eye, respectively. Our method is low compute, interpretable and applicable to any progressive condition and data modality, giving it broad potential clinical utility.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DRO-Augment Framework: Robustness by Synergizing Wasserstein Distributionally Robust Optimization and Data Augmentation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-17874</link>
-    <guid isPermaLink="false">arxiv:2506.17874</guid>
-    <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaming Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In many real-world applications, ensuring the robustness and stability of deep neural networks (DNNs) is crucial, particularly for image classification tasks that encounter various input perturbations. While data augmentation techniques have been widely adopted to enhance the resilience of a trained model against such perturbations, there remains significant room for improvement in robustness against corrupted data and adversarial attacks simultaneously. To address this challenge, we introduce DRO-Augment, a novel framework that integrates Wasserstein Distributionally Robust Optimization (W-DRO) with various data augmentation strategies to improve the robustness of the models significantly across a broad spectrum of corruptions. Our method outperforms existing augmentation methods under severe data perturbations and adversarial attack scenarios while maintaining the accuracy on the clean datasets on a range of benchmark datasets, including but not limited to CIFAR-10-C, CIFAR-100-C, MNIST, and Fashion-MNIST. On the theoretical side, we establish novel generalization error bounds for neural networks trained using a computationally efficient, variation-regularized loss function closely related to the W-DRO problem.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Statistical Inference for Optimal Transport Maps: Recent Advances and Perspectives</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-19025</link>
-    <guid isPermaLink="false">arxiv:2506.19025</guid>
-    <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sivaraman Balakrishnan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In many applications of optimal transport (OT), the object of primary interest is the optimal transport map. This map rearranges mass from one probability distribution to another in the most efficient way possible by minimizing a specified cost. In this paper we review recent advances in estimating and developing limit theorems for the OT map, using samples from the underlying distributions. We also review parallel lines of work that establish similar results for special cases and variants of the basic OT setup. We conclude with a discussion of key directions for future research with the goal of providing practitioners with reliable inferential tools.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Bayesian Non-parametric Approach to Generative Models: Integrating Variational Autoencoder and Generative Adversarial Networks using Wasserstein and Maximum Mean Discrepancy</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2308-14048</link>
-    <guid isPermaLink="false">arxiv:2308.14048</guid>
-    <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Forough Fazeli-Asl et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a novel generative model within the Bayesian non-parametric learning (BNPL) framework to address some notable failure modes in generative adversarial networks (GANs) and variational autoencoders (VAEs)&ndash;these being overfitting in the GAN case and noisy samples in the VAE case. We will demonstrate that the BNPL framework enhances training stability and provides robustness and accuracy guarantees when incorporating the Wasserstein distance and maximum mean discrepancy measure (WMMD) into our model&rsquo;s loss function. Moreover, we introduce a so-called ``triple model&rsquo;&rsquo; that combines the GAN, the VAE, and further incorporates a code-GAN (CGAN) to explore the latent space of the VAE. This triple model design generates high-quality, diverse samples, while the BNPL framework, leveraging the WMMD loss function, enhances training stability. Together, these components enable our model to achieve superior performance across various generative tasks. These claims are supported by both theoretical analyses and empirical validation on a wide variety of datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal Reasoning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-16141</link>
-    <guid isPermaLink="false">arxiv:2506.16141</guid>
-    <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Recent reinforcement learning approaches, such as outcome-supervised GRPO, have advanced Chain-of-Thought reasoning in large language models (LLMs), yet their adaptation to multimodal LLMs (MLLMs) is unexplored. To address the lack of rigorous evaluation for MLLM post-training methods, we introduce SEED-Bench-R1, a benchmark with complex real-world videos requiring balanced perception and reasoning. It offers a large training set and evaluates generalization across three escalating challenges: in-distribution, cross-environment, and cross-environment-task scenarios. Using SEED-Bench-R1, we find that standard GRPO, while improving answer accuracy, often reduces logical coherence between reasoning steps and answers, with only a 57.9% consistency rate. This stems from reward signals focusing solely on final answers, encouraging shortcuts, and strict KL penalties limiting exploration.To address this, we propose GRPO-CARE, a consistency-aware RL framework optimizing both answer correctness and reasoning coherence without explicit supervision. GRPO-CARE introduces a two-tiered reward: (1) a base reward for answer correctness, and (2) an adaptive consistency bonus, computed by comparing the model&rsquo;s reasoning-to-answer likelihood (via a slowly-evolving reference model) against group peers.This dual mechanism amplifies rewards for reasoning paths that are both correct and logically consistent. Replacing KL penalties with this adaptive bonus, GRPO-CARE outperforms standard GRPO on SEED-Bench-R1, achieving a 6.7% performance gain on the hardest evaluation level and a 24.5% improvement in consistency. It also shows strong transferability, improving model performance across diverse video understanding benchmarks. Our work contributes a systematically designed benchmark and a generalizable post-training framework, advancing the development of more interpretable and robust MLLMs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sublinear Algorithms for Wasserstein and Total Variation Distances: Applications to Fairness and Privacy Auditing</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-07775</link>
-    <guid isPermaLink="false">arxiv:2503.07775</guid>
-    <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Debabrota Basu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Resource-efficiently computing representations of probability distributions and the distances between them while only having access to the samples is a fundamental and useful problem across mathematical sciences. In this paper, we propose a generic framework to learn the probability and cumulative distribution functions (PDFs and CDFs) of a sub-Weibull, i.e. almost any light- or heavy-tailed, distribution while the samples from it arrive in a stream. The idea is to reduce these problems into estimating the frequency of an \textit{appropriately chosen subset} of the support of a \textit{properly discretised distribution}. We leverage this reduction to compute mergeable summaries of distributions from the stream of samples while requiring only sublinear space relative to the number of observed samples. This allows us to estimate Wasserstein and Total Variation (TV) distances between any two distributions while samples arrive in streams and from multiple sources. Our algorithms significantly improves on the existing methods for distance estimation incurring super-linear time and linear space complexities, and further extend the mergeable summaries framework to continuous distributions with possibly infinite support. Our results are tight with respect to the existing lower bounds for bounded discrete distributions. In addition, we leverage our proposed estimators of Wasserstein and TV distances to tightly audit the fairness and privacy of algorithms. We empirically demonstrate the efficiency of proposed algorithms across synthetic and real-world datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Heterogeneous Federated Reinforcement Learning Using Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-15825</link>
-    <guid isPermaLink="false">arxiv:2506.15825</guid>
-    <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luiz Pereira et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this paper, we first propose a novel algorithm for model fusion that leverages Wasserstein barycenters in training a global Deep Neural Network (DNN) in a distributed architecture. To this end, we divide the dataset into equal parts that are fed to &ldquo;agents&rdquo; who have identical deep neural networks and train only over the dataset fed to them (known as the local dataset). After some training iterations, we perform an aggregation step where we combine the weight parameters of all neural networks using Wasserstein barycenters. These steps form the proposed algorithm referred to as FedWB. Moreover, we leverage the processes created in the first part of the paper to develop an algorithm to tackle Heterogeneous Federated Reinforcement Learning (HFRL). Our test experiment is the CartPole toy problem, where we vary the lengths of the poles to create heterogeneous environments. We train a deep Q-Network (DQN) in each environment to learn to control each cart, while occasionally performing a global aggregation step to generalize the local models; the end outcome is a global DQN that functions across all environments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport for Probabilistic Circuits</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-13061</link>
-    <guid isPermaLink="false">arxiv:2410.13061</guid>
-    <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adrian Ciotinga et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We introduce a novel optimal transport framework for probabilistic circuits (PCs). While it has been shown recently that divergences between distributions represented as certain classes of PCs can be computed tractably, to the best of our knowledge, there is no existing approach to compute the Wasserstein distance between probability distributions given by PCs. We propose a Wasserstein-type distance that restricts the coupling measure of the associated optimal transport problem to be a probabilistic circuit. We then develop an algorithm for computing this distance by solving a series of small linear programs and derive the circuit conditions under which this is tractable. Furthermore, we show that we can easily retrieve the optimal transport plan between the PCs from the solutions to these linear programs. Lastly, we study the empirical Wasserstein distance between a PC and a dataset, and show that we can estimate the PC parameters to minimize this distance through an efficient iterative algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Signal Use and Emergent Cooperation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-18920</link>
-    <guid isPermaLink="false">arxiv:2506.18920</guid>
-    <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Williams</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mike Williams) — original abstract; no AI summary.</em></p>
-<p>In this work, we investigate how autonomous agents, organized into tribes, learn to use communication signals to coordinate their activities and enhance their collective efficiency. Using the NEC-DAC (Neurally Encoded Culture - Distributed Autonomous Communicators) system, where each agent is equipped with its own neural network for decision-making, we demonstrate how these agents develop a shared behavioral system &ndash; akin to a culture &ndash; through learning and signalling. Our research focuses on the self-organization of culture within these tribes of agents and how varying communication strategies impact their fitness and cooperation. By analyzing different social structures, such as authority hierarchies, we show that the culture of cooperation significantly influences the tribe&rsquo;s performance. Furthermore, we explore how signals not only facilitate the emergence of culture but also enable its transmission across generations of agents. Additionally, we examine the benefits of coordinating behavior and signaling within individual agents&rsquo; neural networks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Failure Modes of LLMs for Causal Reasoning on Narratives</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-23884</link>
-    <guid isPermaLink="false">arxiv:2410.23884</guid>
-    <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khurram Yamin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>The ability to robustly identify causal relationships is essential for autonomous decision-making and adaptation to novel scenarios. However, accurately inferring causal structure requires integrating both world knowledge and abstract logical reasoning. In this work, we investigate the interaction between these two capabilities through the representative task of causal reasoning over narratives. Through controlled synthetic, semi-synthetic, and real-world experiments, we find that state-of-the-art large language models (LLMs) often rely on superficial heuristics &ndash; for example, inferring causality from event order or recalling memorized world knowledge without attending to context. Furthermore, we show that simple reformulations of the task can elicit more robust reasoning behavior. Our evaluation spans a range of causal structures, from linear chains to complex graphs involving colliders and forks. These findings uncover systematic patterns in how LLMs perform causal reasoning and lay the groundwork for developing methods that better align LLM behavior with principled causal inference.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport-Guided Safety in Temporal Difference Reinforcement Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-16328</link>
-    <guid isPermaLink="false">arxiv:2502.16328</guid>
-    <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zahra Shahrooei et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The primary goal of reinforcement learning is to develop decision-making policies that prioritize optimal performance, frequently without considering safety. In contrast, safe reinforcement learning seeks to reduce or avoid unsafe behavior. This paper views safety as taking actions with more predictable consequences under environment stochasticity and introduces a temporal difference algorithm that uses optimal transport theory to quantify the uncertainty associated with actions. By integrating this uncertainty score into the decision-making objective, the agent is encouraged to favor actions with more predictable outcomes. We theoretically prove that our algorithm leads to a reduction in the probability of visiting unsafe states. We evaluate the proposed algorithm on several case studies in the presence of various forms of environment uncertainty. The results demonstrate that our method not only provides safer behavior but also maintains the performance. A Python implementation of our algorithm is available at \href{https://github.com/SAILRIT/Risk-averse-TD-Learning}{https://github.com/SAILRIT/OT-guided-TD-Learning}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PROTOCOL: Partial Optimal Transport-enhanced Contrastive Learning for Imbalanced Multi-view Clustering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2506-12408</link>
-    <guid isPermaLink="false">arxiv:2506.12408</guid>
-    <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuqian Xue et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>While contrastive multi-view clustering has achieved remarkable success, it implicitly assumes balanced class distribution. However, real-world multi-view data primarily exhibits class imbalance distribution. Consequently, existing methods suffer performance degradation due to their inability to perceive and model such imbalance. To address this challenge, we present the first systematic study of imbalanced multi-view clustering, focusing on two fundamental problems: i. perceiving class imbalance distribution, and ii. mitigating representation degradation of minority samples. We propose PROTOCOL, a novel PaRtial Optimal TranspOrt-enhanced COntrastive Learning framework for imbalanced multi-view clustering. First, for class imbalance perception, we map multi-view features into a consensus space and reformulate the imbalanced clustering as a partial optimal transport (POT) problem, augmented with progressive mass constraints and weighted KL divergence for class distributions. Second, we develop a POT-enhanced class-rebalanced contrastive learning at both feature and class levels, incorporating logit adjustment and class-sensitive learning to enhance minority sample representations. Extensive experiments demonstrate that PROTOCOL significantly improves clustering performance on imbalanced multi-view data, filling a critical research gap in this field.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Universal Neural Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2212-00133</link>
-    <guid isPermaLink="false">arxiv:2212.00133</guid>
-    <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathan Geuter et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal Transport (OT) problems are a cornerstone of many applications, but solving them is computationally expensive. To address this problem, we propose UNOT (Universal Neural Optimal Transport), a novel framework capable of accurately predicting (entropic) OT distances and plans between discrete measures for a given cost function. UNOT builds on Fourier Neural Operators, a universal class of neural networks that map between function spaces and that are discretization-invariant, which enables our network to process measures of variable resolutions. The network is trained adversarially using a second, generating network and a self-supervised bootstrapping loss. We ground UNOT in an extensive theoretical framework. Through experiments on Euclidean and non-Euclidean domains, we show that our network not only accurately predicts OT distances and plans across a wide range of datasets, but also captures the geometry of the Wasserstein space correctly. Furthermore, we show that our network can be used as a state-of-the-art initialization for the Sinkhorn algorithm with speedups of up to 7.4×, significantly outperforming existing approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Zero-Shot Offline Imitation Learning via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-08751</link>
-    <guid isPermaLink="false">arxiv:2410.08751</guid>
-    <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Rupf et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Zero-shot imitation learning algorithms hold the promise of reproducing unseen behavior from as little as a single demonstration at test time. Existing practical approaches view the expert demonstration as a sequence of goals, enabling imitation with a high-level goal selector, and a low-level goal-conditioned policy. However, this framework can suffer from myopic behavior: the agent&rsquo;s immediate actions towards achieving individual goals may undermine long-term objectives. We introduce a novel method that mitigates this issue by directly optimizing the occupancy matching objective that is intrinsic to imitation learning. We propose to lift a goal-conditioned value function to a distance between occupancies, which are in turn approximated via a learned world model. The resulting method can learn from offline, suboptimal data, and is capable of non-myopic, zero-shot imitation, as we demonstrate in complex, continuous benchmarks. The code is available at https://github.com/martius-lab/zilot.</p>]]></description>
   </item>
 
 </channel>

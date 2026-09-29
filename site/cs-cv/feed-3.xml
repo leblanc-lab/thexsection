@@ -7,7 +7,47 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2307-02460</link>
+    <guid isPermaLink="false">arxiv:2307.02460</guid>
+    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Feiyang Kang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling laws that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called <projektor>, which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel <em>two-stage</em> performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model&rsquo;s performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications demonstrates that <projektor> significantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also, <projektor> outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine Learning methods for simulating particle response in the Zero Degree Calorimeter at the ALICE experiment, CERN</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2306-13606</link>
+    <guid isPermaLink="false">arxiv:2306.13606</guid>
+    <pubDate>Fri, 23 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Dubiński et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Currently, over half of the computing power at CERN GRID is used to run High Energy Physics simulations. The recent updates at the Large Hadron Collider (LHC) create the need for developing more efficient simulation methods. In particular, there exists a demand for a fast simulation of the neutron Zero Degree Calorimeter, where existing Monte Carlo-based methods impose a significant computational burden. We propose an alternative approach to the problem that leverages machine learning. Our solution utilises neural network classifiers and generative models to directly simulate the response of the calorimeter. In particular, we examine the performance of variational autoencoders and generative adversarial networks, expanding the GAN architecture by an additional regularisation network and a simple, yet effective postprocessing step. Our approach increases the simulation speed by 2 orders of magnitude while maintaining the high fidelity of the simulation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Selectively increasing the diversity of GAN-generated samples</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2207-01561</link>
+    <guid isPermaLink="false">arxiv:2207.01561</guid>
+    <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Dubiński et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Generative Adversarial Networks (GANs) are powerful models able to synthesize data samples closely resembling the distribution of real data, yet the diversity of those generated samples is limited due to the so-called mode collapse phenomenon observed in GANs. Especially prone to mode collapse are conditional GANs, which tend to ignore the input noise vector and focus on the conditional information. Recent methods proposed to mitigate this limitation increase the diversity of generated samples, yet they reduce the performance of the models when similarity of samples is required. To address this shortcoming, we propose a novel method to selectively increase the diversity of GAN-generated samples. By adding a simple, yet effective regularization to the training loss function we encourage the generator to discover new data modes for inputs related to diverse outputs while generating consistent samples for the remaining ones. More precisely, we maximise the ratio of distances between generated images and input latent vectors scaling the effect according to the diversity of samples for a given conditional input. We show the superiority of our method in a synthetic benchmark as well as a real-life scenario of simulating data from the Zero Degree Calorimeter of ALICE experiment in LHC, CERN.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A FPGA-based architecture for real-time cluster finding in the LHCb silicon pixel detector</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2302-03972</link>
+    <guid isPermaLink="false">arxiv:2302.03972</guid>
+    <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">G. Bassi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>This article describes a custom VHDL firmware implementation of a two-dimensional cluster-finder architecture for reconstructing hit positions in the new vertex pixel detector (VELO) that is part of the LHCb Upgrade. This firmware has been deployed to the existing FPGA cards that perform the readout of the VELO, as a further enhancement of the DAQ system, and will run in real time during physics data taking, reconstructing VELO hits coordinates on-the-fly at the LHC collision rate. This pre-processing allows the first level of the software trigger to accept a 11% higher rate of events, as the ready-made hits coordinates accelerate the track reconstruction and consumes significantly less electrical power. It additionally allows the raw pixel data to be dropped at the readout level, thus saving approximately 14% of the DAQ bandwidth. Detailed simulation studies have shown that the use of this real-time cluster finding does not introduce any appreciable degradation in the tracking performance in comparison to a full-fledged software implementation. This work is part of a wider effort aimed at boosting the real-time processing capability of HEP experiments by delegating intensive tasks to dedicated computing accelerators deployed at the earliest stages of the data acquisition chain.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein distributional robustness of neural networks</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erdem Varol et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Motion segmentation for natural images commonly relies on dense optic flow to yield point trajectories which can be grouped into clusters through various means including spectral clustering or minimum cost multicuts. However, in biological imaging scenarios, such as fluorescence microscopy or calcium imaging, where the signal to noise ratio is compromised and intensity fluctuations occur, optical flow may be difficult to approximate. To this end, we propose an alternative paradigm for motion segmentation based on optimal transport which models the video frames as time-varying mass represented as histograms. Thus, we cast motion segmentation as a temporal non-linear matrix factorization problem with Wasserstein metric loss. The dictionary elements of this factorization yield segmentation of motion into coherent objects while the loading coefficients allow for time-varying intensity signal of the moving objects to be captured. We demonstrate the use of the proposed paradigm on a simulated multielectrode drift scenario, as well as calcium indicating fluorescence microscopy videos of the nematode Caenorhabditis elegans (C. elegans). The latter application has the added utility of extracting neural activity of the animal in freely conducted behavior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dynamic Cell Imaging in PET with Optimal Transport Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1902-07521</link>
-    <guid isPermaLink="false">arxiv:1902.07521</guid>
-    <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernhard Schmitzer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose a novel dynamic image reconstruction method from PET listmode data that could be particularly suited to tracking single or small numbers of cells. In contrast to conventional PET reconstruction our method combines the information from all detected events not only to reconstruct the dynamic evolution of the radionuclide distribution, but also to improve the reconstruction at each single time point by enforcing temporal consistency. This is achieved via optimal transport regularization where in principle, among all possible temporally evolving radionuclide distributions consistent with the PET measurement, the one is chosen with least kinetic motion energy. The reconstruction is found by convex optimization so that there is no dependence on the initialization of the method. We study its behaviour on simulated data of a human PET system and demonstrate its robustness even in settings with very low radioactivity. In contrast to previously reported cell tracking algorithms, our technique is oblivious to the number of tracked cells. Without any additional complexity one or multiple cells can be reconstructed, and the model automatically determines the number of particles. For instance, four radiolabelled cells moving at a velocity of 3.1 mm/s and a PET recorded count rate of 1.1 cps (for each cell) could be simultaneously tracked with a tracking accuracy of 5.3 mm inside a simulated human body.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conservative Wasserstein Training for Pose Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1911-00962</link>
-    <guid isPermaLink="false">arxiv:1911.00962</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper targets the task with discrete and periodic class labels (e.g., pose/orientation estimation) in the context of deep learning. The commonly used cross-entropy or regression loss is not well matched to this problem as they ignore the periodic nature of the labels and the class similarity, or assume labels are continuous value. We propose to incorporate inter-class correlations in a Wasserstein training framework by pre-defining (i.e., using arc length of a circle) or adaptively learning the ground metric. We extend the ground metric as a linear, convex or concave increasing function w.r.t. arc length from an optimization perspective. We also propose to construct the conservative target labels which model the inlier and outlier noises using a wrapped unimodal-uniform mixture distribution. Unlike the one-hot setting, the conservative label makes the computation of Wasserstein distance more challenging. We systematically conclude the practical closed-form solution of Wasserstein distance for pose data with either one-hot or conservative target label. We evaluate our method on head, body, vehicle and 3D object pose benchmarks with exhaustive ablation studies. The Wasserstein loss obtaining superior performance over the current methods, especially using convex mapping function for ground metric, conservative label, and closed-form solution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unimodal-uniform Constrained Wasserstein Training for Medical Diagnosis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1911-02475</link>
-    <guid isPermaLink="false">arxiv:1911.02475</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The labels in medical diagnosis task are usually discrete and successively distributed. For example, the Diabetic Retinopathy Diagnosis (DR) involves five health risk levels: no DR (0), mild DR (1), moderate DR (2), severe DR (3) and proliferative DR (4). This labeling system is common for medical disease. Previous methods usually construct a multi-binary-classification task or propose some re-parameter schemes in the output unit. In this paper, we target on this task from the perspective of loss function. More specifically, the Wasserstein distance is utilized as an alternative, explicitly incorporating the inter-class correlations by pre-defining its ground metric. Then, the ground metric which serves as a linear, convex or concave increasing function w.r.t. the Euclidean distance in a line is explored from an optimization perspective. Meanwhile, this paper also proposes of constructing the smoothed target labels that model the inlier and outlier noises by using a unimodal-uniform mixture distribution. Different from the one-hot setting, the smoothed label endues the computation of Wasserstein distance with more challenging features. With either one-hot or smoothed target label, this paper systematically concludes the practical closed-form solution. We evaluate our method on several medical diagnosis tasks (e.g., Diabetic Retinopathy and Ultrasound Breast dataset) and achieve state-of-the-art performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein total variation filtering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1910-10822</link>
-    <guid isPermaLink="false">arxiv:1910.10822</guid>
-    <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erdem Varol et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this paper, we expand upon the theory of trend filtering by introducing the use of the Wasserstein metric as a means to control the amount of spatiotemporal variation in filtered time series data. While trend filtering utilizes regularization to produce signal estimates that are piecewise linear, in the case of ℓ_1 regularization, or temporally smooth, in the case of ℓ_2 regularization, it ignores the topology of the spatial distribution of signal. By incorporating the information about the underlying metric space of the pixel layout, the Wasserstein metric is an attractive choice as a regularizer to undercover spatiotemporal trends in time series data. We introduce a globally optimal algorithm for efficiently estimating the filtered signal under a Wasserstein finite differences operator. The efficacy of the proposed algorithm in preserving spatiotemporal trends in time series video is demonstrated in both simulated and fluorescent microscopy videos of the nematode caenorhabditis elegans and compared against standard trend filtering algorithms.</p>]]></description>
   </item>
 
 </channel>

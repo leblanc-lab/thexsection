@@ -36,17 +36,194 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">2555 papers</span>
-  <span class="count">1548 days</span>
+  <span class="count">2569 papers</span>
+  <span class="count">1549 days</span>
   <span class="count">since 2009</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">547</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">561</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Tuesday, September 29, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-31630">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.31630" target="_blank" rel="noopener">arXiv:2609.31630</a>
+      
+      <a class="permalink" href="#a2609-31630" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Replay in the Silent Degrees of Freedom: Continual Learning Without an Offline Phase</h3>
+    <p class="byline">Zhang Yanhai</p>
+    <div class="paper-body"><p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Replay-based continual learning almost always consolidates in a dedicated offline phase or by interleaving replayed samples with the input stream, whereas brains also consolidate during wakefulness through local sleep, brief use-dependent off-periods of individual circuits. We ask whether a network trained by local, biologically constrained rules can consolidate with no offline phase at all. An isolation rule confines replay updates to hidden synapses invisible to the current input under k-winner-take-all dynamics, with optimiser state advanced only inside the mask; a refractory rotation rule makes units that have just fired sit out the next competition, widening the consolidable set; a homeostatic pressure and a relative-novelty gate decide when replay bursts fire and when rotation runs. This inverts the usual direction of non-interfering continual learning: the hidden computation on the current input is held invariant (exactly on the proven channels, and for all but 0.3% of waking samples per update elsewhere) while past memories are written into the degrees of freedom the current batch leaves unused. On class-incremental split-MNIST the system reaches 91.6+-0.3% with no offline phase, at or above the best offline-night schedule on two held-out splits, tied with DER++ and above experience replay, ER-ACE, A-GEM and unmasked local replay; in a single pass it leads DER++ (91.8% against 90.1%) while the night falls to 76.9%. The advantage is largest at small buffers and gives way to the backpropagation references at large ones; on split CIFAR-10 the system leads offline rehearsal and experience replay but trails ER-ACE and DER++. Rotation carries most of the gain; isolation adds the invariance guarantee. The mechanism is not tied to the local rule: under the same schedule a backpropagation network with k-WTA hidden layers gains from rotation, and isolation is again free on top of it.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-31787">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.31787" target="_blank" rel="noopener">arXiv:2609.31787</a>
+      
+      <a class="permalink" href="#a2609-31787" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal transport meets speech: a tutorial review</h3>
+    <p class="byline">Xugang Lu et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for comparing and transforming probability distributions while preserving geometric structure. Recently, OT has gained significant attention in machine learning due to its ability to measure discrepancies between distributions, even when their supports do not overlap, making it effective for tasks such as generative modeling, domain adaptation, and transfer learning. Despite its success in fields such as computer vision and natural language processing, OT remains relatively underexplored in speech research. Speech signals present unique challenges, including temporal dynamics, speaker variability, noise, reverberation, and heterogeneous multimodal representations involving audio, text, and visual information. These factors often lead to distribution mismatches, where OT offers a natural framework for alignment and interpretation. This work aims to promote broader adoption of OT in speech processing by: (1) reviewing OT foundations through intuitive physical interpretations and highlighting connections to modern generative models; (2) presenting computational algorithms suitable for deep learning frameworks; and (3) demonstrating OT applications in cross-domain and cross-modal speech tasks, including speech enhancement, automatic speech recognition, language and speaker recognition, and audio spoof detection. We highlight OT&rsquo;s strong potential for addressing distributional variations in real-world speech applications.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-31848">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.31848" target="_blank" rel="noopener">arXiv:2609.31848</a>
+      
+      <a class="permalink" href="#a2609-31848" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Averaged Mirror Descent and Dual Gradient Methods: Convergent Algorithms for Entropic Gromov-Wasserstein Problem</h3>
+    <p class="byline">Joanna Mark et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) distance measures the discrepancy between metric measure (mm) spaces and identifies optimal alignments between them based solely on their intrinsic structure. Since it identifies isomorphic mm spaces, it provides a natural notion of distance for heterogeneous datasets which may admit isomorphic representations. In order to accelerate computation of GW distances, many practitioners employ entropic regularization to obtain an Entropic GW (EGW) problem. The most popular EGW solver is the Mirror Descent (MD) algorithm, which reduces EGW computations to an iterative process where an entropic optimal transport (EOT) problem is solved at each iteration. Despite its widespread use, the convergence of MD for this problem has only been established for restricted classes of costs. On the other hand, a recently proposed dual gradient method is available for general costs, but requires a choice of step size which depends on the regularization parameter. To address these two issues, we introduce Averaged Mirror Descent (AMD), which averages consecutive MD steps, and prove its convergence for arbitrary costs. Then, we establish that the dual gradient method with a fixed step size also converges for arbitrary costs at the cost of a more complicated iteration. In both cases, we also account for inexact iterations which are inescapable in practice. We compare the empirical performance of these methods across various settings and, in particular, show that AMD and the dual gradient method both converge on an example where classical MD fails.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-31862">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.31862" target="_blank" rel="noopener">arXiv:2609.31862</a>
+      
+      <a class="permalink" href="#a2609-31862" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks</h3>
+    <p class="byline">Nilotpal Kakati et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (jet reconstruction, particle flow, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Reconstruction and simulation at a collider experiment are long chains of specialised algorithms, each tuned to a single step. We explore how one model can serve many of those steps at once, while still producing the intermediate objects (tracks, calorimeter cells, clusters, particles and jets) that make the chain interpretable. To do so, we represent every object in a jet in a single shared token vocabulary and train one model to map any subset of these modalities to any other. A task is then only a choice of which modalities to provide and which to request: particle flow, detector simulation and charged energy subtraction are all directions through the same set of weights. We train over all modality combinations, with a decoder emitting tokens either autoregressively or in parallel. With tokenisation, both architectures train stably with little tuning. In evaluations, both models produce realistic reconstruction and simulation objects, with the autoregressive model particularly faithful to output from Geant4. The autoregressive model also outperforms a state-of-the-art particle flow algorithm on many typical jet reconstruction metrics.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-32479">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.32479" target="_blank" rel="noopener">arXiv:2609.32479</a>
+      
+      <a class="permalink" href="#a2609-32479" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider</h3>
+    <p class="byline">Jonathan Renusch et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Large Hadron Collider, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>We propose a training recipe that treats charged-particle trajectory parameter regression on high-energy physics detector data as a sequence-modeling task. Kalman filters and linearized least-squares fits have been the classical standard approach for this task: they are optimal estimators for sparsely sampled linear-Gaussian data and are commonly used for trajectory parameter regression (fitting). The classical fitting techniques implemented for this domain reach a final precision of one part in <span class="arithmatex">\(10^5\)</span> through detailed modeling of detector geometry, material, detection effects and precise numerical integration of the equations of motion through the detector&rsquo;s inhomogeneous magnetic field. With this study, we demonstrate that using a bidirectional gated linear recurrent encoder, one is able to reproduce the full precision of classical track fitting techniques. Using a custom kernel, we also achieve significantly higher throughput during GPU inference, compared to classical fitting software running on similarly priced multi-core CPU servers representing typically employed hardware. Such a speedup would lead to considerable cost savings for the pattern recognition at the Large Hadron Collider. To our knowledge, this is the first end-to-end learned track fit to reach the full precision and, at the same time, offer the opportunity to reduce the computing costs.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-32708">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.32708" target="_blank" rel="noopener">arXiv:2609.32708</a>
+      
+      <a class="permalink" href="#a2609-32708" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">One-Step Generative Modeling via Unbalanced Optimal Transport</h3>
+    <p class="byline">Yirong Shen et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Drifting models enable one-step generation by amortizing distribution transport into training, but this efficiency places greater demands on the transport field estimated at each update. In large-scale training, the field is computed from finite mini-batches of generated and real samples, which provide only imperfect approximations to the underlying distributions. Balanced optimal transport enforces exact mass matching within every mini-batch, making the estimated field sensitive to the particular composition of the real-data batch. We find that generated and real samples should be treated asymmetrically: letting the mass assigned to real samples adapt while keeping every generated sample fully transported improves generation across six feature-space metrics in controlled ablations, and is more robust to the relaxation strength than relaxing both marginals simultaneously, which falls below balanced transport under stronger relaxation. Motivated by this observation, we propose Unbalanced Optimal Transport Gradient Flow (UOT-GF), which keeps the generated-sample marginal fixed and relaxes only the real-data marginal. Under identical settings at DiT-B/2 on ImageNet-256, UOT-GF improves Fr'echet Inception Distance (FID) from 1.53 to 1.46 over the balanced W-Flow baseline; scaling the same recipe yields 1.34 and 1.22 FID at L/2 and XL/2, the best FID among the one-step models we compare. We further derive the induced UOT transport force, establish a kinetic Vlasov&ndash;Fokker&ndash;Planck formulation whose overdamped zero-temperature limit recovers the drifting dynamics, and characterize non-target stationary states together with sufficient conditions for convergence.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-32847">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.32847" target="_blank" rel="noopener">arXiv:2609.32847</a>
+      
+      <a class="permalink" href="#a2609-32847" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Sliced Orlicz-Wasserstein</h3>
+    <p class="byline">Binh Thuan Tran et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose sliced Orlicz-Wasserstein (SOW) distance which is a generalization of sliced Wasserstein (SW) distance. SOW replaces the <span class="arithmatex">\(L^p\)</span> norm in SW with a Luxemburg norm cost induced by an Orlicz function <span class="arithmatex">\(\phi\)</span>. First, we prove that SOW distance is a metric on the space of measures with finite Orlicz norm, and show that it recovers the SW distance when the Orlicz function is <span class="arithmatex">\(\phi(x)=x^p\)</span>. Next, we derive the topological properties of the SOW distance. In particular, we show that convergence under SOW implies weak convergence, and the converse is true under the compact support condition. We then present the theoretical results for estimating the SOW distance. We derive sample complexity for both the distance itself and the powered functional of the distance, and prove their minimax optimality. In addition, we discuss the computational algorithm for approximating the SOW distance by Monte-Carlo estimation and bisection search, as well as the associated approximation error and computational complexity analysis. Our experimental results reveal the superior computational efficiency of SOW compared with Orlicz-Wasserstein (OW) distance. Also, in the experiments, we demonstrate the favorable flexibility of SOW distance over SW in detecting differences between distributions by comparing their performance in two-sample tests and evaluating generative models on image datasets.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-32874">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.32874" target="_blank" rel="noopener">arXiv:2609.32874</a>
+      
+      <a class="permalink" href="#a2609-32874" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Machine learning for the LHC physics program: a 2025-2026 stocktake</h3>
+    <p class="byline">Jesse Thaler</p>
+    <div class="paper-body"><p><em>Watchlist hit (LHC, Jesse Thaler) — original abstract; no AI summary.</em></p>
+<p>The first sentence of this abstract&ndash;and the introduction to these proceedings&ndash;was authored by a human, but the bulk of this document was generated by an agentic AI system. In this talk, I take stock of machine learning (ML) for the LHC physics program over the twelve months from May 2025 to May 2026. The corpus is the HEPML Living Review, split at May 2025 into 1,756 earlier papers and 569 later ones. An AI pipeline surveyed the 569 abstracts, ranked them by citations, recency, theme, and collaboration involvement, and read 103 papers in full (95 from after the split, plus 8 earlier baseline papers), producing a structured note for each. The notes were then synthesized into six claims about the state of the field, checked by independent reviewer agents, and re-verified against the source papers. The headline claim is that (1) ML for high-energy physics (HEPML) stopped being a research area that builds tools and became infrastructure that the LHC physics program depends on: ATLAS and CMS now publish physics results that depend on neural networks, and the archived ALEPH data have re-entered production. The other five claims are: (2) simulation-based inference and foundation models are two revolutions starting to merge; (3) AI agents are the genuinely new front, with 47 papers in twelve months and no adopted measurement yet; (4) &ldquo;do we trust it?&rdquo; is the fastest-growing agenda, with one recent paper in five about uncertainty, calibration, or interpretability; (5) what is slowing down is informative, since equivariance was absorbed into a tool and model-specific phenomenology ceded ground to model-agnostic searches; and (6) theory ML crossed a capability threshold in multiple research areas. I close with what is settled, what is incoming, and what is open, and briefly discuss the concerns raised by this way of working with AI.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-33377">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.33377" target="_blank" rel="noopener">arXiv:2609.33377</a>
+      
+      <a class="permalink" href="#a2609-33377" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Optimal Transport Dropout for Structured Predictive Uncertainty</h3>
+    <p class="byline">Giacomo Lorenzon et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deterministic neural networks and neural operators provide point predictions with no intrinsic measure of reliability. Yet, predictive uncertainty may stem from irreducible outcome variability, finite data, or limitations of the chosen model class. Monte Carlo dropout offers a computationally convenient way to construct a predictive distribution through stochastic feature masking, without training multiple independent networks or explicitly inferring a posterior over model parameters. However, its perturbation law is largely prescribed a priori and typically factorised across latent coordinates. We introduce Optimal Transport Dropout (OTD), which instead learns the predictive mapping and the law of its latent perturbations jointly. Starting from a simple independent reference distribution, OTD transports latent perturbations through a learnable flow and propagates them through the predictive neural network, thereby inducing a structured predictive law. Training uses the strictly proper Energy Score, while a kinetic-action term geometrically regularises the transport. Synthetic benchmarks show that OTD captures multimodal predictive distributions, generates meaningful dispersion when the model is misspecified, and exhibits contracting dispersion as more training data or greater model capacity are provided. For a field-valued partial differential equation surrogate, predictive dispersion strongly aligns with the spatial pattern of prediction errors. On this task, compared with Monte Carlo dropout, OTD yields more accurate predictions and better-calibrated, substantially narrower intervals. On real-world regression benchmarks, it further shows competitive accuracy and better probabilistic predictions compared to established baselines. OTD therefore offers a way to learn structured predictive uncertainty without explicit posterior inference or ensembles of independently trained predictors.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-33741">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.33741" target="_blank" rel="noopener">arXiv:2609.33741</a>
+      
+      <a class="permalink" href="#a2609-33741" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Multi-Marginal Inverse Optimal Transport for Contrastive Learning Via Explicit Anchor-Positive-Negative Coupling</h3>
+    <p class="byline">Ngoc-Hai Nguyen et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Inverse Optimal Transport (OT) based methods for representation learning learn representations such that the global OT coupling between a pair of data marginals in the representation space, concentrates on the positive pairs. This is in contrast to previous methods that primarily focused on pairwise matching. However, these methods <span class="arithmatex">\(\textit{DO NOT}\)</span> utilize negative pairs and hence are not truly contrastive in their approach. We show that this leads to issues of dimensional collapse and hence degraded downstream performance. To alleviate this, we develop a novel multi-marginal (MM) inverse OT (IOT) contrastive learning (CL) approach called Neg-MMIOT-CL, which learns representations such that the global multi-marginal OT (MMOT) coupling between a triple of data marginals, with respect to a carefully designed ground-cost between triplets of data points in the representation space, concentrates on the anchor-positive-negative <span class="arithmatex">\(\textit{triplets}\)</span>. For a latent class model, we empirically show that Neg-MMIOT-CL alleviates dimensional collapse. Furthermore, for a specific choice of ground cost for all triplets in representation space, we prove that the optimal representation configuration for Neg-MMIOT-CL exhibits equiangular property for within-class and across-class representations, which translates to Neural-Collapse when the representation dimension is larger than the number of classes minus one &ndash; a result that is <span class="arithmatex">\(\textit{previously established only}\)</span> for pairwise contrastive learning methods. Finally, we propose Neg-IOT-CL-PushPull, that is a computationally efficient alternative to Neg-MMIOT-CL, alleviating the high cost of computing MMOT plans needed during implementation. We apply these methods on both synthetic and real-world datasets and show significant improvements over existing OT-based contrastive learning methods.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-33800">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.33800" target="_blank" rel="noopener">arXiv:2609.33800</a>
+      
+      <a class="permalink" href="#a2609-33800" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Binding Multiple Modalities via Multimodal Wasserstein Barycenter</h3>
+    <p class="byline">Xiaole Tang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Multimodal learning beyond two modalities commonly leverages a specific modality (e.g., text) to bind other modalities. However, how to establish a more balanced representation space that approximates shared semantics while respecting the holistic geometry of <span class="arithmatex">\(n\)</span>-modal data remains challenging. In this work, we present BaryBind, which aims to transport the specific modality towards the Wasserstein barycenter (WB) optimized across all modalities and introduces a volumetric alignment objective to establish a unified semantic space around the WB embedding. Specifically, we project specific modalities to the WB, which minimizes the average Wasserstein distances to multimodal distributions and serves as the anchor for subsequent alignment. We then construct a barycenter simplex, whose volume is taken as a similarity metric for global alignment centered at the WB. Experiments show that BaryBind achieves competitive performance in text-video-audio retrieval, classification, videoQA, and cross-modal generation tasks, along with robustness under modality absence and scalability to more than three modalities. Code is released at https://github.com/xl-tang3/BaryBind.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-33814">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.33814" target="_blank" rel="noopener">arXiv:2609.33814</a>
+      
+      <a class="permalink" href="#a2609-33814" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Annealed Sinkhorn with Momentum: Certified Unregularized Optimal Transport in Linear Memory</h3>
+    <p class="byline">Samuel J. K. Chin et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We characterize Bregman Douglas-Rachford splitting (BDRS) for unregularized discrete optimal transport and develop an anytime primal-dual certificate in linear memory. We first establish that BDRS coincides with warm-started Inexact Proximal point method for exact Optimal Transport (IPOT) using a single inner Sinkhorn iteration. By eliminating the primal transport plan from the updates, we derive an equivalent dual formulation that reveals BDRS as annealed Sinkhorn under an implicit inverse-linear temperature schedule, with an additional log-scaling momentum term and a cooler kernel. While this explains the role of the temperature parameter in BDRS as an initial temperature, it also reduces the solver&rsquo;s memory requirement from quadratic to linear. Utilizing this annealing perspective, we introduce overrelaxed BDRS, which combines annealing and overrelaxed scaling within a single recursion. We derive a primal-dual certificate for both methods that can be evaluated in linear memory without transport plan construction, thus providing a computable stopping rule. On the DOTmark benchmark, combining momentum with the cooler kernel produces substantially smaller optimality gaps than annealed Sinkhorn under the same schedule. For pixel-level color transfer between <span class="arithmatex">\(1024\times1024\)</span> images, BDRS attains a lower repaired transport cost than MDOT-TNT with a 9<span class="arithmatex">\(\times\)</span> speed up, reaching a relative duality gap of <span class="arithmatex">\(1.59\%\)</span> in 24 minutes. We further demonstrate a color transfer with <span class="arithmatex">\(4238\times2365\)</span> images, yielding 10 million pixels per image and approximately one hundred trillion implicit transport entries, reaching a best relative duality gap of <span class="arithmatex">\(2.41\%\)</span> and <span class="arithmatex">\(2.80\%\)</span> within 35 hours in each direction on a single NVIDIA L40S GPU.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-35021">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.35021" target="_blank" rel="noopener">arXiv:2609.35021</a>
+      
+      <a class="permalink" href="#a2609-35021" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Addressing Spatial Indistinguishability in Spatiotemporal Prediction via Optimal Transport-Guided Masking</h3>
+    <p class="byline">Guangyu Wang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Spatiotemporal prediction aims to learn discriminative representations from correlated temporal signals over spatial structures for accurate future inference. A central challenge is \emph{spatial indistinguishability}: different nodes may share similar historical patterns yet evolve toward divergent futures, severely degrading forecasting performance in real-world sensor networks. Existing embedding-based and graph neural network (GNN)-based approaches can partially detect such ambiguous nodes but rely on historical similarity, struggling to capture \emph{future behavioral divergence}. We propose \textbf{STOT} (\textbf{S}patio\textbf{T}emporal \textbf{O}ptimal \textbf{T}ransport), a self-supervised framework that resolves spatiotemporal ambiguity via structured masking guided by optimal transport. Our key idea treats indistinguishability as a \emph{disambiguation} problem: future states are inferred by exploiting concurrent spatial correlations and their time-varying similarity. We design a similarity-aware metric for dynamic inter-node relationships and an optimal transport-based masking strategy to emphasize ambiguous positions during pre-training. A batch consistency constraint preserves semantic coherence, while a random-walk masking mechanism promotes structured context exploration. Experiments on six real-world datasets show that STOT performs competitively with state-of-the-art baselines on the evaluated benchmarks and improved interpretability through transport-plan visualizations.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-35629">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.35629" target="_blank" rel="noopener">arXiv:2609.35629</a>
+      
+      <a class="permalink" href="#a2609-35629" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SANTA++: Sampling Attention through Representative Keys</h3>
+    <p class="byline">Kyle Lee et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Kyle Lee) — original abstract; no AI summary.</em></p>
+<p>Attention often concentrates on a small subset of tokens in the context, but which subset matters changes from one query to the next. To exploit this changing structure, we introduce SANTA++, a training-free stochastic attention method that uses representative keys for memory-efficient selection without scanning the entire key-value (KV) cache. Cached keys are organized into teams, and the query scores one representative from each team to decide which teams to sample. We compute exact attention scores within the sampled teams and reweight each team&rsquo;s contribution by the inverse of its inclusion probability. This importance sampling correction estimates attention over the full cache, with a sampling budget that lets us trade memory reads for accuracy. Remarkably, with 32 or 64 sampled teams, SANTA++ uses 16% to 22% of dense attention&rsquo;s KV reads and retains 94% to 99% of the dense-attention baseline&rsquo;s scores on LongBench v2 and HELMET&rsquo;s retrieval-augmented generation subset, and 85% to 91% on RULER, with Qwen2.5-7B-Instruct at 32K context. With 31 sampled teams, our GPU implementation delivers a <span class="arithmatex">\(1.69\times\)</span> attention speedup over the dense FlashAttention baseline at 32K context. By reducing the number of cache entries read, SANTA++ in principle complements architectures with compressed KV representations, such as multi-head latent attention. Our kernels are available at: https://github.com/OPUSLab/santapp-kernel-demo.git.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -8588,7 +8765,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-29 05:56 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-29 08:51 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

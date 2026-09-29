@@ -6,7 +6,47 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Dynamic Cell Imaging in PET with Optimal Transport Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1902-07521</link>
+    <guid isPermaLink="false">arxiv:1902.07521</guid>
+    <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernhard Schmitzer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose a novel dynamic image reconstruction method from PET listmode data that could be particularly suited to tracking single or small numbers of cells. In contrast to conventional PET reconstruction our method combines the information from all detected events not only to reconstruct the dynamic evolution of the radionuclide distribution, but also to improve the reconstruction at each single time point by enforcing temporal consistency. This is achieved via optimal transport regularization where in principle, among all possible temporally evolving radionuclide distributions consistent with the PET measurement, the one is chosen with least kinetic motion energy. The reconstruction is found by convex optimization so that there is no dependence on the initialization of the method. We study its behaviour on simulated data of a human PET system and demonstrate its robustness even in settings with very low radioactivity. In contrast to previously reported cell tracking algorithms, our technique is oblivious to the number of tracked cells. Without any additional complexity one or multiple cells can be reconstructed, and the model automatically determines the number of particles. For instance, four radiolabelled cells moving at a velocity of 3.1 mm/s and a PET recorded count rate of 1.1 cps (for each cell) could be simultaneously tracked with a tracking accuracy of 5.3 mm inside a simulated human body.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conservative Wasserstein Training for Pose Estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1911-00962</link>
+    <guid isPermaLink="false">arxiv:1911.00962</guid>
+    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper targets the task with discrete and periodic class labels (e.g., pose/orientation estimation) in the context of deep learning. The commonly used cross-entropy or regression loss is not well matched to this problem as they ignore the periodic nature of the labels and the class similarity, or assume labels are continuous value. We propose to incorporate inter-class correlations in a Wasserstein training framework by pre-defining (i.e., using arc length of a circle) or adaptively learning the ground metric. We extend the ground metric as a linear, convex or concave increasing function w.r.t. arc length from an optimization perspective. We also propose to construct the conservative target labels which model the inlier and outlier noises using a wrapped unimodal-uniform mixture distribution. Unlike the one-hot setting, the conservative label makes the computation of Wasserstein distance more challenging. We systematically conclude the practical closed-form solution of Wasserstein distance for pose data with either one-hot or conservative target label. We evaluate our method on head, body, vehicle and 3D object pose benchmarks with exhaustive ablation studies. The Wasserstein loss obtaining superior performance over the current methods, especially using convex mapping function for ground metric, conservative label, and closed-form solution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unimodal-uniform Constrained Wasserstein Training for Medical Diagnosis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1911-02475</link>
+    <guid isPermaLink="false">arxiv:1911.02475</guid>
+    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The labels in medical diagnosis task are usually discrete and successively distributed. For example, the Diabetic Retinopathy Diagnosis (DR) involves five health risk levels: no DR (0), mild DR (1), moderate DR (2), severe DR (3) and proliferative DR (4). This labeling system is common for medical disease. Previous methods usually construct a multi-binary-classification task or propose some re-parameter schemes in the output unit. In this paper, we target on this task from the perspective of loss function. More specifically, the Wasserstein distance is utilized as an alternative, explicitly incorporating the inter-class correlations by pre-defining its ground metric. Then, the ground metric which serves as a linear, convex or concave increasing function w.r.t. the Euclidean distance in a line is explored from an optimization perspective. Meanwhile, this paper also proposes of constructing the smoothed target labels that model the inlier and outlier noises by using a unimodal-uniform mixture distribution. Different from the one-hot setting, the smoothed label endues the computation of Wasserstein distance with more challenging features. With either one-hot or smoothed target label, this paper systematically concludes the practical closed-form solution. We evaluate our method on several medical diagnosis tasks (e.g., Diabetic Retinopathy and Ultrasound Breast dataset) and achieve state-of-the-art performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein total variation filtering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1910-10822</link>
+    <guid isPermaLink="false">arxiv:1910.10822</guid>
+    <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erdem Varol et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we expand upon the theory of trend filtering by introducing the use of the Wasserstein metric as a means to control the amount of spatiotemporal variation in filtered time series data. While trend filtering utilizes regularization to produce signal estimates that are piecewise linear, in the case of ℓ_1 regularization, or temporally smooth, in the case of ℓ_2 regularization, it ignores the topology of the spatial distribution of signal. By incorporating the information about the underlying metric space of the pixel layout, the Wasserstein metric is an attractive choice as a regularizer to undercover spatiotemporal trends in time series data. We introduce a globally optimal algorithm for efficiently estimating the filtered signal under a Wasserstein finite differences operator. The efficacy of the proposed algorithm in preserving spatiotemporal trends in time series video is demonstrated in both simulated and fluorescent microscopy videos of the nematode caenorhabditis elegans and compared against standard trend filtering algorithms.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport Based Generative Autoencoders</title>

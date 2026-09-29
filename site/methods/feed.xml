@@ -6,7 +6,17 @@
   <description>Data analysis, simulation, and computational physics</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2609-31862</link>
+    <guid isPermaLink="false">arxiv:2609.31862</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nilotpal Kakati et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, particle flow, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Reconstruction and simulation at a collider experiment are long chains of specialised algorithms, each tuned to a single step. We explore how one model can serve many of those steps at once, while still producing the intermediate objects (tracks, calorimeter cells, clusters, particles and jets) that make the chain interpretable. To do so, we represent every object in a jet in a single shared token vocabulary and train one model to map any subset of these modalities to any other. A task is then only a choice of which modalities to provide and which to request: particle flow, detector simulation and charged energy subtraction are all directions through the same set of weights. We train over all modality combinations, with a decoder emitting tokens either autoregressively or in parallel. With tokenisation, both architectures train stably with little tuning. In evaluations, both models produce realistic reconstruction and simulation objects, with the autoregressive model particularly faithful to output from Geant4. The autoregressive model also outperforms a state-of-the-art particle flow algorithm on many typical jet reconstruction metrics.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</title>

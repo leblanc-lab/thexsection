@@ -7,7 +7,47 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>PLOT-TAL: Prompt Learning with Optimal Transport for Few-Shot Temporal Action Localization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2403-18915</link>
+    <guid isPermaLink="false">arxiv:2403.18915</guid>
+    <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Edward Fish et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Few-shot temporal action localization (TAL) methods that adapt large models via single-prompt tuning often fail to produce precise temporal boundaries. This stems from the model learning a non-discriminative mean representation of an action from sparse data, which compromises generalization. We address this by proposing a new paradigm based on multi-prompt ensembles, where a set of diverse, learnable prompts for each action is encouraged to specialize on compositional sub-events. To enforce this specialization, we introduce PLOT-TAL, a framework that leverages Optimal Transport (OT) to find a globally optimal alignment between the prompt ensemble and the video&rsquo;s temporal features. Our method establishes a new state-of-the-art on the challenging few-shot benchmarks of THUMOS&lsquo;14 and EPIC-Kitchens, without requiring complex meta-learning. The significant performance gains, particularly at high IoU thresholds, validate our hypothesis and demonstrate the superiority of learning distributed, compositional representations for precise temporal localization.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SIDDA: SInkhorn Dynamic Domain Adaptation for Image Classification with Equivariant Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2501-14048</link>
+    <guid isPermaLink="false">arxiv:2501.14048</guid>
+    <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sneh Pandya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Modern neural networks (NNs) often do not generalize well in the presence of a &ldquo;covariate shift&rdquo;; that is, in situations where the training and test data distributions differ, but the conditional distribution of classification labels remains unchanged. In such cases, NN generalization can be reduced to a problem of learning more domain-invariant features. Domain adaptation (DA) methods include a range of techniques aimed at achieving this; however, these methods have struggled with the need for extensive hyperparameter tuning, which then incurs significant computational costs. In this work, we introduce SIDDA, an out-of-the-box DA training algorithm built upon the Sinkhorn divergence, that can achieve effective domain alignment with minimal hyperparameter tuning and computational overhead. We demonstrate the efficacy of our method on multiple simulated and real datasets of varying complexity, including simple shapes, handwritten digits, and real astronomical observations. SIDDA is compatible with a variety of NN architectures, and it works particularly well in improving classification accuracy and model calibration when paired with equivariant neural networks (ENNs). We find that SIDDA enhances the generalization capabilities of NNs, achieving up to a ≈40% improvement in classification accuracy on unlabeled target data. We also study the efficacy of DA on ENNs with respect to the varying group orders of the dihedral group D_N, and find that the model performance improves as the degree of equivariance increases. Finally, we find that SIDDA enhances model calibration on both source and target data&ndash;achieving over an order of magnitude improvement in the ECE and Brier score. SIDDA&rsquo;s versatility, combined with its automated approach to domain alignment, has the potential to advance multi-dataset studies by enabling the development of highly generalizable models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Human-Guided Shade Artifact Suppression in CBCT-to-MDCT Translation via Schrödinger Bridge with Conditional Diffusion</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-11025</link>
+    <guid isPermaLink="false">arxiv:2507.11025</guid>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sung Ho Kang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We present a novel framework for CBCT-to-MDCT translation, grounded in the Schrodinger Bridge (SB) formulation, which integrates GAN-derived priors with human-guided conditional diffusion. Unlike conventional GANs or diffusion models, our approach explicitly enforces boundary consistency between CBCT inputs and pseudo targets, ensuring both anatomical fidelity and perceptual controllability. Binary human feedback is incorporated via classifier-free guidance (CFG), effectively steering the generative process toward clinically preferred outcomes. Through iterative refinement and tournament-based preference selection, the model internalizes human preferences without relying on a reward model. Subtraction image visualizations reveal that the proposed method selectively attenuates shade artifacts in key anatomical regions while preserving fine structural detail. Quantitative evaluations further demonstrate superior performance across RMSE, SSIM, LPIPS, and Dice metrics on clinical datasets &ndash; outperforming prior GAN- and fine-tuning-based feedback methods &ndash; while requiring only 10 sampling steps. These findings underscore the effectiveness and efficiency of our framework for real-time, preference-aligned medical image translation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>When Schrödinger Bridge Meets Real-World Image Dehazing with Unpaired Training</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-09524</link>
+    <guid isPermaLink="false">arxiv:2507.09524</guid>
+    <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunwei Lan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Recent advancements in unpaired dehazing, particularly those using GANs, show promising performance in processing real-world hazy images. However, these methods tend to face limitations due to the generator&rsquo;s limited transport mapping capability, which hinders the full exploitation of their effectiveness in unpaired training paradigms. To address these challenges, we propose DehazeSB, a novel unpaired dehazing framework based on the Schrödinger Bridge. By leveraging optimal transport (OT) theory, DehazeSB directly bridges the distributions between hazy and clear images. This enables optimal transport mappings from hazy to clear images in fewer steps, thereby generating high-quality results. To ensure the consistency of structural information and details in the restored images, we introduce detail-preserving regularization, which enforces pixel-level alignment between hazy inputs and dehazed outputs. Furthermore, we propose a novel prompt learning to leverage pre-trained CLIP models in distinguishing hazy images and clear ones, by learning a haze-aware vision-language alignment. Extensive experiments on multiple real-world datasets demonstrate our method&rsquo;s superiority. Code: https://github.com/ywxjm/DehazeSB.</p>]]></description>
+  </item>
 
   <item>
     <title>MoSiC: Optimal-Transport Motion Trajectory for Dense Self-Supervised Learning</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henri De Plaen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>During training, supervised object detection tries to correctly match the predicted bounding boxes and associated classification scores to the ground truth. This is essential to determine which predictions are to be pushed towards which solutions, or to be discarded. Popular matching strategies include matching to the closest ground truth box (mostly used in combination with anchors), or matching via the Hungarian algorithm (mostly used in anchor-free methods). Each of these strategies comes with its own properties, underlying losses, and heuristics. We show how Unbalanced Optimal Transport unifies these different approaches and opens a whole continuum of methods in between. This allows for a finer selection of the desired properties. Experimentally, we show that training an object detection model with Unbalanced Optimal Transport is able to reach the state-of-the-art both in terms of Average Precision and Average Recall as well as to provide a faster initial convergence. The approach is well suited for GPU implementation, which proves to be an advantage for large-scale models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2307-02460</link>
-    <guid isPermaLink="false">arxiv:2307.02460</guid>
-    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Feiyang Kang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling laws that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called <projektor>, which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel <em>two-stage</em> performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model&rsquo;s performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications demonstrates that <projektor> significantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also, <projektor> outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Machine Learning methods for simulating particle response in the Zero Degree Calorimeter at the ALICE experiment, CERN</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2306-13606</link>
-    <guid isPermaLink="false">arxiv:2306.13606</guid>
-    <pubDate>Fri, 23 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Dubiński et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Currently, over half of the computing power at CERN GRID is used to run High Energy Physics simulations. The recent updates at the Large Hadron Collider (LHC) create the need for developing more efficient simulation methods. In particular, there exists a demand for a fast simulation of the neutron Zero Degree Calorimeter, where existing Monte Carlo-based methods impose a significant computational burden. We propose an alternative approach to the problem that leverages machine learning. Our solution utilises neural network classifiers and generative models to directly simulate the response of the calorimeter. In particular, we examine the performance of variational autoencoders and generative adversarial networks, expanding the GAN architecture by an additional regularisation network and a simple, yet effective postprocessing step. Our approach increases the simulation speed by 2 orders of magnitude while maintaining the high fidelity of the simulation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Selectively increasing the diversity of GAN-generated samples</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2207-01561</link>
-    <guid isPermaLink="false">arxiv:2207.01561</guid>
-    <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Dubiński et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Generative Adversarial Networks (GANs) are powerful models able to synthesize data samples closely resembling the distribution of real data, yet the diversity of those generated samples is limited due to the so-called mode collapse phenomenon observed in GANs. Especially prone to mode collapse are conditional GANs, which tend to ignore the input noise vector and focus on the conditional information. Recent methods proposed to mitigate this limitation increase the diversity of generated samples, yet they reduce the performance of the models when similarity of samples is required. To address this shortcoming, we propose a novel method to selectively increase the diversity of GAN-generated samples. By adding a simple, yet effective regularization to the training loss function we encourage the generator to discover new data modes for inputs related to diverse outputs while generating consistent samples for the remaining ones. More precisely, we maximise the ratio of distances between generated images and input latent vectors scaling the effect according to the diversity of samples for a given conditional input. We show the superiority of our method in a synthetic benchmark as well as a real-life scenario of simulating data from the Zero Degree Calorimeter of ALICE experiment in LHC, CERN.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A FPGA-based architecture for real-time cluster finding in the LHCb silicon pixel detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2302-03972</link>
-    <guid isPermaLink="false">arxiv:2302.03972</guid>
-    <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">G. Bassi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>This article describes a custom VHDL firmware implementation of a two-dimensional cluster-finder architecture for reconstructing hit positions in the new vertex pixel detector (VELO) that is part of the LHCb Upgrade. This firmware has been deployed to the existing FPGA cards that perform the readout of the VELO, as a further enhancement of the DAQ system, and will run in real time during physics data taking, reconstructing VELO hits coordinates on-the-fly at the LHC collision rate. This pre-processing allows the first level of the software trigger to accept a 11% higher rate of events, as the ready-made hits coordinates accelerate the track reconstruction and consumes significantly less electrical power. It additionally allows the raw pixel data to be dropped at the readout level, thus saving approximately 14% of the DAQ bandwidth. Detailed simulation studies have shown that the use of this real-time cluster finding does not introduce any appreciable degradation in the tracking performance in comparison to a full-fledged software implementation. This work is part of a wider effort aimed at boosting the real-time processing capability of HEP experiments by delegating intensive tasks to dedicated computing accelerators deployed at the earliest stages of the data acquisition chain.</p>]]></description>
   </item>
 
 </channel>

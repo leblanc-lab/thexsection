@@ -7,7 +7,147 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Replay in the Silent Degrees of Freedom: Continual Learning Without an Offline Phase</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31630</link>
+    <guid isPermaLink="false">arxiv:2609.31630</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhang Yanhai</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Replay-based continual learning almost always consolidates in a dedicated offline phase or by interleaving replayed samples with the input stream, whereas brains also consolidate during wakefulness through local sleep, brief use-dependent off-periods of individual circuits. We ask whether a network trained by local, biologically constrained rules can consolidate with no offline phase at all. An isolation rule confines replay updates to hidden synapses invisible to the current input under k-winner-take-all dynamics, with optimiser state advanced only inside the mask; a refractory rotation rule makes units that have just fired sit out the next competition, widening the consolidable set; a homeostatic pressure and a relative-novelty gate decide when replay bursts fire and when rotation runs. This inverts the usual direction of non-interfering continual learning: the hidden computation on the current input is held invariant (exactly on the proven channels, and for all but 0.3% of waking samples per update elsewhere) while past memories are written into the degrees of freedom the current batch leaves unused. On class-incremental split-MNIST the system reaches 91.6+-0.3% with no offline phase, at or above the best offline-night schedule on two held-out splits, tied with DER++ and above experience replay, ER-ACE, A-GEM and unmasked local replay; in a single pass it leads DER++ (91.8% against 90.1%) while the night falls to 76.9%. The advantage is largest at small buffers and gives way to the backpropagation references at large ones; on split CIFAR-10 the system leads offline rehearsal and experience replay but trails ER-ACE and DER++. Rotation carries most of the gain; isolation adds the invariance guarantee. The mechanism is not tied to the local rule: under the same schedule a backpropagation network with k-WTA hidden layers gains from rotation, and isolation is again free on top of it.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal transport meets speech: a tutorial review</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31787</link>
+    <guid isPermaLink="false">arxiv:2609.31787</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xugang Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for comparing and transforming probability distributions while preserving geometric structure. Recently, OT has gained significant attention in machine learning due to its ability to measure discrepancies between distributions, even when their supports do not overlap, making it effective for tasks such as generative modeling, domain adaptation, and transfer learning. Despite its success in fields such as computer vision and natural language processing, OT remains relatively underexplored in speech research. Speech signals present unique challenges, including temporal dynamics, speaker variability, noise, reverberation, and heterogeneous multimodal representations involving audio, text, and visual information. These factors often lead to distribution mismatches, where OT offers a natural framework for alignment and interpretation. This work aims to promote broader adoption of OT in speech processing by: (1) reviewing OT foundations through intuitive physical interpretations and highlighting connections to modern generative models; (2) presenting computational algorithms suitable for deep learning frameworks; and (3) demonstrating OT applications in cross-domain and cross-modal speech tasks, including speech enhancement, automatic speech recognition, language and speaker recognition, and audio spoof detection. We highlight OT&rsquo;s strong potential for addressing distributional variations in real-world speech applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Averaged Mirror Descent and Dual Gradient Methods: Convergent Algorithms for Entropic Gromov-Wasserstein Problem</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31848</link>
+    <guid isPermaLink="false">arxiv:2609.31848</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joanna Mark et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) distance measures the discrepancy between metric measure (mm) spaces and identifies optimal alignments between them based solely on their intrinsic structure. Since it identifies isomorphic mm spaces, it provides a natural notion of distance for heterogeneous datasets which may admit isomorphic representations. In order to accelerate computation of GW distances, many practitioners employ entropic regularization to obtain an Entropic GW (EGW) problem. The most popular EGW solver is the Mirror Descent (MD) algorithm, which reduces EGW computations to an iterative process where an entropic optimal transport (EOT) problem is solved at each iteration. Despite its widespread use, the convergence of MD for this problem has only been established for restricted classes of costs. On the other hand, a recently proposed dual gradient method is available for general costs, but requires a choice of step size which depends on the regularization parameter. To address these two issues, we introduce Averaged Mirror Descent (AMD), which averages consecutive MD steps, and prove its convergence for arbitrary costs. Then, we establish that the dual gradient method with a fixed step size also converges for arbitrary costs at the cost of a more complicated iteration. In both cases, we also account for inexact iterations which are inescapable in practice. We compare the empirical performance of these methods across various settings and, in particular, show that AMD and the dual gradient method both converge on an example where classical MD fails.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-31862</link>
+    <guid isPermaLink="false">arxiv:2609.31862</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nilotpal Kakati et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, particle flow, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Reconstruction and simulation at a collider experiment are long chains of specialised algorithms, each tuned to a single step. We explore how one model can serve many of those steps at once, while still producing the intermediate objects (tracks, calorimeter cells, clusters, particles and jets) that make the chain interpretable. To do so, we represent every object in a jet in a single shared token vocabulary and train one model to map any subset of these modalities to any other. A task is then only a choice of which modalities to provide and which to request: particle flow, detector simulation and charged energy subtraction are all directions through the same set of weights. We train over all modality combinations, with a decoder emitting tokens either autoregressively or in parallel. With tokenisation, both architectures train stably with little tuning. In evaluations, both models produce realistic reconstruction and simulation objects, with the autoregressive model particularly faithful to output from Geant4. The autoregressive model also outperforms a state-of-the-art particle flow algorithm on many typical jet reconstruction metrics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-32479</link>
+    <guid isPermaLink="false">arxiv:2609.32479</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathan Renusch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>We propose a training recipe that treats charged-particle trajectory parameter regression on high-energy physics detector data as a sequence-modeling task. Kalman filters and linearized least-squares fits have been the classical standard approach for this task: they are optimal estimators for sparsely sampled linear-Gaussian data and are commonly used for trajectory parameter regression (fitting). The classical fitting techniques implemented for this domain reach a final precision of one part in 10⁵ through detailed modeling of detector geometry, material, detection effects and precise numerical integration of the equations of motion through the detector&rsquo;s inhomogeneous magnetic field. With this study, we demonstrate that using a bidirectional gated linear recurrent encoder, one is able to reproduce the full precision of classical track fitting techniques. Using a custom kernel, we also achieve significantly higher throughput during GPU inference, compared to classical fitting software running on similarly priced multi-core CPU servers representing typically employed hardware. Such a speedup would lead to considerable cost savings for the pattern recognition at the Large Hadron Collider. To our knowledge, this is the first end-to-end learned track fit to reach the full precision and, at the same time, offer the opportunity to reduce the computing costs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>One-Step Generative Modeling via Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-32708</link>
+    <guid isPermaLink="false">arxiv:2609.32708</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yirong Shen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Drifting models enable one-step generation by amortizing distribution transport into training, but this efficiency places greater demands on the transport field estimated at each update. In large-scale training, the field is computed from finite mini-batches of generated and real samples, which provide only imperfect approximations to the underlying distributions. Balanced optimal transport enforces exact mass matching within every mini-batch, making the estimated field sensitive to the particular composition of the real-data batch. We find that generated and real samples should be treated asymmetrically: letting the mass assigned to real samples adapt while keeping every generated sample fully transported improves generation across six feature-space metrics in controlled ablations, and is more robust to the relaxation strength than relaxing both marginals simultaneously, which falls below balanced transport under stronger relaxation. Motivated by this observation, we propose Unbalanced Optimal Transport Gradient Flow (UOT-GF), which keeps the generated-sample marginal fixed and relaxes only the real-data marginal. Under identical settings at DiT-B/2 on ImageNet-256, UOT-GF improves Fréchet Inception Distance (FID) from 1.53 to 1.46 over the balanced W-Flow baseline; scaling the same recipe yields 1.34 and 1.22 FID at L/2 and XL/2, the best FID among the one-step models we compare. We further derive the induced UOT transport force, establish a kinetic Vlasov&ndash;Fokker&ndash;Planck formulation whose overdamped zero-temperature limit recovers the drifting dynamics, and characterize non-target stationary states together with sufficient conditions for convergence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Orlicz-Wasserstein</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-32847</link>
+    <guid isPermaLink="false">arxiv:2609.32847</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Binh Thuan Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose sliced Orlicz-Wasserstein (SOW) distance which is a generalization of sliced Wasserstein (SW) distance. SOW replaces the L^p norm in SW with a Luxemburg norm cost induced by an Orlicz function ϕ. First, we prove that SOW distance is a metric on the space of measures with finite Orlicz norm, and show that it recovers the SW distance when the Orlicz function is ϕ(x)=x^p. Next, we derive the topological properties of the SOW distance. In particular, we show that convergence under SOW implies weak convergence, and the converse is true under the compact support condition. We then present the theoretical results for estimating the SOW distance. We derive sample complexity for both the distance itself and the powered functional of the distance, and prove their minimax optimality. In addition, we discuss the computational algorithm for approximating the SOW distance by Monte-Carlo estimation and bisection search, as well as the associated approximation error and computational complexity analysis. Our experimental results reveal the superior computational efficiency of SOW compared with Orlicz-Wasserstein (OW) distance. Also, in the experiments, we demonstrate the favorable flexibility of SOW distance over SW in detecting differences between distributions by comparing their performance in two-sample tests and evaluating generative models on image datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine learning for the LHC physics program: a 2025-2026 stocktake</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-32874</link>
+    <guid isPermaLink="false">arxiv:2609.32874</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse Thaler</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Jesse Thaler) — original abstract; no AI summary.</em></p>
+<p>The first sentence of this abstract&ndash;and the introduction to these proceedings&ndash;was authored by a human, but the bulk of this document was generated by an agentic AI system. In this talk, I take stock of machine learning (ML) for the LHC physics program over the twelve months from May 2025 to May 2026. The corpus is the HEPML Living Review, split at May 2025 into 1,756 earlier papers and 569 later ones. An AI pipeline surveyed the 569 abstracts, ranked them by citations, recency, theme, and collaboration involvement, and read 103 papers in full (95 from after the split, plus 8 earlier baseline papers), producing a structured note for each. The notes were then synthesized into six claims about the state of the field, checked by independent reviewer agents, and re-verified against the source papers. The headline claim is that (1) ML for high-energy physics (HEPML) stopped being a research area that builds tools and became infrastructure that the LHC physics program depends on: ATLAS and CMS now publish physics results that depend on neural networks, and the archived ALEPH data have re-entered production. The other five claims are: (2) simulation-based inference and foundation models are two revolutions starting to merge; (3) AI agents are the genuinely new front, with 47 papers in twelve months and no adopted measurement yet; (4) &ldquo;do we trust it?&rdquo; is the fastest-growing agenda, with one recent paper in five about uncertainty, calibration, or interpretability; (5) what is slowing down is informative, since equivariance was absorbed into a tool and model-specific phenomenology ceded ground to model-agnostic searches; and (6) theory ML crossed a capability threshold in multiple research areas. I close with what is settled, what is incoming, and what is open, and briefly discuss the concerns raised by this way of working with AI.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Dropout for Structured Predictive Uncertainty</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-33377</link>
+    <guid isPermaLink="false">arxiv:2609.33377</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giacomo Lorenzon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deterministic neural networks and neural operators provide point predictions with no intrinsic measure of reliability. Yet, predictive uncertainty may stem from irreducible outcome variability, finite data, or limitations of the chosen model class. Monte Carlo dropout offers a computationally convenient way to construct a predictive distribution through stochastic feature masking, without training multiple independent networks or explicitly inferring a posterior over model parameters. However, its perturbation law is largely prescribed a priori and typically factorised across latent coordinates. We introduce Optimal Transport Dropout (OTD), which instead learns the predictive mapping and the law of its latent perturbations jointly. Starting from a simple independent reference distribution, OTD transports latent perturbations through a learnable flow and propagates them through the predictive neural network, thereby inducing a structured predictive law. Training uses the strictly proper Energy Score, while a kinetic-action term geometrically regularises the transport. Synthetic benchmarks show that OTD captures multimodal predictive distributions, generates meaningful dispersion when the model is misspecified, and exhibits contracting dispersion as more training data or greater model capacity are provided. For a field-valued partial differential equation surrogate, predictive dispersion strongly aligns with the spatial pattern of prediction errors. On this task, compared with Monte Carlo dropout, OTD yields more accurate predictions and better-calibrated, substantially narrower intervals. On real-world regression benchmarks, it further shows competitive accuracy and better probabilistic predictions compared to established baselines. OTD therefore offers a way to learn structured predictive uncertainty without explicit posterior inference or ensembles of independently trained predictors.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multi-Marginal Inverse Optimal Transport for Contrastive Learning Via Explicit Anchor-Positive-Negative Coupling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-33741</link>
+    <guid isPermaLink="false">arxiv:2609.33741</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ngoc-Hai Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Inverse Optimal Transport (OT) based methods for representation learning learn representations such that the global OT coupling between a pair of data marginals in the representation space, concentrates on the positive pairs. This is in contrast to previous methods that primarily focused on pairwise matching. However, these methods DO NOT utilize negative pairs and hence are not truly contrastive in their approach. We show that this leads to issues of dimensional collapse and hence degraded downstream performance. To alleviate this, we develop a novel multi-marginal (MM) inverse OT (IOT) contrastive learning (CL) approach called Neg-MMIOT-CL, which learns representations such that the global multi-marginal OT (MMOT) coupling between a triple of data marginals, with respect to a carefully designed ground-cost between triplets of data points in the representation space, concentrates on the anchor-positive-negative triplets. For a latent class model, we empirically show that Neg-MMIOT-CL alleviates dimensional collapse. Furthermore, for a specific choice of ground cost for all triplets in representation space, we prove that the optimal representation configuration for Neg-MMIOT-CL exhibits equiangular property for within-class and across-class representations, which translates to Neural-Collapse when the representation dimension is larger than the number of classes minus one &ndash; a result that is previously established only for pairwise contrastive learning methods. Finally, we propose Neg-IOT-CL-PushPull, that is a computationally efficient alternative to Neg-MMIOT-CL, alleviating the high cost of computing MMOT plans needed during implementation. We apply these methods on both synthetic and real-world datasets and show significant improvements over existing OT-based contrastive learning methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Binding Multiple Modalities via Multimodal Wasserstein Barycenter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-33800</link>
+    <guid isPermaLink="false">arxiv:2609.33800</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaole Tang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Multimodal learning beyond two modalities commonly leverages a specific modality (e.g., text) to bind other modalities. However, how to establish a more balanced representation space that approximates shared semantics while respecting the holistic geometry of n-modal data remains challenging. In this work, we present BaryBind, which aims to transport the specific modality towards the Wasserstein barycenter (WB) optimized across all modalities and introduces a volumetric alignment objective to establish a unified semantic space around the WB embedding. Specifically, we project specific modalities to the WB, which minimizes the average Wasserstein distances to multimodal distributions and serves as the anchor for subsequent alignment. We then construct a barycenter simplex, whose volume is taken as a similarity metric for global alignment centered at the WB. Experiments show that BaryBind achieves competitive performance in text-video-audio retrieval, classification, videoQA, and cross-modal generation tasks, along with robustness under modality absence and scalability to more than three modalities. Code is released at https://github.com/xl-tang3/BaryBind.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Annealed Sinkhorn with Momentum: Certified Unregularized Optimal Transport in Linear Memory</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-33814</link>
+    <guid isPermaLink="false">arxiv:2609.33814</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel J. K. Chin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We characterize Bregman Douglas-Rachford splitting (BDRS) for unregularized discrete optimal transport and develop an anytime primal-dual certificate in linear memory. We first establish that BDRS coincides with warm-started Inexact Proximal point method for exact Optimal Transport (IPOT) using a single inner Sinkhorn iteration. By eliminating the primal transport plan from the updates, we derive an equivalent dual formulation that reveals BDRS as annealed Sinkhorn under an implicit inverse-linear temperature schedule, with an additional log-scaling momentum term and a cooler kernel. While this explains the role of the temperature parameter in BDRS as an initial temperature, it also reduces the solver&rsquo;s memory requirement from quadratic to linear. Utilizing this annealing perspective, we introduce overrelaxed BDRS, which combines annealing and overrelaxed scaling within a single recursion. We derive a primal-dual certificate for both methods that can be evaluated in linear memory without transport plan construction, thus providing a computable stopping rule. On the DOTmark benchmark, combining momentum with the cooler kernel produces substantially smaller optimality gaps than annealed Sinkhorn under the same schedule. For pixel-level color transfer between 1024×1024 images, BDRS attains a lower repaired transport cost than MDOT-TNT with a 9× speed up, reaching a relative duality gap of 1.59% in 24 minutes. We further demonstrate a color transfer with 4238×2365 images, yielding 10 million pixels per image and approximately one hundred trillion implicit transport entries, reaching a best relative duality gap of 2.41% and 2.80% within 35 hours in each direction on a single NVIDIA L40S GPU.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Addressing Spatial Indistinguishability in Spatiotemporal Prediction via Optimal Transport-Guided Masking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-35021</link>
+    <guid isPermaLink="false">arxiv:2609.35021</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guangyu Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Spatiotemporal prediction aims to learn discriminative representations from correlated temporal signals over spatial structures for accurate future inference. A central challenge is \emph{spatial indistinguishability}: different nodes may share similar historical patterns yet evolve toward divergent futures, severely degrading forecasting performance in real-world sensor networks. Existing embedding-based and graph neural network (GNN)-based approaches can partially detect such ambiguous nodes but rely on historical similarity, struggling to capture \emph{future behavioral divergence}. We propose \textbf{STOT} (\textbf{S}patio\textbf{T}emporal \textbf{O}ptimal \textbf{T}ransport), a self-supervised framework that resolves spatiotemporal ambiguity via structured masking guided by optimal transport. Our key idea treats indistinguishability as a \emph{disambiguation} problem: future states are inferred by exploiting concurrent spatial correlations and their time-varying similarity. We design a similarity-aware metric for dynamic inter-node relationships and an optimal transport-based masking strategy to emphasize ambiguous positions during pre-training. A batch consistency constraint preserves semantic coherence, while a random-walk masking mechanism promotes structured context exploration. Experiments on six real-world datasets show that STOT performs competitively with state-of-the-art baselines on the evaluated benchmarks and improved interpretability through transport-plan visualizations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SANTA++: Sampling Attention through Representative Keys</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-35629</link>
+    <guid isPermaLink="false">arxiv:2609.35629</guid>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kyle Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Kyle Lee) — original abstract; no AI summary.</em></p>
+<p>Attention often concentrates on a small subset of tokens in the context, but which subset matters changes from one query to the next. To exploit this changing structure, we introduce SANTA++, a training-free stochastic attention method that uses representative keys for memory-efficient selection without scanning the entire key-value (KV) cache. Cached keys are organized into teams, and the query scores one representative from each team to decide which teams to sample. We compute exact attention scores within the sampled teams and reweight each team&rsquo;s contribution by the inverse of its inclusion probability. This importance sampling correction estimates attention over the full cache, with a sampling budget that lets us trade memory reads for accuracy. Remarkably, with 32 or 64 sampled teams, SANTA++ uses 16% to 22% of dense attention&rsquo;s KV reads and retains 94% to 99% of the dense-attention baseline&rsquo;s scores on LongBench v2 and HELMET&rsquo;s retrieval-augmented generation subset, and 85% to 91% on RULER, with Qwen2.5-7B-Instruct at 32K context. With 31 sampled teams, our GPU implementation delivers a 1.69× attention speedup over the dense FlashAttention baseline at 32K context. By reducing the number of cache entries read, SANTA++ in principle complements architectures with compressed KV representations, such as multi-head latent attention. Our kernels are available at: https://github.com/OPUSLab/santapp-kernel-demo.git.</p>]]></description>
+  </item>
 
   <item>
     <title>Brenier Meets Adversarial Training: Optimal Transport Geometry for Robust Learning</title>
@@ -1867,146 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amedeo Chiefa et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, colliders) — original abstract; no AI summary.</em></p>
 <p>Parton Distribution Functions (PDFs) play a central role in describing experimental data at colliders and provide insight into the structure of nucleons. As the LHC enters an era of high-precision measurements, a robust PDF determination with a reliable uncertainty quantification has become mandatory in order to match the experimental precision. The NNPDF collaboration has pioneered the use of Machine Learning (ML) techniques for PDF determinations, using Neural Networks (NNs) to parametrise the unknown PDFs in a flexible and unbiased way. The NNs are then trained on experimental data by means of stochastic gradient descent algorithms. The statistical robustness of the results is validated by extensive closure tests using synthetic data. In this work, we develop a theoretical framework based on the Neural Tangent Kernel (NTK) to analyse the training dynamics of neural networks. This approach allows us to derive, under precise assumptions, an analytical description of the neural network evolution during training, enabling a quantitative understanding of the training process. Having an analytical handle on the training dynamics allows us to clarify the role of the NN architecture and the impact of the experimental data in a transparent way. Similarly, we are able to describe the evolution of the covariance of the NN output during training, providing a quantitative description of how uncertainties are propagated from the data to the fitted function. While our results are not a substitute for PDF fitting, they do provide a powerful diagnostic tool to assess the robustness of current fitting methodologies. Beyond its relevance for particle physics phenomenology, our analysis of PDF determinations provides a testbed to apply theoretical ideas about the learning process developed in the ML community.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Contraction of Coordinate Ascent Variational Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-30253</link>
-    <guid isPermaLink="false">arxiv:2605.30253</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rocco Caprio et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the non-asymptotic contraction in Wasserstein distance of the sequential, parallel, and random-scan coordinate ascent variational inference algorithms. This is shown to hold under a functional smoothness condition of the optimality maps and a transportation-information inequality at their fixed points. Our results are sharp and general, and as opposed to those based on global strong log-concavity assumptions, they allow for local convergence on smooth, non-smooth, and discrete manifolds, including within the context of data augmentation. We consider many applications in statistical physics and Bayesian statistics. These include pairwise Markov Random field models such as Ising and Curie-Weiss, unbalanced Bayesian Gaussian Mixture Models, high-dimensional Bayesian Probit Regression, and high-dimensional Logistic Regression with Pólya&ndash;Gamma random variables (i.e. Jaakkola-Jordan&rsquo;s algorithm). In many of these models, these represent the first available convergence results of their kind.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-00377</link>
-    <guid isPermaLink="false">arxiv:2607.00377</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuting Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Self-supervised Continual Graph Learning (CGL) aims to successively learn from a graph sequence with different tasks without label supervision - a paradigm that has attracted widespread attention. Most existing self-supervised CGL methods rely on instance-level consistency objectives that enforce stability of individual node (or node-pair) embeddings. Due to optimizing nodes in isolation, these methods fail to maintain global relational structure, causing inter-node correspondences to progressively distort under continual learning. To this end, we propose a novel Structure-Aware Optimal Transport (SAOT) framework that explicitly captures and preserves relational structure within graph representations across sequential tasks. Specifically, SAOT leverages optimal transport theory to capture global inter-node correspondences, thereby facilitating and enhancing graph representation learning. Simultaneously, SAOT incorporates a cross-task knowledge distillation mechanism to preserve the previous structural knowledge. Extensive experiments on four CGL benchmark datasets demonstrate that SAOT outperforms existing self-supervised baselines. In particular, SAOT achieves significant performance gains, improving average accuracy by up to 5% on CoraFull-CL and over 15% on Products-CL compared with state-of-the-art methods in the Class-IL setting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-01144</link>
-    <guid isPermaLink="false">arxiv:2607.01144</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Binglin Ji et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle flow) — original abstract; no AI summary.</em></p>
-<p>While generative models have enabled training-free reward alignment, current methods typically excel in local exploration within narrow regions of the underlying distribution. These approaches struggle when preferences are unknown a priori and only revealed through sequential feedback-a scenario demanding broad exploration to uncover high-utility regions. To address this, we propose Sequentially-Controlled Interactive Multi-Particle Flow-Maps (IMPFM), a framework for sample-efficient online feedback-driven search. IMPFM progressively transports a group of interactive particles toward the target distribution, maintaining the broad coverage essential for heterogeneous preference alignment. IMPFM introduces a principled and efficient posterior sample sharing mechanism across particles powered by flow maps. By correcting individual particle drift with the collective posterior samples of the entire ensemble at each resampling step, the framework maximizes sample utility to enable global exploration while actively mitigating reward over-optimization, typical of standard control frameworks. Paired with a principled exploration-exploitation reweighting mechanism involving multi-particle interaction, this sequentially corrected multi-particle dynamics explicitly preserves structural diversity and overcomes the weight degeneracy inherent to standard SMC samplers. Crucially, we prove that the resulting sampling framework yields a multi-particle interaction-aware Feynman-Kac corrector that progressively steers the multi-particle system toward a KL-tilted target distribution, facilitating global exploration and preventing mode collapse. Extensive empirical evaluations and rigorous ablations across diverse search and alignment tasks confirm the efficacy of IMPFM over existing baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTCache: Optimal Transport for Geometry-Aware Caching in Diffusion Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-31026</link>
-    <guid isPermaLink="false">arxiv:2606.31026</guid>
-    <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huanlin Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose OTCache, a training-free framework for accelerating diffusion sampling via caching schedule prediction. Existing graph-based caching methods reduce redundant computation by optimizing shortest-path objectives, but rely on an additive independence assumption, which often breaks down in the low NFE regime. To address this issue, OTCache models caching schedules across inference budgets as a smooth evolution in policy space, inspired by Optimal Transport (OT). The framework consists of three stages: (1) obtaining a high-fidelity \textbf{reference schedule} using a graph-based caching method under a conservative budget; (2) performing a lightweight anchor search under an extreme low-budget setting via Optuna optimization with an end-to-end perceptual objective; and (3) predicting schedules for target budgets via quantile interpolation between the reference and anchor policies using continuous warping representations. Experiments on FLUX.1 [dev], Qwen-Image, and HunyuanVideo show that OTCache achieves 4.5x, 4.7x, and 3.66x acceleration, respectively, while consistently improving generation fidelity over state-of-the-art caching baselines. This work provides a new perspective on accelerating diffusion models through Optimal-Transport-inspired schedule modeling. Code:https://github.com/UnicomAI/OTCache</p>]]></description>
-  </item>
-
-  <item>
-    <title>SOTAlign: Semi-Supervised Alignment of Unimodal Vision and Language Models via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-23353</link>
-    <guid isPermaLink="false">arxiv:2602.23353</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simon Roschmann et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The Platonic Representation Hypothesis posits that neural networks trained on different modalities converge toward a shared statistical model of the world. Recent work exploits this convergence by aligning frozen pretrained vision and language models with lightweight alignment layers, but typically relies on contrastive losses and millions of paired samples. In this work, we ask whether meaningful alignment can be achieved with substantially less supervision. We introduce a semi-supervised setting in which pretrained unimodal encoders are aligned using a small number of image-text pairs together with large amounts of unpaired data. To address this challenge, we propose SOTAlign, a two-stage framework that first recovers a coarse shared geometry from limited paired data using a linear teacher, and then refines the alignment on unpaired samples via an optimal-transport-based divergence that transfers relational structure without overconstraining the target space. SOTAlign effectively leverages unpaired images and text, learning robust joint embeddings across datasets and encoder pairs, and significantly outperforming supervised and semi-supervised baselines. Code is available at https://github.com/ExplainableML/SOTAlign.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Risk-Sensitive Estimation via Conditional Value-at-Risk</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-18546</link>
-    <guid isPermaLink="false">arxiv:2604.18546</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Feras Al Taha et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a distributionally robust approach to risk-sensitive estimation of an unknown signal x from an observed signal y. The observation and unknown signal are modeled as random vectors whose joint probability distribution is unknown, but assumed to belong to a given type-2 Wasserstein ball of distributions, termed the ambiguity set. The performance of an estimator is measured according to the conditional value-at-risk (CVaR) of the squared estimation error. Within this framework, we study the problem of computing affine estimators that minimize the worst-case CVaR over all distributions in the given ambiguity set. As our main result, we show that, when the nominal distribution at the center of the Wasserstein ball is finitely supported, such estimators can be exactly computed by solving a tractable semidefinite program. We evaluate the proposed estimators on a wholesale electricity price forecasting task using real market data and show that they deliver lower out-of-sample CVaR of squared error compared to existing methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adjusted Wasserstein distances for bridging empirical and true distributions with applications to MDS</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-29665</link>
-    <guid isPermaLink="false">arxiv:2606.29665</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Flor Martinez-Sermeno et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper examines how metric adjustments to Multidimensional Scaling (MDS) can enhance its effectiveness as a visual tool for pattern recognition. The distance under consideration, referred to as Max-D-SW, is an adjustment of the Max-Sliced Wasserstein distance. In contrast to the original formulation, which optimizes over single unit directions, Max-D-SW aggregates contributions over orthonormal bases. This modification provides a clear numerical advantage in MDS outcomes, particularly when applied to heavy-tailed distributions. We also establish sample-complexity bounds showing that Max-D-SW remains statistically tractable, with rates comparable to those of its max-sliced counterpart. Moreover, we show that a better sample complexity for a metric does not necessarily translate into better performance when the metric is used as an input for MDS.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Notes on generative modeling: flow matching, diffusion, optimal transport and Schr{ö}dinger bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-30053</link>
-    <guid isPermaLink="false">arxiv:2606.30053</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Titouan Vayer</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>These notes recapitulate the high level mathematical principles behind different techniques for generative modeling. I show the connections between optimal transport and standard techniques such as Schr{ö}dinger bridge and flow matching.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Highly Data Parallelizable Estimation of the Sliced-Wasserstein Distance Using Cumulative Distribution Functions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-30310</link>
-    <guid isPermaLink="false">arxiv:2606.30310</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Christophe Vauthier et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Sliced Wasserstein (SW) distance has emerged as a computationally attractive alternative to the Wasserstein distance by leveraging one-dimensional optimal transport along random projections. Standard estimators of the SW distance rely on Monte Carlo averages of one-dimensional Wasserstein distances computed via quantile functions, which require sorting projected samples and access to full datasets. In this work, we introduce a new class of estimators for the Sliced Wasserstein distance based on cumulative distribution functions (CDFs) of projected measures, that avoid sorting and scale via massive dataset parallelism. This class includes several estimators, some of them being indexed by hyperparameters controlling their variance or smoothness. We show that they are especially well suited to scenarios in which CDFs are more tractable than quantile functions, such as mixtures of Gaussians, and moreover that they are also naturally compatible with federated learning, since CDFs of projected data can be computed and aggregated locally without requiring the exchange of raw samples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ITSPACE: Monotone Gaussian Optimal Transport Updates</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-30523</link>
-    <guid isPermaLink="false">arxiv:2606.30523</guid>
-    <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Woojoo Na et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Covariance matrices serve as compact descriptors of feature distributions in many machine-learning pipelines, including domain adaptation and Gaussian embeddings. Under a centered Gaussian approximation, the unregularized Wasserstein-2 optimal-transport (OT) discrepancy admits a closed form on covariances given by the Bures-Wasserstein (BW) objective on the symmetric positive definite (SPD) cone. We propose ITSPACE (Iterative Transport for Stable Proximal Alignment of Covariance Embeddings), a proximal majorization-minimization method that directly optimizes this exact BW objective through closed-form updates in a square-root factorization. In exact arithmetic, each iteration satisfies a sufficient-decrease inequality for the BW objective; under inexact polar computations, we provide an explicit certificate-gap bound controlling deviations from exact descent. The resulting iterations preserve PSD structure by construction and naturally support rank-restricted factors, making ITSPACE well-suited as a lightweight inner-loop primitive in settings where adaptation must be performed from unlabeled target batches under strict step and compute budgets. Across real-world covariance-alignment benchmarks, ITSPACE reaches low-BW-gap solutions substantially faster than BW-gradient descent, methods based on other covariance geometries, and entropically regularized sample-OT baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Robustness and Structure Preservation in Flow-Based Generative Models via Wasserstein Path-Space Divergences</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2410-01244</link>
-    <guid isPermaLink="false">arxiv:2410.01244</guid>
-    <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziyu Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce a novel Wasserstein-1 (W_1) path-space divergence for stochastic and deterministic dynamics and establish a Wasserstein Uncertainty Propagation (WUP) theorem that bounds the W_1 distance between terminal distributions by the proposed divergence, equivalently characterized by a weighted L² discrepancy between the underlying drifts and the W_1 distance between their initial measures. A key ingredient is a probabilistic framework combining adjoint Feynman-Kac representations with synchronous coupling (and reflection coupling on bounded domains), yielding Wasserstein stability estimates beyond existing PDE- and Girsanov-based approaches. The framework accommodates time-varying and possibly degenerate diffusion coefficients, empirical and singular measures, and remains valid in the deterministic limit of flow matching. Unlike KL-based uncertainty quantification bounds, it does not require absolute continuity of path measures and therefore remains well-defined in singular settings. As consequences of the WUP theorem, we derive W_1 robustness and generalization bounds for score-based generative models and flow matching at both population and finite-sample levels. We further specialize the framework to group-symmetric targets, providing the first error analysis of equivariant flow-based models and the first quantitative comparison between data augmentation and equivariant inductive bias. Our analysis identifies a symmetry-aware Wasserstein path-space divergence that quantifies the model-form error induced by non-equivariant parametrizations. We prove that this error cannot be removed by additional data or training and vanishes only under equivariant architectures, establishing a precise theoretical advantage of equivariant inductive bias over data augmentation. Numerical experiments on group-symmetric Gaussian mixtures corroborate the theory.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning to Trigger: Reinforcement Learning at the Large Hadron Collider</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-23993</link>
-    <guid isPermaLink="false">arxiv:2606.23993</guid>
-    <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zixin Ding et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>High-throughput scientific facilities such as the Large Hadron Collider depend on real-time event filtering (\textit{triggering}) under tight constraints on bandwidth, latency, and storage. In practice, trigger menus are largely static and hand-tuned and can become suboptimal as detector conditions, pileup, and background composition drift over time. We cast online threshold tuning as a sequential decision-making problem: a reinforcement learning agent ingests streaming summaries of recent rates and signal-sensitive features and updates trigger thresholds to maximize signal efficiency while tracking a target background rate within a tolerance band. We adapt Group-Filtered Policy Optimization (GFPO) to streaming control and introduce two variants (GFPO-F, GFPO-FR) that enforce background rate feasibility during training. On a benchmark that emulates realistic collider operation, we study two representative triggers: a total transverse energy (H_T) trigger sensitive to pileup variation, and an anomaly-detection (AD) trigger based on reconstruction loss for rare or non-standard signatures. On Monte Carlo streams, our agent increases the fraction of in-tolerance time intervals by 48\% (H_T) and 28\% (AD), with a cumulative gain of up to 2\% in signal efficiency on those in-tolerance intervals. Transferring from simulation to \emph{real} collision data (CMS Run 283408), the same agent, without fine-tuning, achieves a 56\% (H_T) and 28\% (AD) in-tolerance improvement over baselines, with further signal-efficiency gain on both triggers. To our knowledge, this is the \emph{first} demonstration of RL-based trigger control on real Large Hadron Collider collision data. Code is available at https://github.com/Zixind/GFPO_LHC (see repo for details).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Residual Networks Learn the Geodesic Curve in the Wasserstein Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2102-09235</link>
-    <guid isPermaLink="false">arxiv:2102.09235</guid>
-    <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kuo Gai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Recent studies revealed the mathematical connection between deep neural networks (DNNs) and dynamic systems. However, the specific dynamics that DNNs, especially deep residual networks (ResNets), tend to learn during training remain insufficiently characterized. To this end, we model the forward propagation of deep residual networks using continuity equations, in which the measure is conserved and infinite curves in the measure space connect the input distribution to the output one of a ResNet. We find ResNets with L_2 regularization attempt to learn the geodesic curve in the Wasserstein space, induced by the optimal transport map. Compared with plain networks, ResNets can better approximate the geodesic curve, which explains why ResNets can be optimized and generalize better. Numerical experiments show that the data tracks of a ResNet tend to be line-shaped in terms of the line-shape score, and the map learned by a ResNet is closer to the optimal transport map in terms of the optimal transport score. In a word, we conclude that ResNets learn the geodesic curve in the Wasserstein space and discretely engineer the data transformation in high-dimensional spaces.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Difference of Convex Programming in the Wasserstein Space with Applications to MMD Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-27767</link>
-    <guid isPermaLink="false">arxiv:2606.27767</guid>
-    <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Optimizing functionals over the space of probability measures is now ubiquitous in machine learning. A widely used approach is to perform the optimization directly over the Wasserstein space, but many objective functionals of practical interest are non-convex along Wasserstein geodesics, making the analysis of standard first-order methods challenging. In this work, we study a class of objectives over the Wasserstein space that admit a difference-of-convex (DC) decomposition and we lift the classical convex-concave procedure (CCCP) to this setting. Under smoothness and strong convexity assumptions on the convex components of the decomposition, we prove almost stationarity along the iterates of the resulting algorithm. Our main focus is on the Maximum Mean Discrepancy (MMD) and the Energy Distance (ED) functionals, for which we develop explicit Wasserstein DC decompositions, and establish local convergence of the scheme under mild assumptions. Empirically, we show that well-chosen DC decompositions yield faster and more stable convergence than Wasserstein gradient descent on these MMD objectives.</p>]]></description>
   </item>
 
 </channel>
