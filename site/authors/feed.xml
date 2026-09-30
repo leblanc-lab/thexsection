@@ -7,7 +7,47 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimization Using Pathwise Algorithmic Derivatives of Electromagnetic Shower Simulations</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2405-07944</link>
+    <guid isPermaLink="false">arxiv:2405.07944</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max Aehle et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — abstract only, not yet read for a briefing.</em></p>
+<p>Among the well-known methods to approximate derivatives of expectancies computed by Monte-Carlo simulations, averages of pathwise derivatives are often the easiest one to apply. Computing them via algorithmic differentiation typically does not require major manual analysis and rewriting of the code, even for very complex programs like simulations of particle-detector interactions in high-energy physics. However, the pathwise derivative estimator can be biased if there are discontinuities in the program, which may diminish its value for applications. This work integrates algorithmic differentiation into the electromagnetic shower simulation code HepEmShow based on G4HepEm, allowing us to study how well pathwise derivatives approximate derivatives of energy depositions in a sampling calorimeter with respect to parameters of the beam and geometry. We found that when multiple scattering is disabled in the simulation, means of pathwise derivatives converge quickly to their expected values, and these are close to the actual derivatives of the energy deposition. Additionally, we demonstrate the applicability of this novel gradient estimator for stochastic gradient-based optimization in a model example.</p>]]></description>
+  </item>
+
+  <item>
+    <title>It Just Takes Two: Scaling Amortized Inference to Large Sets</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2605-07972</link>
+    <guid isPermaLink="false">arxiv:2605.07972</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Wehenkel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — abstract only, not yet read for a briefing.</em></p>
+<p>Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size &ndash; a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2609-32479</link>
+    <guid isPermaLink="false">arxiv:2609.32479</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathan Renusch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — abstract only, not yet read for a briefing.</em></p>
+<p>We propose a training recipe that treats charged-particle trajectory parameter regression on high-energy physics detector data as a sequence-modeling task. Kalman filters and linearized least-squares fits have been the classical standard approach for this task: they are optimal estimators for sparsely sampled linear-Gaussian data and are commonly used for trajectory parameter regression (fitting). The classical fitting techniques implemented for this domain reach a final precision of one part in 10⁵ through detailed modeling of detector geometry, material, detection effects and precise numerical integration of the equations of motion through the detector&rsquo;s inhomogeneous magnetic field. With this study, we demonstrate that using a bidirectional gated linear recurrent encoder, one is able to reproduce the full precision of classical track fitting techniques. Using a custom kernel, we also achieve significantly higher throughput during GPU inference, compared to classical fitting software running on similarly priced multi-core CPU servers representing typically employed hardware. Such a speedup would lead to considerable cost savings for the pattern recognition at the Large Hadron Collider. To our knowledge, this is the first end-to-end learned track fit to reach the full precision and, at the same time, offer the opportunity to reduce the computing costs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hybrid Neural Simulation-Based Inference for Robust Applications and Limited-Budget Scenarios</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2609-36044</link>
+    <guid isPermaLink="false">arxiv:2609.36044</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sean Benevedes et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh) — abstract only, not yet read for a briefing.</em></p>
+<p>We develop two hybrid techniques that approach the performance of neural simulation-based inference (NSBI) analyses while substantially reducing the computational cost of inference and preserving some or all of the reliability guarantees of parametric methods. The first approach is broadly applicable, while the second is tailored to a class of particle physics analyses that admit a semi-parametric NSBI formulation. With only a modest compromise in raw sensitivity, these methods represent an important step toward computationally efficient NSBI in offline analyses and also open the door to the exploration of trigger-level applications in the future. Based on our comparison studies, we recommend the use of our first approach, Latent Categories, for robust and efficient inference.</p>]]></description>
+  </item>
 
   <item>
     <title>Disentangling V_ud from New Physics in Beta Decays with the FCC-ee</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Frank Gaede et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
 <p>Accurate particle shower simulation remains a critical computational bottleneck for high-energy physics. Traditional Monte Carlo methods, such as Geant4, are computationally prohibitive, while existing machine learning surrogates are tied to specific detector geometries and require complete retraining for each design change or alternative detector. We present a transfer learning methodology for generative calorimeter simulation models that enables adaptation across diverse geometries with high data efficiency. Using point cloud representations and pre-training on the International Large Detector, our approach handles new configurations without re-voxelizing showers for each geometry. On the CaloChallenge dataset, transfer learning with only 100 target-domain samples achieves a 51% improvement on the geometric mean of Wasserstein distance over training from scratch. Parameter-efficient fine-tuning with bias-only adaptation achieves competitive performance while updating only 17% of model parameters. Our analysis provides insight into adaptation mechanisms for particle shower development, establishing a baseline for future progress of point cloud approaches in calorimeter simulation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Extractions of the strong coupling from collider data without PDF refitting are biased</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-22561</link>
-    <guid isPermaLink="false">arxiv:2511.22561</guid>
-    <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Forte et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Juan Rojo) — abstract only, not yet read for a briefing.</em></p>
-<p>We present an explicit demonstration that a determination of the strong coupling constant α_s(m_Z) from deep-inelastic scattering and hadron collider data without a simultaneous determination of the parton distribution functions (PDFs) leads to a biased result for both the central value and the uncertainty, even in the ideal scenario (closure test) where there are no internal tensions between datasets and where theoretical calculations describe perfectly the experimental measurements. Specifically, we show that a determination of α_s(m_Z) from a single process leads in general to a result that differs from the global best fit more than the value of α_s(m_Z) that is actually favoured by this process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Di-Higgs to 4b with Bayesian inference: improving simulation estimates</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-21832</link>
-    <guid isPermaLink="false">arxiv:2511.21832</guid>
-    <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ezequiel Alvarez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Manuel Szewc) — abstract only, not yet read for a briefing.</em></p>
-<p>Measuring di-Higgs production in the four-bottom channel is challenged by overwhelming QCD backgrounds and imperfect simulations. We develop a Bayesian mixture model that simultaneously infers signal and background fractions and their individual shapes directly in the signal region. The likelihood is a nuanced combination of a one-dimensional kinematic discriminator and per-jet flavour scores; with their correlations incorporated via kinematic bins. Monte Carlo informs weak Dirichlet priors, while the posterior adjusts to the interplay of the model, priors and observed data. Using pseudo-data simulated with standard tools and with controlled mismatches, we show that the method corrects biased priors, delivers calibrated 68-95% credible intervals for the signal count, and improves dataset-level ROC/AUC relative to simple cut-and-count baselines. This study highlights how Bayesian inference can harvest information present in the signal region and self-calibrate model parameters, providing a robust route to increased sensitivity in di-Higgs searches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A First Full Physics Benchmark for Highly Granular Calorimeter Surrogates</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-17293</link>
-    <guid isPermaLink="false">arxiv:2511.17293</guid>
-    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
-<p>The physics programs of current and future collider experiments necessitate the development of surrogate simulators for calorimeter showers. While much progress has been made in the development of generative models for this task, they have typically been evaluated in simplified scenarios and for single particles. This is particularly true for the challenging task of highly granular calorimeter simulation. For the first time, this work studies the use of highly granular generative calorimeter surrogates in a realistic simulation application. We introduce DDML, a generic library which enables the combination of generative calorimeter surrogates with realistic detectors implemented using the DD4hep toolkit. We compare two different generative models - one operating on a regular grid representation, and the other using a less common point cloud approach. In order to disentangle methodological details from model performance, we provide comparisons to idealized simulators which directly sample representations of different resolutions from the full simulation ground-truth. We then systematically evaluate model performance on post-reconstruction benchmarks for electromagnetic shower simulation. Beginning with a typical single particle study, we introduce a first multi-particle benchmark based on di-photon separations, before studying a first full-physics benchmark based on hadronic decays of the tau lepton. Our results indicate that models operating on a point cloud can achieve a favorable balance between speed and accuracy for highly granular calorimeter simulation compared to those which operate on a regular grid representation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Characterising hadronisation across the phase space</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2511-17708</link>
-    <guid isPermaLink="false">arxiv:2511.17708</guid>
-    <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Banfi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Andrea Banfi) — abstract only, not yet read for a briefing.</em></p>
-<p>Leading hadronisation corrections to two-jet global event shapes amount to a shift in the corresponding perturbative distributions. It has been recently established that this shift depends significantly on the value of the considered event shape. These analyses consider perturbative configurations with only three partons emitting an ultra-soft non-perturbative gluon. These are dominant in the three-jet region. However, multiple soft and/or collinear emissions need to be considered to accurately describe event shape distributions near their Sudakov peak. In this region, non-perturbative shifts are usually computed by considering only two hard emitters. In this paper, we find that this approximation misses an important correction to the shift due to the emission of an additional soft wide-angle gluon. We then compute its contribution, and embed it in a general treatment for the shift that is valid in both the two-jet and three-jet regions.</p>]]></description>
   </item>
 
 </channel>

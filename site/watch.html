@@ -39,6 +39,47 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Wednesday, September 30, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv260936523-non-global-logarithms-and-fiducial-transverse-momentum-dependent-observables-in-deep-inelastic-scattering-shuo-lin-et-al"><a href="https://arxiv.org/abs/2609.36523">arXiv:2609.36523</a> — Non-global logarithms and fiducial transverse-momentum-dependent observables in deep-inelastic scattering (Shuo Lin et al.)</h3>
+<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+<p>The non-global treatment has three parts:
+- They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
+- The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
+- The cos φ harmonic NGL is kept only at O(α_s²). It is single-log, U₁⁽²⁾ ~ ᾱ_s² I₁ ln(P_T/μ_b), whereas U₀⁽²⁾ is double-log.</p>
+<p>Headline numbers:
+- ⟨cos φ⟩ at q_T = 1 GeV roughly halves from Δη = 1 to Δη = 2. For HERA it goes 0.280 → 0.134 → 0.074 for Δη = 1, 2, 3.
+- At the EIC, |A_UT| and |A_LT| grow with Δη and peak near q_T ~ 1–1.5 GeV.
+- A_LT at Δη = 1 and q_T = 1 GeV is ≈0.25 at EicC versus ≈0.02 at EIC.</p>
+<p>For this topic, the paper gives an algorithm-independent recoil-control knob with analytic boundary dependence. It is a direct comparator to the H1 ML-unfolded lepton-jet measurements, and scanning Δη within one dataset tests the global and non-global contributions together.</p>
+<p>Caveats:
+- NGLs are LL and large-N_c only, and the first-harmonic NGL is not resummed.
+- The S_NP inputs are borrowed from Drell–Yan fits (halved).
+- Twist-3 evolution of T_F and g̃ is approximated by unpolarized DGLAP.
+- The calculation is at parton level, with no hadronization or detector acceptance effects.</p>
+<h3 id="arxiv260936933-flavor-resolved-four-fermion-probes-at-the-fcc-ee-z-pole-syuhei-iguro"><a href="https://arxiv.org/abs/2609.36933">arXiv:2609.36933</a> — Flavor-resolved four-fermion probes at the FCC-ee Z pole (Syuhei Iguro)</h3>
+<p>This paper is only tangential to jets. Jet flavor tagging is an enabling assumption, but the analysis is parton-level and has no jet definition; the author notes the ΔR_min = 0.2 cut must eventually become an IR-safe jet definition.</p>
+<p>The physics: using Z → QQ̄ℓℓ (Q = b, c; ℓ = μ, τ) at 200 ab⁻¹, the author sets tree-level, interference-only 95% CL reaches on vector contact operators of (2.5, 2.7, 3.5, 3.6) TeV for bμ, bτ, cμ, cτ. These assume unit efficiency, and the reach scales as ε_rec^{1/4}. The main point is flavor resolution. The projected EWPO likelihood in the (C^{bτ}, C^{cτ}) plane has correlation ρ = −0.9999 and effectively constrains only C^{bτ} + 0.058 C^{cτ}. The four-body channels constrain the flat direction, giving combined reaches of Λ^{bτ} &gt; 11.8 TeV and Λ^{cτ} &gt; 3.2 TeV.</p>
+<p>What matters for jets:
+- The optimal hardness cut is only 3–5 GeV, so this needs b/c tagging on soft jets in busy four-body topologies. The author explicitly flags this as unvalidated.
+- b↔c migration cannot be absorbed into a common efficiency factor.</p>
+<h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv260937117-input-to-the-scac-facilities-subcommittee-from-the-us-muon-collider-collaboration-s-jindariani-on-behalf-of-the-us-muon-collider-collaboration-et-al"><a href="https://arxiv.org/abs/2609.37117">arXiv:2609.37117</a> — Input to the SCAC Facilities Subcommittee from the U.S. Muon Collider Collaboration (S. Jindariani (on behalf of the US Muon Collider Collaboration) et al.)</h3>
+<p>This is a policy and strategy input to DOE&rsquo;s SCAC with no new technical results. It asks SCAC to recognize muon-collider R&amp;D as a gap in the 2026–2036 facilities portfolio and proposes a staged program:
+1. Distributed micro-demonstrators covering HTS solenoids, RF in strong magnetic fields, high-power targets, fast-ramping magnets and power systems, detector timing, and integrated cooling-cell prototypes.
+2. Parallel design of a macro-demonstrator. This is now framed as a higher-intensity front-end facility (proton driver, target and capture, production and cooling) with its own neutrino, dark-sector, flavor and nuclear physics program, rather than the earlier cooling-cell-only concept.</p>
+<p>Other points relevant to tracking the program:
+- Cooling is restated as the dominant luminosity risk. MICE and g−2 demonstrated the principle, but a practical six-dimensional channel (~10⁶ phase-space reduction) with adequate transmission has not been shown.
+- The document states there is no dedicated DOE funding; current support comes from universities and private foundations (Simons, RCSA, Sloan).
+- It cites the 2026 ESPP explicit call for cooperation with the U.S. initiative.
+- It names AI4MuC target areas: cooling-channel optimization and beam-induced-background simulation.</p>
+<p>There are no cost or schedule figures; the collaboration says the demonstrator is not yet mature enough for them.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Tuesday, September 29, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -715,7 +756,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-30 07:25 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-09-30 10:04 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
