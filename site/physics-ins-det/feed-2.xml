@@ -7,7 +7,17 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SynradG4: A Geant4-Based Extension for Synchrotron Radiation Background Studies in the ePIC Detector at the Electron-Ion Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2408-11709</link>
+    <guid isPermaLink="false">arxiv:2408.11709</guid>
+    <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrii Natochii</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>The Electron-Ion Collider (EIC) will operate at high luminosity with multi-GeV, high-current electron beams, resulting in substantial synchrotron radiation (SR) emission in the electron storage ring (ESR). A detailed understanding of SR photon transport in the complex three-dimensional interaction region (IR) geometry is critical for estimating backgrounds in the ePIC detector and for developing effective shielding and masking strategies. This paper presents SynradG4, an EIC-specific extension of Geant4 designed for fast photon tracking in vacuum using established SR reflection and rough surface scattering models. SynradG4 integrates the photon reflection models of Synrad+ within the Geant4 geometry and field framework, while disabling all bulk matter interactions to achieve high-statistics transport through the 50-m-long IR vacuum system. Absorbed photon coordinates are then passed to a second-stage DD4hep simulation, where full electromagnetic processes such as photoabsorption, Compton scattering, Rayleigh scattering, and fluorescence are enabled for propagation through the beam pipe and detector materials. SynradG4 is not intended to replace general SR simulation codes; rather, it complements them by providing the workflow and geometry integration capabilities needed for EIC-specific background studies. Benchmark tests against Synrad+, Synrad3D, and the native Geant4 X-ray reflection model demonstrate excellent agreement for specular and diffuse reflection regimes. Using the full IR geometry and machine lattice, we present the first SR background estimates for the ePIC detector and evaluate the impact of potential SR masks.</p>]]></description>
+  </item>
 
   <item>
     <title>Autoencoder-based time series anomaly detection for ATLAS Liquid Argon calorimeter data quality monitoring</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Quetzalcoatl Toledo-Marin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Particle collisions at accelerators such as the Large Hadron Collider, recorded and analyzed by experiments such as ATLAS and CMS, enable exquisite measurements of the Standard Model and searches for new phenomena. Simulations of collision events at these detectors have played a pivotal role in shaping the design of future experiments and analyzing ongoing ones. However, the quest for accuracy in Large Hadron Collider (LHC) collisions comes at an imposing computational cost, with projections estimating the need for millions of CPU-years annually during the High Luminosity LHC (HL-LHC) run \cite{collaboration2022atlas}. Simulating a single LHC event with \textsc{Geant4} currently devours around 1000 CPU seconds, with simulations of the calorimeter subdetectors in particular imposing substantial computational demands \cite{rousseau2023experimental}. To address this challenge, we propose a conditioned quantum-assisted deep generative model. Our model integrates a conditioned variational autoencoder (VAE) on the exterior with a conditioned Restricted Boltzmann Machine (RBM) in the latent space, providing enhanced expressiveness compared to conventional VAEs. The RBM nodes and connections are meticulously engineered to enable the use of qubits and couplers on D-Wave&rsquo;s Pegasus-structured \textit{Advantage} quantum annealer (QA) for sampling. We introduce a novel method for conditioning the quantum-assisted RBM using \textit{flux biases}. We further propose a novel adaptive mapping to estimate the effective inverse temperature in quantum annealers. The effectiveness of our framework is illustrated using Dataset 2 of the CaloChallenge \cite{calochallenge}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A space-time tracking algorithm for high occupancy events at future colliders</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2412-14136</link>
-    <guid isPermaLink="false">arxiv:2412.14136</guid>
-    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Massimo Casarsa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (muon collider, collider, colliders) — original abstract; no AI summary.</em></p>
-<p>We propose to explore the potential advantages of a new class of tracking algorithms loosely inspired by the Hough transform concept and where we include the time of arrival of each hit as an additional coordinate to be treated in the same way as a spatial coordinate. A remarkable property of this algorithm is that the execution time is proportional to the total number of hits to be processed, making it particularly attractive for high occupancy situations expected at future colliders. The particular structure of the algorithm also lends itself naturally to parallel hardware implementations which, combined to its intrinsic flexibility, should provide a powerful tool for triggering at future colliders. To probe the effectiveness of the algorithm, we apply it to a quasi-realistic simulated environment of a possible future muon collider experiment and report the performance.</p>]]></description>
   </item>
 
 </channel>

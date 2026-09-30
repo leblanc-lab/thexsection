@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>DeepEMD: A Transformer-based Fast Estimation of the Earth Mover's Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-09998</link>
+    <guid isPermaLink="false">arxiv:2311.09998</guid>
+    <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Atul Kumar Sinha et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>The Earth Mover&rsquo;s Distance (EMD) is the measure of choice between point clouds. However the computational cost to compute it makes it prohibitive as a training loss, and the standard approach is to use a surrogate such as the Chamfer distance. We propose an attention-based model to compute an accurate approximation of the EMD that can be used as a training loss for generative models. To get the necessary accurate estimation of the gradients we train our model to explicitly compute the matching between point clouds instead of EMD itself. We cast this new objective as the estimation of an attention matrix that approximates the ground truth matching matrix. Experiments show that this model provides an accurate estimate of the EMD and its gradient with a wall clock speed-up of more than two orders of magnitude with respect to the exact Hungarian matching algorithm and one order of magnitude with respect to the standard approximate Sinkhorn algorithm, allowing in particular to train a point cloud VAE with the EMD itself. Extensive evaluation show the remarkable behaviour of this model when operating out-of-distribution, a key requirement for a distance surrogate. Finally, the model generalizes very well to point clouds during inference several times larger than during training.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generalizing to new geometries with Geometry-Aware Autoregressive Models (GAAMs) for fast calorimeter simulation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-11531</link>
+    <guid isPermaLink="false">arxiv:2305.11531</guid>
+    <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junze Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>Generation of simulated detector response to collision products is crucial to data analysis in particle physics, but computationally very expensive. One subdetector, the calorimeter, dominates the computational time due to the high granularity of its cells and complexity of the interactions. Generative models can provide more rapid sample production, but currently require significant effort to optimize performance for specific detector geometries, often requiring many models to describe the varying cell sizes and arrangements, without the ability to generalize to other geometries. We develop a geometry-aware autoregressive model, which learns how the calorimeter response varies with geometry, and is capable of generating simulated responses to unseen geometries without additional training. The geometry-aware model outperforms a baseline unaware model by over 50% in several metrics such as the Wasserstein distance between the generated and the true distributions of key quantities which summarize the simulated response. A single geometry-aware model could replace the hundreds of generative models currently designed for calorimeter simulation by physicists analyzing data collected at the Large Hadron Collider. This proof-of-concept study motivates the design of a foundational model that will be a crucial tool for the study of future detectors, dramatically reducing the large upfront investment usually needed to develop generative calorimeter models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Instance-Dependent Generalization Bounds via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-01258</link>
+    <guid isPermaLink="false">arxiv:2211.01258</guid>
+    <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Songyan Hou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Existing generalization bounds fail to explain crucial factors that drive the generalization of modern neural networks. Since such bounds often hold uniformly over all parameters, they suffer from over-parametrization and fail to account for the strong inductive bias of initialization and stochastic gradient descent. As an alternative, we propose a novel optimal transport interpretation of the generalization problem. This allows us to derive instance-dependent generalization bounds that depend on the local Lipschitz regularity of the learned prediction function in the data space. Therefore, our bounds are agnostic to the parametrization of the model and work well when the number of training samples is much smaller than the number of parameters. With small modifications, our approach yields accelerated rates for data on low-dimensional manifolds and guarantees under distribution shifts. We empirically analyze our generalization bounds for neural networks, showing that the bound values are meaningful and capture the effect of popular regularization methods during training.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Auto-Encoders of Merge Trees (and Persistence Diagrams)</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-02509</link>
+    <guid isPermaLink="false">arxiv:2307.02509</guid>
+    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mahieu Pont et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper presents a computational framework for the Wasserstein auto-encoding of merge trees (MT-WAE), a novel extension of the classical auto-encoder neural network architecture to the Wasserstein metric space of merge trees. In contrast to traditional auto-encoders which operate on vectorized data, our formulation explicitly manipulates merge trees on their associated metric space at each layer of the network, resulting in superior accuracy and interpretability. Our novel neural network approach can be interpreted as a non-linear generalization of previous linear attempts [79] at merge tree encoding. It also trivially extends to persistence diagrams. Extensive experiments on public ensembles demonstrate the efficiency of our algorithms, with MT-WAE computations in the orders of minutes on average. We show the utility of our contributions in two applications adapted from previous work on merge tree encoding [79]. First, we apply MT-WAE to merge tree compression, by concisely representing them with their coordinates in the final layer of our auto-encoder. Second, we document an application to dimensionality reduction, by exploiting the latent space of our auto-encoder, for the visual analysis of ensemble data. We illustrate the versatility of our framework by introducing two penalty terms, to help preserve in the latent space both the Wasserstein distances between merge trees, as well as their clusters. In both applications, quantitative experiments assess the relevance of our framework. Finally, we provide a C++ implementation that can be used for reproducibility.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A theory of data variability in Neural Network Bayesian inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-16695</link>
+    <guid isPermaLink="false">arxiv:2307.16695</guid>
+    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javed Lindner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Krämer) — original abstract; no AI summary.</em></p>
+<p>Bayesian inference and kernel methods are well established in machine learning. The neural network Gaussian process in particular provides a concept to investigate neural networks in the limit of infinitely wide hidden layers by using kernel and inference methods. Here we build upon this limit and provide a field-theoretic formalism which covers the generalization properties of infinitely wide networks. We systematically compute generalization properties of linear, non-linear, and deep non-linear networks for kernel matrices with heterogeneous entries. In contrast to currently employed spectral methods we derive the generalization properties from the statistical properties of the input, elucidating the interplay of input dimensionality, size of the training data set, and variability of the data. We show that data variability leads to a non-Gaussian action reminiscent of a (φ³⁺φ⁴)-theory. Using our formalism on a synthetic task and on MNIST we obtain a homogeneous kernel matrix approximation for the learning curve as well as corrections due to data variability which allow the estimation of the generalization properties and exact results for the bounds of the learning curves in the case of infinitely many training data points.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Outlier-Robust Wasserstein DRO</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-05573</link>
+    <guid isPermaLink="false">arxiv:2311.05573</guid>
+    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Distributionally robust optimization (DRO) is an effective approach for data-driven decision-making in the presence of uncertainty. Geometric uncertainty due to sampling or localized perturbations of data points is captured by Wasserstein DRO (WDRO), which seeks to learn a model that performs uniformly well over a Wasserstein ball centered around the observed data distribution. However, WDRO fails to account for non-geometric perturbations such as adversarial outliers, which can greatly distort the Wasserstein distance measurement and impede the learned model. We address this gap by proposing a novel outlier-robust WDRO framework for decision-making under both geometric (Wasserstein) perturbations and non-geometric (total variation (TV)) contamination that allows an ε-fraction of data to be arbitrarily corrupted. We design an uncertainty set using a certain robust Wasserstein ball that accounts for both perturbation types and derive minimax optimal excess risk bounds for this procedure that explicitly capture the Wasserstein and TV risks. We prove a strong duality result that enables tractable convex reformulations and efficient computation of our outlier-robust WDRO problem. When the loss function depends only on low-dimensional features of the data, we eliminate certain dimension dependencies from the risk bounds that are unavoidable in the general setting. Finally, we present experiments validating our theory on standard regression and classification tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport for Change Detection on LiDAR Point Clouds</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bhargav Joshi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>The 75,848 lead tungstate crystals in CMS experiment at the CERN Large Hadron Collider are used to measure the energy of electrons and photons produced in the proton-proton collisions. The optical transparency of the crystals degrades slowly with radiation dose due to the beam-beam collisions. The transparency of each crystal is monitored with a laser monitoring system that tracks changes in the optical properties of the crystals due to radiation from the collision products. Predicting the optical transparency of the crystals, both in the short-term and in the long-term, is a critical task for the CMS experiment. We describe here the public data release, following FAIR principles, of the crystal monitoring data collected by the CMS Collaboration between 2016 and 2018. Besides describing the dataset and its access, the problems that can be addressed with it are described, as well as an example solution based on a Long Short-Term Memory neural network developed to predict future behavior of the crystals.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Adversarial Examples on Univariant Time Series Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-12357</link>
-    <guid isPermaLink="false">arxiv:2303.12357</guid>
-    <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenjie Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Adversarial examples are crafted by adding indistinguishable perturbations to normal examples in order to fool a well-trained deep learning model to misclassify. In the context of computer vision, this notion of indistinguishability is typically bounded by L_∞ or other norms. However, these norms are not appropriate for measuring indistinguishiability for time series data. In this work, we propose adversarial examples in the Wasserstein space for time series data for the first time and utilize Wasserstein distance to bound the perturbation between normal examples and adversarial examples. We introduce Wasserstein projected gradient descent (WPGD), an adversarial attack method for perturbing univariant time series data. We leverage the closed-form solution of Wasserstein distance in the 1D space to calculate the projection step of WPGD efficiently with the gradient descent method. We further propose a two-step projection so that the search of adversarial examples in the Wasserstein space is guided and constrained by Euclidean norms to yield more effective and imperceptible perturbations. We empirically evaluate the proposed attack on several time series datasets in the healthcare domain. Extensive results demonstrate that the Wasserstein attack is powerful and can successfully attack most of the target classifiers with a high attack success rate. To better study the nature of Wasserstein adversarial example, we evaluate a strong defense mechanism named Wasserstein smoothing for potential certified robustness defense. Although the defense can achieve some accuracy gain, it still has limitations in many cases and leaves space for developing a stronger certified robustness method to Wasserstein adversarial examples on univariant time series data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A High-Frequency Focused Network for Lightweight Single Image Super-Resolution</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-11701</link>
-    <guid isPermaLink="false">arxiv:2303.11701</guid>
-    <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaotian Weng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Lightweight neural networks for single-image super-resolution (SISR) tasks have made substantial breakthroughs in recent years. Compared to low-frequency information, high-frequency detail is much more difficult to reconstruct. Most SISR models allocate equal computational resources for low-frequency and high-frequency information, which leads to redundant processing of simple low-frequency information and inadequate recovery of more challenging high-frequency information. We propose a novel High-Frequency Focused Network (HFFN) through High-Frequency Focused Blocks (HFFBs) that selectively enhance high-frequency information while minimizing redundant feature computation of low-frequency information. The HFFB effectively allocates more computational resources to the more challenging reconstruction of high-frequency information. Moreover, we propose a Local Feature Fusion Block (LFFB) effectively fuses features from multiple HFFBs in a local region, utilizing complementary information across layers to enhance feature representativeness and reduce artifacts in reconstructed images. We assess the efficacy of our proposed HFFN on five benchmark datasets and show that it significantly enhances the super-resolution performance of the network. Our experimental results demonstrate state-of-the-art performance in reconstructing high-frequency information while using a low number of parameters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Rethinking SO(3)-equivariance with Bilinear Tensor Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-11288</link>
-    <guid isPermaLink="false">arxiv:2303.11288</guid>
-    <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chase Shimmin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (b-tagging) — original abstract; no AI summary.</em></p>
-<p>Many datasets in scientific and engineering applications are comprised of objects which have specific geometric structure. A common example is data which inhabits a representation of the group SO(3) of 3D rotations: scalars, vectors, tensors, \textit{etc}. One way for a neural network to exploit prior knowledge of this structure is to enforce SO(3)-equivariance throughout its layers, and several such architectures have been proposed. While general methods for handling arbitrary SO(3) representations exist, they computationally intensive and complicated to implement. We show that by judicious symmetry breaking, we can efficiently increase the expressiveness of a network operating only on vector and order-2 tensor representations of SO(2). We demonstrate the method on an important problem from High Energy Physics known as \textit{b-tagging}, where particle jets originating from b-meson decays must be discriminated from an overwhelming QCD background. In this task, we find that augmenting a standard architecture with our method results in a \ensuremath{2.3\times} improvement in rejection score.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Robust and Provably Monotonic Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2112-00038</link>
-    <guid isPermaLink="false">arxiv:2112.00038</guid>
-    <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Mike Williams) — original abstract; no AI summary.</em></p>
-<p>The Lipschitz constant of the map between the input and output space represented by a neural network is a natural metric for assessing the robustness of the model. We present a new method to constrain the Lipschitz constant of dense deep learning models that can also be generalized to other architectures. The method relies on a simple weight normalization scheme during training that ensures the Lipschitz constant of every layer is below an upper limit specified by the analyst. A simple monotonic residual connection can then be used to make the model monotonic in any subset of its inputs, which is useful in scenarios where domain knowledge dictates such dependence. Examples can be found in algorithmic fairness requirements or, as presented here, in the classification of the decays of subatomic particles produced at the CERN Large Hadron Collider. Our normalization is minimally constraining and allows the underlying architecture to maintain higher expressiveness compared to other techniques which aim to either control the Lipschitz constant of the model or ensure its monotonicity. We show how the algorithm was used to train a powerful, robust, and interpretable discriminator for heavy-flavor-quark decays, which has been adopted for use as the primary data-selection algorithm in the LHCb real-time data-processing system in the current LHC data-taking period known as Run 3. In addition, our algorithm has also achieved state-of-the-art performance on benchmarks in medicine, finance, and other applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Null Hypothesis Test for Anomaly Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-02226</link>
-    <guid isPermaLink="false">arxiv:2210.02226</guid>
-    <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jernej F. Kamenik et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Manuel Szewc) — original abstract; no AI summary.</em></p>
-<p>We extend the use of Classification Without Labels for anomaly detection with a hypothesis test designed to exclude the background-only hypothesis. By testing for statistical independence of the two discriminating dataset regions, we are able to exclude the background-only hypothesis without relying on fixed anomaly score cuts or extrapolations of background estimates between regions. The method relies on the assumption of conditional independence of anomaly score features and dataset regions, which can be ensured using existing decorrelation techniques. As a benchmark example, we consider the LHC Olympics dataset where we show that mutual information represents a suitable test for statistical independence and our method exhibits excellent and robust performance at different signal fractions even in presence of realistic feature correlations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast Regularized Discrete Optimal Transport with Group-Sparse Regularizers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-07597</link>
-    <guid isPermaLink="false">arxiv:2303.07597</guid>
-    <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yasutoshi Ida et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Regularized discrete optimal transport (OT) is a powerful tool to measure the distance between two discrete distributions that have been constructed from data samples on two different domains. While it has a wide range of applications in machine learning, in some cases the sampled data from only one of the domains will have class labels such as unsupervised domain adaptation. In this kind of problem setting, a group-sparse regularizer is frequently leveraged as a regularization term to handle class labels. In particular, it can preserve the label structure on the data samples by corresponding the data samples with the same class label to one group-sparse regularization term. As a result, we can measure the distance while utilizing label information by solving the regularized optimization problem with gradient-based algorithms. However, the gradient computation is expensive when the number of classes or data samples is large because the number of regularization terms and their respective sizes also turn out to be large. This paper proposes fast discrete OT with group-sparse regularizers. Our method is based on two ideas. The first is to safely skip the computations of the gradients that must be zero. The second is to efficiently extract the gradients that are expected to be nonzero. Our method is guaranteed to return the same value of the objective function as that of the original method. Experiments show that our method is up to 8.6 times faster than the original method without degrading accuracy.</p>]]></description>
   </item>
 
 </channel>

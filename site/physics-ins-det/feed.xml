@@ -7,7 +7,17 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimization Using Pathwise Algorithmic Derivatives of Electromagnetic Shower Simulations</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2405-07944</link>
+    <guid isPermaLink="false">arxiv:2405.07944</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max Aehle et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Among the well-known methods to approximate derivatives of expectancies computed by Monte-Carlo simulations, averages of pathwise derivatives are often the easiest one to apply. Computing them via algorithmic differentiation typically does not require major manual analysis and rewriting of the code, even for very complex programs like simulations of particle-detector interactions in high-energy physics. However, the pathwise derivative estimator can be biased if there are discontinuities in the program, which may diminish its value for applications. This work integrates algorithmic differentiation into the electromagnetic shower simulation code HepEmShow based on G4HepEm, allowing us to study how well pathwise derivatives approximate derivatives of energy depositions in a sampling calorimeter with respect to parameters of the beam and geometry. We found that when multiple scattering is disabled in the simulation, means of pathwise derivatives converge quickly to their expected values, and these are close to the actual derivatives of the energy deposition. Additionally, we demonstrate the applicability of this novel gradient estimator for stochastic gradient-based optimization in a model example.</p>]]></description>
+  </item>
 
   <item>
     <title>Point-cloud generative models for fast calorimeter simulation across particles and geometries</title>
@@ -1995,16 +2005,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabor Galgoczi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>The bulk of time spent in the simulation of Cherenkov and other scintillation detectors is spent on optical-photon transport, i.e. ray tracing, a task that GPUs are uniquely qualified to perform. We present EIC-Opticks, a fork of Opticks, which uses event aggregation to drastically accelerate photon transport simulation for low-to-moderate photon yield experiments. During the full Geant4 Monte Carlo simulation of a given detector, optical photon simulation is performed on GPU(s) using the NVIDIA OptiX framework. We validate this approach using the ePIC pfRICH detector. We find GPU and CPU simulations in excellent agreement. For 5×10⁴ electrons with a momentum of p=5 MeV/c in the test case of the pfRICH detector, EIC-Opticks shows an order-of-magnitude speedup over multi-threaded Geant4, and a factor of up to 161±3 over single-threaded execution. In the case of low-to-moderate applications event aggregation reduces the per-photon simulation time from ∼60 μs for single events to ∼20 ns with batching, a factor of ∼3000. In order to make EIC-Opticks easily installable, we authored a Spack package that makes it possible to install it with a single command. Additionally, a Docker container is provided for users with EIC-Opticks installed. EIC-Opticks provides guardrails for common pitfalls (e.g. nested volume conversion, ray tracing setting optimization).</p>]]></description>
-  </item>
-
-  <item>
-    <title>SynradG4: A Geant4-Based Extension for Synchrotron Radiation Background Studies in the ePIC Detector at the Electron-Ion Collider</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2408-11709</link>
-    <guid isPermaLink="false">arxiv:2408.11709</guid>
-    <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrii Natochii</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The Electron-Ion Collider (EIC) will operate at high luminosity with multi-GeV, high-current electron beams, resulting in substantial synchrotron radiation (SR) emission in the electron storage ring (ESR). A detailed understanding of SR photon transport in the complex three-dimensional interaction region (IR) geometry is critical for estimating backgrounds in the ePIC detector and for developing effective shielding and masking strategies. This paper presents SynradG4, an EIC-specific extension of Geant4 designed for fast photon tracking in vacuum using established SR reflection and rough surface scattering models. SynradG4 integrates the photon reflection models of Synrad+ within the Geant4 geometry and field framework, while disabling all bulk matter interactions to achieve high-statistics transport through the 50-m-long IR vacuum system. Absorbed photon coordinates are then passed to a second-stage DD4hep simulation, where full electromagnetic processes such as photoabsorption, Compton scattering, Rayleigh scattering, and fluorescence are enabled for propagation through the beam pipe and detector materials. SynradG4 is not intended to replace general SR simulation codes; rather, it complements them by providing the workflow and geometry integration capabilities needed for EIC-specific background studies. Benchmark tests against Synrad+, Synrad3D, and the native Geant4 X-ray reflection model demonstrate excellent agreement for specular and diffuse reflection regimes. Using the full IR geometry and machine lattice, we present the first SR background estimates for the ePIC detector and evaluate the impact of potential SR masks.</p>]]></description>
   </item>
 
 </channel>

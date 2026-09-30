@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Adversarial Examples on Univariant Time Series Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-12357</link>
+    <guid isPermaLink="false">arxiv:2303.12357</guid>
+    <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenjie Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Adversarial examples are crafted by adding indistinguishable perturbations to normal examples in order to fool a well-trained deep learning model to misclassify. In the context of computer vision, this notion of indistinguishability is typically bounded by L_∞ or other norms. However, these norms are not appropriate for measuring indistinguishiability for time series data. In this work, we propose adversarial examples in the Wasserstein space for time series data for the first time and utilize Wasserstein distance to bound the perturbation between normal examples and adversarial examples. We introduce Wasserstein projected gradient descent (WPGD), an adversarial attack method for perturbing univariant time series data. We leverage the closed-form solution of Wasserstein distance in the 1D space to calculate the projection step of WPGD efficiently with the gradient descent method. We further propose a two-step projection so that the search of adversarial examples in the Wasserstein space is guided and constrained by Euclidean norms to yield more effective and imperceptible perturbations. We empirically evaluate the proposed attack on several time series datasets in the healthcare domain. Extensive results demonstrate that the Wasserstein attack is powerful and can successfully attack most of the target classifiers with a high attack success rate. To better study the nature of Wasserstein adversarial example, we evaluate a strong defense mechanism named Wasserstein smoothing for potential certified robustness defense. Although the defense can achieve some accuracy gain, it still has limitations in many cases and leaves space for developing a stronger certified robustness method to Wasserstein adversarial examples on univariant time series data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A High-Frequency Focused Network for Lightweight Single Image Super-Resolution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-11701</link>
+    <guid isPermaLink="false">arxiv:2303.11701</guid>
+    <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaotian Weng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Lightweight neural networks for single-image super-resolution (SISR) tasks have made substantial breakthroughs in recent years. Compared to low-frequency information, high-frequency detail is much more difficult to reconstruct. Most SISR models allocate equal computational resources for low-frequency and high-frequency information, which leads to redundant processing of simple low-frequency information and inadequate recovery of more challenging high-frequency information. We propose a novel High-Frequency Focused Network (HFFN) through High-Frequency Focused Blocks (HFFBs) that selectively enhance high-frequency information while minimizing redundant feature computation of low-frequency information. The HFFB effectively allocates more computational resources to the more challenging reconstruction of high-frequency information. Moreover, we propose a Local Feature Fusion Block (LFFB) effectively fuses features from multiple HFFBs in a local region, utilizing complementary information across layers to enhance feature representativeness and reduce artifacts in reconstructed images. We assess the efficacy of our proposed HFFN on five benchmark datasets and show that it significantly enhances the super-resolution performance of the network. Our experimental results demonstrate state-of-the-art performance in reconstructing high-frequency information while using a low number of parameters.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Rethinking SO(3)-equivariance with Bilinear Tensor Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-11288</link>
+    <guid isPermaLink="false">arxiv:2303.11288</guid>
+    <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chase Shimmin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (b-tagging) — original abstract; no AI summary.</em></p>
+<p>Many datasets in scientific and engineering applications are comprised of objects which have specific geometric structure. A common example is data which inhabits a representation of the group SO(3) of 3D rotations: scalars, vectors, tensors, \textit{etc}. One way for a neural network to exploit prior knowledge of this structure is to enforce SO(3)-equivariance throughout its layers, and several such architectures have been proposed. While general methods for handling arbitrary SO(3) representations exist, they computationally intensive and complicated to implement. We show that by judicious symmetry breaking, we can efficiently increase the expressiveness of a network operating only on vector and order-2 tensor representations of SO(2). We demonstrate the method on an important problem from High Energy Physics known as \textit{b-tagging}, where particle jets originating from b-meson decays must be discriminated from an overwhelming QCD background. In this task, we find that augmenting a standard architecture with our method results in a \ensuremath{2.3\times} improvement in rejection score.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Robust and Provably Monotonic Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2112-00038</link>
+    <guid isPermaLink="false">arxiv:2112.00038</guid>
+    <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Mike Williams) — original abstract; no AI summary.</em></p>
+<p>The Lipschitz constant of the map between the input and output space represented by a neural network is a natural metric for assessing the robustness of the model. We present a new method to constrain the Lipschitz constant of dense deep learning models that can also be generalized to other architectures. The method relies on a simple weight normalization scheme during training that ensures the Lipschitz constant of every layer is below an upper limit specified by the analyst. A simple monotonic residual connection can then be used to make the model monotonic in any subset of its inputs, which is useful in scenarios where domain knowledge dictates such dependence. Examples can be found in algorithmic fairness requirements or, as presented here, in the classification of the decays of subatomic particles produced at the CERN Large Hadron Collider. Our normalization is minimally constraining and allows the underlying architecture to maintain higher expressiveness compared to other techniques which aim to either control the Lipschitz constant of the model or ensure its monotonicity. We show how the algorithm was used to train a powerful, robust, and interpretable discriminator for heavy-flavor-quark decays, which has been adopted for use as the primary data-selection algorithm in the LHCb real-time data-processing system in the current LHC data-taking period known as Run 3. In addition, our algorithm has also achieved state-of-the-art performance on benchmarks in medicine, finance, and other applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Null Hypothesis Test for Anomaly Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-02226</link>
+    <guid isPermaLink="false">arxiv:2210.02226</guid>
+    <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jernej F. Kamenik et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Manuel Szewc) — original abstract; no AI summary.</em></p>
+<p>We extend the use of Classification Without Labels for anomaly detection with a hypothesis test designed to exclude the background-only hypothesis. By testing for statistical independence of the two discriminating dataset regions, we are able to exclude the background-only hypothesis without relying on fixed anomaly score cuts or extrapolations of background estimates between regions. The method relies on the assumption of conditional independence of anomaly score features and dataset regions, which can be ensured using existing decorrelation techniques. As a benchmark example, we consider the LHC Olympics dataset where we show that mutual information represents a suitable test for statistical independence and our method exhibits excellent and robust performance at different signal fractions even in presence of realistic feature correlations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast Regularized Discrete Optimal Transport with Group-Sparse Regularizers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-07597</link>
+    <guid isPermaLink="false">arxiv:2303.07597</guid>
+    <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yasutoshi Ida et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Regularized discrete optimal transport (OT) is a powerful tool to measure the distance between two discrete distributions that have been constructed from data samples on two different domains. While it has a wide range of applications in machine learning, in some cases the sampled data from only one of the domains will have class labels such as unsupervised domain adaptation. In this kind of problem setting, a group-sparse regularizer is frequently leveraged as a regularization term to handle class labels. In particular, it can preserve the label structure on the data samples by corresponding the data samples with the same class label to one group-sparse regularization term. As a result, we can measure the distance while utilizing label information by solving the regularized optimization problem with gradient-based algorithms. However, the gradient computation is expensive when the number of classes or data samples is large because the number of regularization terms and their respective sizes also turn out to be large. This paper proposes fast discrete OT with group-sparse regularizers. Our method is based on two ideas. The first is to safely skip the computations of the gradients that must be zero. The second is to efficiently extract the gradients that are expected to be nonzero. Our method is guaranteed to return the same value of the objective function as that of the original method. Experiments show that our method is up to 8.6 times faster than the original method without degrading accuracy.</p>]]></description>
+  </item>
 
   <item>
     <title>Sinkhorn-Flow: Predicting Probability Mass Flow in Dynamical Systems Using Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arip Asadulaev et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We present a novel algorithm for domain adaptation using optimal transport. In domain adaptation, the goal is to adapt a classifier trained on the source domain samples to the target domain. In our method, we use optimal transport to map target samples to the domain named source fiction. This domain differs from the source but is accurately classified by the source domain classifier. Our main idea is to generate a source fiction by c-cyclically monotone transformation over the target domain. If samples with the same labels in two domains are c-cyclically monotone, the optimal transport map between these domains preserves the class-wise structure, which is the main goal of domain adaptation. To generate a source fiction domain, we propose an algorithm that is based on our finding that adversarial attacks are a c-cyclically monotone transformation of the dataset. We conduct experiments on Digits and Modern Office-31 datasets and achieve improvement in performance for simple discrete optimal transport solvers for all adaptation tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On the Generalization of Wasserstein Robust Federated Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-01432</link>
-    <guid isPermaLink="false">arxiv:2206.01432</guid>
-    <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tung-Anh Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In federated learning, participating clients typically possess non-i.i.d. data, posing a significant challenge to generalization to unseen distributions. To address this, we propose a Wasserstein distributionally robust optimization scheme called WAFL. Leveraging its duality, we frame WAFL as an empirical surrogate risk minimization problem, and solve it using a local SGD-based algorithm with convergence guarantees. We show that the robustness of WAFL is more general than related approaches, and the generalization bound is robust to all adversarial distributions inside the Wasserstein ball (ambiguity set). Since the center location and radius of the Wasserstein ball can be suitably modified, WAFL shows its applicability not only in robustness but also in domain adaptation. Through empirical evaluation, we demonstrate that WAFL generalizes better than the vanilla FedAvg in non-i.i.d. settings, and is more robust than other related methods in distribution shift settings. Further, using benchmark datasets we show that WAFL is capable of generalizing to unseen target domains.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Causality Learning With Wasserstein Generative Adversarial Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-01496</link>
-    <guid isPermaLink="false">arxiv:2206.01496</guid>
-    <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hristo Petkov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Conventional methods for causal structure learning from data face significant challenges due to combinatorial search space. Recently, the problem has been formulated into a continuous optimization framework with an acyclicity constraint to learn Directed Acyclic Graphs (DAGs). Such a framework allows the utilization of deep generative models for causal structure learning to better capture the relations between data sample distributions and DAGs. However, so far no study has experimented with the use of Wasserstein distance in the context of causal structure learning. Our model named DAG-WGAN combines the Wasserstein-based adversarial loss with an acyclicity constraint in an auto-encoder architecture. It simultaneously learns causal structures while improving its data generation capability. We compare the performance of DAG-WGAN with other models that do not involve the Wasserstein metric in order to identify its contribution to causal structure learning. Our model performs better with high cardinality data according to our experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-source Domain Adaptation via Weighted Joint Distributions Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2006-12938</link>
-    <guid isPermaLink="false">arxiv:2006.12938</guid>
-    <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rosanna Turrisi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The problem of domain adaptation on an unlabeled target dataset using knowledge from multiple labelled source datasets is becoming increasingly important. A key challenge is to design an approach that overcomes the covariate and target shift both among the sources, and between the source and target domains. In this paper, we address this problem from a new perspective: instead of looking for a latent representation invariant between source and target domains, we exploit the diversity of source distributions by tuning their weights to the target task at hand. Our method, named Weighted Joint Distribution Optimal Transport (WJDOT), aims at finding simultaneously an Optimal Transport-based alignment between the source and target distributions and a re-weighting of the sources distributions. We discuss the theoretical aspects of the method and propose a conceptually simple algorithm. Numerical experiments indicate that the proposed method achieves state-of-the-art performance on simulated and real-life datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural Topic Model via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2008-13537</link>
-    <guid isPermaLink="false">arxiv:2008.13537</guid>
-    <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">He Zhao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Recently, Neural Topic Models (NTMs) inspired by variational autoencoders have obtained increasingly research interest due to their promising results on text analysis. However, it is usually hard for existing NTMs to achieve good document representation and coherent/diverse topics at the same time. Moreover, they often degrade their performance severely on short documents. The requirement of reparameterisation could also comprise their training quality and model flexibility. To address these shortcomings, we present a new neural topic model via the theory of optimal transport (OT). Specifically, we propose to learn the topic distribution of a document by directly minimising its OT distance to the document&rsquo;s word distributions. Importantly, the cost matrix of the OT distance models the weights between topics and words, which is constructed by the distances between topics and words in an embedding space. Our proposed model can be trained efficiently with a differentiable loss. Extensive experiments show that our framework significantly outperforms the state-of-the-art NTMs on discovering more coherent and diverse topics and deriving better document representations for both regular and short texts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Intrinsic Dimension Estimation Using Wasserstein Distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2106-04018</link>
-    <guid isPermaLink="false">arxiv:2106.04018</guid>
-    <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Block et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>It has long been thought that high-dimensional data encountered in many practical machine learning tasks have low-dimensional structure, i.e., the manifold hypothesis holds. A natural question, thus, is to estimate the intrinsic dimension of a given population distribution from a finite sample. We introduce a new estimator of the intrinsic dimension and provide finite sample, non-asymptotic guarantees. We then apply our techniques to get new sample complexity bounds for Generative Adversarial Networks (GANs) depending only on the intrinsic dimension of the data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>One Loss for Quantization: Deep Hashing with Discrete Wasserstein Distributional Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2205-15721</link>
-    <guid isPermaLink="false">arxiv:2205.15721</guid>
-    <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khoa D. Doan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Image hashing is a principled approximate nearest neighbor approach to find similar items to a query in a large collection of images. Hashing aims to learn a binary-output function that maps an image to a binary vector. For optimal retrieval performance, producing balanced hash codes with low-quantization error to bridge the gap between the learning stage&rsquo;s continuous relaxation and the inference stage&rsquo;s discrete quantization is important. However, in the existing deep supervised hashing methods, coding balance and low-quantization error are difficult to achieve and involve several losses. We argue that this is because the existing quantization approaches in these methods are heuristically constructed and not effective to achieve these objectives. This paper considers an alternative approach to learning the quantization constraints. The task of learning balanced codes with low quantization error is re-formulated as matching the learned distribution of the continuous codes to a pre-defined discrete, uniform distribution. This is equivalent to minimizing the distance between two distributions. We then propose a computationally efficient distributional distance by leveraging the discrete property of the hash functions. This distributional distance is a valid distance and enjoys lower time and sample complexities. The proposed single-loss quantization objective can be integrated into any existing supervised hashing method to improve code balance and quantization error. Experiments confirm that the proposed approach substantially improves the performance of several representative hashing~methods.</p>]]></description>
   </item>
 
 </channel>

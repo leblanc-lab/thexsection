@@ -6,7 +6,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport-based Alignment of Learned Character Representations for String Similarity</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-10165</link>
+    <guid isPermaLink="false">arxiv:1907.10165</guid>
+    <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Derek Tam et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>String similarity models are vital for record linkage, entity resolution, and search. In this work, we present STANCE &ndash;a learned model for computing the similarity of two strings. Our approach encodes the characters of each string, aligns the encodings using Sinkhorn Iteration (alignment is posed as an instance of optimal transport) and scores the alignment with a convolutional neural network. We evaluate STANCE&rsquo;s ability to detect whether two strings can refer to the same entity&ndash;a task we term alias detection. We construct five new alias detection datasets (and make them publicly available). We show that STANCE or one of its variants outperforms both state-of-the-art and classic, parameter-free similarity models on four of the five datasets. We also demonstrate STANCE&rsquo;s ability to improve downstream tasks by applying it to an instance of cross-document coreference and show that it leads to a 2.8 point improvement in B^3 F1 over the previous state-of-the-art approach.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Jet grooming through reinforcement learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1903-09644</link>
+    <guid isPermaLink="false">arxiv:1903.09644</guid>
+    <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Carrazza et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet grooming, boosted objects, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>We introduce a novel implementation of a reinforcement learning (RL) algorithm which is designed to find an optimal jet grooming strategy, a critical tool for collider experiments. The RL agent is trained with a reward function constructed to optimize the resulting jet properties, using both signal and background samples in a simultaneous multi-level training. We show that the grooming algorithm derived from the deep RL agent can match state-of-the-art techniques used at the Large Hadron Collider, resulting in improved mass resolution for boosted objects. Given a suitable reward function, the agent learns how to train a policy which optimally removes soft wide-angle radiation, allowing for a modular grooming technique that can be applied in a wide range of contexts. These results are accessible through the corresponding GroomRL framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn AutoEncoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1810-01118</link>
+    <guid isPermaLink="false">arxiv:1810.01118</guid>
+    <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giorgio Patrini et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Optimal transport offers an alternative to maximum likelihood for learning generative autoencoding models. We show that minimizing the p-Wasserstein distance between the generator and the true data distribution is equivalent to the unconstrained min-min optimization of the p-Wasserstein distance between the encoder aggregated posterior and the prior in latent space, plus a reconstruction error. We also identify the role of its trade-off hyperparameter as the capacity of the generator: its Lipschitz constant. Moreover, we prove that optimizing the encoder over any class of universal approximators, such as deterministic neural networks, is enough to come arbitrarily close to the optimum. We therefore advertise this framework, which holds for any metric space and prior, as a sweet-spot of current generative autoencoding objectives. We then introduce the Sinkhorn auto-encoder (SAE), which approximates and minimizes the p-Wasserstein distance in latent space via backprogation through the Sinkhorn algorithm. SAE directly works on samples, i.e. it models the aggregated posterior as an implicit distribution, with no need for a reparameterization trick for gradients estimations. SAE is thus able to work with different metric spaces and priors with minimal adaptations. We demonstrate the flexibility of SAE on latent spaces with different geometries and priors and compare with other methods on benchmark data sets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein-Fisher-Rao Document Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1904-10294</link>
+    <guid isPermaLink="false">arxiv:1904.10294</guid>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zihao Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>As a fundamental problem of natural language processing, it is important to measure the distance between different documents. Among the existing methods, the Word Mover&rsquo;s Distance (WMD) has shown remarkable success in document semantic matching for its clear physical insight as a parameter-free model. However, WMD is essentially based on the classical Wasserstein metric, thus it often fails to robustly represent the semantic similarity between texts of different lengths. In this paper, we apply the newly developed Wasserstein-Fisher-Rao (WFR) metric from unbalanced optimal transport theory to measure the distance between different documents. The proposed WFR document distance maintains the great interpretability and simplicity as WMD. We demonstrate that the WFR document distance has significant advantages when comparing the texts of different lengths. In addition, an accelerated Sinkhorn based algorithm with GPU implementation has been developed for the fast computation of WFR distances. The KNN classification results on eight datasets have shown its clear improvement over WMD.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond Imitation: Generative and Variational Choreography via Machine Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-05297</link>
+    <guid isPermaLink="false">arxiv:1907.05297</guid>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mariel Pettee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
+<p>Our team of dance artists, physicists, and machine learning researchers has collectively developed several original, configurable machine-learning tools to generate novel sequences of choreography as well as tunable variations on input choreographic sequences. We use recurrent neural network and autoencoder architectures from a training dataset of movements captured as 53 three-dimensional points at each timestep. Sample animations of generated sequences and an interactive version of our model can be found at http: //www.beyondimitation.com.</p>]]></description>
+  </item>
+
+  <item>
+    <title>k-GANs: Ensemble of Generative Models with Semi-Discrete Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-04050</link>
+    <guid isPermaLink="false">arxiv:1907.04050</guid>
+    <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luca Ambrogioni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Generative adversarial networks (GANs) are the state of the art in generative modeling. Unfortunately, most GAN methods are susceptible to mode collapse, meaning that they tend to capture only a subset of the modes of the true distribution. A possible way of dealing with this problem is to use an ensemble of GANs, where (ideally) each network models a single mode. In this paper, we introduce a principled method for training an ensemble of GANs using semi-discrete optimal transport theory. In our approach, each generative network models the transportation map between a point mass (Dirac measure) and the restriction of the data distribution on a tile of a Voronoi tessellation that is defined by the location of the point masses. We iteratively train the generative networks and the point masses until convergence. The resulting k-GANs algorithm has strong theoretical connection with the k-medoids algorithm. In our experiments, we show that our ensemble method consistently outperforms baseline GANs.</p>]]></description>
+  </item>
 
   <item>
     <title>Implementation of batched Sinkhorn iterations for entropy-regularized Wasserstein loss</title>

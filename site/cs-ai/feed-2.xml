@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>MEDIC: a network for monitoring data quality in collider experiments</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2511-18172</link>
+    <guid isPermaLink="false">arxiv:2511.18172</guid>
+    <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juvenal Bassa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Data Quality Monitoring (DQM) is a crucial component of particle physics experiments and ensures that the recorded data is of the highest quality, and suitable for subsequent physics analysis. Due to the extreme environmental conditions, unprecedented data volumes, and the sheer scale and complexity of the detectors, DQM orchestration has become a very challenging task. Therefore, the use of Machine Learning (ML) to automate anomaly detection, improve efficiency, and reduce human error in the process of collecting high-quality data is unavoidable. Since DQM relies on real experimental data, it is inherently tied to the specific detector substructure and technology in operation. In this work, a simulation-driven approach to DQM is proposed, enabling the study and development of data-quality methodologies in a controlled environment. Using a modified version of Delphes &ndash; a fast, multi-purpose detector simulation &ndash; the preliminary realization of a framework is demonstrated which leverages ML to identify detector anomalies as well as localize the malfunctioning components responsible. We introduce MEDIC (Monitoring for Event Data Integrity and Consistency), a neural network designed to learn detector behavior and perform DQM tasks to look for potential faults. Although the present implementation adopts a simplified setup for computational ease, where large detector regions are deliberately deactivated to mimic faults, this work represents an initial step toward a comprehensive ML-based DQM framework. The encouraging results underline the potential of simulation-driven studies as a foundation for developing more advanced, data-driven DQM systems for future particle detectors.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Bridging Dynamics Gaps via Diffusion Schrödinger Bridge for Cross-Domain Reinforcement Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-23737</link>
+    <guid isPermaLink="false">arxiv:2602.23737</guid>
+    <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanping Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Cross-domain reinforcement learning (RL) aims to learn transferable policies under dynamics shifts between source and target domains. A key challenge lies in the lack of target-domain environment interaction and reward supervision, which prevents direct policy learning. To address this challenge, we propose Bridging Dynamics Gaps for Cross-Domain Reinforcement Learning (BDGxRL), a novel framework that leverages Diffusion Schrödinger Bridge (DSB) to align source transitions with target-domain dynamics encoded in offline demonstrations. Moreover, we introduce a reward modulation mechanism that estimates rewards based on state transitions, applying to DSB-aligned samples to ensure consistency between rewards and target-domain dynamics. BDGxRL performs target-oriented policy learning entirely within the source domain, without access to the target environment or its rewards. Experiments on MuJoCo cross-domain benchmarks demonstrate that BDGxRL outperforms state-of-the-art baselines and shows strong adaptability under transition dynamics shifts.</p>]]></description>
+  </item>
 
   <item>
     <title>Unbiased Sliced Wasserstein Kernels for High-Quality Audio Captioning</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Halmos et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) is a general framework for finding a minimum-cost transport plan, or coupling, between probability distributions, and has many applications in machine learning. A key challenge in applying OT to massive datasets is the quadratic scaling of the coupling matrix with the size of the dataset. [Forrow et al. 2019] introduced a factored coupling for the k-Wasserstein barycenter problem, which [Scetbon et al. 2021] adapted to solve the primal low-rank OT problem. We derive an alternative parameterization of the low-rank problem based on the latent coupling (LC) factorization previously introduced by [Lin et al. 2021] generalizing [Forrow et al. 2019]. The LC factorization has multiple advantages for low-rank OT including decoupling the problem into three OT problems and greater flexibility and interpretability. We leverage these advantages to derive a new algorithm Factor Relaxation with Latent Coupling (FRLC), which uses coordinate mirror descent to compute the LC factorization. FRLC handles multiple OT objectives (Wasserstein, Gromov-Wasserstein, Fused Gromov-Wasserstein), and marginal constraints (balanced, unbalanced, and semi-relaxed) with linear space complexity. We provide theoretical results on FRLC, and demonstrate superior performance on diverse applications &ndash; including graph clustering and spatial transcriptomics &ndash; while demonstrating its interpretability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Calibrating Bayesian Generative Machine Learning for Bayesiamplification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2408-00838</link>
-    <guid isPermaLink="false">arxiv:2408.00838</guid>
-    <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Bieringer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>Recently, combinations of generative and Bayesian machine learning have been introduced in particle physics for both fast detector simulation and inference tasks. These neural networks aim to quantify the uncertainty on the generated distribution originating from limited training statistics. The interpretation of a distribution-wide uncertainty however remains ill-defined. We show a clear scheme for quantifying the calibration of Bayesian generative machine learning models. For a Continuous Normalizing Flow applied to a low-dimensional toy example, we evaluate the calibration of Bayesian uncertainties from either a mean-field Gaussian weight posterior, or Monte Carlo sampling network weights, to gauge their behaviour on unsteady distribution edges. Well calibrated uncertainties can then be used to roughly estimate the number of uncorrelated truth samples that are equivalent to the generated sample and clearly indicate data amplification for smooth features of the distribution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Federated Learning for Discrete Optimal Transport with Large Population under Incomplete Information</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-07841</link>
-    <guid isPermaLink="false">arxiv:2411.07841</guid>
-    <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Navpreet Kaur et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport is a powerful framework for the efficient allocation of resources between sources and targets. However, traditional models often struggle to scale effectively in the presence of large and heterogeneous populations. In this work, we introduce a discrete optimal transport framework designed to handle large-scale, heterogeneous target populations, characterized by type distributions. We address two scenarios: one where the type distribution of targets is known, and one where it is unknown. For the known distribution, we propose a fully distributed algorithm to achieve optimal resource allocation. In the case of unknown distribution, we develop a federated learning-based approach that enables efficient computation of the optimal transport scheme while preserving privacy. Case studies are provided to evaluate the performance of our learning algorithm.</p>]]></description>
   </item>
 
 </channel>

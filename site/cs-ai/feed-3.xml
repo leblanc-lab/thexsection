@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Calibrating Bayesian Generative Machine Learning for Bayesiamplification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2408-00838</link>
+    <guid isPermaLink="false">arxiv:2408.00838</guid>
+    <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Bieringer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Recently, combinations of generative and Bayesian machine learning have been introduced in particle physics for both fast detector simulation and inference tasks. These neural networks aim to quantify the uncertainty on the generated distribution originating from limited training statistics. The interpretation of a distribution-wide uncertainty however remains ill-defined. We show a clear scheme for quantifying the calibration of Bayesian generative machine learning models. For a Continuous Normalizing Flow applied to a low-dimensional toy example, we evaluate the calibration of Bayesian uncertainties from either a mean-field Gaussian weight posterior, or Monte Carlo sampling network weights, to gauge their behaviour on unsteady distribution edges. Well calibrated uncertainties can then be used to roughly estimate the number of uncorrelated truth samples that are equivalent to the generated sample and clearly indicate data amplification for smooth features of the distribution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Federated Learning for Discrete Optimal Transport with Large Population under Incomplete Information</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-07841</link>
+    <guid isPermaLink="false">arxiv:2411.07841</guid>
+    <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Navpreet Kaur et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport is a powerful framework for the efficient allocation of resources between sources and targets. However, traditional models often struggle to scale effectively in the presence of large and heterogeneous populations. In this work, we introduce a discrete optimal transport framework designed to handle large-scale, heterogeneous target populations, characterized by type distributions. We address two scenarios: one where the type distribution of targets is known, and one where it is unknown. For the known distribution, we propose a fully distributed algorithm to achieve optimal resource allocation. In the case of unknown distribution, we develop a federated learning-based approach that enables efficient computation of the optimal transport scheme while preserving privacy. Case studies are provided to evaluate the performance of our learning algorithm.</p>]]></description>
+  </item>
 
   <item>
     <title>Improving Molecular Graph Generation with Flow Matching and Optimal Transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jean Feydy et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We present a new multiscale algorithm for solving regularized Optimal Transport problems on the GPU, with a linear memory footprint. Relying on Sinkhorn divergences which are convex, smooth and positive definite loss functions, this method enables the computation of transport plans between millions of points in a matter of minutes. We show the effectiveness of this approach on brain tractograms modeled either as bundles of fibers or as track density maps. We use the resulting smooth assignments to perform label transfer for atlas-based segmentation of fiber tractograms. The parameters &ndash; blur and reach &ndash; of our method are meaningful, defining the minimum and maximum distance at which two fibers are compared with each other. They can be set according to anatomical knowledge. Furthermore, we also propose to estimate a probabilistic atlas of a population of track density maps as a Wasserstein barycenter. Our CUDA implementation is endowed with a user-friendly PyTorch interface, freely available on the PyPi repository (pip install geomloss) and at www.kernel-operations.io/geomloss.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimising simulations for diphoton production at hadron colliders using amplitude neural networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2106-09474</link>
-    <guid isPermaLink="false">arxiv:2106.09474</guid>
-    <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joseph Aylett-Bullock et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
-<p>Machine learning technology has the potential to dramatically optimise event generation and simulations. We continue to investigate the use of neural networks to approximate matrix elements for high-multiplicity scattering processes. We focus on the case of loop-induced diphoton production through gluon fusion and develop a realistic simulation method that can be applied to hadron collider observables. Neural networks are trained using the one-loop amplitudes implemented in the NJet C++ library and interfaced to the Sherpa Monte Carlo event generator where we perform a detailed study for 2→3 and 2→4 scattering problems. We also consider how the trained networks perform when varying the kinematic cuts effecting the phase space and the reliability of the neural network simulations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Symmetric Wasserstein Autoencoders</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2106-13024</link>
-    <guid isPermaLink="false">arxiv:2106.13024</guid>
-    <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sun Sun et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Leveraging the framework of Optimal Transport, we introduce a new family of generative autoencoders with a learnable prior, called Symmetric Wasserstein Autoencoders (SWAEs). We propose to symmetrically match the joint distributions of the observed data and the latent representation induced by the encoder and the decoder. The resulting algorithm jointly optimizes the modelling losses in both the data and the latent spaces with the loss in the data space leading to the denoising effect. With the symmetric treatment of the data and the latent representation, the algorithm implicitly preserves the local structure of the data in the latent space. To further improve the quality of the latent representation, we incorporate a reconstruction loss into the objective, which significantly benefits both the generation and reconstruction. We empirically show the superior performance of SWAEs over the state-of-the-art generative autoencoders in terms of classification, reconstruction, and generation.</p>]]></description>
   </item>
 
 </channel>

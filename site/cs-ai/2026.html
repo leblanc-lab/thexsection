@@ -36,17 +36,50 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">642 papers</span>
-  <span class="count">512 days</span>
+  <span class="count">644 papers</span>
+  <span class="count">513 days</span>
   <span class="count">since 2012</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">222</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">224</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, September 30, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2609-36264">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.36264" target="_blank" rel="noopener">arXiv:2609.36264</a>
+      
+      <a class="permalink" href="#a2609-36264" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">OTROPE: Optimal Transport-based Robust Off-policy Evaluation for Large Language Models</h3>
+    <p class="byline">Liner Xiang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Reliable evaluation of large language models (LLMs) is essential for their development and deployment, yet is often costly, risky, and difficult to perform safely online. We study off-policy evaluation for LLMs, where limited human-labeled data from a behavior model are used to evaluate a newer target LLM. This setting is challenging because labels are scarce, behavior&ndash;target distribution shift is common, and response likelihoods are often unavailable for black-box LLMs. We propose the Optimal Transport-based Robust Off-Policy Evaluation (OTROPE), a likelihood-free evaluation that performs distributional correction in a semantic space via optimal transport to align labeled behavior-policy samples with unlabeled target-policy samples. OTROPE combines corrected human-labeled residuals with proxy predictors, yielding a doubly robust-style evaluation without behavior-policy modeling or density-ratio estimation. We theoretically characterize why baseline evaluators fail under LLM distribution shift, and establish consistency and convergence rates for OTROPE when either the reweighted behavior distribution or the proxy predictor converges. Experiments on synthetic and real LLM evaluation tasks show that OTROPE consistently outperforms baselines while enabling ensembles of weaker LLM evaluators to approach and sometimes surpass stronger evaluators. Code is available at https://github.com/LinerXiang/OTROPE.</p></div>
+  </article>
+  
+  <article class="paper" id="a2609-37424">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2609.37424" target="_blank" rel="noopener">arXiv:2609.37424</a>
+      
+      <a class="permalink" href="#a2609-37424" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Simultaneous Neural Optimal Transport</h3>
+    <p class="byline">Milena Gazdieva et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for learning transformations between probability distributions from unpaired samples. In many applications, however, a single transformation must map several source distributions to a common target distribution. For example, image restoration might require handling different types of degradation without knowing the degradation of each input at inference time. Simple approaches of pooling the source distributions only encourage alignment with the target at the aggregate level and may leave individual sources misaligned. In our paper, we consider the simultaneous OT problem which formalizes the task of learning a shared transport map that minimizes the average transport cost while aligning each source distribution with a prescribed target. We propose a neural method for solving the simultaneous OT problem by learning a shared transport map that minimizes the average transport cost while aligning each source distribution with a prescribed target. We derive a max-min formulation for learning this map. We illustrate its application to image restoration, where a single model handles multiple degradation types using a common collection of clean target images.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -4067,7 +4100,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-29 08:51 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-09-30 07:25 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

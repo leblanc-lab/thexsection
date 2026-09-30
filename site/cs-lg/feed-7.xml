@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Offline Imitation from Observation via Primal Wasserstein State Occupancy Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2311-01331</link>
+    <guid isPermaLink="false">arxiv:2311.01331</guid>
+    <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kai Yan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In real-world scenarios, arbitrary interactions with the environment can often be costly, and actions of expert demonstrations are not always available. To reduce the need for both, offline Learning from Observations (LfO) is extensively studied: the agent learns to solve a task given only expert states and task-agnostic non-expert state-action pairs. The state-of-the-art DIstribution Correction Estimation (DICE) methods, as exemplified by SMODICE, minimize the state occupancy divergence between the learner&rsquo;s and empirical expert policies. However, such methods are limited to either f-divergences (KL and chi²) or Wasserstein distance with Rubinstein duality, the latter of which constrains the underlying distance metric crucial to the performance of Wasserstein-based solutions. To enable more flexible distance metrics, we propose Primal Wasserstein DICE (PW-DICE). It minimizes the primal Wasserstein distance between the learner and expert state occupancies and leverages a contrastively learned distance metric. Theoretically, our framework is a generalization of SMODICE, and is the first work that unifies f-divergence and Wasserstein minimization. Empirically, we find that PW-DICE improves upon several state-of-the-art methods. The code is available at https://github.com/KaiYan289/PW-DICE.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stereographic Spherical Sliced Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-02345</link>
+    <guid isPermaLink="false">arxiv:2402.02345</guid>
+    <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huy Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Comparing spherical probability distributions is of great interest in various fields, including geology, medical domains, computer vision, and deep representation learning. The utility of optimal transport-based distances, such as the Wasserstein distance, for comparing probability measures has spurred active research in developing computationally efficient variations of these distances for spherical probability measures. This paper introduces a high-speed and highly parallelizable distance for comparing spherical measures using the stereographic projection and the generalized Radon transform, which we refer to as the Stereographic Spherical Sliced Wasserstein (S3W) distance. We carefully address the distance distortion caused by the stereographic projection and provide an extensive theoretical analysis of our proposed metric and its rotationally invariant variation. Finally, we evaluate the performance of the proposed metrics and compare them with recent baselines in terms of both speed and accuracy through a wide range of numerical studies, including gradient flows and self-supervised learning. Our code is available at https://github.com/mint-vu/s3wd.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Distributional Preference Alignment of LLMs via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-05882</link>
+    <guid isPermaLink="false">arxiv:2406.05882</guid>
+    <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Igor Melnyk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Current LLM alignment techniques use pairwise human preferences at a sample level, and as such, they do not imply an alignment on the distributional level. We propose in this paper Alignment via Optimal Transport (AOT), a novel method for distributional preference alignment of LLMs. AOT aligns LLMs on unpaired preference data by making the reward distribution of the positive samples stochastically dominant in the first order on the distribution of negative samples. We introduce a convex relaxation of this first-order stochastic dominance and cast it as an optimal transport problem with a smooth and convex cost. Thanks to the one-dimensional nature of the resulting optimal transport problem and the convexity of the cost, it has a closed-form solution via sorting on empirical measures. We fine-tune LLMs with this AOT objective, which enables alignment by penalizing the violation of the stochastic dominance of the reward distribution of the positive samples on the reward distribution of the negative samples. We analyze the sample complexity of AOT by considering the dual of the OT problem and show that it converges at the parametric rate. Empirically, we show on a diverse set of alignment datasets and LLMs that AOT leads to state-of-the-art models in the 7B family of models when evaluated with Open LLM Benchmarks and AlpacaEval.</p>]]></description>
+  </item>
+
+  <item>
+    <title>k-SemStamp: A Clustering-Based Semantic Watermark for Detection of Machine-Generated Text</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-11399</link>
+    <guid isPermaLink="false">arxiv:2402.11399</guid>
+    <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abe Bohan Hou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Recent watermarked generation algorithms inject detectable signatures during language generation to facilitate post-hoc detection. While token-level watermarks are vulnerable to paraphrase attacks, SemStamp (Hou et al., 2023) applies watermark on the semantic representation of sentences and demonstrates promising robustness. SemStamp employs locality-sensitive hashing (LSH) to partition the semantic space with arbitrary hyperplanes, which results in a suboptimal tradeoff between robustness and speed. We propose k-SemStamp, a simple yet effective enhancement of SemStamp, utilizing k-means clustering as an alternative of LSH to partition the embedding space with awareness of inherent semantic structure. Experimental results indicate that k-SemStamp saliently improves its robustness and sampling efficiency while preserving the generation quality, advancing a more effective tool for machine-generated text detection.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Estimating Barycenters of Distributions with Neural Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-03828</link>
+    <guid isPermaLink="false">arxiv:2402.03828</guid>
+    <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Kolesov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Given a collection of probability measures, a practitioner sometimes needs to find an &ldquo;average&rdquo; distribution which adequately aggregates reference distributions. A theoretically appealing notion of such an average is the Wasserstein barycenter, which is the primal focus of our work. By building upon the dual formulation of Optimal Transport (OT), we propose a new scalable approach for solving the Wasserstein barycenter problem. Our methodology is based on the recent Neural OT solver: it has bi-level adversarial learning objective and works for general cost functions. These are key advantages of our method since the typical adversarial algorithms leveraging barycenter tasks utilize tri-level optimization and focus mostly on quadratic cost. We also establish theoretical error bounds for our proposed approach and showcase its applicability and effectiveness in illustrative scenarios and image data setups. Our source code is available at https://github.com/justkolesov/NOTBarycenters.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Short and General Duality Proof for Wasserstein Distributionally Robust Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2205-00362</link>
+    <guid isPermaLink="false">arxiv:2205.00362</guid>
+    <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luhao Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present a general duality result for Wasserstein distributionally robust optimization that holds for any Kantorovich transport cost, measurable loss function, and nominal probability distribution. Assuming an interchangeability principle inherent in existing duality results, our proof only uses one-dimensional convex analysis. Furthermore, we demonstrate that the interchangeability principle holds if and only if certain measurable projection and weak measurable selection conditions are satisfied. To illustrate the broader applicability of our approach, we provide a rigorous treatment of duality results in distributionally robust Markov decision processes and distributionally robust multistage stochastic programming. Additionally, we extend our analysis to other problems such as infinity-Wasserstein distributionally robust optimization, risk-averse optimization, and globalized distributionally robust counterpart.</p>]]></description>
+  </item>
 
   <item>
     <title>Pairwise Alignment Improves Graph Domain Adaptation</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Learning distance functions between complex objects, such as the Wasserstein distance to compare point sets, is a common goal in machine learning applications. However, functions on such complex objects (e.g., point sets and graphs) are often required to be invariant to a wide variety of group actions e.g. permutation or rigid transformation. Therefore, continuous and symmetric product functions (such as distance functions) on such complex objects must also be invariant to the product of such group actions. We call these functions symmetric and factor-wise group invariant (or SFGI functions in short). In this paper, we first present a general neural network architecture for approximating SFGI functions. The main contribution of this paper combines this general neural network with a sketching idea to develop a specific and efficient neural network which can approximate the p-th Wasserstein distance between point sets. Very importantly, the required model complexity is independent of the sizes of input point sets. On the theoretical front, to the best of our knowledge, this is the first result showing that there exists a neural network with the capacity to approximate Wasserstein distance with bounded model complexity. Our work provides an interesting integration of sketching ideas for geometric problems with universal approximation of symmetric functions. On the empirical front, we present a range of results showing that our newly proposed neural network architecture performs comparatively or better than other models (including a SOTA Siamese Autoencoder based approach). In particular, our neural network generalizes significantly better and trains much faster than the SOTA Siamese AE. Finally, this line of investigation could be useful in exploring effective neural network design for solving a broad range of geometric optimization problems (e.g., k-means in a metric space).</p>]]></description>
-  </item>
-
-  <item>
-    <title>DeepEMD: A Transformer-based Fast Estimation of the Earth Mover's Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-09998</link>
-    <guid isPermaLink="false">arxiv:2311.09998</guid>
-    <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Atul Kumar Sinha et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>The Earth Mover&rsquo;s Distance (EMD) is the measure of choice between point clouds. However the computational cost to compute it makes it prohibitive as a training loss, and the standard approach is to use a surrogate such as the Chamfer distance. We propose an attention-based model to compute an accurate approximation of the EMD that can be used as a training loss for generative models. To get the necessary accurate estimation of the gradients we train our model to explicitly compute the matching between point clouds instead of EMD itself. We cast this new objective as the estimation of an attention matrix that approximates the ground truth matching matrix. Experiments show that this model provides an accurate estimate of the EMD and its gradient with a wall clock speed-up of more than two orders of magnitude with respect to the exact Hungarian matching algorithm and one order of magnitude with respect to the standard approximate Sinkhorn algorithm, allowing in particular to train a point cloud VAE with the EMD itself. Extensive evaluation show the remarkable behaviour of this model when operating out-of-distribution, a key requirement for a distance surrogate. Finally, the model generalizes very well to point clouds during inference several times larger than during training.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generalizing to new geometries with Geometry-Aware Autoregressive Models (GAAMs) for fast calorimeter simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-11531</link>
-    <guid isPermaLink="false">arxiv:2305.11531</guid>
-    <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junze Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>Generation of simulated detector response to collision products is crucial to data analysis in particle physics, but computationally very expensive. One subdetector, the calorimeter, dominates the computational time due to the high granularity of its cells and complexity of the interactions. Generative models can provide more rapid sample production, but currently require significant effort to optimize performance for specific detector geometries, often requiring many models to describe the varying cell sizes and arrangements, without the ability to generalize to other geometries. We develop a geometry-aware autoregressive model, which learns how the calorimeter response varies with geometry, and is capable of generating simulated responses to unseen geometries without additional training. The geometry-aware model outperforms a baseline unaware model by over 50% in several metrics such as the Wasserstein distance between the generated and the true distributions of key quantities which summarize the simulated response. A single geometry-aware model could replace the hundreds of generative models currently designed for calorimeter simulation by physicists analyzing data collected at the Large Hadron Collider. This proof-of-concept study motivates the design of a foundational model that will be a crucial tool for the study of future detectors, dramatically reducing the large upfront investment usually needed to develop generative calorimeter models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Instance-Dependent Generalization Bounds via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-01258</link>
-    <guid isPermaLink="false">arxiv:2211.01258</guid>
-    <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Songyan Hou et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Existing generalization bounds fail to explain crucial factors that drive the generalization of modern neural networks. Since such bounds often hold uniformly over all parameters, they suffer from over-parametrization and fail to account for the strong inductive bias of initialization and stochastic gradient descent. As an alternative, we propose a novel optimal transport interpretation of the generalization problem. This allows us to derive instance-dependent generalization bounds that depend on the local Lipschitz regularity of the learned prediction function in the data space. Therefore, our bounds are agnostic to the parametrization of the model and work well when the number of training samples is much smaller than the number of parameters. With small modifications, our approach yields accelerated rates for data on low-dimensional manifolds and guarantees under distribution shifts. We empirically analyze our generalization bounds for neural networks, showing that the bound values are meaningful and capture the effect of popular regularization methods during training.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Auto-Encoders of Merge Trees (and Persistence Diagrams)</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-02509</link>
-    <guid isPermaLink="false">arxiv:2307.02509</guid>
-    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mahieu Pont et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper presents a computational framework for the Wasserstein auto-encoding of merge trees (MT-WAE), a novel extension of the classical auto-encoder neural network architecture to the Wasserstein metric space of merge trees. In contrast to traditional auto-encoders which operate on vectorized data, our formulation explicitly manipulates merge trees on their associated metric space at each layer of the network, resulting in superior accuracy and interpretability. Our novel neural network approach can be interpreted as a non-linear generalization of previous linear attempts [79] at merge tree encoding. It also trivially extends to persistence diagrams. Extensive experiments on public ensembles demonstrate the efficiency of our algorithms, with MT-WAE computations in the orders of minutes on average. We show the utility of our contributions in two applications adapted from previous work on merge tree encoding [79]. First, we apply MT-WAE to merge tree compression, by concisely representing them with their coordinates in the final layer of our auto-encoder. Second, we document an application to dimensionality reduction, by exploiting the latent space of our auto-encoder, for the visual analysis of ensemble data. We illustrate the versatility of our framework by introducing two penalty terms, to help preserve in the latent space both the Wasserstein distances between merge trees, as well as their clusters. In both applications, quantitative experiments assess the relevance of our framework. Finally, we provide a C++ implementation that can be used for reproducibility.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A theory of data variability in Neural Network Bayesian inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-16695</link>
-    <guid isPermaLink="false">arxiv:2307.16695</guid>
-    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javed Lindner et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Krämer) — original abstract; no AI summary.</em></p>
-<p>Bayesian inference and kernel methods are well established in machine learning. The neural network Gaussian process in particular provides a concept to investigate neural networks in the limit of infinitely wide hidden layers by using kernel and inference methods. Here we build upon this limit and provide a field-theoretic formalism which covers the generalization properties of infinitely wide networks. We systematically compute generalization properties of linear, non-linear, and deep non-linear networks for kernel matrices with heterogeneous entries. In contrast to currently employed spectral methods we derive the generalization properties from the statistical properties of the input, elucidating the interplay of input dimensionality, size of the training data set, and variability of the data. We show that data variability leads to a non-Gaussian action reminiscent of a (φ³⁺φ⁴)-theory. Using our formalism on a synthetic task and on MNIST we obtain a homogeneous kernel matrix approximation for the learning curve as well as corrections due to data variability which allow the estimation of the generalization properties and exact results for the bounds of the learning curves in the case of infinitely many training data points.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Outlier-Robust Wasserstein DRO</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-05573</link>
-    <guid isPermaLink="false">arxiv:2311.05573</guid>
-    <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Distributionally robust optimization (DRO) is an effective approach for data-driven decision-making in the presence of uncertainty. Geometric uncertainty due to sampling or localized perturbations of data points is captured by Wasserstein DRO (WDRO), which seeks to learn a model that performs uniformly well over a Wasserstein ball centered around the observed data distribution. However, WDRO fails to account for non-geometric perturbations such as adversarial outliers, which can greatly distort the Wasserstein distance measurement and impede the learned model. We address this gap by proposing a novel outlier-robust WDRO framework for decision-making under both geometric (Wasserstein) perturbations and non-geometric (total variation (TV)) contamination that allows an ε-fraction of data to be arbitrarily corrupted. We design an uncertainty set using a certain robust Wasserstein ball that accounts for both perturbation types and derive minimax optimal excess risk bounds for this procedure that explicitly capture the Wasserstein and TV risks. We prove a strong duality result that enables tractable convex reformulations and efficient computation of our outlier-robust WDRO problem. When the loss function depends only on low-dimensional features of the data, we eliminate certain dimension dependencies from the risk bounds that are unavoidable in the general setting. Finally, we present experiments validating our theory on standard regression and classification tasks.</p>]]></description>
   </item>
 
 </channel>

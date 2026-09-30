@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Data-driven Reachable Set Estimation with Tunable Adversarial and Wasserstein Distributional Guarantees</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-12654</link>
+    <guid isPermaLink="false">arxiv:2604.12654</guid>
+    <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Georgios Pantazis et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study finite horizon reachable set estimation for unknown discrete-time dynamical systems using only sampled state trajectories. Rather than treating scenario optimization as a black-box tool, we show how it can be tailored to reachable set estimation, where one must learn a family of sets based on whole trajectories, while preserving probabilistic guarantees on future trajectory inclusion for the entire horizon. To this end, we formulate a relaxed scenario program with slack variables that yields a tunable trade-off between reachable set size and out-of-sample trajectory inclusion over the horizon, thereby reducing sensitivity to outliers. Leveraging the recent results in adversarially robust scenario optimization, we then extend this formulation to account for bounded adversarial perturbations of the observed trajectories and derive a posteriori probabilistic guarantees on future trajectory inclusion. When probability distribution shifts in the Wasserstein distance occur, we obtain an explicit bound on how gracefully the theoretical probabilistic guarantees degrade. For different geometries, i.e., p-norm balls, ellipsoids, and zonotopes, we derive tractable convex reformulations and corroborate our theoretical results in simulation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Steering between Gaussian Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-22807</link>
+    <guid isPermaLink="false">arxiv:2604.22807</guid>
+    <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaito Ito et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport with quadratic cost provides a geometric framework for steering an ensemble, modeled by a probability law, with minimal effort. Yet ambient-space formulations become unwieldy in high dimensions, and sensing or actuation in practice often reveals only linear views of the state &ndash; camera silhouettes, LiDAR beams, tomographic slices. We develop a sliced feedback controller for distribution steering: the evolving law is projected onto one-dimensional directions on the sphere, the optimal one-dimensional velocity is synthesized in each projection, and these velocities are averaged to produce a feedback control in the ambient space. The construction reduces to the Benamou&ndash;Brenier problem in one dimension. In addition, it is invariant under orthogonal transforms, nonexpansive under projections, and well posed on 𝒫_2(ℝⁿ⁾. Computation proceeds by sampling directions on the sphere and solving independent one-dimensional subproblems, yielding a scalable method aligned with partial observations. In the Gaussian setting, we show that the developed sliced controller steers the law to the prescribed target. Furthermore, we derive an identity relating the energy consumption incurred by the controller to the sliced Wasserstein distance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>UniPROT: Uniform Prototype Selection via Partial Optimal Transport with Submodular Guarantees</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-10952</link>
+    <guid isPermaLink="false">arxiv:2604.10952</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Prateek Chanda et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Selecting prototypical examples from a source distribution to represent a target data distribution is a fundamental problem in machine learning. Existing subset selection methods often rely on implicit importance scores, which can be skewed towards majority classes and lead to low-quality prototypes for minority classes. We present , a novel subset selection framework that minimizes the optimal transport (OT) distance between a uniformly weighted prototypical distribution and the target distribution. While intuitive, this formulation leads to a cardinality-constrained maximization of a \emph{super-additive} objective, which is generally intractable to approximate efficiently. To address this, we propose a principled reformulation of the OT marginal constraints, yielding a partial optimal transport-based submodular objective. We prove that this reformulation enables a greedy algorithm with a (1-1/e) approximation guarantee relative to the original super-additive maximization problem. Empirically, we showcase that enforcing uniform prototype weights in UniPROT consistently improves minority-class representation in imbalanced classification benchmarks without compromising majority-class accuracy. In both finetuning and pretraining regimes for large language models under domain imbalance, UniPROT enforces uniform source contributions, yielding robust performance gains. Our results establish UniPROT as a scalable, theoretically grounded solution for uniform-weighted prototype selection. Our code is publicly available at GitHub\footnote{Code: https://github.com/efficiency-learning/UniPROT}</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generative Path-Finding Method for Wasserstein Gradient Flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-11519</link>
+    <guid isPermaLink="false">arxiv:2604.11519</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chengyu Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein gradient flows (WGFs) describe the evolution of probability distributions in Wasserstein space as steepest descent dynamics for a free energy functional. Computing the full path from an arbitrary initial distribution to equilibrium is challenging, especially in high dimensions. Eulerian methods suffer from the curse of dimensionality, while existing Lagrangian approaches based on particles or generative maps do not naturally improve efficiency through time step tuning. We propose GenWGP, a generative path finding framework for Wasserstein gradient paths. GenWGP learns a generative flow that transports mass from an initial density to an unknown equilibrium distribution by minimizing a path loss that encodes the full trajectory and its terminal equilibrium condition. The loss is derived from a geometric action functional motivated by Dawson Gartner large deviation theory for empirical distributions of interacting diffusion systems. We formulate both a finite horizon action under physical time parametrization and a reparameterization invariant geometric action based on Wasserstein arclength. Using normalizing flows, GenWGP computes a geometric curve toward equilibrium while enforcing approximately constant intrinsic speed between adjacent network layers, so that discretized distributions remain nearly equidistant in the Wasserstein metric along the path. This avoids delicate time stepping constraints and enables stable training that is largely independent of temporal or geometric discretization. Experiments on Fokker Planck and aggregation type problems show that GenWGP matches or exceeds high fidelity reference solutions with only about a dozen discretization points while capturing complex dynamics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Wasserstein transform</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a1810-07793</link>
+    <guid isPermaLink="false">arxiv:1810.07793</guid>
+    <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kun Jin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce the Wasserstein Transform (WT), a general unsupervised framework for updating distance structures on given data sets with the purpose of enhancing features and denoising. Our framework represents each data point by a probability measure reflecting the neighborhood structure of the point, and then updates the distance by computing the Wasserstein distance between these probability measures. The Wasserstein Transform is a general method which extends the mean shift family of algorithms. We study several instances of WT, and in particular, in one of the instances which we call the Gaussian Transform (GT), we utilize Gaussian measures to model neighborhood structures of individual data points. GT is computationally cheaper than other instances of WT since there exists closed form solution for the ℓ²-Wasserstein distance between Gaussian measures. We study the relationship between different instances of WT and prove that each of the instances is stable under perturbations. We devise iterative algorithms for performing the above-mentioned WT and propose several strategies to accelerate GT, such as an observation from linear algebra for reducing the number of matrix square root computations. We examine the performance of the Wasserstein Transform method in many tasks, such as denoising, clustering, image segmentation and word embeddings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DistDF: Time-Series Forecasting Needs Joint-Distribution Wasserstein Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-24574</link>
+    <guid isPermaLink="false">arxiv:2510.24574</guid>
+    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Training time-series forecasting models requires aligning the conditional distribution of model forecasts with that of the label sequence. The standard direct forecast (DF) approach resorts to minimizing the conditional negative log-likelihood, typically estimated by the mean squared error. However, this estimation proves biased when the label sequence exhibits autocorrelation. In this paper, we propose DistDF, which achieves alignment by minimizing a distributional discrepancy between the conditional distributions of forecast and label sequences. Since such conditional discrepancies are difficult to estimate from finite time-series observations, we introduce a joint-distribution Wasserstein discrepancy for time-series forecasting, which provably upper bounds the conditional discrepancy of interest. The proposed discrepancy is tractable, differentiable, and readily compatible with gradient-based optimization. Extensive experiments show that DistDF improves diverse forecasting models and achieves leading performance. Code is available at https://anonymous.4open.science/r/DistDF-F66B.</p>]]></description>
+  </item>
 
   <item>
     <title>Learning to Unscramble: Simplifying Symbolic Expressions via Self-Supervised Oracle Trajectories</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanjit Dandapanthula et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transportation) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) and Gromov-Wasserstein (GW) alignment provide interpretable geometric frameworks for comparing, transforming, and aggregating heterogeneous datasets &ndash; tasks ubiquitous in data science and machine learning. Because these frameworks are computationally expensive, large-scale applications often rely on closed-form solutions for Gaussian distributions under quadratic cost. This work provides a comprehensive treatment of Gaussian, quadratic cost OT and inner product GW (IGW) alignment, closing several gaps in the literature to broaden applicability. First, we treat the open problem of IGW alignment between uncentered Gaussians on separable Hilbert spaces by giving a closed-form expression up to a quadratic optimization over unitary operators, for which we derive tight analytic upper and lower bounds. If at least one Gaussian measure is centered, the solution reduces to a fully closed-form expression, which we further extend to an analytic solution for the IGW barycenter between centered Gaussians. We also present a reduction of Gaussian multimarginal OT with pairwise quadratic costs to a tractable optimization problem and provide an efficient algorithm to solve it using a rank-deficiency constraint. To demonstrate utility, we apply our results to knowledge distillation and heterogeneous clustering on synthetic and real-world datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Increasing Information Extraction in Low-Signal Regimes via Multiple Instance Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-07114</link>
-    <guid isPermaLink="false">arxiv:2508.07114</guid>
-    <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Atakan Azakli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>In this work, we introduce a new information-theoretic perspective on Multiple Instance Learning (MIL) for parameter estimation with i.i.d. data, and show that MIL can outperform single-instance learners in low-signal regimes. Prior work [Nachman and Thaler, 2021] argued that single-instance methods are often sufficient, but this conclusion presumes enough single-instance signal to train near-optimal classifiers. We demonstrate that even state-of-the-art single-instance models can fail to reach optimal classifier performance in challenging low-signal regimes, whereas MIL can mitigate this sub-optimality. As a concrete application, we constrain Wilson coefficients of the Standard Model Effective Field Theory (SMEFT) using kinematic information from subatomic particle collision events at the Large Hadron Collider (LHC). In experiments, we observe that under specific modeling and weak signal conditions, pooling instances can increase the effective Fisher information compared to single-instance approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Families of costs with zero and nonnegative MTW tensor in optimal transport and the c-divergences</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2401-00953</link>
-    <guid isPermaLink="false">arxiv:2401.00953</guid>
-    <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Du Nguyen</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the information geometry of -divergences from families of costs of the form 𝖼(x, ) =𝗎(x^𝔱) through the optimal transport point of view. Here, 𝗎 is a scalar function with inverse 𝗌, x^ is a nondegenerate bilinear pairing of vectors x, belonging to an open subset of ℝⁿ. We compute explicitly the MTW tensor (or cross curvature) for the optimal transport problem on ℝⁿ with this cost. The condition that the MTW-tensor vanishes on null vectors under the Kim-McCann metric is a fourth-order nonlinear ODE, which could be reduced to a linear ODE of the form 𝗌⁽²⁾ - S𝗌⁽¹⁾ + P𝗌 = 0 with constant coefficients P and S. The resulting inverse functions include {\it Lambert} and {\it generalized inverse hyperbolic\slash trigonometric} functions. The square Euclidean metric and log-type costs are equivalent to instances of these solutions. The optimal map may be written explicitly in terms of the potential function. For cost functions of a similar form on a hyperboloid model of the hyperbolic space and unit sphere, we also express this tensor in terms of algebraic expressions in derivatives of 𝗌 using the Gauss-Codazzi equation, obtaining new families of strictly regular costs for these manifolds, including new families of {\it power function costs}. We express the divergence geometry of the 𝖼-divergence in terms of the Kim-McCann metric, including a 𝖼-Crouzeix identity and a formula for the primal connection. We analyze the sinh-type hyperbolic cost, providing examples of 𝖼-convex functions, which are used to construct a new \emph{local form} of the α-divergences on probability simplices. We apply the optimal maps to sample the multivariate t-distribution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>hls4ml: A Flexible, Open-Source Platform for Deep Learning Acceleration on Reconfigurable Hardware</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-01463</link>
-    <guid isPermaLink="false">arxiv:2512.01463</guid>
-    <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan-Frederik Schulte et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran, Philip Harris) — original abstract; no AI summary.</em></p>
-<p>We present hls4ml, a free and open-source platform that translates machine learning (ML) models from modern deep learning frameworks into high-level synthesis (HLS) code that can be integrated into full designs for field-programmable gate arrays (FPGAs) or application-specific integrated circuits (ASICs). With its flexible and modular design, hls4ml supports a large number of deep learning frameworks and can target HLS compilers from several vendors, including Vitis HLS, Intel oneAPI and Catapult HLS. Together with a wider eco-system for software-hardware co-design, hls4ml has enabled the acceleration of ML inference in a wide range of commercial and scientific applications where low latency, resource usage, and power consumption are critical. In this paper, we describe the structure and functionality of the hls4ml platform. The overarching design considerations for the generated HLS code are discussed, together with selected performance results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Reduced Representations for Quantum Classifiers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-01509</link>
-    <guid isPermaLink="false">arxiv:2512.01509</guid>
-    <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patrick Odagiu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Data sets that are specified by a large number of features are currently outside the area of applicability for quantum machine learning algorithms. An immediate solution to this impasse is the application of dimensionality reduction methods before passing the data to the quantum algorithm. We investigate six conventional feature extraction algorithms and five autoencoder-based dimensionality reduction models to a particle physics data set with 67 features. The reduced representations generated by these models are then used to train a quantum support vector machine for solving a binary classification problem: whether a Higgs boson is produced in proton collisions at the LHC. We show that the autoencoder methods learn a better lower-dimensional representation of the data, with the method we design, the Sinkclass autoencoder, performing 40% better than the baseline. The methods developed here open up the applicability of quantum machine learning to a larger array of data sets. Moreover, we provide a recipe for effective dimensionality reduction in this context.</p>]]></description>
-  </item>
-
-  <item>
-    <title>LongCat-Flash-Omni Technical Report</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-00279</link>
-    <guid isPermaLink="false">arxiv:2511.00279</guid>
-    <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Meituan LongCat Team et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>We introduce LongCat-Flash-Omni, a state-of-the-art open-source omni-modal model with 560 billion parameters, excelling at real-time audio-visual interaction. By adopting a curriculum-inspired progressive training strategy that transitions from simpler to increasingly complex modality sequence modeling tasks, LongCat-Flash-Omni attains comprehensive multimodal capabilities while maintaining strong unimodal capability. Building upon LongCat-Flash, which adopts a high-performance Shortcut-connected Mixture-of-Experts (MoE) architecture with zero-computation experts, LongCat-Flash-Omni integrates efficient multimodal perception and speech reconstruction modules. Despite its immense size of 560B parameters (with 27B activated), LongCat-Flash-Omni achieves low-latency real-time audio-visual interaction. For training infrastructure, we developed a modality-decoupled parallelism scheme specifically designed to manage the data and model heterogeneity inherent in large-scale multimodal training. This innovative approach demonstrates exceptional efficiency by sustaining over 90% of the throughput achieved by text-only training. Extensive evaluations show that LongCat-Flash-Omni achieves state-of-the-art performance on omni-modal benchmarks among open-source models. Furthermore, it delivers highly competitive results across a wide range of modality-specific tasks, including text, image, and video understanding, as well as audio understanding and generation. We provide a comprehensive overview of the model architecture design, training procedures, and data strategies, and open-source the model to foster future research and development in the community.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SD-CGAN: Conditional Sinkhorn Divergence GAN for DDoS Anomaly Detection in IoT Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-00251</link>
-    <guid isPermaLink="false">arxiv:2512.00251</guid>
-    <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henry Onyeka et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>The increasing complexity of IoT edge networks presents significant challenges for anomaly detection, particularly in identifying sophisticated Denial-of-Service (DoS) attacks and zero-day exploits under highly dynamic and imbalanced traffic conditions. This paper proposes SD-CGAN, a Conditional Generative Adversarial Network framework enhanced with Sinkhorn Divergence, tailored for robust anomaly detection in IoT edge environments. The framework incorporates CTGAN-based synthetic data augmentation to address class imbalance and leverages Sinkhorn Divergence as a geometry-aware loss function to improve training stability and reduce mode collapse. The model is evaluated on exploitative attack subsets from the CICDDoS2019 dataset and compared against baseline deep learning and GAN-based approaches. Results show that SD-CGAN achieves superior detection accuracy, precision, recall, and F1-score while maintaining computational efficiency suitable for deployment in edge-enabled IoT environments.</p>]]></description>
   </item>
 
 </channel>

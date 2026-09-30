@@ -6,7 +6,37 @@
   <description>Data analysis, simulation, and computational physics</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimization Using Pathwise Algorithmic Derivatives of Electromagnetic Shower Simulations</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2405-07944</link>
+    <guid isPermaLink="false">arxiv:2405.07944</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max Aehle et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Among the well-known methods to approximate derivatives of expectancies computed by Monte-Carlo simulations, averages of pathwise derivatives are often the easiest one to apply. Computing them via algorithmic differentiation typically does not require major manual analysis and rewriting of the code, even for very complex programs like simulations of particle-detector interactions in high-energy physics. However, the pathwise derivative estimator can be biased if there are discontinuities in the program, which may diminish its value for applications. This work integrates algorithmic differentiation into the electromagnetic shower simulation code HepEmShow based on G4HepEm, allowing us to study how well pathwise derivatives approximate derivatives of energy depositions in a sampling calorimeter with respect to parameters of the beam and geometry. We found that when multiple scattering is disabled in the simulation, means of pathwise derivatives converge quickly to their expected values, and these are close to the actual derivatives of the energy deposition. Additionally, we demonstrate the applicability of this novel gradient estimator for stochastic gradient-based optimization in a model example.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2609-32479</link>
+    <guid isPermaLink="false">arxiv:2609.32479</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathan Renusch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>We propose a training recipe that treats charged-particle trajectory parameter regression on high-energy physics detector data as a sequence-modeling task. Kalman filters and linearized least-squares fits have been the classical standard approach for this task: they are optimal estimators for sparsely sampled linear-Gaussian data and are commonly used for trajectory parameter regression (fitting). The classical fitting techniques implemented for this domain reach a final precision of one part in 10⁵ through detailed modeling of detector geometry, material, detection effects and precise numerical integration of the equations of motion through the detector&rsquo;s inhomogeneous magnetic field. With this study, we demonstrate that using a bidirectional gated linear recurrent encoder, one is able to reproduce the full precision of classical track fitting techniques. Using a custom kernel, we also achieve significantly higher throughput during GPU inference, compared to classical fitting software running on similarly priced multi-core CPU servers representing typically employed hardware. Such a speedup would lead to considerable cost savings for the pattern recognition at the Large Hadron Collider. To our knowledge, this is the first end-to-end learned track fit to reach the full precision and, at the same time, offer the opportunity to reduce the computing costs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hybrid Neural Simulation-Based Inference for Robust Applications and Limited-Budget Scenarios</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2609-36044</link>
+    <guid isPermaLink="false">arxiv:2609.36044</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sean Benevedes et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>We develop two hybrid techniques that approach the performance of neural simulation-based inference (NSBI) analyses while substantially reducing the computational cost of inference and preserving some or all of the reliability guarantees of parametric methods. The first approach is broadly applicable, while the second is tailored to a class of particle physics analyses that admit a semi-parametric NSBI formulation. With only a modest compromise in raw sensitivity, these methods represent an important step toward computationally efficient NSBI in offline analyses and also open the door to the exploration of trigger-level applications in the future. Based on our comparison studies, we recommend the use of our first approach, Latent Categories, for robust and efficient inference.</p>]]></description>
+  </item>
 
   <item>
     <title>Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks</title>

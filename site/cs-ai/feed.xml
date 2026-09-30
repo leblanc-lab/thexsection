@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>OTROPE: Optimal Transport-based Robust Off-policy Evaluation for Large Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-36264</link>
+    <guid isPermaLink="false">arxiv:2609.36264</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liner Xiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Reliable evaluation of large language models (LLMs) is essential for their development and deployment, yet is often costly, risky, and difficult to perform safely online. We study off-policy evaluation for LLMs, where limited human-labeled data from a behavior model are used to evaluate a newer target LLM. This setting is challenging because labels are scarce, behavior&ndash;target distribution shift is common, and response likelihoods are often unavailable for black-box LLMs. We propose the Optimal Transport-based Robust Off-Policy Evaluation (OTROPE), a likelihood-free evaluation that performs distributional correction in a semantic space via optimal transport to align labeled behavior-policy samples with unlabeled target-policy samples. OTROPE combines corrected human-labeled residuals with proxy predictors, yielding a doubly robust-style evaluation without behavior-policy modeling or density-ratio estimation. We theoretically characterize why baseline evaluators fail under LLM distribution shift, and establish consistency and convergence rates for OTROPE when either the reweighted behavior distribution or the proxy predictor converges. Experiments on synthetic and real LLM evaluation tasks show that OTROPE consistently outperforms baselines while enabling ensembles of weaker LLM evaluators to approach and sometimes surpass stronger evaluators. Code is available at https://github.com/LinerXiang/OTROPE.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Simultaneous Neural Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2609-37424</link>
+    <guid isPermaLink="false">arxiv:2609.37424</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Milena Gazdieva et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for learning transformations between probability distributions from unpaired samples. In many applications, however, a single transformation must map several source distributions to a common target distribution. For example, image restoration might require handling different types of degradation without knowing the degradation of each input at inference time. Simple approaches of pooling the source distributions only encourage alignment with the target at the aggregate level and may leave individual sources misaligned. In our paper, we consider the simultaneous OT problem which formalizes the task of learning a shared transport map that minimizes the average transport cost while aligning each source distribution with a prescribed target. We propose a neural method for solving the simultaneous OT problem by learning a shared transport map that minimizes the average transport cost while aligning each source distribution with a prescribed target. We derive a max-min formulation for learning this map. We illustrate its application to image restoration, where a single model handles multiple degradation types using a common collection of clean target images.</p>]]></description>
+  </item>
 
   <item>
     <title>Unsupervised spiking feature learning for event-based pedestrian crossing detection: approaching supervised accuracy without labelled training data</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Wen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
 <p>Multimodal Large Language Models (MLLMs) pose critical safety challenges, as they are susceptible not only to adversarial attacks such as jailbreaking but also to inadvertently generating harmful content for benign users. While internal safety alignment via Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) is a primary mitigation strategy, current methods often face a safety-utility trade-off: they either refuse benign queries out of excessive caution or overlook latent risks in cross-modal interactions. To resolve this, we introduce Pragma-VL, an end-to-end alignment algorithm that enables MLLMs to pragmatically arbitrate between safety and helpfulness. First, we enhance visual risk perception with a novel cold-start SFT stage. This is achieved by applying risk-aware clustering to the visual encoder and using an interleaved dataset of risk descriptions and high-quality data. Second, we introduce a theoretically-guaranteed reward model that leverages synergistic learning. We train it with a novel data augmentation method that assigns dynamic weights based on the queries, enabling contextual arbitration between safety and helpfulness. Extensive experiments show that Pragma-VL effectively balances safety and helpfulness, outperforming baselines by 5% to 20% on most multimodal safety benchmarks while preserving its general capabilities in areas such as mathematics and knowledge reasoning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MEDIC: a network for monitoring data quality in collider experiments</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2511-18172</link>
-    <guid isPermaLink="false">arxiv:2511.18172</guid>
-    <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juvenal Bassa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Data Quality Monitoring (DQM) is a crucial component of particle physics experiments and ensures that the recorded data is of the highest quality, and suitable for subsequent physics analysis. Due to the extreme environmental conditions, unprecedented data volumes, and the sheer scale and complexity of the detectors, DQM orchestration has become a very challenging task. Therefore, the use of Machine Learning (ML) to automate anomaly detection, improve efficiency, and reduce human error in the process of collecting high-quality data is unavoidable. Since DQM relies on real experimental data, it is inherently tied to the specific detector substructure and technology in operation. In this work, a simulation-driven approach to DQM is proposed, enabling the study and development of data-quality methodologies in a controlled environment. Using a modified version of Delphes &ndash; a fast, multi-purpose detector simulation &ndash; the preliminary realization of a framework is demonstrated which leverages ML to identify detector anomalies as well as localize the malfunctioning components responsible. We introduce MEDIC (Monitoring for Event Data Integrity and Consistency), a neural network designed to learn detector behavior and perform DQM tasks to look for potential faults. Although the present implementation adopts a simplified setup for computational ease, where large detector regions are deliberately deactivated to mimic faults, this work represents an initial step toward a comprehensive ML-based DQM framework. The encouraging results underline the potential of simulation-driven studies as a foundation for developing more advanced, data-driven DQM systems for future particle detectors.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bridging Dynamics Gaps via Diffusion Schrödinger Bridge for Cross-Domain Reinforcement Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-23737</link>
-    <guid isPermaLink="false">arxiv:2602.23737</guid>
-    <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanping Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Cross-domain reinforcement learning (RL) aims to learn transferable policies under dynamics shifts between source and target domains. A key challenge lies in the lack of target-domain environment interaction and reward supervision, which prevents direct policy learning. To address this challenge, we propose Bridging Dynamics Gaps for Cross-Domain Reinforcement Learning (BDGxRL), a novel framework that leverages Diffusion Schrödinger Bridge (DSB) to align source transitions with target-domain dynamics encoded in offline demonstrations. Moreover, we introduce a reward modulation mechanism that estimates rewards based on state transitions, applying to DSB-aligned samples to ensure consistency between rewards and target-domain dynamics. BDGxRL performs target-oriented policy learning entirely within the source domain, without access to the target environment or its rewards. Experiments on MuJoCo cross-domain benchmarks demonstrate that BDGxRL outperforms state-of-the-art baselines and shows strong adaptability under transition dynamics shifts.</p>]]></description>
   </item>
 
 </channel>
