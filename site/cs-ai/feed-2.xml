@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Distances Made Explainable: Insights Into Dataset Shifts and Transport Phenomena</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2505-06123</link>
+    <guid isPermaLink="false">arxiv:2505.06123</guid>
+    <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Philip Naumann et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distances provide a powerful framework for comparing data distributions. They can be used to analyze processes over time or to detect inhomogeneities within data. However, simply calculating the Wasserstein distance or analyzing the corresponding transport plan (or coupling) may not be sufficient for understanding what factors contribute to a high or low Wasserstein distance. In this work, we propose a novel solution based on Explainable AI that allows us to efficiently and accurately attribute Wasserstein distances to various data components, including data subgroups, input features, or interpretable subspaces. Our method achieves high accuracy across diverse datasets and Wasserstein distance specifications, and its practical utility is demonstrated in three use cases.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Pragma-VL: Towards a Pragmatic Arbitration of Safety and Helpfulness in MLLMs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-13292</link>
+    <guid isPermaLink="false">arxiv:2603.13292</guid>
+    <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Wen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Multimodal Large Language Models (MLLMs) pose critical safety challenges, as they are susceptible not only to adversarial attacks such as jailbreaking but also to inadvertently generating harmful content for benign users. While internal safety alignment via Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) is a primary mitigation strategy, current methods often face a safety-utility trade-off: they either refuse benign queries out of excessive caution or overlook latent risks in cross-modal interactions. To resolve this, we introduce Pragma-VL, an end-to-end alignment algorithm that enables MLLMs to pragmatically arbitrate between safety and helpfulness. First, we enhance visual risk perception with a novel cold-start SFT stage. This is achieved by applying risk-aware clustering to the visual encoder and using an interleaved dataset of risk descriptions and high-quality data. Second, we introduce a theoretically-guaranteed reward model that leverages synergistic learning. We train it with a novel data augmentation method that assigns dynamic weights based on the queries, enabling contextual arbitration between safety and helpfulness. Extensive experiments show that Pragma-VL effectively balances safety and helpfulness, outperforming baselines by 5% to 20% on most multimodal safety benchmarks while preserving its general capabilities in areas such as mathematics and knowledge reasoning.</p>]]></description>
+  </item>
 
   <item>
     <title>MEDIC: a network for monitoring data quality in collider experiments</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Huang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
 <p>High-energy large-scale particle colliders generate data at extraordinary rates. Developing real-time high-throughput data compression algorithms to reduce data volume and meet the bandwidth requirement for storage has become increasingly critical. Deep learning is a promising technology that can address this challenging topic. At the newly constructed sPHENIX experiment at the Relativistic Heavy Ion Collider, a Time Projection Chamber (TPC) serves as the main tracking detector, which records three-dimensional particle trajectories in a volume of a gas-filled cylinder. In terms of occupancy, the resulting data flow can be very sparse reaching 10⁻³ for proton-proton collisions. Such sparsity presents a challenge to conventional learning-free lossy compression algorithms, such as SZ, ZFP, and MGARD. In contrast, emerging deep learning-based models, particularly those utilizing convolutional neural networks for compression, have outperformed these conventional methods in terms of compression ratios and reconstruction accuracy. However, research on the efficacy of these deep learning models in handling sparse datasets, like those produced in particle colliders, remains limited. Furthermore, most deep learning models do not adapt their processing speeds to data sparsity, which affects efficiency. To address this issue, we propose a novel approach for TPC data compression via key-point identification facilitated by sparse convolution. Our proposed algorithm, BCAE-VS, achieves a 75% improvement in reconstruction accuracy with a 10% increase in compression ratio over the previous state-of-the-art model. Additionally, BCAE-VS manages to achieve these results with a model size over two orders of magnitude smaller. Lastly, we have experimentally verified that as sparsity increases, so does the model&rsquo;s throughput.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Understanding Learning with Sliced-Wasserstein Requires Rethinking Informative Slices</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-10651</link>
-    <guid isPermaLink="false">arxiv:2411.10651</guid>
-    <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huy Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The practical applications of Wasserstein distances (WDs) are constrained by their sample and computational complexities. Sliced-Wasserstein distances (SWDs) provide a workaround by projecting distributions onto one-dimensional subspaces, leveraging the more efficient, closed-form WDs for one-dimensional distributions. However, in high dimensions, most random projections become uninformative due to the concentration of measure phenomenon. Although several SWD variants have been proposed to focus on \textit{informative} slices, they often introduce additional complexity, numerical instability, and compromise desirable theoretical (metric) properties of SWD. Amidst the growing literature that focuses on directly modifying the slicing distribution, which often face challenges, we revisit the classical Sliced-Wasserstein and propose instead to rescale the 1D Wasserstein to make all slices equally informative. Importantly, we show that with an appropriate data assumption and notion of \textit{slice informativeness}, rescaling for all individual slices simplifies to \textbf{a single global scaling factor} on the SWD. This, in turn, translates to the standard learning rate search for gradient-based learning in common machine learning workflows. We perform extensive experiments across various machine learning tasks showing that the classical SWD, when properly configured, can often match or surpass the performance of more complex variants. We then answer the following question: &ldquo;Is Sliced-Wasserstein all you need for common learning tasks?&rdquo;</p>]]></description>
-  </item>
-
-  <item>
-    <title>Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-10555</link>
-    <guid isPermaLink="false">arxiv:2411.10555</guid>
-    <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Halmos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) is a general framework for finding a minimum-cost transport plan, or coupling, between probability distributions, and has many applications in machine learning. A key challenge in applying OT to massive datasets is the quadratic scaling of the coupling matrix with the size of the dataset. [Forrow et al. 2019] introduced a factored coupling for the k-Wasserstein barycenter problem, which [Scetbon et al. 2021] adapted to solve the primal low-rank OT problem. We derive an alternative parameterization of the low-rank problem based on the latent coupling (LC) factorization previously introduced by [Lin et al. 2021] generalizing [Forrow et al. 2019]. The LC factorization has multiple advantages for low-rank OT including decoupling the problem into three OT problems and greater flexibility and interpretability. We leverage these advantages to derive a new algorithm Factor Relaxation with Latent Coupling (FRLC), which uses coordinate mirror descent to compute the LC factorization. FRLC handles multiple OT objectives (Wasserstein, Gromov-Wasserstein, Fused Gromov-Wasserstein), and marginal constraints (balanced, unbalanced, and semi-relaxed) with linear space complexity. We provide theoretical results on FRLC, and demonstrate superior performance on diverse applications &ndash; including graph clustering and spatial transcriptomics &ndash; while demonstrating its interpretability.</p>]]></description>
   </item>
 
 </channel>

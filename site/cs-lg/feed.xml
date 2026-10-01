@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Which Models Work Well Together? Measuring Heterogeneity for LLM Team Selection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-38274</link>
+    <guid isPermaLink="false">arxiv:2609.38274</guid>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liangyu Teng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>The performance ceiling of an LLM team is constrained not only by individual model capabilities, but also by inter-member error resonance and predictive differences. Although heterogeneous teaming is often observed to be effective in practice, existing approaches lack complementarity metrics that are computable, interpretable, and optimizable, leaving team composition to rely on heuristics. We propose a heterogeneity-driven team selection framework that performs offline profiling to characterize individual capability along with two complementary signals: one captures decorrelation in error patterns to reduce co-failures, while the other measures divergence in predictive behavior to capture strategy diversity. We formulate team selection as a standardized quality&ndash;complementarity combinatorial objective and apply an efficient greedy search to select a small team from a candidate pool. Experiments across multiple benchmarks demonstrate that our framework consistently outperforms quality-only baselines under controlled candidate pools and team sizes, establishing reusable selection principles for multi-LLM systems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Universal Wasserstein Barycenters through Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-38547</link>
+    <guid isPermaLink="false">arxiv:2609.38547</guid>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Defining a weighted mean over probability measures under probability metrics is a central tool in probabilistic machine learning. Under the Wasserstein metric, these are called \emph{Wasserstein barycenters}. While most approaches compute barycenters for a fixed weight vector, approximating the whole family of barycenters over the simplex, which we call the \emph{Wasserstein simplex}, remains underexplored. We refer to this problem as \emph{Universal Barycenter Approximation}, and propose \texttt{BaryFM}, a flow matching model transporting the marginal measures into any barycenter in the Wasserstein simplex. Once trained, the network can draw samples from measures in the Wasserstein simplex through an ordinary differential equation. We validate our method on 4 downstream tasks: domain adaptation, generalization, Bayesian posterior aggregation and algorithmic fairness. \texttt{BaryFM} achieves the best average rank among 15 competing methods across 10 domain adaptation benchmarks, matching or surpassing non-universal solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>RW-Flow: One-Step Generation on Compact Manifolds via Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-39271</link>
+    <guid isPermaLink="false">arxiv:2609.39271</guid>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ualibyek Nurgulan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Manifold-valued data, and consequently the distributions they induce, are prevalent across many domains, ranging from the locations of geospatial events, such as earthquakes, to biomolecular torsion angles that encode information about three-dimensional structure. While diffusion and flow-based generative models have been successfully extended to compact manifolds, sampling typically requires tens or hundreds of sequential network evaluations. We introduce RW-Flow, a theoretically grounded framework for learning one-step generative models on compact manifolds via Wasserstein gradient flows. The main challenge is identifiability: driving the velocity field to zero should guarantee that the model distribution matches the target distribution. We establish a necessary and sufficient condition for identifiability on compact, connected Riemannian manifolds. We specifically show that, for a symmetric, Lipschitz-continuous cost function, the velocity field induced by the Sinkhorn divergence is identifiable if and only if the associated Gibbs kernel is nondegenerate. This characterization provides a general principle for designing identifiable costs on compact manifolds. It also reveals that the squared geodesic distance, the natural manifold analogue of the squared Euclidean distance, does not always guarantee identifiability. Across benchmarks involving geospatial events, protein side chain torsion angles, RNA backbone torsion angles, and general manifolds discretized as triangular meshes, RW-Flow outperforms existing one-step methods in nearly all settings under fair comparison conditions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Gromov-Wasserstein Distillation for Inductive Multi-View Embedding</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-40047</link>
+    <guid isPermaLink="false">arxiv:2609.40047</guid>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Pereira Eufrazio et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Gromov-Wasserstein multidimensional scaling (GW-MDS) learns low-dimensional representations from relational data but remains transductive, providing no explicit mapping for unseen samples. We introduce an inductive framework based on barycentric distillation. A GW-MDS teacher learns a latent support and an optimal transport plan from the training data, and barycentric projection converts the resulting coupling into sample-aligned targets. A neural student then learns an explicit out-of-sample mapping, avoiding additional relational-matrix construction and GW optimization at inference. We formulate the approach for single-view data and extend it to Mean-GWMDS and Multi-GWMDS teachers through consensus and selected-projection targets learned by a multi-view student with view-specific encoders. We also investigate a direct neural baseline trained solely with a GW objective. Experiments on synthetic and real-world data using Euclidean, geodesic, and cosine relations show that the distilled models preserve the teacher geometry on unseen samples and consistently outperform direct neural GW training in sample-indexed relational preservation. These results establish barycentric projection as an effective bridge between transductive GW embeddings and inductive neural mappings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Accelerated Algorithm for Sparse Regularized Partial Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2609-40075</link>
+    <guid isPermaLink="false">arxiv:2609.40075</guid>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khoa Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Partial Optimal Transport (POT) extends the classical optimal transport problem by relaxing the strict mass conservation constraint, enabling its use in a wide range of real-world applications. In many of these settings, sparse transport plans are preferred for their interpretability and computational benefits. While smooth and strongly convex regularizers - such as quadratic or elastic net - have been vastly used in various machine learning applications to induce sparsity and accelerate computation, they have received less algorithmic attention compared to entropic approaches for computational POT. In this paper, we propose a new optimization framework that leverages these regularizers through a penalty-based reformulation, enabling efficient gradient-based updates while preserving the structure of the original problem. Our method accommodates a broad class of regularizers that promote structured and sparse transport plans. Building on this formulation, we design an accelerated first-order algorithm that alternates between smooth updates and simple projection steps. Through empirical benchmarks on color transfer, domain adaptation, and point cloud registration, our approach consistently outperforms established baselines - achieving lower transport cost, higher sparsity, and faster convergence - making it a practical and scalable solution for modern transport problems.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimization Using Pathwise Algorithmic Derivatives of Electromagnetic Shower Simulations</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaia Grosso et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Vinicius Mikuni) — original abstract; no AI summary.</em></p>
 <p>Machine learning (ML) has become integral to fundamental physics, accelerating statistical workflows from data acquisition through inference and hypothesis testing. As ML systems grow increasingly autonomous, ensuring their reliability for discovery claims becomes critical. This review synthesizes the VERaiPHY (Validation &amp; Evaluation for Robust AI in PHYsics) initiative&rsquo;s frameworks for rigorous ML assessment across particle physics, astrophysics, and cosmology. We establish when verification is essential by contextualizing ML within the statistical discovery workflow. We emphasize fundamental limitations: inductive bias is unavoidable, sample complexity bounds learning, and experimental constraints limit discovery. We reflect on physicists&rsquo; evolving role as both experimental designers and evaluators whose judgments encode scientific rigor into AI systems. Responsible integration requires understanding ML&rsquo;s transformative potential alongside its intrinsic boundaries.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-10254</link>
-    <guid isPermaLink="false">arxiv:2603.10254</guid>
-    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davide Tugnoli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>Synthetic tabular data generation addresses data scarcity and privacy constraints in a variety of domains. Tabular Prior-Data Fitted Network (TabPFN), a recent foundation model for tabular data, has been shown capable of generating high-quality synthetic tabular data. However, TabPFN is autoregressive: features are generated sequentially by conditioning on the previous ones, depending on the order in which they appear in the input data. We demonstrate that when the feature order conflicts with causal structure, the model produces spurious correlations that impair its ability to generate synthetic data and preserve causal effects. We address this limitation by integrating causal structure into TabPFN&rsquo;s generation process through two complementary approaches: Directed Acyclic Graph (DAG)-aware conditioning, which samples each variable given its causal parents, and a partially directed acyclic graph (PDAG)-based strategy for scenarios with partial causal knowledge. We evaluate these approaches on controlled benchmarks and six CSuite datasets, assessing structural fidelity, distributional quality, and Average Treatment Effect (ATE) preservation. Across most settings, DAG-aware conditioning improves the quality and stability of synthetic data relative to vanilla TabPFN. Under partial causal knowledge, the oracle partially directed acyclic graph (oracle-PDAG), which orients only the edges into the colliders, shows moderate gains, while the benefit of a Completed Partially Directed Acyclic Graph (CPDAG) discovered from data depends on how well the causal structure is recovered. These results indicate that reliable causal structure, even partial, can be injected into TabPFN at inference time, without parameter updates, to improve synthetic data quality.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-06104</link>
-    <guid isPermaLink="false">arxiv:2606.06104</guid>
-    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chen Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Electroencephalography (EEG) offers noninvasive, millisecond resolution recordings of neuronal activity and is widely used in neuroscience and healthcare. Many EEG decoding pipelines rely on covariance descriptors for their robustness to noise, but such representations are sensitive to channel-wise scaling. Recent studies have therefore advocated full-rank correlation matrices as a scale-invariant alternative for EEG decoding. In this paper, we study Sliced-Wasserstein (SW) discrepancies for probability distributions on the manifold of full-rank correlation matrices. We adopt the pullback-Euclidean formulation of SW, referred to as Pullback Euclidean Metric Sliced-Wasserstein (PEMSW), and instantiate it under two recently introduced correlation geometries, \textit{i.e.}, the Off-Log Metric (OLM) and Log-Scaled Metric (LSM). This yields two Correlation Sliced-Wasserstein (CorSW) discrepancies with closed-form slicing coordinates and efficient computation through one-dimensional Wasserstein distances. Building on CorSW, we further develop a domain generalization (DG) framework for EEG decoding. Experiments on three EEG datasets demonstrate improved generalization under distribution shifts, with low training overhead and no additional inference cost. The source code is available at github.com/ChenHu-ML/CorSW.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-07401</link>
-    <guid isPermaLink="false">arxiv:2607.07401</guid>
-    <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chengbo Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
-<p>While whole-body multimodal medical imaging scanners have been increasingly recognized for more effective medical applications, the excessive long acquisition time in PET-MR scanning is a major obstacle in more efficient clinical practice. Deep learning-based MRI translation provides a potential solution to reduce scan duration. However, current models often focus on specific anatomical regions and face challenges for whole-body scans that consists of highly heterogeneous feature distributions mainly due to (1) different anatomical regions across whole-body, and (2) lesions or pathological tissues. This paper tackles the challenges through a novel Heterogeneity-Adaptive Diffusion Schrodinger Bridge (HA-DSB) framework. By explicitly modeling translation as stochastic transport between source and target distributions, HA-DSB incorporates region context embeddings derived from a vision-language model (VLM) to enable region-specific modeling. To enhance fidelity of the pathological tissue, lesion-aware metabolic prior from PET is integrated directly into the bridge dynamics through a dual-stage guidance mechanism. Specifically, a PET-guided noise modulation module adaptively scales spatial diffusion perturbations during the forward process, while PET features are leveraged during the reverse process to selectively amplify lesion-relevant structures via an attention mechanism. Experiments demonstrate the superiority of our method across different body regions in whole-body MRI translation and show improved translation quality in lesion areas under PET guidance. Our code is available at Github.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Diffusion enabled Optimal Transport distances for graph matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-06646</link>
-    <guid isPermaLink="false">arxiv:2607.06646</guid>
-    <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iman Seyedi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper introduces Diffusion Semi-Relaxed Fused Gromov-Wasserstein (DsrFGW), a novel method for graph comparison that unifies node features and structural connectivity through optimal transport. While traditional Gromov-Wasserstein and semi-relaxed variants (srGW, srFGW) capture graph structure, they often struggle with sparse, noisy, or partially observed graphs. Inspired by Graph Diffusion Distance, which posits graphs are similar if they enable similar information transmission patterns, DsrFGW incorporates diffusion processes allowing information propagation across nodes, capturing local and global structural patterns while reducing sensitivity to noise or missing edges. An extensive evaluation on 36 synthetic pairwise graph matching tasks (easy, medium, hard) demonstrates consistent superiority over srFGW, achieving accuracy improvements of 0-20 percentage points and dramatic Adjusted Rand Index (ARI) gains: in medium-difficulty scenarios, srFGW often achieves negative ARI (worse than random) while DsrFGW offers better performance in terms of both internal and external clustering quality measures (i.e., Adjusted Rank Index and Accuracy with respect to the true underlying clusters, respectively). Even under severe noise, DsrFGW improves clustering quality in 92% of the synthetic tasks with optimal diffusion scales adapting to problem difficulty, establishing DsrFGW as a robust framework for graph comparison under structural uncertainty.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Residuals: Learning Gradient Flows from Population Dynamics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-04738</link>
-    <guid isPermaLink="false">arxiv:2607.04738</guid>
-    <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Markus Heinonen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Reconstructing population dynamics is a central problem in the physical and data sciences. Often, the dynamics are modeled as a Wasserstein gradient flow (WGF): a curve of distributions driven by an energy functional. Though there are multiple mathematical characterizations of a WGF, the dominant algorithmic approach relies on the Jordan&ndash;Kinderlehrer&ndash;Otto (JKO) scheme. JKO-based methods are inflexible to time discretisation and require solving costly optimal transport problems. We take a residual approach, enforcing the continuity equations via a non-negative loss function whose minimum is the WGF. Combined with a data-fitting divergence, this gives a single global objective. This perspective unifies several existing methods and leads to a new particle-based method, stitching, that is simulation-free and robust to large gaps between observations. We demonstrate that the stitching method achieves state-of-the-art performance across trajectory inference benchmarks. For code see github.com/BasisResearch/wasserstein-residuals.</p>]]></description>
   </item>
 
 </channel>

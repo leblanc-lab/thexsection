@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-13660</link>
+    <guid isPermaLink="false">arxiv:2505.13660</guid>
+    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaheon Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper introduces a new constraint-free concave dual formulation for the Wasserstein barycenter. Tailoring the vanilla dual gradient ascent algorithm to the Sobolev geometry, we derive a scalable Sobolev gradient ascent (SGA) algorithm to compute the barycenter for input distributions discretized over a regular grid. Despite the algorithmic simplicity, we provide a global convergence analysis that achieves the same rate as the classical subgradient descent methods for minimizing nonsmooth convex functions in the Euclidean space. A central feature of our SGA algorithm is that the computationally expensive c-concavity projection operator enforced on the Kantorovich dual potentials is unnecessary to guarantee convergence, leading to significant algorithmic and theoretical simplifications over all existing primal and dual methods for computing the exact barycenter. Our numerical experiments demonstrate the superior empirical performance of SGA over the existing optimal transport barycenter solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Wasserstein Geometric Framework for Hebbian Plasticity</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-16052</link>
+    <guid isPermaLink="false">arxiv:2604.16052</guid>
+    <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ulrich Tan</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce the Tan-HWG framework (Hebbian-Wasserstein-Geometry), a geometric theory of Hebbian plasticity in which memory states are modeled as probability measures evolving through Wasserstein minimizing movements. Hebbian learning rules are formalized as Hebbian energies satisfying a sequential stability condition, ensuring well-posed fiberwise JKO updates, optimal-transport realizations, and an energy descent inequality. This variational structure induces a fundamental separation between internal and observable dynamics. Internal memory states evolve along Wasserstein geodesics in a latent curved space, while observable quantities, such as effective synaptic weights, arise through geometric projection maps into external spaces. Simplicial projections recover classical affine schemes (including exponential moving averages and mirror descent), while revealing synaptic competition and pruning as geometric consequences of mass redistribution. Hilbertian projections provide a geometric account of phase alignment and multi-scale coherence. Classical neural networks appear as flat projections of this curved dynamics, while the framework naturally accommodates richer distributional representations, including structural weights and embedding memories, and their spectral extensions in complex internal spaces. Under mild Lipschitz regularity assumptions, including a quasi-stationary &ldquo;sleep-mode&rdquo; regime, we establish the existence of continuous-time limit curves. This yields a variational formulation of memory consolidation as a perturbed Wasserstein gradient flow. The framework thus provides a unified geometric foundation for synaptic plasticity, representation dynamics, and context-dependent computation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2211-16780</link>
+    <guid isPermaLink="false">arxiv:2211.16780</guid>
+    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quyen Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In online incremental learning, data continuously arrives with substantial distributional shifts, creating a significant challenge because previous samples have limited replay value when learning a new task. Prior research has typically relied on either a single adaptive centroid or multiple fixed centroids to represent each class in the latent space. However, such methods struggle when class data streams are inherently multimodal and require continual centroid updates. To overcome this, we introduce an online Mixture Model learning framework grounded in Optimal Transport theory (MMOT), where centroids evolve incrementally with new data. This approach offers two main advantages: (i) it provides a more precise characterization of complex data streams, and (ii) it enables improved class similarity estimation for unseen samples during inference through MMOT-derived centroids. Furthermore, to strengthen representation learning and mitigate catastrophic forgetting, we design a Dynamic Preservation strategy that regulates the latent space and maintains class separability over time. Experimental evaluations on benchmark datasets confirm the superior effectiveness of our proposed method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Amortized Optimal Transport from Sliced Potentials</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-15114</link>
+    <guid isPermaLink="false">arxiv:2604.15114</guid>
+    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh-Phuc Truong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose a novel amortized optimization method for predicting optimal transport (OT) plans across multiple pairs of measures by leveraging Kantorovich potentials derived from sliced OT. We introduce two amortization strategies: regression-based amortization (RA-OT) and objective-based amortization (OA-OT). In RA-OT, we formulate a functional regression model that treats Kantorovich potentials from the original OT problem as responses and those obtained from sliced OT as predictors, and estimate these models via least-squares methods. In OA-OT, we estimate the parameters of the functional model by optimizing the Kantorovich dual objective. In both approaches, the predicted OT plan is subsequently recovered from the estimated potentials. As amortized OT methods, both RA-OT and OA-OT enable efficient solutions to repeated OT problems across different measure pairs by reusing information learned from prior instances to rapidly approximate new solutions. Moreover, by exploiting the structure provided by sliced OT, the proposed models are more parsimonious, independent of specific structures of the measures, such as the number of atoms in the discrete case, while achieving high accuracy. We demonstrate the effectiveness of our approaches on tasks including MNIST digit transport, color transfer, supply-demand transportation on spherical data, and mini-batch OT conditional flow matching.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards AI-assisted Neutrino Flavor Theory Design</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2506-08080</link>
+    <guid isPermaLink="false">arxiv:2506.08080</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Benjamin Baretz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>Particle physics theories, such as those which explain neutrino flavor mixing, arise from a vast landscape of model-building possibilities. A model&rsquo;s construction typically relies on the intuition of theorists. It also requires considerable effort to identify appropriate symmetry groups, assign field representations, and extract predictions for comparison with experimental data. We develop an Autonomous Model Builder (AMBer), a framework in which a reinforcement learning agent interacts with a streamlined physics software pipeline to search these spaces efficiently. AMBer selects symmetry groups, particle content, and group representation assignments to construct viable models while minimizing the number of free parameters introduced. We validate our approach in well-studied regions of theory space and extend the exploration to a novel, previously unexamined symmetry group. While demonstrated in the context of neutrino flavor theories, this approach of reinforcement learning with physics software feedback may be extended to other theoretical model-building problems in the future.</p>]]></description>
+  </item>
 
   <item>
     <title>Data-driven Reachable Set Estimation with Tunable Adversarial and Wasserstein Distributional Guarantees</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zifan Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We study a class of distributionally robust games where agents are allowed to heterogeneously choose their risk aversion with respect to distributional shifts of the uncertainty. In our formulation, heterogeneous Wasserstein ball constraints on each distribution are enforced through a penalty function leveraging a Lagrangian formulation. We then formulate the distributionally robust Nash equilibrium problem and show that under certain assumptions it is equivalent to a finite-dimensional variational inequality problem with a strongly monotone mapping. We then design an approximate Nash equilibrium seeking algorithm and prove convergence of the average regret to a quantity that diminishes with the number of iterations, thus learning the desired equilibrium up to an a priori specified accuracy. Numerical simulations corroborate our theoretical findings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein distance based semi-supervised manifold learning and application to GNSS multi-path detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-05567</link>
-    <guid isPermaLink="false">arxiv:2512.05567</guid>
-    <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Blais et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The main objective of this study is to propose an optimal transport based semi-supervised approach to learn from scarce labelled image data using deep convolutional networks. The principle lies in implicit graph-based transductive semi-supervised learning where the similarity metric between image samples is the Wasserstein distance. This metric is used in the label propagation mechanism during learning. We apply and demonstrate the effectiveness of the method on a GNSS real life application. More specifically, we address the problem of multi-path interference detection. Experiments are conducted under various signal conditions. The results show that for specific choices of hyperparameters controlling the amount of semi-supervision and the level of sensitivity to the metric, the classification accuracy can be significantly improved over the fully supervised training method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>BalLOT: Balanced k-means clustering with optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-05926</link>
-    <guid isPermaLink="false">arxiv:2512.05926</guid>
-    <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenyan Luo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We consider the fundamental problem of balanced k-means clustering. In particular, we introduce an optimal transport approach to alternating minimization called BalLOT, and we show that it delivers a fast and effective solution to this problem. We establish this with a variety of numerical experiments before proving several theoretical guarantees. First, we prove that for generic data, BalLOT produces integral couplings at each step. Next, we perform a landscape analysis to provide theoretical guarantees for both exact and partial recoveries of planted clusters under the stochastic ball model. Finally, we propose initialization schemes that achieve one-step recovery of planted clusters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generative Stochastic Optimal Transport: Guided Harmonic Path-Integral Diffusion</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-11859</link>
-    <guid isPermaLink="false">arxiv:2512.11859</guid>
-    <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Chertkov</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We introduce Guided Harmonic Path-Integral Diffusion (GH-PID), a linearly-solvable framework for guided Stochastic Optimal Transport (SOT) with a hard terminal distribution and soft, application-driven path costs. A low-dimensional guidance protocol shapes the trajectory ensemble while preserving analytic structure: the forward and backward Kolmogorov equations remain linear, the optimal score admits an explicit Green-function ratio, and Gaussian-Mixture Model (GMM) terminal laws yield closed-form expressions. This enables stable sampling and differentiable protocol learning under exact terminal matching. We develop guidance-centric diagnostics &ndash; path cost, centerline adherence, variance flow, and drift effort &ndash; that make GH-PID an interpretable variational ansatz for empirical SOT. Three navigation scenarios illustrated in 2D: (i) Case A: hand-crafted protocols revealing how geometry and stiffness shape lag, curvature effects, and mode evolution; (ii) Case B: single-task protocol learning, where a PWC centerline is optimized to minimize integrated cost; (iii) Case C: multi-expert fusion, in which a commander reconciles competing expert/teacher trajectories and terminal beliefs through an exact product-of-experts law and learns a consensus protocol. Across all settings, GH-PID generates geometry-aware, trust-aware trajectories that satisfy the prescribed terminal distribution while systematically reducing integrated cost.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Locality-Sensitive Hashing-Based Efficient Point Transformer for Charged Particle Reconstruction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2510-07594</link>
-    <guid isPermaLink="false">arxiv:2510.07594</guid>
-    <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shitij Govil et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Charged particle track reconstruction is a foundational task in collider experiments and the main computational bottleneck in particle reconstruction. Graph neural networks (GNNs) have shown strong performance for this problem, but costly graph construction, irregular computations, and random memory access patterns substantially limit their throughput. The recently proposed Hashing-based Efficient Point Transformer (HEPT) offers a theoretically guaranteed near-linear complexity for large point cloud processing via locality-sensitive hashing (LSH) in attention computations; however, its evaluations have largely focused on embedding quality, and the object condensation pipeline on which HEPT relies requires a post-hoc clustering step (e.g., DBScan) that can dominate runtime. In this work, we make two contributions. First, we present a unified, fair evaluation of physics tracking performance for HEPT and a representative GNN-based pipeline under the same dataset and metrics. Second, we introduce HEPTv2 by extending HEPT with a lightweight decoder that eliminates the clustering stage and directly predicts track assignments. This modification preserves HEPT&rsquo;s regular, hardware-friendly computations while enabling ultra-fast end-to-end inference. On the TrackML dataset, optimized HEPTv2 achieves approximately 28 ms per event on an A100 while maintaining competitive tracking efficiency. These results position HEPTv2 as a practical, scalable alternative to GNN-based pipelines for fast tracking.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transportation and Alignment Between Gaussian Measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-03579</link>
-    <guid isPermaLink="false">arxiv:2512.03579</guid>
-    <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanjit Dandapanthula et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transportation) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) and Gromov-Wasserstein (GW) alignment provide interpretable geometric frameworks for comparing, transforming, and aggregating heterogeneous datasets &ndash; tasks ubiquitous in data science and machine learning. Because these frameworks are computationally expensive, large-scale applications often rely on closed-form solutions for Gaussian distributions under quadratic cost. This work provides a comprehensive treatment of Gaussian, quadratic cost OT and inner product GW (IGW) alignment, closing several gaps in the literature to broaden applicability. First, we treat the open problem of IGW alignment between uncentered Gaussians on separable Hilbert spaces by giving a closed-form expression up to a quadratic optimization over unitary operators, for which we derive tight analytic upper and lower bounds. If at least one Gaussian measure is centered, the solution reduces to a fully closed-form expression, which we further extend to an analytic solution for the IGW barycenter between centered Gaussians. We also present a reduction of Gaussian multimarginal OT with pairwise quadratic costs to a tractable optimization problem and provide an efficient algorithm to solve it using a rank-deficiency constraint. To demonstrate utility, we apply our results to knowledge distillation and heterogeneous clustering on synthetic and real-world datasets.</p>]]></description>
   </item>
 
 </channel>

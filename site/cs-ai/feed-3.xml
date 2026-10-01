@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Understanding Learning with Sliced-Wasserstein Requires Rethinking Informative Slices</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-10651</link>
+    <guid isPermaLink="false">arxiv:2411.10651</guid>
+    <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huy Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The practical applications of Wasserstein distances (WDs) are constrained by their sample and computational complexities. Sliced-Wasserstein distances (SWDs) provide a workaround by projecting distributions onto one-dimensional subspaces, leveraging the more efficient, closed-form WDs for one-dimensional distributions. However, in high dimensions, most random projections become uninformative due to the concentration of measure phenomenon. Although several SWD variants have been proposed to focus on \textit{informative} slices, they often introduce additional complexity, numerical instability, and compromise desirable theoretical (metric) properties of SWD. Amidst the growing literature that focuses on directly modifying the slicing distribution, which often face challenges, we revisit the classical Sliced-Wasserstein and propose instead to rescale the 1D Wasserstein to make all slices equally informative. Importantly, we show that with an appropriate data assumption and notion of \textit{slice informativeness}, rescaling for all individual slices simplifies to \textbf{a single global scaling factor} on the SWD. This, in turn, translates to the standard learning rate search for gradient-based learning in common machine learning workflows. We perform extensive experiments across various machine learning tasks showing that the classical SWD, when properly configured, can often match or surpass the performance of more complex variants. We then answer the following question: &ldquo;Is Sliced-Wasserstein all you need for common learning tasks?&rdquo;</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-10555</link>
+    <guid isPermaLink="false">arxiv:2411.10555</guid>
+    <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Halmos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is a general framework for finding a minimum-cost transport plan, or coupling, between probability distributions, and has many applications in machine learning. A key challenge in applying OT to massive datasets is the quadratic scaling of the coupling matrix with the size of the dataset. [Forrow et al. 2019] introduced a factored coupling for the k-Wasserstein barycenter problem, which [Scetbon et al. 2021] adapted to solve the primal low-rank OT problem. We derive an alternative parameterization of the low-rank problem based on the latent coupling (LC) factorization previously introduced by [Lin et al. 2021] generalizing [Forrow et al. 2019]. The LC factorization has multiple advantages for low-rank OT including decoupling the problem into three OT problems and greater flexibility and interpretability. We leverage these advantages to derive a new algorithm Factor Relaxation with Latent Coupling (FRLC), which uses coordinate mirror descent to compute the LC factorization. FRLC handles multiple OT objectives (Wasserstein, Gromov-Wasserstein, Fused Gromov-Wasserstein), and marginal constraints (balanced, unbalanced, and semi-relaxed) with linear space complexity. We provide theoretical results on FRLC, and demonstrate superior performance on diverse applications &ndash; including graph clustering and spatial transcriptomics &ndash; while demonstrating its interpretability.</p>]]></description>
+  </item>
 
   <item>
     <title>Calibrating Bayesian Generative Machine Learning for Bayesiamplification</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Mai et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Packet routing is a fundamental problem in communication networks that decides how the packets are directed from their source nodes to their destination nodes through some intermediate nodes. With the increasing complexity of network topology and highly dynamic traffic demand, conventional model-based and rule-based routing schemes show significant limitations, due to the simplified and unrealistic model assumptions, and lack of flexibility and adaption. Adding intelligence to the network control is becoming a trend and the key to achieving high-efficiency network operation. In this paper, we develop a model-free and data-driven routing strategy by leveraging reinforcement learning (RL), where routers interact with the network and learn from the experience to make some good routing configurations for the future. Considering the graph nature of the network topology, we design a multi-agent RL framework in combination with Graph Neural Network (GNN), tailored to the routing problem. Three deployment paradigms, centralized, federated, and cooperated learning, are explored respectively. Simulation results demonstrate that our algorithm outperforms some existing benchmark algorithms in terms of packet transmission delay and affordable load.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Human Motion Prediction Using Manifold-Aware Wasserstein GAN</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2105-08715</link>
-    <guid isPermaLink="false">arxiv:2105.08715</guid>
-    <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Baptiste Chopin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Human motion prediction aims to forecast future human poses given a prior pose sequence. The discontinuity of the predicted motion and the performance deterioration in long-term horizons are still the main challenges encountered in current literature. In this work, we tackle these issues by using a compact manifold-valued representation of human motion. Specifically, we model the temporal evolution of the 3D human poses as trajectory, what allows us to map human motions to single points on a sphere manifold. To learn these non-Euclidean representations, we build a manifold-aware Wasserstein generative adversarial model that captures the temporal and spatial dependencies of human motion through different losses. Extensive experiments show that our approach outperforms the state-of-the-art on CMU MoCap and Human 3.6M datasets. Our qualitative results show the smoothness of the predicted motions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast and Scalable Optimal Transport for Brain Tractograms</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2107-02010</link>
-    <guid isPermaLink="false">arxiv:2107.02010</guid>
-    <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jean Feydy et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We present a new multiscale algorithm for solving regularized Optimal Transport problems on the GPU, with a linear memory footprint. Relying on Sinkhorn divergences which are convex, smooth and positive definite loss functions, this method enables the computation of transport plans between millions of points in a matter of minutes. We show the effectiveness of this approach on brain tractograms modeled either as bundles of fibers or as track density maps. We use the resulting smooth assignments to perform label transfer for atlas-based segmentation of fiber tractograms. The parameters &ndash; blur and reach &ndash; of our method are meaningful, defining the minimum and maximum distance at which two fibers are compared with each other. They can be set according to anatomical knowledge. Furthermore, we also propose to estimate a probabilistic atlas of a population of track density maps as a Wasserstein barycenter. Our CUDA implementation is endowed with a user-friendly PyTorch interface, freely available on the PyPi repository (pip install geomloss) and at www.kernel-operations.io/geomloss.</p>]]></description>
   </item>
 
 </channel>

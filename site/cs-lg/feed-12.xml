@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Drug-Drug Interaction Prediction with Wasserstein Adversarial Autoencoder-based Knowledge Graph Embeddings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2004-07341</link>
+    <guid isPermaLink="false">arxiv:2004.07341</guid>
+    <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuanfei Dai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Interaction between pharmacological agents can trigger unexpected adverse events. Capturing richer and more comprehensive information about drug-drug interactions (DDI) is one of the key tasks in public health and drug development. Recently, several knowledge graph embedding approaches have received increasing attention in the DDI domain due to their capability of projecting drugs and interactions into a low-dimensional feature space for predicting links and classifying triplets. However, existing methods only apply a uniformly random mode to construct negative samples. As a consequence, these samples are often too simplistic to train an effective model. In this paper, we propose a new knowledge graph embedding framework by introducing adversarial autoencoders (AAE) based on Wasserstein distances and Gumbel-Softmax relaxation for drug-drug interactions tasks. In our framework, the autoencoder is employed to generate high-quality negative samples and the hidden vector of the autoencoder is regarded as a plausible drug candidate. Afterwards, the discriminator learns the embeddings of drugs and interactions based on both positive and negative triplets. Meanwhile, in order to solve vanishing gradient problems on the discrete representation&ndash;an inherent flaw in traditional generative models&ndash;we utilize the Gumbel-Softmax relaxation and the Wasserstein distance to train the embedding model steadily. We empirically evaluate our method on two tasks, link prediction and DDI classification. The experimental results show that our framework can attain significant improvements and noticeably outperform competitive baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>BERT-EMD: Many-to-Many Layer Mapping for BERT Compression with Earth Mover's Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-06133</link>
+    <guid isPermaLink="false">arxiv:2010.06133</guid>
+    <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianquan Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>Pre-trained language models (e.g., BERT) have achieved significant success in various natural language processing (NLP) tasks. However, high storage and computational costs obstruct pre-trained language models to be effectively deployed on resource-constrained devices. In this paper, we propose a novel BERT distillation method based on many-to-many layer mapping, which allows each intermediate student layer to learn from any intermediate teacher layers. In this way, our model can learn from different teacher layers adaptively for various NLP tasks. %motivated by the intuition that different NLP tasks require different levels of linguistic knowledge contained in the intermediate layers of BERT. In addition, we leverage Earth Mover&rsquo;s Distance (EMD) to compute the minimum cumulative cost that must be paid to transform knowledge from teacher network to student network. EMD enables the effective matching for many-to-many layer mapping. %EMD can be applied to network layers with different sizes and effectively measures semantic distance between the teacher network and student network. Furthermore, we propose a cost attention mechanism to learn the layer weights used in EMD automatically, which is supposed to further improve the model&rsquo;s performance and accelerate convergence time. Extensive experiments on GLUE benchmark demonstrate that our model achieves competitive performance compared to strong competitors in terms of both accuracy and model compression.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Anomaly Detection With Conditional Variational Autoencoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-05531</link>
+    <guid isPermaLink="false">arxiv:2010.05531</guid>
+    <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adrian Alan Pol et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Exploiting the rapid advances in probabilistic inference, in particular variational Bayes and variational autoencoders (VAEs), for anomaly detection (AD) tasks remains an open research question. Previous works argued that training VAE models only with inliers is insufficient and the framework should be significantly modified in order to discriminate the anomalous instances. In this work, we exploit the deep conditional variational autoencoder (CVAE) and we define an original loss function together with a metric that targets hierarchically structured data AD. Our motivating application is a real world problem: monitoring the trigger system which is a basic component of many particle physics experiments at the CERN Large Hadron Collider (LHC). In the experiments we show the superior performance of this method for classical machine learning (ML) benchmarks and for our application.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Robust Optimal Transport with Applications in Generative Modeling and Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-05862</link>
+    <guid isPermaLink="false">arxiv:2010.05862</guid>
+    <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yogesh Balaji et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) distances such as Wasserstein have been used in several areas such as GANs and domain adaptation. OT, however, is very sensitive to outliers (samples with large noise) in the data since in its objective function, every sample, including outliers, is weighed similarly due to the marginal constraints. To remedy this issue, robust formulations of OT with unbalanced marginal constraints have previously been proposed. However, employing these methods in deep learning problems such as GANs and domain adaptation is challenging due to the instability of their dual optimization solvers. In this paper, we resolve these issues by deriving a computationally-efficient dual form of the robust OT optimization that is amenable to modern deep learning applications. We demonstrate the effectiveness of our formulation in two applications of GANs and domain adaptation. Our approach can train state-of-the-art GAN models on noisy datasets corrupted with outlier distributions. In particular, our optimization computes weights for training samples reflecting how difficult it is for those samples to be generated in the model. In domain adaptation, our robust OT formulation leads to improved accuracy compared to the standard adversarial adaptation methods. Our code is available at https://github.com/yogeshbalaji/robustOT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Improving Text Generation with Student-Forcing Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-05994</link>
+    <guid isPermaLink="false">arxiv:2010.05994</guid>
+    <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guoyin Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Neural language models are often trained with maximum likelihood estimation (MLE), where the next word is generated conditioned on the ground-truth word tokens. During testing, however, the model is instead conditioned on previously generated tokens, resulting in what is termed exposure bias. To reduce this gap between training and testing, we propose using optimal transport (OT) to match the sequences generated in these two modes. An extension is further proposed to improve the OT learning, based on the structural and contextual information of the text sequences. The effectiveness of the proposed method is validated on machine translation, text summarization, and text generation tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>Solving general elliptical mixture models through an approximate Wasserstein manifold</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Zlokapa et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>At the High Luminosity Large Hadron Collider (HL-LHC), traditional track reconstruction techniques that are critical for analysis are expected to face challenges due to scaling with track density. Quantum annealing has shown promise in its ability to solve combinatorial optimization problems amidst an ongoing effort to establish evidence of a quantum speedup. As a step towards exploiting such potential speedup, we investigate a track reconstruction approach by adapting the existing geometric Denby-Peterson (Hopfield) network method to the quantum annealing framework and to HL-LHC conditions. Furthermore, we develop additional techniques to embed the problem onto existing and near-term quantum annealing hardware. Results using simulated annealing and quantum annealing with the D-Wave 2X system on the TrackML dataset are presented, demonstrating the successful application of a quantum annealing-inspired algorithm to the track reconstruction challenge. We find that combinatorial optimization problems can effectively reconstruct tracks, suggesting possible applications for fast hardware-specific implementations at the LHC while leaving open the possibility of a quantum speedup for tracking.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein GAN Can Perform PCA</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-09073</link>
-    <guid isPermaLink="false">arxiv:1902.09073</guid>
-    <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaewoong Cho et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Generative Adversarial Networks (GANs) have become a powerful framework to learn generative models that arise across a wide variety of domains. While there has been a recent surge in the development of numerous GAN architectures with distinct optimization metrics, we are still lacking in our understanding on how far away such GANs are from optimality. In this paper, we make progress on a theoretical understanding of the GANs under a simple linear-generator Gaussian-data setting where the optimal maximum-likelihood generator is known to perform Principal Component Analysis (PCA). We find that the original GAN by Goodfellow et. al. fails to recover the optimal PCA solution. On the other hand, we show that Wasserstein GAN can approach the PCA solution in the limit of sample size, and hence it may serve as a basis for an optimal GAN architecture that yields the optimal generator for a wide range of data settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scalable Unbalanced Optimal Transport using Generative Adversarial Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1810-11447</link>
-    <guid isPermaLink="false">arxiv:1810.11447</guid>
-    <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Karren D. Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Generative adversarial networks (GANs) are an expressive class of neural generative models with tremendous success in modeling high-dimensional continuous measures. In this paper, we present a scalable method for unbalanced optimal transport (OT) based on the generative-adversarial framework. We formulate unbalanced OT as a problem of simultaneously learning a transport map and a scaling factor that push a source measure to a target measure in a cost-optimal manner. In addition, we propose an algorithm for solving this problem based on stochastic alternating gradient updates, similar in practice to GANs. We also provide theoretical justification for this formulation, showing that it is closely related to an existing static formulation by Liero et al. (2018), and perform numerical experiments demonstrating how this methodology can be applied to population modeling.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reinforcement Learning with Wasserstein Distance Regularisation, with Applications to Multipolicy Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1802-03976</link>
-    <guid isPermaLink="false">arxiv:1802.03976</guid>
-    <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammed Amin Abdullah et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We describe an application of Wasserstein distance to Reinforcement Learning. The Wasserstein distance in question is between the distribution of mappings of trajectories of a policy into some metric space, and some other fixed distribution (which may, for example, come from another policy). Different policies induce different distributions, so given an underlying metric, the Wasserstein distance quantifies how different policies are. This can be used to learn multiple polices which are different in terms of such Wasserstein distances by using a Wasserstein regulariser. Changing the sign of the regularisation parameter, one can learn a policy for which its trajectory mapping distribution is attracted to a given fixed distribution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Fair Classification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-12059</link>
-    <guid isPermaLink="false">arxiv:1907.12059</guid>
-    <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ray Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose an approach to fair classification that enforces independence between the classifier outputs and sensitive information by minimizing Wasserstein-1 distances. The approach has desirable theoretical properties and is robust to specific choices of the threshold used to obtain class predictions from model outputs. We introduce different methods that enable hiding sensitive information at test time or have a simple and fast implementation. We show empirical performance against different fairness baselines on several benchmark fairness datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning representations of irregular particle-detector geometry with distance-weighted graph networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-07987</link>
-    <guid isPermaLink="false">arxiv:1902.07987</guid>
-    <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shah Rukh Qasim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>We explore the use of graph networks to deal with irregular-geometry detectors in the context of particle reconstruction. Thanks to their representation-learning capabilities, graph networks can exploit the full detector granularity, while natively managing the event sparsity and arbitrarily complex detector geometries. We introduce two distance-weighted graph network architectures, dubbed GarNet and GravNet layers, and apply them to a typical particle reconstruction task. The performance of the new architectures is evaluated on a data set of simulated particle interactions on a toy model of a highly granular calorimeter, loosely inspired by the endcap calorimeter to be installed in the CMS detector for the High-Luminosity LHC phase. We study the clustering of energy depositions, which is the basis for calorimetric particle reconstruction, and provide a quantitative comparison to alternative approaches. The proposed algorithms provide an interesting alternative to existing methods, offering equally performing or less resource-demanding solutions with less underlying assumptions on the detector geometry and, consequently, the possibility to generalize to other detectors.</p>]]></description>
   </item>
 
 </channel>

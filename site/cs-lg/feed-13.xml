@@ -6,7 +6,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein GAN Can Perform PCA</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-09073</link>
+    <guid isPermaLink="false">arxiv:1902.09073</guid>
+    <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaewoong Cho et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Generative Adversarial Networks (GANs) have become a powerful framework to learn generative models that arise across a wide variety of domains. While there has been a recent surge in the development of numerous GAN architectures with distinct optimization metrics, we are still lacking in our understanding on how far away such GANs are from optimality. In this paper, we make progress on a theoretical understanding of the GANs under a simple linear-generator Gaussian-data setting where the optimal maximum-likelihood generator is known to perform Principal Component Analysis (PCA). We find that the original GAN by Goodfellow et. al. fails to recover the optimal PCA solution. On the other hand, we show that Wasserstein GAN can approach the PCA solution in the limit of sample size, and hence it may serve as a basis for an optimal GAN architecture that yields the optimal generator for a wide range of data settings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Scalable Unbalanced Optimal Transport using Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1810-11447</link>
+    <guid isPermaLink="false">arxiv:1810.11447</guid>
+    <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Karren D. Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Generative adversarial networks (GANs) are an expressive class of neural generative models with tremendous success in modeling high-dimensional continuous measures. In this paper, we present a scalable method for unbalanced optimal transport (OT) based on the generative-adversarial framework. We formulate unbalanced OT as a problem of simultaneously learning a transport map and a scaling factor that push a source measure to a target measure in a cost-optimal manner. In addition, we propose an algorithm for solving this problem based on stochastic alternating gradient updates, similar in practice to GANs. We also provide theoretical justification for this formulation, showing that it is closely related to an existing static formulation by Liero et al. (2018), and perform numerical experiments demonstrating how this methodology can be applied to population modeling.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reinforcement Learning with Wasserstein Distance Regularisation, with Applications to Multipolicy Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1802-03976</link>
+    <guid isPermaLink="false">arxiv:1802.03976</guid>
+    <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammed Amin Abdullah et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We describe an application of Wasserstein distance to Reinforcement Learning. The Wasserstein distance in question is between the distribution of mappings of trajectories of a policy into some metric space, and some other fixed distribution (which may, for example, come from another policy). Different policies induce different distributions, so given an underlying metric, the Wasserstein distance quantifies how different policies are. This can be used to learn multiple polices which are different in terms of such Wasserstein distances by using a Wasserstein regulariser. Changing the sign of the regularisation parameter, one can learn a policy for which its trajectory mapping distribution is attracted to a given fixed distribution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Fair Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1907-12059</link>
+    <guid isPermaLink="false">arxiv:1907.12059</guid>
+    <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ray Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose an approach to fair classification that enforces independence between the classifier outputs and sensitive information by minimizing Wasserstein-1 distances. The approach has desirable theoretical properties and is robust to specific choices of the threshold used to obtain class predictions from model outputs. We introduce different methods that enable hiding sensitive information at test time or have a simple and fast implementation. We show empirical performance against different fairness baselines on several benchmark fairness datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning representations of irregular particle-detector geometry with distance-weighted graph networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-07987</link>
+    <guid isPermaLink="false">arxiv:1902.07987</guid>
+    <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shah Rukh Qasim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>We explore the use of graph networks to deal with irregular-geometry detectors in the context of particle reconstruction. Thanks to their representation-learning capabilities, graph networks can exploit the full detector granularity, while natively managing the event sparsity and arbitrarily complex detector geometries. We introduce two distance-weighted graph network architectures, dubbed GarNet and GravNet layers, and apply them to a typical particle reconstruction task. The performance of the new architectures is evaluated on a data set of simulated particle interactions on a toy model of a highly granular calorimeter, loosely inspired by the endcap calorimeter to be installed in the CMS detector for the High-Luminosity LHC phase. We study the clustering of energy depositions, which is the basis for calorimetric particle reconstruction, and provide a quantitative comparison to alternative approaches. The proposed algorithms provide an interesting alternative to existing methods, offering equally performing or less resource-demanding solutions with less underlying assumptions on the detector geometry and, consequently, the possibility to generalize to other detectors.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport-based Alignment of Learned Character Representations for String Similarity</title>

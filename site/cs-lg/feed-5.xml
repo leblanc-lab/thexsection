@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Dataset Distillation via the Wasserstein Metric</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2311-18531</link>
+    <guid isPermaLink="false">arxiv:2311.18531</guid>
+    <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Dataset Distillation (DD) aims to generate a compact synthetic dataset that enables models to achieve performance comparable to training on the full large dataset, significantly reducing computational costs. Drawing from optimal transport theory, we introduce WMDD (Wasserstein Metric-based Dataset Distillation), a straightforward yet powerful method that employs the Wasserstein metric to enhance distribution matching. We compute the Wasserstein barycenter of features from a pretrained classifier to capture essential characteristics of the original data distribution. By optimizing synthetic data to align with this barycenter in feature space and leveraging per-class BatchNorm statistics to preserve intra-class variations, WMDD maintains the efficiency of distribution matching approaches while achieving state-of-the-art results across various high-resolution datasets. Our extensive experiments demonstrate WMDD&rsquo;s effectiveness and adaptability, highlighting its potential for advancing machine learning applications at scale.</p>]]></description>
+  </item>
+
+  <item>
+    <title>TAROT: Targeted Data Selection via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-00420</link>
+    <guid isPermaLink="false">arxiv:2412.00420</guid>
+    <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lan Feng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose TAROT, a targeted data selection framework grounded in optimal transport theory. Previous targeted data selection methods primarily rely on influence-based greedy heuristics to enhance domain-specific performance. While effective on limited, unimodal data (i.e., data following a single pattern), these methods struggle as target data complexity increases. Specifically, in multimodal distributions, these heuristics fail to account for multiple inherent patterns, leading to suboptimal data selection. This work identifies two primary factors contributing to this limitation: (i) the disproportionate impact of dominant feature components in high-dimensional influence estimation, and (ii) the restrictive linear additive assumptions inherent in greedy selection strategies. To address these challenges, TAROT incorporates whitened feature distance to mitigate dominant feature bias, providing a more reliable measure of data influence. Building on this, TAROT uses whitened feature distance to quantify and minimize the optimal transport distance between the selected data and target domains. Notably, this minimization also facilitates the estimation of optimal selection ratios. We evaluate TAROT across multiple tasks, including semantic segmentation, motion prediction, and instruction tuning. Results consistently show that TAROT outperforms state-of-the-art methods, highlighting its versatility across various deep learning tasks. Code is available at https://github.com/vita-epfl/TAROT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Forward Reverse Kernel Regression for the Schrödinger bridge problem</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-00640</link>
+    <guid isPermaLink="false">arxiv:2507.00640</guid>
+    <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Denis Belomestny et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>In this paper, we study the Schrödinger Bridge Problem (SBP), which is central to entropic optimal transport. For general reference processes and begin&ndash;endpoint distributions, we propose a forward-reverse iterative Monte Carlo procedure to approximate the Schrödinger potentials in a nonparametric way. In particular, we use kernel based Monte Carlo regression in the context of Picard iteration of a corresponding fixed point problem. By preserving in the iteration positivity and contractivity in a Hilbert metric sense, we develop a provably convergent algorithm. Furthermore, we provide convergence rates for the potential estimates and prove their optimality. Finally, as an application, we propose a non-nested Monte Carlo procedure for the final dimensional distributions of the Schrödinger Bridge process, based on the constructed potentials and the forward-reverse simulation method for conditional diffusions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>An in depth look at the Procrustes-Wasserstein distance: properties and barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-00894</link>
+    <guid isPermaLink="false">arxiv:2507.00894</guid>
+    <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davide Adamo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Due to its invariance to rigid transformations such as rotations and reflections, Procrustes-Wasserstein (PW) was introduced in the literature as an optimal transport (OT) distance, alternative to Wasserstein and more suited to tasks such as the alignment and comparison of point clouds. Having that application in mind, we carefully build a space of discrete probability measures and show that over that space PW actually is a distance. Algorithms to solve the PW problems already exist, however we extend the PW framework by discussing and testing several initialization strategies. We then introduce the notion of PW barycenter and detail an algorithm to estimate it from the data. The result is a new method to compute representative shapes from a collection of point clouds. We benchmark our method against existing OT approaches, demonstrating superior performance in scenarios requiring precise alignment and shape preservation. We finally show the usefulness of the PW barycenters in an archaeological context. Our results highlight the potential of PW in boosting 2D and 3D point cloud analysis for machine learning and computational geometry applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SP²OT: Semantic-Regularized Progressive Partial Optimal Transport for Imbalanced Clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2404-03446</link>
+    <guid isPermaLink="false">arxiv:2404.03446</guid>
+    <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chuyu Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep clustering, which learns representation and semantic clustering without labels information, poses a great challenge for deep learning-based approaches. Despite significant progress in recent years, most existing methods focus on uniformly distributed datasets, significantly limiting the practical applicability of their methods. In this paper, we propose a more practical problem setting named deep imbalanced clustering, where the underlying classes exhibit an imbalance distribution. To address this challenge, we introduce a novel optimal transport-based pseudo-label learning framework. Our framework formulates pseudo-label generation as a Semantic-regularized Progressive Partial Optimal Transport (SP²OT) problem, which progressively transports each sample to imbalanced clusters under prior and semantic relation constraints, thus generating high-quality and imbalance-aware pseudo-labels. To solve the SP²OT problem, we propose a projected mirror descent algorithm, which alternates between: (1) computing the gradient of the SP²OT objective, and (2) performing gradient descent with projection via an entropy-regularized progressive partial optimal transport formulation. Furthermore, we formulate the second step as an unbalanced optimal transport problem with augmented constraints and develop an efficient solution based on fast matrix scaling algorithms. Experiments on various datasets, including a human-curated long-tailed CIFAR100, challenging ImageNet-R, and large-scale subsets of fine-grained iNaturalist2018 datasets, demonstrate the superiority of our method. Code is available: https://github.com/rhfeiyang/SPPOT</p>]]></description>
+  </item>
 
   <item>
     <title>DPOT: A DeepParticle method for Computation of Optimal Transport with convergence guarantee</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyushi Manupriya et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Unbalanced optimal transport (UOT) has recently gained much attention due to its flexible framework for handling un-normalized measures and its robustness properties. In this work, we explore learning (structured) sparse transport plans in the UOT setting, i.e., transport plans have an upper bound on the number of non-sparse entries in each column (structured sparse pattern) or in the whole plan (general sparse pattern). We propose novel sparsity-constrained UOT formulations building on the recently explored maximum mean discrepancy based UOT. We show that the proposed optimization problem is equivalent to the maximization of a weakly submodular function over a uniform matroid or a partition matroid. We develop efficient gradient-based discrete greedy algorithms and provide the corresponding theoretical guarantees. Empirically, we observe that our proposed greedy algorithms select a diverse support set and we illustrate the efficacy of the proposed approach in various applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OT-Transformer: A Continuous-time Transformer Architecture with Optimal Transport Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-18793</link>
-    <guid isPermaLink="false">arxiv:2501.18793</guid>
-    <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kelvin Kan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Transformers have achieved state-of-the-art performance in numerous tasks. In this paper, we propose a continuous-time formulation of transformers. Specifically, we consider a dynamical system whose governing equation is parametrized by transformer blocks. We leverage optimal transport theory to regularize the training problem, which enhances stability in training and improves generalization of the resulting model. Moreover, we demonstrate in theory that this regularization is necessary as it promotes uniqueness and regularity of solutions. Our model is flexible in that almost any existing transformer architectures can be adopted to construct the dynamical system with only slight modifications to the existing code. We perform extensive numerical experiments on tasks motivated by natural language processing, image classification, and point cloud classification. Our experimental results show that the proposed method improves the performance of its discrete counterpart and outperforms relevant comparing models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Anchor Space Optimal Transport as a Fast Solution to Multiple Optimal Transport Problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2310-16123</link>
-    <guid isPermaLink="false">arxiv:2310.16123</guid>
-    <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianming Huang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In machine learning, Optimal Transport (OT) theory is extensively utilized to compare probability distributions across various applications, such as graph data represented by node distributions and image data represented by pixel distributions. In practical scenarios, it is often necessary to solve multiple OT problems. Traditionally, these problems are treated independently, with each OT problem being solved sequentially. However, the computational complexity required to solve a single OT problem is already substantial, making the resolution of multiple OT problems even more challenging. Although many applications of fast solutions to OT are based on the premise of a single OT problem with arbitrary distributions, few efforts handle such multiple OT problems with multiple distributions. Therefore, we propose the anchor space optimal transport (ASOT) problem: an approximate OT problem designed for multiple OT problems. This proposal stems from our finding that in many tasks the mass transport tends to be concentrated in a reduced space from the original feature space. By restricting the mass transport to a learned anchor point space, ASOT avoids pairwise instantiations of cost matrices for multiple OT problems and simplifies the problems by canceling insignificant transports. This simplification greatly reduces its computational costs. We then prove the upper bounds of its 1-Wasserstein distance error between the proposed ASOT and the original OT problem under different conditions. Building upon this accomplishment, we propose three methods to learn anchor spaces for reducing the approximation error. Furthermore, our proposed methods present great advantages for handling distributions of different sizes with GPU parallelization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Revisiting Differential Verification: Equivalence Verification with Confidence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-20207</link>
-    <guid isPermaLink="false">arxiv:2410.20207</guid>
-    <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Teuber et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>When validated neural networks (NNs) are pruned (and retrained) before deployment, it is desirable to prove that the new NN behaves equivalently to the (original) reference NN. To this end, our paper revisits the idea of differential verification which performs reasoning on differences between NNs: On the one hand, our paper proposes a novel abstract domain for differential verification admitting more efficient reasoning about equivalence. On the other hand, we investigate empirically and theoretically which equivalence properties are (not) efficiently solved using differential reasoning. Based on the gained insights, and following a recent line of work on confidence-based verification, we propose a novel equivalence property that is amenable to Differential Verification while providing guarantees for large parts of the input space instead of small-scale guarantees constructed w.r.t. predetermined input points. We implement our approach in a new tool called VeryDiff and perform an extensive evaluation on numerous old and new benchmark families, including new pruned NNs for particle jet classification in the context of CERN&rsquo;s LHC where we observe median speedups &gt;300x over the State-of-the-Art verifier alpha,beta-CROWN.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Constructing Cell-type Taxonomy by Optimal Transport with Relaxed Marginal Constraints</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-18650</link>
-    <guid isPermaLink="false">arxiv:2501.18650</guid>
-    <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Pena et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The rapid emergence of single-cell data has facilitated the study of many different biological conditions at the cellular level. Cluster analysis has been widely applied to identify cell types, capturing the essential patterns of the original data in a much more concise form. One challenge in the cluster analysis of cells is matching clusters extracted from datasets of different origins or conditions. Many existing algorithms cannot recognize new cell types present in only one of the two samples when establishing a correspondence between clusters obtained from two samples. Additionally, when there are more than two samples, it is advantageous to align clusters across all samples simultaneously rather than performing pairwise alignment. Our approach aims to construct a taxonomy for cell clusters across all samples to better annotate these clusters and effectively extract features for downstream analysis. A new system for constructing cell-type taxonomy has been developed by combining the technique of Optimal Transport with Relaxed Marginal Constraints (OT-RMC) and the simultaneous alignment of clusters across multiple samples. OT-RMC allows us to address challenges that arise when the proportions of clusters vary substantially between samples or when some clusters do not appear in all the samples. Experiments on more than twenty datasets demonstrate that the taxonomy constructed by this new system can yield highly accurate annotation of cell types. Additionally, sample-level features extracted based on the taxonomy result in accurate classification of samples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generating Spatial Synthetic Populations Using Wasserstein Generative Adversarial Network: A Case Study with EU-SILC Data for Helsinki and Thessaloniki</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-16080</link>
-    <guid isPermaLink="false">arxiv:2501.16080</guid>
-    <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vanja Falck</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Using agent-based social simulations can enhance our understanding of urban planning, public health, and economic forecasting. Realistic synthetic populations with numerous attributes strengthen these simulations. The Wasserstein Generative Adversarial Network, trained on census data like EU-SILC, can create robust synthetic populations. These methods, aided by external statistics or EU-SILC weights, generate spatial synthetic populations for agent-based models. The increased access to high-quality micro-data has sparked interest in synthetic populations, which preserve demographic profiles and analytical strength while ensuring privacy and preventing discrimination. This study uses national data from Finland and Greece for Helsinki and Thessaloniki to explore balanced spatial synthetic population generation. Results show challenges related to balancing data with or without aggregated statistics for the target population and the general under-representation of fringe profiles by deep generative methods. The latter can lead to discrimination in agent-based simulations.</p>]]></description>
   </item>
 
 </channel>

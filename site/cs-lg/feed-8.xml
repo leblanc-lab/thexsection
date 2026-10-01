@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Covariance alignment: from maximum likelihood estimation to Gromov-Wasserstein</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-13595</link>
+    <guid isPermaLink="false">arxiv:2311.13595</guid>
+    <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yanjun Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Feature alignment methods are used in many scientific disciplines for data pooling, annotation, and comparison. As an instance of a permutation learning problem, feature alignment presents significant statistical and computational challenges. In this work, we propose the covariance alignment model to study and compare various alignment methods and establish a minimax lower bound for covariance alignment that has a non-standard dimension scaling because of the presence of a nuisance parameter. This lower bound is in fact minimax optimal and is achieved by a natural quasi MLE. However, this estimator involves a search over all permutations which is computationally infeasible even when the problem has moderate size. To overcome this limitation, we show that the celebrated Gromov-Wasserstein algorithm from optimal transport which is more amenable to fast implementation even on large-scale problems is also minimax optimal. These results give the first statistical justification for the deployment of the Gromov-Wasserstein algorithm in practice.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adversarial Reweighting Guided by Wasserstein Distance for Bias Mitigation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-12684</link>
+    <guid isPermaLink="false">arxiv:2311.12684</guid>
+    <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Zhao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The unequal representation of different groups in a sample population can lead to discrimination of minority groups when machine learning models make automated decisions. To address these issues, fairness-aware machine learning jointly optimizes two (or more) metrics aiming at predictive effectiveness and low unfairness. However, the inherent under-representation of minorities in the data makes the disparate treatment of subpopulations less noticeable and difficult to deal with during learning. In this paper, we propose a novel adversarial reweighting method to address such \emph{representation bias}. To balance the data distribution between the majority and the minority groups, our approach deemphasizes samples from the majority group. To minimize empirical risk, our method prefers samples from the majority group that are close to the minority group as evaluated by the Wasserstein distance. Our theoretical analysis shows the effectiveness of our adversarial reweighting approach. Experiments demonstrate that our approach mitigates bias without sacrificing classification accuracy, outperforming related state-of-the-art methods on image and tabular benchmark datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fair Text Classification with Wasserstein Independence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-12689</link>
+    <guid isPermaLink="false">arxiv:2311.12689</guid>
+    <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thibaud Leteno et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Group fairness is a central research topic in text classification, where reaching fair treatment between sensitive groups (e.g. women vs. men) remains an open challenge. This paper presents a novel method for mitigating biases in neural text classification, agnostic to the model architecture. Considering the difficulty to distinguish fair from unfair information in a text encoder, we take inspiration from adversarial training to induce Wasserstein independence between representations learned to predict our target label and the ones learned to predict some sensitive attribute. Our approach provides two significant advantages. Firstly, it does not require annotations of sensitive attributes in both testing and training data. This is more suitable for real-life scenarios compared to existing methods that require annotations of sensitive attributes at train time. Second, our approach exhibits a comparable or better fairness-accuracy trade-off compared to existing methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Estimation of entropy-regularized optimal transport maps between non-compactly supported measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-11934</link>
+    <guid isPermaLink="false">arxiv:2311.11934</guid>
+    <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthew Werenski et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper addresses the problem of estimating entropy-regularized optimal transport (EOT) maps with squared-Euclidean cost between source and target measures that are subGaussian. In the case that the target measure is compactly supported or strongly log-concave, we show that for a recently proposed in-sample estimator, the expected squared L²-error decays at least as fast as O(n⁻¹/3) where n is the sample size. For the general subGaussian case we show that the expected L¹-error decays at least as fast as O(n⁻¹/6), and in both cases we have polynomial dependence on the regularization parameter. While these results are suboptimal compared to known results in the case of compactness of both the source and target measures (squared L²-error converging at a rate O(n⁻¹⁾) and for when the source is subGaussian while the target is compactly supported (squared L²-error converging at a rate O(n⁻¹/2)), their importance lie in eliminating the compact support requirements. The proof technique makes use of a bias-variance decomposition where the variance is controlled using standard concentration of measure results and the bias is handled by T1-transport inequalities along with sample complexity results in estimation of EOT cost under subGaussian assumptions. Our experimental results point to a looseness in controlling the variance terms and we conclude by posing several open problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neural approximation of Wasserstein distance via a universal architecture for symmetric and factorwise group invariant functions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2308-00273</link>
+    <guid isPermaLink="false">arxiv:2308.00273</guid>
+    <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Learning distance functions between complex objects, such as the Wasserstein distance to compare point sets, is a common goal in machine learning applications. However, functions on such complex objects (e.g., point sets and graphs) are often required to be invariant to a wide variety of group actions e.g. permutation or rigid transformation. Therefore, continuous and symmetric product functions (such as distance functions) on such complex objects must also be invariant to the product of such group actions. We call these functions symmetric and factor-wise group invariant (or SFGI functions in short). In this paper, we first present a general neural network architecture for approximating SFGI functions. The main contribution of this paper combines this general neural network with a sketching idea to develop a specific and efficient neural network which can approximate the p-th Wasserstein distance between point sets. Very importantly, the required model complexity is independent of the sizes of input point sets. On the theoretical front, to the best of our knowledge, this is the first result showing that there exists a neural network with the capacity to approximate Wasserstein distance with bounded model complexity. Our work provides an interesting integration of sketching ideas for geometric problems with universal approximation of symmetric functions. On the empirical front, we present a range of results showing that our newly proposed neural network architecture performs comparatively or better than other models (including a SOTA Siamese Autoencoder based approach). In particular, our neural network generalizes significantly better and trains much faster than the SOTA Siamese AE. Finally, this line of investigation could be useful in exploring effective neural network design for solving a broad range of geometric optimization problems (e.g., k-means in a metric space).</p>]]></description>
+  </item>
 
   <item>
     <title>DeepEMD: A Transformer-based Fast Estimation of the Earth Mover's Distance</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, particle flow, particle-flow, LHC) — original abstract; no AI summary.</em></p>
 <p>The particle-flow (PF) algorithm, which infers particles based on tracks and calorimeter clusters, is of central importance to event reconstruction in the CMS experiment at the CERN LHC, and has been a focus of development in light of planned Phase-2 running conditions with an increased pileup and detector granularity. In recent years, the machine learned particle-flow (MLPF) algorithm, a graph neural network that performs PF reconstruction, has been explored in CMS, with the possible advantages of directly optimizing for the physical quantities of interest, being highly reconfigurable to new conditions, and being a natural fit for deployment to heterogeneous accelerators. We discuss progress in CMS towards an improved implementation of the MLPF reconstruction, now optimized using generator/simulation-level particle information as the target for the first time. This paves the way to potentially improving the detector response in terms of physical quantities of interest. We describe the simulation-based training target, progress and studies on event-based loss terms, details on the model hyperparameter tuning, as well as physics validation with respect to the current PF algorithm in terms of high-level physical quantities such as the jet and missing transverse momentum resolutions. We find that the MLPF algorithm, trained on a generator/simulator level particle information for the first time, results in broadly compatible particle and jet reconstruction performance with the baseline PF, setting the stage for improving the physics performance by additional training statistics and model tuning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stability of Entropic Wasserstein Barycenters and application to random geometric graphs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-10535</link>
-    <guid isPermaLink="false">arxiv:2210.10535</guid>
-    <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marc Theveneau et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>As interest in graph data has grown in recent years, the computation of various geometric tools has become essential. In some area such as mesh processing, they often rely on the computation of geodesics and shortest paths in discretized manifolds. A recent example of such a tool is the computation of Wasserstein barycenters (WB), a very general notion of barycenters derived from the theory of Optimal Transport, and their entropic-regularized variant. In this paper, we examine how WBs on discretized meshes relate to the geometry of the underlying manifold. We first provide a generic stability result with respect to the input cost matrices. We then apply this result to random geometric graphs on manifolds, whose shortest paths converge to geodesics, hence proving the consistency of WBs computed on discretized shapes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving robustness of jet tagging algorithms with adversarial training: exploring the loss surface</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-14511</link>
-    <guid isPermaLink="false">arxiv:2303.14511</guid>
-    <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Annika Stein</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, flavor tagging, jet flavor) — original abstract; no AI summary.</em></p>
-<p>In the field of high-energy physics, deep learning algorithms continue to gain in relevance and provide performance improvements over traditional methods, for example when identifying rare signals or finding complex patterns. From an analyst&rsquo;s perspective, obtaining highest possible performance is desirable, but recently, some attention has been shifted towards studying robustness of models to investigate how well these perform under slight distortions of input features. Especially for tasks that involve many (low-level) inputs, the application of deep neural networks brings new challenges. In the context of jet flavor tagging, adversarial attacks are used to probe a typical classifier&rsquo;s vulnerability and can be understood as a model for systematic uncertainties. A corresponding defense strategy, adversarial training, improves robustness, while maintaining high performance. Investigating the loss surface corresponding to the inputs and models in question reveals geometric interpretations of robustness, taking correlations into account.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Forecasting Competitions with Correlated Events</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-13793</link>
-    <guid isPermaLink="false">arxiv:2303.13793</guid>
-    <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Frongillo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Beginning with Witkowski et al. [2022], recent work on forecasting competitions has addressed incentive problems with the common winner-take-all mechanism. Frongillo et al. [2021] propose a competition mechanism based on follow-the-regularized-leader (FTRL), an online learning framework. They show that their mechanism selects an ε-optimal forecaster with high probability using only O(log(n)/ε²⁾ events. These works, together with all prior work on this problem thus far, assume that events are independent. We initiate the study of forecasting competitions for correlated events. To quantify correlation, we introduce a notion of block correlation, which allows each event to be strongly correlated with up to b others. We show that under distributions with this correlation, the FTRL mechanism retains its ε-optimal guarantee using O(b² log(n)/ε²⁾ events. Our proof involves a novel concentration bound for correlated random variables which may be of broader interest.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport for Offline Imitation Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-13971</link>
-    <guid isPermaLink="false">arxiv:2303.13971</guid>
-    <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yicheng Luo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>With the advent of large datasets, offline reinforcement learning (RL) is a promising framework for learning good decision-making policies without the need to interact with the real environment. However, offline RL requires the dataset to be reward-annotated, which presents practical challenges when reward engineering is difficult or when obtaining reward annotations is labor-intensive. In this paper, we introduce Optimal Transport Reward labeling (OTR), an algorithm that assigns rewards to offline trajectories, with a few high-quality demonstrations. OTR&rsquo;s key idea is to use optimal transport to compute an optimal alignment between an unlabeled trajectory in the dataset and an expert demonstration to obtain a similarity measure that can be interpreted as a reward, which can then be used by an offline RL algorithm to learn the policy. OTR is easy to implement and computationally efficient. On D4RL benchmarks, we show that OTR with a single demonstration can consistently match the performance of offline RL with ground-truth rewards.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Predicting the Future of the CMS Detector: Crystal Radiation Damage and Machine Learning at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-15291</link>
-    <guid isPermaLink="false">arxiv:2303.15291</guid>
-    <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bhargav Joshi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The 75,848 lead tungstate crystals in CMS experiment at the CERN Large Hadron Collider are used to measure the energy of electrons and photons produced in the proton-proton collisions. The optical transparency of the crystals degrades slowly with radiation dose due to the beam-beam collisions. The transparency of each crystal is monitored with a laser monitoring system that tracks changes in the optical properties of the crystals due to radiation from the collision products. Predicting the optical transparency of the crystals, both in the short-term and in the long-term, is a critical task for the CMS experiment. We describe here the public data release, following FAIR principles, of the crystal monitoring data collected by the CMS Collaboration between 2016 and 2018. Besides describing the dataset and its access, the problems that can be addressed with it are described, as well as an example solution based on a Long Short-Term Memory neural network developed to predict future behavior of the crystals.</p>]]></description>
   </item>
 
 </channel>

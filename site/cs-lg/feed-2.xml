@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-10254</link>
+    <guid isPermaLink="false">arxiv:2603.10254</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davide Tugnoli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
+<p>Synthetic tabular data generation addresses data scarcity and privacy constraints in a variety of domains. Tabular Prior-Data Fitted Network (TabPFN), a recent foundation model for tabular data, has been shown capable of generating high-quality synthetic tabular data. However, TabPFN is autoregressive: features are generated sequentially by conditioning on the previous ones, depending on the order in which they appear in the input data. We demonstrate that when the feature order conflicts with causal structure, the model produces spurious correlations that impair its ability to generate synthetic data and preserve causal effects. We address this limitation by integrating causal structure into TabPFN&rsquo;s generation process through two complementary approaches: Directed Acyclic Graph (DAG)-aware conditioning, which samples each variable given its causal parents, and a partially directed acyclic graph (PDAG)-based strategy for scenarios with partial causal knowledge. We evaluate these approaches on controlled benchmarks and six CSuite datasets, assessing structural fidelity, distributional quality, and Average Treatment Effect (ATE) preservation. Across most settings, DAG-aware conditioning improves the quality and stability of synthetic data relative to vanilla TabPFN. Under partial causal knowledge, the oracle partially directed acyclic graph (oracle-PDAG), which orients only the edges into the colliders, shows moderate gains, while the benefit of a Completed Partially Directed Acyclic Graph (CPDAG) discovered from data depends on how well the causal structure is recovered. These results indicate that reliable causal structure, even partial, can be injected into TabPFN at inference time, without parameter updates, to improve synthetic data quality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-06104</link>
+    <guid isPermaLink="false">arxiv:2606.06104</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chen Hu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Electroencephalography (EEG) offers noninvasive, millisecond resolution recordings of neuronal activity and is widely used in neuroscience and healthcare. Many EEG decoding pipelines rely on covariance descriptors for their robustness to noise, but such representations are sensitive to channel-wise scaling. Recent studies have therefore advocated full-rank correlation matrices as a scale-invariant alternative for EEG decoding. In this paper, we study Sliced-Wasserstein (SW) discrepancies for probability distributions on the manifold of full-rank correlation matrices. We adopt the pullback-Euclidean formulation of SW, referred to as Pullback Euclidean Metric Sliced-Wasserstein (PEMSW), and instantiate it under two recently introduced correlation geometries, \textit{i.e.}, the Off-Log Metric (OLM) and Log-Scaled Metric (LSM). This yields two Correlation Sliced-Wasserstein (CorSW) discrepancies with closed-form slicing coordinates and efficient computation through one-dimensional Wasserstein distances. Building on CorSW, we further develop a domain generalization (DG) framework for EEG decoding. Experiments on three EEG datasets demonstrate improved generalization under distribution shifts, with low training overhead and no additional inference cost. The source code is available at github.com/ChenHu-ML/CorSW.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-07401</link>
+    <guid isPermaLink="false">arxiv:2607.07401</guid>
+    <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chengbo Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
+<p>While whole-body multimodal medical imaging scanners have been increasingly recognized for more effective medical applications, the excessive long acquisition time in PET-MR scanning is a major obstacle in more efficient clinical practice. Deep learning-based MRI translation provides a potential solution to reduce scan duration. However, current models often focus on specific anatomical regions and face challenges for whole-body scans that consists of highly heterogeneous feature distributions mainly due to (1) different anatomical regions across whole-body, and (2) lesions or pathological tissues. This paper tackles the challenges through a novel Heterogeneity-Adaptive Diffusion Schrodinger Bridge (HA-DSB) framework. By explicitly modeling translation as stochastic transport between source and target distributions, HA-DSB incorporates region context embeddings derived from a vision-language model (VLM) to enable region-specific modeling. To enhance fidelity of the pathological tissue, lesion-aware metabolic prior from PET is integrated directly into the bridge dynamics through a dual-stage guidance mechanism. Specifically, a PET-guided noise modulation module adaptively scales spatial diffusion perturbations during the forward process, while PET features are leveraged during the reverse process to selectively amplify lesion-relevant structures via an attention mechanism. Experiments demonstrate the superiority of our method across different body regions in whole-body MRI translation and show improved translation quality in lesion areas under PET guidance. Our code is available at Github.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Diffusion enabled Optimal Transport distances for graph matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-06646</link>
+    <guid isPermaLink="false">arxiv:2607.06646</guid>
+    <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iman Seyedi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper introduces Diffusion Semi-Relaxed Fused Gromov-Wasserstein (DsrFGW), a novel method for graph comparison that unifies node features and structural connectivity through optimal transport. While traditional Gromov-Wasserstein and semi-relaxed variants (srGW, srFGW) capture graph structure, they often struggle with sparse, noisy, or partially observed graphs. Inspired by Graph Diffusion Distance, which posits graphs are similar if they enable similar information transmission patterns, DsrFGW incorporates diffusion processes allowing information propagation across nodes, capturing local and global structural patterns while reducing sensitivity to noise or missing edges. An extensive evaluation on 36 synthetic pairwise graph matching tasks (easy, medium, hard) demonstrates consistent superiority over srFGW, achieving accuracy improvements of 0-20 percentage points and dramatic Adjusted Rand Index (ARI) gains: in medium-difficulty scenarios, srFGW often achieves negative ARI (worse than random) while DsrFGW offers better performance in terms of both internal and external clustering quality measures (i.e., Adjusted Rank Index and Accuracy with respect to the true underlying clusters, respectively). Even under severe noise, DsrFGW improves clustering quality in 92% of the synthetic tasks with optimal diffusion scales adapting to problem difficulty, establishing DsrFGW as a robust framework for graph comparison under structural uncertainty.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Residuals: Learning Gradient Flows from Population Dynamics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-04738</link>
+    <guid isPermaLink="false">arxiv:2607.04738</guid>
+    <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Markus Heinonen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Reconstructing population dynamics is a central problem in the physical and data sciences. Often, the dynamics are modeled as a Wasserstein gradient flow (WGF): a curve of distributions driven by an energy functional. Though there are multiple mathematical characterizations of a WGF, the dominant algorithmic approach relies on the Jordan&ndash;Kinderlehrer&ndash;Otto (JKO) scheme. JKO-based methods are inflexible to time discretisation and require solving costly optimal transport problems. We take a residual approach, enforcing the continuity equations via a non-negative loss function whose minimum is the WGF. Combined with a data-fitting divergence, this gives a single global objective. This perspective unifies several existing methods and leads to a new particle-based method, stitching, that is simulation-free and robust to large gaps between observations. We demonstrate that the stitching method achieves state-of-the-art performance across trajectory inference benchmarks. For code see github.com/BasisResearch/wasserstein-residuals.</p>]]></description>
+  </item>
 
   <item>
     <title>Inclusive KL Gradient Flows: Otto-Wasserstein, Fisher-Rao-Gaussian, and Local-Estimator Dynamics</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Non-asymptotic central limit theorem (CLT) rates play a central role in modern machine learning and operations research. In this paper, we study CLT rates for multivariate dependent data in Wasserstein-p (W_p) distance, for general p≥1. We focus on two fundamental dependence structures that commonly arise in practice: locally dependent sequences and geometrically ergodic Markov chains. In both settings, we establish the first optimal 𝒪(n⁻¹/2) rate in W_1, as well as the first W_p (p≥2) CLT rates under mild moment assumptions, substantially improving the best previously known bounds in these dependent-data regimes. As an application of our optimal W_1 rate for locally dependent sequences, we further obtain the first optimal W_1-CLT rate for multivariate U-statistics. On the technical side, we derive a tractable auxiliary bound for W_1 Gaussian approximation errors that is well suited for studying dependent data. For Markov chains, we further prove that the regeneration time of the split chain associated with a geometrically ergodic chain has a geometric tail without assuming strong aperiodicity or other restrictive conditions. These tools may be of independent interests and enable our optimal W_1 rates and underpin our W_p (p≥2) results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-13660</link>
-    <guid isPermaLink="false">arxiv:2505.13660</guid>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaheon Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper introduces a new constraint-free concave dual formulation for the Wasserstein barycenter. Tailoring the vanilla dual gradient ascent algorithm to the Sobolev geometry, we derive a scalable Sobolev gradient ascent (SGA) algorithm to compute the barycenter for input distributions discretized over a regular grid. Despite the algorithmic simplicity, we provide a global convergence analysis that achieves the same rate as the classical subgradient descent methods for minimizing nonsmooth convex functions in the Euclidean space. A central feature of our SGA algorithm is that the computationally expensive c-concavity projection operator enforced on the Kantorovich dual potentials is unnecessary to guarantee convergence, leading to significant algorithmic and theoretical simplifications over all existing primal and dual methods for computing the exact barycenter. Our numerical experiments demonstrate the superior empirical performance of SGA over the existing optimal transport barycenter solvers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Wasserstein Geometric Framework for Hebbian Plasticity</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-16052</link>
-    <guid isPermaLink="false">arxiv:2604.16052</guid>
-    <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ulrich Tan</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce the Tan-HWG framework (Hebbian-Wasserstein-Geometry), a geometric theory of Hebbian plasticity in which memory states are modeled as probability measures evolving through Wasserstein minimizing movements. Hebbian learning rules are formalized as Hebbian energies satisfying a sequential stability condition, ensuring well-posed fiberwise JKO updates, optimal-transport realizations, and an energy descent inequality. This variational structure induces a fundamental separation between internal and observable dynamics. Internal memory states evolve along Wasserstein geodesics in a latent curved space, while observable quantities, such as effective synaptic weights, arise through geometric projection maps into external spaces. Simplicial projections recover classical affine schemes (including exponential moving averages and mirror descent), while revealing synaptic competition and pruning as geometric consequences of mass redistribution. Hilbertian projections provide a geometric account of phase alignment and multi-scale coherence. Classical neural networks appear as flat projections of this curved dynamics, while the framework naturally accommodates richer distributional representations, including structural weights and embedding memories, and their spectral extensions in complex internal spaces. Under mild Lipschitz regularity assumptions, including a quasi-stationary &ldquo;sleep-mode&rdquo; regime, we establish the existence of continuous-time limit curves. This yields a variational formulation of memory consolidation as a perturbed Wasserstein gradient flow. The framework thus provides a unified geometric foundation for synaptic plasticity, representation dynamics, and context-dependent computation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2211-16780</link>
-    <guid isPermaLink="false">arxiv:2211.16780</guid>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quyen Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In online incremental learning, data continuously arrives with substantial distributional shifts, creating a significant challenge because previous samples have limited replay value when learning a new task. Prior research has typically relied on either a single adaptive centroid or multiple fixed centroids to represent each class in the latent space. However, such methods struggle when class data streams are inherently multimodal and require continual centroid updates. To overcome this, we introduce an online Mixture Model learning framework grounded in Optimal Transport theory (MMOT), where centroids evolve incrementally with new data. This approach offers two main advantages: (i) it provides a more precise characterization of complex data streams, and (ii) it enables improved class similarity estimation for unseen samples during inference through MMOT-derived centroids. Furthermore, to strengthen representation learning and mitigate catastrophic forgetting, we design a Dynamic Preservation strategy that regulates the latent space and maintains class separability over time. Experimental evaluations on benchmark datasets confirm the superior effectiveness of our proposed method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Amortized Optimal Transport from Sliced Potentials</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-15114</link>
-    <guid isPermaLink="false">arxiv:2604.15114</guid>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh-Phuc Truong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose a novel amortized optimization method for predicting optimal transport (OT) plans across multiple pairs of measures by leveraging Kantorovich potentials derived from sliced OT. We introduce two amortization strategies: regression-based amortization (RA-OT) and objective-based amortization (OA-OT). In RA-OT, we formulate a functional regression model that treats Kantorovich potentials from the original OT problem as responses and those obtained from sliced OT as predictors, and estimate these models via least-squares methods. In OA-OT, we estimate the parameters of the functional model by optimizing the Kantorovich dual objective. In both approaches, the predicted OT plan is subsequently recovered from the estimated potentials. As amortized OT methods, both RA-OT and OA-OT enable efficient solutions to repeated OT problems across different measure pairs by reusing information learned from prior instances to rapidly approximate new solutions. Moreover, by exploiting the structure provided by sliced OT, the proposed models are more parsimonious, independent of specific structures of the measures, such as the number of atoms in the discrete case, while achieving high accuracy. We demonstrate the effectiveness of our approaches on tasks including MNIST digit transport, color transfer, supply-demand transportation on spherical data, and mini-batch OT conditional flow matching.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards AI-assisted Neutrino Flavor Theory Design</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2506-08080</link>
-    <guid isPermaLink="false">arxiv:2506.08080</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Benjamin Baretz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>Particle physics theories, such as those which explain neutrino flavor mixing, arise from a vast landscape of model-building possibilities. A model&rsquo;s construction typically relies on the intuition of theorists. It also requires considerable effort to identify appropriate symmetry groups, assign field representations, and extract predictions for comparison with experimental data. We develop an Autonomous Model Builder (AMBer), a framework in which a reinforcement learning agent interacts with a streamlined physics software pipeline to search these spaces efficiently. AMBer selects symmetry groups, particle content, and group representation assignments to construct viable models while minimizing the number of free parameters introduced. We validate our approach in well-studied regions of theory space and extend the exploration to a novel, previously unexamined symmetry group. While demonstrated in the context of neutrino flavor theories, this approach of reinforcement learning with physics software feedback may be extended to other theoretical model-building problems in the future.</p>]]></description>
   </item>
 
 </channel>

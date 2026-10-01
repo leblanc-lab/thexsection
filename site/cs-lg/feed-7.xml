@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Consistent Optimal Transport with Empirical Conditional Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2305-15901</link>
+    <guid isPermaLink="false">arxiv:2305.15901</guid>
+    <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyushi Manupriya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Given samples from two joint distributions, we consider the problem of Optimal Transportation (OT) between them when conditioned on a common variable. We focus on the general setting where the conditioned variable may be continuous, and the marginals of this variable in the two joint distributions may not be the same. In such settings, standard OT variants cannot be employed, and novel estimation techniques are necessary. Since the main challenge is that the conditional distributions are not explicitly available, the key idea in our OT formulation is to employ kernelized-least-squares terms computed over the joint samples, which implicitly match the transport plan&rsquo;s marginals with the empirical conditionals. Under mild conditions, we prove that our estimated transport plans, as a function of the conditioned variable, are asymptotically optimal. For finite samples, we show that the deviation in terms of our regularized objective is bounded by O(1/m¹/4), where m is the number of samples. We also discuss how the conditional transport plan could be modelled using explicit probabilistic models as well as using implicit generative ones. We empirically verify the consistency of our estimator on synthetic datasets, where the optimal plan is analytically known. When employed in applications like prompt learning for few-shot classification and conditional-generation in the context of predicting cell responses to treatment, our methodology improves upon state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Bisimulation Metrics are Optimal Transport Distances, and Can be Computed Efficiently</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-04056</link>
+    <guid isPermaLink="false">arxiv:2406.04056</guid>
+    <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergio Calo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose a new framework for formulating optimal transport distances between Markov chains. Previously known formulations studied couplings between the entire joint distribution induced by the chains, and derived solutions via a reduction to dynamic programming (DP) in an appropriately defined Markov decision process. This formulation has, however, not led to particularly efficient algorithms so far, since computing the associated DP operators requires fully solving a static optimal transport problem, and these operators need to be applied numerous times during the overall optimization process. In this work, we develop an alternative perspective by considering couplings between a flattened version of the joint distributions that we call discounted occupancy couplings, and show that calculating optimal transport distances in the full space of joint distributions can be equivalently formulated as solving a linear program (LP) in this reduced space. This LP formulation allows us to port several algorithmic ideas from other areas of optimal transport theory. In particular, our formulation makes it possible to introduce an appropriate notion of entropy regularization into the optimization problem, which in turn enables us to directly calculate optimal transport distances via a Sinkhorn-like method we call Sinkhorn Value Iteration (SVI). We show both theoretically and empirically that this method converges quickly to an optimal coupling, essentially at the same computational cost of running vanilla Sinkhorn in each pair of states. Along the way, we point out that our optimal transport distance exactly matches the common notion of bisimulation metrics between Markov chains, and thus our results also apply to computing such metrics, and in fact our algorithm turns out to be significantly more efficient than the best known methods developed so far for this purpose.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multivariate Stochastic Dominance via Optimal Transport and Applications to Models Benchmarking</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-06425</link>
+    <guid isPermaLink="false">arxiv:2406.06425</guid>
+    <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Rioux et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Stochastic dominance is an important concept in probability theory, econometrics and social choice theory for robustly modeling agents&rsquo; preferences between random outcomes. While many works have been dedicated to the univariate case, little has been done in the multivariate scenario, wherein an agent has to decide between different multivariate outcomes. By exploiting a characterization of multivariate first stochastic dominance in terms of couplings, we introduce a statistic that assesses multivariate almost stochastic dominance under the framework of Optimal Transport with a smooth cost. Further, we introduce an entropic regularization of this statistic, and establish a central limit theorem (CLT) and consistency of the bootstrap procedure for the empirical statistic. Armed with this CLT, we propose a hypothesis testing framework as well as an efficient implementation using the Sinkhorn algorithm. We showcase our method in comparing and benchmarking Large Language Models that are evaluated on multiple metrics. Our multivariate stochastic dominance test allows us to capture the dependencies between the metrics in order to make an informed and statistically significant decision on the relative performance of the models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A local squared Wasserstein-2 method for efficient reconstruction of models with uncertainty</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-06825</link>
+    <guid isPermaLink="false">arxiv:2406.06825</guid>
+    <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingtao Xia et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we propose a local squared Wasserstein-2 (W_2) method to solve the inverse problem of reconstructing models with uncertain latent variables or parameters. A key advantage of our approach is that it does not require prior information on the distribution of the latent variables or parameters in the underlying models. Instead, our method can efficiently reconstruct the distributions of the output associated with different inputs based on empirical distributions of observation data. We demonstrate the effectiveness of our proposed method across several uncertainty quantification (UQ) tasks, including linear regression with coefficient uncertainty, training neural networks with weight uncertainty, and reconstructing ordinary differential equations (ODEs) with a latent random variable.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generalized Independent Noise Condition for Estimating Causal Structure with Latent Variables</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2308-06718</link>
+    <guid isPermaLink="false">arxiv:2308.06718</guid>
+    <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Feng Xie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>We investigate the task of learning causal structure in the presence of latent variables, including locating latent variables and determining their quantity, and identifying causal relationships among both latent and observed variables. To this end, we propose a Generalized Independent Noise (GIN) condition for linear non-Gaussian acyclic causal models that incorporate latent variables, which establishes the independence between a linear combination of certain measured variables and some other measured variables. Specifically, for two observed random vectors Y and Z, GIN holds if and only if ω^⊺𝐘 and 𝐙 are independent, where ω is a non-zero parameter vector determined by the cross-covariance between 𝐘 and 𝐙. We then give necessary and sufficient graphical criteria of the GIN condition in linear non-Gaussian acyclic models. Roughly speaking, GIN implies the existence of a set 𝒮 such that 𝒮 is causally earlier (w.r.t. the causal ordering) than 𝐘, and that every active (collider-free) path between 𝐘 and 𝐙 must contain a node from 𝒮. Interestingly, we find that the independent noise condition (i.e., if there is no confounder, causes are independent of the residual derived from regressing the effect on the causes) can be seen as a special case of GIN. With such a connection between GIN and latent causal structures, we further leverage the proposed GIN condition, together with a well-designed search procedure, to efficiently estimate Linear, Non-Gaussian Latent Hierarchical Models (LiNGLaHs), where latent confounders may also be causally related and may even follow a hierarchical structure. We show that the causal structure of a LiNGLaH is identifiable in light of GIN conditions. Experimental results show the effectiveness of the proposed method.</p>]]></description>
+  </item>
 
   <item>
     <title>Offline Imitation from Observation via Primal Wasserstein State Occupancy Matching</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shoichiro Takeda et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We propose novel fast algorithms for optimal transport (OT) utilizing a cyclic symmetry structure of input data. Such OT with cyclic symmetry appears universally in various real-world examples: image processing, urban planning, and graph processing. Our main idea is to reduce OT to a small optimization problem that has significantly fewer variables by utilizing cyclic symmetry and various optimization techniques. On the basis of this reduction, our algorithms solve the small optimization problem instead of the original OT. As a result, our algorithms obtain the optimal solution and the objective function value of the original OT faster than solving the original OT directly. In this paper, our focus is on two crucial OT formulations: the linear programming OT (LOT) and the strongly convex-regularized OT, which includes the well-known entropy-regularized OT (EROT). Experiments show the effectiveness of our algorithms for LOT and EROT in synthetic/real-world data that has a strict/approximate cyclic symmetry structure. Through theoretical and experimental results, this paper successfully introduces the concept of symmetry into the OT research field for the first time.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Covariance alignment: from maximum likelihood estimation to Gromov-Wasserstein</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-13595</link>
-    <guid isPermaLink="false">arxiv:2311.13595</guid>
-    <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yanjun Han et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Feature alignment methods are used in many scientific disciplines for data pooling, annotation, and comparison. As an instance of a permutation learning problem, feature alignment presents significant statistical and computational challenges. In this work, we propose the covariance alignment model to study and compare various alignment methods and establish a minimax lower bound for covariance alignment that has a non-standard dimension scaling because of the presence of a nuisance parameter. This lower bound is in fact minimax optimal and is achieved by a natural quasi MLE. However, this estimator involves a search over all permutations which is computationally infeasible even when the problem has moderate size. To overcome this limitation, we show that the celebrated Gromov-Wasserstein algorithm from optimal transport which is more amenable to fast implementation even on large-scale problems is also minimax optimal. These results give the first statistical justification for the deployment of the Gromov-Wasserstein algorithm in practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adversarial Reweighting Guided by Wasserstein Distance for Bias Mitigation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-12684</link>
-    <guid isPermaLink="false">arxiv:2311.12684</guid>
-    <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Zhao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The unequal representation of different groups in a sample population can lead to discrimination of minority groups when machine learning models make automated decisions. To address these issues, fairness-aware machine learning jointly optimizes two (or more) metrics aiming at predictive effectiveness and low unfairness. However, the inherent under-representation of minorities in the data makes the disparate treatment of subpopulations less noticeable and difficult to deal with during learning. In this paper, we propose a novel adversarial reweighting method to address such \emph{representation bias}. To balance the data distribution between the majority and the minority groups, our approach deemphasizes samples from the majority group. To minimize empirical risk, our method prefers samples from the majority group that are close to the minority group as evaluated by the Wasserstein distance. Our theoretical analysis shows the effectiveness of our adversarial reweighting approach. Experiments demonstrate that our approach mitigates bias without sacrificing classification accuracy, outperforming related state-of-the-art methods on image and tabular benchmark datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fair Text Classification with Wasserstein Independence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-12689</link>
-    <guid isPermaLink="false">arxiv:2311.12689</guid>
-    <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thibaud Leteno et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Group fairness is a central research topic in text classification, where reaching fair treatment between sensitive groups (e.g. women vs. men) remains an open challenge. This paper presents a novel method for mitigating biases in neural text classification, agnostic to the model architecture. Considering the difficulty to distinguish fair from unfair information in a text encoder, we take inspiration from adversarial training to induce Wasserstein independence between representations learned to predict our target label and the ones learned to predict some sensitive attribute. Our approach provides two significant advantages. Firstly, it does not require annotations of sensitive attributes in both testing and training data. This is more suitable for real-life scenarios compared to existing methods that require annotations of sensitive attributes at train time. Second, our approach exhibits a comparable or better fairness-accuracy trade-off compared to existing methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Estimation of entropy-regularized optimal transport maps between non-compactly supported measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-11934</link>
-    <guid isPermaLink="false">arxiv:2311.11934</guid>
-    <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthew Werenski et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper addresses the problem of estimating entropy-regularized optimal transport (EOT) maps with squared-Euclidean cost between source and target measures that are subGaussian. In the case that the target measure is compactly supported or strongly log-concave, we show that for a recently proposed in-sample estimator, the expected squared L²-error decays at least as fast as O(n⁻¹/3) where n is the sample size. For the general subGaussian case we show that the expected L¹-error decays at least as fast as O(n⁻¹/6), and in both cases we have polynomial dependence on the regularization parameter. While these results are suboptimal compared to known results in the case of compactness of both the source and target measures (squared L²-error converging at a rate O(n⁻¹⁾) and for when the source is subGaussian while the target is compactly supported (squared L²-error converging at a rate O(n⁻¹/2)), their importance lie in eliminating the compact support requirements. The proof technique makes use of a bias-variance decomposition where the variance is controlled using standard concentration of measure results and the bias is handled by T1-transport inequalities along with sample complexity results in estimation of EOT cost under subGaussian assumptions. Our experimental results point to a looseness in controlling the variance terms and we conclude by posing several open problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural approximation of Wasserstein distance via a universal architecture for symmetric and factorwise group invariant functions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2308-00273</link>
-    <guid isPermaLink="false">arxiv:2308.00273</guid>
-    <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Learning distance functions between complex objects, such as the Wasserstein distance to compare point sets, is a common goal in machine learning applications. However, functions on such complex objects (e.g., point sets and graphs) are often required to be invariant to a wide variety of group actions e.g. permutation or rigid transformation. Therefore, continuous and symmetric product functions (such as distance functions) on such complex objects must also be invariant to the product of such group actions. We call these functions symmetric and factor-wise group invariant (or SFGI functions in short). In this paper, we first present a general neural network architecture for approximating SFGI functions. The main contribution of this paper combines this general neural network with a sketching idea to develop a specific and efficient neural network which can approximate the p-th Wasserstein distance between point sets. Very importantly, the required model complexity is independent of the sizes of input point sets. On the theoretical front, to the best of our knowledge, this is the first result showing that there exists a neural network with the capacity to approximate Wasserstein distance with bounded model complexity. Our work provides an interesting integration of sketching ideas for geometric problems with universal approximation of symmetric functions. On the empirical front, we present a range of results showing that our newly proposed neural network architecture performs comparatively or better than other models (including a SOTA Siamese Autoencoder based approach). In particular, our neural network generalizes significantly better and trains much faster than the SOTA Siamese AE. Finally, this line of investigation could be useful in exploring effective neural network design for solving a broad range of geometric optimization problems (e.g., k-means in a metric space).</p>]]></description>
   </item>
 
 </channel>
