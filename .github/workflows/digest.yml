@@ -24,8 +24,8 @@ jobs:
   digest:
     runs-on: ubuntu-latest
     # The default is 6h; a stalled run should surface in minutes, not burn a
-    # whole runner-day. Comfortably above a normal run (under 30 min) and above
-    # the 45 min llm.batch_deadline_minutes plus a synchronous retry.
+    # whole runner-day. Comfortably above a normal run (under 30 min); the LLM
+    # step below has its own tighter budget so build + commit always get time.
     timeout-minutes: 120
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -52,7 +52,15 @@ jobs:
           fi
 
       - name: Digest, deep dives, watchlist, radar (Fridays), memory
+        id: llm
+        # Killed here (a step failure, not a job cancel) so the build + commit
+        # steps still run and keep whatever stages finished.
+        timeout-minutes: 100
         run: |
+          # Run-wide budget for Batches API waits: past this, pipeline/llm.py
+          # stops batching and calls synchronously, leaving ~20 min for the
+          # remaining stages to finish at full price inside the step timeout.
+          export LLM_RUN_DEADLINE=$(( $(date +%s) + 80 * 60 ))
           DATE_ARG=""
           if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
           python -m pipeline.digest $DATE_ARG
@@ -66,11 +74,15 @@ jobs:
           fi
           python -m pipeline.memory $DATE_ARG
 
+      # `!cancelled()` (not the default `success()`): if the LLM step failed or
+      # timed out partway, still publish and commit the stages that finished.
       - name: Build site
+        if: ${{ !cancelled() }}
         run: python -m pipeline.build_site
 
       - name: Commit results
         id: commit
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "The Cross Section bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -81,7 +93,9 @@ jobs:
           else
             DIGEST_DATE="${{ inputs.date }}"
             [ -n "$DIGEST_DATE" ] || DIGEST_DATE="$(date -u +%F)"
-            git commit -m "digest: $(date -u +%F)"
+            MSG="digest: $DIGEST_DATE"
+            [ "${{ steps.llm.outcome }}" = "success" ] || MSG="$MSG (partial: LLM step ${{ steps.llm.outcome }})"
+            git commit -m "$MSG"
             git pull --rebase origin main
             git push
             echo "committed=true" >> "$GITHUB_OUTPUT"
@@ -100,6 +114,7 @@ jobs:
       # failing the already-committed digest run. No digest on a no-paper day →
       # the module no-ops. Add SUBSTACK_COOKIES under Settings → Secrets → Actions.
       - name: Draft to Substack (review-only)
+        if: ${{ !cancelled() && steps.commit.outputs.committed == 'true' }}
         continue-on-error: true
         env:
           SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
@@ -117,7 +132,7 @@ jobs:
       # committed, and self-skips unless the SMTP secrets are set: MAIL_USERNAME
       # + MAIL_PASSWORD (a Gmail app password work well) and MAIL_TO (recipient).
       - name: Email a publish reminder
-        if: steps.commit.outputs.committed == 'true' && env.MAIL_USERNAME != ''
+        if: ${{ !cancelled() && steps.commit.outputs.committed == 'true' && env.MAIL_USERNAME != '' }}
         continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:
@@ -149,7 +164,7 @@ jobs:
       # quietly without a cookie; continue-on-error keeps a stale cookie from
       # failing the committed run.
       - name: Draft the Long View to Substack (Fridays)
-        if: steps.commit.outputs.friday == 'true'
+        if: ${{ !cancelled() && steps.commit.outputs.friday == 'true' }}
         continue-on-error: true
         env:
           SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
@@ -164,7 +179,7 @@ jobs:
       # Fridays only: nudge to publish the Long View over the weekend, when
       # there's no daily digest to post. Same SMTP self-skip as the digest one.
       - name: Email a Long View reminder (Fridays)
-        if: steps.commit.outputs.friday == 'true' && env.MAIL_USERNAME != ''
+        if: ${{ !cancelled() && steps.commit.outputs.friday == 'true' && env.MAIL_USERNAME != '' }}
         continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:

@@ -102,8 +102,11 @@ llm:
   batch: true
   # Batches normally land in 1-8 min, but the API's own cap is 24h — longer than
   # a CI job can live, so an unbounded wait turns one slow batch into a lost run
-  # (this happened 2026-09-02). Give up well short of the 6h GitHub limit.
-  batch_deadline_minutes: 45
+  # (this happened 2026-09-02). This caps each batch; CI also sets
+  # LLM_RUN_DEADLINE so the waits summed across stages can't outlast the job
+  # (2026-09-30 and 10-01 were lost to 45-min waits stacking past 120 min).
+  # The slowest batch that still landed was ~22 min (2026-09-29).
+  batch_deadline_minutes: 25
   # On timeout, re-run the jobs synchronously at full price rather than losing
   # the day's digest. Set false to fail loudly instead.
   batch_fallback_sync: true
@@ -138,7 +141,8 @@ deep_dive:
   count: 3
   # Token cap per paper after HTML → text stripping.
   max_tokens_per_paper: 25000
-  max_output_tokens: 4000
+  # 4000 truncated the deep dives on 2026-09-30 and 10-01.
+  max_output_tokens: 8000
   # Mirror every digest's "## Deep dives" section to its own page and RSS feed
   # (one item per paper), split out at build time — same knobs as a watchlist
   # topic below. Adds a "Deep dives" nav link. Remove `page` to turn it off.

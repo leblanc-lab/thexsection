@@ -9,6 +9,7 @@ Prompts are plain markdown in/out; nothing provider-specific leaks upstream.
 from __future__ import annotations
 
 import sys
+import time
 from dataclasses import dataclass
 
 from .common import load_config
@@ -85,8 +86,6 @@ class AnthropicBackend:
         into a lost run. On expiry the batch is cancelled (so we aren't billed
         for output nobody reads) and BatchTimeout is raised.
         """
-        import time
-
         from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
         from anthropic.types.messages.batch_create_params import Request
 
@@ -340,6 +339,12 @@ class LLM:
         # run still produces a digest) or fail the run outright.
         self.batch_deadline_seconds = llm_cfg.get("batch_deadline_minutes", 45) * 60
         self.batch_fallback_sync = llm_cfg.get("batch_fallback_sync", True)
+        # LLM_RUN_DEADLINE (unix seconds) bounds batch waiting across the whole
+        # run. Stages are separate sequential processes, so a per-batch cap
+        # alone lets several slow batches stack past the CI job limit (lost
+        # runs 2026-09-30 and 2026-10-01: 45 + 45 + ... > 120 min).
+        run_deadline = os.environ.get("LLM_RUN_DEADLINE")
+        self.run_deadline = float(run_deadline) if run_deadline else None
         pcfg = llm_cfg["providers"][self.provider]
         self.model = pcfg["model"]
         self.in_price = pcfg["input_price_per_mtok"]
@@ -383,11 +388,18 @@ class LLM:
 
         A batch that outruns its deadline degrades to synchronous calls rather
         than stalling the run: the digest is worth more than the 50% discount.
+        Once the run-wide budget (LLM_RUN_DEADLINE) is spent, batching is
+        skipped outright and calls go straight to synchronous.
         """
+        deadline = self.batch_deadline_seconds
+        if self.run_deadline is not None:
+            deadline = min(deadline, self.run_deadline - time.time())
         try:
-            raw = self.backend.complete_batch(
-                jobs, deadline_seconds=self.batch_deadline_seconds
-            )
+            if deadline < 60:
+                raise BatchTimeout(
+                    "run-wide batch budget (LLM_RUN_DEADLINE) spent; not submitting a batch"
+                )
+            raw = self.backend.complete_batch(jobs, deadline_seconds=deadline)
             mult = self.backend.batch_cost_multiplier
         except BatchTimeout as exc:
             if not self.batch_fallback_sync:
