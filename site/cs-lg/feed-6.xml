@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Reliable Pseudo-labeling via Optimal Transport with Attention for Short Text Clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-15194</link>
+    <guid isPermaLink="false">arxiv:2501.15194</guid>
+    <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhihao Yao</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Short text clustering has gained significant attention in the data mining community. However, the limited valuable information contained in short texts often leads to low-discriminative representations, increasing the difficulty of clustering. This paper proposes a novel short text clustering framework, called Reliable \textbf{P}seudo-labeling via \textbf{O}ptimal \textbf{T}ransport with \textbf{A}ttention for Short Text Clustering (\textbf{POTA}), that generate reliable pseudo-labels to aid discriminative representation learning for clustering. Specially, \textbf{POTA} first implements an instance-level attention mechanism to capture the semantic relationships among samples, which are then incorporated as a semantic consistency regularization term into an optimal transport problem. By solving this OT problem, we can yield reliable pseudo-labels that simultaneously account for sample-to-sample semantic consistency and sample-to-cluster global structure information. Additionally, the proposed OT can adaptively estimate cluster distributions, making \textbf{POTA} well-suited for varying degrees of imbalanced datasets. Then, we utilize the pseudo-labels to guide contrastive learning to generate discriminative representations and achieve efficient clustering. Extensive experiments demonstrate \textbf{POTA} outperforms state-of-the-art methods. The code is available at: \href{https://github.com/YZH0905/POTA-STC/tree/main}{https://github.com/YZH0905/POTA-STC/tree/main}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Light Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2303-07988</link>
+    <guid isPermaLink="false">arxiv:2303.07988</guid>
+    <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Milena Gazdieva et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>While the continuous Entropic Optimal Transport (EOT) field has been actively developing in recent years, it became evident that the classic EOT problem is prone to different issues like the sensitivity to outliers and imbalance of classes in the source and target measures. This fact inspired the development of solvers that deal with the unbalanced EOT (UEOT) problem - the generalization of EOT allowing for mitigating the mentioned issues by relaxing the marginal constraints. Surprisingly, it turns out that the existing solvers are either based on heuristic principles or heavy-weighted with complex optimization objectives involving several neural networks. We address this challenge and propose a novel theoretically-justified, lightweight, unbalanced EOT solver. Our advancement consists of developing a novel view on the optimization of the UEOT problem yielding tractable and a non-minimax optimization objective. We show that combined with a light parametrization recently proposed in the field our objective leads to a fast, simple, and effective solver which allows solving the continuous UEOT problem in minutes on CPU. We prove that our solver provides a universal approximation of UEOT solutions and obtain its generalization bounds. We give illustrative examples of the solver&rsquo;s performance. The code is publicly available at https://github.com/milenagazdieva/LightUnbalancedOptimalTransport.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Slicing Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2306-07176</link>
+    <guid isPermaLink="false">arxiv:2306.07176</guid>
+    <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is a powerful framework to compare probability measures, a fundamental task in many statistical and machine learning problems. Substantial advances have been made in designing OT variants which are either computationally and statistically more efficient or robust. Among them, sliced OT distances have been extensively used to mitigate optimal transport&rsquo;s cubic algorithmic complexity and curse of dimensionality. In parallel, unbalanced OT was designed to allow comparisons of more general positive measures, while being more robust to outliers. In this paper, we bridge the gap between those two concepts and develop a general framework for efficiently comparing positive measures. We notably formulate two different versions of sliced unbalanced OT, and study the associated topology and statistical properties. We then develop a GPU-friendly Frank-Wolfe like algorithm to compute the corresponding loss functions, and show that the resulting methodology is modular as it encompasses and extends prior related work. We finally conduct an empirical analysis of our loss functions and methodology on both synthetic and real datasets, to illustrate their computational efficiency, relevance and applicability to real-world scenarios including geophysical data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Marginal Fairness Sliced Wasserstein Barycenter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-07482</link>
+    <guid isPermaLink="false">arxiv:2405.07482</guid>
+    <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The sliced Wasserstein barycenter (SWB) is a widely acknowledged method for efficiently generalizing the averaging operation within probability measure spaces. However, achieving marginal fairness SWB, ensuring approximately equal distances from the barycenter to marginals, remains unexplored. The uniform weighted SWB is not necessarily the optimal choice to obtain the desired marginal fairness barycenter due to the heterogeneous structure of marginals and the non-optimality of the optimization. As the first attempt to tackle the problem, we define the marginal fairness sliced Wasserstein barycenter (MFSWB) as a constrained SWB problem. Due to the computational disadvantages of the formal definition, we propose two hyperparameter-free and computationally tractable surrogate MFSWB problems that implicitly minimize the distances to marginals and encourage marginal fairness at the same time. To further improve the efficiency, we perform slicing distribution selection and obtain the third surrogate definition by introducing a new slicing distribution that focuses more on marginally unfair projecting directions. We discuss the relationship of the three proposed problems and their relationship to sliced multi-marginal Wasserstein distance. Finally, we conduct experiments on finding 3D point-clouds averaging, color harmonization, and training of sliced Wasserstein autoencoder with class-fairness representation to show the favorable performance of the proposed surrogate MFSWB problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Private Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2404-06787</link>
+    <guid isPermaLink="false">arxiv:2404.06787</guid>
+    <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenqian Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distance is a key metric for quantifying data divergence from a distributional perspective. However, its application in privacy-sensitive environments, where direct sharing of raw data is prohibited, presents significant challenges. Existing approaches, such as Differential Privacy and Federated Optimization, have been employed to estimate the Wasserstein distance under such constraints. However, these methods often fall short when both accuracy and security are required. In this study, we explore the inherent triangular properties within the Wasserstein space, leading to a novel solution named TriangleWad. This approach facilitates the fast computation of the Wasserstein distance between datasets stored across different entities, ensuring that raw data remain completely hidden. TriangleWad not only strengthens resistance to potential attacks but also preserves high estimation accuracy. Through extensive experiments across various tasks involving both image and text data, we demonstrate its superior performance and significant potential for real-world applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Submodular Framework for Structured-Sparse Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-04914</link>
+    <guid isPermaLink="false">arxiv:2406.04914</guid>
+    <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyushi Manupriya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Unbalanced optimal transport (UOT) has recently gained much attention due to its flexible framework for handling un-normalized measures and its robustness properties. In this work, we explore learning (structured) sparse transport plans in the UOT setting, i.e., transport plans have an upper bound on the number of non-sparse entries in each column (structured sparse pattern) or in the whole plan (general sparse pattern). We propose novel sparsity-constrained UOT formulations building on the recently explored maximum mean discrepancy based UOT. We show that the proposed optimization problem is equivalent to the maximization of a weakly submodular function over a uniform matroid or a partition matroid. We develop efficient gradient-based discrete greedy algorithms and provide the corresponding theoretical guarantees. Empirically, we observe that our proposed greedy algorithms select a diverse support set and we illustrate the efficacy of the proposed approach in various applications.</p>]]></description>
+  </item>
 
   <item>
     <title>OT-Transformer: A Continuous-time Transformer Architecture with Optimal Transport Regularization</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex G. Zalles et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We study the problem of network regression, where one is interested in how the topology of a network changes as a function of Euclidean covariates. We build upon recent developments in generalized regression models on metric spaces based on Fréchet means and propose a network regression method using the Wasserstein metric. We show that when representing graphs as multivariate Gaussian distributions, the network regression problem requires the computation of a Riemannian center of mass (i.e., Fréchet means). Fréchet means with non-negative weights translates into a barycenter problem and can be efficiently computed using fixed point iterations. Although the convergence guarantees of fixed-point iterations for the computation of Wasserstein affine averages remain an open problem, we provide evidence of convergence in a large number of synthetic and real-data scenarios. Extensive numerical results show that the proposed approach improves existing procedures by accurately accounting for graph size, topology, and sparsity in synthetic experiments. Additionally, real-world experiments using the proposed approach result in higher Coefficient of Determination (R²) values and lower mean squared prediction error (MSPE), cementing improved prediction capabilities in practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>COT Flow: Learning Optimal-Transport Image Sampling and Editing by Contrastive Pairs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-12140</link>
-    <guid isPermaLink="false">arxiv:2406.12140</guid>
-    <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinrui Zu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal-transport) — original abstract; no AI summary.</em></p>
-<p>Diffusion models have demonstrated strong performance in sampling and editing multi-modal data with high generation quality, yet they suffer from the iterative generation process which is computationally expensive and slow. In addition, most methods are constrained to generate data from Gaussian noise, which limits their sampling and editing flexibility. To overcome both disadvantages, we present Contrastive Optimal Transport Flow (COT Flow), a new method that achieves fast and high-quality generation with improved zero-shot editing flexibility compared to previous diffusion models. Benefiting from optimal transport (OT), our method has no limitation on the prior distribution, enabling unpaired image-to-image (I2I) translation and doubling the editable space (at both the start and end of the trajectory) compared to other zero-shot editing methods. In terms of quality, COT Flow can generate competitive results in merely one step compared to previous state-of-the-art unpaired image-to-image (I2I) translation methods. To highlight the advantages of COT Flow through the introduction of OT, we introduce the COT Editor to perform user-guided editing with excellent flexibility and quality. The code will be released at https://github.com/zuxinrui/cot_flow.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On a Novel Application of Wasserstein-Procrustes for Unsupervised Cross-Lingual Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2007-09456</link>
-    <guid isPermaLink="false">arxiv:2007.09456</guid>
-    <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillem Ramírez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The emergence of unsupervised word embeddings, pre-trained on very large monolingual text corpora, is at the core of the ongoing neural revolution in Natural Language Processing (NLP). Initially introduced for English, such pre-trained word embeddings quickly emerged for a number of other languages. Subsequently, there have been a number of attempts to align the embedding spaces across languages, which could enable a number of cross-language NLP applications. Performing the alignment using unsupervised cross-lingual learning (UCL) is especially attractive as it requires little data and often rivals supervised and semi-supervised approaches. Here, we analyze popular methods for UCL and we find that often their objectives are, intrinsically, versions of the Wasserstein-Procrustes problem. Hence, we devise an approach to solve Wasserstein-Procrustes in a direct way, which can be used to refine and to improve popular UCL methods such as iterative closest point (ICP), multilingual unsupervised and supervised embeddings (MUSE) and supervised Procrustes methods. Our evaluation experiments on standard datasets show sizable improvements over these approaches. We believe that our rethinking of the Wasserstein-Procrustes problem could enable further research, thus helping to develop better algorithms for aligning word embeddings across languages. Our code and instructions to reproduce the experiments are available at https://github.com/guillemram97/wp-hungarian.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AstroCLIP: A Cross-Modal Foundation Model for Galaxies</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-03024</link>
-    <guid isPermaLink="false">arxiv:2310.03024</guid>
-    <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liam Parker et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>We present AstroCLIP, a single, versatile model that can embed both galaxy images and spectra into a shared, physically meaningful latent space. These embeddings can then be used - without any model fine-tuning - for a variety of downstream tasks including (1) accurate in-modality and cross-modality semantic similarity search, (2) photometric redshift estimation, (3) galaxy property estimation from both images and spectra, and (4) morphology classification. Our approach to implementing AstroCLIP consists of two parts. First, we embed galaxy images and spectra separately by pretraining separate transformer-based image and spectrum encoders in self-supervised settings. We then align the encoders using a contrastive loss. We apply our method to spectra from the Dark Energy Spectroscopic Instrument and images from its corresponding Legacy Imaging Survey. Overall, we find remarkable performance on all downstream tasks, even relative to supervised baselines. For example, for a task like photometric redshift prediction, we find similar performance to a specifically-trained ResNet18, and for additional tasks like physical property estimation (stellar mass, age, metallicity, and sSFR), we beat this supervised baseline by 19\% in terms of R². We also compare our results to a state-of-the-art self-supervised single-modal model for galaxy images, and find that our approach outperforms this benchmark by roughly a factor of two on photometric redshift estimation and physical property prediction in terms of R², while remaining roughly in-line in terms of morphology classification. Ultimately, our approach represents the first cross-modal self-supervised model for galaxies, and the first self-supervised transformer-based architectures for galaxy images and spectra.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PCN: A Deep Learning Approach to Jet Tagging Utilizing Novel Graph Construction Methods and Chebyshev Graph Convolutions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2309-08630</link>
-    <guid isPermaLink="false">arxiv:2309.08630</guid>
-    <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yash Semlani et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
-<p>Jet tagging is a classification problem in high-energy physics experiments that aims to identify the collimated sprays of subatomic particles, jets, from particle collisions and tag them to their emitter particle. Advances in jet tagging present opportunities for searches of new physics beyond the Standard Model. Current approaches use deep learning to uncover hidden patterns in complex collision data. However, the representation of jets as inputs to a deep learning model have been varied, and often, informative features are withheld from models. In this study, we propose a graph-based representation of a jet that encodes the most information possible. To learn best from this representation, we design Particle Chebyshev Network (PCN), a graph neural network (GNN) using Chebyshev graph convolutions (ChebConv). ChebConv has been demonstrated as an effective alternative to classical graph convolutions in GNNs and has yet to be explored in jet tagging. PCN achieves a substantial improvement in accuracy over existing taggers and opens the door to future studies into graph-based representations of jets and ChebConv layers in high-energy physics experiments. Code is available at https://github.com/YVSemlani/PCN-Jet-Tagging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Forward-Euler time-discretization for Wasserstein gradient flows can be wrong</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-08209</link>
-    <guid isPermaLink="false">arxiv:2406.08209</guid>
-    <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yewei Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this note, we examine the forward-Euler discretization for simulating Wasserstein gradient flows. We provide two counter-examples showcasing the failure of this discretization even for a simple case where the energy functional is defined as the KL divergence against some nicely structured probability densities. A simple explanation of this failure is also discussed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PAL: Pluralistic Alignment Framework for Learning from Heterogeneous Preferences</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-08469</link>
-    <guid isPermaLink="false">arxiv:2406.08469</guid>
-    <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daiwei Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Large foundation models pretrained on raw web-scale data are not readily deployable without additional step of extensive alignment to human preferences. Such alignment is typically done by collecting large amounts of pairwise comparisons from humans (&ldquo;Do you prefer output A or B?&rdquo;) and learning a reward model or a policy with the Bradley-Terry-Luce (BTL) model as a proxy for a human&rsquo;s underlying implicit preferences. These methods generally suffer from assuming a universal preference shared by all humans, which lacks the flexibility of adapting to plurality of opinions and preferences. In this work, we propose PAL, a framework to model human preference complementary to existing pretraining strategies, which incorporates plurality from the ground up. We propose using the ideal point model as a lens to view alignment using preference comparisons. Together with our novel reformulation and using mixture modeling, our framework captures the plurality of population preferences while simultaneously learning a common preference latent space across different preferences, which can few-shot generalize to new, unseen users. Our approach enables us to use the penultimate-layer representation of large foundation models and simple MLP layers to learn reward functions that are on-par with the existing large state-of-the-art reward models, thereby enhancing efficiency of reward modeling significantly. We show that PAL achieves competitive reward model accuracy compared to strong baselines on 1) Language models with Summary dataset ; 2) Image Generative models with Pick-a-Pic dataset ; 3) A new semisynthetic heterogeneous dataset generated using Anthropic Personas. Finally, our experiments also highlight the shortcoming of current preference datasets that are created using rigid rubrics which wash away heterogeneity, and call for more nuanced data collection approaches.</p>]]></description>
   </item>
 
 </channel>

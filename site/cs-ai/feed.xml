@@ -7,7 +7,37 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport Reweighting for Robust Learning under Spurious Correlations and Label Noise</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-01028</link>
+    <guid isPermaLink="false">arxiv:2610.01028</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sung Ho Jo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Machine learning models often suffer performance degradation under subpopulation shift, particularly when spurious correlations cause models to rely on shortcut features that fail to generalize across subgroups. A recent line of work mitigates this issue by using loss-based signals to identify informative samples, but these signals can become severely distorted under label noise: mislabeled samples may also incur large losses and contaminate subsequent reweighting or retraining. Despite its practical importance, this intersection remains largely underexplored. We propose POTER, a reweighting framework based on optimal transport that derives sample importance from the transport geometry between the training distribution and a reference distribution constructed from limited validation group annotations. By measuring alignment at the individual-sample level rather than relying on loss, POTER downweights mislabeled or strongly bias-aligned samples while assigning higher importance to samples better aligned with the reference distribution. In addition, POTER requires only a single ERM training stage, moving beyond the retraining paradigm common in recent work. Across standard benchmarks and noisy-label settings, POTER achieves state-of-the-art worst-group accuracy, including cases where label corruption is concentrated within minority subgroups.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discrete Wasserstein Flows for One-Step Generative Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-01355</link>
+    <guid isPermaLink="false">arxiv:2610.01355</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro Micheli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce a new framework for one-step generative modelling on finite state spaces. To extend drifting beyond continuous domains, we use discrete Wasserstein geometry to define a target-relative KL gradient flow over the transitions of a reversible Markov kernel. We realize this probability flow at the particle level through Markov jumps and amortize the resulting transport updates into a latent-conditioned generator, so that the iterative dynamics are required only during training while inference remains one-step. In a controlled setting where the underlying distributions and transport dynamics can be computed exactly, we verify KL dissipation, consistency between the particle dynamics and the probability flow, and the predicted numerical scaling. We further show that a finite-capacity neural generator can track these exact transport targets while retaining one-step generation. These results validate the basic construction and provide a foundation for scaling Discrete Drifting to structured discrete data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Meets Reinforcement Learning: A Survey</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-01413</link>
+    <guid isPermaLink="false">arxiv:2610.01413</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujie Zhu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Reinforcement learning (RL) algorithms frequently compare probability distributions, such as state visitation distributions induced by policies and experts, action distributions from learned policies and offline datasets, or transition distributions from learned models and environments. However, commonly used divergences may become ineffective when these distributions overlap weakly, which is frequently encountered in imitation learning, offline RL, and deployment under distribution shift. Optimal transport (OT) offers an alternative by measuring the cost of \emph{moving} probability mass from one distribution to another under a ground cost that encodes task geometry. This survey covers how OT is used inside RL objectives and algorithms. For each method, we identify: the role OT plays, the distributions compared, the OT formulation used, and the treatment of temporal structure. Beyond categorising existing methods, we discuss the motivations behind different OT choices, practical considerations such as cost design and computational challenges, and highlight open problems including scalable trajectory-level transport, principled handling of mass mismatch, and theoretical analysis for OT-regularised RL.</p>]]></description>
+  </item>
 
   <item>
     <title>Searching for BSM Experimental Signatures with Large Lagrangian Models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keyue Jiang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Graph generation has emerged as a critical task in fields ranging from drug discovery to circuit design. Contemporary approaches, notably diffusion and flow-based models, have achieved solid graph generative performance through constructing a probability path that interpolates between reference and data distributions. However, these methods typically model the evolution of individual nodes and edges independently and use linear interpolations in the disjoint space of nodes/edges to build the path. This disentangled interpolation breaks the interconnected patterns of graphs, making the constructed probability path irregular and non-smooth, which causes poor training dynamics and faulty sampling convergence. To address the limitation, this paper first presents a theoretically grounded framework for probability path construction in graph generative models. Specifically, we model the joint evolution of the nodes and edges by representing graphs as connected systems parameterized by Markov random fields (MRF). We then leverage the optimal transport displacement between MRF objects to design a smooth probability path that ensures the co-evolution of graph components. Based on this, we introduce BWFlow, a flow-matching framework for graph generation that utilizes the derived optimal probability path to benefit the training and sampling algorithm design. Experimental evaluations in plain graph generation and molecule generation validate the effectiveness of BWFlow with competitive performance, better training convergence, and efficient sampling.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DMD-augmented Unpaired Neural Schrödinger Bridge for Ultra-Low Field MRI Enhancement</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-03769</link>
-    <guid isPermaLink="false">arxiv:2603.03769</guid>
-    <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Youngmin Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Ultra Low Field (64 mT) brain MRI improves accessibility but suffers from reduced image quality compared to 3 T. As paired 64 mT - 3 T scans are scarce, we propose an unpaired 64 mT → 3 T translation framework that enhances realism while preserving anatomy. Our method builds upon the Unpaired Neural Schrödinge Bridge (UNSB) with multi-step refinement. To strengthen target distribution alignment, we augment the adversarial objective with DMD2-style diffusion-guided distribution matching using a frozen 3T diffusion teacher. To explicitly constrain global structure beyond patch-level correspondence, we combine PatchNCE with an Anatomical Structure Preservation (ASP) regularizer that enforces soft foreground background consistency and boundary aware constraints. Evaluated on two disjoint cohorts, the proposed framework achieves an improved realism structure trade-off, enhancing distribution level realism on unpaired benchmarks while increasing structural fidelity on the paired cohort compared to unpaired baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>End-to-end event reconstruction for precision physics at future colliders</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-04084</link>
-    <guid isPermaLink="false">arxiv:2603.04084</guid>
-    <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dolores Garcia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle flow, collider, colliders) — original abstract; no AI summary.</em></p>
-<p>Future collider experiments require unprecedented precision in measurements of Higgs, electroweak, and flavour observables, placing stringent demands on event reconstruction. The achievable precision on Higgs couplings scales directly with the resolution on visible final state particles and their invariant masses. Current particle flow algorithms rely on detector specific clustering, limiting flexibility during detector design. Here we present an end-to-end global event reconstruction approach that maps charged particle tracks and calorimeter and muon hits directly to particle level objects. The method combines geometric algebra transformer networks with object condensation based clustering, followed by dedicated networks for particle identification and energy regression. Our approach is benchmarked on fully simulated electron positron collisions at FCC-ee using the CLD detector concept. It outperforms the state-of-the-art rule-based algorithm by 10&ndash;20\% in relative reconstruction efficiency, achieves up to two orders of magnitude reduction in fake-particle rates for charged hadrons, and improves visible energy and invariant mass resolution by 22\%. By decoupling reconstruction performance from detector-specific tuning, this framework enables rapid iteration during the detector design phase of future collider experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Refusal Ablation in LLM through Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-04355</link>
-    <guid isPermaLink="false">arxiv:2603.04355</guid>
-    <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Geraldin Nanfack et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Safety-aligned language models refuse harmful requests through learned refusal behaviors encoded in their internal representations. Recent activation-based jailbreaking methods circumvent these safety mechanisms by applying orthogonal projections to remove refusal directions, but these approaches treat refusal as a one-dimensional phenomenon and ignore the rich distributional structure of model activations. We introduce a principled framework based on optimal transport theory that transforms the entire distribution of harmful activations to match harmless ones. By combining PCA with closed-form Gaussian optimal transport, we achieve efficient computation in high-dimensional representation spaces while preserving essential geometric structure. Across six models (Llama-2, Llama-3.1, Qwen-2.5; 7B-32B parameters), our method achieves up to 11% higher attack success rates than state-of-the-art baselines while maintaining comparable perplexity, demonstrating superior preservation of model capabilities. Critically, we discover that layer-selective intervention (applying optimal transport to 1-2 carefully chosen layers at approximately 40-60% network depth) substantially outperforms full-network interventions, revealing that refusal mechanisms may be localized rather than distributed. Our analysis provides new insights into the geometric structure of safety representations and suggests that current alignment methods may be vulnerable to distributional attacks beyond simple direction removal.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Latent Schrodinger Bridge: Prompting Latent Diffusion for Fast Unpaired Image-to-Image Translation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-14863</link>
+    <guid isPermaLink="false">arxiv:2411.14863</guid>
+    <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeongsol Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
+<p>Diffusion models (DMs), which enable both image generation from noise and inversion from data, have inspired powerful unpaired image-to-image (I2I) translation algorithms. However, they often require a larger number of neural function evaluations (NFEs), limiting their practical applicability. In this paper, we tackle this problem with Schrodinger Bridges (SBs), which are stochastic differential equations (SDEs) between distributions with minimal transport cost. We analyze the probability flow ordinary differential equation (ODE) formulation of SBs, and observe that we can decompose its vector field into a linear combination of source predictor, target predictor, and noise predictor. Inspired by this observation, we propose Latent Schrodinger Bridges (LSBs) that approximate the SB ODE via pre-trained Stable Diffusion, and develop appropriate prompt optimization and change of variables formula to match the training and inference between distributions. We demonstrate that our algorithm successfully conduct competitive I2I translation in unsupervised setting with only a fraction of computation cost required by previous DM-based I2I methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fine-Tuning a Time Series Foundation Model with Wasserstein Loss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2409-15367</link>
+    <guid isPermaLink="false">arxiv:2409.15367</guid>
+    <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrei Chernov</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Inspired by recent advancements in large language models (LLMs) for Natural Language Processing (NLP), there has been a surge in research focused on developing foundational models for time series forecasting. One approach involves training LLM architectures on tokenized time series data using cross-entropy loss. Although this method has demonstrated promising results, cross-entropy loss is primarily designed for classification tasks and does not account for the distance between classes. To address this limitation, we propose using the Wasserstein loss for such architectures. To validate our approach, we fine-tuned a foundational time series model on 22 zero-shot datasets, comparing the performance of cross-entropy loss with that of Wasserstein loss. Our results demonstrate that replacing cross-entropy loss with Wasserstein loss significantly improves point estimation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variable Rate Neural Compression for Sparse Detector Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2411-11942</link>
+    <guid isPermaLink="false">arxiv:2411.11942</guid>
+    <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>High-energy large-scale particle colliders generate data at extraordinary rates. Developing real-time high-throughput data compression algorithms to reduce data volume and meet the bandwidth requirement for storage has become increasingly critical. Deep learning is a promising technology that can address this challenging topic. At the newly constructed sPHENIX experiment at the Relativistic Heavy Ion Collider, a Time Projection Chamber (TPC) serves as the main tracking detector, which records three-dimensional particle trajectories in a volume of a gas-filled cylinder. In terms of occupancy, the resulting data flow can be very sparse reaching 10⁻³ for proton-proton collisions. Such sparsity presents a challenge to conventional learning-free lossy compression algorithms, such as SZ, ZFP, and MGARD. In contrast, emerging deep learning-based models, particularly those utilizing convolutional neural networks for compression, have outperformed these conventional methods in terms of compression ratios and reconstruction accuracy. However, research on the efficacy of these deep learning models in handling sparse datasets, like those produced in particle colliders, remains limited. Furthermore, most deep learning models do not adapt their processing speeds to data sparsity, which affects efficiency. To address this issue, we propose a novel approach for TPC data compression via key-point identification facilitated by sparse convolution. Our proposed algorithm, BCAE-VS, achieves a 75% improvement in reconstruction accuracy with a 10% increase in compression ratio over the previous state-of-the-art model. Additionally, BCAE-VS manages to achieve these results with a model size over two orders of magnitude smaller. Lastly, we have experimentally verified that as sparsity increases, so does the model&rsquo;s throughput.</p>]]></description>
+  </item>
 
   <item>
     <title>Understanding Learning with Sliced-Wasserstein Requires Rethinking Informative Slices</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingqi Yuan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Maintaining the long-term exploration capability of the agent remains one of the critical challenges in deep reinforcement learning. A representative solution is to leverage reward shaping to provide intrinsic rewards for the agent to encourage exploration. However, most existing methods suffer from vanishing intrinsic rewards, which cannot provide sustainable exploration incentives. Moreover, they rely heavily on complex models and additional memory to record learning procedures, resulting in high computational complexity and low robustness. To tackle this problem, entropy-based methods are proposed to evaluate the global exploration performance, encouraging the agent to visit the state space more equitably. However, the sample complexity of estimating the state visitation entropy is prohibitive when handling environments with high-dimensional observations. In this paper, we introduce a novel metric entitled Jain&rsquo;s fairness index (JFI) to replace the entropy regularizer, which solves the exploration problem from a brand new perspective. In sharp contrast to the entropy regularizer, JFI is more computable and robust and can be easily applied generalized into arbitrary tasks. Furthermore, we leverage a variational auto-encoder (VAE) model to capture the life-long novelty of states, which is combined with the global JFI score to form multimodal intrinsic rewards. Finally, extensive simulation results demonstrate that our multimodal reward shaping (MMRS) method can achieve higher performance than other benchmark schemes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Automatic Text Evaluation through the Lens of Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2108-12463</link>
-    <guid isPermaLink="false">arxiv:2108.12463</guid>
-    <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Colombo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>A new metric \texttt{BaryScore} to evaluate text generation based on deep contextualized embeddings e.g., BERT, Roberta, ELMo) is introduced. This metric is motivated by a new framework relying on optimal transport tools, i.e., Wasserstein distance and barycenter. By modelling the layer output of deep contextualized embeddings as a probability distribution rather than by a vector embedding; this framework provides a natural way to aggregate the different outputs through the Wasserstein space topology. In addition, it provides theoretical grounds to our metric and offers an alternative to available solutions e.g., MoverScore and BertScore). Numerical evaluation is performed on four different tasks: machine translation, summarization, data2text generation and image captioning. Our results show that \texttt{BaryScore} outperforms other BERT based metrics and exhibits more consistent behaviour in particular for text summarization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Social influence leads to the formation of diverse local trends</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2108-07437</link>
-    <guid isPermaLink="false">arxiv:2108.07437</guid>
-    <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziv Epstein et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>How does the visual design of digital platforms impact user behavior and the resulting environment? A body of work suggests that introducing social signals to content can increase both the inequality and unpredictability of its success, but has only been shown in the context of music listening. To further examine the effect of social influence on media popularity, we extend this research to the context of algorithmically-generated images by re-adapting Salganik et al&rsquo;s Music Lab experiment. On a digital platform where participants discover and curate AI-generated hybrid animals, we randomly assign both the knowledge of other participants&rsquo; behavior and the visual presentation of the information. We successfully replicate the Music Lab&rsquo;s findings in the context of images, whereby social influence leads to an unpredictable winner-take-all market. However, we also find that social influence can lead to the emergence of local cultural trends that diverge from the status quo and are ultimately more diverse. We discuss the implications of these results for platform designers and animal conservation efforts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Packet Routing with Graph Attention Multi-agent Reinforcement Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2107-13181</link>
-    <guid isPermaLink="false">arxiv:2107.13181</guid>
-    <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Mai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Packet routing is a fundamental problem in communication networks that decides how the packets are directed from their source nodes to their destination nodes through some intermediate nodes. With the increasing complexity of network topology and highly dynamic traffic demand, conventional model-based and rule-based routing schemes show significant limitations, due to the simplified and unrealistic model assumptions, and lack of flexibility and adaption. Adding intelligence to the network control is becoming a trend and the key to achieving high-efficiency network operation. In this paper, we develop a model-free and data-driven routing strategy by leveraging reinforcement learning (RL), where routers interact with the network and learn from the experience to make some good routing configurations for the future. Considering the graph nature of the network topology, we design a multi-agent RL framework in combination with Graph Neural Network (GNN), tailored to the routing problem. Three deployment paradigms, centralized, federated, and cooperated learning, are explored respectively. Simulation results demonstrate that our algorithm outperforms some existing benchmark algorithms in terms of packet transmission delay and affordable load.</p>]]></description>
   </item>
 
 </channel>

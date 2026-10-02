@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Scaling Collider Event Generation with Residual-Quantized Tokens</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-00569</link>
+    <guid isPermaLink="false">arxiv:2610.00569</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dan Godi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Full detector simulation and reconstruction of collider events are projected to become major bottlenecks at the High-Luminosity Large Hadron Collider, motivating the development of fast, ML-based surrogates. At the same time, LLMs have driven fast progress in generative discrete modeling: autoregressive transformers trained on tokenized data now represent the state of the art across a range of generative tasks. We extend the discrete modeling paradigm by introducing a particle-level generative model trained on residual-quantized full-event data. We demonstrate the ability of this model family to perform conditional generation from detector-stable particles; we study its scaling behavior across a range of dataset and model sizes, characterize the effects of repeated data exposure and demonstrate that token-level loss systematically predicts downstream physical fidelity. These results provide an empirical framework for scalable collider full-event generation based on residual-quantized representations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Reweighting for Robust Learning under Spurious Correlations and Label Noise</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-01028</link>
+    <guid isPermaLink="false">arxiv:2610.01028</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sung Ho Jo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Machine learning models often suffer performance degradation under subpopulation shift, particularly when spurious correlations cause models to rely on shortcut features that fail to generalize across subgroups. A recent line of work mitigates this issue by using loss-based signals to identify informative samples, but these signals can become severely distorted under label noise: mislabeled samples may also incur large losses and contaminate subsequent reweighting or retraining. Despite its practical importance, this intersection remains largely underexplored. We propose POTER, a reweighting framework based on optimal transport that derives sample importance from the transport geometry between the training distribution and a reference distribution constructed from limited validation group annotations. By measuring alignment at the individual-sample level rather than relying on loss, POTER downweights mislabeled or strongly bias-aligned samples while assigning higher importance to samples better aligned with the reference distribution. In addition, POTER requires only a single ERM training stage, moving beyond the retraining paradigm common in recent work. Across standard benchmarks and noisy-label settings, POTER achieves state-of-the-art worst-group accuracy, including cases where label corruption is concentrated within minority subgroups.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low-Budget Active Learning through Entropic Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-01199</link>
+    <guid isPermaLink="false">arxiv:2610.01199</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rim Hajal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We consider low-budget active learning, which consists of selecting a limited number of points, the coreset, such that a model can be trained to high accuracy on the selection only. This problem is particularly relevant in contexts where labeling requires costly expert intervention, as in medical applications. We leverage features extracted from a pretrained self-supervised model to represent the data, and perform coreset selection directly in this feature space. In this paper, we use entropic optimal transport, specifically the Sinkhorn divergence, as the coreset selection criterion, which first allows us to get dimension-free sample complexity results, and second admits computationally efficient gradient evaluations. This opens the way to using gradient-based algorithms to rapidly compute solution candidates, further improved by a swap-based local search, with guarantees on the solution quality. Experiments on image benchmarks and medical datasets show that our method outperforms state-of-the-art heuristics in low-budget settings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discrete Wasserstein Flows for One-Step Generative Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-01355</link>
+    <guid isPermaLink="false">arxiv:2610.01355</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro Micheli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce a new framework for one-step generative modelling on finite state spaces. To extend drifting beyond continuous domains, we use discrete Wasserstein geometry to define a target-relative KL gradient flow over the transitions of a reversible Markov kernel. We realize this probability flow at the particle level through Markov jumps and amortize the resulting transport updates into a latent-conditioned generator, so that the iterative dynamics are required only during training while inference remains one-step. In a controlled setting where the underlying distributions and transport dynamics can be computed exactly, we verify KL dissipation, consistency between the particle dynamics and the probability flow, and the predicted numerical scaling. We further show that a finite-capacity neural generator can track these exact transport targets while retaining one-step generation. These results validate the basic construction and provide a foundation for scaling Discrete Drifting to structured discrete data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Meets Reinforcement Learning: A Survey</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-01413</link>
+    <guid isPermaLink="false">arxiv:2610.01413</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujie Zhu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Reinforcement learning (RL) algorithms frequently compare probability distributions, such as state visitation distributions induced by policies and experts, action distributions from learned policies and offline datasets, or transition distributions from learned models and environments. However, commonly used divergences may become ineffective when these distributions overlap weakly, which is frequently encountered in imitation learning, offline RL, and deployment under distribution shift. Optimal transport (OT) offers an alternative by measuring the cost of \emph{moving} probability mass from one distribution to another under a ground cost that encodes task geometry. This survey covers how OT is used inside RL objectives and algorithms. For each method, we identify: the role OT plays, the distributions compared, the OT formulation used, and the treatment of temporal structure. Beyond categorising existing methods, we discuss the motivations behind different OT choices, practical considerations such as cost design and computational challenges, and highlight open problems including scalable trajectory-level transport, principled handling of mass mismatch, and theoretical analysis for OT-regularised RL.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-02081</link>
+    <guid isPermaLink="false">arxiv:2610.02081</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel McBride et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>There has been a proliferation of sampling algorithms based on Wasserstein gradient flows (WGF) and forward-only diffusion processes (FODP), often accompanied by theoretical guarantees of exponentially fast convergence to the target distribution. These guarantees are frequently interpreted as evidence that such methods can efficiently sample complex multimodal distributions, often supported by empirical results. In this work, we argue that this interpretation is fundamentally misleading. By invoking the Jordan-Kinderlehrer-Otto (JKO) scheme and Otto calculus, we establish that the canonical WGF sampling dynamics and overdamped forward diffusion share the same density evolution and therefore inherit the same metastability and slow-mixing phenomena long understood in nonequilibrium statistical physics. We analyze this family of samplers using two complementary tools &ndash; spectral analysis and mean first-passage time (MFPT) analysis &ndash; and show that well-separated multimodality can induce exponentially long mixing times associated with small spectral gaps and rare inter-mode transitions. For the commonly adopted log-linear annealing schedule studied here, we find that introducing intermediate distributions does not remove the exponential scaling of the total transport time. The limitation is structural rather than implementation-specific: purely local, gradient-driven transport mechanisms can require exponentially long times to transport probability mass across well-separated modes. We argue that this represents a fundamental limitation of WGF- and FODP-based sampling in their standard forms, and motivates future development of fundamentally nonlocal mechanisms for efficient multimodal sampling.</p>]]></description>
+  </item>
 
   <item>
     <title>Which Models Work Well Together? Measuring Heterogeneity for LLM Team Selection</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhihao Yao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Pseudo-labeling based on Optimal Transport (OT) has become an effective mechanism for enhancing short text clustering. Existing OT methods are short in modeling semantic consistencies between samples, which may assign different pseudo-labels to semantically similar samples. These erroneous pseudo-labels can cause the model to produce inferior clusters. This paper proposes a novel short text clustering framework, which remedies the neglect of semantic consistency in existing OT methods, generating reliable pseudo-labels to facilitate clustering. Specifically, the proposed approach first designs an instance-level attention mechanism to capture semantic relationships between samples, which are then integrated into the OT formulation to endow the transport process with neighborhood semantic awareness. By solving the proposed OT formulation, reliable pseudo-labels are obtained that simultaneously account for sample-to-sample semantic consistency and sample-to-cluster global structure information. These pseudo-labels are then used as supervisory signals to guide the model to achieve accurate clustering. Extensive experiments demonstrate that the proposed approach outperforms state-of-the-art methods. The code is available at: \href{https://github.com/YZH0905/CAOT-STC}{https://github.com/YZH0905/CAOT-STC}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-Scale Convolution with Optimal Transport Attention Effect on Multivariate Time Series</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-10740</link>
-    <guid isPermaLink="false">arxiv:2607.10740</guid>
-    <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">HaoChong Fu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The analysis of Multivariate Time Series (MTS) plays an important role in a lot of real-world practical applications, but it still remains some challenging problem about capturing multi-granularity structural patterns and suppressing noise appropriately. Multi-Scale Convolution with Optimal Transport Attention (MSC-OT) is proposed in this paper. MSC-OT is a useful architecture to optimize the attention mechanism. It combines multi-scale convolution with Sinkhorn optimal transport method based on inverted embedding. The inverted embedding approach embeds each variable as a token and allows the model to capture cross-variate relationships better. MSC-OT consists of two part: (1) Multi-Scale Convolution Enhancement, that applies multi-scale convolutions to attention score matrices based on inverted embedding, capturing local structural patterns in the variate-interaction space induced by compressed temporal representations; (2) Sinkhorn Optimal Transport Regularization, that formulates attention computation as an optimal transport problem and employs iterative matrix scaling to ensure balanced information flow across variates. Adaptive Fusion Strategy utilizes softmax-normalized learnable weights to dynamically combine base attention, convolution-enhanced, and OT-regularized scores. Experiments on widely-used datasets, including ETT, Electricity, Traffic, Solar-Energy, and Exchange-Rate, show that MSC-OT achieves well performance in both short-term and long-term forecasting tasks. Ablation experiments further validate the effectiveness of each proposed component and their synergistic contributions to improving prediction accuracy for multivariate time series forecasting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bures-Wasserstein Importance-Weighted Evidence Lower Bound: Exposition and Applications</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-04272</link>
-    <guid isPermaLink="false">arxiv:2602.04272</guid>
-    <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peiwen Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Importance-Weighted Evidence Lower Bound (IW-ELBO) has emerged as an effective objective for variational inference (VI), tightening the standard ELBO and mitigating the mode-seeking behaviour. However, optimizing the IW-ELBO in Euclidean space is often inefficient, as its gradient estimators suffer from a vanishing signal-to-noise ratio (SNR). This paper formulates the optimisation of the IW-ELBO in Bures-Wasserstein space, a manifold of Gaussian distributions equipped with the 2-Wasserstein metric. We derive the Wasserstein gradient of the IW-ELBO and project it onto the Bures-Wasserstein space to yield a tractable algorithm for Gaussian VI. A pivotal contribution of our analysis concerns the stability of the gradient estimator. While the SNR of the standard Euclidean gradient estimator is known to vanish as the number of importance samples K increases, we prove that the SNR of the Wasserstein gradient scales favourably as Ω(√(K)), ensuring optimisation efficiency even for large K. We further extend this geometric analysis to the Variational Rényi Importance-Weighted Autoencoder bound, establishing analogous stability guarantees. Experiments demonstrate that the proposed framework achieves superior approximation performance compared to other baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scalable Optimal Transport Algorithm for Network Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-11952</link>
-    <guid isPermaLink="false">arxiv:2607.11952</guid>
-    <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elaheh Hassani et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Network alignment identifies node correspondences across different networks and is a fundamental primitive in many data science applications, including social network analysis, fraud detection, and knowledge graph integration. However, state-of-the-art network alignment methods often achieve high accuracy by repeatedly constructing and updating dense matrices, sacrificing scalability in the process. To address this scalability limitation without compromising alignment accuracy, we present FastAlign, a scalable, sparsity-aware framework for optimal transport-based network alignment. Rather than introducing a new alignment model, FastAlign preserves the original OT formulation and reinterprets its computation as a set of recurring mixed sparse-dense operations. FastAlign combines sparsity-aware graph computation with domain-specific kernel fusion, including a custom SpMM kernel. Our results show that FastAlign achieves alignment quality comparable to state-of-the-art OT-based methods while substantially reducing end-to-end runtime up to 3.89x-9.45x on CPU and 2.24x-32.54x on GPU.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Control Laguerre Tessellation: Semi-discrete Optimal Transport Over Control Systems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-09139</link>
-    <guid isPermaLink="false">arxiv:2607.09139</guid>
-    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ripon C. Sarker et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the optimal transport of optimally controlled agents from a compactly supported absolutely continuous source to a discrete target measure. The ground cost for the transport is induced by the optimal cost of the agents&rsquo; motion. When this ground cost satisfies the twist condition, the optimal transport map is given almost everywhere in terms of a Laguerre tessellation of the state space. We refer to this control-theoretic generalization of Laguerre tessellation as Control Laguerre Tessellation (CLT), and illustrate it for two ground costs induced by linear controlled agents with minimum energy and minimum time objectives.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Gaussian Processes on Directed Acyclic Graphs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-09645</link>
-    <guid isPermaLink="false">arxiv:2607.09645</guid>
-    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Federico L. Perlino et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
-<p>Many real-world processes can be represented as compositions of functions along a directed acyclic graph (DAG). In causal modelling, these correspond to the underlying mechanisms; in engineering, to multiple fidelity levels; and in gene-regulatory networks, to transcription factors. These functions are partially observed across the DAG, with noisy and heterogeneously sampled measurements, posing significant challenges for reconstruction, uncertainty propagation, and inference. To tackle these challenges, we place priors over functions and naturally arrive at Deep Gaussian Processes over DAGs. We theoretically study their prior-collapse behaviour, and the effect of graph topology and intermediate observations on the preservation of information. We obtain almost-sure lower bounds on the asymptotic frequency of depths at which the distinction between inputs is preserved, identify broad kernel classes for which these hold, and prove an observation by \cite{dunlop2018} on the role of input connections. We offer a structured variational approximation that retains graph dependencies, preserves compositional uncertainty, and captures the explaining-away behaviour of colliders. Finally, we empirically validate our theoretical results and our methodology, and model a latent-collider DAG, a protein signalling network, and a multi-fidelity heavy-ion collision emulation task, attaining state-of-the-art performance while recovering low-fidelity contributions and yielding interpretability of the simulator hierarchy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Are We Ready for AI-Driven Discovery? AI Verification Before the Next Fundamental Physics Breakthrough</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-10039</link>
-    <guid isPermaLink="false">arxiv:2607.10039</guid>
-    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaia Grosso et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Vinicius Mikuni) — original abstract; no AI summary.</em></p>
-<p>Machine learning (ML) has become integral to fundamental physics, accelerating statistical workflows from data acquisition through inference and hypothesis testing. As ML systems grow increasingly autonomous, ensuring their reliability for discovery claims becomes critical. This review synthesizes the VERaiPHY (Validation &amp; Evaluation for Robust AI in PHYsics) initiative&rsquo;s frameworks for rigorous ML assessment across particle physics, astrophysics, and cosmology. We establish when verification is essential by contextualizing ML within the statistical discovery workflow. We emphasize fundamental limitations: inductive bias is unavoidable, sample complexity bounds learning, and experimental constraints limit discovery. We reflect on physicists&rsquo; evolving role as both experimental designers and evaluators whose judgments encode scientific rigor into AI systems. Responsible integration requires understanding ML&rsquo;s transformative potential alongside its intrinsic boundaries.</p>]]></description>
   </item>
 
 </channel>

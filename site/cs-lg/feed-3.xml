@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>jBOT: Semantic Jet Representation Clustering Emerges from Self-Distillation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-11719</link>
+    <guid isPermaLink="false">arxiv:2601.11719</guid>
+    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Self-supervised learning, in the context of foundation model training, is a powerful pre-training method for learning feature representations without labels, which often capture generic underlying semantics from the data and can later be fine-tuned for downstream tasks. In this work, we introduce jBOT, a pre-training method based on self-distillation for jet data from the CERN Large Hadron Collider, which combines local particle-level distillation with global jet-level distillation to learn jet representations that support downstream tasks such as anomaly detection and classification. We observe that pre-training on unlabeled jets leads to emergent semantic class clustering in the representation space. The clustering in the frozen embedding, when pre-trained on background jets only, enables anomaly detection via simple distance-based metrics, and the learned embedding can be fine-tuned for classification with improved performance compared to supervised models trained from scratch.</p>]]></description>
+  </item>
+
+  <item>
+    <title>HGQ-LUT: Fast LUT-Aware Training and Efficient Architectures for DNN Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-22293</link>
+    <guid isPermaLink="false">arxiv:2604.22293</guid>
+    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chang Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Lookup-table (LUT) based neural networks can deliver ultra-low latency and excellent hardware efficiency on FPGAs by mapping arithmetic operations directly onto the logic primitives. However, state-of-the-art LUT-aware training (LAT) approaches remain difficult to use in practice: they are often orders of magnitude slower to train than conventional networks, require non-trivial manual tuning for hardware efficiency, and lack an end-to-end workflow. This work presents HGQ-LUT, integrated in https://github.com/calad0i/HGQ2, a new LAT approach that achieves state-of-the-art hardware efficiency while accelerating training by over 100 times on modern GPUs. HGQ-LUT introduces LUT-Dense and LUT-Conv layers that are implemented with regular, accelerator-efficient tensor operations during training, which are then compiled into logic LUTs for hardware. By combining these layers with fine-grained, element-wise heterogeneous quantization (including zero-bit pruning) and a LUT-aware resource surrogate, HGQ-LUT enables the automatic exploration of accuracy-resource trade-offs without manual bit-width tuning. We further integrate HGQ-LUT into open-source toolchains, enabling unified design, compilation, and bit-exact verification of hybrid architectures that mix LUT-based with conventional arithmetic blocks. These features make LAT-based DNNs practical for real-world deployment, such as at the CERN Large Hadron Collider&rsquo;s experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Representational Alignment Across Model Layers and Brain Regions with Multi-Level Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-01706</link>
+    <guid isPermaLink="false">arxiv:2510.01706</guid>
+    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shaan Shah et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Standard representational similarity methods align each layer of a network to its best match in another independently, producing asymmetric results, lacking a global alignment score, and struggling with networks of different depths. These limitations arise from ignoring global activation structure and restricting mappings to rigid one-to-one layer correspondences. We propose Multi-Level Optimal Transport (MOT), a unified framework that jointly infers soft, globally consistent layer-to-layer couplings and neuron-level transport plans. MOT allows source neurons to distribute mass across multiple target layers while minimizing total transport cost under marginal constraints. This yields both a single alignment score for the entire network comparison and a soft transport plan that naturally handles depth mismatches through mass distribution. We evaluate MOT on vision models, large language models, and human visual cortex recordings. Across all domains, MOT matches or surpasses standard pairwise matching in alignment quality. Moreover, it reveals smooth, fine-grained hierarchical correspondences: early layers map to early layers, deeper layers maintain relative positions, and depth mismatches are resolved by distributing representations across multiple layers. These structured patterns emerge naturally from global optimization without being imposed, yet are absent in greedy layer-wise methods. MOT thus enables richer, more interpretable comparisons between representations, particularly when networks differ in architecture or depth. We further extend our method to a three-level MOT framework, providing a proof-of-concept alignment of two networks across their training trajectories and demonstrating that MOT uncovers checkpoint-wise correspondences missed by greedy layer-wise matching.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Evaluating Black-Box Vulnerabilities with Wasserstein-Constrained Data Perturbations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-15867</link>
+    <guid isPermaLink="false">arxiv:2603.15867</guid>
+    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adriana Laurindo Monteiro et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The growing use of Machine Learning (ML) tools comes with critical challenges, such as limited model explainability. We propose a global explainability framework that leverages Optimal Transport and Distributionally Robust Optimization to analyze how ML algorithms respond to constrained data perturbations. Our approach enforces constraints on feature-level statistics (e.g., brightness, age distribution), generating realistic perturbations that preserve semantic structure. We provide a model-agnostic diagnostic bench that applies to both tabular and image domains with solid theoretical guarantees. We validate the approach on real-world datasets providing interpretable robustness diagnostics that complement standard evaluation and fairness auditing tools.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Wasserstein GAN-based climate scenario generator for risk management and insurance: the case of soil subsidence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06678</link>
+    <guid isPermaLink="false">arxiv:2605.06678</guid>
+    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Heranval et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>According to the United Nations Office for Disaster Risk Reduction (2025), the average annual cost of natural catastrophes increased from 70&ndash;80 billion USD between 1970 and 2000 to 180&ndash;200 billion USD between 2001 and 2020. Reports from organizations such as the IFOA and the WWF highlight the need for the insurance sector to adapt to this rapidly evolving context by developing medium- to long-term strategies that go beyond the one-year horizon of prudential regulations such as Solvency II. This paper introduces an artificial intelligence framework based on Conditional Generative Adversarial Networks (Conditional GANs) to generate future spatio-temporal trajectories of climatic indices. The approach focuses on the Soil Wetness Index (SWI), a key indicator used in France to assess drought severity. Drought accounts for approximately 30% of the indemnities paid under the French natural catastrophe insurance scheme. The proposed model, SwiGAN, simulates plausible drought propagation patterns up to 2050 for a region of France particularly exposed to this hazard. By generating realistic sequences of SWI maps, SwiGAN provides insights into drought dynamics under climate change scenarios and supports the design of adaptive risk management and insurance strategies. The methodology is also generalizable to other climate-related perils and actuarial applications such as economic scenario generation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein-p Central Limit Theorem Rates: From Local Dependence to Markov Chains</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-08184</link>
+    <guid isPermaLink="false">arxiv:2601.08184</guid>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Non-asymptotic central limit theorem (CLT) rates play a central role in modern machine learning and operations research. In this paper, we study CLT rates for multivariate dependent data in Wasserstein-p (W_p) distance, for general p≥1. We focus on two fundamental dependence structures that commonly arise in practice: locally dependent sequences and geometrically ergodic Markov chains. In both settings, we establish the first optimal 𝒪(n⁻¹/2) rate in W_1, as well as the first W_p (p≥2) CLT rates under mild moment assumptions, substantially improving the best previously known bounds in these dependent-data regimes. As an application of our optimal W_1 rate for locally dependent sequences, we further obtain the first optimal W_1-CLT rate for multivariate U-statistics. On the technical side, we derive a tractable auxiliary bound for W_1 Gaussian approximation errors that is well suited for studying dependent data. For Markov chains, we further prove that the regeneration time of the split chain associated with a geometrically ergodic chain has a geometric tail without assuming strong aperiodicity or other restrictive conditions. These tools may be of independent interests and enable our optimal W_1 rates and underpin our W_p (p≥2) results.</p>]]></description>
+  </item>
 
   <item>
     <title>Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The optimal transport (OT) map is a geometry-driven transformation between high-dimensional probability distributions which underpins a wide range of tasks in statistics, applied probability, and machine learning. However, existing statistical theory for OT map estimation is quite restricted, hinging on Brenier&rsquo;s theorem (quadratic cost, absolutely continuous source) to guarantee existence and uniqueness of a deterministic OT map, on which various additional regularity assumptions are imposed to obtain quantitative error bounds. In many real-world problems these conditions fail or cannot be certified, in which case optimal transportation is possible only via stochastic maps that can split mass. To broaden the scope of map estimation theory to such settings, this work introduces a novel metric for evaluating the transportation quality of stochastic maps. Under this metric, we develop computationally efficient map estimators with near-optimal finite-sample risk bounds, subject to easy-to-verify minimal assumptions. Our analysis further accommodates common forms of adversarial sample contamination, yielding estimators with robust estimation guarantees. Empirical experiments are provided which validate our theory and demonstrate the utility of the proposed framework in settings where existing theory fails. These contributions constitute the first general-purpose theory for map estimation, compatible with a wide spectrum of real-world applications where optimal transport may be intrinsically stochastic.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Worst-case generation via minimax optimization in Wasserstein space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-08176</link>
-    <guid isPermaLink="false">arxiv:2512.08176</guid>
-    <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiuyuan Cheng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Worst-case generation plays a critical role in evaluating robustness and stress-testing systems under distribution shifts, in applications ranging from machine learning models to power grids and medical prediction systems. We develop a generative modeling framework for worst-case generation for a pre-specified risk, based on min-max optimization over continuous probability distributions, namely the Wasserstein space. Unlike traditional discrete distributionally robust optimization approaches, which often suffer from scalability issues, limited generalization, and costly worst-case inference, our framework exploits the Brenier theorem to characterize the least favorable (worst-case) distribution as the pushforward of a transport map from a continuous reference measure, enabling a continuous and expressive notion of risk-induced generation beyond classical discrete DRO formulations. Based on the min-max formulation, we propose a Gradient Descent Ascent (GDA)-type scheme that updates the decision model and the transport map in a single loop, establishing global convergence guarantees under mild regularity assumptions and possibly without convexity-concavity. We also propose to parameterize the transport map using a neural network that can be trained simultaneously with the GDA iterations by matching the transported training samples, thereby achieving a simulation-free approach. The efficiency of the proposed method as a risk-induced worst-case generator is validated by numerical experiments on synthetic and image data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FedLAD: A Modular and Adaptive Testbed for Federated Log Anomaly Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-08277</link>
-    <guid isPermaLink="false">arxiv:2512.08277</guid>
-    <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yihan Liao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Log-based anomaly detection (LAD) is critical for ensuring the reliability of large-scale distributed systems. However, most existing LAD approaches assume centralized training, which is often impractical due to privacy constraints and the decentralized nature of system logs. While federated learning (FL) offers a promising alternative, there is a lack of dedicated testbeds tailored to the needs of LAD in federated settings. To address this, we present FedLAD, a unified platform for training and evaluating LAD models under FL constraints. FedLAD supports plug-and-play integration of diverse LAD models, benchmark datasets, and aggregation strategies, while offering runtime support for validation logging (self-monitoring), parameter tuning (self-configuration), and adaptive strategy control (self-adaptation). By enabling reproducible and scalable experimentation, FedLAD bridges the gap between FL frameworks and LAD requirements, providing a solid foundation for future research. Project code is publicly available at: https://github.com/AA-cityu/FedLAD.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An Adaptive Resonance Theory-based Topological Clustering Algorithm with a Self-Adjusting Vigilance Parameter</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-17983</link>
-    <guid isPermaLink="false">arxiv:2511.17983</guid>
-    <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naoki Masuyama et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
-<p>Clustering in stationary and nonstationary settings, where data distributions remain static or evolve over time, requires models that can adapt to distributional shifts while preserving previously learned cluster structures. This paper proposes an Adaptive Resonance Theory (ART)-based topological clustering algorithm that autonomously adjusts its recalculation interval and vigilance threshold through a diversity-driven adaptation mechanism. This mechanism enables hyperparameter-free learning that maintains cluster stability and continuity in dynamic environments. Experiments on 24 real-world datasets demonstrate that the proposed algorithm outperforms state-of-the-art methods in both clustering performance and continual learning capability. These results highlight the effectiveness of the proposed parameter adaptation in mitigating catastrophic forgetting and maintaining consistent clustering in evolving data streams. Source code is available at https://github.com/Masuyama-lab/IDAT</p>]]></description>
-  </item>
-
-  <item>
-    <title>Pathway to O(√(d)) Complexity bound under Wasserstein metric of flow-based models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-06702</link>
-    <guid isPermaLink="false">arxiv:2512.06702</guid>
-    <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiangjun Meng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We provide attainable analytical tools to estimate the error of flow-based generative models under the Wasserstein metric and to establish the optimal sampling iteration complexity bound with respect to dimension as O(√(d)). We show this error can be explicitly controlled by two parts: the Lipschitzness of the push-forward maps of the backward flow which scales independently of the dimension; and a local discretization error scales O(√(d)) in terms of dimension. The former one is related to the existence of Lipschitz changes of variables induced by the (heat) flow. The latter one consists of the regularity of the score function in both spatial and temporal directions. These assumptions are valid in the flow-based generative model associated with the Föllmer process and 1-rectified flow under the Gaussian tail assumption. As a consequence, we show that the sampling iteration complexity grows linearly with the square root of the trace of the covariance operator, which is related to the invariant distribution of the forward process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Art of Storytelling in Authoritarian Regimes: Crafting State Narratives on Chinese Social Media</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-11875</link>
-    <guid isPermaLink="false">arxiv:2512.11875</guid>
-    <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ting Luo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (event shape) — original abstract; no AI summary.</em></p>
-<p>This article examines how authoritarian regimes construct state narratives about politically consequential events. Building on the narrative policy framework and existing research on authoritarian propaganda, we propose two dimensions that shape narrative construction: legitimacy implications &ndash; whether events enhance or threaten regime legitimacy, and citizen verification capacity &ndash; the extent to which citizens can evaluate official narratives through alternative sources. Using quantitative narrative analysis of Chinese social media posts by government, state media, and celebrity accounts, we extract subject-verb-object (SVO) triplets to map dominant narrative structures across four major events. Our findings show that legitimacy implications of the event shape regime&rsquo;s efforts in storytelling and the beliefs highlighted in the narratives, while citizen&rsquo;s verification capacity could balance the strategic choice between a top-down manipulation and bottom-up responsiveness of state narratives. Together, the results reveal propaganda as a complex process of narrative construction adaptive to specific contexts, offering new insights into how dynamic storytelling sustains authoritarian resilience.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Nash Equilibrium Seeking with Heterogeneous Data: A Lagrangian Approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2511-14048</link>
-    <guid isPermaLink="false">arxiv:2511.14048</guid>
-    <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zifan Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study a class of distributionally robust games where agents are allowed to heterogeneously choose their risk aversion with respect to distributional shifts of the uncertainty. In our formulation, heterogeneous Wasserstein ball constraints on each distribution are enforced through a penalty function leveraging a Lagrangian formulation. We then formulate the distributionally robust Nash equilibrium problem and show that under certain assumptions it is equivalent to a finite-dimensional variational inequality problem with a strongly monotone mapping. We then design an approximate Nash equilibrium seeking algorithm and prove convergence of the average regret to a quantity that diminishes with the number of iterations, thus learning the desired equilibrium up to an a priori specified accuracy. Numerical simulations corroborate our theoretical findings.</p>]]></description>
   </item>
 
 </channel>

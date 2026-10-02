@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unbalanced Optimal Transport: A Unified Framework for Object Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2307-02402</link>
+    <guid isPermaLink="false">arxiv:2307.02402</guid>
+    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henri De Plaen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>During training, supervised object detection tries to correctly match the predicted bounding boxes and associated classification scores to the ground truth. This is essential to determine which predictions are to be pushed towards which solutions, or to be discarded. Popular matching strategies include matching to the closest ground truth box (mostly used in combination with anchors), or matching via the Hungarian algorithm (mostly used in anchor-free methods). Each of these strategies comes with its own properties, underlying losses, and heuristics. We show how Unbalanced Optimal Transport unifies these different approaches and opens a whole continuum of methods in between. This allows for a finer selection of the desired properties. Experimentally, we show that training an object detection model with Unbalanced Optimal Transport is able to reach the state-of-the-art both in terms of Average Precision and Average Recall as well as to provide a faster initial convergence. The approach is well suited for GPU implementation, which proves to be an advantage for large-scale models.</p>]]></description>
+  </item>
 
   <item>
     <title>Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dror Simon et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Image interpolation, or image morphing, refers to a visual transition between two (or more) input images. For such a transition to look visually appealing, its desirable properties are (i) to be smooth; (ii) to apply the minimal required change in the image; and (iii) to seem &ldquo;real&rdquo;, avoiding unnatural artifacts in each image in the transition. To obtain a smooth and straightforward transition, one may adopt the well-known Wasserstein Barycenter Problem (WBP). While this approach guarantees minimal changes under the Wasserstein metric, the resulting images might seem unnatural. In this work, we propose a novel approach for image morphing that possesses all three desired properties. To this end, we define a constrained variant of the WBP that enforces the intermediate images to satisfy an image prior. We describe an algorithm that solves this problem and demonstrate it using the sparse prior and generative adversarial networks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Temporal Wasserstein non-negative matrix factorization for non-rigid motion segmentation and spatiotemporal deconvolution</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2019.html#a1912-03463</link>
-    <guid isPermaLink="false">arxiv:1912.03463</guid>
-    <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erdem Varol et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Motion segmentation for natural images commonly relies on dense optic flow to yield point trajectories which can be grouped into clusters through various means including spectral clustering or minimum cost multicuts. However, in biological imaging scenarios, such as fluorescence microscopy or calcium imaging, where the signal to noise ratio is compromised and intensity fluctuations occur, optical flow may be difficult to approximate. To this end, we propose an alternative paradigm for motion segmentation based on optimal transport which models the video frames as time-varying mass represented as histograms. Thus, we cast motion segmentation as a temporal non-linear matrix factorization problem with Wasserstein metric loss. The dictionary elements of this factorization yield segmentation of motion into coherent objects while the loading coefficients allow for time-varying intensity signal of the moving objects to be captured. We demonstrate the use of the proposed paradigm on a simulated multielectrode drift scenario, as well as calcium indicating fluorescence microscopy videos of the nematode Caenorhabditis elegans (C. elegans). The latter application has the added utility of extracting neural activity of the animal in freely conducted behavior.</p>]]></description>
   </item>
 
 </channel>

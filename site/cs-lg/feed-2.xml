@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Multi-Scale Convolution with Optimal Transport Attention Effect on Multivariate Time Series</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-10740</link>
+    <guid isPermaLink="false">arxiv:2607.10740</guid>
+    <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">HaoChong Fu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The analysis of Multivariate Time Series (MTS) plays an important role in a lot of real-world practical applications, but it still remains some challenging problem about capturing multi-granularity structural patterns and suppressing noise appropriately. Multi-Scale Convolution with Optimal Transport Attention (MSC-OT) is proposed in this paper. MSC-OT is a useful architecture to optimize the attention mechanism. It combines multi-scale convolution with Sinkhorn optimal transport method based on inverted embedding. The inverted embedding approach embeds each variable as a token and allows the model to capture cross-variate relationships better. MSC-OT consists of two part: (1) Multi-Scale Convolution Enhancement, that applies multi-scale convolutions to attention score matrices based on inverted embedding, capturing local structural patterns in the variate-interaction space induced by compressed temporal representations; (2) Sinkhorn Optimal Transport Regularization, that formulates attention computation as an optimal transport problem and employs iterative matrix scaling to ensure balanced information flow across variates. Adaptive Fusion Strategy utilizes softmax-normalized learnable weights to dynamically combine base attention, convolution-enhanced, and OT-regularized scores. Experiments on widely-used datasets, including ETT, Electricity, Traffic, Solar-Energy, and Exchange-Rate, show that MSC-OT achieves well performance in both short-term and long-term forecasting tasks. Ablation experiments further validate the effectiveness of each proposed component and their synergistic contributions to improving prediction accuracy for multivariate time series forecasting.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Bures-Wasserstein Importance-Weighted Evidence Lower Bound: Exposition and Applications</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-04272</link>
+    <guid isPermaLink="false">arxiv:2602.04272</guid>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peiwen Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Importance-Weighted Evidence Lower Bound (IW-ELBO) has emerged as an effective objective for variational inference (VI), tightening the standard ELBO and mitigating the mode-seeking behaviour. However, optimizing the IW-ELBO in Euclidean space is often inefficient, as its gradient estimators suffer from a vanishing signal-to-noise ratio (SNR). This paper formulates the optimisation of the IW-ELBO in Bures-Wasserstein space, a manifold of Gaussian distributions equipped with the 2-Wasserstein metric. We derive the Wasserstein gradient of the IW-ELBO and project it onto the Bures-Wasserstein space to yield a tractable algorithm for Gaussian VI. A pivotal contribution of our analysis concerns the stability of the gradient estimator. While the SNR of the standard Euclidean gradient estimator is known to vanish as the number of importance samples K increases, we prove that the SNR of the Wasserstein gradient scales favourably as Ω(√(K)), ensuring optimisation efficiency even for large K. We further extend this geometric analysis to the Variational Rényi Importance-Weighted Autoencoder bound, establishing analogous stability guarantees. Experiments demonstrate that the proposed framework achieves superior approximation performance compared to other baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Scalable Optimal Transport Algorithm for Network Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-11952</link>
+    <guid isPermaLink="false">arxiv:2607.11952</guid>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elaheh Hassani et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Network alignment identifies node correspondences across different networks and is a fundamental primitive in many data science applications, including social network analysis, fraud detection, and knowledge graph integration. However, state-of-the-art network alignment methods often achieve high accuracy by repeatedly constructing and updating dense matrices, sacrificing scalability in the process. To address this scalability limitation without compromising alignment accuracy, we present FastAlign, a scalable, sparsity-aware framework for optimal transport-based network alignment. Rather than introducing a new alignment model, FastAlign preserves the original OT formulation and reinterprets its computation as a set of recurring mixed sparse-dense operations. FastAlign combines sparsity-aware graph computation with domain-specific kernel fusion, including a custom SpMM kernel. Our results show that FastAlign achieves alignment quality comparable to state-of-the-art OT-based methods while substantially reducing end-to-end runtime up to 3.89x-9.45x on CPU and 2.24x-32.54x on GPU.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Control Laguerre Tessellation: Semi-discrete Optimal Transport Over Control Systems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-09139</link>
+    <guid isPermaLink="false">arxiv:2607.09139</guid>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ripon C. Sarker et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the optimal transport of optimally controlled agents from a compactly supported absolutely continuous source to a discrete target measure. The ground cost for the transport is induced by the optimal cost of the agents&rsquo; motion. When this ground cost satisfies the twist condition, the optimal transport map is given almost everywhere in terms of a Laguerre tessellation of the state space. We refer to this control-theoretic generalization of Laguerre tessellation as Control Laguerre Tessellation (CLT), and illustrate it for two ground costs induced by linear controlled agents with minimum energy and minimum time objectives.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Deep Gaussian Processes on Directed Acyclic Graphs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-09645</link>
+    <guid isPermaLink="false">arxiv:2607.09645</guid>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Federico L. Perlino et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>Many real-world processes can be represented as compositions of functions along a directed acyclic graph (DAG). In causal modelling, these correspond to the underlying mechanisms; in engineering, to multiple fidelity levels; and in gene-regulatory networks, to transcription factors. These functions are partially observed across the DAG, with noisy and heterogeneously sampled measurements, posing significant challenges for reconstruction, uncertainty propagation, and inference. To tackle these challenges, we place priors over functions and naturally arrive at Deep Gaussian Processes over DAGs. We theoretically study their prior-collapse behaviour, and the effect of graph topology and intermediate observations on the preservation of information. We obtain almost-sure lower bounds on the asymptotic frequency of depths at which the distinction between inputs is preserved, identify broad kernel classes for which these hold, and prove an observation by \cite{dunlop2018} on the role of input connections. We offer a structured variational approximation that retains graph dependencies, preserves compositional uncertainty, and captures the explaining-away behaviour of colliders. Finally, we empirically validate our theoretical results and our methodology, and model a latent-collider DAG, a protein signalling network, and a multi-fidelity heavy-ion collision emulation task, attaining state-of-the-art performance while recovering low-fidelity contributions and yielding interpretability of the simulator hierarchy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Are We Ready for AI-Driven Discovery? AI Verification Before the Next Fundamental Physics Breakthrough</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-10039</link>
+    <guid isPermaLink="false">arxiv:2607.10039</guid>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaia Grosso et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Vinicius Mikuni) — original abstract; no AI summary.</em></p>
+<p>Machine learning (ML) has become integral to fundamental physics, accelerating statistical workflows from data acquisition through inference and hypothesis testing. As ML systems grow increasingly autonomous, ensuring their reliability for discovery claims becomes critical. This review synthesizes the VERaiPHY (Validation &amp; Evaluation for Robust AI in PHYsics) initiative&rsquo;s frameworks for rigorous ML assessment across particle physics, astrophysics, and cosmology. We establish when verification is essential by contextualizing ML within the statistical discovery workflow. We emphasize fundamental limitations: inductive bias is unavoidable, sample complexity bounds learning, and experimental constraints limit discovery. We reflect on physicists&rsquo; evolving role as both experimental designers and evaluators whose judgments encode scientific rigor into AI systems. Responsible integration requires understanding ML&rsquo;s transformative potential alongside its intrinsic boundaries.</p>]]></description>
+  </item>
 
   <item>
     <title>Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chang Sun et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Neural networks with a latency requirement on the order of microseconds, like the ones used at the CERN Large Hadron Collider, are typically deployed on FPGAs fully unrolled and pipelined. A bottleneck for the deployment of such neural networks is area utilization, which is directly related to the required constant matrix-vector multiplication (CMVM) operations. In this work, we propose an efficient algorithm for implementing CMVM operations with distributed arithmetic on FPGAs that simultaneously optimizes for area consumption and latency. The algorithm achieves resource reduction similar to state-of-the-art algorithms while being significantly faster to compute. The proposed algorithm is open-sourced and integrated into the \texttt{hls4ml} library, a free and open-source library for running real-time neural network inference on FPGAs. We show that the proposed algorithm can reduce on-chip resources by up to a third for realistic, highly quantized neural networks while simultaneously reducing latency, enabling the implementation of previously infeasible networks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>jBOT: Semantic Jet Representation Clustering Emerges from Self-Distillation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-11719</link>
-    <guid isPermaLink="false">arxiv:2601.11719</guid>
-    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Self-supervised learning, in the context of foundation model training, is a powerful pre-training method for learning feature representations without labels, which often capture generic underlying semantics from the data and can later be fine-tuned for downstream tasks. In this work, we introduce jBOT, a pre-training method based on self-distillation for jet data from the CERN Large Hadron Collider, which combines local particle-level distillation with global jet-level distillation to learn jet representations that support downstream tasks such as anomaly detection and classification. We observe that pre-training on unlabeled jets leads to emergent semantic class clustering in the representation space. The clustering in the frozen embedding, when pre-trained on background jets only, enables anomaly detection via simple distance-based metrics, and the learned embedding can be fine-tuned for classification with improved performance compared to supervised models trained from scratch.</p>]]></description>
-  </item>
-
-  <item>
-    <title>HGQ-LUT: Fast LUT-Aware Training and Efficient Architectures for DNN Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-22293</link>
-    <guid isPermaLink="false">arxiv:2604.22293</guid>
-    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chang Sun et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Lookup-table (LUT) based neural networks can deliver ultra-low latency and excellent hardware efficiency on FPGAs by mapping arithmetic operations directly onto the logic primitives. However, state-of-the-art LUT-aware training (LAT) approaches remain difficult to use in practice: they are often orders of magnitude slower to train than conventional networks, require non-trivial manual tuning for hardware efficiency, and lack an end-to-end workflow. This work presents HGQ-LUT, integrated in https://github.com/calad0i/HGQ2, a new LAT approach that achieves state-of-the-art hardware efficiency while accelerating training by over 100 times on modern GPUs. HGQ-LUT introduces LUT-Dense and LUT-Conv layers that are implemented with regular, accelerator-efficient tensor operations during training, which are then compiled into logic LUTs for hardware. By combining these layers with fine-grained, element-wise heterogeneous quantization (including zero-bit pruning) and a LUT-aware resource surrogate, HGQ-LUT enables the automatic exploration of accuracy-resource trade-offs without manual bit-width tuning. We further integrate HGQ-LUT into open-source toolchains, enabling unified design, compilation, and bit-exact verification of hybrid architectures that mix LUT-based with conventional arithmetic blocks. These features make LAT-based DNNs practical for real-world deployment, such as at the CERN Large Hadron Collider&rsquo;s experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Representational Alignment Across Model Layers and Brain Regions with Multi-Level Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-01706</link>
-    <guid isPermaLink="false">arxiv:2510.01706</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shaan Shah et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Standard representational similarity methods align each layer of a network to its best match in another independently, producing asymmetric results, lacking a global alignment score, and struggling with networks of different depths. These limitations arise from ignoring global activation structure and restricting mappings to rigid one-to-one layer correspondences. We propose Multi-Level Optimal Transport (MOT), a unified framework that jointly infers soft, globally consistent layer-to-layer couplings and neuron-level transport plans. MOT allows source neurons to distribute mass across multiple target layers while minimizing total transport cost under marginal constraints. This yields both a single alignment score for the entire network comparison and a soft transport plan that naturally handles depth mismatches through mass distribution. We evaluate MOT on vision models, large language models, and human visual cortex recordings. Across all domains, MOT matches or surpasses standard pairwise matching in alignment quality. Moreover, it reveals smooth, fine-grained hierarchical correspondences: early layers map to early layers, deeper layers maintain relative positions, and depth mismatches are resolved by distributing representations across multiple layers. These structured patterns emerge naturally from global optimization without being imposed, yet are absent in greedy layer-wise methods. MOT thus enables richer, more interpretable comparisons between representations, particularly when networks differ in architecture or depth. We further extend our method to a three-level MOT framework, providing a proof-of-concept alignment of two networks across their training trajectories and demonstrating that MOT uncovers checkpoint-wise correspondences missed by greedy layer-wise matching.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Evaluating Black-Box Vulnerabilities with Wasserstein-Constrained Data Perturbations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-15867</link>
-    <guid isPermaLink="false">arxiv:2603.15867</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adriana Laurindo Monteiro et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The growing use of Machine Learning (ML) tools comes with critical challenges, such as limited model explainability. We propose a global explainability framework that leverages Optimal Transport and Distributionally Robust Optimization to analyze how ML algorithms respond to constrained data perturbations. Our approach enforces constraints on feature-level statistics (e.g., brightness, age distribution), generating realistic perturbations that preserve semantic structure. We provide a model-agnostic diagnostic bench that applies to both tabular and image domains with solid theoretical guarantees. We validate the approach on real-world datasets providing interpretable robustness diagnostics that complement standard evaluation and fairness auditing tools.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Wasserstein GAN-based climate scenario generator for risk management and insurance: the case of soil subsidence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06678</link>
-    <guid isPermaLink="false">arxiv:2605.06678</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Heranval et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>According to the United Nations Office for Disaster Risk Reduction (2025), the average annual cost of natural catastrophes increased from 70&ndash;80 billion USD between 1970 and 2000 to 180&ndash;200 billion USD between 2001 and 2020. Reports from organizations such as the IFOA and the WWF highlight the need for the insurance sector to adapt to this rapidly evolving context by developing medium- to long-term strategies that go beyond the one-year horizon of prudential regulations such as Solvency II. This paper introduces an artificial intelligence framework based on Conditional Generative Adversarial Networks (Conditional GANs) to generate future spatio-temporal trajectories of climatic indices. The approach focuses on the Soil Wetness Index (SWI), a key indicator used in France to assess drought severity. Drought accounts for approximately 30% of the indemnities paid under the French natural catastrophe insurance scheme. The proposed model, SwiGAN, simulates plausible drought propagation patterns up to 2050 for a region of France particularly exposed to this hazard. By generating realistic sequences of SWI maps, SwiGAN provides insights into drought dynamics under climate change scenarios and supports the design of adaptive risk management and insurance strategies. The methodology is also generalizable to other climate-related perils and actuarial applications such as economic scenario generation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein-p Central Limit Theorem Rates: From Local Dependence to Markov Chains</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-08184</link>
-    <guid isPermaLink="false">arxiv:2601.08184</guid>
-    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Non-asymptotic central limit theorem (CLT) rates play a central role in modern machine learning and operations research. In this paper, we study CLT rates for multivariate dependent data in Wasserstein-p (W_p) distance, for general p≥1. We focus on two fundamental dependence structures that commonly arise in practice: locally dependent sequences and geometrically ergodic Markov chains. In both settings, we establish the first optimal 𝒪(n⁻¹/2) rate in W_1, as well as the first W_p (p≥2) CLT rates under mild moment assumptions, substantially improving the best previously known bounds in these dependent-data regimes. As an application of our optimal W_1 rate for locally dependent sequences, we further obtain the first optimal W_1-CLT rate for multivariate U-statistics. On the technical side, we derive a tractable auxiliary bound for W_1 Gaussian approximation errors that is well suited for studying dependent data. For Markov chains, we further prove that the regeneration time of the split chain associated with a geometrically ergodic chain has a geometric tail without assuming strong aperiodicity or other restrictive conditions. These tools may be of independent interests and enable our optimal W_1 rates and underpin our W_p (p≥2) results.</p>]]></description>
   </item>
 
 </channel>
