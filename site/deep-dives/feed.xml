@@ -6,7 +6,86 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Third-Order Logarithmic Resummation for Jet-Vetoed Higgs Production</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-03687</link>
+    <guid isPermaLink="false">arxiv:2610.03687</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Abreu et al.</dc:creator>
+    <description><![CDATA[<p>The first N³LL+N³LO prediction for the gluon-fusion zero-jet cross section gives 30.11 (+3.2%/−3.0%) pb at p_T^v=30 GeV, with R=0.4 anti-k_t jets at 13.6 TeV. That is ~3% above fixed-order N³LO (29.24 pb). The shift lies outside N³LO&rsquo;s narrow +0.7/−2.2% scale band, so fixed-order scale variation alone misses the logarithmic correction. Relative to NNLL+NNLO, the central value rises ~4% and the uncertainty shrinks from 6–8% to ~3%. The new ingredient is the three-loop, algorithm-dependent rapidity anomalous dimension γ_ν⁽³⁾⁽R²⁾ from the companion paper, combined with the four-loop cusp, three-loop γ_V and two-loop boundary terms, all implemented in RadISH. The authors tested the expansion against NNLOJet H+jet with M=1 TeV and R=0.1. With Δγ_ν⁽³⁾ set to zero, the expansion visibly fails to converge, so the three-loop clustering term is numerically essential.</p>
+<p>The physics point is that the previous NNLL+N³LO result had an accidental cancellation near 30 GeV. N³LL lifts it and restores a uniform 3–4% third-order correction for p_T^v≳20 GeV. Alternative matching schemes and log-switching prescriptions all agree within the band. The code is public (JetVHeto).</p>
+<p>Caveats:
+- <strong>Missing effects:</strong> top and bottom mass effects and small-R resummation are not included. Both were 1–2% in earlier work, comparable to the quoted uncertainty.
+- <strong>ln R terms:</strong> the authors flag large subleading lnR terms in γ_ν⁽³⁾ as motivation for lnR resummation.
+- <strong>Factorization breaking:</strong> coherence-violating effects, which break factorization from five loops, are explicitly set aside. The non-global/super-leading front noted in the digest therefore sits outside this calculation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>First observation of electron antineutrinos from nuclear reactors at Super-Kamiokande (K. Abe (The Super-Kamiokande Collaboration) et al.)</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-03143</link>
+    <guid isPermaLink="false">arxiv:2610.03143</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>SK-Gd sees reactor ν̅_e via IBD with Gd-tagged neutrons. The exposure is 411.52 live days: SK-VI at 0.011% Gd and SK-VII at 0.033% Gd. The no-reactor hypothesis gives Δχ²⁼³⁴.7, about 6σ, and the oscillated fit has χ²⁼¹⁶.7/16.</p>
+<p>Reactor-only fit, with θ_13 fixed:
+- sin²θ_12=0.500±0.155
+- Δm²_21=(9.08⁺⁰.55_-0.54)×10⁻⁵ eV²</p>
+<p><strong>Comparison with SK solar.</strong> SK&rsquo;s own solar fit gives Δm²_21=(6.10⁺¹.26_-0.86)×10⁻⁵ eV². The differences are 1.1σ in θ_12 and 2.2σ in Δm²_21. A parameter-goodness-of-fit test gives 1.9σ compatibility. The main text quotes Δχ²_PG=7.25 (p=0.027) while the appendix quotes 7.64 (p=0.022), a minor internal inconsistency. The combined SK fit is sin²θ_12=0.332, Δm²_21=(8.94⁺⁰.46_-0.47)×10⁻⁵ eV².</p>
+<p>Why it matters: this is a new water-Cherenkov reactor handle on the solar sector, from the same detector that measures solar neutrinos. That makes it an internal CPT-motivated cross-check, and a demonstration of Gd-water for low-energy ν̅_e.</p>
+<p>The paper does not quantify the digest&rsquo;s &ldquo;~3σ above JUNO&rdquo; framing. It calls its values consistent with global fits and recent reactor results, JUNO included.</p>
+<p>Caveats:
+- <strong>Background model:</strong> the accidental background comes from a single low-reactor window (Nov–Dec 2020) and is statistics-limited.
+- <strong>Flux inputs:</strong> fluxes use electrical rather than thermal load factors.
+- <strong>Systematics:</strong> neutron-capture γ modeling (5.4%) and coincidence efficiency (5.5%) dominate the listed systematics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Higgsino dark matter compatible with the LZ high-energy nuclear-recoil event and IceCube constraints</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-03692</link>
+    <guid isPermaLink="false">arxiv:2610.03692</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Katherine Freese et al.</dc:creator>
+    <description><![CDATA[<p>Heavy Higgsinos can explain the 248 keV LZ event without violating IceCube solar bounds, but the thermal 1.1 TeV case barely survives. The authors build a 96-bin approximate LZ likelihood digitized from LZ&rsquo;s published data, calibrated with 30k toys, which reproduces LZ&rsquo;s interval near δ=350 keV. They include the corrected (4× larger) inelastic cross section.</p>
+<p><strong>Thermal 1.1 TeV case.</strong> The LZ-compatible splitting depends on the halo model:
+- SHM: 360–370 keV.
+- SHM+LMC: 485–505 keV.</p>
+<p>IceCube lower bounds on δ at 1.1 TeV depend on how captured Higgsinos cool in the Sun:</p>
+<table>
+<thead>
+<tr>
+<th>Cooling assumption</th>
+<th>Lower bound on δ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capture–annihilation equilibrium imposed</td>
+<td>566 keV</td>
+</tr>
+<tr>
+<td>Inelastic + elastic SD</td>
+<td>558 keV</td>
+</tr>
+<tr>
+<td>Inelastic only</td>
+<td>506 keV</td>
+</tr>
+</tbody>
+</table>
+<p>The thermal Higgsino survives only at δ≈508 keV, and only under three conditions together: LMC tail included, all elastic cooling neglected, and the LZ sideband dropped. The authors call this a limiting case rather than a robust interpretation.</p>
+<p><strong>Heavier Higgsinos.</strong> The key novelty is the m_χ⁻² falloff of the elastic SD cross section, which weakens cooling at high mass. With it, compatible regions open at:
+- ~2 TeV (δ~520 keV) for SHM+LMC, no sideband and SD-only elastic cooling.
+- ≳10–30 TeV (δ≈350–400 keV) for the SHM.
+- Equilibrium imposed everywhere: ≳80 TeV for the SHM, and 13–120 TeV (465–520 keV) for SHM+LMC.</p>
+<p>They also find Sommerfeld resonances near 6.5, 25 and 55 TeV that locally tighten the bounds.</p>
+<p>Caveats:
+- <strong>Halo model:</strong> the LMC tail uses a single simulated halo with a large LMC/MW mass ratio (0.27).
+- <strong>Sideband acceptance:</strong> unpublished, and LZ has not calibrated its nuclear-recoil response there.
+- <strong>Solar treatment:</strong> cooling assumes stationary nuclei, radial orbits and a uniform-density population.
+- <strong>IceCube conversion:</strong> the W⁺W⁻ limits are frozen above 10 TeV, so high-mass regions are extrapolations.
+- <strong>Cosmology:</strong> heavier Higgsinos need a non-standard abundance history.</p>]]></description>
+  </item>
 
   <item>
     <title>Fractional anomalous determinants and the chiral phase transition</title>

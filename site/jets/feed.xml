@@ -7,7 +7,89 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Three-loop rapidity anomalous dimension for jet-veto cross sections</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-03472</link>
+    <guid isPermaLink="false">arxiv:2610.03472</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Abreu et al.</dc:creator>
+    <description><![CDATA[<p>This paper supplies the last missing ingredient for N³LL resummation of the colour-singlet p_T^jet&lt;p_T^veto cross section. The authors compute γ_ν⁽³⁾⁽R²⁾ from the three-loop SCET soft function, using the exponential rapidity regulator, for anti-k_t, C/A and k_t. The two-loop beam and soft functions, four-loop cusp and three-loop non-cusp anomalous dimensions were already known.</p>
+<p><strong>Method.</strong> The key device is a non-physical &ldquo;Reference Simplified Variable&rdquo; (RSV). It applies the veto to the total p_t of each correlated cluster in the non-abelian-exponentiation decomposition, so it is R-independent and factorises cluster by cluster.</p>
+<ul>
+<li>ln𝒮_RSV is a Bessel-kernel transform of the TMD soft function. This gives γ_ν,RSV=γ_ν,⊥+(α_s/4π)³ 323C_R b_0²ζ_3 at three loops.</li>
+<li>The remainder Δ𝒮 vanishes for single emission, so the two-loop single-real amplitude is never needed. Its singularity structure also drops by two orders: at three loops it has only one-loop-type poles.</li>
+<li>The remainder splits into III, CCI and CCC pieces, which scale at small R as R⁴, R²lnR² and ln²R² respectively. Integrations are done semi-numerically with Cuba, cross-checked with VegasFlow.</li>
+</ul>
+<p><strong>Results.</strong> Three loops is the first order at which the result depends on the clustering algorithm, but the spread between the three algorithms is very mild. For n_f=5, C_R=C_A, the three-loop coefficients are:</p>
+<table>
+<thead>
+<tr>
+<th>R</th>
+<th>Three-loop coefficient</th>
+<th>Two-loop coefficient (for comparison)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>77165 ± 0.36‰</td>
+<td>2174.69</td>
+</tr>
+<tr>
+<td>0.4</td>
+<td>28537 ± 0.38‰</td>
+<td>1135.60</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>6645 ± 0.97‰</td>
+<td>498.59</td>
+</tr>
+</tbody>
+</table>
+<p>At p_T^veto=30 GeV the three-loop term is a 15–40% correction to γ_ν, largest at small R.</p>
+<p><strong>Checks and caveats.</strong>
+- IR poles cancel numerically in all colour structures; for C_RC_AT_Rn_f this requires combining quark and gluon final states.
+- The known LL ln²R² coefficient is reproduced.
+- The LL small-R approximation is poor even at very small R; a fit including the NLL lnR² term is good up to R∼0.4, where it overshoots by ~10%. This implies a large NLL small-R coefficient.
+- Results are numerical rather than analytic.
+- Coherence-violating effects are noted but enter only at five loops beyond leading N_c.
+- The provided text truncates before the phenomenological impact discussion.</p>
+<p>The RSV subtraction strategy is pitched as reusable for other clustering-dependent three-loop soft functions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>CMS search for TT̅→(ϕt)(ϕt), ϕ→γγ, boosted all-hadronic tops</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-03489</link>
+    <guid isPermaLink="false">arxiv:2610.03489</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
+    <description><![CDATA[<p>This is a substructure application rather than a methods paper. It uses 138 fb⁻¹ at 13 TeV.</p>
+<p><strong>Selection.</strong>
+- Two AK8 jets with p_T&gt;350 GeV and soft-drop mass (β=0, z_cut=0.1) m_SD&gt;50 GeV, with |Δη|&lt;1.6.
+- Both jets ParticleNet top-tagged at the 0.5% light-jet mistag working point (~40% top efficiency).
+- Two photons; the signal region requires both to pass the WP80 identification, and a control region requires both to fail it.</p>
+<p><strong>Background estimate and fit.</strong> Background is extrapolated from the control region with an exponential transfer function in m_ϕ^reco. The fit is two-dimensional in (m_T^reco,m_ϕ^reco) over m_ϕ=100–300 GeV and m_T=800–1800 GeV.</p>
+<p><strong>Results.</strong>
+- The largest local excess is 2.7σ (1.5σ global) at m_T=900, m_ϕ=150 GeV. It is a single event against a predicted 7×10⁻⁶.
+- Upper limits are set on σ ℬ(T→ϕt)² ℬ_γγ(2-ℬ_γγ).</p>
+<p><strong>Jet-specific systematics.</strong> The analysis is statistics-dominated. The ParticleNet uncertainty has a 1.0% impact on r, and JES/JMS/JER/JMR are smaller still; FSR (3.0%) leads.</p>
+<p><strong>Caveats.</strong>
+- The second ϕ is left undecayed in simulation; the authors note this may slightly underestimate signal acceptance.
+- Jet–diphoton pairing is correct only 50–75% of the time (~40% at the lowest m_T).
+- Validation is statistically limited (VR p-value 0.14).</p>]]></description>
+  </item>
+
+  <item>
+    <title>EOS version 1.1</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-03322</link>
+    <guid isPermaLink="false">arxiv:2610.03322</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nienke C. Balz et al.</dc:creator>
+    <description><![CDATA[<p>This paper is not about jets; it presumably matched on the e⁺e⁻→ hadrons keyword. That addition is a coupled-channel K-matrix description of R and DD̅ in the charmonium region, with no jet observables. The rest covers flavour observables, the analysis-file format, pyhf likelihood import, and nested sampling in cumulative-prior space. Skip unless the flavour or Bayesian-sampling content is of interest.</p>]]></description>
+  </item>
 
   <item>
     <title>Unified description of longitudinal and transverse parton dynamics in cold nuclear matter</title>
@@ -2269,36 +2351,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (large-radius jet, jet identification) — abstract only, not yet read for a briefing.</em></p>
 <p>This letter reports on the first evidence of Higgs-boson production at high transverse momentum in the bb̅ final state, reconstructed in a single large-radius jet. The results are based on proton proton collision data recorded by the ATLAS detector at the Large Hadron Collider at a centre-of-mass energies of 13 TeV and 13.6 TeV, corresponding to a total integrated luminosity of 301 fb⁻¹. The study profits from the large background suppression provided by the use of a new transformer-based algorithm for jet identification and the sharper mass and transverse momentum, p_T, resolution from a dedicated regression model. The yield relative to the Standard Model prediction, for Higgs bosons produced at p_T larger than 450 GeV is measured to be 1.53±0.27(stat.) ⁺⁰.33_-0.27(syst.)±0.17(theo.) corresponding to an observed (expected) significance of 3.8σ(2.5σ) relative to the background-only hypothesis. Results are also obtained in three Higgs boson p_T intervals and found to be compatible with Standard Model predictions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Higher-point Energy Correlators: Factorization in the Back-to-Back Limit &amp; Non-perturbative Effects</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-16996</link>
-    <guid isPermaLink="false">arxiv:2603.16996</guid>
-    <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ankita Budhraja et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy-energy correlator, energy correlator, energy correlators, jet function) — abstract only, not yet read for a briefing.</em></p>
-<p>N-point energy correlators are powerful observables for studying strong interactions, with applications ranging from extractions of the strong coupling α_s to probes of jet modification in heavy-ion collisions and determination of the top-quark mass. Their practical use has, however, been limited by the complicated phase space for large N. Using a recently introduced parametrization that simplifies this structure, we study projected N-point correlators in two regimes: factorization in the back-to-back limit and leading non-perturbative effects in the collinear limit. While results in the back-to-back regime were previously limited to the energy-energy correlator, our approach allows us to derive the factorization theorem for arbitrary N. We compute the new ingredient, a one-loop jet function, needed for the next-to-next-to-leading-logarithmic resummation, which enables future α_s extractions with complementary systematics. We further determine the analytic structure of leading non-perturbative power corrections for arbitrary N, including their dependence on the center-of-mass energy Q, the value of N, and the angular scale x. We present the first results for non-integer N&lt;1, finding that the classical scaling in x acquires an N-dependent modification, and that a new non-perturbative matrix element ^[N] appears. In a certain approximation, ^[N] can be related to the standard parameter Ω_1 relevant for N&gt;1. Our analytic predictions are tested against the hadronization model in Pythia, finding good agreement. The results presented in this paper demonstrate the significant advancements enabled through our new parametrization of energy correlators.</p>]]></description>
-  </item>
-
-  <item>
-    <title>From vacuum amplitudes to qubits</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-11968</link>
-    <guid isPermaLink="false">arxiv:2603.11968</guid>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Germán Rodrigo</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet clustering) — abstract only, not yet read for a briefing.</em></p>
-<p>High-energy colliders, exemplified by the CERN&rsquo;s Large Hadron Collider (LHC), constitute genuine quantum machines. In alignment with Richard Feynman&rsquo;s foundational vision for quantum computing, collider physics emerge therefore as a prime candidate for quantum simulations. Prospective applications include Quantum Machine Learning for collider data analysis, accelerated evaluation of complex multiloop Feynman diagrams, efficient jet clustering, enhanced parton shower simulations, and related computational challenges. We discuss two specific applications: the identification of causal structures in multiloop vacuum amplitudes, a fundamental component of the Loop-Tree Duality exhibiting deep connections to graph theory; and high-dimensional function integration and sampling. The latter constitutes an initial step toward realizing a fully fleged quantum event generator capable of operating at high perturbative orders.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Comprehensive Mass Predictions: From Triply Heavy Baryons to Pentaquarks</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-11259</link>
-    <guid isPermaLink="false">arxiv:2603.11259</guid>
-    <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">S. Rostami et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle transformer) — abstract only, not yet read for a briefing.</em></p>
-<p>In this article, we use two different methods for studying the mass spectra of fully-heavy baryons and pentaquarks. In the first section, we use state-of-the-art machine learning methods, such as deep neural networks and the Particle Transformer model architecture, to predict baryon masses directly from their quantum numbers, based on experimental information on hadrons from the Particle Data Group (PDG). We use this data-driven approach for the case of fully heavy baryons, and a large number of exotic pentaquark states, going much beyond the well-known P_c⁺⁽⁴³⁸⁰⁾ and P_c⁺⁽⁴⁴⁵⁷⁾ candidates. Subsequently,we extend the Gürsey-Radicati mass formula to incorporate the contributions of charm and bottom quarks, enabling analytical calculations for both ground and radially excited states of baryons and pentaquarks. The results obtained from both approaches demonstrate strong agreement with experimental data where available and make predictions for a number of unobserved states, including higher radial excitations. By addressing the question through both data-driven prediction and analytical modeling in different frameworks, this study offers complementary insights into the mass spectrum of conventional and exotic hadrons, guiding future experimental searches.</p>]]></description>
   </item>
 
 </channel>

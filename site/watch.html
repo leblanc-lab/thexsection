@@ -39,6 +39,75 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Monday, October 5, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261003472-three-loop-rapidity-anomalous-dimension-for-jet-veto-cross-sections-samuel-abreu-et-al"><a href="https://arxiv.org/abs/2610.03472">arXiv:2610.03472</a> — Three-loop rapidity anomalous dimension for jet-veto cross sections (Samuel Abreu et al.)</h3>
+<p>This paper supplies the last missing ingredient for N³LL resummation of the colour-singlet <span class="arithmatex">\(p_T^{\rm jet}&lt;p_T^{\rm veto}\)</span> cross section. The authors compute <span class="arithmatex">\(\gamma_\nu^{(3)}(R^2)\)</span> from the three-loop SCET soft function, using the exponential rapidity regulator, for anti-<span class="arithmatex">\(k_t\)</span>, C/A and <span class="arithmatex">\(k_t\)</span>. The two-loop beam and soft functions, four-loop cusp and three-loop non-cusp anomalous dimensions were already known.</p>
+<p><strong>Method.</strong> The key device is a non-physical &ldquo;Reference Simplified Variable&rdquo; (RSV). It applies the veto to the total <span class="arithmatex">\(p_t\)</span> of each correlated cluster in the non-abelian-exponentiation decomposition, so it is <span class="arithmatex">\(R\)</span>-independent and factorises cluster by cluster.</p>
+<ul>
+<li><span class="arithmatex">\(\ln\mathcal{S}_{\rm RSV}\)</span> is a Bessel-kernel transform of the TMD soft function. This gives <span class="arithmatex">\(\gamma_{\nu,\rm RSV}=\gamma_{\nu,\perp}+(\alpha_s/4\pi)^3\,\tfrac{32}{3}C_R b_0^2\zeta_3\)</span> at three loops.</li>
+<li>The remainder <span class="arithmatex">\(\Delta\mathcal{S}\)</span> vanishes for single emission, so the two-loop single-real amplitude is never needed. Its singularity structure also drops by two orders: at three loops it has only one-loop-type poles.</li>
+<li>The remainder splits into III, CCI and CCC pieces, which scale at small <span class="arithmatex">\(R\)</span> as <span class="arithmatex">\(R^4\)</span>, <span class="arithmatex">\(R^2\ln R^2\)</span> and <span class="arithmatex">\(\ln^2R^2\)</span> respectively. Integrations are done semi-numerically with Cuba, cross-checked with VegasFlow.</li>
+</ul>
+<p><strong>Results.</strong> Three loops is the first order at which the result depends on the clustering algorithm, but the spread between the three algorithms is very mild. For <span class="arithmatex">\(n_f=5\)</span>, <span class="arithmatex">\(C_R=C_A\)</span>, the three-loop coefficients are:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(R\)</span></th>
+<th>Three-loop coefficient</th>
+<th>Two-loop coefficient (for comparison)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>77165 ± 0.36‰</td>
+<td>2174.69</td>
+</tr>
+<tr>
+<td>0.4</td>
+<td>28537 ± 0.38‰</td>
+<td>1135.60</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>6645 ± 0.97‰</td>
+<td>498.59</td>
+</tr>
+</tbody>
+</table>
+<p>At <span class="arithmatex">\(p_T^{\rm veto}=30\)</span> GeV the three-loop term is a 15–40% correction to <span class="arithmatex">\(\gamma_\nu\)</span>, largest at small <span class="arithmatex">\(R\)</span>.</p>
+<p><strong>Checks and caveats.</strong>
+- IR poles cancel numerically in all colour structures; for <span class="arithmatex">\(C_RC_AT_Rn_f\)</span> this requires combining quark and gluon final states.
+- The known LL <span class="arithmatex">\(\ln^2R^2\)</span> coefficient is reproduced.
+- The LL small-<span class="arithmatex">\(R\)</span> approximation is poor even at very small <span class="arithmatex">\(R\)</span>; a fit including the NLL <span class="arithmatex">\(\ln R^2\)</span> term is good up to <span class="arithmatex">\(R\sim0.4\)</span>, where it overshoots by ~10%. This implies a large NLL small-<span class="arithmatex">\(R\)</span> coefficient.
+- Results are numerical rather than analytic.
+- Coherence-violating effects are noted but enter only at five loops beyond leading <span class="arithmatex">\(N_c\)</span>.
+- The provided text truncates before the phenomenological impact discussion.</p>
+<p>The RSV subtraction strategy is pitched as reusable for other clustering-dependent three-loop soft functions.</p>
+<h3 id="arxiv261003489-cms-search-for-tbar-ttophi-tphi-t-phitogammagamma-boosted-all-hadronic-tops-cms-collaboration"><a href="https://arxiv.org/abs/2610.03489">arXiv:2610.03489</a> — CMS search for <span class="arithmatex">\(T\bar T\to(\phi t)(\phi t)\)</span>, <span class="arithmatex">\(\phi\to\gamma\gamma\)</span>, boosted all-hadronic tops (CMS Collaboration)</h3>
+<p>This is a substructure application rather than a methods paper. It uses 138 fb⁻¹ at 13 TeV.</p>
+<p><strong>Selection.</strong>
+- Two AK8 jets with <span class="arithmatex">\(p_T&gt;350\)</span> GeV and soft-drop mass (<span class="arithmatex">\(\beta=0\)</span>, <span class="arithmatex">\(z_{\rm cut}=0.1\)</span>) <span class="arithmatex">\(m_{\rm SD}&gt;50\)</span> GeV, with <span class="arithmatex">\(|\Delta\eta|&lt;1.6\)</span>.
+- Both jets ParticleNet top-tagged at the 0.5% light-jet mistag working point (~40% top efficiency).
+- Two photons; the signal region requires both to pass the WP80 identification, and a control region requires both to fail it.</p>
+<p><strong>Background estimate and fit.</strong> Background is extrapolated from the control region with an exponential transfer function in <span class="arithmatex">\(m_\phi^{\rm reco}\)</span>. The fit is two-dimensional in <span class="arithmatex">\((m_T^{\rm reco},m_\phi^{\rm reco})\)</span> over <span class="arithmatex">\(m_\phi=100\)</span>–300 GeV and <span class="arithmatex">\(m_T=800\)</span>–1800 GeV.</p>
+<p><strong>Results.</strong>
+- The largest local excess is 2.7σ (1.5σ global) at <span class="arithmatex">\(m_T=900\)</span>, <span class="arithmatex">\(m_\phi=150\)</span> GeV. It is a single event against a predicted <span class="arithmatex">\(7\times10^{-6}\)</span>.
+- Upper limits are set on <span class="arithmatex">\(\sigma\,\mathcal{B}(T\to\phi t)^2\,\mathcal{B}_{\gamma\gamma}(2-\mathcal{B}_{\gamma\gamma})\)</span>.</p>
+<p><strong>Jet-specific systematics.</strong> The analysis is statistics-dominated. The ParticleNet uncertainty has a 1.0% impact on <span class="arithmatex">\(r\)</span>, and JES/JMS/JER/JMR are smaller still; FSR (3.0%) leads.</p>
+<p><strong>Caveats.</strong>
+- The second <span class="arithmatex">\(\phi\)</span> is left undecayed in simulation; the authors note this may slightly underestimate signal acceptance.
+- Jet–diphoton pairing is correct only 50–75% of the time (~40% at the lowest <span class="arithmatex">\(m_T\)</span>).
+- Validation is statistically limited (VR <span class="arithmatex">\(p\)</span>-value 0.14).</p>
+<h3 id="arxiv261003322-eos-version-11-nienke-c-balz-et-al"><a href="https://arxiv.org/abs/2610.03322">arXiv:2610.03322</a> — EOS version 1.1 (Nienke C. Balz et al.)</h3>
+<p>This paper is not about jets; it presumably matched on the <span class="arithmatex">\(e^+e^-\to\)</span> hadrons keyword. That addition is a coupled-channel K-matrix description of <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(D\bar D\)</span> in the charmonium region, with no jet observables. The rest covers flavour observables, the analysis-file format, pyhf likelihood import, and nested sampling in cumulative-prior space. Skip unless the flavour or Bayesian-sampling content is of interest.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Friday, October 2, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -884,7 +953,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-04 07:29 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-05 05:50 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
