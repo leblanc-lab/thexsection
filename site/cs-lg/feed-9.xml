@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2106-01357</link>
+    <guid isPermaLink="false">arxiv:2106.01357</guid>
+    <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Valentin De Bortoli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Progressively applying Gaussian noise transforms complex data distributions to approximately Gaussian. Reversing this dynamic defines a generative model. When the forward noising process is given by a Stochastic Differential Equation (SDE), Song et al. (2021) demonstrate how the time inhomogeneous drift of the associated reverse-time SDE may be estimated using score-matching. A limitation of this approach is that the forward-time SDE must be run for a sufficiently long time for the final distribution to be approximately Gaussian. In contrast, solving the Schrödinger Bridge problem (SB), i.e. an entropy-regularized optimal transport problem on path spaces, yields diffusions which generate samples from the data distribution in finite time. We present Diffusion SB (DSB), an original approximation of the Iterative Proportional Fitting (IPF) procedure to solve the SB problem, and provide theoretical analysis along with generative modeling experiments. The first DSB iteration recovers the methodology proposed by Song et al. (2021), with the flexibility of using shorter time intervals, as subsequent DSB iterations reduce the discrepancy between the final-time marginal of the forward (resp. backward) SDE with respect to the prior (resp. data) distribution. Beyond generative modeling, DSB offers a widely applicable computational optimal transport tool as the continuous state-space analogue of the popular Sinkhorn algorithm (Cuturi, 2013).</p>]]></description>
+  </item>
+
+  <item>
+    <title>Rethinking Initialization of the Sinkhorn Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2206-07630</link>
+    <guid isPermaLink="false">arxiv:2206.07630</guid>
+    <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">James Thornton et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>While the optimal transport (OT) problem was originally formulated as a linear program, the addition of entropic regularization has proven beneficial both computationally and statistically, for many applications. The Sinkhorn fixed-point algorithm is the most popular approach to solve this regularized problem, and, as a result, multiple attempts have been made to reduce its runtime using, e.g., annealing in the regularization parameter, momentum or acceleration. The premise of this work is that initialization of the Sinkhorn algorithm has received comparatively little attention, possibly due to two preconceptions: since the regularized OT problem is convex, it may not be worth crafting a good initialization, since any is guaranteed to work; secondly, because the outputs of the Sinkhorn algorithm are often unrolled in end-to-end pipelines, a data-dependent initialization would bias Jacobian computations. We challenge this conventional wisdom, and show that data-dependent initializers result in dramatic speed-ups, with no effect on differentiability as long as implicit differentiation is used. Our initializations rely on closed-forms for exact or approximate OT solutions that are known in the 1D, Gaussian or GMM settings. They can be used with minimal tuning, and result in consistent speed-ups for a wide variety of OT problems.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport for Correctional Learning</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fynn Bachmann et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Scientific datasets often have hierarchical structure: for example, in surveys, individual participants (samples) might be grouped at a higher level (units) such as their geographical region. In these settings, the interest is often in exploring the structure on the unit level rather than on the sample level. Units can be compared based on the distance between their means, however this ignores the within-unit distribution of samples. Here we develop an approach for exploratory analysis of hierarchical datasets using the Wasserstein distance metric that takes into account the shapes of within-unit distributions. We use t-SNE to construct 2D embeddings of the units, based on the matrix of pairwise Wasserstein distances between them. The distance matrix can be efficiently computed by approximating each unit with a Gaussian distribution, but we also provide a scalable method to compute exact Wasserstein distances. We use synthetic data to demonstrate the effectiveness of our Wasserstein t-SNE, and apply it to data from the 2017 German parliamentary election, considering polling stations as samples and voting districts as units. The resulting embedding uncovers meaningful structure in the data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Open-source FPGA-ML codesign for the MLPerf Tiny Benchmark</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-11791</link>
-    <guid isPermaLink="false">arxiv:2206.11791</guid>
-    <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hendrik Borras et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>We present our development experience and recent results for the MLPerf Tiny Inference Benchmark on field-programmable gate array (FPGA) platforms. We use the open-source hls4ml and FINN workflows, which aim to democratize AI-hardware codesign of optimized neural networks on FPGAs. We present the design and implementation process for the keyword spotting, anomaly detection, and image classification benchmark tasks. The resulting hardware implementations are quantized, configurable, spatial dataflow architectures tailored for speed and efficiency and introduce new generic optimizations and common workflows developed as a part of this work. The full workflow is presented from quantization-aware training to FPGA implementation. The solutions are deployed on system-on-chip (Pynq-Z2) and pure FPGA (Arty A7-100T) platforms. The resulting submissions achieve latencies as low as 20 μs and energy consumption as low as 30 μJ per inference. We demonstrate how emerging ML benchmarks on heterogeneous hardware platforms can catalyze collaboration and the development of new techniques and more accessible tools.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On making optimal transport robust to all outliers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-11988</link>
-    <guid isPermaLink="false">arxiv:2206.11988</guid>
-    <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Fatras</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) is known to be sensitive against outliers because of its marginal constraints. Outlier robust OT variants have been proposed based on the definition that outliers are samples which are expensive to move. In this paper, we show that this definition is restricted by considering the case where outliers are closer to the target measure than clean samples. We show that outlier robust OT fully transports these outliers leading to poor performances in practice. To tackle these outliers, we propose to detect them by relying on a classifier trained with adversarial training to classify source and target samples. A sample is then considered as an outlier if the prediction from the classifier is different from its assigned label. To decrease the influence of these outliers in the transport problem, we propose to either remove them from the problem or to increase the cost of moving them by using the classifier prediction. We show that we successfully detect these outliers and that they do not influence the transport problem on several experiments such as gradient flows, generative models and label propagation.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Light Entropic Optimal Transport on Riemannian Manifolds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-03085</link>
+    <guid isPermaLink="false">arxiv:2610.03085</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xavier Aramayo-Carrasco et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Entropic Optimal Transport (EOT) has become a practical framework for learning stochastic couplings between complex distributions, with applications in generative modeling and domain adaptation. However, most EOT solvers are designed for Euclidean spaces, while manifold extensions remain limited and often rely on costly iterative methods, simulated dynamics, or generic neural models that do not fully exploit the underlying geometry. We introduce ManifoldLightOT, a light approach for learning kernel-induced EOT couplings directly on common manifolds. Using the kernel form of the EOT solution, we construct geometry-specific Gibbs kernels together with compatible potential parameterizations for spheres, tori, SO(3), and SE(3). These choices yield closed-form normalization and directly sampleable conditional distributions. Our formulation naturally extends to products of manifolds, making it applicable to more complex geometries. The parameters of the potentials are optimized directly from samples using Monte Carlo estimates of the learning objective. Through synthetic and real-world experiments, we show that ManifoldLightOT often outperforms existing manifold OT methods while retaining direct sampling.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Simulation-Free Learning of Population Dynamics with Wasserstein Lagrangian Residuals</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-03679</link>
+    <guid isPermaLink="false">arxiv:2610.03679</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fedor Sergeev et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The dynamics of cells, organisms, and fluids are often modeled as probability distributions evolving over time. Reconstructing and extrapolating this evolution from unpaired snapshots requires assumptions about the underlying process. Wasserstein gradient flows are a common choice, but they cannot describe conservative or periodic dynamics. Lagrangian mechanics in Wasserstein space covers both, but existing methods for learning it are simulation-based: they run a numerical solver at every training step, which makes training expensive. We propose Double-Stitch, a simulation-free method that learns these mechanics by penalizing the residual of the equation of motion along a learned population path. We derive this equation from a Clebsch variational principle that does not require gradient velocities, and show that the residual vanishes exactly when the equation holds. We test Double-Stitch on synthetic, single-cell and ocean vortex datasets and find that it matches or outperforms gradient-flow methods and simulation-based WLM on most tasks, while training 4-14 times faster than WLM. We provide a JAX implementation of Double-Stitch at https://github.com/BasisResearch/stitching.</p>]]></description>
+  </item>
 
   <item>
     <title>Scaling Collider Event Generation with Residual-Quantized Tokens</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zeyu Xia et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>High-fidelity simulations and complex inverse problems, such as detector modeling and unfolding, are computationally intensive bottlenecks across subatomic physics, yet essential for accurate physical interpretation. While Conditional Flow Matching (CFM) offers a robust acceleration approach, we demonstrate its standard training loss is fundamentally misleading. Specifically, utilizing a Jefferson Lab Nuclear Physics (NP) kinematic dataset (γp →ρ⁰ p →π⁺π⁻ p), we expose that CFM loss plateaus prematurely, obscuring ongoing physical refinement. To verify this disconnect is a dataset-agnostic pathology, we introduce ScatterPrism, an efficient generative surrogate evaluated against both the NP data and synthetic stress tests modeling challenging 1D distribution topologies. Coupling these benchmarks, we establish that physics-informed metrics continue improving long after standard loss converges. Consequently, we propose a multi-metric diagnostic protocol to ensure true kinematic fidelity without data memorization. Driven by NP challenges relevant to the forthcoming Electron-Ion Collider (EIC), this unified machinery has strong potential to extend to High-Energy Physics (HEP) applications, such as jet modeling. Furthermore, the framework holds promise for broader domains requiring rigorous generative reliability, including medical imaging, astrophysics, and quantitative finance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Forecasting Generative Amplification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-08048</link>
-    <guid isPermaLink="false">arxiv:2509.08048</guid>
-    <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henning Bahl et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Tilman Plehn) — original abstract; no AI summary.</em></p>
-<p>Generative networks are perfect tools to enhance the speed and precision of LHC simulations. Especially when generating events beyond the size of the training dataset, it is important to understand their statistical precision. We present two complementary methods to estimate the amplification factor without large holdout datasets. Averaging amplification uses Bayesian networks or ensembling to estimate amplification from the precision of integrals over given phase-space volumes. Differential amplification uses hypothesis testing to quantify amplification without any resolution loss. Applied to state-of-the-art event generators, both methods indicate that amplification is already possible in specific regions of phase space.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Beyond Looking Up, Try Looking Around: Harmonizing Global Structure and Local Consistency in Optimal Transport for Short Text Clustering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-10548</link>
-    <guid isPermaLink="false">arxiv:2607.10548</guid>
-    <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhihao Yao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Pseudo-labeling based on Optimal Transport (OT) has become an effective mechanism for enhancing short text clustering. Existing OT methods are short in modeling semantic consistencies between samples, which may assign different pseudo-labels to semantically similar samples. These erroneous pseudo-labels can cause the model to produce inferior clusters. This paper proposes a novel short text clustering framework, which remedies the neglect of semantic consistency in existing OT methods, generating reliable pseudo-labels to facilitate clustering. Specifically, the proposed approach first designs an instance-level attention mechanism to capture semantic relationships between samples, which are then integrated into the OT formulation to endow the transport process with neighborhood semantic awareness. By solving the proposed OT formulation, reliable pseudo-labels are obtained that simultaneously account for sample-to-sample semantic consistency and sample-to-cluster global structure information. These pseudo-labels are then used as supervisory signals to guide the model to achieve accurate clustering. Extensive experiments demonstrate that the proposed approach outperforms state-of-the-art methods. The code is available at: \href{https://github.com/YZH0905/CAOT-STC}{https://github.com/YZH0905/CAOT-STC}.</p>]]></description>
   </item>
 
 </channel>

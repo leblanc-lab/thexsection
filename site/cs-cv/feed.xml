@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>VDOT++: Unified Few-Step Video Generation via Unbalanced Optimal Transport Distillation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2610-03221</link>
+    <guid isPermaLink="false">arxiv:2610.03221</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yutong Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Video creation spans text-to-video (T2V), image-to-video (I2V), and condition-based generation, yet video diffusion models remain costly because they repeatedly evaluate large backbones during sampling. Distribution matching distillation (DMD) reduces this cost, but its reverse Kullback&ndash;Leibler (KL) objective can provide unstable or incomplete guidance when the student and teacher distributions have limited overlap. VDOT addressed this issue by adding optimal transport distillation (OTD), whose explicit coupling supplies geometric directions for condition-based generation. Balanced OTD, however, performs full-mass matching between the spatial tokens of each corresponding student&ndash;teacher frame pair. This assumption weakens for T2V and I2V, where one condition admits many valid outputs and spatial content need not align across different realizations. We present VDOT++, a unified distillation framework that applies the same training recipe separately to generators for the three task families. It makes OTD robust to output diversity through an asymmetric unbalanced formulation that allows unreliable student tokens to carry less mass while maintaining coverage of the teacher tokens. An ℓ_1 ground cost further replaces mean-based aggregation with a more mode-preserving weighted median that limits the influence of distant transport targets. The two changes respectively determine whom to match and how the selected targets should be aggregated. We additionally combine distribution matching and adversarial refinement through sequential backward passes, and exploit the decoupled score networks for cross-scale distillation, where larger score networks improve a compact generator. Experiments on UVCBench, VBench, VBench-I2V, and the VACE benchmark show that the resulting four-step generators are competitive with many-step teachers and strong few-step baselines across all three task families.</p>]]></description>
+  </item>
 
   <item>
     <title>FlashBack: Knowing When to Remember in Streaming Vision-Language Models</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Victor D. Martinez et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet constituents, quark jets, jet image, jet images, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>This article presents, for the first time, the application of diffusion models for generating jet images corresponding to proton-proton collision events at the Large Hadron Collider (LHC). The kinematic variables of quark, gluon, W-boson, Z-boson, and top quark jets from the JetNet simulation dataset are mapped to two-dimensional image representations. Diffusion models are trained on these images to learn the spatial distribution of jet constituents. We compare the performance of score-based diffusion models and consistency models in accurately generating class-conditional jet images. Unlike approaches based on latent distributions, our method operates directly in image space. The fidelity of the generated images is evaluated using several metrics, including the Fréchet Inception Distance (FID), which demonstrates that consistency models achieve higher fidelity and generation stability compared to score-based diffusion models. These advancements offer significant improvements in computational efficiency and generation accuracy, providing valuable tools for High Energy Physics (HEP) research.</p>]]></description>
-  </item>
-
-  <item>
-    <title>VAGU &amp; GtS: LLM-Based Benchmark and Framework for Joint Video Anomaly Grounding and Understanding</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-21507</link>
-    <guid isPermaLink="false">arxiv:2507.21507</guid>
-    <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shibo Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Video Anomaly Detection (VAD) aims to identify anomalous events in videos and accurately determine their time intervals. Current VAD methods mainly fall into two categories: traditional DNN-based approaches that focus on temporal localization, and LLM-based approaches that emphasize semantic understanding. Both anomaly understanding and grounding are essential for comprehensive video anomaly detection and can complement each other. However, no existing model or dataset supports both tasks simultaneously. To address this, we introduce VAGU (Video Anomaly Grounding and Understanding), the first benchmark to integrate both tasks. Each VAGU instance includes annotations for anomaly category, semantic explanation, precise temporal grounding and Video QA. We also provide multiple-choice Video QA for objective evaluation. Based on this dataset, we propose Glance then Scrutinize (GtS), a training-free framework guided by textual prompts. The framework first enables coarse localization of high-probability anomalous regions, followed by detailed anomaly interpretation and temporal boundary refinement. Additionally, we propose the JeAUG metric, which jointly evaluates semantic interpretability and temporal precision, overcoming the limitations of traditional metrics. Extensive experiments verify the effectiveness of our benchmark, framework, and evaluation metric.</p>]]></description>
   </item>
 
 </channel>

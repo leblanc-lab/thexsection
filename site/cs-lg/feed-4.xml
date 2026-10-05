@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>KGOT: Unified Knowledge Graph and Optimal Transport Pseudo-Labeling for Molecule-Protein Interaction Prediction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-09365</link>
+    <guid isPermaLink="false">arxiv:2512.09365</guid>
+    <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiayu Qin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Predicting molecule-protein interactions (MPIs) is a fundamental task in computational biology, with crucial applications in drug discovery and molecular function annotation. However, existing MPI models face two major challenges. First, the scarcity of labeled molecule-protein pairs significantly limits model performance, as available datasets capture only a small fraction of biological relevant interactions. Second, most methods rely solely on molecular and protein features, ignoring broader biological context such as genes, metabolic pathways, and functional annotations that could provide essential complementary information. To address these limitations, our framework first aggregates diverse biological datasets, including molecular, protein, genes and pathway-level interactions, and then develop an optimal transport-based approach to generate high-quality pseudo-labels for unlabeled molecule-protein pairs, leveraging the underlying distribution of known interactions to guide label assignment. By treating pseudo-labeling as a mechanism for bridging disparate biological modalities, our approach enables the effective use of heterogeneous data to enhance MPI prediction. We evaluate our framework on multiple MPI datasets including virtual screening tasks and protein retrieval tasks, demonstrating substantial improvements over state-of-the-art methods in prediction accuracies and zero shot ability across unseen interactions. Beyond MPI prediction, our approach provides a new paradigm for leveraging diverse biological data sources to tackle problems traditionally constrained by single- or bi-modal learning, paving the way for future advances in computational biology and drug discovery.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Estimation of Stochastic Optimal Transport Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-09499</link>
+    <guid isPermaLink="false">arxiv:2512.09499</guid>
+    <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The optimal transport (OT) map is a geometry-driven transformation between high-dimensional probability distributions which underpins a wide range of tasks in statistics, applied probability, and machine learning. However, existing statistical theory for OT map estimation is quite restricted, hinging on Brenier&rsquo;s theorem (quadratic cost, absolutely continuous source) to guarantee existence and uniqueness of a deterministic OT map, on which various additional regularity assumptions are imposed to obtain quantitative error bounds. In many real-world problems these conditions fail or cannot be certified, in which case optimal transportation is possible only via stochastic maps that can split mass. To broaden the scope of map estimation theory to such settings, this work introduces a novel metric for evaluating the transportation quality of stochastic maps. Under this metric, we develop computationally efficient map estimators with near-optimal finite-sample risk bounds, subject to easy-to-verify minimal assumptions. Our analysis further accommodates common forms of adversarial sample contamination, yielding estimators with robust estimation guarantees. Empirical experiments are provided which validate our theory and demonstrate the utility of the proposed framework in settings where existing theory fails. These contributions constitute the first general-purpose theory for map estimation, compatible with a wide spectrum of real-world applications where optimal transport may be intrinsically stochastic.</p>]]></description>
+  </item>
 
   <item>
     <title>Worst-case generation via minimax optimization in Wasserstein space</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Milena Gazdieva et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Real-world image super-resolution (SR) tasks often do not have paired datasets, which limits the application of supervised techniques. As a result, the tasks are usually approached by unpaired techniques based on Generative Adversarial Networks (GANs), which yield complex training losses with several regularization terms, e.g., content or identity losses. While GANs usually provide good practical performance, they are used heuristically, i.e., theoretical understanding of their behaviour is yet rather limited. We theoretically investigate optimization problems which arise in such models and find two surprising observations. First, the learned SR map is always an optimal transport (OT) map. Second, we theoretically prove and empirically show that the learned map is biased, i.e., it does not actually transform the distribution of low-resolution images to high-resolution ones. Inspired by these findings, we investigate recent advances in neural OT field to resolve the bias issue. We establish an intriguing connection between regularized GANs and neural OT approaches. We show that unlike the existing GAN-based alternatives, these algorithms aim to learn an unbiased OT map. We empirically demonstrate our findings via a series of synthetic and real-world unpaired SR experiments. Our source code is publicly available at https://github.com/milenagazdieva/OT-Super-Resolution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport for Domain Adaptation through Gaussian Mixture Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-13847</link>
-    <guid isPermaLink="false">arxiv:2403.13847</guid>
-    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Machine learning systems operate under the assumption that training and test data are sampled from a fixed probability distribution. However, this assumptions is rarely verified in practice, as the conditions upon which data was acquired are likely to change. In this context, the adaptation of the unsupervised domain requires minimal access to the data of the new conditions for learning models robust to changes in the data distribution. Optimal transport is a theoretically grounded tool for analyzing changes in distribution, especially as it allows the mapping between domains. However, these methods are usually computationally expensive as their complexity scales cubically with the number of samples. In this work, we explore optimal transport between Gaussian Mixture Models (GMMs), which is conveniently written in terms of the components of source and target GMMs. We experiment with 9 benchmarks, with a total of 85 adaptation tasks, showing that our methods are more efficient than previous shallow domain adaptation methods, and they scale well with number of samples n and dimensions d.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Anomaly Detection through Mass Repulsing Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-12793</link>
-    <guid isPermaLink="false">arxiv:2502.12793</guid>
-    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Detecting anomalies in datasets is a longstanding problem in machine learning. In this context, anomalies are defined as a sample that significantly deviates from the remaining data. Meanwhile, optimal transport (OT) is a field of mathematics concerned with the transportation, between two probability measures, at least effort. In classical OT, the optimal transportation strategy of a measure to itself is the identity. In this paper, we tackle anomaly detection by forcing samples to displace its mass, while keeping the least effort objective. We call this new transportation problem Mass Repulsing Optimal Transport (MROT). Naturally, samples lying in low density regions of space will be forced to displace mass very far, incurring a higher transportation cost. We use these concepts to design a new anomaly score. Through a series of experiments in existing benchmarks, and fault detection problems, we show that our algorithm improves over existing methods.</p>]]></description>
   </item>
 
 </channel>

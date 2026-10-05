@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein GANs Work Because They Fail (to Approximate the Wasserstein Distance)</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-01678</link>
+    <guid isPermaLink="false">arxiv:2103.01678</guid>
+    <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Stanczuk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein GANs are based on the idea of minimising the Wasserstein distance between a real and a generated distribution. We provide an in-depth mathematical analysis of differences between the theoretical setup and the reality of training Wasserstein GANs. In this work, we gather both theoretical and empirical evidence that the WGAN loss is not a meaningful approximation of the Wasserstein distance. Moreover, we argue that the Wasserstein distance is not even a desirable loss function for deep generative models, and conclude that the success of Wasserstein GANs can in truth be attributed to a failure to approximate the Wasserstein distance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Understanding Event-Generation Networks via Uncertainties</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-04543</link>
+    <guid isPermaLink="false">arxiv:2104.04543</guid>
+    <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marco Bellagente et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Tilman Plehn) — original abstract; no AI summary.</em></p>
+<p>Following the growing success of generative neural networks in LHC simulations, the crucial question is how to control the networks and assign uncertainties to their event output. We show how Bayesian normalizing flow or invertible networks capture uncertainties from the training and turn them into an uncertainty on the event weight. Fundamentally, the interplay between density and uncertainty estimates indicates that these networks learn functions in analogy to parameter fits rather than binned event counts.</p>]]></description>
+  </item>
 
   <item>
     <title>On the Convergence of Projected Alternating Maximization for Equitable and Optimal Transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthias Minder et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>In many applications, a dataset can be considered as a set of observed signals that live on an unknown underlying graph structure. Some of these signals may be seen as white noise that has been filtered on the graph topology by a graph filter. Hence, the knowledge of the filter and the graph provides valuable information about the underlying data generation process and the complex interactions that arise in the dataset. We hence introduce a novel graph signal processing framework for jointly learning the graph and its generating filter from signal observations. We cast a new optimisation problem that minimises the Wasserstein distance between the distribution of the signal observations and the filtered signal distribution model. Our proposed method outperforms state-of-the-art graph learning frameworks on synthetic data. We then apply our method to a temperature anomaly dataset, and further show how this framework can be used to infer missing values if only very little information is available.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Linear Time Sinkhorn Divergences using Positive Features</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2006-07057</link>
-    <guid isPermaLink="false">arxiv:2006.07057</guid>
-    <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Meyer Scetbon et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Although Sinkhorn divergences are now routinely used in data sciences to compare probability distributions, the computational effort required to compute them remains expensive, growing in general quadratically in the size n of the support of these distributions. Indeed, solving optimal transport (OT) with an entropic regularization requires computing a n×n kernel matrix (the neg-exponential of a n×n pairwise ground cost matrix) that is repeatedly applied to a vector. We propose to use instead ground costs of the form c(x,y)=-logφ(x)φ(y) where φ is a map from the ground space onto the positive orthant ^r_+, with r≪n. This choice yields, equivalently, a kernel k(x,y)=φ(x)φ(y), and ensures that the cost of Sinkhorn iterations scales as O(nr). We show that usual cost functions can be approximated using this form. Additionaly, we take advantage of the fact that our approach yields approximation that remain fully differentiable with respect to input distributions, as opposed to previously proposed adaptive low-rank approximations of the kernel matrix, to train a faster variant of OT-GAN \cite{salimans2018improving}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Continuous Regularized Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-12534</link>
-    <guid isPermaLink="false">arxiv:2008.12534</guid>
-    <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lingxiao Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein barycenters provide a geometrically meaningful way to aggregate probability distributions, built on the theory of optimal transport. They are difficult to compute in practice, however, leading previous work to restrict their supports to finite sets of points. Leveraging a new dual formulation for the regularized Wasserstein barycenter problem, we introduce a stochastic algorithm that constructs a continuous approximation of the barycenter. We establish strong duality and use the corresponding primal-dual relationship to parametrize the barycenter implicitly using the dual potentials of regularized transport problems. The resulting problem can be solved with stochastic gradient descent, which yields an efficient online algorithm to approximate the barycenter of continuous distributions given sample access. We demonstrate the effectiveness of our approach and compare against previous work on synthetic examples and real-world applications.</p>]]></description>
   </item>
 
 </channel>

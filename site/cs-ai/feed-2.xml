@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Bures-Wasserstein Flow Matching for Graph Generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2506-14020</link>
+    <guid isPermaLink="false">arxiv:2506.14020</guid>
+    <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keyue Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Graph generation has emerged as a critical task in fields ranging from drug discovery to circuit design. Contemporary approaches, notably diffusion and flow-based models, have achieved solid graph generative performance through constructing a probability path that interpolates between reference and data distributions. However, these methods typically model the evolution of individual nodes and edges independently and use linear interpolations in the disjoint space of nodes/edges to build the path. This disentangled interpolation breaks the interconnected patterns of graphs, making the constructed probability path irregular and non-smooth, which causes poor training dynamics and faulty sampling convergence. To address the limitation, this paper first presents a theoretically grounded framework for probability path construction in graph generative models. Specifically, we model the joint evolution of the nodes and edges by representing graphs as connected systems parameterized by Markov random fields (MRF). We then leverage the optimal transport displacement between MRF objects to design a smooth probability path that ensures the co-evolution of graph components. Based on this, we introduce BWFlow, a flow-matching framework for graph generation that utilizes the derived optimal probability path to benefit the training and sampling algorithm design. Experimental evaluations in plain graph generation and molecule generation validate the effectiveness of BWFlow with competitive performance, better training convergence, and efficient sampling.</p>]]></description>
+  </item>
 
   <item>
     <title>DMD-augmented Unpaired Neural Schrödinger Bridge for Ultra-Low Field MRI Enhancement</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ian Lu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>With the approach of the High Luminosity Large Hadron Collider (HL-LHC) era set to begin particle collisions by the end of this decade, it is evident that the computational demands of traditional collision simulation methods are becoming increasingly unsustainable. Existing approaches, which rely heavily on first-principles Monte Carlo simulations for modeling event showers in calorimeters, are projected to require millions of CPU-years annually &ndash; far exceeding current computational capacities. This bottleneck presents an exciting opportunity for advancements in computational physics by integrating deep generative models with quantum simulations. We propose a quantum-assisted hierarchical deep generative surrogate founded on a variational autoencoder (VAE) in combination with an energy conditioned restricted Boltzmann machine (RBM) embedded in the model&rsquo;s latent space as a prior. By mapping the topology of D-Wave&rsquo;s Zephyr quantum annealer (QA) into the nodes and couplings of a 4-partite RBM, we leverage quantum simulation to accelerate our shower generation times significantly. To evaluate our framework, we use Dataset 2 of the CaloChallenge 2022. Through the integration of classical computation and quantum simulation, this hybrid framework paves way for utilizing large-scale quantum simulations as priors in deep generative models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Compression of Sparse Accelerator Data Using Implicit Neural Representations and Importance Sampling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-01754</link>
-    <guid isPermaLink="false">arxiv:2412.01754</guid>
-    <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xihaier Luo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>High-energy, large-scale particle colliders in nuclear and high-energy physics generate data at extraordinary rates, reaching up to 1 terabyte and several petabytes per second, respectively. The development of real-time, high-throughput data compression algorithms capable of reducing this data to manageable sizes for permanent storage is of paramount importance. A unique characteristic of the tracking detector data is the extreme sparsity of particle trajectories in space, with an occupancy rate ranging from approximately 10⁻⁶ to 10%. Furthermore, for downstream tasks, a continuous representation of this data is often more useful than a voxel-based, discrete representation due to the inherently continuous nature of the signals involved. To address these challenges, we propose a novel approach using implicit neural representations for data learning and compression. We also introduce an importance sampling technique to accelerate the network training process. Our method is competitive with traditional compression algorithms, such as MGARD, SZ, and ZFP, while offering significant speed-ups and maintaining negligible accuracy loss through our importance sampling strategy.</p>]]></description>
   </item>
 
 </channel>

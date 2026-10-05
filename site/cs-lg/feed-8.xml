@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Quantum-probabilistic Hamiltonian learning for generative modelling &amp; anomaly detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-03803</link>
+    <guid isPermaLink="false">arxiv:2211.03803</guid>
+    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jack Y. Araz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The Hamiltonian of an isolated quantum mechanical system determines its dynamics and physical behaviour. This study investigates the possibility of learning and utilising a system&rsquo;s Hamiltonian and its variational thermal state estimation for data analysis techniques. For this purpose, we employ the method of Quantum Hamiltonian-based models for the generative modelling of simulated Large Hadron Collider data and demonstrate the representability of such data as a mixed state. In a further step, we use the learned Hamiltonian for anomaly detection, showing that different sample types can form distinct dynamical behaviours once treated as a quantum many-body system. We exploit these characteristics to quantify the difference between sample types. Our findings show that the methodologies designed for field theory computations can be utilised in machine learning applications to employ theoretical approaches in data analysis techniques.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn Flow: A Continuous-Time Framework for Understanding and Generalizing the Sinkhorn Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-16706</link>
+    <guid isPermaLink="false">arxiv:2311.16706</guid>
+    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammad Reza Karimi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Many problems in machine learning can be formulated as solving entropy-regularized optimal transport on the space of probability measures. The canonical approach involves the Sinkhorn iterates, renowned for their rich mathematical properties. Recently, the Sinkhorn algorithm has been recast within the mirror descent framework, thus benefiting from classical optimization theory insights. Here, we build upon this result by introducing a continuous-time analogue of the Sinkhorn algorithm. This perspective allows us to derive novel variants of Sinkhorn schemes that are robust to noise and bias. Moreover, our continuous-time dynamics not only generalize but also offer a unified perspective on several recently discovered dynamics in machine learning and mathematics, such as the &ldquo;Wasserstein mirror flow&rdquo; of (Deb et al. 2023) or the &ldquo;mean-field Schrödinger equation&rdquo; of (Claisse et al. 2023).</p>]]></description>
+  </item>
 
   <item>
     <title>Dimensionality Reduction and Wasserstein Stability for Kernel Regression</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Diao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Variational inference (VI) seeks to approximate a target distribution π by an element of a tractable family of distributions. Of key interest in statistics and machine learning is Gaussian VI, which approximates π by minimizing the Kullback-Leibler (KL) divergence to π over the space of Gaussians. In this work, we develop the (Stochastic) Forward-Backward Gaussian Variational Inference (FB-GVI) algorithm to solve Gaussian VI. Our approach exploits the composite structure of the KL divergence, which can be written as the sum of a smooth term (the potential) and a non-smooth term (the entropy) over the Bures-Wasserstein (BW) space of Gaussians endowed with the Wasserstein distance. For our proposed algorithm, we obtain state-of-the-art convergence guarantees when π is log-smooth and log-concave, as well as the first convergence guarantees to first-order stationary solutions when π is only log-smooth.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2106-01357</link>
-    <guid isPermaLink="false">arxiv:2106.01357</guid>
-    <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Valentin De Bortoli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Progressively applying Gaussian noise transforms complex data distributions to approximately Gaussian. Reversing this dynamic defines a generative model. When the forward noising process is given by a Stochastic Differential Equation (SDE), Song et al. (2021) demonstrate how the time inhomogeneous drift of the associated reverse-time SDE may be estimated using score-matching. A limitation of this approach is that the forward-time SDE must be run for a sufficiently long time for the final distribution to be approximately Gaussian. In contrast, solving the Schrödinger Bridge problem (SB), i.e. an entropy-regularized optimal transport problem on path spaces, yields diffusions which generate samples from the data distribution in finite time. We present Diffusion SB (DSB), an original approximation of the Iterative Proportional Fitting (IPF) procedure to solve the SB problem, and provide theoretical analysis along with generative modeling experiments. The first DSB iteration recovers the methodology proposed by Song et al. (2021), with the flexibility of using shorter time intervals, as subsequent DSB iterations reduce the discrepancy between the final-time marginal of the forward (resp. backward) SDE with respect to the prior (resp. data) distribution. Beyond generative modeling, DSB offers a widely applicable computational optimal transport tool as the continuous state-space analogue of the popular Sinkhorn algorithm (Cuturi, 2013).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Rethinking Initialization of the Sinkhorn Algorithm</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2206-07630</link>
-    <guid isPermaLink="false">arxiv:2206.07630</guid>
-    <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">James Thornton et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>While the optimal transport (OT) problem was originally formulated as a linear program, the addition of entropic regularization has proven beneficial both computationally and statistically, for many applications. The Sinkhorn fixed-point algorithm is the most popular approach to solve this regularized problem, and, as a result, multiple attempts have been made to reduce its runtime using, e.g., annealing in the regularization parameter, momentum or acceleration. The premise of this work is that initialization of the Sinkhorn algorithm has received comparatively little attention, possibly due to two preconceptions: since the regularized OT problem is convex, it may not be worth crafting a good initialization, since any is guaranteed to work; secondly, because the outputs of the Sinkhorn algorithm are often unrolled in end-to-end pipelines, a data-dependent initialization would bias Jacobian computations. We challenge this conventional wisdom, and show that data-dependent initializers result in dramatic speed-ups, with no effect on differentiability as long as implicit differentiation is used. Our initializations rely on closed-forms for exact or approximate OT solutions that are known in the 1D, Gaussian or GMM settings. They can be used with minimal tuning, and result in consistent speed-ups for a wide variety of OT problems.</p>]]></description>
   </item>
 
 </channel>

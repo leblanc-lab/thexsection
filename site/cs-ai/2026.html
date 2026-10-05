@@ -36,17 +36,38 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">649 papers</span>
-  <span class="count">515 days</span>
+  <span class="count">650 papers</span>
+  <span class="count">516 days</span>
   <span class="count">since 2012</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">229</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">230</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, October 5, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-02395">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.02395" target="_blank" rel="noopener">arXiv:2610.02395</a>
+      
+      <a class="permalink" href="#a2610-02395" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">FlashSinkhorn 2: Block-Sparse Entropic Optimal Transport</h3>
+    <p class="byline">Felix X. -F. Ye et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Streaming GPU solvers for entropic optimal transport (EOT), such as FlashSinkhorn, avoid storing the dense kernel but still evaluate all <span class="arithmatex">\(n\times m\)</span> point pairs in every Sinkhorn iteration. We present \textbf{FlashSinkhorn~2} (FS2), a solver for squared-Euclidean cost on low-dimensional point clouds that solves large discrete EOT problems to a prescribed marginal residual on a single GPU by coupling two stages. A coarse stage solves on cell centroids, lifts the potentials to every point and, when a sampled marginal check rejects the lift, continues on the centroids, replacing most point-level updates. A block-sparse fine stage then removes the centroid error that coarse updates cannot. Its Morton-ordered blocks support screening and fused tensor-core execution, and a threshold set by the block masses bounds each omitted tile&rsquo;s contribution to every row and column. On synthetic benchmarks, FS2 reaches the target residual on all 32 problems and GeomLoss multiscale on 10. On one A100, FS2 solves discrete EOT between two <span class="arithmatex">\(1.34\times10^8\)</span>-particle measures from a cosmological <span class="arithmatex">\(N\)</span>-body simulation, at an entropic blur equal to the mean interparticle distance, to an all-particle marginal residual below 0.01 in under 2.5 hours. To our knowledge, it is the largest discrete EOT problem solved to this accuracy within hours. For reproducibility, we release an open-source implementation at https://github.com/ot-triton-lab/flash-sinkhorn</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -4178,7 +4199,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-05 05:50 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-05 05:56 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

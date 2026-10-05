@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Linear Time Sinkhorn Divergences using Positive Features</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2006-07057</link>
+    <guid isPermaLink="false">arxiv:2006.07057</guid>
+    <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Meyer Scetbon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Although Sinkhorn divergences are now routinely used in data sciences to compare probability distributions, the computational effort required to compute them remains expensive, growing in general quadratically in the size n of the support of these distributions. Indeed, solving optimal transport (OT) with an entropic regularization requires computing a n×n kernel matrix (the neg-exponential of a n×n pairwise ground cost matrix) that is repeatedly applied to a vector. We propose to use instead ground costs of the form c(x,y)=-logφ(x)φ(y) where φ is a map from the ground space onto the positive orthant ^r_+, with r≪n. This choice yields, equivalently, a kernel k(x,y)=φ(x)φ(y), and ensures that the cost of Sinkhorn iterations scales as O(nr). We show that usual cost functions can be approximated using this form. Additionaly, we take advantage of the fact that our approach yields approximation that remain fully differentiable with respect to input distributions, as opposed to previously proposed adaptive low-rank approximations of the kernel matrix, to train a faster variant of OT-GAN \cite{salimans2018improving}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Continuous Regularized Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2008-12534</link>
+    <guid isPermaLink="false">arxiv:2008.12534</guid>
+    <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lingxiao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein barycenters provide a geometrically meaningful way to aggregate probability distributions, built on the theory of optimal transport. They are difficult to compute in practice, however, leading previous work to restrict their supports to finite sets of points. Leveraging a new dual formulation for the regularized Wasserstein barycenter problem, we introduce a stochastic algorithm that constructs a continuous approximation of the barycenter. We establish strong duality and use the corresponding primal-dual relationship to parametrize the barycenter implicitly using the dual potentials of regularized transport problems. The resulting problem can be solved with stochastic gradient descent, which yields an efficient online algorithm to approximate the barycenter of continuous distributions given sample access. We demonstrate the effectiveness of our approach and compare against previous work on synthetic examples and real-world applications.</p>]]></description>
+  </item>
 
   <item>
     <title>Fast Epigraphical Projection-based Incremental Algorithms for Wasserstein Distributionally Robust Support Vector Machine</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Tong Lin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We propose regularization strategies for learning discriminative models that are robust to in-class variations of the input data. We use the Wasserstein-2 geometry to capture semantically meaningful neighborhoods in the space of images, and define a corresponding input-dependent additive noise data augmentation model. Expanding and integrating the augmented loss yields an effective Tikhonov-type Wasserstein diffusion smoothness regularizer. This approach allows us to apply high levels of regularization and train functions that have low variability within classes but remain flexible across classes. We provide efficient methods for computing the regularizer at a negligible cost in comparison to training with adversarial data augmentation. Initial experiments demonstrate improvements in generalization performance under adversarial perturbations and also large in-class variations of the input data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Joint Wasserstein Autoencoders for Aligning Multimodal Embeddings</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1909-06635</link>
-    <guid isPermaLink="false">arxiv:1909.06635</guid>
-    <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shweta Mahajan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>One of the key challenges in learning joint embeddings of multiple modalities, e.g. of images and text, is to ensure coherent cross-modal semantics that generalize across datasets. We propose to address this through joint Gaussian regularization of the latent representations. Building on Wasserstein autoencoders (WAEs) to encode the input in each domain, we enforce the latent embeddings to be similar to a Gaussian prior that is shared across the two domains, ensuring compatible continuity of the encoded semantic representations of images and texts. Semantic alignment is achieved through supervision from matching image-text pairs. To show the benefits of our semi-supervised representation, we apply it to cross-modal retrieval and phrase localization. We not only achieve state-of-the-art accuracy, but significantly better generalization across datasets, owing to the semantic continuity of the latent space.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Collaborative Filtering for Item Cold-start Recommendation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1909-04266</link>
-    <guid isPermaLink="false">arxiv:1909.04266</guid>
-    <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yitong Meng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The item cold-start problem seriously limits the recommendation performance of Collaborative Filtering (CF) methods when new items have either none or very little interactions. To solve this issue, many modern Internet applications propose to predict a new item&rsquo;s interaction from the possessing contents. However, it is difficult to design and learn a map between the item&rsquo;s interaction history and the corresponding contents. In this paper, we apply the Wasserstein distance to address the item cold-start problem. Given item content information, we can calculate the similarity between the interacted items and cold-start ones, so that a user&rsquo;s preference on cold-start items can be inferred by minimizing the Wasserstein distance between the distributions over these two types of items. We further adopt the idea of CF and propose Wasserstein CF (WCF) to improve the recommendation performance on cold-start items. Experimental results demonstrate the superiority of WCF over state-of-the-art approaches.</p>]]></description>
   </item>
 
 </channel>

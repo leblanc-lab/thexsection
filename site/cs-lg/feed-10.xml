@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Open-source FPGA-ML codesign for the MLPerf Tiny Benchmark</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-11791</link>
+    <guid isPermaLink="false">arxiv:2206.11791</guid>
+    <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hendrik Borras et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>We present our development experience and recent results for the MLPerf Tiny Inference Benchmark on field-programmable gate array (FPGA) platforms. We use the open-source hls4ml and FINN workflows, which aim to democratize AI-hardware codesign of optimized neural networks on FPGAs. We present the design and implementation process for the keyword spotting, anomaly detection, and image classification benchmark tasks. The resulting hardware implementations are quantized, configurable, spatial dataflow architectures tailored for speed and efficiency and introduce new generic optimizations and common workflows developed as a part of this work. The full workflow is presented from quantization-aware training to FPGA implementation. The solutions are deployed on system-on-chip (Pynq-Z2) and pure FPGA (Arty A7-100T) platforms. The resulting submissions achieve latencies as low as 20 μs and energy consumption as low as 30 μJ per inference. We demonstrate how emerging ML benchmarks on heterogeneous hardware platforms can catalyze collaboration and the development of new techniques and more accessible tools.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On making optimal transport robust to all outliers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-11988</link>
+    <guid isPermaLink="false">arxiv:2206.11988</guid>
+    <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Fatras</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is known to be sensitive against outliers because of its marginal constraints. Outlier robust OT variants have been proposed based on the definition that outliers are samples which are expensive to move. In this paper, we show that this definition is restricted by considering the case where outliers are closer to the target measure than clean samples. We show that outlier robust OT fully transports these outliers leading to poor performances in practice. To tackle these outliers, we propose to detect them by relying on a classifier trained with adversarial training to classify source and target samples. A sample is then considered as an outlier if the prediction from the classifier is different from its assigned label. To decrease the influence of these outliers in the transport problem, we propose to either remove them from the problem or to increase the cost of moving them by using the classifier prediction. We show that we successfully detect these outliers and that they do not influence the transport problem on several experiments such as gradient flows, generative models and label propagation.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal transport meets noisy label robust loss and MixUp regularization for domain adaptation</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Jawanpuria et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) is a powerful geometric tool for comparing two distributions and has been employed in various machine learning applications. In this work, we propose a novel OT formulation that takes feature correlations into account while learning the transport plan between two distributions. We model the feature-feature relationship via a symmetric positive semi-definite Mahalanobis metric in the OT cost function. For a certain class of regularizers on the metric, we show that the optimization strategy can be considerably simplified by exploiting the problem structure. For high-dimensional data, we additionally propose suitable low-dimensional modeling of the Mahalanobis metric. Overall, we view the resulting optimization problem as a non-linear OT problem, which we solve using the Frank-Wolfe algorithm. Empirical results on the discriminative learning setting, such as tag prediction and multi-class classification, illustrate the good performance of our approach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein GANs Work Because They Fail (to Approximate the Wasserstein Distance)</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-01678</link>
-    <guid isPermaLink="false">arxiv:2103.01678</guid>
-    <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Stanczuk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein GANs are based on the idea of minimising the Wasserstein distance between a real and a generated distribution. We provide an in-depth mathematical analysis of differences between the theoretical setup and the reality of training Wasserstein GANs. In this work, we gather both theoretical and empirical evidence that the WGAN loss is not a meaningful approximation of the Wasserstein distance. Moreover, we argue that the Wasserstein distance is not even a desirable loss function for deep generative models, and conclude that the success of Wasserstein GANs can in truth be attributed to a failure to approximate the Wasserstein distance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Understanding Event-Generation Networks via Uncertainties</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-04543</link>
-    <guid isPermaLink="false">arxiv:2104.04543</guid>
-    <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marco Bellagente et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Tilman Plehn) — original abstract; no AI summary.</em></p>
-<p>Following the growing success of generative neural networks in LHC simulations, the crucial question is how to control the networks and assign uncertainties to their event output. We show how Bayesian normalizing flow or invertible networks capture uncertainties from the training and turn them into an uncertainty on the event weight. Fundamentally, the interplay between density and uncertainty estimates indicates that these networks learn functions in analogy to parameter fits rather than binned event counts.</p>]]></description>
   </item>
 
 </channel>

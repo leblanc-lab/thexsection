@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport for Domain Adaptation through Gaussian Mixture Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-13847</link>
+    <guid isPermaLink="false">arxiv:2403.13847</guid>
+    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Machine learning systems operate under the assumption that training and test data are sampled from a fixed probability distribution. However, this assumptions is rarely verified in practice, as the conditions upon which data was acquired are likely to change. In this context, the adaptation of the unsupervised domain requires minimal access to the data of the new conditions for learning models robust to changes in the data distribution. Optimal transport is a theoretically grounded tool for analyzing changes in distribution, especially as it allows the mapping between domains. However, these methods are usually computationally expensive as their complexity scales cubically with the number of samples. In this work, we explore optimal transport between Gaussian Mixture Models (GMMs), which is conveniently written in terms of the components of source and target GMMs. We experiment with 9 benchmarks, with a total of 85 adaptation tasks, showing that our methods are more efficient than previous shallow domain adaptation methods, and they scale well with number of samples n and dimensions d.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unsupervised Anomaly Detection through Mass Repulsing Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-12793</link>
+    <guid isPermaLink="false">arxiv:2502.12793</guid>
+    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Detecting anomalies in datasets is a longstanding problem in machine learning. In this context, anomalies are defined as a sample that significantly deviates from the remaining data. Meanwhile, optimal transport (OT) is a field of mathematics concerned with the transportation, between two probability measures, at least effort. In classical OT, the optimal transportation strategy of a measure to itself is the identity. In this paper, we tackle anomaly detection by forcing samples to displace its mass, while keeping the least effort objective. We call this new transportation problem Mass Repulsing Optimal Transport (MROT). Naturally, samples lying in low density regions of space will be forced to displace mass very far, incurring a higher transportation cost. We use these concepts to design a new anomaly score. Through a series of experiments in existing benchmarks, and fault detection problems, we show that our algorithm improves over existing methods.</p>]]></description>
+  </item>
 
   <item>
     <title>Unsupervised Learning for Optimal Transport plan prediction between unbalanced graphs</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Linwu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The pyLOT library offers a Python implementation of linearized optimal transport (LOT) techniques and methods to use in downstream tasks. The pipeline embeds probability distributions into a Hilbert space via the Optimal Transport maps from a fixed reference distribution, and this linearization allows downstream tasks to be completed using off the shelf (linear) machine learning algorithms. We provide a case study of performing ML on 3D scans of lemur teeth, where the original questions of classification, clustering, dimension reduction, and data generation reduce to simple linear operations performed on the LOT embedded representations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multivariate Conformal Prediction using Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-03609</link>
-    <guid isPermaLink="false">arxiv:2502.03609</guid>
-    <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michal Klein et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Conformal prediction (CP) quantifies the uncertainty of machine learning models by constructing sets of plausible outputs. These sets are constructed by leveraging a so-called conformity score, a quantity computed using the input point of interest, a prediction model, and past observations. CP sets are then obtained by evaluating the conformity score of all possible outputs, and selecting them according to the rank of their scores. Due to this ranking step, most CP approaches rely on a score functions that are univariate. The challenge in extending these scores to multivariate spaces lies in the fact that no canonical order for vectors exists. To address this, we leverage a natural extension of multivariate score ranking based on optimal transport (OT). Our method, OTCP, offers a principled framework for constructing conformal prediction sets in multidimensional settings, preserving distribution-free coverage guarantees with finite data samples. We demonstrate tangible gains in a benchmark dataset of multivariate regression problems and address computational \&amp; statistical trade-offs that arise when estimating conformity scores through OT maps.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Differential Equation Approach for Wasserstein GANs and Beyond</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-16351</link>
-    <guid isPermaLink="false">arxiv:2405.16351</guid>
-    <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zachariah Malik et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper proposes a new theoretical lens to view Wasserstein generative adversarial networks (WGANs). To minimize the Wasserstein-1 distance between the true data distribution and our estimate of it, we derive a distribution-dependent ordinary differential equation (ODE) which represents the gradient flow of the Wasserstein-1 loss, and show that a forward Euler discretization of the ODE converges. This inspires a new class of generative models that naturally integrates persistent training (which we call W1-FE). When persistent training is turned off, we prove that W1-FE reduces to WGAN. When we intensify persistent training, W1-FE is shown to outperform WGAN in training experiments from low to high dimensions, in terms of both convergence speed and training results. Intriguingly, one can reap the benefits only when persistent training is carefully integrated through our ODE perspective. As demonstrated numerically, a naive inclusion of persistent training in WGAN (without relying on our ODE framework) can significantly worsen training results.</p>]]></description>
   </item>
 
 </channel>

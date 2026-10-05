@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FlashSinkhorn 2: Block-Sparse Entropic Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-02395</link>
+    <guid isPermaLink="false">arxiv:2610.02395</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Felix X. -F. Ye et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Streaming GPU solvers for entropic optimal transport (EOT), such as FlashSinkhorn, avoid storing the dense kernel but still evaluate all n×m point pairs in every Sinkhorn iteration. We present \textbf{FlashSinkhorn~2} (FS2), a solver for squared-Euclidean cost on low-dimensional point clouds that solves large discrete EOT problems to a prescribed marginal residual on a single GPU by coupling two stages. A coarse stage solves on cell centroids, lifts the potentials to every point and, when a sampled marginal check rejects the lift, continues on the centroids, replacing most point-level updates. A block-sparse fine stage then removes the centroid error that coarse updates cannot. Its Morton-ordered blocks support screening and fused tensor-core execution, and a threshold set by the block masses bounds each omitted tile&rsquo;s contribution to every row and column. On synthetic benchmarks, FS2 reaches the target residual on all 32 problems and GeomLoss multiscale on 10. On one A100, FS2 solves discrete EOT between two 1.34×10⁸-particle measures from a cosmological N-body simulation, at an entropic blur equal to the mean interparticle distance, to an all-particle marginal residual below 0.01 in under 2.5 hours. To our knowledge, it is the largest discrete EOT problem solved to this accuracy within hours. For reproducibility, we release an open-source implementation at https://github.com/ot-triton-lab/flash-sinkhorn</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport Reweighting for Robust Learning under Spurious Correlations and Label Noise</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shun Fujiyoshi</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>Creativity and strategic foresight have been extensively studied through descriptive theories &ndash; Koestler&rsquo;s bisociation (1964), de Bono&rsquo;s lateral thinking (1967), and Ansoff&rsquo;s weak signals (1975) explain why creative and strategic insights occur, but offer limited guidance on how to produce them on demand. This paper presents two executable protocols that bridge this theory-practice gap: GHOSTY COLLIDER, a 5-step protocol for cross-domain creative emergence through structural de-labeling and collision, and PRECOG PROTOCOL, a 5-step protocol for signal-based strategic foresight with multi-axis timing judgment. We formalize established theories into repeatable, step-by-step procedures with explicit quality criteria, anti-pattern detection, and measurable outputs. We evaluate the protocols through three complementary methods: (1) five detailed case studies across distinct domains, (2) controlled comparisons against standard methods using identical inputs, and (3) a batch experiment across eight random domain pairings (N=8, success rate 87.5%, failure rate 12.5%) with one blind evaluation. Preliminary evidence suggests that protocol-driven outputs exhibit greater structural novelty, higher parameter specificity, and qualitatively distinct creative directions compared to outputs from standard methods. The blind evaluation confirmed the direction of author assessments (protocol output scored 74/80 vs. brainstorming 49/80). These results, while limited by single-operator execution, indicate that the theory-to-protocol translation preserves and potentially enhances the generative power of the underlying theories. The protocols, updated to version 2 incorporating lessons from failure case analysis, are released as open-access documents under CC BY-NC 4.0 at https://github.com/GhostyAI-HA/ghosty-collider.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bures-Wasserstein Flow Matching for Graph Generation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2506-14020</link>
-    <guid isPermaLink="false">arxiv:2506.14020</guid>
-    <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keyue Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Graph generation has emerged as a critical task in fields ranging from drug discovery to circuit design. Contemporary approaches, notably diffusion and flow-based models, have achieved solid graph generative performance through constructing a probability path that interpolates between reference and data distributions. However, these methods typically model the evolution of individual nodes and edges independently and use linear interpolations in the disjoint space of nodes/edges to build the path. This disentangled interpolation breaks the interconnected patterns of graphs, making the constructed probability path irregular and non-smooth, which causes poor training dynamics and faulty sampling convergence. To address the limitation, this paper first presents a theoretically grounded framework for probability path construction in graph generative models. Specifically, we model the joint evolution of the nodes and edges by representing graphs as connected systems parameterized by Markov random fields (MRF). We then leverage the optimal transport displacement between MRF objects to design a smooth probability path that ensures the co-evolution of graph components. Based on this, we introduce BWFlow, a flow-matching framework for graph generation that utilizes the derived optimal probability path to benefit the training and sampling algorithm design. Experimental evaluations in plain graph generation and molecule generation validate the effectiveness of BWFlow with competitive performance, better training convergence, and efficient sampling.</p>]]></description>
   </item>
 
 </channel>
