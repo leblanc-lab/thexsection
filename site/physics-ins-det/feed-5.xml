@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The ALICE Run 3 Online / Offline Processing</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2022.html#a2208-07412</link>
+    <guid isPermaLink="false">arxiv:2208.07412</guid>
+    <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Rohr</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The ALICE experiment has undergone a major upgrade for LHC Run 3 and will collect data at an interaction rate 50 times larger than before. The new computing scheme for Run 3 replaces the traditionally separate online and offline frameworks by a unified one, which is called O2. Processing will happen in two phases. During data taking, a synchronous processing phase performs data compression, calibration, and quality control on the online computing farm. The output is stored on an onsite disk buffer. When there is no beam in the LHC, the same computing farm is used for the asynchronous reprocessing of the data which yields the final reconstruction output. The O2 project consists of three main parts:. The Event Processing Nodes (EPN) equipped with GPUs deliver the bulk of the computing capacity and perform the majority of the reconstruction and the calibration. The First Level Processors (FLP) receive the data via optical links from the detectors and perform local processing where it is needed, which can optionally happen in the user logic of the FPGA based readout card. Between the FLP and the EPN farms the data is distributed in the network such that the EPNs receive complete collision data for the processing. The Physics and Data Processing (PDP) group develops the software framework and the reconstruction and calibration algorithms. The current O2 setup is capable of handling in real time the peak data rate foreseen for data taking of Pb&ndash;Pb collisions at 50 kHz interaction rate..</p>]]></description>
+  </item>
+
+  <item>
+    <title>Snowmass 2021/22 Letter of Interest: A Forward Calorimeter at the LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2022.html#a2208-13541</link>
+    <guid isPermaLink="false">arxiv:2208.13541</guid>
+    <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">I. G. Bearden et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Juan Rojo) — original abstract; no AI summary.</em></p>
+<p>A forward electromagnetic and hadronic calorimeter (FoCal) was proposed as an upgrade to the ALICE experiment, to be installed during LS3 for data-taking in 2027&ndash;2029 at the LHC. The FoCal extends the scope of ALICE, which was designed for the comprehensive study of hot and dense partonic matter, by adding new capabilities to explore the small-x parton structure of nucleons and nuclei. The primary objective of the FoCal is high-precision inclusive measurement of direct photons and jets, as well as coincident gamma-jet and jet-jet measurements, in pp and p&ndash;Pb collisions. These measurements by FoCal constitute an essential part of a comprehensive small-x program at the LHC down to x∼10⁻⁶ and over a large range of Q² with a broad array of complementary probes, comprising &ndash; in addition to the photon measurements by FoCal and LHCb &ndash; Drell-Yan and open charm measurements planned by LHCb, as well as photon-induced reactions performed by all LHC experiments.</p>]]></description>
+  </item>
 
   <item>
     <title>Investigation of Mixed Irradiation Effects in p-MCz Thin Silicon Microstrip Detector for the HL-LHC Experiments</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Abbas et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>An estimate of environmental background hit rate on triple-GEM chambers is performed using Monte Carlo (MC) simulation and compared to data taken by test chambers installed in the CMS experiment (GE1/1) during Run-2 at the Large Hadron Collider (LHC). The hit rate is measured using data collected with proton-proton collisions at 13 TeV and a luminosity of 1.5×10³⁴ cm⁻² s⁻¹. The simulation framework uses a combination of the FLUKA and Geant4 packages to obtain the hit rate. FLUKA provides the radiation environment around the GE1/1 chambers, which is comprised of the particle flux with momentum direction and energy spectra ranging from 10⁻¹¹ to 10⁴ MeV for neutrons, 10⁻³ to 10⁴ MeV for γ&rsquo;s, 10⁻² to 10⁴ MeV for e^±, and 10⁻¹ to 10⁴ MeV for charged hadrons. Geant4 provides an estimate of detector response (sensitivity) based on an accurate description of detector geometry, material composition and interaction of particles with the various detector layers. The MC simulated hit rate is estimated as a function of the perpendicular distance from the beam line and agrees with data within the assigned uncertainties of 10-14.5%. This simulation framework can be used to obtain a reliable estimate of background rates expected at the High Luminosity LHC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The ATLAS Fast TracKer system</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2021.html#a2101-05078</link>
-    <guid isPermaLink="false">arxiv:2101.05078</guid>
-    <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>The ATLAS Fast TracKer (FTK) was designed to provide full tracking for the ATLAS high-level trigger by using pattern recognition based on Associative Memory (AM) chips and fitting in high-speed field programmable gate arrays. The tracks found by the FTK are based on inputs from all modules of the pixel and silicon microstrip trackers. The as-built FTK system and components are described, as is the online software used to control them while running in the ATLAS data acquisition system. Also described is the simulation of the FTK hardware and the optimization of the AM pattern banks. An optimization for long-lived particles with large impact parameter values is included. A test of the FTK system with the data playback facility that allowed the FTK to be commissioned during the shutdown between Run 2 and Run 3 of the LHC is reported. The resulting tracks from part of the FTK system covering a limited η-ϕ region of the detector are compared with the output from the FTK simulation. It is shown that FTK performance is in good agreement with the simulation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards Real-World Applications of ServiceX, an Analysis Data Transformation System</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2021.html#a2107-01789</link>
-    <guid isPermaLink="false">arxiv:2107.01789</guid>
-    <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">KyungEon Choi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>One of the biggest challenges in the High-Luminosity LHC (HL- LHC) era will be the significantly increased data size to be recorded and analyzed from the collisions at the ATLAS and CMS experiments. ServiceX is a software R&amp;D project in the area of Data Organization, Management and Access of the IRIS- HEP to investigate new computational models for the HL- LHC era. ServiceX is an experiment-agnostic service to enable on-demand data delivery specifically tailored for nearly-interactive vectorized analyses. It is capable of retrieving data from grid sites, on-the-fly data transformation, and delivering user-selected data in a variety of different formats. New features will be presented that make the service ready for public use. An ongoing effort to integrate ServiceX with a popular statistical analysis framework in ATLAS will be described with an emphasis of a practical implementation of ServiceX into the physics analysis pipeline.</p>]]></description>
   </item>
 
 </channel>

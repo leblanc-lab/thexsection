@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Understanding the training of infinitely deep and wide ResNets with Conditional Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-12887</link>
+    <guid isPermaLink="false">arxiv:2403.12887</guid>
+    <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raphaël Barboni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the convergence of gradient flow for the training of deep neural networks. If Residual Neural Networks are a popular example of very deep architectures, their training constitutes a challenging optimization problem due notably to the non-convexity and the non-coercivity of the objective. Yet, in applications, those tasks are successfully solved by simple optimization algorithms such as gradient descent. To better understand this phenomenon, we focus here on a ``mean-field&rsquo;&rsquo; model of infinitely deep and arbitrarily wide ResNet, parameterized by probability measures over the product set of layers and parameters and with constant marginal on the set of layers. Indeed, in the case of shallow neural networks, mean field models have proven to benefit from simplified loss-landscapes and good theoretical guarantees when trained with gradient flow for the Wasserstein metric on the set of probability measures. Motivated by this approach, we propose to train our model with gradient flow w.r.t. the conditional Optimal Transport distance: a restriction of the classical Wasserstein distance which enforces our marginal condition. Relying on the theory of gradient flows in metric spaces we first show the well-posedness of the gradient flow equation and its consistency with the training of ResNets at finite width. Performing a local Polyak-Łojasiewicz analysis, we then show convergence of the gradient flow for well-chosen initializations: if the number of features is finite but sufficiently large and the risk is sufficiently small at initialization, the gradient flow converges towards a global minimizer. This is the first result of this type for infinitely deep and arbitrarily wide ResNets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Simulation-Prior Independent Neural Unfolding Procedure</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-15084</link>
+    <guid isPermaLink="false">arxiv:2507.15084</guid>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anja Butter et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, LHC, Tilman Plehn, Anja Butter, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Machine learning allows unfolding high-dimensional spaces without binning at the LHC. The new SPINUP method extracts the unfolded distribution based on a neural network encoding the forward mapping, making it independent of the prior from the simulated training data. It is made efficient through neural importance sampling, and ensembling can be used to estimate the effect of information loss in the forward process. We showcase SPINUP for unfolding detector effects on jet substructure observables and for unfolding to parton level of associated Higgs and single-top production.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical and Computational Guarantees of Kernel Max-Sliced Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-15441</link>
+    <guid isPermaLink="false">arxiv:2405.15441</guid>
+    <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jie Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport has been very successful for various machine learning tasks; however, it is known to suffer from the curse of dimensionality. Hence, dimensionality reduction is desirable when applied to high-dimensional data with low-dimensional structures. The kernel max-sliced (KMS) Wasserstein distance is developed for this purpose by finding an optimal nonlinear mapping that reduces data into 1 dimension before computing the Wasserstein distance. However, its theoretical properties have not yet been fully developed. In this paper, we provide sharp finite-sample guarantees under milder technical assumptions compared with state-of-the-art for the KMS p-Wasserstein distance between two empirical distributions with n samples for general p∈[1,∞). Algorithm-wise, we show that computing the KMS 2-Wasserstein distance is NP-hard, and then we further propose a semidefinite relaxation (SDR) formulation (which can be solved efficiently in polynomial time) and provide a relaxation gap for the obtained solution. We provide numerical examples to demonstrate the good performance of our scheme for high-dimensional two-sample testing.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine-Learning Analysis of Radiative Decays to Dark Matter at the LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-13799</link>
+    <guid isPermaLink="false">arxiv:2410.13799</guid>
+    <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ernesto Arganda et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The search for weakly interacting matter particles (WIMPs) is one of the main objectives of the High Luminosity Large Hadron Collider (HL-LHC). In this work we use Machine-Learning (ML) techniques to explore WIMP radiative decays into a Dark Matter (DM) candidate in a supersymmetric framework. The minimal supersymmetric WIMP sector includes the lightest neutralino that can provide the observed DM relic density through its co-annihilation with the second lightest neutralino and lightest chargino. Moreover, the direct DM detection cross section rates fulfill current experimental bounds and provide discovery targets for the same region of model parameters in which the radiative decay of the second lightest neutralino into a photon and the lightest neutralino is enhanced. This strongly motivates the search for radiatively decaying neutralinos which, however, suffers from strong backgrounds. We investigate the LHC reach in the search for these radiatively decaying particles by means of cut-based and ML methods and estimate its discovery potential in this well-motivated, new physics scenario. We demonstrate that using ML techniques would enable access to most of the parameter space unexplored by other searches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Foundation Models for Experimental Readout Systems Combining Discrete and Continuous Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-08736</link>
+    <guid isPermaLink="false">arxiv:2505.08736</guid>
+    <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">James Giroux et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>We present a (proto) Foundation Model for Nuclear Physics, capable of operating on low-level detector inputs from Imaging Cherenkov Detectors at the future Electron Ion Collider. Building upon established next-token prediction approaches, we aim to address potential challenges such as resolution loss from existing tokenization schemes and limited support for conditional generation. We propose four key innovations: (i) separate vocabularies for discrete and continuous variates, combined via Causal Multi-Head Cross-Attention (CMHCA), (ii) continuous kinematic conditioning through prepended context embeddings, (iii) scalable and simple, high-resolution continuous variate tokenization without joint vocabulary inflation, and (iv) class conditional generation through a Mixture of Experts. Our model enables fast, high-fidelity generation of pixel and time sequences for Cherenkov photons, validated through closure tests in the High Performance DIRC. We also show our model generalizes to reconstruction tasks such as pion/kaon identification, and noise filtering, in which we show its ability to leverage fine-tuning under specific objectives.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SIDDA: SInkhorn Dynamic Domain Adaptation for Image Classification with Equivariant Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-14048</link>
+    <guid isPermaLink="false">arxiv:2501.14048</guid>
+    <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sneh Pandya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Modern neural networks (NNs) often do not generalize well in the presence of a &ldquo;covariate shift&rdquo;; that is, in situations where the training and test data distributions differ, but the conditional distribution of classification labels remains unchanged. In such cases, NN generalization can be reduced to a problem of learning more domain-invariant features. Domain adaptation (DA) methods include a range of techniques aimed at achieving this; however, these methods have struggled with the need for extensive hyperparameter tuning, which then incurs significant computational costs. In this work, we introduce SIDDA, an out-of-the-box DA training algorithm built upon the Sinkhorn divergence, that can achieve effective domain alignment with minimal hyperparameter tuning and computational overhead. We demonstrate the efficacy of our method on multiple simulated and real datasets of varying complexity, including simple shapes, handwritten digits, and real astronomical observations. SIDDA is compatible with a variety of NN architectures, and it works particularly well in improving classification accuracy and model calibration when paired with equivariant neural networks (ENNs). We find that SIDDA enhances the generalization capabilities of NNs, achieving up to a ≈40% improvement in classification accuracy on unlabeled target data. We also study the efficacy of DA on ENNs with respect to the varying group orders of the dihedral group D_N, and find that the model performance improves as the degree of equivariance increases. Finally, we find that SIDDA enhances model calibration on both source and target data&ndash;achieving over an order of magnitude improvement in the ECE and Brier score. SIDDA&rsquo;s versatility, combined with its automated approach to domain alignment, has the potential to advance multi-dataset studies by enabling the development of highly generalizable models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Recent results on searches with boosted Higgs bosons at CMS</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-11977</link>
+    <guid isPermaLink="false">arxiv:2507.11977</guid>
+    <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (boosted Higgs, LHC) — original abstract; no AI summary.</em></p>
+<p>The study of boosted Higgs bosons at the LHC provides a unique window to probe Higgs boson couplings at high energy scales and search for signs of physics beyond the standard model. In these proceedings, we present recent results on boosted Higgs boson searches at the CMS experiment, highlighting innovative reconstruction and tagging techniques that enhance sensitivity in this challenging regime.</p>]]></description>
+  </item>
+
+  <item>
+    <title>S2WTM: Spherical Sliced-Wasserstein Autoencoder for Topic Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-12451</link>
+    <guid isPermaLink="false">arxiv:2507.12451</guid>
+    <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Suman Adhya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Modeling latent representations in a hyperspherical space has proven effective for capturing directional similarities in high-dimensional text data, benefiting topic modeling. Variational autoencoder-based neural topic models (VAE-NTMs) commonly adopt the von Mises-Fisher prior to encode hyperspherical structure. However, VAE-NTMs often suffer from posterior collapse, where the KL divergence term in the objective function highly diminishes, leading to ineffective latent representations. To mitigate this issue while modeling hyperspherical structure in the latent space, we propose the Spherical Sliced Wasserstein Autoencoder for Topic Modeling (S2WTM). S2WTM employs a prior distribution supported on the unit hypersphere and leverages the Spherical Sliced-Wasserstein distance to align the aggregated posterior distribution with the prior. Experimental results demonstrate that S2WTM outperforms state-of-the-art topic models, generating more coherent and diverse topics while improving performance on downstream tasks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>LaCoOT: Layer Collapse through Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-08933</link>
+    <guid isPermaLink="false">arxiv:2406.08933</guid>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Victor Quétu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Although deep neural networks are well-known for their outstanding performance in tackling complex tasks, their hunger for computational resources remains a significant hurdle, posing energy-consumption issues and restricting their deployment on resource-constrained devices, preventing their widespread adoption. In this paper, we present an optimal transport-based method to reduce the depth of over-parametrized deep neural networks, alleviating their computational burden. More specifically, we propose a new regularization strategy based on the Max-Sliced Wasserstein distance to minimize the distance between the intermediate feature distributions in the neural network. We show that minimizing this distance enables the complete removal of intermediate layers in the network, achieving better performance/depth trade-off compared to existing techniques. We assess the effectiveness of our method on traditional image classification setups and extend it to generative image models. Our code is available at https://github.com/VGCQ/LaCoOT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Offline Reinforcement Learning with Wasserstein Regularization via Optimal Transport Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-10843</link>
+    <guid isPermaLink="false">arxiv:2507.10843</guid>
+    <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Motoki Omura et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Offline reinforcement learning (RL) aims to learn an optimal policy from a static dataset, making it particularly valuable in scenarios where data collection is costly, such as robotics. A major challenge in offline RL is distributional shift, where the learned policy deviates from the dataset distribution, potentially leading to unreliable out-of-distribution actions. To mitigate this issue, regularization techniques have been employed. While many existing methods utilize density ratio-based measures, such as the f-divergence, for regularization, we propose an approach that utilizes the Wasserstein distance, which is robust to out-of-distribution data and captures the similarity between actions. Our method employs input-convex neural networks (ICNNs) to model optimal transport maps, enabling the computation of the Wasserstein distance in a discriminator-free manner, thereby avoiding adversarial training and ensuring stable learning. Our approach demonstrates comparable or superior performance to widely used existing methods on the D4RL benchmark dataset. The code is available at https://github.com/motokiomura/Q-DOT .</p>]]></description>
+  </item>
+
+  <item>
+    <title>Enhancing Distributional Robustness in Principal Component Analysis by Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-02494</link>
+    <guid isPermaLink="false">arxiv:2503.02494</guid>
+    <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lei Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider the distributionally robust optimization (DRO) model of principal component analysis (PCA) to account for uncertainty in the underlying probability distribution. The resulting formulation leads to a nonsmooth constrained min-max optimization problem, where the ambiguity set captures the distributional uncertainty by the type-2 Wasserstein distance. We prove that the inner maximization problem admits a closed-form optimal value. This explicit characterization equivalently reformulates the original DRO model into a minimization problem on the Stiefel manifold with intricate nonsmooth terms, a challenging formulation beyond the reach of existing algorithms. To address this issue, we devise an efficient smoothing manifold proximal gradient algorithm. Our analysis establishes Riemannian gradient consistency and global convergence of our algorithm to a stationary point of the nonsmooth minimization problem. We also provide the iteration complexity O(ε⁻³⁾ of our algorithm to achieve an ε-approximate stationary point. Finally, numerical experiments are conducted to validate the effectiveness and scalability of our algorithm, as well as to highlight the necessity and rationality of adopting the DRO model for PCA.</p>]]></description>
+  </item>
+
+  <item>
+    <title>An Optimal Transport Perspective on Unpaired Image Super-Resolution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2202-01116</link>
+    <guid isPermaLink="false">arxiv:2202.01116</guid>
+    <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Milena Gazdieva et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Real-world image super-resolution (SR) tasks often do not have paired datasets, which limits the application of supervised techniques. As a result, the tasks are usually approached by unpaired techniques based on Generative Adversarial Networks (GANs), which yield complex training losses with several regularization terms, e.g., content or identity losses. While GANs usually provide good practical performance, they are used heuristically, i.e., theoretical understanding of their behaviour is yet rather limited. We theoretically investigate optimization problems which arise in such models and find two surprising observations. First, the learned SR map is always an optimal transport (OT) map. Second, we theoretically prove and empirically show that the learned map is biased, i.e., it does not actually transform the distribution of low-resolution images to high-resolution ones. Inspired by these findings, we investigate recent advances in neural OT field to resolve the bias issue. We establish an intriguing connection between regularized GANs and neural OT approaches. We show that unlike the existing GAN-based alternatives, these algorithms aim to learn an unbiased OT map. We empirically demonstrate our findings via a series of synthetic and real-world unpaired SR experiments. Our source code is publicly available at https://github.com/milenagazdieva/OT-Super-Resolution.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport for Domain Adaptation through Gaussian Mixture Models</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sivaraman Balakrishnan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We study estimators of the optimal transport (OT) map between two probability distributions. We focus on plugin estimators derived from the OT map between estimates of the underlying distributions. We develop novel stability bounds for OT maps which generalize those in past work, and allow us to reduce the problem of optimally estimating the transport map to that of optimally estimating densities in the Wasserstein distance. In contrast, past work provided a partial connection between these problems and relied on regularity theory for the Monge-Ampere equation to bridge the gap, a step which required unnatural assumptions to obtain sharp guarantees. We also provide some new insights into the connections between stability bounds which arise in the analysis of plugin estimators and growth bounds for the semi-dual functional which arise in the analysis of Brenier potential-based estimators of the transport map. We illustrate the applicability of our new stability bounds by revisiting the smooth setting studied by Manole et al., analyzing two of their estimators under more general conditions. Critically, our bounds do not require smoothness or boundedness assumptions on the underlying measures. As an illustrative application, we develop and analyze a novel tuning parameter-free estimator for the OT map between two strongly log-concave distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Convergence Guarantees for a General Class of Score-Based Generative Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2311-11003</link>
-    <guid isPermaLink="false">arxiv:2311.11003</guid>
-    <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuefeng Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based generative models (SGMs) is a recent class of deep generative models with state-of-the-art performance in many applications. In this paper, we establish convergence guarantees for a general class of SGMs in 2-Wasserstein distance, assuming accurate score estimates and smooth log-concave data distribution. We specialize our result to several concrete SGMs with specific choices of forward processes modelled by stochastic differential equations, and obtain an upper bound on the iteration complexity for each model, which demonstrates the impacts of different choices of the forward processes. We also provide a lower bound when the data distribution is Gaussian. Numerically, we experiment SGMs with different forward processes, some of which are newly proposed in this paper, for unconditional image generation on CIFAR-10. We find that the experimental results are in good agreement with our theoretical predictions on the iteration complexity, and the models with our newly proposed forward processes can outperform existing models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence Analysis for General Probability Flow ODEs of Diffusion Models in Wasserstein Distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2401-17958</link>
-    <guid isPermaLink="false">arxiv:2401.17958</guid>
-    <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuefeng Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based generative modeling with probability flow ordinary differential equations (ODEs) has achieved remarkable success in a variety of applications. While various fast ODE-based samplers have been proposed in the literature and employed in practice, the theoretical understandings about convergence properties of the probability flow ODE are still quite limited. In this paper, we provide the first non-asymptotic convergence analysis for a general class of probability flow ODE samplers in 2-Wasserstein distance, assuming accurate score estimates and smooth log-concave data distributions. We then consider various examples and establish results on the iteration complexity of the corresponding ODE-based samplers. Our proof technique relies on spelling out explicitly the contraction rate for the continuous-time ODE and analyzing the discretization and score-matching errors using synchronous coupling; the challenge in our analysis mainly arises from the inherent non-autonomy of the probability flow ODE and the specific exponential integrator that we study.</p>]]></description>
-  </item>
-
-  <item>
-    <title>THESAURUS: Contrastive Graph Clustering by Swapping Fused Gromov-Wasserstein Couplings</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-11550</link>
-    <guid isPermaLink="false">arxiv:2412.11550</guid>
-    <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bowen Deng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Graph node clustering is a fundamental unsupervised task. Existing methods typically train an encoder through selfsupervised learning and then apply K-means to the encoder output. Some methods use this clustering result directly as the final assignment, while others initialize centroids based on this initial clustering and then finetune both the encoder and these learnable centroids. However, due to their reliance on K-means, these methods inherit its drawbacks when the cluster separability of encoder output is low, facing challenges from the Uniform Effect and Cluster Assimilation. We summarize three reasons for the low cluster separability in existing methods: (1) lack of contextual information prevents discrimination between similar nodes from different clusters; (2) training tasks are not sufficiently aligned with the downstream clustering task; (3) the cluster information in the graph structure is not appropriately exploited. To address these issues, we propose conTrastive grapH clustEring by SwApping fUsed gRomov-wasserstein coUplingS (THESAURUS). Our method introduces semantic prototypes to provide contextual information, and employs a cross-view assignment prediction pretext task that aligns well with the downstream clustering task. Additionally, it utilizes Gromov-Wasserstein Optimal Transport (GW-OT) along with the proposed prototype graph to thoroughly exploit cluster information in the graph structure. To adapt to diverse real-world data, THESAURUS updates the prototype graph and the prototype marginal distribution in OT by using momentum. Extensive experiments demonstrate that THESAURUS achieves higher cluster separability than the prior art, effectively mitigating the Uniform Effect and Cluster Assimilation issues</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein distributional adversarial training for deep neural networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-09352</link>
-    <guid isPermaLink="false">arxiv:2502.09352</guid>
-    <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xingjian Bai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Design of adversarial attacks for deep neural networks, as well as methods of adversarial training against them, are subject of intense research. In this paper, we propose methods to train against distributional attack threats, extending the TRADES method used for pointwise attacks. Our approach leverages recent contributions and relies on sensitivity analysis for Wasserstein distributionally robust optimization problems. We introduce an efficient fine-tuning method which can be deployed on a previously trained model. We test our methods on a range of pre-trained models on RobustBench. These experimental results demonstrate the additional training enhances Wasserstein distributional robustness, while maintaining original levels of pointwise robustness, even for already very successful networks. The improvements are less marked for models pre-trained using huge synthetic datasets of 20-100M images. However, remarkably, sometimes our methods are still able to improve their performance even when trained using only the original training dataset (50k images).</p>]]></description>
-  </item>
-
-  <item>
-    <title>SinSim: Sinkhorn-Regularized SimCLR</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-10478</link>
-    <guid isPermaLink="false">arxiv:2502.10478</guid>
-    <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Hadi Sepanj et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Self-supervised learning has revolutionized representation learning by eliminating the need for labeled data. Contrastive learning methods, such as SimCLR, maximize the agreement between augmented views of an image but lack explicit regularization to enforce a globally structured latent space. This limitation often leads to suboptimal generalization. We propose SinSim, a novel extension of SimCLR that integrates Sinkhorn regularization from optimal transport theory to enhance representation structure. The Sinkhorn loss, an entropy-regularized Wasserstein distance, encourages a well-dispersed and geometry-aware feature space, preserving discriminative power. Empirical evaluations on various datasets demonstrate that SinSim outperforms SimCLR and achieves competitive performance against prominent self-supervised methods such as VICReg and Barlow Twins. UMAP visualizations further reveal improved class separability and structured feature distributions. These results indicate that integrating optimal transport regularization into contrastive learning provides a principled and effective mechanism for learning robust, well-structured representations. Our findings open new directions for applying transport-based constraints in self-supervised learning frameworks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Knowledge-Guided Wasserstein Distributionally Robust Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-08146</link>
-    <guid isPermaLink="false">arxiv:2502.08146</guid>
-    <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zitao Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Transfer learning is a popular strategy to leverage external knowledge and improve statistical efficiency, particularly with a limited target sample. We propose a novel knowledge-guided Wasserstein Distributionally Robust Optimization (KG-WDRO) framework that adaptively incorporates multiple sources of external knowledge to overcome the conservativeness of vanilla WDRO, which often results in overly pessimistic shrinkage toward zero. Our method constructs smaller Wasserstein ambiguity sets by controlling the transportation along directions informed by the source knowledge. This strategy can alleviate perturbations on the predictive projection of the covariates and protect against information loss. Theoretically, we establish the equivalence between our WDRO formulation and the knowledge-guided shrinkage estimation based on collinear similarity, ensuring tractability and geometrizing the feasible set. This also reveals a novel and general interpretation for recent shrinkage-based transfer learning approaches from the perspective of distributional robustness. In addition, our framework can adjust for scaling differences in the regression models between the source and target and accommodates general types of regularization such as lasso and ridge. Extensive simulations demonstrate the superior performance and adaptivity of KG-WDRO in enhancing small-sample transfer learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Loss Landscape Analysis for Reliable Quantized ML Models for Scientific Sensing</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-08355</link>
-    <guid isPermaLink="false">arxiv:2502.08355</guid>
-    <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tommaso Baldi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose a method to perform empirical analysis of the loss landscape of machine learning (ML) models. The method is applied to two ML models for scientific sensing, which necessitates quantization to be deployed and are subject to noise and perturbations due to experimental conditions. Our method allows assessing the robustness of ML models to such effects as a function of quantization precision and under different regularization techniques &ndash; two crucial concerns that remained underexplored so far. By investigating the interplay between performance, efficiency, and robustness by means of loss landscape analysis, we both established a strong correlation between gently-shaped landscapes and robustness to input and weight perturbations and observed other intriguing and non-obvious phenomena. Our method allows a systematic exploration of such trade-offs a priori, i.e., without training and testing multiple models, leading to more efficient development workflows. This work also highlights the importance of incorporating robustness into the Pareto optimization of ML models, enabling more reliable and adaptive scientific sensing systems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Particle Tracking with Neuromorphic Computing</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-06771</link>
-    <guid isPermaLink="false">arxiv:2502.06771</guid>
-    <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Emanuele Coradin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>We study the application of a neural network architecture for identifying charged particle trajectories via unsupervised learning of delays and synaptic weights using a spike-time-dependent plasticity rule. In the considered model, the neurons receive time-encoded information on the position of particle hits in a tracking detector for a particle collider, modeled according to the geometry of the Compact Muon Solenoid Phase II detector. We show how a spiking neural network is capable of successfully identifying in a completely unsupervised way the signal left by charged particles in the presence of conspicuous noise from accidental or combinatorial hits. These results open the way to applications of neuromorphic computing to particle tracking, motivating further studies into its potential for real-time, low-power particle tracking in future high-energy physics experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Online Reward-Weighted Fine-Tuning of Flow Matching with Wasserstein Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-06061</link>
-    <guid isPermaLink="false">arxiv:2502.06061</guid>
-    <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiajun Fan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Recent advancements in reinforcement learning (RL) have achieved great success in fine-tuning diffusion-based generative models. However, fine-tuning continuous flow-based generative models to align with arbitrary user-defined reward functions remains challenging, particularly due to issues such as policy collapse from overoptimization and the prohibitively high computational cost of likelihoods in continuous-time flows. In this paper, we propose an easy-to-use and theoretically sound RL fine-tuning method, which we term Online Reward-Weighted Conditional Flow Matching with Wasserstein-2 Regularization (ORW-CFM-W2). Our method integrates RL into the flow matching framework to fine-tune generative models with arbitrary reward functions, without relying on gradients of rewards or filtered datasets. By introducing an online reward-weighting mechanism, our approach guides the model to prioritize high-reward regions in the data manifold. To prevent policy collapse and maintain diversity, we incorporate Wasserstein-2 (W2) distance regularization into our method and derive a tractable upper bound for it in flow matching, effectively balancing exploration and exploitation of policy optimization. We provide theoretical analyses to demonstrate the convergence properties and induced data distributions of our method, establishing connections with traditional RL algorithms featuring Kullback-Leibler (KL) regularization and offering a more comprehensive understanding of the underlying mechanisms and learning behavior of our approach. Extensive experiments on tasks including target image generation, image compression, and text-image alignment demonstrate the effectiveness of our method, where our method achieves optimal policy convergence while allowing controllable trade-offs between reward maximization and diversity preservation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Advancing Wasserstein Convergence Analysis of Score-Based Models: Insights from Discretization and Second-Order Acceleration</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-04849</link>
-    <guid isPermaLink="false">arxiv:2502.04849</guid>
-    <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifeng Yu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based diffusion models have emerged as powerful tools in generative modeling, yet their theoretical foundations remain underexplored. In this work, we focus on the Wasserstein convergence analysis of score-based diffusion models. Specifically, we investigate the impact of various discretization schemes, including Euler discretization, exponential integrators, and midpoint randomization methods. Our analysis provides a quantitative comparison of these discrete approximations, emphasizing their influence on convergence behavior. Furthermore, we explore scenarios where Hessian information is available and propose an accelerated sampler based on the local linearization method. We demonstrate that this Hessian-based approach achieves faster convergence rates of order 𝒪(1/ε) significantly improving upon the standard rate 𝒪(1/ε²⁾ of vanilla diffusion models, where ε denotes the target accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>HEP-JEPA: A foundation model for collider physics using joint embedding predictive architecture</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-03933</link>
-    <guid isPermaLink="false">arxiv:2502.03933</guid>
-    <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jai Bardhan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents, top tagging, quark jets, gluon jets, Large Hadron Collider, collider, colliders) — original abstract; no AI summary.</em></p>
-<p>We present a transformer architecture-based foundation model for tasks at high-energy particle colliders such as the Large Hadron Collider. We train the model to classify jets using a self-supervised strategy inspired by the Joint Embedding Predictive Architecture. We use the JetClass dataset containing 100M jets of various known particles to pre-train the model with a data-centric approach &ndash; the model uses a fraction of the jet constituents as the context to predict the embeddings of the unseen target constituents. Our pre-trained model fares well with other datasets for standard classification benchmark tasks. We test our model on two additional downstream tasks: top tagging and differentiating light-quark jets from gluon jets. We also evaluate our model with task-specific metrics and baselines and compare it with state-of-the-art models in high-energy physics. Project site: https://hep-jepa.github.io/</p>]]></description>
-  </item>
-
-  <item>
-    <title>Linearized Optimal Transport pyLOT Library: A Toolkit for Machine Learning on Point Clouds</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-03439</link>
-    <guid isPermaLink="false">arxiv:2502.03439</guid>
-    <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Linwu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The pyLOT library offers a Python implementation of linearized optimal transport (LOT) techniques and methods to use in downstream tasks. The pipeline embeds probability distributions into a Hilbert space via the Optimal Transport maps from a fixed reference distribution, and this linearization allows downstream tasks to be completed using off the shelf (linear) machine learning algorithms. We provide a case study of performing ML on 3D scans of lemur teeth, where the original questions of classification, clustering, dimension reduction, and data generation reduce to simple linear operations performed on the LOT embedded representations.</p>]]></description>
   </item>
 
 </channel>

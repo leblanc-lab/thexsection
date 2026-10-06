@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport for Conditional Domain Matching and Label Shift</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-08161</link>
+    <guid isPermaLink="false">arxiv:2006.08161</guid>
+    <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alain Rakotomamonjy et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We address the problem of unsupervised domain adaptation under the setting of generalized target shift (joint class-conditional and label shifts). For this framework, we theoretically show that, for good generalization, it is necessary to learn a latent representation in which both marginals and class-conditional distributions are aligned across domains. For this sake, we propose a learning problem that minimizes importance weighted loss in the source domain and a Wasserstein distance between weighted marginals. For a proper weighting, we provide an estimator of target label proportion by blending mixture estimation and optimal matching by optimal transport. This estimation comes with theoretical guarantees of correctness under mild assumptions. Our experimental results show that our method performs better on average than competitors across a range domain adaptation problems including \emph{digits},\emph{VisDA} and \emph{Office}. Code for this paper is available at \url{https://github.com/arakotom/mars_domain_adaptation}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Dimensionality Reduction for Wasserstein Barycenter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-08991</link>
+    <guid isPermaLink="false">arxiv:2110.08991</guid>
+    <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zachary Izzo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein barycenter is a geometric construct which captures the notion of centrality among probability distributions, and which has found many applications in machine learning. However, most algorithms for finding even an approximate barycenter suffer an exponential dependence on the dimension d of the underlying space of the distributions. In order to cope with this &ldquo;curse of dimensionality,&rdquo; we study dimensionality reduction techniques for the Wasserstein barycenter problem. When the barycenter is restricted to support of size n, we show that randomized dimensionality reduction can be used to map the problem to a space of dimension O(logn) independent of both d and k, and that \emph{any} solution found in the reduced dimension will have its cost preserved up to arbitrary small error in the original space. We provide matching upper and lower bounds on the size of the reduced dimension, showing that our methods are optimal up to constant factors. We also provide a coreset construction for the Wasserstein barycenter problem that significantly decreases the number of input distributions. The coresets can be used in conjunction with random projections and thus further improve computation time. Lastly, our experimental results validate the speedup provided by dimensionality reduction while maintaining solution quality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Generative Model for Texture Synthesis based on Optimal Transport between Feature Distributions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2007-03408</link>
+    <guid isPermaLink="false">arxiv:2007.03408</guid>
+    <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Houdard et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose GOTEX, a general framework for texture synthesis by optimization that constrains the statistical distribution of local features. While our model encompasses several existing texture models, we focus on the case where the comparison between feature distributions relies on optimal transport distances. We show that the semi-dual formulation of optimal transport allows to control the distribution of various possible features, even if these features live in a high-dimensional space. We then study the resulting minimax optimization problem, which corresponds to a Wasserstein generative model, for which the inner concave maximization problem can be solved with standard stochastic gradient methods. The alternate optimization algorithm is shown to be versatile in terms of applications, features and architecture; in particular it allows to produce high-quality synthesized textures with different sets of features. We analyze the results obtained by constraining the distribution of patches or the distribution of responses to a pre-learned VGG neural network. We show that the patch representation can retrieve the desired textural aspect in a more precise manner. We also provide a detailed comparison with state-of-the-art texture synthesis methods. The GOTEX model based on patch features is also adapted to texture inpainting and texture interpolation. Finally, we show how to use our framework to learn a feed-forward neural network that can synthesize on-the-fly new textures of arbitrary size in a very fast manner. Experimental results and comparisons with the mainstream methods from the literature illustrate the relevance of the generative models learned with GOTEX.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Unsupervised Reinforcement Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-07940</link>
+    <guid isPermaLink="false">arxiv:2110.07940</guid>
+    <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuncheng He et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Unsupervised reinforcement learning aims to train agents to learn a handful of policies or skills in environments without external reward. These pre-trained policies can accelerate learning when endowed with external reward, and can also be used as primitive options in hierarchical reinforcement learning. Conventional approaches of unsupervised skill discovery feed a latent variable to the agent and shed its empowerment on agent&rsquo;s behavior by mutual information (MI) maximization. However, the policies learned by MI-based methods cannot sufficiently explore the state space, despite they can be successfully identified from each other. Therefore we propose a new framework Wasserstein unsupervised reinforcement learning (WURL) where we directly maximize the distance of state distributions induced by different policies. Additionally, we overcome difficulties in simultaneously training N(N &gt;2) policies, and amortizing the overall reward to each step. Experiments show policies learned by our approach outperform MI-based methods on the metric of Wasserstein distance while keeping high discriminability. Furthermore, the agents trained by WURL can sufficiently explore the state space in mazes and MuJoCo tasks and the pre-trained policies can be applied to downstream tasks by hierarchical learning.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning with minibatch Wasserstein : asymptotic and gradient properties</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a1910-04091</link>
+    <guid isPermaLink="false">arxiv:1910.04091</guid>
+    <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Fatras et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport distances are powerful tools to compare probability distributions and have found many applications in machine learning. Yet their algorithmic complexity prevents their direct use on large scale datasets. To overcome this challenge, practitioners compute these distances on minibatches {\em i.e.} they average the outcome of several smaller optimal transport problems. We propose in this paper an analysis of this practice, which effects are not well understood so far. We notably argue that it is equivalent to an implicit regularization of the original problem, with appealing properties such as unbiased estimators, gradients and a concentration bound around the expectation, but also with defects such as loss of distance property. Along with this theoretical analysis, we also conduct empirical experiments on gradient flows, GANs or color transfer that highlight the practical interest of this strategy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Framework for Verification of Wasserstein Adversarial Robustness</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-06816</link>
+    <guid isPermaLink="false">arxiv:2110.06816</guid>
+    <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Wegel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Machine learning image classifiers are susceptible to adversarial and corruption perturbations. Adding imperceptible noise to images can lead to severe misclassifications of the machine learning model. Using L_p-norms for measuring the size of the noise fails to capture human similarity perception, which is why optimal transport based distance measures like the Wasserstein metric are increasingly being used in the field of adversarial robustness. Verifying the robustness of classifiers using the Wasserstein metric can be achieved by proving the absence of adversarial examples (certification) or proving their presence (attack). In this work we present a framework based on the work by Levine and Feizi, which allows us to transfer existing certification methods for convex polytopes or L_1-balls to the Wasserstein threat model. The resulting certification can be complete or incomplete, depending on whether convex polytopes or L_1-balls were chosen. Additionally, we present a new Wasserstein adversarial attack that is projected gradient descent based and which has a significantly reduced computational burden compared to existing attack approaches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Heterogeneous Wasserstein Discrepancy for Incomparable Distributions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-02542</link>
+    <guid isPermaLink="false">arxiv:2106.02542</guid>
+    <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mokhtar Z. Alaya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) metrics allow for defining discrepancies between two probability measures. Wasserstein distance is for longer the celebrated OT-distance frequently-used in the literature, which seeks probability distributions to be supported on the same metric space. Because of its high computational complexity, several approximate Wasserstein distances have been proposed based on entropy regularization or on slicing, and one-dimensional Wassserstein computation. In this paper, we propose a novel extension of Wasserstein distance to compare two incomparable distributions, that hinges on the idea of distributional slicing, embeddings, and on computing the closed-form Wassertein distance between the sliced distributions. We provide a theoretical analysis of this new divergence, called heterogeneous Wasserstein discrepancy (HWD), and we show that it preserves several interesting properties including rotation-invariance. We show that the embeddings involved in HWD can be efficiently learned. Finally, we provide a large set of experiments illustrating the behavior of HWD as a divergence in the context of generative modeling and in query framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Graph Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-04804</link>
+    <guid isPermaLink="false">arxiv:2006.04804</guid>
+    <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benson Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Current graph neural network (GNN) architectures naively average or sum node embeddings into an aggregated graph representation &ndash; potentially losing structural or semantic information. We here introduce OT-GNN, a model that computes graph embeddings using parametric prototypes that highlight key facets of different graph aspects. Towards this goal, we successfully combine optimal transport (OT) with parametric graph models. Graph representations are obtained from Wasserstein distances between the set of GNN node embeddings and ``prototype&rsquo;&rsquo; point clouds as free parameters. We theoretically prove that, unlike traditional sum aggregation, our function class on point clouds satisfies a fundamental universal approximation theorem. Empirically, we address an inherent collapse optimization issue by proposing a noise contrastive regularizer to steer the model towards truly exploiting the OT geometry. Finally, we outperform popular methods on several molecular property prediction tasks, while exhibiting smoother graph representations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Manifold optimization for non-linear optimal transport problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-00902</link>
+    <guid isPermaLink="false">arxiv:2103.00902</guid>
+    <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bamdev Mishra et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) has recently found widespread interest in machine learning. It allows to define novel distances between probability measures, which have shown promise in several applications. In this work, we discuss how to computationally approach general non-linear OT problems within the framework of Riemannian manifold optimization. The basis of this is the manifold of doubly stochastic matrices (and their generalization). Even though the manifold geometry is not new, surprisingly, its usefulness for solving general non-linear OT problems has not been popular. To this end, we specifically discuss optimization-related ingredients that allow modeling the OT problem on smooth Riemannian manifolds by exploiting the geometry of the search space. We also discuss extensions where we reuse the developed optimization ingredients. We make available the Manifold optimization-based Optimal Transport, or MOT, repository with codes useful in solving OT problems in Python and Matlab. The codes are available at \url{https://github.com/SatyadevNtv/MOT}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Regularized Wasserstein Framework for Graph Kernels</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-02554</link>
+    <guid isPermaLink="false">arxiv:2110.02554</guid>
+    <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Asiri Wijesinghe et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a learning framework for graph kernels, which is theoretically grounded on regularizing optimal transport. This framework provides a novel optimal transport distance metric, namely Regularized Wasserstein (RW) discrepancy, which can preserve both features and structure of graphs via Wasserstein distances on features and their local variations, local barycenters and global connectivity. Two strongly convex regularization terms are introduced to improve the learning ability. One is to relax an optimal alignment between graphs to be a cluster-to-cluster mapping between their locally connected vertices, thereby preserving the local clustering structure of graphs. The other is to take into account node degree distributions in order to better preserve the global structure of graphs. We also design an efficient algorithm to enable a fast approximation for solving the optimization problem. Theoretically, our framework is robust and can guarantee the convergence and numerical stability in optimization. We have empirically validated our method using 12 datasets against 16 state-of-the-art baselines. The experimental results show that our method consistently outperforms all state-of-the-art methods on all benchmark databases for both graphs with discrete attributes and graphs with continuous attributes.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical Regeneration Guarantees of the Wasserstein Autoencoder with Latent Space Consistency</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-03995</link>
+    <guid isPermaLink="false">arxiv:2110.03995</guid>
+    <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anish Chakrabarty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The introduction of Variational Autoencoders (VAE) has been marked as a breakthrough in the history of representation learning models. Besides having several accolades of its own, VAE has successfully flagged off a series of inventions in the form of its immediate successors. Wasserstein Autoencoder (WAE), being an heir to that realm carries with it all of the goodness and heightened generative promises, matching even the generative adversarial networks (GANs). Needless to say, recent years have witnessed a remarkable resurgence in statistical analyses of the GANs. Similar examinations for Autoencoders, however, despite their diverse applicability and notable empirical performance, remain largely absent. To close this gap, in this paper, we investigate the statistical properties of WAE. Firstly, we provide statistical guarantees that WAE achieves the target distribution in the latent space, utilizing the Vapnik Chervonenkis (VC) theory. The main result, consequently ensures the regeneration of the input distribution, harnessing the potential offered by Optimal Transport of measures under the Wasserstein metric. This study, in turn, hints at the class of distributions WAE can reconstruct after suffering a compression in the form of a latent law.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Efficient Robust Optimal Transport with Application to Multi-Label Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2010-11852</link>
+    <guid isPermaLink="false">arxiv:2010.11852</guid>
+    <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Jawanpuria et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is a powerful geometric tool for comparing two distributions and has been employed in various machine learning applications. In this work, we propose a novel OT formulation that takes feature correlations into account while learning the transport plan between two distributions. We model the feature-feature relationship via a symmetric positive semi-definite Mahalanobis metric in the OT cost function. For a certain class of regularizers on the metric, we show that the optimization strategy can be considerably simplified by exploiting the problem structure. For high-dimensional data, we additionally propose suitable low-dimensional modeling of the Mahalanobis metric. Overall, we view the resulting optimization problem as a non-linear OT problem, which we solve using the Frank-Wolfe algorithm. Empirical results on the discriminative learning setting, such as tag prediction and multi-class classification, illustrate the good performance of our approach.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein GANs Work Because They Fail (to Approximate the Wasserstein Distance)</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aneesh Heintz et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Nhan Tran, Philip Harris) — original abstract; no AI summary.</em></p>
 <p>We develop and study FPGA implementations of algorithms for charged particle tracking based on graph neural networks. The two complementary FPGA designs are based on OpenCL, a framework for writing programs that execute across heterogeneous platforms, and hls4ml, a high-level-synthesis-based compiler for neural network to firmware conversion. We evaluate and compare the resource usage, latency, and tracking performance of our implementations based on a benchmark dataset. We find a considerable speedup over CPU-based execution is possible, potentially enabling such algorithms to be used effectively in future computing workflows and the FPGA-based Level-1 trigger at the CERN Large Hadron Collider.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein k-means with sparse simplex projection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2011-12542</link>
-    <guid isPermaLink="false">arxiv:2011.12542</guid>
-    <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takumi Fukunaga et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper presents a proposal of a faster Wasserstein k-means algorithm for histogram data by reducing Wasserstein distance computations and exploiting sparse simplex projection. We shrink data samples, centroids, and the ground cost matrix, which leads to considerable reduction of the computations used to solve optimal transport problems without loss of clustering quality. Furthermore, we dynamically reduced the computational complexity by removing lower-valued data samples and harnessing sparse simplex projection while keeping the degradation of clustering quality lower. We designate this proposed algorithm as sparse simplex projection based Wasserstein k-means, or SSPW k-means. Numerical evaluations conducted with comparison to results obtained using Wasserstein k-means algorithm demonstrate the effectiveness of the proposed SSPW k-means for real-world datasets</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Learning of Determinantal Point Processes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2011-09712</link>
-    <guid isPermaLink="false">arxiv:2011.09712</guid>
-    <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lucas Anquetil et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Determinantal point processes (DPPs) have received significant attention as an elegant probabilistic model for discrete subset selection. Most prior work on DPP learning focuses on maximum likelihood estimation (MLE). While efficient and scalable, MLE approaches do not leverage any subset similarity information and may fail to recover the true generative distribution of discrete data. In this work, by deriving a differentiable relaxation of a DPP sampling algorithm, we present a novel approach for learning DPPs that minimizes the Wasserstein distance between the model and data composed of observed subsets. Through an evaluation on a real-world dataset, we show that our Wasserstein learning approach provides significantly improved predictive performance on a generative task compared to DPPs trained using MLE.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Latent Adversarial Debiasing: Mitigating Collider Bias in Deep Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2011-11486</link>
-    <guid isPermaLink="false">arxiv:2011.11486</guid>
-    <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luke Darlow et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Collider bias is a harmful form of sample selection bias that neural networks are ill-equipped to handle. This bias manifests itself when the underlying causal signal is strongly correlated with other confounding signals due to the training data collection procedure. In the situation where the confounding signal is easy-to-learn, deep neural networks will latch onto this and the resulting model will generalise poorly to in-the-wild test scenarios. We argue herein that the cause of failure is a combination of the deep structure of neural networks and the greedy gradient-driven learning process used - one that prefers easy-to-compute signals when available. We show it is possible to mitigate against this by generating bias-decoupled training data using latent adversarial debiasing (LAD), even when the confounding signal is present in 100% of the training data. By training neural networks on these adversarial examples,we can improve their generalisation in collider bias settings. Experiments show state-of-the-art performance of LAD in label-free debiasing with gains of 76.12% on background coloured MNIST, 35.47% on fore-ground coloured MNIST, and 8.27% on corrupted CIFAR-10.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Statistical Optimal Transport posed as Learning Kernel Embedding</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-03179</link>
-    <guid isPermaLink="false">arxiv:2002.03179</guid>
-    <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Saketha Nath et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The objective in statistical Optimal Transport (OT) is to consistently estimate the optimal transport plan/map solely using samples from the given source and target marginal distributions. This work takes the novel approach of posing statistical OT as that of learning the transport plan&rsquo;s kernel mean embedding from sample based estimates of marginal embeddings. The proposed estimator controls overfitting by employing maximum mean discrepancy based regularization, which is complementary to ϕ-divergence (entropy) based regularization popularly employed in existing estimators. A key result is that, under very mild conditions, ε-optimal recovery of the transport plan as well as the Barycentric-projection based transport map is possible with a sample complexity that is completely dimension-free. Moreover, the implicit smoothing in the kernel mean embeddings enables out-of-sample estimation. An appropriate representer theorem is proved leading to a kernelized convex formulation for the estimator, which can then be potentially used to perform OT even in non-standard domains. Empirical results illustrate the efficacy of the proposed approach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sinkhorn Natural Gradient for Generative Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2011-04162</link>
-    <guid isPermaLink="false">arxiv:2011.04162</guid>
-    <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zebang Shen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We consider the problem of minimizing a functional over a parametric family of probability measures, where the parameterization is characterized via a push-forward structure. An important application of this problem is in training generative adversarial networks. In this regard, we propose a novel Sinkhorn Natural Gradient (SiNG) algorithm which acts as a steepest descent method on the probability space endowed with the Sinkhorn divergence. We show that the Sinkhorn information matrix (SIM), a key component of SiNG, has an explicit expression and can be evaluated accurately in complexity that scales logarithmically with respect to the desired accuracy. This is in sharp contrast to existing natural gradient methods that can only be carried out approximately. Moreover, in practical applications when only Monte-Carlo type integration is available, we design an empirical estimator for SIM and provide the stability analysis. In our experiments, we quantitatively compare SiNG with state-of-the-art SGD-type solvers on generative tasks to demonstrate its efficiency and efficacy of our method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A contribution to Optimal Transport on incomparable spaces</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2011-04447</link>
-    <guid isPermaLink="false">arxiv:2011.04447</guid>
-    <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Titouan Vayer</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal Transport is a theory that allows to define geometrical notions of distance between probability distributions and to find correspondences, relationships, between sets of points. Many machine learning applications are derived from this theory, at the frontier between mathematics and optimization. This thesis proposes to study the complex scenario in which the different data belong to incomparable spaces. In particular we address the following questions: how to define and apply Optimal Transport between graphs, between structured data? How can it be adapted when the data are varied and not embedded in the same metric space? This thesis proposes a set of Optimal Transport tools for these different cases. An important part is notably devoted to the study of the Gromov-Wasserstein distance whose properties allow to define interesting transport problems on incomparable spaces. More broadly, we analyze the mathematical properties of the various proposed tools, we establish algorithmic solutions to compute them and we study their applicability in numerous machine learning scenarii which cover, in particular, classification, simplification, partitioning of structured data, as well as heterogeneous domain adaptation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CO-Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-03731</link>
-    <guid isPermaLink="false">arxiv:2002.03731</guid>
-    <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ievgen Redko et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) is a powerful geometric and probabilistic tool for finding correspondences and measuring similarity between two distributions. Yet, its original formulation relies on the existence of a cost function between the samples of the two distributions, which makes it impractical when they are supported on different spaces. To circumvent this limitation, we propose a novel OT problem, named COOT for CO-Optimal Transport, that simultaneously optimizes two transport maps between both samples and features, contrary to other approaches that either discard the individual features by focusing on pairwise distances between samples or need to model explicitly the relations between them. We provide a thorough theoretical analysis of our problem, establish its rich connections with other OT-based distances and demonstrate its versatility with two machine learning applications in heterogeneous domain adaptation and co-clustering/data summarization, where COOT leads to performance improvements over the state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantile Propagation for Wasserstein-Approximate Gaussian Processes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1912-10200</link>
-    <guid isPermaLink="false">arxiv:1912.10200</guid>
-    <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Approximate inference techniques are the cornerstone of probabilistic methods based on Gaussian process priors. Despite this, most work approximately optimizes standard divergence measures such as the Kullback-Leibler (KL) divergence, which lack the basic desiderata for the task at hand, while chiefly offering merely technical convenience. We develop a new approximate inference method for Gaussian process models which overcomes the technical challenges arising from abandoning these convenient divergences. Our method&mdash;dubbed Quantile Propagation (QP)&mdash;is similar to expectation propagation (EP) but minimizes the L_2 Wasserstein distance (WD) instead of the KL divergence. The WD exhibits all the required properties of a distance metric, while respecting the geometry of the underlying sample space. We show that QP matches quantile functions rather than moments as in EP and has the same mean update but a smaller variance update than EP, thereby alleviating EP&rsquo;s tendency to over-estimate posterior variances. Crucially, despite the significant complexity of dealing with the WD, QP has the same favorable locality property as EP, and thereby admits an efficient algorithm. Experiments on classification and Poisson regression show that QP outperforms both EP and variational Bayes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On The Chain Rule Optimal Transport Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1812-08113</link>
-    <guid isPermaLink="false">arxiv:1812.08113</guid>
-    <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Frank Nielsen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We define a novel class of distances between statistical multivariate distributions by modeling an optimal transport problem on their marginals with respect to a ground distance defined on their conditionals. These new distances are metrics whenever the ground distance between the marginals is a metric, generalize both the Wasserstein distances between discrete measures and a recently introduced metric distance between statistical mixtures, and provide an upper bound for jointly convex distances between statistical mixtures. By entropic regularization of the optimal transport, we obtain a fast differentiable Sinkhorn-type distance. We experimentally evaluate our new family of distances by quantifying the upper bounds of several jointly convex distances between statistical mixtures, and by proposing a novel efficient method to learn Gaussian mixture models (GMMs) by simplifying kernel density estimators with respect to our distance. Our GMM learning technique experimentally improves significantly over the EM implementation of {\tt sklearn} on the {\tt MNIST} and {\tt Fashion MNIST} datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Optimization and Variation Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1712-06050</link>
-    <guid isPermaLink="false">arxiv:1712.06050</guid>
-    <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distributionally robust optimization (DRO) has recently achieved empirical success for various applications in operations research and machine learning, owing partly to its regularization effect. Although connection between Wasserstein DRO and regularization has been established in several settings, existing results often require restrictive assumptions, such as smoothness or convexity, that are not satisfied for many problems. In this paper, we develop a general theory on the variation regularization effect of the Wasserstein DRO - a new form of regularization that generalizes total-variation regularization, Lipschitz regularization and gradient regularization. Our results cover possibly non-convex and non-smooth losses and losses on non-Euclidean spaces. Examples include multi-item newsvendor, portfolio selection, linear prediction, neural networks, manifold learning, and intensity estimation for Poisson processes, etc. As an application of our theory of variation regularization, we derive new generalization guarantees for adversarial robust learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>All of the Fairness for Edge Prediction with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-16326</link>
-    <guid isPermaLink="false">arxiv:2010.16326</guid>
-    <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Charlotte Laclau et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Machine learning and data mining algorithms have been increasingly used recently to support decision-making systems in many areas of high societal importance such as healthcare, education, or security. While being very efficient in their predictive abilities, the deployed algorithms sometimes tend to learn an inductive model with a discriminative bias due to the presence of this latter in the learning sample. This problem gave rise to a new field of algorithmic fairness where the goal is to correct the discriminative bias introduced by a certain attribute in order to decorrelate it from the model&rsquo;s output. In this paper, we study the problem of fairness for the task of edge prediction in graphs, a largely underinvestigated scenario compared to a more popular setting of fair classification. To this end, we formulate the problem of fair edge prediction, analyze it theoretically, and propose an embedding-agnostic repairing procedure for the adjacency matrix of an arbitrary graph with a trade-off between the group and individual fairness. We experimentally show the versatility of our approach and its capacity to provide explicit control over different notions of fairness and prediction accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FiGLearn: Filter and Graph Learning using Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-15457</link>
-    <guid isPermaLink="false">arxiv:2010.15457</guid>
-    <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthias Minder et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In many applications, a dataset can be considered as a set of observed signals that live on an unknown underlying graph structure. Some of these signals may be seen as white noise that has been filtered on the graph topology by a graph filter. Hence, the knowledge of the filter and the graph provides valuable information about the underlying data generation process and the complex interactions that arise in the dataset. We hence introduce a novel graph signal processing framework for jointly learning the graph and its generating filter from signal observations. We cast a new optimisation problem that minimises the Wasserstein distance between the distribution of the signal observations and the filtered signal distribution model. Our proposed method outperforms state-of-the-art graph learning frameworks on synthetic data. We then apply our method to a temperature anomaly dataset, and further show how this framework can be used to infer missing values if only very little information is available.</p>]]></description>
   </item>
 
 </channel>

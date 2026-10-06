@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Global track finding based on the Hough transform in the STCF detector</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2412-14687</link>
+    <guid isPermaLink="false">arxiv:2412.14687</guid>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hang Zhou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>The proposed Super Tau-Charm Facility (STCF) is an electron-positron collider designed to operate in a center-of-mass energy range from 2 to 7 GeV. It provides a unique platform for physics research in the tau-charm energy region. To fulfill the physics goals of STCF, high tracking efficiency and good momentum resolution is required for charged particles with momenta from 50 MeV/c to 3.5 GeV/c. A global track finding algorithm based on Hough transform has been developed and implemented in the STCF software framework to meet this requirement. The design of the algorithm and its performance with simulation are presented in this paper.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conditioned quantum-assisted deep generative surrogate for particle-calorimeter interactions</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2410-22870</link>
+    <guid isPermaLink="false">arxiv:2410.22870</guid>
+    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Quetzalcoatl Toledo-Marin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Particle collisions at accelerators such as the Large Hadron Collider, recorded and analyzed by experiments such as ATLAS and CMS, enable exquisite measurements of the Standard Model and searches for new phenomena. Simulations of collision events at these detectors have played a pivotal role in shaping the design of future experiments and analyzing ongoing ones. However, the quest for accuracy in Large Hadron Collider (LHC) collisions comes at an imposing computational cost, with projections estimating the need for millions of CPU-years annually during the High Luminosity LHC (HL-LHC) run \cite{collaboration2022atlas}. Simulating a single LHC event with \textsc{Geant4} currently devours around 1000 CPU seconds, with simulations of the calorimeter subdetectors in particular imposing substantial computational demands \cite{rousseau2023experimental}. To address this challenge, we propose a conditioned quantum-assisted deep generative model. Our model integrates a conditioned variational autoencoder (VAE) on the exterior with a conditioned Restricted Boltzmann Machine (RBM) in the latent space, providing enhanced expressiveness compared to conventional VAEs. The RBM nodes and connections are meticulously engineered to enable the use of qubits and couplers on D-Wave&rsquo;s Pegasus-structured \textit{Advantage} quantum annealer (QA) for sampling. We introduce a novel method for conditioning the quantum-assisted RBM using \textit{flux biases}. We further propose a novel adaptive mapping to estimate the effective inverse temperature in quantum annealers. The effectiveness of our framework is illustrated using Dataset 2 of the CaloChallenge \cite{calochallenge}.</p>]]></description>
+  </item>
 
   <item>
     <title>A space-time tracking algorithm for high occupancy events at future colliders</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>A novel technique based on machine learning is introduced to reconstruct the decays of highly Lorentz-boosted particles. Using an end-to-end deep learning strategy, the technique bypasses existing rule-based particle reconstruction methods typically used in high energy physics analyses. It uses minimally processed detector data as input and directly outputs particle properties of interest. The new technique is demonstrated for the reconstruction of the invariant mass of particles decaying in the CMS detector. The decay of a hypothetical scalar particle 𝒜 into two photons, 𝒜 → γγ, is chosen as a benchmark decay. Lorentz boosts γ_L = 60-600 are considered, ranging from regimes where both photons are resolved to those where the photons are closely merged as one object. A training method using domain continuation is introduced, enabling the invariant mass reconstruction of unresolved photon pairs in a novel way. The new technique is validated using π⁰ → γγ decays in LHC collision data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Denoising diffusion models with geometry adaptation for high fidelity calorimeter simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2308-03876</link>
-    <guid isPermaLink="false">arxiv:2308.03876</guid>
-    <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oz Amram et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, collider) — original abstract; no AI summary.</em></p>
-<p>Simulation is crucial for all aspects of collider data analysis, but the available computing budget in the High Luminosity LHC era will be severely constrained. Generative machine learning models may act as surrogates to replace physics-based full simulation of particle detectors, and diffusion models have recently emerged as the state of the art for other generative tasks. We introduce CaloDiffusion, a denoising diffusion model trained on the public CaloChallenge datasets to generate calorimeter showers. Our algorithm employs 3D cylindrical convolutions, which take advantage of symmetries of the underlying data representation. To handle irregular detector geometries, we augment the diffusion model with a new geometry latent mapping (GLaM) layer to learn forward and reverse transformations to a regular geometry that is suitable for cylindrical convolutions. The showers generated by our approach are nearly indistinguishable from the full simulation, as measured by several different metrics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Optimal use of Segmentation for Sampling Calorimeters</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2310-04442</link>
-    <guid isPermaLink="false">arxiv:2310.04442</guid>
-    <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fernando Torales Acosta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, Ben Nachman) — original abstract; no AI summary.</em></p>
-<p>One of the key design choices of any sampling calorimeter is how fine to make the longitudinal and transverse segmentation. To inform this choice, we study the impact of calorimeter segmentation on energy reconstruction. To ensure that the trends are due entirely to hardware and not to a sub-optimal use of segmentation, we deploy deep neural networks to perform the reconstruction. These networks make use of all available information by representing the calorimeter as a point cloud. To demonstrate our approach, we simulate a detector similar to the forward calorimeter system intended for use in the ePIC detector, which will operate at the upcoming Electron Ion Collider. We find that for the energy estimation of isolated charged pion showers, relatively fine longitudinal segmentation is key to achieving an energy resolution that is better than 10% across the full phase space. These results provide a valuable benchmark for ongoing EIC detector optimizations and may also inform future studies involving high-granularity calorimeters in other experiments at various facilities.</p>]]></description>
   </item>
 
 </channel>

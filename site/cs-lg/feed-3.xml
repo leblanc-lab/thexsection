@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Scalable Learning in Structured Recurrent Spiking Neural Networks without Backpropagation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-00402</link>
+    <guid isPermaLink="false">arxiv:2605.00402</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bo Tang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Spiking Neural Networks (SNNs) provide a promising framework for energy-efficient and biologically grounded computation; however, scalable learning in deep recurrent architectures with sparse connectivity remains a major challenge. In this work, we propose a structured multi-layer recurrent SNN architecture composed of locally dense recurrent layers augmented with sparse small-world long-range projections to a readout population. The long-range connectivity is largely fixed, preserving routing efficiency and hardware scalability, while synaptic adaptation is performed using strictly local plasticity mechanisms. To enable supervised learning without backpropagation or surrogate gradients, we introduce a biologically motivated learning framework that combines: (i) population-based winner-take-all (WTA) teaching signals at the output layer, (ii) fixed random broadcast alignment feedback pathways, and (iii) low-dimensional modulatory neuron populations that gate synaptic updates through three-factor learning rules with eligibility traces. This design supports deep recurrent computation with sparse global communication and purely local synaptic updates. We analyze the algorithmic properties, computational complexity, and hardware feasibility of the proposed approach, and demonstrate stable learning and competitive performance on benchmark classification tasks. The results highlight the potential of structured recurrence and neuromodulatory learning to enable scalable, hardware-compatible SNN training beyond gradient-based methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Benchmarking local Hebbian learning rules for memory storage and prototype extraction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-01074</link>
+    <guid isPermaLink="false">arxiv:2605.01074</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anders Lansner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Associative memory or content-addressable memory is an important component function in computer science and information processing, and at the same time a key concept in cognitive and computational brain science. Many different neural network architectures and learning rules have been proposed to model the brain&rsquo;s associative memory while investigating key component functions like figure-ground segmentation, perceptual reconstruction and rivalry. A less investigated but equally important capability of associative memory is prototype extraction where the training set comprises distorted prototype instances and the task is to recall the correct generating prototype given a new distorted instance. In this paper we benchmark associative memory function of seven different Hebbian learning rules employed in non-modular and modular recurrent networks with winner-take-all dynamics operating on moderately sparse binary patterns. We measure pattern storage and weight information capacity, prototype extraction capabilities, and sensitivity to correlations in data. The original additive Hebb rule comes out with worst capacity, covariance learning proves to be robust but with moderate capacity, and the Bayesian-Hebbian learning rules show highest capacity in almost all different conditions tested.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generative Modeling under Non-Monotone MAR Missingness via Approximate Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-04567</link>
+    <guid isPermaLink="false">arxiv:2604.04567</guid>
+    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gitte Kremling et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The prevalence of missing values in data science poses a substantial risk to any further analyses. Despite a wealth of research, principled nonparametric methods to deal with general non-monotone missingness are still scarce. Instead, ad-hoc imputation methods are often used, for which it remains unclear whether the correct distribution can be recovered. In this paper, we propose FLOWGEM, a principled iterative method for generating a complete dataset from a dataset with values Missing at Random (MAR). Motivated by convergence results of the ignoring maximum likelihood estimator, our approach minimizes the expected Kullback-Leibler (KL) divergence between the observed data distribution and the distribution of the generated sample over different missingness patterns. To minimize the KL divergence, we employ a discretized particle evolution of the corresponding Wasserstein Gradient Flow, where the velocity field is approximated using a local linear estimator of the density ratio. This construction yields a data generation scheme that iteratively transports an initial particle ensemble toward the target distribution. Simulation studies and real-data benchmarks demonstrate that FLOWGEM achieves state-of-the-art performance across a range of settings, including the challenging case of non-monotone MAR mechanisms. Together, these results position FLOWGEM as a principled and practical alternative to existing imputation methods, and a decisive step towards closing the gap between theoretical rigor and empirical performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Geometry-Calibrated Conformal Abstention for Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-27914</link>
+    <guid isPermaLink="false">arxiv:2604.27914</guid>
+    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>When language models lack relevant knowledge for a given query, they frequently generate plausible responses that can be hallucinations, rather than admitting being agnostic about the answer. Retraining models to reward admitting ignorance can lead to overly conservative behaviors and poor generalization due to scarce evaluation benchmarks. We propose a post hoc framework, Conformal Abstention (CA), adapted from conformal prediction (CP) to determine whether to abstain from answering a query. CA provides finite-sample guarantees on both the probability of participation (i.e., not abstaining) and the probability that the generated response is correct. Importantly, the abstention decision relies on prediction confidence rather than the non-conformity scores used in CP, which are intractable for open-ended generation. To better align prediction confidence with the model&rsquo;s ignorance, we introduce a calibration strategy using representation geometry within the model to measure knowledge involvement in shaping the response. Experiments demonstrate that we improve selective answering significantly with 75 percent conditional correctness.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Cortex-Inspired Continual Learning: Unsupervised Instantiation and Recovery of Functional Task Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-24637</link>
+    <guid isPermaLink="false">arxiv:2604.24637</guid>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kevin McKee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Block-sequential continual learning demands that a single model both protect prior solutions from catastrophic forgetting and efficiently infer at inference time which prior solution matches the current input without task labels. We present Functional Task Networks (FTN), a parameter-isolation method inspired by structural and dynamical motifs found in the mammalian neocortex. Similar to mixture-of-experts, this method uses a high dimensional, self-organizing binary mask over a large population of small but deep networks, inspired by dendritic models of pyramidal neurons. The mask is produced by a three-stage procedure: (1) gradient descent on a continuous mask identifies task-relevant neurons, (2) a smoothing kernel biases the result toward spatial contiguity, (3) and k-winner-take-all binarizes the resulting group at a fixed capacity budget. Like mixture-of-experts, each neuron is an independent deep network, so disjoint masks give exactly disjoint gradient updates, providing structural guarantees against catastrophic forgetting. This three-stage procedure recovers the sub-network of a previously-trained task in a single gradient step, providing unsupervised task segmentation at inference time. We test it on three continual-learning benchmarks: (1) a synthetic multi-task classification/regression generator, (2) MNIST with shuffled class labels (pure concept shift), and (3) Permuted MNIST (domain shift). On all three, FTN with fine grained smoothing (FTN-Slow) results in nearly zero forgetting. FTN with a large kernel and only 2 iterations of smoothing (FTN-Fast) trades off some retention for increased speed. We show that the spatial organization mechanism reduces the effective mask search from the combinatorial top-k subset problem in O(C(H,K)) to the complexity of a near-linear scan in O(H) over compact cortical neighborhoods, which is parallelized by the gradient-based update.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hyper Input Convex Neural Networks for Shape Constrained Learning and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-26942</link>
+    <guid isPermaLink="false">arxiv:2604.26942</guid>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shayan Hundrieser et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce Hyper Input Convex Neural Networks (HyCNNs), a novel neural network architecture designed for learning convex functions. HyCNNs combine the principles of Maxout networks with input convex neural networks (ICNNs) to create a neural network that is always convex in the input, theoretically capable of leveraging depth, and performs reliable when trained at scale compared to ICNNs. Concretely, we prove that HyCNNs require exponentially fewer parameters than ICNNs to approximate quadratic functions up to a given precision. Throughout a series of synthetic experiments, we demonstrate that HyCNNs outperform existing ICNNs and MLPs in terms of predictive performance for convex regression and interpolation tasks. We further apply HyCNNs to learn high-dimensional optimal transport maps for synthetic examples and for single-cell RNA sequencing data, where they oftentimes outperform ICNN-based neural optimal transport methods and other baselines across a wide range of settings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End VLA</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-29844</link>
+    <guid isPermaLink="false">arxiv:2603.29844</guid>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>The development of Vision-Language-Action (VLA) models has been significantly accelerated by pre-trained Vision-Language Models (VLMs). However, most existing end-to-end VLAs treat the VLM primarily as a multimodal encoder, directly mapping vision-language features to low-level actions. This paradigm underutilizes the VLM&rsquo;s potential in high-level decision making and introduces training instability, frequently degrading its rich semantic representations. To address these limitations, we introduce DIAL, a framework bridging high-level decision making and low-level motor execution through a differentiable latent intent bottleneck. Specifically, a VLM-based System-2 performs latent world modeling by synthesizing latent visual foresight within the VLM&rsquo;s native feature space; this foresight explicitly encodes intent and serves as the structural bottleneck. A lightweight System-1 policy then decodes this predicted intent together with the current observation into precise robot actions via latent inverse dynamics. To ensure optimization stability, we employ a two-stage training paradigm: a decoupled warmup phase where System-2 learns to predict latent futures while System-1 learns motor control under ground-truth future guidance within a unified feature space, followed by seamless end-to-end joint optimization. This enables action-aware gradients to refine the VLM backbone in a controlled manner, preserving pre-trained knowledge. Extensive experiments on the RoboCasa GR1 Tabletop benchmark show that DIAL establishes a new state-of-the-art, achieving superior performance with 10x fewer demonstrations than prior methods. Furthermore, by leveraging heterogeneous human demonstrations, DIAL learns physically grounded manipulation priors and exhibits robust zero-shot generalization to unseen objects and novel configurations during real-world deployment on a humanoid robot.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Explainable AI for Jet Tagging: A Comparative Study of GNNExplainer, GNNShap, and GradCAM for Jet Tagging in the Lund Jet Plane</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-25885</link>
+    <guid isPermaLink="false">arxiv:2604.25885</guid>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pahal D. Patel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, Lund plane, Lund jet plane, jet tagging, jet taggers, ParticleNet, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Graph neural networks such as ParticleNet and transformer based networks on point clouds such as ParticleTransformer achieve state-of-the-art performance on jet tagging benchmarks at the Large Hadron Collider, yet the physical reasoning behind their predictions remains opaque. We present different methods, i.e. perturbation-based (GNNExplainer), Shapley-value-based (GNNShap), and gradient-based (GRADCam); adapted to operate on LundNet&rsquo;s Lund-plane graph representation. Leveraging the fact that each node in the Lund plane corresponds to a physically meaningful parton splitting, we construct Monte Carlo truth explanation masks and introduce a physics-informed evaluation framework that goes beyond standard fidelity metrics. We perform the analysis in three transverse-momentum bins (p_T ∈[500,700], [800,1000], and the inclusive region [500,1000] GeV), revealing how explanation quality and focus shift between non-perturbative and perturbative regimes. We further quantify the correlation between explainer-assigned node importance and classical jet substructure observables &ndash; N-subjettiness ratios τ_21 and τ_32 and the energy correlation functions &ndash; establishing the degree to which the model has learned known QCD features. We find that overall the weight assigned by explainability methods has a correlation with analytic observables, with expected shift across different phase space regimes, indicating that a trained neural network indeed learns some aspects of jet-substructure moments. Our open-source implementation enables reproducible explainability studies for graph-based jet taggers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>MIMIC: A Generative Multimodal Foundation Model for Biomolecules</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-24506</link>
+    <guid isPermaLink="false">arxiv:2604.24506</guid>
+    <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siavash Golkar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
+<p>Biological function emerges from coupled constraints across sequence, structure, regulation, evolution, and cellular context, yet most foundation models in biology are trained within one modality or for a fixed forward task. We present MIMIC, a generative multimodal foundation model trained on our newly curated and aligned dataset, LORE, linking nucleic acid, protein, evolutionary, structural, regulatory, and semantic/contextual modalities within partially observed biomolecular states. MIMIC uses a split-track encoder-decoder architecture to condition on arbitrary subsets of observed modalities and reconstruct or generate missing components of molecular state across the genome, transcriptome, and proteome. Multimodal conditioning consistently improves MIMIC&rsquo;s sequence reconstruction relative to sequence-only inputs, while its learned representations enable state-of-the-art performance on RNA and protein downstream tasks. MIMIC achieves state-of-the-art splicing prediction, and its joint generative formulation enables isoform-aware inference that further improves performance. Beyond prediction, the same generative framework supports constrained design. For RNA, MIMIC identifies corrective edits in a clinically relevant HBB splice-disrupting mutation without reverting it by using evolutionary and structural signals. For proteins, jointly conditioning on shape and surface chemistry of PD-L1 and hACE2 binding sites produces diverse, high-confidence sequences with strong in silico support for target binding. Finally, MIMIC uses experimental context as semantic conditioning to model assay-dependent RNA chemical probing, rather than treating context as a fixed output. Together, these results position MIMIC&rsquo;s aligned multimodal generative modeling as a strong foundation for unifying representation learning, conditional prediction, and constrained biomolecular design within a single model.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Gromov-Wasserstein Methods for Multi-View Relational Embedding and Clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23912</link>
+    <guid isPermaLink="false">arxiv:2604.23912</guid>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Pereira Eufrazio et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Learning low-dimensional representations from multi-view relational data is challenging when underlying geometries differ across views. We propose Bary-GWMDS, a Gromov-Wasserstein-based method that operates directly on distance matrices to learn a consensus embedding preserving shared relational structure. By leveraging intrinsic distances, the approach naturally handles nonlinear distortions across views. We also introduce Mean-GWMDS-C, a clustering-oriented formulation that averages distance matrices and learns reduced-support representations via a consensus Gromov-Wasserstein transport. Experiments on synthetic and real-world datasets show that the proposed framework yields stable and geometrically meaningful embeddings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hidden States Know Where Reasoning Diverges: Credit Assignment via Span-Level Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23318</link>
+    <guid isPermaLink="false">arxiv:2604.23318</guid>
+    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinzhu Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Group Relative Policy Optimization (GRPO) performs coarse-grained credit assignment in reinforcement learning with verifiable rewards (RLVR) by assigning the same advantage to all tokens in a rollout. Process reward models can provide finer-grained supervision, but they require step-level annotation or additional reward modeling. We show that hidden-state distributions contain a useful signal for local reasoning quality that can be extracted using only outcome-level correctness labels available in RLVR. Specifically, within each GRPO group, the Wasserstein distance between span-level hidden state distributions of correct and incorrect rollouts increases around regions where their local reasoning quality diverges. This association holds both across examples and within individual trajectories, suggesting that hidden-state distributional divergence can serve as a self-supervision signal for fine-grained credit assignment. We formalize this observation with a separation theorem showing that, under mild structural assumptions, post-divergence spans have larger Wasserstein distances than pre-divergence spans whenever the population-level distributional gap exceeds finite-sample noise. Motivated by this result, we propose \textbf{S}pan-level \textbf{H}idden state \textbf{E}nabled \textbf{A}dvantage \textbf{R}eweighting (SHEAR), which modifies GRPO by using span-level Wasserstein distances to scale token-level advantages, amplifying updates on tokens whose hidden states are more separated from the opposing group. The method requires no additional model and only minimal changes to the training pipeline. Experiments on five mathematical reasoning benchmarks and five code generation benchmarks show improvements over standard GRPO and strong performance relative to supervised process reward models, while requiring no additional annotation or reward model training.</p>]]></description>
+  </item>
+
+  <item>
+    <title>UniAda: Universal Adaptive Multi-objective Adversarial Attack for End-to-End Autonomous Driving Systems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23362</link>
+    <guid isPermaLink="false">arxiv:2604.23362</guid>
+    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jingyu Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Adversarial attacks play a pivotal role in testing and improving the reliability of deep learning (DL) systems. Existing literature has demonstrated that subtle perturbations to the input can elicit erroneous outcomes, thereby substantially compromising the security of DL systems. This has emerged as a critical concern in the development of DL-based safety-critical systems like Autonomous Driving Systems (ADSs). The focus of existing adversarial attack methods on End-to-End (E2E) ADSs has predominantly centered on misbehaviors of steering angle, which overlooks speed-related controls or imperceptible perturbations. To address these challenges, we introduce UniAda, a multi-objective white-box attack technique with a core function that revolves around crafting an image-agnostic adversarial perturbation capable of simultaneously influencing both steering and speed controls. UniAda capitalizes on an intricately designed multi-objective optimization function with the Adaptive Weighting Scheme (AWS), enabling the concurrent optimization of diverse objectives. Validated with both simulated and real-world driving data, UniAda outperforms five benchmarks across two metrics, inducing steering and speed deviations from 3.54 degrees to 29 degrees and 11 km per hour to 22 km per hour on average. This systematic approach establishes UniAda as a proven technique for adversarial attacks on modern DL-based E2E ADSs.</p>]]></description>
+  </item>
 
   <item>
     <title>Nonlinear Non-Gaussian Density Steering with Input and Noise Channel Mismatch: Sinkhorn with Memory for Solving the Control-affine Schrödinger Bridge Problem</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dong-Sig Han et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>The Schrödinger bridge (SB) has evolved into a universal class of probabilistic generative models. In practice, however, estimated learning signals are innately uncertain, and the reliability promised by existing methods is often based on speculative optimal case scenarios. Recent studies regarding the Sinkhorn algorithm through mirror descent (MD) have gained attention, revealing geometric insights into solution acquisition of the SB problems. In this paper, we propose a variational online MD (OMD) framework for the SB problems, which provides further stability to SB solvers. We formally prove convergence and a regret bound for the novel OMD formulation of SB acquisition. As a result, we propose a simulation-free SB algorithm called Variational Mirrored Schrödinger Bridge (VMSB) by utilizing the Wasserstein-Fisher-Rao geometry of the Gaussian mixture parameterization for Schrödinger potentials. Based on the Wasserstein gradient flow theory, the algorithm offers tractable learning dynamics that precisely approximate each OMD step. In experiments, we validate the performance of the proposed VMSB algorithm across an extensive suite of benchmarks. VMSB consistently outperforms contemporary SB solvers on a wide range of SB problems, demonstrating the robustness as well as generality predicted by our OMD theory.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantifying the Impact of Structured Output Format on Large Language Models through Causal Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-21791</link>
-    <guid isPermaLink="false">arxiv:2509.21791</guid>
-    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Han Yuan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Structured output from large language models (LLMs) has enhanced efficiency in processing generated information and is increasingly adopted in industrial applications. Prior studies have investigated the impact of structured output on LLMs&rsquo; generation quality, often presenting one-way findings. Some suggest that structured format enhances completeness and factual accuracy, while others argue that it restricts the reasoning capacity of LLMs and leads to reductions in standard evaluation metrics. Potential limitations of these assessments include restricted testing scenarios, weakly controlled comparative settings, and reliance on coarse metrics. In this work, we present a refined analysis using causal inference. Based on one assumed and two guaranteed constraints, we derive five potential causal structures characterizing the influence of structured output on LLMs&rsquo; generation: (1) collider without m-bias, (2) collider with m-bias, (3) single cause from instruction, (4) single cause from output format, and (5) independence. Across seven public and one developed reasoning tasks, we find that coarse metrics report positive, negative, or neutral effects of structured output on GPT-4o&rsquo;s generation. However, causal inference reveals no causal impact in 43 out of 48 scenarios. In the remaining 5, 3 involve multifaceted causal structures influenced by concrete instructions. Further experiments show that OpenAI-o3 are more resilient to output formats than general-purpose GPT-4o and GPT-4.1, highlighting an unaware advantage of reasoning models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Weighted Stochastic Differential Equation to Implement Wasserstein-Fisher-Rao Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-17878</link>
-    <guid isPermaLink="false">arxiv:2512.17878</guid>
-    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Herlock Rahimi</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based diffusion models currently constitute the state of the art in continuous generative modeling. These methods are typically formulated via overdamped or underdamped Ornstein&ndash;Uhlenbeck-type stochastic differential equations, in which sampling is driven by a combination of deterministic drift and Brownian diffusion, resulting in continuous particle trajectories in the ambient space. While such dynamics enjoy exponential convergence guarantees for strongly log-concave target distributions, it is well known that their mixing rates deteriorate exponentially in the presence of nonconvex or multimodal landscapes, such as double-well potentials. Since many practical generative modeling tasks involve highly non-log-concave target distributions, considerable recent effort has been devoted to developing sampling schemes that improve exploration beyond classical diffusion dynamics. A promising line of work leverages tools from information geometry to augment diffusion-based samplers with controlled mass reweighting mechanisms. This perspective leads naturally to Wasserstein&ndash;Fisher&ndash;Rao (WFR) geometries, which couple transport in the sample space with vertical (reaction) dynamics on the space of probability measures. In this work, we formulate such reweighting mechanisms through the introduction of explicit correction terms and show how they can be implemented via weighted stochastic differential equations using the Feynman&ndash;Kac representation. Our study provides a preliminary but rigorous investigation of WFR-based sampling dynamics, and aims to clarify their geometric and operator-theoretic structure as a foundation for future theoretical and algorithmic developments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Provable optimal transport with transformers: The essence of depth and prompt engineering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-19931</link>
-    <guid isPermaLink="false">arxiv:2410.19931</guid>
-    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hadi Daneshmand</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Despite their empirical success, the internal mechanism by which transformer models align tokens during language processing remains poorly understood. This paper provides a mechanistic and theoretical explanation of token alignment in LLMs. We first present empirical evidences showing that, in machine translation, attention weights progressively align translated word pairs across layers, closely approximating Optimal Transport (OT) between word embeddings. Building on this observation, we prove that softmax self-attention layers can simulate gradient descent on the dual of the entropy-regularized OT problem, providing a theoretical foundation for the alignment. Our analysis yields a constructive convergence bound showing that transformer depth controls OT approximation accuracy. A direct implication is that standard transformers can sort lists of varying lengths without any parameter adjustment, up to an error term vanishing with transformers depth.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ColliderML: The First Release of an OpenDataDetector High-Luminosity Physics Benchmark Dataset</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-15230</link>
-    <guid isPermaLink="false">arxiv:2512.15230</guid>
-    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Doğa Elitez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>We introduce ColliderML - a large, open, experiment-agnostic dataset of fully simulated and digitised proton-proton collisions in High-Luminosity Large Hadron Collider conditions (√(s)=14 TeV, mean pile-up μ= 200). ColliderML provides one million events across ten Standard Model and Beyond Standard Model processes, plus extensive single-particle samples, all produced with modern next-to-leading order matrix element calculation and showering, realistic per-event pile-up overlay, a validated OpenDataDetector geometry, and standard reconstructions. The release fills a major gap for machine learning (ML) research on detector-level data, provided on the ML-friendly Hugging Face platform. We present physics coverage and the generation, simulation, digitisation and reconstruction pipeline, describe format and access, and initial collider physics benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Surrogate Neural Architecture Codesign Package (SNAC-Pack)</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-15998</link>
-    <guid isPermaLink="false">arxiv:2512.15998</guid>
-    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Weitz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Neural Architecture Search is a powerful approach for automating model design, but existing methods struggle to accurately optimize for real hardware performance, often relying on proxy metrics such as bit operations. We present Surrogate Neural Architecture Codesign Package (SNAC-Pack), an integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment. SNAC-Pack combines Neural Architecture Codesign&rsquo;s multi-stage search capabilities with the Resource Utilization and Latency Estimator, enabling multi-objective optimization across accuracy, FPGA resource utilization, and latency without requiring time-intensive synthesis for each candidate model. We demonstrate SNAC-Pack on a high energy physics jet classification task, achieving 63.84% accuracy with resource estimation. When synthesized on a Xilinx Virtex UltraScale+ VU13P FPGA, the SNAC-Pack model matches baseline accuracy while maintaining comparable resource utilization to models optimized using traditional BOPs metrics. This work demonstrates the potential of hardware-aware neural architecture search for resource-constrained deployments and provides an open-source framework for automating the design of efficient FPGA-accelerated models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ChartAgent: A Chart Understanding Framework with Tool Integrated Reasoning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-14040</link>
-    <guid isPermaLink="false">arxiv:2512.14040</guid>
-    <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Boran Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>With their high information density and intuitive readability, charts have become the de facto medium for data analysis and communication across disciplines. Recent multimodal large language models (MLLMs) have made notable progress in automated chart understanding, yet they remain heavily dependent on explicit textual annotations and the performance degrades markedly when key numerals are absent. To address this limitation, we introduce ChartAgent, a chart understanding framework grounded in Tool-Integrated Reasoning (TIR). Inspired by human cognition, ChartAgent decomposes complex chart analysis into a sequence of observable, replayable steps. Supporting this architecture is an extensible, modular tool library comprising more than a dozen core tools, such as keyelement detection, instance segmentation, and optical character recognition (OCR), which the agent dynamically orchestrates to achieve systematic visual parsing across diverse chart types. Leveraging TIRs transparency and verifiability, ChartAgent moves beyond the black box paradigm by standardizing and consolidating intermediate outputs into a structured Evidence Package, providing traceable and reproducible support for final conclusions. Experiments show that ChartAgent substantially improves robustness under sparse annotation settings, offering a practical path toward trustworthy and extensible systems for chart understanding.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Iterative Sampling Methods for Sinkhorn Distributionally Robust Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-12550</link>
-    <guid isPermaLink="false">arxiv:2512.12550</guid>
-    <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jie Wang</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Distributionally robust optimization (DRO) has emerged as a powerful paradigm for reliable decision-making under uncertainty. This paper focuses on DRO with ambiguity sets defined via the Sinkhorn discrepancy: an entropy-regularized Wasserstein distance, referred to as Sinkhorn DRO. Existing work primarily addresses Sinkhorn DRO from a dual perspective, leveraging its formulation as a conditional stochastic optimization problem, for which many stochastic gradient methods are applicable. However, the theoretical analyses of such methods often rely on the boundedness of the loss function, and it is indirect to obtain the worst-case distribution associated with Sinkhorn DRO. In contrast, we study Sinkhorn DRO from the primal perspective, by reformulating it as a bilevel program with several infinite-dimensional lower-level subproblems over probability space. This formulation enables us to simultaneously obtain the optimal robust decision and the worst-case distribution, which is valuable in practical settings, such as generating stress-test scenarios or designing robust learning algorithms. We propose both double-loop and single-loop sampling-based algorithms with theoretical guarantees to solve this bilevel program. Finally, we demonstrate the effectiveness of our approach through a numerical study on adversarial classification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Probabilistic Super-Resolution for Urban Micrometeorology via a Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2510-12148</link>
-    <guid isPermaLink="false">arxiv:2510.12148</guid>
-    <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuki Yasuda et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>This study employs a neural network that represents the solution to a Schrödinger bridge problem to perform super-resolution of 2-m temperature in an urban area. Schrödinger bridges generally describe transformations between two data distributions based on diffusion processes. We use a specific Schrödinger-bridge model (SM) that directly transforms low-resolution data into high-resolution data, unlike denoising diffusion probabilistic models (simply, diffusion models; DMs) that generate high-resolution data from Gaussian noise. Low-resolution and high-resolution data were obtained from separate numerical simulations with a physics-based model under common initial and boundary conditions. Compared with a DM, the SM attains comparable accuracy at one-fifth the computational cost, requiring 50 neural-network evaluations per datum for the DM and only 10 for the SM. Furthermore, high-resolution samples generated by the SM exhibit larger variance, implying superior uncertainty quantification relative to the DM. Owing to the reduced computational cost of the SM, our results suggest the feasibility of real-time ensemble micrometeorological prediction using SM-based super-resolution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Out-of-Distribution Segmentation via Wasserstein-Based Evidential Uncertainty</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-11373</link>
-    <guid isPermaLink="false">arxiv:2512.11373</guid>
-    <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arnold Brosch et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Deep neural networks achieve superior performance in semantic segmentation, but are limited to a predefined set of classes, which leads to failures when they encounter unknown objects in open-world scenarios. Recognizing and segmenting these out-of-distribution (OOD) objects is crucial for safety-critical applications such as automated driving. In this work, we present an evidence segmentation framework using a Wasserstein loss, which captures distributional distances while respecting the probability simplex geometry. Combined with Kullback-Leibler regularization and Dice structural consistency terms, our approach leads to improved OOD segmentation performance compared to uncertainty-based approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Extrapolating Jet Radiation with Autoregressive Transformers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-12074</link>
-    <guid isPermaLink="false">arxiv:2412.12074</guid>
-    <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anja Butter et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Tilman Plehn, Anja Butter) — original abstract; no AI summary.</em></p>
-<p>Generative networks are an exciting tool for fast LHC event fixed number of particles. Autoregressive transformers allow us to generate events containing variable numbers of particles, very much in line with the physics of QCD jet radiation, and offer the possibility to generalize to higher multiplicities. We show how transformers can learn a factorized likelihood for jet radiation and extrapolate in terms of the number of generated jets. For this extrapolation, bootstrapping training data and training with modifications of the likelihood loss can be used.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep sets and event-level maximum-likelihood estimation for fast pile-up jet rejection in ATLAS</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-10819</link>
-    <guid isPermaLink="false">arxiv:2512.10819</guid>
-    <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammed Aboelela</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Multiple proton-proton collisions (pile-up) occur at every bunch crossing at the LHC, with the mean number of interactions expected to reach 80 during Run 3 and up to 200 at the High-Luminosity LHC. As a direct consequence, events with multijet signatures will occur at increasingly high rates. To cope with the increased luminosity, being able to efficiently group jets according to their origin along the beamline is crucial, particularly at the trigger level. In this work, a novel uncertainty-aware jet regression model based on a Deep Sets architecture is introduced, DIPz, to regress on a jet origin position along the beamline. The inputs to the DIPz algorithm are the charged particle tracks associated to each jet. An event-level discriminant, the Maximum Log Product of Likelihoods (MLPL), is constructed by combining the DIPz per-jet predictions. MLPL is cut-optimized to select events compatible with targeted multi-jet signature selection. This combined approach provides a robust and computationally efficient method for pile-up rejection in multi-jet final states, applicable to real-time event selections at the ATLAS High Level Trigger.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Classifier Reconstruction Through Counterfactual-Aware Wasserstein Prototypes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2512-10878</link>
-    <guid isPermaLink="false">arxiv:2512.10878</guid>
-    <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuan Zhao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Counterfactual explanations provide actionable insights by identifying minimal input changes required to achieve a desired model prediction. Beyond their interpretability benefits, counterfactuals can also be leveraged for model reconstruction, where a surrogate model is trained to replicate the behavior of a target model. In this work, we demonstrate that model reconstruction can be significantly improved by recognizing that counterfactuals, which typically lie close to the decision boundary, can serve as informative though less representative samples for both classes. This is particularly beneficial in settings with limited access to labeled data. We propose a method that integrates original data samples with counterfactuals to approximate class prototypes using the Wasserstein barycenter, thereby preserving the underlying distributional structure of each class. This approach enhances the quality of the surrogate model and mitigates the issue of decision boundary shift, which commonly arises when counterfactuals are naively treated as ordinary training instances. Empirical results across multiple datasets show that our method improves fidelity between the surrogate and target models, validating its effectiveness.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Twisted Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16987</link>
+    <guid isPermaLink="false">arxiv:2607.16987</guid>
+    <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxence Noble et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Over the past few years, diffusion-based Schrödinger bridge models have been proposed to approximate optimal transport dynamics between two prescribed boundary distributions, with successful applications to generative modeling. More precisely, these methods aim to estimate a path measure whose initial and terminal marginals match the two boundary distributions, while minimizing the Kullback-Leibler divergence with respect to a reference Markov process. In this work, we consider the generalized Schrödinger bridge problem, in which the reference process is a twisted Brownian motion, that is, a Feynman-Kac transform of a Brownian motion induced by a time-dependent differentiable potential. Building on the Iterative Markovian Fitting (IMF) paradigm, and in particular on its special case Diffusion Schrödinger Bridge Matching (DSBM), which corresponds to the zero potential case, we introduce Twisted Schrödinger Bridge Matching (TSBM), a diffusion-based method designed to handle both continuous- and discrete-time potentials. Unlike previous approaches, TSBM provides a rigorous extension of the IMF scheme to the generalized Schrödinger bridge problem. This derivation leads to a new bridge-matching loss that depends explicitly on the gradient of the potential and recovers the DSBM objective when the potential vanishes, yielding improved performance. We further introduce trajectory-based variance-reduction techniques that substantially stabilize optimization and may be useful beyond the present setting. Finally, we empirically demonstrate the benefits of TSBM for trajectory inference across increasingly high-dimensional settings, including crowd navigation and single-cell data. Code available at https://github.com/maxencenoble/twisted-sb-matching.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multi-marginal temporal Schrödinger Bridge Matching from unpaired data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-01894</link>
+    <guid isPermaLink="false">arxiv:2510.01894</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Gravier et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Many natural dynamic processes &ndash; such as in vivo cellular differentiation or disease progression &ndash; can only be observed through the lens of static sample snapshots. While challenging, reconstructing their temporal evolution to decipher underlying dynamic properties is of major interest to scientific research. Existing approaches enable data transport along a temporal axis but are poorly scalable in high dimension and require restrictive assumptions to be met. To address these issues, we propose Multi-Marginal temporal Schrödinger Bridge Matching (MMtSBM) from unpaired data, extending the theoretical guarantees and empirical efficiency of Diffusion Schrödinger Bridge Matching (arXiv:2303.16852) by deriving the Iterative Markovian Fitting algorithm to multiple marginals in a novel factorized fashion. Experiments show that MMtSBM retains theoretical properties on toy examples, achieves state-of-the-art performance on real-world datasets such as transcriptomic trajectory inference in 100 dimensions, and, for the first time, recovers couplings and dynamics in very high-dimensional image settings. Our work establishes multi-marginal Schrödinger bridges as a practical and principled approach for recovering hidden dynamics from static data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conformal Graph Prediction with Z-Gromov-Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-02460</link>
+    <guid isPermaLink="false">arxiv:2603.02460</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Melo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Supervised graph prediction addresses regression problems where the outputs are structured graphs. Although several approaches exist for graph-valued prediction, principled uncertainty quantification remains limited. We propose a conformal prediction framework for graph-valued outputs, providing distribution-free coverage guarantees in structured output spaces. Our method defines nonconformity via the Z-Gromov-Wasserstein distance, instantiated in practice through Fused Gromov-Wasserstein (FGW), enabling permutation invariant comparison between predicted and candidate graphs. To obtain adaptive prediction sets, we introduce Score Conformalized Quantile Regression (SCQR), an extension of Conformalized Quantile Regression (CQR) to handle complex output spaces such as graph-valued outputs. We evaluate the proposed approach on a synthetic task and a real problem of molecule identification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>CaloTrilogy: Toward a Breakthrough in One-Step, End-to-End, Physics-Guided Shower Generation for Modern Calorimeters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-04165</link>
+    <guid isPermaLink="false">arxiv:2606.04165</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cheng Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
+<p>High-precision calorimeter simulation at current and future colliders imposes rapidly growing computational demands, motivating the development of machine-learning surrogates for traditional Monte Carlo tools such as Geant4. Flow matching and diffusion-based generative models have become leading approaches for high-dimensional fast simulation because of their sample quality, but typically require O(100) function evaluations at inference and often rely on auxiliary networks to constrain global observables, compromising streamlined end-to-end generation. We introduce a unified framework that improves the balance between speed, shower quality, and physics fidelity. The method combines: (i) an average velocity field integrator that enables sampling in one or a few evaluations; (ii) a learned generative prior in shower space, constructed from data rather than random noise; and (iii) physics-guided loss terms that impose inductive biases on key observables during training. These elements are training time regularizers, preserving end-to-end inference with no additional cost. With only one or a few evaluation steps, the model achieves shower quality competitive with state-of-the-art flow and diffusion approaches, tested on several public high granularity calorimeter datasets. The results demonstrate inter-layer shower structure consistent with the underlying physics, providing a strong candidate for future fast simulation workflows.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning Standard Model structure from LHC data with Riemannian flow matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16144</link>
+    <guid isPermaLink="false">arxiv:2607.16144</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Midori Kato et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>In this work we demonstrate that a single transformer-based generative model can capture Standard Model structure spanning five decades of invariant mass, from the sub-GeV regime to the TeV continuum, a range that no single Monte Carlo sample covers. To achieve this we design \textsc{ShellFlow}, a Riemannian conditional flow matching model that, given the recorded event composition, generates each particle on its on-shell manifold. Its only physics priors are the on-shell condition and the invariant-mass formula. The model is trained on ∼10⁹ real pp collision events from the ATLAS Open Data 13~TeV release and told nothing else. From a single training run, the model learns to reproduce all of the following: intra-particle kinematics, the dilepton resonances (J/ψ, Υ, Z) at their PDG positions, the leptonic Weinberg angle, the W and top-quark masses, and inter-particle correlations that enter no training objective. A substantial fraction of the Standard Model is thus learnable directly from recorded collision data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Cluster-Aware Matching via Laplacian Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16178</link>
+    <guid isPermaLink="false">arxiv:2607.16178</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Samberg et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In many applications of matching, the point clouds to be matched are not merely unstructured sets of points but rather samples from distributions with an intrinsic cluster structure. In such cases, as individual points are often interchangeable within a coherent region, finding a robust region-to-region alignment is more desirable than establishing a precise point-to-point correspondence. To this end, we propose a novel approach for cluster-aware matching based on Laplacian Optimal Transport (LapOT). The key idea is to regularize the optimal transport problem with quadratic Laplacian terms constructed from similarity graphs of the point clouds, which encourages the optimal coupling to respect the cluster structure of both point sets. We also introduce Refined Simultaneous Clustering (RSC), a method that leverages the cluster-aware coupling obtained from LapOT to produce consistent partitions across the point sets, which can overcome the limitations of independent clustering and yield more stable and interpretable results. We demonstrate the effectiveness of our approach through theoretical analysis and empirical experiments, showing that LapOT indeed produces cluster-aware matching that leads to more consistent and meaningful alignments between point clouds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A stochastic smoothing framework for nonconvex-nonconcave minEmax problems with applications to Wasserstein distributionally robust optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-17602</link>
+    <guid isPermaLink="false">arxiv:2502.17602</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study a class of stochastic nonsmooth optimization problems in which an outer variable minimizes the expectation of a pointwise maximum. This minimization&ndash;expectation&ndash;maximization (minEmax) problem arises in Wasserstein distributionally robust optimization and adversarially robust training, and it cannot in general be reformulated as a finite-dimensional minimax problem when the underlying distribution is not empirical. We propose a stochastic smoothing proximal gradient method based on log-mean-exp smoothing of the value function. Under compactness and Lipschitz-type assumptions, we present nonasymptotic analysis in terms of Goldstein stationarity and show that every almost-sure cluster point generated by our method is a Clarke stationary point; by Clarke regularity, such a point is also directional stationary for the original problem. Numerical experiments on newsvendor, robust regression, and adversarially robust learning problems show that the proposed method is competitive with existing baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convergence Rates for Distribution Matching with Sliced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-10691</link>
+    <guid isPermaLink="false">arxiv:2602.10691</guid>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gauthier Thurin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the slice-matching scheme, an efficient iterative method for distribution matching based on sliced optimal transport. We investigate convergence to the target distribution and derive quantitative non-asymptotic rates. To this end, we establish Lojasiewicz-type inequalities for the Sliced-Wasserstein objective. A key challenge is to control along the trajectory the constants in these inequalities. We show that this becomes tractable for Gaussian distributions. Specifically, eigenvalues are controlled when matching along random orthonormal bases at each iteration. We complement our theory with numerical experiments and illustrate the predicted dependence on dimension and step-size, as well as the stabilizing effect of orthonormal-basis sampling.</p>]]></description>
+  </item>
+
+  <item>
+    <title>AvAtar: Learning to Align via Active Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-24395</link>
+    <guid isPermaLink="false">arxiv:2605.24395</guid>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Alignment plays a fundamental role in many machine learning problems, such as multi-network analysis, multimodal learning, and point cloud registration. Recent works increasingly leverage optimal transport (OT) for distributional alignment, whose effectiveness largely depends on sparse supervision that is hard or costly to obtain in practice. Existing works, however, largely overlook how to actively acquire high-quality supervision to improve their alignment performance under OT frameworks. In this paper, we propose a principled active alignment framework for optimal transport alignment called AvAtar. We quantify the informativeness of a candidate by measuring its gradient-based impact on the global alignment result, computed as the gradient propagation from the global alignment result to all possible supervisions of the candidate through the entropy-regularized OT formulation. While differentiating through OT is challenging given its constrained nature, we leverage the adjoint-state method to reformulate the computation to a linear system solvable by the conjugate gradient method with linear complexity and guaranteed convergence. By encoding the global alignment result via effective utility functions, AvAtar is applicable to general alignment problems under the OT framework. Extensive experiments on three representative alignment tasks demonstrate the effectiveness, scalability, and generalizability of the proposed AvAtar.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-13399</link>
+    <guid isPermaLink="false">arxiv:2607.13399</guid>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>On-policy distillation (OPD) has become a key paradigm in LLM post-training, yet its training dynamics remain poorly understood. We present a systematic study examining the role, pathologies, and regulations of OPD. We first clarify the role of OPD as an exploration catalyst: it steers the student toward correct reasoning paths via dense token-level guidance, without expanding capability ceiling. We confirm this by showing that prompt diversity matters more than per-problem sampling numbers, and critically, that the effectiveness of OPD hinges entirely on the quality of its guiding signal. This dependency exposes two pathologies that derail exploration. The Student-Teacher Mismatch occurs when a large teacher-student distributional gap causes the guiding signal to misalign with task correctness, steering exploration in counterproductive directions. Length Exploitation arises when the aggregated token-level objective creates length-dependent shortcuts, allowing the student to game the reward landscape through response truncation or redundant padding, exploring degenerate length modes rather than reasoning strategies. To tame these pathologies, we investigate lightweight signal regulations: advantage clipping and log-scale compression, ensuring exploration is guided by faithful signals. Experiments across seven benchmarks demonstrate that these regulations alleviate length exploitation and enable effective distillation, stably surpassing OPD variants and RLVR baselines, thereby confirming that well-regulated signal quality, rather than mere teacher scale, governs successful exploration in OPD.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Linear Independent Component Analysis via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-14081</link>
+    <guid isPermaLink="false">arxiv:2607.14081</guid>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashutosh Jha et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Linear Independent Component Analysis (ICA) recovers jointly independent source signals from their linear mixtures. To achieve this, classical ICA algorithms attempt to maximize non-Gaussianity, measured by negentropy, which is linked to independence by information theory. Because exact negentropy optimization is intractable, they rely on proxy contrast functions, such as fourth-order cumulants, and parametric log-likelihoods. We propose instead to measure non-Gaussianity using the squared Wasserstein distance W_2² to a standard Gaussian. We prove that the Wasserstein distance between a standard normal distribution and linear projections of the data is maximized when the projection recovers an independent component. Based on this observation, we propose the OT-ICA algorithm which finds this projection by gradient-based optimization. Empirical evaluation on simulated data shows that OT-ICA outperforms proxy-based methods for different distributions of the latent variables. Application to EEG artifact removal and econometric price discovery confirm OT-ICA can be used for applied ICA tasks without distributional assumptions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>ScatterPrism: convergence for generative simulation and inverse problems in particle and nuclear physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01313</link>
+    <guid isPermaLink="false">arxiv:2604.01313</guid>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zeyu Xia et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>High-fidelity simulations and complex inverse problems, such as detector modeling and unfolding, are computationally intensive bottlenecks across subatomic physics, yet essential for accurate physical interpretation. While Conditional Flow Matching (CFM) offers a robust acceleration approach, we demonstrate its standard training loss is fundamentally misleading. Specifically, utilizing a Jefferson Lab Nuclear Physics (NP) kinematic dataset (γp →ρ⁰ p →π⁺π⁻ p), we expose that CFM loss plateaus prematurely, obscuring ongoing physical refinement. To verify this disconnect is a dataset-agnostic pathology, we introduce ScatterPrism, an efficient generative surrogate evaluated against both the NP data and synthetic stress tests modeling challenging 1D distribution topologies. Coupling these benchmarks, we establish that physics-informed metrics continue improving long after standard loss converges. Consequently, we propose a multi-metric diagnostic protocol to ensure true kinematic fidelity without data memorization. Driven by NP challenges relevant to the forthcoming Electron-Ion Collider (EIC), this unified machinery has strong potential to extend to High-Energy Physics (HEP) applications, such as jet modeling. Furthermore, the framework holds promise for broader domains requiring rigorous generative reliability, including medical imaging, astrophysics, and quantitative finance.</p>]]></description>
+  </item>
 
   <item>
     <title>Forecasting Generative Amplification</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeonjoon Kim et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (flavor tagging, title: optimal-transport) — original abstract; no AI summary.</em></p>
 <p>Flavor-tagging calibrations are often provided either as scale factors measured at a finite set of working points or as binned corrections to a chosen one-dimensional discriminant. However, this approach falls short of providing continuous, event-level calibration across the full multicomponent outputs of modern taggers. This limitation leads to information loss in analyses that demand high-performance flavor tagging, restricting analyses to a limited set of predefined variables. In this work, we propose a geometry-aware framework that formulates flavor-tagger calibration as an optimal transport problem on the probability simplex. The transport maps are parameterized and trained in the isometric log-ratio coordinate system. Because the quadratic Euclidean cost of Brenier transport in this coordinate system is equivalent to the Aitchison distance on the simplex, the learned map induces a minimal deformation under the Aitchison geometry. Furthermore, we extract flavor-conditional target distributions directly from control-region data using an expectation-maximization (EM) technique that simultaneously fits multiple control regions, models each flavor component with a normalizing flow, and estimates the regional mixture fractions. The extracted targets are subsequently used to learn flavor-factorized transport maps. Because the joint estimation of mixture fractions and flexible component densities admits weakly constrained directions, we further introduce a linearized feedback-operator analysis that propagates the fitted composition covariance into the extracted component densities, separating data-constrained modes from those dominated by the composition prior. The simulation-based closure study demonstrates improved closure in dedicated control regions and in independent validation mixtures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scalable Learning in Structured Recurrent Spiking Neural Networks without Backpropagation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-00402</link>
-    <guid isPermaLink="false">arxiv:2605.00402</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bo Tang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Spiking Neural Networks (SNNs) provide a promising framework for energy-efficient and biologically grounded computation; however, scalable learning in deep recurrent architectures with sparse connectivity remains a major challenge. In this work, we propose a structured multi-layer recurrent SNN architecture composed of locally dense recurrent layers augmented with sparse small-world long-range projections to a readout population. The long-range connectivity is largely fixed, preserving routing efficiency and hardware scalability, while synaptic adaptation is performed using strictly local plasticity mechanisms. To enable supervised learning without backpropagation or surrogate gradients, we introduce a biologically motivated learning framework that combines: (i) population-based winner-take-all (WTA) teaching signals at the output layer, (ii) fixed random broadcast alignment feedback pathways, and (iii) low-dimensional modulatory neuron populations that gate synaptic updates through three-factor learning rules with eligibility traces. This design supports deep recurrent computation with sparse global communication and purely local synaptic updates. We analyze the algorithmic properties, computational complexity, and hardware feasibility of the proposed approach, and demonstrate stable learning and competitive performance on benchmark classification tasks. The results highlight the potential of structured recurrence and neuromodulatory learning to enable scalable, hardware-compatible SNN training beyond gradient-based methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Benchmarking local Hebbian learning rules for memory storage and prototype extraction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-01074</link>
-    <guid isPermaLink="false">arxiv:2605.01074</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anders Lansner et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Associative memory or content-addressable memory is an important component function in computer science and information processing, and at the same time a key concept in cognitive and computational brain science. Many different neural network architectures and learning rules have been proposed to model the brain&rsquo;s associative memory while investigating key component functions like figure-ground segmentation, perceptual reconstruction and rivalry. A less investigated but equally important capability of associative memory is prototype extraction where the training set comprises distorted prototype instances and the task is to recall the correct generating prototype given a new distorted instance. In this paper we benchmark associative memory function of seven different Hebbian learning rules employed in non-modular and modular recurrent networks with winner-take-all dynamics operating on moderately sparse binary patterns. We measure pattern storage and weight information capacity, prototype extraction capabilities, and sensitivity to correlations in data. The original additive Hebb rule comes out with worst capacity, covariance learning proves to be robust but with moderate capacity, and the Bayesian-Hebbian learning rules show highest capacity in almost all different conditions tested.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generative Modeling under Non-Monotone MAR Missingness via Approximate Wasserstein Gradient Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-04567</link>
-    <guid isPermaLink="false">arxiv:2604.04567</guid>
-    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gitte Kremling et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The prevalence of missing values in data science poses a substantial risk to any further analyses. Despite a wealth of research, principled nonparametric methods to deal with general non-monotone missingness are still scarce. Instead, ad-hoc imputation methods are often used, for which it remains unclear whether the correct distribution can be recovered. In this paper, we propose FLOWGEM, a principled iterative method for generating a complete dataset from a dataset with values Missing at Random (MAR). Motivated by convergence results of the ignoring maximum likelihood estimator, our approach minimizes the expected Kullback-Leibler (KL) divergence between the observed data distribution and the distribution of the generated sample over different missingness patterns. To minimize the KL divergence, we employ a discretized particle evolution of the corresponding Wasserstein Gradient Flow, where the velocity field is approximated using a local linear estimator of the density ratio. This construction yields a data generation scheme that iteratively transports an initial particle ensemble toward the target distribution. Simulation studies and real-data benchmarks demonstrate that FLOWGEM achieves state-of-the-art performance across a range of settings, including the challenging case of non-monotone MAR mechanisms. Together, these results position FLOWGEM as a principled and practical alternative to existing imputation methods, and a decisive step towards closing the gap between theoretical rigor and empirical performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Geometry-Calibrated Conformal Abstention for Language Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-27914</link>
-    <guid isPermaLink="false">arxiv:2604.27914</guid>
-    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>When language models lack relevant knowledge for a given query, they frequently generate plausible responses that can be hallucinations, rather than admitting being agnostic about the answer. Retraining models to reward admitting ignorance can lead to overly conservative behaviors and poor generalization due to scarce evaluation benchmarks. We propose a post hoc framework, Conformal Abstention (CA), adapted from conformal prediction (CP) to determine whether to abstain from answering a query. CA provides finite-sample guarantees on both the probability of participation (i.e., not abstaining) and the probability that the generated response is correct. Importantly, the abstention decision relies on prediction confidence rather than the non-conformity scores used in CP, which are intractable for open-ended generation. To better align prediction confidence with the model&rsquo;s ignorance, we introduce a calibration strategy using representation geometry within the model to measure knowledge involvement in shaping the response. Experiments demonstrate that we improve selective answering significantly with 75 percent conditional correctness.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Cortex-Inspired Continual Learning: Unsupervised Instantiation and Recovery of Functional Task Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-24637</link>
-    <guid isPermaLink="false">arxiv:2604.24637</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kevin McKee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Block-sequential continual learning demands that a single model both protect prior solutions from catastrophic forgetting and efficiently infer at inference time which prior solution matches the current input without task labels. We present Functional Task Networks (FTN), a parameter-isolation method inspired by structural and dynamical motifs found in the mammalian neocortex. Similar to mixture-of-experts, this method uses a high dimensional, self-organizing binary mask over a large population of small but deep networks, inspired by dendritic models of pyramidal neurons. The mask is produced by a three-stage procedure: (1) gradient descent on a continuous mask identifies task-relevant neurons, (2) a smoothing kernel biases the result toward spatial contiguity, (3) and k-winner-take-all binarizes the resulting group at a fixed capacity budget. Like mixture-of-experts, each neuron is an independent deep network, so disjoint masks give exactly disjoint gradient updates, providing structural guarantees against catastrophic forgetting. This three-stage procedure recovers the sub-network of a previously-trained task in a single gradient step, providing unsupervised task segmentation at inference time. We test it on three continual-learning benchmarks: (1) a synthetic multi-task classification/regression generator, (2) MNIST with shuffled class labels (pure concept shift), and (3) Permuted MNIST (domain shift). On all three, FTN with fine grained smoothing (FTN-Slow) results in nearly zero forgetting. FTN with a large kernel and only 2 iterations of smoothing (FTN-Fast) trades off some retention for increased speed. We show that the spatial organization mechanism reduces the effective mask search from the combinatorial top-k subset problem in O(C(H,K)) to the complexity of a near-linear scan in O(H) over compact cortical neighborhoods, which is parallelized by the gradient-based update.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hyper Input Convex Neural Networks for Shape Constrained Learning and Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-26942</link>
-    <guid isPermaLink="false">arxiv:2604.26942</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shayan Hundrieser et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We introduce Hyper Input Convex Neural Networks (HyCNNs), a novel neural network architecture designed for learning convex functions. HyCNNs combine the principles of Maxout networks with input convex neural networks (ICNNs) to create a neural network that is always convex in the input, theoretically capable of leveraging depth, and performs reliable when trained at scale compared to ICNNs. Concretely, we prove that HyCNNs require exponentially fewer parameters than ICNNs to approximate quadratic functions up to a given precision. Throughout a series of synthetic experiments, we demonstrate that HyCNNs outperform existing ICNNs and MLPs in terms of predictive performance for convex regression and interpolation tasks. We further apply HyCNNs to learn high-dimensional optimal transport maps for synthetic examples and for single-cell RNA sequencing data, where they oftentimes outperform ICNN-based neural optimal transport methods and other baselines across a wide range of settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End VLA</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-29844</link>
-    <guid isPermaLink="false">arxiv:2603.29844</guid>
-    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>The development of Vision-Language-Action (VLA) models has been significantly accelerated by pre-trained Vision-Language Models (VLMs). However, most existing end-to-end VLAs treat the VLM primarily as a multimodal encoder, directly mapping vision-language features to low-level actions. This paradigm underutilizes the VLM&rsquo;s potential in high-level decision making and introduces training instability, frequently degrading its rich semantic representations. To address these limitations, we introduce DIAL, a framework bridging high-level decision making and low-level motor execution through a differentiable latent intent bottleneck. Specifically, a VLM-based System-2 performs latent world modeling by synthesizing latent visual foresight within the VLM&rsquo;s native feature space; this foresight explicitly encodes intent and serves as the structural bottleneck. A lightweight System-1 policy then decodes this predicted intent together with the current observation into precise robot actions via latent inverse dynamics. To ensure optimization stability, we employ a two-stage training paradigm: a decoupled warmup phase where System-2 learns to predict latent futures while System-1 learns motor control under ground-truth future guidance within a unified feature space, followed by seamless end-to-end joint optimization. This enables action-aware gradients to refine the VLM backbone in a controlled manner, preserving pre-trained knowledge. Extensive experiments on the RoboCasa GR1 Tabletop benchmark show that DIAL establishes a new state-of-the-art, achieving superior performance with 10x fewer demonstrations than prior methods. Furthermore, by leveraging heterogeneous human demonstrations, DIAL learns physically grounded manipulation priors and exhibits robust zero-shot generalization to unseen objects and novel configurations during real-world deployment on a humanoid robot.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Explainable AI for Jet Tagging: A Comparative Study of GNNExplainer, GNNShap, and GradCAM for Jet Tagging in the Lund Jet Plane</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-25885</link>
-    <guid isPermaLink="false">arxiv:2604.25885</guid>
-    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pahal D. Patel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, Lund plane, Lund jet plane, jet tagging, jet taggers, ParticleNet, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Graph neural networks such as ParticleNet and transformer based networks on point clouds such as ParticleTransformer achieve state-of-the-art performance on jet tagging benchmarks at the Large Hadron Collider, yet the physical reasoning behind their predictions remains opaque. We present different methods, i.e. perturbation-based (GNNExplainer), Shapley-value-based (GNNShap), and gradient-based (GRADCam); adapted to operate on LundNet&rsquo;s Lund-plane graph representation. Leveraging the fact that each node in the Lund plane corresponds to a physically meaningful parton splitting, we construct Monte Carlo truth explanation masks and introduce a physics-informed evaluation framework that goes beyond standard fidelity metrics. We perform the analysis in three transverse-momentum bins (p_T ∈[500,700], [800,1000], and the inclusive region [500,1000] GeV), revealing how explanation quality and focus shift between non-perturbative and perturbative regimes. We further quantify the correlation between explainer-assigned node importance and classical jet substructure observables &ndash; N-subjettiness ratios τ_21 and τ_32 and the energy correlation functions &ndash; establishing the degree to which the model has learned known QCD features. We find that overall the weight assigned by explainability methods has a correlation with analytic observables, with expected shift across different phase space regimes, indicating that a trained neural network indeed learns some aspects of jet-substructure moments. Our open-source implementation enables reproducible explainability studies for graph-based jet taggers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MIMIC: A Generative Multimodal Foundation Model for Biomolecules</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-24506</link>
-    <guid isPermaLink="false">arxiv:2604.24506</guid>
-    <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siavash Golkar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>Biological function emerges from coupled constraints across sequence, structure, regulation, evolution, and cellular context, yet most foundation models in biology are trained within one modality or for a fixed forward task. We present MIMIC, a generative multimodal foundation model trained on our newly curated and aligned dataset, LORE, linking nucleic acid, protein, evolutionary, structural, regulatory, and semantic/contextual modalities within partially observed biomolecular states. MIMIC uses a split-track encoder-decoder architecture to condition on arbitrary subsets of observed modalities and reconstruct or generate missing components of molecular state across the genome, transcriptome, and proteome. Multimodal conditioning consistently improves MIMIC&rsquo;s sequence reconstruction relative to sequence-only inputs, while its learned representations enable state-of-the-art performance on RNA and protein downstream tasks. MIMIC achieves state-of-the-art splicing prediction, and its joint generative formulation enables isoform-aware inference that further improves performance. Beyond prediction, the same generative framework supports constrained design. For RNA, MIMIC identifies corrective edits in a clinically relevant HBB splice-disrupting mutation without reverting it by using evolutionary and structural signals. For proteins, jointly conditioning on shape and surface chemistry of PD-L1 and hACE2 binding sites produces diverse, high-confidence sequences with strong in silico support for target binding. Finally, MIMIC uses experimental context as semantic conditioning to model assay-dependent RNA chemical probing, rather than treating context as a fixed output. Together, these results position MIMIC&rsquo;s aligned multimodal generative modeling as a strong foundation for unifying representation learning, conditional prediction, and constrained biomolecular design within a single model.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gromov-Wasserstein Methods for Multi-View Relational Embedding and Clustering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23912</link>
-    <guid isPermaLink="false">arxiv:2604.23912</guid>
-    <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rafael Pereira Eufrazio et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Learning low-dimensional representations from multi-view relational data is challenging when underlying geometries differ across views. We propose Bary-GWMDS, a Gromov-Wasserstein-based method that operates directly on distance matrices to learn a consensus embedding preserving shared relational structure. By leveraging intrinsic distances, the approach naturally handles nonlinear distortions across views. We also introduce Mean-GWMDS-C, a clustering-oriented formulation that averages distance matrices and learns reduced-support representations via a consensus Gromov-Wasserstein transport. Experiments on synthetic and real-world datasets show that the proposed framework yields stable and geometrically meaningful embeddings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hidden States Know Where Reasoning Diverges: Credit Assignment via Span-Level Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23318</link>
-    <guid isPermaLink="false">arxiv:2604.23318</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinzhu Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Group Relative Policy Optimization (GRPO) performs coarse-grained credit assignment in reinforcement learning with verifiable rewards (RLVR) by assigning the same advantage to all tokens in a rollout. Process reward models can provide finer-grained supervision, but they require step-level annotation or additional reward modeling. We show that hidden-state distributions contain a useful signal for local reasoning quality that can be extracted using only outcome-level correctness labels available in RLVR. Specifically, within each GRPO group, the Wasserstein distance between span-level hidden state distributions of correct and incorrect rollouts increases around regions where their local reasoning quality diverges. This association holds both across examples and within individual trajectories, suggesting that hidden-state distributional divergence can serve as a self-supervision signal for fine-grained credit assignment. We formalize this observation with a separation theorem showing that, under mild structural assumptions, post-divergence spans have larger Wasserstein distances than pre-divergence spans whenever the population-level distributional gap exceeds finite-sample noise. Motivated by this result, we propose \textbf{S}pan-level \textbf{H}idden state \textbf{E}nabled \textbf{A}dvantage \textbf{R}eweighting (SHEAR), which modifies GRPO by using span-level Wasserstein distances to scale token-level advantages, amplifying updates on tokens whose hidden states are more separated from the opposing group. The method requires no additional model and only minimal changes to the training pipeline. Experiments on five mathematical reasoning benchmarks and five code generation benchmarks show improvements over standard GRPO and strong performance relative to supervised process reward models, while requiring no additional annotation or reward model training.</p>]]></description>
-  </item>
-
-  <item>
-    <title>UniAda: Universal Adaptive Multi-objective Adversarial Attack for End-to-End Autonomous Driving Systems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23362</link>
-    <guid isPermaLink="false">arxiv:2604.23362</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jingyu Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Adversarial attacks play a pivotal role in testing and improving the reliability of deep learning (DL) systems. Existing literature has demonstrated that subtle perturbations to the input can elicit erroneous outcomes, thereby substantially compromising the security of DL systems. This has emerged as a critical concern in the development of DL-based safety-critical systems like Autonomous Driving Systems (ADSs). The focus of existing adversarial attack methods on End-to-End (E2E) ADSs has predominantly centered on misbehaviors of steering angle, which overlooks speed-related controls or imperceptible perturbations. To address these challenges, we introduce UniAda, a multi-objective white-box attack technique with a core function that revolves around crafting an image-agnostic adversarial perturbation capable of simultaneously influencing both steering and speed controls. UniAda capitalizes on an intricately designed multi-objective optimization function with the Adaptive Weighting Scheme (AWS), enabling the concurrent optimization of diverse objectives. Validated with both simulated and real-world driving data, UniAda outperforms five benchmarks across two metrics, inducing steering and speed deviations from 3.54 degrees to 29 degrees and 11 km per hour to 22 km per hour on average. This systematic approach establishes UniAda as a proven technique for adversarial attacks on modern DL-based E2E ADSs.</p>]]></description>
   </item>
 
 </channel>

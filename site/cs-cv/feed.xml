@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Beyond Transport Cost: Routing Differences between Flow Matching and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2610-05921</link>
+    <guid isPermaLink="false">arxiv:2610.05921</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eungyeol Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In generative models, Optimal Transport (OT) is used to improve Flow Matching (FM) by reducing noise-data coupling cost. However, different noise-to-output assignments can yield nearly equal costs, raising a key question. Is cost alone sufficient to guide coupling design? We address this question by separating transport cost from routing, i.e., the destination reached by each noise sample. We show numerically how FM and OT can differ in routing while remaining close in cost. We examine its consequences in learned neural FM. Using the exact FM routing as an oracle, we further construct a routing-aware training coupling and find that it yields a directionally consistent improvement in generation over a cost-matched, cost-only counterpart. Our findings highlight what cost minimization can overlook and motivate using both cost and routing to evaluate the design of OT-based FM couplings. Code will be released upon acceptance.</p>]]></description>
+  </item>
 
   <item>
     <title>VDOT++: Unified Few-Step Video Generation via Unbalanced Optimal Transport Distillation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Kei Cheng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Minibatch optimal transport coupling straightens paths in unconditional flow matching. This leads to computationally less demanding inference as fewer integration steps and less complex numerical solvers can be employed when numerically solving an ordinary differential equation at test time. However, in the conditional setting, minibatch optimal transport falls short. This is because the default optimal transport mapping disregards conditions, resulting in a conditionally skewed prior distribution during training. In contrast, at test time, we have no access to the skewed prior, and instead sample from the full, unbiased prior distribution. This gap between training and testing leads to a subpar performance. To bridge this gap, we propose conditional optimal transport C^2OT that adds a conditional weighting term in the cost matrix when computing the optimal transport assignment. Experiments demonstrate that this simple fix works with both discrete and continuous conditions in 8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method performs better overall compared to the existing baselines across different function evaluation budgets. Code is available at https://hkchengrex.github.io/C2OT</p>]]></description>
-  </item>
-
-  <item>
-    <title>Jet Image Generation in High Energy Physics Using Diffusion Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-00250</link>
-    <guid isPermaLink="false">arxiv:2508.00250</guid>
-    <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Victor D. Martinez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents, quark jets, jet image, jet images, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>This article presents, for the first time, the application of diffusion models for generating jet images corresponding to proton-proton collision events at the Large Hadron Collider (LHC). The kinematic variables of quark, gluon, W-boson, Z-boson, and top quark jets from the JetNet simulation dataset are mapped to two-dimensional image representations. Diffusion models are trained on these images to learn the spatial distribution of jet constituents. We compare the performance of score-based diffusion models and consistency models in accurately generating class-conditional jet images. Unlike approaches based on latent distributions, our method operates directly in image space. The fidelity of the generated images is evaluated using several metrics, including the Fréchet Inception Distance (FID), which demonstrates that consistency models achieve higher fidelity and generation stability compared to score-based diffusion models. These advancements offer significant improvements in computational efficiency and generation accuracy, providing valuable tools for High Energy Physics (HEP) research.</p>]]></description>
   </item>
 
 </channel>

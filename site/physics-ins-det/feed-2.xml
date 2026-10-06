@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Machine Learning for Event Reconstruction in the CMS Phase-2 High Granularity Calorimeter Endcap</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2510-01851</link>
+    <guid isPermaLink="false">arxiv:2510.01851</guid>
+    <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Théo Cuisset</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The high-luminosity era of the LHC will offer greatly increased number of events for more precise Standard Model measurements and Beyond Standard Model searches, but will also pose unprecedented challenges to the detectors. To meet these challenges, the CMS detector will undergo several upgrades, including the replacement of the current endcap calorimeters with a novel High-Granularity Calorimeter (HGCAL). To make optimal use of this innovative detector, new and original algorithms are being devised. A dedicated reconstruction framework, The Iterative Clustering (TICL), is being developed within the CMS Software (CMSSW). This new framework is designed to fully exploit the high spatial resolution and precise timing information provided by HGCAL. Several key ingredients of the object reconstruction chain already rely on Machine Learning (ML) techniques and their usage is expected to further develop in the future. The existing reconstruction strategies will be presented stressing the role played by ML techniques to exploit the information provided by the detector. The areas where ML techniques are expected to play a role in the future developments will be also discussed.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GPU acceleration of optical photon propagation in low photon yield applications: Opticks for the Electron Ion Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2512-06061</link>
+    <guid isPermaLink="false">arxiv:2512.06061</guid>
+    <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabor Galgoczi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>The bulk of time spent in the simulation of Cherenkov and other scintillation detectors is spent on optical-photon transport, i.e. ray tracing, a task that GPUs are uniquely qualified to perform. We present EIC-Opticks, a fork of Opticks, which uses event aggregation to drastically accelerate photon transport simulation for low-to-moderate photon yield experiments. During the full Geant4 Monte Carlo simulation of a given detector, optical photon simulation is performed on GPU(s) using the NVIDIA OptiX framework. We validate this approach using the ePIC pfRICH detector. We find GPU and CPU simulations in excellent agreement. For 5×10⁴ electrons with a momentum of p=5 MeV/c in the test case of the pfRICH detector, EIC-Opticks shows an order-of-magnitude speedup over multi-threaded Geant4, and a factor of up to 161±3 over single-threaded execution. In the case of low-to-moderate applications event aggregation reduces the per-photon simulation time from ∼60 μs for single events to ∼20 ns with batching, a factor of ∼3000. In order to make EIC-Opticks easily installable, we authored a Spack package that makes it possible to install it with a single command. Additionally, a Docker container is provided for users with EIC-Opticks installed. EIC-Opticks provides guardrails for common pitfalls (e.g. nested volume conversion, ray tracing setting optimization).</p>]]></description>
+  </item>
 
   <item>
     <title>SynradG4: A Geant4-Based Extension for Synchrotron Radiation Background Studies in the ePIC Detector at the Electron-Ion Collider</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Burgman</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
 <p>The violation of baryon number is an essential ingredient for baryogenesis - the preferential creation of matter over antimatter - needed to account for the observed baryon asymmetry in the Universe. However, such a process has yet to be experimentally observed. The HIBEAM/NNBAR program is a proposed two-stage experiment at the European Spallation Source to search for baryon number violation. The program will include high-sensitivity searches for processes that violate baryon number by one or two units: free neutron-antineutron oscillation via mixing, neutron-antineutron oscillation via regeneration from a sterile neutron state and neutron disappearance; the effective process of neutron regeneration is also possible. The program can be used to discover and characterize mixing in the neutron, antineutron and sterile neutron sectors. The experiment addresses topical open questions such as the origins of baryogenesis and the nature of dark matter, and is sensitive to scales of new physics substantially in excess of those available at colliders. A goal of the program is to open a discovery window to neutron conversion probabilities (sensitivities) by up to three orders of magnitude compared with previous searches, which is a rare opportunity. A conceptual design report for NNBAR has recently been published.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Global track finding based on the Hough transform in the STCF detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2412-14687</link>
-    <guid isPermaLink="false">arxiv:2412.14687</guid>
-    <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hang Zhou et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The proposed Super Tau-Charm Facility (STCF) is an electron-positron collider designed to operate in a center-of-mass energy range from 2 to 7 GeV. It provides a unique platform for physics research in the tau-charm energy region. To fulfill the physics goals of STCF, high tracking efficiency and good momentum resolution is required for charged particles with momenta from 50 MeV/c to 3.5 GeV/c. A global track finding algorithm based on Hough transform has been developed and implemented in the STCF software framework to meet this requirement. The design of the algorithm and its performance with simulation are presented in this paper.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conditioned quantum-assisted deep generative surrogate for particle-calorimeter interactions</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2024.html#a2410-22870</link>
-    <guid isPermaLink="false">arxiv:2410.22870</guid>
-    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Quetzalcoatl Toledo-Marin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Particle collisions at accelerators such as the Large Hadron Collider, recorded and analyzed by experiments such as ATLAS and CMS, enable exquisite measurements of the Standard Model and searches for new phenomena. Simulations of collision events at these detectors have played a pivotal role in shaping the design of future experiments and analyzing ongoing ones. However, the quest for accuracy in Large Hadron Collider (LHC) collisions comes at an imposing computational cost, with projections estimating the need for millions of CPU-years annually during the High Luminosity LHC (HL-LHC) run \cite{collaboration2022atlas}. Simulating a single LHC event with \textsc{Geant4} currently devours around 1000 CPU seconds, with simulations of the calorimeter subdetectors in particular imposing substantial computational demands \cite{rousseau2023experimental}. To address this challenge, we propose a conditioned quantum-assisted deep generative model. Our model integrates a conditioned variational autoencoder (VAE) on the exterior with a conditioned Restricted Boltzmann Machine (RBM) in the latent space, providing enhanced expressiveness compared to conventional VAEs. The RBM nodes and connections are meticulously engineered to enable the use of qubits and couplers on D-Wave&rsquo;s Pegasus-structured \textit{Advantage} quantum annealer (QA) for sampling. We introduce a novel method for conditioning the quantum-assisted RBM using \textit{flux biases}. We further propose a novel adaptive mapping to estimate the effective inverse temperature in quantum annealers. The effectiveness of our framework is illustrated using Dataset 2 of the CaloChallenge \cite{calochallenge}.</p>]]></description>
   </item>
 
 </channel>

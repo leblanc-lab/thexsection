@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Diffusion Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-16852</link>
+    <guid isPermaLink="false">arxiv:2303.16852</guid>
+    <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuyang Shi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Solving transport problems, i.e. finding a map transporting one given distribution to another, has numerous applications in machine learning. Novel mass transport methods motivated by generative modeling have recently been proposed, e.g. Denoising Diffusion Models (DDMs) and Flow Matching Models (FMMs) implement such a transport through a Stochastic Differential Equation (SDE) or an Ordinary Differential Equation (ODE). However, while it is desirable in many applications to approximate the deterministic dynamic Optimal Transport (OT) map which admits attractive properties, DDMs and FMMs are not guaranteed to provide transports close to the OT map. In contrast, Schrödinger bridges (SBs) compute stochastic dynamic mappings which recover entropy-regularized versions of OT. Unfortunately, existing numerical methods approximating SBs either scale poorly with dimension or accumulate errors across iterations. In this work, we introduce Iterative Markovian Fitting (IMF), a new methodology for solving SB problems, and Diffusion Schrödinger Bridge Matching (DSBM), a novel numerical algorithm for computing IMF iterates. DSBM significantly improves over previous SB numerics and recovers as special/limiting cases various recent transport methods. We demonstrate the performance of DSBM on a variety of problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neural Architecture Codesign for Fast Bragg Peak Analysis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-05978</link>
+    <guid isPermaLink="false">arxiv:2312.05978</guid>
+    <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luke McDermott et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>We develop an automated pipeline to streamline neural architecture codesign for fast, real-time Bragg peak analysis in high-energy diffraction microscopy. Traditional approaches, notably pseudo-Voigt fitting, demand significant computational resources, prompting interest in deep learning models for more efficient solutions. Our method employs neural architecture search and AutoML to enhance these models, including hardware costs, leading to the discovery of more hardware-efficient neural architectures. Our results match the performance, while achieving a 13× reduction in bit operations compared to the previous state-of-the-art. We show further speedup through model compression techniques such as quantization-aware-training and neural network pruning. Additionally, our hierarchical search space provides greater flexibility in optimization, which can easily extend to other tasks and domains.</p>]]></description>
+  </item>
+
+  <item>
+    <title>CSOT: Curriculum and Structure-Aware Optimal Transport for Learning with Noisy Labels</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-06221</link>
+    <guid isPermaLink="false">arxiv:2312.06221</guid>
+    <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wanxing Chang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Learning with noisy labels (LNL) poses a significant challenge in training a well-generalized model while avoiding overfitting to corrupted labels. Recent advances have achieved impressive performance by identifying clean labels and correcting corrupted labels for training. However, the current approaches rely heavily on the model&rsquo;s predictions and evaluate each sample independently without considering either the global and local structure of the sample distribution. These limitations typically result in a suboptimal solution for the identification and correction processes, which eventually leads to models overfitting to incorrect labels. In this paper, we propose a novel optimal transport (OT) formulation, called Curriculum and Structure-aware Optimal Transport (CSOT). CSOT concurrently considers the inter- and intra-distribution structure of the samples to construct a robust denoising and relabeling allocator. During the training process, the allocator incrementally assigns reliable labels to a fraction of the samples with the highest confidence. These labels have both global discriminability and local coherence. Notably, CSOT is a new OT formulation with a nonconvex objective function and curriculum constraints, so it is not directly compatible with classical OT solvers. Here, we develop a lightspeed computational method that involves a scaling iteration within a generalized conditional gradient framework to solve CSOT efficiently. Extensive experiments demonstrate the superiority of our method over the current state-of-the-arts in LNL. Code is available at https://github.com/changwxx/CSOT-for-LNL.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Concurrent Density Estimation with Wasserstein Autoencoders: Some Statistical Insights</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-06591</link>
+    <guid isPermaLink="false">arxiv:2312.06591</guid>
+    <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anish Chakrabarty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Variational Autoencoders (VAEs) have been a pioneering force in the realm of deep generative models. Amongst its legions of progenies, Wasserstein Autoencoders (WAEs) stand out in particular due to the dual offering of heightened generative quality and a strong theoretical backbone. WAEs consist of an encoding and a decoding network forming a bottleneck with the prime objective of generating new samples resembling the ones it was catered to. In the process, they aim to achieve a target latent representation of the encoded data. Our work is an attempt to offer a theoretical understanding of the machinery behind WAEs. From a statistical viewpoint, we pose the problem as concurrent density estimation tasks based on neural network-induced transformations. This allows us to establish deterministic upper bounds on the realized errors WAEs commit. We also analyze the propagation of these stochastic errors in the presence of adversaries. As a result, both the large sample properties of the reconstructed distribution and the resilience of WAE models are explored.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimizing Likelihood-free Inference using Self-supervised Neural Symmetry Embeddings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-07615</link>
+    <guid isPermaLink="false">arxiv:2312.07615</guid>
+    <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deep Chatterjee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Likelihood-free inference is quickly emerging as a powerful tool to perform fast/effective parameter estimation. We demonstrate a technique of optimizing likelihood-free inference to make it even faster by marginalizing symmetries in a physical problem. In this approach, physical symmetries, for example, time-translation are learned using joint-embedding via self-supervised learning with symmetry data augmentations. Subsequently, parameter inference is performed using a normalizing flow where the embedding network is used to summarize the data before conditioning the parameters. We present this approach on two simple physical problems and we show faster convergence in a smaller number of parameters compared to a normalizing flow that does not use a pre-trained symmetry-informed representation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FreeFlow: A Comprehensive Understanding on Diffusion Probabilistic Models via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-05486</link>
+    <guid isPermaLink="false">arxiv:2312.05486</guid>
+    <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bowen Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The blooming diffusion probabilistic models (DPMs) have garnered significant interest due to their impressive performance and the elegant inspiration they draw from physics. While earlier DPMs relied upon the Markovian assumption, recent methods based on differential equations have been rapidly applied to enhance the efficiency and capabilities of these models. However, a theoretical interpretation encapsulating these diverse algorithms is insufficient yet pressingly required to guide further development of DPMs. In response to this need, we present FreeFlow, a framework that provides a thorough explanation of the diffusion formula as time-dependent optimal transport, where the evolutionary pattern of probability density is given by the gradient flows of a functional defined in Wasserstein space. Crucially, our framework necessitates a unified description that not only clarifies the subtle mechanism of DPMs but also indicates the roots of some defects through creative involvement of Lagrangian and Eulerian views to understand the evolution of probability flow. We particularly demonstrate that the core equation of FreeFlow condenses all stochastic and deterministic DPMs into a single case, showcasing the expansibility of our method. Furthermore, the Riemannian geometry employed in our work has the potential to bridge broader subjects in mathematics, which enable the involvement of more profound tools for the establishment of more outstanding and generalized models in the future.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Induced Generative Adversarial Particle Transformers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-04757</link>
+    <guid isPermaLink="false">arxiv:2312.04757</guid>
+    <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anni Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>In high energy physics (HEP), machine learning methods have emerged as an effective way to accurately simulate particle collisions at the Large Hadron Collider (LHC). The message-passing generative adversarial network (MPGAN) was the first model to simulate collisions as point, or <code>particle'', clouds, with state-of-the-art results, but suffered from quadratic time complexity. Recently, generative adversarial particle transformers (GAPTs) were introduced to address this drawback; however, results did not surpass MPGAN. We introduce induced GAPT (iGAPT) which, by integrating</code>induced particle-attention blocks&rsquo;&rsquo; and conditioning on global jet attributes, not only offers linear time complexity but is also able to capture intricate jet substructure, surpassing MPGAN in many metrics. Our experiments demonstrate the potential of iGAPT to simulate complex HEP data accurately and efficiently.</p>]]></description>
+  </item>
+
+  <item>
+    <title>High Pileup Particle Tracking with Object Condensation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-03823</link>
+    <guid isPermaLink="false">arxiv:2312.03823</guid>
+    <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Lieret et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Recent work has demonstrated that graph neural networks (GNNs) can match the performance of traditional algorithms for charged particle tracking while improving scalability to meet the computing challenges posed by the HL-LHC. Most GNN tracking algorithms are based on edge classification and identify tracks as connected components from an initial graph containing spurious connections. In this talk, we consider an alternative based on object condensation (OC), a multi-objective learning framework designed to cluster points (hits) belonging to an arbitrary number of objects (tracks) and regress the properties of each object. Building on our previous results, we present a streamlined model and show progress toward a one-shot OC tracking algorithm in a high-pileup environment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Scaling Laws in Jet Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-02264</link>
+    <guid isPermaLink="false">arxiv:2312.02264</guid>
+    <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joshua Batson et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>We demonstrate the emergence of scaling laws in the benchmark top versus QCD jet classification problem in collider physics. Six distinct physically-motivated classifiers exhibit power-law scaling of the binary cross-entropy test loss as a function of training set size, with distinct power law indices. This result highlights the importance of comparing classifiers as a function of dataset size rather than for a fixed training set, as the optimal classifier may change considerably as the dataset is scaled up. We speculate on the interpretation of our results in terms of previous models of scaling laws observed in natural language and image datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unsupervised approaches based on optimal transport and convex analysis for inverse problems in imaging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-08972</link>
+    <guid isPermaLink="false">arxiv:2311.08972</guid>
+    <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marcello Carioni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Unsupervised deep learning approaches have recently become one of the crucial research areas in imaging owing to their ability to learn expressive and powerful reconstruction operators even when paired high-quality training data is scarcely available. In this chapter, we review theoretically principled unsupervised learning schemes for solving imaging inverse problems, with a particular focus on methods rooted in optimal transport and convex analysis. We begin by reviewing the optimal transport-based unsupervised approaches such as the cycle-consistency-based models and learned adversarial regularization methods, which have clear probabilistic interpretations. Subsequently, we give an overview of a recent line of works on provably convergent learned optimization algorithms applied to accelerate the solution of imaging inverse problems, alongside their dedicated unsupervised training schemes. We also survey a number of provably convergent plug-and-play algorithms (based on gradient-step deep denoisers), which are among the most important and widely applied unsupervised approaches for imaging problems. At the end of this survey, we provide an overview of a few related unsupervised learning frameworks that complement our focused schemes. Together with a detailed survey, we provide an overview of the key mathematical results that underlie the methods reviewed in the chapter to keep our discussion self-contained.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Model Performance Prediction for Hyperparameter Optimization of Deep Learning Models Using High Performance Computing and Quantum Annealing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-17508</link>
+    <guid isPermaLink="false">arxiv:2311.17508</guid>
+    <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Pablo García Amboage et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow) — original abstract; no AI summary.</em></p>
+<p>Hyperparameter Optimization (HPO) of Deep Learning-based models tends to be a compute resource intensive process as it usually requires to train the target model with many different hyperparameter configurations. We show that integrating model performance prediction with early stopping methods holds great potential to speed up the HPO process of deep learning models. Moreover, we propose a novel algorithm called Swift-Hyperband that can use either classical or quantum support vector regression for performance prediction and benefit from distributed High Performance Computing environments. This algorithm is tested not only for the Machine-Learned Particle Flow model used in High Energy Physics, but also for a wider range of target models from domains such as computer vision and natural language processing. Swift-Hyperband is shown to find comparable (or better) hyperparameters as well as using less computational resources in all test cases.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SAIBench: A Structural Interpretation of AI for Science Through Benchmarks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2311-17869</link>
+    <guid isPermaLink="false">arxiv:2311.17869</guid>
+    <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yatao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
+<p>Artificial Intelligence for Science (AI4S) is an emerging research field that utilizes machine learning advancements to tackle complex scientific computational issues, aiming to enhance computational efficiency and accuracy. However, the data-driven nature of AI4S lacks the correctness or accuracy assurances of conventional scientific computing, posing challenges when deploying AI4S models in real-world applications. To mitigate these, more comprehensive benchmarking procedures are needed to better understand AI4S models. This paper introduces a novel benchmarking approach, known as structural interpretation, which addresses two key requirements: identifying the trusted operating range in the problem space and tracing errors back to their computational components. This method partitions both the problem and metric spaces, facilitating a structural exploration of these spaces. The practical utility and effectiveness of structural interpretation are illustrated through its application to three distinct AI4S workloads: machine-learning force fields (MLFF), jet tagging, and precipitation nowcasting. The benchmarks effectively model the trusted operating range, trace errors, and reveal novel perspectives for refining the model, training process, and data sampling strategy. This work is part of the SAIBench project, an AI4S benchmarking suite.</p>]]></description>
+  </item>
 
   <item>
     <title>Quantum-probabilistic Hamiltonian learning for generative modelling &amp; anomaly detection</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrés Hoyos-Idrobo</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Many re-ranking strategies in search systems rely on stochastic ranking policies, encoded as Doubly-Stochastic (DS) matrices, that satisfy desired ranking constraints in expectation, e.g., Fairness of Exposure (FOE). These strategies are generally two-stage pipelines: \emph{i)} an offline re-ranking policy construction step and \emph{ii)} an online sampling of rankings step. Building a re-ranking policy requires repeatedly solving a constrained optimization problem, one for each issued query. Thus, it is necessary to recompute the optimization procedure for any new/unseen query. Regarding sampling, the Birkhoff-von-Neumann decomposition (BvND) is the favored approach to draw rankings from any DS-based policy. However, the BvND is too costly to compute online. Hence, the BvND as a sampling solution is memory-consuming as it can grow as (N  n²⁾ for N queries and n documents. This paper offers a novel, fast, lightweight way to predict fair stochastic re-ranking policies: Constrained Meta-Optimal Transport (CoMOT). This method fits a neural network shared across queries like a learning-to-rank system. We also introduce Gumbel-Matching Sampling (GumMS), an online sampling approach from DS-based policies. Our proposed pipeline, CoMOT + GumMS, only needs to store the parameters of a single model, and it generalizes to unseen queries. We empirically evaluated our pipeline on the TREC 2019 and 2020 datasets under FOE constraints. Our experiments show that CoMOT rapidly predicts fair re-ranking policies on held-out data, with a speed-up proportional to the average number of documents per query. It also displays fairness and ranking performance similar to the original optimization-based policy. Furthermore, we empirically validate the effectiveness of GumMS to approximate DS-based policies in expectation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Method for Classifying Snow Using Ski-Mounted Strain Sensors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-14307</link>
-    <guid isPermaLink="false">arxiv:2304.14307</guid>
-    <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Florian McLelland et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (groomed) — original abstract; no AI summary.</em></p>
-<p>Understanding the structure, quantity, and type of snow in mountain landscapes is crucial for assessing avalanche safety, interpreting satellite imagery, building accurate hydrology models, and choosing the right pair of skis for your weekend trip. Currently, such characteristics of snowpack are measured using a combination of remote satellite imagery, weather stations, and laborious point measurements and descriptions provided by local forecasters, guides, and backcountry users. Here, we explore how characteristics of the top layer of snowpack could be estimated while skiing using strain sensors mounted to the top surface of an alpine ski. We show that with two strain gauges and an inertial measurement unit it is feasible to correctly assign one of three qualitative labels (powder, slushy, or icy/groomed snow) to each 10 second segment of a trajectory with 97% accuracy, independent of skiing style. Our algorithm uses a combination of a data-driven linear model of the ski-snow interaction, dimensionality reduction, and a Naive Bayes classifier. Comparisons of classifier performance between strain gauges suggest that the optimal placement of strain gauges is halfway between the binding and the tip/tail of the ski, in the cambered section just before the point where the unweighted ski would touch the snow surface. The ability to classify snow, potentially in real-time, using skis opens the door to applications that range from citizen science efforts to map snow surface characteristics in the backcountry, and develop skis with automated stiffness tuning based on the snow type.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Polynomial-Time Solvers for the Discrete ∞-Optimal Transport Problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-13467</link>
-    <guid isPermaLink="false">arxiv:2304.13467</guid>
-    <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Meyer Scetbon</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this note, we propose polynomial-time algorithms solving the Monge and Kantorovich formulations of the ∞-optimal transport problem in the discrete and finite setting. It is the first time, to the best of our knowledge, that efficient numerical methods for these problems have been proposed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An Asynchronous Decentralized Algorithm for Wasserstein Barycenter Problem</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-11653</link>
-    <guid isPermaLink="false">arxiv:2304.11653</guid>
-    <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chao Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein Barycenter Problem (WBP) has recently received much attention in the field of artificial intelligence. In this paper, we focus on the decentralized setting for WBP and propose an asynchronous decentralized algorithm (A²DWB). A²DWB is induced by a novel stochastic block coordinate descent method to optimize the dual of entropy regularized WBP. To our knowledge, A²DWB is the first asynchronous decentralized algorithm for WBP. Unlike its synchronous counterpart, it updates local variables in a manner that only relies on the stale neighbor information, which effectively alleviate the waiting overhead, and thus substantially improve the time efficiency. Empirical results validate its superior performance compared to the latest synchronous algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Variational inference via Wasserstein gradient flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2205-15902</link>
-    <guid isPermaLink="false">arxiv:2205.15902</guid>
-    <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marc Lambert et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Along with Markov chain Monte Carlo (MCMC) methods, variational inference (VI) has emerged as a central computational approach to large-scale Bayesian inference. Rather than sampling from the true posterior π, VI aims at producing a simple but effective approximation π̂ to π for which summary statistics are easy to compute. However, unlike the well-studied MCMC methodology, algorithmic guarantees for VI are still relatively less well-understood. In this work, we propose principled methods for VI, in which π̂ is taken to be a Gaussian or a mixture of Gaussians, which rest upon the theory of gradient flows on the Bures&ndash;Wasserstein space of Gaussian measures. Akin to MCMC, it comes with strong theoretical guarantees when π is log-concave.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Evaluating generative models in high energy physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-10295</link>
-    <guid isPermaLink="false">arxiv:2211.10295</guid>
-    <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raghav Kansal et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle transformer) — original abstract; no AI summary.</em></p>
-<p>There has been a recent explosion in research into machine-learning-based generative modeling to tackle computational challenges for simulations in high energy physics (HEP). In order to use such alternative simulators in practice, we need well-defined metrics to compare different generative models and evaluate their discrepancy from the true distributions. We present the first systematic review and investigation into evaluation metrics and their sensitivity to failure modes of generative models, using the framework of two-sample goodness-of-fit testing, and their relevance and viability for HEP. Inspired by previous work in both physics and computer vision, we propose two new metrics, the Fréchet and kernel physics distances (FPD and KPD, respectively), and perform a variety of experiments measuring their performance on simple Gaussian-distributed, and simulated high energy jet datasets. We find FPD, in particular, to be the most sensitive metric to all alternative jet distributions tested and recommend its adoption, along with the KPD and Wasserstein distances between individual feature distributions, for evaluating generative models in HEP. We finally demonstrate the efficacy of these proposed metrics in evaluating and comparing a novel attention-based generative adversarial particle transformer to the state-of-the-art message-passing generative adversarial network jet simulation model. The code for our proposed metrics is provided in the open source JetNet Python library.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Auto-encoded MDPs: Formal Verification of Efficiently Distilled RL Policies with Many-sided Guarantees</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-12558</link>
-    <guid isPermaLink="false">arxiv:2303.12558</guid>
-    <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Florent Delgrange et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Although deep reinforcement learning (DRL) has many success stories, the large-scale deployment of policies learned through these advanced techniques in safety-critical scenarios is hindered by their lack of formal guarantees. Variational Markov Decision Processes (VAE-MDPs) are discrete latent space models that provide a reliable framework for distilling formally verifiable controllers from any RL policy. While the related guarantees address relevant practical aspects such as the satisfaction of performance and safety properties, the VAE approach suffers from several learning flaws (posterior collapse, slow learning speed, poor dynamics estimates), primarily due to the absence of abstraction and representation guarantees to support latent optimization. We introduce the Wasserstein auto-encoded MDP (WAE-MDP), a latent space model that fixes those issues by minimizing a penalized form of the optimal transport between the behaviors of the agent executing the original policy and the distilled policy, for which the formal guarantees apply. Our approach yields bisimulation guarantees while learning the distilled policy, allowing concrete optimization of the abstraction and representation model quality. Our experiments show that, besides distilling policies up to 10 times faster, the latent model quality is indeed better in general. Moreover, we present experiments from a simple time-to-failure verification algorithm on the latent space. The fact that our approach enables such simple verification techniques highlights its applicability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sparsity-Constrained Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2209-15466</link>
-    <guid isPermaLink="false">arxiv:2209.15466</guid>
-    <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianlin Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Regularized optimal transport (OT) is now increasingly used as a loss or as a matching layer in neural networks. Entropy-regularized OT can be computed using the Sinkhorn algorithm but it leads to fully-dense transportation plans, meaning that all sources are (fractionally) matched with all targets. To address this issue, several works have investigated quadratic regularization instead. This regularization preserves sparsity and leads to unconstrained and smooth (semi) dual objectives, that can be solved with off-the-shelf gradient methods. Unfortunately, quadratic regularization does not give direct control over the cardinality (number of nonzeros) of the transportation plan. We propose in this paper a new approach for OT with explicit cardinality constraints on the transportation plan. Our work is motivated by an application to sparse mixture of experts, where OT can be used to match input tokens such as image patches with expert models such as neural networks. Cardinality constraints ensure that at most k tokens are matched with an expert, which is crucial for computational performance reasons. Despite the nonconvexity of cardinality constraints, we show that the corresponding (semi) dual problems are tractable and can be solved with first-order gradient methods. Our method can be thought as a middle ground between unregularized OT (recovered in the limit case k=1) and quadratically-regularized OT (recovered when k is large enough). The smoothness of the objectives increases as k increases, giving rise to a trade-off between convergence speed and sparsity of the optimal plan.</p>]]></description>
-  </item>
-
-  <item>
-    <title>End-to-end codesign of Hessian-aware quantized neural networks for FPGAs and ASICs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-06745</link>
-    <guid isPermaLink="false">arxiv:2304.06745</guid>
-    <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier Campos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>We develop an end-to-end workflow for the training and implementation of co-designed neural networks (NNs) for efficient field-programmable gate array (FPGA) and application-specific integrated circuit (ASIC) hardware. Our approach leverages Hessian-aware quantization (HAWQ) of NNs, the Quantized Open Neural Network Exchange (QONNX) intermediate representation, and the hls4ml tool flow for transpiling NNs into FPGA and ASIC firmware. This makes efficient NN implementations in hardware accessible to nonexperts, in a single open-sourced workflow that can be deployed for real-time machine learning applications in a wide range of scientific and industrial settings. We demonstrate the workflow in a particle physics application involving trigger decisions that must operate at the 40 MHz collision rate of the CERN Large Hadron Collider (LHC). Given the high collision rate, all data processing must be implemented on custom ASIC and FPGA hardware within a strict area and latency. Based on these constraints, we implement an optimized mixed-precision NN classifier for high-momentum particle jets in simulated LHC proton-proton collisions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Policy Blending As Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2212-01938</link>
-    <guid isPermaLink="false">arxiv:2212.01938</guid>
-    <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">An T. Le et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We present hierarchical policy blending as optimal transport (HiPBOT). HiPBOT hierarchically adjusts the weights of low-level reactive expert policies of different agents by adding a look-ahead planning layer on the parameter space. The high-level planner renders policy blending as unbalanced optimal transport consolidating the scaling of the underlying Riemannian motion policies. As a result, HiPBOT effectively decides the priorities between expert policies and agents, ensuring the task&rsquo;s success and guaranteeing safety. Experimental results in several application scenarios, from low-dimensional navigation to high-dimensional whole-body control, show the efficacy and efficiency of HiPBOT. Our method outperforms state-of-the-art baselines &ndash; either adopting probabilistic inference or defining a tree structure of experts &ndash; paving the way for new applications of optimal transport to robot control. More material at https://sites.google.com/view/hipobot</p>]]></description>
-  </item>
-
-  <item>
-    <title>Time-Series Imputation with Wasserstein Interpolation for Optimal Look-Ahead-Bias and Variance Tradeoff</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2102-12736</link>
-    <guid isPermaLink="false">arxiv:2102.12736</guid>
-    <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose Blanchet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Missing time-series data is a prevalent practical problem. Imputation methods in time-series data often are applied to the full panel data with the purpose of training a model for a downstream out-of-sample task. For example, in finance, imputation of missing returns may be applied prior to training a portfolio optimization model. Unfortunately, this practice may result in a look-ahead-bias in the future performance on the downstream task. There is an inherent trade-off between the look-ahead-bias of using the full data set for imputation and the larger variance in the imputation from using only the training data. By connecting layers of information revealed in time, we propose a Bayesian posterior consensus distribution which optimally controls the variance and look-ahead-bias trade-off in the imputation. We demonstrate the benefit of our methodology both in synthetic and real financial data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Equivariant Graph Neural Networks for Charged Particle Tracking</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-05293</link>
-    <guid isPermaLink="false">arxiv:2304.05293</guid>
-    <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Murnane et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Graph neural networks (GNNs) have gained traction in high-energy physics (HEP) for their potential to improve accuracy and scalability. However, their resource-intensive nature and complex operations have motivated the development of symmetry-equivariant architectures. In this work, we introduce EuclidNet, a novel symmetry-equivariant GNN for charged particle tracking. EuclidNet leverages the graph representation of collision events and enforces rotational symmetry with respect to the detector&rsquo;s beamline axis, leading to a more efficient model. We benchmark EuclidNet against the state-of-the-art Interaction Network on the TrackML dataset, which simulates high-pileup conditions expected at the High-Luminosity Large Hadron Collider (HL-LHC). Our results show that EuclidNet achieves near-state-of-the-art performance at small model scales (&lt;1000 parameters), outperforming the non-equivariant benchmarks. This study paves the way for future investigations into more resource-efficient GNN models for particle tracking in HEP experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Forward-backward Gaussian variational inference via JKO in the Bures-Wasserstein Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-05398</link>
-    <guid isPermaLink="false">arxiv:2304.05398</guid>
-    <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Diao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Variational inference (VI) seeks to approximate a target distribution π by an element of a tractable family of distributions. Of key interest in statistics and machine learning is Gaussian VI, which approximates π by minimizing the Kullback-Leibler (KL) divergence to π over the space of Gaussians. In this work, we develop the (Stochastic) Forward-Backward Gaussian Variational Inference (FB-GVI) algorithm to solve Gaussian VI. Our approach exploits the composite structure of the KL divergence, which can be written as the sum of a smooth term (the potential) and a non-smooth term (the entropy) over the Bures-Wasserstein (BW) space of Gaussians endowed with the Wasserstein distance. For our proposed algorithm, we obtain state-of-the-art convergence guarantees when π is log-smooth and log-concave, as well as the first convergence guarantees to first-order stationary solutions when π is only log-smooth.</p>]]></description>
   </item>
 
 </channel>

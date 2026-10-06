@@ -7,7 +7,127 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Probabilistic Algorithms for Ising Machines from Optimization to Generative AI</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-03972</link>
+    <guid isPermaLink="false">arxiv:2610.03972</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corentin Delacour et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Kyle Lee) — original abstract; no AI summary.</em></p>
+<p>Ising machines have emerged as promising hardware accelerators for intractable optimization and sampling problems, yet their practical impact increasingly hinges on the co-design of algorithms and hardware, where algorithmic demands shape new architectures and new hardware capabilities inspire entirely new algorithms. In this Review, we survey probabilistic algorithms designed for portability across diverse Ising platforms, advocating a top-down perspective that prioritizes principled methods with provable guarantees. We cover foundational methods such as simulated annealing and parallel tempering, including two-dimensional extensions that natively encode hard constraints, and examine approaches that expand the scale of solvable problems from cluster mean-field methods to variational samplers. We highlight the Probabilistic Approximate Optimization Algorithm (PAOA), a classical analog of QAOA that emerged directly from probabilistic hardware development, and explore how generative AI and Ising machines might reinforce each other: learned models propose global moves to accelerate optimization, while probabilistic techniques improve inference in large language models. Much as quantum computing has seen algorithms co-evolve with hardware, probabilistic and Ising computing stand at a similar inflection point. We outline a co-design framework for accelerating the capabilities and adoption of next-generation Ising machines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Application of sequence learning for predicting radiation damage of the CMS electromagnetic calorimeter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04058</link>
+    <guid isPermaLink="false">arxiv:2610.04058</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mario Ivan Gallegos Torres et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>In this paper we use machine learning methods to predict radiation damage in the lead tungstate crystals of the CMS electromagnetic calorimeter at the Large Hadron Collider. We analyze LHC Open Data collected from 2016 to 2018 and study the time evolution of the crystal optical transparency. We apply deep neural network models to predict its behavior over different future time intervals, and find that encoder-decoder sequence-to-sequence architectures can effectively describe crystal aging.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exact Optimal Transport by Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04085</link>
+    <guid isPermaLink="false">arxiv:2610.04085</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dmitry Kamenetsky</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Balanced discrete optimal transport between n sources and n targets of unit mass is exactly the minimum-cost assignment problem-a bipartite perfect matching-and is therefore solvable exactly by industrial matching engines in milliseconds to seconds. We ask when the exact approach beats the standard approximate alternatives, entropic Sinkhorn and its accelerated variant Greenkhorn, and make the sparse-exact side certified by a textbook LP dual-feasibility clip. Three contributions. (i) Measurement: on dense 2-D instances, exact matching (Jonker-Volgenant) is faster and strictly more accurate than either approximate method throughout the moderate-n regime (0.01 s at n=500 to 11.5 s at n=8000); reaching a 1% quality target on the same hardware requires roughly 10-80 min for Greenkhorn (factors 4e2-6e4 over exact; plain Sinkhorn is 20-650x slower still), a rough power-law projection beyond the measured range. Greenkhorn&rsquo;s measured speedup over plain Sinkhorn is only 1.0-1.5x on most converged cells. (ii) A simple kNN-pool gap certificate: given a pool matching and its Blossom dual, a one-pass O(n^2) clip produces a dense-feasible lower bound; combined with the Sinkhorn dual potential (valid at every iterate, not just at convergence), the bound is valid on all 45 measured configurations and tightens monotonically with k. (iii) A multi-robot task-allocation sanity check where the discrete plan is the deliverable: per-round exact assignment costs 0.1-68 ms, while a Sinkhorn-plus-hardening pipeline costs 0.12-15.9 s and accumulates 6-27% extra travel over 15 rounds. The Sinkhorn family&rsquo;s large-n dense regime is acknowledged and left untouched. Code, data, and results under MIT: https://github.com/dimkadimon/OT-Blossom.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adaptive Bregman Alternating Projections for Feasible Gromov-Wasserstein Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04264</link>
+    <guid isPermaLink="false">arxiv:2610.04264</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aoran Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) problem compares structured distributions without requiring a shared feature space or known correspondences, but its nonconvex objective and coupled marginal constraints make computation challenging. Bregman alternating projected gradient (BAPG) uses inexpensive alternating row and column updates, yet its fixed-penalty relaxation leaves a persistent feasibility gap. We propose Adaptive KL-BAPG (A-KL-BAPG), which combines a finite fixed-penalty burn-in with a guarded increasing-penalty phase. At each tail iteration, the method reuses BAPG&rsquo;s alternating updates and backtracks a delayed-power step until a Sinkhorn-inspired projective-diameter safeguard is satisfied. We prove finite termination of the backtracking at each iteration and show that the feasibility gap vanishes asymptotically. We further establish a best-iterate O(1/logN) bound for the weighted squared corrected residual and, under a support regularity condition, the existence of a stationary accumulation point for the original GW problem. This distinguishes A-KL-BAPG from fixed-penalty BAPG, whose stationarity guarantees are given for the relaxed problem. Experiments show that A-KL-BAPG achieves a favorable balance of accuracy, objective value, feasibility, and stationarity relative to BAPG variants, projection-based methods, and task-specific baselines. For synthetic and real graph alignment problems, it closely matches the accuracy and objective value of fixed-penalty KL-BAPG while reducing the marginal feasibility gap by 62-99% and the projected stationarity residual by 28-98%. Heterogeneous domain adaptation experiments show a similar pattern: A-KL-BAPG maintains comparable target accuracy and objective values while achieving better feasibility and stationarity than fixed-penalty KL-BAPG.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hierarchical Credit Assignment for RLVR on Fused Gromov-Wasserstein Geometry</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04344</link>
+    <guid isPermaLink="false">arxiv:2610.04344</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Reinforcement learning with verifiable rewards (RLVR) has been shown to improve the reasoning capability of large language models (LLMs) across diverse reasoning tasks. However, group-based RLVR methods, such as GRPO, assign a uniform advantage to all tokens within rollouts of the same outcome. While existing works refine credit assignment of GRPO based on local signals such as token locations or entropy, they often fail to capture the global semantic novelty of a reasoning behavior relative to the current policy. In this work, we propose a hierarchical credit assignment approach for group-based RLVR methods, called HarA, which identifies and encourages semantically novel reasoning behaviors during RLVR. HarA represents each sampled rollout as a distribution over the hidden states and locations of tokens, and computes the Fused Gromov-Wasserstein (FGW) barycenters of all rollouts with the same outcome, capturing the internal reasoning patterns in the latent space under the current policy. The semantic novelty of a reasoning element can then be measured by its contribution to the FGW distance between the current rollout and the barycenter. While solving the FGW formulation is expensive, we introduce an anchor-guided linearization that turns it into a Wasserstein formulation solvable via the Sinkhorn algorithm efficiently. By reweighing token-level advantage of group-based RLVR methods based on the novelty signals, HarA highlights novel reasoning behaviors at flexible granularities to encourage fine-grained LLM exploration. Extensive experiments across three group-based RLVR methods show that our plug-and-play method effectively enhances the exploration of LLMs, outperforming existing methods across diverse reasoning benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>One-Step Generation via Riemannian Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04454</link>
+    <guid isPermaLink="false">arxiv:2610.04454</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Recently, Drifting Models and Wasserstein Gradient Flows have attracted substantial attention because they move iterative distributional refinement to training and amortize it into a generator, enabling fast inference. However, existing formulations have been developed largely for continuous Euclidean domains, such as image spaces, where particles admit unconstrained additive updates. On constrained spaces, these updates can leave the valid domain or ignore its geometry, making them unsuitable targets for training. Recent work has adapted updates to these spaces, but has focused on particular fields or offered limited empirical comparison. We derive and compare several geometry-aware fields within a common training framework for one-step generators. We test the method on data with different structures and obtain competitive one-step results in each setting. The best-performing field varies by task, showing why the choice of objective matters in practice.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GPU-Accelerated Bregman Douglas-Rachford Splitting for Discrete Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04715</link>
+    <guid isPermaLink="false">arxiv:2610.04715</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifan Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We present GPU-accelerated Bregman Douglas&ndash;Rachford splitting algorithm (BDRS) for discrete optimal transport problem in three input formats: an explicit cost matrix, a point cloud with a ground cost between them, and a separable cost on a regular grid. For each input format, we propose hardware-aware designs of mathematically equivalent representations for the BDRS iterations to enhance numerical stability and empirical runtime. We benchmark the three proposed implementations against eight GPU baseline solvers from the literature on the same device. We demonstrate that our implementations of BDRS achieve state-of-the-art performance on their respective input formats. To the best of our knowledge, this is the first cross-solver study of GPU DOT solvers with a unified measure of optimality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>TempoBridge: Source-Conditioned Flow Matching with Optimal Transport Couplings for Single-Cell Population Transitions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-04945</link>
+    <guid isPermaLink="false">arxiv:2610.04945</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bowen Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Destructive single-cell measurements provide unpaired population snapshots rather than observations of the same cells across conditions. Local cell states and transition requests may also be insufficient to distinguish responses across source populations. We introduce TempoBridge, a common source-conditioned transport formulation for temporal, genetic, and chemical population transitions. Source cells initialize latent transport and provide a fixed empirical population summary. The velocity field receives this summary alongside the evolving cell state, flow time, and a structured transition descriptor. Minibatch optimal transport (OT) supplies couplings only for conditional flow-matching training paths; inference requires neither target expression nor OT computation. On held-out donors, TempoBridge achieves an Energy distance of 0.129 versus 0.144 for scGen. Genetic mean-expression L_2 error is 2.261 versus 3.156 for scGPT-scratch under Seen 2/2. On held-out compounds, condition-averaged drug-effect correlation is 0.598 versus 0.561 for the CellFlow adapter. Temporal ablations show higher mean distributional error after removing source context, replacing optimal transport with random pairing, or replacing flow matching with static residual regression. Together, these results demonstrate the predictive utility of a common source-conditioned transport formulation across held-out donors, gene combinations, and compounds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond Transport Cost: Routing Differences between Flow Matching and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-05921</link>
+    <guid isPermaLink="false">arxiv:2610.05921</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eungyeol Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In generative models, Optimal Transport (OT) is used to improve Flow Matching (FM) by reducing noise-data coupling cost. However, different noise-to-output assignments can yield nearly equal costs, raising a key question. Is cost alone sufficient to guide coupling design? We address this question by separating transport cost from routing, i.e., the destination reached by each noise sample. We show numerically how FM and OT can differ in routing while remaining close in cost. We examine its consequences in learned neural FM. Using the exact FM routing as an oracle, we further construct a routing-aware training coupling and find that it yields a directionally consistent improvement in generation over a cost-matched, cost-only counterpart. Our findings highlight what cost minimization can overlook and motivate using both cost and routing to evaluate the design of OT-based FM couplings. Code will be released upon acceptance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SOL: Measuring Gaps between Text Distributions by Double Sliced Wasserstein Metrics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-06513</link>
+    <guid isPermaLink="false">arxiv:2610.06513</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gregor Kornhardt et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Evaluating text generation requires measuring how well the generated distribution matches the data distribution. For autoregressive models, this is done by the perplexity. Diffusion and flow-based language models can only provide a likelihood bound, whose tightness differs between model families. Sample-based substitutes such as generative perplexity with entropy do not consider the distribution fit. We propose SOL, a distance between text distributions. Each sequence is represented by the empirical measure of its hidden states under a fixed transformer and the distributions of these measures are compared by the double sliced Wasserstein distance. We prove that SOL is a metric if the transformer is injective. Experiments show that SOL detects distributional failures, recovers expected model trends, and provides stable sample-based estimates. We put forward SOL to fill the gap in the current evaluation protocol used for non auto-regressive models. As a first step we use SOL to re-evaluate a variety of models trained on OpenWebText.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Birkhoff Geometry of Manifold-Constrained Hyper-Connections: Two Channels, Vertex Viscosity, and Sinkhorn as a Retraction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-06653</link>
+    <guid isPermaLink="false">arxiv:2610.06653</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaoyu Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Hyper-connections widen the residual stream of a Transformer to n parallel streams. Their manifold-constrained version (mHC) mixes the streams at each layer with a doubly stochastic matrix, which it computes by Sinkhorn normalization of exponentiated logits. We give a geometric theory of this design on the Birkhoff polytope. First, a doubly stochastic mixer splits the stream into a mean channel, on which mHC is exactly a residual network, and a difference channel, which each layer contracts by its second singular value σ_2 ≤1 - n min_ij H_ij. Thus the extra width is a fading memory with a horizon of 1/(1-σ_2) layers, and among nonnegative mixers only the permutations do not collapse. Second, the Sinkhorn-logit map is a global chart, and its logit gradient is exactly the Fisher-Rao gradient. Thus logit gradient flow follows a squared Fisher-Rao metric, and the straight-through update is exactly entropic mirror descent. Third, under logit gradient flow the logarithm of each entry moves at a rate of at most 4n³∇f_∞ε, where ε is the distance to the nearest permutation. Thus gradient flow approaches and leaves the vertices only at rate 1/t, but mirror descent moves at an exponential rate. Fourth, the local convergence factor of Sinkhorn is σ_2², so a fixed iteration budget limits the horizon. Experiments confirm the predicted rates.</p>]]></description>
+  </item>
+
+  <item>
+    <title>How to scale your HEP ML models: A recipe for robust architecture comparisons at scale</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-06784</link>
+    <guid isPermaLink="false">arxiv:2610.06784</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthias Vigl et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Much of the recent progress in machine learning domains such as language models has come from scaling laws that predict performance as a function of training effort. In high-energy physics (HEP) similar behavior has now been observed. To aid further study, we present a systematic procedure to derive robust scaling laws and compare design choices on the relevant budget axes for HEP tasks. We first validate the full scaling trajectory on toy problems and then apply the procedure to multi-task transformers on the ~11 billion-jet ATLAS JetSet2 dataset, in both the compute- and data-constrained regimes. For the latter, we predict, to the best of our knowledge for the first time, the jointly optimal model size, training horizon, learning rate and batch size under early stopping. At compute-optimal scaling, we recover a near-equal √(C) dependence of model and dataset size, and find that auxiliary objectives lower the primary jet-classification loss at equal compute budget. Expanding the inputs toward lower-level data systematically lowers the loss while leaving the scaling exponent nearly unchanged. The onset of the power-law regime is itself set by scale: below a threshold in dataset size the loss carries little information about high-compute scaling, underscoring the value of large, high-quality full-simulation datasets as a foundation for scaling studies and the development of foundation models in HEP.</p>]]></description>
+  </item>
 
   <item>
     <title>Light Entropic Optimal Transport on Riemannian Manifolds</title>
@@ -1887,126 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arghya Pratihar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
 <p>Clustering aims at partitioning data points into groups of similar objects without knowing about the class labels. However, clustering datasets with complex geometric structures, such as nonconvex shapes, multiple scales, or intertwined manifolds, remains challenging for traditional algorithms that primarily rely on Euclidean or kernel-based similarity measures. Topological Data Analysis (TDA), particularly persistent homology, provides a powerful framework for capturing intrinsic structural properties of data, including connected components, loops, and higher-dimensional features across multiple scales. In this work, we propose a novel topological clustering algorithm called \textbf{Betti Number Filtration-based Topological Clustering (BFTC)}. The proposed method constructs local Vietoris-Rips filtrations around each data point and computes Betti numbers up to a prescribed dimension. These Betti numbers across filtration scales form \emph{Betti sequences}, which serve as multiscale topological signatures of local neighborhoods. By comparing Betti sequences among neighboring points, BFTC identifies topologically similar neighbors and refines the neighborhood graph to construct a topology-aware similarity structure and spectral clustering is applied to obtain the final clusters. Experimental results on several synthetic and real-world datasets demonstrate that BFTC effectively clusters complex and intertwined structures and consistently outperforms several state-of-the-art topology-based clustering methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Twisted Schrödinger Bridge Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16987</link>
-    <guid isPermaLink="false">arxiv:2607.16987</guid>
-    <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxence Noble et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Over the past few years, diffusion-based Schrödinger bridge models have been proposed to approximate optimal transport dynamics between two prescribed boundary distributions, with successful applications to generative modeling. More precisely, these methods aim to estimate a path measure whose initial and terminal marginals match the two boundary distributions, while minimizing the Kullback-Leibler divergence with respect to a reference Markov process. In this work, we consider the generalized Schrödinger bridge problem, in which the reference process is a twisted Brownian motion, that is, a Feynman-Kac transform of a Brownian motion induced by a time-dependent differentiable potential. Building on the Iterative Markovian Fitting (IMF) paradigm, and in particular on its special case Diffusion Schrödinger Bridge Matching (DSBM), which corresponds to the zero potential case, we introduce Twisted Schrödinger Bridge Matching (TSBM), a diffusion-based method designed to handle both continuous- and discrete-time potentials. Unlike previous approaches, TSBM provides a rigorous extension of the IMF scheme to the generalized Schrödinger bridge problem. This derivation leads to a new bridge-matching loss that depends explicitly on the gradient of the potential and recovers the DSBM objective when the potential vanishes, yielding improved performance. We further introduce trajectory-based variance-reduction techniques that substantially stabilize optimization and may be useful beyond the present setting. Finally, we empirically demonstrate the benefits of TSBM for trajectory inference across increasingly high-dimensional settings, including crowd navigation and single-cell data. Code available at https://github.com/maxencenoble/twisted-sb-matching.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-marginal temporal Schrödinger Bridge Matching from unpaired data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-01894</link>
-    <guid isPermaLink="false">arxiv:2510.01894</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Gravier et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Many natural dynamic processes &ndash; such as in vivo cellular differentiation or disease progression &ndash; can only be observed through the lens of static sample snapshots. While challenging, reconstructing their temporal evolution to decipher underlying dynamic properties is of major interest to scientific research. Existing approaches enable data transport along a temporal axis but are poorly scalable in high dimension and require restrictive assumptions to be met. To address these issues, we propose Multi-Marginal temporal Schrödinger Bridge Matching (MMtSBM) from unpaired data, extending the theoretical guarantees and empirical efficiency of Diffusion Schrödinger Bridge Matching (arXiv:2303.16852) by deriving the Iterative Markovian Fitting algorithm to multiple marginals in a novel factorized fashion. Experiments show that MMtSBM retains theoretical properties on toy examples, achieves state-of-the-art performance on real-world datasets such as transcriptomic trajectory inference in 100 dimensions, and, for the first time, recovers couplings and dynamics in very high-dimensional image settings. Our work establishes multi-marginal Schrödinger bridges as a practical and principled approach for recovering hidden dynamics from static data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conformal Graph Prediction with Z-Gromov-Wasserstein Distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-02460</link>
-    <guid isPermaLink="false">arxiv:2603.02460</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Melo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Supervised graph prediction addresses regression problems where the outputs are structured graphs. Although several approaches exist for graph-valued prediction, principled uncertainty quantification remains limited. We propose a conformal prediction framework for graph-valued outputs, providing distribution-free coverage guarantees in structured output spaces. Our method defines nonconformity via the Z-Gromov-Wasserstein distance, instantiated in practice through Fused Gromov-Wasserstein (FGW), enabling permutation invariant comparison between predicted and candidate graphs. To obtain adaptive prediction sets, we introduce Score Conformalized Quantile Regression (SCQR), an extension of Conformalized Quantile Regression (CQR) to handle complex output spaces such as graph-valued outputs. We evaluate the proposed approach on a synthetic task and a real problem of molecule identification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloTrilogy: Toward a Breakthrough in One-Step, End-to-End, Physics-Guided Shower Generation for Modern Calorimeters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-04165</link>
-    <guid isPermaLink="false">arxiv:2606.04165</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cheng Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>High-precision calorimeter simulation at current and future colliders imposes rapidly growing computational demands, motivating the development of machine-learning surrogates for traditional Monte Carlo tools such as Geant4. Flow matching and diffusion-based generative models have become leading approaches for high-dimensional fast simulation because of their sample quality, but typically require O(100) function evaluations at inference and often rely on auxiliary networks to constrain global observables, compromising streamlined end-to-end generation. We introduce a unified framework that improves the balance between speed, shower quality, and physics fidelity. The method combines: (i) an average velocity field integrator that enables sampling in one or a few evaluations; (ii) a learned generative prior in shower space, constructed from data rather than random noise; and (iii) physics-guided loss terms that impose inductive biases on key observables during training. These elements are training time regularizers, preserving end-to-end inference with no additional cost. With only one or a few evaluation steps, the model achieves shower quality competitive with state-of-the-art flow and diffusion approaches, tested on several public high granularity calorimeter datasets. The results demonstrate inter-layer shower structure consistent with the underlying physics, providing a strong candidate for future fast simulation workflows.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Standard Model structure from LHC data with Riemannian flow matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16144</link>
-    <guid isPermaLink="false">arxiv:2607.16144</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Midori Kato et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>In this work we demonstrate that a single transformer-based generative model can capture Standard Model structure spanning five decades of invariant mass, from the sub-GeV regime to the TeV continuum, a range that no single Monte Carlo sample covers. To achieve this we design \textsc{ShellFlow}, a Riemannian conditional flow matching model that, given the recorded event composition, generates each particle on its on-shell manifold. Its only physics priors are the on-shell condition and the invariant-mass formula. The model is trained on ∼10⁹ real pp collision events from the ATLAS Open Data 13~TeV release and told nothing else. From a single training run, the model learns to reproduce all of the following: intra-particle kinematics, the dilepton resonances (J/ψ, Υ, Z) at their PDG positions, the leptonic Weinberg angle, the W and top-quark masses, and inter-particle correlations that enter no training objective. A substantial fraction of the Standard Model is thus learnable directly from recorded collision data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Cluster-Aware Matching via Laplacian Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-16178</link>
-    <guid isPermaLink="false">arxiv:2607.16178</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Samberg et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In many applications of matching, the point clouds to be matched are not merely unstructured sets of points but rather samples from distributions with an intrinsic cluster structure. In such cases, as individual points are often interchangeable within a coherent region, finding a robust region-to-region alignment is more desirable than establishing a precise point-to-point correspondence. To this end, we propose a novel approach for cluster-aware matching based on Laplacian Optimal Transport (LapOT). The key idea is to regularize the optimal transport problem with quadratic Laplacian terms constructed from similarity graphs of the point clouds, which encourages the optimal coupling to respect the cluster structure of both point sets. We also introduce Refined Simultaneous Clustering (RSC), a method that leverages the cluster-aware coupling obtained from LapOT to produce consistent partitions across the point sets, which can overcome the limitations of independent clustering and yield more stable and interpretable results. We demonstrate the effectiveness of our approach through theoretical analysis and empirical experiments, showing that LapOT indeed produces cluster-aware matching that leads to more consistent and meaningful alignments between point clouds.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A stochastic smoothing framework for nonconvex-nonconcave minEmax problems with applications to Wasserstein distributionally robust optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-17602</link>
-    <guid isPermaLink="false">arxiv:2502.17602</guid>
-    <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study a class of stochastic nonsmooth optimization problems in which an outer variable minimizes the expectation of a pointwise maximum. This minimization&ndash;expectation&ndash;maximization (minEmax) problem arises in Wasserstein distributionally robust optimization and adversarially robust training, and it cannot in general be reformulated as a finite-dimensional minimax problem when the underlying distribution is not empirical. We propose a stochastic smoothing proximal gradient method based on log-mean-exp smoothing of the value function. Under compactness and Lipschitz-type assumptions, we present nonasymptotic analysis in terms of Goldstein stationarity and show that every almost-sure cluster point generated by our method is a Clarke stationary point; by Clarke regularity, such a point is also directional stationary for the original problem. Numerical experiments on newsvendor, robust regression, and adversarially robust learning problems show that the proposed method is competitive with existing baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence Rates for Distribution Matching with Sliced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-10691</link>
-    <guid isPermaLink="false">arxiv:2602.10691</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gauthier Thurin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the slice-matching scheme, an efficient iterative method for distribution matching based on sliced optimal transport. We investigate convergence to the target distribution and derive quantitative non-asymptotic rates. To this end, we establish Lojasiewicz-type inequalities for the Sliced-Wasserstein objective. A key challenge is to control along the trajectory the constants in these inequalities. We show that this becomes tractable for Gaussian distributions. Specifically, eigenvalues are controlled when matching along random orthonormal bases at each iteration. We complement our theory with numerical experiments and illustrate the predicted dependence on dimension and step-size, as well as the stabilizing effect of orthonormal-basis sampling.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AvAtar: Learning to Align via Active Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-24395</link>
-    <guid isPermaLink="false">arxiv:2605.24395</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Alignment plays a fundamental role in many machine learning problems, such as multi-network analysis, multimodal learning, and point cloud registration. Recent works increasingly leverage optimal transport (OT) for distributional alignment, whose effectiveness largely depends on sparse supervision that is hard or costly to obtain in practice. Existing works, however, largely overlook how to actively acquire high-quality supervision to improve their alignment performance under OT frameworks. In this paper, we propose a principled active alignment framework for optimal transport alignment called AvAtar. We quantify the informativeness of a candidate by measuring its gradient-based impact on the global alignment result, computed as the gradient propagation from the global alignment result to all possible supervisions of the candidate through the entropy-regularized OT formulation. While differentiating through OT is challenging given its constrained nature, we leverage the adjoint-state method to reformulate the computation to a linear system solvable by the conjugate gradient method with linear complexity and guaranteed convergence. By encoding the global alignment result via effective utility functions, AvAtar is applicable to general alignment problems under the OT framework. Extensive experiments on three representative alignment tasks demonstrate the effectiveness, scalability, and generalizability of the proposed AvAtar.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-13399</link>
-    <guid isPermaLink="false">arxiv:2607.13399</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>On-policy distillation (OPD) has become a key paradigm in LLM post-training, yet its training dynamics remain poorly understood. We present a systematic study examining the role, pathologies, and regulations of OPD. We first clarify the role of OPD as an exploration catalyst: it steers the student toward correct reasoning paths via dense token-level guidance, without expanding capability ceiling. We confirm this by showing that prompt diversity matters more than per-problem sampling numbers, and critically, that the effectiveness of OPD hinges entirely on the quality of its guiding signal. This dependency exposes two pathologies that derail exploration. The Student-Teacher Mismatch occurs when a large teacher-student distributional gap causes the guiding signal to misalign with task correctness, steering exploration in counterproductive directions. Length Exploitation arises when the aggregated token-level objective creates length-dependent shortcuts, allowing the student to game the reward landscape through response truncation or redundant padding, exploring degenerate length modes rather than reasoning strategies. To tame these pathologies, we investigate lightweight signal regulations: advantage clipping and log-scale compression, ensuring exploration is guided by faithful signals. Experiments across seven benchmarks demonstrate that these regulations alleviate length exploitation and enable effective distillation, stably surpassing OPD variants and RLVR baselines, thereby confirming that well-regulated signal quality, rather than mere teacher scale, governs successful exploration in OPD.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Linear Independent Component Analysis via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-14081</link>
-    <guid isPermaLink="false">arxiv:2607.14081</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashutosh Jha et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Linear Independent Component Analysis (ICA) recovers jointly independent source signals from their linear mixtures. To achieve this, classical ICA algorithms attempt to maximize non-Gaussianity, measured by negentropy, which is linked to independence by information theory. Because exact negentropy optimization is intractable, they rely on proxy contrast functions, such as fourth-order cumulants, and parametric log-likelihoods. We propose instead to measure non-Gaussianity using the squared Wasserstein distance W_2² to a standard Gaussian. We prove that the Wasserstein distance between a standard normal distribution and linear projections of the data is maximized when the projection recovers an independent component. Based on this observation, we propose the OT-ICA algorithm which finds this projection by gradient-based optimization. Empirical evaluation on simulated data shows that OT-ICA outperforms proxy-based methods for different distributions of the latent variables. Application to EEG artifact removal and econometric price discovery confirm OT-ICA can be used for applied ICA tasks without distributional assumptions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ScatterPrism: convergence for generative simulation and inverse problems in particle and nuclear physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01313</link>
-    <guid isPermaLink="false">arxiv:2604.01313</guid>
-    <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zeyu Xia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>High-fidelity simulations and complex inverse problems, such as detector modeling and unfolding, are computationally intensive bottlenecks across subatomic physics, yet essential for accurate physical interpretation. While Conditional Flow Matching (CFM) offers a robust acceleration approach, we demonstrate its standard training loss is fundamentally misleading. Specifically, utilizing a Jefferson Lab Nuclear Physics (NP) kinematic dataset (γp →ρ⁰ p →π⁺π⁻ p), we expose that CFM loss plateaus prematurely, obscuring ongoing physical refinement. To verify this disconnect is a dataset-agnostic pathology, we introduce ScatterPrism, an efficient generative surrogate evaluated against both the NP data and synthetic stress tests modeling challenging 1D distribution topologies. Coupling these benchmarks, we establish that physics-informed metrics continue improving long after standard loss converges. Consequently, we propose a multi-metric diagnostic protocol to ensure true kinematic fidelity without data memorization. Driven by NP challenges relevant to the forthcoming Electron-Ion Collider (EIC), this unified machinery has strong potential to extend to High-Energy Physics (HEP) applications, such as jet modeling. Furthermore, the framework holds promise for broader domains requiring rigorous generative reliability, including medical imaging, astrophysics, and quantitative finance.</p>]]></description>
   </item>
 
 </channel>
