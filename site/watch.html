@@ -39,6 +39,32 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Tuesday, October 6, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261005104-boosted-top-tagging-via-lepton-in-jet-topology-for-vector-like-quark-searches-in-fcc-hh-sanchari-bhattacharyya-et-al"><a href="https://arxiv.org/abs/2610.05104">arXiv:2610.05104</a> — Boosted top tagging via lepton-in-jet topology for vector-like quark searches in FCC-hh (Sanchari Bhattacharyya et al.)</h3>
+<p>This paper builds a lepton-seeded tagger for boosted t→bℓν at √s=100 TeV. Everything is defined in a ΔR&lt;0.4 cone around a non-isolated lepton with p_T&gt;100 GeV. The study uses PYTHIA plus Delphes with the FCC-hh card. The tagger is a four-class classifier (t_lep, t_had, b, c) trained separately in seven lepton-p_T bins from 0.1 TeV to above 3 TeV.</p>
+<p>The two taggers take different inputs:
+- <strong>DNN:</strong> engineered observables, including displaced-track ΔR and multiplicity, Q_κ jet charge, tower isolation, jet mass, and τ_N ratios.
+- <strong>ParT:</strong> nine features per constituent (tracks, towers and the lepton) and pairwise angular attention biases.</p>
+<p><strong>Main results</strong>
+- <strong>Leptonic-top AUC:</strong> ParT gives 0.994–0.997, flat in p_T. The DNN rises from 0.981 to 0.996.
+- <strong>Efficiency at score &gt;0.4:</strong> ParT reaches 94% to 97%, the DNN 89% to 96%.
+- <strong>High-p_T crossover:</strong> above ~2 TeV the DNN has lower mistag rates for all three background classes. The authors read this as constituent information helping only while the decay products stay angularly resolved.
+- <strong>Track-only inputs (1.0–1.5 TeV bin):</strong> ParT 0.981, GNN 0.964, DNN 0.942. The DNN drops from 0.992 with full inputs, so the high-level approach relies heavily on calorimeter information, which is the part most exposed to pile-up.
+- <strong>Cone size:</strong> shrinking the cone to 0.2 leaves performance essentially unchanged.
+- <strong>Event level:</strong> feeding the tagger into a B′→tW search gives 5σ discovery reach of ~7 TeV for Γ/m&lt;25%, or ~10 TeV for Γ/m≲50%, at 30 ab⁻¹.</p>
+<p><strong>Caveats</strong>
+- There is no pile-up overlay. The only proxy is raising the track threshold from 5 to 20 GeV, which leaves AUCs unchanged.
+- Light-flavour jets are excluded from tagger training.
+- Diboson events with boosted Z or W→cs produce a peak near tagger score 1.
+- The event classifier is trained only at 5 TeV.
+- The ParT+DeepSVDD anomaly result (AUC 0.894) treats the leptonic top itself as the nominal class, so its relevance to anomaly searches is limited.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Monday, October 5, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -953,7 +979,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-05 05:56 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-06 05:34 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

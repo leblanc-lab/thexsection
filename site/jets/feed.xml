@@ -7,7 +7,32 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Boosted top tagging via lepton-in-jet topology for vector-like quark searches in FCC-hh</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-05104</link>
+    <guid isPermaLink="false">arxiv:2610.05104</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanchari Bhattacharyya et al.</dc:creator>
+    <description><![CDATA[<p>This paper builds a lepton-seeded tagger for boosted t→bℓν at √s=100 TeV. Everything is defined in a ΔR&lt;0.4 cone around a non-isolated lepton with p_T&gt;100 GeV. The study uses PYTHIA plus Delphes with the FCC-hh card. The tagger is a four-class classifier (t_lep, t_had, b, c) trained separately in seven lepton-p_T bins from 0.1 TeV to above 3 TeV.</p>
+<p>The two taggers take different inputs:
+- <strong>DNN:</strong> engineered observables, including displaced-track ΔR and multiplicity, Q_κ jet charge, tower isolation, jet mass, and τ_N ratios.
+- <strong>ParT:</strong> nine features per constituent (tracks, towers and the lepton) and pairwise angular attention biases.</p>
+<p><strong>Main results</strong>
+- <strong>Leptonic-top AUC:</strong> ParT gives 0.994–0.997, flat in p_T. The DNN rises from 0.981 to 0.996.
+- <strong>Efficiency at score &gt;0.4:</strong> ParT reaches 94% to 97%, the DNN 89% to 96%.
+- <strong>High-p_T crossover:</strong> above ~2 TeV the DNN has lower mistag rates for all three background classes. The authors read this as constituent information helping only while the decay products stay angularly resolved.
+- <strong>Track-only inputs (1.0–1.5 TeV bin):</strong> ParT 0.981, GNN 0.964, DNN 0.942. The DNN drops from 0.992 with full inputs, so the high-level approach relies heavily on calorimeter information, which is the part most exposed to pile-up.
+- <strong>Cone size:</strong> shrinking the cone to 0.2 leaves performance essentially unchanged.
+- <strong>Event level:</strong> feeding the tagger into a B′→tW search gives 5σ discovery reach of ~7 TeV for Γ/m&lt;25%, or ~10 TeV for Γ/m≲50%, at 30 ab⁻¹.</p>
+<p><strong>Caveats</strong>
+- There is no pile-up overlay. The only proxy is raising the track threshold from 5 to 20 GeV, which leaves AUCs unchanged.
+- Light-flavour jets are excluded from tagger training.
+- Diboson events with boosted Z or W→cs produce a peak near tagger score 1.
+- The event classifier is trained only at 5 TeV.
+- The ParT+DeepSVDD anomaly result (AUC 0.894) treats the leptonic top itself as the nominal class, so its relevance to anomaly searches is limited.</p>]]></description>
+  </item>
 
   <item>
     <title>Three-loop rapidity anomalous dimension for jet-veto cross sections</title>
@@ -2341,16 +2366,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taikan Suehara et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (flavor tagging, jet flavor, particle transformer) — abstract only, not yet read for a briefing.</em></p>
 <p>We study the performance of the Particle Transformer (ParT) for jet flavor tagging using ILD full simulation events (1M jets) as well as fast simulation samples (10M and 1M jets). We perform 3-category (b/c/d), 6-category (b/c/d/u/s/g), and 11-category trainings (including quark&ndash;antiquark separation), incorporating multivariate hadron particle identification information from dE/dx and time-of-flight. For b/c tagging, we observe a factor of 5&ndash;10 improvement over previous BDT-based taggers, and we obtain reasonable performance for strange tagging and quark/antiquark separation. The 10M-jet fast simulation study indicates that further gains are possible with higher training statistics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Evidence of Higgs boson inclusive production at high transverse momentum decaying to a pair of b-quarks with the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-19369</link>
-    <guid isPermaLink="false">arxiv:2603.19369</guid>
-    <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (large-radius jet, jet identification) — abstract only, not yet read for a briefing.</em></p>
-<p>This letter reports on the first evidence of Higgs-boson production at high transverse momentum in the bb̅ final state, reconstructed in a single large-radius jet. The results are based on proton proton collision data recorded by the ATLAS detector at the Large Hadron Collider at a centre-of-mass energies of 13 TeV and 13.6 TeV, corresponding to a total integrated luminosity of 301 fb⁻¹. The study profits from the large background suppression provided by the use of a new transformer-based algorithm for jet identification and the sharper mass and transverse momentum, p_T, resolution from a dedicated regression model. The yield relative to the Standard Model prediction, for Higgs bosons produced at p_T larger than 450 GeV is measured to be 1.53±0.27(stat.) ⁺⁰.33_-0.27(syst.)±0.17(theo.) corresponding to an observed (expected) significance of 3.8σ(2.5σ) relative to the background-only hypothesis. Results are also obtained in three Higgs boson p_T intervals and found to be compatible with Standard Model predictions.</p>]]></description>
   </item>
 
 </channel>

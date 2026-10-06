@@ -3,10 +3,100 @@
   <title>Deep dives — The Cross Section</title>
   <link>https://leblanc-lab.github.io/thexsection/deep-dives/</link>
   <atom:link href="https://leblanc-lab.github.io/thexsection/deep-dives/feed.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://leblanc-lab.github.io/thexsection/deep-dives/feed-2.xml" rel="next" type="application/rss+xml"/>
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Stars Would Remember a Recent Gravitational Transition: Testing G-step Resolutions of the Hubble Tension with Red Dwarfs</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-04048</link>
+    <guid isPermaLink="false">arxiv:2610.04048</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremy Sakstein et al.</dc:creator>
+    <description><![CDATA[<p>Both Hubble-motivated G-step benchmarks are disfavoured: ΔG/G_0=+0.04 at 73 Myr (EGSM) at 3.1σ, and +0.11 at 130 Myr (OGSM) at 4.0σ. The profile likelihood has its minimum at ΔG=0 for both transition times.</p>
+<p>The mechanism is a radius memory in fully convective red dwarfs. Homology gives an equilibrium radius R∝G⁰.324, while the fast adiabatic response gives R∝G⁻¹. The perturbation then relaxes on t_relax≃0.05 t_KH∼10⁸ yr, which is comparable to the proposed look-back times. A drop from larger G therefore leaves today&rsquo;s stars inflated.</p>
+<p>The analysis uses:
+- MESA tracks with an implemented G-step;
+- a per-star starspot covering fraction treated as a nuisance parameter;
+- eight CHEOPS detached-eclipsing-binary M dwarfs (0.1–0.31 M_⊙, periods ≥5 d) with mass–radius correlations ρ=0.53–0.90.</p>
+<p>This gives Δχ²⁼⁹.52 (EGSM) and 16.41 (OGSM). Because the spot fractions sit at their physical boundary, the significances come from a parametric bootstrap rather than Wilks&rsquo; theorem.</p>
+<p>The test is independent of the disputed solar and terrestrial modelling arguments.</p>
+<p><strong>Caveats:</strong>
+- <strong>Boundary stars drive the result.</strong> All of the leverage comes from the four stars pinned at f_spot=0, where spots can no longer absorb the extra inflation.
+- <strong>One star dominates.</strong> Dropping J2343+29 cuts the significances to 2.45σ (EGSM) and 1.90σ (OGSM).
+- <strong>Model systematics matter.</strong> A coherent 1% downward shift of the model radii lowers Δχ² to 5.72 and 10.92.
+- <strong>Only positive steps are tested.</strong> Both benchmarks have ΔG&gt;0.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Violation and Restoration of Probability Positivity in Perturbative QFT</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-04557</link>
+    <guid isPermaLink="false">arxiv:2610.04557</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bin Gong et al.</dc:creator>
+    <description><![CDATA[<p>The central argument concerns exclusive processes with colourless and neutral external states. There, each renormalized loop amplitude is IR-finite on its own and no KLN sum over unresolved states is needed. Gong et al. conclude that truncating the squared amplitude is an inherited QED habit, and that |∑_l≤M𝒜⁽l)|² is the right observable.</p>
+<p>They recast eleven published NNLO results in the form Γ=Γ_LO|1+a_s(c_1+ic_2)+a_s²⁽c_3+ic_4)|². In every case both complex coefficients have modulus below 1, with the largest, 0.67, for J/ψ+η_c. Selected ratios Γ/Γ_LO at NLO, NNLO:</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Amplitude-level</th>
+<th>Squared-level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J/ψ→3γ</td>
+<td>0.276, 0.126</td>
+<td>−0.02, −0.44</td>
+</tr>
+<tr>
+<td>Υ→3γ</td>
+<td>0.426, 0.190</td>
+<td>0.28, −0.11</td>
+</tr>
+<tr>
+<td>e⁺e⁻→J/ψJ/ψ</td>
+<td>0.40, 0.058</td>
+<td>0.26, −0.38</td>
+</tr>
+</tbody>
+</table>
+<p>J/ψ→3γ goes negative at NLO in the traditional expansion. Υ→3γ and double-J/ψ go negative at NNLO. Zhan et al. apply the same prescription to ultraperipheral J/ψ+γ.</p>
+<p><strong>Caveats, visible in the paper itself:</strong>
+- <strong>Partial higher orders.</strong> The NLO square keeps |ℳ_1|² but not the same-order 2Re(ℳ_0^<em>ℳ_2), so it contains incomplete 𝒪(α_s²⁾ terms.
+- </em><em>Convergence is judged inside the modulus.</em><em> The rates themselves still fall sharply from NLO to NNLO: by a factor 2.2 for J/ψ→3γ and about 7 for double J/ψ.
+- </em><em>Positivity is not accuracy.</em><em> Positivity is guaranteed by construction, which does not show the result is closer to the true value.
+- </em><em>Mostly a reframing.</em>* The numbers re-express the group&rsquo;s own earlier calculations, with α_s re-chosen for the B-factory channels.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Angular Observables in the Λ_b→Λνν̅ Decay</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-04309</link>
+    <guid isPermaLink="false">arxiv:2610.04309</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wolfgang Altmannshofer et al.</dc:creator>
+    <description><![CDATA[<p>The full cascade Λ_b→Λ(→pπ⁻⁾νν̅ is described by five angular coefficients, S_1–4 and A_5; all but S_1 need Λ_b polarization. Z-pole Λ_b supply it: LEP measured 𝒫=-0.40±0.14.</p>
+<p>The coefficients split by what they probe:
+- <strong>Chirality:</strong> S_1 and S_2 go as |C_R|²⁻|C_L|², which the mesonic modes cannot see.
+- <strong>CP phase:</strong> A_5 is a T-odd CP asymmetry proportional to Im(C_LC_R^*), with no flavour tagging or time dependence needed.</p>
+<p>Mesonic data fix only |C_L±C_R|, so they confine the couplings to a ring via (|C_R|²⁻|C_L|²⁾²⁺⁴⁽Im C_LC_R^*)²⁼|C_R+C_L|²|C_R-C_L|². The baryonic observables pick the point on that ring.</p>
+<p>SM predictions:
+- branching ratio (7.59±1.03)×10⁻⁶, dominated by form-factor and CKM uncertainties;
+- ⟨S_1⟩=-0.926±0.018;
+- an S_2 zero crossing at 12.6±1.2 GeV² that is independent of the Wilson coefficients, and so tests the form factors.</p>
+<p>Projected FCC-ee reach, assuming a 10% branching-ratio measurement:
+- <strong>Real couplings:</strong> S_1 and S_2 break the four-fold real-coupling degeneracy even at ±0.5 uncertainty on the angular observables.
+- <strong>Complex couplings:</strong> at ±0.1 all four benchmarks are distinguishable from the SM. At ±0.5 the A_5 sensitivity is largely lost and only the pure right-handed benchmark survives.</p>
+<p>This bears directly on the Belle II K⁺νν̅ excess, which the authors put about 2.7σ above the SM.</p>
+<p><strong>Caveats:</strong>
+- <strong>No dedicated angular estimates.</strong> The ±0.1–0.5 uncertainties are assumed scans.
+- <strong>Simplified meson comparison.</strong> The mesonic side is a 5% toy estimate.
+- <strong>Only right-handed currents show up.</strong> A pure rescaling of C_L leaves every angular observable unchanged.
+- <strong>Dark-sector explanations not covered.</strong> Light invisible states are explicitly excluded, although several Belle II interpretations rely on them.</p>]]></description>
+  </item>
 
   <item>
     <title>Third-Order Logarithmic Resummation for Jet-Vetoed Higgs Production</title>
@@ -2307,36 +2397,6 @@
     <description><![CDATA[<p><em>This pick is based on the abstract, which explores the link between the information-theoretic &ldquo;memory burden&rdquo; of black holes and detectable gravitational-wave signatures.</em></p>
 <p>Dvali et al. propose that black holes possess an &ldquo;information memory burden&rdquo; related to the microstate configuration of their horizon, which manifests as a subtle, time-dependent shift in the gravitational-wave (GW) signal during the merger process. By treating the black hole as a saturated state of gravitons, they argue that the emission process must account for the information content of the horizon, leading to specific corrections in the waveform phase that could be detectable by next-generation LIGO/Virgo/KAGRA sensitivity levels.</p>
 <p>This paper addresses the long-standing &ldquo;information paradox&rdquo; through the lens of observable phenomenology. If the memory burden is significant, it effectively introduces a &ldquo;de-coherence&rdquo; or frequency-dependent drift in the late-inspiral and ringdown phases. The authors suggest that this could be a definitive test of whether black holes are truly &ldquo;macroscopic quantum states&rdquo; or purely classical entities. The caveat remains the extreme difficulty of disentangling these microstate corrections from higher-order post-Newtonian effects in the standard waveform templates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The cleanest of them all: NLO electroweak corrections to vector-boson scattering into doubly polarised ZZ pairs at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-01174</link>
-    <guid isPermaLink="false">arxiv:2607.01174</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ansgar Denner et al.</dc:creator>
-    <description><![CDATA[<p>Denner et al. report the first NLO electroweak (EW) corrections to the fully leptonic ZZ vector-boson scattering (VBS) channel. Using the double-pole approximation to preserve gauge invariance, the authors separate polarization states at the amplitude level and include factorisable EW corrections to both production and decay. They demonstrate that these corrections are substantial, reducing integrated cross sections by approximately 18% (–14% for longitudinal-longitudinal pairs, –18% for transverse-transverse).</p>
-<p>This work is critical for the High-Luminosity LHC era, where VBS observables are expected to test electroweak symmetry breaking with high precision. By providing NLO EW control over polarization-sensitive observables—specifically transverse-momentum and angular distributions—the authors enable experimentalists to move beyond simple unpolarized cross-section measurements. The analysis reveals that while EW corrections are significant, they are relatively flat in many angular observables, reinforcing the utility of polarization fractions as a BSM-sensitive probe. A notable caveat is that this precision currently applies to the four-lepton channel; given the low cross-section, meaningful differential measurement will require merging multiple decay channels to overcome statistical limitations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sub-eikonal stress and model dependence of the small-x gluon D-term</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-00439</link>
-    <guid isPermaLink="false">arxiv:2607.00439</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lei Wang</dc:creator>
-    <description><![CDATA[<p>Wang demonstrates that the gluon D-term cannot be extracted from leading-eikonal saturation models (like the standard dipole S_x or saturation profiles Q_s). The headline finding is a &ldquo;no-go&rdquo; result: the D-term is fundamentally a sub-eikonal stress probe—projected by the symmetric-traceless transverse stress T_g^ij—and therefore cannot be determined by the leading-eikonal momentum form factor A_g(t). </p>
-<p>This provides a necessary theoretical correction for the EIC era, effectively de-coupling spatial tomography from simple eikonal assumptions. By constructing a gauge-invariant &ldquo;stress-decorated&rdquo; Wilson line operator, the paper establishes that the sign and magnitude of the gluon D-term depend on sub-eikonal target fields (e.g., F^i-). While the authors show that a specific &ldquo;anti-aligned&rdquo; response model leads to a stable negative forward D-term, the broader conclusion is that the D-term’s model dependence is a feature, not a bug, of higher-order gluon dynamics. The reliance on this specific response model remains a theoretical assumption, highlighting that current saturation models remain incomplete for full 3D gluon imaging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Inclusive B̅_s ↦X_s̅c ℓν̅ decays from lattice QCD: computational strategy and a first physical result</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-01116</link>
-    <guid isPermaLink="false">arxiv:2607.01116</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro De Santis et al.</dc:creator>
-    <description><![CDATA[<p>De Santis et al. introduce a first-principles lattice QCD framework to calculate the inclusive decay rate of B̅_s →X_s̅c ℓν̅. The methodology bridges the gap between lattice data (computed at unphysical, lighter heavy-meson masses up to 4.3 GeV) and the Operator Product Expansion (OPE), which is valid in the heavy-quark limit. By employing a new technique for four-point correlator computation, they achieve a 7% total error on the inclusive decay rate using n_f=2+1+1 ETMC ensembles.</p>
-<p>This result is a milestone for flavor physics, as it brings inclusive B-decays into the domain of non-perturbative lattice calculations, offering a path to resolve long-standing tensions in the flavor sector that have previously relied heavily on phenomenological inputs. The 7% error is dominated by the limited size of the current configuration set, though the methodology is explicitly designed for systematic reduction as larger datasets become available. The primary caveat is the extrapolation to the physical heavy-quark mass limit, which relies on the OPE remaining robust in the region where lattice data can currently be reliably produced.</p>]]></description>
   </item>
 
 </channel>
