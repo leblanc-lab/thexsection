@@ -39,6 +39,32 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Wednesday, October 7, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261007145-the-back-to-back-plateau-of-the-energy-energy-correlator-from-weak-to-strong-coupling-hao-chen-et-al"><a href="https://arxiv.org/abs/2610.07145">arXiv:2610.07145</a> — The Back-to-Back Plateau of the Energy-Energy Correlator from Weak to Strong Coupling (Hao Chen et al.)</h3>
+<p><strong>Relevance.</strong> This is only loosely a substructure paper. It studies the back-to-back (Sudakov) endpoint of the full-event EEC in 𝒩=4 SYM, not the collinear region inside jets. QCD jet measurements appear only as motivation. The overlap with the topic is energy-correlator technology.</p>
+<p><strong>What they did.</strong> Chen, Moult, Wang and Zhu resum both leading-power (LP, y⁻¹) and next-to-leading-power (NLP, y⁰) back-to-back logarithms through N³LL, including 1/N_c² terms. The method is the large-spin and twist-conformal-block pipeline of Chen–Zhou–Zhu, in five steps:
+- twist-2 anomalous dimensions γ₁…γ₄ and OPE-coefficient corrections r₁…r₃ are put into a finite-difference large-spin basis;
+- these are lifted to the twist-conformal-block basis;
+- crossing of Φ(u,v) is used, which avoids needing twist-4 data;
+- a Mellin/light transform is applied;
+- the coefficients are matched to fixed-order data.</p>
+<p><strong>Results.</strong>
+- <strong>NLP towers and checks.</strong> They give closed forms for the generic NLP coefficients C_k^NLP(n). Only C₂^NLP(1) and C₄^NLP(2) need fixed-order input; the remaining expansion terms agree with the known fixed-order expansion through three loops.
+- <strong>Structure of the NLP function.</strong> The resummed NLP function G contains an erf(√a L_y/√2) tower. This term survives as y→0, giving a finite NLP shift to the plateau beyond the essential-singular LP term P_LP ~ a^{-1/2}e^{1/(2a)}.
+- <strong>Interpolation.</strong> A two-parameter interpolation (p=2.34, q=1.81) is built to match the weak-coupling LP asymptotics and the strong-coupling result 1+1/a. It is fit to planar bootstrap points.</p>
+<p><strong>Caveats.</strong>
+- The residual endpoint term H₀(a) is still undetermined beyond these logarithms.
+- The perturbative description visibly degrades by a ~ 1/4, and the string expansion only reaches down to a ~ 0.5. The window in between is covered only by the fit.
+- The interpolation is phenomenological, by the authors&rsquo; own description.
+- Transfer to QCD (running coupling, hadronization) is posed as an open question, not addressed.</p>
+<p><strong>Agentic workflow.</strong> The calculation used a human-in-the-loop setup with GPT-5.5. Humans had to fix the truncation depth (Step 5), working backward from the final observable. In an independent test of seven models on 15 steps, the best scored 10/15. No model solved the large-spin expansion, the explicit twist-block sum, or the three-loop check. The aggregate pass counts in the text are unfilled placeholders (&ldquo;x out of 28&rdquo;).</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Tuesday, October 6, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -979,7 +1005,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-06 05:48 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-07 05:35 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
