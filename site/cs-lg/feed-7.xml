@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Autoencoders for Real-Time SUEP Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2306-13595</link>
+    <guid isPermaLink="false">arxiv:2306.13595</guid>
+    <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simranjit Singh Chhibra et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Confining dark sectors with pseudo-conformal dynamics can produce Soft Unclustered Energy Patterns (SUEP), at the Large Hadron Collider: the production of dark quarks in proton-proton collisions leading to a dark shower and the high-multiplicity production of dark hadrons. The final experimental signature is spherically-symmetric energy deposits by an anomalously large number of soft Standard Model particles with a transverse energy of O(100) MeV. Assuming Yukawa-like couplings of the scalar portal state, the dominant production mode is gluon fusion, and the dominant background comes from multi-jet QCD events. We have developed a deep learning-based Anomaly Detection technique to reject QCD jets and identify any anomalous signature, including SUEP, in real-time in the High-Level Trigger system of the Compact Muon Solenoid experiment at the Large Hadron Collider. A deep convolutional neural autoencoder network has been trained using QCD events by taking transverse energy deposits in the inner tracker, electromagnetic calorimeter, and hadron calorimeter sub-detectors as 3-channel image data. Due to the sparse nature of the data, only ~0.5% of the total ~300 k image pixels have non-zero values. To tackle this challenge, a non-standard loss function, the inverse of the so-called Dice Loss, is exploited. The trained autoencoder with learned spatial features of QCD jets can detect 40% of the SUEP events, with a QCD event mistagging rate as low as 2%. The model inference time has been measured using the Intel CoreTM i5-9600KF processor and found to be ~20 ms, which perfectly satisfies the High-Level Trigger system&rsquo;s latency of O(100) ms. Given the virtue of the unsupervised learning of the autoencoders, the trained model can be applied to any new physics model that predicts an experimental signature anomalous to QCD jets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Ultrafast jet classification on FPGAs for the HL-LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-01876</link>
+    <guid isPermaLink="false">arxiv:2402.01876</guid>
+    <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patrick Odagiu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Three machine learning models are used to perform jet origin classification. These models are optimized for deployment on a field-programmable gate array device. In this context, we demonstrate how latency and resource consumption scale with the input size and choice of algorithm. Moreover, the models proposed here are designed to work on the type of data and under the foreseen conditions at the CERN LHC during its high-luminosity phase. Through quantization-aware training and efficient synthetization for a specific field programmable gate array, we show that O(100) ns inference of complex architectures such as Deep Sets and Interaction Networks is feasible at a relatively low computational resource cost.</p>]]></description>
+  </item>
 
   <item>
     <title>A Computational Framework for Solving Wasserstein Lagrangian Flows</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mengxi Wu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Graph-structured data can be found in numerous domains, yet the scarcity of labeled instances hinders its effective utilization of deep learning in many scenarios. Traditional unsupervised domain adaptation (UDA) strategies for graphs primarily hinge on adversarial learning and pseudo-labeling. These approaches fail to effectively leverage graph discriminative features, leading to class mismatching and unreliable label quality. To navigate these obstacles, we develop the Denoising and Nuclear-Norm Wasserstein Adaptation Network (DNAN). DNAN employs the Nuclear-norm Wasserstein discrepancy (NWD), which can simultaneously achieve domain alignment and class distinguishment. DANA also integrates a denoising mechanism via a variational graph autoencoder that mitigates data noise. This denoising mechanism helps capture essential features of both source and target domains, improving the robustness of the domain adaptation process. Our comprehensive experiments demonstrate that DNAN outperforms state-of-the-art methods on standard UDA benchmarks for graph classification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>19 Parameters Is All You Need: Tiny Neural Networks for Particle Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2310-16121</link>
-    <guid isPermaLink="false">arxiv:2310.16121</guid>
-    <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Bogatskiy et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, quark jet) — original abstract; no AI summary.</em></p>
-<p>As particle accelerators increase their collision rates, and deep learning solutions prove their viability, there is a growing need for lightweight and fast neural network architectures for low-latency tasks such as triggering. We examine the potential of one recent Lorentz- and permutation-symmetric architecture, PELICAN, and present its instances with as few as 19 trainable parameters that outperform generic architectures with tens of thousands of parameters when compared on the binary classification task of top quark jet tagging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Causal Optimal Transport of Abstractions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-08107</link>
-    <guid isPermaLink="false">arxiv:2312.08107</guid>
-    <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yorgos Felekis et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Causal abstraction (CA) theory establishes formal criteria for relating multiple structural causal models (SCMs) at different levels of granularity by defining maps between them. These maps have significant relevance for real-world challenges such as synthesizing causal evidence from multiple experimental environments, learning causally consistent representations at different resolutions, and linking interventions across multiple SCMs. In this work, we propose COTA, the first method to learn abstraction maps from observational and interventional data without assuming complete knowledge of the underlying SCMs. In particular, we introduce a multi-marginal Optimal Transport (OT) formulation that enforces do-calculus causal constraints, together with a cost function that relies on interventional information. We extensively evaluate COTA on synthetic and real world problems, and showcase its advantages over non-causal, independent and aggregated COTA formulations. Finally, we demonstrate the efficiency of our method as a data augmentation tool by comparing it against the state-of-the-art CA learning framework, which assumes fully specified SCMs, on a real-world downstream task.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Constant-Curvature Sliced Gromov-Wasserstein for Heterogeneous Cross-Curvature Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-07218</link>
+    <guid isPermaLink="false">arxiv:2610.07218</guid>
+    <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shanglin Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Recent advances in representation learning have highlighted the utility of constant-curvature models, such as hyperbolic and spherical spaces, for modeling complex data. Mixed-curvature models further enhance this by integrating multiple constant-curvature components. However, these models typically learn each component space independently because spaces with different curvatures are inherently heterogeneous and lack a unified metric. Consequently, they lack explicit mechanisms to enforce geometric consistency across various spaces. Moreover, the problem of comparing probability distributions across mixed-curvature spaces remains unexplored. To compare distributions on heterogeneous spaces, Gromov-Wasserstein (GW) distances provide a principled framework by aligning their intra-space geometries. Building on this, we propose constant-curvature sliced Gromov-Wasserstein (CCSGW), a novel divergence for aligning distributions supported on heterogeneous constant-curvature spaces. We first introduce the missing geodesic-based one-dimensional projections for spherical spaces, and then extend sliced GW to constant-curvature spaces, enabling efficient and principled comparison across manifolds with different curvatures. This formulation preserves intrinsic geometric relationships while avoiding the high computational cost. We provide theoretical analysis showing that CCSGW controls intrinsic geometric discrepancy across heterogeneous spaces, promoting distribution-level geometric consistency. By integrating CCSGW into existing mixed-curvature learning tasks, including graph anomaly detection, graph node classification, and multimodal learning, we observe consistent performance gains across diverse settings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>WASD: Wasserstein-based Knowledge Distillation for Large Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-07706</link>
+    <guid isPermaLink="false">arxiv:2610.07706</guid>
+    <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byeonghu Na et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Autoregressive large language models (LLMs) have rapidly advanced in capability, but their increasing scale comes with substantial computational and memory costs at inference time. Knowledge distillation (KD) offers a practical solution by transferring knowledge from a large teacher model to a smaller student model via alignment of discrete probability distributions. However, existing KD methods for LLMs primarily rely on divergences that evaluate discrepancies through probability values at each vocabulary index, without explicitly leveraging token-level semantic information. We propose Wasserstein-based knowledge distillation (WASD) for LLMs, which incorporates token-level semantic information via the Wasserstein-based distance with a cost matrix derived from token embeddings. To ensure computational tractability, we adopt the Sinkhorn divergence and derive a gradient-equivalent objective that can be efficiently optimized without introducing additional networks. Experiments across multiple LLM families and scales show that WASD consistently improves distillation performance on diverse tasks, including instruction following, mathematical reasoning, and code generation. Our results highlight the importance of semantic information encoded in the token space for effective distribution alignment in LLM distillation. The implementation is publicly available at https://github.com/aailab-kaist/WASD .</p>]]></description>
+  </item>
 
   <item>
     <title>Probabilistic Algorithms for Ising Machines from Optimization to Generative AI</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ivan Ge et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
 <p>Quantum machine learning (QML) algorithms in high energy physics (HEP) can efficiently represent and leverage long-range, high-order correlations in high-dimensional collider data, potentially with fewer parameters and favorable scaling relative to classical models. Deployment of QML in real-time collider applications such as trigger systems requires the ability to emulate and compile quantum circuits classically, then synthesize the resulting quantum gates onto low-latency hardware accelerators, namely field-programmable gate arrays (FPGAs). We present a study of variational quantum autoencoder models for real-time anomaly detection triggers in modern collider experiments. The models achieve performance comparable to state-of-the-art classical approaches and, after FPGA synthesis, satisfy resource usage and timing constraints consistent with trigger applications in future colliders. This work provides one of the first FPGA implementations of QML models for HEP triggers, enabling higher-capability models in today&rsquo;s classical data acquisition pipelines while advancing quantum readiness of collider experiment infrastructure.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Linear convergence of proximal descent schemes on the Wasserstein space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2411-15067</link>
-    <guid isPermaLink="false">arxiv:2411.15067</guid>
-    <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Razvan-Andrei Lascu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We investigate proximal descent methods, inspired by the minimizing movement scheme introduced by Jordan, Kinderlehrer and Otto, for optimizing entropy-regularized functionals on the Wasserstein space. We establish linear convergence under flat convexity assumptions, thereby relaxing the common reliance on geodesic convexity. Our analysis circumvents the need for discrete-time adaptations of the Evolution Variational Inequality (EVI). Instead, we leverage a uniform logarithmic Sobolev inequality (LSI) and the entropy ``sandwich&rdquo; lemma, extending the analysis from arXiv:2201.10469 and arXiv:2202.01009. The major challenge in the proof via LSI is to show that the relative Fisher information is well-defined at every step of the scheme. Since the relative entropy is not Wasserstein differentiable, we prove that along the scheme the iterates belong to a certain class of Sobolev regularity, and hence the relative entropy has a unique Wasserstein sub-gradient, and that the relative Fisher information is indeed finite.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Topology-Driven Clustering: Enhancing Performance with Betti Number Filtration</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-04346</link>
-    <guid isPermaLink="false">arxiv:2505.04346</guid>
-    <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arghya Pratihar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
-<p>Clustering aims at partitioning data points into groups of similar objects without knowing about the class labels. However, clustering datasets with complex geometric structures, such as nonconvex shapes, multiple scales, or intertwined manifolds, remains challenging for traditional algorithms that primarily rely on Euclidean or kernel-based similarity measures. Topological Data Analysis (TDA), particularly persistent homology, provides a powerful framework for capturing intrinsic structural properties of data, including connected components, loops, and higher-dimensional features across multiple scales. In this work, we propose a novel topological clustering algorithm called \textbf{Betti Number Filtration-based Topological Clustering (BFTC)}. The proposed method constructs local Vietoris-Rips filtrations around each data point and computes Betti numbers up to a prescribed dimension. These Betti numbers across filtration scales form \emph{Betti sequences}, which serve as multiscale topological signatures of local neighborhoods. By comparing Betti sequences among neighboring points, BFTC identifies topologically similar neighbors and refines the neighborhood graph to construct a topology-aware similarity structure and spectral clustering is applied to obtain the final clusters. Experimental results on several synthetic and real-world datasets demonstrate that BFTC effectively clusters complex and intertwined structures and consistently outperforms several state-of-the-art topology-based clustering methods.</p>]]></description>
   </item>
 
 </channel>

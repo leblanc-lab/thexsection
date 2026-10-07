@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>AI Agents, Language, Deep Learning and the Next Revolution in Science</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-07940</link>
+    <guid isPermaLink="false">arxiv:2603.07940</guid>
+    <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ke Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Modern science is reaching a critical inflection point. Instruments across disciplines, from particle physics and astronomy to genomics and climate modeling, now produce data of such scale, diversity, and interdependence that traditional analytical methods can no longer keep pace. This growing imbalance between data generation and data understanding signals the need for a new scientific paradigm. We propose that intelligent, human-supervised AI agents operating over deep-learning algorithms, represent the next evolution of the scientific method. Built upon large language models and multimodal learning, these agents can interpret scientific intent, design and execute analytical workflows, and ensure traceability through domain-specific languages that preserve human oversight and accountability. Particle physics, a historic incubator of computational innovation, offers the ideal testbed for this transition. At the Institute of High Energy Physics of the Chinese Academy of Sciences, the Dr. Sai system embodies this vision, a multi-agent reasoning framework deployed within collider research at the CEPC. This emerging approach does not replace human scientists but extends their cognitive reach, enabling discovery to scale with complexity and redefining how knowledge itself is produced in the age of intelligent machines. The significance of this paradigm transcends particle physics, offering a blueprint for all data-driven sciences facing the same complexity ceiling.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTAD: An Optimal Transport-Induced Robust Model for Agnostic Adversarial Attack</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2408-00329</link>
+    <guid isPermaLink="false">arxiv:2408.00329</guid>
+    <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kuo Gai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep neural networks (DNNs) are vulnerable to small adversarial perturbations of the inputs, posing a significant challenge to their reliability and robustness. Empirical methods such as adversarial training can defend against particular attacks but remain vulnerable to more powerful attacks. Alternatively, Lipschitz networks provide certified robustness to unseen perturbations but lack sufficient expressive power. To harness the advantages of both approaches, we design a novel two-step Optimal Transport induced Adversarial Defense (OTAD) model that can fit the training data accurately while preserving the local Lipschitz continuity. First, we train a DNN with a regularizer derived from optimal transport theory, yielding a discrete optimal transport map linking data to its features. By leveraging the map&rsquo;s inherent regularity, we interpolate the map by solving the convex integration problem (CIP) to guarantee the local Lipschitz property. OTAD is extensible to diverse architectures of ResNet and Transformer, making it suitable for complex data. For efficient computation, the CIP can be solved through training neural networks. OTAD opens a novel avenue for developing reliable and secure deep learning systems through the regularity of optimal transport maps. Empirical results demonstrate that OTAD can outperform other robust models on diverse datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>From Theory to Protocol: Executable Frameworks for Creative Emergence and Strategic Foresight</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zihan Ji et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The scarcity of high-quality large-scale labeled datasets poses a huge challenge for employing deep learning models in video deception detection. To address this issue, inspired by the psychological theory on the relation between deception and expressions, we propose a novel method called AFFAKT in this paper, which enhances the classification performance by transferring useful and correlated knowledge from a large facial expression dataset. Two key challenges in knowledge transfer arise: 1) \textit{how much} knowledge of facial expression data should be transferred and 2) \textit{how to} effectively leverage transferred knowledge for the deception classification model during inference. Specifically, the optimal relation mapping between facial expression classes and deception samples is firstly quantified using proposed H-OTKT module and then transfers knowledge from the facial expression dataset to deception samples. Moreover, a correlation prototype within another proposed module SRKB is well designed to retain the invariant correlations between facial expression classes and deception classes through momentum updating. During inference, the transferred knowledge is fine-tuned with the correlation prototype using a sample-specific re-weighting strategy. Experimental results on two deception detection datasets demonstrate the superior performance of our proposed method. The interpretability study reveals high associations between deception and negative affections, which coincides with the theory in psychology.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distance Rivals Kullback-Leibler Divergence for Knowledge Distillation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-08139</link>
-    <guid isPermaLink="false">arxiv:2412.08139</guid>
-    <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaming Lv et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Since pioneering work of Hinton et al., knowledge distillation based on Kullback-Leibler Divergence (KL-Div) has been predominant, and recently its variants have achieved compelling performance. However, KL-Div only compares probabilities of the corresponding category between the teacher and student while lacking a mechanism for cross-category comparison. Besides, KL-Div is problematic when applied to intermediate layers, as it cannot handle non-overlapping distributions and is unaware of geometry of the underlying manifold. To address these downsides, we propose a methodology of Wasserstein Distance (WD) based knowledge distillation. Specifically, we propose a logit distillation method called WKD-L based on discrete WD, which performs cross-category comparison of probabilities and thus can explicitly leverage rich interrelations among categories. Moreover, we introduce a feature distillation method called WKD-F, which uses a parametric method for modeling feature distributions and adopts continuous WD for transferring knowledge from intermediate layers. Comprehensive evaluations on image classification and object detection have shown (1) for logit distillation WKD-L outperforms very strong KL-Div variants; (2) for feature distillation WKD-F is superior to the KL-Div counterparts and state-of-the-art competitors. The source code is available at https://peihuali.org/WKD</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multiple Physics Pretraining for Physical Surrogate Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2310-02994</link>
-    <guid isPermaLink="false">arxiv:2310.02994</guid>
-    <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael McCabe et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>We introduce multiple physics pretraining (MPP), an autoregressive task-agnostic pretraining approach for physical surrogate modeling of spatiotemporal systems with transformers. In MPP, rather than training one model on a specific physical system, we train a backbone model to predict the dynamics of multiple heterogeneous physical systems simultaneously in order to learn features that are broadly useful across systems and facilitate transfer. In order to learn effectively in this setting, we introduce a shared embedding and normalization strategy that projects the fields of multiple systems into a shared embedding space. We validate the efficacy of our approach on both pretraining and downstream tasks over a broad fluid mechanics-oriented benchmark. We show that a single MPP-pretrained transformer is able to match or outperform task-specific baselines on all pretraining sub-tasks without the need for finetuning. For downstream tasks, we demonstrate that finetuning MPP-trained models results in more accurate predictions across multiple time-steps on systems with previously unseen physical components or higher dimensional systems compared to training from scratch or finetuning pretrained video foundation models. We open-source our code and model weights trained at multiple scales for reproducibility.</p>]]></description>
   </item>
 
 </channel>

@@ -36,17 +36,50 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">2600 papers</span>
-  <span class="count">1554 days</span>
+  <span class="count">2602 papers</span>
+  <span class="count">1555 days</span>
   <span class="count">since 2009</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">592</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">594</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 7, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-07218">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.07218" target="_blank" rel="noopener">arXiv:2610.07218</a>
+      
+      <a class="permalink" href="#a2610-07218" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Constant-Curvature Sliced Gromov-Wasserstein for Heterogeneous Cross-Curvature Alignment</h3>
+    <p class="byline">Shanglin Li et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Recent advances in representation learning have highlighted the utility of constant-curvature models, such as hyperbolic and spherical spaces, for modeling complex data. Mixed-curvature models further enhance this by integrating multiple constant-curvature components. However, these models typically learn each component space independently because spaces with different curvatures are inherently heterogeneous and lack a unified metric. Consequently, they lack explicit mechanisms to enforce geometric consistency across various spaces. Moreover, the problem of comparing probability distributions across mixed-curvature spaces remains unexplored. To compare distributions on heterogeneous spaces, Gromov-Wasserstein (GW) distances provide a principled framework by aligning their intra-space geometries. Building on this, we propose constant-curvature sliced Gromov-Wasserstein (CCSGW), a novel divergence for aligning distributions supported on heterogeneous constant-curvature spaces. We first introduce the missing geodesic-based one-dimensional projections for spherical spaces, and then extend sliced GW to constant-curvature spaces, enabling efficient and principled comparison across manifolds with different curvatures. This formulation preserves intrinsic geometric relationships while avoiding the high computational cost. We provide theoretical analysis showing that CCSGW controls intrinsic geometric discrepancy across heterogeneous spaces, promoting distribution-level geometric consistency. By integrating CCSGW into existing mixed-curvature learning tasks, including graph anomaly detection, graph node classification, and multimodal learning, we observe consistent performance gains across diverse settings.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-07706">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.07706" target="_blank" rel="noopener">arXiv:2610.07706</a>
+      
+      <a class="permalink" href="#a2610-07706" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">WASD: Wasserstein-based Knowledge Distillation for Large Language Models</h3>
+    <p class="byline">Byeonghu Na et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Autoregressive large language models (LLMs) have rapidly advanced in capability, but their increasing scale comes with substantial computational and memory costs at inference time. Knowledge distillation (KD) offers a practical solution by transferring knowledge from a large teacher model to a smaller student model via alignment of discrete probability distributions. However, existing KD methods for LLMs primarily rely on divergences that evaluate discrepancies through probability values at each vocabulary index, without explicitly leveraging token-level semantic information. We propose Wasserstein-based knowledge distillation (WASD) for LLMs, which incorporates token-level semantic information via the Wasserstein-based distance with a cost matrix derived from token embeddings. To ensure computational tractability, we adopt the Sinkhorn divergence and derive a gradient-equivalent objective that can be efficiently optimized without introducing additional networks. Experiments across multiple LLM families and scales show that WASD consistently improves distillation performance on diverse tasks, including instruction following, mathematical reasoning, and code generation. Our results highlight the importance of semantic information encoded in the token space for effective distribution alignment in LLM distillation. The implementation is publicly available at https://github.com/aailab-kaist/WASD .</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -9182,7 +9215,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-07 05:35 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-07 05:49 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

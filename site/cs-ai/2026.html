@@ -36,17 +36,50 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">651 papers</span>
-  <span class="count">517 days</span>
+  <span class="count">653 papers</span>
+  <span class="count">518 days</span>
   <span class="count">since 2012</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">231</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">233</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 7, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-07706">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.07706" target="_blank" rel="noopener">arXiv:2610.07706</a>
+      
+      <a class="permalink" href="#a2610-07706" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">WASD: Wasserstein-based Knowledge Distillation for Large Language Models</h3>
+    <p class="byline">Byeonghu Na et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Autoregressive large language models (LLMs) have rapidly advanced in capability, but their increasing scale comes with substantial computational and memory costs at inference time. Knowledge distillation (KD) offers a practical solution by transferring knowledge from a large teacher model to a smaller student model via alignment of discrete probability distributions. However, existing KD methods for LLMs primarily rely on divergences that evaluate discrepancies through probability values at each vocabulary index, without explicitly leveraging token-level semantic information. We propose Wasserstein-based knowledge distillation (WASD) for LLMs, which incorporates token-level semantic information via the Wasserstein-based distance with a cost matrix derived from token embeddings. To ensure computational tractability, we adopt the Sinkhorn divergence and derive a gradient-equivalent objective that can be efficiently optimized without introducing additional networks. Experiments across multiple LLM families and scales show that WASD consistently improves distillation performance on diverse tasks, including instruction following, mathematical reasoning, and code generation. Our results highlight the importance of semantic information encoded in the token space for effective distribution alignment in LLM distillation. The implementation is publicly available at https://github.com/aailab-kaist/WASD .</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-07935">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.07935" target="_blank" rel="noopener">arXiv:2610.07935</a>
+      
+      <a class="permalink" href="#a2610-07935" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">SIGMA: Self-Improving Alignment Generalization from a Model Spec</h3>
+    <p class="byline">Jingyu Zhang et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>LLM agents are increasingly capable of executing complex tasks and of recursively improving themselves on easy-to-verify objectives such as software engineering and mathematics. Since alignment is much harder to verify, this creates a growing risk of capabilities increasing without appropriate safety alignment, especially as capabilities expand to auto-research and cybersecurity. Existing approaches focus on capability self-improvement using verifiable feedback or on alignment training with supervision from stronger models or curated data, creating an external supervision bottleneck for alignment. We ask whether current models can improve their own safety alignment, and propose SIGMA, a data generation and training pipeline enabling alignment self-improvement that generalizes to out-of-distribution settings. Given only a &ldquo;Model Spec&rdquo; stating the model&rsquo;s desired behavior, SIGMA leverages a model&rsquo;s reasoning capabilities to strengthen its own safety reasoning. SIGMA first performs spec-guided task synthesis, using the candidate model as a task designer agent to generate diverse alignment dilemma scenarios and convert them into training tasks that stress-test its understanding of the Model Spec. Next, SIGMA conducts self-judged alignment training through supervised fine-tuning and rubric-based reinforcement learning with the model itself as the reward model. Despite training only on single-turn chat data, SIGMA improves safety alignment in multi-turn agentic environments (AgentHarm harmfulness decreases from 22.6 to 14.8; Agentic Misalignment decreases from 79.1 to 3.8), outperforms Deliberative Alignment and Constitutional AI baselines, and retains general capability. Analyses show that a Model Spec balancing harmlessness and helpfulness, test-time reasoning for safety deliberation, and high-quality rubrics from SIGMA&rsquo;s task designer agent are crucial for effective self-improvement.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -4220,7 +4253,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-07 05:35 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-07 05:49 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

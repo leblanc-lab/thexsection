@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Graph Distance Based on L_1-Approximated Tree Edit Distance between Weisfeiler-Lehman Subtrees</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2207-04216</link>
+    <guid isPermaLink="false">arxiv:2207.04216</guid>
+    <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhongxi Fang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Weisfeiler-Lehman (WL) test is a widely used algorithm in graph machine learning, including graph kernels, graph metrics, and graph neural networks. However, it focuses only on the consistency of the graph, which means that it is unable to detect slight structural differences. Consequently, this limits its ability to capture structural information, which also limits the performance of existing models that rely on the WL test. This limitation is particularly severe for traditional metrics defined by the WL test, which cannot precisely capture slight structural differences. In this paper, we propose a novel graph metric called the Wasserstein WL Subtree (WWLS) distance to address this problem. Our approach leverages the WL subtree as structural information for node neighborhoods and defines node metrics using the L_1-approximated tree edit distance (L_1-TED) between WL subtrees of nodes. Subsequently, we combine the Wasserstein distance and the L_1-TED to define the WWLS distance, which can capture slight structural differences that may be difficult to detect using conventional metrics. We demonstrate that the proposed WWLS distance outperforms baselines in both metric validation and graph classification experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning to Re-rank with Constrained Meta-Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-00319</link>
+    <guid isPermaLink="false">arxiv:2305.00319</guid>
+    <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrés Hoyos-Idrobo</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Many re-ranking strategies in search systems rely on stochastic ranking policies, encoded as Doubly-Stochastic (DS) matrices, that satisfy desired ranking constraints in expectation, e.g., Fairness of Exposure (FOE). These strategies are generally two-stage pipelines: \emph{i)} an offline re-ranking policy construction step and \emph{ii)} an online sampling of rankings step. Building a re-ranking policy requires repeatedly solving a constrained optimization problem, one for each issued query. Thus, it is necessary to recompute the optimization procedure for any new/unseen query. Regarding sampling, the Birkhoff-von-Neumann decomposition (BvND) is the favored approach to draw rankings from any DS-based policy. However, the BvND is too costly to compute online. Hence, the BvND as a sampling solution is memory-consuming as it can grow as (N  n²⁾ for N queries and n documents. This paper offers a novel, fast, lightweight way to predict fair stochastic re-ranking policies: Constrained Meta-Optimal Transport (CoMOT). This method fits a neural network shared across queries like a learning-to-rank system. We also introduce Gumbel-Matching Sampling (GumMS), an online sampling approach from DS-based policies. Our proposed pipeline, CoMOT + GumMS, only needs to store the parameters of a single model, and it generalizes to unseen queries. We empirically evaluated our pipeline on the TREC 2019 and 2020 datasets under FOE constraints. Our experiments show that CoMOT rapidly predicts fair re-ranking policies on held-out data, with a speed-up proportional to the average number of documents per query. It also displays fairness and ranking performance similar to the original optimization-based policy. Furthermore, we empirically validate the effectiveness of GumMS to approximate DS-based policies in expectation.</p>]]></description>
+  </item>
 
   <item>
     <title>A Method for Classifying Snow Using Ski-Mounted Strain Sensors</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongwei Jin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>Comparing structured data from possibly different metric-measure spaces is a fundamental task in machine learning, with applications in, e.g., graph classification. The Gromov-Wasserstein (GW) discrepancy formulates a coupling between the structured data based on optimal transportation, tackling the incomparability between different structures by aligning the intra-relational geometries. Although efficient \emph{local} solvers such as conditional gradient and Sinkhorn are available, the inherent non-convexity still prevents a tractable evaluation, and the existing lower bounds are not tight enough for practical use. To address this issue, we take inspiration from the connection with the quadratic assignment problem, and propose the orthogonal Gromov-Wasserstein (OGW) discrepancy as a surrogate of GW. It admits an efficient and \emph{closed-form} lower bound with 𝒪(n³⁾ complexity, and directly extends to the fused Gromov-Wasserstein (FGW) distance, incorporating node features into the coupling. Extensive experiments on both the synthetic and real-world datasets show the tightness of our lower bounds, and both OGW and its lower bounds efficiently deliver accurate predictions and satisfactory barycenters for graph sets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unpaired Single-Image Depth Synthesis with cycle-consistent Wasserstein GANs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2103-16938</link>
-    <guid isPermaLink="false">arxiv:2103.16938</guid>
-    <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Christoph Angermann et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Real-time estimation of actual environment depth is an essential module for various autonomous system tasks such as localization, obstacle detection and pose estimation. During the last decade of machine learning, extensive deployment of deep learning methods to computer vision tasks yielded successful approaches for realistic depth synthesis out of a simple RGB modality. While most of these models rest on paired depth data or availability of video sequences and stereo images, there is a lack of methods facing single-image depth synthesis in an unsupervised manner. Therefore, in this study, latest advancements in the field of generative neural networks are leveraged to fully unsupervised single-image depth synthesis. To be more exact, two cycle-consistent generators for RGB-to-depth and depth-to-RGB transfer are implemented and simultaneously optimized using the Wasserstein-1 distance. To ensure plausibility of the proposed method, we apply the models to a self acquised industrial data set as well as to the renown NYU Depth v2 data set, which allows comparison with existing approaches. The observed success in this study suggests high potential for unpaired single-image depth estimation in real world applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adaptive Resonance Theory-based Topological Clustering with a Divisive Hierarchical Structure Capable of Continual Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-10713</link>
-    <guid isPermaLink="false">arxiv:2201.10713</guid>
-    <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naoki Masuyama et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
-<p>Adaptive Resonance Theory (ART) is considered as an effective approach for realizing continual learning thanks to its ability to handle the plasticity-stability dilemma. In general, however, the clustering performance of ART-based algorithms strongly depends on the specification of a similarity threshold, i.e., a vigilance parameter, which is data-dependent and specified by hand. This paper proposes an ART-based topological clustering algorithm with a mechanism that automatically estimates a similarity threshold from the distribution of data points. In addition, for improving information extraction performance, a divisive hierarchical clustering algorithm capable of continual learning is proposed by introducing a hierarchical structure to the proposed algorithm. Experimental results demonstrate that the proposed algorithm has high clustering performance comparable with recently-proposed state-of-the-art hierarchical clustering algorithms.</p>]]></description>
   </item>
 
 </channel>

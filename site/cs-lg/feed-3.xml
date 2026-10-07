@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Rethinking Model Selection in VLM Through the Lens of Gromov-Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-01325</link>
+    <guid isPermaLink="false">arxiv:2605.01325</guid>
+    <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muyang Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Vision-Language Models (VLMs) have enhanced traditional LLMs with visual capabilities through the integration of vision encoders. While recent works have explored various combinations of vision encoders and LLMs, there still lacks a principled understanding of what makes a vision encoder suitable for VLM alignment. In this paper, we systematically investigate this question via comprehensive experiments on a curated collection of 19 pre-trained vision encoders from diverse sources. We first demonstrate that common practices, such as choosing encoders with the largest size or highest zero-shot accuracy, consistently fail to identify optimal models. In fact, these metrics show only weak to moderate correlation with VLM performance. This intriguing finding begs a fundamental question: What factors of vision-encoders matter in VLM? Through comprehensive analysis, we identify that the structural similarity across modalities plays a crucial but previously overlooked role in vision-encoder selection, which we measure using the Gromov-Wasserstein distance as a proxy. From a theoretical perspective, we show that the learnability of cross-modality mapping can be provably associated with the Gromov-Wasserstein distance. Empirical verification on 60+ full VLM training runs shows that our proposed inference-only metric performs significantly better than alternative model selection strategies and exhibits a much stronger correlation with final VLM performance, thereby enabling efficient and effective prediction of VLM performance before full training.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Data-Driven, Geometry-Aware Optimal-Transport Calibration of Flavor Tagger</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-01363</link>
+    <guid isPermaLink="false">arxiv:2605.01363</guid>
+    <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeonjoon Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (flavor tagging, title: optimal-transport) — original abstract; no AI summary.</em></p>
+<p>Flavor-tagging calibrations are often provided either as scale factors measured at a finite set of working points or as binned corrections to a chosen one-dimensional discriminant. However, this approach falls short of providing continuous, event-level calibration across the full multicomponent outputs of modern taggers. This limitation leads to information loss in analyses that demand high-performance flavor tagging, restricting analyses to a limited set of predefined variables. In this work, we propose a geometry-aware framework that formulates flavor-tagger calibration as an optimal transport problem on the probability simplex. The transport maps are parameterized and trained in the isometric log-ratio coordinate system. Because the quadratic Euclidean cost of Brenier transport in this coordinate system is equivalent to the Aitchison distance on the simplex, the learned map induces a minimal deformation under the Aitchison geometry. Furthermore, we extract flavor-conditional target distributions directly from control-region data using an expectation-maximization (EM) technique that simultaneously fits multiple control regions, models each flavor component with a normalizing flow, and estimates the regional mixture fractions. The extracted targets are subsequently used to learn flavor-factorized transport maps. Because the joint estimation of mixture fractions and flexible component densities admits weakly constrained directions, we further introduce a linearized feedback-operator analysis that propagates the fitted composition covariance into the extracted component densities, separating data-constrained modes from those dominated by the composition prior. The simulation-based closure study demonstrates improved closure in dedicated control regions and in independent validation mixtures.</p>]]></description>
+  </item>
 
   <item>
     <title>Scalable Learning in Structured Recurrent Spiking Neural Networks without Backpropagation</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jian Yan</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (energy flow) — original abstract; no AI summary.</em></p>
 <p>This paper proposes the External Hippocampus framework, which models language model reasoning from a cognitive dynamics perspective as the flow of information energy in semantic space. Unlike traditional weight-space optimization methods, this framework constructs topological cognitive maps through dimensionality reduction projection, enabling precise navigation and intervention of energy flow at test time while avoiding substantial computational requirements and demonstrating predictable intervention patterns. The method effectively addresses the cognitive deadlock problem in multi-step reasoning for small models. Experiments on models &lt;=7B parameters show: map-guided methods achieve 81.20% accuracy on 500 challenging problems (relative baseline +16.80%), reduce reasoning time by &gt;= 15x, with key findings revealing that reasoning stagnation manifests as &ldquo;Cognitive Vortex&rdquo; and low-entropy potential wells, while temperature perturbations effectively restart energy flow. The framework requires no additional training, possesses autonomous growth capability, and provides an efficient and controllable topological-aware solution for small model reasoning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>3D Cell Oversegmentation Correction via Geo-Wasserstein Divergence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-01890</link>
-    <guid isPermaLink="false">arxiv:2502.01890</guid>
-    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>3D cell segmentation methods are often hindered by \emph{oversegmentation}, where a single cell is incorrectly split into multiple fragments. This degrades the final segmentation quality and is notoriously difficult to resolve, as oversegmentation errors often resemble natural gaps between adjacent cells. Our work makes two key contributions. First, for 3D cell segmentation, we are the first work to formulate oversegmentation as a concrete problem and propose a geometric framework to identify and correct these errors. Our approach builds a pre-trained classifier using both 2D geometric and 3D topological features extracted from flawed 3D segmentation results. Second, we introduce a novel metric, Geo-Wasserstein divergence, to quantify changes in 2D geometries. This captures the evolving trends of cell mask shape in a geometry-aware manner. We validate our method through extensive experiments on in-domain plant datasets, including both synthesized and real oversegmented cases, as well as on out-of-domain animal datasets to demonstrate transfer learning performance. An ablation study further highlights the contribution of the Geo-Wasserstein divergence. A clear pipeline is provided for end-users to build pre-trained models to any labeled dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Variational Online Mirror Descent for Robust Learning in Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-02618</link>
-    <guid isPermaLink="false">arxiv:2504.02618</guid>
-    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dong-Sig Han et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>The Schrödinger bridge (SB) has evolved into a universal class of probabilistic generative models. In practice, however, estimated learning signals are innately uncertain, and the reliability promised by existing methods is often based on speculative optimal case scenarios. Recent studies regarding the Sinkhorn algorithm through mirror descent (MD) have gained attention, revealing geometric insights into solution acquisition of the SB problems. In this paper, we propose a variational online MD (OMD) framework for the SB problems, which provides further stability to SB solvers. We formally prove convergence and a regret bound for the novel OMD formulation of SB acquisition. As a result, we propose a simulation-free SB algorithm called Variational Mirrored Schrödinger Bridge (VMSB) by utilizing the Wasserstein-Fisher-Rao geometry of the Gaussian mixture parameterization for Schrödinger potentials. Based on the Wasserstein gradient flow theory, the algorithm offers tractable learning dynamics that precisely approximate each OMD step. In experiments, we validate the performance of the proposed VMSB algorithm across an extensive suite of benchmarks. VMSB consistently outperforms contemporary SB solvers on a wide range of SB problems, demonstrating the robustness as well as generality predicted by our OMD theory.</p>]]></description>
   </item>
 
 </channel>

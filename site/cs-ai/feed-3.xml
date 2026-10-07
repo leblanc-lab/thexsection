@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Distance Rivals Kullback-Leibler Divergence for Knowledge Distillation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-08139</link>
+    <guid isPermaLink="false">arxiv:2412.08139</guid>
+    <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaming Lv et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Since pioneering work of Hinton et al., knowledge distillation based on Kullback-Leibler Divergence (KL-Div) has been predominant, and recently its variants have achieved compelling performance. However, KL-Div only compares probabilities of the corresponding category between the teacher and student while lacking a mechanism for cross-category comparison. Besides, KL-Div is problematic when applied to intermediate layers, as it cannot handle non-overlapping distributions and is unaware of geometry of the underlying manifold. To address these downsides, we propose a methodology of Wasserstein Distance (WD) based knowledge distillation. Specifically, we propose a logit distillation method called WKD-L based on discrete WD, which performs cross-category comparison of probabilities and thus can explicitly leverage rich interrelations among categories. Moreover, we introduce a feature distillation method called WKD-F, which uses a parametric method for modeling feature distributions and adopts continuous WD for transferring knowledge from intermediate layers. Comprehensive evaluations on image classification and object detection have shown (1) for logit distillation WKD-L outperforms very strong KL-Div variants; (2) for feature distillation WKD-F is superior to the KL-Div counterparts and state-of-the-art competitors. The source code is available at https://peihuali.org/WKD</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multiple Physics Pretraining for Physical Surrogate Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2310-02994</link>
+    <guid isPermaLink="false">arxiv:2310.02994</guid>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael McCabe et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
+<p>We introduce multiple physics pretraining (MPP), an autoregressive task-agnostic pretraining approach for physical surrogate modeling of spatiotemporal systems with transformers. In MPP, rather than training one model on a specific physical system, we train a backbone model to predict the dynamics of multiple heterogeneous physical systems simultaneously in order to learn features that are broadly useful across systems and facilitate transfer. In order to learn effectively in this setting, we introduce a shared embedding and normalization strategy that projects the fields of multiple systems into a shared embedding space. We validate the efficacy of our approach on both pretraining and downstream tasks over a broad fluid mechanics-oriented benchmark. We show that a single MPP-pretrained transformer is able to match or outperform task-specific baselines on all pretraining sub-tasks without the need for finetuning. For downstream tasks, we demonstrate that finetuning MPP-trained models results in more accurate predictions across multiple time-steps on systems with previously unseen physical components or higher dimensional systems compared to training from scratch or finetuning pretrained video foundation models. We open-source our code and model weights trained at multiple scales for reproducibility.</p>]]></description>
+  </item>
 
   <item>
     <title>Zephyr quantum-assisted hierarchical Calo4pQVAE for particle-calorimeter interactions</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianming Huang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>For graph learning tasks, many existing methods utilize a message-passing mechanism where vertex features are updated iteratively by aggregation of neighbor information. This strategy provides an efficient means for graph features extraction, but obtained features after many iterations might contain too much information from other vertices, and tend to be similar to each other. This makes their representations less expressive. Learning graphs using paths, on the other hand, can be less adversely affected by this problem because it does not involve all vertex neighbors. However, most of them can only compare paths with the same length, which might engender information loss. To resolve this difficulty, we propose a new Graph Kernel based on a Longest Common Subsequence (LCS) similarity. Moreover, we found that the widely-used R-convolution framework is unsuitable for path-based Graph Kernel because a huge number of comparisons between dissimilar paths might deteriorate graph distances calculation. Therefore, we propose a novel metric space by exploiting the proposed LCS-based similarity, and compute a new Wasserstein-based graph distance in this metric space, which emphasizes more the comparison between similar paths. Furthermore, to reduce the computational cost, we propose an adjacent point merging operation to sparsify point clouds in the metric space.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distance Maximizing Intrinsic Control</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2110-15331</link>
-    <guid isPermaLink="false">arxiv:2110.15331</guid>
-    <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ishan Durugkar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper deals with the problem of learning a skill-conditioned policy that acts meaningfully in the absence of a reward signal. Mutual information based objectives have shown some success in learning skills that reach a diverse set of states in this setting. These objectives include a KL-divergence term, which is maximized by visiting distinct states even if those states are not far apart in the MDP. This paper presents an approach that rewards the agent for learning skills that maximize the Wasserstein distance of their state visitation from the start state of the skill. It shows that such an objective leads to a policy that covers more distance in the MDP than diversity based objectives, and validates the results on a variety of Atari environments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Foresight of Graph Reinforcement Learning Latent Permutations Learnt by Gumbel Sinkhorn Network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2110-12144</link>
-    <guid isPermaLink="false">arxiv:2110.12144</guid>
-    <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianqi Shen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Vital importance has necessity to be attached to cooperation in multi-agent environments, as a result of which some reinforcement learning algorithms combined with graph neural networks have been proposed to understand the mutual interplay between agents. However, highly complicated and dynamic multi-agent environments require more ingenious graph neural networks, which can comprehensively represent not only the graph topology structure but also evolution process of the structure due to agents emerging, disappearing and moving. To tackle these difficulties, we propose Gumbel Sinkhorn graph attention reinforcement learning, where a graph attention network highly represents the underlying graph topology structure of the multi-agent environment, and can adapt to the dynamic topology structure of graph better with the help of Gumbel Sinkhorn network by learning latent permutations. Empirically, simulation results show how our proposed graph reinforcement learning methodology outperforms existing methods in the PettingZoo multi-agent environment by learning latent permutations.</p>]]></description>
   </item>
 
 </channel>

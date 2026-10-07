@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>3D Cell Oversegmentation Correction via Geo-Wasserstein Divergence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-01890</link>
+    <guid isPermaLink="false">arxiv:2502.01890</guid>
+    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>3D cell segmentation methods are often hindered by \emph{oversegmentation}, where a single cell is incorrectly split into multiple fragments. This degrades the final segmentation quality and is notoriously difficult to resolve, as oversegmentation errors often resemble natural gaps between adjacent cells. Our work makes two key contributions. First, for 3D cell segmentation, we are the first work to formulate oversegmentation as a concrete problem and propose a geometric framework to identify and correct these errors. Our approach builds a pre-trained classifier using both 2D geometric and 3D topological features extracted from flawed 3D segmentation results. Second, we introduce a novel metric, Geo-Wasserstein divergence, to quantify changes in 2D geometries. This captures the evolving trends of cell mask shape in a geometry-aware manner. We validate our method through extensive experiments on in-domain plant datasets, including both synthesized and real oversegmented cases, as well as on out-of-domain animal datasets to demonstrate transfer learning performance. An ablation study further highlights the contribution of the Geo-Wasserstein divergence. A clear pipeline is provided for end-users to build pre-trained models to any labeled dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variational Online Mirror Descent for Robust Learning in Schrödinger Bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-02618</link>
+    <guid isPermaLink="false">arxiv:2504.02618</guid>
+    <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dong-Sig Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>The Schrödinger bridge (SB) has evolved into a universal class of probabilistic generative models. In practice, however, estimated learning signals are innately uncertain, and the reliability promised by existing methods is often based on speculative optimal case scenarios. Recent studies regarding the Sinkhorn algorithm through mirror descent (MD) have gained attention, revealing geometric insights into solution acquisition of the SB problems. In this paper, we propose a variational online MD (OMD) framework for the SB problems, which provides further stability to SB solvers. We formally prove convergence and a regret bound for the novel OMD formulation of SB acquisition. As a result, we propose a simulation-free SB algorithm called Variational Mirrored Schrödinger Bridge (VMSB) by utilizing the Wasserstein-Fisher-Rao geometry of the Gaussian mixture parameterization for Schrödinger potentials. Based on the Wasserstein gradient flow theory, the algorithm offers tractable learning dynamics that precisely approximate each OMD step. In experiments, we validate the performance of the proposed VMSB algorithm across an extensive suite of benchmarks. VMSB consistently outperforms contemporary SB solvers on a wide range of SB problems, demonstrating the robustness as well as generality predicted by our OMD theory.</p>]]></description>
+  </item>
 
   <item>
     <title>Quantifying the Impact of Structured Output Format on Large Language Models through Causal Inference</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kenta Shiraishi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>High-resolution (HR) precipitation prediction is essential for reducing damage from stationary and localized heavy rainfall; however, HR precipitation forecasts using process-driven numerical weather prediction models remains challenging. This study proposes using Wasserstein Generative Adversarial Network (WGAN) to perform precipitation downscaling with an optimal transport cost. In contrast to a conventional neural network trained with mean squared error, the WGAN generated visually realistic precipitation fields with fine-scale structures even though the WGAN exhibited slightly lower performance on conventional evaluation metrics. The learned critic of WGAN correlated well with human perceptual realism. Case-based analysis revealed that large discrepancies in critic scores can help identify both unrealistic WGAN outputs and potential artifacts in the reference data. These findings suggest that the WGAN framework not only improves perceptual realism in precipitation downscaling but also offers a new perspective for evaluating and quality-controlling precipitation datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Tagging fully hadronic exotic decays of the vectorlike 𝐁 quark using a graph neural network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-07769</link>
-    <guid isPermaLink="false">arxiv:2505.07769</guid>
-    <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jai Bardhan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Following up on our earlier study in [J. Bardhan et al., Machine learning-enhanced search for a vectorlike singlet B quark decaying to a singlet scalar or pseudoscalar, Phys. Rev. D 107 (2023) 115001; arXiv:2212.02442], we investigate the LHC prospects of pair-produced vectorlike B quarks decaying exotically to a new gauge-singlet (pseudo)scalar field Φ and a b quark. After the electroweak symmetry breaking, the Φ decays predominantly to gg/bb final states, leading to a fully hadronic 2b+4j or 6b signature. Because of the large Standard Model background and the lack of leptonic handles, it is a difficult channel to probe. To overcome the challenge, we employ a hybrid deep learning model containing a graph neural network followed by a deep neural network. We estimate that such a state-of-the-art deep learning analysis pipeline can lead to a performance comparable to that in the semi-leptonic mode, taking the discovery (exclusion) reach up to about M_B=1.8 (2.4) TeV at HL-LHC when B decays fully exotically, i.e., BR(B →bΦ) = 100%.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Families of Optimal Transport Kernels for Cell Complexes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-16569</link>
-    <guid isPermaLink="false">arxiv:2507.16569</guid>
-    <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rahul Khorana</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Recent advances have discussed cell complexes as ideal learning representations. However, there is a lack of available machine learning methods suitable for learning on CW complexes. In this paper, we derive an explicit expression for the Wasserstein distance between cell complex signal distributions in terms of a Hodge-Laplacian matrix. This leads to a structurally meaningful measure to compare CW complexes and define the optimal transportation map. In order to simultaneously include both feature and structure information, we extend the Fused Gromov-Wasserstein distance to CW complexes. Finally, we introduce novel kernels over the space of probability measures on CW complexes based on the dual formulation of optimal transport.</p>]]></description>
   </item>
 
 </channel>
