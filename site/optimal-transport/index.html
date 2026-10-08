@@ -37,17 +37,55 @@
 <a href="../watch.html">Standing waves</a> track, read and summarized by AI.</p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">82 papers</span>
-  <span class="count">80 days</span>
+  <span class="count">83 papers</span>
+  <span class="count">81 days</span>
   <span class="count">since 2018</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">18</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">19</span></a><a href="2025.html">2025 <span class="n">10</span></a><a href="2024.html">2024 <span class="n">12</span></a><a href="2023.html">2023 <span class="n">17</span></a><a href="2022.html">2022 <span class="n">7</span></a><a href="2021.html">2021 <span class="n">8</span></a><a href="2020.html">2020 <span class="n">6</span></a><a href="2019.html">2019 <span class="n">2</span></a><a href="2018.html">2018 <span class="n">2</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../watch.html">Thursday, October 8, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-09320">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.09320" target="_blank" rel="noopener">arXiv:2610.09320</a>
+      
+      <a class="permalink" href="#a2610-09320" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A Unified Geometric Framework for Understanding Collider Event Manifolds</h3>
+    <p class="byline">Tianji Cai et al.</p>
+    <div class="paper-body"><p>The authors embed each jet as its vector of distances to <span class="arithmatex">\(N_{\rm ref}\)</span> randomly drawn reference jets (M3R). This puts the energy-flow W₂ metric, the spectral SW₂ metric (1D closed-form quantile matching), and the phase-space (PS) metric in a common Euclidean coordinate system. With all events as references the embedding is an exact <span class="arithmatex">\(\ell_\infty\)</span> isometry, and it inherits IRC safety from the underlying metric. Cost drops from <span class="arithmatex">\(\mathcal{O}(N^2)\)</span> to <span class="arithmatex">\(\mathcal{O}(NN_{\rm ref})\)</span> metric evaluations, which matters for 2D W₂ solves.</p>
+<p>Results on 10⁴ JetClass jets per class:</p>
+<ul>
+<li><strong>Reconstruction fidelity at <span class="arithmatex">\(N_{\rm ref}=100\)</span></strong> (JAUC / MADO) orders the metrics PS &lt; SW₂ &lt; W₂ in complexity:</li>
+<li>PS: &gt;0.92 / &gt;0.97</li>
+<li>SW₂: 0.82–0.88 / 0.86–0.92</li>
+<li>W₂: 0.72–0.79 / 0.77–0.82</li>
+<li><strong>W₂ vs SW₂ on QCD jets:</strong> the leading two principal components align closely (|cos| ≈ 0.95). SW₂&rsquo;s PC1 explains 0.85 of W₂ variance, versus 0.92 for W₂&rsquo;s own PC1. This is a manifold-level echo of their known soft-collinear equivalence.</li>
+<li><strong>Top jets break this.</strong> W₂ decouples (|cos| ≲ 0.25 with both SW₂ and PS), while SW₂–PS stay aligned (≈0.85). This is consistent with spectral degeneracies for triangular three-prong configurations.</li>
+<li><strong>Asymmetric variance transfer on top jets.</strong> W₂&rsquo;s PC1 explains about 0.3 of SW₂/PS variance, but the reverse transfers explain ≲0.1 of W₂&rsquo;s. The authors read this as W₂ containing the shared structure plus extra.</li>
+<li><strong>Tagging is more compressible than geometry.</strong> SVM AUCs saturate by <span class="arithmatex">\(N_{\rm ref}\sim10\)</span>. At <span class="arithmatex">\(N_{\rm ref}=100\)</span>, the average relative gap to the full-metric SVM is ≈0% for W₂, 3% for SW₂ and 11% for PS, the reverse of the reconstruction ordering. This generalizes the linearized-W₂ idea.</li>
+</ul>
+<p>OT is central here: two of the three metrics are OT-based, and the W₂/SW₂ comparison is the paper&rsquo;s sharpest result. The framework itself, however, is metric-agnostic.</p>
+<p>Caveats:
+- References are random and metric weights are set to 1.
+- PS uses 10 <span class="arithmatex">\(p_T\)</span>-ordered exclusive subjets as a stand-in for the permutation minimization.
+- SVM hyperparameters are fixed.
+- The provided text is truncated mid-§5.2, so the multi-metric/PID combination results (§6) are not covered here.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -464,7 +502,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-07 05:49 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-08 05:37 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

@@ -36,13 +36,84 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">206 papers</span>
-  <span class="count">68 days</span>
+  <span class="count">209 papers</span>
+  <span class="count">69 days</span>
   <span class="count">since 2026</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../digest/2026-10-08.html">Thursday, October 8, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-09093">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.09093" target="_blank" rel="noopener">arXiv:2610.09093</a>
+      
+      <a class="permalink" href="#a2610-09093" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A gauge-invariant measure for lattice chiral fermions</h3>
+    <p class="byline">Nathaniel Craig</p>
+    <div class="paper-body"><p>Craig claims a nonperturbative, smooth, exponentially local, gauge-invariant overlap-fermion measure for <span class="arithmatex">\(SU(5)\)</span> with <span class="arithmatex">\(\mathbf{10}\oplus\bar{\mathbf{5}}\)</span>. He extends it to all four global forms <span class="arithmatex">\([SU(3)\times SU(2)\times U(1)]/\Gamma_{\rm SM}\)</span>, <span class="arithmatex">\(\Gamma_{\rm SM}=1,\mathbb{Z}_2,\mathbb{Z}_3,\mathbb{Z}_6\)</span>, by embedding SM links into <span class="arithmatex">\(SU(5)\)</span>.</p>
+<p>The key move replaces Lüscher&rsquo;s abelian interpolation of the gauge potential to zero, which can exit the admissible domain for nonabelian fields. Instead:</p>
+<ul>
+<li>A smooth connection is reconstructed from <span class="arithmatex">\(U\)</span> and sampled at auxiliary spacings <span class="arithmatex">\(h_n=3^{-n}\)</span>, with fine plaquettes obeying <span class="arithmatex">\(\|1-(F_hU)(p)\|\le C\varepsilon h^2\)</span>.</li>
+<li>Hermitian Wilson operators at successive spacings are interpolated linearly. The intermediate operators are not link fields, and a uniform gap <span class="arithmatex">\(g\)</span> is proved throughout.</li>
+<li>Each step contributes a curvature-strip term <span class="arithmatex">\(B_n\)</span>, and the measure term is <span class="arithmatex">\(\mathfrak{L}=\sum_n B_n\)</span>.</li>
+<li>Return phases telescope. An exact colour-trace identity for <span class="arithmatex">\(\mathbf{10}\oplus\bar{\mathbf{5}}\)</span> cancels the leading terms, which makes the sum converge.</li>
+<li>Global integrability on noncontractible loops uses an auxiliary <span class="arithmatex">\(SU(3)\)</span> connection under which the fermions pair conjugately.</li>
+</ul>
+<p>The general sufficient conditions are cubic-anomaly cancellation plus even multiplicity of half-integer-isospin representations under an <span class="arithmatex">\(SU(2)\subset SU(N_c)\)</span>. The author says the latter is an artefact of the method.</p>
+<p><strong>Where &ldquo;admissible&rdquo; bites:</strong>
+- The construction requires a sufficiently small plaquette bound <span class="arithmatex">\(\varepsilon\)</span>. It is volume-independent but not quantified in the extracted text.
+- The measure is fixed only up to one constant phase per connected component of admissible fields. The current&rsquo;s transformation laws do not guarantee that every choice of these relative phases respects discrete symmetries.</p>
+<p>The convergence, locality and gap estimates sit in appendices not included in the extract. Lean verification is relegated to supplementary material. As the digest notes, this is an existence construction, not a simulation algorithm.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-10219">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.10219" target="_blank" rel="noopener">arXiv:2610.10219</a>
+      
+      <a class="permalink" href="#a2610-10219" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Is the Light Neutralino Dark Matter Still Viable in the MSSM After the LZ-2024 Results?</h3>
+    <p class="byline">Zhiyang Bao et al.</p>
+    <div class="paper-body"><p>LZ-2024 excludes the sub-100 GeV Bino <span class="arithmatex">\(h\)</span>-funnel at <span class="arithmatex">\(Z&gt;5.9\)</span> (<span class="arithmatex">\(p=1.8\times10^{-9}\)</span>) and the <span class="arithmatex">\(Z\)</span>-funnel at <span class="arithmatex">\(Z&gt;4.1\)</span> (<span class="arithmatex">\(p=2.1\times10^{-5}\)</span>). The result holds for <span class="arithmatex">\(\Omega h^2=0.12\)</span> and for <span class="arithmatex">\(0.06\)</span> (half the dark matter), without imposing the LHC bound <span class="arithmatex">\(\mu\gtrsim760\)</span> GeV.</p>
+<p>The argument rests on one coupling (<span class="arithmatex">\(C_h\)</span> or <span class="arithmatex">\(C_Z\)</span>) setting both annihilation and scattering. Finite mediator width and thermal smearing cap <span class="arithmatex">\(\langle\sigma v\rangle\)</span>, so the relic density imposes a floor on <span class="arithmatex">\(\sigma^{\rm SI}\)</span> or <span class="arithmatex">\(\sigma^{\rm SD}_n\)</span>.</p>
+<p>The analysis is deliberately conservative:
+- <strong>Loop corrections:</strong> full one-loop vertex corrections (904 diagrams) give <span class="arithmatex">\(K^{\rm SI}\lesssim1.5\)</span> and <span class="arithmatex">\(K^{\rm SD}_n\lesssim1.3\)</span>. Scale variation changes these corrections by at most 5%.
+- <strong>Hadronic inputs:</strong> FLAG-2024 values (<span class="arithmatex">\(\sigma_{\pi N}=42.2\pm2.4\)</span> MeV) are used, with worst-case <span class="arithmatex">\(3\sigma\)</span> rescalings of 0.78 (SI) and 0.62 (SD) applied at every point. The authors note that the Roy–Steiner value <span class="arithmatex">\(\sigma_{\pi N}\simeq58\)</span>–59 MeV would only raise <span class="arithmatex">\(\sigma^{\rm SI}\)</span>.</p>
+<p>The resulting cross-section floors sit nearly an order of magnitude above the LZ-2024 limits. LZ-2022 gave only <span class="arithmatex">\(Z&lt;2\)</span>.</p>
+<p><strong>Caveats:</strong>
+- The LZ-2024 recast is micrOMEGAs&rsquo; background-free Poisson model. It is calibrated near 90% CL and then extrapolated far into the tail.
+- DDCalc implements only LZ-2022. There, micrOMEGAs underestimates <span class="arithmatex">\(Z\)</span>, which supports the claim that the micrOMEGAs numbers are conservative.
+- Near-degenerate Higgsino–Wino points (splitting <span class="arithmatex">\(&lt;3\)</span> GeV) were cut for counterterm instability.</p>
+<p>What remains for a thermal Bino is coannihilation, heavy-Higgs resonance or well-tempering, which together point to <span class="arithmatex">\(|m_{\tilde\chi}|\gtrsim200\)</span> GeV.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-09753">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.09753" target="_blank" rel="noopener">arXiv:2610.09753</a>
+      
+      <a class="permalink" href="#a2610-09753" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Can Nuclear Recoils and Solar Neutrinos Resolve the Composition of Singlino-Higgsino Dark Matter?</h3>
+    <p class="byline">Jingwei Lian et al.</p>
+    <div class="paper-body"><p><em>Abstract only.</em> The paper&rsquo;s point is a degeneracy: swapping ground and excited states can leave an inelastic recoil spectrum unchanged while shifting ground-state annihilation by orders of magnitude. Solar-neutrino signals from captured dark matter then distinguish compositions that recoils cannot.</p>
+<p>Applied in the NMSSM to fits of the high-energy LZ candidate, the analysis finds:
+- <strong>Disfavoured:</strong> Higgsino-pair inelastic fits overproduce solar signals.
+- <strong>Solar-compatible:</strong> singlino ground states, and Higgsino ground states with weak inelastic transitions.
+- <strong>Escape route:</strong> an elastic Higgsino alternative evades the solar bound by closing the inelastic transition that drives capture.</p>
+<p>The abstract gives no quantitative limits. The authors acknowledge residual degeneracies tied to annihilation, halo and detector assumptions.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -3613,7 +3684,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-07 05:49 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-08 05:37 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

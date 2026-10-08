@@ -6,7 +6,33 @@
   <description>Moving earth between distributions</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Unified Geometric Framework for Understanding Collider Event Manifolds</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2610-09320</link>
+    <guid isPermaLink="false">arxiv:2610.09320</guid>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianji Cai et al.</dc:creator>
+    <description><![CDATA[<p>The authors embed each jet as its vector of distances to N_ref randomly drawn reference jets (M3R). This puts the energy-flow W₂ metric, the spectral SW₂ metric (1D closed-form quantile matching), and the phase-space (PS) metric in a common Euclidean coordinate system. With all events as references the embedding is an exact ℓ_∞ isometry, and it inherits IRC safety from the underlying metric. Cost drops from 𝒪(N²⁾ to 𝒪(NN_ref) metric evaluations, which matters for 2D W₂ solves.</p>
+<p>Results on 10⁴ JetClass jets per class:</p>
+<ul>
+<li><strong>Reconstruction fidelity at N_ref=100</strong> (JAUC / MADO) orders the metrics PS &lt; SW₂ &lt; W₂ in complexity:</li>
+<li>PS: &gt;0.92 / &gt;0.97</li>
+<li>SW₂: 0.82–0.88 / 0.86–0.92</li>
+<li>W₂: 0.72–0.79 / 0.77–0.82</li>
+<li><strong>W₂ vs SW₂ on QCD jets:</strong> the leading two principal components align closely (|cos| ≈ 0.95). SW₂&rsquo;s PC1 explains 0.85 of W₂ variance, versus 0.92 for W₂&rsquo;s own PC1. This is a manifold-level echo of their known soft-collinear equivalence.</li>
+<li><strong>Top jets break this.</strong> W₂ decouples (|cos| ≲ 0.25 with both SW₂ and PS), while SW₂–PS stay aligned (≈0.85). This is consistent with spectral degeneracies for triangular three-prong configurations.</li>
+<li><strong>Asymmetric variance transfer on top jets.</strong> W₂&rsquo;s PC1 explains about 0.3 of SW₂/PS variance, but the reverse transfers explain ≲0.1 of W₂&rsquo;s. The authors read this as W₂ containing the shared structure plus extra.</li>
+<li><strong>Tagging is more compressible than geometry.</strong> SVM AUCs saturate by N_ref∼10. At N_ref=100, the average relative gap to the full-metric SVM is ≈0% for W₂, 3% for SW₂ and 11% for PS, the reverse of the reconstruction ordering. This generalizes the linearized-W₂ idea.</li>
+</ul>
+<p>OT is central here: two of the three metrics are OT-based, and the W₂/SW₂ comparison is the paper&rsquo;s sharpest result. The framework itself, however, is metric-agnostic.</p>
+<p>Caveats:
+- References are random and metric weights are set to 1.
+- PS uses 10 p_T-ordered exclusive subjets as a stand-in for the permutation minimization.
+- SVM hyperparameters are fixed.
+- The provided text is truncated mid-§5.2, so the multi-metric/PID combination results (§6) are not covered here.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport</title>

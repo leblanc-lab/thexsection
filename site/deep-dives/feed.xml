@@ -7,7 +7,62 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A gauge-invariant measure for lattice chiral fermions</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-09093</link>
+    <guid isPermaLink="false">arxiv:2610.09093</guid>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nathaniel Craig</dc:creator>
+    <description><![CDATA[<p>Craig claims a nonperturbative, smooth, exponentially local, gauge-invariant overlap-fermion measure for SU(5) with 10⊕5̅. He extends it to all four global forms [SU(3)×SU(2)×U(1)]/Γ_SM, Γ_SM=1,ℤ_2,ℤ_3,ℤ_6, by embedding SM links into SU(5).</p>
+<p>The key move replaces Lüscher&rsquo;s abelian interpolation of the gauge potential to zero, which can exit the admissible domain for nonabelian fields. Instead:</p>
+<ul>
+<li>A smooth connection is reconstructed from U and sampled at auxiliary spacings h_n=3⁻ⁿ, with fine plaquettes obeying 1-(F_hU)(p)≤Cεh².</li>
+<li>Hermitian Wilson operators at successive spacings are interpolated linearly. The intermediate operators are not link fields, and a uniform gap g is proved throughout.</li>
+<li>Each step contributes a curvature-strip term B_n, and the measure term is 𝔏=∑_n B_n.</li>
+<li>Return phases telescope. An exact colour-trace identity for 10⊕5̅ cancels the leading terms, which makes the sum converge.</li>
+<li>Global integrability on noncontractible loops uses an auxiliary SU(3) connection under which the fermions pair conjugately.</li>
+</ul>
+<p>The general sufficient conditions are cubic-anomaly cancellation plus even multiplicity of half-integer-isospin representations under an SU(2)⊂SU(N_c). The author says the latter is an artefact of the method.</p>
+<p><strong>Where &ldquo;admissible&rdquo; bites:</strong>
+- The construction requires a sufficiently small plaquette bound ε. It is volume-independent but not quantified in the extracted text.
+- The measure is fixed only up to one constant phase per connected component of admissible fields. The current&rsquo;s transformation laws do not guarantee that every choice of these relative phases respects discrete symmetries.</p>
+<p>The convergence, locality and gap estimates sit in appendices not included in the extract. Lean verification is relegated to supplementary material. As the digest notes, this is an existence construction, not a simulation algorithm.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Is the Light Neutralino Dark Matter Still Viable in the MSSM After the LZ-2024 Results?</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-10219</link>
+    <guid isPermaLink="false">arxiv:2610.10219</guid>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiyang Bao et al.</dc:creator>
+    <description><![CDATA[<p>LZ-2024 excludes the sub-100 GeV Bino h-funnel at Z&gt;5.9 (p=1.8×10⁻⁹) and the Z-funnel at Z&gt;4.1 (p=2.1×10⁻⁵). The result holds for Ωh²⁼⁰.12 and for 0.06 (half the dark matter), without imposing the LHC bound μ≳760 GeV.</p>
+<p>The argument rests on one coupling (C_h or C_Z) setting both annihilation and scattering. Finite mediator width and thermal smearing cap ⟨σv⟩, so the relic density imposes a floor on σ^SI or σ^SD_n.</p>
+<p>The analysis is deliberately conservative:
+- <strong>Loop corrections:</strong> full one-loop vertex corrections (904 diagrams) give K^SI≲1.5 and K^SD_n≲1.3. Scale variation changes these corrections by at most 5%.
+- <strong>Hadronic inputs:</strong> FLAG-2024 values (σ_πN=42.2±2.4 MeV) are used, with worst-case 3σ rescalings of 0.78 (SI) and 0.62 (SD) applied at every point. The authors note that the Roy–Steiner value σ_πN≃58–59 MeV would only raise σ^SI.</p>
+<p>The resulting cross-section floors sit nearly an order of magnitude above the LZ-2024 limits. LZ-2022 gave only Z&lt;2.</p>
+<p><strong>Caveats:</strong>
+- The LZ-2024 recast is micrOMEGAs&rsquo; background-free Poisson model. It is calibrated near 90% CL and then extrapolated far into the tail.
+- DDCalc implements only LZ-2022. There, micrOMEGAs underestimates Z, which supports the claim that the micrOMEGAs numbers are conservative.
+- Near-degenerate Higgsino–Wino points (splitting &lt;3 GeV) were cut for counterterm instability.</p>
+<p>What remains for a thermal Bino is coannihilation, heavy-Higgs resonance or well-tempering, which together point to |m_χ̃|≳200 GeV.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Can Nuclear Recoils and Solar Neutrinos Resolve the Composition of Singlino-Higgsino Dark Matter?</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-09753</link>
+    <guid isPermaLink="false">arxiv:2610.09753</guid>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jingwei Lian et al.</dc:creator>
+    <description><![CDATA[<p><em>Abstract only.</em> The paper&rsquo;s point is a degeneracy: swapping ground and excited states can leave an inelastic recoil spectrum unchanged while shifting ground-state annihilation by orders of magnitude. Solar-neutrino signals from captured dark matter then distinguish compositions that recoils cannot.</p>
+<p>Applied in the NMSSM to fits of the high-energy LZ candidate, the analysis finds:
+- <strong>Disfavoured:</strong> Higgsino-pair inelastic fits overproduce solar signals.
+- <strong>Solar-compatible:</strong> singlino ground states, and Higgsino ground states with weak inelastic transitions.
+- <strong>Escape route:</strong> an elastic Higgsino alternative evades the solar bound by closing the inelastic transition that drives capture.</p>
+<p>The abstract gives no quantitative limits. The authors acknowledge residual degeneracies tied to annihilation, halo and detector assumptions.</p>]]></description>
+  </item>
 
   <item>
     <title>Molecular Structure Effects in Low-Lying P-wave Bottom-Strange Meson Spectrum</title>
@@ -2383,38 +2438,6 @@
     <description><![CDATA[<p>The authors employ a two-fluid Tolman–Oppenheimer–Volkoff (TOV) framework to investigate dark-matter-admixed neutron stars (DMANSs) without assuming specific dark sector microphysics. By combining chiral effective field theory (low density) and perturbative QCD (high density) for nuclear matter with a speed-of-sound interpolation scheme for both nuclear and dark fluids, they generate ∼10⁵ mass-radius sequences. They find that light dark matter (m_D ≲0.3 GeV) preferentially forms extended halos that increase tidal deformability, while heavy dark matter (m_D ≳0.7 GeV) forms compact cores that enhance compactness.</p>
 <p>This work marks a significant shift toward &ldquo;dark sector agnosticism,&rdquo; replacing model-specific assumptions with thermodynamically consistent speed-of-sound profiles. By confronting these configurations with GW170817 tidal bounds and NICER mass-radius data, they establish robust constraints—most notably that the dark matter fraction f_DM ≲0.11 for light models. The analysis demonstrates that the dominant observational diagnostic shifts from gravitational-wave tidal deformability (for halos) to NICER mass-radius measurements (for cores), providing a clear roadmap for future multi-messenger observations.</p>
 <p>The caveat is that their agnostic framework relies on the assumption that the dark matter is well-described by a free Fermi gas at low density (n &lt; 0.1 n_0) before the speed-of-sound interpolation begins. While this provides a conservative boundary, it excludes more exotic, non-degenerate, or strongly interacting dark sector candidates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Relativistic Vorticity in the Quark-Gluon Plasma: Generation Symmetries, Explosive Dilution, and Azimuthal Spin Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-03716</link>
-    <guid isPermaLink="false">arxiv:2607.03716</guid>
-    <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Malak Ait Tamlihat et al.</dc:creator>
-    <description><![CDATA[<p><em>Note: Only the abstract was available.</em> </p>
-<p>The authors argue that the intense longitudinal and radial expansion of the Quark-Gluon Plasma (QGP) at RHIC and LHC acts as a &ldquo;geometric shield&rdquo; that regularizes vortex dynamics. They show that this explosive volumetric dilatation suppresses vortex stretching, naturally limiting the global mid-rapidity hyperon polarization to P_Λ≲10⁻⁴. This mechanism provides a hydrodynamic explanation for why observational signals of rotation in the plasma are significantly smaller than earlier, less-refined fluid models predicted.</p>
-<p>This result is a crucial refinement for the heavy-ion community, suggesting that the &ldquo;missing&rdquo; rotation signature is not necessarily an indication of physics beyond the Standard Model but a consequence of the QGP&rsquo;s own extreme expansion. The authors assert that the true signal of plasma rotation must be extracted via more subtle azimuthal differential measurements rather than global polarization observables. The limited dataset constraint is inherent to the theoretical nature of this study, as it relies on covariant transport equations rather than direct experimental re-analysis.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Identifying lensed gravitational waves with physics-informed posterior learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-03885</link>
-    <guid isPermaLink="false">arxiv:2607.03885</guid>
-    <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tian-Yang Sun et al.</dc:creator>
-    <description><![CDATA[<p>The authors introduce a &ldquo;physics-informed posterior learning&rdquo; framework to rank candidate lensed gravitational wave signals against unrelated multiple-merger events. By training a neural posterior estimator (NPE) on the common-source chirp mass and symmetric mass ratio—the fundamental parameters preserved by lensing—they force the classifier to prioritize events consistent with a single binary origin. This fusion of waveform morphology with posterior-based source consistency improves detection efficiency from 20.8% to 35.2% at a 1% false-positive rate.</p>
-<p>This method exemplifies the trend of using machine learning to enforce physical symmetries rather than pattern-matching blips in the data. By separating the lens-family-agnostic training from held-out evaluations (PM, SIS, SIE, and SIE+Shear), they demonstrate that their classifier generalizes across diverse gravitational lens topologies. They report an SNR-equivalent distance scale increase of 1.35, suggesting that this approach significantly hardens search sensitivity against the &ldquo;noise&rdquo; of overlapping unrelated merger events.</p>
-<p>A notable caveat is that the method&rsquo;s performance depends heavily on the simulated unrelated multiple-merger population used for training. Because the rare-event tail is dominated by loud, temporally compact, and partly source-consistent unrelated signals, the results are sensitive to the assumed merger rate and mass distribution, as evidenced by the performance degradation when evaluated on populations outside the training prior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Polarized Nucleon as a Topological Dipole</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-03123</link>
-    <guid isPermaLink="false">arxiv:2607.03123</guid>
-    <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kenji Fukushima et al.</dc:creator>
-    <description><![CDATA[<p>Fukushima and Uji propose that a polarized nucleon exhibits a non-trivial, dipole-like distribution of topological charge density, rather than a spherically symmetric one. By mapping the nucleon matrix element of the topological charge density (q_top) to the flavor-singlet axial charge (ΔΣ), they derive a robust, model-independent dipole structure proportional to S ·r̂. This topological dipole moment is explicitly demonstrated using a chiral soliton model with U(1)_A anomaly. </p>
-<p>This result bridges deep non-perturbative QCD topology with measurable hadronic structure. If accurate, this topological dipole provides a mechanism for local parity-odd topological charge to manifest in observable azimuthal asymmetries during relativistic heavy-ion collisions—specifically through directed-flow-like patterns in η and η^&rsquo; meson production. Unlike the conventional Chiral Magnetic Effect, which relies on event-by-event fluctuations of random signs, this prediction suggests a persistent, spin-correlated signal that could be isolated in future exclusive production experiments. The authors acknowledge that isolating these anomaly-induced contributions from background transverse-photon amplitudes remains a significant experimental hurdle.</p>]]></description>
   </item>
 
 </channel>
