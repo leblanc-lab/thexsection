@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Point2Mask: Point-supervised Panoptic Segmentation via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2308-01779</link>
+    <guid isPermaLink="false">arxiv:2308.01779</guid>
+    <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wentong Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Weakly-supervised image segmentation has recently attracted increasing research attentions, aiming to avoid the expensive pixel-wise labeling. In this paper, we present an effective method, namely Point2Mask, to achieve high-quality panoptic prediction using only a single random point annotation per target for training. Specifically, we formulate the panoptic pseudo-mask generation as an Optimal Transport (OT) problem, where each ground-truth (gt) point label and pixel sample are defined as the label supplier and consumer, respectively. The transportation cost is calculated by the introduced task-oriented maps, which focus on the category-wise and instance-wise differences among the various thing and stuff targets. Furthermore, a centroid-based scheme is proposed to set the accurate unit number for each gt point supplier. Hence, the pseudo-mask generation is converted into finding the optimal transport plan at a globally minimal transportation cost, which can be solved via the Sinkhorn-Knopp Iteration. Experimental results on Pascal VOC and COCO demonstrate the promising performance of our proposed Point2Mask approach to point-supervised panoptic segmentation. Source code is available at: https://github.com/LiWentomng/Point2Mask.</p>]]></description>
+  </item>
 
   <item>
     <title>DPM-OT: A New Diffusion Probabilistic Model Based on Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haifeng Li et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Image segmentation with a volume constraint is an important prior for many real applications. In this work, we present a novel volume preserving image segmentation algorithm, which is based on the framework of entropic regularized optimal transport theory. The classical Total Variation (TV) regularizer and volume preserving are integrated into a regularized optimal transport model, and the volume and classification constraints can be regarded as two measures preserving constraints in the optimal transport problem. By studying the dual problem, we develop a simple and efficient dual algorithm for our model. Moreover, to be different from many variational based image segmentation algorithms, the proposed algorithm can be directly unrolled to a new Volume Preserving and TV regularized softmax (VPTV-softmax) layer for semantic segmentation in the popular Deep Convolution Neural Network (DCNN). The experiment results show that our proposed model is very competitive and can improve the performance of many semantic segmentation nets such as the popular U-net.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving Long Handwritten Text Line Recognition with Convolutional Multi-way Associative Memory</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2020.html#a1911-01577</link>
-    <guid isPermaLink="false">arxiv:1911.01577</guid>
-    <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Duc Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Convolutional Recurrent Neural Networks (CRNNs) excel at scene text recognition. Unfortunately, they are likely to suffer from vanishing/exploding gradient problems when processing long text images, which are commonly found in scanned documents. This poses a major challenge to goal of completely solving Optical Character Recognition (OCR) problem. Inspired by recently proposed memory-augmented neural networks (MANNs) for long-term sequential modeling, we present a new architecture dubbed Convolutional Multi-way Associative Memory (CMAM) to tackle the limitation of current CRNNs. By leveraging recent memory accessing mechanisms in MANNs, our architecture demonstrates superior performance against other CRNN counterparts in three real-world long text OCR datasets.</p>]]></description>
   </item>
 
 </channel>

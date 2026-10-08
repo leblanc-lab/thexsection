@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Deep(er) Reconstruction of Imaging Cherenkov Detectors with Swin Transformers and Normalizing Flow Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-07376</link>
+    <guid isPermaLink="false">arxiv:2407.07376</guid>
+    <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cristiano Fanelli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Imaging Cherenkov detectors are crucial for particle identification (PID) in nuclear and particle physics experiments. Fast reconstruction algorithms are essential for near real-time alignment, calibration, data quality control, and efficient analysis. At the future Electron-Ion Collider (EIC), the ePIC detector will feature a dual Ring Imaging Cherenkov (dual-RICH) detector in the hadron direction, a Detector of Internally Reflected Cherenkov (DIRC) in the barrel, and a proximity focus RICH in the electron direction. This paper focuses on the DIRC detector, which presents complex hit patterns and is also used for PID of pions and kaons in the GlueX experiment at JLab. We present Deep(er)RICH, an extension of the seminal DeepRICH work, offering improved and faster PID compared to traditional methods and, for the first time, fast and accurate simulation. This advancement addresses a major bottleneck in Cherenkov detector simulations involving photon tracking through complex optical elements. Our results leverage advancements in Vision Transformers, specifically hierarchical Swin Transformer and normalizing flows. These methods enable direct learning from real data and the reconstruction of complex topologies. We conclude by discussing the implications and future extensions of this work, which can offer capabilities for PID for multiple cutting-edge experiments like the future EIC.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low latency optical-based mode tracking with machine learning deployed on FPGAs on a tokamak</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-00128</link>
+    <guid isPermaLink="false">arxiv:2312.00128</guid>
+    <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yumou Wei et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>Active feedback control in magnetic confinement fusion devices is desirable to mitigate plasma instabilities and enable robust operation. Optical high-speed cameras provide a powerful, non-invasive diagnostic and can be suitable for these applications. In this study, we process fast camera data, at rates exceeding 100kfps, on in situ Field Programmable Gate Array (FPGA) hardware to track magnetohydrodynamic (MHD) mode evolution and generate control signals in real-time. Our system utilizes a convolutional neural network (CNN) model which predicts the n=1 MHD mode amplitude and phase using camera images with better accuracy than other tested non-deep-learning-based methods. By implementing this model directly within the standard FPGA readout hardware of the high-speed camera diagnostic, our mode tracking system achieves a total trigger-to-output latency of 17.6μs and a throughput of up to 120kfps. This study at the High Beta Tokamak-Extended Pulse (HBT-EP) experiment demonstrates an FPGA-based high-speed camera data acquisition and processing system, enabling application in real-time machine-learning-based tokamak diagnostic and control as well as potential applications in other scientific domains.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn algorithms and linear programming solvers for optimal partial transport problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-06481</link>
+    <guid isPermaLink="false">arxiv:2407.06481</guid>
+    <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikun Bai</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>In this note, we generalize the classical optimal partial transport (OPT) problem by modifying the mass destruction/creation term to function-based terms, introducing what we term ``generalized optimal partial transport&rsquo;&rsquo; problems. We then discuss the dual formulation of these problems and the associated Sinkhorn solver. Finally, we explore how these new OPT problems relate to classical optimal transport (OT) problems and introduce a linear programming solver tailored for these generalized scenarios.</p>]]></description>
+  </item>
 
   <item>
     <title>Autoencoders for Real-Time SUEP Detection</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ernesto Arganda et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>Machine-Learned Likelihoods (MLL) combines machine-learning classification techniques with likelihood-based inference tests to estimate the experimental sensitivity of high-dimensional data sets. We extend the MLL method by including Kernel Density Estimators (KDE) to avoid binning the classifier output to extract the resulting one-dimensional signal and background probability density functions. We first test our method on toy models generated with multivariate Gaussian distributions, where the true probability distribution functions are known. Later, we apply the method to two cases of interest at the LHC: a search for exotic Higgs bosons, and a Z&rsquo; boson decaying into lepton pairs. In contrast to physical-based quantities, the typical fluctuations of the ML outputs give non-smooth probability distributions for pure-signal and pure-background samples. The non-smoothness is propagated into the density estimation due to the good performance and flexibility of the KDE method. We study its impact on the final significance computation, and we compare the results using the average of several independent ML output realizations, which allows us to obtain smoother distributions. We conclude that the significance estimation turns out to be not sensible to this issue.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2111-03169</link>
-    <guid isPermaLink="false">arxiv:2111.03169</guid>
-    <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruijie Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the problem of designing hard negative sampling distributions for unsupervised contrastive representation learning. We propose and analyze a novel min-max framework that seeks a representation which minimizes the maximum (worst-case) generalized contrastive learning loss over all couplings (joint distributions between positive and negative samples subject to marginal constraints) and prove that the resulting min-max optimum representation will be degenerate. This provides the first theoretical justification for incorporating additional regularization constraints on the couplings. We re-interpret the min-max problem through the lens of Optimal Transport (OT) theory and utilize regularized transport couplings to control the degree of hardness of negative examples. Through experiments we demonstrate that the negative samples generated from our designed negative distribution are more similar to the anchor than those generated from the baseline negative distribution. We also demonstrate that entropic regularization yields negative sampling distributions with parametric form similar to that in a recent state-of-the-art negative sampling design and has similar performance in multiple datasets. Utilizing the uncovered connection with OT, we propose a new ground cost for designing the negative distribution and show improved performance of the learned representation on downstream tasks compared to the representation learned when using squared Euclidean cost.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DualCoOp++: Fast and Effective Adaptation to Multi-Label Recognition with Limited Annotations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2308-01890</link>
-    <guid isPermaLink="false">arxiv:2308.01890</guid>
-    <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ping Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Multi-label image recognition in the low-label regime is a task of great challenge and practical significance. Previous works have focused on learning the alignment between textual and visual spaces to compensate for limited image labels, yet may suffer from reduced accuracy due to the scarcity of high-quality multi-label annotations. In this research, we leverage the powerful alignment between textual and visual features pretrained with millions of auxiliary image-text pairs. We introduce an efficient and effective framework called Evidence-guided Dual Context Optimization (DualCoOp++), which serves as a unified approach for addressing partial-label and zero-shot multi-label recognition. In DualCoOp++ we separately encode evidential, positive, and negative contexts for target classes as parametric components of the linguistic input (i.e., prompts). The evidential context aims to discover all the related visual content for the target class, and serves as guidance to aggregate positive and negative contexts from the spatial domain of the image, enabling better distinguishment between similar categories. Additionally, we introduce a Winner-Take-All module that promotes inter-class interaction during training, while avoiding the need for extra parameters and costs. As DualCoOp++ imposes minimal additional learnable overhead on the pretrained vision-language framework, it enables rapid adaptation to multi-label recognition tasks with limited annotations and even unseen classes. Experiments on standard multi-label recognition benchmarks across two challenging low-label settings demonstrate the superior performance of our approach compared to state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Graph Harmony: Denoising and Nuclear-Norm Wasserstein Adaptation for Enhanced Domain Transfer in Graph-Structured Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-12361</link>
-    <guid isPermaLink="false">arxiv:2301.12361</guid>
-    <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mengxi Wu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Graph-structured data can be found in numerous domains, yet the scarcity of labeled instances hinders its effective utilization of deep learning in many scenarios. Traditional unsupervised domain adaptation (UDA) strategies for graphs primarily hinge on adversarial learning and pseudo-labeling. These approaches fail to effectively leverage graph discriminative features, leading to class mismatching and unreliable label quality. To navigate these obstacles, we develop the Denoising and Nuclear-Norm Wasserstein Adaptation Network (DNAN). DNAN employs the Nuclear-norm Wasserstein discrepancy (NWD), which can simultaneously achieve domain alignment and class distinguishment. DANA also integrates a denoising mechanism via a variational graph autoencoder that mitigates data noise. This denoising mechanism helps capture essential features of both source and target domains, improving the robustness of the domain adaptation process. Our comprehensive experiments demonstrate that DNAN outperforms state-of-the-art methods on standard UDA benchmarks for graph classification.</p>]]></description>
   </item>
 
 </channel>

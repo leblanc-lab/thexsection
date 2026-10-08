@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The Curse of Conditions: Analyzing and Improving Optimal Transport for Conditional Flow-Based Generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2503-10636</link>
+    <guid isPermaLink="false">arxiv:2503.10636</guid>
+    <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Kei Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Minibatch optimal transport coupling straightens paths in unconditional flow matching. This leads to computationally less demanding inference as fewer integration steps and less complex numerical solvers can be employed when numerically solving an ordinary differential equation at test time. However, in the conditional setting, minibatch optimal transport falls short. This is because the default optimal transport mapping disregards conditions, resulting in a conditionally skewed prior distribution during training. In contrast, at test time, we have no access to the skewed prior, and instead sample from the full, unbiased prior distribution. This gap between training and testing leads to a subpar performance. To bridge this gap, we propose conditional optimal transport C^2OT that adds a conditional weighting term in the cost matrix when computing the optimal transport assignment. Experiments demonstrate that this simple fix works with both discrete and continuous conditions in 8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method performs better overall compared to the existing baselines across different function evaluation budgets. Code is available at https://hkchengrex.github.io/C2OT</p>]]></description>
+  </item>
 
   <item>
     <title>Jet Image Generation in High Energy Physics Using Diffusion Models</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huilin Zhu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Domain adaptation is commonly employed in crowd counting to bridge the domain gaps between different datasets. However, existing domain adaptation methods tend to focus on inter-dataset differences while overlooking the intra-differences within the same dataset, leading to additional learning ambiguities. These domain-agnostic factors, e.g., density, surveillance perspective, and scale, can cause significant in-domain variations, and the misalignment of these factors across domains can lead to a drop in performance in cross-domain crowd counting. To address this issue, we propose a Domain-agnostically Aligned Optimal Transport (DAOT) strategy that aligns domain-agnostic factors between domains. The DAOT consists of three steps. First, individual-level differences in domain-agnostic factors are measured using structural similarity (SSIM). Second, the optimal transfer (OT) strategy is employed to smooth out these differences and find the optimal domain-to-domain misalignment, with outlier individuals removed via a virtual &ldquo;dustbin&rdquo; column. Third, knowledge is transferred based on the aligned domain-agnostic factors, and the model is retrained for domain adaptation to bridge the gap across domains. We conduct extensive experiments on five standard crowd-counting benchmarks and demonstrate that the proposed method has strong generalizability across diverse datasets. Our code will be available at: https://github.com/HopooLinZ/DAOT/.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Point2Mask: Point-supervised Panoptic Segmentation via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2308-01779</link>
-    <guid isPermaLink="false">arxiv:2308.01779</guid>
-    <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wentong Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Weakly-supervised image segmentation has recently attracted increasing research attentions, aiming to avoid the expensive pixel-wise labeling. In this paper, we present an effective method, namely Point2Mask, to achieve high-quality panoptic prediction using only a single random point annotation per target for training. Specifically, we formulate the panoptic pseudo-mask generation as an Optimal Transport (OT) problem, where each ground-truth (gt) point label and pixel sample are defined as the label supplier and consumer, respectively. The transportation cost is calculated by the introduced task-oriented maps, which focus on the category-wise and instance-wise differences among the various thing and stuff targets. Furthermore, a centroid-based scheme is proposed to set the accurate unit number for each gt point supplier. Hence, the pseudo-mask generation is converted into finding the optimal transport plan at a globally minimal transportation cost, which can be solved via the Sinkhorn-Knopp Iteration. Experimental results on Pascal VOC and COCO demonstrate the promising performance of our proposed Point2Mask approach to point-supervised panoptic segmentation. Source code is available at: https://github.com/LiWentomng/Point2Mask.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Score-Based Diffusion Policy Compatible with Reinforcement Learning via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-12631</link>
+    <guid isPermaLink="false">arxiv:2502.12631</guid>
+    <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingyang Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Diffusion policies have shown promise in learning complex behaviors from demonstrations, particularly for tasks requiring precise control and long-term planning. However, they face challenges in robustness when encountering distribution shifts. This paper explores improving diffusion-based imitation learning models through online interactions with the environment. We propose OTPR (Optimal Transport-guided score-based diffusion Policy for Reinforcement learning fine-tuning), a novel method that integrates diffusion policies with RL using optimal transport theory. OTPR leverages the Q-function as a transport cost and views the policy as an optimal transport map, enabling efficient and stable fine-tuning. Moreover, we introduce masked optimal transport to guide state-action matching using expert keypoints and a compatibility-based resampling strategy to enhance training stability. Experiments on three simulation tasks demonstrate OTPR&rsquo;s superior performance and robustness compared to existing methods, especially in complex and sparse-reward environments. In sum, OTPR provides an effective framework for combining IL and RL, achieving versatile and reliable policy learning. The code will be released at https://github.com/Sunmmyy/OTPR.git.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Feedback Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-14055</link>
+    <guid isPermaLink="false">arxiv:2410.14055</guid>
+    <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Panagiotis Theodoropoulos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Recent advancements in diffusion bridges for distribution transport problems have heavily relied on matching frameworks, yet existing methods often face a trade-off between scalability and access to optimal pairings during training. Fully unsupervised methods make minimal assumptions but incur high computational costs, limiting their practicality. On the other hand, imposing full supervision of the matching process with optimal pairings improves scalability, however, it can be infeasible in many applications. To strike a balance between scalability and minimal supervision, we introduce Feedback Schrödinger Bridge Matching (FSBM), a novel semi-supervised matching framework that incorporates a small portion (less than 8% of the entire dataset) of pre-aligned pairs as state feedback to guide the transport map of non coupled samples, thereby significantly improving efficiency. This is achieved by formulating a static Entropic Optimal Transport (EOT) problem with an additional term capturing the semi-supervised guidance. The generalized EOT objective is then recast into a dynamic formulation to leverage the scalability of matching frameworks. Extensive experiments demonstrate that FSBM accelerates training and enhances generalization by leveraging coupled pairs guidance, opening new avenues for training matching frameworks with partially aligned datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Manifold Learning with Sparse Regularised Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2307-09816</link>
+    <guid isPermaLink="false">arxiv:2307.09816</guid>
+    <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stephen Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Manifold learning is a central task in modern statistics and data science. Many datasets (cells, documents, images, molecules) can be represented as point clouds embedded in a high dimensional ambient space, however the degrees of freedom intrinsic to the data are usually far fewer than the number of ambient dimensions. The task of detecting a latent manifold along which the data are embedded is a prerequisite for a wide family of downstream analyses. Real-world datasets are subject to noisy observations and sampling, so that distilling information about the underlying manifold is a major challenge. We propose a method for manifold learning that utilises a symmetric version of optimal transport with a quadratic regularisation that constructs a sparse and adaptive affinity matrix, that can be interpreted as a generalisation of the bistochastic kernel normalisation. We prove that the resulting kernel is consistent with a Laplace-type operator in the continuous limit, establish robustness to heteroskedastic noise and exhibit these results in numerical experiments. We identify a highly efficient computational scheme for computing this optimal transport for discrete data and demonstrate that it outperforms competing methods in a set of examples.</p>]]></description>
+  </item>
 
   <item>
     <title>Private Synthetic Graph Generation and Fused Gromov-Wasserstein Distance</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhe Xiong et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Finding a transformation between two unknown probability distributions from finite samples is crucial for modeling complex data distributions and performing tasks such as sample generation, domain adaptation and statistical inference. One powerful framework for such transformations is normalizing flow, which transforms an unknown distribution into a standard normal distribution using an invertible network. In this paper, we introduce a novel model called SyMOT-Flow that trains an invertible transformation by minimizing the symmetric maximum mean discrepancy between samples from two unknown distributions, and an optimal transport cost is incorporated as regularization to obtain a short-distance and interpretable transformation. The resulted transformation leads to more stable and accurate sample generation. Several theoretical results are established for the proposed model and its effectiveness is validated with low-dimensional illustrative examples as well as high-dimensional bi-modality medical image generation through the forward and reverse flows.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep(er) Reconstruction of Imaging Cherenkov Detectors with Swin Transformers and Normalizing Flow Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-07376</link>
-    <guid isPermaLink="false">arxiv:2407.07376</guid>
-    <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cristiano Fanelli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Imaging Cherenkov detectors are crucial for particle identification (PID) in nuclear and particle physics experiments. Fast reconstruction algorithms are essential for near real-time alignment, calibration, data quality control, and efficient analysis. At the future Electron-Ion Collider (EIC), the ePIC detector will feature a dual Ring Imaging Cherenkov (dual-RICH) detector in the hadron direction, a Detector of Internally Reflected Cherenkov (DIRC) in the barrel, and a proximity focus RICH in the electron direction. This paper focuses on the DIRC detector, which presents complex hit patterns and is also used for PID of pions and kaons in the GlueX experiment at JLab. We present Deep(er)RICH, an extension of the seminal DeepRICH work, offering improved and faster PID compared to traditional methods and, for the first time, fast and accurate simulation. This advancement addresses a major bottleneck in Cherenkov detector simulations involving photon tracking through complex optical elements. Our results leverage advancements in Vision Transformers, specifically hierarchical Swin Transformer and normalizing flows. These methods enable direct learning from real data and the reconstruction of complex topologies. We conclude by discussing the implications and future extensions of this work, which can offer capabilities for PID for multiple cutting-edge experiments like the future EIC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Low latency optical-based mode tracking with machine learning deployed on FPGAs on a tokamak</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-00128</link>
-    <guid isPermaLink="false">arxiv:2312.00128</guid>
-    <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yumou Wei et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Active feedback control in magnetic confinement fusion devices is desirable to mitigate plasma instabilities and enable robust operation. Optical high-speed cameras provide a powerful, non-invasive diagnostic and can be suitable for these applications. In this study, we process fast camera data, at rates exceeding 100kfps, on in situ Field Programmable Gate Array (FPGA) hardware to track magnetohydrodynamic (MHD) mode evolution and generate control signals in real-time. Our system utilizes a convolutional neural network (CNN) model which predicts the n=1 MHD mode amplitude and phase using camera images with better accuracy than other tested non-deep-learning-based methods. By implementing this model directly within the standard FPGA readout hardware of the high-speed camera diagnostic, our mode tracking system achieves a total trigger-to-output latency of 17.6μs and a throughput of up to 120kfps. This study at the High Beta Tokamak-Extended Pulse (HBT-EP) experiment demonstrates an FPGA-based high-speed camera data acquisition and processing system, enabling application in real-time machine-learning-based tokamak diagnostic and control as well as potential applications in other scientific domains.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sinkhorn algorithms and linear programming solvers for optimal partial transport problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-06481</link>
-    <guid isPermaLink="false">arxiv:2407.06481</guid>
-    <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikun Bai</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>In this note, we generalize the classical optimal partial transport (OPT) problem by modifying the mass destruction/creation term to function-based terms, introducing what we term ``generalized optimal partial transport&rsquo;&rsquo; problems. We then discuss the dual formulation of these problems and the associated Sinkhorn solver. Finally, we explore how these new OPT problems relate to classical optimal transport (OT) problems and introduce a linear programming solver tailored for these generalized scenarios.</p>]]></description>
   </item>
 
 </channel>

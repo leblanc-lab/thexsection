@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Enhancing next token prediction based pre-training for jet foundation models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-04149</link>
+    <guid isPermaLink="false">arxiv:2512.04149</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Next token prediction is an attractive pre-training task for jet foundation models, in that it is simulation free and enables excellent generative capabilities that can transfer across datasets. Here we study multiple improvements to next token prediction, building on the initial work of OmniJet-α. Instead of tokenizing particles and subsequently only using the token-ID as the model input for both the generative and the classification task, we adopt a hybrid setup, which allows us to use continuous feature vectors as model input while only using token-IDs in the next token prediction target. Secondly, we explore a combined pre-training strategy that combines masked particle modeling and generative learning objectives. Taken together, these changes greatly improve the performance in downstream classification tasks without any loss in generative performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine Can Automatically Discover Parametric Functions to Model HEP Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-19750</link>
+    <guid isPermaLink="false">arxiv:2607.19750</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>In HEP data analyses, finding an adequate function to model binned data has largely relied on a manual process: guess a functional form by intuition, fit, examine, then repeat until successful. We show that this iterative process can be automated by a machine using symbolic regression, which performs a data-driven search over function space without requiring prior knowledge of what an adequate function should look like. We present the SymbolFit package, which pairs symbolic regression with uncertainty modeling to target HEP analysis use cases, and demonstrate it on the CMS and ATLAS Run 2 dijet spectra: 560 independent seeded runs across seven simple fit configurations generated over 1000 functions fitting the spectra with χ²/NDF≈1, and 111 of the runs rediscovered the very dijet and UA2 functions used in published dijet searches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Classical Hardware Acceleration of Quantum Autoencoders for Real-Time Anomaly Detection in Collider Experiments</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-20302</link>
+    <guid isPermaLink="false">arxiv:2607.20302</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ivan Ge et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>Quantum machine learning (QML) algorithms in high energy physics (HEP) can efficiently represent and leverage long-range, high-order correlations in high-dimensional collider data, potentially with fewer parameters and favorable scaling relative to classical models. Deployment of QML in real-time collider applications such as trigger systems requires the ability to emulate and compile quantum circuits classically, then synthesize the resulting quantum gates onto low-latency hardware accelerators, namely field-programmable gate arrays (FPGAs). We present a study of variational quantum autoencoder models for real-time anomaly detection triggers in modern collider experiments. The models achieve performance comparable to state-of-the-art classical approaches and, after FPGA synthesis, satisfy resource usage and timing constraints consistent with trigger applications in future colliders. This work provides one of the first FPGA implementations of QML models for HEP triggers, enabling higher-capability models in today&rsquo;s classical data acquisition pipelines while advancing quantum readiness of collider experiment infrastructure.</p>]]></description>
+  </item>
 
   <item>
     <title>Linear convergence of proximal descent schemes on the Wasserstein space</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Othmane Mazhar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>We study nonparametric estimation of Schrödinger bridge (SB) drifts from i.i.d.\ data observed on a single time interval. Starting from the conditional-ratio form of the Schrödinger bridge time-series (SBTS) drift formula, we analyze a direct Nadaraya&ndash;Watson plug-in estimator built from kernelized numerator and denominator terms. Unlike recent SB analyses based on entropic-OT potentials, Sinkhorn iterations, or iterative bridge solvers, our approach works directly at the drift level and isolates \emph{statistical error} from optimization, approximation, and discretization error. Under Hölder regularity, a marginal-density floor, and bounded support, we prove a uniform non-asymptotic bound for admissible bandwidth pairs, a pointwise CLT under genuine undersmoothing, and an adaptive bandwidth selector satisfying an oracle inequality. We also prove a pivot-local minimax lower bound which, through an explicit uniform pivot, yields a global minimax lower bound under transparent compatibility conditions; hence the adaptive selector is minimax-rate optimal up to logarithmic factors. Synthetic experiments provide theorem-targeted diagnostics for finite-sample scaling, Gaussian approximation, and adaptive behavior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Provably Convergent and Practical Algorithm for Gromov--Wasserstein Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-04175</link>
-    <guid isPermaLink="false">arxiv:2605.04175</guid>
-    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ling Liang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gromov&ndash;Wasserstein optimal transport (GWOT) aligns metric measure spaces by matching their within-domain relational structures, but large-scale GWOT remains challenging because its objective is nonconvex and projection onto the transport polytope is often solved only approximately in practice. This leads to a gap between practical projected-gradient implementations and convergence theory, which typically assumes exact projections. For squared-loss GWOT, we propose an inexact projected-gradient framework with a verifiable feasibility-residual-based inexact condition for the projection subproblem. This condition is directly computable and avoids unknown quantities such as the exact projection point. Under this implementable condition, we prove subsequential convergence to stationary points and, with a mild tolerance-decay condition, convergence of the whole sequence. The resulting method retains the simplicity and sparsity of projected-gradient schemes while providing rigorous convergence guarantees, turning projected-gradient methods into a principled and scalable approach for GWOT with provable reliability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Globally Solving Unbalanced Optimal Transport and Density Control for Gaussian Distributions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-04246</link>
-    <guid isPermaLink="false">arxiv:2605.04246</guid>
-    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haruto Nakashima et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this article, we study unbalanced optimal transport (UOT) and establish a control-theoretic dynamical extension, which we call the unbalanced density control (UDC), for a class of Gaussian reference measures. In the static setting, we consider UOT with quadratic transport cost and Kullback&ndash;Leibler penalties on the marginals relative to prescribed Gaussian measures. We show that the infinite-dimensional variational problem admits an exact Gaussian reduction, yielding a finite-dimensional optimization over masses, means, and covariances, together with a closed-form expression for the optimal transported mass. We then formulate UDC for discrete-time linear systems, where the initial and terminal state measures are imposed softly through KL penalties and the intermediate evolution is governed by controlled linear dynamics with quadratic control cost. For this problem, we prove that any feasible solution can be replaced, without loss of optimality, by a Gaussian initial measure and an affine-Gaussian control policy. This leads to an exact finite-dimensional reformulation and, after a standard covariance-steering lifting, to an SDP-based optimization for fixed mass, again coupled with a closed-form mass update. We further establish existence of optimal solutions and identify a sufficient condition under which the affine-Gaussian UDC policy is deterministic. These results provide globally optimal solution methods for both Gaussian UOT and Gaussian UDC. Finally, we illustrate our results with several numerical examples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Entropic Riemannian Neural Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-04255</link>
-    <guid isPermaLink="false">arxiv:2605.04255</guid>
-    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro Micheli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Many machine learning problems involve data supported on curved spaces such as spheres, rotation groups, hyperbolic spaces, and general Riemannian manifolds, where Euclidean geometry can distort distances, averages, and the resulting optimal transport (OT) problem. Existing manifold OT methods have pursued amortized out-of-sample maps, while entropic regularization has made discrete OT more scalable, but these advantages have remained largely disjoint. We propose Entropic Riemannian Neural Optimal Transport (Entropic RNOT), a unified framework that combines intrinsic entropic OT with amortized out-of-sample evaluation on Riemannian manifolds. Our method learns a single target-side Schrödinger potential through a neural pullback parameterization, recovers the induced Gibbs coupling, and uses the resulting conditional laws to construct intrinsic transport surrogates. These include barycentric projections on Cartan-Hadamard manifolds and heat-smoothed conditional surrogates on stochastically complete manifolds, the latter turning possibly atomic target laws into absolutely continuous ones. For fixed regularization ε&gt;0, we prove that the proposed hypothesis class recovers the entropic optimal coupling in strong probabilistic metrics. As consequences, barycentric surrogates converge in L², while heat-smoothed surrogates are stable at fixed heat time and asymptotically unbiased as the heat time vanishes. The guarantees hold for compactly supported data on possibly noncompact manifolds. Empirically, our method matches or improves over Euclidean, tangent-space, and log-Euclidean baselines on benchmarks over 𝕊², SO(3), SPD(3), SE(3), and ℍ², scales favorably relative to discrete manifold Sinkhorn, and in a protein-ligand docking application, refines poses on SE(3) without retraining or per-instance optimization.</p>]]></description>
   </item>
 
 </channel>

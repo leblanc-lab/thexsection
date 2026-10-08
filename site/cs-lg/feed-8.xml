@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2111-03169</link>
+    <guid isPermaLink="false">arxiv:2111.03169</guid>
+    <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruijie Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the problem of designing hard negative sampling distributions for unsupervised contrastive representation learning. We propose and analyze a novel min-max framework that seeks a representation which minimizes the maximum (worst-case) generalized contrastive learning loss over all couplings (joint distributions between positive and negative samples subject to marginal constraints) and prove that the resulting min-max optimum representation will be degenerate. This provides the first theoretical justification for incorporating additional regularization constraints on the couplings. We re-interpret the min-max problem through the lens of Optimal Transport (OT) theory and utilize regularized transport couplings to control the degree of hardness of negative examples. Through experiments we demonstrate that the negative samples generated from our designed negative distribution are more similar to the anchor than those generated from the baseline negative distribution. We also demonstrate that entropic regularization yields negative sampling distributions with parametric form similar to that in a recent state-of-the-art negative sampling design and has similar performance in multiple datasets. Utilizing the uncovered connection with OT, we propose a new ground cost for designing the negative distribution and show improved performance of the learned representation on downstream tasks compared to the representation learned when using squared Euclidean cost.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DualCoOp++: Fast and Effective Adaptation to Multi-Label Recognition with Limited Annotations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2308-01890</link>
+    <guid isPermaLink="false">arxiv:2308.01890</guid>
+    <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ping Hu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Multi-label image recognition in the low-label regime is a task of great challenge and practical significance. Previous works have focused on learning the alignment between textual and visual spaces to compensate for limited image labels, yet may suffer from reduced accuracy due to the scarcity of high-quality multi-label annotations. In this research, we leverage the powerful alignment between textual and visual features pretrained with millions of auxiliary image-text pairs. We introduce an efficient and effective framework called Evidence-guided Dual Context Optimization (DualCoOp++), which serves as a unified approach for addressing partial-label and zero-shot multi-label recognition. In DualCoOp++ we separately encode evidential, positive, and negative contexts for target classes as parametric components of the linguistic input (i.e., prompts). The evidential context aims to discover all the related visual content for the target class, and serves as guidance to aggregate positive and negative contexts from the spatial domain of the image, enabling better distinguishment between similar categories. Additionally, we introduce a Winner-Take-All module that promotes inter-class interaction during training, while avoiding the need for extra parameters and costs. As DualCoOp++ imposes minimal additional learnable overhead on the pretrained vision-language framework, it enables rapid adaptation to multi-label recognition tasks with limited annotations and even unseen classes. Experiments on standard multi-label recognition benchmarks across two challenging low-label settings demonstrate the superior performance of our approach compared to state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Graph Harmony: Denoising and Nuclear-Norm Wasserstein Adaptation for Enhanced Domain Transfer in Graph-Structured Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-12361</link>
+    <guid isPermaLink="false">arxiv:2301.12361</guid>
+    <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mengxi Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Graph-structured data can be found in numerous domains, yet the scarcity of labeled instances hinders its effective utilization of deep learning in many scenarios. Traditional unsupervised domain adaptation (UDA) strategies for graphs primarily hinge on adversarial learning and pseudo-labeling. These approaches fail to effectively leverage graph discriminative features, leading to class mismatching and unreliable label quality. To navigate these obstacles, we develop the Denoising and Nuclear-Norm Wasserstein Adaptation Network (DNAN). DNAN employs the Nuclear-norm Wasserstein discrepancy (NWD), which can simultaneously achieve domain alignment and class distinguishment. DANA also integrates a denoising mechanism via a variational graph autoencoder that mitigates data noise. This denoising mechanism helps capture essential features of both source and target domains, improving the robustness of the domain adaptation process. Our comprehensive experiments demonstrate that DNAN outperforms state-of-the-art methods on standard UDA benchmarks for graph classification.</p>]]></description>
+  </item>
 
   <item>
     <title>19 Parameters Is All You Need: Tiny Neural Networks for Particle Physics</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudius Krause et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (David Shih) — original abstract; no AI summary.</em></p>
 <p>We introduce CaloFlow, a fast detector simulation framework based on normalizing flows. For the first time, we demonstrate that normalizing flows can reproduce many-channel calorimeter showers with extremely high fidelity, providing a fresh alternative to computationally expensive GEANT4 simulations, as well as other state-of-the-art fast simulation frameworks based on GANs and VAEs. Besides the usual histograms of physical features and images of calorimeter showers, we introduce a new metric for judging the quality of generative modeling: the performance of a classifier trained to differentiate real from generated images. We show that GAN-generated images can be identified by the classifier with nearly 100% accuracy, while images generated from CaloFlow are better able to fool the classifier. More broadly, normalizing flows offer several advantages compared to other state-of-the-art approaches (GANs and VAEs), including: tractable likelihoods; stable and convergent training; and principled model selection. Normalizing flows also provide a bijective mapping between data and the latent space, which could have other applications beyond simulation, for example, to detector unfolding.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloFlow II: Even Faster and Still Accurate Generation of Calorimeter Showers with Normalizing Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2110-11377</link>
-    <guid isPermaLink="false">arxiv:2110.11377</guid>
-    <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudius Krause et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (David Shih) — original abstract; no AI summary.</em></p>
-<p>Recently, we introduced CaloFlow, a high-fidelity generative model for GEANT4 calorimeter shower emulation based on normalizing flows. Here, we present CaloFlow v2, an improvement on our original framework that speeds up shower generation by a further factor of 500 relative to the original. The improvement is based on a technique called Probability Density Distillation, originally developed for speech synthesis in the ML literature, and which we develop further by introducing a set of powerful new loss terms. We demonstrate that CaloFlow v2 preserves the same high fidelity of the original using qualitative (average images, histograms of high level features) and quantitative (classifier metric between GEANT4 and generated samples) measures. The result is a generative model for calorimeter showers that matches the state-of-the-art in speed (a factor of 10⁴ faster than GEANT4) and greatly surpasses the previous state-of-the-art in fidelity.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Weakly-Supervised Anomaly Detection in the Milky Way</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-03761</link>
-    <guid isPermaLink="false">arxiv:2305.03761</guid>
-    <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mariel Pettee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, Ben Nachman, Mariel Pettee, David Shih) — original abstract; no AI summary.</em></p>
-<p>Large-scale astrophysics datasets present an opportunity for new machine learning techniques to identify regions of interest that might otherwise be overlooked by traditional searches. To this end, we use Classification Without Labels (CWoLa), a weakly-supervised anomaly detection method, to identify cold stellar streams within the more than one billion Milky Way stars observed by the Gaia satellite. CWoLa operates without the use of labeled streams or knowledge of astrophysical principles. Instead, we train a classifier to distinguish between mixed samples for which the proportions of signal and background samples are unknown. This computationally lightweight strategy is able to detect both simulated streams and the known stream GD-1 in data. Originally designed for high-energy collider physics, this technique may have broad applicability within astrophysics as well as other domains interested in identifying localized anomalies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Structures of Neural Network Effective Theories</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-02334</link>
-    <guid isPermaLink="false">arxiv:2305.02334</guid>
-    <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ian Banta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nathaniel Craig) — original abstract; no AI summary.</em></p>
-<p>We develop a diagrammatic approach to effective field theories (EFTs) corresponding to deep neural networks at initialization, which dramatically simplifies computations of finite-width corrections to neuron statistics. The structures of EFT calculations make it transparent that a single condition governs criticality of all connected correlators of neuron preactivations. Understanding of such EFTs may facilitate progress in both deep learning and field theory simulations.</p>]]></description>
   </item>
 
 </channel>

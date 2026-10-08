@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Physics Informed Convex Artificial Neural Networks (PICANNs) for Optimal Transport based Density Estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-01194</link>
+    <guid isPermaLink="false">arxiv:2104.01194</guid>
+    <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amanpreet Singh et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Mass Transport (OMT) is a well studied problem with a variety of applications in a diverse set of fields ranging from Physics to Computer Vision and in particular Statistics and Data Science. Since the original formulation of Monge in 1781 significant theoretical progress been made on the existence, uniqueness and properties of the optimal transport maps. The actual numerical computation of the transport maps, particularly in high dimensions, remains a challenging problem. By Brenier&rsquo;s theorem, the continuous OMT problem can be reduced to that of solving a non-linear PDE of Monge-Ampere type whose solution is a convex function. In this paper, building on recent developments of input convex neural networks and physics informed neural networks for solving PDE&rsquo;s, we propose a Deep Learning approach to solve the continuous OMT problem. To demonstrate the versatility of our framework we focus on the ubiquitous density estimation and generative modeling tasks in statistics and machine learning. Finally as an example we show how our framework can be incorporated with an autoencoder to estimate an effective probabilistic generative model.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Fast and Accurate Splitting Method for Optimal Transport: Analysis and Implementation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-11738</link>
+    <guid isPermaLink="false">arxiv:2110.11738</guid>
+    <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vien V. Mai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We develop a fast and reliable method for solving large-scale optimal transport (OT) problems at an unprecedented combination of speed and accuracy. Built on the celebrated Douglas-Rachford splitting technique, our method tackles the original OT problem directly instead of solving an approximate regularized problem, as many state-of-the-art techniques do. This allows us to provide sparse transport plans and avoid numerical issues of methods that use entropic regularization. The algorithm has the same cost per iteration as the popular Sinkhorn method, and each iteration can be executed efficiently, in parallel. The proposed method enjoys an iteration complexity O(1/ε) compared to the best-known O(1/ε²⁾ of the Sinkhorn method. In addition, we establish a linear convergence rate for our formulation of the OT problem. We detail an efficient GPU implementation of the proposed method that maintains a primal-dual stopping criterion at no extra cost. Substantial experiments demonstrate the effectiveness of our method, both in terms of computation times and robustness.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Clustering Market Regimes using the Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-11848</link>
+    <guid isPermaLink="false">arxiv:2110.11848</guid>
+    <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Blanka Horvath et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The problem of rapid and automated detection of distinct market regimes is a topic of great interest to financial mathematicians and practitioners alike. In this paper, we outline an unsupervised learning algorithm for clustering financial time-series into a suitable number of temporal segments (market regimes). As a special case of the above, we develop a robust algorithm that automates the process of classifying market regimes. The method is robust in the sense that it does not depend on modelling assumptions of the underlying time series as our experiments with real datasets show. This method &ndash; dubbed the Wasserstein k-means algorithm &ndash; frames such a problem as one on the space of probability measures with finite p^th moment, in terms of the p-Wasserstein distance between (empirical) distributions. We compare our WK-means approach with a more traditional clustering algorithms by studying the so-called maximum mean discrepancy scores between, and within clusters. In both cases it is shown that the WK-means algorithm vastly outperforms all considered competitor approaches. We demonstrate the performance of all approaches both in a controlled environment on synthetic data, and on real data.</p>]]></description>
+  </item>
 
   <item>
     <title>Matching Distributions via Optimal Transport for Semi-Supervised Learning</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Suhas Lohit et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Model compression methods are important to allow for easier deployment of deep learning models in compute, memory and energy-constrained environments such as mobile phones. Knowledge distillation is a class of model compression algorithm where knowledge from a large teacher network is transferred to a smaller student network thereby improving the student&rsquo;s performance. In this paper, we show how optimal transport-based loss functions can be used for training a student network which encourages learning student network parameters that help bring the distribution of student features closer to that of the teacher features. We present image classification results on CIFAR-100, SVHN and ImageNet and show that the proposed optimal transport loss functions perform comparably to or better than other loss functions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Learning of Graph Hierarchical Abstractions with Differentiable Coarsening and Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1912-11176</link>
-    <guid isPermaLink="false">arxiv:1912.11176</guid>
-    <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tengfei Ma et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Hierarchical abstractions are a methodology for solving large-scale graph problems in various disciplines. Coarsening is one such approach: it generates a pyramid of graphs whereby the one in the next level is a structural summary of the prior one. With a long history in scientific computing, many coarsening strategies were developed based on mathematically driven heuristics. Recently, resurgent interests exist in deep learning to design hierarchical methods learnable through differentiable parameterization. These approaches are paired with downstream tasks for supervised learning. In practice, however, supervised signals (e.g., labels) are scarce and are often laborious to obtain. In this work, we propose an unsupervised approach, coined OTCoarsening, with the use of optimal transport. Both the coarsening matrix and the transport cost matrix are parameterized, so that an optimal coarsening strategy can be learned and tailored for a given set of graphs. We demonstrate that the proposed approach produces meaningful coarse graphs and yields competitive performance compared with supervised methods for graph classification and regression.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Aligning Hyperbolic Representations: an Optimal Transport-based approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-01089</link>
-    <guid isPermaLink="false">arxiv:2012.01089</guid>
-    <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrés Hoyos-Idrobo</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Hyperbolic-spaces are better suited to represent data with underlying hierarchical relationships, e.g., tree-like data. However, it is often necessary to incorporate, through alignment, different but related representations meaningfully. This aligning is an important class of machine learning problems, with applications as ontology matching and cross-lingual alignment. Optimal transport (OT)-based approaches are a natural choice to tackle the alignment problem as they aim to find a transformation of the source dataset to match a target dataset, subject to some distribution constraints. This work proposes a novel approach based on OT of embeddings on the Poincaré model of hyperbolic spaces. Our method relies on the gyrobarycenter mapping on Möbius gyrovector spaces. As a result of this formalism, we derive extensions to some existing Euclidean methods of OT-based domain adaptation to their hyperbolic counterparts. Empirically, we show that both Euclidean and hyperbolic methods have similar performances in the context of retrieval.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Concentration bounds for linear Monge mapping estimation and optimal transport domain adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1905-10155</link>
-    <guid isPermaLink="false">arxiv:1905.10155</guid>
-    <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rémi Flamary et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This article investigates the quality of the estimator of the linear Monge mapping between distributions. We provide the first concentration result on the linear mapping operator and prove a sample complexity of n⁻¹/2 when using empirical estimates of first and second order moments. This result is then used to derive a generalization bound for domain adaptation with optimal transport. As a consequence, this method approaches the performance of theoretical Bayes predictor under mild conditions on the covariance structure of the problem. We also discuss the computational complexity of the linear mapping estimation and show that when the source and target are stationary the mapping is a convolution that can be estimated very efficiently using fast Fourier transforms. Numerical experiments reproduce the behavior of the proven bounds on simulated and real data for mapping estimation and domain adaptation on images.</p>]]></description>
   </item>
 
 </channel>
