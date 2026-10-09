@@ -39,6 +39,102 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Friday, October 9, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261010734-the-hidden-sunrise-in-the-energy-energy-correlator-matthew-d-schwartz-et-al"><a href="https://arxiv.org/abs/2610.10734">arXiv:2610.10734</a> — The hidden sunrise in the energy-energy correlator (Matthew D. Schwartz et al.)</h3>
+<p>This paper completes the analytic NNLO EEC in 𝒩=4 SYM. Ref. [1] had left one unevaluated two-fold integral F_R(ζ); this work evaluates it.</p>
+<p><strong>Polylogarithmic pieces.</strong>
+- Partial fractioning in the inner variable splits F_R into three parts: F_red₁ (purely polylogarithmic), F_K₁, and F_R₂.
+- F_R₂ has to be kept as a whole, because red₂ and K₂ separately diverge like (1−z̄)⁻² log²(1−z̄).
+- The polylog remainder P(ζ) = F_red₁ + Δ consists of HPLs of weight ≤5 on the alphabet {ζ, 1−ζ}. Notably, the √ζ letter present at NLO is absent, and the weight is non-uniform.</p>
+<p><strong>Elliptic sector.</strong>
+- The two square-root discriminants Q₁ and Q₂ are related by the Möbius map w = z̄/(z̄−1). Both are isomorphic to the equal-mass sunrise curve under S = (ζ−1)/ζ, and the j-invariants match identically.
+- Under this map the physical region 0&lt;ζ&lt;1 lands in the Euclidean sunrise region. The odd-looking singular point ζ = −1/8 is the 9m² threshold.
+- The coupled system for F_K₁, F_R₂ and a companion integral S₀ involves 𝓛 = ζ∘L_PF∘ζ⁻¹, which is second order. This bounds the result at elliptic: no K3 or Calabi–Yau geometry can appear.
+- Subtracting the coupled equations shows Δ = F_R₂ − F_K₁ is polylogarithmic, giving F_R = 2F_K₁ + P.
+- S₀ is written as weight-5 iterated Eisenstein integrals for Γ₁(6). The letters are ω₀ and ω₁ plus two new modular-weight-3 letters, ψ₁ω₀ and ζψ₁ω₀.</p>
+<p><strong>Numerics and the collinear limit.</strong>
+- Evaluation is by truncated q-series, with the collinear limit ζ→0 at q→0. About 75 terms give 50 digits at ζ = 3/11 (q₀ ≈ 0.17).
+- Per their error estimate N_dig ≈ N log₁₀(1/q₀) − 3, convergence degrades toward back-to-back, where q→1.</p>
+<p><strong>How central this is to the topic.</strong> The relevance to jet substructure is indirect: this is a full-angle, fixed-order result in 𝒩=4. The value for jets is mainly a clean collinear-limit expansion and a template for the QCD elliptic sector, which the authors assert but do not compute.</p>
+<p><strong>Caveats.</strong>
+- The provided text is truncated before the bootstrap section, so I can&rsquo;t assess those results.
+- Much of the technical work was done with AI under human supervision.</p>
+<h3 id="arxiv261012408-a-compact-interrogable-tree-tensor-network-jet-tagger-on-lund-declustering-trees-fabrizio-napolitano-et-al"><a href="https://arxiv.org/abs/2610.12408">arXiv:2610.12408</a> — A compact, interrogable Tree Tensor Network Jet Tagger on Lund declustering trees (Fabrizio Napolitano et al.)</h3>
+<p><strong>Architecture.</strong> A single shared trilinear core C ∈ ℝ^{6×χ×χ×χ} is contracted recursively along the C/A declustering tree. Inputs are the five LundNet5 coordinates in a projective-sphere encoding, plus a shared MLP residual. Optional QCD gates (α_s and splitting functions) and Sudakov gates modulate the tree message. At χ = 8 the model has 4014 parameters, against about 391k for LundNet5 and 366k for ParticleNet. Samples are particle-level Pythia (training) and Herwig (transfer), 2M jets per generator.</p>
+<p><strong>Performance:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Evaluation</th>
+<th>TTN</th>
+<th>LundNet5</th>
+<th>ParticleNet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q/g</td>
+<td>native AUC</td>
+<td>0.8917</td>
+<td>0.8941</td>
+<td>0.9014</td>
+</tr>
+<tr>
+<td>q/g</td>
+<td>Pythia→Herwig AUC</td>
+<td>0.8114</td>
+<td>0.8098</td>
+<td>0.8107</td>
+</tr>
+<tr>
+<td>top</td>
+<td>native AUC</td>
+<td>0.9531</td>
+<td>0.9574</td>
+<td>0.9592</td>
+</tr>
+<tr>
+<td>top</td>
+<td>native 1/ε_B at ε_S = 0.5</td>
+<td>132</td>
+<td>187</td>
+<td>204</td>
+</tr>
+<tr>
+<td>top</td>
+<td>Pythia→Herwig AUC</td>
+<td>0.9472</td>
+<td>0.9474</td>
+<td>0.9479</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Transfer AUCs agree within 0.002 across all three taggers in both tasks.</li>
+<li>The physics gates change AUC by at most 0.0011, so they bring no measurable gain.</li>
+</ul>
+<p><strong>Bond-dimension and k_t-cut scans.</strong>
+- q/g is nearly flat in χ, while top tagging improves with χ.
+- The default configuration has no k_t cut and is therefore <em>not</em> IRC safe. Imposing ln(k_t/GeV) &gt; −2 restores IRC safety at a cost of ≤0.003 AUC.
+- Raising the cut to 1 narrows the Pythia→Herwig gap; in top tagging the transfer AUC even exceeds the native one.</p>
+<p><strong>What&rsquo;s new: interrogability.</strong> Because the same map acts at every node, a tree truncated at depth D is processed with the learned vacuum state, exactly as at leaves during training.
+- Pythia/Herwig latent divergence concentrates at depths 10–15 and at ln k_t &lt; 0, mostly in gluons.
+- In the primary plane the divergence sits at ln(1/Δ) &gt; 4.</p>
+<p><strong>Caveats.</strong>
+- All results use a single training seed.
+- Baselines are not parameter-matched.
+- The smaller relative transfer loss partly reflects the TTN&rsquo;s lower nominal performance.
+- The readout was never trained on truncated trees.
+- There is no detector simulation.</p>
+<p><strong>Connection to the other paper.</strong> There is no substantive link to the EEC paper.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, October 8, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
@@ -1032,7 +1128,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-08 05:49 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-09 05:38 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

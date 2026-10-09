@@ -1,49 +1,56 @@
-# The Cross Section: rolling synthesis, week ending 2026-10-08
+# The Cross Section: rolling synthesis, week ending 2026-10-09
 
-This week the LZ high-energy-recoil story moved from rescue toward consolidation. Its papers now treat the solar-neutrino bound as a probe of which states make up the dark matter, rather than as a veto. Precision QCD kept producing corrections as large as the quoted errors, and jet vetoes reached third order. LHCb's $B_{s0}^*(5700)$ opened a new spectroscopy thread. A fractional-determinant idea links the order of the chiral transition to glueball decays. Experimentally, Super-K's first reactor-antineutrino observation added tension with JUNO. On the formal side, the week closed with a claimed nonperturbative lattice definition of the Standard Model.
+Five threads carried the week. The **neutrino mass ordering** got its strongest statement yet, and the solar–reactor $\Delta m^2_{21}$ question reopened. **LZ 248 keV** traffic stayed a trickle of one to three papers a day, but the solar-neutrino bound moved from veto toward composition probe. **Precision perturbation theory** kept producing "corrections the size of errors." **LLMs inside calculations** produced its most substantive result. **First-order phase transitions** emerged as a new two-day cluster. Spectroscopy (the $B_{s0}^*$ partner and X(2370)) and a lattice chiral-gauge claim supply the main open items.
 
 ## Running themes
 
-- **LZ recoil and the Higgsino solar bound (steady, consolidating).** The daily count stayed at a trickle of one to three papers. Viable readings went heavy: SUSY SU(5) Higgsinos at $\sim10^5$ GeV make a $p\to K^+\bar\nu$ prediction ([arXiv:2610.01613](https://arxiv.org/abs/2610.01613)), and 2 TeV to hundreds of TeV is comfortable ([arXiv:2610.03692](https://arxiv.org/abs/2610.03692)). Proposed escapes now target both annihilation ([arXiv:2610.05893](https://arxiv.org/abs/2610.05893)) and composition, with singlino ground states surviving ([arXiv:2610.09753](https://arxiv.org/abs/2610.09753)). Collider recasts close the elastic EFT readings below about 1 TeV ([arXiv:2610.06756](https://arxiv.org/abs/2610.06756)). Several fits still do not address the Sun at all ([arXiv:2610.00645](https://arxiv.org/abs/2610.00645), [arXiv:2610.08648](https://arxiv.org/abs/2610.08648)).
-- **Precision QCD: "corrections the size of errors" (heating).**
-  - Jet-vetoed Higgs reached N³LO+N³LL at ~3% ([arXiv:2610.03472](https://arxiv.org/abs/2610.03472), [arXiv:2610.03687](https://arxiv.org/abs/2610.03687)).
-  - Drell-Yan reached N³LO+approx. N⁴LL′ with a lattice Collins-Soper kernel and positive weights ([arXiv:2610.02169](https://arxiv.org/abs/2610.02169)).
-  - Squaring the full amplitude fixes negative exclusive rates ([arXiv:2610.04557](https://arxiv.org/abs/2610.04557), [arXiv:2610.04293](https://arxiv.org/abs/2610.04293)).
-  - Modelling the missing-mass distribution weakens a $D^+$ bound ([arXiv:2610.08606](https://arxiv.org/abs/2610.08606)).
-  - At the formal edges: the pole-mass renormalon is cured in Gross–Neveu ([arXiv:2610.10059](https://arxiv.org/abs/2610.10059)), and the $\alpha_s^7$ coefficient of $H\to gg$ is estimated at $-312\pm15$ ([arXiv:2610.09874](https://arxiv.org/abs/2610.09874)).
-- **Exotic spectroscopy (heating, new).** Three groups put the $B_{s1}$ partner at 5740–5755 MeV, but heavy-quark spin symmetry nearly fixes that mass, so the agreement says little. The real disagreement is over the bare $b\bar s$ core fraction ([arXiv:2610.07106](https://arxiv.org/abs/2610.07106), [arXiv:2610.07171](https://arxiv.org/abs/2610.07171)). Two potential-model claims also deserve scrutiny: a deeply bound fully charmed tetraquark ([arXiv:2610.07818](https://arxiv.org/abs/2610.07818)) and four, rather than seven, hidden-charm pentaquarks ([arXiv:2610.06009](https://arxiv.org/abs/2610.06009)).
-- **Fractional determinants, glueballs and the chiral transition order (steady).** Pisarski argues the chiral transition is generically second order ([arXiv:2610.00472](https://arxiv.org/abs/2610.00472)). The same device describes the $X(2370)$ decays ([arXiv:2610.00484](https://arxiv.org/abs/2610.00484)). Two independent scalar-glueball radius estimates converge near 0.28 fm ([arXiv:2610.01988](https://arxiv.org/abs/2610.01988), [arXiv:2610.08545](https://arxiv.org/abs/2610.08545)), though their radius definitions may differ.
-- **LLMs inside calculations and ML scaling (steady).** New entries include an open RAG pipeline over about 230K papers ([arXiv:2610.00891](https://arxiv.org/abs/2610.00891)), BootLoops for agentic multi-loop bootstrap ([arXiv:2610.02286](https://arxiv.org/abs/2610.02286)), and an agentic EEC resummation ([arXiv:2610.07145](https://arxiv.org/abs/2610.07145)). The scaling-law work spans tokenized event generation ([arXiv:2610.00569](https://arxiv.org/abs/2610.00569)) and 11 billion ATLAS jets ([arXiv:2610.06784](https://arxiv.org/abs/2610.06784)). A counterpoint to surrogate enthusiasm comes from HybridMC: generative flash simulation cannot reproduce ps-level photon timing ([arXiv:2610.08054](https://arxiv.org/abs/2610.08054)).
-- **Spin and quantum observables (steady).** Work covers polarization fractions ([arXiv:2610.03855](https://arxiv.org/abs/2610.03855)), the $bW$ spin density matrix ([arXiv:2610.04971](https://arxiv.org/abs/2610.04971)), $\tau\tau$ concurrence at the STCF ([arXiv:2610.03024](https://arxiv.org/abs/2610.03024)), and a common footing for entanglement and "magic" ([arXiv:2610.06791](https://arxiv.org/abs/2610.06791)).
+- **Mass ordering and oscillation parameters (heating up).** Jin et al. [arXiv:2610.12208](https://arxiv.org/abs/2610.12208) jointly fit public Super-K, DeepCore and ORCA-6 data and exclude inverted ordering at 3.3σ with no reactor input. This route is independent of JUNO's 2.1σ, which leaned on long-baseline $\Delta m^2_{31}$. It is a combination of public samples, not a collaboration result. Model-builders already take normal ordering as input ([arXiv:2610.11789](https://arxiv.org/abs/2610.11789), [arXiv:2610.10696](https://arxiv.org/abs/2610.10696)).
+- **LZ 248 keV and heavy Higgsinos (steady, low volume).**
+  - Freese et al. [arXiv:2610.03692](https://arxiv.org/abs/2610.03692) consolidate the heavy-Higgsino escape route. The thermal 1.1 TeV case survives only marginally, while 2 TeV and above at δ≈350–525 keV is comfortable.
+  - Jeong et al. [arXiv:2610.05893](https://arxiv.org/abs/2610.05893) evade the solar neutrino bound on the annihilation side. Anwar et al. [arXiv:2610.06756](https://arxiv.org/abs/2610.06756) use a monojet recast to exclude most sub-TeV elastic EFT readings.
+  - Lian et al. [arXiv:2610.09753](https://arxiv.org/abs/2610.09753) show that singlino ground states survive where Higgsino-pair fits overproduce solar neutrinos.
+  - Several model papers ([arXiv:2610.08648](https://arxiv.org/abs/2610.08648), [arXiv:2610.12443](https://arxiv.org/abs/2610.12443)) do not address solar capture. Watch for that gap.
+- **Corrections the size of errors (steady).**
+  - Gong et al. [arXiv:2610.04557](https://arxiv.org/abs/2610.04557) propose the complete-square prescription for exclusive rates, and Zhan et al. [arXiv:2610.04293](https://arxiv.org/abs/2610.04293) apply it. Gong et al. expect it to be argued about.
+  - Cai et al. [arXiv:2610.08606](https://arxiv.org/abs/2610.08606) find that modelling the missing-mass distribution weakens the $D^+$ bound.
+  - On renormalons, Marino et al. [arXiv:2610.10059](https://arxiv.org/abs/2610.10059) cancel the pole-mass ambiguity explicitly in a solvable model. Boito et al. [arXiv:2610.09874](https://arxiv.org/abs/2610.09874) estimate the $\alpha_s^7$ coefficient of $H\to gg$.
+  - Maier et al. [arXiv:2610.08282](https://arxiv.org/abs/2610.08282) supply four-loop $\Delta r$ input for FCC-ee $m_W$ projections.
+- **LLMs inside the calculation (heating up).** The thread moved from tooling to results. BootLoops [arXiv:2610.02286](https://arxiv.org/abs/2610.02286) offers LLM-operable bootstrap infrastructure. Chen et al. [arXiv:2610.07145](https://arxiv.org/abs/2610.07145) use a human-in-the-loop workflow for EEC resummation. Schwartz et al. [arXiv:2610.10734](https://arxiv.org/abs/2610.10734) complete the NNLO $\mathcal N=4$ EEC elliptic sector "with AI under human supervision."
+- **First-order transitions with controlled systematics (new, heating up).**
+  - Kitajima et al. [arXiv:2610.09257](https://arxiv.org/abs/2610.09257) find that Chern-Simons production survives strong supercooling.
+  - Li et al. [arXiv:2610.09325](https://arxiv.org/abs/2610.09325) add metric perturbations to bubble simulations.
+  - Gould et al. [arXiv:2610.10692](https://arxiv.org/abs/2610.10692) build 3D EFTs for strong transitions, with scale cancellation verified through NNLO.
+  - Buschmann et al. [arXiv:2610.12389](https://arxiv.org/abs/2610.12389) assemble many-bubble GW spectra from a two-bubble library.
+  - Goswami et al. [arXiv:2610.10350](https://arxiv.org/abs/2610.10350) derive the finite-size correction relevant to Pisarski's question on chiral transition order.
+- **Polarization and quantum observables (steady, background).** Contributions include the $bW$ spin density matrix [arXiv:2610.04971](https://arxiv.org/abs/2610.04971), STCF $\tau\tau$ concurrence [arXiv:2610.03024](https://arxiv.org/abs/2610.03024), and a common geometric footing for entanglement power and magic [arXiv:2610.06791](https://arxiv.org/abs/2610.06791).
 
 ## Turning points
 
-- **Dark Dimension graviton DM took two independent hits.** Near-threshold KK decays are $d$-wave, which excludes the flat-dimension reading ([arXiv:2610.01825](https://arxiv.org/abs/2610.01825); Lee et al. made a separate case the same week). Vafa's review still lists the scenario ([arXiv:2610.04909](https://arxiv.org/abs/2610.04909)). This thread is fading.
-- **The G-step Hubble-tension fix was excluded at 3–4σ** using red-dwarf stellar memory ([arXiv:2610.04048](https://arxiv.org/abs/2610.04048)).
-- **LZ-2024 excludes sub-100 GeV resonant Binos** at >5.9σ ($h$) and >4.1σ ($Z$), under conservative assumptions ([arXiv:2610.10219](https://arxiv.org/abs/2610.10219)).
-- **Super-K made its first reactor-antineutrino observation**, at ~6σ ([arXiv:2610.03143](https://arxiv.org/abs/2610.03143)).
-- **A claimed gauge-invariant overlap measure for SM-class chiral gauge theories** ([arXiv:2610.09093](https://arxiv.org/abs/2610.09093)). It holds on admissible fields only and is not yet a simulation recipe.
+- **Jet-vetoed Higgs reaches N³LO+N³LL** at ~3% uncertainty ([arXiv:2610.03687](https://arxiv.org/abs/2610.03687), with the three-loop anomalous dimension in [arXiv:2610.03472](https://arxiv.org/abs/2610.03472)). This is the likely new HL-LHC reference.
+- **Red dwarfs exclude G-step Hubble fixes** at 3.1–4.0σ [arXiv:2610.04048](https://arxiv.org/abs/2610.04048).
+- **LZ-2024 removes light resonant Binos** below 100 GeV at >4σ, under conservative assumptions [arXiv:2610.10219](https://arxiv.org/abs/2610.10219).
+- **ATLAS observes s-channel single top** at 5.1σ, consistent with the SM [arXiv:2610.11465](https://arxiv.org/abs/2610.11465).
+- **A claimed lattice definition of the SM.** Craig [arXiv:2610.09093](https://arxiv.org/abs/2610.09093) constructs a gauge-invariant overlap measure, valid only on admissible fields and not yet a simulation recipe.
 
 ## Open questions
 
-- **Chiral transition order.** Does 2+1 lattice data confirm a second-order transition? The new finite-size correction ([arXiv:2610.10350](https://arxiv.org/abs/2610.10350)) removes a systematic in exactly that data.
-- **$X(2370)$.** Is it a glueball or a $\phi h_1(1380)$ molecule? $\eta\eta\eta$ and $\eta\eta\eta'$ rates would decide.
-- **$B_{s0}^*$ structure.** The isospin-violating $B_s^0\pi^0$ width is the discriminator: 10–20 keV with a bare core versus Albaladejo's 34–82.5 keV. Watch for $B_{s1}(5747)$ in Run 3.
-- **$\Delta m^2_{21}$.** Super-K sits ~3σ above JUNO. Watch whether this sharpens, and how it tests the √2 relation ([arXiv:2610.06738](https://arxiv.org/abs/2610.06738)).
-- **Robustness of the solar bound.** It depends on poorly known elastic Higgsino–nucleon scattering ([arXiv:2610.03692](https://arxiv.org/abs/2610.03692)), and the exothermic excited-fraction regime remains open ([arXiv:2610.09516](https://arxiv.org/abs/2610.09516)).
-- **Belle II $K\nu\bar\nu$ excess.** The standard-cosmology reading is marginal ([arXiv:2610.00460](https://arxiv.org/abs/2610.00460)). FCC-ee $\Lambda_b$ modes could reach its chirality and CP structure ([arXiv:2610.04309](https://arxiv.org/abs/2610.04309)).
-- **Smaller watch items:**
-  - COMET muon yields run ~30% above Geant4 ([arXiv:2610.02855](https://arxiv.org/abs/2610.02855)).
-  - The lattice-versus-experiment $\Xi_c\to\Xi$ puzzle ([arXiv:2610.03603](https://arxiv.org/abs/2610.03603)).
-  - Whether "admissible" fields limit Craig's construction.
+- **Solar vs reactor $\Delta m^2_{21}$.** Super-K's first reactor result [arXiv:2610.03143](https://arxiv.org/abs/2610.03143) sits ~3σ above JUNO but only 1.9σ from SK's solar data. This also tests Alikhanov's √2 relation [arXiv:2610.06738](https://arxiv.org/abs/2610.06738).
+- **Correlated systematics in the 3.3σ ordering fit.** This is the piece to scrutinize, and collaboration follow-ups would settle it.
+- **LZ solar bound.** It depends on poorly known elastic Higgsino–nucleon scattering, per Freese. Is it a veto or a composition probe?
+- **$B_{s1}$ partner.** Three groups agree on a mass of 5740–5755 MeV, but heavy-quark spin symmetry nearly fixes that. The discriminator is the isospin-violating $B_s^0\pi^0$ width, predicted at 10–20 keV in [arXiv:2610.07171](https://arxiv.org/abs/2610.07171) versus 34–82.5 keV from Albaladejo. Hao et al. [arXiv:2610.07106](https://arxiv.org/abs/2610.07106) name Run 3 radiative modes as the test.
+- **X(2370) glueball.** A BESIII refit with cross-channel interference [arXiv:2610.11937](https://arxiv.org/abs/2610.11937) requires no X(2370), while the glueball-vs-$\phi h_1$ question remains open.
+- **Cosmic birefringence origin.** The low-ℓ EB shape [arXiv:2610.02667](https://arxiv.org/abs/2610.02667) and anisotropic lepton-asymmetry signatures [arXiv:2610.09748](https://arxiv.org/abs/2610.09748) offer competing discriminants.
+- **Smaller items to watch:**
+  - Belle II $K\nu\bar\nu$ enhancement, with a new chirality probe in [arXiv:2610.04309](https://arxiv.org/abs/2610.04309).
+  - COMET Phase-α muon yields running ~30% above Geant4 [arXiv:2610.02855](https://arxiv.org/abs/2610.02855).
+  - Deeply bound $cc\bar c\bar c$ claim from a discretized potential model [arXiv:2610.07818](https://arxiv.org/abs/2610.07818).
 
 ## Recurring references
 
-- **LZ anchors:** [arXiv:2610.01613](https://arxiv.org/abs/2610.01613), [arXiv:2610.03692](https://arxiv.org/abs/2610.03692), [arXiv:2610.05893](https://arxiv.org/abs/2610.05893), [arXiv:2610.09753](https://arxiv.org/abs/2610.09753), [arXiv:2610.10219](https://arxiv.org/abs/2610.10219).
-- **Precision QCD anchors:** [arXiv:2610.02169](https://arxiv.org/abs/2610.02169), [arXiv:2610.03687](https://arxiv.org/abs/2610.03687), [arXiv:2610.04557](https://arxiv.org/abs/2610.04557).
-- **Chiral transition and glueballs:** [arXiv:2610.00472](https://arxiv.org/abs/2610.00472), [arXiv:2610.00484](https://arxiv.org/abs/2610.00484), [arXiv:2610.01988](https://arxiv.org/abs/2610.01988), [arXiv:2610.08545](https://arxiv.org/abs/2610.08545).
-- **Spectroscopy:** [arXiv:2610.07106](https://arxiv.org/abs/2610.07106), [arXiv:2610.07171](https://arxiv.org/abs/2610.07171).
-- **Neutrinos:** [arXiv:2610.03143](https://arxiv.org/abs/2610.03143).
-- **Dark Dimension:** [arXiv:2610.01825](https://arxiv.org/abs/2610.01825).
-- **Tooling:** [arXiv:2610.02286](https://arxiv.org/abs/2610.02286), [arXiv:2610.06784](https://arxiv.org/abs/2610.06784), [arXiv:2610.07159](https://arxiv.org/abs/2610.07159) (Magnus oscillation solver, likely to be widely adopted).
-- **Lattice SM:** [arXiv:2610.09093](https://arxiv.org/abs/2610.09093).
+- **Neutrinos:** [arXiv:2610.12208](https://arxiv.org/abs/2610.12208), [arXiv:2610.03143](https://arxiv.org/abs/2610.03143), [arXiv:2610.06738](https://arxiv.org/abs/2610.06738)
+- **LZ / Higgsinos:** [arXiv:2610.03692](https://arxiv.org/abs/2610.03692), [arXiv:2610.09753](https://arxiv.org/abs/2610.09753), [arXiv:2610.10219](https://arxiv.org/abs/2610.10219)
+- **Precision:** [arXiv:2610.03687](https://arxiv.org/abs/2610.03687), [arXiv:2610.04557](https://arxiv.org/abs/2610.04557), [arXiv:2610.10059](https://arxiv.org/abs/2610.10059)
+- **LLM-assisted calculation:** [arXiv:2610.02286](https://arxiv.org/abs/2610.02286), [arXiv:2610.10734](https://arxiv.org/abs/2610.10734)
+- **Phase transitions:** [arXiv:2610.10692](https://arxiv.org/abs/2610.10692), [arXiv:2610.09257](https://arxiv.org/abs/2610.09257)
+- **Spectroscopy:** [arXiv:2610.07106](https://arxiv.org/abs/2610.07106), [arXiv:2610.11937](https://arxiv.org/abs/2610.11937)
+- **Lattice chiral gauge theory:** [arXiv:2610.09093](https://arxiv.org/abs/2610.09093), followed by Sen's Hamiltonian route [arXiv:2610.11035](https://arxiv.org/abs/2610.11035)

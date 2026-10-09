@@ -6,7 +6,38 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Neural-Network-Assisted Binary Template Construction for Matrix-Based Pattern Matching in the STCF MDC</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-04271</link>
+    <guid isPermaLink="false">arxiv:2607.04271</guid>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhaoli Guo et al.</dc:creator>
+    <description><![CDATA[<p>This paper introduces a framework to optimize the binary template libraries used for MDC local segment finding, moving beyond manual rule-based construction. The authors employ a neural network as an offline differentiable optimization tool to learn template parameters—specifically &ldquo;trigger&rdquo; (core skeleton) and &ldquo;recovery&rdquo; (envelope) templates—by minimizing a multi-objective loss function that balances signal retention, noise rejection, and template redundancy. Crucially, the neural network is used only for training; the resulting binary templates are exported for use in a standard bitwise pattern-matching routine, preserving deterministic and low-latency online execution.</p>
+<p>The framework successfully covers the p_T &gt; 120 MeV/c range, maintaining high signal retention even under background conditions up to 3x the nominal rate. Throughput reaches ~60 kHz per GPU, which scales to &gt;200 kHz on multi-GPU systems. A notable caveat is the observed trade-off between momentum coverage and output fraction: extending coverage to the lowest momentum tracks (where local segments become highly inclined) increases the output fraction, as these templates become sparser and more susceptible to background triggers. The authors suggest that for very low-momentum particles that do not fully traverse the MDC, this template-based finding should be treated as a preselection step for global track-finding algorithms rather than a standalone reconstruction solution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Naturally Light Composite Higgs as a Protected Collective Eigenmode</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-04136</link>
+    <guid isPermaLink="false">arxiv:2607.04136</guid>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gauhar Abbas</dc:creator>
+    <description><![CDATA[<p>This paper defines a new class of light composite Higgs models where the Higgs is protected as an &ldquo;eigenvalue&rdquo; of a strongly coupled scalar kernel rather than by a coset shift symmetry or accidental criticality. The author provides three basis-invariant diagnostics to classify light scalars: the sector participation number (P_sec), the sector gap ratio (R_coll), and the microscopic sensitivity (Δ_g). A Higgs is &ldquo;protected&rdquo; if R_coll ≫1, P_sec &gt; 1, and Δ_g = 𝒪(1). The author demonstrates this mechanism using a Dark Technicolor (DTC) topology where a rank-one locking invariant forbids tree-level curvature, and a universal DQCD bridge suppresses one-loop hard curvature, leading to Δ_g = 2.</p>
+<p>The theory offers a falsifiable path via sector-restricted GEVP lattice spectroscopy, where the sensitivity of the mass to coupling variations can be scanned. The author notes that while the scalar protection is structural, the model remains subject to the oblique S parameter constraints; these are addressed here via a hidden-local link mechanism that effectively decouples technicolor vectors from the electroweak vacuum. The primary caveat is the dependence on the assumption of a universal DQCD-generated constituent mass for bridge fermions; non-universality in the DQCD bridge immediately regenerates hard sensitivity, shifting the model back into the &ldquo;accidental cancellation&rdquo; category.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neutron stars with an agnostic Dark sector: Core and Halo configurations from a two-fluid approach</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-03840</link>
+    <guid isPermaLink="false">arxiv:2607.03840</guid>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Asit karan et al.</dc:creator>
+    <description><![CDATA[<p>The authors employ a two-fluid Tolman–Oppenheimer–Volkoff (TOV) framework to investigate dark-matter-admixed neutron stars (DMANSs) without assuming specific dark sector microphysics. By combining chiral effective field theory (low density) and perturbative QCD (high density) for nuclear matter with a speed-of-sound interpolation scheme for both nuclear and dark fluids, they generate ∼10⁵ mass-radius sequences. They find that light dark matter (m_D ≲0.3 GeV) preferentially forms extended halos that increase tidal deformability, while heavy dark matter (m_D ≳0.7 GeV) forms compact cores that enhance compactness.</p>
+<p>This work marks a significant shift toward &ldquo;dark sector agnosticism,&rdquo; replacing model-specific assumptions with thermodynamically consistent speed-of-sound profiles. By confronting these configurations with GW170817 tidal bounds and NICER mass-radius data, they establish robust constraints—most notably that the dark matter fraction f_DM ≲0.11 for light models. The analysis demonstrates that the dominant observational diagnostic shifts from gravitational-wave tidal deformability (for halos) to NICER mass-radius measurements (for cores), providing a clear roadmap for future multi-messenger observations.</p>
+<p>The caveat is that their agnostic framework relies on the assumption that the dark matter is well-described by a free Fermi gas at low density (n &lt; 0.1 n_0) before the speed-of-sound interpolation begins. While this provides a conservative boundary, it excludes more exotic, non-degenerate, or strongly interacting dark sector candidates.</p>]]></description>
+  </item>
 
   <item>
     <title>Relativistic Vorticity in the Quark-Gluon Plasma: Generation Symmetries, Explosive Dilution, and Azimuthal Spin Alignment</title>
