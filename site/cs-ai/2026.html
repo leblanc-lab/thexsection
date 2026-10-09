@@ -36,17 +36,62 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">653 papers</span>
-  <span class="count">518 days</span>
+  <span class="count">656 papers</span>
+  <span class="count">519 days</span>
   <span class="count">since 2012</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">233</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">236</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Friday, October 9, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-11737">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.11737" target="_blank" rel="noopener">arXiv:2610.11737</a>
+      
+      <a class="permalink" href="#a2610-11737" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Uncovering and Fixing Collider Bias in Bayesian PINNs</h3>
+    <p class="byline">Michael Obermayr et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Bayesian physics-informed neural networks (B-PINNs) are a popular framework for parameter and state inference from sparse or noisy observations. They are commonly formulated via a collider structure, in which physical and trajectory parameters are assumed to be a priori independent and become coupled through virtual likelihoods on differential-equation residuals that enforce physical consistency. We show that this modeling choice can induce severe systematic bias in the posterior over physical parameters: even when the prior is favorably centered on the ground-truth parameters, the resulting posterior can drift away and concentrate far from them. As a remedy, we advocate a hierarchical chain model in which physics generates trajectories, which in turn generate observations. The chain model does not suffer from this posterior bias, but it poses a harder, so-called doubly intractable, inference problem due to a physics-dependent normalization constant. This challenge can be resolved by discretizing the underlying stochastic dynamics, after which the chain posterior can be sampled exactly with particle MCMC. We identify two distinct mechanisms characterizing the collider bias, derive analytical approximations of their magnitudes, and establish diagnostic criteria for predicting when standard B-PINNs remain reliable. Experiments confirm the predicted bias and show that the chain formulation successfully avoids it.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-12360">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.12360" target="_blank" rel="noopener">arXiv:2610.12360</a>
+      
+      <a class="permalink" href="#a2610-12360" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict</h3>
+    <p class="byline">Kaiser Sun et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>When retrieved evidence contradicts an agent&rsquo;s prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus primarily on task success, offering limited insight into how agents handle such conflicts. We propose to evaluate agents on epistemic humility (EH): the agent&rsquo;s willingness to recognize, act on, and communicate uncertainty during task execution. We operationalize EH through three trajectory-level behavioral dimensions: Identify, Solve, and Escalate (ISE). Through knowledge conflict, situations where the backbone language model&rsquo;s parametric knowledge contradicts the evidence it encounters, or where two contextual sources disagree, we evaluate two conflict settings: (1) controlled conflict and (2) naturally occurring conflict during multi-step agentic execution, each paired with matched no-conflict controls. Evaluating four agents, we find that higher task accuracy does not necessarily correspond to greater epistemic humility: some high-accuracy configurations recognize conflicts during execution but do not communicate unresolved uncertainty in their incorrect final answers. Trajectory-level analysis further reveals that agents frequently detect conflicts in early steps of execution but fail to maintain or resolve them in later steps. Finally, we show that model-level interventions can improve EH, but often at the cost of task accuracy, suggesting that epistemic humility emerges from the interaction among the backbone model, agent harness, and evaluation environment.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-12375">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.12375" target="_blank" rel="noopener">arXiv:2610.12375</a>
+      
+      <a class="permalink" href="#a2610-12375" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport</h3>
+    <p class="byline">Babak Barazandeh et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Agents are deployed in applications from trip planners and stock trading to IT incident triage. In most cases, LLM agents work autonomously with minimal rule-based safeguarding, leading to cost and safety issues from irreversible actions. Recent works resolve this either by using a safeguard agent to monitor behavior or evaluating logs post-hoc. The first adds cost and latency to every step; the second delivers its verdict after the run, when tokens are burned and damage is done. To overcome this, we propose OnTrack, a streaming monitoring mechanism that compares an agent&rsquo;s steps and dependencies against recorded successful runs to alert users or block the agent in about a millisecond per step. We study this problem in three regimes of decreasing access: full reference access (historical runs and tool schemas), intermediate access (only tool schemas), and no prior knowledge (only step logs as generated). Expectation of OnTrack&rsquo;s monitoring capabilities reduces as data access drops, ranging from plan violation detection to identifying loops, stalls, and repeated tool calls. Finally, we evaluate OnTrack using SWE-bench trajectories. Based on the first 8 steps, our method ranks failing trajectories below succeeding ones better than content similarity approaches (+0.057 AUROC). With an abort policy, we save about 18% of compute that would be burned on failing runs, where 83% of interrupted runs were actually heading to failure (5 out of 6 aborts were correct).</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -4253,7 +4298,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-09 05:38 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-09 05:50 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Automatic Outlier Rectification via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-14067</link>
+    <guid isPermaLink="false">arxiv:2403.14067</guid>
+    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose Blanchet et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In this paper, we propose a novel conceptual framework to detect outliers using optimal transport with a concave cost function. Conventional outlier detection approaches typically use a two-stage procedure: first, outliers are detected and removed, and then estimation is performed on the cleaned data. However, this approach does not inform outlier removal with the estimation task, leaving room for improvement. To address this limitation, we propose an automatic outlier rectification mechanism that integrates rectification and estimation within a joint optimization framework. We take the first step to utilize the optimal transport distance with a concave cost function to construct a rectification set in the space of probability distributions. Then, we select the best distribution within the rectification set to perform the estimation task. Notably, the concave cost function we introduced in this paper is the key to making our estimator effectively identify the outlier during the optimization process. We demonstrate the effectiveness of our approach over conventional approaches in simulations and empirical analyses for mean estimation, least absolute regression, and the fitting of option implied volatility surfaces.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTSeg: Multi-prompt Sinkhorn Attention for Zero-Shot Semantic Segmentation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-14183</link>
+    <guid isPermaLink="false">arxiv:2403.14183</guid>
+    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kwanyoung Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>The recent success of CLIP has demonstrated promising results in zero-shot semantic segmentation by transferring muiltimodal knowledge to pixel-level classification. However, leveraging pre-trained CLIP knowledge to closely align text embeddings with pixel embeddings still has limitations in existing approaches. To address this issue, we propose OTSeg, a novel multimodal attention mechanism aimed at enhancing the potential of multiple text prompts for matching associated pixel embeddings. We first propose Multi-Prompts Sinkhorn (MPS) based on the Optimal Transport (OT) algorithm, which leads multiple text prompts to selectively focus on various semantic features within image pixels. Moreover, inspired by the success of Sinkformers in unimodal settings, we introduce the extension of MPS, called Multi-Prompts Sinkhorn Attention (MPSA) , which effectively replaces cross-attention mechanisms within Transformer framework in multimodal settings. Through extensive experiments, we demonstrate that OTSeg achieves state-of-the-art (SOTA) performance with significant gains on Zero-Shot Semantic Segmentation (ZS3) tasks across three benchmark datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Arbitrary Distributions Mapping via SyMOT-Flow: A Flow-based Approach Integrating Maximum Mean Discrepancy and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2308-13815</link>
+    <guid isPermaLink="false">arxiv:2308.13815</guid>
+    <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhe Xiong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Finding a transformation between two unknown probability distributions from finite samples is crucial for modeling complex data distributions and performing tasks such as sample generation, domain adaptation and statistical inference. One powerful framework for such transformations is normalizing flow, which transforms an unknown distribution into a standard normal distribution using an invertible network. In this paper, we introduce a novel model called SyMOT-Flow that trains an invertible transformation by minimizing the symmetric maximum mean discrepancy between samples from two unknown distributions, and an optimal transport cost is incorporated as regularization to obtain a short-distance and interpretable transformation. The resulted transformation leads to more stable and accurate sample generation. Several theoretical results are established for the proposed model and its effectiveness is validated with low-dimensional illustrative examples as well as high-dimensional bi-modality medical image generation through the forward and reverse flows.</p>]]></description>
+  </item>
 
   <item>
     <title>Deep(er) Reconstruction of Imaging Cherenkov Detectors with Swin Transformers and Normalizing Flow Models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Debajyoti Sengupta et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet constituents, LHC) — original abstract; no AI summary.</em></p>
 <p>We introduce a new technique called Drapes to enhance the sensitivity in searches for new physics at the LHC. By training diffusion models on side-band data, we show how background templates for the signal region can be generated either directly from noise, or by partially applying the diffusion process to existing data. In the partial diffusion case, data can be drawn from side-band regions, with the inverse diffusion performed for new target conditional values, or from the signal region, preserving the distribution over the conditional property that defines the signal region. We apply this technique to the hunt for resonances using the LHCO di-jet dataset, and achieve state-of-the-art performance for background template generation using high level input features. We also show how Drapes can be applied to low level inputs with jet constituents, reducing the model dependence on the choice of input observables. Using jet constituents we can further improve sensitivity to the signal process, but observe a loss in performance where the signal significance before applying any selection is below 4σ.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Residual ANODE</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-11629</link>
-    <guid isPermaLink="false">arxiv:2312.11629</guid>
-    <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ranit Das et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>We present R-ANODE, a new method for data-driven, model-agnostic resonant anomaly detection that raises the bar for both performance and interpretability. The key to R-ANODE is to enhance the inductive bias of the anomaly detection task by fitting a normalizing flow directly to the small and unknown signal component, while holding fixed a background model (also a normalizing flow) learned from sidebands. In doing so, R-ANODE is able to outperform all classifier-based, weakly-supervised approaches, as well as the previous ANODE method which fit a density estimator to all of the data in the signal region instead of just the signal. We show that the method works equally well whether the unknown signal fraction is learned or fixed, and is even robust to signal fraction misspecification. Finally, with the learned signal model we can sample and gain qualitative insights into the underlying anomaly, which greatly enhances the interpretability of resonant anomaly detection and offers the possibility of simultaneously discovering and characterizing the new physics that could be hiding in the data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multiple Hypothesis Dropout: Estimating the Parameters of Multi-Modal Output Distributions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-11735</link>
-    <guid isPermaLink="false">arxiv:2312.11735</guid>
-    <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David D. Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>In many real-world applications, from robotics to pedestrian trajectory prediction, there is a need to predict multiple real-valued outputs to represent several potential scenarios. Current deep learning techniques to address multiple-output problems are based on two main methodologies: (1) mixture density networks, which suffer from poor stability at high dimensions, or (2) multiple choice learning (MCL), an approach that uses M single-output functions, each only producing a point estimate hypothesis. This paper presents a Mixture of Multiple-Output functions (MoM) approach using a novel variant of dropout, Multiple Hypothesis Dropout. Unlike traditional MCL-based approaches, each multiple-output function not only estimates the mean but also the variance for its hypothesis. This is achieved through a novel stochastic winner-take-all loss which allows each multiple-output function to estimate variance through the spread of its subnetwork predictions. Experiments on supervised learning problems illustrate that our approach outperforms existing solutions for reconstructing multimodal output distributions. Additional studies on unsupervised learning problems show that estimating the parameters of latent posterior distributions within a discrete autoencoder significantly improves codebook efficiency, sample quality, precision and recall.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Machine-Learned Exclusion Limits without Binning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-04806</link>
-    <guid isPermaLink="false">arxiv:2211.04806</guid>
-    <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ernesto Arganda et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Machine-Learned Likelihoods (MLL) combines machine-learning classification techniques with likelihood-based inference tests to estimate the experimental sensitivity of high-dimensional data sets. We extend the MLL method by including Kernel Density Estimators (KDE) to avoid binning the classifier output to extract the resulting one-dimensional signal and background probability density functions. We first test our method on toy models generated with multivariate Gaussian distributions, where the true probability distribution functions are known. Later, we apply the method to two cases of interest at the LHC: a search for exotic Higgs bosons, and a Z&rsquo; boson decaying into lepton pairs. In contrast to physical-based quantities, the typical fluctuations of the ML outputs give non-smooth probability distributions for pure-signal and pure-background samples. The non-smoothness is propagated into the density estimation due to the good performance and flexibility of the KDE method. We study its impact on the final significance computation, and we compare the results using the average of several independent ML output realizations, which allows us to obtain smoother distributions. We conclude that the significance estimation turns out to be not sensible to this issue.</p>]]></description>
   </item>
 
 </channel>

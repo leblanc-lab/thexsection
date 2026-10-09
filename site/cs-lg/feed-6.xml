@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Re-Simulation-based Self-Supervised Learning for Pre-Training Foundation Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-07066</link>
+    <guid isPermaLink="false">arxiv:2403.07066</guid>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Philip Harris et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Self-Supervised Learning (SSL) is at the core of training modern large machine learning models, providing a scheme for learning powerful representations that can be used in a variety of downstream tasks. However, SSL strategies must be adapted to the type of training data and downstream tasks required. We propose RS3L (&ldquo;Re-simulation-based self-supervised representation learning&rdquo;), a novel simulation-based SSL strategy that employs a method of re-simulation to drive data augmentation for contrastive learning in the physical sciences, particularly, in fields that rely on stochastic simulators. By intervening in the middle of the simulation process and re-running simulation components downstream of the intervention, we generate multiple realizations of an event, thus producing a set of augmentations covering all physics-driven variations available in the simulator. Using experiments from high-energy physics, we explore how this strategy may enable the development of a foundation model; we show how RS3L pre-training enables powerful performance in downstream tasks such as discrimination of a variety of objects and uncertainty mitigation. In addition to our results, we make the RS3L dataset publicly available for further studies on how to improve SSL strategies.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Tree-Wasserstein Distance for High Dimensional Data with a Latent Feature Hierarchy</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-21107</link>
+    <guid isPermaLink="false">arxiv:2410.21107</guid>
+    <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ya-Wei Eileen Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Finding meaningful distances between high-dimensional data samples is an important scientific task. To this end, we propose a new tree-Wasserstein distance (TWD) for high-dimensional data with two key aspects. First, our TWD is specifically designed for data with a latent feature hierarchy, i.e., the features lie in a hierarchical space, in contrast to the usual focus on embedding samples in hyperbolic space. Second, while the conventional use of TWD is to speed up the computation of the Wasserstein distance, we use its inherent tree as a means to learn the latent feature hierarchy. The key idea of our method is to embed the features into a multi-scale hyperbolic space using diffusion geometry and then present a new tree decoding method by establishing analogies between the hyperbolic embedding and trees. We show that our TWD computed based on data observations provably recovers the TWD defined with the latent feature hierarchy and that its computation is efficient and scalable. We showcase the usefulness of the proposed TWD in applications to word-document and single-cell RNA-sequencing datasets, demonstrating its advantages over existing TWDs and methods based on pre-trained models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Detecting OOD Samples via Optimal Transport Scoring Function</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-16115</link>
+    <guid isPermaLink="false">arxiv:2502.16115</guid>
+    <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Heng Gao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>To deploy machine learning models in the real world, researchers have proposed many OOD detection algorithms to help models identify unknown samples during the inference phase and prevent them from making untrustworthy predictions. Unlike methods that rely on extra data for outlier exposure training, post hoc methods detect Out-of-Distribution (OOD) samples by developing scoring functions, which are model agnostic and do not require additional training. However, previous post hoc methods may fail to capture the geometric cues embedded in network representations. Thus, in this study, we propose a novel score function based on the optimal transport theory, named OTOD, for OOD detection. We utilize information from features, logits, and the softmax probability space to calculate the OOD score for each test sample. Our experiments show that combining this information can boost the performance of OTOD with a certain margin. Experiments on the CIFAR-10 and CIFAR-100 benchmarks demonstrate the superior performance of our method. Notably, OTOD outperforms the state-of-the-art method GEN by 7.19% in the mean FPR@95 on the CIFAR-10 benchmark using ResNet-18 as the backbone, and by 12.51% in the mean FPR@95 using WideResNet-28 as the backbone. In addition, we provide theoretical guarantees for OTOD. The code is available in https://github.com/HengGao12/OTOD.</p>]]></description>
+  </item>
 
   <item>
     <title>Score-Based Diffusion Policy Compatible with Reinforcement Learning via Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Golling et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider, Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>We propose masked particle modeling (MPM) as a self-supervised method for learning generic, transferable, and reusable representations on unordered sets of inputs for use in high energy physics (HEP) scientific data. This work provides a novel scheme to perform masked modeling based pre-training to learn permutation invariant functions on sets. More generally, this work provides a step towards building large foundation models for HEP that can be generically pre-trained with self-supervised learning and later fine-tuned for a variety of down-stream tasks. In MPM, particles in a set are masked and the training objective is to recover their identity, as defined by a discretized token representation of a pre-trained vector quantized variational autoencoder. We study the efficacy of the method in samples of high energy jets at collider physics experiments, including studies on the impact of discretization, permutation invariance, and ordering. We also study the fine-tuning capability of the model, showing that it can be adapted to tasks such as supervised and weakly supervised jet classification, and that the model can transfer efficiently with small fine-tuning data sets to new classes and new data domains.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Automatic Outlier Rectification via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-14067</link>
-    <guid isPermaLink="false">arxiv:2403.14067</guid>
-    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose Blanchet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose a novel conceptual framework to detect outliers using optimal transport with a concave cost function. Conventional outlier detection approaches typically use a two-stage procedure: first, outliers are detected and removed, and then estimation is performed on the cleaned data. However, this approach does not inform outlier removal with the estimation task, leaving room for improvement. To address this limitation, we propose an automatic outlier rectification mechanism that integrates rectification and estimation within a joint optimization framework. We take the first step to utilize the optimal transport distance with a concave cost function to construct a rectification set in the space of probability distributions. Then, we select the best distribution within the rectification set to perform the estimation task. Notably, the concave cost function we introduced in this paper is the key to making our estimator effectively identify the outlier during the optimization process. We demonstrate the effectiveness of our approach over conventional approaches in simulations and empirical analyses for mean estimation, least absolute regression, and the fitting of option implied volatility surfaces.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTSeg: Multi-prompt Sinkhorn Attention for Zero-Shot Semantic Segmentation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-14183</link>
-    <guid isPermaLink="false">arxiv:2403.14183</guid>
-    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kwanyoung Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>The recent success of CLIP has demonstrated promising results in zero-shot semantic segmentation by transferring muiltimodal knowledge to pixel-level classification. However, leveraging pre-trained CLIP knowledge to closely align text embeddings with pixel embeddings still has limitations in existing approaches. To address this issue, we propose OTSeg, a novel multimodal attention mechanism aimed at enhancing the potential of multiple text prompts for matching associated pixel embeddings. We first propose Multi-Prompts Sinkhorn (MPS) based on the Optimal Transport (OT) algorithm, which leads multiple text prompts to selectively focus on various semantic features within image pixels. Moreover, inspired by the success of Sinkformers in unimodal settings, we introduce the extension of MPS, called Multi-Prompts Sinkhorn Attention (MPSA) , which effectively replaces cross-attention mechanisms within Transformer framework in multimodal settings. Through extensive experiments, we demonstrate that OTSeg achieves state-of-the-art (SOTA) performance with significant gains on Zero-Shot Semantic Segmentation (ZS3) tasks across three benchmark datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Arbitrary Distributions Mapping via SyMOT-Flow: A Flow-based Approach Integrating Maximum Mean Discrepancy and Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2308-13815</link>
-    <guid isPermaLink="false">arxiv:2308.13815</guid>
-    <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhe Xiong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Finding a transformation between two unknown probability distributions from finite samples is crucial for modeling complex data distributions and performing tasks such as sample generation, domain adaptation and statistical inference. One powerful framework for such transformations is normalizing flow, which transforms an unknown distribution into a standard normal distribution using an invertible network. In this paper, we introduce a novel model called SyMOT-Flow that trains an invertible transformation by minimizing the symmetric maximum mean discrepancy between samples from two unknown distributions, and an optimal transport cost is incorporated as regularization to obtain a short-distance and interpretable transformation. The resulted transformation leads to more stable and accurate sample generation. Several theoretical results are established for the proposed model and its effectiveness is validated with low-dimensional illustrative examples as well as high-dimensional bi-modality medical image generation through the forward and reverse flows.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-01954</link>
+    <guid isPermaLink="false">arxiv:2106.01954</guid>
+    <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Korotin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Despite the recent popularity of neural network-based solvers for optimal transport (OT), there is no standard quantitative way to evaluate their performance. In this paper, we address this issue for quadratic-cost transport &ndash; specifically, computation of the Wasserstein-2 distance, a commonly-used formulation of optimal transport in machine learning. To overcome the challenge of computing ground truth transport maps between continuous measures needed to assess these solvers, we use input-convex neural networks (ICNN) to construct pairs of measures whose ground truth OT maps can be obtained analytically. This strategy yields pairs of continuous benchmark measures in high-dimensional spaces such as spaces of images. We thoroughly evaluate existing optimal transport solvers using these benchmark measures. Even though these solvers perform well in downstream tasks, many do not faithfully recover optimal transport maps. To investigate the cause of this discrepancy, we further test the solvers in a setting of image generation. Our study reveals crucial limitations of existing solvers and shows that increased OT accuracy does not necessarily correlate to better results downstream.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Applications and Techniques for Fast Machine Learning in Science</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-13041</link>
+    <guid isPermaLink="false">arxiv:2110.13041</guid>
+    <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Allison McCarn Deiana et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>In this community review report, we discuss applications and techniques for fast machine learning (ML) in science &ndash; the concept of integrating power ML methods into the real-time experimental data processing loop to accelerate scientific discovery. The material for the report builds on two workshops held by the Fast ML for Science community and covers three main areas: applications for fast ML across a number of scientific domains; techniques for training and implementing performant and resource-efficient ML algorithms; and computing architectures, platforms, and technologies for deploying these algorithms. We also present overlapping challenges across the multiple scientific domains where common solutions can be found. This community report is intended to give plenty of examples and inspiration for scientific discovery through integrated and accelerated ML solutions. This is followed by a high-level overview and organization of technical advances, including an abundance of pointers to source material, which can enable these breakthroughs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Foresight of Graph Reinforcement Learning Latent Permutations Learnt by Gumbel Sinkhorn Network</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-12144</link>
+    <guid isPermaLink="false">arxiv:2110.12144</guid>
+    <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianqi Shen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Vital importance has necessity to be attached to cooperation in multi-agent environments, as a result of which some reinforcement learning algorithms combined with graph neural networks have been proposed to understand the mutual interplay between agents. However, highly complicated and dynamic multi-agent environments require more ingenious graph neural networks, which can comprehensively represent not only the graph topology structure but also evolution process of the structure due to agents emerging, disappearing and moving. To tackle these difficulties, we propose Gumbel Sinkhorn graph attention reinforcement learning, where a graph attention network highly represents the underlying graph topology structure of the multi-agent environment, and can adapt to the dynamic topology structure of graph better with the help of Gumbel Sinkhorn network by learning latent permutations. Empirically, simulation results show how our proposed graph reinforcement learning methodology outperforms existing methods in the PettingZoo multi-agent environment by learning latent permutations.</p>]]></description>
+  </item>
 
   <item>
     <title>Physics Informed Convex Artificial Neural Networks (PICANNs) for Optimal Transport based Density Estimation</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason M. Altschuler et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Computing Wasserstein barycenters is a fundamental geometric problem with widespread applications in machine learning, statistics, and computer graphics. However, it is unknown whether Wasserstein barycenters can be computed in polynomial time, either exactly or to high precision (i.e., with polylog(1/ε) runtime dependence). This paper answers these questions in the affirmative for any fixed dimension. Our approach is to solve an exponential-size linear programming formulation by efficiently implementing the corresponding separation oracle using techniques from computational geometry.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distance guided Adversarial Imitation Learning with Reward Shape Exploration</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2006-03503</link>
-    <guid isPermaLink="false">arxiv:2006.03503</guid>
-    <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The generative adversarial imitation learning (GAIL) has provided an adversarial learning framework for imitating expert policy from demonstrations in high-dimensional continuous tasks. However, almost all GAIL and its extensions only design a kind of reward function of logarithmic form in the adversarial training strategy with the Jensen-Shannon (JS) divergence for all complex environments. The fixed logarithmic type of reward function may be difficult to solve all complex tasks, and the vanishing gradients problem caused by the JS divergence will harm the adversarial learning process. In this paper, we propose a new algorithm named Wasserstein Distance guided Adversarial Imitation Learning (WDAIL) for promoting the performance of imitation learning (IL). There are three improvements in our method: (a) introducing the Wasserstein distance to obtain more appropriate measure in the adversarial training process, (b) using proximal policy optimization (PPO) in the reinforcement learning stage which is much simpler to implement and makes the algorithm more efficient, and (c) exploring different reward function shapes to suit different tasks for improving the performance. The experiment results show that the learning procedure remains remarkably stable, and achieves significant performance in the complex continuous control tasks of MuJoCo.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Independent Elliptical Distributions Minimize Their 𝒲_2 Wasserstein Distance from Independent Elliptical Distributions with the Same Density Generator</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-03809</link>
-    <guid isPermaLink="false">arxiv:2012.03809</guid>
-    <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Song Fang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This short note is on a property of the 𝒲_2 Wasserstein distance which indicates that independent elliptical distributions minimize their 𝒲_2 Wasserstein distance from given independent elliptical distributions with the same density generators. Furthermore, we examine the implications of this property in the Gelbrich bound when the distributions are not necessarily elliptical. Meanwhile, we also generalize the results to the cases when the distributions are not independent. The primary purpose of this note is for the referencing of papers that need to make use of this property or its implications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Model Compression Using Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-03907</link>
-    <guid isPermaLink="false">arxiv:2012.03907</guid>
-    <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Suhas Lohit et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Model compression methods are important to allow for easier deployment of deep learning models in compute, memory and energy-constrained environments such as mobile phones. Knowledge distillation is a class of model compression algorithm where knowledge from a large teacher network is transferred to a smaller student network thereby improving the student&rsquo;s performance. In this paper, we show how optimal transport-based loss functions can be used for training a student network which encourages learning student network parameters that help bring the distribution of student features closer to that of the teacher features. We present image classification results on CIFAR-100, SVHN and ImageNet and show that the proposed optimal transport loss functions perform comparably to or better than other loss functions.</p>]]></description>
   </item>
 
 </channel>

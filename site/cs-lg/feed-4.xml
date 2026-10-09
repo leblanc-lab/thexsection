@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The Z-Gromov-Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-08233</link>
+    <guid isPermaLink="false">arxiv:2408.08233</guid>
+    <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Bauer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) distance is a powerful tool for comparing metric measure spaces which has found broad applications in data science and machine learning. Driven by the need to analyze datasets whose objects have increasingly complex structure (such as node and edge-attributed graphs), several variants of GW distance have been introduced in the recent literature. With a view toward establishing a general framework for the theory of GW-like distances, this paper considers a vast generalization of the notion of a metric measure space: for an arbitrary metric space Z, we define a Z-network to be a measure space endowed with a kernel valued in Z. We introduce a method for comparing Z-networks by defining a generalization of GW distance, which we refer to as Z-Gromov-Wasserstein (Z-GW) distance. This construction subsumes many previously known metrics and offers a unified approach to understanding their shared properties. This paper demonstrates that the Z-GW distance defines a metric on the space of Z-networks which retains desirable properties of Z, such as separability, completeness, and geodesicity. Many of these properties were unknown for existing variants of GW distance that fall under our framework. Our focus is on foundational theory, but our results also include computable lower bounds and approximations of the distance which will be useful for practical applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hierarchical topological clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2601-00892</link>
+    <guid isPermaLink="false">arxiv:2601.00892</guid>
+    <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ana Carpio et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
+<p>Topological methods have the potential of exploring data clouds without making assumptions on their the structure. Here we propose a hierarchical topological clustering algorithm that can be implemented with any distance choice. The persistence of outliers and clusters of arbitrary shape is inferred from the resulting hierarchy. We demonstrate the potential of the algorithm on selected datasets in which outliers play relevant roles, consisting of images, medical and economic data. These methods can provide meaningful clusters in situations in which other techniques fail to do so.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Scaled-Dot-Product Attention as One-Sided Entropic Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-08369</link>
+    <guid isPermaLink="false">arxiv:2508.08369</guid>
+    <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elon Litman</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The scaled-dot-product attention (SDPA) mechanism is a core component of modern deep learning, but its mathematical form is often motivated by heuristics. This work provides a first-principles justification for SDPA. We first show that the attention forward pass is the exact solution to a degenerate, one-sided Entropic Optimal Transport (EOT) problem, which seeks a distribution that maximizes similarity while being maximally entropic. This optimization perspective has a direct consequence for the backward pass. We prove that the standard gradient computed via backpropagation is mathematically identical to an advantage-based policy gradient, a variance-reduced update rule from reinforcement learning. Crucially, we demonstrate that the EOT formulation of the forward pass induces a specific information geometry on the space of attention distributions. It is this geometry, characterized by the Fisher Information Matrix, that dictates the precise form of the learning gradient, revealing the advantage-based update as a natural consequence of the optimization problem being solved. This unified view reveals SDPA as a principled mechanism where the forward pass performs optimal inference and the backward pass implements a rational, manifold-aware learning update.</p>]]></description>
+  </item>
 
   <item>
     <title>Gaussian entropic optimal transport: Schrödinger bridges and the Sinkhorn algorithm</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongjie Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>The emergence of time-series foundation model research elevates the growing need to measure the (dis)similarity of time-series datasets. A time-series dataset similarity measure aids research in multiple ways, including model selection, finetuning, and visualization. In this paper, we propose a distribution-based method to measure time-series dataset similarity by leveraging the Wasserstein distance. We consider a time-series dataset an empirical instantiation of an underlying multivariate normal distribution (MVN). The similarity between two time-series datasets is thus computed as the Wasserstein distance between their corresponding MVNs. Comprehensive experiments and visualization show the effectiveness of our approach. Specifically, we show how the Wasserstein distance helps identify similar time-series datasets and facilitates inference performance estimation of foundation models in both out-of-distribution and transfer learning evaluation, with high correlations between our proposed measure and the inference loss (&gt;0.60).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Geometric Operator Learning with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-20065</link>
-    <guid isPermaLink="false">arxiv:2507.20065</guid>
-    <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinyi Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose integrating optimal transport (OT) into operator learning for partial differential equations (PDEs) on complex geometries. Classical geometric learning methods typically represent domains as meshes, graphs, or point clouds. Our approach generalizes discretized meshes to mesh density functions, formulating geometry embedding as an OT problem that maps these functions to a uniform density in a reference space. Compared to previous methods relying on interpolation or shared deformation, our OT-based method employs instance-dependent deformation, offering enhanced flexibility and effectiveness. For 3D simulations focused on surfaces, our OT-based neural operator embeds the surface geometry into a 2D parameterized latent space. By performing computations directly on this 2D representation of the surface manifold, it achieves significant computational efficiency gains compared to volumetric simulation. Experiments with Reynolds-averaged Navier-Stokes equations (RANS) on the ShapeNet-Car and DrivAerNet-Car datasets show that our method achieves better accuracy and also reduces computational expenses in terms of both time and memory usage compared to existing machine learning models. Additionally, our model demonstrates significantly improved accuracy on the FlowBench dataset, underscoring the benefits of employing instance-dependent deformation for datasets with highly variable geometries.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Doubly Regularized Entropic Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2303-11844</link>
-    <guid isPermaLink="false">arxiv:2303.11844</guid>
-    <pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lénaïc Chizat</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study a general formulation of regularized Wasserstein barycenters that enjoys favorable regularity, approximation, stability and (grid-free) optimization properties. This barycenter is defined as the unique probability measure that minimizes the sum of entropic optimal transport (EOT) costs with respect to a family of given probability measures, plus an entropy term. We denote it (λ,τ)-barycenter, where λ is the inner regularization strength and τ the outer one. This formulation recovers several previously proposed EOT barycenters for various choices of λ,τ≥0 and generalizes them. First, in spite of &ndash; and in fact owing to &ndash; being \emph{doubly} regularized, we show that our formulation is debiased for τ=λ/2: the suboptimality in the (unregularized) Wasserstein barycenter objective is, for smooth densities, of the order of the strength λ² of entropic regularization, instead of max{λ,τ} in general. We discuss this phenomenon for isotropic Gaussians where all (λ,τ)-barycenters have closed form. Second, we show that for λ,τ&gt;0, this barycenter has a smooth density and is strongly stable under perturbation of the marginals. In particular, it can be estimated efficiently: given n samples from each of the probability measures, it converges in relative entropy to the population barycenter at a rate n⁻¹/2. And finally, this formulation lends itself naturally to a grid-free optimization algorithm: we propose a simple \emph{noisy particle gradient descent} which, in the mean-field limit, converges globally at an exponential rate to the barycenter.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport Regularized Divergences: Application to Adversarial Robustness</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2309-03791</link>
-    <guid isPermaLink="false">arxiv:2309.03791</guid>
-    <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremiah Birrell et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We introduce a new class of optimal-transport-regularized divergences, D^c, constructed via an infimal convolution between an information divergence, D, and an optimal-transport (OT) cost, C, and study their use in distributionally robust optimization (DRO). In particular, we propose the ARMOR_D methods as novel approaches to enhancing the adversarial robustness of deep learning models. These DRO-based methods are defined by minimizing the maximum expected loss over a D^c-neighborhood of the empirical distribution of the training data. Viewed as a tool for constructing adversarial samples, our method allows samples to be both transported, according to the OT cost, and re-weighted, according to the information divergence; the addition of a principled and dynamical adversarial re-weighting on top of adversarial sample transport is a key innovation of ARMOR_D. ARMOR_D can be viewed as a generalization of the best-performing loss functions and OT costs in the adversarial training literature; we demonstrate this flexibility by using ARMOR_D to augment the UDR, TRADES, and MART methods and obtain improved performance on CIFAR-10 and CIFAR-100 image recognition. Specifically, augmenting with ARMOR_D leads to 1.9\% and 2.1\% improvement against AutoAttack, a powerful ensemble of adversarial attacks, on CIFAR-10 and CIFAR-100 respectively. To foster reproducibility, we made the code accessible at https://github.com/star-ailab/ARMOR.</p>]]></description>
   </item>
 
 </channel>

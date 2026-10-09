@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Distance guided Adversarial Imitation Learning with Reward Shape Exploration</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2006-03503</link>
+    <guid isPermaLink="false">arxiv:2006.03503</guid>
+    <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The generative adversarial imitation learning (GAIL) has provided an adversarial learning framework for imitating expert policy from demonstrations in high-dimensional continuous tasks. However, almost all GAIL and its extensions only design a kind of reward function of logarithmic form in the adversarial training strategy with the Jensen-Shannon (JS) divergence for all complex environments. The fixed logarithmic type of reward function may be difficult to solve all complex tasks, and the vanishing gradients problem caused by the JS divergence will harm the adversarial learning process. In this paper, we propose a new algorithm named Wasserstein Distance guided Adversarial Imitation Learning (WDAIL) for promoting the performance of imitation learning (IL). There are three improvements in our method: (a) introducing the Wasserstein distance to obtain more appropriate measure in the adversarial training process, (b) using proximal policy optimization (PPO) in the reinforcement learning stage which is much simpler to implement and makes the algorithm more efficient, and (c) exploring different reward function shapes to suit different tasks for improving the performance. The experiment results show that the learning procedure remains remarkably stable, and achieves significant performance in the complex continuous control tasks of MuJoCo.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Independent Elliptical Distributions Minimize Their 𝒲_2 Wasserstein Distance from Independent Elliptical Distributions with the Same Density Generator</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-03809</link>
+    <guid isPermaLink="false">arxiv:2012.03809</guid>
+    <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Song Fang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This short note is on a property of the 𝒲_2 Wasserstein distance which indicates that independent elliptical distributions minimize their 𝒲_2 Wasserstein distance from given independent elliptical distributions with the same density generators. Furthermore, we examine the implications of this property in the Gelbrich bound when the distributions are not necessarily elliptical. Meanwhile, we also generalize the results to the cases when the distributions are not independent. The primary purpose of this note is for the referencing of papers that need to make use of this property or its implications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Model Compression Using Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-03907</link>
+    <guid isPermaLink="false">arxiv:2012.03907</guid>
+    <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Suhas Lohit et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Model compression methods are important to allow for easier deployment of deep learning models in compute, memory and energy-constrained environments such as mobile phones. Knowledge distillation is a class of model compression algorithm where knowledge from a large teacher network is transferred to a smaller student network thereby improving the student&rsquo;s performance. In this paper, we show how optimal transport-based loss functions can be used for training a student network which encourages learning student network parameters that help bring the distribution of student features closer to that of the teacher features. We present image classification results on CIFAR-100, SVHN and ImageNet and show that the proposed optimal transport loss functions perform comparably to or better than other loss functions.</p>]]></description>
+  </item>
 
   <item>
     <title>Unsupervised Learning of Graph Hierarchical Abstractions with Differentiable Coarsening and Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tam Le et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (\OT) theory defines a powerful set of tools to compare probability distributions. \OT~suffers however from a few drawbacks, computational and statistical, which have encouraged the proposal of several regularized variants of OT in the recent literature, one of the most notable being the \textit{sliced} formulation, which exploits the closed-form formula between univariate distributions by projecting high-dimensional measures onto random lines. We consider in this work a more general family of ground metrics, namely \textit{tree metrics}, which also yield fast closed-form computations and negative definite, and of which the sliced-Wasserstein distance is a particular case (the tree is a chain). We propose the tree-sliced Wasserstein distance, computed by averaging the Wasserstein distance between these measures using random tree metrics, built adaptively in either low or high-dimensional spaces. Exploiting the negative definiteness of that distance, we also propose a positive definite kernel, and test it against other baselines on a few benchmark tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A First-Order Algorithmic Framework for Wasserstein Distributionally Robust Logistic Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1910-12778</link>
-    <guid isPermaLink="false">arxiv:1910.12778</guid>
-    <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiajin Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distance-based distributionally robust optimization (DRO) has received much attention lately due to its ability to provide a robustness interpretation of various learning models. Moreover, many of the DRO problems that arise in the learning context admits exact convex reformulations and hence can be tackled by off-the-shelf solvers. Nevertheless, the use of such solvers severely limits the applicability of DRO in large-scale learning problems, as they often rely on general purpose interior-point algorithms. On the other hand, there are very few works that attempt to develop fast iterative methods to solve these DRO problems, which typically possess complicated structures. In this paper, we take a first step towards resolving the above difficulty by developing a first-order algorithmic framework for tackling a class of Wasserstein distance-based distributionally robust logistic regression (DRLR) problem. Specifically, we propose a novel linearized proximal ADMM to solve the DRLR problem, whose objective is convex but consists of a smooth term plus two non-separable non-smooth terms. We prove that our method enjoys a sublinear convergence rate. Furthermore, we conduct three different experiments to show its superb performance on both synthetic and real-world datasets. In particular, our method can achieve the same accuracy up to 800+ times faster than the standard off-the-shelf solver.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Massively scalable Sinkhorn distances via the Nyström method</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1812-05189</link>
-    <guid isPermaLink="false">arxiv:1812.05189</guid>
-    <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Altschuler et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>The Sinkhorn &ldquo;distance&rdquo;, a variant of the Wasserstein distance with entropic regularization, is an increasingly popular tool in machine learning and statistical inference. However, the time and memory requirements of standard algorithms for computing this distance grow quadratically with the size of the data, making them prohibitively expensive on massive data sets. In this work, we show that this challenge is surprisingly easy to circumvent: combining two simple techniques&mdash;the Nyström method and Sinkhorn scaling&mdash;provably yields an accurate approximation of the Sinkhorn distance with significantly lower time and memory requirements than other approaches. We prove our results via new, explicit analyses of the Nyström method and of the stability properties of Sinkhorn scaling. We validate our claims experimentally by showing that our approach easily computes Sinkhorn distances on data sets hundreds of times larger than can be handled by other techniques.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Smoothing: Certified Robustness against Wasserstein Adversarial Attacks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1910-10783</link>
-    <guid isPermaLink="false">arxiv:1910.10783</guid>
-    <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Levine et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In the last couple of years, several adversarial attack methods based on different threat models have been proposed for the image classification problem. Most existing defenses consider additive threat models in which sample perturbations have bounded L_p norms. These defenses, however, can be vulnerable against adversarial attacks under non-additive threat models. An example of an attack method based on a non-additive threat model is the Wasserstein adversarial attack proposed by Wong et al. (2019), where the distance between an image and its adversarial example is determined by the Wasserstein metric (&ldquo;earth-mover distance&rdquo;) between their normalized pixel intensities. Until now, there has been no certifiable defense against this type of attack. In this work, we propose the first defense with certified robustness against Wasserstein Adversarial attacks using randomized smoothing. We develop this certificate by considering the space of possible flows between images, and representing this space such that Wasserstein distance between images is upper-bounded by L_1 distance in this flow-space. We can then apply existing randomized smoothing certificates for the L_1 metric. In MNIST and CIFAR-10 datasets, we find that our proposed defense is also practically effective, demonstrating significantly improved accuracy under Wasserstein adversarial attack compared to unprotected models.</p>]]></description>
   </item>
 
 </channel>

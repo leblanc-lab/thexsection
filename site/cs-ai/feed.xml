@@ -7,7 +7,37 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Uncovering and Fixing Collider Bias in Bayesian PINNs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-11737</link>
+    <guid isPermaLink="false">arxiv:2610.11737</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Obermayr et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Bayesian physics-informed neural networks (B-PINNs) are a popular framework for parameter and state inference from sparse or noisy observations. They are commonly formulated via a collider structure, in which physical and trajectory parameters are assumed to be a priori independent and become coupled through virtual likelihoods on differential-equation residuals that enforce physical consistency. We show that this modeling choice can induce severe systematic bias in the posterior over physical parameters: even when the prior is favorably centered on the ground-truth parameters, the resulting posterior can drift away and concentrate far from them. As a remedy, we advocate a hierarchical chain model in which physics generates trajectories, which in turn generate observations. The chain model does not suffer from this posterior bias, but it poses a harder, so-called doubly intractable, inference problem due to a physics-dependent normalization constant. This challenge can be resolved by discretizing the underlying stochastic dynamics, after which the chain posterior can be sampled exactly with particle MCMC. We identify two distinct mechanisms characterizing the collider bias, derive analytical approximations of their magnitudes, and establish diagnostic criteria for predicting when standard B-PINNs remain reliable. Experiments confirm the predicted bias and show that the chain formulation successfully avoids it.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-12360</link>
+    <guid isPermaLink="false">arxiv:2610.12360</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaiser Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>When retrieved evidence contradicts an agent&rsquo;s prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus primarily on task success, offering limited insight into how agents handle such conflicts. We propose to evaluate agents on epistemic humility (EH): the agent&rsquo;s willingness to recognize, act on, and communicate uncertainty during task execution. We operationalize EH through three trajectory-level behavioral dimensions: Identify, Solve, and Escalate (ISE). Through knowledge conflict, situations where the backbone language model&rsquo;s parametric knowledge contradicts the evidence it encounters, or where two contextual sources disagree, we evaluate two conflict settings: (1) controlled conflict and (2) naturally occurring conflict during multi-step agentic execution, each paired with matched no-conflict controls. Evaluating four agents, we find that higher task accuracy does not necessarily correspond to greater epistemic humility: some high-accuracy configurations recognize conflicts during execution but do not communicate unresolved uncertainty in their incorrect final answers. Trajectory-level analysis further reveals that agents frequently detect conflicts in early steps of execution but fail to maintain or resolve them in later steps. Finally, we show that model-level interventions can improve EH, but often at the cost of task accuracy, suggesting that epistemic humility emerges from the interaction among the backbone model, agent harness, and evaluation environment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-12375</link>
+    <guid isPermaLink="false">arxiv:2610.12375</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Babak Barazandeh et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Agents are deployed in applications from trip planners and stock trading to IT incident triage. In most cases, LLM agents work autonomously with minimal rule-based safeguarding, leading to cost and safety issues from irreversible actions. Recent works resolve this either by using a safeguard agent to monitor behavior or evaluating logs post-hoc. The first adds cost and latency to every step; the second delivers its verdict after the run, when tokens are burned and damage is done. To overcome this, we propose OnTrack, a streaming monitoring mechanism that compares an agent&rsquo;s steps and dependencies against recorded successful runs to alert users or block the agent in about a millisecond per step. We study this problem in three regimes of decreasing access: full reference access (historical runs and tool schemas), intermediate access (only tool schemas), and no prior knowledge (only step logs as generated). Expectation of OnTrack&rsquo;s monitoring capabilities reduces as data access drops, ranging from plan violation detection to identifying loops, stalls, and repeated tool calls. Finally, we evaluate OnTrack using SWE-bench trajectories. Based on the first 8 steps, our method ranks failing trajectories below succeeding ones better than content similarity approaches (+0.057 AUROC). With an abort policy, we save about 18% of compute that would be burned on failing runs, where 83% of interrupted runs were actually heading to failure (5 out of 6 aborts were correct).</p>]]></description>
+  </item>
 
   <item>
     <title>WASD: Wasserstein-based Knowledge Distillation for Large Language Models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Faïcel Chamroukhi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Mixture-of-experts (MoE) models provide a flexible statistical framework for modeling heterogeneity and nonlinear relationships. In many modern applications, however, datasets are naturally distributed across multiple machines due to storage, computational, or governance constraints. We consider a distributed model aggregation setting in which local MoE models are trained independently on decentralized datasets and subsequently combined into a global estimator. Aggregating MoE models is challenging because standard averaging produces models that do not preserve the MoE structure, and therefore do not yield estimates of the global model parameters. To address this issue, we propose a principled aggregation framework based on optimal transport that constructs a reduced global MoE estimator by minimizing a transportation divergence between the collection of local estimators and the aggregated model. An efficient majorization&ndash;minimization (MM) algorithm is derived to solve the resulting optimization problem. The method requires only a single communication step from local machines to a central server, making it a frugal distributed learning approach particularly attractive for large-scale settings where communication costs are a major bottleneck. We further establish statistical guarantees for the aggregated estimator, including consistency under standard assumptions on the local estimators. Experiments on synthetic and real datasets demonstrate that the approach achieves performance comparable to centralized training while significantly reducing computation time. The source codes are publicly available on Github.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gradient Flow Drifting: Generative Modeling via Wasserstein Gradient Flows of KDE-Approximated Divergences</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-10592</link>
-    <guid isPermaLink="false">arxiv:2603.10592</guid>
-    <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiarui Cao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We reveal a precise mathematical framework about a new family of generative models which we call Gradient Flow Drifting. With this framework, we prove an equivalence between the recently proposed Drifting Model and the Wasserstein gradient flow of the forward KL divergence under kernel density estimation (KDE) approximation. Specifically, we prove that the drifting field of drifting model (arXiv:2602.04770) equals, up to a bandwidth-squared scaling factor, the difference of KDE log-density gradients ∇logp_kde - ∇logq_kde, which is exactly the particle velocity field of the Wasserstein-2 gradient flow of KL(qp) with KDE-approximated densities. Besides that, this broad family of generative models can also include MMD-based generators, which arises as special cases of Wasserstein gradient flows of different divergences under KDE approximation. We provide a concise identifiability proof, and a theoretically grounded mixed-divergence strategy. We combine reverse KL and χ² divergence gradient flows to simultaneously avoid mode collapse and mode blurring, and extend this method onto Riemannian manifold which loosens the constraints on the kernel function, and makes this method more suitable for the semantic space. Preliminary experiments on synthetic benchmarks validate the framework.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-09706</link>
-    <guid isPermaLink="false">arxiv:2603.09706</guid>
-    <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Wen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>While safety alignment for Multimodal Large Language Models (MLLMs) has gained significant attention, current paradigms primarily target malicious intent or situational violations. We propose shifting the safety frontier toward consequence-driven safety, a paradigm essential for the robust deployment of autonomous and embodied agents. To formalize this shift, we introduce OOD-MMSafe, a benchmark comprising 455 curated query-image pairs designed to evaluate a model&rsquo;s ability to identify latent hazards within context-dependent causal chains. Our analysis reveals a pervasive causal blindness among frontier models, with the highest 67.5% failure rate in high-capacity closed-source models, and identifies a preference ceiling where static alignment yields format-centric failures rather than improved safety reasoning as model capacity grows. To address these bottlenecks, we develop the Consequence-Aware Safety Policy Optimization (CASPO) framework, which integrates the model&rsquo;s intrinsic reasoning as a dynamic reference for token-level self-distillation rewards. Experimental results demonstrate that CASPO significantly enhances consequence projection, reducing the failure ratio of risk identification to 7.3% for Qwen2.5-VL-7B and 5.7% for Qwen3-VL-4B while maintaining overall effectiveness.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTESGN: Optimal Transport-Enhanced Syntactic-Semantic Graph Networks for Aspect-Based Sentiment Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2509-08612</link>
-    <guid isPermaLink="false">arxiv:2509.08612</guid>
-    <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinfeng Liao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Aspect-based sentiment analysis (ABSA) aims to identify aspect terms and determine their sentiment polarity. While dependency trees combined with contextual semantics provide structural cues, existing approaches often rely on dot-product similarity and fixed graphs, which limit their ability to capture nonlinear associations and adapt to noisy contexts. To address these limitations, we propose the Optimal Transport-Enhanced Syntactic-Semantic Graph Network (OTESGN), a model that jointly integrates structural and distributional signals. Specifically, a Syntactic Graph-Aware Attention module models global dependencies with syntax-guided masking, while a Semantic Optimal Transport Attention module formulates aspect-opinion association as a distribution matching problem solved via the Sinkhorn algorithm. An Adaptive Attention Fusion mechanism balances heterogeneous features, and contrastive regularization enhances robustness. Extensive experiments on three benchmark datasets (Rest14, Laptop14, and Twitter) demonstrate that OTESGN delivers state-of-the-art performance. Notably, it surpasses competitive baselines by up to +1.30 Macro-F1 on Laptop14 and +1.01 on Twitter. Ablation studies and visualization analyses further highlight OTESGN&rsquo;s ability to capture fine-grained sentiment associations and suppress noise from irrelevant context.</p>]]></description>
   </item>
 
 </channel>

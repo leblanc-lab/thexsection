@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Gradient Flows for Scalable and Regularized Barycenter Computation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-04602</link>
+    <guid isPermaLink="false">arxiv:2510.04602</guid>
+    <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein barycenters provide a principled approach for aggregating probability measures, while preserving the geometry of their ambient space. Existing discrete methods are not because as they assume access to the complete set of samples from the input measures. Meanwhile, neural network approaches do scale well, but rely on complex optimization problems and cannot easily incorporate label information. We address these limitations through gradient flows in the space of probability measures. Through time discretization, we achieve a scalable algorithm that i) relies on mini-batch optimal transport, ii) accepts modular regularization through task-aware functions, and iii) seamlessly integrates supervised information into the ground-cost. We empirically validate our approach on domain adaptation benchmarks that span computer vision, neuroscience, and chemical engineering. Our method establishes a new state-of-the-art Wasserstein barycenter solver, with labeled barycenters consistently outperforming unlabeled ones. Our code at https://github.com/SigmaNova/barycentric-gradient-flows</p>]]></description>
+  </item>
+
+  <item>
+    <title>Streaming Sliced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-06835</link>
+    <guid isPermaLink="false">arxiv:2505.06835</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Sliced optimal transport (SOT), or sliced Wasserstein (SW) distance, is widely recognized for its statistical and computational scalability. In this work, we further enhance computational scalability by proposing the first method for estimating SW from sample streams, called streaming sliced Wasserstein (Stream-SW). To define Stream-SW, we first introduce a streaming estimator of the one-dimensional Wasserstein distance (1DW). Since the 1DW has a closed-form expression, given by the integral of the absolute difference between the quantile functions of the compared distributions, we leverage quantile approximation techniques for sample streams to define a streaming 1DW estimator. By applying the streaming 1DW to all projections, we obtain Stream-SW. The key advantage of Stream-SW is its low memory complexity while providing theoretical guarantees on the approximation error. We demonstrate that Stream-SW achieves a more accurate approximation of SW than random subsampling, with lower memory consumption, when comparing Gaussian distributions and mixtures of Gaussians from streaming samples. Additionally, we conduct experiments on point cloud classification, point cloud gradient flows, and streaming change point detection to further highlight the favorable performance of the proposed Stream-SW.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Schrödinger Bridge Mamba for One-Step Speech Enhancement</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-16834</link>
+    <guid isPermaLink="false">arxiv:2510.16834</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jing Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We present Schrödinger Bridge Mamba (SBM), a novel model for efficient speech enhancement by integrating the Schrödinger Bridge (SB) training paradigm and the Mamba architecture. Experiments of joint denoising and dereverberation tasks demonstrate SBM outperforms strong generative and discriminative methods on multiple metrics with only one step of inference while achieving a competitive real-time factor for streaming feasibility. Ablation studies reveal that the SB paradigm consistently yields improved performance across diverse architectures over conventional mapping. Furthermore, Mamba exhibits a stronger performance under the SB paradigm compared to Multi-Head Self-Attention (MHSA) and Long Short-Term Memory (LSTM) backbones. These findings highlight the synergy between the Mamba architecture and the SB trajectory-based training, providing a high-quality solution for real-world speech enhancement. Demo page: https://sbmse.github.io</p>]]></description>
+  </item>
 
   <item>
     <title>Enhancing next token prediction based pre-training for jet foundation models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathn Chang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Causal abstraction offers a principled framework for mechanistic interpretability, aligning a high-level causal model with the low-level computation realized by a neural network through counterfactual intervention analysis. Existing methods such as distributed alignment search (DAS) learn expressive subspace interventions, but the relevant neural site is unknown a priori, so finding a handle requires a computationally burdensome search over candidate sites. We introduce PLOT (Progressive Localization via Optimal Transport), a transport-based framework that localizes causal variables from the output effect geometry of abstract and neural interventions. PLOT fits an optimal transport coupling between abstract variables and candidate neural sites, yielding a global soft correspondence that can be calibrated into intervention handles. In simple settings, a single coupling over individual neurons suffices. In larger models, PLOT is applied progressively, moving from coarse sites such as tokens, timesteps, or layers to finer supports such as coordinate groups or PCA spans, and optionally guiding DAS based on the localized signal. Across experiments of increasing complexity, transport-only PLOT handles are exceedingly fast and competitive on accuracy, while PLOT-guided DAS reaches DAS-level accuracy at a fraction of full DAS runtime, providing an efficient localization engine for causal abstraction research at scale.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Calibrating Tabular Anomaly Detection via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-06810</link>
-    <guid isPermaLink="false">arxiv:2602.06810</guid>
-    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hangting Ye et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Tabular anomaly detection (TAD) remains challenging due to the heterogeneity of tabular data: features lack natural relationships, vary widely in distribution and scale, and exhibit diverse types. Consequently, each TAD method makes implicit assumptions about anomaly patterns that work well on some datasets but fail on others, and no method consistently outperforms across diverse scenarios. We present CTAD (Calibrating Tabular Anomaly Detection), a model-agnostic post-processing framework that enhances any existing TAD detector through sample-specific calibration. Our approach characterizes normal data via two complementary distributions, i.e., an empirical distribution from random sampling and a structural distribution from K-means centroids, and measures how adding a test sample disrupts their compatibility using Optimal Transport (OT) distance. Normal samples maintain low disruption while anomalies cause high disruption, providing a calibration signal to amplify detection. We prove that OT distance has a lower bound proportional to the test sample&rsquo;s distance from centroids, and establish that anomalies systematically receive higher calibration scores than normals in expectation, explaining why the method generalizes across datasets. Extensive experiments on 34 diverse tabular datasets with 7 representative detectors spanning all major TAD categories (density estimation, classification, reconstruction, and isolation-based methods) demonstrate that CTAD consistently improves performance with statistical significance. Remarkably, CTAD enhances even state-of-the-art deep learning methods and shows robust performance across diverse hyperparameter settings, requiring no additional tuning for practical deployment.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reliable Modeling of Distribution Shifts via Displacement-Reshaped Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-04965</link>
-    <guid isPermaLink="false">arxiv:2605.04965</guid>
-    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Philip Naumann et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) is a central framework for modeling distribution shifts. Because OT compares distributions directly in input space, a well-designed ground metric between observations is essential to ensure that the optimizer does not violate the true geometry of change. We propose Displacement-Reshaped Optimal Transport (ReshapeOT), a method that reshapes the ground metric by integrating observed sample displacements as an additional source of knowledge. Technically, ReshapeOT replaces the Euclidean metric with a Mahalanobis distance estimated from displacement second moments. This effectively carves expressways through the input space, inviting transport solutions that better align with observed displacements. Our method is computationally lightweight, integrates seamlessly into any OT solver that operates on a cost matrix, and can be kernelized for further flexibility. Experiments on synthetic and real-world data show that ReshapeOT achieves substantial gains in transport reliability. We further demonstrate our method&rsquo;s usefulness in two practical use cases.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Direct Estimation of Schrödinger Bridge Time-Series Drifts: Finite-Sample, Asymptotic, and Adaptive Guarantees</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-05432</link>
-    <guid isPermaLink="false">arxiv:2605.05432</guid>
-    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Othmane Mazhar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We study nonparametric estimation of Schrödinger bridge (SB) drifts from i.i.d.\ data observed on a single time interval. Starting from the conditional-ratio form of the Schrödinger bridge time-series (SBTS) drift formula, we analyze a direct Nadaraya&ndash;Watson plug-in estimator built from kernelized numerator and denominator terms. Unlike recent SB analyses based on entropic-OT potentials, Sinkhorn iterations, or iterative bridge solvers, our approach works directly at the drift level and isolates \emph{statistical error} from optimization, approximation, and discretization error. Under Hölder regularity, a marginal-density floor, and bounded support, we prove a uniform non-asymptotic bound for admissible bandwidth pairs, a pointwise CLT under genuine undersmoothing, and an adaptive bandwidth selector satisfying an oracle inequality. We also prove a pivot-local minimax lower bound which, through an explicit uniform pivot, yields a global minimax lower bound under transparent compatibility conditions; hence the adaptive selector is minimax-rate optimal up to logarithmic factors. Synthetic experiments provide theorem-targeted diagnostics for finite-sample scaling, Gaussian approximation, and adaptive behavior.</p>]]></description>
   </item>
 
 </channel>

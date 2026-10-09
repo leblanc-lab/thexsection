@@ -7,7 +7,37 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Gradient Flow Drifting: Generative Modeling via Wasserstein Gradient Flows of KDE-Approximated Divergences</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-10592</link>
+    <guid isPermaLink="false">arxiv:2603.10592</guid>
+    <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiarui Cao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We reveal a precise mathematical framework about a new family of generative models which we call Gradient Flow Drifting. With this framework, we prove an equivalence between the recently proposed Drifting Model and the Wasserstein gradient flow of the forward KL divergence under kernel density estimation (KDE) approximation. Specifically, we prove that the drifting field of drifting model (arXiv:2602.04770) equals, up to a bandwidth-squared scaling factor, the difference of KDE log-density gradients ∇logp_kde - ∇logq_kde, which is exactly the particle velocity field of the Wasserstein-2 gradient flow of KL(qp) with KDE-approximated densities. Besides that, this broad family of generative models can also include MMD-based generators, which arises as special cases of Wasserstein gradient flows of different divergences under KDE approximation. We provide a concise identifiability proof, and a theoretically grounded mixed-divergence strategy. We combine reverse KL and χ² divergence gradient flows to simultaneously avoid mode collapse and mode blurring, and extend this method onto Riemannian manifold which loosens the constraints on the kernel function, and makes this method more suitable for the semantic space. Preliminary experiments on synthetic benchmarks validate the framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-09706</link>
+    <guid isPermaLink="false">arxiv:2603.09706</guid>
+    <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ming Wen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>While safety alignment for Multimodal Large Language Models (MLLMs) has gained significant attention, current paradigms primarily target malicious intent or situational violations. We propose shifting the safety frontier toward consequence-driven safety, a paradigm essential for the robust deployment of autonomous and embodied agents. To formalize this shift, we introduce OOD-MMSafe, a benchmark comprising 455 curated query-image pairs designed to evaluate a model&rsquo;s ability to identify latent hazards within context-dependent causal chains. Our analysis reveals a pervasive causal blindness among frontier models, with the highest 67.5% failure rate in high-capacity closed-source models, and identifies a preference ceiling where static alignment yields format-centric failures rather than improved safety reasoning as model capacity grows. To address these bottlenecks, we develop the Consequence-Aware Safety Policy Optimization (CASPO) framework, which integrates the model&rsquo;s intrinsic reasoning as a dynamic reference for token-level self-distillation rewards. Experimental results demonstrate that CASPO significantly enhances consequence projection, reducing the failure ratio of risk identification to 7.3% for Qwen2.5-VL-7B and 5.7% for Qwen3-VL-4B while maintaining overall effectiveness.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTESGN: Optimal Transport-Enhanced Syntactic-Semantic Graph Networks for Aspect-Based Sentiment Analysis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2509-08612</link>
+    <guid isPermaLink="false">arxiv:2509.08612</guid>
+    <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinfeng Liao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Aspect-based sentiment analysis (ABSA) aims to identify aspect terms and determine their sentiment polarity. While dependency trees combined with contextual semantics provide structural cues, existing approaches often rely on dot-product similarity and fixed graphs, which limit their ability to capture nonlinear associations and adapt to noisy contexts. To address these limitations, we propose the Optimal Transport-Enhanced Syntactic-Semantic Graph Network (OTESGN), a model that jointly integrates structural and distributional signals. Specifically, a Syntactic Graph-Aware Attention module models global dependencies with syntax-guided masking, while a Semantic Optimal Transport Attention module formulates aspect-opinion association as a distribution matching problem solved via the Sinkhorn algorithm. An Adaptive Attention Fusion mechanism balances heterogeneous features, and contrastive regularization enhances robustness. Extensive experiments on three benchmark datasets (Rest14, Laptop14, and Twitter) demonstrate that OTESGN delivers state-of-the-art performance. Notably, it surpasses competitive baselines by up to +1.30 Macro-F1 on Laptop14 and +1.01 on Twitter. Ablation studies and visualization analyses further highlight OTESGN&rsquo;s ability to capture fine-grained sentiment associations and suppress noise from irrelevant context.</p>]]></description>
+  </item>
 
   <item>
     <title>AI Agents, Language, Deep Learning and the Next Revolution in Science</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sachin Shivakumar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>For a given ground cost, approximating the Monge optimal transport map that pushes forward a given probability measure onto another has become a staple in several modern machine learning algorithms. The fourth-order Ma-Trudinger-Wang (MTW) tensor associated with this ground cost function provides a notion of curvature in optimal transport. The non-negativity of this tensor plays a crucial role for establishing continuity for the Monge optimal transport map. It is, however, generally difficult to analytically verify this condition for any given ground cost. To expand the class of cost functions for which MTW non-negativity can be verified, we propose a provably correct computational approach which provides certificates of non-negativity for the MTW tensor using Sum-of-Squares (SOS) programming. We further show that our SOS technique can also be used to compute an inner approximation of the region where MTW non-negativity holds. We apply our proposed SOS programming method to several practical ground cost functions to approximate the regions of regularity of their corresponding optimal transport maps.</p>]]></description>
-  </item>
-
-  <item>
-    <title>xVal: A Continuous Numerical Tokenization for Scientific Language Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2310-02989</link>
-    <guid isPermaLink="false">arxiv:2310.02989</guid>
-    <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siavash Golkar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>Due in part to their discontinuous and discrete default encodings for numbers, Large Language Models (LLMs) have not yet been commonly used to process numerically-dense scientific datasets. Rendering datasets as text, however, could help aggregate diverse and multi-modal scientific data into a single training corpus, thereby potentially facilitating the development of foundation models for science. In this work, we introduce xVal, a strategy for continuously tokenizing numbers within language models that results in a more appropriate inductive bias for scientific applications. By training specially-modified language models from scratch on a variety of scientific datasets formatted as text, we find that xVal generally outperforms other common numerical tokenization strategies on metrics including out-of-distribution generalization and computational efficiency.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Physics Instrument Design with Reinforcement Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-10237</link>
-    <guid isPermaLink="false">arxiv:2412.10237</guid>
-    <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shah Rukh Qasim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>We present a case for the use of Reinforcement Learning (RL) for the design of physics instrument as an alternative to gradient-based instrument-optimization methods. It&rsquo;s applicability is demonstrated using two empirical studies. One is longitudinal segmentation of calorimeters and the second is both transverse segmentation as well longitudinal placement of trackers in a spectrometer. Based on these experiments, we propose an alternative approach that offers unique advantages over differentiable programming and surrogate-based differentiable design optimization methods. First, Reinforcement Learning (RL) algorithms possess inherent exploratory capabilities, which help mitigate the risk of convergence to local optima. Second, this approach eliminates the necessity of constraining the design to a predefined detector model with fixed parameters. Instead, it allows for the flexible placement of a variable number of detector components and facilitates discrete decision-making. We then discuss the road map of how this idea can be extended into designing very complex instruments. The presented study sets the stage for a novel framework in physics instrument design, offering a scalable and efficient framework that can be pivotal for future projects such as the Future Circular Collider (FCC), where most optimized detectors are essential for exploring physics at unprecedented energy scales.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AFFAKT: A Hierarchical Optimal Transport based Method for Affective Facial Knowledge Transfer in Video Deception Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-08965</link>
-    <guid isPermaLink="false">arxiv:2412.08965</guid>
-    <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zihan Ji et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The scarcity of high-quality large-scale labeled datasets poses a huge challenge for employing deep learning models in video deception detection. To address this issue, inspired by the psychological theory on the relation between deception and expressions, we propose a novel method called AFFAKT in this paper, which enhances the classification performance by transferring useful and correlated knowledge from a large facial expression dataset. Two key challenges in knowledge transfer arise: 1) \textit{how much} knowledge of facial expression data should be transferred and 2) \textit{how to} effectively leverage transferred knowledge for the deception classification model during inference. Specifically, the optimal relation mapping between facial expression classes and deception samples is firstly quantified using proposed H-OTKT module and then transfers knowledge from the facial expression dataset to deception samples. Moreover, a correlation prototype within another proposed module SRKB is well designed to retain the invariant correlations between facial expression classes and deception classes through momentum updating. During inference, the transferred knowledge is fine-tuned with the correlation prototype using a sample-specific re-weighting strategy. Experimental results on two deception detection datasets demonstrate the superior performance of our proposed method. The interpretability study reveals high associations between deception and negative affections, which coincides with the theory in psychology.</p>]]></description>
   </item>
 
 </channel>

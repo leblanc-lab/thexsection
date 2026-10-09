@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Calibrating Tabular Anomaly Detection via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-06810</link>
+    <guid isPermaLink="false">arxiv:2602.06810</guid>
+    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hangting Ye et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Tabular anomaly detection (TAD) remains challenging due to the heterogeneity of tabular data: features lack natural relationships, vary widely in distribution and scale, and exhibit diverse types. Consequently, each TAD method makes implicit assumptions about anomaly patterns that work well on some datasets but fail on others, and no method consistently outperforms across diverse scenarios. We present CTAD (Calibrating Tabular Anomaly Detection), a model-agnostic post-processing framework that enhances any existing TAD detector through sample-specific calibration. Our approach characterizes normal data via two complementary distributions, i.e., an empirical distribution from random sampling and a structural distribution from K-means centroids, and measures how adding a test sample disrupts their compatibility using Optimal Transport (OT) distance. Normal samples maintain low disruption while anomalies cause high disruption, providing a calibration signal to amplify detection. We prove that OT distance has a lower bound proportional to the test sample&rsquo;s distance from centroids, and establish that anomalies systematically receive higher calibration scores than normals in expectation, explaining why the method generalizes across datasets. Extensive experiments on 34 diverse tabular datasets with 7 representative detectors spanning all major TAD categories (density estimation, classification, reconstruction, and isolation-based methods) demonstrate that CTAD consistently improves performance with statistical significance. Remarkably, CTAD enhances even state-of-the-art deep learning methods and shows robust performance across diverse hyperparameter settings, requiring no additional tuning for practical deployment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reliable Modeling of Distribution Shifts via Displacement-Reshaped Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-04965</link>
+    <guid isPermaLink="false">arxiv:2605.04965</guid>
+    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Philip Naumann et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is a central framework for modeling distribution shifts. Because OT compares distributions directly in input space, a well-designed ground metric between observations is essential to ensure that the optimizer does not violate the true geometry of change. We propose Displacement-Reshaped Optimal Transport (ReshapeOT), a method that reshapes the ground metric by integrating observed sample displacements as an additional source of knowledge. Technically, ReshapeOT replaces the Euclidean metric with a Mahalanobis distance estimated from displacement second moments. This effectively carves expressways through the input space, inviting transport solutions that better align with observed displacements. Our method is computationally lightweight, integrates seamlessly into any OT solver that operates on a cost matrix, and can be kernelized for further flexibility. Experiments on synthetic and real-world data show that ReshapeOT achieves substantial gains in transport reliability. We further demonstrate our method&rsquo;s usefulness in two practical use cases.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Direct Estimation of Schrödinger Bridge Time-Series Drifts: Finite-Sample, Asymptotic, and Adaptive Guarantees</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-05432</link>
+    <guid isPermaLink="false">arxiv:2605.05432</guid>
+    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Othmane Mazhar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We study nonparametric estimation of Schrödinger bridge (SB) drifts from i.i.d.\ data observed on a single time interval. Starting from the conditional-ratio form of the Schrödinger bridge time-series (SBTS) drift formula, we analyze a direct Nadaraya&ndash;Watson plug-in estimator built from kernelized numerator and denominator terms. Unlike recent SB analyses based on entropic-OT potentials, Sinkhorn iterations, or iterative bridge solvers, our approach works directly at the drift level and isolates \emph{statistical error} from optimization, approximation, and discretization error. Under Hölder regularity, a marginal-density floor, and bounded support, we prove a uniform non-asymptotic bound for admissible bandwidth pairs, a pointwise CLT under genuine undersmoothing, and an adaptive bandwidth selector satisfying an oracle inequality. We also prove a pivot-local minimax lower bound which, through an explicit uniform pivot, yields a global minimax lower bound under transparent compatibility conditions; hence the adaptive selector is minimax-rate optimal up to logarithmic factors. Synthetic experiments provide theorem-targeted diagnostics for finite-sample scaling, Gaussian approximation, and adaptive behavior.</p>]]></description>
+  </item>
 
   <item>
     <title>A Provably Convergent and Practical Algorithm for Gromov--Wasserstein Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Millard et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>In robotics and multi-agent systems, fleets of autonomous agents often operate in subtly different environments while pursuing a common high-level objective. Directly pooling their data to learn a shared reward function is typically impractical due to differences in dynamics, privacy constraints, and limited communication bandwidth. This paper introduces an optimal transport-based approach to federated inverse reinforcement learning (IRL). Each client first performs lightweight Maximum Entropy IRL locally, adhering to its computational and privacy limitations. The resulting reward functions are then fused via a Wasserstein barycenter, which considers their underlying geometric structure. We further prove that this barycentric fusion yields a more faithful global reward estimate than conventional parameter averaging methods in federated learning. Overall, this work provides a principled and communication-efficient framework for deriving a shared reward that generalizes across heterogeneous agents and environments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Z-Gromov-Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-08233</link>
-    <guid isPermaLink="false">arxiv:2408.08233</guid>
-    <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Bauer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) distance is a powerful tool for comparing metric measure spaces which has found broad applications in data science and machine learning. Driven by the need to analyze datasets whose objects have increasingly complex structure (such as node and edge-attributed graphs), several variants of GW distance have been introduced in the recent literature. With a view toward establishing a general framework for the theory of GW-like distances, this paper considers a vast generalization of the notion of a metric measure space: for an arbitrary metric space Z, we define a Z-network to be a measure space endowed with a kernel valued in Z. We introduce a method for comparing Z-networks by defining a generalization of GW distance, which we refer to as Z-Gromov-Wasserstein (Z-GW) distance. This construction subsumes many previously known metrics and offers a unified approach to understanding their shared properties. This paper demonstrates that the Z-GW distance defines a metric on the space of Z-networks which retains desirable properties of Z, such as separability, completeness, and geodesicity. Many of these properties were unknown for existing variants of GW distance that fall under our framework. Our focus is on foundational theory, but our results also include computable lower bounds and approximations of the distance which will be useful for practical applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical topological clustering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2601-00892</link>
-    <guid isPermaLink="false">arxiv:2601.00892</guid>
-    <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ana Carpio et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
-<p>Topological methods have the potential of exploring data clouds without making assumptions on their the structure. Here we propose a hierarchical topological clustering algorithm that can be implemented with any distance choice. The persistence of outliers and clusters of arbitrary shape is inferred from the resulting hierarchy. We demonstrate the potential of the algorithm on selected datasets in which outliers play relevant roles, consisting of images, medical and economic data. These methods can provide meaningful clusters in situations in which other techniques fail to do so.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scaled-Dot-Product Attention as One-Sided Entropic Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-08369</link>
-    <guid isPermaLink="false">arxiv:2508.08369</guid>
-    <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elon Litman</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The scaled-dot-product attention (SDPA) mechanism is a core component of modern deep learning, but its mathematical form is often motivated by heuristics. This work provides a first-principles justification for SDPA. We first show that the attention forward pass is the exact solution to a degenerate, one-sided Entropic Optimal Transport (EOT) problem, which seeks a distribution that maximizes similarity while being maximally entropic. This optimization perspective has a direct consequence for the backward pass. We prove that the standard gradient computed via backpropagation is mathematically identical to an advantage-based policy gradient, a variance-reduced update rule from reinforcement learning. Crucially, we demonstrate that the EOT formulation of the forward pass induces a specific information geometry on the space of attention distributions. It is this geometry, characterized by the Fisher Information Matrix, that dictates the precise form of the learning gradient, revealing the advantage-based update as a natural consequence of the optimization problem being solved. This unified view reveals SDPA as a principled mechanism where the forward pass performs optimal inference and the backward pass implements a rational, manifold-aware learning update.</p>]]></description>
   </item>
 
 </channel>

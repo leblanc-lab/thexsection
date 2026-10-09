@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Residual ANODE</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-11629</link>
+    <guid isPermaLink="false">arxiv:2312.11629</guid>
+    <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ranit Das et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>We present R-ANODE, a new method for data-driven, model-agnostic resonant anomaly detection that raises the bar for both performance and interpretability. The key to R-ANODE is to enhance the inductive bias of the anomaly detection task by fitting a normalizing flow directly to the small and unknown signal component, while holding fixed a background model (also a normalizing flow) learned from sidebands. In doing so, R-ANODE is able to outperform all classifier-based, weakly-supervised approaches, as well as the previous ANODE method which fit a density estimator to all of the data in the signal region instead of just the signal. We show that the method works equally well whether the unknown signal fraction is learned or fixed, and is even robust to signal fraction misspecification. Finally, with the learned signal model we can sample and gain qualitative insights into the underlying anomaly, which greatly enhances the interpretability of resonant anomaly detection and offers the possibility of simultaneously discovering and characterizing the new physics that could be hiding in the data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multiple Hypothesis Dropout: Estimating the Parameters of Multi-Modal Output Distributions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-11735</link>
+    <guid isPermaLink="false">arxiv:2312.11735</guid>
+    <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David D. Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>In many real-world applications, from robotics to pedestrian trajectory prediction, there is a need to predict multiple real-valued outputs to represent several potential scenarios. Current deep learning techniques to address multiple-output problems are based on two main methodologies: (1) mixture density networks, which suffer from poor stability at high dimensions, or (2) multiple choice learning (MCL), an approach that uses M single-output functions, each only producing a point estimate hypothesis. This paper presents a Mixture of Multiple-Output functions (MoM) approach using a novel variant of dropout, Multiple Hypothesis Dropout. Unlike traditional MCL-based approaches, each multiple-output function not only estimates the mean but also the variance for its hypothesis. This is achieved through a novel stochastic winner-take-all loss which allows each multiple-output function to estimate variance through the spread of its subnetwork predictions. Experiments on supervised learning problems illustrate that our approach outperforms existing solutions for reconstructing multimodal output distributions. Additional studies on unsupervised learning problems show that estimating the parameters of latent posterior distributions within a discrete autoencoder significantly improves codebook efficiency, sample quality, precision and recall.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine-Learned Exclusion Limits without Binning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-04806</link>
+    <guid isPermaLink="false">arxiv:2211.04806</guid>
+    <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ernesto Arganda et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Machine-Learned Likelihoods (MLL) combines machine-learning classification techniques with likelihood-based inference tests to estimate the experimental sensitivity of high-dimensional data sets. We extend the MLL method by including Kernel Density Estimators (KDE) to avoid binning the classifier output to extract the resulting one-dimensional signal and background probability density functions. We first test our method on toy models generated with multivariate Gaussian distributions, where the true probability distribution functions are known. Later, we apply the method to two cases of interest at the LHC: a search for exotic Higgs bosons, and a Z&rsquo; boson decaying into lepton pairs. In contrast to physical-based quantities, the typical fluctuations of the ML outputs give non-smooth probability distributions for pure-signal and pure-background samples. The non-smoothness is propagated into the density estimation due to the good performance and flexibility of the KDE method. We study its impact on the final significance computation, and we compare the results using the average of several independent ML output realizations, which allows us to obtain smoother distributions. We conclude that the significance estimation turns out to be not sensible to this issue.</p>]]></description>
+  </item>
 
   <item>
     <title>Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Max sliced Wasserstein (Max-SW) distance has been widely known as a solution for less discriminative projections of sliced Wasserstein (SW) distance. In applications that have various independent pairs of probability measures, amortized projection optimization is utilized to predict the ``max&rdquo; projecting directions given two input measures instead of using projected gradient ascent multiple times. Despite being efficient, Max-SW and its amortized version cannot guarantee metricity property due to the sub-optimality of the projected gradient ascent and the amortization gap. Therefore, we propose to replace Max-SW with distributional sliced Wasserstein distance with von Mises-Fisher (vMF) projecting distribution (v-DSW). Since v-DSW is a metric with any non-degenerate vMF distribution, its amortized version can guarantee the metricity when performing amortization. Furthermore, current amortized models are not permutation invariant and symmetric. To address the issue, we design amortized models based on self-attention architecture. In particular, we adopt efficient self-attention architectures to make the computation linear in the number of supports. With the two improvements, we derive self-attention amortized distributional projection optimization and show its appealing performance in point-cloud reconstruction and its downstream applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CURTAINs Flows For Flows: Constructing Unobserved Regions with Maximum Likelihood Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-04646</link>
-    <guid isPermaLink="false">arxiv:2305.04646</guid>
-    <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Debajyoti Sengupta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Model independent techniques for constructing background data templates using generative models have shown great promise for use in searches for new physics processes at the LHC. We introduce a major improvement to the CURTAINs method by training the conditional normalizing flow between two side-band regions using maximum likelihood estimation instead of an optimal transport loss. The new training objective improves the robustness and fidelity of the transformed data and is much faster and easier to train. We compare the performance against the previous approach and the current state of the art using the LHC Olympics anomaly detection dataset, where we see a significant improvement in sensitivity over the original CURTAINs method. Furthermore, CURTAINsF4F requires substantially less computational resources to cover a large number of signal regions than other fully data driven approaches. When using an efficient configuration, an order of magnitude more models can be trained in the same time required for ten signal regions, without a significant drop in performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein-Fisher-Rao Embedding: Logical Query Embeddings with Local Comparison and Global Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-04034</link>
-    <guid isPermaLink="false">arxiv:2305.04034</guid>
-    <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zihao Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Answering complex queries on knowledge graphs is important but particularly challenging because of the data incompleteness. Query embedding methods address this issue by learning-based models and simulating logical reasoning with set operators. Previous works focus on specific forms of embeddings, but scoring functions between embeddings are underexplored. In contrast to existing scoring functions motivated by local comparison or global transport, this work investigates the local and global trade-off with unbalanced optimal transport theory. Specifically, we embed sets as bounded measures in  endowed with a scoring function motivated by the Wasserstein-Fisher-Rao metric. Such a design also facilitates closed-form set operators in the embedding space. Moreover, we introduce a convolution-based algorithm for linear time computation and a block-diagonal kernel to enforce the trade-off. Results show that WFRE can outperform existing query embedding methods on standard datasets, evaluation sets with combinatorially complex queries, and hierarchical knowledge graphs. Ablation study shows that finding a better local and global trade-off is essential for performance improvement.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloFlow: Fast and Accurate Generation of Calorimeter Showers with Normalizing Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2106-05285</link>
-    <guid isPermaLink="false">arxiv:2106.05285</guid>
-    <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Claudius Krause et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (David Shih) — original abstract; no AI summary.</em></p>
-<p>We introduce CaloFlow, a fast detector simulation framework based on normalizing flows. For the first time, we demonstrate that normalizing flows can reproduce many-channel calorimeter showers with extremely high fidelity, providing a fresh alternative to computationally expensive GEANT4 simulations, as well as other state-of-the-art fast simulation frameworks based on GANs and VAEs. Besides the usual histograms of physical features and images of calorimeter showers, we introduce a new metric for judging the quality of generative modeling: the performance of a classifier trained to differentiate real from generated images. We show that GAN-generated images can be identified by the classifier with nearly 100% accuracy, while images generated from CaloFlow are better able to fool the classifier. More broadly, normalizing flows offer several advantages compared to other state-of-the-art approaches (GANs and VAEs), including: tractable likelihoods; stable and convergent training; and principled model selection. Normalizing flows also provide a bijective mapping between data and the latent space, which could have other applications beyond simulation, for example, to detector unfolding.</p>]]></description>
   </item>
 
 </channel>

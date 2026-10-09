@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Geometric Operator Learning with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-20065</link>
+    <guid isPermaLink="false">arxiv:2507.20065</guid>
+    <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinyi Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose integrating optimal transport (OT) into operator learning for partial differential equations (PDEs) on complex geometries. Classical geometric learning methods typically represent domains as meshes, graphs, or point clouds. Our approach generalizes discretized meshes to mesh density functions, formulating geometry embedding as an OT problem that maps these functions to a uniform density in a reference space. Compared to previous methods relying on interpolation or shared deformation, our OT-based method employs instance-dependent deformation, offering enhanced flexibility and effectiveness. For 3D simulations focused on surfaces, our OT-based neural operator embeds the surface geometry into a 2D parameterized latent space. By performing computations directly on this 2D representation of the surface manifold, it achieves significant computational efficiency gains compared to volumetric simulation. Experiments with Reynolds-averaged Navier-Stokes equations (RANS) on the ShapeNet-Car and DrivAerNet-Car datasets show that our method achieves better accuracy and also reduces computational expenses in terms of both time and memory usage compared to existing machine learning models. Additionally, our model demonstrates significantly improved accuracy on the FlowBench dataset, underscoring the benefits of employing instance-dependent deformation for datasets with highly variable geometries.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Doubly Regularized Entropic Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2303-11844</link>
+    <guid isPermaLink="false">arxiv:2303.11844</guid>
+    <pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lénaïc Chizat</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study a general formulation of regularized Wasserstein barycenters that enjoys favorable regularity, approximation, stability and (grid-free) optimization properties. This barycenter is defined as the unique probability measure that minimizes the sum of entropic optimal transport (EOT) costs with respect to a family of given probability measures, plus an entropy term. We denote it (λ,τ)-barycenter, where λ is the inner regularization strength and τ the outer one. This formulation recovers several previously proposed EOT barycenters for various choices of λ,τ≥0 and generalizes them. First, in spite of &ndash; and in fact owing to &ndash; being \emph{doubly} regularized, we show that our formulation is debiased for τ=λ/2: the suboptimality in the (unregularized) Wasserstein barycenter objective is, for smooth densities, of the order of the strength λ² of entropic regularization, instead of max{λ,τ} in general. We discuss this phenomenon for isotropic Gaussians where all (λ,τ)-barycenters have closed form. Second, we show that for λ,τ&gt;0, this barycenter has a smooth density and is strongly stable under perturbation of the marginals. In particular, it can be estimated efficiently: given n samples from each of the probability measures, it converges in relative entropy to the population barycenter at a rate n⁻¹/2. And finally, this formulation lends itself naturally to a grid-free optimization algorithm: we propose a simple \emph{noisy particle gradient descent} which, in the mean-field limit, converges globally at an exponential rate to the barycenter.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Regularized Divergences: Application to Adversarial Robustness</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2309-03791</link>
+    <guid isPermaLink="false">arxiv:2309.03791</guid>
+    <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremiah Birrell et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce a new class of optimal-transport-regularized divergences, D^c, constructed via an infimal convolution between an information divergence, D, and an optimal-transport (OT) cost, C, and study their use in distributionally robust optimization (DRO). In particular, we propose the ARMOR_D methods as novel approaches to enhancing the adversarial robustness of deep learning models. These DRO-based methods are defined by minimizing the maximum expected loss over a D^c-neighborhood of the empirical distribution of the training data. Viewed as a tool for constructing adversarial samples, our method allows samples to be both transported, according to the OT cost, and re-weighted, according to the information divergence; the addition of a principled and dynamical adversarial re-weighting on top of adversarial sample transport is a key innovation of ARMOR_D. ARMOR_D can be viewed as a generalization of the best-performing loss functions and OT costs in the adversarial training literature; we demonstrate this flexibility by using ARMOR_D to augment the UDR, TRADES, and MART methods and obtain improved performance on CIFAR-10 and CIFAR-100 image recognition. Specifically, augmenting with ARMOR_D leads to 1.9\% and 2.1\% improvement against AutoAttack, a powerful ensemble of adversarial attacks, on CIFAR-10 and CIFAR-100 respectively. To foster reproducibility, we made the code accessible at https://github.com/star-ailab/ARMOR.</p>]]></description>
+  </item>
 
   <item>
     <title>PLOT-TAL: Prompt Learning with Optimal Transport for Few-Shot Temporal Action Localization</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Worah</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Given two labeled data-sets 𝒮 and 𝒯, we design a simple and efficient greedy algorithm to reweigh the loss function such that the limiting distribution of the neural network weights that result from training on 𝒮 approaches the limiting distribution that would have resulted by training on 𝒯. On the theoretical side, we prove that when the metric entropy of the input datasets is bounded, our greedy algorithm outputs a close to optimal reweighing, i.e., the two invariant distributions of network weights will be provably close in total variation distance. Moreover, the algorithm is simple and scalable, and we prove bounds on the efficiency of the algorithm as well. As a motivating application, we train a neural net to recognize small molecule binders to MNK2 (a MAP Kinase, responsible for cell signaling) which are non-binders to MNK1 (a highly similar protein). In our example dataset, of the 43 distinct small molecules predicted to be most selective from the enamine catalog, 2 small molecules were experimentally verified to be selective, i.e., they reduced the enzyme activity of MNK2 below 50\% but not MNK1, at 10μM &ndash; a 5\% success rate.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Re-Simulation-based Self-Supervised Learning for Pre-Training Foundation Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-07066</link>
-    <guid isPermaLink="false">arxiv:2403.07066</guid>
-    <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Philip Harris et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris, Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Self-Supervised Learning (SSL) is at the core of training modern large machine learning models, providing a scheme for learning powerful representations that can be used in a variety of downstream tasks. However, SSL strategies must be adapted to the type of training data and downstream tasks required. We propose RS3L (&ldquo;Re-simulation-based self-supervised representation learning&rdquo;), a novel simulation-based SSL strategy that employs a method of re-simulation to drive data augmentation for contrastive learning in the physical sciences, particularly, in fields that rely on stochastic simulators. By intervening in the middle of the simulation process and re-running simulation components downstream of the intervention, we generate multiple realizations of an event, thus producing a set of augmentations covering all physics-driven variations available in the simulator. Using experiments from high-energy physics, we explore how this strategy may enable the development of a foundation model; we show how RS3L pre-training enables powerful performance in downstream tasks such as discrimination of a variety of objects and uncertainty mitigation. In addition to our results, we make the RS3L dataset publicly available for further studies on how to improve SSL strategies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Tree-Wasserstein Distance for High Dimensional Data with a Latent Feature Hierarchy</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-21107</link>
-    <guid isPermaLink="false">arxiv:2410.21107</guid>
-    <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ya-Wei Eileen Lin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Finding meaningful distances between high-dimensional data samples is an important scientific task. To this end, we propose a new tree-Wasserstein distance (TWD) for high-dimensional data with two key aspects. First, our TWD is specifically designed for data with a latent feature hierarchy, i.e., the features lie in a hierarchical space, in contrast to the usual focus on embedding samples in hyperbolic space. Second, while the conventional use of TWD is to speed up the computation of the Wasserstein distance, we use its inherent tree as a means to learn the latent feature hierarchy. The key idea of our method is to embed the features into a multi-scale hyperbolic space using diffusion geometry and then present a new tree decoding method by establishing analogies between the hyperbolic embedding and trees. We show that our TWD computed based on data observations provably recovers the TWD defined with the latent feature hierarchy and that its computation is efficient and scalable. We showcase the usefulness of the proposed TWD in applications to word-document and single-cell RNA-sequencing datasets, demonstrating its advantages over existing TWDs and methods based on pre-trained models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Detecting OOD Samples via Optimal Transport Scoring Function</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-16115</link>
-    <guid isPermaLink="false">arxiv:2502.16115</guid>
-    <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Heng Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>To deploy machine learning models in the real world, researchers have proposed many OOD detection algorithms to help models identify unknown samples during the inference phase and prevent them from making untrustworthy predictions. Unlike methods that rely on extra data for outlier exposure training, post hoc methods detect Out-of-Distribution (OOD) samples by developing scoring functions, which are model agnostic and do not require additional training. However, previous post hoc methods may fail to capture the geometric cues embedded in network representations. Thus, in this study, we propose a novel score function based on the optimal transport theory, named OTOD, for OOD detection. We utilize information from features, logits, and the softmax probability space to calculate the OOD score for each test sample. Our experiments show that combining this information can boost the performance of OTOD with a certain margin. Experiments on the CIFAR-10 and CIFAR-100 benchmarks demonstrate the superior performance of our method. Notably, OTOD outperforms the state-of-the-art method GEN by 7.19% in the mean FPR@95 on the CIFAR-10 benchmark using ResNet-18 as the backbone, and by 12.51% in the mean FPR@95 using WideResNet-28 as the backbone. In addition, we provide theoretical guarantees for OTOD. The code is available in https://github.com/HengGao12/OTOD.</p>]]></description>
   </item>
 
 </channel>
