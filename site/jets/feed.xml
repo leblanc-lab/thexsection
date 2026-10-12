@@ -7,7 +7,59 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays (CMS TAU-25-001)</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-13634</link>
+    <guid isPermaLink="false">arxiv:2610.13634</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
+    <description><![CDATA[<p><strong>How central to this topic:</strong> peripheral. This is a background-estimation method for jet→τh fakes. Jet structure enters only through simple proxies, not substructure observables.</p>
+<p><strong>What they did.</strong> MUFFIN replaces binned fake factors N_pass/N_fail with a continuous transfer factor, the ratio of calibrated XGBoost class probabilities.
+- The nominal model is a four-class BDT (data pass/fail, genuine-τ simulation pass/fail). Genuine-τ contamination is subtracted inside the weight: w = (P_pass^data − P_pass^τsim)/(P_fail^data − P_fail^τsim).
+- No simulation of the targeted fake process is used for the data-derived QCD and W+jets factors.
+- Inputs, in order of feature importance: τh decay mode, then p_T(jet)/p_T(τh), then p_T(τh), N_jets, N_b, η, φ, and a data-period label. The p_T(jet)/p_T(τh) ratio is the one substructure-like handle, capturing how much of the seed jet&rsquo;s momentum the HPS candidate captures.
+- Temperature scaling gives T* ≈ 0.99–1.00, so the BDT outputs are essentially already calibrated.
+- Statistical uncertainty comes from a 50-model bootstrap ensemble.</p>
+<p><strong>Results.</strong> Data are 62.4 fb⁻¹ at 13.6 TeV. In validation-region closure, MUFFIN gives a lower mean |Poisson pull| than fake factors in τhτh and τμτh. The gains are largest in η and decay mode (which fake factors marginalise over) and at high p_T. The abstract quotes up to 70% lower jet→τh systematic uncertainty. Total jet→τh yield uncertainty is 6% (τhτh) and 5% (τμτh). The analysis-dependent extrapolation term (≲10%) dominates; the flat non-closure term is 5%.</p>
+<p><strong>Caveats.</strong>
+- W+jets and tt̄ are validated only in simulation, since there is no clean data validation region.
+- A residual ΔR non-closure in τμτh resembles the fake-factor behaviour, pointing to a missing input variable.
+- Pull values appear only in the figures.
+- The provided text truncates during the signal-region application section.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Precision Tokenization for Multi-Modal Data in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-13876</link>
+    <guid isPermaLink="false">arxiv:2610.13876</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeffrey Krupa et al.</dc:creator>
+    <description><![CDATA[<p><strong>What they did.</strong> Residual-VQ-VAE tokenizers with Transformer encoders and decoders, scanned over codebook size K, code dimension d and number of residual stages Q. Modalities are ATLAS JetSet tracks (20 features) and COCOA tracks, topoclusters, and calorimeter cells (8×8 patches with occupancy and energy loss). Fidelity is set against information fraction I = Q·log₂K/(32D).</p>
+<p><strong>Headline numbers.</strong> Reaching the 1% jet p_T IQR/median target:
+| Modality | Configuration | Compression | Resolution |
+|&mdash;|&mdash;|&mdash;|&mdash;|
+| JetSet | (32768, 8, 4) | 10.7× | 0.82% |
+| COCOA tracks | (4096, 8, 3) | 4.4× | 0.68% |
+| COCOA topoclusters | (4096, 8, 6) | 3.6× | 0.39% |
+| COCOA cells (best, misses target) | not stated | 11× | 1.24% |</p>
+<ul>
+<li>Learned tokenizers need up to 2.4× fewer bits than per-feature binning.</li>
+<li>The in-context (Transformer) encoder beats an MLP: 0.82% vs 1.27%.</li>
+</ul>
+<p><strong>Design rules.</strong> Use multiple residual stages (single-stage collapses), use large K, scale d with the bit budget and the target&rsquo;s intrinsic dimension, and bin (η,φ) outside the quantizer when coordinates dominate the feature set.</p>
+<p><strong>Downstream tasks.</strong>
+- <strong>Particle flow:</strong> with positions binned outside the quantizer, IQR/median is 0.086 vs 0.0845 for continuous inputs (about 2% relative).
+- <strong>b-tagging:</strong> at 60 bits per constituent, tokens retain 73–93% of continuous-input rejection. At ε_b = 0.7, light-jet rejection is 1170 vs 1370 and τ-jet rejection 354 vs 451.
+- <strong>Degradation at 30 bits:</strong> charm rejection drops to 19.1 vs 42.0, so high-rejection tails are where tokenization costs most.</p>
+<p><strong>Caveats.</strong>
+- The resolution metric measures tokenizer error only, comparing reconstructed constituents with themselves before tokenization.
+- COCOA tracks are smeared, not reconstructed.
+- Table 4&rsquo;s COCOA-track value of 0.068% looks inconsistent with Table 1&rsquo;s 0.68% (a unit slip is likely).
+- No substructure observables (e.g. mass, N-subjettiness) are checked explicitly.</p>
+<p><strong>Link between the two papers.</strong> Both swap hand-binned representations of jet-constituent information for learned ones. The tokenization paper quantifies what that costs; MUFFIN shows what it gains for a data-driven background estimate.</p>]]></description>
+  </item>
 
   <item>
     <title>The hidden sunrise in the energy-energy correlator</title>
@@ -2443,26 +2495,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Diego F. Vasquez Plaza et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, b-jet, flavor tagging, jet flavor, quark jet, ParticleNet) — abstract only, not yet read for a briefing.</em></p>
 <p>Jet flavor tagging plays an important role in precise Standard Model measurement enabling the extraction of mass dependence in jet-quark interaction and quark-gluon plasma (QGP) interactions. They also enable inferring the nature of particles produced in high-energy particle collisions that contain heavy quarks. The classification of bottom jets is vital for exploring new Physics scenarios in proton-proton collisions. In this research, we present a hybrid deep learning architecture that integrates edge convolutions with transformer self-attention mechanisms, into one single architecture called the Edge Convolution Transformer (ECT) model for bottom-quark jet tagging. ECT processes track-level features (impact parameters, momentum, and their significances) alongside jet-level observables (vertex information and kinematics) to achieve state-of-the-art performance. The study utilizes the ATLAS simulation dataset. We demonstrate that ECT achieves 0.9333 AUC for b-jet versus combined charm and light jet discrimination, surpassing ParticleNet (0.8904 AUC) and the pure transformer baseline (0.9216 AUC). The model maintains inference latency below 0.060 ms per jet on modern GPUs, meeting the stringent requirements for real-time event selection at the LHC. Our results demonstrate that hybrid architectures combining local and global features offer superior performance for challenging jet classification tasks. The proposed architecture achieves good results in b-jet tagging, particularly excelling in charm jet rejection (the most challenging task), while maintaining competitive light-jet discrimination comparable to pure transformer models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unfolding with a Wasserstein Loss</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-20903</link>
-    <guid isPermaLink="false">arxiv:2603.20903</guid>
-    <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Katy Craig et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet mass) — abstract only, not yet read for a briefing.</em></p>
-<p>Data unfolding &ndash; the removal of noise or artifacts from measurements &ndash; is a fundamental task across the experimental sciences. Of particular interest are applications in physics, where the dominant approach is Richardson-Lucy (RL) deconvolution. The classical RL approach aims to find denoised data that, once passed through the noise model, is as close as possible to the measured data in terms of Kullback-Leibler (KL) divergence. This requires that the support of the measured data overlaps with the output of the noise model, a hypothesis typically enforced by binning, which introduces numerical error. As a counterpoint, the present work studies an alternative formulation using a Wasserstein loss. We establish sharp conditions for existence and uniqueness of optimizers, answering open questions of Li, et al., regarding necessary conditions for uniqueness in the case of transport map noise models. We then develop a provably convergent generalized Sinkhorn algorithm to compute approximate optimizers. Our algorithm requires only empirical observations of the noise model and measured data and scales with the size of the data, rather than the ambient dimension. Numerical experiments on one- and two-dimensional problems inspired by jet mass unfolding in particle physics demonstrate that the optimal transport approach offers robust, accurate performance compared to classical RL deconvolution, particularly when binning artifacts are significant.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Higgs Self-Coupling Measurement at a Linear Collider at 550 GeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-19884</link>
-    <guid isPermaLink="false">arxiv:2603.19884</guid>
-    <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikael Berggren et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (flavour tagging) — abstract only, not yet read for a briefing.</em></p>
-<p>The Higgs mechanism is essential for the success of the Standard Model (SM) and can be experimentally verified with the determination of the Higgs self-coupling. As the simplest model of a Higgs potential, the SM provides a clear prediction of the Higgs self-coupling in terms of the Higgs boson mass and the vacuum expectation value. Any deviations would indicate physics beyond the SM and help guide extended Higgs models. At large enough centre-of-mass energies, double-Higgs production provides tree-level sensitivity to the trilinear Higgs self-coupling. At 550 GeV the leading production mode in e⁺e⁻ comes from di-Higgs strahlung with a small contribution from WW-fusion. The most up-to-date ILD projections are extrapolated based on a full simulation analysis from 2014 by incorporating expected improvements in flavour tagging and kinematic reconstruction for event selection, and are presented in this contribution together with the ongoing re-analysis using fast SGV (Simulation a Grande Vitesse) simulations of the ILD detector concept on a full SM background including the aforementioned state-of-the-art reconstruction and analysis tools.</p>]]></description>
   </item>
 
 </channel>

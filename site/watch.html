@@ -39,6 +39,52 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Monday, October 12, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261013634-a-machine-learning-method-for-the-estimation-of-the-background-from-jets-misidentified-as-hadronic-tau-lepton-decays-cms-tau-25-001-cms-collaboration"><a href="https://arxiv.org/abs/2610.13634">arXiv:2610.13634</a> — A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays (CMS TAU-25-001) (CMS Collaboration)</h3>
+<p><strong>How central to this topic:</strong> peripheral. This is a background-estimation method for jet→τh fakes. Jet structure enters only through simple proxies, not substructure observables.</p>
+<p><strong>What they did.</strong> MUFFIN replaces binned fake factors N_pass/N_fail with a continuous transfer factor, the ratio of calibrated XGBoost class probabilities.
+- The nominal model is a four-class BDT (data pass/fail, genuine-τ simulation pass/fail). Genuine-τ contamination is subtracted inside the weight: w = (P_pass^data − P_pass^τsim)/(P_fail^data − P_fail^τsim).
+- No simulation of the targeted fake process is used for the data-derived QCD and W+jets factors.
+- Inputs, in order of feature importance: τh decay mode, then p_T(jet)/p_T(τh), then p_T(τh), N_jets, N_b, η, φ, and a data-period label. The p_T(jet)/p_T(τh) ratio is the one substructure-like handle, capturing how much of the seed jet&rsquo;s momentum the HPS candidate captures.
+- Temperature scaling gives T* ≈ 0.99–1.00, so the BDT outputs are essentially already calibrated.
+- Statistical uncertainty comes from a 50-model bootstrap ensemble.</p>
+<p><strong>Results.</strong> Data are 62.4 fb⁻¹ at 13.6 TeV. In validation-region closure, MUFFIN gives a lower mean |Poisson pull| than fake factors in τhτh and τμτh. The gains are largest in η and decay mode (which fake factors marginalise over) and at high p_T. The abstract quotes up to 70% lower jet→τh systematic uncertainty. Total jet→τh yield uncertainty is 6% (τhτh) and 5% (τμτh). The analysis-dependent extrapolation term (≲10%) dominates; the flat non-closure term is 5%.</p>
+<p><strong>Caveats.</strong>
+- W+jets and tt̄ are validated only in simulation, since there is no clean data validation region.
+- A residual ΔR non-closure in τμτh resembles the fake-factor behaviour, pointing to a missing input variable.
+- Pull values appear only in the figures.
+- The provided text truncates during the signal-region application section.</p>
+<h3 id="arxiv261013876-precision-tokenization-for-multi-modal-data-in-high-energy-physics-jeffrey-krupa-et-al"><a href="https://arxiv.org/abs/2610.13876">arXiv:2610.13876</a> — Precision Tokenization for Multi-Modal Data in High Energy Physics (Jeffrey Krupa et al.)</h3>
+<p><strong>What they did.</strong> Residual-VQ-VAE tokenizers with Transformer encoders and decoders, scanned over codebook size K, code dimension d and number of residual stages Q. Modalities are ATLAS JetSet tracks (20 features) and COCOA tracks, topoclusters, and calorimeter cells (8×8 patches with occupancy and energy loss). Fidelity is set against information fraction I = Q·log₂K/(32D).</p>
+<p><strong>Headline numbers.</strong> Reaching the 1% jet p_T IQR/median target:
+| Modality | Configuration | Compression | Resolution |
+|&mdash;|&mdash;|&mdash;|&mdash;|
+| JetSet | (32768, 8, 4) | 10.7× | 0.82% |
+| COCOA tracks | (4096, 8, 3) | 4.4× | 0.68% |
+| COCOA topoclusters | (4096, 8, 6) | 3.6× | 0.39% |
+| COCOA cells (best, misses target) | not stated | 11× | 1.24% |</p>
+<ul>
+<li>Learned tokenizers need up to 2.4× fewer bits than per-feature binning.</li>
+<li>The in-context (Transformer) encoder beats an MLP: 0.82% vs 1.27%.</li>
+</ul>
+<p><strong>Design rules.</strong> Use multiple residual stages (single-stage collapses), use large K, scale d with the bit budget and the target&rsquo;s intrinsic dimension, and bin (η,φ) outside the quantizer when coordinates dominate the feature set.</p>
+<p><strong>Downstream tasks.</strong>
+- <strong>Particle flow:</strong> with positions binned outside the quantizer, IQR/median is 0.086 vs 0.0845 for continuous inputs (about 2% relative).
+- <strong>b-tagging:</strong> at 60 bits per constituent, tokens retain 73–93% of continuous-input rejection. At ε_b = 0.7, light-jet rejection is 1170 vs 1370 and τ-jet rejection 354 vs 451.
+- <strong>Degradation at 30 bits:</strong> charm rejection drops to 19.1 vs 42.0, so high-rejection tails are where tokenization costs most.</p>
+<p><strong>Caveats.</strong>
+- The resolution metric measures tokenizer error only, comparing reconstructed constituents with themselves before tokenization.
+- COCOA tracks are smeared, not reconstructed.
+- Table 4&rsquo;s COCOA-track value of 0.068% looks inconsistent with Table 1&rsquo;s 0.68% (a unit slip is likely).
+- No substructure observables (e.g. mass, N-subjettiness) are checked explicitly.</p>
+<p><strong>Link between the two papers.</strong> Both swap hand-binned representations of jet-constituent information for learned ones. The tokenization paper quantifies what that costs; MUFFIN shows what it gains for a data-driven background estimate.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Friday, October 9, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -1128,7 +1174,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-11 05:47 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-12 05:38 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
