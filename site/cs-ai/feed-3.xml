@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Conditioned quantum-assisted deep generative surrogate for particle-calorimeter interactions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2410-22870</link>
+    <guid isPermaLink="false">arxiv:2410.22870</guid>
+    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. Quetzalcoatl Toledo-Marin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Particle collisions at accelerators such as the Large Hadron Collider, recorded and analyzed by experiments such as ATLAS and CMS, enable exquisite measurements of the Standard Model and searches for new phenomena. Simulations of collision events at these detectors have played a pivotal role in shaping the design of future experiments and analyzing ongoing ones. However, the quest for accuracy in Large Hadron Collider (LHC) collisions comes at an imposing computational cost, with projections estimating the need for millions of CPU-years annually during the High Luminosity LHC (HL-LHC) run \cite{collaboration2022atlas}. Simulating a single LHC event with \textsc{Geant4} currently devours around 1000 CPU seconds, with simulations of the calorimeter subdetectors in particular imposing substantial computational demands \cite{rousseau2023experimental}. To address this challenge, we propose a conditioned quantum-assisted deep generative model. Our model integrates a conditioned variational autoencoder (VAE) on the exterior with a conditioned Restricted Boltzmann Machine (RBM) in the latent space, providing enhanced expressiveness compared to conventional VAEs. The RBM nodes and connections are meticulously engineered to enable the use of qubits and couplers on D-Wave&rsquo;s Pegasus-structured \textit{Advantage} quantum annealer (QA) for sampling. We introduce a novel method for conditioning the quantum-assisted RBM using \textit{flux biases}. We further propose a novel adaptive mapping to estimate the effective inverse temperature in quantum annealers. The effectiveness of our framework is illustrated using Dataset 2 of the CaloChallenge \cite{calochallenge}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sum-of-Squares Programming for Ma-Trudinger-Wang Regularity of Optimal Transport Maps</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-13372</link>
+    <guid isPermaLink="false">arxiv:2412.13372</guid>
+    <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sachin Shivakumar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>For a given ground cost, approximating the Monge optimal transport map that pushes forward a given probability measure onto another has become a staple in several modern machine learning algorithms. The fourth-order Ma-Trudinger-Wang (MTW) tensor associated with this ground cost function provides a notion of curvature in optimal transport. The non-negativity of this tensor plays a crucial role for establishing continuity for the Monge optimal transport map. It is, however, generally difficult to analytically verify this condition for any given ground cost. To expand the class of cost functions for which MTW non-negativity can be verified, we propose a provably correct computational approach which provides certificates of non-negativity for the MTW tensor using Sum-of-Squares (SOS) programming. We further show that our SOS technique can also be used to compute an inner approximation of the region where MTW non-negativity holds. We apply our proposed SOS programming method to several practical ground cost functions to approximate the regions of regularity of their corresponding optimal transport maps.</p>]]></description>
+  </item>
 
   <item>
     <title>xVal: A Continuous Numerical Tokenization for Scientific Language Models</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Delalande</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We derive nearly tight and non-asymptotic convergence bounds for solutions of entropic semi-discrete optimal transport. These bounds quantify the stability of the dual solutions of the regularized problem (sometimes called Sinkhorn potentials) w.r.t. the regularization parameter, for which we ensure a better than Lipschitz dependence. Such facts may be a first step towards a mathematical justification of annealing or ε-scaling heuristics for the numerical resolution of regularized semi-discrete optimal transport. Our results also entail a non-asymptotic and tight expansion of the difference between the entropic and the unregularized costs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gamifying optimization: a Wasserstein distance-based analysis of human search</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2112-06292</link>
-    <guid isPermaLink="false">arxiv:2112.06292</guid>
-    <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonio Candelieri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The main objective of this paper is to outline a theoretical framework to characterise humans&rsquo; decision-making strategies under uncertainty, in particular active learning in a black-box optimization task and trading-off between information gathering (exploration) and reward seeking (exploitation). Humans&rsquo; decisions making according to these two objectives can be modelled in terms of Pareto rationality. If a decision set contains a Pareto efficient strategy, a rational decision maker should always select the dominant strategy over its dominated alternatives. A distance from the Pareto frontier determines whether a choice is Pareto rational. To collect data about humans&rsquo; strategies we have used a gaming application that shows the game field, with previous decisions and observations, as well as the score obtained. The key element in this paper is the representation of behavioural patterns of human learners as a discrete probability distribution. This maps the problem of the characterization of humans&rsquo; behaviour into a space whose elements are probability distributions structured by a distance between histograms, namely the Wasserstein distance (WST). The distributional analysis gives new insights about human search strategies and their deviations from Pareto rationality. Since the uncertainty is one of the two objectives defining the Pareto frontier, the analysis has been performed for three different uncertainty quantification measures to identify which better explains the Pareto compliant behavioural patterns. Beside the analysis of individual patterns WST has also enabled a global analysis computing the barycenters and WST k-means clustering. A further analysis has been performed by a decision tree to relate non-Paretian behaviour, characterized by exasperated exploitation, to the dynamics of the evolution of the reward seeking process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning from learning machines: a new generation of AI technology to meet the needs of science</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2021.html#a2111-13786</link>
-    <guid isPermaLink="false">arxiv:2111.13786</guid>
-    <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luca Pion-Tonachini et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman) — original abstract; no AI summary.</em></p>
-<p>We outline emerging opportunities and challenges to enhance the utility of AI for scientific discovery. The distinct goals of AI for industry versus the goals of AI for science create tension between identifying patterns in data versus discovering patterns in the world from data. If we address the fundamental challenges associated with &ldquo;bridging the gap&rdquo; between domain-driven scientific models and data-driven AI learning machines, then we expect that these AI models can transform hypothesis generation, scientific discovery, and the scientific process itself.</p>]]></description>
   </item>
 
 </channel>

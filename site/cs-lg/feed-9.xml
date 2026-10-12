@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Improved Image Wasserstein Attacks and Defenses</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2004-12478</link>
+    <guid isPermaLink="false">arxiv:2004.12478</guid>
+    <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Edward J. Hu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Robustness against image perturbations bounded by a ℓ_p ball have been well-studied in recent literature. Perturbations in the real-world, however, rarely exhibit the pixel independence that ℓ_p threat models assume. A recently proposed Wasserstein distance-bounded threat model is a promising alternative that limits the perturbation to pixel mass movements. We point out and rectify flaws in previous definition of the Wasserstein threat model and explore stronger attacks and defenses under our better-defined framework. Lastly, we discuss the inability of current Wasserstein-robust models in defending against perturbations seen in the real world. Our code and trained models are available at https://github.com/edwardjhu/improved_wasserstein .</p>]]></description>
+  </item>
+
+  <item>
+    <title>Coresets for Wasserstein Distributionally Robust Optimization Problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-04260</link>
+    <guid isPermaLink="false">arxiv:2210.04260</guid>
+    <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruomin Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distributionally robust optimization (\textsf{WDRO}) is a popular model to enhance the robustness of machine learning with ambiguous data. However, the complexity of \textsf{WDRO} can be prohibitive in practice since solving its <code>minimax'' formulation requires a great amount of computation. Recently, several fast \textsf{WDRO} training algorithms for some specific machine learning tasks (e.g., logistic regression) have been developed. However, the research on designing efficient algorithms for general large-scale \textsf{WDRO}s is still quite limited, to the best of our knowledge. \textit{Coreset} is an important tool for compressing large dataset, and thus it has been widely applied to reduce the computational complexities for many optimization problems. In this paper, we introduce a unified framework to construct the ε-coreset for the general \textsf{WDRO} problems. Though it is challenging to obtain a conventional coreset for \textsf{WDRO} due to the uncertainty issue of ambiguous data, we show that we can compute a</code>dual coreset&rsquo;&rsquo; by using the strong duality property of \textsf{WDRO}. Also, the error introduced by the dual coreset can be theoretically guaranteed for the original \textsf{WDRO} objective. To construct the dual coreset, we propose a novel grid sampling approach that is particularly suitable for the dual formulation of \textsf{WDRO}. Finally, we implement our coreset approach and illustrate its effectiveness for several \textsf{WDRO} problems in the experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Self-Attention Amortized Distributional Projection Optimization for Sliced Wasserstein Point-Cloud Reconstruction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-04791</link>
+    <guid isPermaLink="false">arxiv:2301.04791</guid>
+    <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Max sliced Wasserstein (Max-SW) distance has been widely known as a solution for less discriminative projections of sliced Wasserstein (SW) distance. In applications that have various independent pairs of probability measures, amortized projection optimization is utilized to predict the ``max&rdquo; projecting directions given two input measures instead of using projected gradient ascent multiple times. Despite being efficient, Max-SW and its amortized version cannot guarantee metricity property due to the sub-optimality of the projected gradient ascent and the amortization gap. Therefore, we propose to replace Max-SW with distributional sliced Wasserstein distance with von Mises-Fisher (vMF) projecting distribution (v-DSW). Since v-DSW is a metric with any non-degenerate vMF distribution, its amortized version can guarantee the metricity when performing amortization. Furthermore, current amortized models are not permutation invariant and symmetric. To address the issue, we design amortized models based on self-attention architecture. In particular, we adopt efficient self-attention architectures to make the computation linear in the number of supports. With the two improvements, we derive self-attention amortized distributional projection optimization and show its appealing performance in point-cloud reconstruction and its downstream applications.</p>]]></description>
+  </item>
 
   <item>
     <title>CURTAINs Flows For Flows: Constructing Unobserved Regions with Maximum Likelihood Estimation</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaojiao Fan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Wasserstein gradient flow has emerged as a promising approach to solve optimization problems over the space of probability distributions. A recent trend is to use the well-known JKO scheme in combination with input convex neural networks to numerically implement the proximal step. The most challenging step, in this setup, is to evaluate functions involving density explicitly, such as entropy, in terms of samples. This paper builds on the recent works with a slight but crucial difference: we propose to utilize a variational formulation of the objective function formulated as maximization over a parametric class of functions. Theoretically, the proposed variational formulation allows the construction of gradient flows directly for empirical distributions with a well-defined and meaningful objective function. Computationally, this approach replaces the computationally expensive step in existing methods, to handle objective functions involving density, with inner loop updates that only require a small batch of samples and scale well with the dimension. The performance and scalability of the proposed method are illustrated with the aid of several numerical experiments involving high-dimensional synthetic and real datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Invariance encoding in sliced-Wasserstein space for image classification with limited training data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-02980</link>
-    <guid isPermaLink="false">arxiv:2201.02980</guid>
-    <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohammad Shifat E Rabbi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Deep convolutional neural networks (CNNs) are broadly considered to be state-of-the-art generic end-to-end image classification systems. However, they are known to underperform when training data are limited and thus require data augmentation strategies that render the method computationally expensive and not always effective. Rather than using a data augmentation strategy to encode invariances as typically done in machine learning, here we propose to mathematically augment a nearest subspace classification model in sliced-Wasserstein space by exploiting certain mathematical properties of the Radon Cumulative Distribution Transform (R-CDT), a recently introduced image transform. We demonstrate that for a particular type of learning problem, our mathematical solution has advantages over data augmentation with deep CNNs in terms of classification accuracy and computational complexity, and is particularly effective under a limited training data setting. The method is simple, effective, computationally efficient, non-iterative, and requires no parameters to be tuned. Python code implementing our method is available at https://github.com/rohdelab/mathematical_augmentation. Our method is integrated as a part of the software package PyTransKit, which is available at https://github.com/rohdelab/PyTransKit.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SPANet: Generalized Permutationless Set Assignment for Particle Physics using Symmetry Preserving Attention</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2106-03898</link>
-    <guid isPermaLink="false">arxiv:2106.03898</guid>
-    <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Shmakov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Daniel Whiteson) — original abstract; no AI summary.</em></p>
-<p>The creation of unstable heavy particles at the Large Hadron Collider is the most direct way to address some of the deepest open questions in physics. Collisions typically produce variable-size sets of observed particles which have inherent ambiguities complicating the assignment of observed particles to the decay products of the heavy particles. Current strategies for tackling these challenges in the physics community ignore the physical symmetries of the decay products and consider all possible assignment permutations and do not scale to complex configurations. Attention based deep learning methods for sequence modelling have achieved state-of-the-art performance in natural language processing, but they lack built-in mechanisms to deal with the unique symmetries found in physical set-assignment problems. We introduce a novel method for constructing symmetry-preserving attention networks which reflect the problem&rsquo;s natural invariances to efficiently find assignments without evaluating all permutations. This general approach is applicable to arbitrarily complex configurations and significantly outperforms current methods, improving reconstruction efficiency between 19\% - 35\% on typical benchmark problems while decreasing inference time by two to five orders of magnitude on the most complex events, making many important and previously intractable cases tractable. A full code repository containing a general library, the specific configuration used, and a complete dataset release, are avaiable at https://github.com/Alexanders101/SPANet</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Ground Metric Learning using Wasserstein Singular Vectors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2102-06278</link>
-    <guid isPermaLink="false">arxiv:2102.06278</guid>
-    <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Geert-Jan Huizing et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Defining meaningful distances between samples in a dataset is a fundamental problem in machine learning. Optimal Transport (OT) lifts a distance between features (the &ldquo;ground metric&rdquo;) to a geometrically meaningful distance between samples. However, there is usually no straightforward choice of ground metric. Supervised ground metric learning approaches exist but require labeled data. In absence of labels, only ad-hoc ground metrics remain. Unsupervised ground metric learning is thus a fundamental problem to enable data-driven applications of OT. In this paper, we propose for the first time a canonical answer by simultaneously computing an OT distance between samples and between features of a dataset. These distance matrices emerge naturally as positive singular vectors of the function mapping ground metrics to OT distances. We provide criteria to ensure the existence and uniqueness of these singular vectors. We then introduce scalable computational methods to approximate them in high-dimensional settings, using stochastic approximation and entropic regularization. Finally, we showcase Wasserstein Singular Vectors on a single-cell RNA-sequencing dataset.</p>]]></description>
   </item>
 
 </channel>

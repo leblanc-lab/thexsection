@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-24921</link>
+    <guid isPermaLink="false">arxiv:2607.24921</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gregorio de la Fuente et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet flavor, quark and gluon jets, gluon jets, Large Hadron Collider, collider, colliders, Jesse Thaler) — original abstract; no AI summary.</em></p>
+<p>Providing a practical and hadron-level definition of multiple jet flavors has been a long-standing challenge in collider physics. Previous work has introduced a data-driven, operational definition of quark and gluon jets, but no robust generalization beyond two jet categories presently exists. To address this, we introduce a machine-learning framework called &ldquo;simplex demixing&rsquo;&rsquo; to extract T jet flavors (or topics in the statistics literature) from M data samples (or mixtures) with minimal constraints. Intuitively, our procedure identifies the maximally separable categories in the data, translating a multi-category classifier on the M mixtures into a bounded geometric object with T vertices. We first demonstrate our procedure on a toy problem to infer the truth-level fractions of down-quark, up-quark, and gluon jets from synthetic mixtures of the three pure samples. We then propose a tag-and-probe strategy to extract multiple light-flavor categories in a more realistic collider setting involving dijet production. As expected, the identifiability of jet flavors depends on their relative abundance in the samples and the hadron-level information available to the classifier architecture. Our work opens the door to data-driven extractions of multiple jet flavor properties at the Large Hadron Collider.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Lantern: Conflict-Aware Gradient Blending for Physics-Guided Diffusion Models in Calorimeter Simulation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-25060</link>
+    <guid isPermaLink="false">arxiv:2607.25060</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farzana Yasmin Ahmad et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Monte Carlo simulation of calorimeter showers is a principal bottleneck for the High-Luminosity LHC, and diffusion models have emerged as fast, high-fidelity surrogates. Their denoising objective is purely statistical, however: a model can minimize it while placing the physics wrong. Existing physics-informed generative methods cannot close this gap, because they assume a closed-form law, a governing PDE residual or a hard per-sample constraint, that a shower does not supply: no per-sample PDE governs a stochastic cascade, and energy conservation fixes only one scalar per shower. Standard metrics ignore the correlation structure across calorimeter layers and voxels, comparing showers only in a physics feature space. We address both gaps. We introduce the Correlation Frobenius Distance (CFD), a single normalized score for correlation fidelity at layer-wise and voxel-wise scales. We then encode the soft per-sample structure available in a shower as two physics-aware auxiliary losses: a variance-stabilized voxel residual loss grounded in counting statistics, and a graph Laplacian loss over the detector geometry. We combine both with denoising through GradBlend, which anchors the step magnitude to the denoising gradient while letting the auxiliary steer its direction, yielding Lantern, a physics-guided diffusion surrogate. On CaloChallenge Dataset 2, injecting the physics losses through task-symmetric rules such as PCGrad, GradNorm, IMTL-G, and ConFIG inflates FPD by 2-100x relative to denoising alone, whereas GradBlend admits the same signal without regression and, with the Laplacian loss, Lantern improves both FPD and CFD. Our ablation on the auxiliary loss scheduler shows that the voxel residual loss, whose gradient conflicts with denoising, requires a terminal denoising-only phase to preserve shower fidelity, whereas the non-conflicting Laplacian loss is insensitive to the schedule.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On a linear fused Gromov-Wasserstein distance for graph structured data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2203-04711</link>
+    <guid isPermaLink="false">arxiv:2203.04711</guid>
+    <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dai Hai Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present a framework for embedding graph structured data into a vector space, taking into account node features and topology of a graph into the optimal transport (OT) problem. Then we propose a novel distance between two graphs, named linearFGW, defined as the Euclidean distance between their embeddings. The advantages of the proposed distance are twofold: 1) it can take into account node feature and structure of graphs for measuring the similarity between graphs in a kernel-based framework, 2) it can be much faster for computing kernel matrix than pairwise OT-based distances, particularly fused Gromov-Wasserstein, making it possible to deal with large-scale data sets. After discussing theoretical properties of linearFGW, we demonstrate experimental results on classification and clustering tasks, showing the effectiveness of the proposed linearFGW.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein Gradient Flows for Scalable and Regularized Barycenter Computation</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Licheng Pan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Reward models are fundamental to Reinforcement Learning from Human Feedback (RLHF), yet real-world datasets are inevitably corrupted by noisy preference. Conventional training objectives tend to overfit these errors, while existing denoising approaches often rely on homogeneous noise assumptions that fail to capture the complexity of linguistic preferences. To handle these challenges, we propose SelectiveRM, a framework grounded in optimal transport. We first devise a Joint Consistency Discrepancy to align the distribution of model predictions with preference data. Furthermore, to address the limitation of strict mass conservation which compels the model to fit outliers, we incorporate a Mass Relaxation mechanism via partial transport. This enables the autonomous exclusion of samples with noisy preference that contradict semantic consistency. Theoretically, we demonstrate that SelectiveRM optimizes a tighter upper bound on the unobserved clean risk. Extensive experiments validate that our approach significantly outperforms state-of-the-art baselines across diverse benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Discrete Autoregressive Priors with Wasserstein Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06148</link>
-    <guid isPermaLink="false">arxiv:2605.06148</guid>
-    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bowen Zheng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Discrete image tokenizers are commonly trained in two stages: first for reconstruction, and then with a prior model fitted to the frozen token sequences. This decoupling leaves the tokenizer unaware of the model that will later generate its tokens. As a result, the learned tokens may preserve image information well but still be difficult for an autoregressive (AR) prior to predict from left to right. We analyze this mismatch using Tripartite Variational Consistency (TVC), which decomposes latent-variable learning into three consistency conditions: conditional-likelihood consistency, prior consistency, and posterior consistency. TVC shows that two-stage training preserves the reconstruction side but leaves prior consistency outside the tokenizer objective: the overall token distribution is fixed before the AR prior participates in training. Motivated by this view, we add a distribution-level prior-matching signal during tokenizer training, while keeping the reconstruction objective unchanged. We optimize this signal with a Wasserstein-gradient-flow update. For hard categorical tokens, the update reduces to a token-level contrast between an auxiliary AR model that tracks the tokenizer&rsquo;s current token distribution and the target AR prior. It requires only forward passes through the two AR models and does not backpropagate through either of them. The resulting tokenizer, wAR-Tok, reduces AR loss and improves generation FID on CIFAR-10 and ImageNet at comparable reconstruction quality.</p>]]></description>
-  </item>
-
-  <item>
-    <title>BRICKS: Compositional Neural Markov Kernels for Zero-Shot Radiation-Matter Simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06591</link>
-    <guid isPermaLink="false">arxiv:2605.06591</guid>
-    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Richard Hildebrandt et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>We introduce a new strategy for compositional neural surrogates for radiation-matter interactions, a key task spanning domains from particle physics through nuclear and space engineering to medical physics. Exploiting the locality and the Markov nature of particle interactions, we create a \emph{next-particle prediction} kernel using hybrid discrete-continuous transformer models based on Riemannian Flow Matching on product manifolds. The model generates variable-sized typed sets of particles and radiation side effects that are the result of the interaction of an incident particle with a material volume. The resulting kernel can be composed to simulate unseen large-scale material distributions in a zero-shot manner. Unlike mechanistic simulators, our model is designed to be differentiable, provides tractable likelihoods for future downstream applications. A significant computational speed-up on GPU compared to CPU-bound mechanistic simulation is observed for single-kernel execution. We evaluate the model at the kernel level and demonstrate predictive stability over multi-round autoregressive rollouts. We additionally release a novel 20M-event radiation-matter interaction dataset for further research.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PLOT: Progressive Localization via Optimal Transport in Neural Causal Abstraction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06979</link>
-    <guid isPermaLink="false">arxiv:2605.06979</guid>
-    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonathn Chang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Causal abstraction offers a principled framework for mechanistic interpretability, aligning a high-level causal model with the low-level computation realized by a neural network through counterfactual intervention analysis. Existing methods such as distributed alignment search (DAS) learn expressive subspace interventions, but the relevant neural site is unknown a priori, so finding a handle requires a computationally burdensome search over candidate sites. We introduce PLOT (Progressive Localization via Optimal Transport), a transport-based framework that localizes causal variables from the output effect geometry of abstract and neural interventions. PLOT fits an optimal transport coupling between abstract variables and candidate neural sites, yielding a global soft correspondence that can be calibrated into intervention handles. In simple settings, a single coupling over individual neurons suffices. In larger models, PLOT is applied progressively, moving from coarse sites such as tokens, timesteps, or layers to finer supports such as coordinate groups or PCA spans, and optionally guiding DAS based on the localized signal. Across experiments of increasing complexity, transport-only PLOT handles are exceedingly fast and competitive on accuracy, while PLOT-guided DAS reaches DAS-level accuracy at a fraction of full DAS runtime, providing an efficient localization engine for causal abstraction research at scale.</p>]]></description>
   </item>
 
 </channel>

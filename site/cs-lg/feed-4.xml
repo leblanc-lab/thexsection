@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Structured Matching via Cost-Regularized Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-19075</link>
+    <guid isPermaLink="false">arxiv:2511.19075</guid>
+    <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Emanuele Pardini et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Unbalanced optimal transport (UOT) provides a flexible way to match or compare nonnegative finite Radon measures. However, UOT requires a predefined ground transport cost, which may misrepresent the data&rsquo;s underlying geometry. Choosing such a cost is particularly challenging when datasets live in heterogeneous spaces, often motivating practitioners to adopt Gromov-Wasserstein formulations. To address this challenge, we introduce cost-regularized unbalanced optimal transport (CR-UOT), a framework that allows the ground cost to vary while allowing mass creation and removal. We show that CR-UOT incorporates unbalanced Gromov-Wasserstein type problems through families of inner-product costs parameterized by linear transformations, enabling the matching of measures or point clouds across Euclidean spaces. We develop algorithms for such CR-UOT problems using entropic regularization and demonstrate that this approach improves the alignment of heterogeneous single-cell omics profiles, especially when many cells lack direct matches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>LEGATO: Good Identity Unlearning Is Continuous</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-04282</link>
+    <guid isPermaLink="false">arxiv:2601.04282</guid>
+    <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiang Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Machine unlearning has become a crucial role in enabling generative models trained on large datasets to remove sensitive, private, or copyright-protected data. However, existing machine unlearning methods face three challenges in learning to forget identity of generative models: 1) inefficient, where identity erasure requires fine-tuning all the model&rsquo;s parameters; 2) limited controllability, where forgetting intensity cannot be controlled and explainability is lacking; 3) catastrophic collapse, where the model&rsquo;s retention capability undergoes drastic degradation as forgetting progresses. Forgetting has typically been handled through discrete and unstable updates, often requiring full-model fine-tuning and leading to catastrophic collapse. In this work, we argue that identity forgetting should be modeled as a continuous trajectory, and introduce LEGATO - Learn to ForgEt Identity in GenerAtive Models via Trajectory-consistent Neural Ordinary Differential Equations. LEGATO augments pre-trained generators with fine-tunable lightweight Neural ODE adapters, enabling smooth, controllable forgetting while keeping the original model weights frozen. This formulation allows forgetting intensity to be precisely modulated via ODE step size, offering interpretability and robustness. To further ensure stability, we introduce trajectory consistency constraints that explicitly prevent catastrophic collapse during unlearning. Extensive experiments across in-domain and out-of-domain identity unlearning benchmarks show that LEGATO achieves state-of-the-art forgetting performance, avoids catastrophic collapse and reduces fine-tuned parameters.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Can Optimal Transport Improve Federated Inverse Reinforcement Learning?</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-00309</link>
+    <guid isPermaLink="false">arxiv:2601.00309</guid>
+    <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Millard et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In robotics and multi-agent systems, fleets of autonomous agents often operate in subtly different environments while pursuing a common high-level objective. Directly pooling their data to learn a shared reward function is typically impractical due to differences in dynamics, privacy constraints, and limited communication bandwidth. This paper introduces an optimal transport-based approach to federated inverse reinforcement learning (IRL). Each client first performs lightweight Maximum Entropy IRL locally, adhering to its computational and privacy limitations. The resulting reward functions are then fused via a Wasserstein barycenter, which considers their underlying geometric structure. We further prove that this barycentric fusion yields a more faithful global reward estimate than conventional parameter averaging methods in federated learning. Overall, this work provides a principled and communication-efficient framework for deriving a shared reward that generalizes across heterogeneous agents and environments.</p>]]></description>
+  </item>
 
   <item>
     <title>The Z-Gromov-Wasserstein Distance</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernardo Torres et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>In this paper, we propose an Optimal Transport objective for learning one-dimensional translation-equivariant systems and demonstrate its applicability to single pitch estimation. Our method provides a theoretically grounded, more numerically stable, and simpler alternative for training state-of-the-art self-supervised pitch estimators.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Jet Image Generation in High Energy Physics Using Diffusion Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-00250</link>
-    <guid isPermaLink="false">arxiv:2508.00250</guid>
-    <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Victor D. Martinez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents, quark jets, jet image, jet images, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>This article presents, for the first time, the application of diffusion models for generating jet images corresponding to proton-proton collision events at the Large Hadron Collider (LHC). The kinematic variables of quark, gluon, W-boson, Z-boson, and top quark jets from the JetNet simulation dataset are mapped to two-dimensional image representations. Diffusion models are trained on these images to learn the spatial distribution of jet constituents. We compare the performance of score-based diffusion models and consistency models in accurately generating class-conditional jet images. Unlike approaches based on latent distributions, our method operates directly in image space. The fidelity of the generated images is evaluated using several metrics, including the Fréchet Inception Distance (FID), which demonstrates that consistency models achieve higher fidelity and generation stability compared to score-based diffusion models. These advancements offer significant improvements in computational efficiency and generation accuracy, providing valuable tools for High Energy Physics (HEP) research.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport Learning: Balancing Value Optimization and Fairness in Individualized Treatment Rules</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-23349</link>
-    <guid isPermaLink="false">arxiv:2507.23349</guid>
-    <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenhai Cui et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Individualized treatment rules (ITRs) have gained significant attention due to their wide-ranging applications in fields such as precision medicine, ridesharing, and advertising recommendations. However, when ITRs are influenced by sensitive attributes such as race, gender, or age, they can lead to outcomes where certain groups are unfairly advantaged or disadvantaged. To address this gap, we propose a flexible approach based on the optimal transport theory, which is capable of transforming any optimal ITR into a fair ITR that ensures demographic parity. Recognizing the potential loss of value under fairness constraints, we introduce an ``improved trade-off ITR,&rdquo; designed to balance value optimization and fairness while accommodating varying levels of fairness through parameter adjustment. To maximize the value of the improved trade-off ITR under specific fairness levels, we propose a smoothed fairness constraint for estimating the adjustable parameter. Additionally, we establish a theoretical upper bound on the value loss for the improved trade-off ITR. We demonstrate performance of the proposed method through extensive simulation studies and application to the Next 36 entrepreneurial program dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Measuring Time-Series Dataset Similarity using Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-22189</link>
-    <guid isPermaLink="false">arxiv:2507.22189</guid>
-    <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongjie Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The emergence of time-series foundation model research elevates the growing need to measure the (dis)similarity of time-series datasets. A time-series dataset similarity measure aids research in multiple ways, including model selection, finetuning, and visualization. In this paper, we propose a distribution-based method to measure time-series dataset similarity by leveraging the Wasserstein distance. We consider a time-series dataset an empirical instantiation of an underlying multivariate normal distribution (MVN). The similarity between two time-series datasets is thus computed as the Wasserstein distance between their corresponding MVNs. Comprehensive experiments and visualization show the effectiveness of our approach. Specifically, we show how the Wasserstein distance helps identify similar time-series datasets and facilitates inference performance estimation of foundation models in both out-of-distribution and transfer learning evaluation, with high correlations between our proposed measure and the inference loss (&gt;0.60).</p>]]></description>
   </item>
 
 </channel>

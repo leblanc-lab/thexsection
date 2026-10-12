@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Deep Generative Models for Detector Signature Simulation: A Taxonomic Review</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-09597</link>
+    <guid isPermaLink="false">arxiv:2312.09597</guid>
+    <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Baran Hashemi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>In modern collider experiments, the quest to explore fundamental interactions between elementary particles has reached unparalleled levels of precision. Signatures from particle physics detectors are low-level objects (such as energy depositions or tracks) encoding the physics of collisions (the final state particles of hard scattering interactions). The complete simulation of them in a detector is a computational and storage-intensive task. To address this computational bottleneck in particle physics, alternative approaches have been developed, introducing additional assumptions and trade off accuracy for speed.The field has seen a surge in interest in surrogate modeling the detector simulation, fueled by the advancements in deep generative models. These models aim to generate responses that are statistically identical to the observed data. In this paper, we conduct a comprehensive and exhaustive taxonomic review of the existing literature on the simulation of detector signatures from both methodological and application-wise perspectives. Initially, we formulate the problem of detector signature simulation and discuss its different variations that can be unified. Next, we classify the state-of-the-art methods into five distinct categories based on their underlying model architectures, summarizing their respective generation strategies. Finally, we shed light on the challenges and opportunities that lie ahead in detector signature simulation, setting the stage for future research and development.</p>]]></description>
+  </item>
+
+  <item>
+    <title>CT-based brain ventricle segmentation via diffusion Schrödinger Bridge without target domain ground truths</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-18267</link>
+    <guid isPermaLink="false">arxiv:2405.18267</guid>
+    <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Reihaneh Teimouri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Efficient and accurate brain ventricle segmentation from clinical CT scans is critical for emergency surgeries like ventriculostomy. With the challenges in poor soft tissue contrast and a scarcity of well-annotated databases for clinical brain CTs, we introduce a novel uncertainty-aware ventricle segmentation technique without the need of CT segmentation ground truths by leveraging diffusion-model-based domain adaptation. Specifically, our method employs the diffusion Schrödinger Bridge and an attention recurrent residual U-Net to capitalize on unpaired CT and MRI scans to derive automatic CT segmentation from those of the MRIs, which are more accessible. Importantly, we propose an end-to-end, joint training framework of image translation and segmentation tasks, and demonstrate its benefit over training individual tasks separately. By comparing the proposed method against similar setups using two different GAN models for domain adaptation (CycleGAN and CUT), we also reveal the advantage of diffusion models towards improved segmentation and image translation quality. With a Dice score of 0.78±0.27, our proposed method outperformed the compared methods, including SynSeg-Net, while providing intuitive uncertainty measures to further facilitate quality control of the automatic segmentation outcomes. The implementation of our proposed method is available at: https://github.com/HealthX-Lab/DiffusionSynCTSeg.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Masked Particle Modeling on Sets: Towards Self-Supervised High Energy Physics Foundation Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-13537</link>
+    <guid isPermaLink="false">arxiv:2401.13537</guid>
+    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Golling et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>We propose masked particle modeling (MPM) as a self-supervised method for learning generic, transferable, and reusable representations on unordered sets of inputs for use in high energy physics (HEP) scientific data. This work provides a novel scheme to perform masked modeling based pre-training to learn permutation invariant functions on sets. More generally, this work provides a step towards building large foundation models for HEP that can be generically pre-trained with self-supervised learning and later fine-tuned for a variety of down-stream tasks. In MPM, particles in a set are masked and the training objective is to recover their identity, as defined by a discretized token representation of a pre-trained vector quantized variational autoencoder. We study the efficacy of the method in samples of high energy jets at collider physics experiments, including studies on the impact of discretization, permutation invariance, and ordering. We also study the fine-tuning capability of the model, showing that it can be adapted to tasks such as supervised and weakly supervised jet classification, and that the model can transfer efficiently with small fine-tuning data sets to new classes and new data domains.</p>]]></description>
+  </item>
 
   <item>
     <title>Automatic Outlier Rectification via Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anh Duc Nguyen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>This paper studies the Partial Optimal Transport (POT) problem between two unbalanced measures with at most n supports and its applications in various AI tasks such as color transfer or domain adaptation. There is hence the need for fast approximations of POT with increasingly large problem sizes in arising applications. We first theoretically and experimentally investigate the infeasibility of the state-of-the-art Sinkhorn algorithm for POT due to its incompatible rounding procedure, which consequently degrades its qualitative performance in real world applications like point-cloud registration. To this end, we propose a novel rounding algorithm for POT, and then provide a feasible Sinkhorn procedure with a revised computation complexity of 𝒪(n²/ε⁴⁾. Our rounding algorithm also permits the development of two first-order methods to approximate the POT problem. The first algorithm, Adaptive Primal-Dual Accelerated Gradient Descent (APDAGD), finds an ε-approximate solution to the POT problem in 𝒪(n².5/ε), which is better in ε than revised Sinkhorn. The second method, Dual Extrapolation, achieves the computation complexity of 𝒪(n²/ε), thereby being the best in the literature. We further demonstrate the flexibility of POT compared to standard OT as well as the practicality of our algorithms on real applications where two marginal distributions are unbalanced.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Machine Learning for Anomaly Detection in Particle Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-14190</link>
-    <guid isPermaLink="false">arxiv:2312.14190</guid>
-    <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vasilis Belis et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>The detection of out-of-distribution data points is a common task in particle physics. It is used for monitoring complex particle detectors or for identifying rare and unexpected events that may be indicative of new phenomena or physics beyond the Standard Model. Recent advances in Machine Learning for anomaly detection have encouraged the utilization of such techniques on particle physics problems. This review article provides an overview of the state-of-the-art techniques for anomaly detection in particle physics using machine learning. We discuss the challenges associated with anomaly detection in large and complex data sets, such as those produced by high-energy particle colliders, and highlight some of the successful applications of anomaly detection in particle physics experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast Neural Network Inference on FPGAs for Triggering on Long-Lived Particles at Colliders</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-05152</link>
-    <guid isPermaLink="false">arxiv:2307.05152</guid>
-    <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Coccaro et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, colliders) — original abstract; no AI summary.</em></p>
-<p>Experimental particle physics demands a sophisticated trigger and acquisition system capable to efficiently retain the collisions of interest for further investigation. Heterogeneous computing with the employment of FPGA cards may emerge as a trending technology for the triggering strategy of the upcoming high-luminosity program of the Large Hadron Collider at CERN. In this context, we present two machine-learning algorithms for selecting events where neutral long-lived particles decay within the detector volume studying their accuracy and inference time when accelerated on commercially available Xilinx FPGA accelerator cards. The inference time is also confronted with a CPU- and GPU-based hardware setup. The proposed new algorithms are proven efficient for the considered benchmark physics scenario and their accuracy is found to not degrade when accelerated on the FPGA cards. The results indicate that all tested architectures fit within the latency requirements of a second-level trigger farm and that exploiting accelerator technologies for real-time processing of particle-physics collisions is a promising research field that deserves additional investigations, in particular with machine-learning models with a large number of trainable parameters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving new physics searches with diffusion models for event observables and jet constituents</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-10130</link>
-    <guid isPermaLink="false">arxiv:2312.10130</guid>
-    <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Debajyoti Sengupta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents, LHC) — original abstract; no AI summary.</em></p>
-<p>We introduce a new technique called Drapes to enhance the sensitivity in searches for new physics at the LHC. By training diffusion models on side-band data, we show how background templates for the signal region can be generated either directly from noise, or by partially applying the diffusion process to existing data. In the partial diffusion case, data can be drawn from side-band regions, with the inverse diffusion performed for new target conditional values, or from the signal region, preserving the distribution over the conditional property that defines the signal region. We apply this technique to the hunt for resonances using the LHCO di-jet dataset, and achieve state-of-the-art performance for background template generation using high level input features. We also show how Drapes can be applied to low level inputs with jet constituents, reducing the model dependence on the choice of input observables. Using jet constituents we can further improve sensitivity to the signal process, but observe a loss in performance where the signal significance before applying any selection is below 4σ.</p>]]></description>
   </item>
 
 </channel>

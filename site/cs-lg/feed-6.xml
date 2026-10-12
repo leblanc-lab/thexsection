@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Enhancing operational wind downscaling capabilities over Canada: Application of a Conditional Wasserstein GAN methodology</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-06958</link>
+    <guid isPermaLink="false">arxiv:2412.06958</guid>
+    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jorge Guevara et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wind downscaling is essential for improving the spatial resolution of weather forecasts, particularly in operational Numerical Weather Prediction (NWP). This study advances wind downscaling by extending the DownGAN framework introduced by Annau et al.,to operational datasets from the Global Deterministic Prediction System (GDPS) and High-Resolution Deterministic Prediction System (HRDPS), covering the entire Canadian domain. We enhance the model by incorporating high-resolution static covariates, such as HRDPS-derived topography, into a Conditional Wasserstein Generative Adversarial Network with Gradient Penalty, implemented using a UNET-based generator. Following the DownGAN framework, our methodology integrates low-resolution GDPS forecasts (15 km, 10-day horizon) and high-resolution HRDPS forecasts (2.5 km, 48-hour horizon) with Frequency Separation techniques adapted from computer vision. Through robust training and inference over the Canadian region, we demonstrate the operational scalability of our approach, achieving significant improvements in wind downscaling accuracy. Statistical validation highlights reductions in root mean square error (RMSE) and log spectral distance (LSD) metrics compared to the original DownGAN. High-resolution conditioning covariates and Frequency Separation strategies prove instrumental in enhancing model performance. This work underscores the potential for extending high-resolution wind forecasts beyond the 48-hour horizon, bridging the gap to the 10-day low resolution global forecast window.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Joint Optimal Transport and Embedding for Network Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-19334</link>
+    <guid isPermaLink="false">arxiv:2502.19334</guid>
+    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Network alignment, which aims to find node correspondence across different networks, is the cornerstone of various downstream multi-network and Web mining tasks. Most of the embedding-based methods indirectly model cross-network node relationships by contrasting positive and negative node pairs sampled from hand-crafted strategies, which are vulnerable to graph noises and lead to potential misalignment of nodes. Another line of work based on the optimal transport (OT) theory directly models cross-network node relationships and generates noise-reduced alignments. However, OT methods heavily rely on fixed, pre-defined cost functions that prohibit end-to-end training and are hard to generalize. In this paper, we aim to unify the embedding and OT-based methods in a mutually beneficial manner and propose a joint optimal transport and embedding framework for network alignment named JOENA. For one thing (OT for embedding), through a simple yet effective transformation, the noise-reduced OT mapping serves as an adaptive sampling strategy directly modeling all cross-network node pairs for robust embedding learning.For another (embedding for OT), on top of the learned embeddings, the OT cost can be gradually trained in an end-to-end fashion, which further enhances the alignment quality. With a unified objective, the mutual benefits of both methods can be achieved by an alternating optimization schema with guaranteed convergence. Extensive experiments on real-world networks validate the effectiveness and scalability of JOENA, achieving up to 16% improvement in MRR and 20x speedup compared with the state-of-the-art alignment methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Enhancing selectivity using Wasserstein distance based reweighing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2401-11562</link>
+    <guid isPermaLink="false">arxiv:2401.11562</guid>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Worah</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Given two labeled data-sets 𝒮 and 𝒯, we design a simple and efficient greedy algorithm to reweigh the loss function such that the limiting distribution of the neural network weights that result from training on 𝒮 approaches the limiting distribution that would have resulted by training on 𝒯. On the theoretical side, we prove that when the metric entropy of the input datasets is bounded, our greedy algorithm outputs a close to optimal reweighing, i.e., the two invariant distributions of network weights will be provably close in total variation distance. Moreover, the algorithm is simple and scalable, and we prove bounds on the efficiency of the algorithm as well. As a motivating application, we train a neural net to recognize small molecule binders to MNK2 (a MAP Kinase, responsible for cell signaling) which are non-binders to MNK1 (a highly similar protein). In our example dataset, of the 43 distinct small molecules predicted to be most selective from the enamine catalog, 2 small molecules were experimentally verified to be selective, i.e., they reduced the enzyme activity of MNK2 below 50\% but not MNK1, at 10μM &ndash; a 5\% success rate.</p>]]></description>
+  </item>
 
   <item>
     <title>Re-Simulation-based Self-Supervised Learning for Pre-Training Foundation Models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Yang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>Hyperbolic representations have shown remarkable efficacy in modeling inherent hierarchies and complexities within data structures. Hyperbolic neural networks have been commonly applied for learning such representations from data, but they often fall short in preserving the geometric structures of the original feature spaces. In response to this challenge, our work applies the Gromov-Wasserstein (GW) distance as a novel regularization mechanism within hyperbolic neural networks. The GW distance quantifies how well the original data structure is maintained after embedding the data in a hyperbolic space. Specifically, we explicitly treat the layers of the hyperbolic neural networks as a transport map and calculate the GW distance accordingly. We validate that the GW distance computed based on a training set well approximates the GW distance of the underlying data distribution. Our approach demonstrates consistent enhancements over current state-of-the-art methods across various tasks, including few-shot image classification, as well as semi-supervised graph link prediction and node classification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Generative Models for Detector Signature Simulation: A Taxonomic Review</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-09597</link>
-    <guid isPermaLink="false">arxiv:2312.09597</guid>
-    <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Baran Hashemi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>In modern collider experiments, the quest to explore fundamental interactions between elementary particles has reached unparalleled levels of precision. Signatures from particle physics detectors are low-level objects (such as energy depositions or tracks) encoding the physics of collisions (the final state particles of hard scattering interactions). The complete simulation of them in a detector is a computational and storage-intensive task. To address this computational bottleneck in particle physics, alternative approaches have been developed, introducing additional assumptions and trade off accuracy for speed.The field has seen a surge in interest in surrogate modeling the detector simulation, fueled by the advancements in deep generative models. These models aim to generate responses that are statistically identical to the observed data. In this paper, we conduct a comprehensive and exhaustive taxonomic review of the existing literature on the simulation of detector signatures from both methodological and application-wise perspectives. Initially, we formulate the problem of detector signature simulation and discuss its different variations that can be unified. Next, we classify the state-of-the-art methods into five distinct categories based on their underlying model architectures, summarizing their respective generation strategies. Finally, we shed light on the challenges and opportunities that lie ahead in detector signature simulation, setting the stage for future research and development.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CT-based brain ventricle segmentation via diffusion Schrödinger Bridge without target domain ground truths</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-18267</link>
-    <guid isPermaLink="false">arxiv:2405.18267</guid>
-    <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Reihaneh Teimouri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Efficient and accurate brain ventricle segmentation from clinical CT scans is critical for emergency surgeries like ventriculostomy. With the challenges in poor soft tissue contrast and a scarcity of well-annotated databases for clinical brain CTs, we introduce a novel uncertainty-aware ventricle segmentation technique without the need of CT segmentation ground truths by leveraging diffusion-model-based domain adaptation. Specifically, our method employs the diffusion Schrödinger Bridge and an attention recurrent residual U-Net to capitalize on unpaired CT and MRI scans to derive automatic CT segmentation from those of the MRIs, which are more accessible. Importantly, we propose an end-to-end, joint training framework of image translation and segmentation tasks, and demonstrate its benefit over training individual tasks separately. By comparing the proposed method against similar setups using two different GAN models for domain adaptation (CycleGAN and CUT), we also reveal the advantage of diffusion models towards improved segmentation and image translation quality. With a Dice score of 0.78±0.27, our proposed method outperformed the compared methods, including SynSeg-Net, while providing intuitive uncertainty measures to further facilitate quality control of the automatic segmentation outcomes. The implementation of our proposed method is available at: https://github.com/HealthX-Lab/DiffusionSynCTSeg.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Masked Particle Modeling on Sets: Towards Self-Supervised High Energy Physics Foundation Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-13537</link>
-    <guid isPermaLink="false">arxiv:2401.13537</guid>
-    <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Golling et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>We propose masked particle modeling (MPM) as a self-supervised method for learning generic, transferable, and reusable representations on unordered sets of inputs for use in high energy physics (HEP) scientific data. This work provides a novel scheme to perform masked modeling based pre-training to learn permutation invariant functions on sets. More generally, this work provides a step towards building large foundation models for HEP that can be generically pre-trained with self-supervised learning and later fine-tuned for a variety of down-stream tasks. In MPM, particles in a set are masked and the training objective is to recover their identity, as defined by a discretized token representation of a pre-trained vector quantized variational autoencoder. We study the efficacy of the method in samples of high energy jets at collider physics experiments, including studies on the impact of discretization, permutation invariance, and ordering. We also study the fine-tuning capability of the model, showing that it can be adapted to tasks such as supervised and weakly supervised jet classification, and that the model can transfer efficiently with small fine-tuning data sets to new classes and new data domains.</p>]]></description>
   </item>
 
 </channel>

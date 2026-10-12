@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Representation Alignment from a Few Paired Data via Distilled Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-12781</link>
+    <guid isPermaLink="false">arxiv:2610.12781</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Kordes et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Aligning two independently pretrained unimodal encoders typically demands millions of paired examples. In this paper, we study the regime where only N ∼100&ndash;500 pairs are available, while unpaired data on either side is abundant. Our method expresses every representation by its similarities to the N paired anchors, which places both modalities in a common coordinate system; matches the two point clouds with a single entropic optimal transport problem solved over the entire pool, whose marginal constraints counteract the hubness that defeats nearest-neighbor matching; and distills the resulting plan into two lightweight encoders, so that the correspondence becomes inductive. We additionally put this marginal constraint in relation with the one-step hub corrections of the bilingual lexicon induction literature. Pairing is required only for the anchors: the unpaired collections may be drawn independently from the two marginals, so that no item outside the anchor set needs to have both of its modalities observed. We evaluate on image-text and molecule-text alignment, where our method outperforms existing approaches at the same anchor budget on Flickr30k, MS-COCO and ChEBI-20.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Local Diagnostics of Learned Event Representations for Anomaly Detection at the HL-LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-13437</link>
+    <guid isPermaLink="false">arxiv:2610.13437</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donatella Genovese et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Anomaly detection, the identification of collision events that deviate from Standard Model expectations, is one of the most promising model-agnostic strategies for new-physics searches at the Large Hadron Collider. Searching for rare events in learned low-dimensional representations removes the need to commit to hand-crafted observables a priori, but sacrifices the immediate physical interpretation those observables provide. For anomaly detection to enter a discovery pipeline, flagged events must therefore be diagnosed locally, both to distinguish potential new physics from mismodeling or detector effects and to identify observables for targeted follow-up searches. We evaluate supervised and self-supervised neural embedding strategies on COLLIDE-2V, a 750-million-event dataset simulated under realistic High-Luminosity LHC conditions, using the reconstruction error of an autoencoder trained in the learned latent space as the anomaly score. Across the configurations and benchmark signals considered, supervised objectives, which exploit simulation process labels during training, generally outperform their self-supervised counterparts and, in their best configurations, improve on an autoencoder trained directly on kinematic features, raising the signal efficiency at 10% background acceptance on all held-out processes. We further introduce a local diagnostic pipeline that fits a Gaussian Mixture Model to the SM latent space, profiles each component through high-level observables without process labels, localizes the flagged events, and ranks observables by their local discriminating power. The ranking recovers the defining kinematics of the held-out processes, while correlating the anomaly score with the same observables quantifies how closely the score tracks them, revealing cases where the most discriminating observable is not the one the score follows most closely.</p>]]></description>
+  </item>
 
   <item>
     <title>Uncovering and Fixing Collider Bias in Bayesian PINNs</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zixin Wen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Kyle Lee) — original abstract; no AI summary.</em></p>
 <p>Visual design is an essential application of state-of-the-art multi-modal AI systems. Improving these systems requires high-quality vision-language data at scale. Despite the abundance of internet image and text data, knowledge-rich and well-aligned image-text pairs are rare. In this paper, we present a scalable diagram generation pipeline built with our agent, Feynman. To create diagrams, Feynman first enumerates domain-specific knowledge components (&lsquo;&rsquo;ideas&rsquo;&lsquo;) and performs code planning based on the ideas. Given the plan, Feynman translates ideas into simple declarative programs and iterates to receives feedback and visually refine diagrams. Finally, the declarative programs are rendered by the Penrose diagramming system. The optimization-based rendering of Penrose preserves the visual semantics while injecting fresh randomness into the layout, thereby producing diagrams with visual consistency and diversity. As a result, Feynman can author diagrams along with grounded captions with very little cost and time. Using Feynman, we synthesized a dataset with more than 100k well-aligned diagram-caption pairs. We also curate a visual-language benchmark, Diagramma, from freshly generated data. Diagramma can be used for evaluating the visual reasoning capabilities of vision-language models. We plan to release the dataset, benchmark, and the full agent pipeline as an open-source project.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Do LLMs Share Human-Like Biases? Causal Reasoning Under Prior Knowledge, Irrelevant Context, and Varying Compute Budgets</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2602-02983</link>
-    <guid isPermaLink="false">arxiv:2602.02983</guid>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanna M. Dettki et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Large language models (LLMs) are increasingly used in domains where causal reasoning matters, yet it remains unclear whether their judgments reflect normative causal computation, human-like shortcuts, or brittle pattern matching. We benchmark 20+ LLMs against a matched human baseline on 11 causal judgment tasks formalized by a collider structure (C_1 →E ←C_2). We find that a small interpretable model compresses LLMs&rsquo; causal judgments well and that most LLMs exhibit more rule-like reasoning strategies than humans who seem to account for unmentioned latent factors in their probability judgments. Furthermore, most LLMs do not mirror the characteristic human collider biases of weak explaining away and Markov violations. We probe LLMs&rsquo; causal judgment robustness under (i) semantic abstraction and (ii) prompt overloading (injecting irrelevant text), and find that chain-of-thought (CoT) increases robustness for many LLMs. Together, this divergence suggests LLMs can complement humans when known biases are undesirable, but their rule-like reasoning may break down when uncertainty is intrinsic - highlighting the need to characterize LLM reasoning strategies for safe, effective deployment.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport Aggregation for Distributed Mixture-of-Experts</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2312-09877</link>
-    <guid isPermaLink="false">arxiv:2312.09877</guid>
-    <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Faïcel Chamroukhi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Mixture-of-experts (MoE) models provide a flexible statistical framework for modeling heterogeneity and nonlinear relationships. In many modern applications, however, datasets are naturally distributed across multiple machines due to storage, computational, or governance constraints. We consider a distributed model aggregation setting in which local MoE models are trained independently on decentralized datasets and subsequently combined into a global estimator. Aggregating MoE models is challenging because standard averaging produces models that do not preserve the MoE structure, and therefore do not yield estimates of the global model parameters. To address this issue, we propose a principled aggregation framework based on optimal transport that constructs a reduced global MoE estimator by minimizing a transportation divergence between the collection of local estimators and the aggregated model. An efficient majorization&ndash;minimization (MM) algorithm is derived to solve the resulting optimization problem. The method requires only a single communication step from local machines to a central server, making it a frugal distributed learning approach particularly attractive for large-scale settings where communication costs are a major bottleneck. We further establish statistical guarantees for the aggregated estimator, including consistency under standard assumptions on the local estimators. Experiments on synthetic and real datasets demonstrate that the approach achieves performance comparable to centralized training while significantly reducing computation time. The source codes are publicly available on Github.</p>]]></description>
   </item>
 
 </channel>

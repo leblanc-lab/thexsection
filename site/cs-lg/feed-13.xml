@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Investigating Under and Overfitting in Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1910-14137</link>
+    <guid isPermaLink="false">arxiv:1910.14137</guid>
+    <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ben Adlam et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We investigate under and overfitting in Generative Adversarial Networks (GANs), using discriminators unseen by the generator to measure generalization. We find that the model capacity of the discriminator has a significant effect on the generator&rsquo;s model quality, and that the generator&rsquo;s poor performance coincides with the discriminator underfitting. Contrary to our expectations, we find that generators with large model capacities relative to the discriminator do not show evidence of overfitting on CIFAR10, CIFAR100, and CelebA.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Normalized Wasserstein Distance for Mixture Distributions with Applications in Adversarial Learning and Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-00415</link>
+    <guid isPermaLink="false">arxiv:1902.00415</guid>
+    <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yogesh Balaji et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Understanding proper distance measures between distributions is at the core of several learning tasks such as generative models, domain adaptation, clustering, etc. In this work, we focus on mixture distributions that arise naturally in several application domains where the data contains different sub-populations. For mixture distributions, established distance measures such as the Wasserstein distance do not take into account imbalanced mixture proportions. Thus, even if two mixture distributions have identical mixture components but different mixture proportions, the Wasserstein distance between them will be large. This often leads to undesired results in distance-based learning methods for mixture distributions. In this paper, we resolve this issue by introducing the Normalized Wasserstein measure. The key idea is to introduce mixture proportions as optimization variables, effectively normalizing mixture proportions in the Wasserstein formulation. Using the proposed normalized Wasserstein measure leads to significant performance gains for mixture distributions with imbalanced mixture proportions compared to the vanilla Wasserstein distance. We demonstrate the effectiveness of the proposed measure in GANs, domain adaptation and adversarial clustering in several benchmark datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Tree-Sliced Variants of Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1902-00342</link>
+    <guid isPermaLink="false">arxiv:1902.00342</guid>
+    <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tam Le et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (\OT) theory defines a powerful set of tools to compare probability distributions. \OT~suffers however from a few drawbacks, computational and statistical, which have encouraged the proposal of several regularized variants of OT in the recent literature, one of the most notable being the \textit{sliced} formulation, which exploits the closed-form formula between univariate distributions by projecting high-dimensional measures onto random lines. We consider in this work a more general family of ground metrics, namely \textit{tree metrics}, which also yield fast closed-form computations and negative definite, and of which the sliced-Wasserstein distance is a particular case (the tree is a chain). We propose the tree-sliced Wasserstein distance, computed by averaging the Wasserstein distance between these measures using random tree metrics, built adaptively in either low or high-dimensional spaces. Exploiting the negative definiteness of that distance, we also propose a positive definite kernel, and test it against other baselines on a few benchmark tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>A First-Order Algorithmic Framework for Wasserstein Distributionally Robust Logistic Regression</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Currently, state-of-the-art motor intention decoding algorithms in brain-machine interfaces are mostly implemented on a PC and consume significant amount of power. A machine learning co-processor in 0.35um CMOS for motor intention decoding in brain-machine interfaces is presented in this paper. Using Extreme Learning Machine algorithm and low-power analog processing, it achieves an energy efficiency of 290 GMACs/W at a classification rate of 50 Hz. The learning in second stage and corresponding digitally stored coefficients are used to increase robustness of the core analog processor. The chip is verified with neural data recorded in monkey finger movements experiment, achieving a decoding accuracy of 99.3% for movement type. The same co-processor is also used to decode time of movement from asynchronous neural spikes. With time-delayed feature dimension enhancement, the classification accuracy can be increased by 5% with limited number of input channels. Further, a sparsity promoting training scheme enables reduction of number of programmable weights by ~2X.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Training of Boltzmann Machines</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2015.html#a1507-01972</link>
-    <guid isPermaLink="false">arxiv:1507.01972</guid>
-    <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Grégoire Montavon et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Boltzmann machine provides a useful framework to learn highly complex, multimodal and multiscale data distributions that occur in the real world. The default method to learn its parameters consists of minimizing the Kullback-Leibler (KL) divergence from training samples to the Boltzmann model. We propose in this work a novel approach for Boltzmann training which assumes that a meaningful metric between observations is given. This metric can be represented by the Wasserstein distance between distributions, for which we derive a gradient with respect to the model parameters. Minimization of this new Wasserstein objective leads to generative models that are better when considering the metric and that have a cluster-like structure. We demonstrate the practical potential of these models for data completion and denoising, for which the metric between observations plays a crucial role.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Winner-Take-All Autoencoders</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2015.html#a1409-2752</link>
-    <guid isPermaLink="false">arxiv:1409.2752</guid>
-    <pubDate>Sun, 07 Jun 2015 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alireza Makhzani et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose a winner-take-all method for learning hierarchical sparse representations in an unsupervised fashion. We first introduce fully-connected winner-take-all autoencoders which use mini-batch statistics to directly enforce a lifetime sparsity in the activations of the hidden units. We then propose the convolutional winner-take-all autoencoder which combines the benefits of convolutional architectures and autoencoders for learning shift-invariant sparse representations. We describe a way to train convolutional autoencoders layer by layer, where in addition to lifetime sparsity, a spatial sparsity within each feature map is achieved using winner-take-all activation functions. We will show that winner-take-all autoencoders can be used to to learn deep sparse representations from the MNIST, CIFAR-10, ImageNet, Street View House Numbers and Toronto Face datasets, and achieve competitive classification performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Understanding Locally Competitive Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2015.html#a1410-1165</link>
-    <guid isPermaLink="false">arxiv:1410.1165</guid>
-    <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rupesh Kumar Srivastava et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Recently proposed neural network activation functions such as rectified linear, maxout, and local winner-take-all have allowed for faster and more effective training of deep neural architectures on large and complex datasets. The common trait among these functions is that they implement local competition between small groups of computational units within a layer, so that only part of the network is activated for any given input pattern. In this paper, we attempt to visualize and understand this self-modularization, and suggest a unified explanation for the beneficial properties of such networks. We also show how our insights can be directly useful for efficiently performing retrieval over large datasets using neural networks.</p>]]></description>
   </item>
 
 </channel>

@@ -6,7 +6,27 @@
   <description>Data analysis, simulation, and computational physics</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Local Diagnostics of Learned Event Representations for Anomaly Detection at the HL-LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2610-13437</link>
+    <guid isPermaLink="false">arxiv:2610.13437</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donatella Genovese et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Anomaly detection, the identification of collision events that deviate from Standard Model expectations, is one of the most promising model-agnostic strategies for new-physics searches at the Large Hadron Collider. Searching for rare events in learned low-dimensional representations removes the need to commit to hand-crafted observables a priori, but sacrifices the immediate physical interpretation those observables provide. For anomaly detection to enter a discovery pipeline, flagged events must therefore be diagnosed locally, both to distinguish potential new physics from mismodeling or detector effects and to identify observables for targeted follow-up searches. We evaluate supervised and self-supervised neural embedding strategies on COLLIDE-2V, a 750-million-event dataset simulated under realistic High-Luminosity LHC conditions, using the reconstruction error of an autoencoder trained in the learned latent space as the anomaly score. Across the configurations and benchmark signals considered, supervised objectives, which exploit simulation process labels during training, generally outperform their self-supervised counterparts and, in their best configurations, improve on an autoencoder trained directly on kinematic features, raising the signal efficiency at 10% background acceptance on all held-out processes. We further introduce a local diagnostic pipeline that fits a Gaussian Mixture Model to the SM latent space, profiles each component through high-level observables without process labels, localizes the flagged events, and ranks observables by their local discriminating power. The ranking recovers the defining kinematics of the held-out processes, while correlating the anomaly score with the same observables quantifies how closely the score tracks them, revealing cases where the most discriminating observable is not the one the score follows most closely.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Precision Tokenization for Multi-Modal Data in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/methods/2026.html#a2610-13876</link>
+    <guid isPermaLink="false">arxiv:2610.13876</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeffrey Krupa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow, flavor tagging, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Foundation models have recently gained significant attention in fields such as high energy physics (HEP). The tokenizers that convert detector data into discrete inputs for such models, however, are comparatively unexplored. This paper addresses this gap by learning discrete and compressed tokenized representations of HEP datasets. We demonstrate the approach on four modalities covering two different simulated detectors that vary in complexity. Treating tokenization as a rate-distortion problem, a systematic hyperparameter scan yields four design rules for tokenizing HEP data that hold across all set-based modalities studied. The cost of tokenization is evaluated on tasks including jet p_T regression, particle flow reconstruction, and flavor tagging. We find that tokenization preserves much of the information needed for these tasks at compression factors of approximately 4-11× while keeping the jet p_T resolution below 1%. We also present heptokens, an open-source library for tokenizing HEP data.</p>]]></description>
+  </item>
 
   <item>
     <title>Heat Transport of the β-Fermi--Pasta--Ulam--Tsingou chain in the long-wave limit</title>
