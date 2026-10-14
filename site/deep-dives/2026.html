@@ -36,13 +36,83 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">215 papers</span>
-  <span class="count">71 days</span>
+  <span class="count">218 papers</span>
+  <span class="count">72 days</span>
   <span class="count">since 2026</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../digest/2026-10-14.html">Wednesday, October 14, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-14144">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.14144" target="_blank" rel="noopener">arXiv:2610.14144</a>
+      
+      <a class="permalink" href="#a2610-14144" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Planck-Scale Constraints on Quantum Gravity-Induced Neutrino Decoherence with IceCube</h3>
+    <p class="byline">R. Abbasi et al.</p>
+    <div class="paper-body"><p>IceCube sees no oscillation damping in 368,071 up-going <span class="arithmatex">\(\nu_\mu\)</span> events (10.7 yr, <span class="arithmatex">\(E_\text{reco}\)</span> 0.5–100 TeV). The sample is the same as the sterile-neutrino analysis, now at 99.9% purity and split into starting and throughgoing tracks. The decoherence fits use a Lindblad operator with a single rate <span class="arithmatex">\(\Gamma(E)=\Gamma_0(E/1\,\text{TeV})^n\)</span>, tested in two forms: &ldquo;state selection&rdquo; (all eight off-identity entries <span class="arithmatex">\(\Gamma\)</span>) and &ldquo;phase perturbation.&rdquo; The 90% CL limits at <span class="arithmatex">\(E_0=1\)</span> TeV are <span class="arithmatex">\(\Gamma_0&lt;2.4\times10^{-15}\)</span>, <span class="arithmatex">\(4.6\times10^{-16}\)</span>, <span class="arithmatex">\(7.3\times10^{-19}\)</span> and <span class="arithmatex">\(6.1\times10^{-21}\)</span> eV for <span class="arithmatex">\(n=0\)</span>–3. Against the 2024 IceCube result (quoted at <span class="arithmatex">\(E_0=1\)</span> GeV), the gains are about 13× at <span class="arithmatex">\(n=2\)</span> and about 30× at <span class="arithmatex">\(n=3\)</span>. At <span class="arithmatex">\(n=3\)</span> the limit falls below the natural expectation <span class="arithmatex">\(\Gamma_0=E_0^n/M_\text{Pl}^{n-1}\)</span> for the first time, so a cubic-scaling effect would need extra suppression or a non-power-law form. The <span class="arithmatex">\(n=2\)</span> case matters most for theory, because it is the scaling found in string-motivated black-hole and D-foam calculations.</p>
+<p>Caveats:
+- <strong><span class="arithmatex">\(n=3\)</span> margin.</strong> Evaluating the paper&rsquo;s formula at <span class="arithmatex">\(E_0=1\)</span> GeV gives about <span class="arithmatex">\(6.7\times10^{-30}\)</span> eV for the natural expectation, against a limit of <span class="arithmatex">\(6.05\times10^{-30}\)</span>. That is a marginal crossing, not a deep exclusion.
+- <strong><span class="arithmatex">\(n=0\)</span>.</strong> The new limit is actually looser than 2024 (<span class="arithmatex">\(2.36\)</span> vs <span class="arithmatex">\(1.17\times10^{-15}\)</span> eV).
+- <strong>Model assumptions.</strong> CPT conservation is assumed, since IceCube cannot separate <span class="arithmatex">\(\nu\)</span> from <span class="arithmatex">\(\bar\nu\)</span>. The <span class="arithmatex">\(D\)</span> matrix is diagonal, and decoherence is taken as independent of matter density.
+- <strong>Fit quality.</strong> Pre-unblinding goodness-of-fit p-values were only 4–5%.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-17177">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.17177" target="_blank" rel="noopener">arXiv:2610.17177</a>
+      
+      <a class="permalink" href="#a2610-17177" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">MadNIS, Ready for Production at LO</h3>
+    <p class="byline">Theo Heimel et al.</p>
+    <div class="paper-body"><p>MadNIS now covers full <span class="arithmatex">\(pp\)</span> processes with all their partonic subprocesses, and it runs untuned from defaults set by a three-iteration VEGAS survey. It will be MadGraph7&rsquo;s LO default. The main additions are:
+- learned sampling of symmetry permutations, and of flavour with a PDF prior;
+- merging of matrix elements, channels and, optionally, subprocesses;
+- buffered training on partially unweighted events;
+- concurrent training and generation on GPU.</p>
+<p>On an H100 with training excluded (<span class="arithmatex">\(\kappa_\infty\)</span>), MadNIS beats VEGAS on every benchmark, by 1.27× (<span class="arithmatex">\(t\bar t\)</span> dileptonic) up to 247× (<span class="arithmatex">\(\ell\ell+3j\)</span>). Distributions match a sliced MG5aMC baseline in pulls, including the tails.</p>
+<p>The amortization numbers the digest flagged look like this for <span class="arithmatex">\(t\bar t+nj\)</span> on an A100. Break-even with VEGAS comes at <span class="arithmatex">\(9\times10^6\)</span>, <span class="arithmatex">\(1.5\times10^5\)</span> and <span class="arithmatex">\(6\times10^3\)</span> events for <span class="arithmatex">\(n=1,2,3\)</span>, after 8 s, 11 s and 1.4 min of training. At <span class="arithmatex">\(10^3\)</span> iterations, the speed-ups are already 2.9, 8.9 and 16.</p>
+<p>Caveats:
+- <strong>Training cost of the headline numbers.</strong> The process-zoo figures come from trainings of up to 6.7–8.8 h.
+- <strong>Retraining.</strong> Any change of process, cuts or parameters requires a new training.
+- <strong>CPU.</strong> CPU training is more than 10× slower in wall-clock time.
+- <strong>Open choices.</strong> When to merge subprocesses is unresolved, and the defaults are &ldquo;likely to evolve&rdquo; (alpha release v0.2.1).
+- <strong>Low multiplicity.</strong> At low multiplicity, VEGAS combined with MadSpace mappings already captures most of the gain.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-15248">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.15248" target="_blank" rel="noopener">arXiv:2610.15248</a>
+      
+      <a class="permalink" href="#a2610-15248" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">When hadrons collide: di-J/ψ structure in the final state (Eric S. Swanson (University of Pittsburgh))</h3>
+    
+    <div class="paper-body"><p>Swanson gets a <span class="arithmatex">\(\chi^2/\text{ndf}=56/50\)</span> fit to the LHCb di-<span class="arithmatex">\(J/\psi\)</span> spectrum (6.2–7.7 GeV) without introducing any states. The production model is a compact octet–octet <span class="arithmatex">\(cc\bar c\bar c\)</span> source in <span class="arithmatex">\(2^{++}\)</span>, rescattering through ten charmonium-pair channels. Quark-exchange kernels come from a constituent model whose parameters are fixed by the charmonium spectrum, and the scattering is solved to all orders with a Kohn–Hulthén–Kato resonating-group method.</p>
+<p>The structures map onto thresholds:
+- a <span class="arithmatex">\(J/\psi J/\psi\)</span> threshold enhancement in the <span class="arithmatex">\(X(6600)\)</span> region;
+- a dip from flux lost to the <span class="arithmatex">\(J/\psi\psi(2S)\)</span> channel, followed by a peak at 6.9 GeV;
+- a 7.2 GeV shoulder between the <span class="arithmatex">\(J/\psi\psi(3S)\)</span> and <span class="arithmatex">\(\psi(2S)\psi(2S)\)</span> thresholds.</p>
+<p>Only three background parameters are free (<span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(\lambda\)</span>), with DPS fixed to LHCb&rsquo;s template. The fit needs both an incoherent remainder (<span class="arithmatex">\(c=0\)</span> gives 90/51) and a corrected continuum slope (<span class="arithmatex">\(\lambda=0\)</span> gives 152/51). The amplitude has poles at <span class="arithmatex">\(6809-68i\)</span> and <span class="arithmatex">\(7102-57i\)</span> MeV. Swanson argues these reflect a repulsive-shell/attractive-core interaction rather than tetraquarks.</p>
+<p>Caveats:
+- <strong>CMS fit.</strong> CMS is fitted less well (117/55), and its dips are deeper than the model&rsquo;s.
+- <strong>Missing and spurious features.</strong> The model undershoots the 6.9 GeV peak by 15–20% and predicts an unobserved <span class="arithmatex">\(\psi(2S)\psi(2S)\)</span> bump near 7.4 GeV.
+- <strong>Omitted physics.</strong> Quark annihilation is left out, which removes absorption into <span class="arithmatex">\(D^{(*)}\bar D^{(*)}\)</span>. <span class="arithmatex">\(J/\psi\psi(3770)\)</span> is excluded because it couples only through tensor forces.
+- <strong><span class="arithmatex">\(\Upsilon\Upsilon\)</span> test.</strong> The prediction gives broad features at 19.3 and 19.7 GeV and a sharp dip near 20.05 GeV. Because an earlier loop-cusp model predicted the same enhancements, this tests threshold rescattering in general, not this model specifically.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -1480,7 +1550,7 @@
     </p>
     <h3 class="paper-title">Positive- and negative-parity charm-strange and bottom-strange mesons from lattice QCD</h3>
     <p class="byline">Forrest Guyton et al.</p>
-    <div class="paper-body"><p>Guyton and Meinel deliver a full RBC/UKQCD determination of decay constants, binding energies, and Weinberg compositeness for the lightest scalar, pseudoscalar, vector, and axial-vector Dₛ and Bₛ mesons, using domain-wall light/strange quarks and anisotropic clover charm/bottom on seven ensembles (mπ = 139–431 MeV, a = 0.073–0.114 fm) with combined chiral-continuum extrapolation. For negative-parity states they obtain f_{Dₛ}=251.4(2.1)(0.4)(2.5) MeV, f_{Dₛ*}=272.5(4.3)(1.0)(2.7), f_{Bₛ}=228.4(5.8)(0.5)(2.3), f_{Bₛ*}=229.2(4.4)(0.8)(2.3) MeV, plus ratios f_{Dₛ*}/f_{Dₛ}=1.086(14)(11) and f_{Bₛ*}/f_{Bₛ}=1.003(22)(10), consistent with FLAG. The positive-parity sector uses a GEVP with q̄q, derivative, and meson-meson-scattering operators (the latter at both source and sink), Lüscher&rsquo;s method, and effective-range expansions to extract infinite-volume bound-state masses: m_{Dₛ0*}−m_D−m_K=−48(14)(4) MeV, m_{Dₛ1}−m_{D*}−m_K=−61(15)(2), m_{Bₛ0*}−m_B−m_K=−69(13)(4), m_{Bₛ1}−m_{B*}−m_K=−77(10)(5). The charm results agree with experiment (−45.0(6), −44.7(6) MeV). Positive-parity decay constants — including the first-ever lattice f_{Bₛ0*}=207(12)(8)(2) and f_{Bₛ1}=196(16)(11)(2) MeV — are reported.</p>
+    <div class="paper-body"><p>Guyton and Meinel deliver a full RBC/UKQCD determination of decay constants, binding energies, and Weinberg compositeness for the lightest scalar, pseudoscalar, vector, and axial-vector Dₛ and Bₛ mesons, using domain-wall light/strange quarks and anisotropic clover charm/bottom on seven ensembles (mπ = 139–431 MeV, a = 0.073–0.114 fm) with combined chiral-continuum extrapolation. For negative-parity states they obtain f_{Dₛ}=251.4(2.1)(0.4)(2.5) MeV, f_{Dₛ<em>}=272.5(4.3)(1.0)(2.7), f_{Bₛ}=228.4(5.8)(0.5)(2.3), f_{Bₛ</em>}=229.2(4.4)(0.8)(2.3) MeV, plus ratios f_{Dₛ<em>}/f_{Dₛ}=1.086(14)(11) and f_{Bₛ</em>}/f_{Bₛ}=1.003(22)(10), consistent with FLAG. The positive-parity sector uses a GEVP with q̄q, derivative, and meson-meson-scattering operators (the latter at both source and sink), Lüscher&rsquo;s method, and effective-range expansions to extract infinite-volume bound-state masses: m_{Dₛ0<em>}−m_D−m_K=−48(14)(4) MeV, m_{Dₛ1}−m_{D</em>}−m_K=−61(15)(2), m_{Bₛ0<em>}−m_B−m_K=−69(13)(4), m_{Bₛ1}−m_{B</em>}−m_K=−77(10)(5). The charm results agree with experiment (−45.0(6), −44.7(6) MeV). Positive-parity decay constants — including the first-ever lattice f_{Bₛ0*}=207(12)(8)(2) and f_{Bₛ1}=196(16)(11)(2) MeV — are reported.</p>
 <p>Why it matters: the below-threshold binding, small positive-parity decay constants, and scattering lengths consistently support a predominantly D⁽<em>⁾K/B⁽</em>⁾K molecular interpretation of the Dₛ0*(2317)-like states, and the negative-parity constants feed dispersive bounds on b→s form factors relevant to the b→sℓℓ anomalies. Caveats acknowledged: two-pion left-hand cuts (which extend above the ground-state energies at low mπ) are neglected, invalidating strict Lüscher/ERE there, and weak-binding corrections to Weinberg&rsquo;s criterion are expected to be large in some channels.</p></div>
   </article>
   
@@ -3820,7 +3890,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-14 05:46 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-14 08:44 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

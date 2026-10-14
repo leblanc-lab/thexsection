@@ -39,6 +39,205 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Wednesday, October 14, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h1 id="private-track-2026-10-14">Private track: 2026-10-14</h1>
+<p><strong>Your own work today:</strong> you are a co-author on the AI4MuC report (<a href="https://arxiv.org/abs/2610.14303">arXiv:2610.14303</a>). It also cites your generative-BIB paper (Mastandrea, Peng, Rosser, LeBlanc, 2609.12054).</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261014221-energy-energy-correlators-within-z-tagged-jets-in-pp-collisions-at-s-13-tev-lhcb"><a href="https://arxiv.org/abs/2610.14221">arXiv:2610.14221</a>: Energy-energy correlators within Z-tagged jets in pp collisions at √s = 13 TeV (LHCb)</h3>
+<p>LHCb reports the first EECs in Z+jet events at forward rapidity:
+- <strong>Data and selection:</strong> 5.4 fb⁻¹ from 2016–18; Z→μμ; anti-kT R=0.5 jets with 20&lt;p_T&lt;100 GeV and 2.5&lt;y&lt;4. The jet must be the leading jet with Δφ_{Z-jet}&gt;7π/8. Charged hadrons need p_T&gt;0.25 GeV.
+- <strong>Observables:</strong> the inclusive EEC, plus like-sign (LS) and opposite-sign (OS) EECs, each normalised to the inclusive one, and their difference.
+- <strong>Weights:</strong> p_T^i p_T^j/p_T,jet². These are p_T weights, not energy weights.
+- <strong>Unfolding:</strong> a simultaneous 3D IBU in (R_L, p_T,jet, w_pT), with the weight unfolded before projection. That is a methodologically notable choice.
+- <strong>Transition peak:</strong> in R_L⟨p_T⟩ the peak sits at 2.74±0.25, 2.71±0.50 and 2.67±0.22 GeV across the three p_T bins. This scaling is consistent with Λ_QCD/p_T.
+- <strong>Theory comparison:</strong> the predictions of Barata et al. use a nonperturbative parameter fixed from e⁺e⁻. They reproduce the peak position, which LHCb frames as e⁺e⁻↔pp universality for quark jets.
+- <strong>Charge dependence:</strong> the LS−OS difference is negative everywhere, and OS correlations are enhanced as R_L falls toward the transition. Pythia describes this, and the paper reads it as string-breaking-like.
+- <strong>Free-hadron region:</strong> for p_T&lt;50 GeV the shape is flat, matching ALICE. Within uncertainties it is also compatible with STAR&rsquo;s negative slope, so it does not settle that tension.</p>
+<p>Why it matters: this is a quark-enriched pp baseline, complementing gluon-heavier inclusive-jet EECs (CMS/ALICE) and charm-tagged EECs (ALICE). It sets up flavour-dependence comparisons.</p>
+<p>Caveats:
+- The quark fraction is asserted from the Compton-dominance argument but not quantified.
+- The unfolding prior is Pythia 8.186, which is old.
+- Pair efficiencies are only 41–66%.
+- Systematics reach 47% in the lowest p_T bin.
+- With p_T&gt;50 GeV the free-hadron region is too short to say anything.</p>
+<h3 id="arxiv261017213-what-do-event-generators-compute-flux-functionals-from-detector-operators-holguin"><a href="https://arxiv.org/abs/2610.17213">arXiv:2610.17213</a>: What Do Event Generators Compute? Flux Functionals from Detector Operators (Holguin)</h3>
+<p>Holguin defines a non-perturbative target for generators.</p>
+<ul>
+<li><strong>Definition:</strong> PS̃[λ] = ⟨ψ|exp(−⟨λ,ℰ⟩)|ψ⟩, a functional Laplace transform of the full energy-flow distribution on the celestial sphere. The detector operators are built from asymptotic hadronic out-modes.</li>
+<li><strong>Properties:</strong></li>
+<li>It is IRC safe.</li>
+<li>It is positive, with total weight σ_tot.</li>
+<li>It is entire in λ, because energy is bounded.</li>
+<li><strong>What it contains:</strong></li>
+<li>Its λ-derivatives at zero are the full tower of energy correlators.</li>
+<li>Event shapes are one-parameter slices λ=νf.</li>
+<li>Any calorimetric observable follows from an M-fold Bromwich inversion.</li>
+<li><strong>Resolution scale:</strong> μ(n̂)=1/λ(n̂) acts as a direction-dependent resolution scale.</li>
+<li><strong>EG̃ generalisation:</strong> it adds detectors 𝔻_{h,Σ}^{[Δ_L⁰]}, which are species- and spin-resolved with energy weights ω^{−Δ_L⁰}. Only Δ_L⁰=−1 summed over species and spin, i.e. ℰ itself, is IRC safe. Track and fragmentation functions therefore enter for everything else.</li>
+</ul>
+<p>What I could verify from the text: the one-loop e⁺e⁻ setup (soft and hard-collinear partition, entire exponential-integral structure, an explicit soft momentum map). The text is truncated mid-calculation.</p>
+<p>What comes from the abstract only:
+- The claimed sensitivity to recoil scheme at one loop.
+- The toy-model statement that the continuum of low scales prevents full resummation from hard-scale evolution alone, which is NGL-like.</p>
+<p>For this topic, it reframes shower-accuracy testing as validation against a generating functional that contains every EEC rather than a finite observable set. It is conceptual, with no numerical generator comparison yet.</p>
+<h3 id="arxiv261015919-rino-renormalization-group-distillation-with-no-labels"><a href="https://arxiv.org/abs/2610.15919">arXiv:2610.15919</a>: RINO: Renormalization Group Distillation with No Labels</h3>
+<p>RINO is DINOv2-style self-distillation in which the views are exclusive-kT clusterings of the same jet.
+- <strong>Views:</strong> N∈{2,3,4,6,8,16} plus unclustered. The teacher sees N∈{6,8,16}; the student additionally sees the coarse and unclustered extremes.
+- <strong>Loss and backbone:</strong> the iBOT and KoLeo terms are kept, on an 8.4M-parameter transformer.
+- <strong>Protocol:</strong> pretrain on JetClass QCD only, fine-tune on JetNet, evaluate out-of-distribution (OOD) on JetClass.</p>
+<p>Results, OOD top accuracy with an MLP head:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RINO</td>
+<td>0.847±0.003</td>
+</tr>
+<tr>
+<td>MPMv1</td>
+<td>0.800</td>
+</tr>
+<tr>
+<td>Supervised</td>
+<td>0.786</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Label efficiency:</strong> with 1% of labels RINO reaches 0.797, matching full supervision.</li>
+<li><strong>Zero-shot H→4q AUC:</strong> 0.894, versus 0.859 for MPMv2.</li>
+<li><strong>Clustering ablation:</strong> kT 0.839 &gt; C/A 0.796 &gt; anti-kT 0.693. This is the substructure-relevant result: emission-scale-ordered coarse-graining matters, not merely multiscale views.</li>
+<li><strong>Contrastive variant:</strong> swapping JetCLR augmentations for kT views gives +11.4%.</li>
+<li><strong>Backbone geometry:</strong> the DINO backbone stays scale-aware while the head enforces invariance.</li>
+<li><strong>Domain shift:</strong> W₁ between source and target embeddings drops roughly 3×.</li>
+</ul>
+<p>Caveats:
+- This is sim→sim.
+- Pretraining overlaps the test domain.
+- Absolute accuracies are well below in-domain (~0.93).
+- Inputs are kinematics only.
+- <strong>Selection on the target:</strong> the headline teacher schedule was selected on OOD JetClass top accuracy. That is mild target leakage; the pre-tuning 0.839 is the cleaner number.</p>
+<h3 id="arxiv261017351-qgrat-quantum-grade-aware-transformer-for-jet-tagging"><a href="https://arxiv.org/abs/2610.17351">arXiv:2610.17351</a>: QGrAT: Quantum Grade-Aware Transformer for Jet Tagging</h3>
+<p>QGrAT is a quantum top tagger.
+- <strong>Attention:</strong> pairwise IsingZZ gates whose angles are grade-wise 𝒞ℓ(1,3) inner products of features built from constituent four-momenta: p·P, p, p∧P, a weighted trivector T_i, and |det|.
+- <strong>Ancilla:</strong> a Hadamard-test ancilla applies controlled ZZZ rotations weighted by the triple product (p_i·p_j)(p_i·p_k)(p_j·p_k).
+- <strong>Readout:</strong> in-circuit.
+- <strong>Best configuration:</strong> N=10 constituents, grades 0–3 plus the ancilla, 12 qubits, 144 parameters, 12k training jets.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Params</th>
+<th>AUC</th>
+<th>1/ε_B at ε_S=0.5</th>
+<th>1/ε_B at ε_S=0.3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QGrAT (grades 0–3 + ancilla)</td>
+<td>144</td>
+<td>0.944±0.002</td>
+<td>35.7</td>
+<td>96.8</td>
+</tr>
+<tr>
+<td>L-GATr-Slim</td>
+<td>144</td>
+<td>0.940±0.010</td>
+<td>30.4</td>
+<td>75.1±53.8</td>
+</tr>
+<tr>
+<td>Full minimal L-GATr</td>
+<td>1215</td>
+<td>0.958</td>
+<td>—</td>
+<td>192</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Ancilla effect:</strong> the three-body ancilla is the main driver, raising 1/ε_B at ε_S=0.5 from 19.9 to 35.7.</li>
+<li><strong>Grade 4:</strong> adds nothing.</li>
+</ul>
+<p>Caveats:
+- The classifier is not Lorentz equivariant; only the coupling angles are invariant, while the component encoding is frame dependent.
+- Triple products are standardized per batch, including at evaluation, so scores depend on batch composition.
+- Results come from noiseless state-vector simulation.
+- The baseline variance is huge.
+- Everything sits about an order of magnitude below SOTA rejection (~1300–2500).</p>
+<p>The interesting takeaway is an explicit three-body invariant buying rejection in a tiny model.</p>
+<h3 id="arxiv261014211-factorisation-theorem-and-pole-cancellation-in-the-resolved-q1q7-contribution-to-bx_s-at-nlo"><a href="https://arxiv.org/abs/2610.14211">arXiv:2610.14211</a>: Factorisation theorem and pole cancellation in the resolved Q₁–Q₇γ contribution to B̄→X_sγ at NLO</h3>
+<p>This matched on &ldquo;jet function&rdquo; and is SCET for B physics, not jet substructure.</p>
+<ul>
+<li><strong>What they did:</strong> an all-order-valid factorisation formula, (H₁·H₇γ*)⊗J^(n̄)⊗g₁₇⊗J^(n), and the u-integrated massless two-loop anti-hard-collinear jet function.</li>
+<li><strong>Result:</strong> explicit cancellation of all 1/ε poles, including for B̄_{d,s}→γγ.</li>
+<li><strong>Why the pole cancellation matters:</strong> it confirms that the &ldquo;irrelevant&rdquo; terms in the g₁₇ multi-light-cone anomalous dimension can be dropped.</li>
+<li><strong>Physics motivation:</strong> the LO result has a ~40% scale ambiguity.</li>
+<li><strong>Caveat:</strong> charm-mass effects are deferred, so there is no phenomenology yet.</li>
+</ul>
+<p>Skip unless you track SCET jet-function technology.</p>
+<h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261014303-ai-acceleration-of-muon-collider-rd-a-report-from-the-ai4muc-workshop"><a href="https://arxiv.org/abs/2610.14303">arXiv:2610.14303</a>: AI Acceleration of Muon Collider R&amp;D: A Report from the AI4MuC Workshop</h3>
+<p>This is your report, so I note only the citable numbers and positions.</p>
+<ul>
+<li><strong>Smart pixels:</strong> a quantized NN gives ~85% BIB rejection at 99% signal efficiency. SEU studies suggest targeted mitigation beats full TMR.</li>
+<li><strong>Generative BIB:</strong> flow and tabular-diffusion results are reported as marginals only. The azimuthal-cloning in current FLUKA samples is explicitly named as blocking event-level correlations.</li>
+<li><strong>Software:</strong> the 3.x release moves to Gaudi/Key4hep/EDM4hep with ACTS, plus CI physics validation.</li>
+<li><strong>Agents:</strong> agent success above 80% on an analysis-task benchmark (Watts) is cited.</li>
+<li><strong>Grand challenges:</strong> four are proposed: cooling segment, BIB, smart pixel, and agent validation report.</li>
+<li><strong>BIB challenge ordering:</strong> independent full-simulation BIB samples come before the generative-model challenge. That ordering constrains follow-ups to your BIB work.</li>
+</ul>
+<h3 id="arxiv261017263-neutrino-tridents-and-w-boson-production-at-the-muon-collider"><a href="https://arxiv.org/abs/2610.17263">arXiv:2610.17263</a>: Neutrino Tridents and W-boson production at the Muon Collider</h3>
+<p>The setup is a 10 TeV collider with MuColν, a 100 kg silicon active target 500 m downstream, giving about 2×10¹⁰ CC DIS events over 10 years.</p>
+<table>
+<thead>
+<tr>
+<th>Process (10 yr, Si)</th>
+<th>Events</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimuon tridents</td>
+<td>3.05×10⁵</td>
+</tr>
+<tr>
+<td>All trident channels</td>
+<td>~2×10⁶</td>
+</tr>
+<tr>
+<td>On-shell W production (WBP)</td>
+<td>(6.4±6.0)×10⁴</td>
+</tr>
+<tr>
+<td>WBP, hadronic W</td>
+<td>4.3×10⁴</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Threshold:</strong> E_ν &gt; m_W²/2m_N ≈ 3.44 TeV, giving x_min ≈ 0.69–0.86 for 4–5 TeV neutrinos.</li>
+<li><strong>Payoff:</strong> WBP measures the photon PDF at very large x, where the theory uncertainty exceeds 100%.</li>
+<li><strong>BSM reach:</strong> constraints on (Δg_V, Δg_A) collapse to a thin ring through the SM, far beyond DUNE.</li>
+</ul>
+<p>The jet tie-in: hadronic W→qq̄ appears as a two-prong fat jet. Isolating it needs LHC-style W-tagging (cited at 10²–10³ rejection) plus a soft-primary-lepton cut against CC DIS, which is ~10⁴ larger. This is an unexplored substructure use case in a pileup-free forward detector.</p>
+<p>Caveats:
+- The BSM projection is statistics-only, with backgrounds assumed negligible and WBP assumed separable.
+- The sensitivity plot omits detector systematics and flux uncertainties.
+- The W-tagging performance is assumed, not simulated.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Monday, October 12, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -463,7 +662,7 @@ their own:
   </div>
   <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260936523-non-global-logarithms-and-fiducial-transverse-momentum-dependent-observables-in-deep-inelastic-scattering-shuo-lin-et-al"><a href="https://arxiv.org/abs/2609.36523">arXiv:2609.36523</a> — Non-global logarithms and fiducial transverse-momentum-dependent observables in deep-inelastic scattering (Shuo Lin et al.)</h3>
-<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -935,7 +1134,7 @@ their own:
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260908392-prospects-for-precision-higgs-boson-measurements-at-a-10-tev-muon-collider-paolo-andreetto-et-al"><a href="https://arxiv.org/abs/2609.08392">arXiv:2609.08392</a> — Prospects for precision Higgs boson measurements at a 10 TeV muon collider (Paolo Andreetto et al.)</h3>
-<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW* (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ*→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW* at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
+<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW<em> (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ</em>→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW* at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
 <p>For this topic the paper is the current reference benchmark: it moves the μC Higgs case from parton-level cross-section studies to full reconstruction with realistic BIB, and gives channel-by-channel efficiencies (e.g. 60% b-tag with 22% c / 0.9% light mistag) and background models one can actually reuse. Key caveats stated openly: all quoted numbers are statistical only, and H→bb̄ will be JES-dominated (0.49% from a 0.06% JES uncertainty) once systematics enter; electron reconstruction is not yet optimized, so H→ZZ*→4ℓ and the electron HH→bbWW channel (53% vs 22% for muons) are deferred/conservative; τ_had reconstruction is absent. The λ₃ extraction relies solely on bbbb and on the WW-fusion sample rescaled by 1.103 for ZZ-fusion.</p>
 <h3 id="arxiv260908918-probing-the-inert-scalar-sector-of-the-inert-doublet-model-via-vector-boson-fusion-at-a-muon-collider-abdesslam-arhrib-et-al"><a href="https://arxiv.org/abs/2609.08918">arXiv:2609.08918</a> — Probing the Inert Scalar Sector of the Inert Doublet Model via Vector-Boson Fusion at a Muon Collider (Abdesslam Arhrib et al.)</h3>
 <p>Studies three previously-unexamined 2→4 VBF channels in the IDM at √s = 3, 10, 20 TeV: μ⁺μ⁻→H⁺H⁻νν̄ (WW fusion), and the associated HH±μ∓ν and AH±μ∓ν (WZ/Wγ fusion), with full 2→4 matrix elements in MadGraph5 (no EVBA). They first dissect the WW→H⁺H⁻ and WV→H⁺S_i subprocesses, showing longitudinal WLWL dominance and a strong destructive interference among diagrams (individual contributions ~10³ pb collapse to ~1 pb in the full amplitude), enforcing correct high-energy behavior. Cross sections rise sharply with energy: H⁺H⁻νν̄ reaches O(10) fb at 10 TeV and tens of fb at 20 TeV; the associated channels reach O(10³) fb. Delphes-level cut-based analysis (no BIB/pileup) for three benchmark points with BR(H±→HW±)=1 gives, at 10 ab⁻¹: [WH][WH]νν̄ significance 33 (10 TeV) / 58 (20 TeV); [WH]Hμν a huge 2000–4000 (dominated by large signal σ); [WH][ZH]μν 164 / 276. The 3 TeV stage is marginal for H⁺H⁻ (S=1.37) but strong for the associated modes.</p>
@@ -1174,7 +1373,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-14 05:46 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-14 08:44 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
