@@ -324,10 +324,11 @@ class ClaudeCLIBackend:
 
 
 class LLM:
-    def __init__(self, cfg: dict | None = None):
+    def __init__(self, cfg: dict | None = None, stage: str | None = None):
         import os
 
-        llm_cfg = (cfg or load_config())["llm"]
+        cfg = cfg or load_config()
+        llm_cfg = cfg["llm"]
         # LLM_PROVIDER overrides config.yaml for one run (e.g. a hand-run day on
         # `claude-cli` while the committed default stays `anthropic` for CI).
         self.provider = os.environ.get("LLM_PROVIDER") or llm_cfg["provider"]
@@ -345,7 +346,12 @@ class LLM:
         # runs 2026-09-30 and 2026-10-01: 45 + 45 + ... > 120 min).
         run_deadline = os.environ.get("LLM_RUN_DEADLINE")
         self.run_deadline = float(run_deadline) if run_deadline else None
-        pcfg = llm_cfg["providers"][self.provider]
+        pcfg = dict(llm_cfg["providers"][self.provider])
+        # A stage may swap in a cheaper model per provider (e.g. Sonnet for the
+        # digest while deep dives and memory stay on Opus). Keyed by provider so
+        # a Gemini dev run is unaffected by an Anthropic-only override.
+        if stage:
+            pcfg.update(cfg.get(stage, {}).get("model_overrides", {}).get(self.provider, {}))
         self.model = pcfg["model"]
         self.in_price = pcfg["input_price_per_mtok"]
         self.out_price = pcfg["output_price_per_mtok"]

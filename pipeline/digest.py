@@ -199,7 +199,7 @@ def main() -> int:
         result = LLMResult(raw, 0, 0, 0.0, False)
         generator = "manual"
     else:
-        llm = LLM(cfg)
+        llm = LLM(cfg, stage="digest")
         generator = f"{llm.provider}/{llm.model}"
 
     if args.dry_run:

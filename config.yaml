@@ -135,6 +135,16 @@ digest:
   # 2026-07-20 thinking consumed the entire 8000 and no text block was emitted.
   # The digest itself targets 400-600 words (~900 tokens); the rest is headroom.
   max_output_tokens: 10000
+  # Per-provider model for this stage only (overrides llm.providers.<p>).
+  # Sonnet 5.5 since 2026-10-15: half Opus's price, and a side-by-side on
+  # 2026-10-15 was close in substance. Deep dives and memory stay on Opus.
+  model_overrides:
+    anthropic:
+      model: claude-sonnet-5-5
+      input_price_per_mtok: 2.00
+      output_price_per_mtok: 10.00
+    claude-cli:
+      model: claude-sonnet-5-5
 
 deep_dive:
   # Number of standout papers to expand via their arXiv HTML rendering. 0 disables.
