@@ -39,6 +39,34 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Friday, October 16, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261021982-first-observation-of-the-radiative-decay-d0-to-gammaomega-besiii-collaboration-et-al"><a href="https://arxiv.org/abs/2610.21982">arXiv:2610.21982</a> — First Observation of the Radiative Decay <span class="arithmatex">\(D^0 \to \gamma\omega\)</span> (BESIII Collaboration et al.)</h3>
+<p><strong>Relevance:</strong> This is not a jet paper. It matched because BESIII uses Particle Transformer (ParT), the jet-tagging architecture, as an event-level classifier in a charm analysis. Its interest for this topic is as a data point on how well jet-tagging architectures transfer to other settings.</p>
+<p><strong>What they did.</strong> With 20.3 fb⁻¹ at √s = 3.773 GeV and the double-tag method, BESIII represents each recoil-side event as two &ldquo;particle clouds&rdquo;:</p>
+<ul>
+<li><strong>Tracks:</strong> angles, momentum, helix parameters, and dE/dx and TOF pulls.</li>
+<li><strong>Showers:</strong> angles, energy, crystal multiplicity, E₃ₓ₃/E₅ₓ₅, lateral/secondary moments, and Zernike moments A20 and A42.</li>
+</ul>
+<p>ParT was trained on about 0.84M balanced signal MC vs. inclusive-MC events (80/20 split). The dominant background, <span class="arithmatex">\(D^0\to\pi^+\pi^-\pi^0\pi^0\)</span>, is essentially degenerate with signal in <span class="arithmatex">\(M_{BC}\)</span> and <span class="arithmatex">\(\Delta E\)</span>. The yield is therefore extracted from an unbinned fit to the ParT score in [0.5, 1].</p>
+<p><strong>Results.</strong>
+- <span class="arithmatex">\(N_{DT} = 79.8\pm14.9\)</span>, which is 7.0σ statistical only and 6.0σ with fit-related systematics.
+- <span class="arithmatex">\(\mathcal{B} = (2.12\pm0.40\pm0.25)\times10^{-5}\)</span>, above all long-distance predictions. CLFQM comes closest.
+- First determination of <span class="arithmatex">\(\mathcal{D}^{\omega-\rho} = 0.15\pm0.24\)</span>.</p>
+<p><strong>Notes for ML-tagger practice.</strong>
+- <strong>Ensemble-based uncertainty.</strong> BESIII trained 100 ensemble members with varied initialization, batch order and dropout. The spread of the resulting branching fractions, 10.9%, is taken as a &ldquo;model uncertainty.&rdquo;
+- <strong>That uncertainty dominates.</strong> It is the largest systematic of the 12.1% total.
+- <strong>Domain shift looks small, but is only partly tested.</strong> It is estimated at just 0.4% from re-measuring <span class="arithmatex">\(D^0\to\pi^+\pi^-\pi^0\)</span>; a <span class="arithmatex">\(\pi^0\eta'\)</span> control channel also agrees with earlier measurements. However, neither control channel has a lone high-energy radiative photon. The discrimination plausibly leans on shower-shape features, so photon-specific data/MC mismodelling is not directly probed.</p>
+<p><strong>Other caveats.</strong>
+- Background score shapes come entirely from inclusive MC, with the main background yield varied by ±30%.
+- Choosing the &ldquo;nominal&rdquo; network as the one nearest the ensemble mean is a convention.
+- The cut-based cross-check is only in the supplement.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, October 15, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -1402,7 +1430,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-15 05:54 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-16 05:34 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

@@ -7,7 +7,34 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>First Observation of the Radiative Decay D⁰ →γω</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-21982</link>
+    <guid isPermaLink="false">arxiv:2610.21982</guid>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">BESIII Collaboration et al.</dc:creator>
+    <description><![CDATA[<p><strong>Relevance:</strong> This is not a jet paper. It matched because BESIII uses Particle Transformer (ParT), the jet-tagging architecture, as an event-level classifier in a charm analysis. Its interest for this topic is as a data point on how well jet-tagging architectures transfer to other settings.</p>
+<p><strong>What they did.</strong> With 20.3 fb⁻¹ at √s = 3.773 GeV and the double-tag method, BESIII represents each recoil-side event as two &ldquo;particle clouds&rdquo;:</p>
+<ul>
+<li><strong>Tracks:</strong> angles, momentum, helix parameters, and dE/dx and TOF pulls.</li>
+<li><strong>Showers:</strong> angles, energy, crystal multiplicity, E₃ₓ₃/E₅ₓ₅, lateral/secondary moments, and Zernike moments A20 and A42.</li>
+</ul>
+<p>ParT was trained on about 0.84M balanced signal MC vs. inclusive-MC events (80/20 split). The dominant background, D⁰→π⁺π⁻π⁰π⁰, is essentially degenerate with signal in M_BC and ΔE. The yield is therefore extracted from an unbinned fit to the ParT score in [0.5, 1].</p>
+<p><strong>Results.</strong>
+- N_DT = 79.8±14.9, which is 7.0σ statistical only and 6.0σ with fit-related systematics.
+- ℬ = (2.12±0.40±0.25)×10⁻⁵, above all long-distance predictions. CLFQM comes closest.
+- First determination of 𝒟^ω-ρ = 0.15±0.24.</p>
+<p><strong>Notes for ML-tagger practice.</strong>
+- <strong>Ensemble-based uncertainty.</strong> BESIII trained 100 ensemble members with varied initialization, batch order and dropout. The spread of the resulting branching fractions, 10.9%, is taken as a &ldquo;model uncertainty.&rdquo;
+- <strong>That uncertainty dominates.</strong> It is the largest systematic of the 12.1% total.
+- <strong>Domain shift looks small, but is only partly tested.</strong> It is estimated at just 0.4% from re-measuring D⁰→π⁺π⁻π⁰; a π⁰η&rsquo; control channel also agrees with earlier measurements. However, neither control channel has a lone high-energy radiative photon. The discrimination plausibly leans on shower-shape features, so photon-specific data/MC mismodelling is not directly probed.</p>
+<p><strong>Other caveats.</strong>
+- Background score shapes come entirely from inclusive MC, with the main background yield varied by ±30%.
+- Choosing the &ldquo;nominal&rdquo; network as the one nearest the ensemble mean is a convention.
+- The cut-based cross-check is only in the supplement.</p>]]></description>
+  </item>
 
   <item>
     <title>The dead-cone effect in charm, bottom and top quark jets in angular and momentum space</title>
@@ -2625,16 +2652,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carlota Andres et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet substructure) — abstract only, not yet read for a briefing.</em></p>
 <p>Jets produced in relativistic heavy-ion collisions are modified by their interactions with the quark-gluon plasma (QGP), making jet substructure observables sensitive probes of QGP dynamics. A quantitative description of these modifications requires understanding how the medium affects elementary parton splittings with full dependence on both their energy fraction z and splitting angle θ, beyond the widely used soft emitted-gluon approximation. Here, we study medium-induced 1 →2 splittings double-differential in z and θ, with full resummation of multiple scatterings, and show that in the large-N_c limit and under the harmonic oscillator (HO) approximation, all path integrals can be evaluated analytically for any splitting channel, providing a computationally efficient semi-analytical result. We also revisit the semi-hard approximation (SHA), extending it to include leading corrections in inverse powers of the partons energies, which we denote the improved semi-hard approximation (ISHA), and assess its validity through a comparison with the large-N_c-HO results. Our analysis shows that while the SHA is found to be unreliable across most of phase space, even for high-energy emitters, the ISHA provides a robust approximation for splittings where all partons are sufficiently energetic.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PQuantML: A Tool for End-to-End Hardware-aware Model Compression</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2603-26595</link>
-    <guid isPermaLink="false">arxiv:2603.26595</guid>
-    <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roope Niemi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, jet tagging) — abstract only, not yet read for a briefing.</em></p>
-<p>PQuantML is a new open-source, hardware-aware neural network model compression library tailored to end-to-end workflows. Motivated by the need to deploy performant models to environments with strict latency constraints, PQuantML simplifies training of compressed models by providing a unified interface to apply pruning and quantization, either jointly or individually. The library implements multiple pruning methods with different granularities, as well as fixed-point quantization with support for High-Granularity Quantization. We evaluate PQuantML on representative tasks such as the jet substructure classification, so-called jet tagging, an on-edge problem related to real-time LHC data processing. Using various pruning methods with fixed-point quantization, PQuantML achieves substantial parameter and bit-width reductions while maintaining accuracy. The resulting compression is further compared against existing tools, such as QKeras and HGQ.</p>]]></description>
   </item>
 
 </channel>

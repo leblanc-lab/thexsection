@@ -6,7 +6,37 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Novel Hadronic Calorimeter With A Direct Neutron Readout</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-08587</link>
+    <guid isPermaLink="false">arxiv:2607.08587</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">I. Giomataris et al.</dc:creator>
+    <description><![CDATA[<p>Giomataris et al. simulate (Geant4, benchmarked against FLUKA) a sampling calorimeter of alternating Pb absorbers and Gd-loaded LAB scintillator that reads out both the prompt scintillation and a delayed signal from neutron moderation and capture. In a six-layer prototype (3.66 λ_I) hit by 10 GeV protons, ~197 neutrons/proton are captured with a median capture time of 11.1 μs; the delayed deposited energy is almost perfectly proportional to capture multiplicity (R²=0.9998, slope 7.97 MeV/neutron), giving direct calibration. Gadolinium&rsquo;s key benefit is timing, not yield: 0.5% Gd collects &gt;85% of captures within 20 μs versus ~10% for pure LAB. Because neutron production tracks the invisible hadronic energy, a branch-wise event-by-event correction using the delayed signal improves prompt resolution from 21.8% to 13.3% — a ~63% variance reduction — with no event rejection.</p>
+<p>Why it matters: this is a hardware attack on the invisible-energy fluctuations that fundamentally limit hadronic resolution, complementary to dual-readout. The intrinsic neutron-counting resolution (~7%) is far below the 21.8% calorimetric resolution, confirming that neutron-production fluctuations, not the detector, dominate — and can be measured out. Events binned by fixed neutron multiplicity show resolution falling to ~6%, suggesting the method scales favorably to higher energies. Caveats are explicit: a single 10 GeV energy, a shallow preliminary geometry, and no optical-photon transport, photosensor, or electronics modeling yet — the 13.3% is a proof-of-principle, not a device spec.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Transformer-based machine learning using low-level calorimeter signals for collimated photon identification</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-08175</link>
+    <guid isPermaLink="false">arxiv:2607.08175</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Matos et al.</dc:creator>
+    <description><![CDATA[<p>(Abstract only.) The authors use calorimeter cell-level information to separate highly collimated diphoton signatures — from light axion-like-particle decays — from isolated single photons, systematically comparing six architectures spanning high-level shower-shape approaches and direct cell-level methods. Cell-level ML decisively outperforms shower-shape variables, with a Transformer best overall and an MLP Mixer offering a resource-constrained option for trigger-level deployment. Beyond classification, the Transformer performs direct invariant-mass regression from cells, sharpening light-resonance characterization and adding a handle to suppress π⁰ and η fake-photon backgrounds.</p>
+<p>Why it matters: this is the calorimetry front of the week&rsquo;s ML-reconstruction arc — the same raw-input-beats-engineered-features lesson seen in flavor tagging, now applied to fine-grained EM showers. Direct mass regression from cells is the notable step beyond classification. No numerical performance figures are available in the provided text.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Single inclusive hadron and jet production in lepton-hadron scattering</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-07664</link>
+    <guid isPermaLink="false">arxiv:2607.07664</guid>
+    <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jian-Wei Qiu et al.</dc:creator>
+    <description><![CDATA[<p>The first calculation of high-p_T single-inclusive hadron (π^±,K^±) and jet production in e+h→H+X within joint QCD+QED collinear factorization, treating collision-induced QED radiation on equal footing with QCD. The cross section factorizes into hard parts (kept at NLO) convolved with universal lepton distribution functions (LDFs), PDFs (JAM20/CT18) and FFs (JAM20/MAP1.0), with DGLAP kernels carrying mixed QCD+QED splitting functions. Because a photon can split to qq̅ nonperturbatively, LDFs are genuinely nonperturbative objects; the authors start evolution at μ_0=m_c (not m_e) and build a &ldquo;default&rdquo; LDF set from a Beta-function ansatz constrained by number and momentum sum rules, then evolve to LHAPDF6-compatible grids. Headline numbers: collision-induced QED radiation reshapes the hadron p_T spectrum by up to ~50% (depleting high-p_T, enhancing low-p_T); jet spectra drop ~10–20%; scale uncertainty runs ~20–25%, but the LDF (μ_e) piece is only a few percent. Nuclear modification factors show EMC suppression below p_T∼10 GeV and Fermi-motion enhancement above.</p>
+<p>Why it matters: this is the LDF program&rsquo;s most concrete deliverable — a unified treatment of leptoproduction and photoproduction with no ad hoc Q² cut or &ldquo;resolved photon&rdquo; structure, exactly the framework the digest flags as sub-percent-precision machinery aimed at JLab and the EIC. The key caveat is honest and stated repeatedly: the LDFs are still model defaults (quark/gluon content set to zero at input, so those are lower limits), and existing data carry traditional radiative corrections and cannot be used to fit true LDFs until reanalyzed à la ZEUS. Dominant theory uncertainty is currently the FF choice, not the scales.</p>]]></description>
+  </item>
 
   <item>
     <title>Search for axion-like particles decaying to two photons at Belle II</title>
