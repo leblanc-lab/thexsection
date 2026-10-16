@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Partially Observed Trajectory Inference using Optimal Transport and a Dynamics Prior</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-07475</link>
+    <guid isPermaLink="false">arxiv:2406.07475</guid>
+    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anming Gu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Trajectory inference seeks to recover the temporal dynamics of a population from snapshots of its (uncoupled) temporal marginals, i.e. where observed particles are not tracked over time. Prior works addressed this challenging problem under a stochastic differential equation (SDE) model with a gradient-driven drift in the observed space, introducing a minimum entropy estimator relative to the Wiener measure and a practical grid-free mean-field Langevin (MFL) algorithm using Schrödinger bridges. Motivated by the success of observable state space models in the traditional paired trajectory inference problem (e.g. target tracking), we extend the above framework to a class of latent SDEs in the form of observable state space models. In this setting, we use partial observations to infer trajectories in the latent space under a specified dynamics model (e.g. the constant velocity/acceleration models from target tracking). We introduce the PO-MFL algorithm to solve this latent trajectory inference problem and provide theoretical guarantees to the partially observed setting. Experiments validate the robustness of our method and the exponential convergence of the MFL dynamics, and demonstrate significant outperformance over the latent-free baseline in key scenarios.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low dimensional representation of multi-patient flow cytometry datasets using optimal transport for minimal residual disease detection in leukemia</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2407-17329</link>
+    <guid isPermaLink="false">arxiv:2407.17329</guid>
+    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erell Gachon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Representing and quantifying Minimal Residual Disease (MRD) in Acute Myeloid Leukemia (AML), a type of cancer that affects the blood and bone marrow, is essential in the prognosis and follow-up of AML patients. As traditional cytological analysis cannot detect leukemia cells below 5\%, the analysis of flow cytometry dataset is expected to provide more reliable results. In this paper, we explore statistical learning methods based on optimal transport (OT) to achieve a relevant low-dimensional representation of multi-patient flow cytometry measurements (FCM) datasets considered as high-dimensional probability distributions. Using the framework of OT, we justify the use of the K-means algorithm for dimensionality reduction of multiple large-scale point clouds through mean measure quantization by merging all the data into a single point cloud. After this quantization step, the visualization of the intra and inter-patients FCM variability is carried out by embedding low-dimensional quantized probability measures into a linear space using either Wasserstein Principal Component Analysis (PCA) through linearized OT or log-ratio PCA of compositional data. Using a publicly available FCM dataset and a FCM dataset from Bordeaux University Hospital, we demonstrate the benefits of our approach over the popular kernel mean embedding technique for statistical learning from multiple high-dimensional probability distributions. We also highlight the usefulness of our methodology for low-dimensional projection and clustering patient measurements according to their level of MRD in AML from FCM. In particular, our OT-based approach allows a relevant and informative two-dimensional representation of the results of the FlowSom algorithm, a state-of-the-art method for the detection of MRD in AML using multi-patient FCM.</p>]]></description>
+  </item>
 
   <item>
     <title>Enhancing operational wind downscaling capabilities over Canada: Application of a Conditional Wasserstein GAN methodology</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Multi-Source Domain Adaptation (MSDA) is a challenging scenario where multiple related and heterogeneous source datasets must be adapted to an unlabeled target dataset. Conventional MSDA methods often overlook that data holders may have privacy concerns, hindering direct data sharing. In response, decentralized MSDA has emerged as a promising strategy to achieve adaptation without centralizing clients&rsquo; data. Our work proposes a novel approach, Decentralized Dataset Dictionary Learning, to address this challenge. Our method leverages Wasserstein barycenters to model the distributional shift across multiple clients, enabling effective adaptation while preserving data privacy. Specifically, our algorithm expresses each client&rsquo;s underlying distribution as a Wasserstein barycenter of public atoms, weighted by private barycentric coordinates. Our approach ensures that the barycentric coordinates remain undisclosed throughout the adaptation process. Extensive experimentation across five visual domain adaptation benchmarks demonstrates the superiority of our strategy over existing decentralized MSDA techniques. Moreover, our method exhibits enhanced robustness to client parallelism while maintaining relative resilience compared to conventional decentralized MSDA methodologies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Combining Wasserstein-1 and Wasserstein-2 proximals: robust manifold learning via well-posed generative flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-11901</link>
-    <guid isPermaLink="false">arxiv:2407.11901</guid>
-    <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hyemin Gu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We formulate well-posed continuous-time generative flows for learning distributions that are supported on low-dimensional manifolds through Wasserstein proximal regularizations of f-divergences. Wasserstein-1 proximal operators regularize f-divergences so that singular distributions can be compared. Meanwhile, Wasserstein-2 proximal operators regularize the paths of the generative flows by adding an optimal transport cost, i.e., a kinetic energy penalization. Via mean-field game theory, we show that the combination of the two proximals is critical for formulating well-posed generative flows. Generative flows can be analyzed through optimality conditions of a mean-field game (MFG), a system of a backward Hamilton-Jacobi (HJ) and a forward continuity partial differential equations (PDEs) whose solution characterizes the optimal generative flow. For learning distributions that are supported on low-dimensional manifolds, the MFG theory shows that the Wasserstein-1 proximal, which addresses the HJ terminal condition, and the Wasserstein-2 proximal, which addresses the HJ dynamics, are both necessary for the corresponding backward-forward PDE system to be well-defined and have a unique solution with provably linear flow trajectories. This implies that the corresponding generative flow is also unique and can therefore be learned in a robust manner even for learning high-dimensional distributions supported on low-dimensional manifolds. The generative flows are learned through adversarial training of continuous-time flows, which bypasses the need for reverse simulation. We demonstrate the efficacy of our approach for generating high-dimensional images without the need to resort to autoencoders or specialized architectures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving Hyperbolic Representations via Gromov-Wasserstein Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-10495</link>
-    <guid isPermaLink="false">arxiv:2407.10495</guid>
-    <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Hyperbolic representations have shown remarkable efficacy in modeling inherent hierarchies and complexities within data structures. Hyperbolic neural networks have been commonly applied for learning such representations from data, but they often fall short in preserving the geometric structures of the original feature spaces. In response to this challenge, our work applies the Gromov-Wasserstein (GW) distance as a novel regularization mechanism within hyperbolic neural networks. The GW distance quantifies how well the original data structure is maintained after embedding the data in a hyperbolic space. Specifically, we explicitly treat the layers of the hyperbolic neural networks as a transport map and calculate the GW distance accordingly. We validate that the GW distance computed based on a training set well approximates the GW distance of the underlying data distribution. Our approach demonstrates consistent enhancements over current state-of-the-art methods across various tasks, including few-shot image classification, as well as semi-supervised graph link prediction and node classification.</p>]]></description>
   </item>
 
 </channel>

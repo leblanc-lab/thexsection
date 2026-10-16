@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Vertical Sliced Wasserstein Distances for Meta-Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-20743</link>
+    <guid isPermaLink="false">arxiv:2610.20743</guid>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elaheh Akbari et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Many modern learning problems require comparing probability distributions whose individual observations are themselves probability measures, naturally giving rise to meta-measures in 𝒫(𝒫(Ω)). However, optimal transport distances on this space can be prohibitively expensive to evaluate. We introduce the vertical sliced Wasserstein (VSW) distance, a scalable metric on 𝒫(𝒫(Ω)). Rather than slicing along the transport geometry of 𝒫(Ω), VSW projects each inner measure using continuous test functions and compares the resulting one-dimensional distributions with one-dimensional Wasserstein distance. We prove that VSW is a valid metric on 𝒫(𝒫(Ω)), metrizes weak convergence, and admits dimension-independent statistical convergence guarantees. Empirically, VSW provides high accuracy and efficiency compared with existing distances for meta-measures. We further derive a practical particle gradient for the empirical VSW_2² objective and demonstrate its use for gradient-based transport of meta-measures. VSW provides a simple and scalable alternative for comparing and optimizing distributions of distributions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Sketches with Error Certificates</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-20788</link>
+    <guid isPermaLink="false">arxiv:2610.20788</guid>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elaheh Akbari et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Compact representations that support geometrically meaningful comparisons are valuable for learning from probability distributions. We study optimal, free-weight M-atom quantization of one-dimensional probability measures in quadratic Wasserstein distance and extend it to higher dimensions via slicing. Using L shared projections yields a sketch with O(LM) comparison time. Our main result is an exact decomposition of squared distance error into residual and partition-mismatch terms, yielding computable certificates for arbitrary centroid sketches. For optimal sketches, a finite (2+δ) moment for some δ&gt;0 guarantees O(M⁻¹⁾ error in the finite-direction sliced distance, while equal-mass sketches can converge more slowly. Each slice preserves its mean, while storing residual energies enables covariance recovery from sufficiently many generic directions. Experiments on document, point-cloud, and flow-cytometry benchmarks show that optimal sketches substantially reduce storage while preserving the classification performance of uncompressed sliced distances. They also improve generalization from few labelled subjects and support end-to-end learning as compact pooling layers.</p>]]></description>
+  </item>
 
   <item>
     <title>Minimax Rates for Estimating Powered Sliced Wasserstein Functionals</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Gu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Existing Optimal Transport (OT) methods mainly derive the optimal transport plan/matching under the criterion of transport cost/distance minimization, which may cause incorrect matching in some cases. In real applications, annotating a few matched keypoints across domains is reasonable or even efortless in annotation burden. It is valuable to investigate how to leverage the annotated keypoints to guide the correct matching in OT. In this paper, we propose a novel KeyPoint-Guided model by ReLation preservation (KPG-RL)that searches for the optimal matching (i.e., transport plan) guided by the keypoints in OT.KPG-RL exploits a mask-based constraint of the transport plan to preserve the matching of keypoint pairs in transport, and guides the matching by relation of each data point to the keypoints. The KPG-RL is developed in both balanced and unbalanced/partial transport settings in Kantorovich and Gromov-Wasserstein formulations. Moreover, we deduce the dual formulation of χ²-regularized KPG-RL model, from which we learn the transport based on deep learning techniques, scaling better to larger numbers of data. With the learned transport plan, two novel neural transport strategies, named manifold barycentric projection and manifold sampling, are developed to transport source data to the target domain data manifold. As applications, we apply the proposed approach to the heterogeneous domain adaptation, multi-omic single-cell alignment, and image-to-image translation. Experiments verifed the efectiveness of our approach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Emotion Collider: Dual Hyperbolic Mirror Manifolds for Sentiment Recovery via Anti Emotion Reflection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-16161</link>
-    <guid isPermaLink="false">arxiv:2602.16161</guid>
-    <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rong Fu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Emotional expression underpins natural communication and effective human-computer interaction. We present Emotion Collider (EC-Net), a hyperbolic hypergraph framework for multimodal emotion and sentiment modeling. EC-Net represents modality hierarchies using Poincare-ball embeddings and performs fusion through a hypergraph mechanism that passes messages bidirectionally between nodes and hyperedges. To sharpen class separation, contrastive learning is formulated in hyperbolic space with decoupled radial and angular objectives. High-order semantic relations across time steps and modalities are preserved via adaptive hyperedge construction. Empirical results on standard multimodal emotion benchmarks show that EC-Net produces robust, semantically coherent representations and consistently improves accuracy, particularly when modalities are partially available or contaminated by noise. These findings indicate that explicit hierarchical geometry combined with hypergraph fusion is effective for resilient multimodal affect understanding.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distance-Matrix Wasserstein Statistics for Scalable Gromov--Wasserstein Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-14981</link>
-    <guid isPermaLink="false">arxiv:2605.14981</guid>
-    <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ao Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gromov&ndash;Wasserstein (GW) distances compare graphs, shapes, and point clouds through internal distances, without requiring a common coordinate system. This invariance is powerful, but discrete GW is a nonconvex quadratic optimal transport problem and is difficult to estimate at scale. We propose \emph{Distance-Matrix Wasserstein} (DMW), a hierarchy of Wasserstein statistics comparing laws of random finite distance matrices. Rather than optimizing a global point-level alignment, DMW samples n points from each space, records their pairwise distances, and transports the resulting matrix laws. We prove that DMW is a relaxation and lower bound of GW, and establish a reverse approximation inequality: the GW&ndash;DMW gap is controlled by the Wasserstein error of approximating each original measure with n samples. Hence population DMW converges to GW as sampled subspaces become dense. We further give finite-sample bounds, including intrinsic-dimensional rates that depend on the data manifold rather than the ambient matrix dimension n2. For scalable computation, we introduce sliced and multi-scale DMW; for p=1, the sliced multi-scale dissimilarity yields positive-definite exponential kernels. Experiments on synthetic metric spaces, scalability benchmarks, graph classification, and two-sample testing validate the theory and demonstrate an interpretable GW-style proxy for structural comparison.</p>]]></description>
   </item>
 
 </channel>

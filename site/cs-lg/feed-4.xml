@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Learn to Evolve: Self-supervised Neural JKO Operator for Wasserstein Gradient Flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-05583</link>
+    <guid isPermaLink="false">arxiv:2601.05583</guid>
+    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xue Feng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Jordan-Kinderlehrer-Otto (JKO) scheme provides a stable variational framework for computing Wasserstein gradient flows, but its practical use is often limited by the high computational cost of repeatedly solving the JKO subproblems. We propose a self-supervised approach for learning a JKO solution operator without requiring numerical solutions of any JKO trajectories. The learned operator maps an input density directly to the minimizer of the corresponding JKO subproblem, and can be iteratively applied to efficiently generate the gradient-flow evolution. A key challenge is that only a number of initial densities are typically available for training. To address this, we introduce a Learn-to-Evolve algorithm that jointly learns the JKO operator and its induced trajectories by alternating between trajectory generation and operator updates. As training progresses, the generated data increasingly approximates true JKO trajectories. Meanwhile, this Learn-to-Evolve strategy serves as a natural form of data augmentation, significantly enhancing the generalization ability of the learned operator. Numerical experiments demonstrate the accuracy, stability, and robustness of the proposed method across various choices of energies and initial conditions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>mHC-lite: You Don't Need 20 Sinkhorn-Knopp Iterations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-05732</link>
+    <guid isPermaLink="false">arxiv:2601.05732</guid>
+    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yongyi Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Hyper-Connections (HC) generalizes residual connections by introducing dynamic residual matrices that mix information across multiple residual streams, accelerating convergence in deep neural networks. However, unconstrained residual matrices can compromise training stability. To address this, DeepSeek&rsquo;s Manifold-Constrained Hyper-Connections (mHC) approximately projects these matrices onto the Birkhoff polytope via iterative Sinkhorn&ndash;Knopp (SK) normalization. We identify two limitations of this approach: (i) finite SK iterations do not guarantee exact doubly stochasticity, leaving an approximation gap that can accumulate through network depth and undermine stability; (ii) efficient SK implementation requires highly specialized CUDA kernels, raising engineering barriers and reducing portability. Motivated by the Birkhoff&ndash;von Neumann theorem, we propose mHC-lite, a simple reparameterization that explicitly constructs doubly stochastic matrices as convex combinations of permutation matrices. This approach guarantees exact doubly stochasticity by construction and can be implemented using only native matrix operations. Extensive experiments demonstrate that mHC-lite matches or exceeds mHC in performance while achieving higher training throughput with a naive implementation and eliminating the residual instabilities observed in both HC and mHC. The code is publicly available at https://github.com/FFTYYY/mhc-lite.</p>]]></description>
+  </item>
 
   <item>
     <title>Structured Matching via Cost-Regularized Unbalanced Optimal Transport</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohsen Sadr et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Inspired by the Boltzmann kinetics, we propose a collision-based dynamics with a Monte Carlo solution algorithm that approximates the solution of the multi-marginal optimal transport problem via randomized pairwise swapping of sample indices. The computational complexity and memory usage of the proposed method scale linearly with the number of samples, making it highly attractive for high-dimensional settings. In several examples, we demonstrate the efficiency of the proposed method compared to the state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Slicing the Gaussian Mixture Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-08544</link>
-    <guid isPermaLink="false">arxiv:2504.08544</guid>
-    <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Moritz Piening et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gaussian mixture models (GMMs) are widely used in machine learning for tasks such as clustering, classification, image reconstruction, and generative modeling. A key challenge in working with GMMs is defining a computationally efficient and geometrically meaningful metric. The mixture Wasserstein (MW) distance adapts the Wasserstein metric to GMMs and has been applied in various domains, including domain adaptation, dataset comparison, and reinforcement learning. However, its high computational cost &ndash; arising from repeated Wasserstein distance computations involving matrix square root estimations and an expensive linear program &ndash; limits its scalability to high-dimensional and large-scale problems. To address this, we propose multiple novel slicing-based approximations to the MW distance that significantly reduce computational complexity while preserving key optimal transport properties. From a theoretical viewpoint, we establish several weak and strong equivalences between the introduced metrics, and show the relations to the original MW distance and the well-established sliced Wasserstein distance. Furthermore, we validate the effectiveness of our approach through numerical experiments, demonstrating computational efficiency and applications in clustering, perceptual image comparison, and GMM minimization</p>]]></description>
-  </item>
-
-  <item>
-    <title>Translation-Equivariant Self-Supervised Learning for Pitch Estimation with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-01493</link>
-    <guid isPermaLink="false">arxiv:2508.01493</guid>
-    <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernardo Torres et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose an Optimal Transport objective for learning one-dimensional translation-equivariant systems and demonstrate its applicability to single pitch estimation. Our method provides a theoretically grounded, more numerically stable, and simpler alternative for training state-of-the-art self-supervised pitch estimators.</p>]]></description>
   </item>
 
 </channel>

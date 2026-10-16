@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Stable Parallel Training of Wasserstein Conditional Generative Adversarial Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-12315</link>
+    <guid isPermaLink="false">arxiv:2207.12315</guid>
+    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Massimiliano Lupo Pasini et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a stable, parallel approach to train Wasserstein Conditional Generative Adversarial Neural Networks (W-CGANs) under the constraint of a fixed computational budget. Differently from previous distributed GANs training techniques, our approach avoids inter-process communications, reduces the risk of mode collapse and enhances scalability by using multiple generators, each one of them concurrently trained on a single data label. The use of the Wasserstein metric also reduces the risk of cycling by stabilizing the training of each generator. We illustrate the approach on the CIFAR10, CIFAR100, and ImageNet1k datasets, three standard benchmark image datasets, maintaining the original resolution of the images for each dataset. Performance is assessed in terms of scalability and final accuracy within a limited fixed computational time and computational resources. To measure accuracy, we use the inception score, the Frechet inception distance, and image quality. An improvement in inception score and Frechet inception distance is shown in comparison to previous results obtained by performing the parallel approach on deep convolutional conditional generative adversarial neural networks (DC-CGANs) as well as an improvement of image quality of the new images created by the GANs approach. Weak scaling is attained on both datasets using up to 2,000 NVIDIA V100 GPUs on the OLCF supercomputer Summit.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Variational Wasserstein gradient flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2112-02424</link>
+    <guid isPermaLink="false">arxiv:2112.02424</guid>
+    <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaojiao Fan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein gradient flow has emerged as a promising approach to solve optimization problems over the space of probability distributions. A recent trend is to use the well-known JKO scheme in combination with input convex neural networks to numerically implement the proximal step. The most challenging step, in this setup, is to evaluate functions involving density explicitly, such as entropy, in terms of samples. This paper builds on the recent works with a slight but crucial difference: we propose to utilize a variational formulation of the objective function formulated as maximization over a parametric class of functions. Theoretically, the proposed variational formulation allows the construction of gradient flows directly for empirical distributions with a well-defined and meaningful objective function. Computationally, this approach replaces the computationally expensive step in existing methods, to handle objective functions involving density, with inner loop updates that only require a small batch of samples and scale well with the dimension. The performance and scalability of the proposed method are illustrated with the aid of several numerical experiments involving high-dimensional synthetic and real datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>Invariance encoding in sliced-Wasserstein space for image classification with limited training data</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ishan Durugkar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper deals with the problem of learning a skill-conditioned policy that acts meaningfully in the absence of a reward signal. Mutual information based objectives have shown some success in learning skills that reach a diverse set of states in this setting. These objectives include a KL-divergence term, which is maximized by visiting distinct states even if those states are not far apart in the MDP. This paper presents an approach that rewards the agent for learning skills that maximize the Wasserstein distance of their state visitation from the start state of the skill. It shows that such an objective leads to a policy that covers more distance in the MDP than diversity based objectives, and validates the results on a variety of Atari environments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Training Wasserstein GANs without gradient penalties</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-14150</link>
-    <guid isPermaLink="false">arxiv:2110.14150</guid>
-    <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dohyun Kwon et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a stable method to train Wasserstein generative adversarial networks. In order to enhance stability, we consider two objective functions using the c-transform based on Kantorovich duality which arises in the theory of optimal transport. We experimentally show that this algorithm can effectively enforce the Lipschitz constraint on the discriminator while other standard methods fail to do so. As a consequence, our method yields an accurate estimation for the optimal discriminator and also for the Wasserstein distance between the true distribution and the generated one. Our method requires no gradient penalties nor corresponding hyperparameter tuning and is computationally more efficient than other methods. At the same time, it yields competitive generators of synthetic images based on the MNIST, F-MNIST, and CIFAR-10 datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Uncertainty quantification in a mechanical submodel driven by a Wasserstein-GAN</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-13680</link>
-    <guid isPermaLink="false">arxiv:2110.13680</guid>
-    <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hamza Boukraichi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The analysis of parametric and non-parametric uncertainties of very large dynamical systems requires the construction of a stochastic model of said system. Linear approaches relying on random matrix theory and principal componant analysis can be used when systems undergo low-frequency vibrations. In the case of fast dynamics and wave propagation, we investigate a random generator of boundary conditions for fast submodels by using machine learning. We show that the use of non-linear techniques in machine learning and data-driven methods is highly relevant. Physics-informed neural networks is a possible choice for a data-driven method to replace linear modal analysis. An architecture that support a random component is necessary for the construction of the stochastic model of the physical system for non-parametric uncertainties, since the goal is to learn the underlying probabilistic distribution of uncertainty in the data. Generative Adversarial Networks (GANs) are suited for such applications, where the Wasserstein-GAN with gradient penalty variant offers improved convergence results for our problem. The objective of our approach is to train a GAN on data from a finite element method code (Fenics) so as to extract stochastic boundary conditions for faster finite element predictions on a submodel. The submodel and the training data have both the same geometrical support. It is a zone of interest for uncertainty quantification and relevant to engineering purposes. In the exploitation phase, the framework can be viewed as a randomized and parametrized simulation generator on the submodel, which can be used as a Monte Carlo estimator.</p>]]></description>
   </item>
 
 </channel>

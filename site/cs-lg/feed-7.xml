@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Combining Wasserstein-1 and Wasserstein-2 proximals: robust manifold learning via well-posed generative flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-11901</link>
+    <guid isPermaLink="false">arxiv:2407.11901</guid>
+    <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hyemin Gu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We formulate well-posed continuous-time generative flows for learning distributions that are supported on low-dimensional manifolds through Wasserstein proximal regularizations of f-divergences. Wasserstein-1 proximal operators regularize f-divergences so that singular distributions can be compared. Meanwhile, Wasserstein-2 proximal operators regularize the paths of the generative flows by adding an optimal transport cost, i.e., a kinetic energy penalization. Via mean-field game theory, we show that the combination of the two proximals is critical for formulating well-posed generative flows. Generative flows can be analyzed through optimality conditions of a mean-field game (MFG), a system of a backward Hamilton-Jacobi (HJ) and a forward continuity partial differential equations (PDEs) whose solution characterizes the optimal generative flow. For learning distributions that are supported on low-dimensional manifolds, the MFG theory shows that the Wasserstein-1 proximal, which addresses the HJ terminal condition, and the Wasserstein-2 proximal, which addresses the HJ dynamics, are both necessary for the corresponding backward-forward PDE system to be well-defined and have a unique solution with provably linear flow trajectories. This implies that the corresponding generative flow is also unique and can therefore be learned in a robust manner even for learning high-dimensional distributions supported on low-dimensional manifolds. The generative flows are learned through adversarial training of continuous-time flows, which bypasses the need for reverse simulation. We demonstrate the efficacy of our approach for generating high-dimensional images without the need to resort to autoencoders or specialized architectures.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Improving Hyperbolic Representations via Gromov-Wasserstein Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-10495</link>
+    <guid isPermaLink="false">arxiv:2407.10495</guid>
+    <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Yang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Hyperbolic representations have shown remarkable efficacy in modeling inherent hierarchies and complexities within data structures. Hyperbolic neural networks have been commonly applied for learning such representations from data, but they often fall short in preserving the geometric structures of the original feature spaces. In response to this challenge, our work applies the Gromov-Wasserstein (GW) distance as a novel regularization mechanism within hyperbolic neural networks. The GW distance quantifies how well the original data structure is maintained after embedding the data in a hyperbolic space. Specifically, we explicitly treat the layers of the hyperbolic neural networks as a transport map and calculate the GW distance accordingly. We validate that the GW distance computed based on a training set well approximates the GW distance of the underlying data distribution. Our approach demonstrates consistent enhancements over current state-of-the-art methods across various tasks, including few-shot image classification, as well as semi-supervised graph link prediction and node classification.</p>]]></description>
+  </item>
 
   <item>
     <title>Deep Generative Models for Detector Signature Simulation: A Taxonomic Review</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xu Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>The Wasserstein barycenter problem is to compute the average of m given probability measures, which has been widely studied in many different areas; however, real-world data sets are often noisy and huge, which impedes its applications in practice. Hence, in this paper, we focus on improving the computational efficiency of two types of robust Wasserstein barycenter problem (RWB): fixed-support RWB (fixed-RWB) and free-support RWB (free-RWB); actually, the former is a subroutine of the latter. Firstly, we improve efficiency through model reducing; we reduce RWB as an augmented Wasserstein barycenter problem, which works for both fixed-RWB and free-RWB. Especially, fixed-RWB can be computed within O(mn²/ε_+) time by using an off-the-shelf solver, where ε_+ is the pre-specified additive error and n is the size of locations of input measures. Then, for free-RWB, we leverage a quality guaranteed data compression technique, coreset, to accelerate computation by reducing the data set size m. It shows that running algorithms on the coreset is enough instead of on the original data set. Next, by combining the model reducing and coreset techniques above, we propose an algorithm for free-RWB by updating the weights and locations alternatively. Finally, our experiments demonstrate the efficiency of our techniques.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Diffusion Bridge Mixture Transports, Schrödinger Bridge Problems and Generative Modeling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-00917</link>
-    <guid isPermaLink="false">arxiv:2304.00917</guid>
-    <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Peluchetti</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>The dynamic Schrödinger bridge problem seeks a stochastic process that defines a transport between two target probability measures, while optimally satisfying the criteria of being closest, in terms of Kullback-Leibler divergence, to a reference process. We propose a novel sampling-based iterative algorithm, the iterated diffusion bridge mixture (IDBM) procedure, aimed at solving the dynamic Schrödinger bridge problem. The IDBM procedure exhibits the attractive property of realizing a valid transport between the target probability measures at each iteration. We perform an initial theoretical investigation of the IDBM procedure, establishing its convergence properties. The theoretical findings are complemented by numerical experiments illustrating the competitive performance of the IDBM procedure. Recent advancements in generative modeling employ the time-reversal of a diffusion process to define a generative process that approximately transports a simple distribution to the data distribution. As an alternative, we propose utilizing the first iteration of the IDBM procedure as an approximation-free method for realizing this transport. This approach offers greater flexibility in selecting the generative process dynamics and exhibits accelerated training and superior sample quality over larger discretization intervals. In terms of implementation, the necessary modifications are minimally intrusive, being limited to the training loss definition.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Partial Optimal Transport: Revising the Infeasibility of Sinkhorn and Efficient Gradient Methods</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-13970</link>
-    <guid isPermaLink="false">arxiv:2312.13970</guid>
-    <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anh Duc Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>This paper studies the Partial Optimal Transport (POT) problem between two unbalanced measures with at most n supports and its applications in various AI tasks such as color transfer or domain adaptation. There is hence the need for fast approximations of POT with increasingly large problem sizes in arising applications. We first theoretically and experimentally investigate the infeasibility of the state-of-the-art Sinkhorn algorithm for POT due to its incompatible rounding procedure, which consequently degrades its qualitative performance in real world applications like point-cloud registration. To this end, we propose a novel rounding algorithm for POT, and then provide a feasible Sinkhorn procedure with a revised computation complexity of 𝒪(n²/ε⁴⁾. Our rounding algorithm also permits the development of two first-order methods to approximate the POT problem. The first algorithm, Adaptive Primal-Dual Accelerated Gradient Descent (APDAGD), finds an ε-approximate solution to the POT problem in 𝒪(n².5/ε), which is better in ε than revised Sinkhorn. The second method, Dual Extrapolation, achieves the computation complexity of 𝒪(n²/ε), thereby being the best in the literature. We further demonstrate the flexibility of POT compared to standard OT as well as the practicality of our algorithms on real applications where two marginal distributions are unbalanced.</p>]]></description>
   </item>
 
 </channel>

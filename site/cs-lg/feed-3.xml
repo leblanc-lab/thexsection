@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Contact Wasserstein Geodesics for Non-Conservative Schrödinger Bridges</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-06856</link>
+    <guid isPermaLink="false">arxiv:2511.06856</guid>
+    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Testa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Schrödinger Bridge provides a principled framework for modeling stochastic processes between distributions; however, existing methods are limited by energy-conservation assumptions, which constrains the bridge&rsquo;s shape preventing it from model varying-energy phenomena. To overcome this, we introduce the non-conservative generalized Schrödinger bridge (NCGSB), a novel, energy-varying reformulation based on contact Hamiltonian mechanics. By allowing energy to change over time, the NCGSB provides a broader class of real-world stochastic processes, capturing richer and more faithful intermediate dynamics. By parameterizing the Wasserstein manifold, we lift the bridge problem to a tractable geodesic computation in a finite-dimensional space. Unlike computationally expensive iterative solutions, our contact Wasserstein geodesic (CWG) is naturally implemented via a ResNet architecture and relies on a non-iterative solver with near-linear complexity. Furthermore, CWG supports guided generation by modulating a task-specific distance metric. We validate our framework on tasks including manifold navigation, molecular dynamics predictions, and image generation, demonstrating its practical benefits and versatility.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport for LLM Reward Modeling from Noisy Preference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06036</link>
+    <guid isPermaLink="false">arxiv:2605.06036</guid>
+    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Licheng Pan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Reward models are fundamental to Reinforcement Learning from Human Feedback (RLHF), yet real-world datasets are inevitably corrupted by noisy preference. Conventional training objectives tend to overfit these errors, while existing denoising approaches often rely on homogeneous noise assumptions that fail to capture the complexity of linguistic preferences. To handle these challenges, we propose SelectiveRM, a framework grounded in optimal transport. We first devise a Joint Consistency Discrepancy to align the distribution of model predictions with preference data. Furthermore, to address the limitation of strict mass conservation which compels the model to fit outliers, we incorporate a Mass Relaxation mechanism via partial transport. This enables the autonomous exclusion of samples with noisy preference that contradict semantic consistency. Theoretically, we demonstrate that SelectiveRM optimizes a tighter upper bound on the unobserved clean risk. Extensive experiments validate that our approach significantly outperforms state-of-the-art baselines across diverse benchmarks.</p>]]></description>
+  </item>
 
   <item>
     <title>Learning Discrete Autoregressive Priors with Wasserstein Gradient Flow</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dimitrios Danopoulos et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>Efficient AI inference on AMD&rsquo;s Versal AI Engine (AIE) is challenging due to tightly coupled VLIW execution, explicit datapaths, and local memory management. Prior work focused on first-generation AIE kernel optimizations, without tackling full neural network execution across the 2D array. In this work, we present AIE4ML, the first comprehensive framework for converting AI models automatically into optimized firmware targeting the AIE-ML generation devices, also with forward compatibility for the newer AIE-MLv2 architecture. At the single-kernel level, we attain performance close to the architectural peak. At the graph and system levels, we provide a structured parallelization method that can scale across the 2D AIE-ML fabric and exploit its dedicated memory tiles to stay entirely on-chip throughout the model execution. As a demonstration, we designed a generalized and highly efficient linear-layer implementation with intrinsic support for fused bias addition and ReLU activation. Also, as our framework necessitates the generation of multi-layer implementations, our approach systematically derives deterministic, compact, and topology-optimized placements tailored to the physical 2D grid of the device through a novel graph placement and search algorithm. Finally, the framework seamlessly accepts quantized models imported from high-level tools such as hls4ml or PyTorch while preserving bit-exactness. In layer scaling benchmarks, we achieve up to 98.6% efficiency relative to the single-kernel baseline, utilizing 296 of 304 AIE tiles (97.4%) of the device with entirely on-chip data movement. With evaluations across real-world model topologies, we demonstrate that AIE4ML delivers GPU-class throughput under microsecond latency constraints, making it a practical companion for ultra-low-latency environments such as trigger systems in particle physics experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learn to Evolve: Self-supervised Neural JKO Operator for Wasserstein Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-05583</link>
-    <guid isPermaLink="false">arxiv:2601.05583</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xue Feng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Jordan-Kinderlehrer-Otto (JKO) scheme provides a stable variational framework for computing Wasserstein gradient flows, but its practical use is often limited by the high computational cost of repeatedly solving the JKO subproblems. We propose a self-supervised approach for learning a JKO solution operator without requiring numerical solutions of any JKO trajectories. The learned operator maps an input density directly to the minimizer of the corresponding JKO subproblem, and can be iteratively applied to efficiently generate the gradient-flow evolution. A key challenge is that only a number of initial densities are typically available for training. To address this, we introduce a Learn-to-Evolve algorithm that jointly learns the JKO operator and its induced trajectories by alternating between trajectory generation and operator updates. As training progresses, the generated data increasingly approximates true JKO trajectories. Meanwhile, this Learn-to-Evolve strategy serves as a natural form of data augmentation, significantly enhancing the generalization ability of the learned operator. Numerical experiments demonstrate the accuracy, stability, and robustness of the proposed method across various choices of energies and initial conditions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>mHC-lite: You Don't Need 20 Sinkhorn-Knopp Iterations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-05732</link>
-    <guid isPermaLink="false">arxiv:2601.05732</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yongyi Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Hyper-Connections (HC) generalizes residual connections by introducing dynamic residual matrices that mix information across multiple residual streams, accelerating convergence in deep neural networks. However, unconstrained residual matrices can compromise training stability. To address this, DeepSeek&rsquo;s Manifold-Constrained Hyper-Connections (mHC) approximately projects these matrices onto the Birkhoff polytope via iterative Sinkhorn&ndash;Knopp (SK) normalization. We identify two limitations of this approach: (i) finite SK iterations do not guarantee exact doubly stochasticity, leaving an approximation gap that can accumulate through network depth and undermine stability; (ii) efficient SK implementation requires highly specialized CUDA kernels, raising engineering barriers and reducing portability. Motivated by the Birkhoff&ndash;von Neumann theorem, we propose mHC-lite, a simple reparameterization that explicitly constructs doubly stochastic matrices as convex combinations of permutation matrices. This approach guarantees exact doubly stochasticity by construction and can be implemented using only native matrix operations. Extensive experiments demonstrate that mHC-lite matches or exceeds mHC in performance while achieving higher training throughput with a naive implementation and eliminating the residual instabilities observed in both HC and mHC. The code is publicly available at https://github.com/FFTYYY/mhc-lite.</p>]]></description>
   </item>
 
 </channel>

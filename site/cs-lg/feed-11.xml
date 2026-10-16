@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Training Wasserstein GANs without gradient penalties</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-14150</link>
+    <guid isPermaLink="false">arxiv:2110.14150</guid>
+    <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dohyun Kwon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a stable method to train Wasserstein generative adversarial networks. In order to enhance stability, we consider two objective functions using the c-transform based on Kantorovich duality which arises in the theory of optimal transport. We experimentally show that this algorithm can effectively enforce the Lipschitz constraint on the discriminator while other standard methods fail to do so. As a consequence, our method yields an accurate estimation for the optimal discriminator and also for the Wasserstein distance between the true distribution and the generated one. Our method requires no gradient penalties nor corresponding hyperparameter tuning and is computationally more efficient than other methods. At the same time, it yields competitive generators of synthetic images based on the MNIST, F-MNIST, and CIFAR-10 datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Uncertainty quantification in a mechanical submodel driven by a Wasserstein-GAN</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-13680</link>
+    <guid isPermaLink="false">arxiv:2110.13680</guid>
+    <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hamza Boukraichi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The analysis of parametric and non-parametric uncertainties of very large dynamical systems requires the construction of a stochastic model of said system. Linear approaches relying on random matrix theory and principal componant analysis can be used when systems undergo low-frequency vibrations. In the case of fast dynamics and wave propagation, we investigate a random generator of boundary conditions for fast submodels by using machine learning. We show that the use of non-linear techniques in machine learning and data-driven methods is highly relevant. Physics-informed neural networks is a possible choice for a data-driven method to replace linear modal analysis. An architecture that support a random component is necessary for the construction of the stochastic model of the physical system for non-parametric uncertainties, since the goal is to learn the underlying probabilistic distribution of uncertainty in the data. Generative Adversarial Networks (GANs) are suited for such applications, where the Wasserstein-GAN with gradient penalty variant offers improved convergence results for our problem. The objective of our approach is to train a GAN on data from a finite element method code (Fenics) so as to extract stochastic boundary conditions for faster finite element predictions on a submodel. The submodel and the training data have both the same geometrical support. It is a zone of interest for uncertainty quantification and relevant to engineering purposes. In the exploitation phase, the framework can be viewed as a randomized and parametrized simulation generator on the submodel, which can be used as a Monte Carlo estimator.</p>]]></description>
+  </item>
 
   <item>
     <title>Stochastic Approximation versus Sample Average Approximation for population Wasserstein barycenters</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ardavan Afshar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Existing tensor factorization methods assume that the input tensor follows some specific distribution (i.e. Poisson, Bernoulli, and Gaussian), and solve the factorization by minimizing some empirical loss functions defined based on the corresponding distribution. However, it suffers from several drawbacks: 1) In reality, the underlying distributions are complicated and unknown, making it infeasible to be approximated by a simple distribution. 2) The correlation across dimensions of the input tensor is not well utilized, leading to sub-optimal performance. Although heuristics were proposed to incorporate such correlation as side information under Gaussian distribution, they can not easily be generalized to other distributions. Thus, a more principled way of utilizing the correlation in tensor factorization models is still an open challenge. Without assuming any explicit distribution, we formulate the tensor factorization as an optimal transport problem with Wasserstein distance, which can handle non-negative inputs. We introduce SWIFT, which minimizes the Wasserstein distance that measures the distance between the input tensor and that of the reconstruction. In particular, we define the N-th order tensor Wasserstein loss for the widely used tensor CP factorization and derive the optimization algorithm that minimizes it. By leveraging sparsity structure and different equivalent formulations for optimizing computational efficiency, SWIFT is as scalable as other well-known CP algorithms. Using the factor matrices as features, SWIFT achieves up to 9.65% and 11.31% relative improvement over baselines for downstream prediction tasks. Under the noisy conditions, SWIFT achieves up to 15% and 17% relative improvements over the best competitors for the prediction tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bayesian Neural Networks for Fast SUSY Predictions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2007-04506</link>
-    <guid isPermaLink="false">arxiv:2007.04506</guid>
-    <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Braden Kronheim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>One of the goals of current particle physics research is to obtain evidence for new physics, that is, physics beyond the Standard Model (BSM), at accelerators such as the Large Hadron Collider (LHC) at CERN. The searches for new physics are often guided by BSM theories that depend on many unknown parameters, which, in some cases, makes testing their predictions difficult. In this paper, machine learning is used to model the mapping from the parameter space of the phenomenological Minimal Supersymmetric Standard Model (pMSSM), a BSM theory with 19 free parameters, to some of its predictions. Bayesian neural networks are used to predict cross sections for arbitrary pMSSM parameter points, the mass of the associated lightest neutral Higgs boson, and the theoretical viability of the parameter points. All three quantities are modeled with average percent errors of 3.34% or less and in a time significantly shorter than is possible with the supersymmetry codes from which the results are derived. These results are a further demonstration of the potential for machine learning to model accurately the mapping from the high dimensional spaces of BSM theories to their predictions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Wasserstein-Fourier Distance for Stationary Time Series</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1912-05509</link>
-    <guid isPermaLink="false">arxiv:1912.05509</guid>
-    <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elsa Cazelles et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose the Wasserstein-Fourier (WF) distance to measure the (dis)similarity between time series by quantifying the displacement of their energy across frequencies. The WF distance operates by calculating the Wasserstein distance between the (normalised) power spectral densities (NPSD) of time series. Yet this rationale has been considered in the past, we fill a gap in the open literature providing a formal introduction of this distance, together with its main properties from the joint perspective of Fourier analysis and optimal transport. As the main aim of this work is to validate WF as a general-purpose metric for time series, we illustrate its applicability on three broad contexts. First, we rely on WF to implement a PCA-like dimensionality reduction for NPSDs which allows for meaningful visualisation and pattern recognition applications. Second, we show that the geometry induced by WF on the space of NPSDs admits a geodesic interpolant between time series, thus enabling data augmentation on the spectral domain, by averaging the dynamic content of two signals. Third, we implement WF for time series classification using parametric/non-parametric classifiers and compare it to other classical metrics. Supported on theoretical results, as well as synthetic illustrations and experiments on real-world data, this work establishes WF as a meaningful and capable resource pertinent to general distance-based applications of time series.</p>]]></description>
   </item>
 
 </channel>

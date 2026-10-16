@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Diffusion Bridge Mixture Transports, Schrödinger Bridge Problems and Generative Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-00917</link>
+    <guid isPermaLink="false">arxiv:2304.00917</guid>
+    <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Peluchetti</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>The dynamic Schrödinger bridge problem seeks a stochastic process that defines a transport between two target probability measures, while optimally satisfying the criteria of being closest, in terms of Kullback-Leibler divergence, to a reference process. We propose a novel sampling-based iterative algorithm, the iterated diffusion bridge mixture (IDBM) procedure, aimed at solving the dynamic Schrödinger bridge problem. The IDBM procedure exhibits the attractive property of realizing a valid transport between the target probability measures at each iteration. We perform an initial theoretical investigation of the IDBM procedure, establishing its convergence properties. The theoretical findings are complemented by numerical experiments illustrating the competitive performance of the IDBM procedure. Recent advancements in generative modeling employ the time-reversal of a diffusion process to define a generative process that approximately transports a simple distribution to the data distribution. As an alternative, we propose utilizing the first iteration of the IDBM procedure as an approximation-free method for realizing this transport. This approach offers greater flexibility in selecting the generative process dynamics and exhibits accelerated training and superior sample quality over larger discretization intervals. In terms of implementation, the necessary modifications are minimally intrusive, being limited to the training loss definition.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On Partial Optimal Transport: Revising the Infeasibility of Sinkhorn and Efficient Gradient Methods</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-13970</link>
+    <guid isPermaLink="false">arxiv:2312.13970</guid>
+    <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anh Duc Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>This paper studies the Partial Optimal Transport (POT) problem between two unbalanced measures with at most n supports and its applications in various AI tasks such as color transfer or domain adaptation. There is hence the need for fast approximations of POT with increasingly large problem sizes in arising applications. We first theoretically and experimentally investigate the infeasibility of the state-of-the-art Sinkhorn algorithm for POT due to its incompatible rounding procedure, which consequently degrades its qualitative performance in real world applications like point-cloud registration. To this end, we propose a novel rounding algorithm for POT, and then provide a feasible Sinkhorn procedure with a revised computation complexity of 𝒪(n²/ε⁴⁾. Our rounding algorithm also permits the development of two first-order methods to approximate the POT problem. The first algorithm, Adaptive Primal-Dual Accelerated Gradient Descent (APDAGD), finds an ε-approximate solution to the POT problem in 𝒪(n².5/ε), which is better in ε than revised Sinkhorn. The second method, Dual Extrapolation, achieves the computation complexity of 𝒪(n²/ε), thereby being the best in the literature. We further demonstrate the flexibility of POT compared to standard OT as well as the practicality of our algorithms on real applications where two marginal distributions are unbalanced.</p>]]></description>
+  </item>
 
   <item>
     <title>Machine Learning for Anomaly Detection in Particle Physics</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanna Ziesche et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Robots often rely on a repertoire of previously-learned motion policies for performing tasks of diverse complexities. When facing unseen task conditions or when new task requirements arise, robots must adapt their motion policies accordingly. In this context, policy optimization is the \emph{de facto} paradigm to adapt robot policies as a function of task-specific objectives. Most commonly-used motion policies carry particular structures that are often overlooked in policy optimization algorithms. We instead propose to leverage the structure of probabilistic policies by casting the policy optimization as an optimal transport problem. Specifically, we focus on robot motion policies that build on Gaussian mixture models (GMMs) and formulate the policy optimization as a Wassertein gradient flow over the GMMs space. This naturally allows us to constrain the policy updates via the L²-Wasserstein distance between GMMs to enhance the stability of the policy optimization process. Furthermore, we leverage the geometry of the Bures-Wasserstein manifold to optimize the Gaussian distributions of the GMM policy via Riemannian optimization. We evaluate our approach on common robotic settings: Reaching motions, collision-avoidance behaviors, and multi-goal tasks. Our results show that our method outperforms common policy optimization baselines in terms of task success rate and low-variance solutions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Model Fusion via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a1910-05653</link>
-    <guid isPermaLink="false">arxiv:1910.05653</guid>
-    <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sidak Pal Singh et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Combining different models is a widely used paradigm in machine learning applications. While the most common approach is to form an ensemble of models and average their individual predictions, this approach is often rendered infeasible by given resource constraints in terms of memory and computation, which grow linearly with the number of models. We present a layer-wise model fusion algorithm for neural networks that utilizes optimal transport to (soft-) align neurons across the models before averaging their associated parameters. We show that this can successfully yield &ldquo;one-shot&rdquo; knowledge transfer (i.e, without requiring any retraining) between neural networks trained on heterogeneous non-i.i.d. data. In both i.i.d. and non-i.i.d. settings , we illustrate that our approach significantly outperforms vanilla averaging, as well as how it can serve as an efficient replacement for the ensemble with moderate fine-tuning, for standard convolutional networks (like VGG11), residual networks (like ResNet18), and multi-layer perceptrons on CIFAR10, CIFAR100, and MNIST. Finally, our approach also provides a principled way to combine the parameters of neural networks with different widths, and we explore its application for model compression. The code is available at the following link, https://github.com/sidak/otfusion.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Promise and Limitations of Supervised Optimal Transport-Based Graph Summarization via Information Theoretic Measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-07138</link>
-    <guid isPermaLink="false">arxiv:2305.07138</guid>
-    <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sepideh Neshatfar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Graph summarization is the problem of producing smaller graph representations of an input graph dataset, in such a way that the smaller compressed graphs capture relevant structural information for downstream tasks. There is a recent graph summarization method that formulates an optimal transport-based framework that allows prior information about node, edge, and attribute importance (never defined in that work) to be incorporated into the graph summarization process. However, very little is known about the statistical properties of this framework. To elucidate this question, we consider the problem of supervised graph summarization, wherein by using information theoretic measures we seek to preserve relevant information about a class label. To gain a theoretical perspective on the supervised summarization problem itself, we first formulate it in terms of maximizing the Shannon mutual information between the summarized graph and the class label. We show an NP-hardness of approximation result for this problem, thereby constraining what one should expect from proposed solutions. We then propose a summarization method that incorporates mutual information estimates between random variables associated with sample graphs and class labels into the optimal transport compression framework. We empirically show performance improvements over previous works in terms of classification accuracy and time on synthetic and certain real datasets. We also theoretically explore the limitations of the optimal transport approach for the supervised summarization problem and we show that it fails to satisfy a certain desirable information monotonicity property.</p>]]></description>
   </item>
 
 </channel>

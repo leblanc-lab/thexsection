@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Model Fusion via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a1910-05653</link>
+    <guid isPermaLink="false">arxiv:1910.05653</guid>
+    <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sidak Pal Singh et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Combining different models is a widely used paradigm in machine learning applications. While the most common approach is to form an ensemble of models and average their individual predictions, this approach is often rendered infeasible by given resource constraints in terms of memory and computation, which grow linearly with the number of models. We present a layer-wise model fusion algorithm for neural networks that utilizes optimal transport to (soft-) align neurons across the models before averaging their associated parameters. We show that this can successfully yield &ldquo;one-shot&rdquo; knowledge transfer (i.e, without requiring any retraining) between neural networks trained on heterogeneous non-i.i.d. data. In both i.i.d. and non-i.i.d. settings , we illustrate that our approach significantly outperforms vanilla averaging, as well as how it can serve as an efficient replacement for the ensemble with moderate fine-tuning, for standard convolutional networks (like VGG11), residual networks (like ResNet18), and multi-layer perceptrons on CIFAR10, CIFAR100, and MNIST. Finally, our approach also provides a principled way to combine the parameters of neural networks with different widths, and we explore its application for model compression. The code is available at the following link, https://github.com/sidak/otfusion.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Promise and Limitations of Supervised Optimal Transport-Based Graph Summarization via Information Theoretic Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-07138</link>
+    <guid isPermaLink="false">arxiv:2305.07138</guid>
+    <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sepideh Neshatfar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Graph summarization is the problem of producing smaller graph representations of an input graph dataset, in such a way that the smaller compressed graphs capture relevant structural information for downstream tasks. There is a recent graph summarization method that formulates an optimal transport-based framework that allows prior information about node, edge, and attribute importance (never defined in that work) to be incorporated into the graph summarization process. However, very little is known about the statistical properties of this framework. To elucidate this question, we consider the problem of supervised graph summarization, wherein by using information theoretic measures we seek to preserve relevant information about a class label. To gain a theoretical perspective on the supervised summarization problem itself, we first formulate it in terms of maximizing the Shannon mutual information between the summarized graph and the class label. We show an NP-hardness of approximation result for this problem, thereby constraining what one should expect from proposed solutions. We then propose a summarization method that incorporates mutual information estimates between random variables associated with sample graphs and class labels into the optimal transport compression framework. We empirically show performance improvements over previous works in terms of classification accuracy and time on synthetic and certain real datasets. We also theoretically explore the limitations of the optimal transport approach for the supervised summarization problem and we show that it fails to satisfy a certain desirable information monotonicity property.</p>]]></description>
+  </item>
 
   <item>
     <title>Improved Image Wasserstein Attacks and Defenses</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Ryner et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>In this paper we propose an adaptive approach for clustering and visualization of data by an orthogonalization process. Starting with the data points being represented by a Markov process using the diffusion map framework, the method adaptively increase the orthogonality of the clusters by applying a feedback mechanism inspired by the Gromov-Wasserstein distance. This mechanism iteratively increases the spectral gap and refines the orthogonality of the data to achieve a clustering with high specificity. By using the diffusion map framework and representing the relation between data points using transition probabilities, the method is robust with respect to both the underlying distance, noise in the data and random initialization. We prove that the method converges globally to a unique fixpoint for certain parameter values. We also propose a related approach where the transition probabilities in the Markov process are required to be doubly stochastic, in which case the method generates a minimizer to a nonconvex optimization problem. We apply the method on cryo-electron microscopy image data from biopharmaceutical manufacturing where we can confirm biologically relevant insights related to therapeutic efficacy. We consider an example with morphological variations of gene packaging and confirm that the method produces biologically meaningful clustering results consistent with human expert classification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stable Parallel Training of Wasserstein Conditional Generative Adversarial Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-12315</link>
-    <guid isPermaLink="false">arxiv:2207.12315</guid>
-    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Massimiliano Lupo Pasini et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a stable, parallel approach to train Wasserstein Conditional Generative Adversarial Neural Networks (W-CGANs) under the constraint of a fixed computational budget. Differently from previous distributed GANs training techniques, our approach avoids inter-process communications, reduces the risk of mode collapse and enhances scalability by using multiple generators, each one of them concurrently trained on a single data label. The use of the Wasserstein metric also reduces the risk of cycling by stabilizing the training of each generator. We illustrate the approach on the CIFAR10, CIFAR100, and ImageNet1k datasets, three standard benchmark image datasets, maintaining the original resolution of the images for each dataset. Performance is assessed in terms of scalability and final accuracy within a limited fixed computational time and computational resources. To measure accuracy, we use the inception score, the Frechet inception distance, and image quality. An improvement in inception score and Frechet inception distance is shown in comparison to previous results obtained by performing the parallel approach on deep convolutional conditional generative adversarial neural networks (DC-CGANs) as well as an improvement of image quality of the new images created by the GANs approach. Weak scaling is attained on both datasets using up to 2,000 NVIDIA V100 GPUs on the OLCF supercomputer Summit.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Variational Wasserstein gradient flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2112-02424</link>
-    <guid isPermaLink="false">arxiv:2112.02424</guid>
-    <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaojiao Fan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein gradient flow has emerged as a promising approach to solve optimization problems over the space of probability distributions. A recent trend is to use the well-known JKO scheme in combination with input convex neural networks to numerically implement the proximal step. The most challenging step, in this setup, is to evaluate functions involving density explicitly, such as entropy, in terms of samples. This paper builds on the recent works with a slight but crucial difference: we propose to utilize a variational formulation of the objective function formulated as maximization over a parametric class of functions. Theoretically, the proposed variational formulation allows the construction of gradient flows directly for empirical distributions with a well-defined and meaningful objective function. Computationally, this approach replaces the computationally expensive step in existing methods, to handle objective functions involving density, with inner loop updates that only require a small batch of samples and scale well with the dimension. The performance and scalability of the proposed method are illustrated with the aid of several numerical experiments involving high-dimensional synthetic and real datasets.</p>]]></description>
   </item>
 
 </channel>
