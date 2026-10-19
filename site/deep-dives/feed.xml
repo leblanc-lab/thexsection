@@ -7,7 +7,64 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Complete g⁶ pressure of hot Yang–Mills theory</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-23675</link>
+    <guid isPermaLink="false">arxiv:2610.23675</guid>
+    <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keijo Kajantie et al.</dc:creator>
+    <description><![CDATA[<p>The missing nonlogarithmic hard coefficient is β̃_E1=6236±40. That converts to q_c(N_c=3,N_f=0)=-3591.2±16.9_pert±250_mag, consistent with the old lattice-inferred β̃_E1≃6000±600.</p>
+<p><strong>Method.</strong>
+- The 65 four-loop vacuum graphs give about 10⁵ sum-integrals. These reduce to 21 canonical structures, and ξ-dependence cancels at that stage.
+- Nine nonfactorizing sum-integrals were unknown. The authors evaluated them with thermal loop-tree duality. Matsubara sums are done analytically, and new local IR counterterms for zero-mode soft regions are added to BPHZ-style UV subtractions. The finite remainders were Monte Carlo integrated, at roughly 10⁶ CPU-hours.
+- The pole coefficients come out analytically. They confirm the previously <em>inferred</em> hard-scale IR poles and their explicit cancellation against EQCD/MQCD.
+- The method independently reproduces the known I_6.</p>
+<p><strong>Lattice comparison.</strong> The comparison uses Borsanyi et al. data in an EQCD-resummed scheme, with scale set by FAC and varied by a factor of 2. The band agrees with the data down to a few T_c. In the same scheme, g³ and g⁴ overshoot Stefan–Boltzmann and g⁵ undershoots. The authors read this as support for the &ldquo;Laine conjecture&rdquo;.</p>
+<p><strong>Caveats.</strong>
+- The magnetic constant B_G now dominates the error, by a factor of about 15 over the new perturbative piece.
+- The full result holds only for SU(3), because the four-loop MQCD matching is incomplete for general N_c.
+- The &ldquo;only at g⁶&rdquo; statement is tied to this resummation prescription. The authors note that other schemes behave better at lower orders.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The pressure of the gluon plasma at 𝒪(g_s⁶⁾, perturbatively</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-23676</link>
+    <guid isPermaLink="false">arxiv:2610.23676</guid>
+    <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikael Chala et al.</dc:creator>
+    <description><![CDATA[<p>This is an independent route to the same quantity, giving q_c(0)=-3846±515. That is about 0.5σ from the value -3526(4)(55)(30) obtained by fitting the g⁶ formula to Borsanyi et al. trace-anomaly data over 10–1000 Λ_MS.</p>
+<p><strong>Method.</strong>
+- Background-field Feynman gauge, with a different propagator basis.
+- Reduction via SIRENA using unimodular loop-momentum changes and no genuine four-loop IBP. This yields 10 connected and 6 factorizable sum-integrals.
+- The connected integrals are evaluated numerically: Schwinger parameters, sector/subsector decomposition, partial Poisson resummation, and Sobol QMC with 4 Matsubara modes.
+- Poles are cross-checked by doing the hard-to-soft matching in the full bosonic SM 3D EFT. This needs a four-loop EFT vacuum counterterm that they compute for the first time. The resulting 22 equations have rank 14 and fix 7 pole combinations.</p>
+<p><strong>Lattice comparison.</strong> The strict expansion at μ̅=2πT matches the lattice within 3% above 2.5 Λ_MS, and within 1.5% from 3 to 1000 Λ_MS.</p>
+<p><strong>Caveats.</strong>
+- The error is about twice the Helsinki total. The two β_G errors alone account for only about ±170 of it, so the numerical sum-integral allowances dominate.
+- Both groups compare against the same lattice dataset, so the lattice check is not independent across the two papers.
+- The cross-check between the groups covers one shared master integral and the final q_c; the two central values differ by about 255.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Explaining b→sℓ⁺ℓ⁻ with CKM Unitarity Violation? A No-Go Theorem</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-22490</link>
+    <guid isPermaLink="false">arxiv:2610.22490</guid>
+    <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Crivellin et al.</dc:creator>
+    <description><![CDATA[<p><strong>Updated fit.</strong> The authors refit LFU b→sℓℓ data with new LHCb/CMS inputs. The best fit is C_9=-0.87, C_10=0.24, at 5.4σ (Δχ²≈33). This excludes the bins nearest the J/ψ.</p>
+<p><strong>The proposed escape.</strong> Rescaling V_cb, and hence V_ts, alone can buy about 23 units of χ². The natural operator for this is C⁽³⁾_23 (for C⁽³⁾_22, the required couplings are 𝒪(10)). But SMEFT/WET running gives C_9≈(33C⁽³⁾_23+24C⁽¹⁾_23) and C_10≈-20(30C⁽³⁾_23+27C⁽¹⁾_23), in units of TeV/Λ² at Λ=2 TeV. So custodial C⁽¹⁾⁼⁻C⁽³⁾ at the high scale does not survive.</p>
+<p><strong>Why it fails.</strong>
+- Requiring the right-sign δV_cb together with C_9&lt;0 forces C_10≲-22C_9.
+- The only good-fit region is fine-tuned: C⁽¹⁾_23≈-1.1C⁽³⁾_23, C⁽³⁾_23≈-1. There the V_cb shift has the <em>wrong</em> sign and is overcompensated by Z-b-s.
+- A 10% positive shift already raises the B_s-mixing prediction by about 20%.
+- Vector-like quarks at 2 TeV, either U alone or the custodial pairs D+T_2 and T_1+T_2, cap C_9 below a quarter of the needed size, given B_s mixing, EWPO and ϵ_K.</p>
+<p><strong>Scope caveats.</strong>
+- Right-handed currents (O_Hud) are excluded. The authors argue these cannot resolve the inclusive/exclusive V_cb split.
+- The analysis fixes the scale at 2 TeV.
+- The underlying anomaly still rests on form-factor and nonlocal-hadronic inputs.</p>]]></description>
+  </item>
 
   <item>
     <title>Determining the Threshold Excess in Top-Quark Pair Production through a Global PDF Analysis</title>
@@ -2593,36 +2650,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yasaman Farzan</dc:creator>
     <description><![CDATA[<p><strong>The finding:</strong> The much-quoted &ldquo;spike&rdquo; bounds on neutrino–DM scattering — derived from the attenuation of AGN neutrino fluxes traversing the dense DM cusp around supermassive black holes — collapse for light vector mediators. Farzan&rsquo;s point is kinematic: the cascade equation contains both a loss term (-σΦ) and a regeneration term (the down-scattered flux re-populating each energy bin). Previous analyses (Cline et al., Cline–Puel, Dixit–Mohlabeng–Razzaque) kept only the loss term, valid only if each collision removes a neutrino from the beam. But when m_Z&rsquo;²/(2m_DM)≪E_ν, the differential cross section is sharply peaked at E&rsquo;_ν≃E_ν — scattering is nearly forward, energy loss negligible, and the two terms cancel. Defining an effective suppression factor f, for Φ∝E_ν⁻³.2 and m_Z&rsquo;²/m_DM=2 GeV, Farzan finds 2×10⁻³&lt;f&lt;10⁻² across the 1.5–15 TeV NGC 1068 window — relaxing the &ldquo;most stringent&rdquo; bound by up to ~1000×.</p>
 <p><strong>Why it matters:</strong> Landing the same day as Abbaslu et al.&rsquo;s paper <em>deriving</em> AGN flavor signals from this same scattering, it&rsquo;s a clean cautionary counterpoint: &ldquo;spike constraints&rdquo; on σ_νDM carry hidden microphysics (mediator mass, symmetric vs. asymmetric DM, flavor structure). Farzan further notes symmetric DM can annihilate to νν̅, and flavor-selective couplings can suppress attenuation while still distorting flavor ratios — leaving room for IceCube-Gen2/KM3NeT to <em>discover</em> spike effects rather than merely exclude them. <strong>Caveat:</strong> the companion analysis establishing the flavor phenomenology is &ldquo;work in progress,&rdquo; so the positive-signal claims rest partly on unpublished results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neutrino-induced hyperon final-state interactions as constraints on the in-medium hyperon potential</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-09273</link>
-    <guid isPermaLink="false">arxiv:2607.09273</guid>
-    <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaroslaw Nowak</dc:creator>
-    <description><![CDATA[<p><strong>What they did:</strong> Nowak proposes that charged-current accelerator (anti)neutrinos on ⁴⁰Ar create Λ,Σ hyperons <em>inside</em> the nucleus, so their final-state interactions become a terrestrial probe of the in-medium potentials U_Y(ρ) that drive the neutron-star &ldquo;hyperon puzzle.&rdquo; Using the internal StrangeMC generator, three observables respond monotonically to the potentials: the trapped-Λ fraction and escaping-Λ momentum (for U_Λ), the escaping-Σ momentum, and a kaon-vetoed FSI-Σ⁺ tag (a final state the weak vertex cannot make) for U_Σ. A detector-level Fisher forecast gives δU_Λ≈0.3 MeV and δU_Σ≈3–4 MeV <em>at fixed</em> low-density slope γ. Fed through a GM1 relativistic mean field anchored to established depths, the same potentials yield M_max=1.94 M_⊙ and Λ_1.4=1034.</p>
-<p><strong>The honesty:</strong> The headline sub-MeV number is heavily caveated. Because hyperons are born below saturation, U_Λ(ρ_0) and γ are 99.8% anti-correlated; marginalizing over γ (which the data alone fix only to δγ≈0.8) degrades δU_Λ to 5.6 MeV. Two further systematics — the transport prescription (−6 MeV) and YN cross sections (−5/+2 MeV) — push the realistic U_Λ budget to ~10 MeV. Worse, the YN uncertainty biases U_Σ by 𝒪(150) MeV, not an artifact of the Σ⁺ tag but because the Λ spectrum itself is YN-sensitive. The propagated M_max is explicitly an <em>inference</em> dominated by the external high-density prior, not a neutrino measurement; the ~0.3 M_⊙ EOS-model systematic dwarfs the statistical reach. StrangeMC is uncommissioned against community generators — a stated next step.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Top-Antitop Production and Decay at Threshold at the LHC in QCD Perturbation Theory</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-09539</link>
-    <guid isPermaLink="false">arxiv:2607.09539</guid>
-    <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paolo Nason et al.</dc:creator>
-    <description><![CDATA[<p><strong>What they did:</strong> Nason, Pelliccioli, Re and Rottoli deliver three NLO+PS generators (<code>thr1</code>, <code>thr2</code>, <code>bb4l</code>) incorporating threshold-enhanced (Coulomb/Sommerfeld) corrections in tt̅ production, extending their earlier NRR work up to (α_s/v)⁶ and, crucially, with finite-width treatment (<code>thr2</code> modifies the phase space for off-shell tops; <code>bb4l</code> uses the full <code>b_bbar_4l</code> off-shell code). In the &ldquo;ATLAS bin&rdquo; (m_tt̅&lt;350 GeV, p^⋆&lt;50 GeV) they find total cross sections near 10 pb with a threshold <em>excess</em> over baseline NLO of ~4 pb — compatible with the Garzelli et al. NRQCD result and with the 8.5–9.3 pb &ldquo;η_t&rdquo; numbers CMS/ATLAS extract. The perturbative series converges: truncating at α_s³ already captures the full result to better than 1 pb, so all-orders GFRW resummation is unnecessary at LHC resolution.</p>
-<p><strong>Why it matters:</strong> This directly addresses the recent near-threshold &ldquo;toponium&rdquo; observation, and sharpens the interpretation. The authors argue forcefully that (i) the pseudoscalar dominance follows from the Landau–Yang theorem for gluon fusion regardless of bound-state formation; (ii) toponium is <em>part of</em> the perturbative QCD cross section, so claiming an &ldquo;excess above QCD consistent with QCD-predicted toponium&rdquo; is contradictory; and (iii) the genuine bound-state contribution is small (~2.6–4.5 pb depending on generator/scale) and cannot be cleanly separated from continuum given the top width smearing. A new physical effect: imposing double-top virtuality cuts suppresses the sub-threshold cross section via phase-space reduction, cutting the bound-state yield by ~1 pb — captured by <code>thr2</code>/<code>bb4l</code> but not <code>thr1</code>. <strong>Caveat:</strong> the exact finite-width resummation formula (Appendix A) is derived but not implemented; single-top contamination near threshold requires a full experimental signal/background study the authors defer.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The 20 GeV Galactic Halo Excess: Pixel-Level Confirmation and Consistency with Sub-TeV WIMP Annihilation</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-08552</link>
-    <guid isPermaLink="false">arxiv:2607.08552</guid>
-    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Trinity Rosebud Stenhouse et al.</dc:creator>
-    <description><![CDATA[<p>Stenhouse, Ghag &amp; Deppisch independently reproduce Totani&rsquo;s cell-aggregated Fermi-LAT halo excess and extend it to a pixel-level Poisson likelihood on native 0.125° maps with energy-dependent PSF forward-folding and bright-source masking. The two methods agree on the spectrum — a peak at ~20.8 GeV — with the pixel-level normalization ~20% higher for the ρ² halo, confirming the feature is not an artifact of 10° binning. The excess is centrally concentrated (angular profile χ²/ν≃5–7 for NFW vs 30 for isotropic), spectrally and spatially distinct from the few-GeV GCE, and stable under a foreground-systematics suite and an injection-null test (a distorted-ICS mock with no halo yields ≤10% of the observed peak). Prompt s-wave fits give mχ≃0.55 TeV (W⁺W⁻) and 0.72 TeV (bb̄) with ⟨σv⟩≃1×10⁻²⁴ cm³ s⁻¹.</p>
-<p>Why it matters: this is exactly the independent stress-test the weekly memory flagged. The headline tension is with dwarf-spheroidal limits, ℛ≃5.1 face-value, widening to 1.6–9.3 once foreground choice (GALPROP vs GIEM dominates, halving the flux) and J-factor uncertainties are folded in — so s-wave is not excluded but not comfortable. Crucially, p/d-wave over-resolves the dwarf tension but misses relic abundance by ~7 orders of magnitude; decay is disfavored by the IGRB. Only resonant Sommerfeld/Breit-Wigner survives, supplying the needed ≈45× boost — but requiring a fine-tuned above-threshold resonance and a structured dark sector. Caveat honestly stated: χ²/ν∼8 from coherent diffuse residuals, and AMS-02 antiprotons independently disfavor direct bb̄; this is &ldquo;consistency,&rdquo; not detection.</p>]]></description>
   </item>
 
 </channel>
