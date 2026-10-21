@@ -7,7 +7,65 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>: The Electron-Recoil Response Tail and the LZ High-Energy Event Background</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-27105</link>
+    <guid isPermaLink="false">arxiv:2610.27105</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>The published LZ response does not fix the ER leakage that the 248 keV event&rsquo;s background estimate depends on. The authors rebuild the ER continuum from NEST&rsquo;s <code>EFT2024</code> configuration and get a per-decay leakage of P≃1.3×10⁻⁷ at a 4.1σ displacement in N_e. That yields N^ER_leak=(1.9±0.1±0.4)×10⁻⁴ counts, against LZ&rsquo;s 0.0106 total in the 500&lt;S1c&lt;600 phd region. They then construct three families of distributions (generalised-normal, skew-t, Johnson S_U) that match the executable model&rsquo;s mean, variance and skewness exactly. The families agree within a factor of ~2 at matched quantile deviation, yet the tail probability spans more than five orders of magnitude.</p>
+<p>The thresholds are close to the model:</p>
+<ul>
+<li><strong>0.14% quantile agreement:</strong> ER reaches 10% of the quoted background.</li>
+<li><strong>0.47%:</strong> ER equals the whole quoted background.</li>
+<li><strong>1.10%:</strong> ER reaches 0.1 counts.</li>
+</ul>
+<p>LZ&rsquo;s counter-argument, that no events appear between the event and the ER band, does not discriminate between these tails. Even the heaviest family predicts only 0.69 events in that gap. Two further points:</p>
+<ul>
+<li><strong>Printed vs. implemented response.</strong> The printed Supplement Eq. 4 gives a fluctuation width 1.475× the implemented one. Taken literally, it implies 0.60 ER counts, far above LZ&rsquo;s quoted total for all backgrounds.</li>
+<li><strong>Calibration reach.</strong> The tritium and ¹⁴C calibrations stop at S1c = 500 phd, while the event sits at 540 phd.</li>
+</ul>
+<p><strong>Caveats.</strong> The authors explicitly do not claim the tail is wrong, and they do not propagate the result to LZ&rsquo;s 2.6σ global (3.4σ local) significance. The link between the NEST commit and the Letter is circumstantial. The ER selection efficiency is unpublished. The ¹²⁴Xe/¹²⁵I lines are excluded.</p>
+<p><strong>What would settle it.</strong> A tail measurement at the 10⁻⁵ level near N_q∼5×10³, or a shape fit using ~3×10³ events per slice (rising to 3×10⁴ for the mildest problematic tail).</p>]]></description>
+  </item>
+
+  <item>
+    <title>: Isospin breaking in ρππ couplings</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-28506</link>
+    <guid isPermaLink="false">arxiv:2610.28506</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>The missing isospin-breaking (IB) ρππ coupling correction comes out small and cuts the corresponding τ-route uncertainty to roughly a third of the White Paper&rsquo;s assumed ±4.7×10⁻¹⁰. The method is a symmetry-preserving Dyson–Schwinger/Bethe–Salpeter contact-interaction model. IB enters dynamically through flavour-dependent beyond-rainbow-ladder couplings ξ_u,d, tuned to Δm_ρ, and explicitly through m_d/m_u∈[1,2]. Results:</p>
+<ul>
+<li><strong>Coupling ratio:</strong> g_ρ⁰ππ/g_ρ⁺ππ=1.0024(17)(1).</li>
+<li><strong>Width difference:</strong> ΔΓ_ρ=+0.39(51) MeV, compatible with but tighter than PDG (+0.31 ± 1.3) and a data-based extraction (−0.58 ± 1.01).</li>
+<li><strong>Effect on a_μ:</strong> the ρππ term is Δa_μ=-2.32(1.64)×10⁻¹⁰, about one-third of the White Paper&rsquo;s error.</li>
+</ul>
+<p>The −2.32 is not the net shift. It nearly cancels against the radiative-correction term (−2.22) and the pion-mass phase-space term (+4.09). The total form-factor-ratio IB is -0.25(1.64)×10⁻¹⁰, compared with the older -1.62(65)×10⁻¹⁰.</p>
+<p><strong>Caveats.</strong>
+- The contact interaction is a crude kernel; the symmetric coupling comes out at 6.29 against 5.94 from the PDG width.
+- The error is driven almost entirely by the poorly known input Δm_ρ=0.7(0.8) MeV.
+- The τ-side numbers rely on a Gounaris–Sakurai parametrisation.
+- The same framework predicts R_ϕ=1.484±0.029, 2.2σ below BESIII.</p>]]></description>
+  </item>
+
+  <item>
+    <title>: Automation of amplitude-level QED resummation with ACRAIC</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-28283</link>
+    <guid isPermaLink="false">arxiv:2610.28283</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p><em>The extracted text cuts off before the validation section, so the headline numbers here come from the abstract.</em></p>
+<p>ACRAIC brings coherent (CEEX-style) amplitude-level YFS exponentiation to general processes inside Sherpa. Previously this existed only for hand-coded fermion-pair production in KKMC. The generalisation works in three steps:</p>
+<ul>
+<li><strong>Photon assignment.</strong> The initial/final assignment of photons becomes an assignment to emission stages. Gauge invariance forces these stages to be partitions of the charged legs into charge-neutral sets, including resonance stages for Z/γ^* and W pairs.</li>
+<li><strong>Remainders.</strong> The infrared-finite remainders are tree-level helicity amplitudes with N+2 and N+3 legs and partition-dependent propagator shifts, computed by Comix&rsquo;s Berends–Giele recursion.</li>
+<li><strong>Virtual correction.</strong> The one-loop electroweak virtual enters as a per-helicity factor from OpenLoops or Recola.</li>
+</ul>
+<p>Validation is against KKMC for e⁺e⁻→μ⁺μ⁻ at photonic 𝒪(α²⁾. Comparison is also made with the squared-level YFS_NLO_EW, which shares the resummation and differs only in matching. At 𝒪(α²⁾ the two matchings agree on the size of the missing higher orders to ~10⁻³, and the perturbative uncertainty drops about tenfold relative to 𝒪(α). The author reports that squared-level matching can go unstable in four-lepton production while the amplitude-level version stays stable. Example applications are the FCC-ee Higgs recoil mass and Z-pole distributions.</p>
+<p><strong>Caveats.</strong>
+- &ldquo;Photonic 𝒪(α²⁾&rdquo; omits two-loop γZ boxes and weak corrections.
+- The paper is described as mostly technical, with phenomenology left to dedicated studies.</p>]]></description>
+  </item>
 
   <item>
     <title>First observation of weak magnetism in neutron decay</title>
@@ -2707,36 +2765,6 @@
     <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
     <description><![CDATA[<p><em>(abstract only)</em> ATLAS measures ZZ production in the 4ℓ channel (ee/μμ pairs) using 164 fb⁻¹ at √(s)=13.6 TeV, extracting polarization fractions inclusively and in two m_4ℓ regions — all consistent with the SM. The headline comes from combining with the earlier 13 TeV measurement: the first observation of <em>two simultaneously longitudinally polarized</em> Z bosons, at <strong>6.5σ observed (5.6σ expected)</strong>. This pushes the electroweak-symmetry-breaking program — long anchored in single-boson W_L/Z_L fractions and W_LW_L scattering — into the doubly-longitudinal diboson sector, directly probing the Goldstone-mode content of two gauge bosons at once. The caveat is structural: a genuine observation is only reached after statistical combination across two center-of-mass energies, so the 13.6 TeV dataset alone is not yet decisive, and the analysis reports agreement with the SM rather than any deviation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bounds on axion-like particles from fully merged photons at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-12004</link>
-    <guid isPermaLink="false">arxiv:2607.12004</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simon Knapen</dc:creator>
-    <description><![CDATA[<p>Knapen recasts the ATLAS 139 fb⁻¹ high-mass diphoton resonance search (2102.13405) into an ALP-photon bound by exploiting that for 0.1–6 GeV ALPs the two decay photons from qq̅→aγ merge into a single reconstructed photon. Because the aFF̃ operator is dimension-five, the parton cross section is energy-independent while the γγ background falls as 1/m_γγ², so the signal-to-background ratio grows as (m_γγg_aγγ)²; a profile-likelihood fit to bins with m_γγ&gt;1.5 TeV yields g_aγγ≈4×10⁻⁴ GeV⁻¹, the <strong>strongest current bound over most of 0.1–6 GeV</strong>. PDF systematics are shown subdominant (~10% of the statistical uncertainty). This is a clean, reinterpretation-style result that plants an LHC flag in a mass window otherwise covered by beam dumps, FASER and e⁺e⁻ machines — squarely today&rsquo;s &ldquo;axions fanning out&rdquo; theme.</p>
-<p>Honest caveats are flagged by the author himself: the limit weakens below 0.2 GeV (displaced decays) and above 1 GeV due to a deliberately conservative tight-photon merging requirement (Δη&lt;0.003). A dedicated ATLAS analysis with one loose + one tight photon should do better. Also, under the alternative c_W≈c_B ansatz the B→Ka bound (g_aγγ≲5×10⁻⁶ GeV⁻¹) is far stronger — so the result&rsquo;s competitiveness is specific to the c_B≫c_W scenario.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Three-Loop QCD Corrections to Scattering Amplitudes of a Higgs Boson and Three Partons</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-12033</link>
-    <guid isPermaLink="false">arxiv:2607.12033</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xin Guan et al.</dc:creator>
-    <description><![CDATA[<p>Guan, Mistlberger and Ruf deliver the full-color three-loop helicity amplitudes for H+3 partons (Hggg and Hqq̅g) in the heavy-top EFT, using Blade IBP reduction via block-triangular forms and canonical differential equations, with results in compact generalized-polylogarithm form (full reduction ~several hundred thousand core-hours). All checks pass: infrared pole structure, collinear/soft factorization, AMFlow numerics, agreement with the prior leading-color result (2504.06490), and the striking confirmation that the leading-transcendental part coincides with the 𝒩=4 sYM tr(ϕ²⁾ form factor — now including subleading color. These are the virtual ingredients for H+jet at N³LO and a building block toward inclusive gluon-fusion at N⁴LO.</p>
-<p>The notable phenomenological finding: at N³LO the <strong>subleading-color contribution to the amplitude is of the same order as the leading-color term</strong> — in sharp contrast to lower loops, where subleading color is negligible. This is a direct caution against generalized-leading-color truncation at this order. The reassuring counterpoint is that, evaluated at α_s=0.118, the <em>net</em> three-loop impact on the tree-normalized interference is small (sub-percent shift in the cumulant on the t=u slice), so the series remains well-behaved even as its color decomposition becomes non-hierarchical.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Neutron Electric Dipole Moment from Lattice QCD using a Background Electric Field</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-10606</link>
-    <guid isPermaLink="false">arxiv:2607.10606</guid>
-    <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Blum et al.</dc:creator>
-    <description><![CDATA[<p>Blum et al. extract the θ̄-induced neutron EDM from the energy shift of a neutron in a static, imaginary-valued Euclidean electric field, arriving at d_n = -0.0050(4)_stat(8)_sys θ̅ efm at the physical point. Two methodological moves drive the precision. First, motivated by Feynman-Hellmann, they sample the topological charge density on a <em>single time slice</em> rather than integrating the global charge Q<em>top — the dis</em>onnected topological correlator is the noise bottleneck, and localizing it plus a full-volume low-mode average sharpens the signal dramatically. Second, because the background field deforms the nucleon and mixes parity, the naive positive-parity projector suffers large excited-state contamination; they instead solve a <em>non-Hermitian</em> (PT-symmetric, S-pseudo-Hermitian) GEVP in the space of the nucleon, its parity partner and excitations to isolate the true ground state. Reassuringly, EDM values agree across chiral-covariant and non-covariant interpolators and across gluonic vs. pseudoscalar-density definitions of the topological charge, and the global-charge method gives results consistent with (but far noisier than) the new estimator.</p>
-<p>This is the kind of controlled number the EDM and 0νββ programs need to convert experimental limits into bounds on θ̅ and BSM CP-violating operators, and the local-charge + GEVP toolkit extends naturally to the Weinberg and chromo-EDM operators. Caveats are stated frankly: the calculation uses a single lattice spacing (a≈0.11 fm) and pion masses of 340–576 MeV, so discretization, finite-volume and chiral-extrapolation systematics are deferred to future work; the electro-quenched approximation is assumed benign (~1% for magnetic moments). It also lands amid ongoing dispute over whether the θ-term generates a nonzero nEDM at all.</p>]]></description>
   </item>
 
 </channel>
