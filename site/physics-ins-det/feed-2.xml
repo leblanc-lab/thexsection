@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>ColliderML: The First Release of an OpenDataDetector High-Luminosity Physics Benchmark Dataset</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2512-15230</link>
+    <guid isPermaLink="false">arxiv:2512.15230</guid>
+    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Doğa Elitez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>We introduce ColliderML - a large, open, experiment-agnostic dataset of fully simulated and digitised proton-proton collisions in High-Luminosity Large Hadron Collider conditions (√(s)=14 TeV, mean pile-up μ= 200). ColliderML provides one million events across ten Standard Model and Beyond Standard Model processes, plus extensive single-particle samples, all produced with modern next-to-leading order matrix element calculation and showering, realistic per-event pile-up overlay, a validated OpenDataDetector geometry, and standard reconstructions. The release fills a major gap for machine learning (ML) research on detector-level data, provided on the ML-friendly Hugging Face platform. We present physics coverage and the generation, simulation, digitisation and reconstruction pipeline, describe format and access, and initial collider physics benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Design optimization of hadronic calorimeters for future colliders</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2512-11641</link>
+    <guid isPermaLink="false">arxiv:2512.11641</guid>
+    <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bruno Rodrigues et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>Calorimeters are a crucial component in modern particle detectors. They are responsible for providing accurate energy measurements of particles produced in high-energy collisions. The demanding requirements set for next-generation collider experiments impose new challenges on the design of new detectors, and a systematic approach to their optimization is increasingly necessary. The performance of calorimeters is primarily characterized by their energy resolution, parameterized by a stochastic and a constant term, related to sampling fluctuations and non-uniformities respectively. To improve the reconstruction quality of physics objects in the calorimeter, both terms need to be taken into account. Changes in a longitudinally constrained design usually result in a trade-off between these terms, making optimization a non-trivial task. This work focuses on the optimization of a hadronic sampling calorimeter, based on the FCC-ee ALLEGRO detector concept. By controlling the absorber layer thickness in a Geant4 simulation, the impact of the passive to active material proportion on the deposited energy distribution and resolution can be analyzed. Our methodology aims at exploring the design space with practical considerations, paving the way for the development of a closed optimization framework that can evaluate multiple designs against physics performance targets.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimization of 3D diamond detectors with graphitized electrodes based on an innovative numerical simulation</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thiago R. F. P. Tomei</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>The High-Luminosity LHC (HL-LHC) era, set to begin in 2029, will provide the general-purpose experiments with an instantaneous luminosity of up to ℒ = 7.5 ×10³⁴ cm⁻² s⁻¹ from pp collisions at a centre-of-mass energy of 14 TeV. To fully exploit this unprecedented data set, the experimental setups must be upgraded to withstand the challenging conditions of the HL-LHC, including up to 200 simultaneous collisions per bunch crossing and a substantial radiation dose delivered to the detectors. The CMS collaboration is currently undertaking the Phase-2 upgrade, which aims to enhance the detector&rsquo;s capabilities to maintain high performance under these conditions. This upgrade includes significant improvements to the muon spectrometer and barrel calorimeter, a complete replacement of the silicon tracker, endcap calorimeter and beam radiation and luminosity subsystems, the introduction of a new MIP timing detector layer, and a redesigned trigger and data acquisition system. These enhancements will ensure that the CMS experiment can fully profit from on the HL-LHC data, maximising its physics potential and expanding its ability to make the most precise measurements.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SymbolNet: Neural Symbolic Regression with Adaptive Dynamic Pruning for Compression</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2401-09949</link>
-    <guid isPermaLink="false">arxiv:2401.09949</guid>
-    <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Compact symbolic expressions have been shown to be more efficient than neural network models in terms of resource consumption and inference speed when implemented on custom hardware such as FPGAs, while maintaining comparable accuracy~\cite{tsoi2023symbolic}. These capabilities are highly valuable in environments with stringent computational resource constraints, such as high-energy physics experiments at the CERN Large Hadron Collider. However, finding compact expressions for high-dimensional datasets remains challenging due to the inherent limitations of genetic programming, the search algorithm of most symbolic regression methods. Contrary to genetic programming, the neural network approach to symbolic regression offers scalability to high-dimensional inputs and leverages gradient methods for faster equation searching. Common ways of constraining expression complexity often involve multistage pruning with fine-tuning, which can result in significant performance loss. In this work, we propose SymbolNet, a neural network approach to symbolic regression specifically designed as a model compression technique, aimed at enabling low-latency inference for high-dimensional inputs on custom hardware such as FPGAs. This framework allows dynamic pruning of model weights, input features, and mathematical operators in a single training process, where both training loss and expression complexity are optimized simultaneously. We introduce a sparsity regularization term for each pruning type, which can adaptively adjust its strength, leading to convergence at a target sparsity ratio. Unlike most existing symbolic regression methods that struggle with datasets containing more than 𝒪(10) inputs, we demonstrate the effectiveness of our model on the LHC jet tagging task (16 inputs), MNIST (784 inputs), and SVHN (3072 inputs).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Analysis of Measurements of the Magnetic Flux Density in Steel Blocks of the Compact Muon Solenoid Magnet Yoke with Solenoid Coil Fast Discharges</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2501-01357</link>
-    <guid isPermaLink="false">arxiv:2501.01357</guid>
-    <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vyacheslav Klyukhin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The Compact Muon Solenoid (CMS) detector at the Large Hadron Collider at CERN is used to study the production of new particles in proton-proton collisions at a center of mass energy of 13.6 TeV. The detector includes a magnet based on a 6 m diameter superconducting coil operating at a current of 18.164 kA. This current creates a central magnetic flux density of 3.8 T that allows for the high-precision measurement of the momenta of the produced charged particles using tracking and muon subdetectors. The CMS magnet contains a 10,000 ton flux-return yoke made from the construction steel blocks. These blocks are magnetized, with the coil returned magnetic flux and wrap the muons escaping the hadronic calorimeters. To describe the distribution of the magnetic flux in the magnet yoke layers, a three-dimensional computer model of the CMS magnet is used. To validate the calculations, special measurements are performed, with the flux loops wound in 22 cross-sections of the flux-return yoke blocks. The measured voltages induced in the flux loops during the CMS magnet current variations, are integrated over time to obtain the initial magnetic flux densities in the flux loop cross-sections. In the last time, three fast discharges occurred during the standard ramp-downs of the magnet. This allows us to single out the contributions of the eddy currents, induced in steel, to the flux loop voltages. Accounting for these contributions to the flux loop measurements during intentionally triggered fast discharges in 2006 allows us to perform the validation of the CMS magnet computer model with better precision. The technique for the flux loop measurements and the obtained results are presented and discussed. The method for measuring magnetic flux density in steel blocks described in this study is innovative.</p>]]></description>
   </item>
 
 </channel>

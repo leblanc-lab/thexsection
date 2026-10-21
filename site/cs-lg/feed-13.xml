@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Graph Theoretic Additive Approximation of Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-11830</link>
+    <guid isPermaLink="false">arxiv:1905.11830</guid>
+    <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nathaniel Lahn et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Transportation cost is an attractive similarity measure between probability distributions due to its many useful theoretical properties. However, solving optimal transport exactly can be prohibitively expensive. Therefore, there has been significant effort towards the design of scalable approximation algorithms. Previous combinatorial results [Sharathkumar, Agarwal STOC &lsquo;12, Agarwal, Sharathkumar STOC &lsquo;14] have focused primarily on the design of near-linear time multiplicative approximation algorithms. There has also been an effort to design approximate solutions with additive errors [Cuturi NIPS &lsquo;13, Altschuler \etal\ NIPS &lsquo;17, Dvurechensky \etal\, ICML &lsquo;18, Quanrud, SOSA &lsquo;19] within a time bound that is linear in the size of the cost matrix and polynomial in C/δ; here C is the largest value in the cost matrix and δ is the additive error. We present an adaptation of the classical graph algorithm of Gabow and Tarjan and provide a novel analysis of this algorithm that bounds its execution time by O(n² C/δ+ nC²/δ²⁾. Our algorithm is extremely simple and executes, for an arbitrarily small constant ε, only ⌊2C/(1-ε)δ⌋+ 1 iterations, where each iteration consists only of a Dijkstra-type search followed by a depth-first search. We also provide empirical results that suggest our algorithm is competitive with respect to a sequential implementation of the Sinkhorn algorithm in execution time. Moreover, our algorithm quickly computes a solution for very small values of δ whereas Sinkhorn algorithm slows down due to numerical instability.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Quantum Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-00111</link>
+    <guid isPermaLink="false">arxiv:1911.00111</guid>
+    <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shouvanik Chakrabarti et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The study of quantum generative models is well-motivated, not only because of its importance in quantum machine learning and quantum chemistry but also because of the perspective of its implementation on near-term quantum machines. Inspired by previous studies on the adversarial training of classical and quantum generative models, we propose the first design of quantum Wasserstein Generative Adversarial Networks (WGANs), which has been shown to improve the robustness and the scalability of the adversarial training of quantum generative models even on noisy quantum hardware. Specifically, we propose a definition of the Wasserstein semimetric between quantum data, which inherits a few key theoretical merits of its classical counterpart. We also demonstrate how to turn the quantum Wasserstein semimetric into a concrete design of quantum WGANs that can be efficiently implemented on quantum machines. Our numerical study, via classical simulation of quantum systems, shows the more robust and scalable numerical performance of our quantum WGANs over other quantum GAN proposals. As a surprising application, our quantum WGAN has been used to generate a 3-qubit quantum circuit of ~50 gates that well approximates a 3-qubit 1-d Hamiltonian simulation circuit that requires over 10k gates using standard techniques.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Weisfeiler-Lehman Graph Kernels</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-01277</link>
+    <guid isPermaLink="false">arxiv:1906.01277</guid>
+    <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Togninalli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Most graph kernels are an instance of the class of ℛ-Convolution kernels, which measure the similarity of objects by comparing their substructures. Despite their empirical success, most graph kernels use a naive aggregation of the final set of substructures, usually a sum or average, thereby potentially discarding valuable information about the distribution of individual components. Furthermore, only a limited instance of these approaches can be extended to continuously attributed graphs. We propose a novel method that relies on the Wasserstein distance between the node feature vector distributions of two graphs, which allows to find subtler differences in data sets by considering graphs as high-dimensional objects, rather than simple means. We further propose a Weisfeiler-Lehman inspired embedding scheme for graphs with continuous node attributes and weighted edges, enhance it with the computed Wasserstein distance, and thus improve the state-of-the-art prediction performance on several graph classification tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>Lower Bounds on Adversarial Robustness from Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Genevay Aude et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) defines a powerful framework to compare probability distributions in a geometrically faithful way. However, the practical impact of OT is still limited because of its computational burden. We propose a new class of stochastic optimization algorithms to cope with large-scale problems routinely encountered in machine learning applications. These methods are able to manipulate arbitrary distributions (either discrete or continuous) by simply requiring to be able to draw samples from them, which is the typical setup in high-dimensional learning problems. This alleviates the need to discretize these densities, while giving access to provably convergent methods that output the correct distance without discretization error. These algorithms rely on two main ideas: (a) the dual OT problem can be re-cast as the maximization of an expectation ; (b) entropic regularization of the primal OT problem results in a smooth dual optimization optimization which can be addressed with algorithms that have a provably faster convergence. We instantiate these ideas in three different setups: (i) when comparing a discrete distribution to another, we show that incremental stochastic optimization schemes can beat Sinkhorn&rsquo;s algorithm, the current state-of-the-art finite dimensional OT solver; (ii) when comparing a discrete distribution to a continuous density, a semi-discrete reformulation of the dual program is amenable to averaged stochastic gradient descent, leading to better performance than approximately solving the problem by discretization ; (iii) when dealing with two continuous densities, we propose a stochastic gradient descent over a reproducing kernel Hilbert space (RKHS). This is currently the only known method to solve this problem, apart from computing OT on finite samples. We backup these claims on a set of discrete, semi-discrete and continuous benchmark problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sparse Coding with Earth Mover's Distance for Multi-Instance Histogram Representation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1502-02377</link>
-    <guid isPermaLink="false">arxiv:1502.02377</guid>
-    <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohua Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>Sparse coding (Sc) has been studied very well as a powerful data representation method. It attempts to represent the feature vector of a data sample by reconstructing it as the sparse linear combination of some basic elements, and a L_2 norm distance function is usually used as the loss function for the reconstruction error. In this paper, we investigate using Sc as the representation method within multi-instance learning framework, where a sample is given as a bag of instances, and further represented as a histogram of the quantized instances. We argue that for the data type of histogram, using L_2 norm distance is not suitable, and propose to use the earth mover&rsquo;s distance (EMD) instead of L_2 norm distance as a measure of the reconstruction error. By minimizing the EMD between the histogram of a sample and the its reconstruction from some basic histograms, a novel sparse coding method is developed, which is refereed as SC-EMD. We evaluate its performances as a histogram representation method in tow multi-instance learning problems &mdash; abnormal image detection in wireless capsule endoscopy videos, and protein binding site retrieval. The encouraging results demonstrate the advantages of the new method over the traditional method using L_2 norm distance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Parameterized Machine Learning for High-Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1601-07913</link>
-    <guid isPermaLink="false">arxiv:1601.07913</guid>
-    <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Baldi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Daniel Whiteson) — original abstract; no AI summary.</em></p>
-<p>We investigate a new structure for machine learning classifiers applied to problems in high-energy physics by expanding the inputs to include not only measured features but also physics parameters. The physics parameters represent a smoothly varying learning task, and the resulting parameterized classifier can smoothly interpolate between them and replace sets of classifiers trained at individual values. This simplifies the training process and gives improved performance at intermediate values, even for complex problems requiring deep learning. Applications include tools parameterized in terms of theoretical model parameters, such as the mass of a particle, which allow for a single network to provide improved discrimination across a range of masses. This concept is simple to implement and allows for optimized interpolatable results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning with a Wasserstein Loss</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2015.html#a1506-05439</link>
-    <guid isPermaLink="false">arxiv:1506.05439</guid>
-    <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Charlie Frogner et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Learning to predict multi-label outputs is challenging, but in many problems there is a natural metric on the outputs that can be used to improve predictions. In this paper we develop a loss function for multi-label learning, based on the Wasserstein distance. The Wasserstein distance provides a natural notion of dissimilarity for probability measures. Although optimizing with respect to the exact Wasserstein distance is costly, recent work has described a regularized approximation that is efficiently computed. We describe an efficient learning algorithm based on this regularization, as well as a novel extension of the Wasserstein distance from probability measures to unnormalized measures. We also describe a statistical learning bound for the loss. The Wasserstein loss can encourage smoothness of the predictions with respect to a chosen metric on the output space. We demonstrate this property on a real-data tag prediction problem, using the Yahoo Flickr Creative Commons dataset, outperforming a baseline that doesn&rsquo;t use the metric.</p>]]></description>
   </item>
 
 </channel>

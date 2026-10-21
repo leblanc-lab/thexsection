@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Bootstrap Deep Spectral Clustering with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-04200</link>
+    <guid isPermaLink="false">arxiv:2508.04200</guid>
+    <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wengang Guo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Spectral clustering is a leading clustering method. Two of its major shortcomings are the disjoint optimization process and the limited representation capacity. To address these issues, we propose a deep spectral clustering model (named BootSC), which jointly learns all stages of spectral clustering &ndash; affinity matrix construction, spectral embedding, and k-means clustering &ndash; using a single network in an end-to-end manner. BootSC leverages effective and efficient optimal-transport-derived supervision to bootstrap the affinity matrix and the cluster assignment matrix. Moreover, a semantically-consistent orthogonal re-parameterization technique is introduced to orthogonalize spectral embeddings, significantly enhancing the discrimination capability. Experimental results indicate that BootSC achieves state-of-the-art clustering performance. For example, it accomplishes a notable 16\% NMI improvement over the runner-up method on the challenging ImageNet-Dogs dataset. Our code is available at https://github.com/spdj2271/BootSC.</p>]]></description>
+  </item>
 
   <item>
     <title>The Curse of Conditions: Analyzing and Improving Optimal Transport for Conditional Flow-Based Generation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sk Aziz Ali et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Accurate, robust, and real-time LiDAR-based odometry (LO) is imperative for many applications like robot navigation, globally consistent 3D scene map reconstruction, or safe motion-planning. Though LiDAR sensor is known for its precise range measurement, the non-uniform and uncertain point sampling density induce structural inconsistencies. Hence, existing supervised and unsupervised point set registration methods fail to establish one-to-one matching correspondences between LiDAR frames. We introduce a novel deep learning-based real-time (approx. 35-40ms per frame) LO method that jointly learns accurate frame-to-frame correspondences and model&rsquo;s predictive uncertainty (PU) as evidence to safe-guard LO predictions. In this work, we propose (i) partial optimal transportation of LiDAR feature descriptor for robust LO estimation, (ii) joint learning of predictive uncertainty while learning odometry over driving sequences, and (iii) demonstrate how PU can serve as evidence for necessary pose-graph optimization when LO network is either under or over confident. We evaluate our method on KITTI dataset and show competitive performance, even superior generalization ability over recent state-of-the-art approaches. Source codes are available.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DAOT: Domain-Agnostically Aligned Optimal Transport for Domain-Adaptive Crowd Counting</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2308-05311</link>
-    <guid isPermaLink="false">arxiv:2308.05311</guid>
-    <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huilin Zhu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Domain adaptation is commonly employed in crowd counting to bridge the domain gaps between different datasets. However, existing domain adaptation methods tend to focus on inter-dataset differences while overlooking the intra-differences within the same dataset, leading to additional learning ambiguities. These domain-agnostic factors, e.g., density, surveillance perspective, and scale, can cause significant in-domain variations, and the misalignment of these factors across domains can lead to a drop in performance in cross-domain crowd counting. To address this issue, we propose a Domain-agnostically Aligned Optimal Transport (DAOT) strategy that aligns domain-agnostic factors between domains. The DAOT consists of three steps. First, individual-level differences in domain-agnostic factors are measured using structural similarity (SSIM). Second, the optimal transfer (OT) strategy is employed to smooth out these differences and find the optimal domain-to-domain misalignment, with outlier individuals removed via a virtual &ldquo;dustbin&rdquo; column. Third, knowledge is transferred based on the aligned domain-agnostic factors, and the model is retrained for domain adaptation to bridge the gap across domains. We conduct extensive experiments on five standard crowd-counting benchmarks and demonstrate that the proposed method has strong generalizability across diverse datasets. Our code will be available at: https://github.com/HopooLinZ/DAOT/.</p>]]></description>
   </item>
 
 </channel>

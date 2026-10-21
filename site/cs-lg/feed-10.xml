@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Sliced Wasserstein Variational Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-13177</link>
+    <guid isPermaLink="false">arxiv:2207.13177</guid>
+    <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingxuan Yi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Variational Inference approximates an unnormalized distribution via the minimization of Kullback-Leibler (KL) divergence. Although this divergence is efficient for computation and has been widely used in applications, it suffers from some unreasonable properties. For example, it is not a proper metric, i.e., it is non-symmetric and does not preserve the triangle inequality. On the other hand, optimal transport distances recently have shown some advantages over KL divergence. With the help of these advantages, we propose a new variational inference method by minimizing sliced Wasserstein distance, a valid metric arising from optimal transport. This sliced Wasserstein distance can be approximated simply by running MCMC but without solving any optimization problem. Our approximation also does not require a tractable density function of variational distributions so that approximating families can be amortized by generators like neural networks. Furthermore, we provide an analysis of the theoretical properties of our method. Experiments on synthetic and real data are illustrated to show the performance of the proposed method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Online Stochastic Optimization with Wasserstein Based Non-stationarity</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2012-06961</link>
+    <guid isPermaLink="false">arxiv:2012.06961</guid>
+    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiashuo Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider a general online stochastic optimization problem with multiple budget constraints over a horizon of finite time periods. In each time period, a reward function and multiple cost functions are revealed, and the decision maker needs to specify an action from a convex and compact action set to collect the reward and consume the budget. Each cost function corresponds to the consumption of one budget. In each period, the reward and cost functions are drawn from an unknown distribution, which is non-stationary across time. The objective of the decision maker is to maximize the cumulative reward subject to the budget constraints. This formulation captures a wide range of applications including online linear programming and network revenue management, among others. In this paper, we consider two settings: (i) a data-driven setting where the true distribution is unknown but a prior estimate (possibly inaccurate) is available; (ii) an uninformative setting where the true distribution is completely unknown. We propose a unified Wasserstein-distance based measure to quantify the inaccuracy of the prior estimate in setting (i) and the non-stationarity of the system in setting (ii). We show that the proposed measure leads to a necessary and sufficient condition for the attainability of a sublinear regret in both settings. For setting (i), we propose a new algorithm, which takes a primal-dual perspective and integrates the prior information of the underlying distributions into an online gradient descent procedure in the dual space. The algorithm also naturally extends to the uninformative setting (ii). Under both settings, we show the corresponding algorithm achieves a regret of optimal order. In numerical experiments, we demonstrate how the proposed algorithms can be naturally integrated with the re-solving technique to further boost the empirical performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Orthogonalization of data via Gromov-Wasserstein type feedback for clustering and visualization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-12279</link>
+    <guid isPermaLink="false">arxiv:2207.12279</guid>
+    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Ryner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper we propose an adaptive approach for clustering and visualization of data by an orthogonalization process. Starting with the data points being represented by a Markov process using the diffusion map framework, the method adaptively increase the orthogonality of the clusters by applying a feedback mechanism inspired by the Gromov-Wasserstein distance. This mechanism iteratively increases the spectral gap and refines the orthogonality of the data to achieve a clustering with high specificity. By using the diffusion map framework and representing the relation between data points using transition probabilities, the method is robust with respect to both the underlying distance, noise in the data and random initialization. We prove that the method converges globally to a unique fixpoint for certain parameter values. We also propose a related approach where the transition probabilities in the Markov process are required to be doubly stochastic, in which case the method generates a minimizer to a nonconvex optimization problem. We apply the method on cryo-electron microscopy image data from biopharmaceutical manufacturing where we can confirm biologically relevant insights related to therapeutic efficacy. We consider an example with morphological variations of gene packaging and confirm that the method produces biologically meaningful clustering results consistent with human expert classification.</p>]]></description>
+  </item>
 
   <item>
     <title>Stable Parallel Training of Wasserstein Conditional Generative Adversarial Neural Networks</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Ni et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Synthetic data is an emerging technology that can significantly accelerate the development and deployment of AI machine learning pipelines. In this work, we develop high-fidelity time-series generators, the SigWGAN, by combining continuous-time stochastic models with the newly proposed signature W_1 metric. The former are the Logsig-RNN models based on the stochastic differential equations, whereas the latter originates from the universal and principled mathematical features to characterize the measure induced by time series. SigWGAN allows turning computationally challenging GAN min-max problem into supervised learning while generating high fidelity samples. We validate the proposed model on both synthetic data generated by popular quantitative risk models and empirical financial data. Codes are available at https://github.com/SigCGANs/Sig-Wasserstein-GANs.git.</p>]]></description>
-  </item>
-
-  <item>
-    <title>LCS Graph Kernel Based on Wasserstein Distance in Longest Common Subsequence Metric Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2012-03612</link>
-    <guid isPermaLink="false">arxiv:2012.03612</guid>
-    <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianming Huang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>For graph learning tasks, many existing methods utilize a message-passing mechanism where vertex features are updated iteratively by aggregation of neighbor information. This strategy provides an efficient means for graph features extraction, but obtained features after many iterations might contain too much information from other vertices, and tend to be similar to each other. This makes their representations less expressive. Learning graphs using paths, on the other hand, can be less adversely affected by this problem because it does not involve all vertex neighbors. However, most of them can only compare paths with the same length, which might engender information loss. To resolve this difficulty, we propose a new Graph Kernel based on a Longest Common Subsequence (LCS) similarity. Moreover, we found that the widely-used R-convolution framework is unsuitable for path-based Graph Kernel because a huge number of comparisons between dissimilar paths might deteriorate graph distances calculation. Therefore, we propose a novel metric space by exploiting the proposed LCS-based similarity, and compute a new Wasserstein-based graph distance in this metric space, which emphasizes more the comparison between similar paths. Furthermore, to reduce the computational cost, we propose an adjacent point merging operation to sparsify point clouds in the metric space.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Robust Optimal Transport: Computational Complexity and Barycenter Computation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-06857</link>
-    <guid isPermaLink="false">arxiv:2102.06857</guid>
-    <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khang Le et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We consider robust variants of the standard optimal transport, named robust optimal transport, where marginal constraints are relaxed via Kullback-Leibler divergence. We show that Sinkhorn-based algorithms can approximate the optimal cost of robust optimal transport in 𝒪(n²/ε) time, in which n is the number of supports of the probability distributions and ε is the desired error. Furthermore, we investigate a fixed-support robust barycenter problem between m discrete probability distributions with at most n number of supports and develop an approximating algorithm based on iterative Bregman projections (IBP). For the specific case m = 2, we show that this algorithm can approximate the optimal barycenter value in 𝒪(mn²/ε) time, thus being better than the previous complexity 𝒪(mn²/ε²⁾ of the IBP algorithm for approximating the Wasserstein barycenter.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distance Maximizing Intrinsic Control</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-15331</link>
-    <guid isPermaLink="false">arxiv:2110.15331</guid>
-    <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ishan Durugkar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper deals with the problem of learning a skill-conditioned policy that acts meaningfully in the absence of a reward signal. Mutual information based objectives have shown some success in learning skills that reach a diverse set of states in this setting. These objectives include a KL-divergence term, which is maximized by visiting distinct states even if those states are not far apart in the MDP. This paper presents an approach that rewards the agent for learning skills that maximize the Wasserstein distance of their state visitation from the start state of the skill. It shows that such an objective leads to a policy that covers more distance in the MDP than diversity based objectives, and validates the results on a variety of Atari environments.</p>]]></description>
   </item>
 
 </channel>

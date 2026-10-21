@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Differentiable Earth Mover's Distance for Data Compression at the High-Luminosity LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-04712</link>
+    <guid isPermaLink="false">arxiv:2306.04712</guid>
+    <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rohan Shenoy et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, title: earth mover, Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>The Earth mover&rsquo;s distance (EMD) is a useful metric for image recognition and classification, but its usual implementations are not differentiable or too slow to be used as a loss function for training other algorithms via gradient descent. In this paper, we train a convolutional neural network (CNN) to learn a differentiable, fast approximation of the EMD and demonstrate that it can be used as a substitute for computing-intensive EMD implementations. We apply this differentiable approximation in the training of an autoencoder-inspired neural network (encoder NN) for data compression at the high-luminosity LHC at CERN. The goal of this encoder NN is to compress the data while preserving the information related to the distribution of energy deposits in particle detectors. We demonstrate that the performance of our encoder NN trained using the differentiable EMD CNN surpasses that of training with loss functions based on mean squared error.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Beyond PID Controllers: PPO with Neuralized PID Policy for Proton Beam Intensity Control in Mu2e</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-17372</link>
+    <guid isPermaLink="false">arxiv:2312.17372</guid>
+    <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenwei Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>We introduce a novel Proximal Policy Optimization (PPO) algorithm aimed at addressing the challenge of maintaining a uniform proton beam intensity delivery in the Muon to Electron Conversion Experiment (Mu2e) at Fermi National Accelerator Laboratory (Fermilab). Our primary objective is to regulate the spill process to ensure a consistent intensity profile, with the ultimate goal of creating an automated controller capable of providing real-time feedback and calibration of the Spill Regulation System (SRS) parameters on a millisecond timescale. We treat the Mu2e accelerator system as a Markov Decision Process suitable for Reinforcement Learning (RL), utilizing PPO to reduce bias and enhance training stability. A key innovation in our approach is the integration of a neuralized Proportional-Integral-Derivative (PID) controller into the policy function, resulting in a significant improvement in the Spill Duty Factor (SDF) by 13.6%, surpassing the performance of the current PID controller baseline by an additional 1.6%. This paper presents the preliminary offline results based on a differentiable simulator of the Mu2e accelerator. It paves the groundwork for real-time implementations and applications, representing a crucial step towards automated proton beam intensity control for the Mu2e experiment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On Robust Wasserstein Barycenter: The Model and Algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2312-15762</link>
+    <guid isPermaLink="false">arxiv:2312.15762</guid>
+    <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xu Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein barycenter problem is to compute the average of m given probability measures, which has been widely studied in many different areas; however, real-world data sets are often noisy and huge, which impedes its applications in practice. Hence, in this paper, we focus on improving the computational efficiency of two types of robust Wasserstein barycenter problem (RWB): fixed-support RWB (fixed-RWB) and free-support RWB (free-RWB); actually, the former is a subroutine of the latter. Firstly, we improve efficiency through model reducing; we reduce RWB as an augmented Wasserstein barycenter problem, which works for both fixed-RWB and free-RWB. Especially, fixed-RWB can be computed within O(mn²/ε_+) time by using an off-the-shelf solver, where ε_+ is the pre-specified additive error and n is the size of locations of input measures. Then, for free-RWB, we leverage a quality guaranteed data compression technique, coreset, to accelerate computation by reducing the data set size m. It shows that running algorithms on the coreset is enough instead of on the original data set. Next, by combining the model reducing and coreset techniques above, we propose an algorithm for free-RWB by updating the weights and locations alternatively. Finally, our experiments demonstrate the efficiency of our techniques.</p>]]></description>
+  </item>
 
   <item>
     <title>Diffusion Bridge Mixture Transports, Schrödinger Bridge Problems and Generative Modeling</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Akira Kitaoka et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We prove Wasserstein inverse reinforcement learning enables the learner&rsquo;s reward values to imitate the expert&rsquo;s reward values in a finite iteration for multi-objective optimizations. Moreover, we prove Wasserstein inverse reinforcement learning enables the learner&rsquo;s optimal solutions to imitate the expert&rsquo;s optimal solutions for multi-objective optimizations with lexicographic order.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Firmware implementation of a recurrent neural network for the computation of the energy deposited in the liquid argon calorimeter of the ATLAS experiment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-07555</link>
-    <guid isPermaLink="false">arxiv:2302.07555</guid>
-    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Georges Aad et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>The ATLAS experiment measures the properties of particles that are products of proton-proton collisions at the LHC. The ATLAS detector will undergo a major upgrade before the high luminosity phase of the LHC. The ATLAS liquid argon calorimeter measures the energy of particles interacting electromagnetically in the detector. The readout electronics of this calorimeter will be replaced during the aforementioned ATLAS upgrade. The new electronic boards will be based on state-of-the-art field-programmable gate arrays (FPGA) from Intel allowing the implementation of neural networks embedded in firmware. Neural networks have been shown to outperform the current optimal filtering algorithms used to compute the energy deposited in the calorimeter. This article presents the implementation of a recurrent neural network (RNN) allowing the reconstruction of the energy deposited in the calorimeter on Stratix 10 FPGAs. The implementation in high level synthesis (HLS) language allowed fast prototyping but fell short of meeting the stringent requirements in terms of resource usage and latency. Further optimisations in Very High-Speed Integrated Circuit Hardware Description Language (VHDL) allowed fulfilment of the requirements of processing 384 channels per FPGA with a latency smaller than 125 ns.</p>]]></description>
-  </item>
-
-  <item>
-    <title>End-To-End Latent Variational Diffusion Models for Inverse Problems in High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-10399</link>
-    <guid isPermaLink="false">arxiv:2305.10399</guid>
-    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Shmakov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>High-energy collisions at the Large Hadron Collider (LHC) provide valuable insights into open questions in particle physics. However, detector effects must be corrected before measurements can be compared to certain theoretical predictions or measurements from other detectors. Methods to solve this \textit{inverse problem} of mapping detector observations to theoretical quantities of the underlying collision are essential parts of many physics analyses at the LHC. We investigate and compare various generative deep learning methods to approximate this inverse mapping. We introduce a novel unified architecture, termed latent variation diffusion models, which combines the latent learning of cutting-edge generative art approaches with an end-to-end variational framework. We demonstrate the effectiveness of this approach for reconstructing global distributions of theoretical kinematic quantities, as well as for ensuring the adherence of the learned posterior distributions to known physics constraints. Our unified approach achieves a distribution-free distance to the truth of over 20 times less than non-latent state-of-the-art baseline and 3 times less than traditional latent diffusion models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Gradient Flows for Optimizing Gaussian Mixture Policies</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-10411</link>
-    <guid isPermaLink="false">arxiv:2305.10411</guid>
-    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanna Ziesche et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Robots often rely on a repertoire of previously-learned motion policies for performing tasks of diverse complexities. When facing unseen task conditions or when new task requirements arise, robots must adapt their motion policies accordingly. In this context, policy optimization is the \emph{de facto} paradigm to adapt robot policies as a function of task-specific objectives. Most commonly-used motion policies carry particular structures that are often overlooked in policy optimization algorithms. We instead propose to leverage the structure of probabilistic policies by casting the policy optimization as an optimal transport problem. Specifically, we focus on robot motion policies that build on Gaussian mixture models (GMMs) and formulate the policy optimization as a Wassertein gradient flow over the GMMs space. This naturally allows us to constrain the policy updates via the L²-Wasserstein distance between GMMs to enhance the stability of the policy optimization process. Furthermore, we leverage the geometry of the Bures-Wasserstein manifold to optimize the Gaussian distributions of the GMM policy via Riemannian optimization. We evaluate our approach on common robotic settings: Reaching motions, collision-avoidance behaviors, and multi-goal tasks. Our results show that our method outperforms common policy optimization baselines in terms of task success rate and low-variance solutions.</p>]]></description>
   </item>
 
 </channel>

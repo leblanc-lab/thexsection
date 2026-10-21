@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Generalized Wasserstein Flow Matching: Transport Plans, Everywhere, All at Once</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08424</link>
+    <guid isPermaLink="false">arxiv:2605.08424</guid>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Moritz Piening et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Flow matching has recently emerged as a flexible and efficient framework for generative modelling by learning deterministic transport dynamics between probability measures. In this work, we extend flow matching to the space of probability measures over probability measures, introducing a Wasserstein-on-Wasserstein (WoW) formulation. Leveraging the nested Wasserstein geometry, we show that measures over transport plans naturally induce velocity fields that realize metameasure flows. This yields a principled generalization of Wasserstein flow matching via coupled outer and inner transport plans. To address the substantial computational cost of WoW transport, we propose scalable approximations based on sliced and linear Wasserstein distances, enabling efficient training while promoting numerically stable, near-straight trajectories. Our framework unifies and extends existing approaches to point cloud and set generation, providing a practical and theoretically grounded method for generative modelling in WoW spaces.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn Treatment Effects: A Causal Optimal Transport Measure</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08485</link>
+    <guid isPermaLink="false">arxiv:2605.08485</guid>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Medha Agarwal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We introduce the Sinkhorn treatment effect, an entropic optimal transport measure of divergence between counterfactual distributions. Unlike classical quantities such as the average treatment effect, this measure captures differences across entire distributions. We analyze this divergence as a statistical functional and show it can be written as a smooth transformation of counterfactual mean embeddings with an appropriate kernel. This characterization allows us to establish first-order pathwise differentiability in general, and second-order pathwise differentiability under the null hypothesis of equal counterfactual distributions. Leveraging this smoothness, we construct debiased estimators and use them to obtain asymptotically valid tests for distributional treatment effects with a fixed entropic regularization parameter. Because the power of the test depends on this unknown parameter, we further propose an aggregated test that combines evidence across a grid of regularization choices. Experiments on simulated and image data demonstrate the practical advantages of our estimator and testing procedure.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Inner Product Gromov-Wasserstein Distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08546</link>
+    <guid isPermaLink="false">arxiv:2605.08546</guid>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaoyun Gong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) problem provides a framework for aligning heterogeneous datasets by matching their intrinsic geometry, but its statistical and computational scaling remains an issue for high-dimensional problems. Slicing techniques offer an appealing route to scalability, but, unlike Wasserstein distances, GW problems do not generally admit closed-form solutions in one-dimension. We resolve this problem for the GW problem with inner product cost (IGW), propose a sliced IGW distance that enjoys a natural rotational invariance property, and comprehensively study its structural and computational properties. Numerical experiments validating our theory are presented, followed by applications to heterogeneous clustering of text data and language model representation comparison.</p>]]></description>
+  </item>
 
   <item>
     <title>Contact Wasserstein Geodesics for Non-Conservative Schrödinger Bridges</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stéphane Lhaut et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Economically responsible mitigation of multivariate extreme risks-such as extreme rainfall over large areas, large simultaneous variations in many stock prices, or widespread breakdowns in transportation systems-requires assessing the resilience of the systems under plausible stress scenarios. This paper uses Extreme Value Theory (EVT) to develop a new approach to simulating such multivariate extreme events. Specifically, we assume that after transformation to a standard scale the distribution of the random phenomenon of interest is multivariate regular varying and use this to provide a sampling procedure for extremes on the original scale. Our procedure combines a Wasserstein-Aitchison Generative Adversarial Network (WA-GAN) to simulate the tail dependence structure on the standard scale with joint modeling of the univariate marginal tails on the original scale. The WA-GAN procedure relies on the angular measure-encoding the distribution on the unit simplex of the angles of extreme observations-after transformation to Aitchison coordinates, which allows the Wasserstein-GAN algorithm to be run in a linear space. Our method is applied both to simulated data under various tail dependence scenarios and to a financial data set from the Kenneth French Data Library. The proposed algorithm demonstrates strong performance compared to existing alternatives in the literature, both in capturing tail dependence structures and in generating accurate new extreme observations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced-Wasserstein Distribution Alignment Loss Improves the Ultra-Low-Bit Quantization of Large Language Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-07878</link>
-    <guid isPermaLink="false">arxiv:2601.07878</guid>
-    <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deyu Cao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The benefits of most large language models come with steep and often hidden economic and environmental costs due to their resource usage inefficiency during deployment. Model quantization improves energy and memory efficiency through representing model parameters by lower-precision values. However, compression below 4-bits often distorts activation distributions and degrades performance. We address this challenge by introducing a sliced Wasserstein loss function for distribution-aware calibration in ultra-low-bit post-training quantization. The proposed loss aligns the output distributions of full-precision and quantized models under random linear projections, complementing standard mean-squared error loss without adding any computational overhead during inference. Our proposed loss function can be incorporated with any post-training quantization framework that has a retraining component. We demonstrate the performance gains of our proposed model by incorporating it with two frontier methods known as OmniQuant and TesseraQ. Compared to these two baselines, the proposed loss consistently improves both perplexity and downstream task accuracy across multiple ultra-low-bit settings. Our proposed loss function recovers 4.12-20.37% of the OmniQuant&rsquo;s lost accuracy on the language model LLaMA-2-7B, 0.93-7.65% on OPT-6.7B, and 2.26-6.20% on LLaMA-2-13B. TesseraQ&rsquo;s accuracy degradation is recovered by 3.63-7.63% in relative terms when augmented by our proposed loss function. Taken together, these results demonstrate that distributional alignment provides a simple yet effective performance boost that can push the limits of frontier quantization methods. Our method is available on GitHub to facilitate future progress in ultra-low-bit quantization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>: a library for Wasserstein distributionally robust machine learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2410-21231</link>
-    <guid isPermaLink="false">arxiv:2410.21231</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Florian Vincent et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We present skwdro, a Python library for training robust machine learning models. The library is based on distributionally robust optimization using Wasserstein distances, popular in optimal transport and machine learnings. The goal of the library is to make the training of robust models easier for a wide audience by proposing a wrapper for PyTorch modules, enabling model loss&rsquo; robustification with minimal code changes. It comes along with scikit-learn compatible estimators for some popular objectives. The core of the implementation relies on an entropic smoothing of the original robust objective, in order to ensure maximal model flexibility. The library is available at https://github.com/iutzeler/skwdro and the documentation at https://skwdro.readthedocs.io.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AIE4ML: An End-to-End Framework for Compiling Neural Networks for the Next Generation of AMD AI Engines</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-15946</link>
-    <guid isPermaLink="false">arxiv:2512.15946</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dimitrios Danopoulos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Efficient AI inference on AMD&rsquo;s Versal AI Engine (AIE) is challenging due to tightly coupled VLIW execution, explicit datapaths, and local memory management. Prior work focused on first-generation AIE kernel optimizations, without tackling full neural network execution across the 2D array. In this work, we present AIE4ML, the first comprehensive framework for converting AI models automatically into optimized firmware targeting the AIE-ML generation devices, also with forward compatibility for the newer AIE-MLv2 architecture. At the single-kernel level, we attain performance close to the architectural peak. At the graph and system levels, we provide a structured parallelization method that can scale across the 2D AIE-ML fabric and exploit its dedicated memory tiles to stay entirely on-chip throughout the model execution. As a demonstration, we designed a generalized and highly efficient linear-layer implementation with intrinsic support for fused bias addition and ReLU activation. Also, as our framework necessitates the generation of multi-layer implementations, our approach systematically derives deterministic, compact, and topology-optimized placements tailored to the physical 2D grid of the device through a novel graph placement and search algorithm. Finally, the framework seamlessly accepts quantized models imported from high-level tools such as hls4ml or PyTorch while preserving bit-exactness. In layer scaling benchmarks, we achieve up to 98.6% efficiency relative to the single-kernel baseline, utilizing 296 of 304 AIE tiles (97.4%) of the device with entirely on-chip data movement. With evaluations across real-world model topologies, we demonstrate that AIE4ML delivers GPU-class throughput under microsecond latency constraints, making it a practical companion for ultra-low-latency environments such as trigger systems in particle physics experiments.</p>]]></description>
   </item>
 
 </channel>

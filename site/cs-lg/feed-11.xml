@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>LCS Graph Kernel Based on Wasserstein Distance in Longest Common Subsequence Metric Space</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2012-03612</link>
+    <guid isPermaLink="false">arxiv:2012.03612</guid>
+    <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianming Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>For graph learning tasks, many existing methods utilize a message-passing mechanism where vertex features are updated iteratively by aggregation of neighbor information. This strategy provides an efficient means for graph features extraction, but obtained features after many iterations might contain too much information from other vertices, and tend to be similar to each other. This makes their representations less expressive. Learning graphs using paths, on the other hand, can be less adversely affected by this problem because it does not involve all vertex neighbors. However, most of them can only compare paths with the same length, which might engender information loss. To resolve this difficulty, we propose a new Graph Kernel based on a Longest Common Subsequence (LCS) similarity. Moreover, we found that the widely-used R-convolution framework is unsuitable for path-based Graph Kernel because a huge number of comparisons between dissimilar paths might deteriorate graph distances calculation. Therefore, we propose a novel metric space by exploiting the proposed LCS-based similarity, and compute a new Wasserstein-based graph distance in this metric space, which emphasizes more the comparison between similar paths. Furthermore, to reduce the computational cost, we propose an adjacent point merging operation to sparsify point clouds in the metric space.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On Robust Optimal Transport: Computational Complexity and Barycenter Computation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-06857</link>
+    <guid isPermaLink="false">arxiv:2102.06857</guid>
+    <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khang Le et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We consider robust variants of the standard optimal transport, named robust optimal transport, where marginal constraints are relaxed via Kullback-Leibler divergence. We show that Sinkhorn-based algorithms can approximate the optimal cost of robust optimal transport in 𝒪(n²/ε) time, in which n is the number of supports of the probability distributions and ε is the desired error. Furthermore, we investigate a fixed-support robust barycenter problem between m discrete probability distributions with at most n number of supports and develop an approximating algorithm based on iterative Bregman projections (IBP). For the specific case m = 2, we show that this algorithm can approximate the optimal barycenter value in 𝒪(mn²/ε) time, thus being better than the previous complexity 𝒪(mn²/ε²⁾ of the IBP algorithm for approximating the Wasserstein barycenter.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distance Maximizing Intrinsic Control</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-15331</link>
+    <guid isPermaLink="false">arxiv:2110.15331</guid>
+    <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ishan Durugkar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper deals with the problem of learning a skill-conditioned policy that acts meaningfully in the absence of a reward signal. Mutual information based objectives have shown some success in learning skills that reach a diverse set of states in this setting. These objectives include a KL-divergence term, which is maximized by visiting distinct states even if those states are not far apart in the MDP. This paper presents an approach that rewards the agent for learning skills that maximize the Wasserstein distance of their state visitation from the start state of the skill. It shows that such an objective leads to a policy that covers more distance in the MDP than diversity based objectives, and validates the results on a variety of Atari environments.</p>]]></description>
+  </item>
 
   <item>
     <title>Training Wasserstein GANs without gradient penalties</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">George Stein et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Anomaly detection is a key application of machine learning, but is generally focused on the detection of outlying samples in the low probability density regions of data. Here we instead present and motivate a method for unsupervised in-distribution anomaly detection using a conditional density estimator, designed to find unique, yet completely unknown, sets of samples residing in high probability density regions. We apply this method towards the detection of new physics in simulated Large Hadron Collider (LHC) particle collisions as part of the 2020 LHC Olympics blind challenge, and show how we detected a new particle appearing in only 0.08% of 1 million collision events. The results we present are our original blind submission to the 2020 LHC Olympics, where it achieved the state-of-the-art performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Image-Based Jet Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-09719</link>
-    <guid isPermaLink="false">arxiv:2012.09719</guid>
-    <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Kagan</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet image, LHC, Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Image-based jet analysis is built upon the jet image representation of jets that enables a direct connection between high energy physics and the fields of computer vision and deep learning. Through this connection, a wide array of new jet analysis techniques have emerged. In this text, we survey jet image based classification models, built primarily on the use of convolutional neural networks, examine the methods to understand what these models have learned and what is their sensitivity to uncertainties, and review the recent successes in moving these models from phenomenological studies to real world application on experiments at the LHC. Beyond jet classification, several other applications of jet image based techniques, including energy estimation, pileup noise reduction, data generation, and anomaly detection, are discussed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Graphons via Structured Gromov-Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-05644</link>
-    <guid isPermaLink="false">arxiv:2012.05644</guid>
-    <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hongteng Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a novel and principled method to learn a nonparametric graph model called graphon, which is defined in an infinite-dimensional space and represents arbitrary-size graphs. Based on the weak regularity lemma from the theory of graphons, we leverage a step function to approximate a graphon. We show that the cut distance of graphons can be relaxed to the Gromov-Wasserstein distance of their step functions. Accordingly, given a set of graphs generated by an underlying graphon, we learn the corresponding step function as the Gromov-Wasserstein barycenter of the given graphs. Furthermore, we develop several enhancements and extensions of the basic algorithm, e.g., the smoothed Gromov-Wasserstein barycenter for guaranteeing the continuity of the learned graphons and the mixed Gromov-Wasserstein barycenters for learning multiple structured graphons. The proposed approach overcomes drawbacks of prior state-of-the-art methods, and outperforms them on both synthetic and real-world data. The code is available at https://github.com/HongtengXu/SGWB-Graphon.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SWIFT: Scalable Wasserstein Factorization for Sparse Nonnegative Tensors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2010-04081</link>
-    <guid isPermaLink="false">arxiv:2010.04081</guid>
-    <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ardavan Afshar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Existing tensor factorization methods assume that the input tensor follows some specific distribution (i.e. Poisson, Bernoulli, and Gaussian), and solve the factorization by minimizing some empirical loss functions defined based on the corresponding distribution. However, it suffers from several drawbacks: 1) In reality, the underlying distributions are complicated and unknown, making it infeasible to be approximated by a simple distribution. 2) The correlation across dimensions of the input tensor is not well utilized, leading to sub-optimal performance. Although heuristics were proposed to incorporate such correlation as side information under Gaussian distribution, they can not easily be generalized to other distributions. Thus, a more principled way of utilizing the correlation in tensor factorization models is still an open challenge. Without assuming any explicit distribution, we formulate the tensor factorization as an optimal transport problem with Wasserstein distance, which can handle non-negative inputs. We introduce SWIFT, which minimizes the Wasserstein distance that measures the distance between the input tensor and that of the reconstruction. In particular, we define the N-th order tensor Wasserstein loss for the widely used tensor CP factorization and derive the optimization algorithm that minimizes it. By leveraging sparsity structure and different equivalent formulations for optimizing computational efficiency, SWIFT is as scalable as other well-known CP algorithms. Using the factor matrices as features, SWIFT achieves up to 9.65% and 11.31% relative improvement over baselines for downstream prediction tasks. Under the noisy conditions, SWIFT achieves up to 15% and 17% relative improvements over the best competitors for the prediction tasks.</p>]]></description>
   </item>
 
 </channel>

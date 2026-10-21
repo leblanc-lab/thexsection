@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Metric Learning in an RKHS</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-04476</link>
+    <guid isPermaLink="false">arxiv:2508.04476</guid>
+    <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gokcan Tatli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Metric learning from a set of triplet comparisons in the form of &ldquo;Do you think item h is more similar to item i or item j?&rdquo;, indicating similarity and differences between items, plays a key role in various applications including image retrieval, recommendation systems, and cognitive psychology. The goal is to learn a metric in the RKHS that reflects the comparisons. Nonlinear metric learning using kernel methods and neural networks have shown great empirical promise. While previous works have addressed certain aspects of this problem, there is little or no theoretical understanding of such methods. The exception is the special (linear) case in which the RKHS is the standard Euclidean space ℝ^d; there is a comprehensive theory for metric learning in ℝ^d. This paper develops a general RKHS framework for metric learning and provides novel generalization guarantees and sample complexity bounds. We validate our findings through a set of simulations and experiments on real datasets. Our code is publicly available at https://github.com/RamyaLab/metric-learning-RKHS.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Curse of Conditions: Analyzing and Improving Optimal Transport for Conditional Flow-Based Generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-10636</link>
+    <guid isPermaLink="false">arxiv:2503.10636</guid>
+    <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Kei Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Minibatch optimal transport coupling straightens paths in unconditional flow matching. This leads to computationally less demanding inference as fewer integration steps and less complex numerical solvers can be employed when numerically solving an ordinary differential equation at test time. However, in the conditional setting, minibatch optimal transport falls short. This is because the default optimal transport mapping disregards conditions, resulting in a conditionally skewed prior distribution during training. In contrast, at test time, we have no access to the skewed prior, and instead sample from the full, unbiased prior distribution. This gap between training and testing leads to a subpar performance. To bridge this gap, we propose conditional optimal transport C^2OT that adds a conditional weighting term in the cost matrix when computing the optimal transport assignment. Experiments demonstrate that this simple fix works with both discrete and continuous conditions in 8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method performs better overall compared to the existing baselines across different function evaluation budgets. Code is available at https://hkchengrex.github.io/C2OT</p>]]></description>
+  </item>
+
+  <item>
+    <title>Collision-based Dynamics for Multi-Marginal Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-16385</link>
+    <guid isPermaLink="false">arxiv:2412.16385</guid>
+    <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohsen Sadr et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Inspired by the Boltzmann kinetics, we propose a collision-based dynamics with a Monte Carlo solution algorithm that approximates the solution of the multi-marginal optimal transport problem via randomized pairwise swapping of sample indices. The computational complexity and memory usage of the proposed method scale linearly with the number of samples, making it highly attractive for high-dimensional settings. In several examples, we demonstrate the efficiency of the proposed method compared to the state-of-the-art methods.</p>]]></description>
+  </item>
 
   <item>
     <title>Slicing the Gaussian Mixture Wasserstein Distance</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Hyeong Kim et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Transporting between arbitrary distributions is a fundamental goal in generative modeling. Recently proposed diffusion bridge models provide a potential solution, but they rely on a joint distribution that is difficult to obtain in practice. Furthermore, formulations based on continuous domains limit their applicability to discrete domains such as graphs. To overcome these limitations, we propose Discrete Diffusion Schrödinger Bridge Matching (DDSBM), a novel framework that utilizes continuous-time Markov chains to solve the SB problem in a high-dimensional discrete state space. Our approach extends Iterative Markovian Fitting to discrete domains, and we have proved its convergence to the SB. Furthermore, we adapt our framework for the graph transformation, and show that our design choice of underlying dynamics characterized by independent modifications of nodes and edges can be interpreted as the entropy-regularized version of optimal transport with a cost function described by the graph edit distance. To demonstrate the effectiveness of our framework, we have applied DDSBM to molecular optimization in the field of chemistry. Experimental results demonstrate that DDSBM effectively optimizes molecules&rsquo; property-of-interest with minimal graph transformation, successfully retaining other features. Source code is available \href{https://github.com/junhkim1226/DDSBM}{here}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stochastic variance-reduced Gaussian variational inference on the Bures-Wasserstein manifold</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-02490</link>
-    <guid isPermaLink="false">arxiv:2410.02490</guid>
-    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phuc Hau Luu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Optimization in the Bures-Wasserstein space has been gaining popularity in the machine learning community since it draws connections between variational inference and Wasserstein gradient flows. The variational inference objective function of Kullback-Leibler divergence can be written as the sum of the negative entropy and the potential energy, making forward-backward Euler the method of choice. Notably, the backward step admits a closed-form solution in this case, facilitating the practicality of the scheme. However, the forward step is not exact since the Bures-Wasserstein gradient of the potential energy involves &ldquo;intractable&rdquo; expectations. Recent approaches propose using the Monte Carlo method &ndash; in practice a single-sample estimator &ndash; to approximate these terms, resulting in high variance and poor performance. We propose a novel variance-reduced estimator based on the principle of control variates. We theoretically show that this estimator has a smaller variance than the Monte-Carlo estimator in scenarios of interest. We also prove that variance reduction helps improve the optimization bounds of the current analysis. We demonstrate that the proposed estimator gains order-of-magnitude improvements over the previous Bures-Wasserstein methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Fused Gromov-Wasserstein Approach to Subgraph Contrastive Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-20885</link>
-    <guid isPermaLink="false">arxiv:2502.20885</guid>
-    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amadou S. Sangare et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Self-supervised learning has become a key method for training deep learning models when labeled data is scarce or unavailable. While graph machine learning holds great promise across various domains, the design of effective pretext tasks for self-supervised graph representation learning remains challenging. Contrastive learning, a popular approach in graph self-supervised learning, leverages positive and negative pairs to compute a contrastive loss function. However, current graph contrastive learning methods often struggle to fully use structural patterns and node similarities. To address these issues, we present a new method called Fused Gromov Wasserstein Subgraph Contrastive Learning (FOSSIL). Our model integrates node-level and subgraph-level contrastive learning, seamlessly combining a standard node-level contrastive loss with the Fused Gromov-Wasserstein distance. This combination helps our method capture both node features and graph structure together. Importantly, our approach works well with both homophilic and heterophilic graphs and can dynamically create views for generating positive and negative pairs. Through extensive experiments on benchmark graph datasets, we show that FOSSIL outperforms or achieves competitive performance compared to current state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distances, Neuronal Entanglement, and Sparsity</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-15756</link>
-    <guid isPermaLink="false">arxiv:2405.15756</guid>
-    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shashata Sawmya et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Disentangling polysemantic neurons is at the core of many current approaches to interpretability of large language models. Here we attempt to study how disentanglement can be used to understand performance, particularly under weight sparsity, a leading post-training optimization technique. We suggest a novel measure for estimating neuronal entanglement: the Wasserstein distance of a neuron&rsquo;s output distribution to a Gaussian. Moreover, we show the existence of a small number of highly entangled &ldquo;Wasserstein Neurons&rdquo; in each linear layer of an LLM, characterized by their highly non-Gaussian output distributions, their role in mapping similar inputs to dissimilar outputs, and their significant impact on model accuracy. To study these phenomena, we propose a new experimental framework for disentangling polysemantic neurons. Our framework separates each layer&rsquo;s inputs to create a mixture of experts where each neuron&rsquo;s output is computed by a mixture of neurons of lower Wasserstein distance, each better at maintaining accuracy when sparsified without retraining. We provide strong evidence that this is because the mixture of sparse experts is effectively disentangling the input-output relationship of individual neurons, in particular the difficult Wasserstein neurons.</p>]]></description>
   </item>
 
 </channel>

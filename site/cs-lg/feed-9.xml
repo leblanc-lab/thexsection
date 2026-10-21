@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Firmware implementation of a recurrent neural network for the computation of the energy deposited in the liquid argon calorimeter of the ATLAS experiment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-07555</link>
+    <guid isPermaLink="false">arxiv:2302.07555</guid>
+    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Georges Aad et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The ATLAS experiment measures the properties of particles that are products of proton-proton collisions at the LHC. The ATLAS detector will undergo a major upgrade before the high luminosity phase of the LHC. The ATLAS liquid argon calorimeter measures the energy of particles interacting electromagnetically in the detector. The readout electronics of this calorimeter will be replaced during the aforementioned ATLAS upgrade. The new electronic boards will be based on state-of-the-art field-programmable gate arrays (FPGA) from Intel allowing the implementation of neural networks embedded in firmware. Neural networks have been shown to outperform the current optimal filtering algorithms used to compute the energy deposited in the calorimeter. This article presents the implementation of a recurrent neural network (RNN) allowing the reconstruction of the energy deposited in the calorimeter on Stratix 10 FPGAs. The implementation in high level synthesis (HLS) language allowed fast prototyping but fell short of meeting the stringent requirements in terms of resource usage and latency. Further optimisations in Very High-Speed Integrated Circuit Hardware Description Language (VHDL) allowed fulfilment of the requirements of processing 384 channels per FPGA with a latency smaller than 125 ns.</p>]]></description>
+  </item>
+
+  <item>
+    <title>End-To-End Latent Variational Diffusion Models for Inverse Problems in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-10399</link>
+    <guid isPermaLink="false">arxiv:2305.10399</guid>
+    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Shmakov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>High-energy collisions at the Large Hadron Collider (LHC) provide valuable insights into open questions in particle physics. However, detector effects must be corrected before measurements can be compared to certain theoretical predictions or measurements from other detectors. Methods to solve this \textit{inverse problem} of mapping detector observations to theoretical quantities of the underlying collision are essential parts of many physics analyses at the LHC. We investigate and compare various generative deep learning methods to approximate this inverse mapping. We introduce a novel unified architecture, termed latent variation diffusion models, which combines the latent learning of cutting-edge generative art approaches with an end-to-end variational framework. We demonstrate the effectiveness of this approach for reconstructing global distributions of theoretical kinematic quantities, as well as for ensuring the adherence of the learned posterior distributions to known physics constraints. Our unified approach achieves a distribution-free distance to the truth of over 20 times less than non-latent state-of-the-art baseline and 3 times less than traditional latent diffusion models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Gradient Flows for Optimizing Gaussian Mixture Policies</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-10411</link>
+    <guid isPermaLink="false">arxiv:2305.10411</guid>
+    <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanna Ziesche et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Robots often rely on a repertoire of previously-learned motion policies for performing tasks of diverse complexities. When facing unseen task conditions or when new task requirements arise, robots must adapt their motion policies accordingly. In this context, policy optimization is the \emph{de facto} paradigm to adapt robot policies as a function of task-specific objectives. Most commonly-used motion policies carry particular structures that are often overlooked in policy optimization algorithms. We instead propose to leverage the structure of probabilistic policies by casting the policy optimization as an optimal transport problem. Specifically, we focus on robot motion policies that build on Gaussian mixture models (GMMs) and formulate the policy optimization as a Wassertein gradient flow over the GMMs space. This naturally allows us to constrain the policy updates via the L²-Wasserstein distance between GMMs to enhance the stability of the policy optimization process. Furthermore, we leverage the geometry of the Bures-Wasserstein manifold to optimize the Gaussian distributions of the GMM policy via Riemannian optimization. We evaluate our approach on common robotic settings: Reaching motions, collision-avoidance behaviors, and multi-goal tasks. Our results show that our method outperforms common policy optimization baselines in terms of task success rate and low-variance solutions.</p>]]></description>
+  </item>
 
   <item>
     <title>Model Fusion via Optimal Transport</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oliver Atkinson et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (IRC-safe, infrared and collinear safe) — original abstract; no AI summary.</em></p>
 <p>Anomaly detection through employing machine learning techniques has emerged as a novel powerful tool in the search for new physics beyond the Standard Model. Historically similar to the development of jet observables, theoretical consistency has not always assumed a central role in the fast development of algorithms and neural network architectures. In this work, we construct an infrared and collinear safe autoencoder based on graph neural networks by employing energy-weighted message passing. We demonstrate that whilst this approach has theoretically favourable properties, it also exhibits formidable sensitivity to non-QCD structures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced Wasserstein Variational Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-13177</link>
-    <guid isPermaLink="false">arxiv:2207.13177</guid>
-    <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingxuan Yi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Variational Inference approximates an unnormalized distribution via the minimization of Kullback-Leibler (KL) divergence. Although this divergence is efficient for computation and has been widely used in applications, it suffers from some unreasonable properties. For example, it is not a proper metric, i.e., it is non-symmetric and does not preserve the triangle inequality. On the other hand, optimal transport distances recently have shown some advantages over KL divergence. With the help of these advantages, we propose a new variational inference method by minimizing sliced Wasserstein distance, a valid metric arising from optimal transport. This sliced Wasserstein distance can be approximated simply by running MCMC but without solving any optimization problem. Our approximation also does not require a tractable density function of variational distributions so that approximating families can be amortized by generators like neural networks. Furthermore, we provide an analysis of the theoretical properties of our method. Experiments on synthetic and real data are illustrated to show the performance of the proposed method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Online Stochastic Optimization with Wasserstein Based Non-stationarity</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2012-06961</link>
-    <guid isPermaLink="false">arxiv:2012.06961</guid>
-    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiashuo Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider a general online stochastic optimization problem with multiple budget constraints over a horizon of finite time periods. In each time period, a reward function and multiple cost functions are revealed, and the decision maker needs to specify an action from a convex and compact action set to collect the reward and consume the budget. Each cost function corresponds to the consumption of one budget. In each period, the reward and cost functions are drawn from an unknown distribution, which is non-stationary across time. The objective of the decision maker is to maximize the cumulative reward subject to the budget constraints. This formulation captures a wide range of applications including online linear programming and network revenue management, among others. In this paper, we consider two settings: (i) a data-driven setting where the true distribution is unknown but a prior estimate (possibly inaccurate) is available; (ii) an uninformative setting where the true distribution is completely unknown. We propose a unified Wasserstein-distance based measure to quantify the inaccuracy of the prior estimate in setting (i) and the non-stationarity of the system in setting (ii). We show that the proposed measure leads to a necessary and sufficient condition for the attainability of a sublinear regret in both settings. For setting (i), we propose a new algorithm, which takes a primal-dual perspective and integrates the prior information of the underlying distributions into an online gradient descent procedure in the dual space. The algorithm also naturally extends to the uninformative setting (ii). Under both settings, we show the corresponding algorithm achieves a regret of optimal order. In numerical experiments, we demonstrate how the proposed algorithms can be naturally integrated with the re-solving technique to further boost the empirical performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Orthogonalization of data via Gromov-Wasserstein type feedback for clustering and visualization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-12279</link>
-    <guid isPermaLink="false">arxiv:2207.12279</guid>
-    <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Ryner et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this paper we propose an adaptive approach for clustering and visualization of data by an orthogonalization process. Starting with the data points being represented by a Markov process using the diffusion map framework, the method adaptively increase the orthogonality of the clusters by applying a feedback mechanism inspired by the Gromov-Wasserstein distance. This mechanism iteratively increases the spectral gap and refines the orthogonality of the data to achieve a clustering with high specificity. By using the diffusion map framework and representing the relation between data points using transition probabilities, the method is robust with respect to both the underlying distance, noise in the data and random initialization. We prove that the method converges globally to a unique fixpoint for certain parameter values. We also propose a related approach where the transition probabilities in the Markov process are required to be doubly stochastic, in which case the method generates a minimizer to a nonconvex optimization problem. We apply the method on cryo-electron microscopy image data from biopharmaceutical manufacturing where we can confirm biologically relevant insights related to therapeutic efficacy. We consider an example with morphological variations of gene packaging and confirm that the method produces biologically meaningful clustering results consistent with human expert classification.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SymbolNet: Neural Symbolic Regression with Adaptive Dynamic Pruning for Compression</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2401-09949</link>
+    <guid isPermaLink="false">arxiv:2401.09949</guid>
+    <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Compact symbolic expressions have been shown to be more efficient than neural network models in terms of resource consumption and inference speed when implemented on custom hardware such as FPGAs, while maintaining comparable accuracy~\cite{tsoi2023symbolic}. These capabilities are highly valuable in environments with stringent computational resource constraints, such as high-energy physics experiments at the CERN Large Hadron Collider. However, finding compact expressions for high-dimensional datasets remains challenging due to the inherent limitations of genetic programming, the search algorithm of most symbolic regression methods. Contrary to genetic programming, the neural network approach to symbolic regression offers scalability to high-dimensional inputs and leverages gradient methods for faster equation searching. Common ways of constraining expression complexity often involve multistage pruning with fine-tuning, which can result in significant performance loss. In this work, we propose SymbolNet, a neural network approach to symbolic regression specifically designed as a model compression technique, aimed at enabling low-latency inference for high-dimensional inputs on custom hardware such as FPGAs. This framework allows dynamic pruning of model weights, input features, and mathematical operators in a single training process, where both training loss and expression complexity are optimized simultaneously. We introduce a sparsity regularization term for each pruning type, which can adaptively adjust its strength, leading to convergence at a target sparsity ratio. Unlike most existing symbolic regression methods that struggle with datasets containing more than 𝒪(10) inputs, we demonstrate the effectiveness of our model on the LHC jet tagging task (16 inputs), MNIST (784 inputs), and SVHN (3072 inputs).</p>]]></description>
+  </item>
+
+  <item>
+    <title>Analysis of Measurements of the Magnetic Flux Density in Steel Blocks of the Compact Muon Solenoid Magnet Yoke with Solenoid Coil Fast Discharges</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2501-01357</link>
+    <guid isPermaLink="false">arxiv:2501.01357</guid>
+    <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vyacheslav Klyukhin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The Compact Muon Solenoid (CMS) detector at the Large Hadron Collider at CERN is used to study the production of new particles in proton-proton collisions at a center of mass energy of 13.6 TeV. The detector includes a magnet based on a 6 m diameter superconducting coil operating at a current of 18.164 kA. This current creates a central magnetic flux density of 3.8 T that allows for the high-precision measurement of the momenta of the produced charged particles using tracking and muon subdetectors. The CMS magnet contains a 10,000 ton flux-return yoke made from the construction steel blocks. These blocks are magnetized, with the coil returned magnetic flux and wrap the muons escaping the hadronic calorimeters. To describe the distribution of the magnetic flux in the magnet yoke layers, a three-dimensional computer model of the CMS magnet is used. To validate the calculations, special measurements are performed, with the flux loops wound in 22 cross-sections of the flux-return yoke blocks. The measured voltages induced in the flux loops during the CMS magnet current variations, are integrated over time to obtain the initial magnetic flux densities in the flux loop cross-sections. In the last time, three fast discharges occurred during the standard ramp-downs of the magnet. This allows us to single out the contributions of the eddy currents, induced in steel, to the flux loop voltages. Accounting for these contributions to the flux loop measurements during intentionally triggered fast discharges in 2006 allows us to perform the validation of the CMS magnet computer model with better precision. The technique for the flux loop measurements and the obtained results are presented and discussed. The method for measuring magnetic flux density in steel blocks described in this study is innovative.</p>]]></description>
+  </item>
 
   <item>
     <title>Preliminary results on the long term operation of RPCs with eco-friendly gas mixtures under irradiation at the CERN Gamma Irradiation Facility</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sioni Summers et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet reconstruction, particle flow, jet constituents, jet tagging) — original abstract; no AI summary.</em></p>
 <p>The Phase-2 Upgrade of the CMS Level-1 Trigger (L1T) will reconstruct particles using the Particle Flow algorithm, connecting information from the tracker, muon, and calorimeter detectors, and enabling fine-grained reconstruction of high level physics objects like jets. We have developed a jet reconstruction algorithm using a cone centred on an energetic seed from these Particle Flow candidates. The implementation is designed to find up to 16 jets in each Xilinx Ultrascale+ FPGA, with a latency of less than 1 μs, and event throughput of 6.7 MHz to fit within the L1T system constraints. Pipelined processing enables reconstruction of jet collections with different cone sizes for little additional resource cost. The design of the algorithm also provides a platform for additional computation using the jet constituents, such as jet tagging using neural networks. We will describe the implementation, its jet reconstruction performance, computational metrics, and the developments towards jet tagging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>STCF Conceptual Design Report: Volume 1 -- Physics &amp; Detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2303-15790</link>
-    <guid isPermaLink="false">arxiv:2303.15790</guid>
-    <pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Achasov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The Super τ-Charm facility (STCF) is an electron-positron collider proposed by the Chinese particle physics community. It is designed to operate in a center-of-mass energy range from 2 to 7 GeV with a peak luminosity of 0.5×10³⁵cm⁻²s⁻¹ or higher. The STCF will produce a data sample about a factor of 100 larger than that by the present τ-Charm factory &ndash; the BEPCII, providing a unique platform for exploring the asymmetry of matter-antimatter (charge-parity violation), in-depth studies of the internal structure of hadrons and the nature of non-perturbative strong interactions, as well as searching for exotic hadrons and physics beyond the Standard Model. The STCF project in China is under development with an extensive R\&amp;D program. This document presents the physics opportunities at the STCF, describes conceptual designs of the STCF detector system, and discusses future plans for detector R\&amp;D and physics case studies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neutron Radiation induced Effects in 4H-SiC PiN Diodes</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2310-02047</link>
-    <guid isPermaLink="false">arxiv:2310.02047</guid>
-    <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Gsponer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>Silicon carbide (SiC) is a wide band gap semiconductor and an attractive candidate for applications in harsh environments such as space, fusion, or future high luminosity colliders. Due to the large band gap, the leakage currents in SiC devices are extremely small, even after irradiation to very high fluences, enabling operation without cooling and at high temperatures. This study investigates the effect of neutron irradiation on 50μm p-n 4H-SiC diodes using current-voltage, capacitance-voltage, and charge collection efficiency (CCE) measurements up to neutron fluences of 1×10¹⁶ n_eq/cm². The leakage currents of the investigated devices remained extremely small, below 10 pA at 1.1 kV reverse bias. In the forward bias, a remarkable drop of the current was observed, which was attributed to an increased epi resistivity due to compensation of the epi layer doping by deep-level defects. The CCE was evaluated for alpha particles from a radioactive source, a 62.4 MeV proton beam at the MedAustron ion therapy center and using UV-TCT. The charge collection efficiency in reverse bias was shown to scale directly with the 1 MeV equivalent fluence Φ_eq as CCE ∝Φ_eq⁻⁰.63±0.01. A CCE better than 50% was able to be obtained for fluences up to 1 ×10¹⁵ n_eq/cm². Because of the low currents in the forward direction, particle detection was also possible in forward bias, where the CCE was found to be increased relative to reverse bias. Furthermore, a significant dependency on the amount of injected charge was observed, with the CCE surpassing 100% in alpha and UV-TCT measurements, requiring further systematic investigation.</p>]]></description>
   </item>
 
 </channel>

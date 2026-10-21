@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Stochastic variance-reduced Gaussian variational inference on the Bures-Wasserstein manifold</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-02490</link>
+    <guid isPermaLink="false">arxiv:2410.02490</guid>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang Phuc Hau Luu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimization in the Bures-Wasserstein space has been gaining popularity in the machine learning community since it draws connections between variational inference and Wasserstein gradient flows. The variational inference objective function of Kullback-Leibler divergence can be written as the sum of the negative entropy and the potential energy, making forward-backward Euler the method of choice. Notably, the backward step admits a closed-form solution in this case, facilitating the practicality of the scheme. However, the forward step is not exact since the Bures-Wasserstein gradient of the potential energy involves &ldquo;intractable&rdquo; expectations. Recent approaches propose using the Monte Carlo method &ndash; in practice a single-sample estimator &ndash; to approximate these terms, resulting in high variance and poor performance. We propose a novel variance-reduced estimator based on the principle of control variates. We theoretically show that this estimator has a smaller variance than the Monte-Carlo estimator in scenarios of interest. We also prove that variance reduction helps improve the optimization bounds of the current analysis. We demonstrate that the proposed estimator gains order-of-magnitude improvements over the previous Bures-Wasserstein methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Fused Gromov-Wasserstein Approach to Subgraph Contrastive Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-20885</link>
+    <guid isPermaLink="false">arxiv:2502.20885</guid>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amadou S. Sangare et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Self-supervised learning has become a key method for training deep learning models when labeled data is scarce or unavailable. While graph machine learning holds great promise across various domains, the design of effective pretext tasks for self-supervised graph representation learning remains challenging. Contrastive learning, a popular approach in graph self-supervised learning, leverages positive and negative pairs to compute a contrastive loss function. However, current graph contrastive learning methods often struggle to fully use structural patterns and node similarities. To address these issues, we present a new method called Fused Gromov Wasserstein Subgraph Contrastive Learning (FOSSIL). Our model integrates node-level and subgraph-level contrastive learning, seamlessly combining a standard node-level contrastive loss with the Fused Gromov-Wasserstein distance. This combination helps our method capture both node features and graph structure together. Importantly, our approach works well with both homophilic and heterophilic graphs and can dynamically create views for generating positive and negative pairs. Through extensive experiments on benchmark graph datasets, we show that FOSSIL outperforms or achieves competitive performance compared to current state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distances, Neuronal Entanglement, and Sparsity</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-15756</link>
+    <guid isPermaLink="false">arxiv:2405.15756</guid>
+    <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shashata Sawmya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Disentangling polysemantic neurons is at the core of many current approaches to interpretability of large language models. Here we attempt to study how disentanglement can be used to understand performance, particularly under weight sparsity, a leading post-training optimization technique. We suggest a novel measure for estimating neuronal entanglement: the Wasserstein distance of a neuron&rsquo;s output distribution to a Gaussian. Moreover, we show the existence of a small number of highly entangled &ldquo;Wasserstein Neurons&rdquo; in each linear layer of an LLM, characterized by their highly non-Gaussian output distributions, their role in mapping similar inputs to dissimilar outputs, and their significant impact on model accuracy. To study these phenomena, we propose a new experimental framework for disentangling polysemantic neurons. Our framework separates each layer&rsquo;s inputs to create a mixture of experts where each neuron&rsquo;s output is computed by a mixture of neurons of lower Wasserstein distance, each better at maintaining accuracy when sparsified without retraining. We provide strong evidence that this is because the mixture of sparse experts is effectively disentangling the input-output relationship of individual neurons, in particular the difficult Wasserstein neurons.</p>]]></description>
+  </item>
 
   <item>
     <title>Partially Observed Trajectory Inference using Optimal Transport and a Dynamics Prior</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Athina Sotiropoulou et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal Transport (OT) has recently emerged as a powerful framework for learning minimal-displacement maps between distributions. The predominant approach involves a neural parametrization of the Monge formulation of OT, typically assuming the same space for both distributions. However, the setting across ``incomparable spaces&rsquo;&rsquo; (e.g., of different dimensionality), corresponding to the Gromov- Wasserstein distance, remains underexplored, with existing methods often imposing restrictive assumptions on the cost function. In this paper, we present a novel neural formulation of the Gromov-Monge (GM) problem rooted in one of its fundamental properties: invariance to strong isomorphisms. We operationalize this property by decomposing the learnable OT map into two components: (i) an approximate strong isomorphism between the source distribution and an intermediate reference distribution, and (ii) a GM-optimal map between this reference and the target distribution. Our formulation leverages and extends the Monge gap regularizer of Uscidda &amp; Cuturi (2023) to eliminate the need for complex architectural requirements of other neural OT methods, yielding a simple but practical method that enjoys favorable theoretical guarantees. Our preliminary empirical results show that our framework provides a promising approach to learn OT maps across diverse spaces.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2309-06782</link>
-    <guid isPermaLink="false">arxiv:2309.06782</guid>
-    <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joosep Pata et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle-flow, Large Hadron Collider, collider, colliders) — original abstract; no AI summary.</em></p>
-<p>Efficient and accurate algorithms are necessary to reconstruct particles in the highly granular detectors anticipated at the High-Luminosity Large Hadron Collider and the Future Circular Collider. We study scalable machine learning models for event reconstruction in electron-positron collisions based on a full detector simulation. Particle-flow reconstruction can be formulated as a supervised learning task using tracks and calorimeter clusters. We compare a graph neural network and kernel-based transformer and demonstrate that we can avoid quadratic operations while achieving realistic reconstruction. We show that hyperparameter tuning significantly improves the performance of the models. The best graph neural network model shows improvement in the jet transverse momentum resolution by up to 50% compared to the rule-based algorithm. The resulting model is portable across Nvidia, AMD and Habana hardware. Accurate and fast machine-learning based reconstruction can significantly improve future measurements at colliders.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Particle Multi-Axis Transformer for Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-06638</link>
-    <guid isPermaLink="false">arxiv:2406.06638</guid>
-    <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Usman et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, ParticleNet, particle transformer) — original abstract; no AI summary.</em></p>
-<p>Jet tagging is an essential categorization problem in high energy physics. In recent times, Deep Learning has not only risen to the challenge of jet tagging but also significantly improved its performance. In this article, we proposed an idea of a new architecture, Particle Multi-Axis transformer (ParMAT) which is a modified version of Particle transformer (ParT). ParMAT contains local and global spatial interactions within a single unit which improves its ability to handle various input lengths. We trained our model on JETCLASS, a publicly available large dataset that contains 100M jets of 10 different classes of particles. By integrating a parallel attention mechanism and pairwise interactions of particles in the attention mechanism, ParMAT achieves robustness and higher accuracy over the ParT and ParticleNet. The scalability of the model to huge datasets and its ability to automatically extract essential features demonstrate its potential for enhancing jet tagging.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dataset Dictionary Learning in a Wasserstein Space for Federated Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-11647</link>
-    <guid isPermaLink="false">arxiv:2407.11647</guid>
-    <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Multi-Source Domain Adaptation (MSDA) is a challenging scenario where multiple related and heterogeneous source datasets must be adapted to an unlabeled target dataset. Conventional MSDA methods often overlook that data holders may have privacy concerns, hindering direct data sharing. In response, decentralized MSDA has emerged as a promising strategy to achieve adaptation without centralizing clients&rsquo; data. Our work proposes a novel approach, Decentralized Dataset Dictionary Learning, to address this challenge. Our method leverages Wasserstein barycenters to model the distributional shift across multiple clients, enabling effective adaptation while preserving data privacy. Specifically, our algorithm expresses each client&rsquo;s underlying distribution as a Wasserstein barycenter of public atoms, weighted by private barycentric coordinates. Our approach ensures that the barycentric coordinates remain undisclosed throughout the adaptation process. Extensive experimentation across five visual domain adaptation benchmarks demonstrates the superiority of our strategy over existing decentralized MSDA techniques. Moreover, our method exhibits enhanced robustness to client parallelism while maintaining relative resilience compared to conventional decentralized MSDA methodologies.</p>]]></description>
   </item>
 
 </channel>

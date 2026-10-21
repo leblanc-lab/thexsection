@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Trail-Weighted Influence Scores for Approximate Outcome Prediction in Bayesian Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2610-27366</link>
+    <guid isPermaLink="false">arxiv:2610.27366</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sahil Kumar Rajput et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>We study trail-weighted pruning of evidence for Bayesian-network prediction. A traversal enumerates the active trails from each evidence node to the outcome, scores each trail by the product of its edge strengths, and drops evidence whose score falls below a threshold. For collider-free networks (chains and forks) over binary variables, we show that the trail score equals the exact correlation between a trail&rsquo;s endpoints, that a chain and a fork with equal edge strengths have identical joint distributions, and that the pruned posterior is within a computable sum of per-trail terms of the exact posterior when each dropped trail lies in its own branch of the outcome node. We prove this bound, check it exhaustively on all small trees, and show that it fails when dropped trails share a branch. In simulations on random trees, thresholding trail scores gives 1.4 to 13 times lower error than random pruning of the same size. We also apply the score, as an unproven heuristic, to seven bnlearn networks with colliders and loops. Keeping the top half of the active evidence by trail score gives lower error than random pruning on all seven, but it is not clearly better than a mutual-information ranking, and scoring costs more than the inference it saves on six of the seven, so we show no speedup. Models trained on trail, graph and information features and tested on networks they never saw do not beat the trail score or mutual information, but trail features carry most of what they use and clearly outperform generic graph features. A bound for general networks is left to future work.</p>]]></description>
+  </item>
 
   <item>
     <title>Representation Alignment from a Few Paired Data via Distilled Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shi Qiu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>We present, to our knowledge, the first language-driven agent system capable of executing end-to-end collider phenomenology tasks, instantiated within a decoupled, domain-agnostic architecture for autonomous High-Energy Physics phenomenology. Guided only by natural-language prompts supplemented with standard physics notation, ColliderAgent carries out workflows from a theoretical Lagrangian to final phenomenological outputs without relying on package-specific code. In this framework, a hierarchical multi-agent reasoning layer is coupled to Magnus, a unified execution backend for phenomenological calculations and simulation toolchains. We validate the system on representative literature reproductions spanning leptoquark and axion-like-particle scenarios, higher-dimensional effective operators, parton-level and detector-level analyses, and large-scale parameter scans leading to exclusion limits. These results point to a route toward more automated, scalable, and reproducible research in collider physics, cosmology, and physics more broadly.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Feynman: Knowledge-Infused Diagramming Agent for Scalable Visual Designs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-12597</link>
-    <guid isPermaLink="false">arxiv:2603.12597</guid>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zixin Wen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Kyle Lee) — original abstract; no AI summary.</em></p>
-<p>Visual design is an essential application of state-of-the-art multi-modal AI systems. Improving these systems requires high-quality vision-language data at scale. Despite the abundance of internet image and text data, knowledge-rich and well-aligned image-text pairs are rare. In this paper, we present a scalable diagram generation pipeline built with our agent, Feynman. To create diagrams, Feynman first enumerates domain-specific knowledge components (&lsquo;&rsquo;ideas&rsquo;&lsquo;) and performs code planning based on the ideas. Given the plan, Feynman translates ideas into simple declarative programs and iterates to receives feedback and visually refine diagrams. Finally, the declarative programs are rendered by the Penrose diagramming system. The optimization-based rendering of Penrose preserves the visual semantics while injecting fresh randomness into the layout, thereby producing diagrams with visual consistency and diversity. As a result, Feynman can author diagrams along with grounded captions with very little cost and time. Using Feynman, we synthesized a dataset with more than 100k well-aligned diagram-caption pairs. We also curate a visual-language benchmark, Diagramma, from freshly generated data. Diagramma can be used for evaluating the visual reasoning capabilities of vision-language models. We plan to release the dataset, benchmark, and the full agent pipeline as an open-source project.</p>]]></description>
   </item>
 
 </channel>

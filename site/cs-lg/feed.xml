@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>LEAF: LUT-aware Efficient Attention on FPGAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-27078</link>
+    <guid isPermaLink="false">arxiv:2610.27078</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arianna Cox et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
+<p>We introduce Lookup-table (LUT)-aware Efficient Attention on FPGAs (LEAF). LEAF is the first nanosecond-scale LUT-aware transformer for FPGAs. Deploying transformers that are large enough to perform well, small enough to fit on an FPGA, and fast enough to meet the sub-microsecond timescales required by real-time systems such as those at CERN remains difficult, since the same attention mechanism that gives these models their high expressivity also makes them costly to implement in hardware. LEAF converts the query, key, and value projections and the final output feed-forward layer into FPGA-native layers with LUT-aware training, creating the first LUT-aware transformer and linformer layers built for ultra-low-latency inference. Attention resists LUT-aware training because it multiplies two activations where the method needs a constant weight to tabulate; LEAF tabulates the attention block&rsquo;s constant matrix-vector multiplications and leaves the rest in arithmetic form. On a standard jet tagging benchmark this improves accuracy by 1.8 percentage points while using 2.9 times fewer LUTs than the previous state-of-the-art sub-microsecond transformer at the same input size. Our most efficient LEAF-based linformer with 64 input particles reaches 80.4% classification accuracy at 28k LUTs and 35ns.</p>]]></description>
+  </item>
+
+  <item>
+    <title>This is SParTA: A modular, efficient and scalable transformer architecture for jet-tagging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-27106</link>
+    <guid isPermaLink="false">arxiv:2610.27106</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rajneil Baruah et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet constituents, jet tagging, boosted top, quark-gluon tagging, ParticleNet, particle transformer, colliders) — original abstract; no AI summary.</em></p>
+<p>We present the Sparse Particle-interaction Transformer Architecture (SParTA), a modular, scalable, and efficient transformer for jet tagging at high-energy colliders. Exploiting the steeply falling transverse-momentum (p_T) spectrum of jet constituents, SParTA factorizes constituent processing into two topological regimes. Ordered by descending p_T, only the N hardest constituents (the hard core) participate in quadratic O(N²⁾ differential interaction attention driven by pairwise physical and learned relational features. The remaining soft constituents are integrated via linear O(lN) cross-attention to the hard core, preserving soft-radiation and color-flow information while avoiding the O(l²⁾ memory bottleneck of full self-attention over all l constituents. Pairwise interaction features are computed dynamically in-network from constituent four-momenta and conditioned on global jet-level substructure observables. On the quark-gluon tagging benchmark, a 300K-parameter SParTA model achieves an AUC of 92.02% and accuracy of 85.06%, matching the 2.14M-parameter Particle Transformer (ParT) at one-seventh the parameter count and outperforming IAFormer by 21% in background rejection at 30% signal efficiency. On the boosted top-tagging benchmark, SParTA outperforms ParT and ParticleNet with 511K parameters, while we analyze the architectural trade-offs relative to fully dense multi-layer interaction networks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Trail-Weighted Influence Scores for Approximate Outcome Prediction in Bayesian Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-27366</link>
+    <guid isPermaLink="false">arxiv:2610.27366</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sahil Kumar Rajput et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
+<p>We study trail-weighted pruning of evidence for Bayesian-network prediction. A traversal enumerates the active trails from each evidence node to the outcome, scores each trail by the product of its edge strengths, and drops evidence whose score falls below a threshold. For collider-free networks (chains and forks) over binary variables, we show that the trail score equals the exact correlation between a trail&rsquo;s endpoints, that a chain and a fork with equal edge strengths have identical joint distributions, and that the pruned posterior is within a computable sum of per-trail terms of the exact posterior when each dropped trail lies in its own branch of the outcome node. We prove this bound, check it exhaustively on all small trees, and show that it fails when dropped trails share a branch. In simulations on random trees, thresholding trail scores gives 1.4 to 13 times lower error than random pruning of the same size. We also apply the score, as an unproven heuristic, to seven bnlearn networks with colliders and loops. Keeping the top half of the active evidence by trail score gives lower error than random pruning on all seven, but it is not clearly better than a mutual-information ranking, and scoring costs more than the inference it saves on six of the seven, so we show no speedup. Models trained on trail, graph and information features and tested on networks they never saw do not beat the trail score or mutual information, but trail features carry most of what they use and clearly outperform generic graph features. A bound for general networks is left to future work.</p>]]></description>
+  </item>
 
   <item>
     <title>Vertical Sliced Wasserstein Distances for Meta-Measures</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Pegoraro</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We improve and extend persistence spheres, introduced in~\cite{pegoraro2025persistence}. Persistence spheres map an integrable measure μ on the upper half-plane, including persistence diagrams (PDs) as counting measures, to a function S(μ)∈C(𝕊²⁾, and the map is stable with respect to 1-Wasserstein partial transport distance POT_1. Moreover, to the best of our knowledge, persistence spheres are the first explicit representation used in topological machine learning for which continuity of the inverse on the image is established at every compactly supported target. Recent bounded-cardinality bi-Lipschitz embedding results in partial transport spaces, despite being powerful, are not given by the kind of explicit summary map considered here. Our construction is rooted in convex geometry: for positive measures, the defining ReLU integral is the support function of the lift zonoid. Building on~\cite{pegoraro2025persistence}, we refine the definition to better match the POT_1 deletion mechanism, encoding partial transport via a signed diagonal augmentation. In particular, for integrable μ, the uniform norm between S(0) and S(μ) depends only on the persistence of μ, without any need of ad-hoc re-weightings, reflecting optimal transport to the diagonal at persistence cost. This yields a parameter-free representation at the level of measures (up to numerical discretization), while accommodating future extensions where μ is a smoothed measure derived from PDs (e.g., persistence intensity functions~\citep{wu2024estimation}). Across clustering, regression, and classification tasks involving functional data, time series, graphs, meshes, and point clouds, the updated persistence spheres are competitive and often improve upon persistence images, persistence landscapes, persistence splines, and sliced Wasserstein kernel baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SNAC-Pack 2.0: Scaled-Out Surrogate Neural Architecture Codesign</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-16138</link>
-    <guid isPermaLink="false">arxiv:2605.16138</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Weitz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Neural architecture search (NAS) is a powerful approach for automating model design, but existing methods often optimize for accuracy alone or rely on proxy metrics such as bit operations (BOPs) that correlate poorly with hardware cost. This gap is particularly large for FPGA deployment, where cost is dominated by a multi-dimensional budget of lookup tables, DSPs, flip-flops, BRAM, and latency. We present the Surrogate Neural Architecture Codesign Package (SNAC-Pack), an open-source AutoML framework for hardware-aware neural architecture codesign and end-to-end FPGA deployment. SNAC-Pack runs a multi-objective global search with Optuna and NSGA-II, loading trials to a shared SQLite store that enables parallel workers across compute nodes. A hardware surrogate model outputs per-trial resource and latency estimates, avoiding the synthesis cost that would otherwise dominate the search loop. A local search stage then applies quantization-aware training (QAT) together with iterative magnitude pruning in a combined compression loop, after which the final model is synthesized to FPGA firmware via the hls4ml Python library. A YAML configuration and an optional agentic frontend let users run the pipeline on new datasets without modifying the framework. We demonstrate SNAC-Pack on jet classification at the Large Hadron Collider and superconducting qubit readout, discovering compact Pareto-optimal architectures that either match baseline task performance while reducing FPGA resource utilization or substantially reduce hardware utilization with only modest decreases in task performance. In the qubit readout case, SNAC-Pack also reduces the design space exploration process from months of manual fine-tuning to hours of automated search.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Lightweight Foundation Model for Collider Physics with Multi-Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-27501</link>
-    <guid isPermaLink="false">arxiv:2607.27501</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liangyu Wu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>We present a lightweight approach to foundation modeling (\textbf{NEXUS}) that leverages pre-trained learning from collider physics data towards out-of-domain tasks in other scientific datasets, using a fully connected autoencoder model with approximately 3 million parameters. The model pre-trains with no supervision over a large-scale collision dataset from the Large Hadron Collider modeled by charged particle track features. Downstream tasks for collider analyses, such as kinematic regression and event classification, are developed on pre-trained model weights and achieve improved accuracy with only small labeled datasets when compared to equivalent architectures trained from scratch. The benefits of pre-training are additionally investigated through latent space interpretation and application to other domains, including gravitational waves, flood forecasting, and neural activity. Furthermore, the relative computational simplicity of NEXUS is demonstrated compared to transformer approaches at comparable scale, opening the door to power-efficient inference and real-time or edge applications of foundation models in scientific experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Keypoint-Guided Optimal Transport: Models, Algorithms, and Applications</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2303-13102</link>
-    <guid isPermaLink="false">arxiv:2303.13102</guid>
-    <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Gu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Existing Optimal Transport (OT) methods mainly derive the optimal transport plan/matching under the criterion of transport cost/distance minimization, which may cause incorrect matching in some cases. In real applications, annotating a few matched keypoints across domains is reasonable or even efortless in annotation burden. It is valuable to investigate how to leverage the annotated keypoints to guide the correct matching in OT. In this paper, we propose a novel KeyPoint-Guided model by ReLation preservation (KPG-RL)that searches for the optimal matching (i.e., transport plan) guided by the keypoints in OT.KPG-RL exploits a mask-based constraint of the transport plan to preserve the matching of keypoint pairs in transport, and guides the matching by relation of each data point to the keypoints. The KPG-RL is developed in both balanced and unbalanced/partial transport settings in Kantorovich and Gromov-Wasserstein formulations. Moreover, we deduce the dual formulation of χ²-regularized KPG-RL model, from which we learn the transport based on deep learning techniques, scaling better to larger numbers of data. With the learned transport plan, two novel neural transport strategies, named manifold barycentric projection and manifold sampling, are developed to transport source data to the target domain data manifold. As applications, we apply the proposed approach to the heterogeneous domain adaptation, multi-omic single-cell alignment, and image-to-image translation. Experiments verifed the efectiveness of our approach.</p>]]></description>
   </item>
 
 </channel>

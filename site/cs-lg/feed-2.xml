@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SNAC-Pack 2.0: Scaled-Out Surrogate Neural Architecture Codesign</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-16138</link>
+    <guid isPermaLink="false">arxiv:2605.16138</guid>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Weitz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>Neural architecture search (NAS) is a powerful approach for automating model design, but existing methods often optimize for accuracy alone or rely on proxy metrics such as bit operations (BOPs) that correlate poorly with hardware cost. This gap is particularly large for FPGA deployment, where cost is dominated by a multi-dimensional budget of lookup tables, DSPs, flip-flops, BRAM, and latency. We present the Surrogate Neural Architecture Codesign Package (SNAC-Pack), an open-source AutoML framework for hardware-aware neural architecture codesign and end-to-end FPGA deployment. SNAC-Pack runs a multi-objective global search with Optuna and NSGA-II, loading trials to a shared SQLite store that enables parallel workers across compute nodes. A hardware surrogate model outputs per-trial resource and latency estimates, avoiding the synthesis cost that would otherwise dominate the search loop. A local search stage then applies quantization-aware training (QAT) together with iterative magnitude pruning in a combined compression loop, after which the final model is synthesized to FPGA firmware via the hls4ml Python library. A YAML configuration and an optional agentic frontend let users run the pipeline on new datasets without modifying the framework. We demonstrate SNAC-Pack on jet classification at the Large Hadron Collider and superconducting qubit readout, discovering compact Pareto-optimal architectures that either match baseline task performance while reducing FPGA resource utilization or substantially reduce hardware utilization with only modest decreases in task performance. In the qubit readout case, SNAC-Pack also reduces the design space exploration process from months of manual fine-tuning to hours of automated search.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Lightweight Foundation Model for Collider Physics with Multi-Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-27501</link>
+    <guid isPermaLink="false">arxiv:2607.27501</guid>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liangyu Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>We present a lightweight approach to foundation modeling (\textbf{NEXUS}) that leverages pre-trained learning from collider physics data towards out-of-domain tasks in other scientific datasets, using a fully connected autoencoder model with approximately 3 million parameters. The model pre-trains with no supervision over a large-scale collision dataset from the Large Hadron Collider modeled by charged particle track features. Downstream tasks for collider analyses, such as kinematic regression and event classification, are developed on pre-trained model weights and achieve improved accuracy with only small labeled datasets when compared to equivalent architectures trained from scratch. The benefits of pre-training are additionally investigated through latent space interpretation and application to other domains, including gravitational waves, flood forecasting, and neural activity. Furthermore, the relative computational simplicity of NEXUS is demonstrated compared to transformer approaches at comparable scale, opening the door to power-efficient inference and real-time or edge applications of foundation models in scientific experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Keypoint-Guided Optimal Transport: Models, Algorithms, and Applications</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2303-13102</link>
+    <guid isPermaLink="false">arxiv:2303.13102</guid>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Gu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Existing Optimal Transport (OT) methods mainly derive the optimal transport plan/matching under the criterion of transport cost/distance minimization, which may cause incorrect matching in some cases. In real applications, annotating a few matched keypoints across domains is reasonable or even efortless in annotation burden. It is valuable to investigate how to leverage the annotated keypoints to guide the correct matching in OT. In this paper, we propose a novel KeyPoint-Guided model by ReLation preservation (KPG-RL)that searches for the optimal matching (i.e., transport plan) guided by the keypoints in OT.KPG-RL exploits a mask-based constraint of the transport plan to preserve the matching of keypoint pairs in transport, and guides the matching by relation of each data point to the keypoints. The KPG-RL is developed in both balanced and unbalanced/partial transport settings in Kantorovich and Gromov-Wasserstein formulations. Moreover, we deduce the dual formulation of χ²-regularized KPG-RL model, from which we learn the transport based on deep learning techniques, scaling better to larger numbers of data. With the learned transport plan, two novel neural transport strategies, named manifold barycentric projection and manifold sampling, are developed to transport source data to the target domain data manifold. As applications, we apply the proposed approach to the heterogeneous domain adaptation, multi-omic single-cell alignment, and image-to-image translation. Experiments verifed the efectiveness of our approach.</p>]]></description>
+  </item>
 
   <item>
     <title>Emotion Collider: Dual Hyperbolic Mirror Manifolds for Sentiment Recovery via Anti Emotion Reflection</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Wehenkel et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size &ndash; a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generalized Wasserstein Flow Matching: Transport Plans, Everywhere, All at Once</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08424</link>
-    <guid isPermaLink="false">arxiv:2605.08424</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Moritz Piening et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Flow matching has recently emerged as a flexible and efficient framework for generative modelling by learning deterministic transport dynamics between probability measures. In this work, we extend flow matching to the space of probability measures over probability measures, introducing a Wasserstein-on-Wasserstein (WoW) formulation. Leveraging the nested Wasserstein geometry, we show that measures over transport plans naturally induce velocity fields that realize metameasure flows. This yields a principled generalization of Wasserstein flow matching via coupled outer and inner transport plans. To address the substantial computational cost of WoW transport, we propose scalable approximations based on sliced and linear Wasserstein distances, enabling efficient training while promoting numerically stable, near-straight trajectories. Our framework unifies and extends existing approaches to point cloud and set generation, providing a practical and theoretically grounded method for generative modelling in WoW spaces.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sinkhorn Treatment Effects: A Causal Optimal Transport Measure</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08485</link>
-    <guid isPermaLink="false">arxiv:2605.08485</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Medha Agarwal et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We introduce the Sinkhorn treatment effect, an entropic optimal transport measure of divergence between counterfactual distributions. Unlike classical quantities such as the average treatment effect, this measure captures differences across entire distributions. We analyze this divergence as a statistical functional and show it can be written as a smooth transformation of counterfactual mean embeddings with an appropriate kernel. This characterization allows us to establish first-order pathwise differentiability in general, and second-order pathwise differentiability under the null hypothesis of equal counterfactual distributions. Leveraging this smoothness, we construct debiased estimators and use them to obtain asymptotically valid tests for distributional treatment effects with a fixed entropic regularization parameter. Because the power of the test depends on this unknown parameter, we further propose an aggregated test that combines evidence across a grid of regularization choices. Experiments on simulated and image data demonstrate the practical advantages of our estimator and testing procedure.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced Inner Product Gromov-Wasserstein Distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08546</link>
-    <guid isPermaLink="false">arxiv:2605.08546</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaoyun Gong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) problem provides a framework for aligning heterogeneous datasets by matching their intrinsic geometry, but its statistical and computational scaling remains an issue for high-dimensional problems. Slicing techniques offer an appealing route to scalability, but, unlike Wasserstein distances, GW problems do not generally admit closed-form solutions in one-dimension. We resolve this problem for the GW problem with inner product cost (IGW), propose a sliced IGW distance that enjoys a natural rotational invariance property, and comprehensively study its structural and computational properties. Numerical experiments validating our theory are presented, followed by applications to heterogeneous clustering of text data and language model representation comparison.</p>]]></description>
   </item>
 
 </channel>
