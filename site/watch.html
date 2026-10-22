@@ -39,6 +39,28 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Thursday, October 22, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261029439-how-far-can-foundation-models-be-distilled-for-efficient-jet-tagging-jay-agarwal-et-al"><a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a> — How Far Can Foundation Models Be Distilled for Efficient Jet Tagging? (Jay Agarwal et al.)</h3>
+<p>This is a controlled distillation scan on the top-tagging benchmark. Six teachers (ParT, MIParT, L-GATr, L-GATr-slim, OmniLearned-S, JetClass-pretrained ParT-f.t.) are each distilled into five ~200k-parameter students, with standard Hinton KD and fixed α=0.7, T=2 for every pair. All 30 pairs improve AUC and R50. The mean R50 gain rises with teacher strength, from 9% (ParT teacher) to 40% (ParT-f.t.), independent of shared symmetry or architecture. The Lorentz-equivariant students learn more from non-equivariant ParT-f.t. than from L-GATr. To separate pretraining from strength, they use an L-GATr-slim ensemble trained from scratch, which matches OmniLearned-S in AUC; its students do about as well. This undercuts the pretraining attribution in the closest prior work (Benyas et al., OmniLearned-L → Deep Sets+GNN).</p>
+<p>The scaling results are the headline:
+- <strong>20k L-GATr-slim</strong> distilled from ParT-f.t. reaches AUC 0.98729, R50 596±38, R30 2517±122. That beats every from-scratch tagger in their comparison at 5.7 MFLOP/jet, versus 197–1868 for the teachers.
+- <strong>1.8k L-GATr-slim</strong> matches ParT&rsquo;s AUC (0.98567 vs 0.98571) and exceeds its R30 (1872 vs 1586).
+- <strong>181k L-GATr-slim</strong> matches ParT-f.t. (AUC 0.98772) at about 1/7 the FLOPs and roughly 2× GPU throughput.
+- <strong>1.2k Transformer</strong> gains nothing from any teacher, a capacity-gap floor that the equivariant architecture avoids.</p>
+<p>The inference-cost benchmark shows pair features dominate cost at fixed parameter count. The ParT and MIParT students run at 26k and 12k jets/s on GPU, versus 70k for the plain Transformer. Students also inherit teacher-specific false positives, and for the least-confident top jets distillation pulls students toward teacher errors.</p>
+<p>Caveats:
+- Only one binary benchmark and one untuned loss.
+- Reproduced teachers fall somewhat below published values (ParT-f.t. R50 644 vs 691). The LorentzNet baseline is notably weak (413 vs 498 published).
+- The depth study uses single runs, and three teachers&rsquo; students come from one teacher seed.
+- All timings are FP32. TF32 visibly degrades small L-GATr-slim models, because Minkowski products of collinear momenta are precision-sensitive. That matters for deployment and quantization.
+- CPU latency barely scales with size. Deep Sets+GNN (quoted from its published performance) remains the fastest model on CPU.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Wednesday, October 21, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -1533,7 +1555,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-21 05:46 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-22 05:32 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

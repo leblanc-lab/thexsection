@@ -7,7 +7,28 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>How Far Can Foundation Models Be Distilled for Efficient Jet Tagging?</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-29439</link>
+    <guid isPermaLink="false">arxiv:2610.29439</guid>
+    <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jay Agarwal et al.</dc:creator>
+    <description><![CDATA[<p>This is a controlled distillation scan on the top-tagging benchmark. Six teachers (ParT, MIParT, L-GATr, L-GATr-slim, OmniLearned-S, JetClass-pretrained ParT-f.t.) are each distilled into five ~200k-parameter students, with standard Hinton KD and fixed α=0.7, T=2 for every pair. All 30 pairs improve AUC and R50. The mean R50 gain rises with teacher strength, from 9% (ParT teacher) to 40% (ParT-f.t.), independent of shared symmetry or architecture. The Lorentz-equivariant students learn more from non-equivariant ParT-f.t. than from L-GATr. To separate pretraining from strength, they use an L-GATr-slim ensemble trained from scratch, which matches OmniLearned-S in AUC; its students do about as well. This undercuts the pretraining attribution in the closest prior work (Benyas et al., OmniLearned-L → Deep Sets+GNN).</p>
+<p>The scaling results are the headline:
+- <strong>20k L-GATr-slim</strong> distilled from ParT-f.t. reaches AUC 0.98729, R50 596±38, R30 2517±122. That beats every from-scratch tagger in their comparison at 5.7 MFLOP/jet, versus 197–1868 for the teachers.
+- <strong>1.8k L-GATr-slim</strong> matches ParT&rsquo;s AUC (0.98567 vs 0.98571) and exceeds its R30 (1872 vs 1586).
+- <strong>181k L-GATr-slim</strong> matches ParT-f.t. (AUC 0.98772) at about 1/7 the FLOPs and roughly 2× GPU throughput.
+- <strong>1.2k Transformer</strong> gains nothing from any teacher, a capacity-gap floor that the equivariant architecture avoids.</p>
+<p>The inference-cost benchmark shows pair features dominate cost at fixed parameter count. The ParT and MIParT students run at 26k and 12k jets/s on GPU, versus 70k for the plain Transformer. Students also inherit teacher-specific false positives, and for the least-confident top jets distillation pulls students toward teacher errors.</p>
+<p>Caveats:
+- Only one binary benchmark and one untuned loss.
+- Reproduced teachers fall somewhat below published values (ParT-f.t. R50 644 vs 691). The LorentzNet baseline is notably weak (413 vs 498 published).
+- The depth study uses single runs, and three teachers&rsquo; students come from one teacher seed.
+- All timings are FP32. TF32 visibly degrades small L-GATr-slim models, because Minkowski products of collinear momenta are precision-sensitive. That matters for deployment and quantization.
+- CPU latency barely scales with size. Deep Sets+GNN (quoted from its published performance) remains the fastest model on CPU.</p>]]></description>
+  </item>
 
   <item>
     <title>Ceci n'est pas un tagger: can an LLM flavour-tag a jet?</title>
@@ -2708,16 +2729,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marvin Schnubel et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet function) — abstract only, not yet read for a briefing.</em></p>
 <p>Individual multi-loop diagrams for the massive Sudakov form factor contain an infinite tower of ultra-collinear momentum regions. We show that, for the on-shell form factor in QCD, these contributions cancel to all orders as a consequence of gauge invariance, so the leading-power SCET_II factorization formula is unchanged. Using the η rapidity regulator, we compute the soft function and the massive jet function of the quark and gluon Sudakov form factors through two loops and resum logarithms at NNLL accuracy, including hierarchies of fermion masses. We also show that with a gauge-boson mass regulator, the infinite tower of modes is truncated and ultra-collinear and ultra-soft modes become manifest and factorize explicitly, providing a direct EFT derivation of the regulated infrared dependence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Searching for New Physics Inside Jets with the Herwig 7 Generalised Parton Shower</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-00617</link>
-    <guid isPermaLink="false">arxiv:2604.00617</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taehee Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure) — abstract only, not yet read for a briefing.</em></p>
-<p>This study investigates parton shower evolution incorporating both Standard Model (SM) and beyond-the-Standard-Model (BSM) radiation, focusing on the phenomenology of a massive Z&rsquo; boson. While traditional approaches typically assume direct Z&rsquo; production in the hard process, the possibility of Z&rsquo; production within jets, enabled by subsequent emissions in the parton shower, offers a complementary opportunity to probe new physics through jet substructure and event topology. The newly developed Herwig 7 framework supporting BSM parton showers enables efficient simulation of Z&rsquo; production in the logarithmically enhanced regime. Using a simple BSM benchmark, the minimal U(1)_B-L extension of the SM, the interplay between the SM and BSM showers is evaluated to identify kinematic features that distinguish Z&rsquo;-induced jets from conventional signatures. BSM-radiation signatures are contrasted with SM backgrounds such as QCD, top-quark, and Drell-Yan production, identifying potential discriminants for experimental searches. Experimental sensitivity at the LHC and prospective future colliders is estimated via statistical-significance projections. We find that Z&rsquo; bosons produced through parton shower radiation populate non-isolated regions inside jets, providing an avenue for new-physics searches overlooked in traditional analyses.</p>]]></description>
   </item>
 
 </channel>
