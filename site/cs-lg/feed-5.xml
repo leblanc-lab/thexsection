@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>HFedATM: Hierarchical Federated Domain Generalization via Optimal Transport and Regularized Mean Aggregation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-05135</link>
+    <guid isPermaLink="false">arxiv:2508.05135</guid>
+    <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thinh Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Federated Learning (FL) is a decentralized approach where multiple clients collaboratively train a shared global model without sharing their raw data. Despite its effectiveness, conventional FL faces scalability challenges due to excessive computational and communication demands placed on a single central server as the number of participating devices grows. Hierarchical Federated Learning (HFL) addresses these issues by distributing model aggregation tasks across intermediate nodes (stations), thereby enhancing system scalability and robustness against single points of failure. However, HFL still suffers from a critical yet often overlooked limitation: domain shift, where data distributions vary significantly across different clients and stations, reducing model performance on unseen target domains. While Federated Domain Generalization (FedDG) methods have emerged to improve robustness to domain shifts, their integration into HFL frameworks remains largely unexplored. In this paper, we formally introduce Hierarchical Federated Domain Generalization (HFedDG), a novel scenario designed to investigate domain shift within hierarchical architectures. Specifically, we propose HFedATM, a hierarchical aggregation method that first aligns the convolutional filters of models from different stations through Filter-wise Optimal Transport Alignment and subsequently merges aligned models using a Shrinkage-aware Regularized Mean Aggregation. Our extensive experimental evaluations demonstrate that HFedATM significantly boosts the performance of existing FedDG baselines across multiple datasets and maintains computational and communication efficiency. Moreover, theoretical analyses indicate that HFedATM achieves tighter generalization error bounds compared to standard hierarchical averaging, resulting in faster convergence and stable training behavior.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Group Causal Policy Optimization for Post-Training Large Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-05428</link>
+    <guid isPermaLink="false">arxiv:2508.05428</guid>
+    <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziyin Gu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Recent advances in large language models (LLMs) have broadened their applicability across diverse tasks, yet specialized domains still require targeted post training. Among existing methods, Group Relative Policy Optimization (GRPO) stands out for its efficiency, leveraging groupwise relative rewards while avoiding costly value function learning. However, GRPO treats candidate responses as independent, overlooking semantic interactions such as complementarity and contradiction. To address this challenge, we first introduce a Structural Causal Model (SCM) that reveals hidden dependencies among candidate responses induced by conditioning on a final integrated output forming a collider structure. Then, our causal analysis leads to two insights: (1) projecting responses onto a causally informed subspace improves prediction quality, and (2) this projection yields a better baseline than query only conditioning. Building on these insights, we propose Group Causal Policy Optimization (GCPO), which integrates causal structure into optimization through two key components: a causally informed reward adjustment and a novel KL regularization term that aligns the policy with a causally projected reference distribution. Comprehensive experimental evaluations demonstrate that GCPO consistently surpasses existing methods, including GRPO across multiple reasoning benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Bootstrap Deep Spectral Clustering with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-04200</link>
+    <guid isPermaLink="false">arxiv:2508.04200</guid>
+    <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wengang Guo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Spectral clustering is a leading clustering method. Two of its major shortcomings are the disjoint optimization process and the limited representation capacity. To address these issues, we propose a deep spectral clustering model (named BootSC), which jointly learns all stages of spectral clustering &ndash; affinity matrix construction, spectral embedding, and k-means clustering &ndash; using a single network in an end-to-end manner. BootSC leverages effective and efficient optimal-transport-derived supervision to bootstrap the affinity matrix and the cluster assignment matrix. Moreover, a semantically-consistent orthogonal re-parameterization technique is introduced to orthogonalize spectral embeddings, significantly enhancing the discrimination capability. Experimental results indicate that BootSC achieves state-of-the-art clustering performance. For example, it accomplishes a notable 16\% NMI improvement over the runner-up method on the challenging ImageNet-Dogs dataset. Our code is available at https://github.com/spdj2271/BootSC.</p>]]></description>
+  </item>
 
   <item>
     <title>Metric Learning in an RKHS</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luis Vitor Zerkowski et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
 <p>Dancing in a duet often requires a heightened attunement to one&rsquo;s partner: their orientation in space, their momentum, and the forces they exert on you. Dance artists who work in partnered settings might have a strong embodied understanding in the moment of how their movements relate to their partner&rsquo;s, but typical documentation of dance fails to capture these varied and subtle relationships. Working closely with dance artists interested in deepening their understanding of partnering, we leverage Graph Neural Networks (GNNs) to highlight and interpret the intricate connections shared by two dancers. Using a video-to-3D-pose extraction pipeline, we extract 3D movements from curated videos of contemporary dance duets, apply a dedicated pre-processing to improve the reconstruction, and train a GNN to predict weighted connections between the dancers. By visualizing and interpreting the predicted relationships between the two movers, we demonstrate the potential for graph-based methods to construct alternate models of the collaborative dynamics of duets. Finally, we offer some example strategies for how to use these insights to inform a generative and co-creative studio practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Meta Flow Matching: Integrating Vector Fields on the Wasserstein Manifold</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-14608</link>
-    <guid isPermaLink="false">arxiv:2408.14608</guid>
-    <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lazar Atanackovic et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depend on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrate along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions, unlike previously proposed methods. We demonstrate the ability of MFM to improve the prediction of individual treatment responses on a large-scale multi-patient single-cell drug screen dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Accelerating 3D Molecule Generation via Jointly Geometric Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-15252</link>
-    <guid isPermaLink="false">arxiv:2405.15252</guid>
-    <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haokai Hong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper proposes a new 3D molecule generation framework, called GOAT, for fast and effective 3D molecule generation based on the flow-matching optimal transport objective. Specifically, we formulate a geometric transport formula for measuring the cost of mapping multi-modal features (e.g., continuous atom coordinates and categorical atom types) between a base distribution and a target data distribution. Our formula is solved within a joint, equivariant, and smooth representation space. This is achieved by transforming the multi-modal features into a continuous latent space with equivariant networks. In addition, we find that identifying optimal distributional coupling is necessary for fast and effective transport between any two distributions. We further propose a mechanism for estimating and purifying optimal coupling to train the flow model with optimal transport. By doing so, GOAT can turn arbitrary distribution couplings into new deterministic couplings, leading to an estimated optimal transport plan for fast 3D molecule generation. The purification filters out the subpar molecules to ensure the ultimate generation quality. We theoretically and empirically prove that the proposed optimal coupling estimation and purification yield transport plan with non-increasing cost. Finally, extensive experiments show that GOAT enjoys the efficiency of solving geometric optimal transport, leading to a double speedup compared to the sub-optimal method while achieving the best generation quality regarding validity, uniqueness, and novelty. The code is available at https://github.com/WanyuGroup/ICLR2025-GOAT.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Discrete Diffusion Schrödinger Bridge Matching for Graph Transformation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-01500</link>
-    <guid isPermaLink="false">arxiv:2410.01500</guid>
-    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Hyeong Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Transporting between arbitrary distributions is a fundamental goal in generative modeling. Recently proposed diffusion bridge models provide a potential solution, but they rely on a joint distribution that is difficult to obtain in practice. Furthermore, formulations based on continuous domains limit their applicability to discrete domains such as graphs. To overcome these limitations, we propose Discrete Diffusion Schrödinger Bridge Matching (DDSBM), a novel framework that utilizes continuous-time Markov chains to solve the SB problem in a high-dimensional discrete state space. Our approach extends Iterative Markovian Fitting to discrete domains, and we have proved its convergence to the SB. Furthermore, we adapt our framework for the graph transformation, and show that our design choice of underlying dynamics characterized by independent modifications of nodes and edges can be interpreted as the entropy-regularized version of optimal transport with a cost function described by the graph edit distance. To demonstrate the effectiveness of our framework, we have applied DDSBM to molecular optimization in the field of chemistry. Experimental results demonstrate that DDSBM effectively optimizes molecules&rsquo; property-of-interest with minimal graph transformation, successfully retaining other features. Source code is available \href{https://github.com/junhkim1226/DDSBM}{here}.</p>]]></description>
   </item>
 
 </channel>

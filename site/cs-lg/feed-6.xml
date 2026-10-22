@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Meta Flow Matching: Integrating Vector Fields on the Wasserstein Manifold</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2408-14608</link>
+    <guid isPermaLink="false">arxiv:2408.14608</guid>
+    <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lazar Atanackovic et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depend on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrate along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions, unlike previously proposed methods. We demonstrate the ability of MFM to improve the prediction of individual treatment responses on a large-scale multi-patient single-cell drug screen dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Accelerating 3D Molecule Generation via Jointly Geometric Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-15252</link>
+    <guid isPermaLink="false">arxiv:2405.15252</guid>
+    <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haokai Hong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper proposes a new 3D molecule generation framework, called GOAT, for fast and effective 3D molecule generation based on the flow-matching optimal transport objective. Specifically, we formulate a geometric transport formula for measuring the cost of mapping multi-modal features (e.g., continuous atom coordinates and categorical atom types) between a base distribution and a target data distribution. Our formula is solved within a joint, equivariant, and smooth representation space. This is achieved by transforming the multi-modal features into a continuous latent space with equivariant networks. In addition, we find that identifying optimal distributional coupling is necessary for fast and effective transport between any two distributions. We further propose a mechanism for estimating and purifying optimal coupling to train the flow model with optimal transport. By doing so, GOAT can turn arbitrary distribution couplings into new deterministic couplings, leading to an estimated optimal transport plan for fast 3D molecule generation. The purification filters out the subpar molecules to ensure the ultimate generation quality. We theoretically and empirically prove that the proposed optimal coupling estimation and purification yield transport plan with non-increasing cost. Finally, extensive experiments show that GOAT enjoys the efficiency of solving geometric optimal transport, leading to a double speedup compared to the sub-optimal method while achieving the best generation quality regarding validity, uniqueness, and novelty. The code is available at https://github.com/WanyuGroup/ICLR2025-GOAT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discrete Diffusion Schrödinger Bridge Matching for Graph Transformation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-01500</link>
+    <guid isPermaLink="false">arxiv:2410.01500</guid>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Hyeong Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Transporting between arbitrary distributions is a fundamental goal in generative modeling. Recently proposed diffusion bridge models provide a potential solution, but they rely on a joint distribution that is difficult to obtain in practice. Furthermore, formulations based on continuous domains limit their applicability to discrete domains such as graphs. To overcome these limitations, we propose Discrete Diffusion Schrödinger Bridge Matching (DDSBM), a novel framework that utilizes continuous-time Markov chains to solve the SB problem in a high-dimensional discrete state space. Our approach extends Iterative Markovian Fitting to discrete domains, and we have proved its convergence to the SB. Furthermore, we adapt our framework for the graph transformation, and show that our design choice of underlying dynamics characterized by independent modifications of nodes and edges can be interpreted as the entropy-regularized version of optimal transport with a cost function described by the graph edit distance. To demonstrate the effectiveness of our framework, we have applied DDSBM to molecular optimization in the field of chemistry. Experimental results demonstrate that DDSBM effectively optimizes molecules&rsquo; property-of-interest with minimal graph transformation, successfully retaining other features. Source code is available \href{https://github.com/junhkim1226/DDSBM}{here}.</p>]]></description>
+  </item>
 
   <item>
     <title>Stochastic variance-reduced Gaussian variational inference on the Bures-Wasserstein manifold</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiangfeng Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Distributed distribution comparison aims to measure the distance between the distributions whose data are scattered across different agents in a distributed system and cannot even be shared directly among the agents. In this study, we propose a novel decentralized entropic optimal transport (DEOT) method, which provides a communication-efficient and privacy-preserving solution to this problem with theoretical guarantees. In particular, we design a mini-batch randomized block-coordinate descent (MRBCD) scheme to optimize the DEOT distance in its dual form. The dual variables are scattered across different agents and updated locally and iteratively with limited communications among partial agents. The kernel matrix involved in the gradients of the dual variables is estimated by a decentralized kernel approximation method, in which each agent only needs to approximate and store a sub-kernel matrix by one-shot communication and without sharing raw data. Besides computing entropic Wasserstein distance, we show that the proposed MRBCD scheme and kernel approximation method also apply to entropic Gromov-Wasserstein distance. We analyze our method&rsquo;s communication complexity and, under mild assumptions, provide a theoretical bound for the approximation error caused by the convergence error, the estimated kernel, and the mismatch between the storage and communication protocols. In addition, we discuss the trade-off between the precision of the EOT distance and the strength of privacy protection when implementing our method. Experiments on synthetic data and real-world distributed domain adaptation tasks demonstrate the effectiveness of our method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Machine-learning-based particle identification with missing data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01905</link>
-    <guid isPermaLink="false">arxiv:2401.01905</guid>
-    <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Miłosz Kasak et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>In this work, we introduce a novel method for Particle Identification (PID) within the scope of the ALICE experiment at the Large Hadron Collider at CERN. Identifying products of ultrarelativisitc collisions delivered by the LHC is one of the crucial objectives of ALICE. Typically employed PID methods rely on hand-crafted selections, which compare experimental data to theoretical simulations. To improve the performance of the baseline methods, novel approaches use machine learning models that learn the proper assignment in a classification task. However, because of the various detection techniques used by different subdetectors, as well as the limited detector efficiency and acceptance, produced particles do not always yield signals in all of the ALICE components. This results in data with missing values. Machine learning techniques cannot be trained with such examples, so a significant part of the data is skipped during training. In this work, we propose the first method for PID that can be trained with all of the available data examples, including incomplete ones. Our approach improves the PID purity and efficiency of the selected sample for all investigated particle species.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Enhancing High-Energy Particle Physics Collision Analysis through Graph Data Attribution Techniques</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-14859</link>
-    <guid isPermaLink="false">arxiv:2407.14859</guid>
-    <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">A. Verdone et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The experiments at the Large Hadron Collider at CERN generate vast amounts of complex data from high-energy particle collisions. This data presents significant challenges due to its volume and complex reconstruction, necessitating the use of advanced analysis techniques for analysis. Recent advancements in deep learning, particularly Graph Neural Networks, have shown promising results in addressing the challenges but remain computationally expensive. The study presented in this paper uses a simulated particle collision dataset to integrate influence analysis inside the graph classification pipeline aiming at improving the accuracy and efficiency of collision event prediction tasks. By using a Graph Neural Network for initial training, we applied a gradient-based data influence method to identify influential training samples and then we refined the dataset by removing non-contributory elements: the model trained on this new reduced dataset can achieve good performances at a reduced computational cost. The method is completely agnostic to the specific influence method: different influence modalities can be easily integrated into our methodology. Moreover, by analyzing the discarded elements we can provide further insights about the event classification task. The novelty of integrating data attribution techniques together with Graph Neural Networks in high-energy physics tasks can offer a robust solution for managing large-scale data problems, capturing critical patterns, and maximizing accuracy across several high-data demand domains.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Strongly Isomorphic Neural Optimal Transport Across Incomparable Spaces</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-14957</link>
-    <guid isPermaLink="false">arxiv:2407.14957</guid>
-    <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Athina Sotiropoulou et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal Transport (OT) has recently emerged as a powerful framework for learning minimal-displacement maps between distributions. The predominant approach involves a neural parametrization of the Monge formulation of OT, typically assuming the same space for both distributions. However, the setting across ``incomparable spaces&rsquo;&rsquo; (e.g., of different dimensionality), corresponding to the Gromov- Wasserstein distance, remains underexplored, with existing methods often imposing restrictive assumptions on the cost function. In this paper, we present a novel neural formulation of the Gromov-Monge (GM) problem rooted in one of its fundamental properties: invariance to strong isomorphisms. We operationalize this property by decomposing the learnable OT map into two components: (i) an approximate strong isomorphism between the source distribution and an intermediate reference distribution, and (ii) a GM-optimal map between this reference and the target distribution. Our formulation leverages and extends the Monge gap regularizer of Uscidda &amp; Cuturi (2023) to eliminate the need for complex architectural requirements of other neural OT methods, yielding a simple but practical method that enjoys favorable theoretical guarantees. Our preliminary empirical results show that our framework provides a promising approach to learn OT maps across diverse spaces.</p>]]></description>
   </item>
 
 </channel>

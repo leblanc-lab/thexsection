@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Energy-Based Sliced Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-13586</link>
+    <guid isPermaLink="false">arxiv:2304.13586</guid>
+    <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The sliced Wasserstein (SW) distance has been widely recognized as a statistically effective and computationally efficient metric between two probability measures. A key component of the SW distance is the slicing distribution. There are two existing approaches for choosing this distribution. The first approach is using a fixed prior distribution. The second approach is optimizing for the best distribution which belongs to a parametric family of distributions and can maximize the expected distance. However, both approaches have their limitations. A fixed prior distribution is non-informative in terms of highlighting projecting directions that can discriminate two general probability measures. Doing optimization for the best distribution is often expensive and unstable. Moreover, designing the parametric family of the candidate distribution could be easily misspecified. To address the issues, we propose to design the slicing distribution as an energy-based distribution that is parameter-free and has the density proportional to an energy function of the projected one-dimensional Wasserstein distance. We then derive a novel sliced Wasserstein metric, energy-based sliced Waserstein (EBSW) distance, and investigate its topological, statistical, and computational properties via importance sampling, sampling importance resampling, and Markov Chain methods. Finally, we conduct experiments on point-cloud gradient flow, color transfer, and point-cloud reconstruction to show the favorable performance of the EBSW.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Quantifying intra-tumoral genetic heterogeneity of glioblastoma toward precision medicine using MRI and a data-inclusive machine learning algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2401-00128</link>
+    <guid isPermaLink="false">arxiv:2401.00128</guid>
+    <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lujia Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
+<p>Glioblastoma (GBM) is one of the most aggressive and lethal human cancers. Intra-tumoral genetic heterogeneity poses a significant challenge for treatment. Biopsy is invasive, which motivates the development of non-invasive, MRI-based machine learning (ML) models to quantify intra-tumoral genetic heterogeneity for each patient. This capability holds great promise for enabling better therapeutic selection to improve patient outcomes. We proposed a novel Weakly Supervised Ordinal Support Vector Machine (WSO-SVM) to predict regional genetic alteration status within each GBM tumor using MRI. WSO-SVM was applied to a unique dataset of 318 image-localized biopsies with spatially matched multiparametric MRI from 74 GBM patients. The model was trained to predict the regional genetic alteration of three GBM driver genes (EGFR, PDGFRA, and PTEN) based on features extracted from the corresponding region of five MRI contrast images. For comparison, a variety of existing ML algorithms were also applied. The classification accuracy of each gene was compared between the different algorithms. The SHapley Additive exPlanations (SHAP) method was further applied to compute contribution scores of different contrast images. Finally, the trained WSO-SVM was used to generate prediction maps within the tumoral area of each patient to help visualize the intra-tumoral genetic heterogeneity. This study demonstrated the feasibility of using MRI and WSO-SVM to enable non-invasive prediction of intra-tumoral regional genetic alteration for each GBM patient, which can inform future adaptive therapies for individualized oncology.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FAIR AI Models in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2212-05081</link>
+    <guid isPermaLink="false">arxiv:2212.05081</guid>
+    <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier Duarte et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>The findable, accessible, interoperable, and reusable (FAIR) data principles provide a framework for examining, evaluating, and improving how data is shared to facilitate scientific discovery. Generalizing these principles to research software and other digital products is an active area of research. Machine learning (ML) models &ndash; algorithms that have been trained on data without being explicitly programmed &ndash; and more generally, artificial intelligence (AI) models, are an important target for this because of the ever-increasing pace with which AI is transforming scientific domains, such as experimental high energy physics (HEP). In this paper, we propose a practical definition of FAIR principles for AI models in HEP and describe a template for the application of these principles. We demonstrate the template&rsquo;s use with an example AI model applied to HEP, in which a graph neural network is used to identify Higgs bosons decaying to two bottom quarks. We report on the robustness of this FAIR AI model, its portability across hardware architectures and software frameworks, and its interpretability.</p>]]></description>
+  </item>
 
   <item>
     <title>Differentiable Earth Mover's Distance for Data Compression at the High-Luminosity LHC</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaolin Zheng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Short text clustering is challenging since it takes imbalanced and noisy data as inputs. Existing approaches cannot solve this problem well, since (1) they are prone to obtain degenerate solutions especially on heavy imbalanced datasets, and (2) they are vulnerable to noises. To tackle the above issues, we propose a Robust Short Text Clustering (RSTC) model to improve robustness against imbalanced and noisy data. RSTC includes two modules, i.e., pseudo-label generation module and robust representation learning module. The former generates pseudo-labels to provide supervision for the later, which contributes to more robust representations and correctly separated clusters. To provide robustness against the imbalance in data, we propose self-adaptive optimal transport in the pseudo-label generation module. To improve robustness against the noise in data, we further introduce both class-wise and instance-wise contrastive learning in the robust representation learning module. Our empirical studies on eight short text clustering datasets demonstrate that RSTC significantly outperforms the state-of-the-art models. The code is available at: https://github.com/hmllmh/RSTC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Recovery Bounds on Class-Based Optimal Transport: A Sum-of-Norms Regularization Framework</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a1903-03850</link>
-    <guid isPermaLink="false">arxiv:1903.03850</guid>
-    <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arman Rahbar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We develop a novel theoretical framework for understating OT schemes respecting a class structure. For this purpose, we propose a convex OT program with a sum-of-norms regularization term, which provably recovers the underlying class structure under geometric assumptions. Furthermore, we derive an accelerated proximal algorithm with a closed-form projection and proximal operator scheme, thereby affording a more scalable algorithm for computing optimal transport plans. We provide a novel argument for the uniqueness of the optimum even in the absence of strong convexity. Our experiments show that the new regularizer not only results in a better preservation of the class structure in the data but also yields additional robustness to the data geometry, compared to previous regularizers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport for Unsupervised Hallucination Detection in Neural Machine Translation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2212-09631</link>
-    <guid isPermaLink="false">arxiv:2212.09631</guid>
-    <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nuno M. Guerreiro et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Neural machine translation (NMT) has become the de-facto standard in real-world machine translation applications. However, NMT models can unpredictably produce severely pathological translations, known as hallucinations, that seriously undermine user trust. It becomes thus crucial to implement effective preventive strategies to guarantee their proper functioning. In this paper, we address the problem of hallucination detection in NMT by following a simple intuition: as hallucinations are detached from the source content, they exhibit encoder-decoder attention patterns that are statistically different from those of good quality translations. We frame this problem with an optimal transport formulation and propose a fully unsupervised, plug-in detector that can be used with any attention-based NMT model. Experimental results show that our detector not only outperforms all previous model-based detectors, but is also competitive with detectors that employ large models trained on millions of samples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A proof of imitation of Wasserstein inverse reinforcement learning for multi-objective optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-10089</link>
-    <guid isPermaLink="false">arxiv:2305.10089</guid>
-    <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Akira Kitaoka et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We prove Wasserstein inverse reinforcement learning enables the learner&rsquo;s reward values to imitate the expert&rsquo;s reward values in a finite iteration for multi-objective optimizations. Moreover, we prove Wasserstein inverse reinforcement learning enables the learner&rsquo;s optimal solutions to imitate the expert&rsquo;s optimal solutions for multi-objective optimizations with lexicographic order.</p>]]></description>
   </item>
 
 </channel>

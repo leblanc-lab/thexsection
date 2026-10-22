@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-26494</link>
+    <guid isPermaLink="false">arxiv:2605.26494</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aili Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>We introduce the MiniMax-M2 series, a family of Mixture-of-Experts language models built around the principle that mini activations can unleash maximum real-world intelligence. The flagship M2 contains 229.9B total parameters with only 9.8B activated per token. Designed end-to-end for agentic deployment, the M2 series rests on three components: (i) agent-driven data pipelines producing large-scale, verifiable trajectories across agentic coding and agentic cowork, each grounded in an executable workspace and an artifact-aligned reward; (ii) Forge, a scalable agent-native RL system that adapts to long-horizon agent trajectories, paired with windowed-FIFO scheduling, prefix-tree merging, inference optimization, and a clean training-inference-agent decoupling that supports both white-box and black-box agents; (iii) the latest M2.7 checkpoint takes an early step toward self-evolution &ndash; autonomously debugging training runs and modifying its own scaffold. Across M2 through M2.7, this combination translates a mini-activation footprint into frontier-tier performance on agentic coding, deep search, office-task, and reasoning benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Generalization Bounds on Optimal Control for Transformer Training and Wasserstein Distributional Robustness</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-27975</link>
+    <guid isPermaLink="false">arxiv:2607.27975</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kağan Akman et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We derive finite-sample generalization bounds for Transformers trained with dynamic programming recursions. Building on the doubly lifted, measure-valued formulation of Transformer dynamics, we view data sets as probability laws on pairs of empirical input-output measures, allowing us to interpret the training problem as a finite-horizon Markovian control problem. We then analyze a quantized model, derived by quantizing the state, action, and measure-state spaces, and derive explicit finite-sample generalization bounds using concentration inequalities for empirical laws on finite metric spaces together with a Lipschitz stability estimate for the value function. These bounds are transferred to the base model at the cost of an explicit approximation error. Finally, we show that the same machinery yields a distributionally robust control formulation of the training problem, connecting Transformer generalization to Wasserstein distributionally robust optimization.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Persistence Spheres: a Bi-continuous Linear Representation of Measures for Partial Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-15384</link>
+    <guid isPermaLink="false">arxiv:2603.15384</guid>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Pegoraro</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We improve and extend persistence spheres, introduced in~\cite{pegoraro2025persistence}. Persistence spheres map an integrable measure μ on the upper half-plane, including persistence diagrams (PDs) as counting measures, to a function S(μ)∈C(𝕊²⁾, and the map is stable with respect to 1-Wasserstein partial transport distance POT_1. Moreover, to the best of our knowledge, persistence spheres are the first explicit representation used in topological machine learning for which continuity of the inverse on the image is established at every compactly supported target. Recent bounded-cardinality bi-Lipschitz embedding results in partial transport spaces, despite being powerful, are not given by the kind of explicit summary map considered here. Our construction is rooted in convex geometry: for positive measures, the defining ReLU integral is the support function of the lift zonoid. Building on~\cite{pegoraro2025persistence}, we refine the definition to better match the POT_1 deletion mechanism, encoding partial transport via a signed diagonal augmentation. In particular, for integrable μ, the uniform norm between S(0) and S(μ) depends only on the persistence of μ, without any need of ad-hoc re-weightings, reflecting optimal transport to the diagonal at persistence cost. This yields a parameter-free representation at the level of measures (up to numerical discretization), while accommodating future extensions where μ is a smoothed measure derived from PDs (e.g., persistence intensity functions~\citep{wu2024estimation}). Across clustering, regression, and classification tasks involving functional data, time series, graphs, meshes, and point clouds, the updated persistence spheres are competitive and often improve upon persistence images, persistence landscapes, persistence splines, and sliced Wasserstein kernel baselines.</p>]]></description>
+  </item>
 
   <item>
     <title>SNAC-Pack 2.0: Scaled-Out Surrogate Neural Architecture Codesign</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuyao Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal-transport) — original abstract; no AI summary.</em></p>
 <p>Cross-city transfer improves prediction in label-scarce cities by leveraging labeled data from other cities, but it becomes challenging when cities adopt incompatible partitions and no ground-truth region correspondences exist. Existing approaches either rely on heuristic region matching, which is often sensitive to anchor choices, or perform distribution-level alignment that leaves correspondences implicit and can be unstable under strong heterogeneity. We propose SCOT, a cross-city representation learning framework that learns explicit soft correspondences between unequal region sets via Sinkhorn-based entropic optimal transport. SCOT further sharpens transferable structure with an OT-weighted contrastive objective and stabilizes optimization through a cycle-style reconstruction regularizer. For multi-source transfer, SCOT aligns each source and the target to a shared prototype hub using balanced entropic transport guided by a target-induced prototype prior. Across real-world cities and tasks, SCOT consistently improves transfer accuracy and robustness, while the learned transport couplings and hub assignments provide interpretable diagnostics of alignment quality.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Transfer Learning Across Fast- and Full-Simulation Domains in High-Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-07471</link>
-    <guid isPermaLink="false">arxiv:2605.07471</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthias Schott et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, gluon jet, LHC) — original abstract; no AI summary.</em></p>
-<p>Machine-learning models in high-energy physics are often trained on simulated data, where fully simulated samples are computationally expensive while fast simulation provides large statistics at reduced realism. In this work, we systematically study transfer learning between fast-simulated and fully simulated datasets in a realistic LHC environment. We consider three representative tasks, signal-background classification, quark-gluon jet tagging, and missing transverse energy reconstruction, using dense neural networks, graph neural networks, and transformer-based architectures. Models are pretrained on ATLAS-like fast simulation and adapted to CMS-like fast simulation and to fully simulated ATLAS Open Data. Across all tasks, pretrained models consistently outperform independently trained baselines and require significantly less target-domain training data, typically reducing the needed statistics by about a factor of two. These results demonstrate that fast simulation can be used to learn robust, reusable representations and motivate publishing trained models as reusable scientific assets beyond large foundation models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Drifting Field Policy: A One-Step Generative Policy via Wasserstein Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-07727</link>
-    <guid isPermaLink="false">arxiv:2605.07727</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juil Koo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose Drifting Field Policy (DFP), a non-ODE one-step generative policy built on the drifting model paradigm. We frame the policy update as a reverse-KL Wasserstein-2 gradient flow toward a soft target policy, so that each DFP update corresponds to a gradient step in probability space. By construction, this gradient is decomposed into an ascent toward higher action-value regions and a score matching with the anchor policy as a trust region. We further derive a simple, tractable surrogate of the otherwise intractable update loss, akin to behavior cloning on top-K critic-selected actions. We find empirically that this mechanism uniquely benefits the drifting backbone owing to its non-ODE parameterization. With one-step inference, DFP achieves state-of-the-art performance on several manipulation tasks across Robomimic and OGBench, outperforming ODE-based policies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>It Just Takes Two: Scaling Amortized Inference to Large Sets</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-07972</link>
-    <guid isPermaLink="false">arxiv:2605.07972</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Wehenkel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size &ndash; a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.</p>]]></description>
   </item>
 
 </channel>

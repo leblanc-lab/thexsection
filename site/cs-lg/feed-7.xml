@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Machine-learning-based particle identification with missing data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01905</link>
+    <guid isPermaLink="false">arxiv:2401.01905</guid>
+    <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Miłosz Kasak et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>In this work, we introduce a novel method for Particle Identification (PID) within the scope of the ALICE experiment at the Large Hadron Collider at CERN. Identifying products of ultrarelativisitc collisions delivered by the LHC is one of the crucial objectives of ALICE. Typically employed PID methods rely on hand-crafted selections, which compare experimental data to theoretical simulations. To improve the performance of the baseline methods, novel approaches use machine learning models that learn the proper assignment in a classification task. However, because of the various detection techniques used by different subdetectors, as well as the limited detector efficiency and acceptance, produced particles do not always yield signals in all of the ALICE components. This results in data with missing values. Machine learning techniques cannot be trained with such examples, so a significant part of the data is skipped during training. In this work, we propose the first method for PID that can be trained with all of the available data examples, including incomplete ones. Our approach improves the PID purity and efficiency of the selected sample for all investigated particle species.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Enhancing High-Energy Particle Physics Collision Analysis through Graph Data Attribution Techniques</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-14859</link>
+    <guid isPermaLink="false">arxiv:2407.14859</guid>
+    <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">A. Verdone et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The experiments at the Large Hadron Collider at CERN generate vast amounts of complex data from high-energy particle collisions. This data presents significant challenges due to its volume and complex reconstruction, necessitating the use of advanced analysis techniques for analysis. Recent advancements in deep learning, particularly Graph Neural Networks, have shown promising results in addressing the challenges but remain computationally expensive. The study presented in this paper uses a simulated particle collision dataset to integrate influence analysis inside the graph classification pipeline aiming at improving the accuracy and efficiency of collision event prediction tasks. By using a Graph Neural Network for initial training, we applied a gradient-based data influence method to identify influential training samples and then we refined the dataset by removing non-contributory elements: the model trained on this new reduced dataset can achieve good performances at a reduced computational cost. The method is completely agnostic to the specific influence method: different influence modalities can be easily integrated into our methodology. Moreover, by analyzing the discarded elements we can provide further insights about the event classification task. The novelty of integrating data attribution techniques together with Graph Neural Networks in high-energy physics tasks can offer a robust solution for managing large-scale data problems, capturing critical patterns, and maximizing accuracy across several high-data demand domains.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Strongly Isomorphic Neural Optimal Transport Across Incomparable Spaces</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-14957</link>
+    <guid isPermaLink="false">arxiv:2407.14957</guid>
+    <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Athina Sotiropoulou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) has recently emerged as a powerful framework for learning minimal-displacement maps between distributions. The predominant approach involves a neural parametrization of the Monge formulation of OT, typically assuming the same space for both distributions. However, the setting across ``incomparable spaces&rsquo;&rsquo; (e.g., of different dimensionality), corresponding to the Gromov- Wasserstein distance, remains underexplored, with existing methods often imposing restrictive assumptions on the cost function. In this paper, we present a novel neural formulation of the Gromov-Monge (GM) problem rooted in one of its fundamental properties: invariance to strong isomorphisms. We operationalize this property by decomposing the learnable OT map into two components: (i) an approximate strong isomorphism between the source distribution and an intermediate reference distribution, and (ii) a GM-optimal map between this reference and the target distribution. Our formulation leverages and extends the Monge gap regularizer of Uscidda &amp; Cuturi (2023) to eliminate the need for complex architectural requirements of other neural OT methods, yielding a simple but practical method that enjoys favorable theoretical guarantees. Our preliminary empirical results show that our framework provides a promising approach to learn OT maps across diverse spaces.</p>]]></description>
+  </item>
 
   <item>
     <title>Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Sliced Wasserstein (SW) distance suffers from redundant projections due to independent uniform random projecting directions. To partially overcome the issue, max K sliced Wasserstein (Max-K-SW) distance (K≥1), seeks the best discriminative orthogonal projecting directions. Despite being able to reduce the number of projections, the metricity of Max-K-SW cannot be guaranteed in practice due to the non-optimality of the optimization. Moreover, the orthogonality constraint is also computationally expensive and might not be effective. To address the problem, we introduce a new family of SW distances, named Markovian sliced Wasserstein (MSW) distance, which imposes a first-order Markov structure on projecting directions. We discuss various members of MSW by specifying the Markov structure including the prior distribution, the transition distribution, and the burning and thinning technique. Moreover, we investigate the theoretical properties of MSW including topological properties (metricity, weak convergence, and connection to other distances), statistical properties (sample complexity, and Monte Carlo estimation error), and computational properties (computational complexity and memory complexity). Finally, we compare MSW distances with previous SW variants in various applications such as gradient flows, color transfer, and deep generative modeling to demonstrate the favorable performance of MSW.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Energy-Based Sliced Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2304-13586</link>
-    <guid isPermaLink="false">arxiv:2304.13586</guid>
-    <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The sliced Wasserstein (SW) distance has been widely recognized as a statistically effective and computationally efficient metric between two probability measures. A key component of the SW distance is the slicing distribution. There are two existing approaches for choosing this distribution. The first approach is using a fixed prior distribution. The second approach is optimizing for the best distribution which belongs to a parametric family of distributions and can maximize the expected distance. However, both approaches have their limitations. A fixed prior distribution is non-informative in terms of highlighting projecting directions that can discriminate two general probability measures. Doing optimization for the best distribution is often expensive and unstable. Moreover, designing the parametric family of the candidate distribution could be easily misspecified. To address the issues, we propose to design the slicing distribution as an energy-based distribution that is parameter-free and has the density proportional to an energy function of the projected one-dimensional Wasserstein distance. We then derive a novel sliced Wasserstein metric, energy-based sliced Waserstein (EBSW) distance, and investigate its topological, statistical, and computational properties via importance sampling, sampling importance resampling, and Markov Chain methods. Finally, we conduct experiments on point-cloud gradient flow, color transfer, and point-cloud reconstruction to show the favorable performance of the EBSW.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantifying intra-tumoral genetic heterogeneity of glioblastoma toward precision medicine using MRI and a data-inclusive machine learning algorithm</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2401-00128</link>
-    <guid isPermaLink="false">arxiv:2401.00128</guid>
-    <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lujia Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Glioblastoma (GBM) is one of the most aggressive and lethal human cancers. Intra-tumoral genetic heterogeneity poses a significant challenge for treatment. Biopsy is invasive, which motivates the development of non-invasive, MRI-based machine learning (ML) models to quantify intra-tumoral genetic heterogeneity for each patient. This capability holds great promise for enabling better therapeutic selection to improve patient outcomes. We proposed a novel Weakly Supervised Ordinal Support Vector Machine (WSO-SVM) to predict regional genetic alteration status within each GBM tumor using MRI. WSO-SVM was applied to a unique dataset of 318 image-localized biopsies with spatially matched multiparametric MRI from 74 GBM patients. The model was trained to predict the regional genetic alteration of three GBM driver genes (EGFR, PDGFRA, and PTEN) based on features extracted from the corresponding region of five MRI contrast images. For comparison, a variety of existing ML algorithms were also applied. The classification accuracy of each gene was compared between the different algorithms. The SHapley Additive exPlanations (SHAP) method was further applied to compute contribution scores of different contrast images. Finally, the trained WSO-SVM was used to generate prediction maps within the tumoral area of each patient to help visualize the intra-tumoral genetic heterogeneity. This study demonstrated the feasibility of using MRI and WSO-SVM to enable non-invasive prediction of intra-tumoral regional genetic alteration for each GBM patient, which can inform future adaptive therapies for individualized oncology.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FAIR AI Models in High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2212-05081</link>
-    <guid isPermaLink="false">arxiv:2212.05081</guid>
-    <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier Duarte et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>The findable, accessible, interoperable, and reusable (FAIR) data principles provide a framework for examining, evaluating, and improving how data is shared to facilitate scientific discovery. Generalizing these principles to research software and other digital products is an active area of research. Machine learning (ML) models &ndash; algorithms that have been trained on data without being explicitly programmed &ndash; and more generally, artificial intelligence (AI) models, are an important target for this because of the ever-increasing pace with which AI is transforming scientific domains, such as experimental high energy physics (HEP). In this paper, we propose a practical definition of FAIR principles for AI models in HEP and describe a template for the application of these principles. We demonstrate the template&rsquo;s use with an example AI model applied to HEP, in which a graph neural network is used to identify Higgs bosons decaying to two bottom quarks. We report on the robustness of this FAIR AI model, its portability across hardware architectures and software frameworks, and its interpretability.</p>]]></description>
   </item>
 
 </channel>

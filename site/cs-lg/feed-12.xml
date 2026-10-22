@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unsupervised neural adaptation model based on optimal transport for spoken language identification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-13152</link>
+    <guid isPermaLink="false">arxiv:2012.13152</guid>
+    <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xugang Lu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Due to the mismatch of statistical distributions of acoustic speech between training and testing sets, the performance of spoken language identification (SLID) could be drastically degraded. In this paper, we propose an unsupervised neural adaptation model to deal with the distribution mismatch problem for SLID. In our model, we explicitly formulate the adaptation as to reduce the distribution discrepancy on both feature and classifier for training and testing data sets. Moreover, inspired by the strong power of the optimal transport (OT) to measure distribution discrepancy, a Wasserstein distance metric is designed in the adaptation loss. By minimizing the classification loss on the training data set with the adaptation loss on both training and testing data sets, the statistical distribution difference between training and testing domains is reduced. We carried out SLID experiments on the oriental language recognition (OLR) challenge data corpus where the training and testing data sets were collected from different conditions. Our results showed that significant improvements were achieved on the cross domain test tasks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Adversarial Risk via Optimal Transport and Optimal Couplings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1912-02794</link>
+    <guid isPermaLink="false">arxiv:1912.02794</guid>
+    <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muni Sreenivas Pydi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Modern machine learning algorithms perform poorly on adversarially manipulated data. Adversarial risk quantifies the error of classifiers in adversarial settings; adversarial classifiers minimize adversarial risk. In this paper, we analyze adversarial risk and adversarial classifiers from an optimal transport perspective. We show that the optimal adversarial risk for binary classification with 0-1 loss is determined by an optimal transport cost between the probability distributions of the two classes. We develop optimal transport plans (probabilistic couplings) for univariate distributions such as the normal, the uniform, and the triangular distribution. We also derive optimal adversarial classifiers in these settings. Our analysis leads to algorithm-independent fundamental limits on adversarial risk, which we calculate for several real-world datasets. We extend our results to general loss functions under convexity and smoothness assumptions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Unsupervised in-distribution anomaly detection of new physics through conditional density estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2012-11638</link>
+    <guid isPermaLink="false">arxiv:2012.11638</guid>
+    <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">George Stein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Anomaly detection is a key application of machine learning, but is generally focused on the detection of outlying samples in the low probability density regions of data. Here we instead present and motivate a method for unsupervised in-distribution anomaly detection using a conditional density estimator, designed to find unique, yet completely unknown, sets of samples residing in high probability density regions. We apply this method towards the detection of new physics in simulated Large Hadron Collider (LHC) particle collisions as part of the 2020 LHC Olympics blind challenge, and show how we detected a new particle appearing in only 0.08% of 1 million collision events. The results we present are our original blind submission to the 2020 LHC Olympics, where it achieved the state-of-the-art performance.</p>]]></description>
+  </item>
 
   <item>
     <title>Image-Based Jet Analysis</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper targets the task with discrete and periodic class labels (e.g., pose/orientation estimation) in the context of deep learning. The commonly used cross-entropy or regression loss is not well matched to this problem as they ignore the periodic nature of the labels and the class similarity, or assume labels are continuous value. We propose to incorporate inter-class correlations in a Wasserstein training framework by pre-defining (i.e., using arc length of a circle) or adaptively learning the ground metric. We extend the ground metric as a linear, convex or concave increasing function w.r.t. arc length from an optimization perspective. We also propose to construct the conservative target labels which model the inlier and outlier noises using a wrapped unimodal-uniform mixture distribution. Unlike the one-hot setting, the conservative label makes the computation of Wasserstein distance more challenging. We systematically conclude the practical closed-form solution of Wasserstein distance for pose data with either one-hot or conservative target label. We evaluate our method on head, body, vehicle and 3D object pose benchmarks with exhaustive ablation studies. The Wasserstein loss obtaining superior performance over the current methods, especially using convex mapping function for ground metric, conservative label, and closed-form solution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unimodal-uniform Constrained Wasserstein Training for Medical Diagnosis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-02475</link>
-    <guid isPermaLink="false">arxiv:1911.02475</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The labels in medical diagnosis task are usually discrete and successively distributed. For example, the Diabetic Retinopathy Diagnosis (DR) involves five health risk levels: no DR (0), mild DR (1), moderate DR (2), severe DR (3) and proliferative DR (4). This labeling system is common for medical disease. Previous methods usually construct a multi-binary-classification task or propose some re-parameter schemes in the output unit. In this paper, we target on this task from the perspective of loss function. More specifically, the Wasserstein distance is utilized as an alternative, explicitly incorporating the inter-class correlations by pre-defining its ground metric. Then, the ground metric which serves as a linear, convex or concave increasing function w.r.t. the Euclidean distance in a line is explored from an optimization perspective. Meanwhile, this paper also proposes of constructing the smoothed target labels that model the inlier and outlier noises by using a unimodal-uniform mixture distribution. Different from the one-hot setting, the smoothed label endues the computation of Wasserstein distance with more challenging features. With either one-hot or smoothed target label, this paper systematically concludes the practical closed-form solution. We evaluate our method on several medical diagnosis tasks (e.g., Diabetic Retinopathy and Ultrasound Breast dataset) and achieve state-of-the-art performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Differentiable Ranks and Sorting using Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1905-11885</link>
-    <guid isPermaLink="false">arxiv:1905.11885</guid>
-    <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marco Cuturi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Sorting an array is a fundamental routine in machine learning, one that is used to compute rank-based statistics, cumulative distribution functions (CDFs), quantiles, or to select closest neighbors and labels. The sorting function is however piece-wise constant (the sorting permutation of a vector does not change if the entries of that vector are infinitesimally perturbed) and therefore has no gradient information to back-propagate. We propose a framework to sort elements that is algorithmically differentiable. We leverage the fact that sorting can be seen as a particular instance of the optimal transport (OT) problem on ℝ, from input values to a predefined array of sorted values (e.g. 1,2,…,n if the input array has n elements). Building upon this link , we propose generalized CDFs and quantile operators by varying the size and weights of the target presorted array. Because this amounts to using the so-called Kantorovich formulation of OT, we call these quantities K-sorts, K-CDFs and K-quantiles. We recover differentiable algorithms by adding to the OT problem an entropic regularization, and approximate it using a few Sinkhorn iterations. We call these operators S-sorts, S-CDFs and S-quantiles, and use them in various learning settings: we benchmark them against the recently proposed neuralsort [Grover et al. 2019], propose applications to quantile regression and introduce differentiable formulations of the top-k accuracy that deliver state-of-the art performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Optimal Transport for Document Representation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-10827</link>
-    <guid isPermaLink="false">arxiv:1906.10827</guid>
-    <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikhail Yurochkin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The ability to measure similarity between documents enables intelligent summarization and analysis of large corpora. Past distances between documents suffer from either an inability to incorporate semantic similarities between words or from scalability issues. As an alternative, we introduce hierarchical optimal transport as a meta-distance between documents, where documents are modeled as distributions over topics, which themselves are modeled as distributions over words. We then solve an optimal transport problem on the smaller topic space to compute a similarity score. We give conditions on the topics under which this construction defines a distance, and we relate it to the word mover&rsquo;s distance. We evaluate our technique for k-NN classification and show better interpretability and scalability with comparable performance to current methods at a fraction of the cost.</p>]]></description>
   </item>
 
 </channel>

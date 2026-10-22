@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Towards Tensor Network Models for Low-Latency Jet Tagging on FPGAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-10801</link>
+    <guid isPermaLink="false">arxiv:2601.10801</guid>
+    <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alberto Coppi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC) — original abstract; no AI summary.</em></p>
+<p>We present a systematic study of Tensor Network (TN) models x2013 Matrix Product States (MPS) and Tree Tensor Networks (TTN) x2013 for real-time jet tagging in high-energy physics, with a focus on low-latency deployment on Field Programmable Gate Arrays (FPGAs). Motivated by the strict requirements of the HL-LHC Level-1 trigger system, we explore TNs as compact and interpretable alternatives to deep neural networks. Using low-level jet constituent features, our models achieve competitive performance compared to state-of-the-art deep learning classifiers. We investigate post-training quantization to enable hardware-efficient implementations without degrading classification performance or latency. The best-performing models are synthesized to estimate FPGA resource usage, latency, and memory occupancy, demonstrating sub-microsecond latency and supporting the feasibility of online deployment in real-time trigger systems. Overall, this study highlights the potential of TN-based models for fast and resource-efficient inference in low-latency environments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Cross-Domain Imitation Learning via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2110-03684</link>
+    <guid isPermaLink="false">arxiv:2110.03684</guid>
+    <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arnaud Fickinger et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Cross-domain imitation learning studies how to leverage expert demonstrations of one agent to train an imitation agent with a different embodiment or morphology. Comparing trajectories and stationary distributions between the expert and imitation agents is challenging because they live on different systems that may not even have the same dimensionality. We propose Gromov-Wasserstein Imitation Learning (GWIL), a method for cross-domain imitation that uses the Gromov-Wasserstein distance to align and compare states between the different spaces of the agents. Our theory formally characterizes the scenarios where GWIL preserves optimality, revealing its possibilities and limitations. We demonstrate the effectiveness of GWIL in non-trivial continuous control domains ranging from simple rigid transformation of the expert domain to arbitrary transformation of the state-action space.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Simulation of Multivariate Extremes: a Wasserstein-Aitchison GAN approach</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2504-21438</link>
+    <guid isPermaLink="false">arxiv:2504.21438</guid>
+    <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stéphane Lhaut et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Economically responsible mitigation of multivariate extreme risks-such as extreme rainfall over large areas, large simultaneous variations in many stock prices, or widespread breakdowns in transportation systems-requires assessing the resilience of the systems under plausible stress scenarios. This paper uses Extreme Value Theory (EVT) to develop a new approach to simulating such multivariate extreme events. Specifically, we assume that after transformation to a standard scale the distribution of the random phenomenon of interest is multivariate regular varying and use this to provide a sampling procedure for extremes on the original scale. Our procedure combines a Wasserstein-Aitchison Generative Adversarial Network (WA-GAN) to simulate the tail dependence structure on the standard scale with joint modeling of the univariate marginal tails on the original scale. The WA-GAN procedure relies on the angular measure-encoding the distribution on the unit simplex of the angles of extreme observations-after transformation to Aitchison coordinates, which allows the Wasserstein-GAN algorithm to be run in a linear space. Our method is applied both to simulated data under various tail dependence scenarios and to a financial data set from the Kenneth French Data Library. The proposed algorithm demonstrates strong performance compared to existing alternatives in the literature, both in capturing tail dependence structures and in generating accurate new extreme observations.</p>]]></description>
+  </item>
 
   <item>
     <title>Sliced-Wasserstein Distribution Alignment Loss Improves the Ultra-Low-Bit Quantization of Large Language Models</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haruto Nakashima et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>We tackle the data-driven chance-constrained density steering problem using the Gromov-Wasserstein metric. The underlying dynamical system is an unknown linear controlled recursion, with the assumption that sufficiently rich input-output data from pre-operational experiments are available. The initial state is modeled as a Gaussian mixture, while the terminal state is required to match a specified Gaussian distribution. We reformulate the resulting optimal control problem as a difference-of-convex program and show that it can be efficiently and tractably solved using the DC algorithm. Numerical results validate our approach through various data-driven schemes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>HFedATM: Hierarchical Federated Domain Generalization via Optimal Transport and Regularized Mean Aggregation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-05135</link>
-    <guid isPermaLink="false">arxiv:2508.05135</guid>
-    <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thinh Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Federated Learning (FL) is a decentralized approach where multiple clients collaboratively train a shared global model without sharing their raw data. Despite its effectiveness, conventional FL faces scalability challenges due to excessive computational and communication demands placed on a single central server as the number of participating devices grows. Hierarchical Federated Learning (HFL) addresses these issues by distributing model aggregation tasks across intermediate nodes (stations), thereby enhancing system scalability and robustness against single points of failure. However, HFL still suffers from a critical yet often overlooked limitation: domain shift, where data distributions vary significantly across different clients and stations, reducing model performance on unseen target domains. While Federated Domain Generalization (FedDG) methods have emerged to improve robustness to domain shifts, their integration into HFL frameworks remains largely unexplored. In this paper, we formally introduce Hierarchical Federated Domain Generalization (HFedDG), a novel scenario designed to investigate domain shift within hierarchical architectures. Specifically, we propose HFedATM, a hierarchical aggregation method that first aligns the convolutional filters of models from different stations through Filter-wise Optimal Transport Alignment and subsequently merges aligned models using a Shrinkage-aware Regularized Mean Aggregation. Our extensive experimental evaluations demonstrate that HFedATM significantly boosts the performance of existing FedDG baselines across multiple datasets and maintains computational and communication efficiency. Moreover, theoretical analyses indicate that HFedATM achieves tighter generalization error bounds compared to standard hierarchical averaging, resulting in faster convergence and stable training behavior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Group Causal Policy Optimization for Post-Training Large Language Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-05428</link>
-    <guid isPermaLink="false">arxiv:2508.05428</guid>
-    <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziyin Gu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Recent advances in large language models (LLMs) have broadened their applicability across diverse tasks, yet specialized domains still require targeted post training. Among existing methods, Group Relative Policy Optimization (GRPO) stands out for its efficiency, leveraging groupwise relative rewards while avoiding costly value function learning. However, GRPO treats candidate responses as independent, overlooking semantic interactions such as complementarity and contradiction. To address this challenge, we first introduce a Structural Causal Model (SCM) that reveals hidden dependencies among candidate responses induced by conditioning on a final integrated output forming a collider structure. Then, our causal analysis leads to two insights: (1) projecting responses onto a causally informed subspace improves prediction quality, and (2) this projection yields a better baseline than query only conditioning. Building on these insights, we propose Group Causal Policy Optimization (GCPO), which integrates causal structure into optimization through two key components: a causally informed reward adjustment and a novel KL regularization term that aligns the policy with a causally projected reference distribution. Comprehensive experimental evaluations demonstrate that GCPO consistently surpasses existing methods, including GRPO across multiple reasoning benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bootstrap Deep Spectral Clustering with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-04200</link>
-    <guid isPermaLink="false">arxiv:2508.04200</guid>
-    <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wengang Guo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Spectral clustering is a leading clustering method. Two of its major shortcomings are the disjoint optimization process and the limited representation capacity. To address these issues, we propose a deep spectral clustering model (named BootSC), which jointly learns all stages of spectral clustering &ndash; affinity matrix construction, spectral embedding, and k-means clustering &ndash; using a single network in an end-to-end manner. BootSC leverages effective and efficient optimal-transport-derived supervision to bootstrap the affinity matrix and the cluster assignment matrix. Moreover, a semantically-consistent orthogonal re-parameterization technique is introduced to orthogonalize spectral embeddings, significantly enhancing the discrimination capability. Experimental results indicate that BootSC achieves state-of-the-art clustering performance. For example, it accomplishes a notable 16\% NMI improvement over the runner-up method on the challenging ImageNet-Dogs dataset. Our code is available at https://github.com/spdj2271/BootSC.</p>]]></description>
   </item>
 
 </channel>

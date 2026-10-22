@@ -6,7 +6,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Distance for HMMs based on Aggregated Wasserstein Metric and State Registration</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1608-01747</link>
+    <guid isPermaLink="false">arxiv:1608.01747</guid>
+    <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yukun Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a framework, named Aggregated Wasserstein, for computing a dissimilarity measure or distance between two Hidden Markov Models with state conditional distributions being Gaussian. For such HMMs, the marginal distribution at any time spot follows a Gaussian mixture distribution, a fact exploited to softly match, aka register, the states in two HMMs. We refer to such HMMs as Gaussian mixture model-HMM (GMM-HMM). The registration of states is inspired by the intrinsic relationship of optimal transport and the Wasserstein metric between distributions. Specifically, the components of the marginal GMMs are matched by solving an optimal transport problem where the cost between components is the Wasserstein metric for Gaussian distributions. The solution of the optimization problem is a fast approximation to the Wasserstein metric between two GMMs. The new Aggregated Wasserstein distance is a semi-metric and can be computed without generating Monte Carlo samples. It is invariant to relabeling or permutation of the states. This distance quantifies the dissimilarity of GMM-HMMs by measuring both the difference between the two marginal GMMs and the difference between the two transition matrices. Our new distance is tested on the tasks of retrieval and classification of time series. Experiments on both synthetic data and real data have demonstrated its advantages in terms of accuracy as well as efficiency in comparison with existing distances based on the Kullback-Leibler divergence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport for Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1507-00504</link>
+    <guid isPermaLink="false">arxiv:1507.00504</guid>
+    <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Courty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Domain adaptation from one data space (or domain) to another is one of the most challenging tasks of modern data analytics. If the adaptation is done correctly, models built on a specific data space become more robust when confronted to data depicting the same semantic concepts (the classes), but observed by another observation system with its own specificities. Among the many strategies proposed to adapt a domain to another, finding a common representation has shown excellent properties: by finding a common representation for both domains, a single classifier can be effective in both and use labelled samples from the source domain to predict the unlabelled samples of the target domain. In this paper, we propose a regularized unsupervised optimal transportation model to perform the alignment of the representations in the source and target domains. We learn a transportation plan matching both PDFs, which constrains labelled samples in the source domain to remain close during transport. This way, we exploit at the same time the few labeled information in the source and the unlabelled distributions observed in both domains. Experiments in toy and challenging real visual adaptation examples show the interest of the method, that consistently outperforms state of the art approaches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stochastic Optimization for Large-scale Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1605-08527</link>
+    <guid isPermaLink="false">arxiv:1605.08527</guid>
+    <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Genevay Aude et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) defines a powerful framework to compare probability distributions in a geometrically faithful way. However, the practical impact of OT is still limited because of its computational burden. We propose a new class of stochastic optimization algorithms to cope with large-scale problems routinely encountered in machine learning applications. These methods are able to manipulate arbitrary distributions (either discrete or continuous) by simply requiring to be able to draw samples from them, which is the typical setup in high-dimensional learning problems. This alleviates the need to discretize these densities, while giving access to provably convergent methods that output the correct distance without discretization error. These algorithms rely on two main ideas: (a) the dual OT problem can be re-cast as the maximization of an expectation ; (b) entropic regularization of the primal OT problem results in a smooth dual optimization optimization which can be addressed with algorithms that have a provably faster convergence. We instantiate these ideas in three different setups: (i) when comparing a discrete distribution to another, we show that incremental stochastic optimization schemes can beat Sinkhorn&rsquo;s algorithm, the current state-of-the-art finite dimensional OT solver; (ii) when comparing a discrete distribution to a continuous density, a semi-discrete reformulation of the dual program is amenable to averaged stochastic gradient descent, leading to better performance than approximately solving the problem by discretization ; (iii) when dealing with two continuous densities, we propose a stochastic gradient descent over a reproducing kernel Hilbert space (RKHS). This is currently the only known method to solve this problem, apart from computing OT on finite samples. We backup these claims on a set of discrete, semi-discrete and continuous benchmark problems.</p>]]></description>
+  </item>
 
   <item>
     <title>Sparse Coding with Earth Mover's Distance for Multi-Instance Histogram Representation</title>
