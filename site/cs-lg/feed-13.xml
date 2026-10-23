@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Conservative Wasserstein Training for Pose Estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-00962</link>
+    <guid isPermaLink="false">arxiv:1911.00962</guid>
+    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper targets the task with discrete and periodic class labels (e.g., pose/orientation estimation) in the context of deep learning. The commonly used cross-entropy or regression loss is not well matched to this problem as they ignore the periodic nature of the labels and the class similarity, or assume labels are continuous value. We propose to incorporate inter-class correlations in a Wasserstein training framework by pre-defining (i.e., using arc length of a circle) or adaptively learning the ground metric. We extend the ground metric as a linear, convex or concave increasing function w.r.t. arc length from an optimization perspective. We also propose to construct the conservative target labels which model the inlier and outlier noises using a wrapped unimodal-uniform mixture distribution. Unlike the one-hot setting, the conservative label makes the computation of Wasserstein distance more challenging. We systematically conclude the practical closed-form solution of Wasserstein distance for pose data with either one-hot or conservative target label. We evaluate our method on head, body, vehicle and 3D object pose benchmarks with exhaustive ablation studies. The Wasserstein loss obtaining superior performance over the current methods, especially using convex mapping function for ground metric, conservative label, and closed-form solution.</p>]]></description>
+  </item>
 
   <item>
     <title>Unimodal-uniform Constrained Wasserstein Training for Medical Diagnosis</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matej Mertik et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>This article presents a development of web application for quench prediction in \gls{te-mpe-ee} at CERN. The authors describe an ELectrical Quality Assurance (ELQA) framework, a platform which was designed for rapid development of web integrated data analysis applications for different analysis needed during the hardware commissioning of the Large Hadron Collider (LHC). In second part the article describes a research carried out with the data collected from Quench Detection System by means of using an LSTM recurrent neural network. The article discusses and presents a conceptual work of implementing quench prediction application for \gls{te-mpe-ee} based on the ELQA and quench prediction algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Tsallis Regularized Optimal Transport and Ecological Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1609-04495</link>
-    <guid isPermaLink="false">arxiv:1609.04495</guid>
-    <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Boris Muzellec et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport is a powerful framework for computing distances between probability distributions. We unify the two main approaches to optimal transport, namely Monge-Kantorovitch and Sinkhorn-Cuturi, into what we define as Tsallis regularized optimal transport (\trot). \trot~interpolates a rich family of distortions from Wasserstein to Kullback-Leibler, encompassing as well Pearson, Neyman and Hellinger divergences, to name a few. We show that metric properties known for Sinkhorn-Cuturi generalize to \trot, and provide efficient algorithms for finding the optimal transportation plan with formal convergence proofs. We also present the first application of optimal transport to the problem of ecological inference, that is, the reconstruction of joint distributions from their marginals, a problem of large interest in the social sciences. \trot~provides a convenient framework for ecological inference by allowing to compute the joint distribution &mdash; that is, the optimal transportation plan itself &mdash; when side information is available, which is \textit{e.g.} typically what census represents in political science. Experiments on data from the 2012 US presidential elections display the potential of \trot~in delivering a faithful reconstruction of the joint distribution of ethnic groups and voter preferences.</p>]]></description>
   </item>
 
 </channel>

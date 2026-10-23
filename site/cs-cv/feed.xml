@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Hierarchical Fine-Grained Cross-Modal Alignment via Dynamic Granularity Discovery and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2610-30912</link>
+    <guid isPermaLink="false">arxiv:2610.30912</guid>
+    <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pengfeng Song et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Fine-grained image-text retrieval requires a model not only to assess global semantic consistency between an image and a text, but also to model visual evidence for local textual semantics, including objects, attributes, quantities, actions, and relations, so as to distinguish semantically similar candidates. Existing methods commonly use fixed image patches, detected regions, or text tokens as the basic matching units and then aggregate local interactions through max pooling, cross attention, or similarity accumulation. Such strategies remain limited in semantic unit construction and global matching consistency. This paper proposes a hierarchical fine-grained cross-modal alignment framework, termed HFCMA. The framework progressively transforms low-level patch and token representations into adaptive visual regions and textual phrases, and then performs structured region-phrase matching within a global retrieval scoring process. Specifically, HFCMA first adopts dynamic granularity discovery (DGD) to aggregate raw patches and tokens into semantically compact visual regions and textual phrases. It then formulates region-phrase matching as an entropy-regularized optimal transport problem, thereby estimating a structured alignment matrix under global marginal constraints. To reduce background noise and local semantic drift, HFCMA further introduces background debiasing, textual importance weighting, and prototype consistency regularization. Experiments on Flickr30K and MS-COCO show that HFCMA effectively combines dynamic semantic unit construction with OT-based structured matching under a dual-encoder retrieval framework. The resulting fine-grained score provides structured local alignment information for candidate ranking and improves the discrimination of subtle semantic differences.</p>]]></description>
+  </item>
 
   <item>
     <title>A Principled Optimal Transport Framework for Frame Selection in Long Video Understanding</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenhao Li et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Large Vision-Language Models (LVLMs) have demonstrated remarkable advancements in numerous areas such as multimedia. However, hallucination issues significantly limit their credibility and application potential. Existing mitigation methods typically rely on external tools or the comparison of multi-round inference, which significantly increase inference time. In this paper, we propose \textbf{SE}lf-\textbf{E}volving \textbf{D}istillation (\textbf{SEED}), which identifies hallucinations within the inner knowledge of LVLMs, isolates and purges them, and then distills the purified knowledge back into the model, enabling self-evolution. Furthermore, we identified that traditional distillation methods are prone to inducing void spaces in the output space of LVLMs. To address this issue, we propose a Mode-Seeking Evolving approach, which performs distillation to capture the dominant modes of the purified knowledge distribution, thereby avoiding the chaotic results that could emerge from void spaces. Moreover, we introduce a Hallucination Elimination Adapter, which corrects the dark knowledge of the original model by learning purified knowledge. Extensive experiments on multiple benchmarks validate the superiority of our SEED, demonstrating substantial improvements in mitigating hallucinations for representative LVLM models such as LLaVA-1.5 and InternVL2. Remarkably, the F1 score of LLaVA-1.5 on the hallucination evaluation metric POPE-Random improved from 81.3 to 88.3.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CLOT: Closed Loop Optimal Transport for Unsupervised Action Segmentation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-03539</link>
-    <guid isPermaLink="false">arxiv:2507.03539</guid>
-    <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elena Bueno-Benito et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Unsupervised action segmentation has recently pushed its limits with ASOT, an optimal transport (OT)-based method that simultaneously learns action representations and performs clustering using pseudo-labels. Unlike other OT-based approaches, ASOT makes no assumptions about action ordering and can decode a temporally consistent segmentation from a noisy cost matrix between video frames and action labels. However, the resulting segmentation lacks segment-level supervision, limiting the effectiveness of feedback between frames and action representations. To address this limitation, we propose Closed Loop Optimal Transport (CLOT), a novel OT-based framework with a multi-level cyclic feature learning mechanism. Leveraging its encoder-decoder architecture, CLOT learns pseudo-labels alongside frame and segment embeddings by solving two separate OT problems. It then refines both frame embeddings and pseudo-labels through cross-attention between the learned frame and segment embeddings, by integrating a third OT problem. Experimental results on four benchmark datasets demonstrate the benefits of cyclical learning for unsupervised action segmentation.</p>]]></description>
   </item>
 
 </channel>

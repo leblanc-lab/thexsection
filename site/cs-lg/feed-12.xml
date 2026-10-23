@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Zero-Shot Recognition via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1910-09057</link>
+    <guid isPermaLink="false">arxiv:1910.09057</guid>
+    <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenlin Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose an optimal transport (OT) framework for generalized zero-shot learning (GZSL), seeking to distinguish samples for both seen and unseen classes, with the assist of auxiliary attributes. The discrepancy between features and attributes is minimized by solving an optimal transport problem. {Specifically, we build a conditional generative model to generate features from seen-class attributes, and establish an optimal transport between the distribution of the generated features and that of the real features.} The generative model and the optimal transport are optimized iteratively with an attribute-based regularizer, that further enhances the discriminative power of the generated features. A classifier is learned based on the features generated for both the seen and unseen classes. In addition to generalized zero-shot learning, our framework is also applicable to standard and transductive ZSL problems. Experiments show that our optimal transport-based method outperforms state-of-the-art methods on several benchmark datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>Unsupervised neural adaptation model based on optimal transport for spoken language identification</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiezhang Cao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Multiple marginal matching problem aims at learning mappings to match a source domain to multiple target domains and it has attracted great attention in many applications, such as multi-domain image translation. However, addressing this problem has two critical challenges: (i) Measuring the multi-marginal distance among different domains is very intractable; (ii) It is very difficult to exploit cross-domain correlations to match the target domain distributions. In this paper, we propose a novel Multi-marginal Wasserstein GAN (MWGAN) to minimize Wasserstein distance among domains. Specifically, with the help of multi-marginal optimal transport theory, we develop a new adversarial objective function with inner- and inter-domain constraints to exploit cross-domain correlations. Moreover, we theoretically analyze the generalization performance of MWGAN, and empirically evaluate it on the balanced and imbalanced translation tasks. Extensive experiments on toy and real-world datasets demonstrate the effectiveness of MWGAN.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conservative Wasserstein Training for Pose Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-00962</link>
-    <guid isPermaLink="false">arxiv:1911.00962</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaofeng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper targets the task with discrete and periodic class labels (e.g., pose/orientation estimation) in the context of deep learning. The commonly used cross-entropy or regression loss is not well matched to this problem as they ignore the periodic nature of the labels and the class similarity, or assume labels are continuous value. We propose to incorporate inter-class correlations in a Wasserstein training framework by pre-defining (i.e., using arc length of a circle) or adaptively learning the ground metric. We extend the ground metric as a linear, convex or concave increasing function w.r.t. arc length from an optimization perspective. We also propose to construct the conservative target labels which model the inlier and outlier noises using a wrapped unimodal-uniform mixture distribution. Unlike the one-hot setting, the conservative label makes the computation of Wasserstein distance more challenging. We systematically conclude the practical closed-form solution of Wasserstein distance for pose data with either one-hot or conservative target label. We evaluate our method on head, body, vehicle and 3D object pose benchmarks with exhaustive ablation studies. The Wasserstein loss obtaining superior performance over the current methods, especially using convex mapping function for ground metric, conservative label, and closed-form solution.</p>]]></description>
   </item>
 
 </channel>
