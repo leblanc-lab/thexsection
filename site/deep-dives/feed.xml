@@ -7,7 +7,87 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Measurements of the branching fractions of Λ_c⁺→ΛK⁺π⁰ and Λ_c⁺→ΛK⁺η decays at Belle and Belle II</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-31377</link>
+    <guid isPermaLink="false">arxiv:2610.31377</guid>
+    <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Belle et al.</dc:creator>
+    <description><![CDATA[<p>Belle and Belle II (980 + 570 fb⁻¹) report the first observation of Λ_c⁺→ΛK⁺η at &gt;10σ statistical significance, from 1107 ± 45 signal events. Relative to the reference mode, the measured ratio is ℬ/ℬ(Λπ⁺π⁰⁾⁼⁽⁸.73±0.35±0.43)×10⁻³, giving ℬ=(6.20±0.25±0.31±0.30)×10⁻⁴. The three SU(3)_F predictions are (1.9±0.6), (0.45±0.10) and (0.59±0.24)×10⁻⁴. The measurement exceeds them by 5.5σ, 11.2σ and 10.1σ respectively. The companion SCS mode is measured as ℬ(ΛK⁺π⁰⁾⁼⁽¹.29±0.05±0.05±0.06)×10⁻³. This agrees with BESIII and with the 2024 fit that includes the color-symmetric Hamiltonian (1.36 ± 0.25), and sits well below the earlier 3.5–4.5 × 10⁻³ predictions. The precision is markedly improved over BESIII&rsquo;s ±0.27 statistical error.</p>
+<p>So the same SU(3)_F fit that now gets ΛK⁺π⁰ right undershoots ΛK⁺η by an order of magnitude. That is the charm-baryon entry in the season&rsquo;s flavor-symmetry strain noted in the digest. The caveat is visible in the paper itself. The two-body invariant-mass spectra deviate significantly from phase space, and efficiencies are reweighted to the data Dalitz distribution. The predictions assume non-resonant, S-wave-dominated meson pairs, so intermediate resonances in ΛK⁺η (smaller phase space) could account for the excess rather than a failure of the symmetry itself. A Dalitz analysis would discriminate. On the experimental side, the η systematic is dominated by photon reconstruction (4.4%), and there is a 4.8% reference-BF uncertainty.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Faithful Uncertainties in ML-Based Inverse Problems: GPs, NNs and NTKs for the Triplet PDF</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-30239</link>
+    <guid isPermaLink="false">arxiv:2610.30239</guid>
+    <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nina Elmer et al.</dc:creator>
+    <description><![CDATA[<p>Methods that agree on the central T_3 disagree on what their error bars mean. The setup is a closure test on BCDMS F_2^p-F_2^d, using 248 points with the full covariance, NNPDF4.0 truth, and a data region of x≳0.07. The normalised bias R_b is computed on a single L_1 realisation:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>R_b (full covariance)</th>
+<th>R_b (diagonal only)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RBF GP</td>
+<td>1.08</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>Gibbs GP</td>
+<td>0.86</td>
+<td>0.53</td>
+</tr>
+<tr>
+<td>NTK, trained</td>
+<td>0.67</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NTK, at initialisation</td>
+<td>9.5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>L_2 NN ensemble</td>
+<td>0.74</td>
+<td>—</td>
+</tr>
+<tr>
+<td>L_1 NN ensemble</td>
+<td>2.84</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>The L_1 ensemble excludes data uncertainty by construction, so its large value is expected. Dropping covariance correlations shifts R_b non-monotonically, so pointwise width alone does not determine calibration. Two other failure modes stand out:
+- <strong>Heteroscedastic loss.</strong> It learns broad diagonal variances, which the authors read as likelihood misspecification rather than faithful uncertainty.
+- <strong>Endpoint preprocessing.</strong> It sets the small-x answer. The fit at α=1 versus α=0.5 is identical in the data region but diverges below 0.07. Preprocessed GP variance vanishes at the endpoints by construction, giving bands that miss the truth.</p>
+<p>In the HERA extrapolation test, the initialisation NTK degrades NC-EM by Δn_σ≈5.0, while all other models stay below 1. The authors are candid about the limits. With n_eig = 4–19, the test rules out gross underestimates but cannot certify faithfulness. A single seed visibly changes the reconstructions, and the L_2 ensemble is only NNPDF-inspired.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2610-30510</link>
+    <guid isPermaLink="false">arxiv:2610.30510</guid>
+    <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Morales-Zapien et al.</dc:creator>
+    <description><![CDATA[<p>The authors hold OGLE&rsquo;s 13 events, efficiencies and t_E posteriors fixed and change only the rate model, inside OGLE&rsquo;s own relaxed likelihood. The benchmark uses a flattened MW halo (q_h=0.72, ρ_⊙=0.30 GeV cm⁻³), a cored Burkert LMC halo, Ibata disks, and a lighter LMC with a shallower IMF. It weakens the 20-year relaxed limit by up to 1.6 near 0.32 M_⊙. A deliberately extreme stress test weakens it by up to 3.4.</p>
+<p>The headline &ldquo;~6×&rdquo; (6.2 for the benchmark, 13.2 for the stress test) is relative to the strict limit, so it also folds in OGLE&rsquo;s own event-origin difference. In the planetary-mass window, the factors are 1.19 and 2.39 for smooth PBHs, and 3.4 and 6.0 for 30 pc clusters under a Lyα shot-noise cap. A one-at-a-time ablation at 0.45 M_⊙ shows the IMF matters most (R=0.68), while the heavier disks push the other way (1.10). LMC-induced disequilibrium <em>raises</em> the lensing-weighted halo density by about 6%, undercutting a common critique.</p>
+<p>The caveats are explicit:
+- Parameters were chosen to suppress the rate and are fixed, not marginalized.
+- The IMF endpoints are not a joint confidence region.
+- The stress test conflicts with 6D tracer masses.
+- Its isothermal LMC halo fails the LMC mass constraints.</p>
+<p>Oddly, the weaker limits coexist with a larger preference for nonzero f near 0.03 M_⊙: Δχ²⁼⁹.2–10.2, versus 3.7 in OGLE&rsquo;s analysis.</p>]]></description>
+  </item>
 
   <item>
     <title>The renormalization-group running of neutrino mixing is undetectable</title>
@@ -2802,36 +2882,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Billoir et al.</dc:creator>
     <description><![CDATA[<p><em>(Abstract only.)</em> LHCb deployed a fast parameterised Kalman filter in the first trigger stage from the 2025 run, fitting charged-particle trajectories at the full 30 MHz collision rate on ~500 GPUs. The trick is to replace magnetic-field-map lookups and numerical integration with analytical parameterisations while keeping the Kalman mathematical framework intact. Against the previous partial fitter it delivers a factor-of-two improvement in D⁰ and J/ψ invariant-mass resolution (from improved momentum resolution), greater robustness to misalignment, and more than doubled rejection of accidental tracks at no loss of genuine-track efficiency — for only a 2% processing-time increase.</p>
 <p>Why it matters: this is real-time reconstruction crossing from R&amp;D into production in an all-software trigger, the hardware counterpart to the month&rsquo;s ML-trigger work. Sharper online mass resolution and background rejection directly widen what LHCb&rsquo;s first stage can select and store, a template for HL-LHC-era triggering. As an abstract, the numbers are headline-level; the underlying validation (efficiency turn-ons, systematics of the parameterisation across the field volume) isn&rsquo;t visible here.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Precise Determination of the Shape of the Proton's Gluon Cloud from HERA data</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-14955</link>
-    <guid isPermaLink="false">arxiv:2607.14955</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tobias Toll et al.</dc:creator>
-    <description><![CDATA[<p><em>(Abstract only.)</em> An analytic leading-twist calculation of coherent and incoherent exclusive J/ψ photoproduction cross sections in the hotspot model is fit to all H1 and ZEUS diffractive data, yielding χ²/ndf=0.77. The extracted gluon-cloud profile has a perturbative Gaussian core of 0.105(1) fm sitting inside a non-perturbative exponential halo of 0.220(2) fm — a two-scale structure the authors report as independent of x_Pom or hotspot number, with a stable energy dependence α&rsquo;_eff=0.046(19).</p>
-<p>Why it matters: a clean, tightly-fit picture of the proton&rsquo;s small-x gluonic transverse structure, resolving core from halo, is exactly the input the EIC structure program needs, and the excellent fit lends the hotspot framework credibility as an interpretive tool. As an abstract, the key caveats — leading-twist/leading-order treatment and the model-dependence of the incoherent-to-fluctuation mapping — can&rsquo;t be assessed from the text provided.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Searching for the N-naturalness tower of neutrinos</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-14243</link>
-    <guid isPermaLink="false">arxiv:2607.14243</guid>
-    <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sofia Lonardi et al.</dc:creator>
-    <description><![CDATA[<p>First experimental test of the N-naturalness neutrino tower, via a global fit of public data (Daya Bay, GERDA, LEGEND-200) plus projections (JUNO+TAO, LEGEND-1000) in the <code>Newtrinos.jl</code> framework. The model solves the hierarchy problem with N dark sectors of varying Higgs mass, encoding residual fine-tuning in a parameter r (r=1 = no tuning); implemented via the many-mixing-partners mechanism, it generates suppressed neutrino masses and a tower of extra light states that distort oscillations and shift m_ββ. Numerically diagonalising the full N-sector mass matrix (avoiding the perturbative breakdown at small N), they set 90% CL contours. For Majorana neutrinos, current GERDA+Daya Bay data already exclude non-fine-tuned scenarios (r=1) up to N=10⁴ for both orderings — killing the tidy N=10⁴ GUT-unification benchmark that let the framework address the hierarchy problem without ad-hoc tuning. JUNO+TAO projections push lower bounds to N≳500 and require r≲0.1 in 500≤N≤10⁴.</p>
-<p>Why it matters: it converts a &ldquo;no-fine-tuning&rdquo; selling point into a falsified benchmark using existing neutrino data, exactly the constraining mood of today&rsquo;s DM-and-naturalness cluster. Caveats are honestly flagged: the Dirac case is far weaker (no 0νββ handle, excluded only to N∼50); results assume m_0=0.01 eV and η=1+1/N; and m_ββ rests on a single benchmark set of nuclear matrix elements (varied only for robustness checks).</p>]]></description>
-  </item>
-
-  <item>
-    <title>The H_0 World Cup II: A comprehensive competition between proposed Hubble tension solutions</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2607-13283</link>
-    <guid isPermaLink="false">arxiv:2607.13283</guid>
-    <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nils Sch\"oneberg et al.</dc:creator>
-    <description><![CDATA[<p><em>(Abstract only.)</em> An updated systematic bake-off — the sequel to the &ldquo;H_0 Olympics&rdquo; — subjecting fourteen representative alternatives to ΛCDM to a common analysis of current CMB (ACT/SPT), BAO (DESI) and Type Ia SN data, now with the Hubble tension quoted above 7σ. The contenders span four mechanisms: late-time expansion modifications, modified recombination, extra pre-recombination radiation, and early non-radiative energy injection. Every model is scored with both Bayesian and frequentist tension/performance metrics, with the neutrino mass sum left free, and tested for whether adding curvature or CPL dark energy improves the fit. Leading contenders face a robustness gauntlet: alternative CMB likelihoods and multipole cuts, different SN samples, LSS information, and BBN constraints.</p>
-<p>Per the digest, the verdict favors early dark energy and early modified gravity (shifting H_0 toward 70 and cutting the SH0ES residual to ∼2.5–3.6σ), places varying-electron-mass models intermediate, and finds enhanced-radiation and late-time scenarios failing to beat ΛCDM. <strong>Why it matters:</strong> it converts a scattered literature of individual tension &ldquo;solutions&rdquo; into a refereed, common-framework ranking — the reference tournament model-builders will cite, with Paper II&rsquo;s robustness tests being the operative part. The honest caveat is intrinsic to any such contest: conclusions depend on the chosen dataset combination and priors, which is precisely why the robustness suite is included; results not visible here beyond the digest summary.</p>]]></description>
   </item>
 
 </channel>

@@ -39,6 +39,44 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Friday, October 23, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261031312-lepton-number-and-flavor-violation-mediated-by-doubly-charged-scalars-at-tristan-collider-takeshi-fukuyama-et-al"><a href="https://arxiv.org/abs/2610.31312">arXiv:2610.31312</a> — Lepton number and flavor violation mediated by doubly charged scalars at μTRISTAN μ⁺μ⁺ collider (Takeshi Fukuyama et al.)</h3>
+<p>The paper builds a parameter-extraction strategy for doubly charged scalars (SU(2) singlet k⁺⁺ coupling to l_R, or triplet Δ⁺⁺ coupling to ℓ_L) at the √s = 2 TeV μ⁺μ⁺ option. It assumes 12 fb⁻¹/yr, beam polarization P = 1/2 (surface μ⁺ halved by muonium formation), and a 10° nozzle acceptance, with 5° also shown. Z₂- or Z₃-symmetric coupling textures kill μ→eγ and μ→3e while leaving ΔL_μ = −ΔL_e = 2 (Mu→M̄u, μ⁺μ⁺→e⁺e⁺) and LNV channels.</p>
+<p>The core idea is to combine a future Mu→M̄u measurement, which fixes |G_i| = |y_ee y_μμ|/(4√2 m_S²), with three collider observables:
+- <strong>μ⁺μ⁺→e⁺e⁺:</strong> the ratio σ_Δ/σ_k is (1+P)²/(1−P)² = 9.
+- <strong>μ⁺μ⁺→e⁺e⁺γ:</strong> for m_S &lt; √s, the photon-energy peak sits at E_γ = E − m_S²/4E. This gives the mass, and the peak shape gives Γ_S independent of decay modes. The rate is θ_cut-sensitive through I_θ (2.9 vs 4.3).
+- <strong>μ⁺μ⁺→e⁺e⁺Z(→jj):</strong> the Z coupling adds a factor (½−s_W²)²/s_W⁴ ≈ 1.35, so the singlet/triplet ratio is ≈ 12.2. O(100) events give &gt;3σ representation discrimination.</p>
+<p>Two side results:
+- <strong>LEP reinterpretation:</strong> using the destructive-interference Bhabha bound gives |G₂|/G_F &lt; 3.05×10⁻³·|g_μμ/g_ee|, comparable to the existing Mu→M̄u limit of 3.0×10⁻³. The authors flag that earlier work used the constructive case.
+- <strong>Background:</strong> the e⁺e⁺4ν background is 1.9 fb, dropping to the zeptobarn level with a missing-energy veto.</p>
+<p>Caveats:
+- The provided text truncates in Sec. 5.3. The LNV tb̄tb̄ and μ⁺e⁻tb̄tb̄ analyses (Secs. 6–7) are not available here.
+- Everything is generator-level with no detector simulation.
+- The numerics assume S⁺⁺ decays only to ee/μμ with y_ee = y_μμ.
+- Representation discrimination vanishes for an unpolarized beam, and the true P is uncertain.</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261031316-charmed-baryon-to-meson-ratios-inside-jets-as-a-discriminator-of-hadronization-mechanisms-zi-xuan-xu-et-al"><a href="https://arxiv.org/abs/2610.31316">arXiv:2610.31316</a> — Charmed baryon-to-meson ratios inside jets as a discriminator of hadronization mechanisms (Zi-Xuan Xu et al.)</h3>
+<p>This paper is about hadronization rather than substructure proper. Its relevance to this topic comes through in-jet z_∥ distributions and jet-axis radial profiles of Λc⁺/D⁰ in anti-kT R = 0.4 charged jets.</p>
+<p>The setup is p+p in PYTHIA8 with CR-BLC Mode 2, and Pb+Pb in SHELL (Langevin plus higher-twist energy loss, CLVisc hydro, coalescence + Peterson fragmentation).</p>
+<p>The headline result is a sign flip in E = R_jet/R_incl:
+- <strong>p+p:</strong> E &gt; 1 at low-to-intermediate p_T, growing with the jet-p_T cut. This is opposite to Λ/K⁰_S, and the fragmentation baseline gives E ≈ 1.
+- <strong>0–10% Pb+Pb:</strong> 10–20% suppression for 4 &lt; p_T &lt; 8 GeV with p_T^jet &gt; 10 GeV. The reading is that coalescence with uncorrelated thermal partons is filtered out by the jet requirement.</p>
+<p>Both mechanisms soften Λc relative to D⁰ in z_∥, so a falling ratio with z_∥ signals recombination-type physics generically. The in-jet coalescence fraction falls with z_∥, from 0.97 to 0.82 for Λc and from 0.72 to 0.35 for D⁰. The PbPb/pp low-z_∥ enhancement reaches about 3 for Λc and about 2 for D⁰. With coalescence off, the z_∥ shape is insensitive to energy loss.</p>
+<p>In both systems the radial profile rises with r. The bin displaced farthest outward is the lowest-p_T bin for color reconnection and the intermediate-p_T bin for coalescence.</p>
+<p>Caveats:
+- The rising CR-BLC radial profile is opposite to ALICE&rsquo;s indication that Λc sits closer to the jet axis than D⁰. The paper says these cannot yet be compared directly because kinematics and jet definitions differ.
+- Profiles stop at r = 0.2 for statistical reasons.
+- No Pb+Pb background subtraction is applied.
+- The PbPb/pp ratio depends on the chosen p+p reference; the authors call it a decomposition tool, not R_AA.
+- Only one color-reconnection tune is used.
+- z_∥ shapes are compared to 13 TeV data only.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, October 22, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -1555,7 +1593,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-22 05:46 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-23 05:30 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
