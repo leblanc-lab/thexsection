@@ -39,6 +39,46 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Tuesday, October 27, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261033757-dissecting-flavor-tagging-with-graph-neural-networks-ankita-budhraja-et-al"><a href="https://arxiv.org/abs/2610.33757">arXiv:2610.33757</a> — Dissecting flavor tagging with graph neural networks (Ankita Budhraja et al.)</h3>
+<p>The authors train ParticleNet (three EdgeConv blocks, k=16, no block concatenation or input batch-norm) on Pythia 8.318 Z(→νν)+jet samples, R=0.4, with 80–400 GeV jets matched cell-wise in (p_T, |y|). Per-bin AUC rises from 0.842 to 0.904. Two baselines run alongside it:
+- <strong>Multiplicity alone:</strong> the smoothed likelihood ratio L_N gives AUC 0.787–0.841.
+- <strong>Six-observable BDT</strong> (N, p_T, p_T^D, λ_1, λ_0.5, Q_0.5): AUC 0.807–0.865.</p>
+<p>ParticleNet&rsquo;s relative gain over L_N (7–8%) is about three times the BDT&rsquo;s (2–3%). Standard observables therefore capture only about a third of what the network extracts beyond N.</p>
+<p>The main contribution is a decomposition, M = L_N + Δ, where Δ is a residual log-likelihood ratio at fixed (N, p_T).
+- <strong>Calibration at fixed N:</strong> the mean P(g) matches the gluon fraction, and the equal-odds multiplicity shifts from N≈23 to N≈35 across p_T.
+- <strong>Spread of Δ:</strong> σ_Δ is 0.5–1.6, against ≤0.28 variation of L_N within a bin.
+- <strong>Overturning multiplicity:</strong> for jets whose N favours the wrong class at ≥2:1 odds, Δ recovers 24–34% of gluon jets and 20–32% of quark jets, rising with p_T.</p>
+<p>They probe Δ by rescaling constituent angles by e^δ at fixed momenta and PID:
+- The response S_R is positive for most jets and peaks at N≈18–27, where 80–90% of jets become more gluon-like when broadened.
+- At high N, the gluon response goes to zero; quark jets keep a median S_R of 0.3–0.5 in the top two p_T bins.</p>
+<p><strong>Caveats:</strong>
+- Single generator, no detector simulation, and no hadronization-model comparison. This matters because N and p_T^D are IRC-unsafe.
+- Calibration is tested only as a fixed-N mean, so identifying Δ with Δ* is approximate.
+- Inputs are truncated at 100 constituents.
+- The authors flag that the misID-vs-correct comparison is selection-biased (their toy, App. B).
+- They also flag that the high-N falloff may be a distance-from-decision-boundary effect rather than physics.</p>
+<h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261035154-lhc-a-high-energy-high-luminosity-muon-hadron-collider-at-cern-krzysztof-piotrzkowski"><a href="https://arxiv.org/abs/2610.35154">arXiv:2610.35154</a> — LHμC: A high energy, high luminosity muon-hadron collider at CERN (Krzysztof Piotrzkowski)</h3>
+<p>This paper is only tangential to the topic. It is a μ⁺p collider proposal (a conference status report), relevant mainly as a near-term test-bench for cold-muon and Muon Collider technology. The machine collides a 1 (or 2) TeV μ⁺ beam with the 7 TeV LHC beam, giving √s = 5.3 (7.5) TeV.</p>
+<p>Example parameters:
+- <strong>Luminosity:</strong> 2.1×10³⁴ cm⁻²s⁻¹ peak.
+- <strong>Timing:</strong> 4 MHz collision rate, 12.5 Hz repetition, 80 μ⁺ bunches at 250 ns spacing.
+- <strong>Beams:</strong> σ_x,y = 4.8 μm, with 7×10⁹ μ⁺ and 2.2×10¹² p per bunch.</p>
+<p>These numbers assume μ⁺ yields at 5% of μTRISTAN, a 4 MW proton driver, and enhanced LHC bunch populations (an order of magnitude above HL-LHC nominal) enabled by fewer bunches.</p>
+<p>The technology relevant to muon colliders:
+- <strong>Source:</strong> the J-PARC/KEK ultra-cold μ⁺ scheme (thermal muonium from aerogel, laser ionisation; μ⁺ only) rather than ionisation cooling. Hot tungsten wires, two-step cooling and a hybrid source are under study.
+- <strong>Acceleration:</strong> the LHeC ERL plus vertical FFAG beamlines, e.g. one vFFAG taking 70→500 GeV, avoiding fast-ramping RCS limits.
+- <strong>Machine-detector interface:</strong> reuses Muon Collider work on decay-background shielding (a nozzle) and TeV-muon detection.</p>
+<p>The outlook explicitly frames LHμC as a test-bench for the Muon Collider. It also mentions longer-term options: μp at FCC-hh (30 TeV) and μ⁺e⁻ at FCC-ee/LEP3.</p>
+<p><strong>Caveats:</strong> no simulation results are presented. The physics reach (Higgs couplings, di-Higgs, top, PDFs) is deferred to workshop contributions and a white paper in preparation. The luminosity rests on the source-yield and bunch-population assumptions above.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Monday, October 26, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -1675,7 +1715,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-26 05:50 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-27 05:41 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

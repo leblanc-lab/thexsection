@@ -7,7 +7,32 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Dissecting flavor tagging with graph neural networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-33757</link>
+    <guid isPermaLink="false">arxiv:2610.33757</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ankita Budhraja et al.</dc:creator>
+    <description><![CDATA[<p>The authors train ParticleNet (three EdgeConv blocks, k=16, no block concatenation or input batch-norm) on Pythia 8.318 Z(→νν)+jet samples, R=0.4, with 80–400 GeV jets matched cell-wise in (p_T, |y|). Per-bin AUC rises from 0.842 to 0.904. Two baselines run alongside it:
+- <strong>Multiplicity alone:</strong> the smoothed likelihood ratio L_N gives AUC 0.787–0.841.
+- <strong>Six-observable BDT</strong> (N, p_T, p_T^D, λ_1, λ_0.5, Q_0.5): AUC 0.807–0.865.</p>
+<p>ParticleNet&rsquo;s relative gain over L_N (7–8%) is about three times the BDT&rsquo;s (2–3%). Standard observables therefore capture only about a third of what the network extracts beyond N.</p>
+<p>The main contribution is a decomposition, M = L_N + Δ, where Δ is a residual log-likelihood ratio at fixed (N, p_T).
+- <strong>Calibration at fixed N:</strong> the mean P(g) matches the gluon fraction, and the equal-odds multiplicity shifts from N≈23 to N≈35 across p_T.
+- <strong>Spread of Δ:</strong> σ_Δ is 0.5–1.6, against ≤0.28 variation of L_N within a bin.
+- <strong>Overturning multiplicity:</strong> for jets whose N favours the wrong class at ≥2:1 odds, Δ recovers 24–34% of gluon jets and 20–32% of quark jets, rising with p_T.</p>
+<p>They probe Δ by rescaling constituent angles by e^δ at fixed momenta and PID:
+- The response S_R is positive for most jets and peaks at N≈18–27, where 80–90% of jets become more gluon-like when broadened.
+- At high N, the gluon response goes to zero; quark jets keep a median S_R of 0.3–0.5 in the top two p_T bins.</p>
+<p><strong>Caveats:</strong>
+- Single generator, no detector simulation, and no hadronization-model comparison. This matters because N and p_T^D are IRC-unsafe.
+- Calibration is tested only as a fixed-N mean, so identifying Δ with Δ* is approximate.
+- Inputs are truncated at 100 constituents.
+- The authors flag that the misID-vs-correct comparison is selection-biased (their toy, App. B).
+- They also flag that the high-N falloff may be a distance-from-decision-boundary effect rather than physics.</p>]]></description>
+  </item>
 
   <item>
     <title>FeynFacet: AI agents for analytic NLO QCD</title>
@@ -2798,16 +2823,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet mass, boosted Higgs, particle transformer) — abstract only, not yet read for a briefing.</em></p>
 <p>A novel deep neural network classifier, a ``Particle transformer&rsquo;&rsquo; (PaRT), is introduced for the identification of highly Lorentz-boosted resonances reconstructed as single, multipronged jets in measurements and searches performed by the CMS Collaboration at the CERN LHC. Based on a self-attention mechanism that allows the model to weigh the importance of different particles, PaRT is trained on a wide variety of topologies, notably demonstrating strong performance for the first time on jets originating from boosted Higgs boson decays to W bosons. The PaRT algorithm achieves a tagging efficiency of more than 50\% for such jets at a background efficiency of 1%, while maintaining decorrelation from the jet mass. A calibration is performed in proton-proton collision data collected by CMS at a center-of-mass energy of 13 TeV, with a data set corresponding to a total luminosity of 138 fb⁻¹. Data-to-simulation selection efficiency scale factors are measured to be in the 0.9-1.0 range, with relative uncertainties between 7 and 23%. The tagging capability of PaRT enhances the sensitivity of standard model measurements and searches for beyond-the-standard-model resonances decaying to hadronic diboson systems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantum-Inspired Tensor Network Autoencoders for Anomaly Detection: A MERA-Based Approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-06541</link>
-    <guid isPermaLink="false">arxiv:2604.06541</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Emre Gurkanli et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents) — abstract only, not yet read for a briefing.</em></p>
-<p>We investigate whether a multiscale tensor-network architecture can provide a useful inductive bias for reconstruction-based anomaly detection in collider jets. Jets are produced by a branching cascade, so their internal structure is naturally organised across angular and momentum scales. This motivates an autoencoder that compresses information hierarchically and can reorganise short-range correlations before coarse-graining. Guided by this picture, we formulate a MERA-inspired autoencoder acting directly on ordered jet constituents. To the best of our knowledge, a MERA-inspired autoencoder has not previously been proposed, and this architecture has not been explored in collider anomaly detection. We compare this architecture to a dense autoencoder, the corresponding tree-tensor-network limit, and standard classical baselines within a common background-only reconstruction framework. The paper is organised around two main questions: whether locality-aware hierarchical compression is genuinely supported by the data, and whether the disentangling layers of MERA contribute beyond a simpler tree hierarchy. To address these questions, we combine benchmark comparisons with a training-free local-compressibility diagnostic and a direct identity-disentangler ablation. The resulting picture is that the locality-preserving multiscale structure is well matched to jet data, and that the MERA disentanglers become beneficial precisely when the compression bottleneck is strongest. Overall, the study supports locality-aware hierarchical compression as a useful inductive bias for jet anomaly detection.</p>]]></description>
   </item>
 
 </channel>
