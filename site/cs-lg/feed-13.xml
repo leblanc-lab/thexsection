@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Interpretability Study on Deep Learning for Jet Physics at the Large Hadron Collider</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-01872</link>
+    <guid isPermaLink="false">arxiv:1911.01872</guid>
+    <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taoli Cheng</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Using deep neural networks for identifying physics objects at the Large Hadron Collider (LHC) has become a powerful alternative approach in recent years. After successful training of deep neural networks, examining the trained networks not only helps us understand the behaviour of neural networks, but also helps improve the performance of deep learning models through proper interpretation. We take jet tagging problem at the LHC as an example, using recursive neural networks as a starting point, aim at a thorough understanding of the behaviour of the physics-oriented DNNs and the information encoded in the embedding space. We make a comparative study on a series of different jet tagging tasks dominated by different underlying physics. Interesting observations on the latent space are obtained.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Forward-Backward Splitting for Optimal Transport based Problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1909-11448</link>
+    <guid isPermaLink="false">arxiv:1909.11448</guid>
+    <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillermo Ortiz-Jimenez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport aims to estimate a transportation plan that minimizes a displacement cost. This is realized by optimizing the scalar product between the sought plan and the given cost, over the space of doubly stochastic matrices. When the entropy regularization is added to the problem, the transportation plan can be efficiently computed with the Sinkhorn algorithm. Thanks to this breakthrough, optimal transport has been progressively extended to machine learning and statistical inference by introducing additional application-specific terms in the problem formulation. It is however challenging to design efficient optimization algorithms for optimal transport based extensions. To overcome this limitation, we devise a general forward-backward splitting algorithm based on Bregman distances for solving a wide range of optimization problems involving a differentiable function with Lipschitz-continuous gradient and a doubly stochastic constraint. We illustrate the efficiency of our approach in the context of continuous domain adaptation. Experiments show that the proposed method leads to a significant improvement in terms of speed and performance with respect to the state of the art for domain adaptation on a continually rotating distribution coming from the standard two moon dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hierarchical Optimal Transport for Multimodal Distribution Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-11768</link>
+    <guid isPermaLink="false">arxiv:1906.11768</guid>
+    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">John Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In many machine learning applications, it is necessary to meaningfully aggregate, through alignment, different but related datasets. Optimal transport (OT)-based approaches pose alignment as a divergence minimization problem: the aim is to transform a source dataset to match a target dataset using the Wasserstein distance as a divergence measure. We introduce a hierarchical formulation of OT which leverages clustered structure in data to improve alignment in noisy, ambiguous, or multimodal settings. To solve this numerically, we propose a distributed ADMM algorithm that also exploits the Sinkhorn distance, thus it has an efficient computational complexity that scales quadratically with the size of the largest cluster. When the transformation between two datasets is unitary, we provide performance guarantees that describe when and how well aligned cluster correspondences can be recovered with our formulation, as well as provide worst-case dataset geometry for such a strategy. We apply this method to synthetic datasets that model data as mixtures of low-rank Gaussians and study the impact that different geometric properties of the data have on alignment. Next, we applied our approach to a neural decoding application where the goal is to predict movement directions and instantaneous velocities from populations of neurons in the macaque primary motor cortex. Our results demonstrate that when clustered structure exists in datasets, and is consistent across trials or time points, a hierarchical alignment strategy that leverages such structure can provide significant improvements in cross-domain alignment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multi-marginal Wasserstein GAN</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-00888</link>
+    <guid isPermaLink="false">arxiv:1911.00888</guid>
+    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiezhang Cao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Multiple marginal matching problem aims at learning mappings to match a source domain to multiple target domains and it has attracted great attention in many applications, such as multi-domain image translation. However, addressing this problem has two critical challenges: (i) Measuring the multi-marginal distance among different domains is very intractable; (ii) It is very difficult to exploit cross-domain correlations to match the target domain distributions. In this paper, we propose a novel Multi-marginal Wasserstein GAN (MWGAN) to minimize Wasserstein distance among domains. Specifically, with the help of multi-marginal optimal transport theory, we develop a new adversarial objective function with inner- and inter-domain constraints to exploit cross-domain correlations. Moreover, we theoretically analyze the generalization performance of MWGAN, and empirically evaluate it on the balanced and imbalanced translation tasks. Extensive experiments on toy and real-world datasets demonstrate the effectiveness of MWGAN.</p>]]></description>
+  </item>
 
   <item>
     <title>Conservative Wasserstein Training for Pose Estimation</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eder Santana et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
 <p>We propose a convolutional recurrent neural network, with Winner-Take-All dropout for high dimensional unsupervised feature learning in multi-dimensional time series. We apply the proposedmethod for object recognition with temporal context in videos and obtain better results than comparable methods in the literature, including the Deep Predictive Coding Networks previously proposed by Chalasani and Principe.Our contributions can be summarized as a scalable reinterpretation of the Deep Predictive Coding Networks trained end-to-end with backpropagation through time, an extension of the previously proposed Winner-Take-All Autoencoders to sequences in time, and a new technique for initializing and regularizing convolutional-recurrent neural networks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Support Vector Machines and generalisation in HEP</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1702-04686</link>
-    <guid isPermaLink="false">arxiv:1702.04686</guid>
-    <pubDate>Wed, 15 Feb 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adrian Bevan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>We review the concept of Support Vector Machines (SVMs) and discuss examples of their use in a number of scenarios. Several SVM implementations have been used in HEP and we exemplify this algorithm using the Toolkit for Multivariate Analysis (TMVA) implementation. We discuss examples relevant to HEP including background suppression for H⁺τ⁻ at the LHC with several different kernel functions. Performance benchmarking leads to the issue of generalisation of hyper-parameter selection. The avoidance of fine tuning (over training or over fitting) in MVA hyper-parameter optimisation, i.e. the ability to ensure generalised performance of an MVA that is independent of the training, validation and test samples, is of utmost importance. We discuss this issue and compare and contrast performance of hold-out and k-fold cross-validation. We have extended the SVM functionality and introduced tools to facilitate cross validation in TMVA and present results based on these improvements.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Recurrent Neural Networks for anomaly detection in the Post-Mortem time series of LHC superconducting magnets</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1702-00833</link>
-    <guid isPermaLink="false">arxiv:1702.00833</guid>
-    <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maciej Wielgosz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>This paper presents a model based on Deep Learning algorithms of LSTM and GRU for facilitating an anomaly detection in Large Hadron Collider superconducting magnets. We used high resolution data available in Post Mortem database to train a set of models and chose the best possible set of their hyper-parameters. Using Deep Learning approach allowed to examine a vast body of data and extract the fragments which require further experts examination and are regarded as anomalies. The presented method does not require tedious manual threshold setting and operator attention at the stage of the system setup. Instead, the automatic approach is proposed, which achieves according to our experiments accuracy of 99%. This is reached for the largest dataset of 302 MB and the following architecture of the network: single layer LSTM, 128 cells, 20 epochs of training, look_back=16, look_ahead=128, grid=100 and optimizer Adam. All the experiments were run on GPU Nvidia Tesla K80</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast Discrete Distribution Clustering Using Wasserstein Barycenter with Sparse Support</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1510-00012</link>
-    <guid isPermaLink="false">arxiv:1510.00012</guid>
-    <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianbo Ye et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In a variety of research areas, the weighted bag of vectors and the histogram are widely used descriptors for complex objects. Both can be expressed as discrete distributions. D2-clustering pursues the minimum total within-cluster variation for a set of discrete distributions subject to the Kantorovich-Wasserstein metric. D2-clustering has a severe scalability issue, the bottleneck being the computation of a centroid distribution, called Wasserstein barycenter, that minimizes its sum of squared distances to the cluster members. In this paper, we develop a modified Bregman ADMM approach for computing the approximate discrete Wasserstein barycenter of large clusters. In the case when the support points of the barycenters are unknown and have low cardinality, our method achieves high accuracy empirically at a much reduced computational cost. The strengths and weaknesses of our method and its alternatives are examined through experiments, and we recommend scenarios for their respective usage. Moreover, we develop both serial and parallelized versions of the algorithm. By experimenting with large-scale data, we demonstrate the computational efficiency of the new methods and investigate their convergence properties and numerical stability. The clustering results obtained on several datasets in different domains are highly competitive in comparison with some widely used methods in the corresponding areas.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Conceptual Development of Quench Prediction App build on LSTM and ELQA framework</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2016.html#a1610-09201</link>
-    <guid isPermaLink="false">arxiv:1610.09201</guid>
-    <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matej Mertik et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>This article presents a development of web application for quench prediction in \gls{te-mpe-ee} at CERN. The authors describe an ELectrical Quality Assurance (ELQA) framework, a platform which was designed for rapid development of web integrated data analysis applications for different analysis needed during the hardware commissioning of the Large Hadron Collider (LHC). In second part the article describes a research carried out with the data collected from Quench Detection System by means of using an LSTM recurrent neural network. The article discusses and presents a conceptual work of implementing quench prediction application for \gls{te-mpe-ee} based on the ELQA and quench prediction algorithm.</p>]]></description>
   </item>
 
 </channel>

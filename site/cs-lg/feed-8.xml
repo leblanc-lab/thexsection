@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>On Unbalanced Optimal Transport: Gradient Methods, Sparsity and Approximation Error</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2202-03618</link>
+    <guid isPermaLink="false">arxiv:2202.03618</guid>
+    <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quang Minh Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the Unbalanced Optimal Transport (UOT) between two measures of possibly different masses with at most n components, where the marginal constraints of standard Optimal Transport (OT) are relaxed via Kullback-Leibler divergence with regularization factor τ. Although only Sinkhorn-based UOT solvers have been analyzed in the literature with the iteration complexity of O(τlog(n)ε log(log(n)ε)) and per-iteration cost of O(n²⁾ for achieving the desired error ε, their positively dense output transportation plans strongly hinder the practicality. On the other hand, while being vastly used as heuristics for computing UOT in modern deep learning applications and having shown success in sparse OT problem, gradient methods applied to UOT have not been formally studied. In this paper, we propose a novel algorithm based on Gradient Extrapolation Method (GEM-UOT) to find an ε-approximate solution to the UOT problem in O( κlog(τn/ε) ) iterations with O(n²⁾ per-iteration cost, where κ is the condition number depending on only the two input measures. Our proof technique is based on a novel dual formulation of the squared ℓ_2-norm UOT objective, which fills the lack of sparse UOT literature and also leads to a new characterization of approximation error between UOT and OT. To this end, we further present a novel approach of OT retrieval from UOT, which is based on GEM-UOT with fine tuned τ and a post-process projection step. Extensive experiments on synthetic and real datasets validate our theories and demonstrate the favorable performance of our methods in practice.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reflected Schrödinger Bridge for Constrained Generative Modeling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-03228</link>
+    <guid isPermaLink="false">arxiv:2401.03228</guid>
+    <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Deng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Diffusion models have become the go-to method for large-scale generative models in real-world applications. These applications often involve data distributions confined within bounded domains, typically requiring ad-hoc thresholding techniques for boundary enforcement. Reflected diffusion models (Lou23) aim to enhance generalizability by generating the data distribution through a backward process governed by reflected Brownian motion. However, reflected diffusion models may not easily adapt to diverse domains without the derivation of proper diffeomorphic mappings and do not guarantee optimal transport properties. To overcome these limitations, we introduce the Reflected Schrodinger Bridge algorithm: an entropy-regularized optimal transport approach tailored for generating data within diverse bounded domains. We derive elegant reflected forward-backward stochastic differential equations with Neumann and Robin boundary conditions, extend divergence-based likelihood training to bounded domains, and explore natural connections to entropic optimal transport for the study of approximate linear convergence - a valuable insight for practical training. Our algorithm yields robust generative modeling in diverse domains, and its scalability is demonstrated in real-world constrained generative modeling through standard image benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Nonnegative Tensor Factorization with Manifold Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01842</link>
+    <guid isPermaLink="false">arxiv:2401.01842</guid>
+    <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianyu Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Nonnegative tensor factorization (NTF) has become an important tool for feature extraction and part-based representation with preserved intrinsic structure information from nonnegative high-order data. However, the original NTF methods utilize Euclidean or Kullback-Leibler divergence as the loss function which treats each feature equally leading to the neglect of the side-information of features. To utilize correlation information of features and manifold information of samples, we introduce Wasserstein manifold nonnegative tensor factorization (WMNTF), which minimizes the Wasserstein distance between the distribution of input tensorial data and the distribution of reconstruction. Although some researches about Wasserstein distance have been proposed in nonnegative matrix factorization (NMF), they ignore the spatial structure information of higher-order data. We use Wasserstein distance (a.k.a Earth Mover&rsquo;s distance or Optimal Transport distance) as a metric and add a graph regularizer to a latent factor. Experimental results demonstrate the effectiveness of the proposed method compared with other NMF and NTF methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Point Cloud Classification via Deep Set Linearized Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01460</link>
+    <guid isPermaLink="false">arxiv:2401.01460</guid>
+    <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Scott Mahan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce Deep Set Linearized Optimal Transport, an algorithm designed for the efficient simultaneous embedding of point clouds into an L²⁻space. This embedding preserves specific low-dimensional structures within the Wasserstein space while constructing a classifier to distinguish between various classes of point clouds. Our approach is motivated by the observation that L²⁻distances between optimal transport maps for distinct point clouds, originating from a shared fixed reference distribution, provide an approximation of the Wasserstein-2 distance between these point clouds, under certain assumptions. To learn approximations of these transport maps, we employ input convex neural networks (ICNNs) and establish that, under specific conditions, Euclidean distances between samples from these ICNNs closely mirror Wasserstein-2 distances between the true distributions. Additionally, we train a discriminator network that attaches weights these samples and creates a permutation invariant classifier to differentiate between different classes of point clouds. We showcase the advantages of our algorithm over the standard deep set approach through experiments on a flow cytometry dataset with a limited number of labeled point clouds.</p>]]></description>
+  </item>
 
   <item>
     <title>Markovian Sliced Wasserstein Distances: Beyond Independent Projections</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jacob Lindbäck et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We present an efficient algorithm for regularized optimal transport. In contrast to previous methods, we use the Douglas-Rachford splitting technique to develop an efficient solver that can handle a broad class of regularizers. The algorithm has strong global convergence guarantees, low per-iteration cost, and can exploit GPU parallelization, making it considerably faster than the state-of-the-art for many problems. We illustrate its competitiveness in several applications, including domain adaptation and learning of generative models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Multimarginal Optimal Transport Formulation of Adversarial Multiclass Classification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2204-12676</link>
-    <guid isPermaLink="false">arxiv:2204.12676</guid>
-    <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Garcia Trillos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study a family of adversarial multiclass classification problems and provide equivalent reformulations in terms of: 1) a family of generalized barycenter problems introduced in the paper and 2) a family of multimarginal optimal transport problems where the number of marginals is equal to the number of classes in the original classification problem. These new theoretical results reveal a rich geometric structure of adversarial learning problems in multiclass classification and extend recent results restricted to the binary classification setting. A direct computational implication of our results is that by solving either the barycenter problem and its dual, or the MOT problem and its dual, we can recover the optimal robust classification rule and the optimal adversarial strategy for the original adversarial problem. Examples with synthetic and real data illustrate our results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>I²SB: Image-to-Image Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2302-05872</link>
-    <guid isPermaLink="false">arxiv:2302.05872</guid>
-    <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guan-Horng Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We propose Image-to-Image Schrödinger Bridge (I²SB), a new class of conditional diffusion models that directly learn the nonlinear diffusion processes between two given distributions. These diffusion bridges are particularly useful for image restoration, as the degraded images are structurally informative priors for reconstructing the clean images. I²SB belongs to a tractable class of Schrödinger bridge, the nonlinear extension to score-based models, whose marginal distributions can be computed analytically given boundary pairs. This results in a simulation-free framework for nonlinear diffusions, where the I²SB training becomes scalable by adopting practical techniques used in standard diffusion models. We validate I²SB in solving various image restoration tasks, including inpainting, super-resolution, deblurring, and JPEG restoration on ImageNet 256x256 and show that I²SB surpasses standard conditional diffusion models with more interpretable generative processes. Moreover, I²SB matches the performance of inverse methods that additionally require the knowledge of the corruption operators. Our work opens up new algorithmic opportunities for developing efficient nonlinear diffusion models on a large scale. scale. Project page and codes: https://i2sb.github.io/</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2303-05798</link>
-    <guid isPermaLink="false">arxiv:2303.05798</guid>
-    <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Clément Bonet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>When dealing with electro or magnetoencephalography records, many supervised prediction tasks are solved by working with covariance matrices to summarize the signals. Learning with these matrices requires using Riemanian geometry to account for their structure. In this paper, we propose a new method to deal with distributions of covariance matrices and demonstrate its computational efficiency on M/EEG multivariate time series. More specifically, we define a Sliced-Wasserstein distance between measures of symmetric positive definite matrices that comes with strong theoretical guarantees. Then, we take advantage of its properties and kernel methods to apply this distance to brain-age prediction from MEG data and compare it to state-of-the-art algorithms based on Riemannian geometry. Finally, we show that it is an efficient surrogate to the Wasserstein distance in domain adaptation for Brain Computer Interface applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Attention to Mean-Fields for Particle Cloud Generation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2305-15254</link>
-    <guid isPermaLink="false">arxiv:2305.15254</guid>
-    <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benno Käch et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, colliders) — original abstract; no AI summary.</em></p>
-<p>The generation of collider data using machine learning has emerged as a prominent research topic in particle physics due to the increasing computational challenges associated with traditional Monte Carlo simulation methods, particularly for future colliders with higher luminosity. Although generating particle clouds is analogous to generating point clouds, accurately modelling the complex correlations between the particles presents a considerable challenge. Additionally, variable particle cloud sizes further exacerbate these difficulties, necessitating more sophisticated models. In this work, we propose a novel model that utilizes an attention-based aggregation mechanism to address these challenges. The model is trained in an adversarial training paradigm, ensuring that both the generator and critic exhibit permutation equivariance/invariance with respect to their input. A novel feature matching loss in the critic is introduced to stabilize the training. The proposed model performs competitively to the state-of-art whilst having significantly fewer parameters.</p>]]></description>
   </item>
 
 </channel>

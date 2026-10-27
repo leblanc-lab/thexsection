@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Convergence of Recursive Stochastic Algorithms using Wasserstein Divergence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2003-11403</link>
+    <guid isPermaLink="false">arxiv:2003.11403</guid>
+    <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhishek Gupta et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper develops a unified framework, based on iterated random operator theory, to analyze the convergence of constant stepsize recursive stochastic algorithms (RSAs). RSAs use randomization to efficiently compute expectations, and so their iterates form a stochastic process. The key idea of our analysis is to lift the RSA into an appropriate higher-dimensional space and then express it as an equivalent Markov chain. Instead of determining the convergence of this Markov chain (which may not converge under constant stepsize), we study the convergence of the distribution of this Markov chain. To study this, we define a new notion of Wasserstein divergence. We show that if the distribution of the iterates in the Markov chain satisfy a contraction property with respect to the Wasserstein divergence, then the Markov chain admits an invariant distribution. We show that convergence of a large family of constant stepsize RSAs can be understood using this framework, and we provide several detailed examples.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Minibatch optimal transport distances; analysis and applications</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2101-01792</link>
+    <guid isPermaLink="false">arxiv:2101.01792</guid>
+    <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kilian Fatras et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport distances have become a classic tool to compare probability distributions and have found many applications in machine learning. Yet, despite recent algorithmic developments, their complexity prevents their direct use on large scale datasets. To overcome this challenge, a common workaround is to compute these distances on minibatches i.e. to average the outcome of several smaller optimal transport problems. We propose in this paper an extended analysis of this practice, which effects were previously studied in restricted cases. We first consider a large variety of Optimal Transport kernels. We notably argue that the minibatch strategy comes with appealing properties such as unbiased estimators, gradients and a concentration bound around the expectation, but also with limits: the minibatch OT is not a distance. To recover some of the lost distance axioms, we introduce a debiased minibatch OT function and study its statistical and optimisation properties. Along with this theoretical analysis, we also conduct empirical experiments on gradient flows, generative adversarial networks (GANs) or color transfer that highlight the practical interest of this strategy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>node2coords: Graph Representation Learning with Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2007-16056</link>
+    <guid isPermaLink="false">arxiv:2007.16056</guid>
+    <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Effrosyni Simou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In order to perform network analysis tasks, representations that capture the most relevant information in the graph structure are needed. However, existing methods do not learn representations that can be interpreted in a straightforward way and that are robust to perturbations to the graph structure. In this work, we address these two limitations by proposing node2coords, a representation learning algorithm for graphs, which learns simultaneously a low-dimensional space and coordinates for the nodes in that space. The patterns that span the low dimensional space reveal the graph&rsquo;s most important structural information. The coordinates of the nodes reveal the proximity of their local structure to the graph structural patterns. In order to measure this proximity by taking into account the underlying graph, we propose to use Wasserstein distances. We introduce an autoencoder that employs a linear layer in the encoder and a novel Wasserstein barycentric layer at the decoder. Node connectivity descriptors, that capture the local structure of the nodes, are passed through the encoder to learn the small set of graph structural patterns. In the decoder, the node connectivity descriptors are reconstructed as Wasserstein barycenters of the graph structural patterns. The optimal weights for the barycenter representation of a node&rsquo;s connectivity descriptor correspond to the coordinates of that node in the low-dimensional space. Experimental results demonstrate that the representations learned with node2coords are interpretable, lead to node embeddings that are stable to perturbations of the graph structure and achieve competitive or superior results compared to state-of-the-art methods in node classification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Combining Geometric and Topological Information for Boundary Estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a1910-04778</link>
+    <guid isPermaLink="false">arxiv:1910.04778</guid>
+    <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hengrui Luo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
+<p>A fundamental problem in computer vision is boundary estimation, where the goal is to delineate the boundary of objects in an image. In this paper, we propose a method which jointly incorporates geometric and topological information within an image to simultaneously estimate boundaries for objects within images with more complex topologies. We use a topological clustering-based method to assist initialization of the Bayesian active contour model. This combines pixel clustering, boundary smoothness, and potential prior shape information to produce an estimated object boundary. Active contour methods are knownto be extremely sensitive to algorithm initialization, relying on the user to provide a reasonable starting curve to the algorithm. In the presence of images featuring objects with complex topological structures, such as objects with holes or multiple objects, the user must initialize separate curves for each boundary of interest. Our proposed topologically-guided method can provide an interpretable, smart initialization in these settings, freeing up the user from potential pitfalls associated with objects of complex topological structure. We provide a detailed simulation study comparing our initialization to boundary estimates obtained from standard segmentation algorithms. The method is demonstrated on artificial image datasets from computer vision, as well as real-world applications to skin lesion and neural cellular images, for which multiple topological features can be identified.</p>]]></description>
+  </item>
 
   <item>
     <title>Zero-Shot Recognition via Optimal Transport</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Konstantinos Drossos et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>A challenging problem in deep learning-based machine listening field is the degradation of the performance when using data from unseen conditions. In this paper we focus on the acoustic scene classification (ASC) task and propose an adversarial deep learning method to allow adapting an acoustic scene classification system to deal with a new acoustic channel resulting from data captured with a different recording device. We build upon the theoretical model of HΔH-distance and previous adversarial discriminative deep learning method for ASC unsupervised domain adaptation, and we present an adversarial training based method using the Wasserstein distance. We improve the state-of-the-art mean accuracy on the data from the unseen conditions from 32% to 45%, using the TUT Acoustic Scenes dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Interpretability Study on Deep Learning for Jet Physics at the Large Hadron Collider</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-01872</link>
-    <guid isPermaLink="false">arxiv:1911.01872</guid>
-    <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taoli Cheng</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Using deep neural networks for identifying physics objects at the Large Hadron Collider (LHC) has become a powerful alternative approach in recent years. After successful training of deep neural networks, examining the trained networks not only helps us understand the behaviour of neural networks, but also helps improve the performance of deep learning models through proper interpretation. We take jet tagging problem at the LHC as an example, using recursive neural networks as a starting point, aim at a thorough understanding of the behaviour of the physics-oriented DNNs and the information encoded in the embedding space. We make a comparative study on a series of different jet tagging tasks dominated by different underlying physics. Interesting observations on the latent space are obtained.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Forward-Backward Splitting for Optimal Transport based Problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1909-11448</link>
-    <guid isPermaLink="false">arxiv:1909.11448</guid>
-    <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillermo Ortiz-Jimenez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport aims to estimate a transportation plan that minimizes a displacement cost. This is realized by optimizing the scalar product between the sought plan and the given cost, over the space of doubly stochastic matrices. When the entropy regularization is added to the problem, the transportation plan can be efficiently computed with the Sinkhorn algorithm. Thanks to this breakthrough, optimal transport has been progressively extended to machine learning and statistical inference by introducing additional application-specific terms in the problem formulation. It is however challenging to design efficient optimization algorithms for optimal transport based extensions. To overcome this limitation, we devise a general forward-backward splitting algorithm based on Bregman distances for solving a wide range of optimization problems involving a differentiable function with Lipschitz-continuous gradient and a doubly stochastic constraint. We illustrate the efficiency of our approach in the context of continuous domain adaptation. Experiments show that the proposed method leads to a significant improvement in terms of speed and performance with respect to the state of the art for domain adaptation on a continually rotating distribution coming from the standard two moon dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Optimal Transport for Multimodal Distribution Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1906-11768</link>
-    <guid isPermaLink="false">arxiv:1906.11768</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">John Lee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In many machine learning applications, it is necessary to meaningfully aggregate, through alignment, different but related datasets. Optimal transport (OT)-based approaches pose alignment as a divergence minimization problem: the aim is to transform a source dataset to match a target dataset using the Wasserstein distance as a divergence measure. We introduce a hierarchical formulation of OT which leverages clustered structure in data to improve alignment in noisy, ambiguous, or multimodal settings. To solve this numerically, we propose a distributed ADMM algorithm that also exploits the Sinkhorn distance, thus it has an efficient computational complexity that scales quadratically with the size of the largest cluster. When the transformation between two datasets is unitary, we provide performance guarantees that describe when and how well aligned cluster correspondences can be recovered with our formulation, as well as provide worst-case dataset geometry for such a strategy. We apply this method to synthetic datasets that model data as mixtures of low-rank Gaussians and study the impact that different geometric properties of the data have on alignment. Next, we applied our approach to a neural decoding application where the goal is to predict movement directions and instantaneous velocities from populations of neurons in the macaque primary motor cortex. Our results demonstrate that when clustered structure exists in datasets, and is consistent across trials or time points, a hierarchical alignment strategy that leverages such structure can provide significant improvements in cross-domain alignment.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-marginal Wasserstein GAN</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1911-00888</link>
-    <guid isPermaLink="false">arxiv:1911.00888</guid>
-    <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiezhang Cao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Multiple marginal matching problem aims at learning mappings to match a source domain to multiple target domains and it has attracted great attention in many applications, such as multi-domain image translation. However, addressing this problem has two critical challenges: (i) Measuring the multi-marginal distance among different domains is very intractable; (ii) It is very difficult to exploit cross-domain correlations to match the target domain distributions. In this paper, we propose a novel Multi-marginal Wasserstein GAN (MWGAN) to minimize Wasserstein distance among domains. Specifically, with the help of multi-marginal optimal transport theory, we develop a new adversarial objective function with inner- and inter-domain constraints to exploit cross-domain correlations. Moreover, we theoretically analyze the generalization performance of MWGAN, and empirically evaluate it on the balanced and imbalanced translation tasks. Extensive experiments on toy and real-world datasets demonstrate the effectiveness of MWGAN.</p>]]></description>
   </item>
 
 </channel>

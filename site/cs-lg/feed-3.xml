@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Neural Cluster First, Route Second: One-Shot Capacitated Vehicle Routing via Differentiable Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09301</link>
+    <guid isPermaLink="false">arxiv:2605.09301</guid>
+    <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel J. K. Chin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Capacitated Vehicle Routing Problem (CVRP) underpins modern last-mile logistics. Current Neural Combinatorial Optimization (NCO) methods construct CVRP solutions autoregressively, inheriting sequential decoding bottlenecks, sensitivity to spatial symmetries, and brittle out-of-distribution behavior. We revisit the classical Cluster-First-Route-Second (CFRS) paradigm &ndash; long known to be asymptotically optimal but largely overlooked by NCO &ndash; and argue that it is structurally aligned with the core strengths of deep learning: similarity and assignment over global context, rather than the construction of long sequential tours. We introduce Neural CFRS, the first purely non-autoregressive one-shot neural CFRS framework for the CVRP. It enforces global fleet-capacity constraints end-to-end via a differentiable entropic Optimal Transport layer, producing a continuous transport plan to sparsify an exact capacitated assignment solver. We provide formal theoretical guarantees that our architecture intrinsically abstracts away E(2) spatial, inter-route permutation, and intra-route traversal symmetries. By equipping the framework with a pre-trained spatial vocabulary, we unlock extreme parameter efficiency and zero-shot scaling. Designed primarily for real-world spatial distributions under a constant capacity setting, Neural CFRS scales robustly to out-of-distribution N=1000 instances with a &lt; 4% gap &ndash; retaining an approximate 5% gap at this scale even as an ultra-lightweight, single-layer architecture. Furthermore, when deployed out-of-the-box on standard benchmarks, we achieve a highly competitive 2.73% optimality gap on size-100 problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Liouville PDE-based sliced-Wasserstein flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-17204</link>
+    <guid isPermaLink="false">arxiv:2505.17204</guid>
+    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jayshawn Cooper et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The sliced Wasserstein flow (SWF), a nonparametric and implicit generative gradient flow, is transformed into a Liouville partial differential equation (PDE)-based formalism. First, the stochastic diffusive term from the Fokker-Planck equation-based Monte Carlo is reformulated as a Liouville PDE-based transport without the diffusive term, essentially reflecting the probability flow ODE. The involved density estimation is handled by normalizing flows of neural ODE without an explicitly defined score function. Next, the computation of the Wasserstein barycenter is approximated by the Liouville PDE-based SWF barycenter with the prescription of Kantorovich potentials for the induced gradient flow to generate its samples. These two efforts show outperforming convergence in training and testing Liouville PDE-based SWF and SWF barycenters with reduced variance. Applying the generative Liouville PDE-based SWF barycenter for fair regression demonstrates competent profiles in the accuracy-fairness Pareto curves, with comparable and alternative choices against the standard SWF, and significant benefit in improving fairness with scalability in comparison to the exact Wasserstein barycenter.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Load--Reserve Wasserstein Propagation for Isotropic Diffusion Samplers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-19670</link>
+    <guid isPermaLink="false">arxiv:2603.19670</guid>
+    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zicheng Lyu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Many Wasserstein analyses of diffusion samplers control reverse-time propagation by global stability summaries of the learned drift. These summaries can hide radial geometry: equal-height expansive regions of different width can yield different propagation costs. We give a profile-adapted propagation interface for scalar-isotropic reverse-SDE windows with certified learned-drift profiles. A certified lower radial profile is compiled into an affine-tail transportation cost: reflection coupling reduces stability to a one-dimensional slope budget, and Hardy capacity quantifies the load paid before a contractive tail reserve. The compiler yields an adapted cost, contraction rate, and retained tail slope. Score-modeling and solver residuals are treated as forcing inputs and propagate additively in the adapted Wasserstein distance. Quadratic Wasserstein error is reported only at terminal time, using the retained tail slope with tail, moment, or support information. Gaussian-smoothed denoising geometry supplies inverse-radius profiles for uniformly dissipative, bounded-amplitude, and common-covariance mixture windows. Fixed-height examples show that adverse height, even with eventual reserve, does not determine the certificate; barrier examples show that the load dependence is structural.</p>]]></description>
+  </item>
+
+  <item>
+    <title>cuRegOT: A GPU-Accelerated Solver for Entropic-Regularized Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08793</link>
+    <guid isPermaLink="false">arxiv:2605.08793</guid>
+    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Qiu</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) has emerged as a fundamental tool in modern machine learning, yet its computational cost remains a significant bottleneck for large-scale applications. While harnessing the massive parallelism of modern GPU hardware is critical for efficiency, the de facto standard Sinkhorn algorithm, despite its ease of parallelization, often suffers from slow convergence in challenging problems. More recently, the sparse-plus-low-rank quasi-Newton method offers a balance between convergence rate and per-iteration complexity; however, its efficiency on GPUs is severely hindered by the serial nature of sparse matrix symbolic analysis and irregular memory access patterns. To bridge this gap, we present cuRegOT, a high-performance GPU solver tailored for entropic-regularized OT. We introduce a suite of algorithmic and architectural optimizations, including an amortized symbolic analysis strategy to mitigate CPU bottlenecks, an asynchronous Sinkhorn iterates generation mechanism, and a fused kernel for bandwidth-efficient gradient evaluation. These strategies are backed by rigorous theoretical guarantees ensuring algorithmic convergence. Extensive numerical experiments demonstrate that cuRegOT achieves significant speedups over state-of-the-art GPU-based solvers across a variety of benchmark tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>SCOT: Multi-Source Cross-City Transfer with Optimal-Transport Soft-Correspondence Objective</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yiye Jiang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper is focused on the statistical analysis of data consisting of a collection of multiple series of probability measures that are indexed by distinct time instants and supported over a bounded interval of the real line. By modeling these time-dependent probability measures as random objects in the Wasserstein space, we propose a new auto-regressive model for the statistical analysis of multivariate distributional time series. Using the theory of iterated random function systems, results on the second order stationarity of the solution of such a model are provided. We also propose a consistent estimator for the auto-regressive coefficients of this model. Due to the simplex constraints that we impose on the model coefficients, the proposed estimator that is learned under these constraints, naturally has a sparse structure. The sparsity allows the application of the proposed model in learning a graph of temporal dependency from multivariate distributional time series. We explore the numerical performances of our estimation procedure using simulated data. To shed some light on the benefits of our approach for real data analysis, we also apply this methodology to two data sets, respectively made of observations from age distribution in different countries and those from the bike sharing network in Paris.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Polychronous Wave Computing: Timing-Native Address Selection in Spiking Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13079</link>
-    <guid isPermaLink="false">arxiv:2601.13079</guid>
-    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Natalila G. Berloff</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Spike timing offers a combinatorial address space, suggesting that timing-based spiking inference can be executed as lookup and routing rather than as dense multiply&ndash;accumulate. Yet most neuromorphic and photonic systems still digitize events into timestamps, bins, or rates and then perform selection in clocked logic. We introduce Polychronous Wave Computing (PWC), a timing-native address-selection primitive that maps relative spike latencies directly to a discrete output route in the wave domain. Spike times are phase-encoded in a rotating frame and processed by a programmable multiport interferometer that evaluates K template correlations in parallel; a driven&ndash;dissipative winner-take-all stage then performs a physical argmax, emitting a one-hot output port. We derive the operating envelope imposed by phase wrapping and mutual coherence, and collapse timing jitter, static phase mismatch, and dephasing into a single effective phase-noise budget whose induced winner&ndash;runner-up margin predicts boundary-first failures and provides an intensity-only calibration target. Simulations show that nonlinear competition improves routing fidelity compared with noisy linear intensity readout, and that hardware-in-the-loop phase tuning rescues a temporal-order gate from 55.9% to 97.2% accuracy under strong static mismatch. PWC provides a fast routing coprocessor for LUT-style spiking networks and sparse top-1 gates (e.g., mixture-of-experts routing) across polaritonic, photonic, and oscillator platforms.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scaling laws for amplitude surrogates</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13308</link>
-    <guid isPermaLink="false">arxiv:2601.13308</guid>
-    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henning Bahl et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Anja Butter) — original abstract; no AI summary.</em></p>
-<p>Scaling laws describing the dependence of neural network performance on the amount of training data, the spent compute, and the network size have emerged across a huge variety of machine learning task and datasets. In this work, we systematically investigate these scaling laws in the context of amplitude surrogates for particle physics. We show that the scaling coefficients are connected to the number of external particles of the process. Our results demonstrate that scaling laws are a useful tool to achieve desired precision targets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Impact of Circuit Depth versus Qubit Count on Variational Quantum Classifiers for Higgs Boson Signal Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-11937</link>
-    <guid isPermaLink="false">arxiv:2601.11937</guid>
-    <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fatih Maulana</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>High-Energy Physics (HEP) experiments, such as those at the Large Hadron Collider (LHC), generate massive datasets that challenge classical computational limits. Quantum Machine Learning (QML) offers a potential advantage in processing high-dimensional data; however, finding the optimal architecture for current Noisy Intermediate-Scale Quantum (NISQ) devices remains an open challenge. This study investigates the performance of Variational Quantum Classifiers (VQC) in detecting Higgs Boson signals using the ATLAS Higgs Boson Machine Learning Challenge 2014 experiment dataset. We implemented a dimensionality reduction pipeline using Principal Component Analysis (PCA) to map 30 physical features into 4-qubit and 8-qubit latent spaces. We benchmarked three configurations: (A) a shallow 4-qubit circuit, (B) a deep 4-qubit circuit with increased entanglement layers, and (C) an expanded 8-qubit circuit. Experimental results demonstrate that increasing circuit depth significantly improves performance, yielding the highest accuracy of 56.2% (Configuration B), compared to a baseline of 51.9%. Conversely, simply scaling to 8 qubits resulted in a performance degradation to 50.6% due to optimization challenges associated with Barren Plateaus in the larger Hilbert space. These findings suggest that for near-term quantum hardware, prioritizing circuit depth and entanglement capability is more critical than increasing qubit count for effective anomaly detection in HEP data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Accelerated Regularized Wasserstein Proximal Sampling Algorithms</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-09848</link>
-    <guid isPermaLink="false">arxiv:2601.09848</guid>
-    <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hong Ye Tan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider sampling from a Gibbs distribution by evolving a finite number of particles using a particular score estimator rather than Brownian motion. To accelerate the particles, we consider a second-order score-based ODE, similar to Nesterov acceleration. In contrast to traditional kernel density score estimation, we use the recently proposed regularized Wasserstein proximal method, yielding the Accelerated Regularized Wasserstein Proximal method (ARWP). We provide a detailed analysis of continuous- and discrete-time non-asymptotic and asymptotic mixing rates for Gaussian initial and target distributions, using techniques from Euclidean acceleration and accelerated information gradients. Compared with the kinetic Langevin sampling algorithm, the proposed algorithm exhibits a higher contraction rate in the asymptotic time regime. Numerical experiments are conducted across various low-dimensional experiments, including multi-modal Gaussian mixtures and ill-conditioned Rosenbrock distributions. ARWP exhibits structured and convergent particles, accelerated discrete-time mixing, and faster tail exploration than the non-accelerated regularized Wasserstein proximal method and kinetic Langevin methods. Additionally, ARWP particles exhibit better generalization properties for some non-log-concave Bayesian neural network tasks.</p>]]></description>
   </item>
 
 </channel>

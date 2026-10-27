@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Polychronous Wave Computing: Timing-Native Address Selection in Spiking Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13079</link>
+    <guid isPermaLink="false">arxiv:2601.13079</guid>
+    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Natalila G. Berloff</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Spike timing offers a combinatorial address space, suggesting that timing-based spiking inference can be executed as lookup and routing rather than as dense multiply&ndash;accumulate. Yet most neuromorphic and photonic systems still digitize events into timestamps, bins, or rates and then perform selection in clocked logic. We introduce Polychronous Wave Computing (PWC), a timing-native address-selection primitive that maps relative spike latencies directly to a discrete output route in the wave domain. Spike times are phase-encoded in a rotating frame and processed by a programmable multiport interferometer that evaluates K template correlations in parallel; a driven&ndash;dissipative winner-take-all stage then performs a physical argmax, emitting a one-hot output port. We derive the operating envelope imposed by phase wrapping and mutual coherence, and collapse timing jitter, static phase mismatch, and dephasing into a single effective phase-noise budget whose induced winner&ndash;runner-up margin predicts boundary-first failures and provides an intensity-only calibration target. Simulations show that nonlinear competition improves routing fidelity compared with noisy linear intensity readout, and that hardware-in-the-loop phase tuning rescues a temporal-order gate from 55.9% to 97.2% accuracy under strong static mismatch. PWC provides a fast routing coprocessor for LUT-style spiking networks and sparse top-1 gates (e.g., mixture-of-experts routing) across polaritonic, photonic, and oscillator platforms.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Scaling laws for amplitude surrogates</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13308</link>
+    <guid isPermaLink="false">arxiv:2601.13308</guid>
+    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henning Bahl et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Anja Butter) — original abstract; no AI summary.</em></p>
+<p>Scaling laws describing the dependence of neural network performance on the amount of training data, the spent compute, and the network size have emerged across a huge variety of machine learning task and datasets. In this work, we systematically investigate these scaling laws in the context of amplitude surrogates for particle physics. We show that the scaling coefficients are connected to the number of external particles of the process. Our results demonstrate that scaling laws are a useful tool to achieve desired precision targets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Impact of Circuit Depth versus Qubit Count on Variational Quantum Classifiers for Higgs Boson Signal Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-11937</link>
+    <guid isPermaLink="false">arxiv:2601.11937</guid>
+    <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fatih Maulana</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>High-Energy Physics (HEP) experiments, such as those at the Large Hadron Collider (LHC), generate massive datasets that challenge classical computational limits. Quantum Machine Learning (QML) offers a potential advantage in processing high-dimensional data; however, finding the optimal architecture for current Noisy Intermediate-Scale Quantum (NISQ) devices remains an open challenge. This study investigates the performance of Variational Quantum Classifiers (VQC) in detecting Higgs Boson signals using the ATLAS Higgs Boson Machine Learning Challenge 2014 experiment dataset. We implemented a dimensionality reduction pipeline using Principal Component Analysis (PCA) to map 30 physical features into 4-qubit and 8-qubit latent spaces. We benchmarked three configurations: (A) a shallow 4-qubit circuit, (B) a deep 4-qubit circuit with increased entanglement layers, and (C) an expanded 8-qubit circuit. Experimental results demonstrate that increasing circuit depth significantly improves performance, yielding the highest accuracy of 56.2% (Configuration B), compared to a baseline of 51.9%. Conversely, simply scaling to 8 qubits resulted in a performance degradation to 50.6% due to optimization challenges associated with Barren Plateaus in the larger Hilbert space. These findings suggest that for near-term quantum hardware, prioritizing circuit depth and entanglement capability is more critical than increasing qubit count for effective anomaly detection in HEP data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Accelerated Regularized Wasserstein Proximal Sampling Algorithms</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-09848</link>
+    <guid isPermaLink="false">arxiv:2601.09848</guid>
+    <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hong Ye Tan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider sampling from a Gibbs distribution by evolving a finite number of particles using a particular score estimator rather than Brownian motion. To accelerate the particles, we consider a second-order score-based ODE, similar to Nesterov acceleration. In contrast to traditional kernel density score estimation, we use the recently proposed regularized Wasserstein proximal method, yielding the Accelerated Regularized Wasserstein Proximal method (ARWP). We provide a detailed analysis of continuous- and discrete-time non-asymptotic and asymptotic mixing rates for Gaussian initial and target distributions, using techniques from Euclidean acceleration and accelerated information gradients. Compared with the kinetic Langevin sampling algorithm, the proposed algorithm exhibits a higher contraction rate in the asymptotic time regime. Numerical experiments are conducted across various low-dimensional experiments, including multi-modal Gaussian mixtures and ill-conditioned Rosenbrock distributions. ARWP exhibits structured and convergent particles, accelerated discrete-time mixing, and faster tail exploration than the non-accelerated regularized Wasserstein proximal method and kinetic Langevin methods. Additionally, ARWP particles exhibit better generalization properties for some non-log-concave Bayesian neural network tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>Effects of Introducing Synaptic Scaling on Spiking Neural Network Learning</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kun He</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>The matrix scaling problem, particularly the Sinkhorn-Knopp algorithm, has been studied for over 60 years. In practice, the algorithm often yields high-quality approximations within just a few iterations. Theoretically, however, the best-known upper bound places it in the class of pseudopolynomial-time approximation algorithms. Meanwhile, the lower-bound landscape remains largely unexplored. Two fundamental questions persist: what accounts for the algorithm&rsquo;s strong empirical performance, and can a tight bound on its iteration count be established? For an n×n matrix, its normalized version is obtained by dividing each entry by its largest entry. We say that a normalized matrix has a density γ if there exists a constant ρ&gt; 0 such that one row or column has exactly ⌈γn ⌉ entries with values at least ρ, and every other row and column has at least ⌈γn ⌉ such entries. For the upper bound, we show that the Sinkhorn-Knopp algorithm produces a nearly doubly stochastic matrix in O(logn - logε) iterations and O(n²⁾ time for all nonnegative square matrices whose normalized version has a density γ&gt; 1/2. Such matrices cover both the algorithm&rsquo;s principal practical inputs and its typical theoretical regime, and the O(n²⁾ runtime is optimal. For the lower bound, we establish a tight bound of (n¹/2/ε) iterations for positive matrices under the ℓ_2-norm error measure. Moreover, for every γ&lt; 1/2, there exists a matrix with density γ for which the algorithm requires Ω(n¹/2/ε) iterations. In summary, our results reveal a sharp phase transition in the Sinkhorn-Knopp algorithm at the density threshold γ= 1/2.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sparse Partial Optimal Transport via Quadratic Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-08476</link>
-    <guid isPermaLink="false">arxiv:2508.08476</guid>
-    <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khang Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Partial Optimal Transport (POT) has recently emerged as a central tool in various Machine Learning (ML) applications. It lifts the stringent assumption of the conventional Optimal Transport (OT) that input measures are of equal masses, which is often not guaranteed in real-world datasets, and thus offers greater flexibility by permitting transport between unbalanced input measures. Nevertheless, existing major solvers for POT commonly rely on entropic regularization for acceleration and thus return dense transport plans, hindering the adoption of POT in various applications that favor sparsity. In this paper, as an alternative approach to the entropic POT formulation in the literature, we propose a novel formulation of POT with quadratic regularization, hence termed quadratic regularized POT (QPOT), which induces sparsity to the transport plan and consequently facilitates the adoption of POT in many applications with sparsity requirements. Extensive experiments on synthetic and CIFAR-10 datasets, as well as real-world applications such as color transfer and domain adaptations, consistently demonstrate the improved sparsity and favorable performance of our proposed QPOT formulation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Approximating High-Dimensional Earth Mover's Distance as Fast as Closest Pair</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-06774</link>
-    <guid isPermaLink="false">arxiv:2508.06774</guid>
-    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lorenzo Beretta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
-<p>We give a reduction from (1+ε)-approximate Earth Mover&rsquo;s Distance (EMD) to (1+ε)-approximate Closest Pair (CP). As a consequence, we improve the fastest known approximation algorithm for high-dimensional EMD. Here, given p∈[1, 2] and two sets of n points X,Y ⊆(ℝ^d,ℓ_p), their EMD is the minimum cost of a perfect matching between X and Y, where the cost of matching two vectors is their ℓ_p distance. Further, CP is the basic problem of finding a pair of points realizing min_x ∈X, y∈Y ||x-y||_p. Our contribution is twofold: we show that if a (1+ε)-approximate CP can be computed in time n²⁻ϕ, then a 1+O(ε) approximation to EMD can be computed in time n²⁻Ω(ϕ); plugging in the fastest known algorithm for CP [Alman, Chan, Williams FOCS&lsquo;16], we obtain a (1+ε)-approximation algorithm for EMD running in time n²⁻⁽ε¹/3) for high-dimensional point sets, which improves over the prior fastest running time of n²⁻Ω(ε²⁾ [Andoni, Zhang FOCS&lsquo;23]. Our main technical contribution is a sublinear implementation of the Multiplicative Weights Update framework for EMD. Specifically, we demonstrate that the updates can be executed without ever explicitly computing or storing the weights; instead, we exploit the underlying geometric structure to perform the updates implicitly.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Differentiable Adaptive Kalman Filtering via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-07037</link>
-    <guid isPermaLink="false">arxiv:2508.07037</guid>
-    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yangguang He et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Learning-based filtering has demonstrated strong performance in non-linear dynamical systems, particularly when the statistics of noise are unknown. However, in real-world deployments, environmental factors, such as changing wind conditions or electromagnetic interference, can induce unobserved noise-statistics drift, leading to substantial degradation of learning-based methods. To address this challenge, we propose OTAKNet, the first online solution to noise-statistics drift within learning-based adaptive Kalman filtering. Unlike existing learning-based methods that perform offline fine-tuning using batch pointwise matching over entire trajectories, OTAKNet establishes a connection between the state estimate and the drift via one-step predictive measurement likelihood, and addresses it using optimal transport. This leverages OT&rsquo;s geometry - aware cost and stable gradients to enable fully online adaptation without ground truth labels or retraining. We compare OTAKNet against classical model-based adaptive Kalman filtering and offline learning-based filtering. The performance is demonstrated on both synthetic and real-world NCLT datasets, particularly under limited training data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Jet Image Tagging Using Deep Learning: An Ensemble Model</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-10034</link>
-    <guid isPermaLink="false">arxiv:2508.10034</guid>
-    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juvenal Bassa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet image) — original abstract; no AI summary.</em></p>
-<p>Jet classification in high-energy particle physics is important for understanding fundamental interactions and probing phenomena beyond the Standard Model. Jets originate from the fragmentation and hadronization of quarks and gluons, and pose a challenge for identification due to their complex, multidimensional structure. Traditional classification methods often fall short in capturing these intricacies, necessitating advanced machine learning approaches. In this paper, we employ two neural networks simultaneously as an ensemble to tag various jet types. We convert the jet data to two-dimensional histograms instead of representing them as points in a higher-dimensional space. Specifically, this ensemble approach, hereafter referred to as Ensemble Model, is used to tag jets into classes from the JetNet dataset, corresponding to: Top Quarks, Light Quarks (up or down), and W and Z bosons. For the jet classes mentioned above, we show that the Ensemble Model can be used for both binary and multi-categorical classification. This ensemble approach learns jet features by leveraging the strengths of each constituent network achieving superior performance compared to either individual network.</p>]]></description>
   </item>
 
 </channel>

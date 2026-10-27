@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Descending into the Modular Bootstrap</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-01275</link>
+    <guid isPermaLink="false">arxiv:2604.01275</guid>
+    <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nathan Benjamin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler) — original abstract; no AI summary.</em></p>
+<p>In this paper, we attempt to explore the landscape of two-dimensional conformal field theories (2d CFTs) by efficiently searching for numerical solutions to the modular bootstrap equation using machine-learning-style optimization. The torus partition function of a 2d CFT is fixed by the spectrum of its primary operators and its chiral algebra, which we take to be the Virasoro algebra with c&gt;1. We translate the requirement that this partition function is modular invariant into a loss function, which we then minimize to identify possible primary spectra. Our approach involves two technical innovations that facilitate finding reliable candidate CFTs. The first is a strategy to estimate the uncertainty associated with truncating the spectrum to the lowest dimension operators. The second is the use of a new singular-value-based optimizer (Sven) that is more effective than gradient descent at navigating the hierarchical structure of the loss landscape. We numerically construct candidate truncated CFT partition functions with central charges between 1 and 8/7, a range devoid of known examples, and argue that these candidates likely come from a continuous space of modular bootstrap solutions. We also provide evidence for a more stringent constraint on the spectral gap near c = 1 than the existing bound of Δ_gap ≤c/6 + 1/3.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Statistical Mechanics of Learning on Product Wasserstein Manifolds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-01434</link>
+    <guid isPermaLink="false">arxiv:2608.01434</guid>
+    <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Srinivasa Rao P Vangmayi P Reddy</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Normally the statistical mechanics of learning treats constraints on weight distributions as restrictions that shrink the space of possible solutions. Therefore, it reduces model capacity. In this paper we would like to take a contrary approach, which, however, is based on the earlier work on distribution-constrained perceptrons. Rather than treating a prescribed weight distribution as a mere restriction, we propose that it defines the intrinsic geometry upon which learning naturally unfolds. We formulate both deep neural networks and variational quantum circuits as gradient flows on a product of Wasserstein manifolds &ndash; one classical Wasserstein space for each layer and one quantum Wasserstein space for the circuit parameters. Within this geometry, the capacity reduction, which was previously associated with distributional constraints, appears as the metric structure of the constraint manifold itself. We develop a hierarchical mean-field description for deep networks, extend the framework to the quantum setting using the quantum Wasserstein distance of order 1, and introduce two such practical algorithms, Hierarchical DisCo-SGD and Quantum DisCo, that follow approximate geodesics on the manifold of the product itself. Experiments on teacher-student problems, standard image classification tasks, and small variational quantum classifiers show that respecting these distributional geometries improves generalization, stabilizes training, and reduces the severity of barren plateaus compared with unconstrained and purely norm-based baselines. This approach firstly reframes structural constraints as geometric priors and suggests a route for incorporating biological, spectral, or hardware-derived distributional information into both learning systems, viz., classical and quantum learning.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Regularized Schrödinger Bridge via Distortion-Perception Perturbation for High-Fidelity Speech Enhancement</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-11686</link>
+    <guid isPermaLink="false">arxiv:2511.11686</guid>
+    <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qing Yao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Speech enhancement (SE) requires high-fidelity reconstruction of clean speech that preserves linguistic and paralinguistic cues while maintaining high perceptual quality. Recently, Schrödinger Bridge (SB), a family of diffusion-based generative models, has advanced SE by bridging degraded and clean speech distributions in a principled formulation, enabling higher-quality reconstructions with fewer sampling steps. However, diffusion-based SE methods still face two challenges: (1) the fidelity-realism tradeoff, where they often prioritize perceptual realism encouraged by the learned speech prior, at the expense of fidelity; and (2) the exposure bias issue, where iterative multi-step sampling causes early-step prediction errors to accumulate along the sampling trajectory and degrade enhanced speech quality. In this paper, we analyze standard SB training and show that it induces a systematic prediction drift, which biases the multi-step trajectory and amplifies error accumulation. To address this, we propose Regularized Schrödinger Bridge (RSB) for high-fidelity SE, a generative approach that reconciles fidelity and realism while mitigating exposure bias. RSB regularizes training with a Distortion-Perception Perturbation that constructs time-varying targets by interpolating between clean speech and posterior-mean estimates, and trains the network on perturbed intermediate states to correct toward the ground truth progressively. By simulating inference-time prediction errors, this perturbation mitigates the training-inference mismatch and thereby alleviates exposure bias. It also injects posterior-mean estimates as fidelity-preserving guidance, thereby improving reconstruction fidelity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTAP: Structure-Aware Optimal Transport for Evaluating Planning and Execution in Agent Trajectories</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2607-17082</link>
+    <guid isPermaLink="false">arxiv:2607.17082</guid>
+    <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Babak Barazandeh et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Large language model agents solve tasks by generating trajectories that interleave planning, tool calls, and intermediate results. Current evaluation metrics reduce such a trajectory to a binary success flag, compare it against a reference by exact matching, or delegate judgment to another language model. A success flag cannot distinguish a sound solution from one that succeeds by luck, and says nothing about why a failed run went wrong. Exact matching penalizes plans that are valid but reordered or decomposed differently from the reference. We reframe trajectory evaluation as a distance between the agent&rsquo;s execution graph and a set of valid solution graphs, and instantiate it via an unbalanced fused Gromov-Wasserstein transport problem over attributed dependency graphs. The resulting score, termed OTAP (Optimal Transport for Agentic Planning), is a pseudo-metric that is provably invariant to dependency-preserving reorderings and has bounded sensitivity to redundant steps. Its unbalanced marginals handle missing or hallucinated steps without forcing a match, and its soft coupling accommodates variation in plan granularity. On controlled perturbations and three public benchmarks, OTAP separates valid from invalid trajectories in a regime where semantics-only metrics score below chance. Its advantage tracks the fidelity of the dependency graph: largest where edges follow from operator semantics, smallest where they are inferred from free text. Where a formal verifier exists, strict surface metrics predict validity better than OTAP does, which places OTAP in open-ended domains where no verifier is available.</p>]]></description>
+  </item>
 
   <item>
     <title>Re-examining Granger Causality with Causal Bayesian Networks and Reichenbachs Principles</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Usman A. Khan et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We consider anonymous multi-agent path finding (MAPF) where a set of robots is tasked to travel to a set of targets on a finite, connected graph. We show that MAPF can be cast as a special class of multi-marginal optimal transport (MMOT) problems with an underlying Markovian structure, under which the exponentially large MMOT collapses to a linear program (LP) polynomial in size. Focusing on the anonymous setting, we establish conditions under which the corresponding LP is feasible, totally unimodular, and consequently, yields min-cost, integral ({0,1}) transports that do not overlap in both space and time. To adapt the approach to large-scale problems, we cast the MAPF-MMOT in a probabilistic framework via Schrödinger bridges. Under standard assumptions, we show that the Schrödinger bridge formulation reduces to an entropic regularization of the corresponding MMOT that admits an iterative Sinkhorn-type solution. The Schrödinger bridge, being a probabilistic framework, provides a shadow (fractional) transport that we use as a template to solve a reduced LP and demonstrate that it results in near-optimal, integral transports at a significant reduction in complexity. Extensive experiments highlight the optimality and scalability of the proposed approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural Cluster First, Route Second: One-Shot Capacitated Vehicle Routing via Differentiable Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09301</link>
-    <guid isPermaLink="false">arxiv:2605.09301</guid>
-    <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel J. K. Chin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The Capacitated Vehicle Routing Problem (CVRP) underpins modern last-mile logistics. Current Neural Combinatorial Optimization (NCO) methods construct CVRP solutions autoregressively, inheriting sequential decoding bottlenecks, sensitivity to spatial symmetries, and brittle out-of-distribution behavior. We revisit the classical Cluster-First-Route-Second (CFRS) paradigm &ndash; long known to be asymptotically optimal but largely overlooked by NCO &ndash; and argue that it is structurally aligned with the core strengths of deep learning: similarity and assignment over global context, rather than the construction of long sequential tours. We introduce Neural CFRS, the first purely non-autoregressive one-shot neural CFRS framework for the CVRP. It enforces global fleet-capacity constraints end-to-end via a differentiable entropic Optimal Transport layer, producing a continuous transport plan to sparsify an exact capacitated assignment solver. We provide formal theoretical guarantees that our architecture intrinsically abstracts away E(2) spatial, inter-route permutation, and intra-route traversal symmetries. By equipping the framework with a pre-trained spatial vocabulary, we unlock extreme parameter efficiency and zero-shot scaling. Designed primarily for real-world spatial distributions under a constant capacity setting, Neural CFRS scales robustly to out-of-distribution N=1000 instances with a &lt; 4% gap &ndash; retaining an approximate 5% gap at this scale even as an ultra-lightweight, single-layer architecture. Furthermore, when deployed out-of-the-box on standard benchmarks, we achieve a highly competitive 2.73% optimality gap on size-100 problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Liouville PDE-based sliced-Wasserstein flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2505-17204</link>
-    <guid isPermaLink="false">arxiv:2505.17204</guid>
-    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jayshawn Cooper et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The sliced Wasserstein flow (SWF), a nonparametric and implicit generative gradient flow, is transformed into a Liouville partial differential equation (PDE)-based formalism. First, the stochastic diffusive term from the Fokker-Planck equation-based Monte Carlo is reformulated as a Liouville PDE-based transport without the diffusive term, essentially reflecting the probability flow ODE. The involved density estimation is handled by normalizing flows of neural ODE without an explicitly defined score function. Next, the computation of the Wasserstein barycenter is approximated by the Liouville PDE-based SWF barycenter with the prescription of Kantorovich potentials for the induced gradient flow to generate its samples. These two efforts show outperforming convergence in training and testing Liouville PDE-based SWF and SWF barycenters with reduced variance. Applying the generative Liouville PDE-based SWF barycenter for fair regression demonstrates competent profiles in the accuracy-fairness Pareto curves, with comparable and alternative choices against the standard SWF, and significant benefit in improving fairness with scalability in comparison to the exact Wasserstein barycenter.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Load--Reserve Wasserstein Propagation for Isotropic Diffusion Samplers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2603-19670</link>
-    <guid isPermaLink="false">arxiv:2603.19670</guid>
-    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zicheng Lyu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Many Wasserstein analyses of diffusion samplers control reverse-time propagation by global stability summaries of the learned drift. These summaries can hide radial geometry: equal-height expansive regions of different width can yield different propagation costs. We give a profile-adapted propagation interface for scalar-isotropic reverse-SDE windows with certified learned-drift profiles. A certified lower radial profile is compiled into an affine-tail transportation cost: reflection coupling reduces stability to a one-dimensional slope budget, and Hardy capacity quantifies the load paid before a contractive tail reserve. The compiler yields an adapted cost, contraction rate, and retained tail slope. Score-modeling and solver residuals are treated as forcing inputs and propagate additively in the adapted Wasserstein distance. Quadratic Wasserstein error is reported only at terminal time, using the retained tail slope with tail, moment, or support information. Gaussian-smoothed denoising geometry supplies inverse-radius profiles for uniformly dissipative, bounded-amplitude, and common-covariance mixture windows. Fixed-height examples show that adverse height, even with eventual reserve, does not determine the certificate; barrier examples show that the load dependence is structural.</p>]]></description>
-  </item>
-
-  <item>
-    <title>cuRegOT: A GPU-Accelerated Solver for Entropic-Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08793</link>
-    <guid isPermaLink="false">arxiv:2605.08793</guid>
-    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Qiu</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) has emerged as a fundamental tool in modern machine learning, yet its computational cost remains a significant bottleneck for large-scale applications. While harnessing the massive parallelism of modern GPU hardware is critical for efficiency, the de facto standard Sinkhorn algorithm, despite its ease of parallelization, often suffers from slow convergence in challenging problems. More recently, the sparse-plus-low-rank quasi-Newton method offers a balance between convergence rate and per-iteration complexity; however, its efficiency on GPUs is severely hindered by the serial nature of sparse matrix symbolic analysis and irregular memory access patterns. To bridge this gap, we present cuRegOT, a high-performance GPU solver tailored for entropic-regularized OT. We introduce a suite of algorithmic and architectural optimizations, including an amortized symbolic analysis strategy to mitigate CPU bottlenecks, an asynchronous Sinkhorn iterates generation mechanism, and a fused kernel for bandwidth-efficient gradient evaluation. These strategies are backed by rigorous theoretical guarantees ensuring algorithmic convergence. Extensive numerical experiments demonstrate that cuRegOT achieves significant speedups over state-of-the-art GPU-based solvers across a variety of benchmark tasks.</p>]]></description>
   </item>
 
 </channel>

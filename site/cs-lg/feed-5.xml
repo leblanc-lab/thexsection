@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Sparse Partial Optimal Transport via Quadratic Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-08476</link>
+    <guid isPermaLink="false">arxiv:2508.08476</guid>
+    <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khang Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Partial Optimal Transport (POT) has recently emerged as a central tool in various Machine Learning (ML) applications. It lifts the stringent assumption of the conventional Optimal Transport (OT) that input measures are of equal masses, which is often not guaranteed in real-world datasets, and thus offers greater flexibility by permitting transport between unbalanced input measures. Nevertheless, existing major solvers for POT commonly rely on entropic regularization for acceleration and thus return dense transport plans, hindering the adoption of POT in various applications that favor sparsity. In this paper, as an alternative approach to the entropic POT formulation in the literature, we propose a novel formulation of POT with quadratic regularization, hence termed quadratic regularized POT (QPOT), which induces sparsity to the transport plan and consequently facilitates the adoption of POT in many applications with sparsity requirements. Extensive experiments on synthetic and CIFAR-10 datasets, as well as real-world applications such as color transfer and domain adaptations, consistently demonstrate the improved sparsity and favorable performance of our proposed QPOT formulation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Approximating High-Dimensional Earth Mover's Distance as Fast as Closest Pair</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-06774</link>
+    <guid isPermaLink="false">arxiv:2508.06774</guid>
+    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lorenzo Beretta et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: earth mover) — original abstract; no AI summary.</em></p>
+<p>We give a reduction from (1+ε)-approximate Earth Mover&rsquo;s Distance (EMD) to (1+ε)-approximate Closest Pair (CP). As a consequence, we improve the fastest known approximation algorithm for high-dimensional EMD. Here, given p∈[1, 2] and two sets of n points X,Y ⊆(ℝ^d,ℓ_p), their EMD is the minimum cost of a perfect matching between X and Y, where the cost of matching two vectors is their ℓ_p distance. Further, CP is the basic problem of finding a pair of points realizing min_x ∈X, y∈Y ||x-y||_p. Our contribution is twofold: we show that if a (1+ε)-approximate CP can be computed in time n²⁻ϕ, then a 1+O(ε) approximation to EMD can be computed in time n²⁻Ω(ϕ); plugging in the fastest known algorithm for CP [Alman, Chan, Williams FOCS&lsquo;16], we obtain a (1+ε)-approximation algorithm for EMD running in time n²⁻⁽ε¹/3) for high-dimensional point sets, which improves over the prior fastest running time of n²⁻Ω(ε²⁾ [Andoni, Zhang FOCS&lsquo;23]. Our main technical contribution is a sublinear implementation of the Multiplicative Weights Update framework for EMD. Specifically, we demonstrate that the updates can be executed without ever explicitly computing or storing the weights; instead, we exploit the underlying geometric structure to perform the updates implicitly.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Differentiable Adaptive Kalman Filtering via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-07037</link>
+    <guid isPermaLink="false">arxiv:2508.07037</guid>
+    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yangguang He et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Learning-based filtering has demonstrated strong performance in non-linear dynamical systems, particularly when the statistics of noise are unknown. However, in real-world deployments, environmental factors, such as changing wind conditions or electromagnetic interference, can induce unobserved noise-statistics drift, leading to substantial degradation of learning-based methods. To address this challenge, we propose OTAKNet, the first online solution to noise-statistics drift within learning-based adaptive Kalman filtering. Unlike existing learning-based methods that perform offline fine-tuning using batch pointwise matching over entire trajectories, OTAKNet establishes a connection between the state estimate and the drift via one-step predictive measurement likelihood, and addresses it using optimal transport. This leverages OT&rsquo;s geometry - aware cost and stable gradients to enable fully online adaptation without ground truth labels or retraining. We compare OTAKNet against classical model-based adaptive Kalman filtering and offline learning-based filtering. The performance is demonstrated on both synthetic and real-world NCLT datasets, particularly under limited training data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Jet Image Tagging Using Deep Learning: An Ensemble Model</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-10034</link>
+    <guid isPermaLink="false">arxiv:2508.10034</guid>
+    <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juvenal Bassa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet image) — original abstract; no AI summary.</em></p>
+<p>Jet classification in high-energy particle physics is important for understanding fundamental interactions and probing phenomena beyond the Standard Model. Jets originate from the fragmentation and hadronization of quarks and gluons, and pose a challenge for identification due to their complex, multidimensional structure. Traditional classification methods often fall short in capturing these intricacies, necessitating advanced machine learning approaches. In this paper, we employ two neural networks simultaneously as an ensemble to tag various jet types. We convert the jet data to two-dimensional histograms instead of representing them as points in a higher-dimensional space. Specifically, this ensemble approach, hereafter referred to as Ensemble Model, is used to tag jets into classes from the JetNet dataset, corresponding to: Top Quarks, Light Quarks (up or down), and W and Z bosons. For the jet classes mentioned above, we show that the Ensemble Model can be used for both binary and multi-categorical classification. This ensemble approach learns jet features by leveraging the strengths of each constituent network achieving superior performance compared to either individual network.</p>]]></description>
+  </item>
 
   <item>
     <title>Data-Driven Density Steering via the Gromov-Wasserstein Optimal Transport Distance</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Xu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Conformal prediction yields a prediction set with guaranteed 1-α coverage of the true target under the i.i.d. assumption, which may not hold and lead to a gap between 1-α and the actual coverage. Prior studies bound the gap using total variation distance, which cannot identify the gap changes under distribution shift at a given α. Besides, existing methods are mostly limited to covariate shift,while general joint distribution shifts are more common in practice but less researched.In response, we first propose a Wasserstein distance-based upper bound of the coverage gap and analyze the bound using probability measure pushforwards between the shifted joint data and conformal score distributions, enabling a separation of the effect of covariate and concept shifts over the coverage gap. We exploit the separation to design an algorithm based on importance weighting and regularized representation learning (WR-CP) to reduce the Wasserstein bound with a finite-sample error bound.WR-CP achieves a controllable balance between conformal prediction accuracy and efficiency. Experiments on six datasets prove that WR-CP can reduce coverage gaps to 3.2% across different confidence levels and outputs prediction sets 37% smaller than the worst-case approach on average.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Provable Robust Overfitting Mitigation in Wasserstein Distributionally Robust Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-04315</link>
-    <guid isPermaLink="false">arxiv:2503.04315</guid>
-    <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuang Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distributionally robust optimization (WDRO) optimizes against worst-case distributional shifts within a specified uncertainty set, leading to enhanced generalization on unseen adversarial examples, compared to standard adversarial training which focuses on pointwise adversarial perturbations. However, WDRO still suffers fundamentally from the robust overfitting problem, as it does not consider statistical error. We address this gap by proposing a novel robust optimization framework under a new uncertainty set for adversarial noise via Wasserstein distance and statistical error via Kullback-Leibler divergence, called the Statistically Robust WDRO. We establish a robust generalization bound for the new optimization framework, implying that out-of-distribution adversarial performance is at least as good as the statistically robust training loss with high probability. Furthermore, we derive conditions under which Stackelberg and Nash equilibria exist between the learner and the adversary, giving an optimal robust model in certain sense. Finally, through extensive experiments, we demonstrate that our method significantly mitigates robust overfitting and enhances robustness within the framework of WDRO.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Constrained Gaussian Wasserstein Optimal Transport with Commutative Covariance Matrices</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-03744</link>
-    <guid isPermaLink="false">arxiv:2503.03744</guid>
-    <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jun Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Optimal transport has found widespread applications in signal processing and machine learning. Among its many equivalent formulations, optimal transport seeks to reconstruct a random variable/vector with a prescribed distribution at the destination while minimizing the expected distortion relative to a given random variable/vector at the source. However, in practice, certain constraints may render the optimal transport plan infeasible. In this work, we consider three types of constraints: rate constraints, dimension constraints, and channel constraints, motivated by perception-aware lossy compression, generative principal component analysis, and deep joint source-channel coding, respectively. Special attenion is given to the setting termed Gaussian Wasserstein optimal transport, where both the source and reconstruction variables are multivariate Gaussian, and the end-to-end distortion is measured by the mean squared error. We derive explicit results for the minimum achievable mean squared error under the three aforementioned constraints when the covariance matrices of the source and reconstruction variables commute.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Non-Gaussianities in Collider Metric Binning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-03809</link>
-    <guid isPermaLink="false">arxiv:2503.03809</guid>
-    <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrew J. Larkoski</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, Andrew Larkoski) — original abstract; no AI summary.</em></p>
-<p>Metrics for rigorously defining a distance between two events have been used to study the properties of the dataspace manifold of particle collider physics. The probability distribution of pairwise distances on this dataspace is unique with probability 1, and so this suggests a method to search for and identify new physics by the deviation of measurement from a null hypothesis prediction. To quantify the deviation statistically, we directly calculate the probability distribution of the number of event pairs that land in the bin a fixed distance apart. This distribution is not generically Gaussian and the ratio of the standard deviation to the mean entries in a bin scales inversely with the square-root of the number of events in the data ensemble. If the dataspace manifold exhibits some enhanced symmetry, the number of entries is Gaussian, and further fluctuations about the mean scale away like the inverse of the number of events. We define a robust measure of the non-Gaussianity of the bin-by-bin statistics of the distance distribution, and demonstrate in simulated data of jets from quantum chromodynamics sensitivity to the parton-to-hadron transition and that the manifold of events enjoys enhanced symmetries as their energy increases.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dyads: Artist-Centric, AI-Generated Dance Duets</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-03954</link>
-    <guid isPermaLink="false">arxiv:2503.03954</guid>
-    <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zixuan Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Mariel Pettee) — original abstract; no AI summary.</em></p>
-<p>Existing AI-generated dance methods primarily train on motion capture data from solo dance performances, but a critical feature of dance in nearly any genre is the interaction of two or more bodies in space. Moreover, many works at the intersection of AI and dance fail to incorporate the ideas and needs of the artists themselves into their development process, yielding models that produce far more useful insights for the AI community than for the dance community. This work addresses both needs of the field by proposing an AI method to model the complex interactions between pairs of dancers and detailing how the technical methodology can be shaped by ongoing co-creation with the artistic stakeholders who curated the movement data. Our model is a probability-and-attention-based Variational Autoencoder that generates a choreographic partner conditioned on an input dance sequence. We construct a custom loss function to enhance the smoothness and coherence of the generated choreography. Our code is open-source, and we also document strategies for other interdisciplinary research teams to facilitate collaboration and strong communication between artists and technologists.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Privacy-preserving data release leveraging optimal transport and particle gradient descent</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-17823</link>
+    <guid isPermaLink="false">arxiv:2401.17823</guid>
+    <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Konstantin Donhauser et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We present a novel approach for differentially private data synthesis of protected tabular datasets, a relevant task in highly sensitive domains such as healthcare and government. Current state-of-the-art methods predominantly use marginal-based approaches, where a dataset is generated from private estimates of the marginals. In this paper, we introduce PrivPGD, a new generation method for marginal-based private data synthesis, leveraging tools from optimal transport and particle gradient descent. Our algorithm outperforms existing methods on a large range of datasets while being highly scalable and offering the flexibility to incorporate additional domain-specific constraints.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Wasserstein perspective of Vanilla GANs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-15312</link>
+    <guid isPermaLink="false">arxiv:2403.15312</guid>
+    <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lea Kunkel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The empirical success of Generative Adversarial Networks (GANs) caused an increasing interest in theoretical research. The statistical literature is mainly focused on Wasserstein GANs and generalizations thereof, which especially allow for good dimension reduction properties. Statistical results for Vanilla GANs, the original optimization problem, are still rather limited and require assumptions such as smooth activation functions and equal dimensions of the latent space and the ambient space. To bridge this gap, we draw a connection from Vanilla GANs to the Wasserstein distance. By doing so, existing results for Wasserstein GANs can be extended to Vanilla GANs. In particular, we obtain an oracle inequality for Vanilla GANs in Wasserstein distance. The assumptions of this oracle inequality are designed to be satisfied by network architectures commonly used in practice, such as feedforward ReLU networks. By providing a quantitative result for the approximation of a Lipschitz function by a feedforward ReLU network with bounded Hölder norm, we conclude a rate of convergence for Vanilla GANs as well as Wasserstein GANs as estimators of the unknown probability distribution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Rapid Likelihood Free Inference of Compact Binary Coalescences using Accelerated Hardware</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-19048</link>
+    <guid isPermaLink="false">arxiv:2407.19048</guid>
+    <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deep Chatterjee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>We report a gravitational-wave parameter estimation algorithm, AMPLFI, based on likelihood-free inference using normalizing flows. The focus of AMPLFI is to perform real-time parameter estimation for candidates detected by machine-learning based compact binary coalescence search, Aframe. We present details of our algorithm and optimizations done related to data-loading and pre-processing on accelerated hardware. We train our model using binary black-hole (BBH) simulations on real LIGO-Virgo detector noise. Our model has ∼6 million trainable parameters with training times ≲24 hours. Based on online deployment on a mock data stream of LIGO-Virgo data, Aframe + AMPLFI is able to pick up BBH candidates and infer parameters for real-time alerts from data acquisition with a net latency of ∼6s.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Particle identification with machine learning from incomplete data in the ALICE experiment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-17436</link>
+    <guid isPermaLink="false">arxiv:2403.17436</guid>
+    <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maja Karwowska et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The ALICE experiment at the LHC measures properties of the strongly interacting matter formed in ultrarelativistic heavy-ion collisions. Such studies require accurate particle identification (PID). ALICE provides PID information via several detectors for particles with momentum from about 100 MeV/c up to 20 GeV/c. Traditionally, particles are selected with rectangular cuts. A much better performance can be achieved with machine learning (ML) methods. Our solution uses multiple neural networks (NN) serving as binary classifiers. Moreover, we extended our particle classifier with Feature Set Embedding and attention in order to train on data with incomplete samples. We also present the integration of the ML project with the ALICE analysis software, and we discuss domain adaptation, the ML technique needed to transfer the knowledge between simulated and real experimental data.</p>]]></description>
+  </item>
 
   <item>
     <title>Decentralized Entropic Optimal Transport for Distributed Distribution Comparison</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiqiang Que et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>This work presents a novel reconfigurable architecture for Low Latency Graph Neural Network (LL-GNN) designs for particle detectors, delivering unprecedented low latency performance. Incorporating FPGA-based GNNs into particle detectors presents a unique challenge since it requires sub-microsecond latency to deploy the networks for online event selection with a data rate of hundreds of terabytes per second in the Level-1 triggers at the CERN Large Hadron Collider experiments. This paper proposes a novel outer-product based matrix multiplication approach, which is enhanced by exploiting the structured adjacency matrix and a column-major data layout. Moreover, a fusion step is introduced to further reduce the end-to-end design latency by eliminating unnecessary boundaries. Furthermore, a GNN-specific algorithm-hardware co-design approach is presented which not only finds a design with a much better latency but also finds a high accuracy design under given latency constraints. To facilitate this, a customizable template for this low latency GNN hardware architecture has been designed and open-sourced, which enables the generation of low-latency FPGA designs with efficient resource utilization using a high-level synthesis tool. Evaluation results show that our FPGA implementation is up to 9.0 times faster and achieves up to 13.1 times higher power efficiency than a GPU implementation. Compared to the previous FPGA implementations, this work achieves 6.51 to 16.7 times lower latency. Moreover, the latency of our FPGA design is sufficiently low to enable deployment of GNNs in a sub-microsecond, real-time collider trigger system, enabling it to benefit from improved accuracy. The proposed LL-GNN design advances the next generation of trigger systems by enabling sophisticated algorithms to process experimental data efficiently.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Unbalanced Optimal Transport: Gradient Methods, Sparsity and Approximation Error</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2202-03618</link>
-    <guid isPermaLink="false">arxiv:2202.03618</guid>
-    <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quang Minh Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the Unbalanced Optimal Transport (UOT) between two measures of possibly different masses with at most n components, where the marginal constraints of standard Optimal Transport (OT) are relaxed via Kullback-Leibler divergence with regularization factor τ. Although only Sinkhorn-based UOT solvers have been analyzed in the literature with the iteration complexity of O(τlog(n)ε log(log(n)ε)) and per-iteration cost of O(n²⁾ for achieving the desired error ε, their positively dense output transportation plans strongly hinder the practicality. On the other hand, while being vastly used as heuristics for computing UOT in modern deep learning applications and having shown success in sparse OT problem, gradient methods applied to UOT have not been formally studied. In this paper, we propose a novel algorithm based on Gradient Extrapolation Method (GEM-UOT) to find an ε-approximate solution to the UOT problem in O( κlog(τn/ε) ) iterations with O(n²⁾ per-iteration cost, where κ is the condition number depending on only the two input measures. Our proof technique is based on a novel dual formulation of the squared ℓ_2-norm UOT objective, which fills the lack of sparse UOT literature and also leads to a new characterization of approximation error between UOT and OT. To this end, we further present a novel approach of OT retrieval from UOT, which is based on GEM-UOT with fine tuned τ and a post-process projection step. Extensive experiments on synthetic and real datasets validate our theories and demonstrate the favorable performance of our methods in practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reflected Schrödinger Bridge for Constrained Generative Modeling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-03228</link>
-    <guid isPermaLink="false">arxiv:2401.03228</guid>
-    <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Deng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Diffusion models have become the go-to method for large-scale generative models in real-world applications. These applications often involve data distributions confined within bounded domains, typically requiring ad-hoc thresholding techniques for boundary enforcement. Reflected diffusion models (Lou23) aim to enhance generalizability by generating the data distribution through a backward process governed by reflected Brownian motion. However, reflected diffusion models may not easily adapt to diverse domains without the derivation of proper diffeomorphic mappings and do not guarantee optimal transport properties. To overcome these limitations, we introduce the Reflected Schrodinger Bridge algorithm: an entropy-regularized optimal transport approach tailored for generating data within diverse bounded domains. We derive elegant reflected forward-backward stochastic differential equations with Neumann and Robin boundary conditions, extend divergence-based likelihood training to bounded domains, and explore natural connections to entropic optimal transport for the study of approximate linear convergence - a valuable insight for practical training. Our algorithm yields robust generative modeling in diverse domains, and its scalability is demonstrated in real-world constrained generative modeling through standard image benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Nonnegative Tensor Factorization with Manifold Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01842</link>
-    <guid isPermaLink="false">arxiv:2401.01842</guid>
-    <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jianyu Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Nonnegative tensor factorization (NTF) has become an important tool for feature extraction and part-based representation with preserved intrinsic structure information from nonnegative high-order data. However, the original NTF methods utilize Euclidean or Kullback-Leibler divergence as the loss function which treats each feature equally leading to the neglect of the side-information of features. To utilize correlation information of features and manifold information of samples, we introduce Wasserstein manifold nonnegative tensor factorization (WMNTF), which minimizes the Wasserstein distance between the distribution of input tensorial data and the distribution of reconstruction. Although some researches about Wasserstein distance have been proposed in nonnegative matrix factorization (NMF), they ignore the spatial structure information of higher-order data. We use Wasserstein distance (a.k.a Earth Mover&rsquo;s distance or Optimal Transport distance) as a metric and add a graph regularizer to a latent factor. Experimental results demonstrate the effectiveness of the proposed method compared with other NMF and NTF methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Point Cloud Classification via Deep Set Linearized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-01460</link>
-    <guid isPermaLink="false">arxiv:2401.01460</guid>
-    <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Scott Mahan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We introduce Deep Set Linearized Optimal Transport, an algorithm designed for the efficient simultaneous embedding of point clouds into an L²⁻space. This embedding preserves specific low-dimensional structures within the Wasserstein space while constructing a classifier to distinguish between various classes of point clouds. Our approach is motivated by the observation that L²⁻distances between optimal transport maps for distinct point clouds, originating from a shared fixed reference distribution, provide an approximation of the Wasserstein-2 distance between these point clouds, under certain assumptions. To learn approximations of these transport maps, we employ input convex neural networks (ICNNs) and establish that, under specific conditions, Euclidean distances between samples from these ICNNs closely mirror Wasserstein-2 distances between the true distributions. Additionally, we train a discriminator network that attaches weights these samples and creates a permutation invariant classifier to differentiate between different classes of point clouds. We showcase the advantages of our algorithm over the standard deep set approach through experiments on a flow cytometry dataset with a limited number of labeled point clouds.</p>]]></description>
   </item>
 
 </channel>

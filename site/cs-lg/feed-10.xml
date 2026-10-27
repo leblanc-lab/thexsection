@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Generative Adversarial Uncertainty Quantification in Physics-Informed Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2108-13054</link>
+    <guid isPermaLink="false">arxiv:2108.13054</guid>
+    <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yihang Gao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we study a physics-informed algorithm for Wasserstein Generative Adversarial Networks (WGANs) for uncertainty quantification in solutions of partial differential equations. By using groupsort activation functions in adversarial network discriminators, network generators are utilized to learn the uncertainty in solutions of partial differential equations observed from the initial/boundary data. Under mild assumptions, we show that the generalization error of the computed generator converges to the approximation error of the network with high probability, when the number of samples are sufficiently taken. According to our established error bound, we also find that our physics-informed WGANs have higher requirement for the capacity of discriminators than that of generators. Numerical results on synthetic examples of partial differential equations are reported to validate our theoretical results and demonstrate how uncertainty quantification can be obtained for solutions of partial differential equations and the distributions of initial/boundary data. However, the quality or the accuracy of the uncertainty quantification theory in all the points in the interior is still the theoretical vacancy, and required for further research.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Style-based quantum generative adversarial networks for Monte Carlo events</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2110-06933</link>
+    <guid isPermaLink="false">arxiv:2110.06933</guid>
+    <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carlos Bravo-Prieto et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>We propose and assess an alternative quantum generator architecture in the context of generative adversarial learning for Monte Carlo event generation, used to simulate particle physics processes at the Large Hadron Collider (LHC). We validate this methodology by implementing the quantum network on artificial data generated from known underlying distributions. The network is then applied to Monte Carlo-generated datasets of specific LHC scattering processes. The new quantum generator architecture leads to a generalization of the state-of-the-art implementations, achieving smaller Kullback-Leibler divergences even with shallow-depth networks. Moreover, the quantum generator successfully learns the underlying distribution functions even if trained with small training sample sets; this is particularly interesting for data augmentation applications. We deploy this novel methodology on two different quantum hardware architectures, trapped-ion and superconducting technologies, to test its hardware-independent viability.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimising hadronic collider simulations using amplitude neural networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2202-04506</link>
+    <guid isPermaLink="false">arxiv:2202.04506</guid>
+    <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Moodie</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Precision phenomenological studies of high-multiplicity scattering processes at collider experiments present a substantial theoretical challenge and are vitally important ingredients in experimental measurements. Machine learning technology has the potential to dramatically optimise simulations for complicated final states. We investigate the use of neural networks to approximate matrix elements, studying the case of loop-induced diphoton production through gluon fusion. We train neural network models on one-loop amplitudes from the NJet C++ library and interface them with the Sherpa Monte Carlo event generator to provide the matrix element within a realistic hadronic collider simulation. Computing some standard observables with the models and comparing to conventional techniques, we find excellent agreement in the distributions and a reduced total simulation time by a factor of thirty.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning to Re-weight Examples with Optimal Transport for Imbalanced Classification</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2208-02951</link>
+    <guid isPermaLink="false">arxiv:2208.02951</guid>
+    <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dandan Guo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Imbalanced data pose challenges for deep learning based classification models. One of the most widely-used approaches for tackling imbalanced data is re-weighting, where training samples are associated with different weights in the loss function. Most of existing re-weighting approaches treat the example weights as the learnable parameter and optimize the weights on the meta set, entailing expensive bilevel optimization. In this paper, we propose a novel re-weighting method based on optimal transport (OT) from a distributional point of view. Specifically, we view the training set as an imbalanced distribution over its samples, which is transported by OT to a balanced distribution obtained from the meta set. The weights of the training samples are the probability mass of the imbalanced distribution and learned by minimizing the OT distance between the two distributions. Compared with existing methods, our proposed one disengages the dependence of the weight learning on the concerned classifier at each iteration. Experiments on image, text and point cloud datasets demonstrate that our proposed re-weighting method has excellent performance, achieving state-of-the-art results in many cases and providing a promising tool for addressing the imbalanced classification issue.</p>]]></description>
+  </item>
 
   <item>
     <title>Interpretable Distribution Shift Detection using Optimal Transport</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hsin-Yi Lin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>This paper presents a novel discriminator-constrained optimal transport network (DOTN) that performs unsupervised domain adaptation for speech enhancement (SE), which is an essential regression task in speech processing. The DOTN aims to estimate clean references of noisy speech in a target domain, by exploiting the knowledge available from the source domain. The domain shift between training and testing data has been reported to be an obstacle to learning problems in diverse fields. Although rich literature exists on unsupervised domain adaptation for classification, the methods proposed, especially in regressions, remain scarce and often depend on additional information regarding the input data. The proposed DOTN approach tactically fuses the optimal transport (OT) theory from mathematical analysis with generative adversarial frameworks, to help evaluate continuous labels in the target domain. The experimental results on two SE tasks demonstrate that by extending the classical OT formulation, our proposed DOTN outperforms previous adversarial domain adaptation frameworks in a purely unsupervised manner.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Online-compatible Unsupervised Non-resonant Anomaly Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2111-06417</link>
-    <guid isPermaLink="false">arxiv:2111.06417</guid>
-    <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vinicius Mikuni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni, David Shih) — original abstract; no AI summary.</em></p>
-<p>There is a growing need for anomaly detection methods that can broaden the search for new particles in a model-agnostic manner. Most proposals for new methods focus exclusively on signal sensitivity. However, it is not enough to select anomalous events - there must also be a strategy to provide context to the selected events. We propose the first complete strategy for unsupervised detection of non-resonant anomalies that includes both signal sensitivity and a data-driven method for background estimation. Our technique is built out of two simultaneously-trained autoencoders that are forced to be decorrelated from each other. This method can be deployed offline for non-resonant anomaly detection and is also the first complete online-compatible anomaly detection strategy. We show that our method achieves excellent performance on a variety of signals prepared for the ADC2021 data challenge.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Adversarially Regularized Graph Autoencoder</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2111-04981</link>
-    <guid isPermaLink="false">arxiv:2111.04981</guid>
-    <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huidong Liang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper introduces Wasserstein Adversarially Regularized Graph Autoencoder (WARGA), an implicit generative algorithm that directly regularizes the latent distribution of node embedding to a target distribution via the Wasserstein metric. The proposed method has been validated in tasks of link prediction and node clustering on real-world graphs, in which WARGA generally outperforms state-of-the-art models based on Kullback-Leibler (KL) divergence and typical adversarial framework.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Graph Matching via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2111-05366</link>
-    <guid isPermaLink="false">arxiv:2111.05366</guid>
-    <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ali Saad-Eldin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The graph matching problem seeks to find an alignment between the nodes of two graphs that minimizes the number of adjacency disagreements. Solving the graph matching is increasingly important due to it&rsquo;s applications in operations research, computer vision, neuroscience, and more. However, current state-of-the-art algorithms are inefficient in matching very large graphs, though they produce good accuracy. The main computational bottleneck of these algorithms is the linear assignment problem, which must be solved at each iteration. In this paper, we leverage the recent advances in the field of optimal transport to replace the accepted use of linear assignment algorithms. We present GOAT, a modification to the state-of-the-art graph matching approximation algorithm &ldquo;FAQ&rdquo; (Vogelstein, 2015), replacing its linear sum assignment step with the &ldquo;Lightspeed Optimal Transport&rdquo; method of Cuturi (2013). The modification provides improvements to both speed and empirical matching accuracy. The effectiveness of the approach is demonstrated in matching graphs in simulated and real data examples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Measuring Generalization with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-03314</link>
-    <guid isPermaLink="false">arxiv:2106.03314</guid>
-    <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ching-Yao Chuang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Understanding the generalization of deep neural networks is one of the most important tasks in deep learning. Although much progress has been made, theoretical error bounds still often behave disparately from empirical observations. In this work, we develop margin-based generalization bounds, where the margins are normalized with optimal transport costs between independent random subsets sampled from the training distribution. In particular, the optimal transport cost can be interpreted as a generalization of variance which captures the structural properties of the learned feature space. Our bounds robustly predict the generalization error, given training data and network parameters, on large scale datasets. Theoretically, we demonstrate that the concentration and separation of features play crucial roles in generalization, supporting empirical results in the literature. The code is available at \url{https://github.com/chingyaoc/kV-Margin}.</p>]]></description>
   </item>
 
 </channel>
