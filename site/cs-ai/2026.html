@@ -36,17 +36,62 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">659 papers</span>
-  <span class="count">521 days</span>
+  <span class="count">662 papers</span>
+  <span class="count">522 days</span>
   <span class="count">since 2012</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">239</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">242</span></a><a href="2025.html">2025 <span class="n">160</span></a><a href="2024.html">2024 <span class="n">99</span></a><a href="2023.html">2023 <span class="n">47</span></a><a href="2022.html">2022 <span class="n">55</span></a><a href="2021.html">2021 <span class="n">26</span></a><a href="2020.html">2020 <span class="n">7</span></a><a href="2019.html">2019 <span class="n">9</span></a><a href="2018.html">2018 <span class="n">7</span></a><a href="2017.html">2017 <span class="n">4</span></a><a href="2016.html">2016 <span class="n">1</span></a><a href="2015.html">2015 <span class="n">2</span></a><a href="2013.html">2013 <span class="n">2</span></a><a href="2012.html">2012 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Wednesday, October 28, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2610-37070">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.37070" target="_blank" rel="noopener">arXiv:2610.37070</a>
+      
+      <a class="permalink" href="#a2610-37070" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Correctness Conditioning as Selection in Chain-of-Thought Faithfulness Evaluation</h3>
+    <p class="byline">Yueer Pan et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Restricting chain-of-thought (CoT) faithfulness evaluation to correctly answered instances changes the population being measured. We study this selection step in a seven-variable structural causal model and derive the exact observed gap <span class="arithmatex">\(\Delta = \operatorname{Cov}(A, C)/P(C=1)\)</span>. The model distinguishes difficulty confounding from shortcut-induced collider bias and states the conditional-independence assumption needed to express the gap through latent response propensities. A protocol review of 18 papers distinguishes answer-correctness restrictions from agreement-based selection, benchmark construction, and training-data filtering. We evaluate four sub-ceiling deployments on arithmetic tasks and observe positive selection gaps in all four. The primary GLM-5.3 run yields a +7.4 percentage-point gap (<span class="arithmatex">\(n = 1000\)</span>, <span class="arithmatex">\(p &lt; 0.0001\)</span>), and pooled Cochran-Mantel-Haenszel analysis gives OR = 1.70 (<span class="arithmatex">\(p &lt; 10^{-6}\)</span>). An assumption-free covariance decomposition assigns 42.8% of the GLM-5.3 gap to between-stratum variation in interventionable-operation count, leaving the majority unattributed. When counterfactual compliance is observable for every instance, evaluating all traces directly estimates population faithfulness without correctness filtering.</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-37137">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.37137" target="_blank" rel="noopener">arXiv:2610.37137</a>
+      
+      <a class="permalink" href="#a2610-37137" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">What the Primary Lund Plane Omits: A Model-Stitching Diagnosis of a Jet-Tagger Representation Gap</h3>
+    <p class="byline">Saurabh Rai et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Lund plane, Cambridge/Aachen, jet taggers, quark/gluon, particle transformer) — original abstract; no AI summary.</em></p>
+<p>Lund-plane and Particle Transformer (ParT) jet taggers can differ in performance because one representation is weaker, or because a weaker downstream computation reads an adequate one. Standalone performance cannot separate these. Model stitching can: it links the frozen early layers of one network to the frozen late layers of another through a single trained linear map. As a positive control we use an incomplete Lund representation, the primary declustering branch, whose deficit is known independently. Stitched into ParT&rsquo;s downstream, it reaches a background rejection at least as much as its own downstream recovers, yet far below ParT&rsquo;s background rejection: the deficit is representational, not computational. A hypergraph reader over splitting triplets does no better, ruling out higher-order correlations as the cause. The gap is invisible in AUC, which stays within 1\% of its target value, and appears only in background rejection at low signal efficiency. It localizes to 0.6\% of background jets, at and above the top mass, with more constituents but fewer primary splittings than typical background. Rebuilding the representation on the full Cambridge/Aachen declustering tree repairs the deficit as predicted: standalone rejection rises, closing 72\% of the gap. Masking nodes at inference shows the repaired network still relies almost entirely on the primary branch; the secondary splittings make the representation learnable rather than supplying information it reads. Along the primary branch, the widest-angle splitting, near the top and <span class="arithmatex">\(W\)</span> opening angles, is worth nearly twice a random one. For quark/gluon tagging the primary branch is far less deficient, retaining 77.6\% of ParT&rsquo;s rejection (46.9\% for top), and the full tree closes only 33\% of the gap (72\% for top).</p></div>
+  </article>
+  
+  <article class="paper" id="a2610-37281">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2610.37281" target="_blank" rel="noopener">arXiv:2610.37281</a>
+      
+      <a class="permalink" href="#a2610-37281" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">RPSD: Retrieval-Privileged On-Policy Self-Distillation with Optimal Transport</h3>
+    <p class="byline">Dongyue Li et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Sequential recommendation predicts a user&rsquo;s next interaction from historical behavior. Recent LLM-based methods recast this task as generative recommendation and increasingly adopt reinforcement learning such as GRPO for post-training. However, these methods suffer from two limitations, namely credit-blind optimization, where a sequence-level reward is shared across all generated tokens, and collaborative-blind supervision, where each training signal is derived from a single user and ignores behavioral patterns shared across similar users. To address both issues, we propose Retrieval-Privileged on-policy Self-Distillation (RPSD). For credit-blind optimization, we introduce on-policy self-distillation (OPSD), in which a teacher with privileged knowledge re-evaluates the student&rsquo;s on-policy response, and the token-level confidence difference between the student and teacher reshapes the shared sequence-level advantage into token-specific credit. However, the privileged knowledge in vanilla OPSD is still derived from a single user, leaving collaborative-blind supervision unresolved. We therefore ground the teacher in collaborative behavioral evidence from similar users. Specifically, we use temporally aware optimal transport (OT) to compare interaction trajectories across users by jointly considering item similarity and temporal structure, and further apply diversity-aware selection to retain complementary trajectories as privileged evidence. In this way, on-policy self-distillation provides fine-grained token-level credit, while OT enriches the teacher with structured cross-user evidence. To the best of our knowledge, this is the first work to bring on-policy self-distillation to sequential recommendation and to use cross-user behavior as its privileged signal. Extensive experiments across multiple real-world datasets demonstrate that RPSD achieves state-of-the-art performance.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -4352,7 +4397,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-28 05:25 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-10-28 05:41 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

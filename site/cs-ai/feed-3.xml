@@ -7,7 +7,37 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Large Physics Models: Towards a collaborative approach with Large Language Models and Foundation Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2501-05382</link>
+    <guid isPermaLink="false">arxiv:2501.05382</guid>
+    <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian G. Barman et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka, Michael Krämer) — original abstract; no AI summary.</em></p>
+<p>This paper explores ideas and provides a potential roadmap for the development and evaluation of physics-specific large-scale AI models, which we call Large Physics Models (LPMs). These models, based on foundation models such as Large Language Models (LLMs) - trained on broad data - are tailored to address the demands of physics research. LPMs can function independently or as part of an integrated framework. This framework can incorporate specialized tools, including symbolic reasoning modules for mathematical manipulations, frameworks to analyse specific experimental and simulated data, and mechanisms for synthesizing theories and scientific literature. We begin by examining whether the physics community should actively develop and refine dedicated models, rather than relying solely on commercial LLMs. We then outline how LPMs can be realized through interdisciplinary collaboration among experts in physics, computer science, and philosophy of science. To integrate these models effectively, we identify three key pillars: Development, Evaluation, and Philosophical Reflection. Development focuses on constructing models capable of processing physics texts, mathematical formulations, and diverse physical data. Evaluation assesses accuracy and reliability by testing and benchmarking. Finally, Philosophical Reflection encompasses the analysis of broader implications of LLMs in physics, including their potential to generate new scientific understanding and what novel collaboration dynamics might arise in research. Inspired by the organizational structure of experimental collaborations in particle physics, we propose a similarly interdisciplinary and collaborative approach to building and refining Large Physics Models. This roadmap provides specific objectives, defines pathways to achieve them, and identifies challenges that must be addressed to realise physics-specific large scale AI models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Survey on Algorithmic Developments in Optimal Transport Problem with Applications</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2501-06247</link>
+    <guid isPermaLink="false">arxiv:2501.06247</guid>
+    <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sina Moradi</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) has established itself as a robust framework for quantifying differences between distributions, with applications that span fields such as machine learning, data science, and computer vision. This paper offers a detailed examination of the OT problem, beginning with its theoretical foundations, including the classical formulations of Monge and Kantorovich and their extensions to modern computational techniques. It explores cutting-edge algorithms, including Sinkhorn iterations, primal-dual strategies, and reduction-based approaches, emphasizing their efficiency and scalability in addressing high-dimensional problems. The paper also highlights emerging trends, such as integrating OT into machine learning frameworks, the development of novel problem variants, and ongoing theoretical advancements. Applications of OT are presented across a range of domains, with particular attention to its innovative application in time series data analysis via Optimal Transport Warping (OTW), a robust alternative to methods like Dynamic Time Warping. Despite the significant progress made, challenges related to scalability, robustness, and ethical considerations remain, necessitating further research. The paper underscores OT&rsquo;s potential to bridge theoretical depth and practical utility, fostering impactful advancements across diverse disciplines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Computing Approximate Graph Edit Distance via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2024.html#a2412-18857</link>
+    <guid isPermaLink="false">arxiv:2412.18857</guid>
+    <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qihao Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Given a graph pair (G¹, G²⁾, graph edit distance (GED) is defined as the minimum number of edit operations converting G¹ to G². GED is a fundamental operation widely used in many applications, but its exact computation is NP-hard, so the approximation of GED has gained a lot of attention. Data-driven learning-based methods have been found to provide superior results compared to classical approximate algorithms, but they directly fit the coupling relationship between a pair of vertices from their vertex features. We argue that while pairwise vertex features can capture the coupling cost (discrepancy) of a pair of vertices, the vertex coupling matrix should be derived from the vertex-pair cost matrix through a more well-established method that is aware of the global context of the graph pair, such as optimal transport. In this paper, we propose an ensemble approach that integrates a supervised learning-based method and an unsupervised method, both based on optimal transport. Our learning method, GEDIOT, is based on inverse optimal transport that leverages a learnable Sinkhorn algorithm to generate the coupling matrix. Our unsupervised method, GEDGW, models GED computation as a linear combination of optimal transport and its variant, Gromov-Wasserstein discrepancy, for node and edge operations, respectively, which can be solved efficiently without needing the ground truth. Our ensemble method, GEDHOT, combines GEDIOT and GEDGW to further boost the performance. Extensive experiments demonstrate that our methods significantly outperform the existing methods in terms of the performance of GED computation, edit path generation, and model generalizability.</p>]]></description>
+  </item>
 
   <item>
     <title>FedPIA -- Permuting and Integrating Adapters leveraging Wasserstein Barycenters for Finetuning Foundation Models in Multi-Modal Federated Learning</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kun Xiao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Event cameras are a new type of sensors that are different from traditional cameras. Each pixel is triggered asynchronously by event. The trigger event is the change of the brightness irradiated on the pixel. If the increment or decrement of brightness is higher than a certain threshold, an event is output. Compared with traditional cameras, event cameras have the advantages of high dynamic range and no motion blur. Accumulating events to frames and using traditional SLAM algorithm is a direct and efficient way for event-based SLAM. Different event accumulator settings, such as slice method of event stream, processing method for no motion, using polarity or not, decay function and event contribution, can cause quite different accumulating results. We conducted the research on how to accumulate event frames to achieve a better event-based SLAM performance. For experiment verification, accumulated event frames are fed to the traditional SLAM system to construct an event-based SLAM system. Our strategy of setting event accumulator has been evaluated on the public dataset. The experiment results show that our method can achieve better performance in most sequences compared with the state-of-the-art event frame based SLAM algorithm. In addition, the proposed approach has been tested on a quadrotor UAV to show the potential of applications in real scenario. Code and results are open sourced to benefit the research community of event cameras.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Assessing Classifier Fairness with Collider Bias</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2022.html#a2010-03933</link>
-    <guid isPermaLink="false">arxiv:2010.03933</guid>
-    <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhenlong Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The increasing application of machine learning techniques in everyday decision-making processes has brought concerns about the fairness of algorithmic decision-making. This paper concerns the problem of collider bias which produces spurious associations in fairness assessment and develops theorems to guide fairness assessment avoiding the collider bias. We consider a real-world application of auditing a trained classifier by an audit agency. We propose an unbiased assessment algorithm by utilising the developed theorems to reduce collider biases in the assessment. Experiments and simulations show the proposed algorithm reduces collider biases significantly in the assessment and is promising in auditing trained classifiers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>WATCH: Wasserstein Change Point Detection for High-Dimensional Time Series Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2022.html#a2201-07125</link>
-    <guid isPermaLink="false">arxiv:2201.07125</guid>
-    <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kamil Faber et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Detecting relevant changes in dynamic time series data in a timely manner is crucially important for many data analysis tasks in real-world settings. Change point detection methods have the ability to discover changes in an unsupervised fashion, which represents a desirable property in the analysis of unbounded and unlabeled data streams. However, one limitation of most of the existing approaches is represented by their limited ability to handle multivariate and high-dimensional data, which is frequently observed in modern applications such as traffic flow prediction, human activity recognition, and smart grids monitoring. In this paper, we attempt to fill this gap by proposing WATCH, a novel Wasserstein distance-based change point detection approach that models an initial distribution and monitors its behavior while processing new data points, providing accurate and robust detection of change points in dynamic high-dimensional data. An extensive experimental evaluation involving a large number of benchmark datasets shows that WATCH is capable of accurately identifying change points and outperforming state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Relative velocity-based reward functions for crowd navigation of robots</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2022.html#a2112-13984</link>
-    <guid isPermaLink="false">arxiv:2112.13984</guid>
-    <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiaoqing Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy flow) — original abstract; no AI summary.</em></p>
-<p>The four-wheeled Mecanum robot is widely used in various industries due to its maneuverability and strong load capacity, which is suitable for performing precise transportation tasks in a narrow environment, but while the Mecanum wheel robot has mobility, it also consumes more energy than ordinary robots. The power consumed by the Mecanum wheel mobile robot varies enormously depending on their operating regimes and environments. Therefore, only knowing the working environment of the robot and the accurate power consumption model can we accurately predict the power consumption of the robot. In order to increase the appli-cable scenarios of energy consumption modeling for Mecanum wheel robots and improve the accuracy of energy consumption modeling, this paper focuses on various factors that affect the energy consumption of the Mecanum wheel robot, such as motor temperature, terrain, the center of gravity position, etc. The model is derived from the kinematic and kinetic model combined with electrical engineering and energy flow principles. The model has been simulated in MATLAB and experimentally validated with the four-wheeled Mecanum robot platform in our lab. Experimental results show that the model is 90% accurate. The results of energy consumption modeling can help robots to save energy by helping them to perform rational path planning and task planning.</p>]]></description>
   </item>
 
 </channel>
