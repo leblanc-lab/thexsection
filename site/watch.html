@@ -39,6 +39,69 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Wednesday, October 28, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261036030-a-practical-guide-to-sensitivity-projections-for-beyond-the-standard-model-physics-francesca-acanfora-et-al"><a href="https://arxiv.org/abs/2610.36030">arXiv:2610.36030</a> — A Practical Guide to Sensitivity Projections for Beyond the Standard Model Physics (Francesca Acanfora et al.)</h3>
+<p><strong>How central it is:</strong> this is a statistics pedagogy paper. The muon collider is one worked example, not the subject. The core point is that BSM projections should use a hypothesis test, not a goodness-of-fit test. The authors show that on Asimov data both test statistics reduce to Pearson χ²_A. What differs is the reference distribution:
+- <strong>Goodness-of-fit:</strong> χ² with k = n_bins degrees of freedom.
+- <strong>Hypothesis test:</strong> ½χ²₁, using a μ-interpolated alternative H(μ) = μH_BSM + (1−μ)H_SM.</p>
+<p>The practical recipe is to require χ²_A ≥ 2.71 for 95% CL, or ≥ 3.84 for 95% CLs.</p>
+<p><strong>The muon-collider example:</strong>
+- Process: μ⁺μ⁻ → V⁰ → e⁺e⁻ at √s = 10 TeV with 1 ab⁻¹.
+- Model: heavy vector triplet model A, tree level, with SM interference.
+- Binning: six uniform |η_e| bins over [0, 2.5].
+- Efficiency set to 1; no detector or beam-induced-background treatment.</p>
+<p>At the benchmark (m_V, g_V) = (1.9 TeV, 1.9), the two tests disagree sharply:
+- <strong>Goodness-of-fit:</strong> q_A = 9.06, p ≈ 0.16, so the point is not excluded.
+- <strong>Hypothesis test:</strong> q_A = 9.62, p ≈ 0.0013 (Monte Carlo) or 0.00096 (asymptotic). χ²_A = 9.33 gives 0.0011. The point is excluded.</p>
+<p>The (m_V, g_V) exclusion contours (thresholds 12.6 vs 2.71) differ substantially. The text describes them only qualitatively; no numerical reach is quoted. Using 3.84 plus systematics reproduces the CLs contours of the earlier muon-collider HVT study (Ref. [49]). Uncorrelated systematics added in quadrature give almost the same contours as a nuisance-parameter treatment.</p>
+<p><strong>Takeaway for the topic:</strong> there is no new muon-collider reach here. The useful part is a calibration warning: any published muon-collider projection that used a &ldquo;χ² test&rdquo; with n_bins degrees of freedom is conservative by a large factor in coupling reach. The available text truncates partway through the multinomial section, so the CLs and systematics sections were not seen.</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261036073-regression-on-high-dimensional-phase-space-larkoski-andrew-j-larkoski"><a href="https://arxiv.org/abs/2610.36073">arXiv:2610.36073</a> — Regression on high-dimensional phase space (Larkoski) (Andrew J. Larkoski)</h3>
+<p>Larkoski develops a 1/n expansion of uniform massless phase space through O(n⁻²) for m-particle correlators. At leading order, phase space factorizes into Boltzmann factors n²z e^{−nz} with isotropic angles. The main result is a proof that the covariance of any two EFPs on uniform phase space is O(n⁻²).</p>
+<ul>
+<li><strong>Why the O(n⁻¹) term vanishes:</strong> the 9ml/2n, −6ml/n and +3ml/2n pieces cancel. This needs permutation invariance, momentum conservation and rotational invariance together.</li>
+<li><strong>What breaks it:</strong> dropping momentum conservation (pure Boltzmann sampling) restores an O(1/n) covariance.</li>
+<li><strong>Numerical check with RAMBO:</strong> Var(EFP₂⁽²⁾) = (2/5)n⁻² on Lorentz-invariant phase space versus (32/9)n⁻¹ for Boltzmann sampling.</li>
+<li><strong>Corollary:</strong> EFP expansion coefficients of an IRC-safe observable are n-independent, so the n⁻² covariance extends to any IRC-safe pair.</li>
+</ul>
+<p><strong>Consequence for regression.</strong> Fitting |M_n|² with EFPs by mean-squared error forces coefficients c_β = O(n²). The normalization sum rule then requires the O(n²) and O(n) pieces to cancel exactly. That is a structurally ill-conditioned linear system at high multiplicity.</p>
+<p>Larkoski proposes imposing these constraints order by order in n. He also suggests building non-analytic structure (e.g. Sudakov factors) into the basis. For the e⁺e⁻ → hadrons example he uses KNO scaling to keep only the leading ⟨n⟩ term, with O(α_s) EFP expectation values on the right-hand side.</p>
+<p><strong>Caveats:</strong>
+- The measure is uniform phase space.
+- No closed-form covariance exists for general EFP pairs; only numerical results are shown.
+- The text truncates before the e⁺e⁻ numerical results.
+- The minimal loss involves ⟨(|M_n|²)²⟩, which is not computable at fixed order.</p>
+<p>This is relevant to anyone doing linear or EFP-based fits on high-multiplicity jets.</p>
+<h3 id="arxiv261037137-what-the-primary-lund-plane-omits-a-model-stitching-diagnosis-saurabh-rai-et-al"><a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a> — What the Primary Lund Plane Omits: A Model-Stitching Diagnosis (Saurabh Rai et al.)</h3>
+<p>The authors build Lund-ParT: the same ParT class (about 1.66M parameters) fed with primary-Lund declustering coordinates. They stitch frozen class tokens across networks through a single 128×128 linear map at depths 1–5. The data are 50% of the top-tagging reference set, with five seeds.</p>
+<p><strong>Is the gap representation or reader?</strong>
+- Standalone background rejection at ε_S = 0.5: ParT 291, primary-branch Lund-ParT 136.
+- Lund representation read by ParT&rsquo;s downstream: 128–136.
+- Same representation read by Lund-ParT&rsquo;s own downstream: 120–134.
+- So ParT&rsquo;s reader does at least as well, and the deficit is representational.
+- AUC stays within about 1% throughout. The gap appears only in low-efficiency rejection.
+- CKA rises from 0.76 to 0.93 with depth without tracking transfer.</p>
+<p><strong>Where the deficit sits.</strong> It is concentrated in about 0.6% of background: jets with m ≈ 180 GeV and about 67 constituents, but fewer primary splittings than average (11.3 vs 12.6). The relevant radiation sits off the primary branch.</p>
+<p><strong>The repair.</strong>
+- Rebuilding on the full C/A tree lifts standalone rejection to 248, closing 72% of the gap. The leaked population drops by 2.9× at d = 5.
+- Masking at inference shows the repaired network still reads mostly the primary branch. Dropping 12 primary nodes gives 9.2; dropping 12 secondary nodes gives 187.
+- So secondary nodes mainly aid learnability rather than carrying inference-time information.
+- The widest-angle primary splitting is worth +35% excess over a random node, near 2m_t/p_T.</p>
+<p><strong>Quark/gluon contrast.</strong> The primary branch alone retains 77.6% of ParT&rsquo;s rejection, and the full tree closes only 33% of the gap. Both tasks end with the full tree at about 85% of ParT.</p>
+<p><strong>Caveats:</strong>
+- Rejection here is about 10× below full-dataset values.
+- The reader-asymmetry result is not significant (p = 0.062).
+- The hypergraph check (116 vs 112) is a single seed at 10% data.
+- Results at d = 6 are excluded.
+- Quark/gluon stitching results at shallow depth carry 20–55% seed spreads.</p>
+<p><strong>Link to Larkoski.</strong> Both papers diagnose why a physics-motivated basis underdelivers. Larkoski&rsquo;s is analytic (conditioning of an IRC-safe linear basis at large n); Rai and Ganguly&rsquo;s is empirical (which declustering content is missing).</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Tuesday, October 27, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -1715,7 +1778,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-27 05:48 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-28 05:25 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

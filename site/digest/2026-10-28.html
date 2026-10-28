@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wednesday, October 28, 2026 — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" type="application/rss+xml" title="The Cross Section" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../deep-dives/index.html">Deep dives</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Wednesday, October 28, 2026</h1>
+  <div class="meta">
+    <span class="count">73 papers read</span>
+    <span class="chip">small-system partonic collectivity</span><span class="chip">fits, faster and more honest</span><span class="chip">reactor CEvNS goes precision</span><span class="chip">taggers under the microscope</span>
+  </div>
+  <h2 id="flows-like-a-meson">φ flows like a meson</h2>
+<p>ALICE <a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a> reports the first φ elliptic flow measured in a small system. In central and semi-central O–O collisions at 5.36 TeV they see mass ordering at low <span class="arithmatex">\(p_T\)</span> and a 10σ baryon–meson splitting above 3 GeV. The φ has nearly the Λ&rsquo;s mass, yet its <span class="arithmatex">\(v_2\)</span> tracks the <span class="arithmatex">\(K^0_S\)</span>, not the Λ. That disfavors a purely mass-driven pattern and points to recombination from a flowing partonic medium. It is a sharper discriminant than CMS&rsquo;s O–O baryon-to-meson enhancement (<a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a>), which anchored the year&rsquo;s small-system thread. The day&rsquo;s other hard number is CONUS+ at 10.2σ. The rest of the listing is mostly methods, and the 248 keV LZ event drew no new papers today.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="small-systems-partonic">Small systems, partonic</h3>
+<p>Beyond the φ result, Mallick et al. <a href="https://arxiv.org/abs/2610.36922">arXiv:2610.36922</a> validate a nonflow subtraction for symmetry-plane correlators and symmetric cumulants. They test it on Angantyr, where flow is absent by construction, before predicting O–O. That is the control these multiparticle observables need at low multiplicity. In Pb–Pb, ALICE <a href="https://arxiv.org/abs/2610.36307">arXiv:2610.36307</a> finds the antideuteron–net-Λ correlation matches Thermal-FIST. The earlier antideuteron–antiproton discrepancy therefore looks like a nucleosynthesis effect, not a hadronization one. Together with yesterday&rsquo;s first O–O <span class="arithmatex">\(I_{AA}\)</span>, oxygen is now producing discriminating measurements, not just existence proofs.</p>
+<h3 id="fits-faster-and-more-honest">Fits, faster and more honest</h3>
+<ul>
+<li><strong>Fitters.</strong> Elmarassy et al. <a href="https://arxiv.org/abs/2610.35927">arXiv:2610.35927</a> benchmark minimizers and find BFGS variants consistently about 10× faster than Migrad at equal precision.</li>
+<li><strong>PDF training dynamics.</strong> Chiefa et al. <a href="https://arxiv.org/abs/2610.36034">arXiv:2610.36034</a> extend NTK gradient-flow analysis to a multi-flavour DIS fit. A few leading modes carry the PDFs, and the data noise sits in the late-learned modes. This complements Elmer et al.&rsquo;s NTK calibration study from 10-23.</li>
+<li><strong>Generative models and nPDFs.</strong> Badaracco et al.&rsquo;s SIGMA <a href="https://arxiv.org/abs/2610.37398">arXiv:2610.37398</a> profiles generative-model fit uncertainty inside the goodness-of-fit test. Derakhshanian <a href="https://arxiv.org/abs/2610.37254">arXiv:2610.37254</a> finds secondary minima in lead nPDFs that the Hessian method misses.</li>
+</ul>
+<p>This is the week&rsquo;s error-budget thread, moved from physics inputs to the statistical machinery itself.</p>
+<h3 id="reactor-cevns-goes-precision">Reactor CEvNS goes precision</h3>
+<p>Ackermann et al. (CONUS+) <a href="https://arxiv.org/abs/2610.37318">arXiv:2610.37318</a>, with the companion analysis <a href="https://arxiv.org/abs/2610.37345">arXiv:2610.37345</a>, count 1555 ± 152 events. That is <span class="arithmatex">\(N_s/N_{\rm SM}=0.91\pm0.14\)</span>, with thresholds of 140–170 eV<span class="arithmatex">\(_{ee}\)</span>. Their <span class="arithmatex">\(\sin^2\theta_W=0.225\pm0.022\)</span> at ~10 MeV is a single-experiment point. It sits beside last week&rsquo;s combined CEνNS+ν–e value of <span class="arithmatex">\(0.233^{+0.007}_{-0.006}\)</span>.</p>
+<h3 id="taggers-under-the-microscope">Taggers under the microscope</h3>
+<p>Rai et al. <a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a> use model stitching to show the primary Lund plane&rsquo;s deficit relative to ParT is representational, not computational. The deficit is invisible in AUC. Rankin et al.&rsquo;s SuperJEPA <a href="https://arxiv.org/abs/2610.36121">arXiv:2610.36121</a> finds self-supervision helps even when large labeled samples exist. Wu et al. <a href="https://arxiv.org/abs/2610.36720">arXiv:2610.36720</a> put a full-granularity calorimeter CNN on an FPGA for KOTO, with 99.3% background rejection at 17.9 μs. After the week&rsquo;s compression results, this is diagnosis rather than shrinkage.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a></strong>: The φ is the cleanest available test of mass ordering versus recombination, and it comes out on the recombination side.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.37318">arXiv:2610.37318</a></strong>: The most precise reactor CEνNS measurement to date, from a blind analysis.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a></strong>: A transferable method for locating where a tagger loses information. The gap sits in 0.6% of background jets.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.35927">arXiv:2610.35927</a></strong>: Unglamorous, but most analyses run Migrad, and the initial-Hessian finding is directly actionable.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.36065">arXiv:2610.36065</a></strong>: Fontes et al. find linear IR terms cancel through NNLO in non-Abelian heavy-quark pair production when a short-distance mass is used. It is relevant to the mass-scheme questions behind this month&rsquo;s top-mass threads.</li>
+</ul>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2610.36062">arXiv:2610.36062</a></strong> <em>Late reheating in the era of precision cosmology</em> — Kensuke Akita et al. (hep-ph). Reheating at ~0.4 MeV lowers the cosmological active-ν mass density by up to 5× at fixed physical masses. That bears on last week&rsquo;s persistent negative-<span class="arithmatex">\(\sum m_\nu\)</span> preference.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.37106">arXiv:2610.37106</a></strong> <em>Probing new CP-violating sources in <span class="arithmatex">\(\Lambda_b\to\Lambda_c\ell^-\bar\nu_\ell\)</span></em> — Dong-Hao Li et al. (hep-ph). The baryonic mode reaches Wilson-coefficient combinations that <span class="arithmatex">\(D^*\)</span> angular distributions cannot.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.37258">arXiv:2610.37258</a></strong> <em>Precision measurement of the <span class="arithmatex">\(J/\psi\to\mu^+\mu^-\mu^+\mu^-\)</span> branching fraction…</em> — BESIII Collaboration et al. (hep-ex). The rate agrees with the SM, and the <span class="arithmatex">\(L_\mu-L_\tau\)</span> limits are comparable to Belle II&rsquo;s below 0.7 GeV.</li>
+<li><strong><a href="https://arxiv.org/abs/2610.36684">arXiv:2610.36684</a></strong> <em>Antenna-coupled microstrip summing network for wave-like dark matter searches</em> — Chelsea Bartram et al. (hep-ex). A readout adapted from CMB detectors for multi-wavelength ADMX-VERA cavities at 19–21 GHz.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv261036237-evidence-of-partonic-collectivity-in-oo-collisions-through-the-measurement-of-k0_s-and-elliptic-flow-alice-collaboration"><a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a> — Evidence of partonic collectivity in OO collisions through the measurement of φ, K⁰_S, and Λ elliptic flow (ALICE Collaboration)</h3>
+<p><strong>What they did.</strong> ALICE measured identified-hadron <span class="arithmatex">\(v_2\)</span> in ~3×10⁹ O–O events at 5.36 TeV, in 0–10% and 10–40% centrality, using a <span class="arithmatex">\(|\Delta\eta|&gt;1.2\)</span> gap and a low-multiplicity template fit with a 65–100% reference. Signal <span class="arithmatex">\(v_2\)</span> comes from simultaneous fits to the invariant mass and <span class="arithmatex">\(V_{2\Delta}(m)\)</span>.</p>
+<ul>
+<li><strong>Low <span class="arithmatex">\(p_T\)</span> (&lt;2.2 GeV).</strong> The ordering is <span class="arithmatex">\(v_2(K^0_S) &gt; v_2(\Lambda) \approx v_2(\phi)\)</span>. K⁰_S–Λ separates at &gt;10σ and K⁰_S–φ at &gt;5σ.</li>
+<li><strong>Above 3 GeV.</strong> The pattern flips. Λ exceeds K⁰_S at &gt;10σ and exceeds φ at &gt;5σ. The φ is compatible with the K⁰_S despite its Λ-like mass.</li>
+<li><strong>Scaling.</strong> Constituent-quark scaling holds approximately, with deviations comparable to those seen in Pb–Pb.</li>
+</ul>
+<p><strong>Why it matters.</strong> The φ separates mass from quark content. That makes it a sharper test than baryon-to-meson yield ratios such as CMS&rsquo;s O–O enhancement. Mass ordering at low <span class="arithmatex">\(p_T\)</span> combined with type grouping at intermediate <span class="arithmatex">\(p_T\)</span> is the full heavy-ion pattern, now seen in a system with well-constrained geometry.</p>
+<p><strong>Caveats.</strong>
+- The 10σ figure is the Λ–K⁰_S splitting. The comparison that actually discriminates mass from type, Λ–φ, is &ldquo;&gt;5σ&rdquo;. With the forward FT0C centrality estimator it drops to about 4.5σ in 0–10%.
+- Non-flow subtraction is the largest systematic, up to 9% for the φ, and it grows with <span class="arithmatex">\(p_T\)</span>, exactly where the splitting is claimed. This is why the nonflow validation work (Mallick et al.) matters.
+- The interpretation is explicitly &ldquo;qualitative&rdquo;. No quantitative model comparison is shown, and hydro-plus-fragmentation is acknowledged to generate some species splitting.</p>
+<h3 id="arxiv261037318-high-significance-measurement-of-reactor-cens-on-germanium-by-conus-n-ackermann-conus-collaboration-et-al"><a href="https://arxiv.org/abs/2610.37318">arXiv:2610.37318</a> — High significance measurement of reactor CEνNS on germanium by CONUS+ (N. Ackermann (CONUS+ Collaboration) et al.)</h3>
+<p><strong>What they did.</strong> Run 2 used two new 2.33 kg active-mass point-contact HPGe diodes plus the original 0.94 kg detector, at 20.7 m from the 3.6 GW_th Leibstadt core. Thresholds were 140–170 eV_ee and the exposure was 1296 kg·d reactor-on. The blind likelihood (spectra hidden below 400 eV_ee) gives:</p>
+<ul>
+<li><span class="arithmatex">\(N_s = 1555 \pm 116\,(\text{stat}) \pm 98\,(\text{syst})\)</span>, a 10.2σ detection against an expected 10.4σ.</li>
+<li><span class="arithmatex">\(N_s/N_{\rm SM} = 0.91 \pm 0.14\)</span>, compared with <span class="arithmatex">\(N_{\rm SM} = 1701 \pm 198\)</span>.</li>
+<li><span class="arithmatex">\(\sin^2\theta_W = 0.225 \pm 0.022\)</span> at <span class="arithmatex">\(Q \approx 10\)</span> MeV, against the SM value of 0.2387. This is the lowest-<span class="arithmatex">\(Q\)</span> CEνNS determination to date.</li>
+</ul>
+<p><strong>Why it matters.</strong> This is the largest CEνNS sample so far, with precision comparable to COHERENT&rsquo;s germanium result. It also disfavors the Dresden-II rate and the non-Lindhard quenching behind it. The ratio, however, is systematics-dominated. The 11.6% prediction uncertainty comes mainly from the energy scale near threshold (8.0%) and the quenching factor (7.5%). Until those improve, the <span class="arithmatex">\(\sin^2\theta_W\)</span> point is not competitive with the combined CEνNS+ν–e value.</p>
+<p><strong>Caveats.</strong>
+- The combined fit has χ²/ndf = 1.37 over 381 dof (<span class="arithmatex">\(p = 7\times10^{-6}\)</span>), driven by detector C3 and by C6&rsquo;s reactor-off data. Inflating the variances to restore <span class="arithmatex">\(p&gt;0.1\)</span> lowers the significance to 9.3σ.
+- The background-shape-independent on-minus-off fit gives only 1332 ± 420 events (3.1σ).
+- Per-detector yields straddle the prediction: C6 gives 731 against 604 expected, and C7 gives 714 against 903.
+- Four analysis changes were made during unblinding. The authors state these were motivated by checks independent of the signal.</p>
+<h3 id="arxiv261037137-what-the-primary-lund-plane-omits-a-model-stitching-diagnosis-saurabh-rai-et-al"><a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a> — What the Primary Lund Plane Omits: A Model-Stitching Diagnosis (Saurabh Rai et al.)</h3>
+<p><strong>What they did.</strong> The authors built Lund-ParT, a network architecturally identical to ParT but fed Lund declusterings. They then stitched frozen front and back halves of the two networks together through a single trained 128×128 linear map at the class token. All results use 50% of the top-tagging reference dataset.</p>
+<ul>
+<li><strong>The gap is representational.</strong> Standalone rejection at <span class="arithmatex">\(\varepsilon_S = 0.5\)</span> is 291 for ParT and 136 for the primary-branch Lund-ParT. ParT&rsquo;s downstream reading the Lund representation reaches 128–136, while Lund-ParT&rsquo;s own downstream reaches only 120–134. A stronger reader does not recover the missing performance.</li>
+<li><strong>AUC hides it.</strong> Retained AUC stays within 0.977–1.007 throughout.</li>
+<li><strong>It is localized.</strong> The deficit sits in about 0.6% of ParT-rejected background jets. These have a mean mass of 180 GeV and about 67 constituents, yet fewer primary splittings than typical background (11.3 against 12.6).</li>
+<li><strong>The full tree repairs most of it.</strong> Rebuilding on the full C/A tree raises rejection to 248, closing 72% of the gap.</li>
+<li><strong>Masking.</strong> Dropping 12 secondary nodes costs little (230.6 → 186.5). Dropping 12 primary nodes costs almost everything (230.6 → 9.2). This suggests the secondary nodes aid learnability rather than inference.</li>
+</ul>
+<p><strong>Why it matters.</strong> The method is transferable for locating where a tagger loses information. It also warns against a &ldquo;primary branch plus a few secondaries&rdquo; shortcut. On quark/gluon tagging the primary branch already retains 77.6% of ParT&rsquo;s rejection, and the full tree reaches about 85% of ParT on both tasks.</p>
+<p><strong>Caveats.</strong>
+- Absolute rejections sit far below full-scale values (~2000–5000).
+- The consumer-asymmetry result has <span class="arithmatex">\(p = 0.062\)</span> with five seeds.
+- The hypergraph check (116 against 112) uses a single seed on 10% of the data.
+- The &ldquo;learnability&rdquo; reading is an interpretation of the masking results, not a direct test.</p>
+<p><em>Full texts for <a href="https://arxiv.org/abs/2610.35927">arXiv:2610.35927</a> and <a href="https://arxiv.org/abs/2610.36065">arXiv:2610.36065</a> were not supplied, so they are not covered here.</em></p>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-10-27.html">&larr; Tuesday, October 27, 2026</a>
+  
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-28 05:25 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -38,70 +38,63 @@ digest thinks with. Read these to catch up after time away.</p>
 <article class="issue tier">
   <p class="kicker">The last seven days of postings, compressed.</p>
   <h2 class="issue-date">This week</h2>
-  <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-10-27">The Cross Section: Rolling synthesis, week ending 2026-10-27</h1>
-<p>The week moved from building models to auditing inputs. The 248 keV LZ event had driven seven weeks of model-building. This week its background estimate (<a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>) and its halo tail (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>) were questioned directly, and new explanations kept failing. The same instinct to check what goes into an error bar showed up in ML PDF fits, microlensing bounds, top-mass definitions and <span class="arithmatex">\(0\nu\beta\beta\)</span> nuclear inputs. Small-scale structure leaned further toward SIDM, while the Galactic Center excess got its most deflationary reading yet. Late in the week, Super-K reported the first hint of the diffuse supernova neutrino background (DSNB) at 2.6σ. Throughout, ML compression and AI agents for theory advanced steadily.</p>
+  <h1 id="the-cross-section-weekly-synthesis-week-ending-2026-10-28">The Cross Section: weekly synthesis, week ending 2026-10-28</h1>
+<p>The week&rsquo;s dominant thread was the honesty of error bars. It started with physics inputs, such as halo models, radiative corrections and MC-mass definitions, and by 10-28 had reached the statistical machinery itself. The LZ 248 keV event kept losing explanations and drew no new papers on 10-23 or 10-28. Small-system QGP physics shifted from existence proofs to discriminating measurements, led by ALICE&rsquo;s O–O φ flow. Two neutrino results set up follow-ups: a refutation of observable RG running of mixing, and Super-K&rsquo;s 2.6σ relic-supernova hint. ML taggers moved from compression to diagnosis.</p>
 <h2 id="running-themes">Running themes</h2>
-<ul>
-<li><strong>The LZ 248 keV event: models cooling, systematics heating.</strong> The event had no new papers on two days this week. Explanations that did appear needed extreme corners:</li>
-<li>a 10²–10⁴ TeV pseudo-Dirac doublet with fine-tuned CP violation (<a href="https://arxiv.org/abs/2610.29335">arXiv:2610.29335</a>);</li>
-<li>sterile-fermion up-scattering at the edge of perturbativity, judged &ldquo;not compelling&rdquo; (<a href="https://arxiv.org/abs/2610.32747">arXiv:2610.32747</a>).</li>
-</ul>
-<p>The inelastic kinematics are now being generalized beyond the event: neutrino-fog maps (<a href="https://arxiv.org/abs/2610.35789">arXiv:2610.35789</a>), AGN-spike bounds (<a href="https://arxiv.org/abs/2610.35620">arXiv:2610.35620</a>) and differentiable anisotropic velocity distributions (<a href="https://arxiv.org/abs/2610.28758">arXiv:2610.28758</a>).
-- <strong>Assumptions inside the error bar (heating).</strong> This is the week&rsquo;s connective thread:
-  - LZ&rsquo;s electron-recoil (ER) tail (<a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>);
-  - ML triplet-PDF uncertainties, where calibration depends on covariance correlations, not pointwise width (<a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>);
-  - OGLE PBH bounds weakened up to ~6× by halo and lens models alone (<a href="https://arxiv.org/abs/2610.30510">arXiv:2610.30510</a>);
-  - Pythia MC top mass 240–330 MeV below the pole mass (<a href="https://arxiv.org/abs/2610.31103">arXiv:2610.31103</a>);
-  - double-β radiative corrections raising <span class="arithmatex">\(0\nu\beta\beta\)</span> rates by ~5% (<a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>);
-  - the first chiral three-body currents in shell-model <span class="arithmatex">\(0\nu\beta\beta\)</span> (<a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>).
-- <strong>Small-scale dark matter: CDM under pressure, GCE deflating (heating).</strong>
-  - No CDM subhalo out of more than 5000 is dense enough to match the observed perturbers (<a href="https://arxiv.org/abs/2610.27236">arXiv:2610.27236</a>).
-  - SIDM matches all three perturbers far more often, for example ~0.6 vs ~0.002 for PJ011646, and simultaneous fits need <span class="arithmatex">\(w\gtrsim10^2\)</span> km/s (<a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>). Unitarity links between elastic and annihilation SIDM cross sections (<a href="https://arxiv.org/abs/2610.27056">arXiv:2610.27056</a>, <a href="https://arxiv.org/abs/2610.27089">arXiv:2610.27089</a>) are relevant here.
-  - Time-dependent cosmic-ray transport alone reproduces GCE-sized residuals (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>). This follows earlier foreground-dependence (10-19) and dSph-corridor (10-20) results.
-- <strong>Neutrino ordering and mixing structure (steady, contested).</strong>
-  - Most mixing schemes fit inverted ordering (IO) better, and TM₂ is excluded at &gt;3σ (<a href="https://arxiv.org/abs/2610.27270">arXiv:2610.27270</a>). This came the same day Jin et al.&rsquo;s 3.3σ normal-ordering result was replaced.
-  - A fusion-algebra model yields IO with <span class="arithmatex">\(m_3=0\)</span> (<a href="https://arxiv.org/abs/2610.35587">arXiv:2610.35587</a>).
-  - Cosmology still prefers negative effective <span class="arithmatex">\(\sum m_\nu\)</span> even with dark-sector interactions (<a href="https://arxiv.org/abs/2610.33729">arXiv:2610.33729</a>).
-- <strong>ML and agents (steady, maturing).</strong>
-  - Taggers keep shrinking: LEAF at 35 ns (<a href="https://arxiv.org/abs/2610.27078">arXiv:2610.27078</a>), SParTA (<a href="https://arxiv.org/abs/2610.27106">arXiv:2610.27106</a>), and a 2k-parameter distilled student matching ParT (<a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>).
-  - Inference tooling now includes sequential SBI for masses and widths (<a href="https://arxiv.org/abs/2610.30245">arXiv:2610.30245</a>) and foundation models for neutrino telescopes (<a href="https://arxiv.org/abs/2610.30894">arXiv:2610.30894</a>).
-  - The agent thread ran from the AI-theory blueprint (<a href="https://arxiv.org/abs/2610.28505">arXiv:2610.28505</a>) to agent-derived NLO hard functions in FeynFacet (<a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>). QFT-Bench then found frontier models score above 95% while giving unfaithful reasoning (<a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>).
-- <strong>Axions spreading across channels (steady).</strong>
-  - Off-haloscope proposals: <span class="arithmatex">\(^{229}\)</span>Th clocks sensitive to PQ quality (<a href="https://arxiv.org/abs/2610.30238">arXiv:2610.30238</a>), and bound supernova ALPs heating PSR J2144−3933 (<a href="https://arxiv.org/abs/2610.30255">arXiv:2610.30255</a>).
-  - Inside the haloscope: a non-Poisson quantum treatment (<a href="https://arxiv.org/abs/2610.30250">arXiv:2610.30250</a>), pre-excited cavities (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>) and a likelihood treatment giving 1.4× stronger upper limits (<a href="https://arxiv.org/abs/2610.34325">arXiv:2610.34325</a>).
-  - Birefringence gained non-axion-standard sources: a stiff pseudoscalar (<a href="https://arxiv.org/abs/2610.27082">arXiv:2610.27082</a>) and axion–monopole dynamics (<a href="https://arxiv.org/abs/2610.27059">arXiv:2610.27059</a>).</p>
+<p><strong>Assumptions inside the error bar (heating up).</strong> Examples accumulated through the week:
+- Radiative corrections shift <span class="arithmatex">\(0\nu\beta\beta\)</span> rates by ~5% (<a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>). Three-body currents entered shell-model matrix elements (<a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>).
+- Three ML methods give the same triplet-PDF central values but different uncertainties (<a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>).
+- Updated halo and lens models alone weaken OGLE PBH bounds ~6× (<a href="https://arxiv.org/abs/2610.30510">arXiv:2610.30510</a>).
+- The Pythia MC top mass sits 240–330 MeV below the pole mass (<a href="https://arxiv.org/abs/2610.31103">arXiv:2610.31103</a>).
+- On 10-28 the thread reached fitters: BFGS runs ~10× faster than Migrad (<a href="https://arxiv.org/abs/2610.35927">arXiv:2610.35927</a>), NTK modes separate signal from noise (<a href="https://arxiv.org/abs/2610.36034">arXiv:2610.36034</a>), and the Hessian method misses nPDF minima (<a href="https://arxiv.org/abs/2610.37254">arXiv:2610.37254</a>).</p>
+<p><strong>LZ 248 keV event (cooling).</strong>
+- The Gaia-anchored halo tail cuts off near ~900 km/s (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>). That undercuts Graham et al.&rsquo;s (10-16) thermal-Higgsino rescue, which needed a tail to 1100 km/s.
+- Sterile-fermion up-scattering needs near-nonperturbative couplings (<a href="https://arxiv.org/abs/2610.32747">arXiv:2610.32747</a>).
+- The remaining routes are costly: heavy pseudo-Dirac doublets need fine-tuned CP violation (<a href="https://arxiv.org/abs/2610.29335">arXiv:2610.29335</a>).
+- Work is drifting toward generic inelastic-DM phenomenology, such as the inelastic neutrino fog (<a href="https://arxiv.org/abs/2610.35789">arXiv:2610.35789</a>).</p>
+<p><strong>Small-system QGP (heating up).</strong>
+- ALICE&rsquo;s first O–O <span class="arithmatex">\(I_{AA}\)</span> shows weaker away-side suppression than central Pb–Pb (<a href="https://arxiv.org/abs/2610.35331">arXiv:2610.35331</a>).
+- Then came φ <span class="arithmatex">\(v_2\)</span> (<a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a>) and a nonflow subtraction validated on Angantyr (<a href="https://arxiv.org/abs/2610.36922">arXiv:2610.36922</a>).
+- The year&rsquo;s anchor remains CMS&rsquo;s O–O baryon-to-meson enhancement (<a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a>).</p>
+<p><strong>Top threshold and mass schemes (steady).</strong>
+- Buccioni et al.&rsquo;s analytic two-loop <span class="arithmatex">\(t\bar t\)</span> amplitudes come with a public threshold evaluator (<a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a>).
+- Fontes et al. find linear IR terms cancel through NNLO with a short-distance mass (<a href="https://arxiv.org/abs/2610.36065">arXiv:2610.36065</a>).
+- Both feed the toponium-vs-continuum argument. Ball et al. (prior week) showed any threshold excess is entangled with <span class="arithmatex">\(m_t\)</span>.</p>
+<p><strong>ML: taggers and agents (steady, changing character).</strong>
+- Taggers: distillation reached a 2k-parameter student matching ParT (<a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>). By 10-28 the work was diagnostic: model stitching locates the Lund-plane deficit (<a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a>).
+- Agents: they produced analytic NLO results (<a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>), while QFT-Bench showed correct answers with unfaithful reasoning (<a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>).
+- Inference layer: SBI extended to masses and widths (<a href="https://arxiv.org/abs/2610.30245">arXiv:2610.30245</a>), and foundation-model pretraining transferred to neutrino telescopes (<a href="https://arxiv.org/abs/2610.30894">arXiv:2610.30894</a>).</p>
+<p><strong>Axions off and on the haloscope (steady).</strong>
+- Off the haloscope: <span class="arithmatex">\(^{229}\)</span>Th clocks respond linearly to imperfect axions (<a href="https://arxiv.org/abs/2610.30238">arXiv:2610.30238</a>), and bound supernova ALPs give limits from a cold neutron star (<a href="https://arxiv.org/abs/2610.30255">arXiv:2610.30255</a>).
+- Back in the cavity: pre-excited modes give a signal linear in <span class="arithmatex">\(g_{a\gamma}\)</span> (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>), with sensitivity claims resting on simulation.</p>
 <h2 id="turning-points">Turning points</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a></strong> is the first paper to question the LZ event&rsquo;s significance itself. Plausible ER tails, matching the executable model to 0.47% in the <span class="arithmatex">\(N_e\)</span> quantiles, can be as large as the whole quoted background.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a></strong> finds no local dark matter above ~900 km/s from a Gaia-plus-LMC halo reconstruction. That undercuts Graham et al.&rsquo;s (10-16) halo rescue of the thermal Higgsino, which needed a tail to 1100 km/s. It also shifts inferred LZ splittings by up to ~130 keV.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a></strong> argues that observable RG running of neutrino mixing is an artifact. Short-baseline data already bound any angle change between production and detection to 0.7°–2.4°.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a></strong> gives the complete two-loop <span class="arithmatex">\(t\bar t\)</span> amplitudes, the first with genus-two functions in the finite remainder. Its public threshold evaluator is directly relevant to toponium fits, which Ball et al. tied to <span class="arithmatex">\(m_t\)</span>.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.35619">arXiv:2610.35619</a></strong>: Super-K reports a DSNB indication of <span class="arithmatex">\(3.6^{+1.6}_{-1.5}\)</span> cm⁻²s⁻¹ above 13.3 MeV at 2.6σ, robust across spectral models. It is the first non-limit result for this signal.</li>
+<li><strong>Observable RG running of neutrino mixing refuted</strong> (<a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a>). Mixing is fixed on-shell, and short-baseline data cap production-to-detection angle shifts at 0.7°–2.4°. This kills a class of proposed signatures.</li>
+<li><strong>φ flows like a meson</strong> (<a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a>). Its <span class="arithmatex">\(v_2\)</span> tracks the <span class="arithmatex">\(K^0_S\)</span>, not the near-mass Λ, which favors recombination over mass ordering.</li>
+<li><strong>Measured halo tail</strong> (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>). This is now the default input for 248 keV papers.</li>
+<li><strong>Genus-two geometry in a physical finite remainder</strong> (<a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a>).</li>
+<li><strong>CONUS+ reaches 10.2σ</strong> reactor CEνNS, with <span class="arithmatex">\(N_s/N_{\rm SM}=0.91\pm0.14\)</span> (<a href="https://arxiv.org/abs/2610.37318">arXiv:2610.37318</a>, <a href="https://arxiv.org/abs/2610.37345">arXiv:2610.37345</a>).</li>
 </ul>
 <h2 id="open-questions">Open questions</h2>
 <ul>
-<li>Will the calibrations proposed in <a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a> be performed, and does the halo of <a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a> survive scrutiny? Either could collapse the event&rsquo;s model space.</li>
-<li>The GCE deflation (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>) weighs against joint LZ+GCE models such as <a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>, which reappeared 10-27. Watch whether Fermi-LAT templates adopt time dependence.</li>
-<li>Mass ordering: the IO preference in mixing-scheme fits sits against earlier NO claims. Look for replies to <a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a>.</li>
-<li>How much of the DSNB 2.6σ comes from better atmospheric-background rejection versus the spectral fit? Watch for follow-ups from SK-Gd.</li>
-<li>Flavor-symmetry strain now spans <span class="arithmatex">\(B\to PP\)</span>, <span class="arithmatex">\(B\to DP\)</span> (~60% breaking) and charm baryons. <span class="arithmatex">\(\Lambda_c^+\to\Lambda K^+\eta\)</span> was observed at &gt;10σ well above SU(3) expectations (<a href="https://arxiv.org/abs/2610.31377">arXiv:2610.31377</a>).</li>
-<li>Several flavor numbers await confrontation:</li>
-<li>the <span class="arithmatex">\(|V_{cb}|=0.042\pm0.002\)</span> low-scale Pati–Salam prediction (<a href="https://arxiv.org/abs/2610.33152">arXiv:2610.33152</a>), against the inclusive/exclusive split;</li>
-<li>Belle II <span class="arithmatex">\(B^+\to K^+\nu\bar\nu\)</span> as dark matter (<a href="https://arxiv.org/abs/2610.34880">arXiv:2610.34880</a>);</li>
-<li>the LHCb <span class="arithmatex">\(T_{c\bar c1}(4430)^-\)</span> seen in open charm (<a href="https://arxiv.org/abs/2610.35239">arXiv:2610.35239</a>), consistent with <span class="arithmatex">\(\psi(2S)\pi^-\)</span>.</li>
-<li>Unverified claims to recheck: the pre-excited cavity&rsquo;s noise treatment (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>), and whether agent-derived results stay faithful in light of <a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>.</li>
+<li><strong>DSNB hint.</strong> Super-K reports 2.6σ (<a href="https://arxiv.org/abs/2610.35619">arXiv:2610.35619</a>). It is unclear how much comes from background rejection versus the spectral fit. Watch for independent analyses.</li>
+<li><strong>GCE as fluctuation.</strong> Time-dependent cosmic-ray transport can mimic the excess (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>), following foreground-dependence (10-19) and dSph-corridor (10-20) results. Watch whether Fermi-LAT templates adopt time dependence.</li>
+<li><strong>SIDM vs CDM in lensing perturbers.</strong> SIDM subhalos match far more often, at ~0.6 vs ~0.002 for PJ011646 (<a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>).</li>
+<li><strong>SU(3)<span class="arithmatex">\(_F\)</span> strain, third system.</strong> Belle/Belle II observe <span class="arithmatex">\(\Lambda_c^+\to\Lambda K^+\eta\)</span> well above SU(3)<span class="arithmatex">\(_F\)</span> expectations (<a href="https://arxiv.org/abs/2610.31377">arXiv:2610.31377</a>), after <span class="arithmatex">\(B\to PP\)</span> and <span class="arithmatex">\(B\to DP\)</span>.</li>
+<li><strong>Negative effective <span class="arithmatex">\(\sum m_\nu\)</span>.</strong> Dark-sector interactions don&rsquo;t rescue a positive value (<a href="https://arxiv.org/abs/2610.33729">arXiv:2610.33729</a>). Late reheating may lower the cosmological mass density (<a href="https://arxiv.org/abs/2610.36062">arXiv:2610.36062</a>).</li>
+<li><strong>Low-energy weak mixing angle.</strong> CONUS+ gives <span class="arithmatex">\(0.225\pm0.022\)</span>, versus the combined CEνNS+ν–e <span class="arithmatex">\(0.233^{+0.007}_{-0.006}\)</span> (<a href="https://arxiv.org/abs/2610.31254">arXiv:2610.31254</a>).</li>
+<li><strong>Replies to the RG-running refutation</strong> are expected.</li>
+<li><strong><span class="arithmatex">\(|V_{cb}|\)</span>.</strong> Low-scale Pati–Salam predicts <span class="arithmatex">\(|V_{cb}|=0.042\pm0.002\)</span> (<a href="https://arxiv.org/abs/2610.33152">arXiv:2610.33152</a>), against the month&rsquo;s inclusive/exclusive split.</li>
 </ul>
 <h2 id="recurring-references">Recurring references</h2>
 <ul>
-<li><a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>: LZ ER-tail audit</li>
-<li><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>: Gaia/LMC halo tail</li>
-<li><a href="https://arxiv.org/abs/2610.27270">arXiv:2610.27270</a>: mixing schemes prefer IO</li>
-<li><a href="https://arxiv.org/abs/2610.27236">arXiv:2610.27236</a>, <a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>: CDM vs SIDM perturbers</li>
-<li><a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>, <a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>: <span class="arithmatex">\(0\nu\beta\beta\)</span> error budget</li>
-<li><a href="https://arxiv.org/abs/2610.28505">arXiv:2610.28505</a>, <a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>: AI-theory blueprint → FeynFacet</li>
-<li><a href="https://arxiv.org/abs/2610.27106">arXiv:2610.27106</a>, <a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>: tagger compression</li>
-<li><a href="https://arxiv.org/abs/2610.28400">arXiv:2610.28400</a>: cancelled eEDM leaves timelike τ dipole (echoed by <a href="https://arxiv.org/abs/2610.28790">arXiv:2610.28790</a>)</li>
-<li><a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>: dark-Higgs LZ+GCE model, reappeared 10-27</li>
+<li><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>: halo tail; the LZ and microlensing reference point.</li>
+<li><a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>: ML-PDF uncertainty anatomy, cited again on 10-28.</li>
+<li><a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>: <span class="arithmatex">\(\beta\beta\)</span> radiative corrections, paired with <a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>.</li>
+<li><a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>: FeynFacet, the agentic-theory anchor.</li>
+<li><a href="https://arxiv.org/abs/2610.35331">arXiv:2610.35331</a> and <a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a>: O–O small-system anchors.</li>
+<li><a href="https://arxiv.org/abs/2610.31254">arXiv:2610.31254</a>: neutrino-only <span class="arithmatex">\(\sin^2\theta_W\)</span> baseline.</li>
+<li><a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>: Kim et al.&rsquo;s dark-Higgs model for both the LZ event and the GCE, which reappeared on 10-27.</li>
 </ul>
 </article>
 
@@ -472,70 +465,63 @@ digest thinks with. Read these to catch up after time away.</p>
   <article class="issue tier">
     <p class="kicker">week</p>
     <h2 class="issue-date">2026-W44</h2>
-    <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-10-27">The Cross Section: Rolling synthesis, week ending 2026-10-27</h1>
-<p>The week moved from building models to auditing inputs. The 248 keV LZ event had driven seven weeks of model-building. This week its background estimate (<a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>) and its halo tail (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>) were questioned directly, and new explanations kept failing. The same instinct to check what goes into an error bar showed up in ML PDF fits, microlensing bounds, top-mass definitions and <span class="arithmatex">\(0\nu\beta\beta\)</span> nuclear inputs. Small-scale structure leaned further toward SIDM, while the Galactic Center excess got its most deflationary reading yet. Late in the week, Super-K reported the first hint of the diffuse supernova neutrino background (DSNB) at 2.6σ. Throughout, ML compression and AI agents for theory advanced steadily.</p>
+    <h1 id="the-cross-section-weekly-synthesis-week-ending-2026-10-28">The Cross Section: weekly synthesis, week ending 2026-10-28</h1>
+<p>The week&rsquo;s dominant thread was the honesty of error bars. It started with physics inputs, such as halo models, radiative corrections and MC-mass definitions, and by 10-28 had reached the statistical machinery itself. The LZ 248 keV event kept losing explanations and drew no new papers on 10-23 or 10-28. Small-system QGP physics shifted from existence proofs to discriminating measurements, led by ALICE&rsquo;s O–O φ flow. Two neutrino results set up follow-ups: a refutation of observable RG running of mixing, and Super-K&rsquo;s 2.6σ relic-supernova hint. ML taggers moved from compression to diagnosis.</p>
 <h2 id="running-themes">Running themes</h2>
-<ul>
-<li><strong>The LZ 248 keV event: models cooling, systematics heating.</strong> The event had no new papers on two days this week. Explanations that did appear needed extreme corners:</li>
-<li>a 10²–10⁴ TeV pseudo-Dirac doublet with fine-tuned CP violation (<a href="https://arxiv.org/abs/2610.29335">arXiv:2610.29335</a>);</li>
-<li>sterile-fermion up-scattering at the edge of perturbativity, judged &ldquo;not compelling&rdquo; (<a href="https://arxiv.org/abs/2610.32747">arXiv:2610.32747</a>).</li>
-</ul>
-<p>The inelastic kinematics are now being generalized beyond the event: neutrino-fog maps (<a href="https://arxiv.org/abs/2610.35789">arXiv:2610.35789</a>), AGN-spike bounds (<a href="https://arxiv.org/abs/2610.35620">arXiv:2610.35620</a>) and differentiable anisotropic velocity distributions (<a href="https://arxiv.org/abs/2610.28758">arXiv:2610.28758</a>).
-- <strong>Assumptions inside the error bar (heating).</strong> This is the week&rsquo;s connective thread:
-  - LZ&rsquo;s electron-recoil (ER) tail (<a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>);
-  - ML triplet-PDF uncertainties, where calibration depends on covariance correlations, not pointwise width (<a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>);
-  - OGLE PBH bounds weakened up to ~6× by halo and lens models alone (<a href="https://arxiv.org/abs/2610.30510">arXiv:2610.30510</a>);
-  - Pythia MC top mass 240–330 MeV below the pole mass (<a href="https://arxiv.org/abs/2610.31103">arXiv:2610.31103</a>);
-  - double-β radiative corrections raising <span class="arithmatex">\(0\nu\beta\beta\)</span> rates by ~5% (<a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>);
-  - the first chiral three-body currents in shell-model <span class="arithmatex">\(0\nu\beta\beta\)</span> (<a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>).
-- <strong>Small-scale dark matter: CDM under pressure, GCE deflating (heating).</strong>
-  - No CDM subhalo out of more than 5000 is dense enough to match the observed perturbers (<a href="https://arxiv.org/abs/2610.27236">arXiv:2610.27236</a>).
-  - SIDM matches all three perturbers far more often, for example ~0.6 vs ~0.002 for PJ011646, and simultaneous fits need <span class="arithmatex">\(w\gtrsim10^2\)</span> km/s (<a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>). Unitarity links between elastic and annihilation SIDM cross sections (<a href="https://arxiv.org/abs/2610.27056">arXiv:2610.27056</a>, <a href="https://arxiv.org/abs/2610.27089">arXiv:2610.27089</a>) are relevant here.
-  - Time-dependent cosmic-ray transport alone reproduces GCE-sized residuals (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>). This follows earlier foreground-dependence (10-19) and dSph-corridor (10-20) results.
-- <strong>Neutrino ordering and mixing structure (steady, contested).</strong>
-  - Most mixing schemes fit inverted ordering (IO) better, and TM₂ is excluded at &gt;3σ (<a href="https://arxiv.org/abs/2610.27270">arXiv:2610.27270</a>). This came the same day Jin et al.&rsquo;s 3.3σ normal-ordering result was replaced.
-  - A fusion-algebra model yields IO with <span class="arithmatex">\(m_3=0\)</span> (<a href="https://arxiv.org/abs/2610.35587">arXiv:2610.35587</a>).
-  - Cosmology still prefers negative effective <span class="arithmatex">\(\sum m_\nu\)</span> even with dark-sector interactions (<a href="https://arxiv.org/abs/2610.33729">arXiv:2610.33729</a>).
-- <strong>ML and agents (steady, maturing).</strong>
-  - Taggers keep shrinking: LEAF at 35 ns (<a href="https://arxiv.org/abs/2610.27078">arXiv:2610.27078</a>), SParTA (<a href="https://arxiv.org/abs/2610.27106">arXiv:2610.27106</a>), and a 2k-parameter distilled student matching ParT (<a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>).
-  - Inference tooling now includes sequential SBI for masses and widths (<a href="https://arxiv.org/abs/2610.30245">arXiv:2610.30245</a>) and foundation models for neutrino telescopes (<a href="https://arxiv.org/abs/2610.30894">arXiv:2610.30894</a>).
-  - The agent thread ran from the AI-theory blueprint (<a href="https://arxiv.org/abs/2610.28505">arXiv:2610.28505</a>) to agent-derived NLO hard functions in FeynFacet (<a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>). QFT-Bench then found frontier models score above 95% while giving unfaithful reasoning (<a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>).
-- <strong>Axions spreading across channels (steady).</strong>
-  - Off-haloscope proposals: <span class="arithmatex">\(^{229}\)</span>Th clocks sensitive to PQ quality (<a href="https://arxiv.org/abs/2610.30238">arXiv:2610.30238</a>), and bound supernova ALPs heating PSR J2144−3933 (<a href="https://arxiv.org/abs/2610.30255">arXiv:2610.30255</a>).
-  - Inside the haloscope: a non-Poisson quantum treatment (<a href="https://arxiv.org/abs/2610.30250">arXiv:2610.30250</a>), pre-excited cavities (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>) and a likelihood treatment giving 1.4× stronger upper limits (<a href="https://arxiv.org/abs/2610.34325">arXiv:2610.34325</a>).
-  - Birefringence gained non-axion-standard sources: a stiff pseudoscalar (<a href="https://arxiv.org/abs/2610.27082">arXiv:2610.27082</a>) and axion–monopole dynamics (<a href="https://arxiv.org/abs/2610.27059">arXiv:2610.27059</a>).</p>
+<p><strong>Assumptions inside the error bar (heating up).</strong> Examples accumulated through the week:
+- Radiative corrections shift <span class="arithmatex">\(0\nu\beta\beta\)</span> rates by ~5% (<a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>). Three-body currents entered shell-model matrix elements (<a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>).
+- Three ML methods give the same triplet-PDF central values but different uncertainties (<a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>).
+- Updated halo and lens models alone weaken OGLE PBH bounds ~6× (<a href="https://arxiv.org/abs/2610.30510">arXiv:2610.30510</a>).
+- The Pythia MC top mass sits 240–330 MeV below the pole mass (<a href="https://arxiv.org/abs/2610.31103">arXiv:2610.31103</a>).
+- On 10-28 the thread reached fitters: BFGS runs ~10× faster than Migrad (<a href="https://arxiv.org/abs/2610.35927">arXiv:2610.35927</a>), NTK modes separate signal from noise (<a href="https://arxiv.org/abs/2610.36034">arXiv:2610.36034</a>), and the Hessian method misses nPDF minima (<a href="https://arxiv.org/abs/2610.37254">arXiv:2610.37254</a>).</p>
+<p><strong>LZ 248 keV event (cooling).</strong>
+- The Gaia-anchored halo tail cuts off near ~900 km/s (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>). That undercuts Graham et al.&rsquo;s (10-16) thermal-Higgsino rescue, which needed a tail to 1100 km/s.
+- Sterile-fermion up-scattering needs near-nonperturbative couplings (<a href="https://arxiv.org/abs/2610.32747">arXiv:2610.32747</a>).
+- The remaining routes are costly: heavy pseudo-Dirac doublets need fine-tuned CP violation (<a href="https://arxiv.org/abs/2610.29335">arXiv:2610.29335</a>).
+- Work is drifting toward generic inelastic-DM phenomenology, such as the inelastic neutrino fog (<a href="https://arxiv.org/abs/2610.35789">arXiv:2610.35789</a>).</p>
+<p><strong>Small-system QGP (heating up).</strong>
+- ALICE&rsquo;s first O–O <span class="arithmatex">\(I_{AA}\)</span> shows weaker away-side suppression than central Pb–Pb (<a href="https://arxiv.org/abs/2610.35331">arXiv:2610.35331</a>).
+- Then came φ <span class="arithmatex">\(v_2\)</span> (<a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a>) and a nonflow subtraction validated on Angantyr (<a href="https://arxiv.org/abs/2610.36922">arXiv:2610.36922</a>).
+- The year&rsquo;s anchor remains CMS&rsquo;s O–O baryon-to-meson enhancement (<a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a>).</p>
+<p><strong>Top threshold and mass schemes (steady).</strong>
+- Buccioni et al.&rsquo;s analytic two-loop <span class="arithmatex">\(t\bar t\)</span> amplitudes come with a public threshold evaluator (<a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a>).
+- Fontes et al. find linear IR terms cancel through NNLO with a short-distance mass (<a href="https://arxiv.org/abs/2610.36065">arXiv:2610.36065</a>).
+- Both feed the toponium-vs-continuum argument. Ball et al. (prior week) showed any threshold excess is entangled with <span class="arithmatex">\(m_t\)</span>.</p>
+<p><strong>ML: taggers and agents (steady, changing character).</strong>
+- Taggers: distillation reached a 2k-parameter student matching ParT (<a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>). By 10-28 the work was diagnostic: model stitching locates the Lund-plane deficit (<a href="https://arxiv.org/abs/2610.37137">arXiv:2610.37137</a>).
+- Agents: they produced analytic NLO results (<a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>), while QFT-Bench showed correct answers with unfaithful reasoning (<a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>).
+- Inference layer: SBI extended to masses and widths (<a href="https://arxiv.org/abs/2610.30245">arXiv:2610.30245</a>), and foundation-model pretraining transferred to neutrino telescopes (<a href="https://arxiv.org/abs/2610.30894">arXiv:2610.30894</a>).</p>
+<p><strong>Axions off and on the haloscope (steady).</strong>
+- Off the haloscope: <span class="arithmatex">\(^{229}\)</span>Th clocks respond linearly to imperfect axions (<a href="https://arxiv.org/abs/2610.30238">arXiv:2610.30238</a>), and bound supernova ALPs give limits from a cold neutron star (<a href="https://arxiv.org/abs/2610.30255">arXiv:2610.30255</a>).
+- Back in the cavity: pre-excited modes give a signal linear in <span class="arithmatex">\(g_{a\gamma}\)</span> (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>), with sensitivity claims resting on simulation.</p>
 <h2 id="turning-points">Turning points</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a></strong> is the first paper to question the LZ event&rsquo;s significance itself. Plausible ER tails, matching the executable model to 0.47% in the <span class="arithmatex">\(N_e\)</span> quantiles, can be as large as the whole quoted background.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a></strong> finds no local dark matter above ~900 km/s from a Gaia-plus-LMC halo reconstruction. That undercuts Graham et al.&rsquo;s (10-16) halo rescue of the thermal Higgsino, which needed a tail to 1100 km/s. It also shifts inferred LZ splittings by up to ~130 keV.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a></strong> argues that observable RG running of neutrino mixing is an artifact. Short-baseline data already bound any angle change between production and detection to 0.7°–2.4°.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a></strong> gives the complete two-loop <span class="arithmatex">\(t\bar t\)</span> amplitudes, the first with genus-two functions in the finite remainder. Its public threshold evaluator is directly relevant to toponium fits, which Ball et al. tied to <span class="arithmatex">\(m_t\)</span>.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.35619">arXiv:2610.35619</a></strong>: Super-K reports a DSNB indication of <span class="arithmatex">\(3.6^{+1.6}_{-1.5}\)</span> cm⁻²s⁻¹ above 13.3 MeV at 2.6σ, robust across spectral models. It is the first non-limit result for this signal.</li>
+<li><strong>Observable RG running of neutrino mixing refuted</strong> (<a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a>). Mixing is fixed on-shell, and short-baseline data cap production-to-detection angle shifts at 0.7°–2.4°. This kills a class of proposed signatures.</li>
+<li><strong>φ flows like a meson</strong> (<a href="https://arxiv.org/abs/2610.36237">arXiv:2610.36237</a>). Its <span class="arithmatex">\(v_2\)</span> tracks the <span class="arithmatex">\(K^0_S\)</span>, not the near-mass Λ, which favors recombination over mass ordering.</li>
+<li><strong>Measured halo tail</strong> (<a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>). This is now the default input for 248 keV papers.</li>
+<li><strong>Genus-two geometry in a physical finite remainder</strong> (<a href="https://arxiv.org/abs/2610.32543">arXiv:2610.32543</a>).</li>
+<li><strong>CONUS+ reaches 10.2σ</strong> reactor CEνNS, with <span class="arithmatex">\(N_s/N_{\rm SM}=0.91\pm0.14\)</span> (<a href="https://arxiv.org/abs/2610.37318">arXiv:2610.37318</a>, <a href="https://arxiv.org/abs/2610.37345">arXiv:2610.37345</a>).</li>
 </ul>
 <h2 id="open-questions">Open questions</h2>
 <ul>
-<li>Will the calibrations proposed in <a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a> be performed, and does the halo of <a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a> survive scrutiny? Either could collapse the event&rsquo;s model space.</li>
-<li>The GCE deflation (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>) weighs against joint LZ+GCE models such as <a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>, which reappeared 10-27. Watch whether Fermi-LAT templates adopt time dependence.</li>
-<li>Mass ordering: the IO preference in mixing-scheme fits sits against earlier NO claims. Look for replies to <a href="https://arxiv.org/abs/2610.28744">arXiv:2610.28744</a>.</li>
-<li>How much of the DSNB 2.6σ comes from better atmospheric-background rejection versus the spectral fit? Watch for follow-ups from SK-Gd.</li>
-<li>Flavor-symmetry strain now spans <span class="arithmatex">\(B\to PP\)</span>, <span class="arithmatex">\(B\to DP\)</span> (~60% breaking) and charm baryons. <span class="arithmatex">\(\Lambda_c^+\to\Lambda K^+\eta\)</span> was observed at &gt;10σ well above SU(3) expectations (<a href="https://arxiv.org/abs/2610.31377">arXiv:2610.31377</a>).</li>
-<li>Several flavor numbers await confrontation:</li>
-<li>the <span class="arithmatex">\(|V_{cb}|=0.042\pm0.002\)</span> low-scale Pati–Salam prediction (<a href="https://arxiv.org/abs/2610.33152">arXiv:2610.33152</a>), against the inclusive/exclusive split;</li>
-<li>Belle II <span class="arithmatex">\(B^+\to K^+\nu\bar\nu\)</span> as dark matter (<a href="https://arxiv.org/abs/2610.34880">arXiv:2610.34880</a>);</li>
-<li>the LHCb <span class="arithmatex">\(T_{c\bar c1}(4430)^-\)</span> seen in open charm (<a href="https://arxiv.org/abs/2610.35239">arXiv:2610.35239</a>), consistent with <span class="arithmatex">\(\psi(2S)\pi^-\)</span>.</li>
-<li>Unverified claims to recheck: the pre-excited cavity&rsquo;s noise treatment (<a href="https://arxiv.org/abs/2610.31717">arXiv:2610.31717</a>), and whether agent-derived results stay faithful in light of <a href="https://arxiv.org/abs/2610.33134">arXiv:2610.33134</a>.</li>
+<li><strong>DSNB hint.</strong> Super-K reports 2.6σ (<a href="https://arxiv.org/abs/2610.35619">arXiv:2610.35619</a>). It is unclear how much comes from background rejection versus the spectral fit. Watch for independent analyses.</li>
+<li><strong>GCE as fluctuation.</strong> Time-dependent cosmic-ray transport can mimic the excess (<a href="https://arxiv.org/abs/2610.32845">arXiv:2610.32845</a>), following foreground-dependence (10-19) and dSph-corridor (10-20) results. Watch whether Fermi-LAT templates adopt time dependence.</li>
+<li><strong>SIDM vs CDM in lensing perturbers.</strong> SIDM subhalos match far more often, at ~0.6 vs ~0.002 for PJ011646 (<a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>).</li>
+<li><strong>SU(3)<span class="arithmatex">\(_F\)</span> strain, third system.</strong> Belle/Belle II observe <span class="arithmatex">\(\Lambda_c^+\to\Lambda K^+\eta\)</span> well above SU(3)<span class="arithmatex">\(_F\)</span> expectations (<a href="https://arxiv.org/abs/2610.31377">arXiv:2610.31377</a>), after <span class="arithmatex">\(B\to PP\)</span> and <span class="arithmatex">\(B\to DP\)</span>.</li>
+<li><strong>Negative effective <span class="arithmatex">\(\sum m_\nu\)</span>.</strong> Dark-sector interactions don&rsquo;t rescue a positive value (<a href="https://arxiv.org/abs/2610.33729">arXiv:2610.33729</a>). Late reheating may lower the cosmological mass density (<a href="https://arxiv.org/abs/2610.36062">arXiv:2610.36062</a>).</li>
+<li><strong>Low-energy weak mixing angle.</strong> CONUS+ gives <span class="arithmatex">\(0.225\pm0.022\)</span>, versus the combined CEνNS+ν–e <span class="arithmatex">\(0.233^{+0.007}_{-0.006}\)</span> (<a href="https://arxiv.org/abs/2610.31254">arXiv:2610.31254</a>).</li>
+<li><strong>Replies to the RG-running refutation</strong> are expected.</li>
+<li><strong><span class="arithmatex">\(|V_{cb}|\)</span>.</strong> Low-scale Pati–Salam predicts <span class="arithmatex">\(|V_{cb}|=0.042\pm0.002\)</span> (<a href="https://arxiv.org/abs/2610.33152">arXiv:2610.33152</a>), against the month&rsquo;s inclusive/exclusive split.</li>
 </ul>
 <h2 id="recurring-references">Recurring references</h2>
 <ul>
-<li><a href="https://arxiv.org/abs/2610.27105">arXiv:2610.27105</a>: LZ ER-tail audit</li>
-<li><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>: Gaia/LMC halo tail</li>
-<li><a href="https://arxiv.org/abs/2610.27270">arXiv:2610.27270</a>: mixing schemes prefer IO</li>
-<li><a href="https://arxiv.org/abs/2610.27236">arXiv:2610.27236</a>, <a href="https://arxiv.org/abs/2610.31881">arXiv:2610.31881</a>: CDM vs SIDM perturbers</li>
-<li><a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>, <a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>: <span class="arithmatex">\(0\nu\beta\beta\)</span> error budget</li>
-<li><a href="https://arxiv.org/abs/2610.28505">arXiv:2610.28505</a>, <a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>: AI-theory blueprint → FeynFacet</li>
-<li><a href="https://arxiv.org/abs/2610.27106">arXiv:2610.27106</a>, <a href="https://arxiv.org/abs/2610.29439">arXiv:2610.29439</a>: tagger compression</li>
-<li><a href="https://arxiv.org/abs/2610.28400">arXiv:2610.28400</a>: cancelled eEDM leaves timelike τ dipole (echoed by <a href="https://arxiv.org/abs/2610.28790">arXiv:2610.28790</a>)</li>
-<li><a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>: dark-Higgs LZ+GCE model, reappeared 10-27</li>
+<li><a href="https://arxiv.org/abs/2610.28731">arXiv:2610.28731</a>: halo tail; the LZ and microlensing reference point.</li>
+<li><a href="https://arxiv.org/abs/2610.30239">arXiv:2610.30239</a>: ML-PDF uncertainty anatomy, cited again on 10-28.</li>
+<li><a href="https://arxiv.org/abs/2610.28742">arXiv:2610.28742</a>: <span class="arithmatex">\(\beta\beta\)</span> radiative corrections, paired with <a href="https://arxiv.org/abs/2610.32947">arXiv:2610.32947</a>.</li>
+<li><a href="https://arxiv.org/abs/2610.31745">arXiv:2610.31745</a>: FeynFacet, the agentic-theory anchor.</li>
+<li><a href="https://arxiv.org/abs/2610.35331">arXiv:2610.35331</a> and <a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a>: O–O small-system anchors.</li>
+<li><a href="https://arxiv.org/abs/2610.31254">arXiv:2610.31254</a>: neutrino-only <span class="arithmatex">\(\sin^2\theta_W\)</span> baseline.</li>
+<li><a href="https://arxiv.org/abs/2610.25423">arXiv:2610.25423</a>: Kim et al.&rsquo;s dark-Higgs model for both the LZ event and the GCE, which reappeared on 10-27.</li>
 </ul>
   </article>
   
@@ -1382,7 +1368,7 @@ digest thinks with. Read these to catch up after time away.</p>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-27 05:48 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-10-28 05:25 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
