@@ -39,6 +39,84 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Monday, November 2, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261041889-reconstruct-everything-everywhere-all-at-once-an-end-to-end-model-for-future-colliders-max-hart-et-al"><a href="https://arxiv.org/abs/2610.41889">arXiv:2610.41889</a> — Reconstruct everything everywhere all at once: An end-to-end model for future colliders (Max Hart et al.)</h3>
+<p>This is mainly an end-to-end reconstruction paper, not a substructure paper. Its jet relevance lies in two downstream outputs: jet energy resolution and learned particle-to-boson assignment. REM consists of two MaskFormer stages (17.2M parameters, about 30 ms/event on a GPU) that run on raw CLD hits from the full Geant4 simulation. The first stage does tracking, calorimeter clustering, PID and regression. The second assigns the resulting particle queries to W/Z/H candidates.</p>
+<p><strong>Jet energy resolution.</strong> In 240 GeV WW/ZZ/ZH events, jets are exclusive VLC jets (R=1.1, β=γ=1), compared against jets clustered from truth targets. Results:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>JER</th>
+<th>σ68</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REM</td>
+<td>2.2±0.1%</td>
+<td>4.9%</td>
+</tr>
+<tr>
+<td>FlowFormer (learned PF on conformal tracks)</td>
+<td>2.9%</td>
+<td>6.1%</td>
+</tr>
+<tr>
+<td>PandoraPFA</td>
+<td>4.6%</td>
+<td>7.0%</td>
+</tr>
+</tbody>
+</table>
+<p>Pandora&rsquo;s charged and neutral energy biases (medians 0.78 and 1.42) cancel in the total; REM recovers the correct partition.</p>
+<p><strong>W/Z mass separation S.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Semileptonic</th>
+<th>Fully hadronic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pandora + VLC</td>
+<td>2.02</td>
+<td>1.46</td>
+</tr>
+<tr>
+<td>REM + VLC</td>
+<td>2.87</td>
+<td>1.96</td>
+</tr>
+<tr>
+<td>REM resonance masks</td>
+<td>3.03±0.12</td>
+<td>2.22</td>
+</tr>
+<tr>
+<td>Truth VLC (reference)</td>
+<td>3.78</td>
+<td>2.57</td>
+</tr>
+</tbody>
+</table>
+<p>In the fully hadronic channel, the learned assignment approaches the truth-level clustering-plus-pairing ceiling (2.57). This shows how much S is lost to the jet-pairing step itself (smallest dijet-mass difference).</p>
+<p><strong>Caveats, several stated by the authors:</strong>
+- IRC safety of the learned assignment is not established, and generator dependence is untested.
+- Masks are supervised on true parentage rather than a jet-algorithm-defined target. Part of the mass-peak recentering likely reflects this choice.
+- The evaluation excludes, via truth matching, real particles outside the &ldquo;tight&rdquo; selection.
+- REM applies an IoU/calorimeter-fraction filter before forming jets.
+- The Pandora S values fall below the CLD design report&rsquo;s 2.1–2.6, which used a different geometry and software setup.
+- Boson labeling is uneven: ZZ events are correctly labeled only 62%.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Wednesday, October 28, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -1778,7 +1856,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-01 05:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-02 05:22 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

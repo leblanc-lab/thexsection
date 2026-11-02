@@ -7,7 +7,84 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Reconstruct everything everywhere all at once: An end-to-end model for future colliders</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2610-41889</link>
+    <guid isPermaLink="false">arxiv:2610.41889</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max Hart et al.</dc:creator>
+    <description><![CDATA[<p>This is mainly an end-to-end reconstruction paper, not a substructure paper. Its jet relevance lies in two downstream outputs: jet energy resolution and learned particle-to-boson assignment. REM consists of two MaskFormer stages (17.2M parameters, about 30 ms/event on a GPU) that run on raw CLD hits from the full Geant4 simulation. The first stage does tracking, calorimeter clustering, PID and regression. The second assigns the resulting particle queries to W/Z/H candidates.</p>
+<p><strong>Jet energy resolution.</strong> In 240 GeV WW/ZZ/ZH events, jets are exclusive VLC jets (R=1.1, β=γ=1), compared against jets clustered from truth targets. Results:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>JER</th>
+<th>σ68</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REM</td>
+<td>2.2±0.1%</td>
+<td>4.9%</td>
+</tr>
+<tr>
+<td>FlowFormer (learned PF on conformal tracks)</td>
+<td>2.9%</td>
+<td>6.1%</td>
+</tr>
+<tr>
+<td>PandoraPFA</td>
+<td>4.6%</td>
+<td>7.0%</td>
+</tr>
+</tbody>
+</table>
+<p>Pandora&rsquo;s charged and neutral energy biases (medians 0.78 and 1.42) cancel in the total; REM recovers the correct partition.</p>
+<p><strong>W/Z mass separation S.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Semileptonic</th>
+<th>Fully hadronic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pandora + VLC</td>
+<td>2.02</td>
+<td>1.46</td>
+</tr>
+<tr>
+<td>REM + VLC</td>
+<td>2.87</td>
+<td>1.96</td>
+</tr>
+<tr>
+<td>REM resonance masks</td>
+<td>3.03±0.12</td>
+<td>2.22</td>
+</tr>
+<tr>
+<td>Truth VLC (reference)</td>
+<td>3.78</td>
+<td>2.57</td>
+</tr>
+</tbody>
+</table>
+<p>In the fully hadronic channel, the learned assignment approaches the truth-level clustering-plus-pairing ceiling (2.57). This shows how much S is lost to the jet-pairing step itself (smallest dijet-mass difference).</p>
+<p><strong>Caveats, several stated by the authors:</strong>
+- IRC safety of the learned assignment is not established, and generator dependence is untested.
+- Masks are supervised on true parentage rather than a jet-algorithm-defined target. Part of the mass-peak recentering likely reflects this choice.
+- The evaluation excludes, via truth matching, real particles outside the &ldquo;tight&rdquo; selection.
+- REM applies an IoU/calorimeter-fraction filter before forming jets.
+- The Pandora S values fall below the CLD design report&rsquo;s 2.1–2.6, which used a different geometry and software setup.
+- Boson labeling is uneven: ZZ events are correctly labeled only 62%.</p>]]></description>
+  </item>
 
   <item>
     <title>Regression on high-dimensional phase space</title>
@@ -2846,16 +2923,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kiminad A. Mamo</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (quark/gluon) — abstract only, not yet read for a briefing.</em></p>
 <p>We show that the normalized non-normalizable photon profile fixed by the vacuum vector-current two-point function, when inserted into the fixed-j hadronic Witten diagram, produces the fixed-j conformal hard kernel in the leading-twist singlet vector channel of deeply virtual Compton scattering (DVCS) and double deeply virtual Compton scattering (DDVCS). For the near-boundary Brower&ndash;Polchinski&ndash;Strassler&ndash;Tan closed-string upper vertex, the Witten diagram yields the Gauss-hypergeometric Wilson-kernel family of the QCD conformal OPE, with the Mellin exponent derived from the explicit z-power count δ_c(j)=j+Δ_c(j)-2, not inserted as an ansatz. The lower Witten vertex is matched to, or provides a holographic representation of, the nonperturbative conformal moment; it is not a new hard kernel or a freely adjustable skewness profile. The matching is TT-projected, kernel-level, and fixed-scale in the conformal partial-wave/CS representation: finite coefficient normalizations, spin-j source normalizations, scale factors, and lower hadronic matrix elements remain matched inputs. Together with the Nishio&ndash;Watari open branch and the protected/unprotected j=2 split, this structurally identifies the protected closed branch with the (-) conformal partial wave and the even open branch with the unprotected (+) counterpart in the projected fixed-j singlet vector amplitude; these are mixed singlet eigenchannels, not literal unmixed quark/gluon operators at finite N_c. The conformal/Gegenbauer basis used in generalized parton distribution (GPD) deconvolution therefore has a second ultraviolet origin: it is selected both by the QCD OPE and by the near-boundary AdS Witten vertex.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Holographic Open/Closed Exchange in Double Deeply Virtual Compton Scattering: Fixed-j Structural Matching to the ±-Basis Wilson Kernels</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-12038</link>
-    <guid isPermaLink="false">arxiv:2604.12038</guid>
-    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kiminad A. Mamo</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (quark/gluon) — abstract only, not yet read for a briefing.</em></p>
-<p>We show that fixed&ndash;j holographic double deeply virtual Compton scattering (DDVCS), and its DVCS limit, give a fixed-scale structural match to the singlet conformal-OPE Wilson-kernel family of QCD in the leading-twist unpolarized singlet vector channel. The open-string C_1(δ,ϑ) hypergeometric kernel was derived by Nishio&ndash;Watari; the new closed-string result is that the BPST upper Witten vertex gives the same family with a different near-boundary power count, because Δ_c(j) is fixed by the BPST trajectory rather than by open-Regge data. The Mellin exponent is therefore derived as δ_c(j)=j+Δ_c(j)-2=2j+γ_c(j) rather than inserted by hand. The even open branch gives the parallel unprotected counterpart in the projected singlet vector amplitude. At Q=μ=μ_0=μ_∗, the point is not merely that equal-endpoint evolution is trivial; it is that the ultraviolet Witten vertex has already produced the fixed&ndash;j conformal kernel before the lower conformal moment is matched. In the conformal partial-wave/CS representation, beta-proportional conformal-anomaly terms and scheme transformations are coefficient/evolution bookkeeping away from the matching point, not replacements for the projected fixed-scale hypergeometric η/ξ Wilson-kernel family. The protected/unprotected j=2 split identifies the protected closed branch with the (-) conformal partial wave and the even open branch with the unprotected (+) counterpart; these are mixed singlet eigenchannels, not literal unmixed quark/gluon operators at finite N_c. Thus, once the lower Witten vertex is matched to constrained conformal moments, the DVCS/DDVCS deconvolution problem is organized in a physical operator basis rather than in arbitrary x-space profiles.</p>]]></description>
   </item>
 
 </channel>
