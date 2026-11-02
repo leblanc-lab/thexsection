@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Identify, Isolate, and Purge: Mitigating Hallucinations in LVLMs via Self-Evolving Distillation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2507-04680</link>
+    <guid isPermaLink="false">arxiv:2507.04680</guid>
+    <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenhao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Large Vision-Language Models (LVLMs) have demonstrated remarkable advancements in numerous areas such as multimedia. However, hallucination issues significantly limit their credibility and application potential. Existing mitigation methods typically rely on external tools or the comparison of multi-round inference, which significantly increase inference time. In this paper, we propose \textbf{SE}lf-\textbf{E}volving \textbf{D}istillation (\textbf{SEED}), which identifies hallucinations within the inner knowledge of LVLMs, isolates and purges them, and then distills the purified knowledge back into the model, enabling self-evolution. Furthermore, we identified that traditional distillation methods are prone to inducing void spaces in the output space of LVLMs. To address this issue, we propose a Mode-Seeking Evolving approach, which performs distillation to capture the dominant modes of the purified knowledge distribution, thereby avoiding the chaotic results that could emerge from void spaces. Moreover, we introduce a Hallucination Elimination Adapter, which corrects the dark knowledge of the original model by learning purified knowledge. Extensive experiments on multiple benchmarks validate the superiority of our SEED, demonstrating substantial improvements in mitigating hallucinations for representative LVLM models such as LLaVA-1.5 and InternVL2. Remarkably, the F1 score of LLaVA-1.5 on the hallucination evaluation metric POPE-Random improved from 81.3 to 88.3.</p>]]></description>
+  </item>
 
   <item>
     <title>CLOT: Closed Loop Optimal Transport for Unsupervised Action Segmentation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anh-Khoa Nguyen Vu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Few-shot object detection aims to simultaneously localize and classify the objects in an image with limited training samples. However, most existing few-shot object detection methods focus on extracting the features of a few samples of novel classes that lack diversity. Hence, they may not be sufficient to capture the data distribution. To address that limitation, in this paper, we propose a novel approach in which we train a generator to generate synthetic data for novel classes. Still, directly training a generator on the novel class is not effective due to the lack of novel data. To overcome that issue, we leverage the large-scale dataset of base classes. Our overarching goal is to train a generator that captures the data variations of the base dataset. We then transform the captured variations into novel classes by generating synthetic data with the trained generator. To encourage the generator to capture data variations on base classes, we propose to train the generator with an optimal transport loss that minimizes the optimal transport distance between the distributions of real and synthetic data. Extensive experiments on two benchmark datasets demonstrate that the proposed method outperforms the state of the art. Source code will be available.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Synergizing Contrastive Learning and Optimal Transport for 3D Point Cloud Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2308-14126</link>
-    <guid isPermaLink="false">arxiv:2308.14126</guid>
-    <pubDate>Sun, 27 Aug 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siddharth Katageri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Recently, the fundamental problem of unsupervised domain adaptation (UDA) on 3D point clouds has been motivated by a wide variety of applications in robotics, virtual reality, and scene understanding, to name a few. The point cloud data acquisition procedures manifest themselves as significant domain discrepancies and geometric variations among both similar and dissimilar classes. The standard domain adaptation methods developed for images do not directly translate to point cloud data because of their complex geometric nature. To address this challenge, we leverage the idea of multimodality and alignment between distributions. We propose a new UDA architecture for point cloud classification that benefits from multimodal contrastive learning to get better class separation in both domains individually. Further, the use of optimal transport (OT) aims at learning source and target data distributions jointly to reduce the cross-domain shift and provide a better alignment. We conduct a comprehensive empirical study on PointDA-10 and GraspNetPC-10 and show that our method achieves state-of-the-art performance on GraspNetPC-10 (with approx 4-12% margin) and best average performance on PointDA-10. Our ablation studies and decision boundary analysis also validate the significance of our contrastive learning module and OT alignment.</p>]]></description>
   </item>
 
 </channel>

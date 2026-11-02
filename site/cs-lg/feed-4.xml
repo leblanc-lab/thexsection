@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Thermodynamic structure of the Sinkhorn flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-12639</link>
+    <guid isPermaLink="false">arxiv:2510.12639</guid>
+    <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anand Srinivasan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Entropy-regularized optimal transport, which has strong links to the Schrödinger bridge problem in statistical mechanics, enjoys a variety of applications from trajectory inference to generative modeling. A major driver of renewed interest in this problem is the recent development of fast matrix-scaling algorithms\textemdash known as iterative proportional fitting or the Sinkhorn algorithm\textemdash for entropic optimal transport, which have favorable complexity over traditional approaches to the unregularized problem. Here, we take a perspective on this algorithm rooted in the thermodynamic origins of Schrödinger&rsquo;s problem and inspired by the modern geometric theory of diffusion: is the Sinkhorn flow (viewed in continuous-time as a mirror descent by recent results) the gradient flow of entropy in a formal Riemannian geometry? We answer this question affirmatively, finding a nonlocal Wasserstein gradient structure in the dynamics of its free marginal. This offers a physical interpretation of the Sinkhorn flow as the stochastic dynamics of a particle with law evolving by the nonlocal diffusion of a chemical potential. Simultaneously, it brings a standard suite of functional inequalities characterizing Markov diffusion processes to bear upon its geometry and convergence. We prove an entropy-energy (de Bruijn) identity, a Poincaré inequality, and a Bakry-Émery-type condition under which a logarithmic Sobolev inequality (LSI) holds and implies exponential convergence of the Sinkhorn flow in entropy. We lastly discuss computational applications such as stopping heuristics and latent-space design criteria leveraging the LSI and, returning to the physical interpretation, the possibility of natural systems whose relaxation to equilibrium inherently solves entropic optimal transport or Schrödinger bridge problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>AutoSciDACT: Automated Scientific Discovery through Contrastive Embedding and Hypothesis Testing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-21935</link>
+    <guid isPermaLink="false">arxiv:2510.21935</guid>
+    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Bright-Thonney et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Novelty detection in large scientific datasets faces two key challenges: the noisy and high-dimensional nature of experimental data, and the necessity of making statistically robust statements about any observed outliers. While there is a wealth of literature on anomaly detection via dimensionality reduction, most methods do not produce outputs compatible with quantifiable claims of scientific discovery. In this work we directly address these challenges, presenting the first step towards a unified pipeline for novelty detection adapted for the rigorous statistical demands of science. We introduce AutoSciDACT (Automated Scientific Discovery with Anomalous Contrastive Testing), a general-purpose pipeline for detecting novelty in scientific data. AutoSciDACT begins by creating expressive low-dimensional data representations using a contrastive pre-training, leveraging the abundance of high-quality simulated data in many scientific domains alongside expertise that can guide principled data augmentation strategies. These compact embeddings then enable an extremely sensitive machine learning-based two-sample test using the New Physics Learning Machine (NPLM) framework, which identifies and statistically quantifies deviations in observed data relative to a reference distribution (null hypothesis). We perform experiments across a range of astronomical, physical, biological, image, and synthetic datasets, demonstrating strong sensitivity to small injections of anomalous data across all domains.</p>]]></description>
+  </item>
+
+  <item>
+    <title>EveNet: A Foundation Model for Particle Collision Data Analysis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-17126</link>
+    <guid isPermaLink="false">arxiv:2601.17126</guid>
+    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ting-Hsiang Hsu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, colliders, Ben Nachman, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
+<p>While deep learning is transforming data analysis in high-energy physics, computational challenges limit its potential. We address these challenges in the context of collider physics by introducing EveNet, an event-level foundation model pretrained on 500 million simulated collision events using a hybrid objective of self-supervised learning and physics-informed supervision. By leveraging a shared particle-cloud representation, EveNet outperforms state-of-the-art baselines across diverse tasks, including searches for heavy resonances and exotic Higgs decays, and demonstrates exceptional data efficiency in low-statistics regimes. Crucially, we validate the transferability of the model to experimental data by rediscovering the Υ meson in CMS Open Data and show its capacity for precision physics through the robust extraction of quantum correlation observables stable against systematic uncertainties. These results indicate that EveNet can successfully encode the fundamental physical structure of particle interactions, which offers a unified and resource-efficient framework to accelerate discovery at current and future colliders.</p>]]></description>
+  </item>
+
+  <item>
+    <title>JetFormer: A Scalable and Efficient Transformer for Jet Tagging from Offline Analysis to FPGA Triggers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-17215</link>
+    <guid isPermaLink="false">arxiv:2601.17215</guid>
+    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruoqing Zheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, jet taggers, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>We present JetFormer, a versatile and scalable encoder-only Transformer architecture for particle jet tagging at the Large Hadron Collider (LHC). Unlike prior approaches that are often tailored to specific deployment regimes, JetFormer is designed to operate effectively across the full spectrum of jet tagging scenarios, from high-accuracy offline analysis to ultra-low-latency online triggering. The model processes variable-length sets of particle features without relying on input of explicit pairwise interactions, yet achieves competitive or superior performance compared to state-of-the-art methods. On the large-scale JetClass dataset, a large-scale JetFormer matches the accuracy of the interaction-rich ParT model (within 0.7%) while using 37.4% fewer FLOPs, demonstrating its computational efficiency and strong generalization. On benchmark HLS4ML 150P datasets, JetFormer consistently outperforms existing models such as MLPs, Deep Sets, and Interaction Networks by 3-4% in accuracy. To bridge the gap to hardware deployment, we further introduce a hardware-aware optimization pipeline based on multi-objective hyperparameter search, yielding compact variants like JetFormer-tiny suitable for FPGA-based trigger systems with sub-microsecond latency requirements. Through structured pruning and quantization, we show that JetFormer can be aggressively compressed with minimal accuracy loss. By unifying high-performance modeling and deployability within a single architectural framework, JetFormer provides a practical pathway for deploying Transformer-based jet taggers in both offline and online environments at the LHC. Code is available at https://github.com/walkieq/JetFormer.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GSINA: Improving Subgraph Extraction for Graph Invariant Learning via Graph Sinkhorn Attention</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2402-07191</link>
+    <guid isPermaLink="false">arxiv:2402.07191</guid>
+    <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junchi Yan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Graph invariant learning (GIL) seeks invariant relations between graphs and labels under distribution shifts. Recent works try to extract an invariant subgraph to improve out-of-distribution (OOD) generalization, yet existing approaches either lack explicit control over compactness or rely on hard top-k selection that shrinks the solution space and is only partially differentiable. In this paper, we provide an in-depth analysis of the drawbacks of some existing works and propose a few general principles for invariant subgraph extraction: 1) separability, as encouraged by our sparsity-driven mechanism, to filter out the irrelevant common features; 2) softness, for a broader solution space; and 3) differentiability, for a soundly end-to-end optimization pipeline. Specifically, building on optimal transport, we propose Graph Sinkhorn Attention (GSINA), a fully differentiable, cardinality-constrained attention mechanism that assigns sparse-yet-soft edge weights via Sinkhorn iterations and induces node attention. GSINA provides explicit controls for separability and softness, and uses a Gumbel reparameterization to stabilize training. It convergence behavior is also theoretically studied. Extensive empirical experimental results on both synthetic and real-world</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein multivariate auto-regressive models for modeling distributional time series</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2207-05442</link>
+    <guid isPermaLink="false">arxiv:2207.05442</guid>
+    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yiye Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper is focused on the statistical analysis of data consisting of a collection of multiple series of probability measures that are indexed by distinct time instants and supported over a bounded interval of the real line. By modeling these time-dependent probability measures as random objects in the Wasserstein space, we propose a new auto-regressive model for the statistical analysis of multivariate distributional time series. Using the theory of iterated random function systems, results on the second order stationarity of the solution of such a model are provided. We also propose a consistent estimator for the auto-regressive coefficients of this model. Due to the simplex constraints that we impose on the model coefficients, the proposed estimator that is learned under these constraints, naturally has a sparse structure. The sparsity allows the application of the proposed model in learning a graph of temporal dependency from multivariate distributional time series. We explore the numerical performances of our estimation procedure using simulated data. To shed some light on the benefits of our approach for real data analysis, we also apply this methodology to two data sets, respectively made of observations from age distribution in different countries and those from the bike sharing network in Paris.</p>]]></description>
+  </item>
 
   <item>
     <title>Polychronous Wave Computing: Timing-Native Address Selection in Spiking Networks</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Grigoriy Ksenofontov et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>The Schrödinger Bridge (SB) is a powerful framework for solving generative modeling tasks such as unpaired domain translation. Most SB-related research focuses on continuous data space ℝ^D and leaves open theoretical and algorithmic questions about applying SB methods to discrete data, e.g, on finite spaces 𝕊^D. Notable examples of such sets 𝕊 are codebooks of vector-quantized (VQ) representations of modern autoencoders, tokens in texts, categories of atoms in molecules, etc. In this paper, we provide a theoretical and algorithmic foundation for solving SB in discrete spaces using the recently introduced Iterative Markovian Fitting (IMF) procedure. Specifically, we theoretically justify the convergence of discrete-time IMF (D-IMF) to SB in discrete spaces. This enables us to develop a practical computational algorithm for SB, which we call Categorical Schrödinger Bridge Matching (CSBM). We show the performance of CSBM via a series of experiments with synthetic data and VQ representations of images. The code of CSBM is available at https://github.com/gregkseno/csbm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Refinement: Optimal Transport to Infinity and Beyond</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-03025</link>
-    <guid isPermaLink="false">arxiv:2503.03025</guid>
-    <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Halmos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) has enjoyed great success in machine learning as a principled way to align datasets via a least-cost correspondence, driven in large part by the runtime efficiency of the Sinkhorn algorithm (Cuturi, 2013). However, Sinkhorn has quadratic space and time complexity in the number of points, limiting scalability to larger datasets. Low-rank OT achieves linear complexity, but by definition, cannot compute a one-to-one correspondence between points. When the optimal transport problem is an assignment problem between datasets then an optimal mapping, known as the Monge map, is guaranteed to be a bijection. In this setting, we show that the factors of an optimal low-rank coupling co-cluster each point with its image under the Monge map. We leverage this invariant to derive an algorithm, Hierarchical Refinement (HiRef), that dynamically constructs a multiscale partition of each dataset using low-rank OT subproblems, culminating in the bijective Monge map. Hierarchical Refinement runs in log-linear time and linear space, retaining the advantages of low-rank OT while overcoming its limited resolution. We demonstrate the advantages of Hierarchical Refinement on several datasets, including ones containing over a million points, scaling full-rank OT to problems previously beyond Sinkhorn&rsquo;s reach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Incorporating Arbitrary Matrix Group Equivariance into KANs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-00435</link>
-    <guid isPermaLink="false">arxiv:2410.00435</guid>
-    <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lexiang Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet constituents) — original abstract; no AI summary.</em></p>
-<p>Kolmogorov-Arnold Networks (KANs) have seen great success in scientific domains thanks to spline activation functions, becoming an alternative to Multi-Layer Perceptrons (MLPs). However, spline functions may not respect symmetry in tasks, which is crucial prior knowledge in machine learning. In this paper, we propose Equivariant Kolmogorov-Arnold Networks (EKAN), a method for incorporating arbitrary matrix group equivariance into KANs, aiming to broaden their applicability to more fields. We first construct gated spline basis functions, which form the EKAN layer together with equivariant linear weights, and then define a lift layer to align the input space of EKAN with the feature space of the dataset, thereby building the entire EKAN architecture. Compared with baseline models, EKAN achieves higher accuracy with smaller datasets or fewer parameters on symmetry-related tasks, such as particle scattering and the three-body problem, often reducing test MSE by several orders of magnitude. Even in non-symbolic formula scenarios, such as top quark tagging with three jet constituents, EKAN achieves comparable results with state-of-the-art equivariant architectures using fewer than 40% of the parameters, while KANs do not outperform MLPs as expected. Code and data are available at https://github.com/hulx2002/EKAN .</p>]]></description>
-  </item>
-
-  <item>
-    <title>Downscaling Extreme Precipitation with Wasserstein Regularized Diffusion</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-00381</link>
-    <guid isPermaLink="false">arxiv:2410.00381</guid>
-    <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuhao Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Understanding the risks posed by extreme rainfall events requires analysis of precipitation fields with high resolution (to assess localized hazards) and extensive historical coverage (to capture sufficient examples of rare occurrences). Radar and mesonet networks provide precipitation fields at 1 km resolution but with limited historical and geographical coverage, while gauge-based records and reanalysis products cover decades of time on a global scale, but only at 30-50 km resolution. To help provide high-resolution precipitation estimates over long time scales, this study presents Wasserstein Regularized Diffusion (WassDiff), a diffusion framework to downscale (super-resolve) precipitation fields from low-resolution gauge and reanalysis products. Crucially, unlike related deep generative models, WassDiff integrates a Wasserstein distribution-matching regularizer to the denoising process to reduce empirical biases at extreme intensities. Comprehensive evaluations demonstrate that WassDiff quantitatively outperforms existing state-of-the-art generative downscaling methods at recovering extreme weather phenomena such as tropical storms and cold fronts. Case studies further qualitatively demonstrate WassDiff&rsquo;s ability to reproduce realistic fine-scale weather structures and accurate peak intensities. By unlocking decades of high-resolution rainfall information from globally available coarse records, WassDiff offers a practical pathway toward more accurate flood-risk assessments and climate-adaptation planning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FairPOT: Balancing AUC Performance and Fairness with Proportional Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-03940</link>
-    <guid isPermaLink="false">arxiv:2508.03940</guid>
-    <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pengxi Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Fairness metrics utilizing the area under the receiver operator characteristic curve (AUC) have gained increasing attention in high-stakes domains such as healthcare, finance, and criminal justice. In these domains, fairness is often evaluated over risk scores rather than binary outcomes, and a common challenge is that enforcing strict fairness can significantly degrade AUC performance. To address this challenge, we propose Fair Proportional Optimal Transport (FairPOT), a novel, model-agnostic post-processing framework that strategically aligns risk score distributions across different groups using optimal transport, but does so selectively by transforming a controllable proportion, i.e., the top-lambda quantile, of scores within the disadvantaged group. By varying lambda, our method allows for a tunable trade-off between reducing AUC disparities and maintaining overall AUC performance. Furthermore, we extend FairPOT to the partial AUC setting, enabling fairness interventions to concentrate on the highest-risk regions. Extensive experiments on synthetic, public, and clinical datasets show that FairPOT consistently outperforms existing post-processing techniques in both global and partial AUC scenarios, often achieving improved fairness with slight AUC degradation or even positive gains in utility. The computational efficiency and practical adaptability of FairPOT make it a promising solution for real-world deployment.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reconstruction of boosted and resolved multi-Higgs-boson events with symmetry-preserving attention networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-03819</link>
-    <guid isPermaLink="false">arxiv:2412.03819</guid>
-    <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (large-radius jet, LHC, Daniel Whiteson) — original abstract; no AI summary.</em></p>
-<p>The production of multiple Higgs bosons at the CERN LHC provides a direct way to measure the trilinear and quartic Higgs self-interaction strengths as well as potential access to beyond the standard model effects that can enhance production at large transverse momentum p_T. The largest event fraction arises from the fully hadronic final state in which every Higgs boson decays to a bottom quark-antiquark pair (bb̅). This introduces a combinatorial challenge known as the \emph{jet assignment problem}: assigning jets to sets representing Higgs boson candidates. Symmetry-preserving attention networks (SPA-Nets) have been been developed to address this challenge. However, the complexity of jet assignment increases when simultaneously considering both H→bb̅ reconstruction possibilities, i.e., two &ldquo;resolved&rdquo; small-radius jets each containing a shower initiated by a b-quark or one &ldquo;boosted&rdquo; large-radius jet containing a merged shower initiated by a bb̅ pair. The latter improves the reconstruction efficiency at high p_T. In this work, we introduce a generalization to the SPA-Net approach to simultaneously consider both boosted and resolved reconstruction possibilities and unambiguously interpret an event as &ldquo;fully resolved&rsquo;&lsquo;, &ldquo;fully boosted&rdquo;, or in between. We report the performance of baseline methods, the original SPA-Net approach, and our generalized version on nonresonant HH and HHH production at the LHC. Considering both boosted and resolved topologies, our SPA-Net approach increases the Higgs boson reconstruction purity by 57&ndash;62\% and the efficiency by 23&ndash;38\% compared to the baseline method depending on the final state.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Phase transition of the Sinkhorn-Knopp algorithm</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-09711</link>
-    <guid isPermaLink="false">arxiv:2507.09711</guid>
-    <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kun He</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>The matrix scaling problem, particularly the Sinkhorn-Knopp algorithm, has been studied for over 60 years. In practice, the algorithm often yields high-quality approximations within just a few iterations. Theoretically, however, the best-known upper bound places it in the class of pseudopolynomial-time approximation algorithms. Meanwhile, the lower-bound landscape remains largely unexplored. Two fundamental questions persist: what accounts for the algorithm&rsquo;s strong empirical performance, and can a tight bound on its iteration count be established? For an n×n matrix, its normalized version is obtained by dividing each entry by its largest entry. We say that a normalized matrix has a density γ if there exists a constant ρ&gt; 0 such that one row or column has exactly ⌈γn ⌉ entries with values at least ρ, and every other row and column has at least ⌈γn ⌉ such entries. For the upper bound, we show that the Sinkhorn-Knopp algorithm produces a nearly doubly stochastic matrix in O(logn - logε) iterations and O(n²⁾ time for all nonnegative square matrices whose normalized version has a density γ&gt; 1/2. Such matrices cover both the algorithm&rsquo;s principal practical inputs and its typical theoretical regime, and the O(n²⁾ runtime is optimal. For the lower bound, we establish a tight bound of (n¹/2/ε) iterations for positive matrices under the ℓ_2-norm error measure. Moreover, for every γ&lt; 1/2, there exists a matrix with density γ for which the algorithm requires Ω(n¹/2/ε) iterations. In summary, our results reveal a sharp phase transition in the Sinkhorn-Knopp algorithm at the density threshold γ= 1/2.</p>]]></description>
   </item>
 
 </channel>

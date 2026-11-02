@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Lighter, Better, Faster Multi-Source Domain Adaptation with Gaussian Mixture Models and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-10261</link>
+    <guid isPermaLink="false">arxiv:2404.10261</guid>
+    <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Fernandes Montesuma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In this paper, we tackle Multi-Source Domain Adaptation (MSDA), a task in transfer learning where one adapts multiple heterogeneous, labeled source probability measures towards a different, unlabeled target measure. We propose a novel framework for MSDA, based on Optimal Transport (OT) and Gaussian Mixture Models (GMMs). Our framework has two key advantages. First, OT between GMMs can be solved efficiently via linear programming. Second, it provides a convenient model for supervised learning, especially classification, as components in the GMM can be associated with existing classes. Based on the GMM-OT problem, we propose a novel technique for calculating barycenters of GMMs. Based on this novel algorithm, we propose two new strategies for MSDA: GMM-Wasserstein Barycenter Transport (WBT) and GMM-Dataset Dictionary Learning (DaDiL). We empirically evaluate our proposed methods on four benchmarks in image classification and fault diagnosis, showing that we improve over the prior art while being faster and involving fewer parameters. Our code is publicly available at https://github.com/eddardd/gmm_msda</p>]]></description>
+  </item>
+
+  <item>
+    <title>Annealed Sinkhorn for Optimal Transport: convergence, regularization path and debiasing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2408-11620</link>
+    <guid isPermaLink="false">arxiv:2408.11620</guid>
+    <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lénaïc Chizat</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Sinkhorn&rsquo;s algorithm is a method of choice to solve large-scale optimal transport (OT) problems. In this context, it involves an inverse temperature parameter β that determines the speed-accuracy trade-off. To improve this trade-off, practitioners often use a variant of this algorithm, Annealed Sinkhorn, that uses an nondecreasing sequence (β_t)_t∈ℕ where t is the iteration count. However, besides for the schedule β_t=Θ(logt) which is impractically slow, it is not known whether this variant is guaranteed to actually solve OT. Our first contribution answers this question: we show that a concave annealing schedule asymptotically solves OT if and only if β_t→+∞ and β_t-β_t-1→0. The proof is based on an equivalence with Online Mirror Descent and further suggests that the iterates of Annealed Sinkhorn follow the solutions of a sequence of relaxed, entropic OT problems, the regularization path. An analysis of this path reveals that, in addition to the well-known &ldquo;entropic&rdquo; error in Θ(β⁻¹_t), the annealing procedure induces a &ldquo;relaxation&rdquo; error in Θ(β_t-β_t-1). The best error trade-off is achieved with the schedule β_t = Θ(√(t)) which, albeit slow, is a universal limitation of this method. Going beyond this limitation, we propose a simple modification of Annealed Sinkhorn that reduces the relaxation error, and therefore enables faster annealing schedules. In toy experiments, we observe the effectiveness of our Debiased Annealed Sinkhorn&rsquo;s algorithm: a single run of this algorithm spans the whole speed-accuracy Pareto front of the standard Sinkhorn&rsquo;s algorithm.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Collaborative Multi-source Domain Adaptation Through Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-06599</link>
+    <guid isPermaLink="false">arxiv:2404.06599</guid>
+    <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Omar Ghannou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multi-source Domain Adaptation (MDA) seeks to adapt models trained on data from multiple labeled source domains to perform effectively on an unlabeled target domain data, assuming access to sources data. To address the challenges of model adaptation and data privacy, we introduce Collaborative MDA Through Optimal Transport (CMDA-OT), a novel framework consisting of two key phases. In the first phase, each source domain is independently adapted to the target domain using optimal transport methods. In the second phase, a centralized collaborative learning architecture is employed, which aggregates the N models from the N sources without accessing their data, thereby safeguarding privacy. During this process, the server leverages a small set of pseudo-labeled samples from the target domain, known as the target validation subset, to refine and guide the adaptation. This dual-phase approach not only improves model performance on the target domain but also addresses vital privacy challenges inherent in domain adaptation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Anomalies, Representations, and Self-Supervision</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2301-04660</link>
+    <guid isPermaLink="false">arxiv:2301.04660</guid>
+    <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Barry M. Dillon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, Tilman Plehn) — original abstract; no AI summary.</em></p>
+<p>We develop a self-supervised method for density-based anomaly detection using contrastive learning, and test it using event-level anomaly data from CMS ADC2021. The AnomalyCLR technique is data-driven and uses augmentations of the background data to mimic non-Standard-Model events in a model-agnostic way. It uses a permutation-invariant Transformer Encoder architecture to map the objects measured in a collider event to the representation space, where the data augmentations define a representation space which is sensitive to potential anomalous features. An AutoEncoder trained on background representations then computes anomaly scores for a variety of signals in the representation space. With AnomalyCLR we find significant improvements on performance metrics for all signals when compared to the raw data baseline.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning from Noisy Labels for Long-tailed Data via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2408-03977</link>
+    <guid isPermaLink="false">arxiv:2408.03977</guid>
+    <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mengting Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Noisy labels, which are common in real-world datasets, can significantly impair the training of deep learning models. However, recent adversarial noise-combating methods overlook the long-tailed distribution of real data, which can significantly harm the effect of denoising strategies. Meanwhile, the mismanagement of noisy labels further compromises the model&rsquo;s ability to handle long-tailed data. To tackle this issue, we propose a novel approach to manage data characterized by both long-tailed distributions and noisy labels. First, we introduce a loss-distance cross-selection module, which integrates class predictions and feature distributions to filter clean samples, effectively addressing uncertainties introduced by noisy labels and long-tailed distributions. Subsequently, we employ optimal transport strategies to generate pseudo-labels for the noise set in a semi-supervised training manner, enhancing pseudo-label quality while mitigating the effects of sample scarcity caused by the long-tailed distribution. We conduct experiments on both synthetic and real-world datasets, and the comprehensive experimental results demonstrate that our method surpasses current state-of-the-art methods. Our code will be available in the future.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Light and Optimal Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-03207</link>
+    <guid isPermaLink="false">arxiv:2402.03207</guid>
+    <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikita Gushchin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Schrödinger Bridges (SB) have recently gained the attention of the ML community as a promising extension of classic diffusion models which is also interconnected to the Entropic Optimal Transport (EOT). Recent solvers for SB exploit the pervasive bridge matching procedures. Such procedures aim to recover a stochastic process transporting the mass between distributions given only a transport plan between them. In particular, given the EOT plan, these procedures can be adapted to solve SB. This fact is heavily exploited by recent works giving rise to matching-based SB solvers. The cornerstone here is recovering the EOT plan: recent works either use heuristical approximations (e.g., the minibatch OT) or establish iterative matching procedures which by the design accumulate the error during the training. We address these limitations and propose a novel procedure to learn SB which we call the \textbf{optimal Schrödinger bridge matching}. It exploits the optimal parameterization of the diffusion process and provably recovers the SB process \textbf{(a)} with a single bridge matching step and \textbf{(b)} with arbitrary transport plan as the input. Furthermore, we show that the optimal bridge matching objective coincides with the recently discovered energy-based modeling (EBM) objectives to learn EOT/SB. Inspired by this observation, we develop a light solver (which we call LightSB-M) to implement optimal matching in practice using the Gaussian mixture parameterization of the adjusted Schrödinger potential. We experimentally showcase the performance of our solver in a range of practical tasks. The code for our solver can be found at https://github.com/SKholkin/LightSB-Matching.</p>]]></description>
+  </item>
 
   <item>
     <title>Privacy-preserving data release leveraging optimal transport and particle gradient descent</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Garcia Trillos et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Despite the success of deep learning-based algorithms, it is widely known that neural networks may fail to be robust. A popular paradigm to enforce robustness is adversarial training (AT), however, this introduces many computational and theoretical difficulties. Recent works have developed a connection between AT in the multiclass classification setting and multimarginal optimal transport (MOT), unlocking a new set of tools to study this problem. In this paper, we leverage the MOT connection to propose computationally tractable numerical algorithms for computing universal lower bounds on the optimal adversarial risk and identifying optimal classifiers. We propose two main algorithms based on linear programming (LP) and entropic regularization (Sinkhorn). Our key insight is that one can harmlessly truncate the higher order interactions between classes, preventing the combinatorial run times typically encountered in MOT problems. We validate these results with experiments on MNIST and CIFAR-10, which demonstrate the tractability of our approach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Constrained Reweighting of Distributions: an Optimal Transport Approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-12447</link>
-    <guid isPermaLink="false">arxiv:2310.12447</guid>
-    <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhisek Chakraborty et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We commonly encounter the problem of identifying an optimally weight adjusted version of the empirical distribution of observed data, adhering to predefined constraints on the weights. Such constraints often manifest as restrictions on the moments, tail behaviour, shapes, number of modes, etc., of the resulting weight adjusted empirical distribution. In this article, we substantially enhance the flexibility of such methodology by introducing a nonparametrically imbued distributional constraints on the weights, and developing a general framework leveraging the maximum entropy principle and tools from optimal transport. The key idea is to ensure that the maximum entropy weight adjusted empirical distribution of the observed data is close to a pre-specified probability distribution in terms of the optimal transport metric while allowing for subtle departures. The versatility of the framework is demonstrated in the context of three disparate applications where data re-weighting is warranted to satisfy side constraints on the optimization problem at the heart of the statistical task: namely, portfolio allocation, semi-parametric inference for complex surveys, and ensuring algorithmic fairness in machine learning algorithms.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Robust Anomaly Detection for Particle Physics Using Multi-Background Representation Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-08777</link>
-    <guid isPermaLink="false">arxiv:2401.08777</guid>
-    <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhijith Gandrakota et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Anomaly, or out-of-distribution, detection is a promising tool for aiding discoveries of new particles or processes in particle physics. In this work, we identify and address two overlooked opportunities to improve anomaly detection for high-energy physics. First, rather than train a generative model on the single most dominant background process, we build detection algorithms using representation learning from multiple background types, thus taking advantage of more information to improve estimation of what is relevant for detection. Second, we generalize decorrelation to the multi-background setting, thus directly enforcing a more complete definition of robustness for anomaly detection. We demonstrate the benefit of the proposed robust multi-background anomaly detection algorithms on a high-dimensional dataset of particle decays at the Large Hadron Collider.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Harmonic Parameter Estimation Using Differentiable DSP and Spectral Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-14507</link>
-    <guid isPermaLink="false">arxiv:2312.14507</guid>
-    <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bernardo Torres et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In neural audio signal processing, pitch conditioning has been used to enhance the performance of synthesizers. However, jointly training pitch estimators and synthesizers is a challenge when using standard audio-to-audio reconstruction loss, leading to reliance on external pitch trackers. To address this issue, we propose using a spectral loss function inspired by optimal transportation theory that minimizes the displacement of spectral energy. We validate this approach through an unsupervised autoencoding task that fits a harmonic template to harmonic signals. We jointly estimate the fundamental frequency and amplitudes of harmonics using a lightweight encoder and reconstruct the signals using a differentiable harmonic synthesizer. The proposed approach offers a promising direction for improving unsupervised parameter estimation in neural audio applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: A review</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-06406</link>
-    <guid isPermaLink="false">arxiv:2401.06406</guid>
-    <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lingchao Mao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Cancer remains one of the most challenging diseases to treat in the medical field. Machine learning has enabled in-depth analysis of rich multi-omics profiles and medical imaging for cancer diagnosis and prognosis. Despite these advancements, machine learning models face challenges stemming from limited labeled sample sizes, the intricate interplay of high-dimensionality data types, the inherent heterogeneity observed among patients and within tumors, and concerns about interpretability and consistency with existing biomedical knowledge. One approach to surmount these challenges is to integrate biomedical knowledge into data-driven models, which has proven potential to improve the accuracy, robustness, and interpretability of model results. Here, we review the state-of-the-art machine learning studies that adopted the fusion of biomedical knowledge and data, termed knowledge-informed machine learning, for cancer diagnosis and prognosis. Emphasizing the properties inherent in four primary data types including clinical, imaging, molecular, and treatment data, we highlight modeling considerations relevant to these contexts. We provide an overview of diverse forms of knowledge representation and current strategies of knowledge integration into machine learning pipelines with concrete examples. We conclude the review article by discussing future directions to advance cancer research through knowledge-informed machine learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An unfolding method based on conditional Invertible Neural Networks (cINN) using iterative training</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2212-08674</link>
-    <guid isPermaLink="false">arxiv:2212.08674</guid>
-    <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mathias Backes et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Anja Butter) — original abstract; no AI summary.</em></p>
-<p>The unfolding of detector effects is crucial for the comparison of data to theory predictions. While traditional methods are limited to representing the data in a low number of dimensions, machine learning has enabled new unfolding techniques while retaining the full dimensionality. Generative networks like invertible neural networks~(INN) enable a probabilistic unfolding, which map individual events to their corresponding unfolded probability distribution. The accuracy of such methods is however limited by how well simulated training samples model the actual data that is unfolded. We introduce the iterative conditional INN~(IcINN) for unfolding that adjusts for deviations between simulated training samples and data. The IcINN unfolding is first validated on toy data and then applied to pseudo-data for the pp →Z γγ process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>LL-GNN: Low Latency Graph Neural Networks on FPGAs for High Energy Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2209-14065</link>
-    <guid isPermaLink="false">arxiv:2209.14065</guid>
-    <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhiqiang Que et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>This work presents a novel reconfigurable architecture for Low Latency Graph Neural Network (LL-GNN) designs for particle detectors, delivering unprecedented low latency performance. Incorporating FPGA-based GNNs into particle detectors presents a unique challenge since it requires sub-microsecond latency to deploy the networks for online event selection with a data rate of hundreds of terabytes per second in the Level-1 triggers at the CERN Large Hadron Collider experiments. This paper proposes a novel outer-product based matrix multiplication approach, which is enhanced by exploiting the structured adjacency matrix and a column-major data layout. Moreover, a fusion step is introduced to further reduce the end-to-end design latency by eliminating unnecessary boundaries. Furthermore, a GNN-specific algorithm-hardware co-design approach is presented which not only finds a design with a much better latency but also finds a high accuracy design under given latency constraints. To facilitate this, a customizable template for this low latency GNN hardware architecture has been designed and open-sourced, which enables the generation of low-latency FPGA designs with efficient resource utilization using a high-level synthesis tool. Evaluation results show that our FPGA implementation is up to 9.0 times faster and achieves up to 13.1 times higher power efficiency than a GPU implementation. Compared to the previous FPGA implementations, this work achieves 6.51 to 16.7 times lower latency. Moreover, the latency of our FPGA design is sufficiently low to enable deployment of GNNs in a sub-microsecond, real-time collider trigger system, enabling it to benefit from improved accuracy. The proposed LL-GNN design advances the next generation of trigger systems by enabling sophisticated algorithms to process experimental data efficiently.</p>]]></description>
   </item>
 
 </channel>

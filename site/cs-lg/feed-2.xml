@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Potential Matching Optimal Transport: Continuous Normalizing Flows for Exact p-Wasserstein Dynamics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-05666</link>
+    <guid isPermaLink="false">arxiv:2608.05666</guid>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lishuo Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce Potential Matching Optimal Transport (PMOT), a potential-flow framework for general p-cost optimal transport with c_p(x,y)=x-y^p. PMOT parameterizes the CNF velocity field with a scalar potential in the generalized Benamou&ndash;Brenier form for the chosen exponent p. It trains the potential gradient with a self-induced matching loss along straight bridges determined by the model&rsquo;s own endpoints, while allowing flexible terminal distribution matching. Our main result establishes zero-loss exactness: under the stated regularity, exact terminal matching, and uniqueness assumptions, any zero-loss solution satisfies the generalized Benamou&ndash;Brenier optimality system and recovers the corresponding p-optimal transport map and dynamics. On synthetic benchmarks, PMOT learns p-specific maps that agree with the corresponding p-matched OT references. It also remains competitive as a likelihood-based density model on high-dimensional tabular data, and an MMD-based color transformation experiment demonstrates flexible sample-based terminal matching.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTLesMix: Wasserstein Barycenter and Optimal Transport Map for Synthetic Lesion Generation with Diverse Shapes and Locations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-06264</link>
+    <guid isPermaLink="false">arxiv:2608.06264</guid>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Robin Trombetta et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The development of deep learning over the past decade has revolutionized medical imaging segmentation, allowing the extraction of precise descriptors from large volumes to characterize pathologies. Data augmentation is a technique widely regarded as a way to improve model training. It includes simple transformations like spatial operations or intensity modifications, but also more advanced synthesis techniques. Their goal is to generate new realistic samples from an existing dataset to diversify the images used during training. Among them, several propose different mixing strategies to combine real samples. However, one of their major shortcomings is to yield limited variability in terms of generated lesion shapes and locations. In this work, we introduce a novel image synthesis method, called OTLesMix, that leverages Wasserstein barycenter and optimal transport plan to generate realistic and diverse samples. We evaluated our method on three brain lesion segmentation tasks, on which it improves the Dice score compared to a model trained without synthetic data by 2.9 to 6.6 points, and outperforms state-of-the-art mix-based methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>MESH: Memory-Efficient Sinkhorn Optimization for Mixture-of-Experts Training</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-04407</link>
+    <guid isPermaLink="false">arxiv:2608.04407</guid>
+    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masato Fujitake</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Memory-efficient matrix optimizers such as Sinkhorn gradient descent remove most AdamW optimizer state for dense Transformer matrices, but direct application to Mixture-of-Experts (MoE) training is unreliable. We study this failure in a controlled 110M-parameter nanowhale DeepSeek-style MoE pretraining setting. A SAGE/Sinkhorn hybrid reduces optimizer state from 0.883GB to 0.331GB but degrades evaluation loss to 3.8265, far above the AdamW baselines observed in the same setup (3.58&ndash;3.64 across the seeds we study). We show that routed MoE expert matrices are the dominant failure point: their gradients are conditional, temporally varying, and poorly served by stateless Sinkhorn normalization. We propose MESH, a hidden-momentum Sinkhorn update for MoE experts. MESH restores a temporal first-moment signal through the gradient-buffer lifecycle, without storing the expert first moment as optimizer state. MESH is an optional block-preconditioned variant that adds a coarse neuron/block inverse-RMS multiplier. Across ablations, temporal smoothing before matrix normalization is the primary causal ingredient; block/neuron preconditioning can improve the memory-quality frontier, but is not established as universally necessary. In two additional seeds, MESH and MESH-B reduce optimizer-state memory by 62.5\% and peak PyTorch CUDA allocation by about 12.6\% relative to AdamW, with a modest evaluation-loss gap. Full-state diagnostic variants recover AdamW-like performance in ablations, supporting the conclusion that MoE experts need temporal smoothing, but not necessarily full coordinate-wise AdamW state.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GENESIS: Towards Explainable Causal Discovery</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-03868</link>
+    <guid isPermaLink="false">arxiv:2608.03868</guid>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhinav Thorat et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
+<p>Causal Discovery (CD) from observational data faces two fundamental challenges. First, purely statistical methods often lack the power to resolve structural ambiguities in low-sample regimes. Second, although LLM-assisted hybrid approaches improve structure recovery through semantic reasoning, the influence of that reasoning on individual edge decisions remains largely opaque. Consequently, existing hybrid methods fail to satisfy a fundamental requirement: explaining why a particular edge is included or excluded in the learned directed acyclic graph (DAG). This is critical in real-world applications, where no ground-truth DAG exists and every structural decision must be independently justified. We formalize this requirement as decision traceability, requiring every inferred edge to be supported by auditable statistical evidence, Markov Blanket consistency, or explicit domain reasoning. We propose GENESIS, an explainable hybrid CD framework that decomposes graph construction into interpretable decision points. GENESIS first identifies and scores three-node structural motifs, including chains, forks, and colliders, to establish transparent structural priors, then progressively refines the graph by integrating these priors with observational evidence, invoking domain knowledge only when statistical evidence is insufficient. By design, every edge decision is resolved through an auditable source of evidence. Experiments show that GENESIS achieves 100% decision traceability across all settings, establishing explainability as a first-class objective in causal discovery. Despite this additional requirement, GENESIS consistently outperforms purely statistical CD methods on the majority of benchmark datasets across all sample regimes in terms of Structural Hamming Distance (SHD), while achieving performance comparable to state-of-the-art LLM-assisted approaches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Multimodal Alignment Through Joint Kernel Entropic Gromov--Wasserstein Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-04234</link>
+    <guid isPermaLink="false">arxiv:2608.04234</guid>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Florence Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the problem of aligning data from multiple modalities into a shared representation space, focusing on settings where strong pretrained unimodal encoders are available but cross-modal paired data are scarce. We propose a structure-preserving alignment framework, joint kernel entropic Gromov&ndash;Wasserstein Optimal Transport (JK-EGW), which maps multiple modalities into a common latent space by minimizing a quadratic optimal transport objective. JK-EGW leverages fine-grained similarity relationships within and across modalities to construct a global affinity kernel instead of relying on raw feature-space distances. Our framework naturally provides explicit control over the geometry and distribution of the latent embedding. On the theory side, we establish parametric sample complexity rate of n⁻¹/2, matching the corresponding rates for standard, entropic and Gromov&ndash;Wasserstein optimal transport. On the algorithmic side, we derive a scalable alternating procedure to solve JK-EGW with entropic optimal transport (EOT) updates through a low-rank kernel approximation and a variational lifting. This lifting scheme effectively relieves the burden of a quadratic objective, and allowing us to take the advantage of existing EOT solvers. Empirically, we focus on post-hoc alignment of embeddings from pretrained encoders in data-scarce regimes, and show that our proposed method achieves improved multimodal retrieval performance compared to existing alignment baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein mixing time of the unadjusted Langevin algorithm</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-02430</link>
+    <guid isPermaLink="false">arxiv:2608.02430</guid>
+    <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Francesco Pedrotti et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We provide new estimates in Wasserstein distance for the asymptotic bias of the unadjusted Langevin algorithm, in the classical setting of log-smooth strongly log-concave measures. Our bound implies a Wasserstein mixing time of order κ√(d)/ε, where κ is the condition number, d is the dimension, and ε is the target precision: this improves by a factor of √(d)/ε over the previous state-of-the-art results.</p>]]></description>
+  </item>
 
   <item>
     <title>Descending into the Modular Bootstrap</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Di Wu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) is a widely used tool in machine learning, but computing high-accuracy solutions for large instances remains costly. Entropic regularization and the Sinkhorn algorithm improve scalability; however, when the regularization parameter is small, Sinkhorn convergence slows, and the iterates approach an entropic solution that remains separated from the true OT plan by an entropic-bias plateau. We introduce PINS (Proximal Iterations with sparse Newton and Sinkhorn), a two-loop solver designed to move beyond this plateau. The outer loop applies an entropic proximal-point method, solving the original OT problem through a sequence of entropic subproblems with shifted cost matrices. Each inner subproblem is then solved by a Sinkhorn warm-up followed by sparse-Newton refinement. We prove that PINS converges globally to an optimal solution of the unregularized OT problem and that the inner Hessian admits a sparsification at every outer iteration with a structure independent of the cost matrix. On synthetic and augmented-MNIST instances, PINS achieves much lower relative cost errors than Sinkhorn-type baselines, which stall at the entropic-bias plateau, and is 5&ndash;73× faster than Sinkhorn with the same outer loop at matched accuracy. On large-scale DOTmark instances, a streaming implementation reduces peak memory by 24&ndash;54% compared with the network-simplex linear programming (LP) solver and remains feasible under per-process memory budgets for which the LP solver fails.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport-Guided Adversarial Attacks on Graph Neural Network-Based Bot Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-00318</link>
-    <guid isPermaLink="false">arxiv:2602.00318</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kunal Mukherjee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The rise of bot accounts on social media poses significant risks to public discourse. To address this threat, modern bot detectors increasingly rely on Graph Neural Networks (GNNs). However, the effectiveness of these GNN-based detectors in real-world settings remains poorly understood. In practice, attackers continuously adapt their strategies as well as must operate under domain-specific and temporal constraints, which can fundamentally limit the applicability of existing attack methods. As a result, there is a critical need for robust GNN-based bot detection methods under realistic, constraint-aware attack scenarios. To address this gap, we introduce BOCLOAK to systematically evaluate the robustness of GNN-based social bot detection via both edge editing and node injection adversarial attacks under realistic constraints. BOCLOAK constructs a probability measure over spatio-temporal neighbor features and learns an optimal transport geometry that separates human and bot behaviors. It then decodes transport plans into sparse, plausible edge edits that evade detection while obeying real-world constraints. We evaluate BOCLOAK across three social bot datasets, five state-of-the-art bot detectors, three adversarial defenses, and compare it against four leading graph adversarial attack baselines. BOCLOAK achieves up to 80.13% higher attack success rates while using 99.80% less GPU memory under realistic real-world constraints. Most importantly, BOCLOAK shows that optimal transport provides a lightweight, principled framework for bridging the gap between adversarial attacks and real-world bot detection.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dissecting Jet-Tagger Through Mechanistic Interpretability</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09881</link>
-    <guid isPermaLink="false">arxiv:2605.09881</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saurabh Rai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy correlator, jet tagging, particle transformer) — original abstract; no AI summary.</em></p>
-<p>Mechanistic interpretability seeks to reverse engineer a trained neural network by identifying the minimal subset of internal components. We perform a mechanistic interpretability analysis of the Particle Transformer architecture, trained on the Top Quark Tagging reference dataset, with the goal of identifying the computational circuit responsible for jet classification and characterizing the physical content of its internal representations. Combining zero ablation, path patching with two complementary on-manifold corruption strategies and linear probing of the residual stream, we identify a sparse six-head circuit that recovers the great majority of the full model performance while admitting a clean source-relay-readout interpretation. In this circuit, a single early layer head serves as the primary causal source, a cluster of middle-layer heads acts as relays selectively attending to hard pairwise substructure and a single late-layer head reads out the aggregated signal. Linear probes show that the residual stream is preferentially aligned with the energy correlator basis over the N-subjettiness basis. Within the energy correlator basis, the model preferentially encodes 2-prong substructure observables over the 3-prong observables. A per-layer trained probe further reveals that the apparent single step commitment of the model to a classification decision in the first class attention block is in fact a basis rotation, with the discriminating signal already saturating in the particle attention stack. These results demonstrate that mechanistic interpretability methods developed for natural language models can be used for jet physics classifiers and indicate that gradient descent may rediscover physically meaningful aspects of jet tagging without supervision.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Differentially Private Sampling from Distributions via Wasserstein Projection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10015</link>
-    <guid isPermaLink="false">arxiv:2605.10015</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shokichi Takakura et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this paper, we study the problem of sampling from a distribution under the constraint of differential privacy (DP). Prior works measure the utility of DP sampling with density ratio-based measures such as KL divergence. However, such formulations suffer from two key limitations: 1) they fail to capture the geometric structure of the support, and 2) they are not applicable when the supports of the distributions differ. To deal with these issues, we develop a novel framework for DP sampling with Wasserstein distance as the utility measure. In this formulation, we propose Wasserstein Projection Mechanism (WPM), a minimax optimal mechanism based on Wasserstein projection. Furthermore, we develop efficient algorithms for computing the proposed mechanisms approximately and provide convergence guarantees.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Extended Wasserstein-GAN Approach to Causal Distribution Learning: Density-Free Estimation and Minimax Optimality</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10206</link>
-    <guid isPermaLink="false">arxiv:2605.10206</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shu Tamano et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Distributional causal inference requires estimating not only average treatment effects but also interventional outcome distributions, including quantiles, tail risks, and policy-dependent uncertainty. As a method for distributional causal inference, generative adversarial network (GAN)-based counterfactual methods are flexible tools for this task. However, these methods have several limitations. First, the objectives of certain techniques do not coincide with the statistical risk of the identifiable causal target, and therefore provide limited theoretical guarantees regarding estimable counterfactual distributions or optimality. Second, they tend to rely on unstable density-based methods, such as density ratio estimation. In this paper, we propose GANICE (GAN for Interventional Conditional Estimation) with several advantages: it (i) clarifies the conditional interventional distribution for each treatment&ndash;covariate state as the causal estimation target; (ii) estimates the conditional distribution such that its averaged Wasserstein risk is minimized; (iii) establishes minimax optimality. GANICE achieves these advantages through the introduction of the extended Wasserstein distance, the incorporation of a cellwise critic in its dual, and an optimality proof based on Besov space theory. Our experiments demonstrate that GANICE consistently outperforms existing methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reconfigurable Computing Challenge: Real-Time Graph Neural Networks for Online Event Selection in Big Science</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10612</link>
-    <guid isPermaLink="false">arxiv:2605.10612</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marc Neu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Graph neural networks are increasingly adopted in trigger systems for collider experiments, where strict latency and throughput constraints render deployment on embedded platforms challenging. As detectors move towards higher granularity, the number of inputs per inference increase and FPGA-only solutions face resource bottlenecks. This work presents an end-to-end demonstrator for the real-time deployment of a dynamic Graph Neural Network for the Belle II electromagnetic calorimeter hardware trigger on the AMD Versal VCK190, leveraging both FPGA fabric and AI Engine tiles. We develop a Python-based semi-automated design flow covering operator fusion, partitioning, mapping, spatial parallelization, and kernel-level optimization. Our design achieves a throughput of 2.94 million events per second at an end-to-end latency of 7.15 microseconds. Compared to the FPGA-only baseline, this represents a 53% throughput improvement while reducing DSP utilization from 99% to 19% at 29% AI Engine tile utilization. To validate the deployment, an interactive visualization pipeline enables real-time monitoring of inference results on the physical demonstrator.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal and Scalable MAPF via Multi-Marginal Optimal Transport and Schrödinger Bridges</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10917</link>
-    <guid isPermaLink="false">arxiv:2605.10917</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Usman A. Khan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We consider anonymous multi-agent path finding (MAPF) where a set of robots is tasked to travel to a set of targets on a finite, connected graph. We show that MAPF can be cast as a special class of multi-marginal optimal transport (MMOT) problems with an underlying Markovian structure, under which the exponentially large MMOT collapses to a linear program (LP) polynomial in size. Focusing on the anonymous setting, we establish conditions under which the corresponding LP is feasible, totally unimodular, and consequently, yields min-cost, integral ({0,1}) transports that do not overlap in both space and time. To adapt the approach to large-scale problems, we cast the MAPF-MMOT in a probabilistic framework via Schrödinger bridges. Under standard assumptions, we show that the Schrödinger bridge formulation reduces to an entropic regularization of the corresponding MMOT that admits an iterative Sinkhorn-type solution. The Schrödinger bridge, being a probabilistic framework, provides a shadow (fractional) transport that we use as a template to solve a reduced LP and demonstrate that it results in near-optimal, integral transports at a significant reduction in complexity. Extensive experiments highlight the optimality and scalability of the proposed approaches.</p>]]></description>
   </item>
 
 </channel>

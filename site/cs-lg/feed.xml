@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Model-Agnostic Search for New Physics in the Presence of Imperfect Background by Smearing the Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-40734</link>
+    <guid isPermaLink="false">arxiv:2610.40734</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheun Yi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>In the search for new particles in high-energy physics, it is necessary to first define the signal region (SR) enriched in signal events, and then compare events in this region with the expected background distribution. While most existing search methods rely on prior domain knowledge of either the signal or the background, there has been less effort to relax both assumptions simultaneously, as methods that weaken one assumption typically rely on strong knowledge of the other. We propose Model-Agnostic Search with Smearing and Imperfect Background (MASSIB), a method that addresses this challenge by learning the density ratio of events relative to a misspecified background distribution using modern tools from machine learning, and defining the SR as the region with high density ratio. Recognizing that a naive application of this idea introduces significant bias in background estimation when interpolating from the control region to the SR, MASSIB mitigates this issue by introducing a &ldquo;smeared&rdquo; density ratio, which can be learned efficiently through data-level manipulation and used to define an SR that allows for accurate background estimation. By applying it to various types of simulated Large Hadron Collider (LHC) events with realistic background mismodeling, we demonstrate that MASSIB identifies a data-driven SR that achieves high signal concentration consistently across different types of signals while avoiding bias in background estimation. The method does this without making strong assumptions about either the signal or background distribution. We then show that this robustness extends to the validity and strong statistical power of the resulting hypothesis tests for signal detection, demonstrating the potential of this approach for future model-agnostic searches at the LHC.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Coarse-Graining Optimal Transport for Rollout-Free Post-Training of Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-41269</link>
+    <guid isPermaLink="false">arxiv:2610.41269</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soon Hoe Lim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Flow matching depends critically on the coupling used to pair source and target samples. Optimal transport (OT) couplings can reduce velocity conflict and straighten trajectories; but, in practice, challenges remain: the source comes from a continuous distribution, only a finite number of target samples data are accessible, and the neural network has finite capacity. For these reasons, making the coupling more OT-like may not consistently improve sampling quality, in particular in the low number-of-function-evaluation (NFE) regime. Motivated by this, we introduce ReCouple, a controllable framework that constructs coarse-grained OT couplings, to better understand rollout-free OT-based post-training. We also consider extensions of this basic framework: ReCouple+ extends this toward the continuous-source setting by increasing source resolution, converging to semi-discrete OT in the appropriate limit; and ReCouple++ further adds spatial regularization, motivated by the observation that straight trajectories need not correspond to spatially simple velocity fields. Empirical validation demonstrates the effectiveness of these methods, and it reveals an NFE-dependent interplay between coupling optimality, neural realizability, and generation quality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FOCUS: First-Order Control Using Optimal Transport Supervision for Imitation from Observations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-41540</link>
+    <guid isPermaLink="false">arxiv:2610.41540</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jo\~ao A. C\^andido Ramos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Imitation learning from observations must recover behavior from state-only demonstrations without known temporal correspondence. Differentiable simulators provide pathwise policy gradients, but differentiating through long, contact-rich trajectories can make optimization unstable. We introduce FOCUS, which combines local optimal-transport alignment with short-horizon differentiable actor-critic learning. FOCUS matches agent rollout windows to multiple sampled expert segments using a soft best-of-K objective that emphasizes locally compatible matches. The resulting transport-based costs provide differentiable imitation rewards, while a learned critic bootstraps value beyond the rollout horizon. FOCUS requires neither temporally aligned trajectories nor expert-aligned initialization or teacher forcing. Across contact-rich locomotion tasks in DFlex, including a musculoskeletal humanoid controlled by 152 muscle activations, FOCUS improves sample efficiency and training stability over adversarial imitation-from-observation methods and prior differentiable imitation baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Underdamped Stochastic Optimal Transport with Landauer boundary conditions: machine learning and analytical solution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-41599</link>
+    <guid isPermaLink="false">arxiv:2610.41599</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julia Sanders et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Finding optimal transport protocols for underdamped stochastic processes is a difficult yet important problem in control theory. In this paper we develop a direct method, based on machine learning, to find the optimal solution of the problem in the presence of non-linear boundary conditions, including those modelling the Landauer bit-erasure problem. The dynamics is steered from a single-peak to a double-peak distribution in position space, by only acting on a controllable external potential. The problem is highly non-linear, and analytical solutions are not available in general. We benchmark our numerical results with a perturbative expansion, which is expected to hold in a suitable overdamped limit.</p>]]></description>
+  </item>
+
+  <item>
+    <title>WASABI: Wasserstein Sampling via Bridge Interpolants</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-41958</link>
+    <guid isPermaLink="false">arxiv:2610.41958</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Salazar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Sampling from Boltzmann distributions is a fundamental problem in physics, chemistry, and biology. We introduce WAsserstein SAmpling via Bridge Interpolants (WASABI), a method that trains a diffusion model to generate samples from a target Boltzmann distribution given access only to the energy function. WASABI minimizes the KL divergence between the distribution generated by its diffusion model and the Boltzmann target using Wasserstein gradient flows. This approach builds on a principle underlying classical sampling methods such as Langevin dynamics. However, applying Wasserstein gradient flows to diffusion models is challenging because the updates require the gradient of the model&rsquo;s own log density, which is generally intractable. We derive a practical training algorithm that avoids computing this gradient. Once trained, WASABI can generate new samples without further evaluations of the energy or its gradient. On alanine dipeptide, WASABI outperforms the best reported baselines using an estimated 3.3 times fewer energy evaluations. It also achieves competitive performance on interacting particle system benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Regret-Optimal Wasserstein-Robust Linear Regression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2610-42109</link>
+    <guid isPermaLink="false">arxiv:2610.42109</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Distributionally robust optimization (DRO) minimizes worst-case risk under distributional uncertainty, but its decisions can be suboptimal in terms of their excess risk, or regret. We study this gap for multivariate least-squares regression, assuming that the observed source law and unknown target law differ by an adversarial 2-Wasserstein perturbation of size ε. We first identify the asymptotic complexity of robust decision-making in the ε→0 limit, characterized by a problem-specific condition number κ. Here, a wide spectrum of simple algorithms, including DRO, achieve the instance-optimal rate of O(κε²⁾. For fixed ε&gt; 0, we prove that DRO still achieves the minimax rate if the problem has bounded residual effective rank. On the other hand, we identify significant failure modes where DRO is provably suboptimal by dimension-dependent factors. Fortunately, we prove that two alternative procedures, minimax regret optimization (MRO) and spectral-norm regularization (SNR), attain the minimax rate. We derive an exact convex reformulation of MRO and an accelerated proximal algorithm for SNR, along with high-probability finite-sample guarantees. We support these theoretical results with numerical experiments separating the performance of MRO and SNR from DRO.</p>]]></description>
+  </item>
 
   <item>
     <title>Learning Population Dynamics with Variational Doob-Wasserstein Flow</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhaoyu Zhu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Wasserstein policy gradient (WPG) updates state-conditional action laws by transport in the action space. We study entropy-regularized discounted linear-quadratic (LQ) control. A Bellman verification argument shows that the unrestricted problem has a linear-Gaussian optimal policy, and the discounted-occupancy-weighted statewise Wasserstein gradient is tangent to this policy class. WPG therefore reduces exactly to a finite-dimensional ODE for the feedback gain and action covariance. We prove that this ODE is globally well posed and converges exponentially from every admissible initialization. For each fixed LQ problem, the exponent has a positive limit as the entropy temperature tends to zero and contains no perturbative factor of the form exp(-c/τ), while retaining the usual dependence on the conditioning of the control problem.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Potential Matching Optimal Transport: Continuous Normalizing Flows for Exact p-Wasserstein Dynamics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-05666</link>
-    <guid isPermaLink="false">arxiv:2608.05666</guid>
-    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lishuo Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce Potential Matching Optimal Transport (PMOT), a potential-flow framework for general p-cost optimal transport with c_p(x,y)=x-y^p. PMOT parameterizes the CNF velocity field with a scalar potential in the generalized Benamou&ndash;Brenier form for the chosen exponent p. It trains the potential gradient with a self-induced matching loss along straight bridges determined by the model&rsquo;s own endpoints, while allowing flexible terminal distribution matching. Our main result establishes zero-loss exactness: under the stated regularity, exact terminal matching, and uniqueness assumptions, any zero-loss solution satisfies the generalized Benamou&ndash;Brenier optimality system and recovers the corresponding p-optimal transport map and dynamics. On synthetic benchmarks, PMOT learns p-specific maps that agree with the corresponding p-matched OT references. It also remains competitive as a likelihood-based density model on high-dimensional tabular data, and an MMD-based color transformation experiment demonstrates flexible sample-based terminal matching.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTLesMix: Wasserstein Barycenter and Optimal Transport Map for Synthetic Lesion Generation with Diverse Shapes and Locations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-06264</link>
-    <guid isPermaLink="false">arxiv:2608.06264</guid>
-    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Robin Trombetta et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The development of deep learning over the past decade has revolutionized medical imaging segmentation, allowing the extraction of precise descriptors from large volumes to characterize pathologies. Data augmentation is a technique widely regarded as a way to improve model training. It includes simple transformations like spatial operations or intensity modifications, but also more advanced synthesis techniques. Their goal is to generate new realistic samples from an existing dataset to diversify the images used during training. Among them, several propose different mixing strategies to combine real samples. However, one of their major shortcomings is to yield limited variability in terms of generated lesion shapes and locations. In this work, we introduce a novel image synthesis method, called OTLesMix, that leverages Wasserstein barycenter and optimal transport plan to generate realistic and diverse samples. We evaluated our method on three brain lesion segmentation tasks, on which it improves the Dice score compared to a model trained without synthetic data by 2.9 to 6.6 points, and outperforms state-of-the-art mix-based methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MESH: Memory-Efficient Sinkhorn Optimization for Mixture-of-Experts Training</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-04407</link>
-    <guid isPermaLink="false">arxiv:2608.04407</guid>
-    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masato Fujitake</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Memory-efficient matrix optimizers such as Sinkhorn gradient descent remove most AdamW optimizer state for dense Transformer matrices, but direct application to Mixture-of-Experts (MoE) training is unreliable. We study this failure in a controlled 110M-parameter nanowhale DeepSeek-style MoE pretraining setting. A SAGE/Sinkhorn hybrid reduces optimizer state from 0.883GB to 0.331GB but degrades evaluation loss to 3.8265, far above the AdamW baselines observed in the same setup (3.58&ndash;3.64 across the seeds we study). We show that routed MoE expert matrices are the dominant failure point: their gradients are conditional, temporally varying, and poorly served by stateless Sinkhorn normalization. We propose MESH, a hidden-momentum Sinkhorn update for MoE experts. MESH restores a temporal first-moment signal through the gradient-buffer lifecycle, without storing the expert first moment as optimizer state. MESH is an optional block-preconditioned variant that adds a coarse neuron/block inverse-RMS multiplier. Across ablations, temporal smoothing before matrix normalization is the primary causal ingredient; block/neuron preconditioning can improve the memory-quality frontier, but is not established as universally necessary. In two additional seeds, MESH and MESH-B reduce optimizer-state memory by 62.5\% and peak PyTorch CUDA allocation by about 12.6\% relative to AdamW, with a modest evaluation-loss gap. Full-state diagnostic variants recover AdamW-like performance in ablations, supporting the conclusion that MoE experts need temporal smoothing, but not necessarily full coordinate-wise AdamW state.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GENESIS: Towards Explainable Causal Discovery</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-03868</link>
-    <guid isPermaLink="false">arxiv:2608.03868</guid>
-    <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhinav Thorat et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (colliders) — original abstract; no AI summary.</em></p>
-<p>Causal Discovery (CD) from observational data faces two fundamental challenges. First, purely statistical methods often lack the power to resolve structural ambiguities in low-sample regimes. Second, although LLM-assisted hybrid approaches improve structure recovery through semantic reasoning, the influence of that reasoning on individual edge decisions remains largely opaque. Consequently, existing hybrid methods fail to satisfy a fundamental requirement: explaining why a particular edge is included or excluded in the learned directed acyclic graph (DAG). This is critical in real-world applications, where no ground-truth DAG exists and every structural decision must be independently justified. We formalize this requirement as decision traceability, requiring every inferred edge to be supported by auditable statistical evidence, Markov Blanket consistency, or explicit domain reasoning. We propose GENESIS, an explainable hybrid CD framework that decomposes graph construction into interpretable decision points. GENESIS first identifies and scores three-node structural motifs, including chains, forks, and colliders, to establish transparent structural priors, then progressively refines the graph by integrating these priors with observational evidence, invoking domain knowledge only when statistical evidence is insufficient. By design, every edge decision is resolved through an auditable source of evidence. Experiments show that GENESIS achieves 100% decision traceability across all settings, establishing explainability as a first-class objective in causal discovery. Despite this additional requirement, GENESIS consistently outperforms purely statistical CD methods on the majority of benchmark datasets across all sample regimes in terms of Structural Hamming Distance (SHD), while achieving performance comparable to state-of-the-art LLM-assisted approaches.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multimodal Alignment Through Joint Kernel Entropic Gromov--Wasserstein Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-04234</link>
-    <guid isPermaLink="false">arxiv:2608.04234</guid>
-    <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Florence Wu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the problem of aligning data from multiple modalities into a shared representation space, focusing on settings where strong pretrained unimodal encoders are available but cross-modal paired data are scarce. We propose a structure-preserving alignment framework, joint kernel entropic Gromov&ndash;Wasserstein Optimal Transport (JK-EGW), which maps multiple modalities into a common latent space by minimizing a quadratic optimal transport objective. JK-EGW leverages fine-grained similarity relationships within and across modalities to construct a global affinity kernel instead of relying on raw feature-space distances. Our framework naturally provides explicit control over the geometry and distribution of the latent embedding. On the theory side, we establish parametric sample complexity rate of n⁻¹/2, matching the corresponding rates for standard, entropic and Gromov&ndash;Wasserstein optimal transport. On the algorithmic side, we derive a scalable alternating procedure to solve JK-EGW with entropic optimal transport (EOT) updates through a low-rank kernel approximation and a variational lifting. This lifting scheme effectively relieves the burden of a quadratic objective, and allowing us to take the advantage of existing EOT solvers. Empirically, we focus on post-hoc alignment of embeddings from pretrained encoders in data-scarce regimes, and show that our proposed method achieves improved multimodal retrieval performance compared to existing alignment baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein mixing time of the unadjusted Langevin algorithm</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-02430</link>
-    <guid isPermaLink="false">arxiv:2608.02430</guid>
-    <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Francesco Pedrotti et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We provide new estimates in Wasserstein distance for the asymptotic bias of the unadjusted Langevin algorithm, in the classical setting of log-smooth strongly log-concave measures. Our bound implies a Wasserstein mixing time of order κ√(d)/ε, where κ is the condition number, d is the dimension, and ε is the target precision: this improves by a factor of √(d)/ε over the previous state-of-the-art results.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport-Guided Adversarial Attacks on Graph Neural Network-Based Bot Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-00318</link>
+    <guid isPermaLink="false">arxiv:2602.00318</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kunal Mukherjee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The rise of bot accounts on social media poses significant risks to public discourse. To address this threat, modern bot detectors increasingly rely on Graph Neural Networks (GNNs). However, the effectiveness of these GNN-based detectors in real-world settings remains poorly understood. In practice, attackers continuously adapt their strategies as well as must operate under domain-specific and temporal constraints, which can fundamentally limit the applicability of existing attack methods. As a result, there is a critical need for robust GNN-based bot detection methods under realistic, constraint-aware attack scenarios. To address this gap, we introduce BOCLOAK to systematically evaluate the robustness of GNN-based social bot detection via both edge editing and node injection adversarial attacks under realistic constraints. BOCLOAK constructs a probability measure over spatio-temporal neighbor features and learns an optimal transport geometry that separates human and bot behaviors. It then decodes transport plans into sparse, plausible edge edits that evade detection while obeying real-world constraints. We evaluate BOCLOAK across three social bot datasets, five state-of-the-art bot detectors, three adversarial defenses, and compare it against four leading graph adversarial attack baselines. BOCLOAK achieves up to 80.13% higher attack success rates while using 99.80% less GPU memory under realistic real-world constraints. Most importantly, BOCLOAK shows that optimal transport provides a lightweight, principled framework for bridging the gap between adversarial attacks and real-world bot detection.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Dissecting Jet-Tagger Through Mechanistic Interpretability</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09881</link>
+    <guid isPermaLink="false">arxiv:2605.09881</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saurabh Rai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (energy correlator, jet tagging, particle transformer) — original abstract; no AI summary.</em></p>
+<p>Mechanistic interpretability seeks to reverse engineer a trained neural network by identifying the minimal subset of internal components. We perform a mechanistic interpretability analysis of the Particle Transformer architecture, trained on the Top Quark Tagging reference dataset, with the goal of identifying the computational circuit responsible for jet classification and characterizing the physical content of its internal representations. Combining zero ablation, path patching with two complementary on-manifold corruption strategies and linear probing of the residual stream, we identify a sparse six-head circuit that recovers the great majority of the full model performance while admitting a clean source-relay-readout interpretation. In this circuit, a single early layer head serves as the primary causal source, a cluster of middle-layer heads acts as relays selectively attending to hard pairwise substructure and a single late-layer head reads out the aggregated signal. Linear probes show that the residual stream is preferentially aligned with the energy correlator basis over the N-subjettiness basis. Within the energy correlator basis, the model preferentially encodes 2-prong substructure observables over the 3-prong observables. A per-layer trained probe further reveals that the apparent single step commitment of the model to a classification decision in the first class attention block is in fact a basis rotation, with the discriminating signal already saturating in the particle attention stack. These results demonstrate that mechanistic interpretability methods developed for natural language models can be used for jet physics classifiers and indicate that gradient descent may rediscover physically meaningful aspects of jet tagging without supervision.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Differentially Private Sampling from Distributions via Wasserstein Projection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10015</link>
+    <guid isPermaLink="false">arxiv:2605.10015</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shokichi Takakura et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we study the problem of sampling from a distribution under the constraint of differential privacy (DP). Prior works measure the utility of DP sampling with density ratio-based measures such as KL divergence. However, such formulations suffer from two key limitations: 1) they fail to capture the geometric structure of the support, and 2) they are not applicable when the supports of the distributions differ. To deal with these issues, we develop a novel framework for DP sampling with Wasserstein distance as the utility measure. In this formulation, we propose Wasserstein Projection Mechanism (WPM), a minimax optimal mechanism based on Wasserstein projection. Furthermore, we develop efficient algorithms for computing the proposed mechanisms approximately and provide convergence guarantees.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Extended Wasserstein-GAN Approach to Causal Distribution Learning: Density-Free Estimation and Minimax Optimality</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10206</link>
+    <guid isPermaLink="false">arxiv:2605.10206</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shu Tamano et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Distributional causal inference requires estimating not only average treatment effects but also interventional outcome distributions, including quantiles, tail risks, and policy-dependent uncertainty. As a method for distributional causal inference, generative adversarial network (GAN)-based counterfactual methods are flexible tools for this task. However, these methods have several limitations. First, the objectives of certain techniques do not coincide with the statistical risk of the identifiable causal target, and therefore provide limited theoretical guarantees regarding estimable counterfactual distributions or optimality. Second, they tend to rely on unstable density-based methods, such as density ratio estimation. In this paper, we propose GANICE (GAN for Interventional Conditional Estimation) with several advantages: it (i) clarifies the conditional interventional distribution for each treatment&ndash;covariate state as the causal estimation target; (ii) estimates the conditional distribution such that its averaged Wasserstein risk is minimized; (iii) establishes minimax optimality. GANICE achieves these advantages through the introduction of the extended Wasserstein distance, the incorporation of a cellwise critic in its dual, and an optimality proof based on Besov space theory. Our experiments demonstrate that GANICE consistently outperforms existing methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reconfigurable Computing Challenge: Real-Time Graph Neural Networks for Online Event Selection in Big Science</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10612</link>
+    <guid isPermaLink="false">arxiv:2605.10612</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marc Neu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Graph neural networks are increasingly adopted in trigger systems for collider experiments, where strict latency and throughput constraints render deployment on embedded platforms challenging. As detectors move towards higher granularity, the number of inputs per inference increase and FPGA-only solutions face resource bottlenecks. This work presents an end-to-end demonstrator for the real-time deployment of a dynamic Graph Neural Network for the Belle II electromagnetic calorimeter hardware trigger on the AMD Versal VCK190, leveraging both FPGA fabric and AI Engine tiles. We develop a Python-based semi-automated design flow covering operator fusion, partitioning, mapping, spatial parallelization, and kernel-level optimization. Our design achieves a throughput of 2.94 million events per second at an end-to-end latency of 7.15 microseconds. Compared to the FPGA-only baseline, this represents a 53% throughput improvement while reducing DSP utilization from 99% to 19% at 29% AI Engine tile utilization. To validate the deployment, an interactive visualization pipeline enables real-time monitoring of inference results on the physical demonstrator.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal and Scalable MAPF via Multi-Marginal Optimal Transport and Schrödinger Bridges</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-10917</link>
+    <guid isPermaLink="false">arxiv:2605.10917</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Usman A. Khan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We consider anonymous multi-agent path finding (MAPF) where a set of robots is tasked to travel to a set of targets on a finite, connected graph. We show that MAPF can be cast as a special class of multi-marginal optimal transport (MMOT) problems with an underlying Markovian structure, under which the exponentially large MMOT collapses to a linear program (LP) polynomial in size. Focusing on the anonymous setting, we establish conditions under which the corresponding LP is feasible, totally unimodular, and consequently, yields min-cost, integral ({0,1}) transports that do not overlap in both space and time. To adapt the approach to large-scale problems, we cast the MAPF-MMOT in a probabilistic framework via Schrödinger bridges. Under standard assumptions, we show that the Schrödinger bridge formulation reduces to an entropic regularization of the corresponding MMOT that admits an iterative Sinkhorn-type solution. The Schrödinger bridge, being a probabilistic framework, provides a shadow (fractional) transport that we use as a template to solve a reduced LP and demonstrate that it results in near-optimal, integral transports at a significant reduction in complexity. Extensive experiments highlight the optimality and scalability of the proposed approaches.</p>]]></description>
+  </item>
 
   <item>
     <title>Neural Cluster First, Route Second: One-Shot Capacitated Vehicle Routing via Differentiable Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Md Abrar Jahin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, gluon jet, gluon jets, collider) — original abstract; no AI summary.</em></p>
 <p>In high-energy physics, particle jet tagging plays a pivotal role in distinguishing quark from gluon jets using data from collider experiments. While graph-based deep learning methods have advanced this task beyond traditional feature-engineered approaches, the complex data structure and limited labeled samples present ongoing challenges. More broadly, our primary focus is the development of a rationale-aware graph contrastive learning framework designed to operate under strict resource constraints; we use quark-gluon jet discrimination as a representative and practically relevant use case. However, existing contrastive learning (CL) frameworks struggle to leverage rationale-aware augmentations effectively, often lacking supervision signals that guide the extraction of salient features and facing computational efficiency issues such as high parameter counts. In this study, we demonstrate that integrating a quantum rationale generator (QRG) within our proposed Quantum Rationale-aware Graph Contrastive Learning (QRGCL) framework enables competitive jet discrimination performance, particularly in parameter-constrained settings, reducing reliance on labeled data, and capturing rationale-aware features. Evaluated on the quark-gluon jet dataset, QRGCL achieves an AUC score of 77.5% while maintaining a compact architecture of only 45 QRG parameters, achieving competitive performance compared to classical, quantum, and hybrid benchmarks. These results highlight QRGCL&rsquo;s potential to advance jet tagging and other complex classification tasks in high-energy physics, where computational efficiency and limitations in feature extraction persist.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Thermodynamic structure of the Sinkhorn flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-12639</link>
-    <guid isPermaLink="false">arxiv:2510.12639</guid>
-    <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anand Srinivasan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Entropy-regularized optimal transport, which has strong links to the Schrödinger bridge problem in statistical mechanics, enjoys a variety of applications from trajectory inference to generative modeling. A major driver of renewed interest in this problem is the recent development of fast matrix-scaling algorithms\textemdash known as iterative proportional fitting or the Sinkhorn algorithm\textemdash for entropic optimal transport, which have favorable complexity over traditional approaches to the unregularized problem. Here, we take a perspective on this algorithm rooted in the thermodynamic origins of Schrödinger&rsquo;s problem and inspired by the modern geometric theory of diffusion: is the Sinkhorn flow (viewed in continuous-time as a mirror descent by recent results) the gradient flow of entropy in a formal Riemannian geometry? We answer this question affirmatively, finding a nonlocal Wasserstein gradient structure in the dynamics of its free marginal. This offers a physical interpretation of the Sinkhorn flow as the stochastic dynamics of a particle with law evolving by the nonlocal diffusion of a chemical potential. Simultaneously, it brings a standard suite of functional inequalities characterizing Markov diffusion processes to bear upon its geometry and convergence. We prove an entropy-energy (de Bruijn) identity, a Poincaré inequality, and a Bakry-Émery-type condition under which a logarithmic Sobolev inequality (LSI) holds and implies exponential convergence of the Sinkhorn flow in entropy. We lastly discuss computational applications such as stopping heuristics and latent-space design criteria leveraging the LSI and, returning to the physical interpretation, the possibility of natural systems whose relaxation to equilibrium inherently solves entropic optimal transport or Schrödinger bridge problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>AutoSciDACT: Automated Scientific Discovery through Contrastive Embedding and Hypothesis Testing</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-21935</link>
-    <guid isPermaLink="false">arxiv:2510.21935</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Bright-Thonney et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Novelty detection in large scientific datasets faces two key challenges: the noisy and high-dimensional nature of experimental data, and the necessity of making statistically robust statements about any observed outliers. While there is a wealth of literature on anomaly detection via dimensionality reduction, most methods do not produce outputs compatible with quantifiable claims of scientific discovery. In this work we directly address these challenges, presenting the first step towards a unified pipeline for novelty detection adapted for the rigorous statistical demands of science. We introduce AutoSciDACT (Automated Scientific Discovery with Anomalous Contrastive Testing), a general-purpose pipeline for detecting novelty in scientific data. AutoSciDACT begins by creating expressive low-dimensional data representations using a contrastive pre-training, leveraging the abundance of high-quality simulated data in many scientific domains alongside expertise that can guide principled data augmentation strategies. These compact embeddings then enable an extremely sensitive machine learning-based two-sample test using the New Physics Learning Machine (NPLM) framework, which identifies and statistically quantifies deviations in observed data relative to a reference distribution (null hypothesis). We perform experiments across a range of astronomical, physical, biological, image, and synthetic datasets, demonstrating strong sensitivity to small injections of anomalous data across all domains.</p>]]></description>
-  </item>
-
-  <item>
-    <title>EveNet: A Foundation Model for Particle Collision Data Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-17126</link>
-    <guid isPermaLink="false">arxiv:2601.17126</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ting-Hsiang Hsu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider, colliders, Ben Nachman, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
-<p>While deep learning is transforming data analysis in high-energy physics, computational challenges limit its potential. We address these challenges in the context of collider physics by introducing EveNet, an event-level foundation model pretrained on 500 million simulated collision events using a hybrid objective of self-supervised learning and physics-informed supervision. By leveraging a shared particle-cloud representation, EveNet outperforms state-of-the-art baselines across diverse tasks, including searches for heavy resonances and exotic Higgs decays, and demonstrates exceptional data efficiency in low-statistics regimes. Crucially, we validate the transferability of the model to experimental data by rediscovering the Υ meson in CMS Open Data and show its capacity for precision physics through the robust extraction of quantum correlation observables stable against systematic uncertainties. These results indicate that EveNet can successfully encode the fundamental physical structure of particle interactions, which offers a unified and resource-efficient framework to accelerate discovery at current and future colliders.</p>]]></description>
-  </item>
-
-  <item>
-    <title>JetFormer: A Scalable and Efficient Transformer for Jet Tagging from Offline Analysis to FPGA Triggers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-17215</link>
-    <guid isPermaLink="false">arxiv:2601.17215</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ruoqing Zheng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, jet taggers, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>We present JetFormer, a versatile and scalable encoder-only Transformer architecture for particle jet tagging at the Large Hadron Collider (LHC). Unlike prior approaches that are often tailored to specific deployment regimes, JetFormer is designed to operate effectively across the full spectrum of jet tagging scenarios, from high-accuracy offline analysis to ultra-low-latency online triggering. The model processes variable-length sets of particle features without relying on input of explicit pairwise interactions, yet achieves competitive or superior performance compared to state-of-the-art methods. On the large-scale JetClass dataset, a large-scale JetFormer matches the accuracy of the interaction-rich ParT model (within 0.7%) while using 37.4% fewer FLOPs, demonstrating its computational efficiency and strong generalization. On benchmark HLS4ML 150P datasets, JetFormer consistently outperforms existing models such as MLPs, Deep Sets, and Interaction Networks by 3-4% in accuracy. To bridge the gap to hardware deployment, we further introduce a hardware-aware optimization pipeline based on multi-objective hyperparameter search, yielding compact variants like JetFormer-tiny suitable for FPGA-based trigger systems with sub-microsecond latency requirements. Through structured pruning and quantization, we show that JetFormer can be aggressively compressed with minimal accuracy loss. By unifying high-performance modeling and deployability within a single architectural framework, JetFormer provides a practical pathway for deploying Transformer-based jet taggers in both offline and online environments at the LHC. Code is available at https://github.com/walkieq/JetFormer.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GSINA: Improving Subgraph Extraction for Graph Invariant Learning via Graph Sinkhorn Attention</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2402-07191</link>
-    <guid isPermaLink="false">arxiv:2402.07191</guid>
-    <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junchi Yan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Graph invariant learning (GIL) seeks invariant relations between graphs and labels under distribution shifts. Recent works try to extract an invariant subgraph to improve out-of-distribution (OOD) generalization, yet existing approaches either lack explicit control over compactness or rely on hard top-k selection that shrinks the solution space and is only partially differentiable. In this paper, we provide an in-depth analysis of the drawbacks of some existing works and propose a few general principles for invariant subgraph extraction: 1) separability, as encouraged by our sparsity-driven mechanism, to filter out the irrelevant common features; 2) softness, for a broader solution space; and 3) differentiability, for a soundly end-to-end optimization pipeline. Specifically, building on optimal transport, we propose Graph Sinkhorn Attention (GSINA), a fully differentiable, cardinality-constrained attention mechanism that assigns sparse-yet-soft edge weights via Sinkhorn iterations and induces node attention. GSINA provides explicit controls for separability and softness, and uses a Gumbel reparameterization to stabilize training. It convergence behavior is also theoretically studied. Extensive empirical experimental results on both synthetic and real-world</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein multivariate auto-regressive models for modeling distributional time series</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2207-05442</link>
-    <guid isPermaLink="false">arxiv:2207.05442</guid>
-    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yiye Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper is focused on the statistical analysis of data consisting of a collection of multiple series of probability measures that are indexed by distinct time instants and supported over a bounded interval of the real line. By modeling these time-dependent probability measures as random objects in the Wasserstein space, we propose a new auto-regressive model for the statistical analysis of multivariate distributional time series. Using the theory of iterated random function systems, results on the second order stationarity of the solution of such a model are provided. We also propose a consistent estimator for the auto-regressive coefficients of this model. Due to the simplex constraints that we impose on the model coefficients, the proposed estimator that is learned under these constraints, naturally has a sparse structure. The sparsity allows the application of the proposed model in learning a graph of temporal dependency from multivariate distributional time series. We explore the numerical performances of our estimation procedure using simulated data. To shed some light on the benefits of our approach for real data analysis, we also apply this methodology to two data sets, respectively made of observations from age distribution in different countries and those from the bike sharing network in Paris.</p>]]></description>
   </item>
 
 </channel>
