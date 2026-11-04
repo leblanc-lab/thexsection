@@ -7,7 +7,36 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Measurement of |V_cb| using tt̄ events at √s = 13 TeV</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-01274</link>
+    <guid isPermaLink="false">arxiv:2611.01274</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
+    <description><![CDATA[<p><strong>Result.</strong> With 138 fb⁻¹ of lepton+jets data, CMS measures |V_cb| = [4.59 +0.44/−0.48 (stat) +0.64/−0.76 (syst)]×10⁻² from W→cb in tt̄. That is r = 1.27 +0.46/−0.44, against an expected 4.07×10⁻². It is more precise than ATLAS (5.0 +1.1/−1.4).</p>
+<p><strong>Jet-relevant methods.</strong>
+- <strong>Two-stage XGBoost jet–parton assignment.</strong> The first BDT deliberately omits the DeepJet scores of the W-daughter candidates, so it doesn&rsquo;t pull g→bb̄ radiation into the W. The second BDT uses those scores only to resolve up/down ordering.
+- <strong>Assignment performance.</strong> Correct-assignment efficiency is 67% for cb versus 86% for ud. Radiative heavy-flavor contamination is 6–10%.
+- <strong>Discriminant.</strong> A TabNet discriminant is driven mainly by the W-daughter B scores. There is no dedicated c-tagger, and the c-jet scale factor is fixed to 1 with conservative uncertainties decorrelated in three p_T bins.
+- <strong>Gluon-splitting proxies.</strong> min m_bb and min ΔR_bb rank fifth in importance and below.</p>
+<p><strong>Systematics.</strong> The leading term is μ_R/μ_F (±0.25 on r), mostly from the 4FS tt̄bb̄ prediction. The 4FS and 5FS fits differ by Δr = 0.19, which is 0.88σ in a bootstrap test. For a jets person, the interest is that g→bb̄ and heavy-flavor modelling limit a flavor-physics measurement.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Reinforcement Learning in High-Energy Physics: A Survey</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-02049</link>
+    <guid isPermaLink="false">arxiv:2611.02049</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luca Anzalone</dc:creator>
+    <description><![CDATA[<p><strong>Coverage limit.</strong> The supplied text truncates before the dedicated jet section (§5). This summary therefore uses only the abstract and the background chapter.</p>
+<p><strong>Jet content visible so far.</strong> The survey covers three jet applications:
+- <strong>RL grooming:</strong> node-by-node decisions along the clustering tree.
+- <strong>MCTS-based hierarchical clustering:</strong> reconstructing the most probable shower history.
+- <strong>Constituent ordering:</strong> ordering particles for downstream classifiers.</p>
+<p>It notes that grooming rewards favoring removal of soft wide-angle radiation are only a qualitative proxy for IRC safety. It also flags reward hacking that breaks IRC safety as a failure mode. No head-to-head jet benchmarks are visible in the provided text. Jets are one of seven domains in the survey, so revisit §5 before drawing conclusions.</p>]]></description>
+  </item>
 
   <item>
     <title>Reconstruct everything everywhere all at once: An end-to-end model for future colliders</title>
@@ -1013,7 +1042,7 @@
     <guid isPermaLink="false">arxiv:2609.36523</guid>
     <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuo Lin et al.</dc:creator>
-    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -2903,26 +2932,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fabrizio Napolitano et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet substructure, Lund plane, W tagging) — abstract only, not yet read for a briefing.</em></p>
 <p>The application of quantum algorithms to jet substructure analysis is of growing interest as NISQ hardware continues to mature in qubit count and gate depth. Jet substructure remains essential for addressing demanding and complementary challenges at the LHC and beyond, notably object classification and polarization tagging. However, existing quantum machine learning approaches typically rely on data representations that suffer from infrared and collinear unsafety, sensitivity to non-perturbative effects, or poor scalability. In this work, we introduce the Lund Plane to Bloch (LP2B) encoding, designed to map a theoretically clean and robust representation of jet kinematics directly into qubit states. Leveraging this encoding, we implement a Quantum Tree-Topology Network (QTTN) that natively embeds the hierarchical structure of the Lund tree. We evaluate the QTTN across multiple benchmarks and observe that it matches the performance of large classical deep learning architectures, such as LundNet, on polarization tagging, while maintaining competitive accuracy for W boson and top quark tagging. The architecture demonstrates enhanced sensitivity compared to standard 1P1Q encodings on both polarization and W tagging, and pushes the Pareto front when compared against MLP of similar size and BDTs. Remarkably, the QTTN requires three orders of magnitude fewer parameters than LundNet, demonstrating promises for low-latency FPGA implementations in trigger systems. Furthermore, the QTTN outperforms classical methods in the low-data regime, making it suitable for low-yield, data-driven analyses. We also find that the quantum model is less susceptible to overfitting generator-specific parton shower and hadronization models than classical deep learning approaches, pointing toward potentially smaller systematic uncertainties. We validate the QTTN on real quantum hardware using a 3-qubit SpinQ device.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Operator structure of power corrections and anomalous scaling in energy correlators</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-11967</link>
-    <guid isPermaLink="false">arxiv:2604.11967</guid>
-    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hao Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy-energy correlator, energy correlator, energy correlators) — abstract only, not yet read for a briefing.</em></p>
-<p>Energy correlators offer a clean probe of quantum chromodynamics, serving as an ideal laboratory to rigorously investigate non-perturbative power corrections. The recent discovery that linear corrections exhibit a universal anomalous scaling points to a deep, underlying theoretical structure. We uncover the quantum field-theoretic origin of this phenomenon in the energy-energy correlator using light-ray operators. Through an explicit loop calculation, we derive the one-loop anomalous dimension, revealing that the dijet operator must be combined with a specific triple-jet component. This provides a first-principles framework that connects operator theory with high-precision collider phenomenology.</p>]]></description>
-  </item>
-
-  <item>
-    <title>From Vacuum to Nucleon: Fixed-j Kernel Matching of Holographic Current Correlators to QCD</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-12037</link>
-    <guid isPermaLink="false">arxiv:2604.12037</guid>
-    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kiminad A. Mamo</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (quark/gluon) — abstract only, not yet read for a briefing.</em></p>
-<p>We show that the normalized non-normalizable photon profile fixed by the vacuum vector-current two-point function, when inserted into the fixed-j hadronic Witten diagram, produces the fixed-j conformal hard kernel in the leading-twist singlet vector channel of deeply virtual Compton scattering (DVCS) and double deeply virtual Compton scattering (DDVCS). For the near-boundary Brower&ndash;Polchinski&ndash;Strassler&ndash;Tan closed-string upper vertex, the Witten diagram yields the Gauss-hypergeometric Wilson-kernel family of the QCD conformal OPE, with the Mellin exponent derived from the explicit z-power count δ_c(j)=j+Δ_c(j)-2, not inserted as an ansatz. The lower Witten vertex is matched to, or provides a holographic representation of, the nonperturbative conformal moment; it is not a new hard kernel or a freely adjustable skewness profile. The matching is TT-projected, kernel-level, and fixed-scale in the conformal partial-wave/CS representation: finite coefficient normalizations, spin-j source normalizations, scale factors, and lower hadronic matrix elements remain matched inputs. Together with the Nishio&ndash;Watari open branch and the protected/unprotected j=2 split, this structurally identifies the protected closed branch with the (-) conformal partial wave and the even open branch with the unprotected (+) counterpart in the projected fixed-j singlet vector amplitude; these are mixed singlet eigenchannels, not literal unmixed quark/gluon operators at finite N_c. The conformal/Gegenbauer basis used in generalized parton distribution (GPD) deconvolution therefore has a second ultraviolet origin: it is selected both by the QCD OPE and by the near-boundary AdS Witten vertex.</p>]]></description>
   </item>
 
 </channel>

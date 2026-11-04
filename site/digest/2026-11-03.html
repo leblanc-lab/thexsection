@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday, November 3, 2026 — The Cross Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true},{left:'$$',right:'$$',display:true}],throwOnError:false});"></script>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" type="application/rss+xml" title="The Cross Section" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%23ffb454' stroke-width='9'/><circle cx='50' cy='12' r='9' fill='%23ff5e78'/></svg>">
+</head>
+<body>
+<header class="masthead">
+  <div class="beamline" aria-hidden="true"></div>
+  <a class="wordmark" href="../index.html">The Cross&nbsp;<em>Section</em></a>
+  <p class="tagline">An AI-powered digest and trend analysis of hep-ex and hep-ph</p>
+  <nav>
+    <a href="../index.html">Today</a>
+    <a href="../archive.html">Back issues</a>
+    <a href="../radar.html">Radar</a>
+    <a href="../deep-dives/index.html">Deep dives</a>
+    <a href="../memory.html">Long view</a>
+    <a class="subscribe" href="https://thexsection.substack.com" target="_blank" rel="noopener">Subscribe</a>
+  </nav>
+</header>
+<main>
+
+<article class="issue">
+  <p class="kicker">Issue of</p>
+  <h1 class="issue-date">Tuesday, November 3, 2026</h1>
+  <div class="meta">
+    <span class="count">93 papers read</span>
+    <span class="chip">Run 3 rare decays</span><span class="chip">Vcb from W decays</span><span class="chip">Trigger-scale ML</span><span class="chip">Which transitions complete</span><span class="chip">Agents with provenance</span>
+  </div>
+  <h2 id="upgrade-is-first-rare-decay-result">Upgrade I&rsquo;s first rare-decay result</h2>
+<p>LHCb <a href="https://arxiv.org/abs/2611.00230">arXiv:2611.00230</a> uses 18 fb⁻¹ of 2024–25 data from the upgraded detector for three results:</p>
+<ul>
+<li>the first single-experiment evidence for <span class="arithmatex">\(B^0\to\mu^+\mu^-\)</span>;</li>
+<li>the world&rsquo;s most precise <span class="arithmatex">\(B_s^0\to\mu^+\mu^-\)</span> branching fraction;</li>
+<li>the most precise <span class="arithmatex">\(B_s^0\to\mu^+\mu^-\)</span> effective lifetime.</li>
+</ul>
+<p>All three agree with the SM, alone and combined with Runs 1–2. That fits the season&rsquo;s split in flavor. The cleanest exclusive channels keep landing on the SM, while the live tensions sit in <span class="arithmatex">\(C_9\)</span> and <span class="arithmatex">\(|V_{cb}|\)</span>. The abstract gives no numbers, so open the paper to see how far Run 3 moves things. CMS adds a <span class="arithmatex">\(|V_{cb}|\)</span> measured from top decays. The rest of the day&rsquo;s weight is in FPGA-budget ML and in whether predicted phase transitions actually complete.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="v_cb-without-hadronic-inputs"><span class="arithmatex">\(|V_{cb}|\)</span> without hadronic inputs</h3>
+<p>CMS <a href="https://arxiv.org/abs/2611.01274">arXiv:2611.01274</a> extracts <span class="arithmatex">\(|V_{cb}|=(4.59^{+0.44}_{-0.48}{}^{+0.64}_{-0.76})\times10^{-2}\)</span> from <span class="arithmatex">\(W\to cb\)</span> in <span class="arithmatex">\(t\bar t\)</span>. It is free of the nonperturbative inputs behind the inclusive/exclusive split, which is what that puzzle needs. At roughly 19% uncertainty, though, it can&rsquo;t settle it yet. Esparza Arellano et al. <a href="https://arxiv.org/abs/2611.01683">arXiv:2611.01683</a> tighten the <span class="arithmatex">\(\omega\pi\)</span> correction to <span class="arithmatex">\(\tau\to\pi\pi\nu\gamma\)</span>. That shrinks another piece of the τ-route isospin-breaking budget for HVP, after Bashir et al.&rsquo;s <span class="arithmatex">\(\rho\pi\pi\)</span> term on 10-21.</p>
+<h3 id="transformers-in-147-ns">Transformers in 147 ns</h3>
+<ul>
+<li><strong>SCRAMJet.</strong> Sharma et al. <a href="https://arxiv.org/abs/2611.00086">arXiv:2611.00086</a> reach 71.4% JetClass accuracy on a VU13P. That is 6.1 points above the best resource-constrained model, using an eighth of the operations.</li>
+<li><strong>SpikePID.</strong> Tsoi et al. <a href="https://arxiv.org/abs/2611.00104">arXiv:2611.00104</a> beat an 8.6× larger MLP on K/π cluster counting with a 529-parameter spiking network.</li>
+<li><strong>Localized anomalies.</strong> Mendiratta et al. <a href="https://arxiv.org/abs/2611.00234">arXiv:2611.00234</a> show a calorimeter flow&rsquo;s global likelihood misses localized signals that a regional latent score catches.</li>
+</ul>
+<p>After LEAF (10-21) through CoReNet yesterday, the open question is what survives quantization, not whether models can shrink.</p>
+<h3 id="which-transitions-finish">Which transitions finish</h3>
+<p>Chiang <a href="https://arxiv.org/abs/2611.01634">arXiv:2611.01634</a> studies the type-II seesaw. The usual <span class="arithmatex">\(v_c/T_c&gt;1\)</span> criterion flags degeneracies that never complete. The transitions that do complete are weak, sphaleron-unsafe and far below LISA, and they depend strongly on the RG scale. Araújo et al. <a href="https://arxiv.org/abs/2610.40354">arXiv:2610.40354</a> find genuine two-peak spectra in two-field conformal models. This continues yesterday&rsquo;s idealization-dropping GW papers: a GW forecast is only as good as its transition dynamics.</p>
+<h3 id="agents-with-receipts">Agents, with receipts</h3>
+<p>Gao et al. <a href="https://arxiv.org/abs/2611.03373">arXiv:2611.03373</a> have an agent reproduce a CEPC Bell-observable analysis to ~2% without being given the published numbers as targets. It then traces the detector-level shift mainly to muon isolation. Zhao&rsquo;s CELEBI <a href="https://arxiv.org/abs/2611.01788">arXiv:2611.01788</a> pins each result to an immutable analysis state. After QFT-Bench showed correct answers with unfaithful reasoning (10-27), provenance is the right thing to build.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.00230">arXiv:2611.00230</a></strong>: The first rare-decay physics from Upgrade I. Check how much the <span class="arithmatex">\(B^0/B_s\)</span> ratio tightens.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.01158">arXiv:2611.01158</a></strong>: Roy et al. give the 248 keV LZ event an exothermic Higgs-portal relic. It needs no high-velocity tail, the input Zhang et al.&rsquo;s Gaia reconstruction undercut on 10-22, and solar-capture annihilation is suppressed. It predicts a sub-MeV photon continuum for COSI. It is the first model for the event after two blank days.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.00086">arXiv:2611.00086</a></strong>: &ldquo;Virtual channels&rdquo;: quantization-aware training drops attention channels from the compiled circuit while they still carry signal in training, so the loss never sees them go. A datalane floor recovers 3.1 points. Required reading for anyone using HGQ-style training.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.00141">arXiv:2611.00141</a></strong>: Kühler et al. give the full one-loop SM in BMHV with all symmetry-restoring counterterms. QCD always contributes to the breaking, so the SM must be treated as a whole. This is groundwork for multi-loop EW precision, the precision that flipped minimal SU(5) yesterday.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.01285">arXiv:2611.01285</a></strong>: CMS&rsquo;s first charm dead-cone study in PbPb. Medium-induced radiation does not appear to fill the dead cone.</li>
+</ul>
+<h2 id="from-the-community">From the community</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.00239">arXiv:2611.00239</a></strong> <em>From High Energy Astrophysical Neutrinos to the Nobel…</em> — Maibam Ricky Devi (hep-ph). A tribute history from AMANDA to IceCube and Halzen&rsquo;s 2026 Nobel.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.03315">arXiv:2611.03315</a></strong> <em>The search for the Higgs Boson and the EBH mechanism</em> — John Ellis (physics.hist-ph). LEP and Tevatron Higgs searches, 1980–2000, from someone who was there.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.01117">arXiv:2611.01117</a></strong> <em>LH<span class="arithmatex">\(\mu\)</span>C Concept…</em> — Arda Goroglu et al. (hep-ex). The full concept for <span class="arithmatex">\(\mu^+p\)</span> collisions at 5.3 TeV, following Piotrzkowski&rsquo;s 10-27 pitch.</li>
+</ul>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.00205">arXiv:2611.00205</a></strong> <em>Lightest and heaviest nuclei as keys to the origin of ultrahigh energy cosmic rays</em> — Anna M. Suliga et al. (astro-ph.HE). The authors claim Auger data confirm two predicted light-nucleus populations at ≥7.2σ and call this strong evidence for neutron-star-merger origins. Large claims; read the model dependence.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.02559">arXiv:2611.02559</a></strong> <em>Thermal Festina Lente</em> — Fayez Abu-Ajamieh et al. (hep-th). With gauged <span class="arithmatex">\(B-L\)</span> and Dirac neutrinos, the lightest neutrino must exceed 10–43 meV, in tension with DESI DR2 for most of that coupling range. Awkward next to the persistent negative-<span class="arithmatex">\(\sum m_\nu\)</span> preference.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.03407">arXiv:2611.03407</a></strong> <em>Non-Global and Super-Leading Logarithms in Higgs Production through Vector Boson Fusion</em> — Thomas Becher et al. (hep-ph). The first combined phenomenological study of both effects in the VBF gap veto.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv261100230-evidence-for-the-decay-b0tomumu-and-improved-measurements-of-the-decay-b0_stomumu-lhcb-collaboration-et-al"><a href="https://arxiv.org/abs/2611.00230">arXiv:2611.00230</a> — Evidence for the decay <span class="arithmatex">\(B^0\to\mu^+\mu^-\)</span> and improved measurements of the decay <span class="arithmatex">\(B^0_s\to\mu^+\mu^-\)</span> (LHCb collaboration et al.)</h3>
+<p>With 18 fb⁻¹ of 2024–25 Upgrade I data, LHCb sees a <span class="arithmatex">\(B^0\to\mu^+\mu^-\)</span> excess at 3.0σ, with <span class="arithmatex">\(\mathcal{B}=(1.26^{+0.51}_{-0.47}{}^{+0.06}_{-0.05})\times10^{-10}\)</span>. Combined with Runs 1–2, this becomes <span class="arithmatex">\((1.14^{+0.42}_{-0.39}{}^{+0.06}_{-0.05})\times10^{-10}\)</span> at 3.2σ. The SM predicts <span class="arithmatex">\((1.03\pm0.05)\times10^{-10}\)</span>, and the prior limit was <span class="arithmatex">\(&lt;1.6\times10^{-10}\)</span> at 90% CL.</p>
+<p>For <span class="arithmatex">\(B_s^0\)</span>, Run 3 alone gives <span class="arithmatex">\((3.31^{+0.31+0.15}_{-0.30-0.13})\times10^{-9}\)</span>. The combined fit gives <span class="arithmatex">\((3.25^{+0.26+0.13}_{-0.25-0.12})\times10^{-9}\)</span>, sitting somewhat below the SM&rsquo;s <span class="arithmatex">\(3.66\pm0.14\)</span>.</p>
+<p>On the digest&rsquo;s question: the ratio is now measured rather than bounded, but loosely. The combined result is <span class="arithmatex">\(\mathcal{R}_{\mu\mu}=0.035^{+0.014}_{-0.012}\)</span>, against <span class="arithmatex">\(0.0280\pm0.0016\)</span> in the SM and in any MFV theory. At ~40% precision, that is not yet a meaningful test of non-CKM flavour structure.</p>
+<p>The effective lifetime is <span class="arithmatex">\(1.42\pm0.18\pm0.02\)</span> ps from Run 3 and <span class="arithmatex">\(1.60\pm0.16\pm0.01\)</span> ps combined. Both are still statistically dominated, and <span class="arithmatex">\(\mathcal{A}_{\Delta\Gamma_s}^{\mu\mu}=0.91\pm1.92\)</span> is unconstrained within its physical range.</p>
+<p>Caveats visible in the paper:
+- The <span class="arithmatex">\(B_s\)</span> branching fraction assumes <span class="arithmatex">\(\mathcal{A}_{\Delta\Gamma_s}^{\mu\mu}=+1\)</span>. Using −1 instead raises it by 9.2%.
+- The dominant <span class="arithmatex">\(B_s\)</span> systematic (3%) is <span class="arithmatex">\(f_s/f_d=0.247\pm0.008\)</span> at 13.6 TeV, taken from an LHCb paper still in preparation.
+- The <span class="arithmatex">\(B^0\)</span> systematic (4%) comes from misID and semileptonic background modelling.
+- The <span class="arithmatex">\(B_s\)</span> yields from the lifetime and branching-fraction fits agree only at the 1.7σ level.</p>
+<h3 id="arxiv261101158-exothermic-higgs-portal-from-lux-zeplin-recoil-to-gamma-rays-subhojit-roy-et-al"><a href="https://arxiv.org/abs/2611.01158">arXiv:2611.01158</a> — Exothermic Higgs portal: from LUX-ZEPLIN recoil to Gamma Rays (Subhojit Roy et al.)</h3>
+<p>(Authors are Roy and Zupan.) The model is a complex singlet split into <span class="arithmatex">\(\phi_{1,2}\)</span> by a few hundred keV, coupling only through an off-diagonal Higgs portal <span class="arithmatex">\(g\,\phi_1\phi_2 H^\dagger H\)</span>. The relic abundance fixes <span class="arithmatex">\(g\)</span> and leaves <span class="arithmatex">\(r_2\simeq0.5\)</span> of the dark matter in the excited state today.</p>
+<p>At the benchmark (<span class="arithmatex">\(m_{\phi_1}=100\)</span> GeV, <span class="arithmatex">\(\Delta m=600\)</span> keV, <span class="arithmatex">\(g\simeq0.0515\)</span>), the predictions are:
+- <strong>LZ rate:</strong> <span class="arithmatex">\(\phi_2 A\to\phi_1 A\)</span> down-scattering gives <span class="arithmatex">\(N_\epsilon\simeq1.63\)</span> efficiency-weighted events in the 2.84 t·yr exposure. This uses the Standard Halo Model and needs no velocity tail.
+- <strong>Diphoton decay:</strong> <span class="arithmatex">\(\phi_2\to\phi_1\gamma\gamma\)</span> has <span class="arithmatex">\(\tau\simeq4.5\times10^{23}\)</span> s, about 40× above a recast INTEGRAL/SPI bound. That recast neglects inter-bin correlations and template systematics. About 83% of the photons fall above COSI threshold.
+- <strong>Dwarf annihilation:</strong> <span class="arithmatex">\(\langle\sigma v\rangle_{\rm equiv}=2.26\times10^{-26}\)</span> vs a Fermi-LAT limit of <span class="arithmatex">\(3.34\times10^{-26}\)</span> cm³/s. That is a thin margin, and the dwarfs exclude <span class="arithmatex">\(m_{\phi_1}\lesssim72\)</span> GeV.
+- <strong>Solar capture:</strong> capture leaves the Sun&rsquo;s population mostly in <span class="arithmatex">\(\phi_1\)</span>. The resulting WW rate is ~<span class="arithmatex">\(10^{-13}\)</span> of the IceCube limit. The captured-<span class="arithmatex">\(\phi_1\)</span> × halo-<span class="arithmatex">\(\phi_2\)</span> channel was not evaluated.</p>
+<p>The main caveat is spectral. A xenon diffraction minimum near 270 keV pushes the predicted peak to ~180 keV. The model expects 1.18 events in 100–200 keV but only 0.22 in 215–270 keV, where the candidate sits. The total yield also depends strongly on nuclear modelling: 1.63 events with the default response, 4.70 with a Helm form factor, and 1.61 with chiral EFT. No event-level likelihood is performed.</p>
+<h3 id="arxiv261100086-scramjet-an-ultra-low-latency-jetclass-scale-transformer-for-the-hl-lhc-level-1-trigger-aadeesh-sharma-et-al"><a href="https://arxiv.org/abs/2611.00086">arXiv:2611.00086</a> — SCRAMJet: An Ultra Low Latency JetClass-Scale Transformer for the HL-LHC Level-1 Trigger (Aadeesh Sharma et al.)</h3>
+<p>The model is a single-block transformer with rank-2 Linformer attention, <span class="arithmatex">\(D=16\)</span>, and 64 constituents, trained with per-parameter learned fixed-point quantization. It reaches 71.43±0.62% accuracy on ten-class JetClass with 0.157M MACs. That is 6.1 points above PHAT-JeT at one-eighth the MACs. On a VU13P it meets timing at 147 ns (21 cycles) using 25.7% of LUTs, and the RTL is bit-exact over 1.3M outputs.</p>
+<p>The transferable result is the &ldquo;virtual channel&rdquo; mechanism. The quantizer masks zero-width channels only at inference, so training sees them while the circuit does not. One checkpoint scores 72.32% in training mode but 65.2% at inference, and 72.35% with the mask disabled; the mask explains the whole gap. All 7,015 sub-zero-width parameters sit inside attention.</p>
+<p>The fix is a floor on the <em>activation</em>-quantizer bit-widths; the inherited constraint only covered weight quantizers. At EBOPs matched to within 0.12%, the floor lifts accuracy from 66.38% to 69.48%.</p>
+<p>Caveats:
+- That same floored design compiles to 42% more adder-graph units, so EBOPs can rank designs opposite to their real cost. Width cuts are the reliable lever: halving <span class="arithmatex">\(D\)</span> removed 38.8% of compiled cost at no accuracy loss.
+- Macro AUC (0.9289) still trails PHAT-JeT by 0.010.
+- Results come from a 2M-jet training subset with three seeds.</p>
+<p><em>(<a href="https://arxiv.org/abs/2611.00141">arXiv:2611.00141</a> and <a href="https://arxiv.org/abs/2611.01285">arXiv:2611.01285</a> were not supplied and are omitted.)</em></p>
+</article>
+<nav class="pager">
+  <a class="prev" href="2026-11-02.html">&larr; Monday, November 2, 2026</a>
+  
+</nav>
+
+</main>
+<footer>
+  <div class="beamline" aria-hidden="true"></div>
+  <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-03 19:40 ·
+     an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+</footer>
+<script data-goatcounter="https://thexsection.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
