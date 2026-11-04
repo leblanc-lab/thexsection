@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-17809</link>
+    <guid isPermaLink="false">arxiv:2603.17809</guid>
+    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziwei Xiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Large Vision Language Models (LVLMs) have achieved remarkable success in a range of downstream tasks that require multimodal interaction, but their capabilities come with substantial computational and memory overhead, which hinders practical deployment. Among numerous acceleration techniques, post-training quantization is a popular and effective strategy for reducing memory cost and accelerating inference. However, existing LVLM quantization methods typically measure token sensitivity at the modality level, which fails to capture the complex cross-token interactions and falls short in quantitatively measuring the quantization error at the token level. As tokens interact within the model, the distinction between modalities gradually diminishes, suggesting the need for fine-grained calibration. Inspired by axiomatic attribution in mechanistic interpretability, we introduce a fine-grained quantization strategy on Quantization-aware Integrated Gradients (QIG), which leverages integrated gradients to quantitatively evaluate token sensitivity and push the granularity from modality level to token level, reflecting both inter-modality and intra-modality dynamics. Extensive experiments on multiple LVLMs under both W4A8 and W3A16 settings show that our method improves accuracy across models and benchmarks with negligible latency overhead. For example, under 3-bit weight-only quantization, our method improves the average accuracy of LLaVA-onevision-7B by 1.60%, reducing the gap to its full-precision counterpart to only 1.33%. The code is available at https://github.com/ucas-xiang/QIG.</p>]]></description>
+  </item>
 
   <item>
     <title>Unlearning for One-Step Generative Models via Unbalanced Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenqian Li et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Wasserstein distance is a key metric for quantifying data divergence from a distributional perspective. However, its application in privacy-sensitive environments, where direct sharing of raw data is prohibited, presents significant challenges. Existing approaches, such as Differential Privacy and Federated Optimization, have been employed to estimate the Wasserstein distance under such constraints. However, these methods often fall short when both accuracy and security are required. In this study, we explore the inherent triangular properties within the Wasserstein space, leading to a novel solution named TriangleWad. This approach facilitates the fast computation of the Wasserstein distance between datasets stored across different entities, ensuring that raw data remain completely hidden. TriangleWad not only strengthens resistance to potential attacks but also preserves high estimation accuracy. Through extensive experiments across various tasks involving both image and text data, we demonstrate its superior performance and significant potential for real-world applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OT-Transformer: A Continuous-time Transformer Architecture with Optimal Transport Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2501-18793</link>
-    <guid isPermaLink="false">arxiv:2501.18793</guid>
-    <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kelvin Kan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Transformers have achieved state-of-the-art performance in numerous tasks. In this paper, we propose a continuous-time formulation of transformers. Specifically, we consider a dynamical system whose governing equation is parametrized by transformer blocks. We leverage optimal transport theory to regularize the training problem, which enhances stability in training and improves generalization of the resulting model. Moreover, we demonstrate in theory that this regularization is necessary as it promotes uniqueness and regularity of solutions. Our model is flexible in that almost any existing transformer architectures can be adopted to construct the dynamical system with only slight modifications to the existing code. We perform extensive numerical experiments on tasks motivated by natural language processing, image classification, and point cloud classification. Our experimental results show that the proposed method improves the performance of its discrete counterpart and outperforms relevant comparing models.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>PINS: Proximal Iterations with Sparse Newton and Sinkhorn for Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-03749</link>
+    <guid isPermaLink="false">arxiv:2502.03749</guid>
+    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Di Wu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) is a widely used tool in machine learning, but computing high-accuracy solutions for large instances remains costly. Entropic regularization and the Sinkhorn algorithm improve scalability; however, when the regularization parameter is small, Sinkhorn convergence slows, and the iterates approach an entropic solution that remains separated from the true OT plan by an entropic-bias plateau. We introduce PINS (Proximal Iterations with sparse Newton and Sinkhorn), a two-loop solver designed to move beyond this plateau. The outer loop applies an entropic proximal-point method, solving the original OT problem through a sequence of entropic subproblems with shifted cost matrices. Each inner subproblem is then solved by a Sinkhorn warm-up followed by sparse-Newton refinement. We prove that PINS converges globally to an optimal solution of the unregularized OT problem and that the inner Hessian admits a sparsification at every outer iteration with a structure independent of the cost matrix. On synthetic and augmented-MNIST instances, PINS achieves much lower relative cost errors than Sinkhorn-type baselines, which stall at the entropic-bias plateau, and is 5&ndash;73× faster than Sinkhorn with the same outer loop at matched accuracy. On large-scale DOTmark instances, a streaming implementation reduces peak memory by 24&ndash;54% compared with the network-simplex linear programming (LP) solver and remains feasible under per-process memory budgets for which the LP solver fails.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport-Guided Adversarial Attacks on Graph Neural Network-Based Bot Detection</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marie Hein et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka, Michael Krämer) — original abstract; no AI summary.</em></p>
 <p>Anomaly detection has the potential to discover new physics in unexplored regions of the data. However, choosing the best anomaly detector for a given data set in a model-agnostic way is an important challenge which has hitherto largely been neglected. In this paper, we introduce the data-driven ARGOS metric, which has a sound theoretical foundation and is empirically shown to robustly select the most sensitive anomaly detection model given the data. Focusing on weakly-supervised, classifier-based anomaly detection methods, we show that the ARGOS metric outperforms other model selection metrics previously used in the literature, in particular the binary cross-entropy loss. We explore several realistic applications, including hyperparameter tuning as well as architecture and feature selection, and in all cases we demonstrate that ARGOS is robust to the noisy conditions of anomaly detection.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Quantum Rationale-Aware Graph Contrastive Learning for Jet Discrimination</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2411-01642</link>
-    <guid isPermaLink="false">arxiv:2411.01642</guid>
-    <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Md Abrar Jahin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, gluon jet, gluon jets, collider) — original abstract; no AI summary.</em></p>
-<p>In high-energy physics, particle jet tagging plays a pivotal role in distinguishing quark from gluon jets using data from collider experiments. While graph-based deep learning methods have advanced this task beyond traditional feature-engineered approaches, the complex data structure and limited labeled samples present ongoing challenges. More broadly, our primary focus is the development of a rationale-aware graph contrastive learning framework designed to operate under strict resource constraints; we use quark-gluon jet discrimination as a representative and practically relevant use case. However, existing contrastive learning (CL) frameworks struggle to leverage rationale-aware augmentations effectively, often lacking supervision signals that guide the extraction of salient features and facing computational efficiency issues such as high parameter counts. In this study, we demonstrate that integrating a quantum rationale generator (QRG) within our proposed Quantum Rationale-aware Graph Contrastive Learning (QRGCL) framework enables competitive jet discrimination performance, particularly in parameter-constrained settings, reducing reliance on labeled data, and capturing rationale-aware features. Evaluated on the quark-gluon jet dataset, QRGCL achieves an AUC score of 77.5% while maintaining a compact architecture of only 45 QRG parameters, achieving competitive performance compared to classical, quantum, and hybrid benchmarks. These results highlight QRGCL&rsquo;s potential to advance jet tagging and other complex classification tasks in high-energy physics, where computational efficiency and limitations in feature extraction persist.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Categorical Schrödinger Bridge Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2502-01416</link>
+    <guid isPermaLink="false">arxiv:2502.01416</guid>
+    <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Grigoriy Ksenofontov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>The Schrödinger Bridge (SB) is a powerful framework for solving generative modeling tasks such as unpaired domain translation. Most SB-related research focuses on continuous data space ℝ^D and leaves open theoretical and algorithmic questions about applying SB methods to discrete data, e.g, on finite spaces 𝕊^D. Notable examples of such sets 𝕊 are codebooks of vector-quantized (VQ) representations of modern autoencoders, tokens in texts, categories of atoms in molecules, etc. In this paper, we provide a theoretical and algorithmic foundation for solving SB in discrete spaces using the recently introduced Iterative Markovian Fitting (IMF) procedure. Specifically, we theoretically justify the convergence of discrete-time IMF (D-IMF) to SB in discrete spaces. This enables us to develop a practical computational algorithm for SB, which we call Categorical Schrödinger Bridge Matching (CSBM). We show the performance of CSBM via a series of experiments with synthetic data and VQ representations of images. The code of CSBM is available at https://github.com/gregkseno/csbm.</p>]]></description>
+  </item>
 
   <item>
     <title>Hierarchical Refinement: Optimal Transport to Infinity and Beyond</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Okan Koç et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Current machine learning systems are brittle in the face of distribution shifts (DS), where the target distribution that the system is tested on differs from the source distribution used to train the system. This problem of robustness to DS has been studied extensively in the field of domain adaptation. For deep neural networks, a popular framework for unsupervised domain adaptation (UDA) is domain matching, in which algorithms try to align the marginal distributions in the feature or output space. The current theoretical understanding of these methods, however, is limited and existing theoretical results are not precise enough to characterize their performance in practice. In this paper, we derive new bounds based on optimal transport that analyze the UDA problem. Our new bounds include a term which we dub as \emph{entanglement}, consisting of an expectation of Wasserstein distance between conditionals with respect to changing data distributions. Analysis of the entanglement term provides a novel perspective on the unoptimizable aspects of UDA. In various experiments with multiple models across several DS scenarios, we show that this term can be used to explain the varying performance of UDA algorithms.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Computing high-dimensional optimal transport by flow neural networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2305-11857</link>
-    <guid isPermaLink="false">arxiv:2305.11857</guid>
-    <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chen Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Computing optimal transport (OT) for general high-dimensional data has been a long-standing challenge. Despite much progress, most of the efforts including neural network methods have been focused on the static formulation of the OT problem. The current work proposes to compute the dynamic OT between two arbitrary distributions P and Q by optimizing a flow model, where both distributions are only accessible via finite samples. Our method learns the dynamic OT by finding an invertible flow that minimizes the transport cost. The trained optimal transport flow subsequently allows for performing many downstream tasks, including infinitesimal density ratio estimation (DRE) and domain adaptation by interpolating distributions in the latent space. The effectiveness of the proposed model on high-dimensional data is demonstrated by strong empirical performance on OT baselines, image-to-image translation, and high-dimensional DRE.</p>]]></description>
   </item>
 
 </channel>

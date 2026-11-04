@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-03767</link>
+    <guid isPermaLink="false">arxiv:2611.03767</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">YuJie Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>As general-purpose Large Language Models (LLMs), such as Gemini and DeepSeek, exhibit increasingly advanced reasoning capabilities, a critical question arises: how do their property prediction abilities compare to those of domain-specific pretrained materials models? In this study, we evaluate predictions for Ti, steels, high-entropy alloy (HEA) and Al, demonstrating that general-purpose LLMs surprisingly outperform SteelBERT, MatSciBERT, and SciBERT. To further enhance performance, we introduce a hybrid approach that utilizes numerical priors from a prior model, such as CatBoost or SteelBERT, to guide the general LLMs (Deepseek V3.1, Gemini-2.5-Flash). By inputting these initial estimates from a prior model as prompts, the LLM acts as a reasoning corrector, achieving accuracy superior to the prior model and &ldquo;unguided mode&rdquo;. Furthermore, we investigate the impact of data strategy using a similarity-based metric, revealing that data quality dominates quantity; using merely 5% of high-similarity reference data of training set as input yields performance similar to the results of using 100% of training set. Additionally, the LLMs demonstrate excellent uncertainty calibration, where self-reported &ldquo;high&rdquo; confidence strongly correlates with minimal deviation from ground truth. Our findings suggest that synergizing general-purpose LLMs with prior model numerical baselines and high-quality data curation creates a cost-effective and accurate paradigm for materials discovery, reducing the need for expensive domain-specific pretraining.</p>]]></description>
+  </item>
 
   <item>
     <title>Model-Agnostic Search for New Physics in the Presence of Imperfect Background by Smearing the Data</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonin Chambolle et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Rectified flows, also called flow matching or stochastic interpolants, are generative models that learn a time-dependent vector field steering a probability curve between two probability distributions, usually referred to as latent and target distributions. Reflow accelerates inference by iteratively straightening the trajectories induced by this vector field. We study the asymptotic behavior of this iteration and characterize its limit points. First, we define weak rectified couplings which always exist. Next, when rectified flow updates are alternated with minibatch optimal transport steps of fixed batch size, we show that any limit is N-cyclically monotone, where N is the batch size. Such N-cyclically monotone couplings enjoy favorable structural and stability properties such as rectifiability and straightness. Finally, restricting velocities to gradient fields and assuming additional support conditions, we prove that reflow limits coincide with the optimal transport map between the endpoint distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Policy Gradient for Entropy-Regularized Linear-Quadratic Control</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-07433</link>
-    <guid isPermaLink="false">arxiv:2608.07433</guid>
-    <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhaoyu Zhu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein policy gradient (WPG) updates state-conditional action laws by transport in the action space. We study entropy-regularized discounted linear-quadratic (LQ) control. A Bellman verification argument shows that the unrestricted problem has a linear-Gaussian optimal policy, and the discounted-occupancy-weighted statewise Wasserstein gradient is tangent to this policy class. WPG therefore reduces exactly to a finite-dimensional ODE for the feedback gain and action covariance. We prove that this ODE is globally well posed and converges exponentially from every admissible initialization. For each fixed LQ problem, the exponent has a positive limit as the entropy temperature tends to zero and contains no perturbative factor of the form exp(-c/τ), while retaining the usual dependence on the conditioning of the control problem.</p>]]></description>
   </item>
 
 </channel>
