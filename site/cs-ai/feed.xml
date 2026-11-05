@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FlyHash for LLM Agent Memory: An Empirical Validation and a New Application</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2611-05791</link>
+    <guid isPermaLink="false">arxiv:2611.05791</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohan Bheemadolu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with approximate nearest-neighbor methods. The fruit fly&rsquo;s olfactory circuit computes a locality-sensitive hash of sensory input using a strikingly different mechanism - sparse random projection followed by winner-take-all competition - and prior work (Dasgupta et al., 2017) showed this scheme, dubbed FlyHash, preserves neighbor structure better per bit than conventional random-hyperplane hashing (SimHash) on several benchmarks. We apply FlyHash, to our knowledge for the first time, to LLM agent memory retrieval, and ask three questions a practitioner actually needs answered: does the quality advantage hold under a correctly matched-bit protocol (it does, robustly, across 10 seeds and four datasets spanning two modalities, with one specific, previously undocumented comparison pitfall identified and corrected along the way); does that advantage translate into real memory and latency savings, including against the dense-vector indexing (HNSW) practitioners default to today (no: at equal bits FlyHash&rsquo;s codes are larger and slower to compare than SimHash&rsquo;s, and HNSW dominates both hash methods at ordinary scale; a sparse-set comparison we introduce recovers most but not all of a naive latency gap, leaving hashing&rsquo;s practical case narrower and more specific than the quality result alone implies); and does the advantage survive genuine, non-circular agent-memory relevance labels rather than the nearest-neighbor-by-embedding proxy this literature otherwise relies on (it does). We report all three answers precisely, including the two that narrow rather than flatter the headline result, and release our implementation, a working agent-memory demo, and a full account of the methodological pitfalls we found and corrected.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FedFiOT: Fisher-Weighted Optimal Transport for Model Merging in One-Shot and Few-Round Federated Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2611-06783</link>
+    <guid isPermaLink="false">arxiv:2611.06783</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quan Minh Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>One-shot and few-round federated learning (FL) reduce communication burden by constructing a global model within one or a few communication rounds, but often achieve lower performance than conventional multi-round FL. Without frequent synchronization, client models may drift apart, causing neurons that learn similar features to occupy different positions across clients. At the same time, local data heterogeneity can cause corresponding parameters to differ in their importance to each client&rsquo;s predictions. Together, these challenges cause direct averaging to combine mismatched neurons and assign equal weight to parameters despite differences in their importance. We propose FedFiOT, a Fisher-weighted optimal transport framework for one-shot and few-round FL that leverages Fisher information to quantify parameter importance and guide neuron alignment and model aggregation. FedFiOT jointly optimizes neuron correspondences and global model parameters through alternating minimization of a shared Fisher-weighted objective. Theoretically, we show that FedFiOT&rsquo;s optimization procedure monotonically decreases the layer-wise merging objective and establish a stationarity bound that quantifies the effects of client heterogeneity and nonuniform Fisher weighting.Experiments across multiple datasets demonstrate consistent improvements over competing baselines in both one-shot and few-round federated learning settings.</p>]]></description>
+  </item>
 
   <item>
     <title>Enhancing Stock Market Information Retrieval with Retrieval-Augmented Generation</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pranjal Aggarwal et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
 <p>The ability to precisely derive mathematical objects is a core requirement for downstream STEM applications, including mathematics, physics, and chemistry, where reasoning must culminate in formally structured expressions. Yet, current LM evaluations of mathematical and scientific reasoning rely heavily on simplified answer formats such as numerical values or multiple choice options due to the convenience of automated assessment. In this paper we provide three contributions for improving reasoning over mathematical objects: (i) we build and release training data and benchmarks for deriving mathematical objects, the Principia suite; (ii) we provide training recipes with strong LLM-judges and verifiers, where we show that on-policy judge training boosts performance; (iii) we show how on-policy training can also be used to scale test-time compute via aggregation. We find that strong LMs such as Qwen3-235B and o3 struggle on Principia, while our training recipes can bring significant improvements over different LLM backbones, while simultaneously improving results on existing numerical and MCQA tasks, demonstrating cross-format generalization of reasoning abilities.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Surrogate Model for Heat Transfer Prediction in Impinging Jet Arrays using Dynamic Inlet/Outlet and Flow Rate Control</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2507-07034</link>
-    <guid isPermaLink="false">arxiv:2507.07034</guid>
-    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikael Vaillant et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet function) — original abstract; no AI summary.</em></p>
-<p>This study presents a surrogate model designed to predict the Nusselt number distribution in an enclosed impinging jet arrays, where each jet function independently and where jets can be transformed from inlets to outlets, leading to a vast number of possible flow arrangements. While computational fluid dynamics (CFD) simulations can model heat transfer with high fidelity, their cost prohibits real-time application such as model-based temperature control. To address this, we generate a CNN-based surrogate model that can predict the Nusselt distribution in real time. We train it with data from implicit large eddy computational fluid dynamics simulations (Re &lt; 2,000). We train two distinct models, one for a five by one array of jets (83 simulations) and one for a three by three array of jets (100 simulations). We introduce a method to extrapolate predictions to higher Reynolds numbers (Re &lt; 10,000) using a correlation-based scaling. The surrogate models achieve high accuracy, with a normalized mean average error below 2% on validation data for the five by one surrogate model and 0.6% for the three by three surrogate model. Experimental validation confirms the model&rsquo;s predictive capabilities. This work provides a foundation for model-based control strategies in advanced thermal management applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hyperparameter Trajectory Inference with Conditional Lagrangian Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-01771</link>
-    <guid isPermaLink="false">arxiv:2603.01771</guid>
-    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Harry Amad et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Neural networks (NNs) often have critical behavioural trade-offs that are set at design time with hyperparameters-such as reward weights in reinforcement learning or quantile targets in regression. Post-deployment, however, user preferences can evolve, making initial settings undesirable, necessitating potentially expensive retraining. To circumvent this, we introduce the task of Hyperparameter Trajectory Inference (HTI): to learn, from observed data, how a NN&rsquo;s conditional output distribution changes with its hyperparameters, and construct a surrogate model that approximates the NN at unobserved hyperparameter settings. HTI requires extending existing trajectory inference approaches to incorporate conditions, exacerbating the challenge of ensuring inferred paths are feasible. We propose an approach based on conditional Lagrangian optimal transport, jointly learning the Lagrangian function governing hyperparameter-induced dynamics along with the associated optimal transport maps and geodesics between observed marginals, which form the surrogate model. We incorporate inductive biases based on the manifold hypothesis and least-action principles into the learned Lagrangian, improving surrogate model feasibility. We empirically demonstrate that our approach reconstructs NN outputs across various hyperparameter spectra better than other alternatives.</p>]]></description>
   </item>
 
 </channel>

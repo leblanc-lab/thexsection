@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Complexity of Block Coordinate Descent with Proximal Regularization and Applications to Wasserstein CP-dictionary Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-02420</link>
+    <guid isPermaLink="false">arxiv:2306.02420</guid>
+    <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dohyun Kwon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider the block coordinate descent methods of Gauss-Seidel type with proximal regularization (BCD-PR), which is a classical method of minimizing general nonconvex objectives under constraints that has a wide range of practical applications. We theoretically establish the worst-case complexity bound for this algorithm. Namely, we show that for general nonconvex smooth objectives with block-wise constraints, the classical BCD-PR algorithm converges to an epsilon-stationary point within O(1/epsilon) iterations. Under a mild condition, this result still holds even if the algorithm is executed inexactly in each step. As an application, we propose a provable and efficient algorithm for `Wasserstein CP-dictionary learning&rsquo;, which seeks a set of elementary probability distributions that can well-approximate a given set of d-dimensional joint probability distributions. Our algorithm is a version of BCD-PR that operates in the dual space, where the primal problem is regularized both entropically and proximally.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Meta Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2206-05262</link>
+    <guid isPermaLink="false">arxiv:2206.05262</guid>
+    <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brandon Amos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the use of amortized optimization to predict optimal transport (OT) maps from the input measures, which we call Meta OT. This helps repeatedly solve similar OT problems between different measures by leveraging the knowledge and information present from past problems to rapidly predict and solve new problems. Otherwise, standard methods ignore the knowledge of the past solutions and suboptimally re-solve each problem from scratch. We instantiate Meta OT models in discrete and continuous settings between grayscale images, spherical data, classification labels, and color palettes and use them to improve the computational time of standard OT solvers. Our source code is available at http://github.com/facebookresearch/meta-ot</p>]]></description>
+  </item>
+
+  <item>
+    <title>OTW: Optimal Transport Warping for Time Series</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-00620</link>
+    <guid isPermaLink="false">arxiv:2306.00620</guid>
+    <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fabian Latorre et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Dynamic Time Warping (DTW) has become the pragmatic choice for measuring distance between time series. However, it suffers from unavoidable quadratic time complexity when the optimal alignment matrix needs to be computed exactly. This hinders its use in deep learning architectures, where layers involving DTW computations cause severe bottlenecks. To alleviate these issues, we introduce a new metric for time series data based on the Optimal Transport (OT) framework, called Optimal Transport Warping (OTW). OTW enjoys linear time/space complexity, is differentiable and can be parallelized. OTW enjoys a moderate sensitivity to time and shape distortions, making it ideal for time series. We show the efficacy and efficiency of OTW on 1-Nearest Neighbor Classification and Hierarchical Clustering, as well as in the case of using OTW instead of DTW in Deep Learning architectures.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Controlling Wasserstein Distances by Kernel Norms with Application to Compressive Statistical Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2112-00423</link>
+    <guid isPermaLink="false">arxiv:2112.00423</guid>
+    <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Titouan Vayer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Comparing probability distributions is at the crux of many machine learning algorithms. Maximum Mean Discrepancies (MMD) and Wasserstein distances are two classes of distances between probability distributions that have attracted abundant attention in past years. This paper establishes some conditions under which the Wasserstein distance can be controlled by MMD norms. Our work is motivated by the compressive statistical learning (CSL) theory, a general framework for resource-efficient large scale learning in which the training data is summarized in a single vector (called sketch) that captures the information relevant to the considered learning task. Inspired by existing results in CSL, we introduce the Hölder Lower Restricted Isometric Property and show that this property comes with interesting guarantees for compressive statistical learning. Based on the relations between the MMD and the Wasserstein distances, we provide guarantees for compressive statistical learning by introducing and studying the concept of Wasserstein regularity of the learning task, that is when some task-specific metric between probability distributions can be bounded by a Wasserstein distance.</p>]]></description>
+  </item>
 
   <item>
     <title>Shedding a PAC-Bayesian Light on Adaptive Sliced-Wasserstein Distances</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">G. I. Papayiannis et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>In this work clustering schemes for uncertain and structured data are considered relying on the notion of Wasserstein barycenters, accompanied by appropriate clustering indices based on the intrinsic geometry of the Wasserstein space where the clustering task is performed. Such type of clustering approaches are highly appreciated in many fields where the observational/experimental error is significant (e.g. astronomy, biology, remote sensing, etc.) or the data nature is more complex and the traditional learning algorithms are not applicable or effective to treat them (e.g. network data, interval data, high frequency records, matrix data, etc.). Under this perspective, each observation is identified by an appropriate probability measure and the proposed clustering schemes rely on discrimination criteria that utilize the geometric structure of the space of probability measures through core techniques from the optimal transport theory. The advantages and capabilities of the proposed approach and the geodesic criterion performance are illustrated through a simulation study and the implementation in two real world applications: (a) clustering eurozone countries according to their observed government bond yield curves and (b) classifying the areas of a satellite image to certain land uses categories, a standard task in remote sensing.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unsupervised Domain Adaptation for Extra Features in the Target Domain Using Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-04594</link>
-    <guid isPermaLink="false">arxiv:2209.04594</guid>
-    <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Toshimitsu Aritake et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Domain adaptation aims to transfer knowledge of labeled instances obtained from a source domain to a target domain to fill the gap between the domains. Most domain adaptation methods assume that the source and target domains have the same dimensionality. Methods that are applicable when the number of features is different in each domain have rarely been studied, especially when no label information is given for the test data obtained from the target domain. In this paper, it is assumed that common features exist in both domains and that extra (new additional) features are observed in the target domain; hence, the dimensionality of the target domain is higher than that of the source domain. To leverage the homogeneity of the common features, the adaptation between these source and target domains is formulated as an optimal transport (OT) problem. In addition, a learning bound in the target domain for the proposed OT-based method is derived. The proposed algorithm is validated using both simulated and real-world data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Interpretable Uncertainty Quantification in AI for HEP</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2208-03284</link>
-    <guid isPermaLink="false">arxiv:2208.03284</guid>
-    <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Y. Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Aishik Ghosh, Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Estimating uncertainty is at the core of performing scientific measurements in HEP: a measurement is not useful without an estimate of its uncertainty. The goal of uncertainty quantification (UQ) is inextricably linked to the question, &ldquo;how do we physically and statistically interpret these uncertainties?&rdquo; The answer to this question depends not only on the computational task we aim to undertake, but also on the methods we use for that task. For artificial intelligence (AI) applications in HEP, there are several areas where interpretable methods for UQ are essential, including inference, simulation, and control/decision-making. There exist some methods for each of these areas, but they have not yet been demonstrated to be as trustworthy as more traditional approaches currently employed in physics (e.g., non-AI frequentist and Bayesian methods). Shedding light on the questions above requires additional understanding of the interplay of AI systems and uncertainty quantification. We briefly discuss the existing methods in each area and relate them to tasks across HEP. We then discuss recommendations for avenues to pursue to develop the necessary techniques for reliable widespread usage of AI with UQ over the next decade.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fair learning with Wasserstein barycenters for non-decomposable performance measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-00427</link>
-    <guid isPermaLink="false">arxiv:2209.00427</guid>
-    <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Solenne Gaucher et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This work provides several fundamental characterizations of the optimal classification function under the demographic parity constraint. In the awareness framework, akin to the classical unconstrained classification case, we show that maximizing accuracy under this fairness constraint is equivalent to solving a corresponding regression problem followed by thresholding at level 1/2. We extend this result to linear-fractional classification measures (e.g., F-score, AM measure, balanced accuracy, etc.), highlighting the fundamental role played by the regression problem in this framework. Our results leverage recently developed connection between the demographic parity constraint and the multi-marginal optimal transport formulation. Informally, our result shows that the transition between the unconstrained problems and the fair one is achieved by replacing the conditional expectation of the label by the solution of the fair regression problem. Finally, leveraging our analysis, we demonstrate an equivalence between the awareness and the unawareness setups in the case of two sensitive groups.</p>]]></description>
-  </item>
-
-  <item>
-    <title>BIP: Boost Invariant Polynomials for Efficient Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2207-08272</link>
-    <guid isPermaLink="false">arxiv:2207.08272</guid>
-    <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose M Munoz et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
-<p>Deep Learning approaches are becoming the go-to methods for data analysis in High Energy Physics (HEP). Nonetheless, most physics-inspired modern architectures are computationally inefficient and lack interpretability. This is especially the case with jet tagging algorithms, where computational efficiency is crucial considering the large amounts of data produced by modern particle detectors. In this work, we present a novel, versatile and transparent framework for jet representation; invariant to Lorentz group boosts, which achieves high accuracy on jet tagging benchmarks while being orders of magnitudes faster to train and evaluate than other modern approaches for both supervised and unsupervised schemes.</p>]]></description>
   </item>
 
 </channel>

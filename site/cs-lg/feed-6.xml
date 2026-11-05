@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>OTCXR: Rethinking Self-supervised Alignment using Optimal Transport for Chest X-ray Analysis</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2404-11868</link>
+    <guid isPermaLink="false">arxiv:2404.11868</guid>
+    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vandan Gorade et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Self-supervised learning (SSL) has emerged as a promising technique for analyzing medical modalities such as X-rays due to its ability to learn without annotations. However, conventional SSL methods face challenges in achieving semantic alignment and capturing subtle details, which limits their ability to accurately represent the underlying anatomical structures and pathological features. To address these limitations, we propose OTCXR, a novel SSL framework that leverages optimal transport (OT) to learn dense semantic invariance. By integrating OT with our innovative Cross-Viewpoint Semantics Infusion Module (CV-SIM), OTCXR enhances the model&rsquo;s ability to capture not only local spatial features but also global contextual dependencies across different viewpoints. This approach enriches the effectiveness of SSL in the context of chest radiographs. Furthermore, OTCXR incorporates variance and covariance regularizations within the OT framework to prioritize clinically relevant information while suppressing less informative features. This ensures that the learned representations are comprehensive and discriminative, particularly beneficial for tasks such as thoracic disease diagnosis. We validate OTCXR&rsquo;s efficacy through comprehensive experiments on three publicly available chest X-ray datasets. Our empirical results demonstrate the superiority of OTCXR over state-of-the-art methods across all evaluated tasks, confirming its capability to learn semantically rich representations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Efficient Trajectory Inference in Wasserstein Space Using Consecutive Averaging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-19679</link>
+    <guid isPermaLink="false">arxiv:2405.19679</guid>
+    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amartya Banerjee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Capturing data from dynamic processes through cross-sectional measurements is seen in many fields, such as computational biology. Trajectory inference deals with the challenge of reconstructing continuous processes from such observations. In this work, we propose methods for B-spline approximation and interpolation of point clouds through consecutive averaging that is intrinsic to the Wasserstein space. Combining subdivision schemes with optimal transport-based geodesic, our methods carry out trajectory inference at a chosen level of precision and smoothness, and can automatically handle scenarios where particles undergo division over time. We prove linear convergence rates and rigorously evaluate our method on cell data characterized by bifurcations, merges, and trajectory splitting scenarios like supercells, comparing its performance against state-of-the-art trajectory inference and interpolation methods. The results not only underscore the effectiveness of our method in inferring trajectories but also highlight the benefit of performing interpolation and approximation that respect the inherent geometric properties of the data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discriminative versus Generative Approaches to Simulation-based Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-07962</link>
+    <guid isPermaLink="false">arxiv:2503.07962</guid>
+    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Sluijter et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman) — original abstract; no AI summary.</em></p>
+<p>Most of the fundamental, emergent, and phenomenological parameters of particle and nuclear physics are determined through parametric template fits. Simulations are used to populate histograms which are then matched to data. This approach is inherently lossy, since histograms are binned and low-dimensional. Deep learning has enabled unbinned and high-dimensional parameter estimation through neural likelihiood(-ratio) estimation. We compare two approaches for neural simulation-based inference (NSBI): one based on discriminative learning (classification) and one based on generative modeling. These two approaches are directly evaluated on the same datasets, with a similar level of hyperparameter optimization in both cases. In addition to a Gaussian dataset, we study NSBI using a Higgs boson dataset from the FAIR Universe Challenge. We find that both the direct likelihood and likelihood ratio estimation are able to effectively extract parameters with reasonable uncertainties. For the numerical examples and within the set of hyperparameters studied, we found that the likelihood ratio method is more accurate and/or precise. Both methods have a significant spread from the network training and would require ensembling or other mitigation strategies in practice.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Domain Adaptation and Entanglement: an Optimal Transport Perspective</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-08155</link>
+    <guid isPermaLink="false">arxiv:2503.08155</guid>
+    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Okan Koç et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Current machine learning systems are brittle in the face of distribution shifts (DS), where the target distribution that the system is tested on differs from the source distribution used to train the system. This problem of robustness to DS has been studied extensively in the field of domain adaptation. For deep neural networks, a popular framework for unsupervised domain adaptation (UDA) is domain matching, in which algorithms try to align the marginal distributions in the feature or output space. The current theoretical understanding of these methods, however, is limited and existing theoretical results are not precise enough to characterize their performance in practice. In this paper, we derive new bounds based on optimal transport that analyze the UDA problem. Our new bounds include a term which we dub as \emph{entanglement}, consisting of an expectation of Wasserstein distance between conditionals with respect to changing data distributions. Analysis of the entanglement term provides a novel perspective on the unoptimizable aspects of UDA. In various experiments with multiple models across several DS scenarios, we show that this term can be used to explain the varying performance of UDA algorithms.</p>]]></description>
+  </item>
 
   <item>
     <title>Computing high-dimensional optimal transport by flow neural networks</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenjia Xie et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Sequential recommendation has attracted increasing attention due to its ability to accurately capture the dynamic changes in user interests. We have noticed that generative models, especially diffusion models, which have achieved significant results in fields like image and audio, hold considerable promise in the field of sequential recommendation. However, existing sequential recommendation methods based on diffusion models are constrained by a prior distribution limited to Gaussian distribution, hindering the possibility of introducing user-specific information for each recommendation and leading to information loss. To address these issues, we introduce the Schrödinger Bridge into diffusion-based sequential recommendation models, creating the SdifRec model. This allows us to replace the Gaussian prior of the diffusion model with the user&rsquo;s current state, directly modeling the process from a user&rsquo;s current state to the target recommendation. Additionally, to better utilize collaborative information in recommendations, we propose an extended version of SdifRec called con-SdifRec, which utilizes user clustering information as a guiding condition to further enhance the posterior distribution. Finally, extensive experiments on multiple public benchmark datasets have demonstrated the effectiveness of SdifRec and con-SdifRec through comparison with several state-of-the-art methods. Further in-depth analysis has validated their efficiency and robustness.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Gradient Boosting: A Framework for Distribution-Valued Supervised Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-09536</link>
-    <guid isPermaLink="false">arxiv:2405.09536</guid>
-    <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Takuo Matsubara</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gradient boosting is a sequential ensemble method that fits a new weaker learner to pseudo residuals at each iteration. We propose Wasserstein gradient boosting, a novel extension of gradient boosting that fits a new weak learner to alternative pseudo residuals that are Wasserstein gradients of loss functionals of probability distributions assigned at each input. It solves distribution-valued supervised learning, where the output values of the training dataset are probability distributions for each input. In classification and regression, a model typically returns, for each input, a point estimate of a parameter of a noise distribution specified for a response variable, such as the class probability parameter of a categorical distribution specified for a response label. A main application of Wasserstein gradient boosting in this paper is tree-based evidential learning, which returns a distributional estimate of the response parameter for each input. We empirically demonstrate the superior performance of the probabilistic prediction by Wasserstein gradient boosting in comparison with existing uncertainty quantification methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Embedded FPGA Developments in 130nm and 28nm CMOS for Machine Learning in Particle Detector Readout</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-17701</link>
-    <guid isPermaLink="false">arxiv:2404.17701</guid>
-    <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julia Gonski et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Embedded field programmable gate array (eFPGA) technology allows the implementation of reconfigurable logic within the design of an application-specific integrated circuit (ASIC). This approach offers the low power and efficiency of an ASIC along with the ease of FPGA configuration, particularly beneficial for the use case of machine learning in the data pipeline of next-generation collider experiments. An open-source framework called &ldquo;FABulous&rdquo; was used to design eFPGAs using 130 nm and 28 nm CMOS technology nodes, which were subsequently fabricated and verified through testing. The capability of an eFPGA to act as a front-end readout chip was assessed using simulation of high energy particles passing through a silicon pixel sensor. A machine learning-based classifier, designed for reduction of sensor data at the source, was synthesized and configured onto the eFPGA. A successful proof-of-concept was demonstrated through reproduction of the expected algorithm result on the eFPGA with perfect accuracy. Further development of the eFPGA technology and its application to collider detector readout is discussed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fusing Pruned and Backdoored Models: Optimal Transport-based Data-free Backdoor Mitigation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2408-15861</link>
-    <guid isPermaLink="false">arxiv:2408.15861</guid>
-    <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weilin Lin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Backdoor attacks present a serious security threat to deep neuron networks (DNNs). Although numerous effective defense techniques have been proposed in recent years, they inevitably rely on the availability of either clean or poisoned data. In contrast, data-free defense techniques have evolved slowly and still lag significantly in performance. To address this issue, different from the traditional approach of pruning followed by fine-tuning, we propose a novel data-free defense method named Optimal Transport-based Backdoor Repairing (OTBR) in this work. This method, based on our findings on neuron weight changes (NWCs) of random unlearning, uses optimal transport (OT)-based model fusion to combine the advantages of both pruned and backdoored models. Specifically, we first demonstrate our findings that the NWCs of random unlearning are positively correlated with those of poison unlearning. Based on this observation, we propose a random-unlearning NWC pruning technique to eliminate the backdoor effect and obtain a backdoor-free pruned model. Then, motivated by the OT-based model fusion, we propose the pruned-to-backdoored OT-based fusion technique, which fuses pruned and backdoored models to combine the advantages of both, resulting in a model that demonstrates high clean accuracy and a low attack success rate. To our knowledge, this is the first work to apply OT and model fusion techniques to backdoor defense. Extensive experiments show that our method successfully defends against all seven backdoor attacks across three benchmark datasets, outperforming both state-of-the-art (SOTA) data-free and data-dependent methods. The code implementation and Appendix are provided in the Supplementary Material.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Active and Passive Causal Inference Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2308-09248</link>
-    <guid isPermaLink="false">arxiv:2308.09248</guid>
-    <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Jiwoong Im et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>This paper serves as a starting point for machine learning researchers, engineers and students who are interested in but not yet familiar with causal inference. We start by laying out an important set of assumptions that are collectively needed for causal identification, such as exchangeability, positivity, consistency and the absence of interference. From these assumptions, we build out a set of important causal inference techniques, which we do so by categorizing them into two buckets; active and passive approaches. We describe and discuss randomized controlled trials and bandit-based approaches from the active category. We then describe classical approaches, such as matching and inverse probability weighting, in the passive category, followed by more recent deep learning based algorithms. By finishing the paper with some of the missing aspects of causal inference from this paper, such as collider biases, we expect this paper to provide readers with a diverse set of starting points for further reading and research in causal inference and discovery.</p>]]></description>
   </item>
 
 </channel>

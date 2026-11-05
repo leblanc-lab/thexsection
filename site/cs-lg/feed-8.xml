@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Versatile Energy-Based Probabilistic Models for High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2302-00695</link>
+    <guid isPermaLink="false">arxiv:2302.00695</guid>
+    <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Taoli Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>As a classical generative modeling approach, energy-based models have the natural advantage of flexibility in the form of the energy function. Recently, energy-based models have achieved great success in modeling high-dimensional data in computer vision and natural language processing. In line with these advancements, we build a multi-purpose energy-based probabilistic model for High Energy Physics events at the Large Hadron Collider. This framework builds on a powerful generative model and describes higher-order inter-particle interactions. It suits different encoding architectures and builds on implicit generation. As for applicative aspects, it can serve as a powerful parameterized event generator for physics simulation, a generic anomalous signal detector free from spurious correlations, and an augmented event classifier for particle identification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SpecTr: Fast Speculative Decoding via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-15141</link>
+    <guid isPermaLink="false">arxiv:2310.15141</guid>
+    <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziteng Sun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Autoregressive sampling from large language models has led to state-of-the-art results in several natural language tasks. However, autoregressive sampling generates tokens one at a time making it slow, and even prohibitive in certain tasks. One way to speed up sampling is speculative decoding: use a small model to sample a draft (block or sequence of tokens), and then score all tokens in the draft by the large language model in parallel. A subset of the tokens in the draft are accepted (and the rest rejected) based on a statistical method to guarantee that the final output follows the distribution of the large model. In this work, we provide a principled understanding of speculative decoding through the lens of optimal transport (OT) with membership cost. This framework can be viewed as an extension of the well-known maximal-coupling problem. This new formulation enables us to generalize the speculative decoding method to allow for a set of k candidates at the token-level, which leads to an improved optimal membership cost. We show that the optimal draft selection algorithm (transport plan) can be computed via linear programming, whose best-known runtime is exponential in k. We then propose a valid draft selection algorithm whose acceptance probability is (1-1/e)-optimal multiplicatively. Moreover, it can be computed in time almost linear with size of domain of a single token. Using this new draft selection algorithm, we develop a new autoregressive sampling algorithm called SpecTr, which provides speedup in decoding while ensuring that there is no quality degradation in the decoded output. We experimentally demonstrate that for state-of-the-art large language models, the proposed approach achieves a wall clock speedup of 2.13X, a further 1.37X speedup over speculative decoding on standard benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Symbolic Regression on FPGAs for Fast Machine Learning Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2305-04099</link>
+    <guid isPermaLink="false">arxiv:2305.04099</guid>
+    <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
+<p>The high-energy physics community is investigating the potential of deploying machine-learning-based solutions on Field-Programmable Gate Arrays (FPGAs) to enhance physics sensitivity while still meeting data processing time constraints. In this contribution, we introduce a novel end-to-end procedure that utilizes a machine learning technique called symbolic regression (SR). It searches the equation space to discover algebraic relations approximating a dataset. We use PySR (a software to uncover these expressions based on an evolutionary algorithm) and extend the functionality of hls4ml (a package for machine learning inference in FPGAs) to support PySR-generated expressions for resource-constrained production environments. Deep learning models often optimize the top metric by pinning the network size because the vast hyperparameter space prevents an extensive search for neural architecture. Conversely, SR selects a set of models on the Pareto front, which allows for optimizing the performance-resource trade-off directly. By embedding symbolic forms, our implementation can dramatically reduce the computational resources needed to perform critical tasks. We validate our method on a physics benchmark: the multiclass classification of jets produced in simulated proton-proton collisions at the CERN Large Hadron Collider. We show that our approach can approximate a 3-layer neural network using an inference model that achieves up to a 13-fold decrease in execution time, down to 5 ns, while still preserving more than 90% approximation accuracy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Policy Evaluation and Learning for Contextual Bandits</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2309-08748</link>
+    <guid isPermaLink="false">arxiv:2309.08748</guid>
+    <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Shen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Off-policy evaluation and learning are concerned with assessing a given policy and learning an optimal policy from offline data without direct interaction with the environment. Often, the environment in which the data are collected differs from the environment in which the learned policy is applied. To account for the effect of different environments during learning and execution, distributionally robust optimization (DRO) methods have been developed that compute worst-case bounds on the policy values assuming that the distribution of the new environment lies within an uncertainty set. Typically, this uncertainty set is defined based on the KL divergence around the empirical distribution computed from the logging dataset. However, the KL uncertainty set fails to encompass distributions with varying support and lacks awareness of the geometry of the distribution support. As a result, KL approaches fall short in addressing practical environment mismatches and lead to over-fitting to worst-case scenarios. To overcome these limitations, we propose a novel DRO approach that employs the Wasserstein distance instead. While Wasserstein DRO is generally computationally more expensive compared to KL DRO, we present a regularized method and a practical (biased) stochastic gradient descent method to optimize the policy efficiently. We also provide a theoretical analysis of the finite sample complexity and iteration complexity for our proposed method. We further validate our approach using a public dataset that was recorded in a randomized stoke trial.</p>]]></description>
+  </item>
 
   <item>
     <title>An Optimal Transport Approach for Computing Adversarial Training Lower Bounds in Multiclass Classification</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shikun Liu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
 <p>In many real-world applications, graph-structured data used for training and testing have differences in distribution, such as in high energy physics (HEP) where simulation data used for training may not match real experiments. Graph domain adaptation (GDA) is a method used to address these differences. However, current GDA primarily works by aligning the distributions of node representations output by a single graph neural network encoder shared across the training and testing domains, which may often yield sub-optimal solutions. This work examines different impacts of distribution shifts caused by either graph structure or node attributes and identifies a new type of shift, named conditional structure shift (CSS), which current GDA approaches are provably sub-optimal to deal with. A novel approach, called structural reweighting (StruRW), is proposed to address this issue and is tested on synthetic graphs, four benchmark datasets, and a new application in HEP. StruRW has shown significant performance improvement over the baselines in the settings with large graph structure shifts, and reasonable performance improvement when node attribute shift dominates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Complexity of Block Coordinate Descent with Proximal Regularization and Applications to Wasserstein CP-dictionary Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-02420</link>
-    <guid isPermaLink="false">arxiv:2306.02420</guid>
-    <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dohyun Kwon et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider the block coordinate descent methods of Gauss-Seidel type with proximal regularization (BCD-PR), which is a classical method of minimizing general nonconvex objectives under constraints that has a wide range of practical applications. We theoretically establish the worst-case complexity bound for this algorithm. Namely, we show that for general nonconvex smooth objectives with block-wise constraints, the classical BCD-PR algorithm converges to an epsilon-stationary point within O(1/epsilon) iterations. Under a mild condition, this result still holds even if the algorithm is executed inexactly in each step. As an application, we propose a provable and efficient algorithm for `Wasserstein CP-dictionary learning&rsquo;, which seeks a set of elementary probability distributions that can well-approximate a given set of d-dimensional joint probability distributions. Our algorithm is a version of BCD-PR that operates in the dual space, where the primal problem is regularized both entropically and proximally.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Meta Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2206-05262</link>
-    <guid isPermaLink="false">arxiv:2206.05262</guid>
-    <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brandon Amos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the use of amortized optimization to predict optimal transport (OT) maps from the input measures, which we call Meta OT. This helps repeatedly solve similar OT problems between different measures by leveraging the knowledge and information present from past problems to rapidly predict and solve new problems. Otherwise, standard methods ignore the knowledge of the past solutions and suboptimally re-solve each problem from scratch. We instantiate Meta OT models in discrete and continuous settings between grayscale images, spherical data, classification labels, and color palettes and use them to improve the computational time of standard OT solvers. Our source code is available at http://github.com/facebookresearch/meta-ot</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTW: Optimal Transport Warping for Time Series</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-00620</link>
-    <guid isPermaLink="false">arxiv:2306.00620</guid>
-    <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fabian Latorre et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Dynamic Time Warping (DTW) has become the pragmatic choice for measuring distance between time series. However, it suffers from unavoidable quadratic time complexity when the optimal alignment matrix needs to be computed exactly. This hinders its use in deep learning architectures, where layers involving DTW computations cause severe bottlenecks. To alleviate these issues, we introduce a new metric for time series data based on the Optimal Transport (OT) framework, called Optimal Transport Warping (OTW). OTW enjoys linear time/space complexity, is differentiable and can be parallelized. OTW enjoys a moderate sensitivity to time and shape distortions, making it ideal for time series. We show the efficacy and efficiency of OTW on 1-Nearest Neighbor Classification and Hierarchical Clustering, as well as in the case of using OTW instead of DTW in Deep Learning architectures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Controlling Wasserstein Distances by Kernel Norms with Application to Compressive Statistical Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2112-00423</link>
-    <guid isPermaLink="false">arxiv:2112.00423</guid>
-    <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Titouan Vayer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Comparing probability distributions is at the crux of many machine learning algorithms. Maximum Mean Discrepancies (MMD) and Wasserstein distances are two classes of distances between probability distributions that have attracted abundant attention in past years. This paper establishes some conditions under which the Wasserstein distance can be controlled by MMD norms. Our work is motivated by the compressive statistical learning (CSL) theory, a general framework for resource-efficient large scale learning in which the training data is summarized in a single vector (called sketch) that captures the information relevant to the considered learning task. Inspired by existing results in CSL, we introduce the Hölder Lower Restricted Isometric Property and show that this property comes with interesting guarantees for compressive statistical learning. Based on the relations between the MMD and the Wasserstein distances, we provide guarantees for compressive statistical learning by introducing and studying the concept of Wasserstein regularity of the learning task, that is when some task-specific metric between probability distributions can be bounded by a Wasserstein distance.</p>]]></description>
   </item>
 
 </channel>

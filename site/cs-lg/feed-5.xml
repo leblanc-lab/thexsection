@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Identify, Isolate, and Purge: Mitigating Hallucinations in LVLMs via Self-Evolving Distillation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-04680</link>
+    <guid isPermaLink="false">arxiv:2507.04680</guid>
+    <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenhao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Large Vision-Language Models (LVLMs) have demonstrated remarkable advancements in numerous areas such as multimedia. However, hallucination issues significantly limit their credibility and application potential. Existing mitigation methods typically rely on external tools or the comparison of multi-round inference, which significantly increase inference time. In this paper, we propose \textbf{SE}lf-\textbf{E}volving \textbf{D}istillation (\textbf{SEED}), which identifies hallucinations within the inner knowledge of LVLMs, isolates and purges them, and then distills the purified knowledge back into the model, enabling self-evolution. Furthermore, we identified that traditional distillation methods are prone to inducing void spaces in the output space of LVLMs. To address this issue, we propose a Mode-Seeking Evolving approach, which performs distillation to capture the dominant modes of the purified knowledge distribution, thereby avoiding the chaotic results that could emerge from void spaces. Moreover, we introduce a Hallucination Elimination Adapter, which corrects the dark knowledge of the original model by learning purified knowledge. Extensive experiments on multiple benchmarks validate the superiority of our SEED, demonstrating substantial improvements in mitigating hallucinations for representative LVLM models such as LLaVA-1.5 and InternVL2. Remarkably, the F1 score of LLaVA-1.5 on the hallucination evaluation metric POPE-Random improved from 81.3 to 88.3.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FDR-SVM: A Federated Distributionally Robust Support Vector Machine via a Mixture of Wasserstein Balls Ambiguity Set</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-03877</link>
+    <guid isPermaLink="false">arxiv:2410.03877</guid>
+    <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Ibrahim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study a federated classification problem over a network of multiple clients and a central server, in which each client&rsquo;s local data remains private and is subject to uncertainty in both the features and labels. To address these uncertainties, we develop a novel Federated Distributionally Robust Support Vector Machine (FDR-SVM), robustifying the classification boundary against perturbations in local data distributions. Specifically, the data at each client is governed by a unique true distribution that is unknown. To handle this heterogeneity, we develop a novel Mixture of Wasserstein Balls (MoWB) ambiguity set, naturally extending the classical Wasserstein ball to the federated setting. We then establish theoretical guarantees for our proposed MoWB, deriving an out-of-sample performance bound and showing that its design preserves the separability of the FDR-SVM optimization problem. Next, we rigorously derive two algorithms that solve the FDR-SVM problem and analyze their convergence behavior as well as their worst-case time complexity. We evaluate our algorithms on industrial data and various UCI datasets, whereby we demonstrate that they frequently outperform existing state-of-the-art approaches.</p>]]></description>
+  </item>
+
+  <item>
+    <title>MUC: Machine Unlearning for Contrastive Learning with Black-box Evaluation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2406-03603</link>
+    <guid isPermaLink="false">arxiv:2406.03603</guid>
+    <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yihan Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (MuC) — original abstract; no AI summary.</em></p>
+<p>Machine unlearning offers effective solutions for revoking the influence of specific training data on pre-trained model parameters. While existing approaches address unlearning for classification and generative models, they overlook an important category of machine learning models: contrastive learning (CL) methods. This paper addresses this gap by introducing the Machine Unlearning for Contrastive Learning (MUC) framework and adapting existing methods. We identify limitations in current approaches, noting that several methods perform inadequately as unlearners and that existing evaluation tools insufficiently validate unlearning effects in contrastive learning. To address these issues, we propose Alignment Calibration (AC), a novel method that explicitly considers contrastive learning properties and optimizes towards new auditing metrics for easy verification of unlearning. Through empirical comparisons with baseline methods on SimCLR, MoCo, and CLIP, we demonstrate that AC: (1) achieves state-of-the-art performance, approximating exact unlearning (retraining); (2) enables data owners to clearly visualize unlearning effects through black-box evaluation. The code is available at https://github.com/EhanW/Alignment-Calibration.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convex Physics Informed Neural Networks for the Monge-Ampère Optimal Transport Problem</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-10162</link>
+    <guid isPermaLink="false">arxiv:2501.10162</guid>
+    <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Caboussat et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transportation of raw material from suppliers to customers is an issue arising in logistics that is addressed here with a continuous model relying on optimal transport theory. A physics informed neuralnetwork method is advocated here for the solution of the corresponding generalized Monge-Amp`ere equation. Convex neural networks are advocated to enforce the convexity of the solution to the Monge-Ampère equation and obtain a suitable approximation of the optimal transport map. A particular focus is set on the enforcement of transport boundary conditions in the loss function. Numerical experiments illustrate the solution to the optimal transport problem in several configurations, and sensitivity analyses are performed.</p>]]></description>
+  </item>
 
   <item>
     <title>Categorical Schrödinger Bridge Matching</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Agathe Fernandes Machado et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Algorithmic fairness has received considerable attention due to the failures of various predictive AI systems that have been found to be unfairly biased against subgroups of the population. Many approaches have been proposed to mitigate such biases in predictive systems, however, they often struggle to provide accurate estimates and transparent correction mechanisms in the case where multiple sensitive variables, such as a combination of gender and race, are involved. This paper introduces a new open source Python package, EquiPy, which provides a easy-to-use and model agnostic toolbox for efficiently achieving fairness across multiple sensitive variables. It also offers comprehensive graphic utilities to enable the user to interpret the influence of each sensitive variable within a global context. EquiPy makes use of theoretical results that allow the complexity arising from the use of multiple variables to be broken down into easier-to-solve sub-problems. We demonstrate the ease of use for both mitigation and interpretation on publicly available data derived from the US Census and provide sample code for its use.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OTCXR: Rethinking Self-supervised Alignment using Optimal Transport for Chest X-ray Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2404-11868</link>
-    <guid isPermaLink="false">arxiv:2404.11868</guid>
-    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vandan Gorade et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Self-supervised learning (SSL) has emerged as a promising technique for analyzing medical modalities such as X-rays due to its ability to learn without annotations. However, conventional SSL methods face challenges in achieving semantic alignment and capturing subtle details, which limits their ability to accurately represent the underlying anatomical structures and pathological features. To address these limitations, we propose OTCXR, a novel SSL framework that leverages optimal transport (OT) to learn dense semantic invariance. By integrating OT with our innovative Cross-Viewpoint Semantics Infusion Module (CV-SIM), OTCXR enhances the model&rsquo;s ability to capture not only local spatial features but also global contextual dependencies across different viewpoints. This approach enriches the effectiveness of SSL in the context of chest radiographs. Furthermore, OTCXR incorporates variance and covariance regularizations within the OT framework to prioritize clinically relevant information while suppressing less informative features. This ensures that the learned representations are comprehensive and discriminative, particularly beneficial for tasks such as thoracic disease diagnosis. We validate OTCXR&rsquo;s efficacy through comprehensive experiments on three publicly available chest X-ray datasets. Our empirical results demonstrate the superiority of OTCXR over state-of-the-art methods across all evaluated tasks, confirming its capability to learn semantically rich representations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Trajectory Inference in Wasserstein Space Using Consecutive Averaging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2405-19679</link>
-    <guid isPermaLink="false">arxiv:2405.19679</guid>
-    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amartya Banerjee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Capturing data from dynamic processes through cross-sectional measurements is seen in many fields, such as computational biology. Trajectory inference deals with the challenge of reconstructing continuous processes from such observations. In this work, we propose methods for B-spline approximation and interpolation of point clouds through consecutive averaging that is intrinsic to the Wasserstein space. Combining subdivision schemes with optimal transport-based geodesic, our methods carry out trajectory inference at a chosen level of precision and smoothness, and can automatically handle scenarios where particles undergo division over time. We prove linear convergence rates and rigorously evaluate our method on cell data characterized by bifurcations, merges, and trajectory splitting scenarios like supercells, comparing its performance against state-of-the-art trajectory inference and interpolation methods. The results not only underscore the effectiveness of our method in inferring trajectories but also highlight the benefit of performing interpolation and approximation that respect the inherent geometric properties of the data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Discriminative versus Generative Approaches to Simulation-based Inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-07962</link>
-    <guid isPermaLink="false">arxiv:2503.07962</guid>
-    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Sluijter et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman) — original abstract; no AI summary.</em></p>
-<p>Most of the fundamental, emergent, and phenomenological parameters of particle and nuclear physics are determined through parametric template fits. Simulations are used to populate histograms which are then matched to data. This approach is inherently lossy, since histograms are binned and low-dimensional. Deep learning has enabled unbinned and high-dimensional parameter estimation through neural likelihiood(-ratio) estimation. We compare two approaches for neural simulation-based inference (NSBI): one based on discriminative learning (classification) and one based on generative modeling. These two approaches are directly evaluated on the same datasets, with a similar level of hyperparameter optimization in both cases. In addition to a Gaussian dataset, we study NSBI using a Higgs boson dataset from the FAIR Universe Challenge. We find that both the direct likelihood and likelihood ratio estimation are able to effectively extract parameters with reasonable uncertainties. For the numerical examples and within the set of hyperparameters studied, we found that the likelihood ratio method is more accurate and/or precise. Both methods have a significant spread from the network training and would require ensembling or other mitigation strategies in practice.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Domain Adaptation and Entanglement: an Optimal Transport Perspective</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-08155</link>
-    <guid isPermaLink="false">arxiv:2503.08155</guid>
-    <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Okan Koç et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Current machine learning systems are brittle in the face of distribution shifts (DS), where the target distribution that the system is tested on differs from the source distribution used to train the system. This problem of robustness to DS has been studied extensively in the field of domain adaptation. For deep neural networks, a popular framework for unsupervised domain adaptation (UDA) is domain matching, in which algorithms try to align the marginal distributions in the feature or output space. The current theoretical understanding of these methods, however, is limited and existing theoretical results are not precise enough to characterize their performance in practice. In this paper, we derive new bounds based on optimal transport that analyze the UDA problem. Our new bounds include a term which we dub as \emph{entanglement}, consisting of an expectation of Wasserstein distance between conditionals with respect to changing data distributions. Analysis of the entanglement term provides a novel perspective on the unoptimizable aspects of UDA. In various experiments with multiple models across several DS scenarios, we show that this term can be used to explain the varying performance of UDA algorithms.</p>]]></description>
   </item>
 
 </channel>

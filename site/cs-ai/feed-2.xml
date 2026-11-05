@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Surrogate Model for Heat Transfer Prediction in Impinging Jet Arrays using Dynamic Inlet/Outlet and Flow Rate Control</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2507-07034</link>
+    <guid isPermaLink="false">arxiv:2507.07034</guid>
+    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mikael Vaillant et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet function) — original abstract; no AI summary.</em></p>
+<p>This study presents a surrogate model designed to predict the Nusselt number distribution in an enclosed impinging jet arrays, where each jet function independently and where jets can be transformed from inlets to outlets, leading to a vast number of possible flow arrangements. While computational fluid dynamics (CFD) simulations can model heat transfer with high fidelity, their cost prohibits real-time application such as model-based temperature control. To address this, we generate a CNN-based surrogate model that can predict the Nusselt distribution in real time. We train it with data from implicit large eddy computational fluid dynamics simulations (Re &lt; 2,000). We train two distinct models, one for a five by one array of jets (83 simulations) and one for a three by three array of jets (100 simulations). We introduce a method to extrapolate predictions to higher Reynolds numbers (Re &lt; 10,000) using a correlation-based scaling. The surrogate models achieve high accuracy, with a normalized mean average error below 2% on validation data for the five by one surrogate model and 0.6% for the three by three surrogate model. Experimental validation confirms the model&rsquo;s predictive capabilities. This work provides a foundation for model-based control strategies in advanced thermal management applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Hyperparameter Trajectory Inference with Conditional Lagrangian Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-01771</link>
+    <guid isPermaLink="false">arxiv:2603.01771</guid>
+    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Harry Amad et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Neural networks (NNs) often have critical behavioural trade-offs that are set at design time with hyperparameters-such as reward weights in reinforcement learning or quantile targets in regression. Post-deployment, however, user preferences can evolve, making initial settings undesirable, necessitating potentially expensive retraining. To circumvent this, we introduce the task of Hyperparameter Trajectory Inference (HTI): to learn, from observed data, how a NN&rsquo;s conditional output distribution changes with its hyperparameters, and construct a surrogate model that approximates the NN at unobserved hyperparameter settings. HTI requires extending existing trajectory inference approaches to incorporate conditions, exacerbating the challenge of ensuring inferred paths are feasible. We propose an approach based on conditional Lagrangian optimal transport, jointly learning the Lagrangian function governing hyperparameter-induced dynamics along with the associated optimal transport maps and geodesics between observed marginals, which form the surrogate model. We incorporate inductive biases based on the manifold hypothesis and least-action principles into the learned Lagrangian, improving surrogate model feasibility. We empirically demonstrate that our approach reconstructs NN outputs across various hyperparameter spectra better than other alternatives.</p>]]></description>
+  </item>
 
   <item>
     <title>Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hamza Kheddar et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC, collider, colliders) — original abstract; no AI summary.</em></p>
 <p>Nowadays, there has been a growing trend in the field of high-energy physics (HEP), in both its experimental and phenomenological studies, to incorporate machine learning (ML) and its specialized branch, deep learning (DL). This review paper provides a thorough illustration of these applications using different ML and DL approaches. The first part of the paper examines the basics of various particle physics types and establishes guidelines for assessing particle physics alongside the available learning models. Next, a detailed classification is provided for representing Jets that are reconstructed in high-energy collisions, mainly in proton-proton collisions at well-defined beam energies. This section covers various datasets, preprocessing techniques, and feature extraction and selection methods. The presented techniques can be applied to future hadron-hadron colliders (HHC), such as the high-luminosity LHC (HL-LHC) and the future circular collider - hadron-hadron (FCChh). The authors then explore several AI techniques analyses designed specifically for both image and point-cloud (PC) data in HEP. Additionally, a closer look is taken at the classification associated with Jet tagging in hadron collisions. In this review, various state-of-the-art (SOTA) techniques in ML and DL are examined, with a focus on their implications for HEP demands. More precisely, this discussion addresses various applications in extensive detail, such as Jet tagging, Jet tracking, particle classification, and more. The review concludes with an analysis of the current state of HEP using DL methodologies. It highlights the challenges and potential areas for future research, which are illustrated for each application.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Online Reward-Weighted Fine-Tuning of Flow Matching with Wasserstein Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2502-06061</link>
-    <guid isPermaLink="false">arxiv:2502.06061</guid>
-    <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiajun Fan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Recent advancements in reinforcement learning (RL) have achieved great success in fine-tuning diffusion-based generative models. However, fine-tuning continuous flow-based generative models to align with arbitrary user-defined reward functions remains challenging, particularly due to issues such as policy collapse from overoptimization and the prohibitively high computational cost of likelihoods in continuous-time flows. In this paper, we propose an easy-to-use and theoretically sound RL fine-tuning method, which we term Online Reward-Weighted Conditional Flow Matching with Wasserstein-2 Regularization (ORW-CFM-W2). Our method integrates RL into the flow matching framework to fine-tune generative models with arbitrary reward functions, without relying on gradients of rewards or filtered datasets. By introducing an online reward-weighting mechanism, our approach guides the model to prioritize high-reward regions in the data manifold. To prevent policy collapse and maintain diversity, we incorporate Wasserstein-2 (W2) distance regularization into our method and derive a tractable upper bound for it in flow matching, effectively balancing exploration and exploitation of policy optimization. We provide theoretical analyses to demonstrate the convergence properties and induced data distributions of our method, establishing connections with traditional RL algorithms featuring Kullback-Leibler (KL) regularization and offering a more comprehensive understanding of the underlying mechanisms and learning behavior of our approach. Extensive experiments on tasks including target image generation, image compression, and text-image alignment demonstrate the effectiveness of our method, where our method achieves optimal policy convergence while allowing controllable trade-offs between reward maximization and diversity preservation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Private Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2404-06787</link>
-    <guid isPermaLink="false">arxiv:2404.06787</guid>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenqian Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distance is a key metric for quantifying data divergence from a distributional perspective. However, its application in privacy-sensitive environments, where direct sharing of raw data is prohibited, presents significant challenges. Existing approaches, such as Differential Privacy and Federated Optimization, have been employed to estimate the Wasserstein distance under such constraints. However, these methods often fall short when both accuracy and security are required. In this study, we explore the inherent triangular properties within the Wasserstein space, leading to a novel solution named TriangleWad. This approach facilitates the fast computation of the Wasserstein distance between datasets stored across different entities, ensuring that raw data remain completely hidden. TriangleWad not only strengthens resistance to potential attacks but also preserves high estimation accuracy. Through extensive experiments across various tasks involving both image and text data, we demonstrate its superior performance and significant potential for real-world applications.</p>]]></description>
   </item>
 
 </channel>

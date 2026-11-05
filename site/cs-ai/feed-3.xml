@@ -7,7 +7,27 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Online Reward-Weighted Fine-Tuning of Flow Matching with Wasserstein Regularization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2502-06061</link>
+    <guid isPermaLink="false">arxiv:2502.06061</guid>
+    <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiajun Fan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Recent advancements in reinforcement learning (RL) have achieved great success in fine-tuning diffusion-based generative models. However, fine-tuning continuous flow-based generative models to align with arbitrary user-defined reward functions remains challenging, particularly due to issues such as policy collapse from overoptimization and the prohibitively high computational cost of likelihoods in continuous-time flows. In this paper, we propose an easy-to-use and theoretically sound RL fine-tuning method, which we term Online Reward-Weighted Conditional Flow Matching with Wasserstein-2 Regularization (ORW-CFM-W2). Our method integrates RL into the flow matching framework to fine-tune generative models with arbitrary reward functions, without relying on gradients of rewards or filtered datasets. By introducing an online reward-weighting mechanism, our approach guides the model to prioritize high-reward regions in the data manifold. To prevent policy collapse and maintain diversity, we incorporate Wasserstein-2 (W2) distance regularization into our method and derive a tractable upper bound for it in flow matching, effectively balancing exploration and exploitation of policy optimization. We provide theoretical analyses to demonstrate the convergence properties and induced data distributions of our method, establishing connections with traditional RL algorithms featuring Kullback-Leibler (KL) regularization and offering a more comprehensive understanding of the underlying mechanisms and learning behavior of our approach. Extensive experiments on tasks including target image generation, image compression, and text-image alignment demonstrate the effectiveness of our method, where our method achieves optimal policy convergence while allowing controllable trade-offs between reward maximization and diversity preservation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Private Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2404-06787</link>
+    <guid isPermaLink="false">arxiv:2404.06787</guid>
+    <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenqian Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distance is a key metric for quantifying data divergence from a distributional perspective. However, its application in privacy-sensitive environments, where direct sharing of raw data is prohibited, presents significant challenges. Existing approaches, such as Differential Privacy and Federated Optimization, have been employed to estimate the Wasserstein distance under such constraints. However, these methods often fall short when both accuracy and security are required. In this study, we explore the inherent triangular properties within the Wasserstein space, leading to a novel solution named TriangleWad. This approach facilitates the fast computation of the Wasserstein distance between datasets stored across different entities, ensuring that raw data remain completely hidden. TriangleWad not only strengthens resistance to potential attacks but also preserves high estimation accuracy. Through extensive experiments across various tasks involving both image and text data, we demonstrate its superior performance and significant potential for real-world applications.</p>]]></description>
+  </item>
 
   <item>
     <title>OT-Transformer: A Continuous-time Transformer Architecture with Optimal Transport Regularization</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong Liang Goh et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The traveling salesman problem is a fundamental combinatorial optimization problem with strong exact algorithms. However, as problems scale up, these exact algorithms fail to provide a solution in a reasonable time. To resolve this, current works look at utilizing deep learning to construct reasonable solutions. Such efforts have been very successful, but tend to be slow and compute intensive. This paper exemplifies the integration of entropic regularized optimal transport techniques as a layer in a deep reinforcement learning network. We show that we can construct a model capable of learning without supervision and inferences significantly faster than current autoregressive approaches. We also empirically evaluate the benefits of including optimal transport algorithms within deep learning models to enforce assignment constraints during end-to-end training.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Causal Incremental Graph Convolution for Recommender System Retraining</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2022.html#a2108-06889</link>
-    <guid isPermaLink="false">arxiv:2108.06889</guid>
-    <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sihao Ding et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Real-world recommender system needs to be regularly retrained to keep with the new data. In this work, we consider how to efficiently retrain graph convolution network (GCN) based recommender models, which are state-of-the-art techniques for collaborative recommendation. To pursue high efficiency, we set the target as using only new data for model updating, meanwhile not sacrificing the recommendation accuracy compared with full model retraining. This is non-trivial to achieve, since the interaction data participates in both the graph structure for model construction and the loss function for model learning, whereas the old graph structure is not allowed to use in model updating. Towards the goal, we propose a \textit{Causal Incremental Graph Convolution} approach, which consists of two new operators named \textit{Incremental Graph Convolution} (IGC) and \textit{Colliding Effect Distillation} (CED) to estimate the output of full graph convolution. In particular, we devise simple and effective modules for IGC to ingeniously combine the old representations and the incremental graph and effectively fuse the long-term and short-term preference signals. CED aims to avoid the out-of-date issue of inactive nodes that are not in the incremental graph, which connects the new data with inactive nodes through causal inference. In particular, CED estimates the causal effect of new data on the representation of inactive nodes through the control of their collider. Extensive experiments on three real-world datasets demonstrate both accuracy gains and significant speed-ups over the existing retraining mechanism.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A FAIR and AI-ready Higgs boson decay dataset</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2022.html#a2108-02214</link>
-    <guid isPermaLink="false">arxiv:2108.02214</guid>
-    <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifan Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Philip Harris) — original abstract; no AI summary.</em></p>
-<p>To enable the reusability of massive scientific datasets by humans and machines, researchers aim to adhere to the principles of findability, accessibility, interoperability, and reusability (FAIR) for data and artificial intelligence (AI) models. This article provides a domain-agnostic, step-by-step assessment guide to evaluate whether or not a given dataset meets these principles. We demonstrate how to use this guide to evaluate the FAIRness of an open simulated dataset produced by the CMS Collaboration at the CERN Large Hadron Collider. This dataset consists of Higgs boson decays and quark and gluon background, and is available through the CERN Open Data Portal. We use additional available tools to assess the FAIRness of this dataset, and incorporate feedback from members of the FAIR community to validate our results. This article is accompanied by a Jupyter notebook to visualize and explore this dataset. This study marks the first in a planned series of articles that will guide scientists in the creation of FAIR AI models and datasets in high energy particle physics.</p>]]></description>
   </item>
 
 </channel>

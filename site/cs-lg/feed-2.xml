@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Regret Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2504-10796</link>
+    <guid isPermaLink="false">arxiv:2504.10796</guid>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lukas-Benedikt Fiechtner et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Distributionally robust optimization (DRO) is widely used for decision-making under uncertainty, but its adversarial focus on worst-case loss can lead to overly conservative policies. To mitigate this, we study ex-ante Distributionally Robust Regret Optimization (DRRO) with Wasserstein ambiguity sets, designed to balance robustness with upside potential. We develop a theory of Wasserstein DRRO (WDRRO) paralleling Wasserstein DRO. Under smoothness and regularity, WDRRO selects among ERM optima by a first-order gradient-discrepancy rule. If the ERM optimizer is unique, first-order sensitivity vanishes and a second-order expansion governs deviations. For convex quadratics ERM and DRRO coincide for any radius. We then study regimes where these assumptions fail: nondifferentiable max-affine losses, discrete references, and larger radii, where WDRRO can differ from ERM and WDRO. We show that computing WDRRO regret is NP-hard even without bilinear terms. Nevertheless, we develop exact algorithms, a tractable convex relaxation with guarantees, and experiments showing tightness and loss-dependent behavior.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Regret Optimization for Reinforcement Learning from Human Feedback</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-00155</link>
+    <guid isPermaLink="false">arxiv:2605.00155</guid>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikai Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Reinforcement learning from human feedback (RLHF) is a central post-training tool for aligning large language models, but its training reward is only a learned proxy for true human utility. This creates a decision problem under objective misspecification: the policy is optimized against an estimated reward, while deployment performance is governed by an unobserved population preference. The resulting gap leads to reward over-optimization, where proxy reward keeps improving after true quality deteriorates. We propose distributionally robust regret optimization (DRRO) for RLHF with a Wasserstein ambiguity set over reward laws, using promptwise ℓ_p distances between reward vectors as transport costs. Unlike standard distributionally robust optimization, which pessimizes worst-case value, DRRO pessimizes worst-case regret relative to the best policy under the same plausible reward perturbation. We show that the expressive-policy problem decomposes into promptwise regret problems. For each prompt, the inner adversary has a dual-norm closed form; under the ℓ_1 transport cost used by our algorithm, the optimizer has a water-filling structure. These results lead to a practical policy-gradient algorithm that adds a simple sampled bonus to GRPO-style training. Theory and experiments both show that DRRO is less over-pessimistic than standard DRO and mitigates over-optimization more effectively than existing baselines.</p>]]></description>
+  </item>
+
+  <item>
+    <title>PRISM: Principled Reference Identification for Schrodinger Bridge Model</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-06893</link>
+    <guid isPermaLink="false">arxiv:2608.06893</guid>
+    <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Forouzan Fallah et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
+<p>Schrödinger bridge models restore a clean signal from a degraded observation by following the conditional bridges of a reference process, yet this reference is chosen heuristically, typically white noise with a hand-tuned schedule. We develop PRISM, a theory of bridge reference design. We characterize the time-varying Gaussian references that remain exactly tractable with per-mode schedules: precisely those whose instantaneous covariances commute. We then prove an invisibility principle: with the exact drift and unlimited solver steps, every admissible reference recovers the true posterior. The choice of reference therefore matters only under finite computational resources. For a fixed step budget, we derive the finite-step objective in closed form and prove that every optimal noise spectrum is proportional to Pk, the spectrum of information destroyed by the sensor, with a mode-independent constant x*(T) = (2 ln T)^-1/2 (1 + o(1)). The analysis shows that noise color and temporal scheduling are interchangeable, and regularization provably shifts the optimal reference toward white noise. Experiments in Gaussian settings confirm the predicted orderings and the closed-form loss floors. On FFHQ, the distortion&ndash; perception trade-off and spectral localization transfer, but white noise outperforms the matched reference; a pre-registered study that changes the training regime refutes ridge whitening as the explanation. A 2x2 mechanism study then traces the inversion to the non-Gaussian per-mode statistics of real images. PRISM turns reference design from a hyperparameter sweep into a calculation in the Gaussian regime, and locates exactly where real images break it.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Limit Points of Reflow with Minibatch Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-07042</link>
+    <guid isPermaLink="false">arxiv:2608.07042</guid>
+    <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonin Chambolle et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Rectified flows, also called flow matching or stochastic interpolants, are generative models that learn a time-dependent vector field steering a probability curve between two probability distributions, usually referred to as latent and target distributions. Reflow accelerates inference by iteratively straightening the trajectories induced by this vector field. We study the asymptotic behavior of this iteration and characterize its limit points. First, we define weak rectified couplings which always exist. Next, when rectified flow updates are alternated with minibatch optimal transport steps of fixed batch size, we show that any limit is N-cyclically monotone, where N is the batch size. Such N-cyclically monotone couplings enjoy favorable structural and stability properties such as rectifiability and straightness. Finally, restricting velocities to gradient fields and assuming additional support conditions, we prove that reflow limits coincide with the optimal transport map between the endpoint distributions.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein Policy Gradient for Entropy-Regularized Linear-Quadratic Control</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashkan Shahbazi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We propose min Generalized Sliced Gromov&ndash;Wasserstein (min-GSGW), a sliced formulation for the Gromov&ndash;Wasserstein (GW) problem using expressive generalized slicers. The key idea is to learn coupled nonlinear slicers that assign compatible push-forward values to both input measures, so that monotone coupling in the projected domain lifts to a transport plan evaluated against the GW objective in the original spaces. The resulting plan induces a GW objective value, and min-GSGW minimizes this cost directly in the original spaces. We further show that min-GSGW is rigid-motion invariant, a crucial property for geometric matching and shape analysis tasks. Our contributions are threefold: 1) we introduce generalized slicers into the sliced GW framework, 2) we construct a slicing-based efficient GW transport plan; and 3) we develop an amortized variant that replaces per-instance optimization with a learned slicer for unseen input pairs. We perform experiments on animal mesh matching, horse mesh interpolation, and ShapeNet part transfer. Results show that min-GSGW produces meaningful geometric correspondences and GW objective values at substantially lower computational cost than existing GW solvers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-13950</link>
-    <guid isPermaLink="false">arxiv:2605.13950</guid>
-    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Darius A. Faroughy et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, David Shih) — original abstract; no AI summary.</em></p>
-<p>Autonomous language-model agents are increasingly evaluated on long-horizon tool-use tasks, but existing benchmarks rarely capture the complexity and nuance of real scientific work. To address this gap, we introduce Collider-Bench, a benchmark for evaluating whether LLM agents can reproduce experimental analyses from the Large Hadron Collider (LHC) using only public papers and open scientific software. Such analyses are often difficult to reproduce because the public toolchain only approximates the software used internally by the experimental collaborations, while the published papers inevitably omit implementation details needed for a faithful reconstruction. Agents must therefore rely on physical reasoning, domain knowledge, and trial-and-error to fill these gaps. Each task requires the agent to turn a published analysis into an executable simulation-and-selection pipeline and submit predicted collision event yields in specified signal regions. These predictions are evaluated with standard histogram metrics that provide continuous fidelity scores without a hand-written rubric. We also report the computational cost incurred by each agent per task. Finally, we evaluate the codebase and full session trace using an LLM judge to catch qualitative failure modes such as fabrications, hallucinations and duplications. We release an initial set of tasks drawn from LHC searches, together with a containerized sandbox and event simulation tools. We evaluate across a capability ladder of general purpose coding agents. Our results show that on average no agent reliably beats the physicist-in-the-loop solution.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distributional Process Reward Models: Calibrated Prediction of Future Rewards via Conditional Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06785</link>
-    <guid isPermaLink="false">arxiv:2605.06785</guid>
-    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rachel Ma et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Inference-time scaling methods rely on Process Reward Models (PRMs), which are often poorly calibrated and overestimate success probabilities. We propose, to our knowledge, the first use of conditional optimal transport for calibrating PRMs, modifying conditional OT (CondOT) map learning \cite{bunne2022supervised} to estimate a monotonic conditional quantile function over success probabilities estimated by the PRM, conditioned on PRM hidden states. This yields structurally valid quantile estimates and enables efficient extraction of confidence bounds at arbitrary levels, which we integrate into the instance-adaptive scaling (IAS) framework of \cite{park2025know}. We evaluate on mathematical reasoning benchmarks spanning moderate-difficulty problems (MATH-500) and harder out-of-distribution problems (AIME). For PRMs with reliable ranking signals, our method substantially improves calibration over both uncalibrated PRMs and quantile regression. On downstream Best-of-N IAS performance, our method generally improves over uncalibrated PRMs. These results establish conditional optimal transport as another principled and practical approach to PRM calibration, offering structural guarantees and flexible uncertainty estimation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fused Gromov-Wasserstein Distance with Feature Selection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-12161</link>
-    <guid isPermaLink="false">arxiv:2605.12161</guid>
-    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Harlin Lee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Fused Gromov-Wasserstein (FGW) distances provide a principled framework for comparing objects by jointly aligning structure and node features. However, existing FGW formulations treat all features uniformly, which limits interpretability and robustness in high-dimensional settings where many features may be irrelevant or noisy. We introduce FGW distances with feature selection, which incorporate adaptive feature suppression weights into the FGW objective to selectively downweight or suppress differentiating features during alignment. We propose two approaches: (1) regularized FGW with Lasso and Ridge penalties, and (2) FGW with simplex-constrained weights, including groupwise extensions. We analyze the resulting models and establish their key theoretical properties, including bounds relative to classical FGW and Gromov-Wasserstein distances, and metric behavior. An efficient alternating minimization algorithm is developed. Experiments illustrate how feature suppression enhances interpretability and reveals task-relevant structure, with a special application to computational redistricting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Expected Batch Optimal Transport Plans and Consequences for Flow Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-12174</link>
-    <guid isPermaLink="false">arxiv:2605.12174</guid>
-    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Boïté et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Solving optimal transport (OT) on random minibatches is a common surrogate for exact OT in large-scale learning. In flow matching (FM), this surrogate is used to obtain OT-like couplings that can straighten probability paths and reduce numerical integration cost. Yet, the population-level coupling induced by repeated minibatch OT remains only partially understood. We formalize this coupling as the expected batch OT plan _k, obtained by averaging empirical OT plans over independent minibatches of size k. We then establish its large-batch consistency and, in the semidiscrete case relevant to generative modeling, derive rates for both the transport-cost bias and the convergence of _k to the OT plan. For FM, this yields a population coupling whose induced velocity field is regular enough to define a unique flow from the source to the discrete target. We finally quantify how OT batch size interacts with numerical integration in a tractable two-atom model and in synthetic and image experiments.</p>]]></description>
   </item>
 
 </channel>

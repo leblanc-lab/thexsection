@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-13950</link>
+    <guid isPermaLink="false">arxiv:2605.13950</guid>
+    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Darius A. Faroughy et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, David Shih) — original abstract; no AI summary.</em></p>
+<p>Autonomous language-model agents are increasingly evaluated on long-horizon tool-use tasks, but existing benchmarks rarely capture the complexity and nuance of real scientific work. To address this gap, we introduce Collider-Bench, a benchmark for evaluating whether LLM agents can reproduce experimental analyses from the Large Hadron Collider (LHC) using only public papers and open scientific software. Such analyses are often difficult to reproduce because the public toolchain only approximates the software used internally by the experimental collaborations, while the published papers inevitably omit implementation details needed for a faithful reconstruction. Agents must therefore rely on physical reasoning, domain knowledge, and trial-and-error to fill these gaps. Each task requires the agent to turn a published analysis into an executable simulation-and-selection pipeline and submit predicted collision event yields in specified signal regions. These predictions are evaluated with standard histogram metrics that provide continuous fidelity scores without a hand-written rubric. We also report the computational cost incurred by each agent per task. Finally, we evaluate the codebase and full session trace using an LLM judge to catch qualitative failure modes such as fabrications, hallucinations and duplications. We release an initial set of tasks drawn from LHC searches, together with a containerized sandbox and event simulation tools. We evaluate across a capability ladder of general purpose coding agents. Our results show that on average no agent reliably beats the physicist-in-the-loop solution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Distributional Process Reward Models: Calibrated Prediction of Future Rewards via Conditional Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-06785</link>
+    <guid isPermaLink="false">arxiv:2605.06785</guid>
+    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rachel Ma et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Inference-time scaling methods rely on Process Reward Models (PRMs), which are often poorly calibrated and overestimate success probabilities. We propose, to our knowledge, the first use of conditional optimal transport for calibrating PRMs, modifying conditional OT (CondOT) map learning \cite{bunne2022supervised} to estimate a monotonic conditional quantile function over success probabilities estimated by the PRM, conditioned on PRM hidden states. This yields structurally valid quantile estimates and enables efficient extraction of confidence bounds at arbitrary levels, which we integrate into the instance-adaptive scaling (IAS) framework of \cite{park2025know}. We evaluate on mathematical reasoning benchmarks spanning moderate-difficulty problems (MATH-500) and harder out-of-distribution problems (AIME). For PRMs with reliable ranking signals, our method substantially improves calibration over both uncalibrated PRMs and quantile regression. On downstream Best-of-N IAS performance, our method generally improves over uncalibrated PRMs. These results establish conditional optimal transport as another principled and practical approach to PRM calibration, offering structural guarantees and flexible uncertainty estimation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fused Gromov-Wasserstein Distance with Feature Selection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-12161</link>
+    <guid isPermaLink="false">arxiv:2605.12161</guid>
+    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Harlin Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>Fused Gromov-Wasserstein (FGW) distances provide a principled framework for comparing objects by jointly aligning structure and node features. However, existing FGW formulations treat all features uniformly, which limits interpretability and robustness in high-dimensional settings where many features may be irrelevant or noisy. We introduce FGW distances with feature selection, which incorporate adaptive feature suppression weights into the FGW objective to selectively downweight or suppress differentiating features during alignment. We propose two approaches: (1) regularized FGW with Lasso and Ridge penalties, and (2) FGW with simplex-constrained weights, including groupwise extensions. We analyze the resulting models and establish their key theoretical properties, including bounds relative to classical FGW and Gromov-Wasserstein distances, and metric behavior. An efficient alternating minimization algorithm is developed. Experiments illustrate how feature suppression enhances interpretability and reveals task-relevant structure, with a special application to computational redistricting.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Expected Batch Optimal Transport Plans and Consequences for Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-12174</link>
+    <guid isPermaLink="false">arxiv:2605.12174</guid>
+    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Boïté et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Solving optimal transport (OT) on random minibatches is a common surrogate for exact OT in large-scale learning. In flow matching (FM), this surrogate is used to obtain OT-like couplings that can straighten probability paths and reduce numerical integration cost. Yet, the population-level coupling induced by repeated minibatch OT remains only partially understood. We formalize this coupling as the expected batch OT plan _k, obtained by averaging empirical OT plans over independent minibatches of size k. We then establish its large-batch consistency and, in the semidiscrete case relevant to generative modeling, derive rates for both the transport-cost bias and the convergence of _k to the OT plan. For FM, this yields a population coupling whose induced velocity field is regular enough to define a unique flow from the source to the discrete target. We finally quantify how OT batch size interacts with numerical integration in a tractable two-atom model and in synthetic and image experiments.</p>]]></description>
+  </item>
 
   <item>
     <title>PINS: Proximal Iterations with Sparse Newton and Sinkhorn for Optimal Transport</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yating Ren et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Recently, structure-text contrastive learning has shown promising performance on text-attributed graphs by leveraging the complementary strengths of graph neural networks and language models. However, existing methods typically rely on homophily assumptions in similarity estimation and hard optimization objectives, which limit their applicability to heterophilic graphs. Although existing methods can mitigate heterophily through structural adjustments or neighbor aggregation, they usually treat textual embeddings as static targets, leading to suboptimal alignment. In this work, we identify multi-granular heterophily in text-attributed graphs, including complete heterophily, partial heterophily, and latent homophily, which makes structure-text alignment particularly challenging due to mixed, noisy, and missing semantic correlations. To achieve flexible and bidirectional alignment, we propose GCL-OT, a novel graph contrastive learning framework with optimal transport, equipped with tailored mechanisms for each type of heterophily. Specifically, for partial heterophily, we design a RealSoftMax-based similarity estimator to emphasize key neighbor-word interactions while easing background noise. For complete heterophily, we introduce a prompt-based filter that adaptively excludes irrelevant noise during optimal transport alignment. Furthermore, we incorporate OT-guided soft supervision to uncover potential neighbors with similar semantics, enhancing the learning of latent homophily. Theoretical analysis shows that GCL-OT can improve the mutual information bound and Bayes error guarantees. Extensive experiments on nine benchmarks show that GCL-OT outperforms state-of-the-art methods, demonstrating its effectiveness and robustness.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Test-Time Adaptation for Anomaly Segmentation via Topology-Aware Optimal Transport Chaining</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-20333</link>
-    <guid isPermaLink="false">arxiv:2601.20333</guid>
-    <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ali Zia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Deep topological data analysis (TDA) offers a principled framework for capturing structural invariants such as connectivity and cycles that persist across scales, making it a natural fit for anomaly segmentation (AS). Unlike thresholdbased binarisation, which produces brittle masks under distribution shift, TDA allows anomalies to be characterised as disruptions to global structure rather than local fluctuations. We introduce TopoOT, a topology-aware optimal transport (OT) framework that integrates multi-filtration persistence diagrams (PDs) with test-time adaptation (TTA). Our key innovation is Optimal Transport Chaining, which sequentially aligns PDs across thresholds and filtrations, yielding geodesic stability scores that identify features consistently preserved across scales. These stabilityaware pseudo-labels supervise a lightweight head trained online with OT-consistency and contrastive objectives, ensuring robust adaptation under domain shift. Across standard 2D and 3D anomaly detection benchmarks, TopoOT achieves state-of-the-art performance, outperforming the most competitive methods by up to +24.1% mean F1 on 2D datasets and +10.2% on 3D AS benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>WFR-MFM: One-Step Inference for Dynamic Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-20606</link>
-    <guid isPermaLink="false">arxiv:2601.20606</guid>
-    <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinyu Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Reconstructing dynamical evolution from limited observations is a fundamental challenge in single-cell biology, where dynamic unbalanced optimal transport provides a principled framework for modeling coupled transport and mass variation. However, existing approaches rely on trajectory simulation at inference time, making inference a key bottleneck for scalable applications. In this work, we propose a mean-flow framework for unbalanced flow matching that summarizes both transport and mass-growth dynamics over arbitrary time intervals using mean velocity and mass-growth fields, enabling fast one-step generation without trajectory simulation. To solve dynamic unbalanced optimal transport under the Wasserstein-Fisher-Rao geometry, we further build on this framework to develop Wasserstein-Fisher-Rao Mean Flow Matching (WFR-MFM). Across synthetic and real single-cell RNA sequencing datasets, WFR-MFM achieves orders-of-magnitude faster inference than a range of existing baselines while maintaining high predictive accuracy, and enables efficient perturbation response prediction on large synthetic datasets with thousands of conditions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport Group Counterfactual Explanations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-20692</link>
-    <guid isPermaLink="false">arxiv:2601.20692</guid>
-    <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Enrique Valero-Leal et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Group counterfactual explanations find a set of counterfactual instances to explain a group of input instances contrastively. However, existing methods either (i) optimize counterfactuals only for a fixed group and do not generalize to new group members, (ii) strictly rely on strong model assumptions (e.g., linearity) for tractability or/and (iii) poorly control the counterfactual group geometry distortion. We instead learn an explicit optimal transport map that sends any group instance to its counterfactual without re-optimization, minimizing the group&rsquo;s total transport cost. This enables generalization with fewer parameters, making it easier to interpret the common actionable recourse. For linear classifiers, we prove that functions representing group counterfactuals are derived via mathematical optimization, identifying the underlying convex optimization type (QP, QCQP, &hellip;). Experiments show that they accurately generalize, preserve group geometry and incur only negligible additional transport cost compared to baseline methods. If model linearity cannot be exploited, our approach also significantly outperforms the baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>How to pick the best anomaly detector?</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-14832</link>
-    <guid isPermaLink="false">arxiv:2511.14832</guid>
-    <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marie Hein et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka, Michael Krämer) — original abstract; no AI summary.</em></p>
-<p>Anomaly detection has the potential to discover new physics in unexplored regions of the data. However, choosing the best anomaly detector for a given data set in a model-agnostic way is an important challenge which has hitherto largely been neglected. In this paper, we introduce the data-driven ARGOS metric, which has a sound theoretical foundation and is empirically shown to robustly select the most sensitive anomaly detection model given the data. Focusing on weakly-supervised, classifier-based anomaly detection methods, we show that the ARGOS metric outperforms other model selection metrics previously used in the literature, in particular the binary cross-entropy loss. We explore several realistic applications, including hyperparameter tuning as well as architecture and feature selection, and in all cases we demonstrate that ARGOS is robust to the noisy conditions of anomaly detection.</p>]]></description>
   </item>
 
 </channel>

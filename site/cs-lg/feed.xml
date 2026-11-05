@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Relevance Propagation as Entropic Optimal Transport on Filippov Neural Networks: Sinkhorn Propagation and Region Relevance in Image Classifiers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-05594</link>
+    <guid isPermaLink="false">arxiv:2611.05594</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Olivier Gibaru et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Relevance propagation, which redistributes a network&rsquo;s prediction backward through the layers, is usually treated as a heuristic. We show that it is the solution of a single variational problem: Layer-wise Relevance Propagation (LRP) is the divergence-free flow on the active computational graph of zero relative entropy to the backward transition law of the forward activation flow; for a non-negative reference, this is a relative entropy between Markov measures on backward paths. The rules LRP_0, LRP_z⁺ and LRP_α,β follow from this principle by the choice of a reference, and are instances of one rule, LRPN_α,β, whose weights may vary from node to node, for instance with the node&rsquo;s activity, in the spirit of Hebb&rsquo;s principle. The principle rests on a measure-theoretic formalization of feed-forward networks as directed acyclic graphs of Filippov operators, which covers piecewise-smooth and discontinuous architectures (e.g. hard-routed Mixture-of-Experts) with a Clarke-Filippov generalized-gradient calculus; it also characterizes backpropagation as the adjoint equation of a Lagrangian relaxation. On networks of ReLU and max-pooling nodes, LRP_0 is Gradient×Input, with an explicit jump across a kink where LRP_z⁺ stays continuous. Taking the entropy edge by edge yields a new rule, Sinkhorn Relevance Propagation. Aggregated over an input region, the flow of a non-negative reference tells, with exact accounting, which hidden units carry its evidence, the conditioned flow being a Schrödinger bridge. On VGG-16, the conservation identities hold to round-off, and the rules are told apart by the sign of their maps, the share of the output left to the bias nodes, faithfulness, localization and class dependence; on ConvNeXt-Tiny, LRPN_α,β conserves the output and its Hebbian weights give the highest ABPC of the rules tested.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Transport along Local Annealing Paths: Wasserstein Geometry and Multimodal Sampling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-05605</link>
+    <guid isPermaLink="false">arxiv:2611.05605</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Han Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Variational approaches to learning transport maps for multimodal sampling can suffer from mode collapse. One way to mitigate this problem is to learn transport along a prescribed path of intermediate distributions defined by geometric annealing. We show that annealing can take a substantial detour in Wasserstein space: when mass moves between modes, the path can be much longer than the distance between its endpoints. We further link path geometry to transport learning, showing that long annealing paths can slow population optimization, while sufficiently regular paths permit rapid convergence. Motivated by these findings, we propose componentwise annealed transport (CAT) to reduce the need for mass transfer between modes. Starting from a mode-informed mixture reference, CAT constructs an exact mixture decomposition of the target and learns separate transport maps along componentwise annealing paths. We estimate the component weights separately and show that these estimates remain consistent even when the learned flows are inexact. We also develop adaptive annealing schedules guided by transport effort. Experiments on multimodal synthetic distributions and Bayesian inference problems demonstrate improvements in transport learning and sampling efficiency.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FlyHash for LLM Agent Memory: An Empirical Validation and a New Application</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-05791</link>
+    <guid isPermaLink="false">arxiv:2611.05791</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohan Bheemadolu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with approximate nearest-neighbor methods. The fruit fly&rsquo;s olfactory circuit computes a locality-sensitive hash of sensory input using a strikingly different mechanism - sparse random projection followed by winner-take-all competition - and prior work (Dasgupta et al., 2017) showed this scheme, dubbed FlyHash, preserves neighbor structure better per bit than conventional random-hyperplane hashing (SimHash) on several benchmarks. We apply FlyHash, to our knowledge for the first time, to LLM agent memory retrieval, and ask three questions a practitioner actually needs answered: does the quality advantage hold under a correctly matched-bit protocol (it does, robustly, across 10 seeds and four datasets spanning two modalities, with one specific, previously undocumented comparison pitfall identified and corrected along the way); does that advantage translate into real memory and latency savings, including against the dense-vector indexing (HNSW) practitioners default to today (no: at equal bits FlyHash&rsquo;s codes are larger and slower to compare than SimHash&rsquo;s, and HNSW dominates both hash methods at ordinary scale; a sparse-set comparison we introduce recovers most but not all of a naive latency gap, leaving hashing&rsquo;s practical case narrower and more specific than the quality result alone implies); and does the advantage survive genuine, non-circular agent-memory relevance labels rather than the nearest-neighbor-by-embedding proxy this literature otherwise relies on (it does). We report all three answers precisely, including the two that narrow rather than flatter the headline result, and release our implementation, a working agent-memory demo, and a full account of the methodological pitfalls we found and corrected.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FedFiOT: Fisher-Weighted Optimal Transport for Model Merging in One-Shot and Few-Round Federated Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-06783</link>
+    <guid isPermaLink="false">arxiv:2611.06783</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Quan Minh Nguyen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>One-shot and few-round federated learning (FL) reduce communication burden by constructing a global model within one or a few communication rounds, but often achieve lower performance than conventional multi-round FL. Without frequent synchronization, client models may drift apart, causing neurons that learn similar features to occupy different positions across clients. At the same time, local data heterogeneity can cause corresponding parameters to differ in their importance to each client&rsquo;s predictions. Together, these challenges cause direct averaging to combine mismatched neurons and assign equal weight to parameters despite differences in their importance. We propose FedFiOT, a Fisher-weighted optimal transport framework for one-shot and few-round FL that leverages Fisher information to quantify parameter importance and guide neuron alignment and model aggregation. FedFiOT jointly optimizes neuron correspondences and global model parameters through alternating minimization of a shared Fisher-weighted objective. Theoretically, we show that FedFiOT&rsquo;s optimization procedure monotonically decreases the layer-wise merging objective and establish a stationarity bound that quantifies the effects of client heterogeneity and nonuniform Fisher weighting.Experiments across multiple datasets demonstrate consistent improvements over competing baselines in both one-shot and few-round federated learning settings.</p>]]></description>
+  </item>
 
   <item>
     <title>Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zijiang Yang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Transformer-based neural operators have achieved substantial progress in solving Partial Differential Equations (PDEs) by projecting spatial observations into compact latent tokens and learning physical interactions in latent spaces. However, we reveal that existing learnable projection mechanisms cannot ensure stable and balanced assignments from observation points to latent tokens, causing some latent tokens to be over-assigned while others remain underutilized. This limitation further restricts the design of hierarchical architectures, as assignment imbalance is continuously inherited and amplified across latent spaces, eventually causing severe token collapse in deeper spaces. To address these issues, we propose MoNo (Multiscale Optimal Transport Neural Operator), a progressive multiscale neural operator that efficiently solves PDEs on general geometries through stable latent-space construction. At its core is CoTAP (Cross-scale Optimal Transport Assignment and Projection), a novel latent-space construction method that formulates cross-space assignment between adjacent spaces as an entropy-regularized optimal transport problem, thereby constructing balanced bidirectional projections and stable latent spaces. CoTAP also ensures stable information transfer across multiple latent spaces, further enabling multiscale architectures on general geometries, which in turn support more efficient learning of long-range physical interactions. Extensive experiments demonstrate that MoNo outperforms existing state-of-the-art neural operators in both prediction performance and computational efficiency. Code is available at https://github.com/ZijiangY1116/MoNo.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Regret Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2504-10796</link>
-    <guid isPermaLink="false">arxiv:2504.10796</guid>
-    <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lukas-Benedikt Fiechtner et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Distributionally robust optimization (DRO) is widely used for decision-making under uncertainty, but its adversarial focus on worst-case loss can lead to overly conservative policies. To mitigate this, we study ex-ante Distributionally Robust Regret Optimization (DRRO) with Wasserstein ambiguity sets, designed to balance robustness with upside potential. We develop a theory of Wasserstein DRRO (WDRRO) paralleling Wasserstein DRO. Under smoothness and regularity, WDRRO selects among ERM optima by a first-order gradient-discrepancy rule. If the ERM optimizer is unique, first-order sensitivity vanishes and a second-order expansion governs deviations. For convex quadratics ERM and DRRO coincide for any radius. We then study regimes where these assumptions fail: nondifferentiable max-affine losses, discrete references, and larger radii, where WDRRO can differ from ERM and WDRO. We show that computing WDRRO regret is NP-hard even without bilinear terms. Nevertheless, we develop exact algorithms, a tractable convex relaxation with guarantees, and experiments showing tightness and loss-dependent behavior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Regret Optimization for Reinforcement Learning from Human Feedback</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-00155</link>
-    <guid isPermaLink="false">arxiv:2605.00155</guid>
-    <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikai Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Reinforcement learning from human feedback (RLHF) is a central post-training tool for aligning large language models, but its training reward is only a learned proxy for true human utility. This creates a decision problem under objective misspecification: the policy is optimized against an estimated reward, while deployment performance is governed by an unobserved population preference. The resulting gap leads to reward over-optimization, where proxy reward keeps improving after true quality deteriorates. We propose distributionally robust regret optimization (DRRO) for RLHF with a Wasserstein ambiguity set over reward laws, using promptwise ℓ_p distances between reward vectors as transport costs. Unlike standard distributionally robust optimization, which pessimizes worst-case value, DRRO pessimizes worst-case regret relative to the best policy under the same plausible reward perturbation. We show that the expressive-policy problem decomposes into promptwise regret problems. For each prompt, the inner adversary has a dual-norm closed form; under the ℓ_1 transport cost used by our algorithm, the optimizer has a water-filling structure. These results lead to a practical policy-gradient algorithm that adds a simple sampled bonus to GRPO-style training. Theory and experiments both show that DRRO is less over-pessimistic than standard DRO and mitigates over-optimization more effectively than existing baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>PRISM: Principled Reference Identification for Schrodinger Bridge Model</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-06893</link>
-    <guid isPermaLink="false">arxiv:2608.06893</guid>
-    <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Forouzan Fallah et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
-<p>Schrödinger bridge models restore a clean signal from a degraded observation by following the conditional bridges of a reference process, yet this reference is chosen heuristically, typically white noise with a hand-tuned schedule. We develop PRISM, a theory of bridge reference design. We characterize the time-varying Gaussian references that remain exactly tractable with per-mode schedules: precisely those whose instantaneous covariances commute. We then prove an invisibility principle: with the exact drift and unlimited solver steps, every admissible reference recovers the true posterior. The choice of reference therefore matters only under finite computational resources. For a fixed step budget, we derive the finite-step objective in closed form and prove that every optimal noise spectrum is proportional to Pk, the spectrum of information destroyed by the sensor, with a mode-independent constant x*(T) = (2 ln T)^-1/2 (1 + o(1)). The analysis shows that noise color and temporal scheduling are interchangeable, and regularization provably shifts the optimal reference toward white noise. Experiments in Gaussian settings confirm the predicted orderings and the closed-form loss floors. On FFHQ, the distortion&ndash; perception trade-off and spectral localization transfer, but white noise outperforms the matched reference; a pre-registered study that changes the training regime refutes ridge whitening as the explanation. A 2x2 mechanism study then traces the inversion to the non-Gaussian per-mode statistics of real images. PRISM turns reference design from a hyperparameter sweep into a calculation in the Gaussian regime, and locates exactly where real images break it.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Limit Points of Reflow with Minibatch Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-07042</link>
-    <guid isPermaLink="false">arxiv:2608.07042</guid>
-    <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonin Chambolle et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Rectified flows, also called flow matching or stochastic interpolants, are generative models that learn a time-dependent vector field steering a probability curve between two probability distributions, usually referred to as latent and target distributions. Reflow accelerates inference by iteratively straightening the trajectories induced by this vector field. We study the asymptotic behavior of this iteration and characterize its limit points. First, we define weak rectified couplings which always exist. Next, when rectified flow updates are alternated with minibatch optimal transport steps of fixed batch size, we show that any limit is N-cyclically monotone, where N is the batch size. Such N-cyclically monotone couplings enjoy favorable structural and stability properties such as rectifiability and straightness. Finally, restricting velocities to gradient fields and assuming additional support conditions, we prove that reflow limits coincide with the optimal transport map between the endpoint distributions.</p>]]></description>
   </item>
 
 </channel>
