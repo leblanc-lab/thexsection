@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Min Generalized Sliced Gromov Wasserstein: A Scalable Path to Gromov Wasserstein</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-13753</link>
+    <guid isPermaLink="false">arxiv:2605.13753</guid>
+    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashkan Shahbazi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose min Generalized Sliced Gromov&ndash;Wasserstein (min-GSGW), a sliced formulation for the Gromov&ndash;Wasserstein (GW) problem using expressive generalized slicers. The key idea is to learn coupled nonlinear slicers that assign compatible push-forward values to both input measures, so that monotone coupling in the projected domain lifts to a transport plan evaluated against the GW objective in the original spaces. The resulting plan induces a GW objective value, and min-GSGW minimizes this cost directly in the original spaces. We further show that min-GSGW is rigid-motion invariant, a crucial property for geometric matching and shape analysis tasks. Our contributions are threefold: 1) we introduce generalized slicers into the sliced GW framework, 2) we construct a slicing-based efficient GW transport plan; and 3) we develop an amortized variant that replaces per-instance optimization with a learned slicer for unseen input pairs. We perform experiments on animal mesh matching, horse mesh interpolation, and ShapeNet part transfer. Results show that min-GSGW produces meaningful geometric correspondences and GW objective values at substantially lower computational cost than existing GW solvers.</p>]]></description>
+  </item>
 
   <item>
     <title>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shrey Goel et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Generative modeling of peptide sequences requires navigating a discrete and highly constrained space in which many intermediate states are chemically implausible or unstable. Existing discrete diffusion and flow-based methods rely on reversing fixed corruption processes or following prescribed probability paths, which can force generation through low-likelihood regions and require countless sampling steps. We introduce Minimal-action discrete Schrödinger Bridge Matching (MadSBM), a rate-based generative framework for peptide design that formulates generation as a controlled continuous-time Markov process on the amino-acid edit graph. To yield probability trajectories that remain near high-likelihood sequence neighborhoods throughout generation, MadSBM 1) defines generation relative to a biologically informed reference process derived from pre-trained protein language model logits and 2) learns a time-dependent control field that biases transition rates to produce low-action transport paths from a masked prior to the data distribution. We finally introduce guidance to the MadSBM sampling procedure towards a specific functional objective, expanding the design space of therapeutic peptides; to our knowledge, this represents the first-ever application of discrete classifier guidance to Schrödinger bridge-based generative models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GCL-OT: Graph Contrastive Learning with Optimal Transport for Heterophilic Text-Attributed Graphs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-16778</link>
-    <guid isPermaLink="false">arxiv:2511.16778</guid>
-    <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yating Ren et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Recently, structure-text contrastive learning has shown promising performance on text-attributed graphs by leveraging the complementary strengths of graph neural networks and language models. However, existing methods typically rely on homophily assumptions in similarity estimation and hard optimization objectives, which limit their applicability to heterophilic graphs. Although existing methods can mitigate heterophily through structural adjustments or neighbor aggregation, they usually treat textual embeddings as static targets, leading to suboptimal alignment. In this work, we identify multi-granular heterophily in text-attributed graphs, including complete heterophily, partial heterophily, and latent homophily, which makes structure-text alignment particularly challenging due to mixed, noisy, and missing semantic correlations. To achieve flexible and bidirectional alignment, we propose GCL-OT, a novel graph contrastive learning framework with optimal transport, equipped with tailored mechanisms for each type of heterophily. Specifically, for partial heterophily, we design a RealSoftMax-based similarity estimator to emphasize key neighbor-word interactions while easing background noise. For complete heterophily, we introduce a prompt-based filter that adaptively excludes irrelevant noise during optimal transport alignment. Furthermore, we incorporate OT-guided soft supervision to uncover potential neighbors with similar semantics, enhancing the learning of latent homophily. Theoretical analysis shows that GCL-OT can improve the mutual information bound and Bayes error guarantees. Extensive experiments on nine benchmarks show that GCL-OT outperforms state-of-the-art methods, demonstrating its effectiveness and robustness.</p>]]></description>
   </item>
 
 </channel>

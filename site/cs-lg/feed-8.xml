@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Accelerating Sinkhorn Algorithm with Sparse Newton Iterations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-12253</link>
+    <guid isPermaLink="false">arxiv:2401.12253</guid>
+    <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xun Tang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Computing the optimal transport distance between statistical distributions is a fundamental task in machine learning. One remarkable recent advancement is entropic regularization and the Sinkhorn algorithm, which utilizes only matrix scaling and guarantees an approximated solution with near-linear runtime. Despite the success of the Sinkhorn algorithm, its runtime may still be slow due to the potentially large number of iterations needed for convergence. To achieve possibly super-exponential convergence, we present Sinkhorn-Newton-Sparse (SNS), an extension to the Sinkhorn algorithm, by introducing early stopping for the matrix scaling steps and a second stage featuring a Newton-type subroutine. Adopting the variational viewpoint that the Sinkhorn algorithm maximizes a concave Lyapunov potential, we offer the insight that the Hessian matrix of the potential function is approximately sparse. Sparsification of the Hessian results in a fast O(n²⁾ per-iteration complexity, the same as the Sinkhorn algorithm. In terms of total iteration count, we observe that the SNS algorithm converges orders of magnitude faster across a wide range of practical cases, including optimal transportation between empirical distributions and calculating the Wasserstein W_1, W_2 distance of discretized densities. The empirical performance is corroborated by a rigorous bound on the approximate sparsity of the Hessian matrix.</p>]]></description>
+  </item>
 
   <item>
     <title>Versatile Energy-Based Probabilistic Models for High Energy Physics</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu-Peng Wu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>In the field of security, multi-objective security games (MOSGs) allow defenders to simultaneously protect targets from multiple heterogeneous attackers. MOSGs aim to simultaneously maximize all the heterogeneous payoffs, e.g., life, money, and crime rate, without merging heterogeneous attackers. In real-world scenarios, the number of heterogeneous attackers and targets to be protected may exceed the capability of most existing state-of-the-art methods, i.e., MOSGs are limited by the issue of scalability. To this end, this paper proposes a general framework called SDES based on many-objective evolutionary search to scale up MOSGs to large-scale targets and heterogeneous attackers. SDES consists of four consecutive key components, i.e., discretization, optimization, evaluation, and refinement. Specifically, SDES first discretizes the originally high-dimensional continuous solution space to the low-dimensional discrete one by the maximal indifference property in game theory. This property helps evolutionary algorithms (EAs) bypass the high-dimensional step function and ensure a well-convergent Pareto front. Then, a many-objective EA is used for optimization in the low-dimensional discrete solution space to obtain a well-spaced Pareto front. To evaluate solutions, SDES restores solutions back to the original space via greedily optimizing a novel divergence measurement. Finally, the refinement in SDES boosts the optimization performance with acceptable cost. Theoretically, we prove the optimization consistency and convergence of SDES. Experiment results show that SDES is the first linear-time MOSG algorithm for both large-scale attackers and targets. SDES is able to solve up to 20 attackers and 100 targets MOSG problems, while the state-of-the-art (SOTA) methods can only solve up to 8 attackers and 25 targets ones. Ablation study verifies the necessity of all components in SDES.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Structural Re-weighting Improves Graph Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-03221</link>
-    <guid isPermaLink="false">arxiv:2306.03221</guid>
-    <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shikun Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>In many real-world applications, graph-structured data used for training and testing have differences in distribution, such as in high energy physics (HEP) where simulation data used for training may not match real experiments. Graph domain adaptation (GDA) is a method used to address these differences. However, current GDA primarily works by aligning the distributions of node representations output by a single graph neural network encoder shared across the training and testing domains, which may often yield sub-optimal solutions. This work examines different impacts of distribution shifts caused by either graph structure or node attributes and identifies a new type of shift, named conditional structure shift (CSS), which current GDA approaches are provably sub-optimal to deal with. A novel approach, called structural reweighting (StruRW), is proposed to address this issue and is tested on synthetic graphs, four benchmark datasets, and a new application in HEP. StruRW has shown significant performance improvement over the baselines in the settings with large graph structure shifts, and reasonable performance improvement when node attribute shift dominates.</p>]]></description>
   </item>
 
 </channel>

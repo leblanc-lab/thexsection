@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Expanding the Quality-Coverage Frontier with Competitive Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-07055</link>
+    <guid isPermaLink="false">arxiv:2611.07055</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenxuan Peng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Flow matching (FM) generators often face a quality-coverage tradeoff. Inference-time techniques such as classifier-free guidance raise quality, but at the cost of coverage. We hypothesize this limitation stems from a basic property of the objective: an intermediate noisy image could correspond to many clean images, yet the model can only predict a single velocity, at best averaging over the multiple possibilities. To mitigate this, we introduce competition among predictions during training. We achieve this by augmenting the predictor with a randomly drawn low-dimensional conditioning code z. For each training example, we sample K values of z to produce K candidate velocities that compete to explain the target, and apply the loss only to the best-matching candidate. This winner-take-all objective allows different modes to shape different predictions, rather than being averaged into a single compromise. Furthermore, this term naturally enables a new form of guidance, auxiliary conditioning scaling, which complements traditional guidance methods. Together, these two guidance mechanisms show that our method substantially improves the quality-coverage frontier. We validate on ImageNet-256, using two different testbeds, SiT and RAEv2. Given less than 3% of the original SiT pretraining compute for post-training, at the 67% Recall point, our method reduces FD_r,6 from 19.22 to 5.91. On RAEv2, at the 70% Recall point, it reduces FD_r,6 from 16.83 to 3.18.</p>]]></description>
+  </item>
 
   <item>
     <title>Relevance Propagation as Entropic Optimal Transport on Filippov Neural Networks: Sinkhorn Propagation and Region Relevance in Image Classifiers</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhinav Kumar</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (groomed) — original abstract; no AI summary.</em></p>
 <p>Monocular 3D object detection (Mono3D) is a fundamental computer vision task that estimates an object&rsquo;s class, 3D position, dimensions, and orientation from a single image. Its applications, including autonomous driving, augmented reality, and robotics, critically rely on accurate 3D environmental understanding. This thesis addresses the challenge of generalizing Mono3D models to diverse scenarios, including occlusions, datasets, object sizes, and camera parameters. To enhance occlusion robustness, we propose a mathematically differentiable NMS (GrooMeD-NMS). To improve generalization to new datasets, we explore depth equivariant (DEVIANT) backbones. We address the issue of large object detection, demonstrating that it&rsquo;s not solely a data imbalance or receptive field problem but also a noise sensitivity issue. To mitigate this, we introduce a segmentation-based approach in bird&rsquo;s-eye view with dice loss (SeaBird). Finally, we mathematically analyze the extrapolation of Mono3D models to unseen camera heights and improve Mono3D generalization in such out-of-distribution settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DQEN: Dual Query Enhancement Network for DETR-based HOI Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-18896</link>
-    <guid isPermaLink="false">arxiv:2508.18896</guid>
-    <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhehao Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Human-Object Interaction (HOI) detection focuses on localizing human-object pairs and recognizing their interactions. Recently, the DETR-based framework has been widely adopted in HOI detection. In DETR-based HOI models, queries with clear meaning are crucial for accurately detecting HOIs. However, prior works have typically relied on randomly initialized queries, leading to vague representations that limit the model&rsquo;s effectiveness. Meanwhile, humans in the HOI categories are fixed, while objects and their interactions are variable. Therefore, we propose a Dual Query Enhancement Network (DQEN) to enhance object and interaction queries. Specifically, object queries are enhanced with object-aware encoder features, enabling the model to focus more effectively on humans interacting with objects in an object-aware way. On the other hand, we design a novel Interaction Semantic Fusion module to exploit the HOI candidates that are promoted by the CLIP model. Semantic features are extracted to enhance the initialization of interaction queries, thereby improving the model&rsquo;s ability to understand interactions. Furthermore, we introduce an Auxiliary Prediction Unit aimed at improving the representation of interaction features. Our proposed method achieves competitive performance on both the HICO-Det and the V-COCO datasets. The source code is available at https://github.com/lzzhhh1019/DQEN.</p>]]></description>
   </item>
 
 </channel>

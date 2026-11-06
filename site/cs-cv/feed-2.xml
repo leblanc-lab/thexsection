@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>DQEN: Dual Query Enhancement Network for DETR-based HOI Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-18896</link>
+    <guid isPermaLink="false">arxiv:2508.18896</guid>
+    <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhehao Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Human-Object Interaction (HOI) detection focuses on localizing human-object pairs and recognizing their interactions. Recently, the DETR-based framework has been widely adopted in HOI detection. In DETR-based HOI models, queries with clear meaning are crucial for accurately detecting HOIs. However, prior works have typically relied on randomly initialized queries, leading to vague representations that limit the model&rsquo;s effectiveness. Meanwhile, humans in the HOI categories are fixed, while objects and their interactions are variable. Therefore, we propose a Dual Query Enhancement Network (DQEN) to enhance object and interaction queries. Specifically, object queries are enhanced with object-aware encoder features, enabling the model to focus more effectively on humans interacting with objects in an object-aware way. On the other hand, we design a novel Interaction Semantic Fusion module to exploit the HOI candidates that are promoted by the CLIP model. Semantic features are extracted to enhance the initialization of interaction queries, thereby improving the model&rsquo;s ability to understand interactions. Furthermore, we introduce an Auxiliary Prediction Unit aimed at improving the representation of interaction features. Our proposed method achieves competitive performance on both the HICO-Det and the V-COCO datasets. The source code is available at https://github.com/lzzhhh1019/DQEN.</p>]]></description>
+  </item>
 
   <item>
     <title>Incorporating Pre-trained Diffusion Models in Solving the Schrödinger Bridge Problem</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yingxue Xu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Survival prediction is a complicated ordinal regression task that aims to predict the ranking risk of death, which generally benefits from the integration of histology and genomic data. Despite the progress in joint learning from pathology and genomics, existing methods still suffer from challenging issues: 1) Due to the large size of pathological images, it is difficult to effectively represent the gigapixel whole slide images (WSIs). 2) Interactions within tumor microenvironment (TME) in histology are essential for survival analysis. Although current approaches attempt to model these interactions via co-attention between histology and genomic data, they focus on only dense local similarity across modalities, which fails to capture global consistency between potential structures, i.e. TME-related interactions of histology and co-expression of genomic data. To address these challenges, we propose a Multimodal Optimal Transport-based Co-Attention Transformer framework with global structure consistency, in which optimal transport (OT) is applied to match patches of a WSI and genes embeddings for selecting informative patches to represent the gigapixel WSI. More importantly, OT-based co-attention provides a global awareness to effectively capture structural interactions within TME for survival prediction. To overcome high computational complexity of OT, we propose a robust and efficient implementation over micro-batch of WSI patches by approximating the original OT with unbalanced mini-batch OT. Extensive experiments show the superiority of our method on five benchmark datasets compared to the state-of-the-art methods. The code is released.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dual-view Curricular Optimal Transport for Cross-lingual Cross-modal Retrieval</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2309-05451</link>
-    <guid isPermaLink="false">arxiv:2309.05451</guid>
-    <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yabing Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Current research on cross-modal retrieval is mostly English-oriented, as the availability of a large number of English-oriented human-labeled vision-language corpora. In order to break the limit of non-English labeled data, cross-lingual cross-modal retrieval (CCR) has attracted increasing attention. Most CCR methods construct pseudo-parallel vision-language corpora via Machine Translation (MT) to achieve cross-lingual transfer. However, the translated sentences from MT are generally imperfect in describing the corresponding visual contents. Improperly assuming the pseudo-parallel data are correctly correlated will make the networks overfit to the noisy correspondence. Therefore, we propose Dual-view Curricular Optimal Transport (DCOT) to learn with noisy correspondence in CCR. In particular, we quantify the confidence of the sample pair correlation with optimal transport theory from both the cross-lingual and cross-modal views, and design dual-view curriculum learning to dynamically model the transportation costs according to the learning stage of the two views. Extensive experiments are conducted on two multilingual image-text datasets and one video-text dataset, and the results demonstrate the effectiveness and robustness of the proposed method. Besides, our proposed method also shows a good expansibility to cross-lingual image-text baselines and a decent generalization on out-of-domain data.</p>]]></description>
   </item>
 
 </channel>
