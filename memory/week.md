@@ -1,57 +1,62 @@
-# The Cross Section: Rolling synthesis, week ending 2026-11-05
+# The Cross Section — Weekly synthesis, week ending 2026-11-06
 
-The week's clearest trajectory was **precision as the arbiter of BSM models**. Three-loop running appears to exclude minimal SUSY SU(5) at Tera-Z precision. FCC-ee papers then framed the $Z$ pole as the falsification venue for flavour and HNL models. Three other threads were active:
-
-- **Dark-matter small-scale structure:** strong-lensing evidence kept tilting toward SIDM-like core collapse.
-- **Hadronic vacuum polarization:** the HVP thread gained a new BaBar $\pi\pi$ measurement that disagrees internally.
-- **Old anomalies:** X17, DAMA and the LZ 248 keV event were steadily boxed in, while new papers mapped which parameter directions the data can't constrain at all.
-
-Data were sparse beyond LHCb's first Upgrade I rare-decay result and the BaBar re-analysis. Most of the week was theory, projections and methods.
+This week precision theory became a deciding factor rather than a refinement. Three-loop running excluded minimal SUSY SU(5), and FCC-ee was repeatedly framed as the decisive test. The HVP input chain drew attention from both sides in quick succession. BaBar re-measured ISR ππ and exposed an internal spread, and two generators then tightened the QED radiation that measurement depends on. Galaxy-scale lensing gave its strongest population-level push yet toward core-collapsing SIDM. Light-ion collectivity matured into a nuclear-structure probe. Several old anomalies (X17, DAMA) lost parameter space, though closure is complicated by new "what do the data actually constrain" papers. Clean exclusive flavor channels kept landing on the SM.
 
 ## Running themes
 
-- **Loop order and Tera-Z decide models (heating).** Allwicher et al. [arXiv:2610.40821](https://arxiv.org/abs/2610.40821) find that minimal SU(5) points to PeV-scale SUSY at two loops but appears excluded at three. The flip comes via an IR-fixed colour-triplet mass, which Dvali et al. [arXiv:2611.03783](https://arxiv.org/abs/2611.03783) bet against with a TeV-scale long-lived triplet. Kühler et al. [arXiv:2611.00141](https://arxiv.org/abs/2611.00141) supply full one-loop SM BMHV counterterms as multi-loop EW groundwork. By 11-05 the frame was explicitly FCC-ee:
-  - Greljo et al. [arXiv:2611.05464](https://arxiv.org/abs/2611.05464): flavour-chain messengers, reach of 3 → 100 TeV in $M_F/|y_F|$.
-  - Vignaroli [arXiv:2611.05501](https://arxiv.org/abs/2611.05501): HNL dipoles at the $Z$ pole.
-- **Lensing favors SIDM core collapse (heating).** Gilman et al. [arXiv:2610.40766](https://arxiv.org/abs/2610.40766) use 29 quads, the first population-level result. It favors 20–80 GeV dark matter with MeV mediators, pointing to a neutrinophilic scalar. This is the third such result in two weeks, after Zhang et al. and Tekverk et al., though the authors still call it "hints."
-- **HVP inputs (heating).** On the τ-route isospin budget, Esparza Arellano et al. [arXiv:2611.01683](https://arxiv.org/abs/2611.01683) tightened the $\omega\pi$ correction, following Bashir et al.'s $\rho\pi\pi$ term (10-21). Then BaBar [arXiv:2611.04596](https://arxiv.org/abs/2611.04596) re-measured $\pi\pi$ with angular pion/muon separation. The new result is 525.9 ± 3.5 ± 3.8, but combined with the 2009 analysis it gives 517.8, implying an internal spread of about 8×10⁻¹⁰.
-- **Flavor split (steady).** LHCb [arXiv:2611.00230](https://arxiv.org/abs/2611.00230) finds $B_{(s)}\to\mu\mu$ SM-consistent with Upgrade I data. Live tensions remain in $C_9$ and $|V_{cb}|$. CMS [arXiv:2611.01274](https://arxiv.org/abs/2611.01274) gives a hadronic-input-free $|V_{cb}|$ from top decays, but at ~19% it is too coarse to settle the puzzle.
-- **Old anomalies closing; identifiability as a habit (heating).**
-  - FASER [arXiv:2611.03904](https://arxiv.org/abs/2611.03904) excludes a mid-coupling X17 band.
-  - Serao et al. show unbounded X17 nucleon-coupling directions [arXiv:2611.06129](https://arxiv.org/abs/2611.06129) and Ge/Xe blind directions for light mediators [arXiv:2611.04600](https://arxiv.org/abs/2611.04600).
-  - DAMA remains incompatible even with an extended NREFT treatment [arXiv:2611.04890](https://arxiv.org/abs/2611.04890).
-- **Compact, structured ML for triggers (steady; question shifting).**
-  - CoReNet [arXiv:2610.40749](https://arxiv.org/abs/2610.40749) matches a transformer more than 100× larger with 1508 parameters.
-  - SCRAMJet [arXiv:2611.00086](https://arxiv.org/abs/2611.00086) and SpikePID [arXiv:2611.00104](https://arxiv.org/abs/2611.00104) bring the same push to FPGAs.
-  - Following LEAF (10-21), the issue is now what survives quantization, not whether models can shrink.
-- **GW forecasts lose idealizations (steady, likely to fade).** Three 11-02 papers each relaxed one assumption: gravity couplings, dark-visible sound-wave leakage, and non-spherical bubbles. Chiang [arXiv:2611.01634](https://arxiv.org/abs/2611.01634) adds that $v_c/T_c>1$ flags type-II seesaw transitions that never complete.
+- **HVP inputs under scrutiny (heating).**
+  - The τ-route isospin budget tightened again with the $\omega\pi$ correction [arXiv:2611.01683](https://arxiv.org/abs/2611.01683), following the 10-21 $\rho\pi\pi$ term.
+  - BaBar's full-sample ISR ππ re-analysis [arXiv:2611.04596](https://arxiv.org/abs/2611.04596) uses angular π/μ separation and gives $a_\mu^{\pi\pi}=525.9\pm3.5\pm3.8$. The combination with 2009 is 517.8 ± 2.4 ± 3.3, an internal spread of ~8×10⁻¹⁰.
+  - KKMC and SHERPA now agree to ≲0.04% on resummed QED for this process [arXiv:2611.07067](https://arxiv.org/abs/2611.07067), with a new rule for the O(1) radiative-return regime. Pions are still point-like plus a form factor.
+- **Loop order and Tera-Z decide models (heating).**
+  - The two- vs three-loop flip on minimal SUSY SU(5) [arXiv:2610.40821](https://arxiv.org/abs/2610.40821) anchored the thread.
+  - Groundwork followed: the full one-loop SM in BMHV [arXiv:2611.00141](https://arxiv.org/abs/2611.00141).
+  - A counter-bet appeared: a TeV-scale long-lived colour triplet from split Yukawas [arXiv:2611.03783](https://arxiv.org/abs/2611.03783).
+  - FCC-ee was posed as the falsifier for flavour-chain messengers up to 100 TeV [arXiv:2611.05464](https://arxiv.org/abs/2611.05464).
+  - On the QCD side, Adelaja et al. [arXiv:2610.40823](https://arxiv.org/abs/2610.40823) offer a tuning-free account of small-$x$ $\zeta_2$ violations, with five-loop predictions.
+- **SIDM vs CDM in strong lensing (heating).** Gilman et al. [arXiv:2610.40766](https://arxiv.org/abs/2610.40766) analyze 29 quads and find halo densities consistent with gravothermal collapse. They favor 20–80 GeV DM with MeV mediators, pushed toward a neutrinophilic scalar. It is the third result in two weeks against CDM-density subhalos, and the first at population level. The authors still say "hints."
+- **Light ions as nuclear-force data (heating).**
+  - Ne–Ne geometry tagging appeared [arXiv:2610.40724](https://arxiv.org/abs/2610.40724).
+  - The O–O $\Lambda/K^0_S$ shape is ordered by transverse density, not multiplicity, and needs sub-nucleonic structure [arXiv:2611.04865](https://arxiv.org/abs/2611.04865).
+  - Ne/O $v_2$ ratios are model-robust, while $v_3$ ratios are not [arXiv:2611.05239](https://arxiv.org/abs/2611.05239).
+  - Eccentricities respond linearly to all 16 N²LO LECs, and Ne–Ne mostly probes spin-orbit [arXiv:2611.08122](https://arxiv.org/abs/2611.08122).
+  - At the low-multiplicity floor, ALICE [arXiv:2611.08327](https://arxiv.org/abs/2611.08327) finds partonic-flow signatures down to $N_{\rm ch}\geq25$, with uncertainty-limited bins below.
+- **Phase-transition GW forecasts lose idealizations (steady).**
+  - Gravity couplings change completion [arXiv:2610.40775](https://arxiv.org/abs/2610.40775).
+  - Dark–visible sound-wave leakage suppresses the signal [arXiv:2610.40781](https://arxiv.org/abs/2610.40781).
+  - Nucleated bubbles are non-spherical at ~10% [arXiv:2610.41504](https://arxiv.org/abs/2610.41504).
+  - In the type-II seesaw, the $v_c/T_c$ criterion flags transitions that never complete; those that do are sub-LISA [arXiv:2611.01634](https://arxiv.org/abs/2611.01634).
+- **Compact, structured ML (steady, question shifting).**
+  - CoReNet [arXiv:2610.40749](https://arxiv.org/abs/2610.40749) matches a transformer >100× its size in $HH\to4b$ with 1508 parameters.
+  - SCRAMJet [arXiv:2611.00086](https://arxiv.org/abs/2611.00086) runs in 147 ns on FPGA.
+  - The open issue is now what survives quantization: SCRAMJet's "virtual channels" are a QAT failure mode, not a size limit.
 
 ## Turning points
 
-- **Minimal SUSY SU(5) flips from viable to excluded at three loops** ([arXiv:2610.40821](https://arxiv.org/abs/2610.40821)). Higher-loop running is now a first-class input to Tera-Z GUT tests.
-- **The SIDM lensing case moves from per-perturber to population level** ([arXiv:2610.40766](https://arxiv.org/abs/2610.40766)), with a concrete particle model attached.
-- **"Virtual channels"** ([arXiv:2611.00086](https://arxiv.org/abs/2611.00086)): quantization-aware training can silently drop signal-carrying channels. A datalane floor recovers 3.1 points, so HGQ-style workflows are affected.
-- **Squark limits move about 1 TeV upward to 2.6–3.0 TeV** ([arXiv:2611.03794](https://arxiv.org/abs/2611.03794)), and HL-LHC/FCC-hh reach estimates inherit the shift.
-- **Born spreading is now public in MadGraph5_aMC@NLO**, including FxFx ([arXiv:2611.06769](https://arxiv.org/abs/2611.06769)).
+- **Minimal SUSY SU(5) appears excluded at three loops** under Tera-Z precision and proton-decay limits [arXiv:2610.40821](https://arxiv.org/abs/2610.40821).
+- **BaBar disagrees with itself.** The new and 2009 ISR ππ analyses sit ~8×10⁻¹⁰ apart [arXiv:2611.04596](https://arxiv.org/abs/2611.04596).
+- **LHCb Upgrade I's first rare-decay physics** [arXiv:2611.00230](https://arxiv.org/abs/2611.00230) gives first single-experiment evidence for $B^0\to\mu\mu$ and the most precise $B_s\to\mu\mu$ BF and lifetime, all SM-consistent.
+- **X17 loses a band.** FASER excludes $6\times10^{-5}<\epsilon_e<1.2\times10^{-4}$ [arXiv:2611.03904](https://arxiv.org/abs/2611.03904). DAMA still cannot coexist with LZ, PICO-60 and CDMSlite even under extended NREFT [arXiv:2611.04890](https://arxiv.org/abs/2611.04890).
+- **The neutrino-current route to CMB birefringence is closed** [arXiv:2611.07578](https://arxiv.org/abs/2611.07578). The required electron coupling is already excluded.
+- **Method adopted:** Born spreading is now public in MadGraph5_aMC@NLO, including FxFx [arXiv:2611.06769](https://arxiv.org/abs/2611.06769).
 
 ## Open questions
 
-- **BaBar internal compatibility:** how does [arXiv:2611.04596](https://arxiv.org/abs/2611.04596) quantify the tension between its 2009 and new $\pi\pi$ analyses? Watch for reactions and lattice/τ comparisons.
-- **The LZ 248 keV event:** the only model so far is Roy et al.'s exothermic Higgs-portal relic [arXiv:2611.01158](https://arxiv.org/abs/2611.01158), which predicts a sub-MeV continuum for COSI.
-- **Toponium vs CP-odd Higgs** in the CMS excess: the NNLO 4.87 pb result [arXiv:2611.03782](https://arxiv.org/abs/2611.03782) leaves Coulomb-scale dependence as the dominant error.
-- **X17's high-coupling window**, which remains open after FASER while the unbounded directions persist.
-- **Upgrade I numbers:** how much does the $B^0/B_s$ ratio tighten in [arXiv:2611.00230](https://arxiv.org/abs/2611.00230)?
-- **Ne–Ne predictions:** $\Lambda/K^0_S$ within 3–5% of O–O ([arXiv:2611.04865](https://arxiv.org/abs/2611.04865)), and the robustness of $v_2$ but not $v_3$ ratios ([arXiv:2611.05239](https://arxiv.org/abs/2611.05239)).
-- **Low-$Q$ $\sin^2\theta_W$ spread:** COHERENT gives 0.231 ([arXiv:2611.03751](https://arxiv.org/abs/2611.03751)), against 0.225 from CONUS+ and 0.233 from the CEνNS+ν–e combination.
-- **Neutrino mass tension:** Thermal Festina Lente [arXiv:2611.02559](https://arxiv.org/abs/2611.02559) requires a lightest neutrino above 10–43 meV, in tension with DESI DR2's negative-$\sum m_\nu$ preference.
-- **Large claims to check:** Suliga et al.'s ≥7.2σ UHECR light-nucleus claim [arXiv:2611.00205](https://arxiv.org/abs/2611.00205) needs a model-dependence check.
+- **BaBar's internal ππ spread.** How does the paper quantify compatibility between its two analyses? Does the new QED-generator work [arXiv:2611.07067](https://arxiv.org/abs/2611.07067) shift either one?
+- **Toponium vs CP-odd Higgs (CMS excess).** NNLO toponium gives 4.87 pb, with the error now dominated by the Coulomb scale [arXiv:2611.03782](https://arxiv.org/abs/2611.03782). The 2HDM interference tool [arXiv:2611.08388](https://arxiv.org/abs/2611.08388) is only a status report.
+- **X17 is not cleanly closable.** A high-coupling window remains, and spectroscopy plus $g-2$ leaves unbounded nucleon-coupling directions [arXiv:2611.06129](https://arxiv.org/abs/2611.06129). The same author found Ge/Xe blind directions [arXiv:2611.04600](https://arxiv.org/abs/2611.04600).
+- **$|V_{cb}|$ inclusive/exclusive.** The hadronic-input-free top-decay route [arXiv:2611.01274](https://arxiv.org/abs/2611.01274) sits at ~19% and cannot yet settle the puzzle. The $C_9$ tension is also untouched.
+- **The LZ 248 keV event.** Only one model so far, an exothermic Higgs-portal relic predicting a COSI photon continuum [arXiv:2611.01158](https://arxiv.org/abs/2611.01158).
+- **CMB birefringence.** The hint stands at 4.8σ (3.5σ post-dust) and is now without a neutrino explanation.
+- **A Super-K $\bar\nu_e$ excess.** It now has a pion-DM model with a JUNO test [arXiv:2611.08440](https://arxiv.org/abs/2611.08440). Whether this is the 10-27 DSNB indication is unconfirmed.
 
 ## Recurring references
 
-- [arXiv:2610.40821](https://arxiv.org/abs/2610.40821): SU(5) loop-order flip, cited on all four days.
-- [arXiv:2610.40766](https://arxiv.org/abs/2610.40766): population-level SIDM lensing.
-- [arXiv:2610.40749](https://arxiv.org/abs/2610.40749): CoReNet, the anchor for the compact-ML thread.
-- [arXiv:2611.01683](https://arxiv.org/abs/2611.01683) and [arXiv:2611.04596](https://arxiv.org/abs/2611.04596) (also [arXiv:2611.04621](https://arxiv.org/abs/2611.04621)): HVP inputs.
-- [arXiv:2611.03904](https://arxiv.org/abs/2611.03904), [arXiv:2611.04600](https://arxiv.org/abs/2611.04600) and [arXiv:2611.06129](https://arxiv.org/abs/2611.06129): X17 and identifiability.
-- [arXiv:2611.00230](https://arxiv.org/abs/2611.00230) and [arXiv:2611.01274](https://arxiv.org/abs/2611.01274): flavor.
-- [arXiv:2610.40775](https://arxiv.org/abs/2610.40775), [arXiv:2610.40781](https://arxiv.org/abs/2610.40781) and [arXiv:2610.41504](https://arxiv.org/abs/2610.41504): phase-transition realism.
+- [arXiv:2610.40821](https://arxiv.org/abs/2610.40821): SU(5) loop-order flip, cited on four of five days.
+- [arXiv:2611.04596](https://arxiv.org/abs/2611.04596): BaBar ISR ππ (also posted as [arXiv:2611.04621](https://arxiv.org/abs/2611.04621)).
+- [arXiv:2610.40766](https://arxiv.org/abs/2610.40766): 29-lens core-collapse population.
+- [arXiv:2611.03782](https://arxiv.org/abs/2611.03782): NNLO pseudoscalar toponium.
+- [arXiv:2611.03904](https://arxiv.org/abs/2611.03904): FASER X17 recast.
+- [arXiv:2611.04600](https://arxiv.org/abs/2611.04600) / [arXiv:2611.06129](https://arxiv.org/abs/2611.06129): Serao identifiability pair.
+- [arXiv:2610.40749](https://arxiv.org/abs/2610.40749) / [arXiv:2611.00086](https://arxiv.org/abs/2611.00086): compact-ML anchors.
+- [arXiv:2611.01683](https://arxiv.org/abs/2611.01683): τ-route isospin budget.

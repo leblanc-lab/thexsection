@@ -7,7 +7,37 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>AIE4ML: An End-to-End Framework for Compiling Neural Networks for the Next Generation of AMD AI Engines</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2512-15946</link>
+    <guid isPermaLink="false">arxiv:2512.15946</guid>
+    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dimitrios Danopoulos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — abstract only, not yet read for a briefing.</em></p>
+<p>Efficient AI inference on AMD&rsquo;s Versal AI Engine (AIE) is challenging due to tightly coupled VLIW execution, explicit datapaths, and local memory management. Prior work focused on first-generation AIE kernel optimizations, without tackling full neural network execution across the 2D array. In this work, we present AIE4ML, the first comprehensive framework for converting AI models automatically into optimized firmware targeting the AIE-ML generation devices, also with forward compatibility for the newer AIE-MLv2 architecture. At the single-kernel level, we attain performance close to the architectural peak. At the graph and system levels, we provide a structured parallelization method that can scale across the 2D AIE-ML fabric and exploit its dedicated memory tiles to stay entirely on-chip throughout the model execution. As a demonstration, we designed a generalized and highly efficient linear-layer implementation with intrinsic support for fused bias addition and ReLU activation. Also, as our framework necessitates the generation of multi-layer implementations, our approach systematically derives deterministic, compact, and topology-optimized placements tailored to the physical 2D grid of the device through a novel graph placement and search algorithm. Finally, the framework seamlessly accepts quantized models imported from high-level tools such as hls4ml or PyTorch while preserving bit-exactness. In layer scaling benchmarks, we achieve up to 98.6% efficiency relative to the single-kernel baseline, utilizing 296 of 304 AIE tiles (97.4%) of the device with entirely on-chip data movement. With evaluations across real-world model topologies, we demonstrate that AIE4ML delivers GPU-class throughput under microsecond latency constraints, making it a practical companion for ultra-low-latency environments such as trigger systems in particle physics experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Surrogate Neural Architecture Codesign Package (SNAC-Pack)</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2512-15998</link>
+    <guid isPermaLink="false">arxiv:2512.15998</guid>
+    <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Weitz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — abstract only, not yet read for a briefing.</em></p>
+<p>Neural Architecture Search is a powerful approach for automating model design, but existing methods struggle to accurately optimize for real hardware performance, often relying on proxy metrics such as bit operations. We present Surrogate Neural Architecture Codesign Package (SNAC-Pack), an integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment. SNAC-Pack combines Neural Architecture Codesign&rsquo;s multi-stage search capabilities with the Resource Utilization and Latency Estimator, enabling multi-objective optimization across accuracy, FPGA resource utilization, and latency without requiring time-intensive synthesis for each candidate model. We demonstrate SNAC-Pack on a high energy physics jet classification task, achieving 63.84% accuracy with resource estimation. When synthesized on a Xilinx Virtex UltraScale+ VU13P FPGA, the SNAC-Pack model matches baseline accuracy while maintaining comparable resource utilization to models optimized using traditional BOPs metrics. This work demonstrates the potential of hardware-aware neural architecture search for resource-constrained deployments and provides an open-source framework for automating the design of efficient FPGA-accelerated models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Look everywhere effects in anomaly detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2512-13787</link>
+    <guid isPermaLink="false">arxiv:2512.13787</guid>
+    <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marie Hein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, David Shih) — abstract only, not yet read for a briefing.</em></p>
+<p>Machine learning-based anomaly detection methods are able to search high-dimensional spaces for hints of new physics with much less theory bias than traditional searches. However, by searching in many directions all at once, the statistical power of these search strategies is diluted by a variant of the look elsewhere effect. We examine this challenge in detail, focusing on weakly supervised methods. We find that training and testing on the same data results in badly miscalibrated p-values due to the anomaly detector searching everywhere in the data and overfitting on statistical fluctuations. However, if these p-values can be calibrated, they may offer the best sensitivity to anomalies, since this approach uses all of the data. Conversely, training on half of the data and testing on the other half results in perfectly calibrated p-values, but at the cost of reduced sensitivity to anomalies. Similarly, regularization methods such as early stopping can help with p-value calibration but also possibly at the expense of sensitivity. Finally, we find that k-folding strikes an effective balance between calibration and sensitivity. Our findings are supported by numerical studies with Gaussian random variables as well as from collider physics using the LHC Olympics benchmark anomaly detection dataset.</p>]]></description>
+  </item>
 
   <item>
     <title>KANELÉ: Kolmogorov-Arnold Networks for Efficient LUT-based Evaluation</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric Putney et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (David Shih) — abstract only, not yet read for a briefing.</em></p>
 <p>The Boltzmann equation relates the equilibrium phase space distribution of stars in the Milky Way to the Galaxy&rsquo;s gravitational potential. However, observations of stellar populations are biased by extinction from foreground dust, which complicates measurements of the potential in the disk and towards the Galactic center. Using the kinematics of Red Clump and Red Branch stars in Gaia DR3, we use machine learning to simultaneously estimate both the unbiased stellar phase space density and the gravitational potential. The unbiased phase space density is obtained through a learned &ldquo;dust efficiency factor&rdquo; &ndash; an observational selection function that accounts for dust extinction. The potential and the dust efficiency are parameterized by fully connected neural networks and are completely data driven. We validate the dust efficiency using a recent three-dimensional dust map in this work, and examine the potential in a companion paper.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Matching Z → Hadrons at NNLO with Sector Showers</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2024.html#a2412-14242</link>
-    <guid isPermaLink="false">arxiv:2412.14242</guid>
-    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Basem Kamal El-Menoufi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ludovic Scyboz, Peter Skands) — abstract only, not yet read for a briefing.</em></p>
-<p>We present a detailed technical derivation of matching conditions at next-to-next-to-leading order in the sectorised VINCIA parton shower, by considering leading-colour 2-, 3- and 4-jet rates in hadronic Z-boson decays. In particular, we introduce a full subtraction-based calculation of the matching coefficient required to obtain the NLO 3-jet rate. This is achieved through a judicious choice of the counter-terms, which optimises the numerical evaluation of the subtracted double-real matrix element. We additionally give a consistent prescription for incorporating interference effects due to higher-order mixing between Born states with different flavour contents. Finally, we briefly comment on higher-order uncertainty estimates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Secondary Lund jet plane as a gluon enriched sample</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2024.html#a2412-14247</link>
-    <guid isPermaLink="false">arxiv:2412.14247</guid>
-    <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cristian Baldenegro et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregory Soyez) — abstract only, not yet read for a briefing.</em></p>
-<p>We propose a new strategy to obtain a high-purity sample of gluon-initiated jets at the LHC. Our approach, inspired by the Lund jet plane picture, is to perform a dijet selection where the two jets are collinear to each other and their momentum fraction share is highly asymmetric, and to measure the primary Lund plane density of emissions of the subleading jet. The subleading jet in this topology is practically equivalent to a secondary Lund jet plane. We demonstrate by means of fixed-order calculations that such a simple setup yields gluon jet fractions of around 90% for the subleading jet for both quark- and gluon-initiated jets. This observation is confirmed using hadron-level Monte Carlo generated events. We also show that the extracted gluon purities are highly resilient to the overall colour structure of the event, to the flavour of the hard-scattering process, and to the parton distribution functions. This strategy is well-suited for constraining the radiation pattern of gluon-initiated jets using a set of fiducial cuts that can readily be tested at the LHC, without relying on taggers or statistical demixing.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Bridging massive and massless schemes for soft gluon resummation in heavy-flavour production in e⁺e⁻ collisions</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2024.html#a2412-13261</link>
-    <guid isPermaLink="false">arxiv:2412.13261</guid>
-    <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Ghira et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Simone Marzani) — abstract only, not yet read for a briefing.</em></p>
-<p>Perturbative calculations for processes involving heavy flavours can be carried out using two approaches: the massive and the massless schemes. These schemes can also be combined to leverage their respective strengths. Additionally, both massive and massless frameworks can be supplemented by soft-gluon resummation. However, matching resummed calculations across the two schemes presents significant challenges, primarily due to the non-commutativity of the soft and small mass limits. The consistent resummation of mass and soft logarithms has been recently achieved at next-to-leading logarithmic (NLL) accuracy. In this paper, we consider heavy-quark fragmentation functions in electron-positron collisions and we extend this framework to achieve the so-called NLL^&rsquo; accuracy, which accounts for finite terms in the soft limit.</p>]]></description>
   </item>
 
 </channel>

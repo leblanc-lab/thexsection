@@ -6,7 +6,50 @@
   <description>Moving earth between distributions</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>: Optimal-Transport Contrastive Learning for Centrality Determination in Heavy-Ion Collisions</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2611-07465</link>
+    <guid isPermaLink="false">arxiv:2611.07465</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>This is the one paper today where OT is the method. The pipeline:
+- <strong>Distance:</strong> each UrQMD Au+Au event (√s_NN = 3.0, 5.2, 19.6 GeV) is a point cloud in 3-momentum. The distance between events is an exact Hungarian-assignment W1 with a Euclidean ground metric.
+- <strong>Unequal multiplicities:</strong> surplus particles are left unmatched at zero cost and the cost is averaged over the min(N_A, N_B) matched pairs. This partial-transport convention deliberately removes multiplicity from the distance.
+- <strong>Landmarks:</strong> each event is embedded by its W1 to 100 landmark events sampled uniformly in N_ch, computed for 2000 training events only.
+- <strong>Network:</strong> a PointNet (3→64→64→32, max+mean pooling, 32-d unit embedding) is trained with InfoNCE, using the k = 16 F-space nearest neighbours as positives (τ = 0.15). It then runs inference on 5–7M events.
+- <strong>Classes:</strong> size-constrained k-means gives 20 equal 5% classes.</p>
+<p>Using all final-state particles, the classes align with N_part, giving narrower N_part bands and better σ/⟨N_part⟩ than N_ch slicing at all three energies. Under realistic STAR acceptance (−2.4 &lt; η_lab &lt; 0 fixed-target; |η| &lt; 1 collider), &ldquo;OT, charged, η&rdquo; is worse than N_ch slicing. The authors attribute this to spectator protons and peripheral activity falling outside acceptance, leaving multiplicity as the main central/peripheral discriminant. The transport distance has, by construction, discarded multiplicity.</p>
+<p><strong>Caveats:</strong>
+- The unbalanced-OT choice is the crux and was not varied. A mass-penalizing unbalanced W1 is the obvious next test, and the min-normalized cost is not a metric.
+- The method is &ldquo;unsupervised&rdquo; only partially: landmark selection and class ordering both use N_ch.
+- Resolution values are figure-only.</p>]]></description>
+  </item>
+
+  <item>
+    <title>: Estimating Spectrum-Free Information Bounds for Generative Surrogates Beyond Conditional Collapse</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2611-07826</link>
+    <guid isPermaLink="false">arxiv:2611.07826</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>OT is tangential here. W1 appears as one of the 1D marginal divergences the paper argues against. On CMS open-data parton→reco-jet regression (~10.8M pairs, four residual targets), a condition-blind marginal sampler beats a trained MDN on all targets, by 3.75–18.02× under W1 and 3.65–22.39× under KL. It also cannot be stably separated from a conditional flow-matching model on two of four targets. The lesson for OT users: pooled-marginal W1 is blind to whether the conditioner is used at all.</p>
+<p>The constructive content is a per-event CRPS skill score:
+- <strong>Floor:</strong> the exact marginal, i.e. half the Gini mean difference, equal to Hersbach&rsquo;s uncertainty term, computed in O(N log N).
+- <strong>Ceiling:</strong> a k-NN analog-ensemble estimate, using fair-CRPS scores at k ∈ {5…100} extrapolated to zero neighbourhood radius.</p>
+<p>Both surrogates land within ±0.005 of the ceiling ratio. A 17,280-cell lookup table recovers 98.8% of CFM skill on jet mass, 84.6% on Δφ, and 60.8% on Δη. Global versus p_T-binned skill on jet mass drops from 28.7% to 10.1%, showing how strongly global skill depends on the breadth of the test spectrum.</p>
+<p><strong>Caveats:</strong>
+- The zero-radius intercept is explicitly not a bound.
+- All scores are per-target 1D.
+- The k-NN search omits φ, which explains a 0.0014 gap on momentum response.</p>
+<p>One observation of mine, not made by the authors: 1D CRPS is the integrated squared CDF difference against a step function, the L2 analogue of the CDF-area form of W1.</p>]]></description>
+  </item>
+
+  <item>
+    <title>: Phenomenological investigation of order statistics for multi-jet events</title>
+    <link>https://leblanc-lab.github.io/thexsection/optimal-transport/2026.html#a2611-07838</link>
+    <guid isPermaLink="false">arxiv:2611.07838</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>OT is peripheral here. Binned 1D W1, alongside total variation (TV), is the summary distance between normalized rank-ordered jet-rapidity spectra from BFKLex (leading-log BFKL) and Pythia 8.306. The setup is 13 TeV, anti-k_t R = 0.4, p_T &gt; 30 GeV, |y| &lt; 4.7, with an asymmetric 30/60</p>]]></description>
+  </item>
 
   <item>
     <title>A Unified Geometric Framework for Understanding Collider Event Manifolds</title>
