@@ -7,7 +7,57 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Observing Transverse Momentum Broadening from TEECs in Heavy Ion Collisions</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-08579</link>
+    <guid isPermaLink="false">arxiv:2611.08579</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jo\~ao Barata et al.</dc:creator>
+    <description><![CDATA[<p><strong>Setup.</strong> The authors compute the back-to-back TEEC (τ→0) for a colour-singlet qq̄ pair moving through a static, homogeneous medium. They use e⁺e⁻→γ<em>→qq̄ at c=0 as a proxy, which deliberately removes initial-state and cold-nuclear effects. The vacuum part is NLL′ TMD resummation (b</em> prescription, Fit-1 non-perturbative factor).</p>
+<p><strong>Medium modifications.</strong> These enter only through a parent-resolved TMDFF. The jet function becomes J = D_F[b; L⁺] J^vac + J^(1),med.rad.
+- <strong>Broadening:</strong> D_F is the harmonic-oscillator dipole.
+- <strong>Radiative term:</strong> the BDMPS–Z q→qg correction, computed at large N_c, from the in–in and in–out vertex-time regions. The out–out region reduces to broadening followed by vacuum splitting.</p>
+<p><strong>Technical results.</strong>
+- The radiative term obeys an energy sum rule, J^(1)(0) = 0.
+- Energy weighting softens the (1−z)^−3/2 BDMPS endpoint to an integrable (1−z)^−1/2, so no soft divergence enters the jet function.
+- It carries no scale dependence at O(α_s), so it is counted as an NLL′ constant.
+- The large-|p| tail combines as [D_F³ − D_F] × vacuum splitting. This tail is only conditionally convergent, so they use an η_UV regulator with the time integrals done first.
+- Medium response is added as a mean energy flow.</p>
+<p><strong>Headline (abstract-level).</strong> The extracted text cuts off in Sec. IV, so I have no numbers or (q̂, L) values.
+- Classical broadening only lowers the peak.
+- Radiative corrections suppress the peak further and populate larger δφ.
+- Medium response is flat across the back-to-back window, negligible at the peak and growing away from it.</p>
+<p><strong>Why it matters.</strong> Earlier back-to-back heavy-ion decorrelation studies kept only broadening. This paper argues that extracting q̂ from the peak requires the radiative piece.</p>
+<p><strong>Caveats.</strong>
+- They drop quark recoil against soft medium-induced gluons. That term is rapidity-divergent, needs a medium-modified soft function, and contains the known radiative p_T-broadening double logs.
+- The two legs are treated as propagating independently.
+- Large-N_c and harmonic-oscillator approximations throughout.
+- No realistic AA geometry.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Higher Order Component Attribution via Learned Surrogates in High Energy Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-08656</link>
+    <guid isPermaLink="false">arxiv:2611.08656</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lauri Laatu et al.</dc:creator>
+    <description><![CDATA[<p><strong>Method.</strong> This is a workshop-length interpretability study.
+- For each jet (≤32 constituents), they fit a B-spline KAN surrogate (n→16→8→1, ≤5832 parameters) to the target model&rsquo;s logit shifts under 50k local Gaussian perturbations.
+- The surrogate&rsquo;s mixed partials (2nd- and 3rd-order tensors) serve as pair and triplet interaction scores.
+- These are Spearman-correlated with the top-256 pair (triplet) contributions to e₂^(1) (e₃^(1)).
+- Targets are ParT and vanilla MHA trained on 10-class JetClass. Best 8-block accuracies are 82.8% and 81.9%.</p>
+<p><strong>Results.</strong>
+- <strong>Pairs:</strong> ParT gives R^(2) ≈ 0.3 on 2-prong jets; MHA gives ≈ 0.
+- <strong>Triplets:</strong> correlations are weaker, but ParT&rsquo;s error bars exclude zero.
+- <strong>Depth:</strong> adding blocks does not improve alignment for ParT and degrades it for MHA. The authors read this as motivation for explicitly higher-order (e.g. hypergraph) architectures.</p>
+<p><strong>Caveats.</strong>
+- <strong>Surrogate fidelity confounds the comparison.</strong> For ParT the KAN captures R² ≈ 0.99, but for 8-block MHA it is ~0.85 median and ~0.75 mean. MHA&rsquo;s low alignment at depth may partly reflect a worse surrogate.
+- <strong>Second-order alignment is partly built in.</strong> ParT&rsquo;s pair features include ΔR_ij, which the authors acknowledge.
+- <strong>Small and unexplained pieces.</strong> Only 50 jets per class per network. The Z-jet behaviour is &ldquo;anomalous&rdquo; and not explained. Per-jet spreads are large.</p>
+<p><strong>Fit with the TEEC paper.</strong> The only overlap is the energy-correlator language. This is a substructure-observable-as-probe for ML, not substructure physics per se.</p>]]></description>
+  </item>
 
   <item>
     <title>Cross-Moment Consistency and the Fifth Adler Coefficient in Hadronic Tau Decays</title>
@@ -1067,7 +1117,7 @@
     <guid isPermaLink="false">arxiv:2609.36523</guid>
     <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuo Lin et al.</dc:creator>
-    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -2927,26 +2977,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Korinna Zapp</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet fragmentation) — abstract only, not yet read for a briefing.</em></p>
 <p>Colour coherence affects the radiation pattern of hard partons both in vacuum and in a dense coloured background formed in heavy ion collisions. In vacuum evolution it leads to the well-known phenomenon of angular ordering, and in heavy ion collisions the appearance of a medium resolution scale strongly affects the way in which a fragmenting hard parton interacts with the background medium. In this paper I present the implementation of colour coherence in the JEWEL event generator for jet evolution in a dense medium. In each interaction between a hard parton and the medium it is checked whether the momentum transfer of the scattering is sufficient to resolve the colour dipole. In this way it is dynamically decided which structures stay coherent. Importantly, scatterings that resolve an individual parton disrupt the colour coherence, which affects the next splitting via the loss of angular ordering. This leads to a suppression of hard radiation, and consequently a reduction in overall scattering rate, which is the dominant source of effects of colour coherence observable in reconstructed jets. I discuss these modifications using the examples of nuclear modification factor, jet fragmentation function and jet-hadron correlations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Electro-Weak Phase Transitions and Collider Signals in the Aligned 2-Higgs Doublet Model</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-14099</link>
-    <guid isPermaLink="false">arxiv:2604.14099</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Angela Conaci et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (two-prong) — abstract only, not yet read for a briefing.</em></p>
-<p>We show that the Aligned 2-Higgs Doublet Model (A2HDM) is a framework able to simultaneously accommodate strong first order electro-weak phase transitions, in turn generating detectable gravitational waves as well as a variety of Higgs boson signals (involving both the Standard Model state and its companions, both neutral and charged) accessible at the Large Hadron Collider (LHC). We map the corresponding expanse of parameter space where such a phenomenology is realised in terms of the relative values of the masses of the discovered Higgs boson and the extended Higgs sector states of this model: two neutral ones (a CP-even and a CP-odd) plus a pair of charged ones. We find that both the Laser Interferometer Space Antenna experiment and High-Luminosity LHC can test such a scenario within their lifetime. This study thus sets the stage for a two-prong complementary approach able to scrutinise the extended Higgs sector of the A2HDM in both its high and low temperature manifestations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Probing Neutrino Compositeness with Invisible and Displaced Signals</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-14282</link>
-    <guid isPermaLink="false">arxiv:2604.14282</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Borrello et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (dark jets, emerging jets) — abstract only, not yet read for a briefing.</em></p>
-<p>We explore the possibility that neutrinos couple to an interacting sterile sector, providing a novel portal that generalizes the heavy neutral lepton portal to a composite setting. For a low confinement scale, high-energy neutrino beams can disintegrate into collimated sprays of hidden states, referred to as dark jets. This dynamics gives rise to two characteristic signatures in high energy neutrino beams. First, long-lived dark resonances can enhance the neutral-current to charged-current ratio. Second, shorter-lived dark states produced in neutrino neutral currents can produce single or multiple displaced vertices and even emerging jets, depending on the kinematics. These signals probe regions of parameter space beyond existing constraints from meson, electroweak, and Higgs decays, as well as from searches for displaced decays at beam dump experiments. We study these phenomena within broad classes of ultraviolet completions and identify scenarios in which high-energy neutrino beams provide leading sensitivity to neutrino compositeness. Such scenarios generically induce higher-dimensional contact interactions, which we classify and study alongside their complementary experimental signatures. Finally, we outline an experimental program spanning both the intensity and energy frontiers. Near-term neutrino facilities (DUNE, FPF) and running flavor experiments (LHCb, Belle II) can probe neutrino compositeness through neutrino disintegration into dark jets and displaced B-meson decays. Future colliders, particularly the Future Circular Collider (FCC-ee), will ultimately provide the strongest sensitivity to the compositeness scale via displaced Z decays.</p>]]></description>
   </item>
 
 </channel>
