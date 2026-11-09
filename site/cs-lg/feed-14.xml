@@ -6,7 +6,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Parallel Streaming Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1705-07443</link>
+    <guid isPermaLink="false">arxiv:1705.07443</guid>
+    <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthew Staib et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Efficiently aggregating data from different sources is a challenging problem, particularly when samples from each source are distributed differently. These differences can be inherent to the inference task or present for other reasons: sensors in a sensor network may be placed far apart, affecting their individual measurements. Conversely, it is computationally advantageous to split Bayesian inference tasks across subsets of data, but data need not be identically distributed across subsets. One principled way to fuse probability distributions is via the lens of optimal transport: the Wasserstein barycenter is a single distribution that summarizes a collection of input measures while respecting their geometry. However, computing the barycenter scales poorly and requires discretization of all input distributions and the barycenter itself. Improving on this situation, we present a scalable, communication-efficient, parallel algorithm for computing the Wasserstein barycenter of arbitrary distributions. Our algorithm can operate directly on continuous input distributions and is optimized for streaming data. Our method is even robust to nonstationary input distributions and produces a barycenter estimate that tracks the input measures over time. The algorithm is semi-discrete, needing to discretize only the barycenter estimate. To the best of our knowledge, we also provide the first bounds on the quality of the approximate barycenter as the discretization becomes finer. Finally, we demonstrate the practical effectiveness of our method, both in tracking moving distributions on a sphere, as well as in a large-scale Bayesian inference task.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Identity Testing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1710-10457</link>
+    <guid isPermaLink="false">arxiv:1710.10457</guid>
+    <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shichuan Deng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Uniformity testing and the more general identity testing are well studied problems in distributional property testing. Most previous work focuses on testing under L_1-distance. However, when the support is very large or even continuous, testing under L_1-distance may require a huge (even infinite) number of samples. Motivated by such issues, we consider the identity testing in Wasserstein distance (a.k.a. transportation distance and earthmover distance) on a metric space (discrete or continuous). In this paper, we propose the Wasserstein identity testing problem (Identity Testing in Wasserstein distance). We obtain nearly optimal worst-case sample complexity for the problem. Moreover, for a large class of probability distributions satisfying the so-called &ldquo;Doubling Condition&rdquo;, we provide nearly instance-optimal sample complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Joint Distribution Optimal Transportation for Domain Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1705-08848</link>
+    <guid isPermaLink="false">arxiv:1705.08848</guid>
+    <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Courty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transportation) — original abstract; no AI summary.</em></p>
+<p>This paper deals with the unsupervised domain adaptation problem, where one wants to estimate a prediction function f in a given target domain without any labeled sample by exploiting the knowledge available from a source domain where labels are known. Our work makes the following assumption: there exists a non-linear transformation between the joint feature/label space distributions of the two domain 𝒫_s and 𝒫_t. We propose a solution of this problem with optimal transport, that allows to recover an estimated target 𝒫^f_t=(X,f(X)) by optimizing simultaneously the optimal coupling and f. We show that our method corresponds to the minimization of a bound on the target error, and provide an efficient algorithmic solution, for which convergence is proved. The versatility of our approach, both in terms of class of hypothesis or loss functions is demonstrated with real world classification and regression problems, for which we reach or surpass state-of-the-art results.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning Wasserstein Embeddings</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1710-07457</link>
+    <guid isPermaLink="false">arxiv:1710.07457</guid>
+    <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Courty et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein distance received a lot of attention recently in the community of machine learning, especially for its principled way of comparing distributions. It has found numerous applications in several hard problems, such as domain adaptation, dimensionality reduction or generative models. However, its use is still limited by a heavy computational cost. Our goal is to alleviate this problem by providing an approximation mechanism that allows to break its inherent complexity. It relies on the search of an embedding where the Euclidean distance mimics the Wasserstein distance. We show that such an embedding can be found with a siamese architecture associated with a decoder network that allows to move from the embedding space back to the original input space. Once this embedding has been found, computing optimization problems in the Wasserstein space (e.g. barycenters, principal directions or even archetypes) can be conducted extremely fast. Numerical experiments supporting this idea are conducted on image datasets, and show the wide potential benefits of our method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards automation of data quality system for CERN CMS experiment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1709-08607</link>
+    <guid isPermaLink="false">arxiv:1709.08607</guid>
+    <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxim Borisyak et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Daily operation of a large-scale experiment is a challenging task, particularly from perspectives of routine monitoring of quality for data being taken. We describe an approach that uses Machine Learning for the automated system to monitor data quality, which is based on partial use of data qualified manually by detector experts. The system automatically classifies marginal cases: both of good an bad data, and use human expert decision to classify remaining &ldquo;grey area&rdquo; cases. This study uses collision data collected by the CMS experiment at LHC in 2010. We demonstrate that proposed workflow is able to automatically process at least 20\% of samples without noticeable degradation of the result.</p>]]></description>
+  </item>
 
   <item>
     <title>Summable Reparameterizations of Wasserstein Critics in the One-Dimensional Setting</title>

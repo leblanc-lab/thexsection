@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-22944</link>
+    <guid isPermaLink="false">arxiv:2509.22944</guid>
+    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lorenz K. Müller et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Post-training quantization has emerged as the most widely used strategy for deploying large language models at low precision. Still, current methods show perplexity degradation at bit-widths less than or equal to 4, partly because representing outliers causes precision issues in parameters that share the same scales as these outliers. This problem is especially pronounced for calibration-free, uniform quantization methods. We introduce SINQ to augment existing post-training quantizers with an additional second-axis scale factor and a fast Sinkhorn-Knopp-style algorithm that finds scales to normalize per-row and per-column variances. We show that this approximates activation-aware quantization by recovering column scales from the weight matrix structure that are predictive of the typical activation magnitudes the matrix received during training. Our method has no interactions between layers and can be trivially applied to new architectures to quantize any linear layer. We evaluate our method on the Qwen3 model family, among others. SINQ reduces the perplexity gap on WikiText2 and C4 by over 50% against uncalibrated uniform quantization baselines, incurs zero to negligible compute overhead, and can be further enhanced by combining it with calibration and non-uniform quantization levels. Code is available at https://github.com/huawei-csl/SINQ.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Speed is Confidence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-19085</link>
+    <guid isPermaLink="false">arxiv:2601.19085</guid>
+    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joshua V. Dillon</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Biological neural systems must be fast but are energy-constrained. Evolution&rsquo;s solution: act on the first signal. Winner-take-all circuits and time-to-first-spike coding implicitly treat when a neuron fires as an expression of confidence. We apply this principle to ensembles of Tiny Recursive Models (TRM) [Jolicoeur-Martineau et al., 2025]. On Sudoku-Extreme, halt-first selection achieves 97% accuracy vs. 91% for probability averaging &ndash; while requiring 10x fewer reasoning steps. A single baseline model achieves 85.5% +/- 1.3%. Can we internalize this as a training-only cost? Yes: by maintaining K=4 parallel latent states but backpropping only through the lowest-loss &ldquo;winner,&rdquo; we achieve 96.9% +/- 0.6% accuracy &ndash; matching ensemble performance at 1x inference cost, with less than half the variance of the baseline. A key diagnostic: 89% of baseline failures are selection problems, revealing a 99% accuracy ceiling. As in nature, this work was also resource constrained: all experiments used a single RTX 5090. A modified SwiGLU [Shazeer, 2020] made Muon [Jordan et al., 2024] and high LR viable, enabling baseline training in 48 minutes and full WTA (K=4) in 6 hours on consumer hardware.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport-Induced Samples against Out-of-Distribution Overconfidence</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-21320</link>
+    <guid isPermaLink="false">arxiv:2601.21320</guid>
+    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keke Tang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep neural networks (DNNs) often produce overconfident predictions on out-of-distribution (OOD) inputs, undermining their reliability in open-world environments. Singularities in semi-discrete optimal transport (OT) mark regions of semantic ambiguity, where classifiers are particularly prone to unwarranted high-confidence predictions. Motivated by this observation, we propose a principled framework to mitigate OOD overconfidence by leveraging the geometry of OT-induced singular boundaries. Specifically, we formulate an OT problem between a continuous base distribution and the latent embeddings of training data, and identify the resulting singular boundaries. By sampling near these boundaries, we construct a class of OOD inputs, termed optimal transport-induced OOD samples (OTIS), which are geometrically grounded and inherently semantically ambiguous. During training, a confidence suppression loss is applied to OTIS to guide the model toward more calibrated predictions in structurally uncertain regions. Extensive experiments show that our method significantly alleviates OOD overconfidence and outperforms state-of-the-art methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Relative Wasserstein Angle and the Problem of the W_2-Nearest Gaussian Distribution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22355</link>
+    <guid isPermaLink="false">arxiv:2601.22355</guid>
+    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Binshuai Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the problem of quantifying how far an empirical distribution deviates from Gaussianity under the framework of optimal transport. By exploiting the cone geometry of the relative translation invariant quadratic Wasserstein space, we introduce two novel geometric quantities, the relative Wasserstein angle and the orthogonal projection distance, which provide meaningful measures of non-Gaussianity. We prove that the filling cone generated by any two rays in this space is flat, ensuring that angles, projections, and inner products are rigorously well-defined. This geometric viewpoint recasts Gaussian approximation as a projection problem onto the Gaussian cone and reveals that the commonly used moment-matching Gaussian can \emph{not} be the <span class="arithmatex">\(W_2\)</span>-nearest Gaussian for a given empirical distribution. In one dimension, we derive closed-form expressions for the proposed quantities and extend them to several classical distribution families, including uniform, Laplace, and logistic distributions; while in high dimensions, we develop an efficient stochastic manifold optimization algorithm based on a semi-discrete dual formulation. Experiments on synthetic data and real-world feature distributions demonstrate that the relative Wasserstein angle is more robust than the Wasserstein distance and that the proposed nearest Gaussian provides a better approximation than moment matching in the evaluation of Fréchet Inception Distance (FID) scores.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Minimal-Action Discrete Schrödinger Bridge Matching for Peptide Sequence Design</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22408</link>
+    <guid isPermaLink="false">arxiv:2601.22408</guid>
+    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shrey Goel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Generative modeling of peptide sequences requires navigating a discrete and highly constrained space in which many intermediate states are chemically implausible or unstable. Existing discrete diffusion and flow-based methods rely on reversing fixed corruption processes or following prescribed probability paths, which can force generation through low-likelihood regions and require countless sampling steps. We introduce Minimal-action discrete Schrödinger Bridge Matching (MadSBM), a rate-based generative framework for peptide design that formulates generation as a controlled continuous-time Markov process on the amino-acid edit graph. To yield probability trajectories that remain near high-likelihood sequence neighborhoods throughout generation, MadSBM 1) defines generation relative to a biologically informed reference process derived from pre-trained protein language model logits and 2) learns a time-dependent control field that biases transition rates to produce low-action transport paths from a masked prior to the data distribution. We finally introduce guidance to the MadSBM sampling procedure towards a specific functional objective, expanding the design space of therapeutic peptides; to our knowledge, this represents the first-ever application of discrete classifier guidance to Schrödinger bridge-based generative models.</p>]]></description>
+  </item>
 
   <item>
     <title>GCL-OT: Graph Contrastive Learning with Optimal Transport for Heterophilic Text-Attributed Graphs</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (particle flow, particle-flow) — original abstract; no AI summary.</em></p>
 <p>The particle-flow (PF) algorithm provides a global event description by reconstructing final-state particles and is central to event reconstruction in CMS. Recently, end-to-end machine learning (ML) approaches have been proposed to directly optimize physical quantities of interest and to leverage heterogeneous computing architectures. One such approach, machine-learned particle flow (MLPF), uses a transformer model to infer particles directly from tracks and clusters in a single pass. We present recent CMS developments in MLPF, including training datasets, model architecture, reconstruction metrics, and integration with offline reconstruction software.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-robot Path Planning and Scheduling via Model Predictive Optimal Transport (MPC-OT)</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-21205</link>
-    <guid isPermaLink="false">arxiv:2508.21205</guid>
-    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Usman A. Khan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose a novel methodology for path planning and scheduling for multi-robot navigation that is based on optimal transport theory and model predictive control. We consider a setup where N robots are tasked to navigate to M targets in a common space with obstacles. Mapping robots to targets first and then planning paths can result in overlapping paths that lead to deadlocks. We derive a strategy based on optimal transport that not only provides minimum cost paths from robots to targets but also guarantees non-overlapping trajectories. We achieve this by discretizing the space of interest into K cells and by imposing a K×K cost structure that describes the cost of transitioning from one cell to another. Optimal transport then provides \textit{optimal and non-overlapping} cell transitions for the robots to reach the targets that can be readily deployed without any scheduling considerations. The proposed solution requires x1D4AA(K³logK) computations in the worst-case and x1D4AA(K²logK) for well-behaved problems. To further accommodate potentially overlapping trajectories (unavoidable in certain situations) as well as robot dynamics, we show that a temporal structure can be integrated into optimal transport with the help of \textit{replans} and \textit{model predictive control}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Conditional Wasserstein Distances with Applications in Bayesian OT Flow Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-18705</link>
-    <guid isPermaLink="false">arxiv:2403.18705</guid>
-    <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jannis Chemseddine et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In inverse problems, many conditional generative models approximate the posterior measure by minimizing a distance between the joint measure and its learned approximation. While this approach also controls the distance between the posterior measures in the case of the Kullback&ndash;Leibler divergence, this is in general not hold true for the Wasserstein distance. In this paper, we introduce a conditional Wasserstein distance via a set of restricted couplings that equals the expected Wasserstein distance of the posteriors. Interestingly, the dual formulation of the conditional Wasserstein-1 flow resembles losses in the conditional Wasserstein GAN literature in a quite natural way. We derive theoretical properties of the conditional Wasserstein distance, characterize the corresponding geodesics and velocity fields as well as the flow ODEs. Subsequently, we propose to approximate the velocity fields by relaxing the conditional Wasserstein distance. Based on this, we propose an extension of OT Flow Matching for solving Bayesian inverse problems and demonstrate its numerical advantages on an inverse problem and class-conditional image generation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>WOMAC: A Mechanism For Prediction Competitions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-17907</link>
-    <guid isPermaLink="false">arxiv:2508.17907</guid>
-    <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siddarth Srinivasan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Competitions are widely used to identify top performers in judgmental forecasting and machine learning, and the standard competition design ranks competitors based on their cumulative scores against a set of realized outcomes or held-out labels. However, this standard design is neither incentive-compatible nor very statistically efficient. The main culprit is noise in outcomes/labels that experts are scored against; it allows weaker competitors to often win by chance, and the winner-take-all nature incentivizes misreporting that improves win probability even if it decreases expected score. Attempts to achieve incentive-compatibility rely on randomized mechanisms that add even more noise in winner selection, but come at the cost of determinism and practical adoption. To tackle these issues, we introduce a novel deterministic mechanism: WOMAC (Wisdom of the Most Accurate Crowd). Instead of scoring experts against noisy outcomes, as is standard, WOMAC scores experts against the best ex-post aggregate of peer experts&rsquo; predictions given the noisy outcomes. WOMAC is also more efficient than the standard competition design in typical settings. While the increased complexity of WOMAC makes it challenging to analyze incentives directly, we provide a clear theoretical foundation to justify the mechanism. We also provide an efficient vectorized implementation and demonstrate empirically on real-world forecasting datasets that WOMAC is a more reliable predictor of experts&rsquo; out-of-sample performance relative to the standard mechanism. WOMAC is useful in any competition where there is substantial noise in the outcomes/labels.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Incorporating Pre-trained Diffusion Models in Solving the Schrödinger Bridge Problem</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-18095</link>
-    <guid isPermaLink="false">arxiv:2508.18095</guid>
-    <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhicong Tang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>This paper aims to unify Score-based Generative Models (SGMs), also known as Diffusion models, and the Schrödinger Bridge (SB) problem through three reparameterization techniques: Iterative Proportional Mean-Matching (IPMM), Iterative Proportional Terminus-Matching (IPTM), and Iterative Proportional Flow-Matching (IPFM). These techniques significantly accelerate and stabilize the training of SB-based models. Furthermore, the paper introduces novel initialization strategies that use pre-trained SGMs to effectively train SB-based models. By using SGMs as initialization, we leverage the advantages of both SB-based models and SGMs, ensuring efficient training of SB-based models and further improving the performance of SGMs. Extensive experiments demonstrate the significant effectiveness and improvements of the proposed methods. We believe this work contributes to and paves the way for future research on generative models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Shallow Convex Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2407-16800</link>
-    <guid isPermaLink="false">arxiv:2407.16800</guid>
-    <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Pallage et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this work, we propose Wasserstein distributionally robust shallow convex neural networks (WaDiRo-SCNNs) to provide reliable nonlinear predictions when subject to adverse and corrupted datasets. Our approach is based on the reformulation of a new convex training program for ReLU-based shallow neural networks, which allows us to cast the problem into the order-1 Wasserstein distributionally robust optimization framework. Our training procedure is conservative, has low stochasticity, is solvable with open-source solvers, and is scalable to large industrial deployments. We provide out-of-sample performance guarantees, show that hard convex physical constraints can be enforced in the training program, and propose a mixed-integer convex post-training verification program to evaluate model stability. WaDiRo-SCNN aims to make neural networks safer for critical applications, such as in the energy sector. Finally, we numerically demonstrate our model&rsquo;s performance through both a synthetic experiment and a real-world power system application, viz., the prediction of hourly energy consumption in non-residential buildings within the context of virtual power plants, and evaluate its stability across standard regression benchmark datasets. The experimental results are convincing and showcase the strengths of the proposed model.</p>]]></description>
   </item>
 
 </channel>

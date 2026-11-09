@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Geometry-Aware Decoding with Wasserstein-Regularized Truncation and Mass Penalties for Large Language Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-10346</link>
+    <guid isPermaLink="false">arxiv:2602.10346</guid>
+    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arash Gholami Davoodi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Large language models (LLMs) must balance diversity and creativity against logical coherence in open-ended generation. Existing truncation-based samplers are effective but largely heuristic, relying mainly on probability mass and entropy while ignoring semantic geometry of the token space. We present Top-W, a geometry-aware truncation rule that uses Wasserstein distance-defined over token-embedding geometry-to keep the cropped distribution close to the original, while explicitly balancing retained probability mass against the entropy of the kept set. Our theory yields a simple closed-form structure for the fixed-potential subset update: depending on the mass-entropy trade-off, the optimal crop either collapses to a single token or takes the form of a one-dimensional prefix that can be found efficiently with a linear scan. We implement Top-W using efficient geometry-based potentials (nearest-set or k-NN) and pair it with an alternating decoding routine that keeps the standard truncation-and-sampling interface unchanged. Extensive experiments on four benchmarks (GSM8K, GPQA, AlpacaEval, and MT-Bench) across three instruction-tuned models show that Top-W consistently outperforms prior state-of-the-art decoding approaches achieving up to 33.7% improvement. Moreover, we find that Top-W not only improves accuracy-focused performance, but also boosts creativity under judge-based open-ended evaluation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Geometrically Constrained Stenosis Editing in Coronary Angiography via Entropic Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-08851</link>
+    <guid isPermaLink="false">arxiv:2605.08851</guid>
+    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jialin Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The scarcity of high-quality imaging data for coronary angiography (CAG) stenosis limits the clinical translation of automated stenosis detection. Synthetic stenosis data provides a practical avenue to augment training sets, improving data quality, diversity, and distributional coverage, and enhancing detection precision and generalization. However, diffusion-based editing commonly relies on soft guidance in a noise-initialized reverse process, offering limited pixel-level precision and structure preservation. We propose the OT-Bridge Editor, which reframes localized editing as a constrained entropic optimal transport (OT) problem and leverages geometric information to steer the generation path, enabling stronger geometric control. Extensive experiments show that our synthesized angiograms consistently improve downstream stenosis detection, yielding substantial relative gains of 27.8% on the public ARCADE benchmark and 23.0% on our multi-center dataset, supported by consistent qualitative results.</p>]]></description>
+  </item>
+
+  <item>
+    <title>ToMAToMP: Robust and Multi-Parameter Topological Clustering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-14824</link>
+    <guid isPermaLink="false">arxiv:2605.14824</guid>
+    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ludo Andrianirina et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (topological clustering) — original abstract; no AI summary.</em></p>
+<p>Topological clustering, and its main algorithm ToMATo, is a clustering method from Topological Data Analysis (TDA) which has been applied successfully in several applications during the last few years. This is due to its high versatility, as clusters are detected from the persistent components in the sublevel sets of any user-defined function (gene expression, pixel values, etc), and efficiency, as topological clustering enjoys robustness guarantees. However, ToMATo is also limited in several ways. First, a graph on the data points needs to be provided as a hyper-parameter of the method (whose fine-tuning is left to the user). Second, ToMATo is known to be very sensitive to outlier values in the function range. Finally, and most importantly, ToMATo can only handle one function at a time, whereas it is critical to use several functions in various applications. In this article, we introduce ToMAToMP: the first topological clustering method able to handle several functions at the same time with theoretical guarantees. More specifically, we leverage a recent tool from multi-parameter persistent homology, called MMA decomposition, to design our clustering algorithm, and prove that it enjoys robustness properties. As corollaries, we show that it can be used to make ToMATo independent of graph tuning, and robust to outliers. Finally, we provide a set of numerical experiments showcasing the efficiency and quality of the clusterings produced by ToMAToMP, by showing strong improvement over non-topological and topological baselines for various datasets.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Kolmogorov-Arnold Chemical Reaction Neural Networks for learning pressure-dependent kinetic rate laws</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2511-07686</link>
+    <guid isPermaLink="false">arxiv:2511.07686</guid>
+    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin C. Koenig et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Chemical Reaction Neural Networks (CRNNs) have emerged as an interpretable machine learning framework for discovering reaction kinetics directly from data, while strictly adhering to the Arrhenius and mass action laws. However, standard CRNNs cannot represent pressure-dependent or mixture-based rate behavior, which is critical in many combustion and chemical systems and typically requires empirical falloff formulations such as Troe or SRI, or data-based interpolation or polynomial fits such as PLOG or Chebyshev Polynomials. Here, we develop Kolmogorov-Arnold Chemical Reaction Neural Networks (KA-CRNNs) that generalize CRNNs by modeling each kinetic parameter as a learnable function of third-body concentrations using Kolmogorov-Arnold activations. This structure maintains the Arrhenius and mass action interpretability and physical constraints of a vanilla CRNN while enabling assumption-free inference of global and collider-specific pressure effects directly from data. Two proof-of-concept reaction studies are presented to highlight the capability of KA-CRNNs to accurately reproduce pressure-dependent and collider-specific kinetics across a range of temperatures, pressures, and bath gas mixtures, extracting meaningful and generalizable models from sparse training data and significantly outperforming interpolative approaches (2.88x reduction in MSE). The framework establishes a foundation for data-driven discovery of extended kinetic behaviors in complex reacting systems, advancing interpretable and physics-constrained approaches for chemical model inference.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Physics-informed neural particle flow for the Bayesian update step</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-23089</link>
+    <guid isPermaLink="false">arxiv:2602.23089</guid>
+    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Domonkos Csuzdi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow) — original abstract; no AI summary.</em></p>
+<p>The Bayesian update step poses significant computational challenges in high-dimensional nonlinear estimation. While log-homotopy particle flow filters offer an alternative to stochastic sampling, existing formulations usually yield stiff differential equations. Conversely, existing deep learning approximations typically treat the update as a black-box task or rely on asymptotic relaxation, neglecting the exact geometric structure of the finite-horizon probability transport. In this work, we propose a physics-informed neural particle flow, which is an amortized inference framework. To construct the flow, we couple the log-homotopy trajectory of the prior to posterior density function with the continuity equation describing the density evolution. This derivation yields a governing partial differential equation (PDE), referred to as the master PDE. By embedding this PDE as a physical constraint into the loss function, we train a neural network to approximate the transport velocity field. This approach enables purely unsupervised training, eliminating the need for ground-truth posterior samples. We demonstrate that the neural parameterization acts as an implicit regularizer, mitigating the numerical stiffness inherent to analytic flows and reducing online computational complexity. Experimental validation on multimodal benchmarks and a challenging nonlinear scenario confirms better mode coverage and robustness compared to state-of-the-art baselines.</p>]]></description>
+  </item>
 
   <item>
     <title>Min Generalized Sliced Gromov Wasserstein: A Scalable Path to Gromov Wasserstein</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yilong Zuo et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Multimodal Attributed Graphs (MAGs) have been widely adopted for modeling complex systems by integrating multi-modal information, such as text and images, on nodes. However, we identify a discrepancy between the implicit semantic structure induced by different modality embeddings and the explicit graph structure. For instance, neighbors in the explicit graph structure may be close in one modality but distant in another. Since existing methods typically perform message passing over the fixed explicit graph structure, they inadvertently aggregate dissimilar features, introducing modality-specific noise and impeding effective node representation learning. To address this, we propose OptiMAG, an Unbalanced Optimal Transport-based regularization framework. OptiMAG employs the Fused Gromov-Wasserstein distance to explicitly guide cross-modal structural consistency within local neighborhoods, effectively mitigating structural-semantic conflicts. Moreover, a KL divergence penalty enables adaptive handling of cross-modal inconsistencies. This framework can be seamlessly integrated into existing multimodal graph models, acting as an effective drop-in regularizer. Experiments demonstrate that OptiMAG consistently outperforms baselines across multiple tasks, ranging from graph-centric tasks (e.g., node classification, link prediction) to multimodal-centric generation tasks (e.g., graph2text, graph2image). The source code will be available upon acceptance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-22944</link>
-    <guid isPermaLink="false">arxiv:2509.22944</guid>
-    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lorenz K. Müller et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Post-training quantization has emerged as the most widely used strategy for deploying large language models at low precision. Still, current methods show perplexity degradation at bit-widths less than or equal to 4, partly because representing outliers causes precision issues in parameters that share the same scales as these outliers. This problem is especially pronounced for calibration-free, uniform quantization methods. We introduce SINQ to augment existing post-training quantizers with an additional second-axis scale factor and a fast Sinkhorn-Knopp-style algorithm that finds scales to normalize per-row and per-column variances. We show that this approximates activation-aware quantization by recovering column scales from the weight matrix structure that are predictive of the typical activation magnitudes the matrix received during training. Our method has no interactions between layers and can be trivially applied to new architectures to quantize any linear layer. We evaluate our method on the Qwen3 model family, among others. SINQ reduces the perplexity gap on WikiText2 and C4 by over 50% against uncalibrated uniform quantization baselines, incurs zero to negligible compute overhead, and can be further enhanced by combining it with calibration and non-uniform quantization levels. Code is available at https://github.com/huawei-csl/SINQ.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Speed is Confidence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-19085</link>
-    <guid isPermaLink="false">arxiv:2601.19085</guid>
-    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joshua V. Dillon</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>Biological neural systems must be fast but are energy-constrained. Evolution&rsquo;s solution: act on the first signal. Winner-take-all circuits and time-to-first-spike coding implicitly treat when a neuron fires as an expression of confidence. We apply this principle to ensembles of Tiny Recursive Models (TRM) [Jolicoeur-Martineau et al., 2025]. On Sudoku-Extreme, halt-first selection achieves 97% accuracy vs. 91% for probability averaging &ndash; while requiring 10x fewer reasoning steps. A single baseline model achieves 85.5% +/- 1.3%. Can we internalize this as a training-only cost? Yes: by maintaining K=4 parallel latent states but backpropping only through the lowest-loss &ldquo;winner,&rdquo; we achieve 96.9% +/- 0.6% accuracy &ndash; matching ensemble performance at 1x inference cost, with less than half the variance of the baseline. A key diagnostic: 89% of baseline failures are selection problems, revealing a 99% accuracy ceiling. As in nature, this work was also resource constrained: all experiments used a single RTX 5090. A modified SwiGLU [Shazeer, 2020] made Muon [Jordan et al., 2024] and high LR viable, enabling baseline training in 48 minutes and full WTA (K=4) in 6 hours on consumer hardware.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport-Induced Samples against Out-of-Distribution Overconfidence</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-21320</link>
-    <guid isPermaLink="false">arxiv:2601.21320</guid>
-    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keke Tang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Deep neural networks (DNNs) often produce overconfident predictions on out-of-distribution (OOD) inputs, undermining their reliability in open-world environments. Singularities in semi-discrete optimal transport (OT) mark regions of semantic ambiguity, where classifiers are particularly prone to unwarranted high-confidence predictions. Motivated by this observation, we propose a principled framework to mitigate OOD overconfidence by leveraging the geometry of OT-induced singular boundaries. Specifically, we formulate an OT problem between a continuous base distribution and the latent embeddings of training data, and identify the resulting singular boundaries. By sampling near these boundaries, we construct a class of OOD inputs, termed optimal transport-induced OOD samples (OTIS), which are geometrically grounded and inherently semantically ambiguous. During training, a confidence suppression loss is applied to OTIS to guide the model toward more calibrated predictions in structurally uncertain regions. Extensive experiments show that our method significantly alleviates OOD overconfidence and outperforms state-of-the-art methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Relative Wasserstein Angle and the Problem of the W_2-Nearest Gaussian Distribution</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22355</link>
-    <guid isPermaLink="false">arxiv:2601.22355</guid>
-    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Binshuai Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the problem of quantifying how far an empirical distribution deviates from Gaussianity under the framework of optimal transport. By exploiting the cone geometry of the relative translation invariant quadratic Wasserstein space, we introduce two novel geometric quantities, the relative Wasserstein angle and the orthogonal projection distance, which provide meaningful measures of non-Gaussianity. We prove that the filling cone generated by any two rays in this space is flat, ensuring that angles, projections, and inner products are rigorously well-defined. This geometric viewpoint recasts Gaussian approximation as a projection problem onto the Gaussian cone and reveals that the commonly used moment-matching Gaussian can \emph{not} be the <span class="arithmatex">\(W_2\)</span>-nearest Gaussian for a given empirical distribution. In one dimension, we derive closed-form expressions for the proposed quantities and extend them to several classical distribution families, including uniform, Laplace, and logistic distributions; while in high dimensions, we develop an efficient stochastic manifold optimization algorithm based on a semi-discrete dual formulation. Experiments on synthetic data and real-world feature distributions demonstrate that the relative Wasserstein angle is more robust than the Wasserstein distance and that the proposed nearest Gaussian provides a better approximation than moment matching in the evaluation of Fréchet Inception Distance (FID) scores.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Minimal-Action Discrete Schrödinger Bridge Matching for Peptide Sequence Design</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22408</link>
-    <guid isPermaLink="false">arxiv:2601.22408</guid>
-    <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shrey Goel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Generative modeling of peptide sequences requires navigating a discrete and highly constrained space in which many intermediate states are chemically implausible or unstable. Existing discrete diffusion and flow-based methods rely on reversing fixed corruption processes or following prescribed probability paths, which can force generation through low-likelihood regions and require countless sampling steps. We introduce Minimal-action discrete Schrödinger Bridge Matching (MadSBM), a rate-based generative framework for peptide design that formulates generation as a controlled continuous-time Markov process on the amino-acid edit graph. To yield probability trajectories that remain near high-likelihood sequence neighborhoods throughout generation, MadSBM 1) defines generation relative to a biologically informed reference process derived from pre-trained protein language model logits and 2) learns a time-dependent control field that biases transition rates to produce low-action transport paths from a masked prior to the data distribution. We finally introduce guidance to the MadSBM sampling procedure towards a specific functional objective, expanding the design space of therapeutic peptides; to our knowledge, this represents the first-ever application of discrete classifier guidance to Schrödinger bridge-based generative models.</p>]]></description>
   </item>
 
 </channel>

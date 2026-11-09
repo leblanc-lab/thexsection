@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Multi-robot Path Planning and Scheduling via Model Predictive Optimal Transport (MPC-OT)</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-21205</link>
+    <guid isPermaLink="false">arxiv:2508.21205</guid>
+    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Usman A. Khan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In this paper, we propose a novel methodology for path planning and scheduling for multi-robot navigation that is based on optimal transport theory and model predictive control. We consider a setup where N robots are tasked to navigate to M targets in a common space with obstacles. Mapping robots to targets first and then planning paths can result in overlapping paths that lead to deadlocks. We derive a strategy based on optimal transport that not only provides minimum cost paths from robots to targets but also guarantees non-overlapping trajectories. We achieve this by discretizing the space of interest into K cells and by imposing a K×K cost structure that describes the cost of transitioning from one cell to another. Optimal transport then provides \textit{optimal and non-overlapping} cell transitions for the robots to reach the targets that can be readily deployed without any scheduling considerations. The proposed solution requires x1D4AA(K³logK) computations in the worst-case and x1D4AA(K²logK) for well-behaved problems. To further accommodate potentially overlapping trajectories (unavoidable in certain situations) as well as robot dynamics, we show that a temporal structure can be integrated into optimal transport with the help of \textit{replans} and \textit{model predictive control}.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Conditional Wasserstein Distances with Applications in Bayesian OT Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-18705</link>
+    <guid isPermaLink="false">arxiv:2403.18705</guid>
+    <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jannis Chemseddine et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In inverse problems, many conditional generative models approximate the posterior measure by minimizing a distance between the joint measure and its learned approximation. While this approach also controls the distance between the posterior measures in the case of the Kullback&ndash;Leibler divergence, this is in general not hold true for the Wasserstein distance. In this paper, we introduce a conditional Wasserstein distance via a set of restricted couplings that equals the expected Wasserstein distance of the posteriors. Interestingly, the dual formulation of the conditional Wasserstein-1 flow resembles losses in the conditional Wasserstein GAN literature in a quite natural way. We derive theoretical properties of the conditional Wasserstein distance, characterize the corresponding geodesics and velocity fields as well as the flow ODEs. Subsequently, we propose to approximate the velocity fields by relaxing the conditional Wasserstein distance. Based on this, we propose an extension of OT Flow Matching for solving Bayesian inverse problems and demonstrate its numerical advantages on an inverse problem and class-conditional image generation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>WOMAC: A Mechanism For Prediction Competitions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-17907</link>
+    <guid isPermaLink="false">arxiv:2508.17907</guid>
+    <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Siddarth Srinivasan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>Competitions are widely used to identify top performers in judgmental forecasting and machine learning, and the standard competition design ranks competitors based on their cumulative scores against a set of realized outcomes or held-out labels. However, this standard design is neither incentive-compatible nor very statistically efficient. The main culprit is noise in outcomes/labels that experts are scored against; it allows weaker competitors to often win by chance, and the winner-take-all nature incentivizes misreporting that improves win probability even if it decreases expected score. Attempts to achieve incentive-compatibility rely on randomized mechanisms that add even more noise in winner selection, but come at the cost of determinism and practical adoption. To tackle these issues, we introduce a novel deterministic mechanism: WOMAC (Wisdom of the Most Accurate Crowd). Instead of scoring experts against noisy outcomes, as is standard, WOMAC scores experts against the best ex-post aggregate of peer experts&rsquo; predictions given the noisy outcomes. WOMAC is also more efficient than the standard competition design in typical settings. While the increased complexity of WOMAC makes it challenging to analyze incentives directly, we provide a clear theoretical foundation to justify the mechanism. We also provide an efficient vectorized implementation and demonstrate empirically on real-world forecasting datasets that WOMAC is a more reliable predictor of experts&rsquo; out-of-sample performance relative to the standard mechanism. WOMAC is useful in any competition where there is substantial noise in the outcomes/labels.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Incorporating Pre-trained Diffusion Models in Solving the Schrödinger Bridge Problem</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-18095</link>
+    <guid isPermaLink="false">arxiv:2508.18095</guid>
+    <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhicong Tang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>This paper aims to unify Score-based Generative Models (SGMs), also known as Diffusion models, and the Schrödinger Bridge (SB) problem through three reparameterization techniques: Iterative Proportional Mean-Matching (IPMM), Iterative Proportional Terminus-Matching (IPTM), and Iterative Proportional Flow-Matching (IPFM). These techniques significantly accelerate and stabilize the training of SB-based models. Furthermore, the paper introduces novel initialization strategies that use pre-trained SGMs to effectively train SB-based models. By using SGMs as initialization, we leverage the advantages of both SB-based models and SGMs, ensuring efficient training of SB-based models and further improving the performance of SGMs. Extensive experiments demonstrate the significant effectiveness and improvements of the proposed methods. We believe this work contributes to and paves the way for future research on generative models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Shallow Convex Neural Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2407-16800</link>
+    <guid isPermaLink="false">arxiv:2407.16800</guid>
+    <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Pallage et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this work, we propose Wasserstein distributionally robust shallow convex neural networks (WaDiRo-SCNNs) to provide reliable nonlinear predictions when subject to adverse and corrupted datasets. Our approach is based on the reformulation of a new convex training program for ReLU-based shallow neural networks, which allows us to cast the problem into the order-1 Wasserstein distributionally robust optimization framework. Our training procedure is conservative, has low stochasticity, is solvable with open-source solvers, and is scalable to large industrial deployments. We provide out-of-sample performance guarantees, show that hard convex physical constraints can be enforced in the training program, and propose a mixed-integer convex post-training verification program to evaluate model stability. WaDiRo-SCNN aims to make neural networks safer for critical applications, such as in the energy sector. Finally, we numerically demonstrate our model&rsquo;s performance through both a synthetic experiment and a real-world power system application, viz., the prediction of hourly energy consumption in non-residential buildings within the context of virtual power plants, and evaluate its stability across standard regression benchmark datasets. The experimental results are convincing and showcase the strengths of the proposed model.</p>]]></description>
+  </item>
 
   <item>
     <title>Towards Understanding Gradient Dynamics of the Sliced-Wasserstein Distance via Critical Point Analysis</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexis Teter et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>The purpose of this note is to clarify the importance of the relation gg^⊤∝σσ^⊤ in solving control-affine Schrödinger bridge problems via the Hopf-Cole transform, where g, are the control and noise coefficients, respectively. We show that the Hopf-Cole transform applied to the conditions of optimality for generic control-affine Schrödinger bridge problems, i.e., without the assumption gg^⊤∝σσ^⊤, gives a pair of forward-backward PDEs that are neither linear nor equation-level decoupled. We explain how the resulting PDEs can be interpreted as nonlinear forward-backward advection-diffusion-reaction equations, where the nonlinearity stem from additional drift and reaction terms involving the gradient of the log-likelihood a.k.a. the score. These additional drift and reaction vanish when gg^⊤∝σσ^⊤, and the resulting boundary-coupled system of linear PDEs can then be solved by dynamic Sinkhorn recursions. A key takeaway of our work is that the numerical solution of the generic control-affine Schrödinger bridge requires further algorithmic development, possibly generalizing the dynamic Sinkhorn recursion or otherwise.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Spherical Tree-Sliced Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-11249</link>
-    <guid isPermaLink="false">arxiv:2503.11249</guid>
-    <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Viet-Hoang Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Sliced Optimal Transport (OT) simplifies the OT problem in high-dimensional spaces by projecting supports of input measures onto one-dimensional lines and then exploiting the closed-form expression of the univariate OT to reduce the computational burden of OT. Recently, the Tree-Sliced method has been introduced to replace these lines with more intricate structures, known as tree systems. This approach enhances the ability to capture topological information of integration domains in Sliced OT while maintaining low computational cost. Inspired by this approach, in this paper, we present an adaptation of tree systems on OT problems for measures supported on a sphere. As a counterpart to the Radon transform variant on tree systems, we propose a novel spherical Radon transform with a new integration domain called spherical trees. By leveraging this transform and exploiting the spherical tree structures, we derive closed-form expressions for OT problems on the sphere. Consequently, we obtain an efficient metric for measures on the sphere, named Spherical Tree-Sliced Wasserstein (STSW) distance. We provide an extensive theoretical analysis to demonstrate the topology of spherical trees and the well-definedness and injectivity of our Radon transform variant, which leads to an orthogonally invariant distance between spherical measures. Finally, we conduct a wide range of numerical experiments, including gradient flows and self-supervised learning, to assess the performance of our proposed metric, comparing it to recent benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Procrustes Wasserstein Metric: A Modified Benamou-Brenier Approach with Applications to Latent Gaussian Distributions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-16580</link>
-    <guid isPermaLink="false">arxiv:2503.16580</guid>
-    <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kevine Meugang Toukam</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce a modified Benamou-Brenier type approach leading to a Wasserstein type distance that allows global invariance, specifically, isometries, and we show that the problem can be summarized to orthogonal transformations. This distance is defined by penalizing the action with a costless movement of the particle that does not change the direction and speed of its trajectory. We show that for Gaussian distribution resume to measuring the Euclidean distance between their ordered vector of eigenvalues and we show a direct application in recovering Latent Gaussian distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Metric properties of partial and robust Gromov-Wasserstein distances</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2411-02198</link>
-    <guid isPermaLink="false">arxiv:2411.02198</guid>
-    <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jannatul Chhoa et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) distances define a family of metrics, based on ideas from optimal transport, which enable comparisons between probability measures defined on distinct metric spaces. They are particularly useful in areas such as network analysis and geometry processing, as computation of a GW distance involves solving for registration between the objects which minimizes geometric distortion. Although GW distances have proven useful for various applications in the recent machine learning literature, it has been observed that they are inherently sensitive to outlier noise and cannot accommodate partial matching. This has been addressed by various constructions building on the GW framework; in this article, we focus specifically on a natural relaxation of the GW optimization problem, introduced by Chapel et al., which is aimed at addressing exactly these shortcomings. Our goal is to understand the theoretical properties of this relaxed optimization problem, from the viewpoint of metric geometry. While the relaxed problem fails to induce a metric, we derive precise characterizations of how it fails the axioms of non-degeneracy and triangle inequality. These observations lead us to define a novel family of distances, whose construction is inspired by the Prokhorov and Ky Fan distances, as well as by the recent work of Raghvendra et al.\ on robust versions of classical Wasserstein distance. We show that our new distances define true metrics, that they induce the same topology as the GW distances, and that they enjoy additional robustness to perturbations. These results provide a mathematically rigorous basis for using our robust partial GW distances in applications where outliers and partial matching are concerns.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distance-Based Tree-Sliced Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-11050</link>
-    <guid isPermaLink="false">arxiv:2503.11050</guid>
-    <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang V. Tran et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>To overcome computational challenges of Optimal Transport (OT), several variants of Sliced Wasserstein (SW) has been developed in the literature. These approaches exploit the closed-form expression of the univariate OT by projecting measures onto (one-dimensional) lines. However, projecting measures onto low-dimensional spaces can lead to a loss of topological information. Tree-Sliced Wasserstein distance on Systems of Lines (TSW-SL) has emerged as a promising alternative that replaces these lines with a more advanced structure called tree systems. The tree structures enhance the ability to capture topological information of the metric while preserving computational efficiency. However, at the core of TSW-SL, the splitting maps, which serve as the mechanism for pushing forward measures onto tree systems, focus solely on the position of the measure supports while disregarding the projecting domains. Moreover, the specific splitting map used in TSW-SL leads to a metric that is not invariant under Euclidean transformations, a typically expected property for OT on Euclidean space. In this work, we propose a novel class of splitting maps that generalizes the existing one studied in TSW-SL enabling the use of all positional information from input measures, resulting in a novel Distance-based Tree-Sliced Wasserstein (Db-TSW) distance. In addition, we introduce a simple tree sampling process better suited for Db-TSW, leading to an efficient GPU-friendly implementation for tree systems, similar to the original SW. We also provide a comprehensive theoretical analysis of proposed class of splitting maps to verify the injectivity of the corresponding Radon Transform, and demonstrate that Db-TSW is an Euclidean invariant metric. We empirically show that Db-TSW significantly improves accuracy compared to recent SW variants while maintaining low computational cost via a wide range of experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Axiomatic Explainer Globalness via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2411-01126</link>
-    <guid isPermaLink="false">arxiv:2411.01126</guid>
-    <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davin Hill et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Explainability methods are often challenging to evaluate and compare. With a multitude of explainers available, practitioners must often compare and select explainers based on quantitative evaluation metrics. One particular differentiator between explainers is the diversity of explanations for a given dataset; i.e. whether all explanations are identical, unique and uniformly distributed, or somewhere between these two extremes. In this work, we define a complexity measure for explainers, globalness, which enables deeper understanding of the distribution of explanations produced by feature attribution and feature selection methods for a given dataset. We establish the axiomatic properties that any such measure should possess and prove that our proposed measure, Wasserstein Globalness, meets these criteria. We validate the utility of Wasserstein Globalness using image, tabular, and synthetic datasets, empirically showing that it both facilitates meaningful comparison between explainers and improves the selection process for explainability methods.</p>]]></description>
   </item>
 
 </channel>

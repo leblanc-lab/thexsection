@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Low Latency Transformer Inference on FPGAs for Physics Applications with hls4ml</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-05207</link>
+    <guid isPermaLink="false">arxiv:2409.05207</guid>
+    <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhixing Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>This study presents an efficient implementation of transformer architectures in Field-Programmable Gate Arrays(FPGAs) using hls4ml. We demonstrate the strategy for implementing the multi-head attention, softmax, and normalization layer and evaluate three distinct models. Their deployment on VU13P FPGA chip achieved latency less than 2us, demonstrating the potential for real-time applications. HLS4ML compatibility with any TensorFlow-built transformer model further enhances the scalability and applicability of this work. Index Terms: FPGAs, machine learning, transformers, high energy physics, LIGO</p>]]></description>
+  </item>
+
+  <item>
+    <title>OmniJet-α: The first cross-task foundation model for particle physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-05618</link>
+    <guid isPermaLink="false">arxiv:2403.05618</guid>
+    <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Foundation models are multi-dataset and multi-task machine learning methods that once pre-trained can be fine-tuned for a large variety of downstream applications. The successful development of such general-purpose models for physics data would be a major breakthrough as they could improve the achievable physics performance while at the same time drastically reduce the required amount of training time and data. We report significant progress on this challenge on several fronts. First, a comprehensive set of evaluation methods is introduced to judge the quality of an encoding from physics data into a representation suitable for the autoregressive generation of particle jets with transformer architectures (the common backbone of foundation models). These measures motivate the choice of a higher-fidelity tokenization compared to previous works. Finally, we demonstrate transfer learning between an unsupervised problem (jet generation) and a classic supervised task (jet tagging) with our new OmniJet-α model. This is the first successful transfer between two different and actively studied classes of tasks and constitutes a major step in the building of foundation models for particle physics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SELF-[IN]CORRECT: LLMs Struggle with Discriminating Self-Generated Responses</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-04298</link>
+    <guid isPermaLink="false">arxiv:2404.04298</guid>
+    <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dongwei Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
+<p>Can LLMs consistently improve their previous outputs for better results? For this to be true, LLMs would need to be better at discriminating among previously-generated alternatives, than generating initial responses. We explore the validity of this hypothesis in practice. We first formulate a unified framework that allows us to compare the generative and discriminative capability of any model on any task. In our resulting experimental analysis of several open-source and industrial LLMs, we observe that models are not reliably better at discriminating among previously-generated alternatives than generating initial responses. This finding challenges the notion that LLMs may be able to enhance their performance only through their own judgment.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convolutional L2LFlows: Generating Accurate Showers in Highly Granular Calorimeters Using Convolutional Normalizing Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-20407</link>
+    <guid isPermaLink="false">arxiv:2405.20407</guid>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>In the quest to build generative surrogate models as computationally efficient alternatives to rule-based simulations, the quality of the generated samples remains a crucial frontier. So far, normalizing flows have been among the models with the best fidelity. However, as the latent space in such models is required to have the same dimensionality as the data space, scaling up normalizing flows to high dimensional datasets is not straightforward. The prior L2LFlows approach successfully used a series of separate normalizing flows and sequence of conditioning steps to circumvent this problem. In this work, we extend L2LFlows to simulate showers with a 9-times larger profile in the lateral direction. To achieve this, we introduce convolutional layers and U-Net-type connections, move from masked autoregressive flows to coupling layers, and demonstrate the successful modelling of showers in the ILD Electromagnetic Calorimeter as well as Dataset 3 from the public CaloChallenge dataset.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Lamarr: LHCb ultra-fast simulation based on machine learning models deployed within Gauss</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2303-11428</link>
+    <guid isPermaLink="false">arxiv:2303.11428</guid>
+    <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Barbetti</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>About 90% of the computing resources available to the LHCb experiment has been spent to produce simulated data samples for Run 2 of the Large Hadron Collider at CERN. The upgraded LHCb detector will be able to collect larger data samples, requiring many more simulated events to analyze the data to be collected in Run 3. Simulation is a key necessity of analysis to interpret signal, reject background and measure efficiencies. The needed simulation will far exceed the pledged resources, requiring an evolution in technologies and techniques to produce these simulated data samples. In this contribution, we discuss Lamarr, a Gaudi-based framework to speed-up the simulation production parameterizing both the detector response and the reconstruction algorithms of the LHCb experiment. Deep Generative Models powered by several algorithms and strategies are employed to effectively parameterize the high-level response of the single components of the LHCb detector, encoding within neural networks the experimental errors and uncertainties introduced in the detection and reconstruction phases. Where possible, models are trained directly on real data, statistically subtracting any background components by applying appropriate reweighing procedures. Embedding Lamarr in the general LHCb Gauss Simulation framework allows to combine its execution with any of the available generators in a seamless way. The resulting software package enables a simulation process independent of the detailed simulation used to date.</p>]]></description>
+  </item>
 
   <item>
     <title>Bridging User Dynamics: Transforming Sequential Recommendations with Schrödinger Bridge and Diffusion Models</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huminhao Zhu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>Wasserstein Gradient Flows (WGF) with respect to specific functionals have been widely used in the machine learning literature. Recently, neural networks have been adopted to approximate certain intractable parts of the underlying Wasserstein gradient flow and result in efficient inference procedures. In this paper, we introduce the Neural Sinkhorn Gradient Flow (NSGF) model, which parametrizes the time-varying velocity field of the Wasserstein gradient flow w.r.t. the Sinkhorn divergence to the target distribution starting a given source distribution. We utilize the velocity field matching training scheme in NSGF, which only requires samples from the source and target distribution to compute an empirical velocity field approximation. Our theoretical analyses show that as the sample size increases to infinity, the mean-field limit of the empirical approximation converges to the true underlying velocity field. To further enhance model efficiency on high-dimensional tasks, a two-phase NSGF++ model is devised, which first follows the Sinkhorn flow to approach the image manifold quickly (≤5 NFEs) and then refines the samples along a simple straight flow. Numerical experiments with synthetic and real-world benchmark datasets support our theoretical results and demonstrate the effectiveness of the proposed methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Synergy Between Optimal Transport Theory and Multi-Agent Reinforcement Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-10949</link>
-    <guid isPermaLink="false">arxiv:2401.10949</guid>
-    <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ali Baheri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper explores the integration of optimal transport (OT) theory with multi-agent reinforcement learning (MARL). This integration uses OT to handle distributions and transportation problems to enhance the efficiency, coordination, and adaptability of MARL. There are five key areas where OT can impact MARL: (1) policy alignment, where OT&rsquo;s Wasserstein metric is used to align divergent agent strategies towards unified goals; (2) distributed resource management, employing OT to optimize resource allocation among agents; (3) addressing non-stationarity, using OT to adapt to dynamic environmental shifts; (4) scalable multi-agent learning, harnessing OT for decomposing large-scale learning objectives into manageable tasks; and (5) enhancing energy efficiency, applying OT principles to develop sustainable MARL systems. This paper articulates how the synergy between OT and MARL can address scalability issues, optimize resource distribution, align agent policies in cooperative environments, and ensure adaptability in dynamically changing conditions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Differential Privacy</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-12436</link>
-    <guid isPermaLink="false">arxiv:2401.12436</guid>
-    <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chengyi Yang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Differential privacy (DP) has achieved remarkable results in the field of privacy-preserving machine learning. However, existing DP frameworks do not satisfy all the conditions for becoming metrics, which prevents them from deriving better basic private properties and leads to exaggerated values on privacy budgets. We propose Wasserstein differential privacy (WDP), an alternative DP framework to measure the risk of privacy leakage, which satisfies the properties of symmetry and triangle inequality. We show and prove that WDP has 13 excellent properties, which can be theoretical supports for the better performance of WDP than other DP frameworks. In addition, we derive a general privacy accounting method called Wasserstein accountant, which enables WDP to be applied in stochastic gradient descent (SGD) scenarios containing sub-sampling. Experiments on basic mechanisms, compositions and deep learning show that the privacy budgets obtained by Wasserstein accountant are relatively stable and less influenced by order. Moreover, the overestimation on privacy budgets can be effectively alleviated. The code is available at https://github.com/Hifipsysta/WDP.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Detecting Out-of-Distribution Samples via Conditional Distribution Entropy with Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-11726</link>
-    <guid isPermaLink="false">arxiv:2401.11726</guid>
-    <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chuanwen Feng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>When deploying a trained machine learning model in the real world, it is inevitable to receive inputs from out-of-distribution (OOD) sources. For instance, in continual learning settings, it is common to encounter OOD samples due to the non-stationarity of a domain. More generally, when we have access to a set of test inputs, the existing rich line of OOD detection solutions, especially the recent promise of distance-based methods, falls short in effectively utilizing the distribution information from training samples and test inputs. In this paper, we argue that empirical probability distributions that incorporate geometric information from both training samples and test inputs can be highly beneficial for OOD detection in the presence of test inputs available. To address this, we propose to model OOD detection as a discrete optimal transport problem. Within the framework of optimal transport, we propose a novel score function known as the \emph{conditional distribution entropy} to quantify the uncertainty of a test input being an OOD sample. Our proposal inherits the merits of certain distance-based methods while eliminating the reliance on distribution assumptions, a-prior knowledge, and specific training mechanisms. Extensive experiments conducted on benchmark datasets demonstrate that our method outperforms its competitors in OOD detection.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Squared Wasserstein-2 Distance for Efficient Reconstruction of Stochastic Differential Equations</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-11354</link>
-    <guid isPermaLink="false">arxiv:2401.11354</guid>
-    <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingtao Xia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We provide an analysis of the squared Wasserstein-2 (W_2) distance between two probability distributions associated with two stochastic differential equations (SDEs). Based on this analysis, we propose the use of a squared W_2 distance-based loss functions in the \textit{reconstruction} of SDEs from noisy data. To demonstrate the practicality of our Wasserstein distance-based loss functions, we performed numerical experiments that demonstrate the efficiency of our method in reconstructing SDEs that arise across a number of applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Double-Bounded Optimal Transport for Advanced Clustering and Classification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-11418</link>
-    <guid isPermaLink="false">arxiv:2401.11418</guid>
-    <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Liangliang Shi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) is attracting increasing attention in machine learning. It aims to transport a source distribution to a target one at minimal cost. In its vanilla form, the source and target distributions are predetermined, which contracts to the real-world case involving undetermined targets. In this paper, we propose Doubly Bounded Optimal Transport (DB-OT), which assumes that the target distribution is restricted within two boundaries instead of a fixed one, thus giving more freedom for the transport to find solutions. Based on the entropic regularization of DB-OT, three scaling-based algorithms are devised for calculating the optimal solution. We also show that our DB-OT is helpful for barycenter-based clustering, which can avoid the excessive concentration of samples in a single cluster. Then we further develop DB-OT techniques for long-tailed classification which is an emerging and open problem. We first propose a connection between OT and classification, that is, in the classification task, training involves optimizing the Inverse OT to learn the representations, while testing involves optimizing the OT for predictions. With this OT perspective, we first apply DB-OT to improve the loss, and the Balanced Softmax is shown as a special case. Then we apply DB-OT for inference in the testing process. Even with vanilla Softmax trained features, our extensive experimental results show that our method can achieve good results with our improved inference scheme in the testing stage.</p>]]></description>
   </item>
 
 </channel>

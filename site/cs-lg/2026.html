@@ -36,17 +36,86 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">2636 papers</span>
-  <span class="count">1567 days</span>
+  <span class="count">2641 papers</span>
+  <span class="count">1568 days</span>
   <span class="count">since 2009</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 <nav class="years" aria-label="By year">
-  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">628</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
+  <a href="2026.html" class="current" aria-current="page">2026 <span class="n">633</span></a><a href="2025.html">2025 <span class="n">456</span></a><a href="2024.html">2024 <span class="n">332</span></a><a href="2023.html">2023 <span class="n">299</span></a><a href="2022.html">2022 <span class="n">262</span></a><a href="2021.html">2021 <span class="n">239</span></a><a href="2020.html">2020 <span class="n">178</span></a><a href="2019.html">2019 <span class="n">133</span></a><a href="2018.html">2018 <span class="n">53</span></a><a href="2017.html">2017 <span class="n">35</span></a><a href="2016.html">2016 <span class="n">7</span></a><a href="2015.html">2015 <span class="n">7</span></a><a href="2014.html">2014 <span class="n">1</span></a><a href="2013.html">2013 <span class="n">1</span></a><a href="2012.html">2012 <span class="n">1</span></a><a href="2011.html">2011 <span class="n">1</span></a><a href="2010.html">2010 <span class="n">2</span></a><a href="2009.html">2009 <span class="n">1</span></a>
 </nav>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    Monday, November 9, 2026
+  </h2>
+  
+
+  
+  <article class="paper" id="a2611-08505">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.08505" target="_blank" rel="noopener">arXiv:2611.08505</a>
+      
+      <a class="permalink" href="#a2611-08505" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Drift-admissibility via Optimal Transport</h3>
+    <p class="byline">Abigail Langbridge et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce structure-aware optimal transport diagnostics for assessing whether empirical time-series dynamics are compatible with a prescribed predictable-drift class. Our approach translates a pathwise property of stochastic processes into a finite-dimensional projection problem over empirical transition laws, encoding admissibility as row-wise moment constraints on local couplings and quantifying deviations via a Kullback&ndash;Leibler projection gap <span class="arithmatex">\(G_{\lambda,k}\)</span>. This yields both a principled diagnostic and a scalable Bregman&ndash;Dykstra algorithm that retains the efficiency of Sinkhorn-type methods while incorporating structural constraints. Calibrated against a Brownian reference null, <span class="arithmatex">\(G_{\lambda,k}\)</span> separates process classes that are indistinguishable by second-order statistics alone&mdash;including fractional Brownian motion and BSS processes sharing identical Hurst indices&mdash;without asymptotic resampling or continuous-time recovery. This positions the method as a general tool for structure-aware model validation of sequential data.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-08606">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.08606" target="_blank" rel="noopener">arXiv:2611.08606</a>
+      
+      <a class="permalink" href="#a2611-08606" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Just CaloCHILL: fast hadronic shower generation in a learned latent space</h3>
+    <p class="byline">Henry Day-Hall et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Calorimeter showers are the most expensive part of detector simulation, and highly granular calorimeters, in which a single hadronic shower leaves thousands of energy deposits, make them more expensive still. We present CaloCHILL (Calorimeter Hits In Learned Latents), a generative model that does not produce these deposits one by one: instead it generates a compact summary of the shower in a learned latent space and expands it to full resolution only at the end. The complete shower, including the arrival time of every hit, is built in three stages: a flow-matching model first sets the number of hits and the earliest hit time in each calorimeter layer, a mean-flow model then generates the latent summary, and the decompressor of a variational autoencoder turns it into the full point cloud, giving every hit its position, energy and time. Sparse attention along the shower axis keeps this compression affordable for showers with thousands of hits. On positive-pion showers in the calorimeter of the International Large Detector, a proposed detector for the FCC-ee, CaloCHILL reproduces the main shower observables, including their time structure. This new model is 600 times faster than its predecessor, while improving on all accuracy metrics considered.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-08656">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.08656" target="_blank" rel="noopener">arXiv:2611.08656</a>
+      
+      <a class="permalink" href="#a2611-08656" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Higher Order Component Attribution via Learned Surrogates in High Energy Physics</h3>
+    <p class="byline">Lauri Laatu et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (particle transformer) — original abstract; no AI summary.</em></p>
+<p>Experimental High Energy Physics (HEP) has adopted the transformer architecture for identification of jets, particularly the state-of-the-art Particle Transformer (ParT) which injects explicit information about particle correlations into the attention mechanism. While able to achieve state-of-the-art results in accuracy, interpretability to its effectiveness has been limited. In this paper we propose component attribution methods using Kolmogorov-Arnold Networks (KANs) that directly tie back to the physical descriptors of jets, to probe whether mechanisms such as Multi-Head Attention (MHA), or the ParT architecture, are able to learn these as discriminating features.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-08682">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.08682" target="_blank" rel="noopener">arXiv:2611.08682</a>
+      
+      <a class="permalink" href="#a2611-08682" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Transporting the Past: An Optimal Transport View of Backtracking Counterfactuals</h3>
+    <p class="byline">Zhangyi Liu et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study backtracking counterfactual inference for Structural Causal Models (SCMs) through the lens of optimal transport. In SCMs, a factual observation generally induces a posterior distribution over exogenous variables, making counterfactual inference inherently distributional. We introduce two complementary frameworks that transport this posterior onto the set of exogenous configurations satisfying a desired counterfactual query. The first constructs a natural pointwise projection and is suitable when the transported exogenous distribution can be used directly. The second enforces mutual independence among counterfactual exogenous variables, so that the transported variables remain interpretable as genuine exogenous noises of the same SCM. We show that both frameworks are consistent with the original backtracking counterfactual principle, and we propose marginal, penalty-based, and hard-constrained solvers for finite-posterior settings. Synthetic experiments on non-bijective SCMs illustrate the geometry of the problem and reveal trade-offs among transport cost, counterfactual constraint satisfaction, and preservation of exogenous independence.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-09723">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.09723" target="_blank" rel="noopener">arXiv:2611.09723</a>
+      
+      <a class="permalink" href="#a2611-09723" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Fixed-point acceleration on Neural Wasserstein manifolds</h3>
+    <p class="byline">Vitalii Aksenov et al.</p>
+    <div class="paper-body"><p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a fixed-point acceleration method for optimization over probability measures, applicable to a variety of machine learning problems. We represent probability measures as pushforwards of a reference distribution through a neural network map and equip the parameter space with the induced pullback Wasserstein metric. This geometric structure allows natural gradient descent to be interpreted as a fixed-point iteration on a Riemannian manifold. We accelerate this iteration using Riemannian Anderson mixing method, which exploits historical residuals to capture approximate second-order information without forming Hessians. In the present parametric setting, the manifold is represented by Euclidean coordinates endowed with a point-dependent metric, simplifying retraction and vector transport. We evaluate the method on multimodal sampling, PDE-based inverse problems, aggregation dynamics, Bayesian logistic regression, and generative modeling. Across the tested tasks, Anderson mixing reduces the number of natural-gradient iterations and achieves competitive performance relative to SGD and Adam in terms of both loss-gradient evaluations and wall-clock time. These results suggest that fixed-point acceleration is an efficient tool for improving the computational efficiency of training on parametric Wasserstein methods.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -9731,7 +9800,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-11-09 05:15 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
+  <p>Original arXiv abstracts selected by keywords and authors. No AI summaries. · built 2026-11-09 05:41 <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

@@ -7,7 +7,57 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Spherical Tree-Sliced Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-11249</link>
+    <guid isPermaLink="false">arxiv:2503.11249</guid>
+    <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Viet-Hoang Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Sliced Optimal Transport (OT) simplifies the OT problem in high-dimensional spaces by projecting supports of input measures onto one-dimensional lines and then exploiting the closed-form expression of the univariate OT to reduce the computational burden of OT. Recently, the Tree-Sliced method has been introduced to replace these lines with more intricate structures, known as tree systems. This approach enhances the ability to capture topological information of integration domains in Sliced OT while maintaining low computational cost. Inspired by this approach, in this paper, we present an adaptation of tree systems on OT problems for measures supported on a sphere. As a counterpart to the Radon transform variant on tree systems, we propose a novel spherical Radon transform with a new integration domain called spherical trees. By leveraging this transform and exploiting the spherical tree structures, we derive closed-form expressions for OT problems on the sphere. Consequently, we obtain an efficient metric for measures on the sphere, named Spherical Tree-Sliced Wasserstein (STSW) distance. We provide an extensive theoretical analysis to demonstrate the topology of spherical trees and the well-definedness and injectivity of our Radon transform variant, which leads to an orthogonally invariant distance between spherical measures. Finally, we conduct a wide range of numerical experiments, including gradient flows and self-supervised learning, to assess the performance of our proposed metric, comparing it to recent benchmarks.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Procrustes Wasserstein Metric: A Modified Benamou-Brenier Approach with Applications to Latent Gaussian Distributions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-16580</link>
+    <guid isPermaLink="false">arxiv:2503.16580</guid>
+    <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kevine Meugang Toukam</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce a modified Benamou-Brenier type approach leading to a Wasserstein type distance that allows global invariance, specifically, isometries, and we show that the problem can be summarized to orthogonal transformations. This distance is defined by penalizing the action with a costless movement of the particle that does not change the direction and speed of its trajectory. We show that for Gaussian distribution resume to measuring the Euclidean distance between their ordered vector of eigenvalues and we show a direct application in recovering Latent Gaussian distributions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Metric properties of partial and robust Gromov-Wasserstein distances</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2411-02198</link>
+    <guid isPermaLink="false">arxiv:2411.02198</guid>
+    <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jannatul Chhoa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) distances define a family of metrics, based on ideas from optimal transport, which enable comparisons between probability measures defined on distinct metric spaces. They are particularly useful in areas such as network analysis and geometry processing, as computation of a GW distance involves solving for registration between the objects which minimizes geometric distortion. Although GW distances have proven useful for various applications in the recent machine learning literature, it has been observed that they are inherently sensitive to outlier noise and cannot accommodate partial matching. This has been addressed by various constructions building on the GW framework; in this article, we focus specifically on a natural relaxation of the GW optimization problem, introduced by Chapel et al., which is aimed at addressing exactly these shortcomings. Our goal is to understand the theoretical properties of this relaxed optimization problem, from the viewpoint of metric geometry. While the relaxed problem fails to induce a metric, we derive precise characterizations of how it fails the axioms of non-degeneracy and triangle inequality. These observations lead us to define a novel family of distances, whose construction is inspired by the Prokhorov and Ky Fan distances, as well as by the recent work of Raghvendra et al.\ on robust versions of classical Wasserstein distance. We show that our new distances define true metrics, that they induce the same topology as the GW distances, and that they enjoy additional robustness to perturbations. These results provide a mathematically rigorous basis for using our robust partial GW distances in applications where outliers and partial matching are concerns.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Distance-Based Tree-Sliced Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-11050</link>
+    <guid isPermaLink="false">arxiv:2503.11050</guid>
+    <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hoang V. Tran et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>To overcome computational challenges of Optimal Transport (OT), several variants of Sliced Wasserstein (SW) has been developed in the literature. These approaches exploit the closed-form expression of the univariate OT by projecting measures onto (one-dimensional) lines. However, projecting measures onto low-dimensional spaces can lead to a loss of topological information. Tree-Sliced Wasserstein distance on Systems of Lines (TSW-SL) has emerged as a promising alternative that replaces these lines with a more advanced structure called tree systems. The tree structures enhance the ability to capture topological information of the metric while preserving computational efficiency. However, at the core of TSW-SL, the splitting maps, which serve as the mechanism for pushing forward measures onto tree systems, focus solely on the position of the measure supports while disregarding the projecting domains. Moreover, the specific splitting map used in TSW-SL leads to a metric that is not invariant under Euclidean transformations, a typically expected property for OT on Euclidean space. In this work, we propose a novel class of splitting maps that generalizes the existing one studied in TSW-SL enabling the use of all positional information from input measures, resulting in a novel Distance-based Tree-Sliced Wasserstein (Db-TSW) distance. In addition, we introduce a simple tree sampling process better suited for Db-TSW, leading to an efficient GPU-friendly implementation for tree systems, similar to the original SW. We also provide a comprehensive theoretical analysis of proposed class of splitting maps to verify the injectivity of the corresponding Radon Transform, and demonstrate that Db-TSW is an Euclidean invariant metric. We empirically show that Db-TSW significantly improves accuracy compared to recent SW variants while maintaining low computational cost via a wide range of experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Axiomatic Explainer Globalness via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2411-01126</link>
+    <guid isPermaLink="false">arxiv:2411.01126</guid>
+    <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davin Hill et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Explainability methods are often challenging to evaluate and compare. With a multitude of explainers available, practitioners must often compare and select explainers based on quantitative evaluation metrics. One particular differentiator between explainers is the diversity of explanations for a given dataset; i.e. whether all explanations are identical, unique and uniformly distributed, or somewhere between these two extremes. In this work, we define a complexity measure for explainers, globalness, which enables deeper understanding of the distribution of explanations produced by feature attribution and feature selection methods for a given dataset. We establish the axiomatic properties that any such measure should possess and prove that our proposed measure, Wasserstein Globalness, meets these criteria. We validate the utility of Wasserstein Globalness using image, tabular, and synthetic datasets, empirically showing that it both facilitates meaningful comparison between explainers and improves the selection process for explainability methods.</p>]]></description>
+  </item>
 
   <item>
     <title>EquiPy: Sequential Fairness using Optimal Transport in Python</title>
@@ -1957,56 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunbei Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Vision Transformers (ViTs) have demonstrated remarkable capabilities in learning representations, but their performance is compromised when applied to unseen domains. Previous methods either engage in prompt learning during the training phase or modify model parameters at test time through entropy minimization. The former often overlooks unlabeled target data, while the latter doesn&rsquo;t fully address domain shifts. In this work, our approach, Optimal Transport-guided Test-Time Visual Prompting (OT-VP), handles these problems by leveraging prompt learning at test time to align the target and source domains without accessing the training process or altering pre-trained model parameters. This method involves learning a universal visual prompt for the target domain by optimizing the Optimal Transport distance.OT-VP, with only four learned prompt tokens, exceeds state-of-the-art performance across three stylistic datasets-PACS, VLCS, OfficeHome, and one corrupted dataset ImageNet-C. Additionally, OT-VP operates efficiently, both in terms of memory and computation, and is adaptable for extension to online settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Low Latency Transformer Inference on FPGAs for Physics Applications with hls4ml</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-05207</link>
-    <guid isPermaLink="false">arxiv:2409.05207</guid>
-    <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhixing Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>This study presents an efficient implementation of transformer architectures in Field-Programmable Gate Arrays(FPGAs) using hls4ml. We demonstrate the strategy for implementing the multi-head attention, softmax, and normalization layer and evaluate three distinct models. Their deployment on VU13P FPGA chip achieved latency less than 2us, demonstrating the potential for real-time applications. HLS4ML compatibility with any TensorFlow-built transformer model further enhances the scalability and applicability of this work. Index Terms: FPGAs, machine learning, transformers, high energy physics, LIGO</p>]]></description>
-  </item>
-
-  <item>
-    <title>OmniJet-α: The first cross-task foundation model for particle physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2403-05618</link>
-    <guid isPermaLink="false">arxiv:2403.05618</guid>
-    <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>Foundation models are multi-dataset and multi-task machine learning methods that once pre-trained can be fine-tuned for a large variety of downstream applications. The successful development of such general-purpose models for physics data would be a major breakthrough as they could improve the achievable physics performance while at the same time drastically reduce the required amount of training time and data. We report significant progress on this challenge on several fronts. First, a comprehensive set of evaluation methods is introduced to judge the quality of an encoding from physics data into a representation suitable for the autoregressive generation of particle jets with transformer architectures (the common backbone of foundation models). These measures motivate the choice of a higher-fidelity tokenization compared to previous works. Finally, we demonstrate transfer learning between an unsupervised problem (jet generation) and a classic supervised task (jet tagging) with our new OmniJet-α model. This is the first successful transfer between two different and actively studied classes of tasks and constitutes a major step in the building of foundation models for particle physics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SELF-[IN]CORRECT: LLMs Struggle with Discriminating Self-Generated Responses</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2404-04298</link>
-    <guid isPermaLink="false">arxiv:2404.04298</guid>
-    <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dongwei Jiang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Can LLMs consistently improve their previous outputs for better results? For this to be true, LLMs would need to be better at discriminating among previously-generated alternatives, than generating initial responses. We explore the validity of this hypothesis in practice. We first formulate a unified framework that allows us to compare the generative and discriminative capability of any model on any task. In our resulting experimental analysis of several open-source and industrial LLMs, we observe that models are not reliably better at discriminating among previously-generated alternatives than generating initial responses. This finding challenges the notion that LLMs may be able to enhance their performance only through their own judgment.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convolutional L2LFlows: Generating Accurate Showers in Highly Granular Calorimeters Using Convolutional Normalizing Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2405-20407</link>
-    <guid isPermaLink="false">arxiv:2405.20407</guid>
-    <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (David Shih, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>In the quest to build generative surrogate models as computationally efficient alternatives to rule-based simulations, the quality of the generated samples remains a crucial frontier. So far, normalizing flows have been among the models with the best fidelity. However, as the latent space in such models is required to have the same dimensionality as the data space, scaling up normalizing flows to high dimensional datasets is not straightforward. The prior L2LFlows approach successfully used a series of separate normalizing flows and sequence of conditioning steps to circumvent this problem. In this work, we extend L2LFlows to simulate showers with a 9-times larger profile in the lateral direction. To achieve this, we introduce convolutional layers and U-Net-type connections, move from masked autoregressive flows to coupling layers, and demonstrate the successful modelling of showers in the ILD Electromagnetic Calorimeter as well as Dataset 3 from the public CaloChallenge dataset.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Lamarr: LHCb ultra-fast simulation based on machine learning models deployed within Gauss</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2303-11428</link>
-    <guid isPermaLink="false">arxiv:2303.11428</guid>
-    <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matteo Barbetti</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>About 90% of the computing resources available to the LHCb experiment has been spent to produce simulated data samples for Run 2 of the Large Hadron Collider at CERN. The upgraded LHCb detector will be able to collect larger data samples, requiring many more simulated events to analyze the data to be collected in Run 3. Simulation is a key necessity of analysis to interpret signal, reject background and measure efficiencies. The needed simulation will far exceed the pledged resources, requiring an evolution in technologies and techniques to produce these simulated data samples. In this contribution, we discuss Lamarr, a Gaudi-based framework to speed-up the simulation production parameterizing both the detector response and the reconstruction algorithms of the LHCb experiment. Deep Generative Models powered by several algorithms and strategies are employed to effectively parameterize the high-level response of the single components of the LHCb detector, encoding within neural networks the experimental errors and uncertainties introduced in the detection and reconstruction phases. Where possible, models are trained directly on real data, statistically subtracting any background components by applying appropriate reweighing procedures. Embedding Lamarr in the general LHCb Gauss Simulation framework allows to combine its execution with any of the available generators in a seamless way. The resulting software package enables a simulation process independent of the detailed simulation used to date.</p>]]></description>
   </item>
 
 </channel>
