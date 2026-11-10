@@ -39,6 +39,63 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Tuesday, November 10, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h1 id="private-briefing-2026-11-10">Private briefing: 2026-11-10</h1>
+<h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261112793-electroweak-parton-distribution-functions-for-future-lepton-colliders-tao-han-et-al"><a href="https://arxiv.org/abs/2611.12793">arXiv:2611.12793</a> — Electroweak Parton Distribution Functions for Future Lepton Colliders (Tao Han et al.)</h3>
+<p>Han, Kilian, Ma, Mękała, Reuter and Xie have put the Han–Ma–Xie LL EW PDF grids into Whizard. The grids are accessed through a modified LHAPDF interface (<code>lhapdf_ew</code>) with a helicity-resolved three-digit PID scheme of 59 entries. Evolution runs QED-only below μ_QCD (0.5 or 0.7 GeV), then QED+QCD up to m_Z, then the unbroken SU(3)×SU(2)×U(1) above m_Z. Longitudinal W/Z are included only at leading-order EWA. The Higgs PDF and the mixed γ/Z and H/Z₀ states are placeholders, not yet used in the convolution.</p>
+<p>Benchmarks at √s = 10 TeV:
+- <strong>Mini-jet background.</strong> Inclusive QCD-induced dijets reach pb-level cross sections, with gg and gq dominant. They exceed γγ→qq̄ for p_T^j &lt; 10 GeV. The result agrees with Han–Ma–Xie and agrees with an independent calculation to 5–10%.
+- <strong>HH, tt̄, XX (1 TeV scalar).</strong> EW PDF and EWA agree with the full matrix element above roughly 1 TeV. EW PDF sits about 5–20% below EWA, which the authors attribute to resummation and momentum-sum-rule preservation.
+- <strong>Polarization separation.</strong> HH at high subleading-Higgs p_T is dominated by W_T W_T, not W_0 W_0. This suggests an observable-based helicity separation.
+- <strong>Scale choice.</strong> 2H_T is preferred over √ŝ/2. With it, ντν̄τ agrees within 20%.
+- <strong>WW→WW.</strong> This case fails badly: the approximation overshoots by more than 10× because gauge cancellations are lost. It only recovers order-of-magnitude agreement with |η| &lt; 2.44 (10°, detector-motivated), and the authors call that agreement &ldquo;somewhat accidental&rdquo;.</p>
+<p>Why it matters: this gives an out-of-the-box parton-level generator for mini-jet backgrounds and VBF signals at a muon collider. Caveats:
+- Output is parton level only. Beam remnants and the shower interface are deferred.
+- A single mass threshold at m_Z is used.
+- Annihilation topologies (e.g. ZHH→ννHH) dominate the high-mass tail. The authors use an e⁻μ⁺ trick to remove them in comparisons.</p>
+<h3 id="arxiv261110041-physics-in-safety-and-safety-in-physics-lessons-from-the-lhc-and-its-underground-experiments-alexander-s-sakharov"><a href="https://arxiv.org/abs/2611.10041">arXiv:2611.10041</a> — Physics in Safety and Safety in Physics: Lessons from the LHC and its Underground Experiments (Alexander S. Sakharov)</h3>
+<p>This is tangential; the muon collider appears only as one future facility named in the abstract. The paper is a conceptual framework that treats LHC/ATLAS/CMS safety as a &ldquo;safe operational phase space&rdquo; Ω_safe plus a set of admissible trajectories between states. Its quantitative content is textbook scale-setting:
+- 362 MJ per nominal beam
+- about 10 GJ of magnet energy
+- 1.6 GJ (ATLAS magnets) and 2.6 GJ (CMS solenoid)
+- He II expansion of about 10³
+- the 2008 sector 3–4 incident</p>
+<p>The provided text truncates before the future-facilities section (Sec. VIII), so nothing muon-collider-specific can be reported. Skip unless you care about operations philosophy.</p>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261111012-sensitivity-of-jet-and-dijet-observables-to-medium-effects-in-pp-collisions-at-s-13-tev-using-x-scapejetscape-lakshitha-fernando-et-al"><a href="https://arxiv.org/abs/2611.11012">arXiv:2611.11012</a> — Sensitivity of jet and dijet observables to medium effects in pp collisions at √s = 13 TeV using X-SCAPE/JETSCAPE (Lakshitha Fernando et al.)</h3>
+<p>The authors run two JETSCAPE/X-SCAPE studies with anti-k_T jets at R = 0.2 and 0.4.</p>
+<p><strong>Bjorken brick (MATTER, 10⁷ events per sample).</strong> The scan covers L = 0.5–2 fm and q̂₀ = 0.25 and 0.5 GeV²/fm. Dijet mass is the most responsive observable. Suppression is ordered in L and q̂, and is stronger for R = 0.2. The mean A_J shifts by only about +0.002, and no Δφ broadening is seen.</p>
+<p><strong>Realistic sample (3D Glauber + MUSIC + MATTER, 10⁶ events each, about six weeks of grid time).</strong> Vacuum and medium are compared in the top-20% event-activity class.
+- Medium/vacuum ratios sit slightly below 1, with no monotonic trend.
+- The mean A_J rises by 0.0056 ± 0.0018 (about 3σ) and 0.0057 ± 0.0020 (about 2.9σ) in the two leading-jet p_T bins.
+- For Soft Drop (z_cut = 0.1, β = 0, 60–80 GeV, R = 0.2), θ_g and m_g show only bin-to-bin structure. There is no θ_g narrowing of the kind ALICE sees in Pb–Pb, and the tagging fraction is about 0.99 in both samples.</p>
+<p>The useful conclusion is the size of the expected signal. It is smaller than the multiplicity-selection effects ALICE already measures in pp and PYTHIA reproduces without a medium. Caveats:
+- The event-activity estimator includes hard-sector yield, so the vacuum and medium classes differ.
+- Soft-background subtraction is idealized (perfect).
+- Recoil is switched off in the realistic sample.</p>
+<h3 id="arxiv261111600-threshold-resummation-for-top-quark-pair-production-in-association-with-a-jet-at-the-lhc-bakar-chargeishvili"><a href="https://arxiv.org/abs/2611.11600">arXiv:2611.11600</a> — Threshold resummation for top-quark pair production in association with a jet at the LHC (Bakar Chargeishvili)</h3>
+<p>The main subject is tt̄+jet threshold resummation (NNLL in SCET for dσ/dM_tt̄j). Two sections matter for jet physics:</p>
+<ul>
+<li><strong>Jet ingredients.</strong> The factorization uses an unmeasured jet function at μ_j = p_T^j·R and a coft function at μ_c ≈ ωR_eff/2. Non-global logarithms are included via the Dasgupta–Salam large-N_c parametrization. The factorization requires ω ≪ 2E_J, which fails for a fixed jet threshold of a few tens of GeV. There μ_c &gt; μ_j and the evolution produces an unphysical enhancement. The author therefore sets μ_c = μ_j = μ_s, keeping ln R at fixed order and making the non-global factor trivially 1. They also use a scaling threshold p_T^j &gt; 0.15M.</li>
+<li><strong>Shower and R dependence.</strong> NLO+PS reduces the R = 0.4 cross section by 10–24% relative to NLO (shower uncertainty −6%/+14%). The reduction largely vanishes at R = 1.0, which points to ln R effects beyond what this resummation captures.</li>
+</ul>
+<p>The headline physics result is negative:
+- The leading-power kernel tracks exact real emission only for emitted energy below about 100–200 GeV.
+- The correction beyond NLO ranges from 1–2% to 17–23% depending on how that region is treated, so it is not under perturbative control. NLO stays the central prediction.</p>
+<p>Three errors are corrected in the published one-loop soft anomalous-dimension matrices for this process: s_tt̄ vs ŝ in L_β, the sign of an iπ term, and missing top–jet imaginary parts.</p>
+<h3 id="arxiv261111957-measurements-of-cp-violation-with-charm-hadrons-at-belle-and-belle-ii-jaeyoung-kim-on-behalf-of-the-belle-ii-collaboration"><a href="https://arxiv.org/abs/2611.11957">arXiv:2611.11957</a> — Measurements of CP violation with charm hadrons at Belle and Belle II (Jaeyoung Kim (on behalf of the Belle II Collaboration))</h3>
+<p>This is not a jet paper; the keyword match is spurious, at most via flavor tagging. It is a proceedings summary of charm CPV, and all results are consistent with zero:
+- A_CP(D⁰→π⁰π⁰) = (0.30 ± 0.72 ± 0.20)%
+- A_CP(D⁰→K_S K_S), combined = (−0.6 ± 1.1 ± 0.1)%
+- Preliminary η h⁺ modes, and the first Λ_c/Ξ_c three-body baryon asymmetries.</p>
+<p>The only loosely adjacent piece is the inclusive charm-flavor tagger. It uses charged-particle correlations in the rest of the event (effective efficiency 47.9%) and adds about 40% effective statistics in the K_S K_S mode.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Monday, November 9, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -1370,7 +1427,7 @@ their own:
   </div>
   <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
 <h3 id="arxiv260936523-non-global-logarithms-and-fiducial-transverse-momentum-dependent-observables-in-deep-inelastic-scattering-shuo-lin-et-al"><a href="https://arxiv.org/abs/2609.36523">arXiv:2609.36523</a> — Non-global logarithms and fiducial transverse-momentum-dependent observables in deep-inelastic scattering (Shuo Lin et al.)</h3>
-<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -1842,7 +1899,7 @@ their own:
   </div>
   <h2 id="muon-collider">Muon collider</h2>
 <h3 id="arxiv260908392-prospects-for-precision-higgs-boson-measurements-at-a-10-tev-muon-collider-paolo-andreetto-et-al"><a href="https://arxiv.org/abs/2609.08392">arXiv:2609.08392</a> — Prospects for precision Higgs boson measurements at a 10 TeV muon collider (Paolo Andreetto et al.)</h3>
-<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW* (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ<em>→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW</em> at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
+<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW<em> (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ</em>→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW* at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
 <p>For this topic the paper is the current reference benchmark: it moves the μC Higgs case from parton-level cross-section studies to full reconstruction with realistic BIB, and gives channel-by-channel efficiencies (e.g. 60% b-tag with 22% c / 0.9% light mistag) and background models one can actually reuse. Key caveats stated openly: all quoted numbers are statistical only, and H→bb̄ will be JES-dominated (0.49% from a 0.06% JES uncertainty) once systematics enter; electron reconstruction is not yet optimized, so H→ZZ*→4ℓ and the electron HH→bbWW channel (53% vs 22% for muons) are deferred/conservative; τ_had reconstruction is absent. The λ₃ extraction relies solely on bbbb and on the WW-fusion sample rescaled by 1.103 for ZZ-fusion.</p>
 <h3 id="arxiv260908918-probing-the-inert-scalar-sector-of-the-inert-doublet-model-via-vector-boson-fusion-at-a-muon-collider-abdesslam-arhrib-et-al"><a href="https://arxiv.org/abs/2609.08918">arXiv:2609.08918</a> — Probing the Inert Scalar Sector of the Inert Doublet Model via Vector-Boson Fusion at a Muon Collider (Abdesslam Arhrib et al.)</h3>
 <p>Studies three previously-unexamined 2→4 VBF channels in the IDM at √s = 3, 10, 20 TeV: μ⁺μ⁻→H⁺H⁻νν̄ (WW fusion), and the associated HH±μ∓ν and AH±μ∓ν (WZ/Wγ fusion), with full 2→4 matrix elements in MadGraph5 (no EVBA). They first dissect the WW→H⁺H⁻ and WV→H⁺S_i subprocesses, showing longitudinal WLWL dominance and a strong destructive interference among diagrams (individual contributions ~10³ pb collapse to ~1 pb in the full amplitude), enforcing correct high-energy behavior. Cross sections rise sharply with energy: H⁺H⁻νν̄ reaches O(10) fb at 10 TeV and tens of fb at 20 TeV; the associated channels reach O(10³) fb. Delphes-level cut-based analysis (no BIB/pileup) for three benchmark points with BR(H±→HW±)=1 gives, at 10 ab⁻¹: [WH][WH]νν̄ significance 33 (10 TeV) / 58 (20 TeV); [WH]Hμν a huge 2000–4000 (dominated by large signal σ); [WH][ZH]μν 164 / 276. The 3 TeV stage is marginal for H⁺H⁻ (S=1.37) but strong for the associated modes.</p>
@@ -2081,7 +2138,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-10 13:26 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-10 08:45 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

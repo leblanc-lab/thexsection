@@ -7,7 +7,41 @@
   <description>Towards 10 TeV, one paper at a time</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Electroweak Parton Distribution Functions for Future Lepton Colliders</title>
+    <link>https://leblanc-lab.github.io/thexsection/muon/2026.html#a2611-12793</link>
+    <guid isPermaLink="false">arxiv:2611.12793</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tao Han et al.</dc:creator>
+    <description><![CDATA[<p>Han, Kilian, Ma, Mękała, Reuter and Xie have put the Han–Ma–Xie LL EW PDF grids into Whizard. The grids are accessed through a modified LHAPDF interface (<code>lhapdf_ew</code>) with a helicity-resolved three-digit PID scheme of 59 entries. Evolution runs QED-only below μ_QCD (0.5 or 0.7 GeV), then QED+QCD up to m_Z, then the unbroken SU(3)×SU(2)×U(1) above m_Z. Longitudinal W/Z are included only at leading-order EWA. The Higgs PDF and the mixed γ/Z and H/Z₀ states are placeholders, not yet used in the convolution.</p>
+<p>Benchmarks at √s = 10 TeV:
+- <strong>Mini-jet background.</strong> Inclusive QCD-induced dijets reach pb-level cross sections, with gg and gq dominant. They exceed γγ→qq̄ for p_T^j &lt; 10 GeV. The result agrees with Han–Ma–Xie and agrees with an independent calculation to 5–10%.
+- <strong>HH, tt̄, XX (1 TeV scalar).</strong> EW PDF and EWA agree with the full matrix element above roughly 1 TeV. EW PDF sits about 5–20% below EWA, which the authors attribute to resummation and momentum-sum-rule preservation.
+- <strong>Polarization separation.</strong> HH at high subleading-Higgs p_T is dominated by W_T W_T, not W_0 W_0. This suggests an observable-based helicity separation.
+- <strong>Scale choice.</strong> 2H_T is preferred over √ŝ/2. With it, ντν̄τ agrees within 20%.
+- <strong>WW→WW.</strong> This case fails badly: the approximation overshoots by more than 10× because gauge cancellations are lost. It only recovers order-of-magnitude agreement with |η| &lt; 2.44 (10°, detector-motivated), and the authors call that agreement &ldquo;somewhat accidental&rdquo;.</p>
+<p>Why it matters: this gives an out-of-the-box parton-level generator for mini-jet backgrounds and VBF signals at a muon collider. Caveats:
+- Output is parton level only. Beam remnants and the shower interface are deferred.
+- A single mass threshold at m_Z is used.
+- Annihilation topologies (e.g. ZHH→ννHH) dominate the high-mass tail. The authors use an e⁻μ⁺ trick to remove them in comparisons.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Physics in Safety and Safety in Physics: Lessons from the LHC and its Underground Experiments</title>
+    <link>https://leblanc-lab.github.io/thexsection/muon/2026.html#a2611-10041</link>
+    <guid isPermaLink="false">arxiv:2611.10041</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander S. Sakharov</dc:creator>
+    <description><![CDATA[<p>This is tangential; the muon collider appears only as one future facility named in the abstract. The paper is a conceptual framework that treats LHC/ATLAS/CMS safety as a &ldquo;safe operational phase space&rdquo; Ω_safe plus a set of admissible trajectories between states. Its quantitative content is textbook scale-setting:
+- 362 MJ per nominal beam
+- about 10 GJ of magnet energy
+- 1.6 GJ (ATLAS magnets) and 2.6 GJ (CMS solenoid)
+- He II expansion of about 10³
+- the 2008 sector 3–4 incident</p>
+<p>The provided text truncates before the future-facilities section (Sec. VIII), so nothing muon-collider-specific can be reported. Skip unless you care about operations philosophy.</p>]]></description>
+  </item>
 
   <item>
     <title>Uncovering TeV-scale dark matter with Z-fusion at a muon collider</title>
@@ -419,7 +453,7 @@
     <guid isPermaLink="false">arxiv:2609.08392</guid>
     <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paolo Andreetto et al.</dc:creator>
-    <description><![CDATA[<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW* (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ<em>→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW</em> at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
+    <description><![CDATA[<p>Full detector-level projections (MUSIC concept, GEANT4 + machine-induced BIB/IPP overlay, ACTS + Pandora PF, kt R=0.5 jets) for the IMCC baseline: two experiments × 10 ab⁻¹ (20 ab⁻¹ total), VBF-dominated production (~2×10⁷ single-H, 7×10⁴ HH). Headline statistical sensitivities on effective cross sections: H→bb̄ 0.18%, H→WW<em> (semileptonic) 0.35%, H→γγ 2.6%, H→ZZ</em>→qqμμ 4.2%, H→μμ 6.9%. Combining bb̄/γγ/μμ mass fits gives Δm_H ≈ 19 MeV (competitive with HL-LHC&rsquo;s ~21 MeV). Double-Higgs: HH→bbbb at 4.2%, HH→bbWW* at 14%, translating to a projected ~5% precision on the trilinear self-coupling λ₃ from bbbb — the standout number, since HL-LHC is stuck at [−26%,+29%] on κ₃.</p>
 <p>For this topic the paper is the current reference benchmark: it moves the μC Higgs case from parton-level cross-section studies to full reconstruction with realistic BIB, and gives channel-by-channel efficiencies (e.g. 60% b-tag with 22% c / 0.9% light mistag) and background models one can actually reuse. Key caveats stated openly: all quoted numbers are statistical only, and H→bb̄ will be JES-dominated (0.49% from a 0.06% JES uncertainty) once systematics enter; electron reconstruction is not yet optimized, so H→ZZ*→4ℓ and the electron HH→bbWW channel (53% vs 22% for muons) are deferred/conservative; τ_had reconstruction is absent. The λ₃ extraction relies solely on bbbb and on the WW-fusion sample rescaled by 1.103 for ZZ-fusion.</p>]]></description>
   </item>
 
@@ -2208,26 +2242,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pouya Asadi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (muon collider) — abstract only, not yet read for a briefing.</em></p>
 <p>We study a Lepton-Flavored Dark Matter model and its signatures at a future Muon Collider. We focus on the less-explored regime of feeble dark matter interactions, which suppresses the dangerous lepton-flavor violating processes, gives rise to dark matter freeze-in production, and leads to long-lived particle signatures at colliders. We find that the interplay of dark matter freeze-in and its mediator freeze-out gives rise to an upper bound of around TeV scales on the dark matter mass. The signatures of this model depend on the lifetime of the mediator, and can range from generic prompt decays to more exotic long-lived particle signals. In the prompt region, we calculate the signal yield, study useful kinematics cuts, and report tolerable systematics that would allow for a 5σ discovery. In the long-lived region, we calculate the number of charged tracks and displaced lepton signals of our model in different parts of the detector, and uncover kinematic features that can be used for background rejection. We show that, unlike in hadron colliders, multiple production channels contribute significantly which leads to sharply distinct kinematics for electroweakly-charged long-lived particle signals. Ultimately, the collider signatures of this lepton-flavored dark matter model are common amongst models of electroweak-charged new physics, rendering this model a useful and broadly applicable benchmark model for future Muon Collider studies that can help inform work on detector design and studies of systematics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimize the event selection strategy to study the anomalous quartic gauge couplings at muon colliders using the support vector machine and quantum support vector machine</title>
-    <link>https://leblanc-lab.github.io/thexsection/muon/2023.html#a2311-15280</link>
-    <guid isPermaLink="false">arxiv:2311.15280</guid>
-    <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuai Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (muon collider) — abstract only, not yet read for a briefing.</em></p>
-<p>The search of the new physics~(NP) beyond the Standard Model is one of the most important topics in current high energy physics. With the increasing luminosities at the colliders, the search for NP signals requires the analysis of more and more data, and the efficiency in data processing becomes particularly important. As a machine learning algorithm, support vector machine~(SVM) is expected to to be useful in the search of NP. Meanwhile, the quantum computing has the potential to offer huge advantages when dealing with large amounts of data, which suggests that quantum SVM~(QSVM) is a potential tool in future phenomenological studies of the NP. How to use SVM and QSVM to optimize event selection strategies to search for NP signals are studied in this paper. Taking the tri-photon process at a muon collider as an example, it can be shown that the event selection strategies optimized by the SVM and QSVM are effective in the search of the dimension-8 operators contributing to the anomalous quartic gauge couplings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Top quark flavor changing couplings at a muon collider</title>
-    <link>https://leblanc-lab.github.io/thexsection/muon/2023.html#a2311-09488</link>
-    <guid isPermaLink="false">arxiv:2311.09488</guid>
-    <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Ake et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (muon collider) — abstract only, not yet read for a briefing.</em></p>
-<p>There is growing interest in the development of a muon collider that would make it possible to produce lepton collisions at energies of several TeV. Among others, there can be significant contributions to electroweak gauge boson, Higgs boson and top quark physics. In this work we pay attention to the latter, in particular, effective flavor-changing (FC) top-quark interactions. We discuss the flavor changing t q̅ (q=u,c) production processes that can be a good probe of the dimension-six top quark four-fermion and fermion-boson operators in the SMEFT. We consider all sixteen operators that can generate flavor-changing top quark couplings. After comparing with the current LHC bounds, we find potential limits three or four orders of magnitude stronger for four-fermion operators. Concerning fermion-boson couplings, for the tensor operators Q_uW and Q_uB we obtain the highest sensitivity. We also observe that the effective W approximation (EWA) does not apply with Q_uB.</p>]]></description>
   </item>
 
 </channel>
