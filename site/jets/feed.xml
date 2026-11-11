@@ -7,7 +7,67 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>AlphaHits: Full-Event Tracking and Reconstruction Towards a Hit-Level Foundation Model</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-13222</link>
+    <guid isPermaLink="false">arxiv:2611.13222</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sascha Caron et al.</dc:creator>
+    <description><![CDATA[<p>This paper is mainly about tracking and a hit-level foundation model, so jets are only one downstream head. Nothing here concerns substructure.</p>
+<p><strong>Setup.</strong> A 12-layer Transformer (~9.7M parameters) is first pretrained on tracking. It is then fine-tuned with nine heads, one of which is a 12-query DETR-style jet decoder. The decoder predicts jet existence, (p_T, η, φ) and a 4-class flavour label. The training sample is 200k ttH(bb)/tt events at 14 TeV with no pileup, simulated with ACTS Fatras using the TrackML-layout silicon detector. Targets are GenJets: anti-k_t, R = 0.6, p_T &gt; 20 GeV.</p>
+<p><strong>Jet reconstruction results.</strong>
+- <strong>Hits only:</strong> 83.0% GenJet-finding efficiency at 2.0% fakes. The Delphes track-jet chain gets 61.7% at 0.9%. AlphaHits&rsquo; p_T response is unbiased (median +0.003), whereas track jets sit 43% low, but the AlphaHits IQR is wide (0.33).
+- <strong>Hits plus Delphes calorimeter towers:</strong> 86.4% at 1.5% fakes, against 86.7% at 2.3% for the full Delphes chain. Resolution is still worse than Delphes (IQR 0.19 vs 0.13).</p>
+<p><strong>Flavour tagging.</strong> At 77% b-efficiency, the hits-only model rejects light jets by about 38 and c-jets by about 5, with no explicit tracking or vertexing. It matches the Delphes track-jet reference only from 77% efficiency upward. At tighter working points it falls behind: light-jet rejection is 0.68× the reference at 70% and 0.41× at 60%. Adding towers raises all rejections by 10–35%.</p>
+<p><strong>Event classification.</strong> Higgs-vs-tt AUC is 0.932 from hits alone and 0.944 with towers. A ParT trained on Delphes objects reaches 0.877 (tracks only) and 0.924 (tracks plus calorimeter).</p>
+<p><strong>Caveats.</strong>
+- The Delphes b-tag reference is a truth-seeded efficiency parametrisation, not a real tagger, so the &ldquo;matches&rdquo; claims are against an idealised baseline.
+- There is no pileup in the multi-task model.
+- Jets are set predictions rather than clustered objects, so IRC-safety and jet-definition questions go unaddressed.
+- An auxiliary per-hit head regresses jet mass and secondary-vertex L_xy, but neither is evaluated as an output.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Resolved Q₁^q–Q₇γ interference in B̄→X_sγ at NLO: Hard matching and radiative charm-loop jet function for m_c→0</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-14318</link>
+    <guid isPermaLink="false">arxiv:2611.14318</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Riccardo Bartocci et al.</dc:creator>
+    <description><![CDATA[<p>This matched on &ldquo;jet function&rdquo; in the SCET sense; it is a B-physics paper with no collider jets. Its relevance is methodological: it is a complete example of NLO factorisation with RG improvement at subleading power for an inclusive observable.</p>
+<p><strong>Two-loop jet function.</strong> The authors compute the two-loop radiative charm-loop jet function J̄(u, ω₁) with full dependence on the collinear momentum fraction u, in the m_c → 0 limit.
+- The calculation uses 31 two-loop diagrams, reduced with FIRE6 and LiteRed.
+- The delta-function constraint on u is handled with reverse unitarity.
+- This leaves 15 master integrals (12 in one topology, 3 in the other), solved via canonical differential equations in u (CANONICA) in terms of multiple polylogarithms.
+- C_F terms from eikonal gluon attachments to the external b and s lines cancel, leaving only C_A pieces.
+- Integrating over u reproduces their earlier integrated result. This cross-check is partly circular, since two boundary constants were fixed using that integrated result.</p>
+<p><strong>Hard matching and evolution.</strong> They also give the one-loop hard matching <strong>H</strong>₁₂(u) and its non-local evolution, which is ERBL-like plus a ln(u ū) term. They solve it analytically at leading and next-to-leading order in 1/N_c and compare with a 450-term Gegenbauer numerical solution:</p>
+<table>
+<thead>
+<tr>
+<th>Approximation</th>
+<th>Central region</th>
+<th>Endpoints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leading colour</td>
+<td>~2‰ deviation</td>
+<td>up to 12%</td>
+</tr>
+<tr>
+<td>Next-to-leading colour</td>
+<td>~3×10⁻⁵</td>
+<td>4×10⁻³ at u = 0.01</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Caveats.</strong>
+- The m_c dependence of J̄ is still missing, and it is required for phenomenology.
+- The provided text cuts off partway through the renormalisation-factor section, so I couldn&rsquo;t check the claimed pole-structure consistency check.</p>]]></description>
+  </item>
 
   <item>
     <title>Sensitivity of jet and dijet observables to medium effects in pp collisions at √s = 13 TeV using X-SCAPE/JETSCAPE</title>
@@ -1164,7 +1224,7 @@
     <guid isPermaLink="false">arxiv:2609.36523</guid>
     <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuo Lin et al.</dc:creator>
-    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -2974,26 +3034,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">João Barata et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (energy correlators) — abstract only, not yet read for a briefing.</em></p>
 <p>We study energy-energy correlators (EECs) in many-body quantum states, focusing on the matter produced in the aftermath of heavy-ion collisions. We analyze the angular structure of EECs in the collinear limit and identify a sequence of dynamical regimes. At the largest angular separations within the small-angle regime, the observable is dominated by disconnected contributions, leading to a classical scaling determined by the collective flow of the medium. We explicitly construct this contribution for hadrons produced from a hydrodynamic medium described by boost-invariant Gubser flow, obtaining the angular dependence of the EEC analytically. We further consider azimuthal perturbations to this flow, illustrating how EECs can be used to probe anisotropies in the initial state. At smaller angular separations, connected contributions become increasingly important. We argue that in this regime the EEC is controlled by collective hydrodynamic modes. The resulting angular behavior is similar to the one identified in the EECs of heavy and large-charge states of conformal field theories. At even smaller angles, this regime is expected to match onto the structure determined by the light-ray operator product expansion, before eventually crossing over to the smallest-angle behavior characteristic of dilute hadronic matter. Altogether, these results provide a unified picture of the angular structure of EECs in many-body QCD states and suggest new observables sensitive to the properties of matter in heavy-ion collisions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Reconstructing the Invisible Fraction of Semi-visible Jets in ISR-Boosted Events via Neural Network Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-20456</link>
-    <guid isPermaLink="false">arxiv:2604.20456</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yin Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (semi-visible jets) — abstract only, not yet read for a briefing.</em></p>
-<p>Semi-visible jets (SVJs) provide a characteristic collider signature of strongly interacting dark sectors, in which the key model parameter r_inv controls the fraction of dark hadrons decaying to dark matter candidates. In this work, a regression model is developed to reconstruct r_inv in SVJ events produced in association with an energetic photon. The model uses information from high-level physics objects only, and the training procedure is optimized to ensure applicability. The performance is found to be robust against varying signal parameters and r_inv can be reconstructed at a much higher precision, compared to previously developed analytical method. It offers a new approach to conduct SVJ searches that can potentially unify both s-channel and t-channel productions, enhancing the sensitivities.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Kitchen Sink Anomaly Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-20965</link>
-    <guid isPermaLink="false">arxiv:2604.20965</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ranit Das et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, energy flow) — abstract only, not yet read for a briefing.</em></p>
-<p>An enormous amount of R&amp;D effort has resulted in many new resonant anomaly detection methods being proposed in recent years. However, the vast majority of previous R&amp;D studies have suffered from two limitations: they have focused on a very small set of simulated signal benchmark models; and they have either used small sets of carefully crafted high-level jet substructure observables, which can be highly performant but are prone to model dependence, or the full collider event phase space, which is more agnostic but suffers from reduced sensitivity. In this work, we address both limitations: we formulate a number of new simulated signal benchmarks, which we make publicly available in a format fully compatible with the LHCO R&amp;D benchmark; and we explore a high-level, yet highly agnostic, observable set consisting of Energy Flow Polynomials in addition to the usual subjettiness variables. We evaluate this &ldquo;kitchen sink&rdquo; observable set for both an idealized anomaly detector and the CWoLa hunting task, along with three baseline observable sets (the Baseline LHC Olympics set, subjettiness observables, and Energy Flow Polynomials). We find that our kitchen sink approach is the most sensitive to a broad range of signal types. Furthermore, we show that an attribute bagging variant, in which each ensemble member is trained on a random subset of substructure observables, yields comparable anomaly detection performance while significantly reducing training cost.</p>]]></description>
   </item>
 
 </channel>
