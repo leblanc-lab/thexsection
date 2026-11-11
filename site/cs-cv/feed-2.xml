@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Generalizing Monocular 3D Object Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-19593</link>
+    <guid isPermaLink="false">arxiv:2508.19593</guid>
+    <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abhinav Kumar</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (groomed) — original abstract; no AI summary.</em></p>
+<p>Monocular 3D object detection (Mono3D) is a fundamental computer vision task that estimates an object&rsquo;s class, 3D position, dimensions, and orientation from a single image. Its applications, including autonomous driving, augmented reality, and robotics, critically rely on accurate 3D environmental understanding. This thesis addresses the challenge of generalizing Mono3D models to diverse scenarios, including occlusions, datasets, object sizes, and camera parameters. To enhance occlusion robustness, we propose a mathematically differentiable NMS (GrooMeD-NMS). To improve generalization to new datasets, we explore depth equivariant (DEVIANT) backbones. We address the issue of large object detection, demonstrating that it&rsquo;s not solely a data imbalance or receptive field problem but also a noise sensitivity issue. To mitigate this, we introduce a segmentation-based approach in bird&rsquo;s-eye view with dice loss (SeaBird). Finally, we mathematically analyze the extrapolation of Mono3D models to unseen camera heights and improve Mono3D generalization in such out-of-distribution settings.</p>]]></description>
+  </item>
 
   <item>
     <title>DQEN: Dual Query Enhancement Network for DETR-based HOI Detection</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ning Gao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
 <p>Grasping inhomogeneous objects in real-world applications remains a challenging task due to the unknown physical properties such as mass distribution and coefficient of friction. In this study, we propose a meta-learning algorithm called ConDex, which incorporates Conditional Neural Processes (CNP) with DexNet-2.0 to autonomously discern the underlying physical properties of objects using depth images. ConDex efficiently acquires physical embeddings from limited trials, enabling precise grasping point estimation. Furthermore, ConDex is capable of updating the predicted grasping quality iteratively from new trials in an online fashion. To the best of our knowledge, we are the first who generate two object datasets focusing on inhomogeneous physical properties with varying mass distributions and friction coefficients. Extensive evaluations in simulation demonstrate ConDex&rsquo;s superior performance over DexNet-2.0 and existing meta-learning-based grasping pipelines. Furthermore, ConDex shows robust generalization to previously unseen real-world objects despite training solely in the simulation. The synthetic and real-world datasets will be published as well.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multimodal Optimal Transport-based Co-Attention Transformer with Global Structure Consistency for Survival Prediction</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2306-08330</link>
-    <guid isPermaLink="false">arxiv:2306.08330</guid>
-    <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yingxue Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Survival prediction is a complicated ordinal regression task that aims to predict the ranking risk of death, which generally benefits from the integration of histology and genomic data. Despite the progress in joint learning from pathology and genomics, existing methods still suffer from challenging issues: 1) Due to the large size of pathological images, it is difficult to effectively represent the gigapixel whole slide images (WSIs). 2) Interactions within tumor microenvironment (TME) in histology are essential for survival analysis. Although current approaches attempt to model these interactions via co-attention between histology and genomic data, they focus on only dense local similarity across modalities, which fails to capture global consistency between potential structures, i.e. TME-related interactions of histology and co-expression of genomic data. To address these challenges, we propose a Multimodal Optimal Transport-based Co-Attention Transformer framework with global structure consistency, in which optimal transport (OT) is applied to match patches of a WSI and genes embeddings for selecting informative patches to represent the gigapixel WSI. More importantly, OT-based co-attention provides a global awareness to effectively capture structural interactions within TME for survival prediction. To overcome high computational complexity of OT, we propose a robust and efficient implementation over micro-batch of WSI patches by approximating the original OT with unbalanced mini-batch OT. Extensive experiments show the superiority of our method on five benchmark datasets compared to the state-of-the-art methods. The code is released.</p>]]></description>
   </item>
 
 </channel>
