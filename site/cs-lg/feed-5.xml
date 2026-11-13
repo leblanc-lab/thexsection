@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Are We Really Learning the Score Function? Reinterpreting Diffusion Models Through Wasserstein Gradient Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-00336</link>
+    <guid isPermaLink="false">arxiv:2509.00336</guid>
+    <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">An B. Vuong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Diffusion models are commonly interpreted as learning the score function, i.e., the gradient of the log-density of noisy data. However, this assumption implies that the target of learning is a conservative vector field, which is not enforced by the neural network architectures used in practice. We present numerical evidence that trained diffusion networks violate both integral and differential constraints required of true score functions, demonstrating that the learned vector fields are not conservative. Despite this, the models perform remarkably well as generative mechanisms. To explain this apparent paradox, we advocate a new theoretical perspective: diffusion training is better understood as flow matching to the velocity field of a Wasserstein Gradient Flow (WGF), rather than as score learning for a reverse-time stochastic differential equation. Under this view, the &ldquo;probability flow&rdquo; arises naturally from the WGF framework, eliminating the need to invoke reverse-time SDE theory and clarifying why generative sampling remains successful even when the neural vector field is not a true score. We further show that non-conservative errors from neural approximation do not necessarily harm density transport. Our results advocate for adopting the WGF perspective as a principled, elegant, and theoretically grounded framework for understanding diffusion generative models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine-learning based particle-flow algorithm in CMS</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-20541</link>
+    <guid isPermaLink="false">arxiv:2508.20541</guid>
+    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow, particle-flow) — original abstract; no AI summary.</em></p>
+<p>The particle-flow (PF) algorithm provides a global event description by reconstructing final-state particles and is central to event reconstruction in CMS. Recently, end-to-end machine learning (ML) approaches have been proposed to directly optimize physical quantities of interest and to leverage heterogeneous computing architectures. One such approach, machine-learned particle flow (MLPF), uses a transformer model to infer particles directly from tracks and clusters in a single pass. We present recent CMS developments in MLPF, including training datasets, model architecture, reconstruction metrics, and integration with offline reconstruction software.</p>]]></description>
+  </item>
 
   <item>
     <title>Multi-robot Path Planning and Scheduling via Model Predictive Optimal Transport (MPC-OT)</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuang Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
 <p>Diffusion-based models have demonstrated remarkable effectiveness in image restoration tasks; however, their iterative denoising process, which starts from Gaussian noise, often leads to slow inference speeds. The Image-to-Image Schrödinger Bridge (I²SB) offers a promising alternative by initializing the generative process from corrupted images while leveraging training techniques from score-based diffusion models. In this paper, we introduce the Implicit Image-to-Image Schrödinger Bridge (I³SB) to further accelerate the generative process of I²SB. I³SB restructures the generative process into a non-Markovian framework by incorporating the initial corrupted image at each generative step, effectively preserving and utilizing its information. To enable direct use of pretrained I²SB models without additional training, we ensure consistency in marginal distributions. Extensive experiments across many image corruptions, including noise, low resolution, JPEG compression, and sparse sampling, and multiple image modalities, such as natural, human face, and medical images, demonstrate the acceleration benefits of I³SB. Compared to I²SB, I³SB achieves the same perceptual quality with fewer generative steps, while maintaining or improving fidelity to the ground truth.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Linear Partial Gromov-Wasserstein Embedding</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-16669</link>
-    <guid isPermaLink="false">arxiv:2410.16669</guid>
-    <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikun Bai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) problem, a variant of the classical optimal transport (OT) problem, has attracted growing interest in the machine learning and data science communities due to its ability to quantify similarity between measures in different metric spaces. However, like the classical OT problem, GW imposes an equal mass constraint between measures, which restricts its application in many machine learning tasks. To address this limitation, the partial Gromov-Wasserstein (PGW) problem has been introduced. It relaxes the equal mass constraint, allowing the comparison of general positive Radon measures. Despite this, both GW and PGW face significant computational challenges due to their non-convex nature. To overcome these challenges, we propose the linear partial Gromov-Wasserstein (LPGW) embedding, a linearized embedding technique for the PGW problem. For K different metric measure spaces, the pairwise computation of the PGW distance requires solving the PGW problem O(K²⁾ times. In contrast, the proposed linearization technique reduces this to O(K) times. Similar to the linearization technique for the classical OT problem, we prove that LPGW defines a valid metric for metric measure spaces. Finally, we demonstrate the effectiveness of LPGW in practical applications such as shape retrieval and learning with transport-based embeddings, showing that LPGW preserves the advantages of PGW in partial matching while significantly enhancing computational efficiency. The code is available at https://github.com/mint-vu/Linearized_Partial_Gromov_Wasserstein.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On the Hopf-Cole Transform for Control-affine Schrödinger Bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-17640</link>
-    <guid isPermaLink="false">arxiv:2503.17640</guid>
-    <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexis Teter et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>The purpose of this note is to clarify the importance of the relation gg^⊤∝σσ^⊤ in solving control-affine Schrödinger bridge problems via the Hopf-Cole transform, where g, are the control and noise coefficients, respectively. We show that the Hopf-Cole transform applied to the conditions of optimality for generic control-affine Schrödinger bridge problems, i.e., without the assumption gg^⊤∝σσ^⊤, gives a pair of forward-backward PDEs that are neither linear nor equation-level decoupled. We explain how the resulting PDEs can be interpreted as nonlinear forward-backward advection-diffusion-reaction equations, where the nonlinearity stem from additional drift and reaction terms involving the gradient of the log-likelihood a.k.a. the score. These additional drift and reaction vanish when gg^⊤∝σσ^⊤, and the resulting boundary-coupled system of linear PDEs can then be solved by dynamic Sinkhorn recursions. A key takeaway of our work is that the numerical solution of the generic control-affine Schrödinger bridge requires further algorithmic development, possibly generalizing the dynamic Sinkhorn recursion or otherwise.</p>]]></description>
   </item>
 
 </channel>

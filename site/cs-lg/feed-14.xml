@@ -6,7 +6,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Aggregated Wasserstein Metric and State Registration for Hidden Markov Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1711-05792</link>
+    <guid isPermaLink="false">arxiv:1711.05792</guid>
+    <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yukun Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose a framework, named Aggregated Wasserstein, for computing a dissimilarity measure or distance between two Hidden Markov Models with state conditional distributions being Gaussian. For such HMMs, the marginal distribution at any time position follows a Gaussian mixture distribution, a fact exploited to softly match, aka register, the states in two HMMs. We refer to such HMMs as Gaussian mixture model-HMM (GMM-HMM). The registration of states is inspired by the intrinsic relationship of optimal transport and the Wasserstein metric between distributions. Specifically, the components of the marginal GMMs are matched by solving an optimal transport problem where the cost between components is the Wasserstein metric for Gaussian distributions. The solution of the optimization problem is a fast approximation to the Wasserstein metric between two GMMs. The new Aggregated Wasserstein distance is a semi-metric and can be computed without generating Monte Carlo samples. It is invariant to relabeling or permutation of states. The distance is defined meaningfully even for two HMMs that are estimated from data of different dimensionality, a situation that can arise due to missing variables. This distance quantifies the dissimilarity of GMM-HMMs by measuring both the difference between the two marginal GMMs and that between the two transition matrices. Our new distance is tested on tasks of retrieval, classification, and t-SNE visualization of time series. Experiments on both synthetic and real data have demonstrated its advantages in terms of accuracy as well as efficiency in comparison with existing distances based on the Kullback-Leibler divergence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced Wasserstein Distance for Learning Gaussian Mixture Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1711-05376</link>
+    <guid isPermaLink="false">arxiv:1711.05376</guid>
+    <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheil Kolouri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Gaussian mixture models (GMM) are powerful parametric tools with many applications in machine learning and computer vision. Expectation maximization (EM) is the most popular algorithm for estimating the GMM parameters. However, EM guarantees only convergence to a stationary point of the log-likelihood function, which could be arbitrarily worse than the optimal solution. Inspired by the relationship between the negative log-likelihood function and the Kullback-Leibler (KL) divergence, we propose an alternative formulation for estimating the GMM parameters using the sliced Wasserstein distance, which gives rise to a new algorithm. Specifically, we propose minimizing the sliced-Wasserstein distance between the mixture model and the data distribution with respect to the GMM parameters. In contrast to the KL-divergence, the energy landscape for the sliced-Wasserstein distance is more well-behaved and therefore more suitable for a stochastic gradient descent scheme to obtain the optimal GMM parameters. We show that our formulation results in parameter estimates that are more robust to random initializations and demonstrate that it can estimate high-dimensional data distributions more faithfully than the EM algorithm.</p>]]></description>
+  </item>
 
   <item>
     <title>Parallel Streaming Wasserstein Barycenters</title>

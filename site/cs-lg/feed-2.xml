@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Fine-Tuning Generative Models for Extreme Events via CVaR-Penalized Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-11544</link>
+    <guid isPermaLink="false">arxiv:2608.11544</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thejani Gamage et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose CVaR-penalized Generative Particle Algorithm (CVaR-GPA), a robust, tail-agnostic algorithm for fine-tuning generative models to learn heavy-tailed distributions and capture extreme events, requiring no prior knowledge or estimation of the target&rsquo;s tail characteristics. The method is the Wasserstein gradient flow of the Lipschitz-regularized Kullback-Leibler (KL) divergence penalized by a Conditional Value-at-Risk (CVaR) discrepancy term: the Lipschitz-regularized KL divergence enables robust learning under minimal assumptions on the target distribution, while the CVaR penalty restores the velocity that otherwise vanishes prematurely in the under-sampled tails. The penalized flow admits a bounded but non-Lipschitz velocity field. This departs from the Lipschitz transport maps of standard generators, which preserve the tail behavior of a light-tailed source, and enables transport toward heavier-tailed targets. To define this flow on empirical measures, we derive the first-variation subgradients of CVaR from its Rockafellar-Uryasev representation, valid precisely where the classical density-based formula fails. The particle algorithm CVaR-GPA fine-tunes the output samples of any pre-trained model, without access to its architecture, and runs on an adaptive time horizon set by a kinetic-energy stopping criterion rather than a preset depth. On synthetic isotropic and anisotropic Student-t target distributions, Neal&rsquo;s funnel distribution, and the real-world high-dimensional Fama-French 25 portfolio dataset, CVaR-GPA dramatically improves global and tail accuracy on heavy-tailed targets over the pre-trained baseline.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Local Sinkhorn Framework for Conditional Distribution Reconstruction of Multidimensional Random Fields</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-11613</link>
+    <guid isPermaLink="false">arxiv:2608.11613</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingtao Xia et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>In this paper, we propose a local Sinkhorn divergence framework for conditional distribution reconstruction of multidimensional random fields. By utilizing the debiased Sinkhorn divergence, our proposed approach develops a differentiable and computationally efficient local distribution matching objective to train stochastic neural networks (SNNs). Furthermore, we establish theoretical generalization error estimates for our local Sinkhorn divergence framework, which explicitly characterizes the trade-off between approximation bias and statistical efficiency controlled by the regularization parameter and reveals how our proposed local Sinkhorn divergence loss function can be efficiently applied to learning multidimensional random field models. The proposed framework provides a scalable alternative to exact local optimal transport for conditional distribution reconstruction, offering a practical compromise between geometric fidelity, statistical efficiency, and computational scalability for uncertainty quantification and probabilistic scientific machine learning. Through various numerical examples, we compare our proposed local Sinkhorn divergence framework with other loss functions to train SNNs and with other machine-learning-based uncertainty quantification frameworks, demonstrating that the proposed local Sinkhorn divergence framework achieves an effective balance between reconstruction accuracy and computational efficiency while maintaining good scalability for multidimensional stochastic systems.</p>]]></description>
+  </item>
 
   <item>
     <title>Unifying Generative Models with Path Integrals</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiangwei Peng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Unbalanced optimal transport (UOT) provides a principled framework for modeling single-cell transitions and birth-death dynamics, but its high computational cost limits scalability to large-scale datasets. Although single-cell data often contain hierarchical annotations and known transition priors, existing UOT approximations rarely exploit this multiscale structure or prior knowledge. We introduce Multiscale Supervised Unbalanced Optimal Transport Flow Matching (MUST-FM), a simulation-free framework that scales UOT by leveraging hierarchical data structure. MUST-FM further supports an optional supervised formulation that incorporates transition priors, such as cell lineages, to guide the learning of displacement fields and mass variations. Experiments show that MUST-FM reduces computational overhead while achieving robust and biologically meaningful trajectory inference, enabling dynamic modeling of atlas-scale single-cell datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Multi-Headed Transformer Architectures as Time-dependent Wasserstein Gradient Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18870</link>
-    <guid isPermaLink="false">arxiv:2605.18870</guid>
-    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Massucco et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In recent years, transformer architectures have revolutionized the field of language processing, opening the door to previously unforeseen possibilities. However, from a theoretical point of view, the mathematical models proposed in the literature often lack direct contact with the actual architectures and depend on strong simplifying assumptions. In this paper, we reduce this gap by modelling the data flow in multi-headed transformer architectures as time-dependent gradient flows for a suitable interaction energy capturing the design of the attention mechanism. The explicit dependence on time allows us to consider different weights for each head and for each layer, without imposing constraints on the initialization method. Moreover, we prove that, under a suitable integrability assumption on the evolution of the weights, each element of the ω-limit set of the gradient flows is a stationary point of the interaction energy at a limiting weight distribution. Finally, we analyse the stability of the gradient flows considering perturbations of both the initial data and the weights. Specifically, on the one hand, we study the robustness of the proposed models with respect to noisy inputs, establishing a continuous dependence of the gradient flows on the initial data and uniqueness of the flows. On the other hand, we prove the Γ-convergence of the perturbed interaction energy to the unperturbed one, leading to the convergence of the corresponding gradient flows. We complement these theoretical results with numerical experiments that confirm the predicted energy-dissipation identity and clarify the asymptotic behavior of the dynamics in both the autonomous-like (Ornstein&ndash;Uhlenbeck) and the genuinely non-autonomous (oscillating-weights) regimes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Preconditioned Regularized Wasserstein Proximal Sampling</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-01685</link>
-    <guid isPermaLink="false">arxiv:2509.01685</guid>
-    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hong Ye Tan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider sampling from a Gibbs distribution by evolving finitely many particles. We propose a preconditioned version of a recently proposed noise-free sampling method, governed by approximating the score function with the numerically tractable score of a regularized Wasserstein proximal operator. This is derived by a Cole&ndash;Hopf transformation on coupled anisotropic heat equations, yielding a kernel formulation for the preconditioned regularized Wasserstein proximal. The diffusion component of the proposed method is also interpreted as a modified self-attention block, as in transformer architectures. For quadratic potentials, we provide a discrete-time non-asymptotic convergence analysis and explicitly characterize the bias, which is dependent on regularization and independent of step-size. Experiments demonstrate acceleration and particle-level stability on various log-concave and non-log-concave toy examples to Bayesian total-variation regularized image deconvolution, and competitive/better performance on non-convex Bayesian neural network training when utilizing variable preconditioning matrices.</p>]]></description>
   </item>
 
 </channel>

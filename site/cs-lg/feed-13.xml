@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Particle Flow Bayes' Rule</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1902-00640</link>
+    <guid isPermaLink="false">arxiv:1902.00640</guid>
+    <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinshi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow) — original abstract; no AI summary.</em></p>
+<p>We present a particle flow realization of Bayes&rsquo; rule, where an ODE-based neural operator is used to transport particles from a prior to its posterior after a new observation. We prove that such an ODE operator exists. Its neural parameterization can be trained in a meta-learning framework, allowing this operator to reason about the effect of an individual observation on the posterior, and thus generalize across different priors, observations and to sequential Bayesian inference. We demonstrated the generalization ability of our particle flow Bayes operator in several canonical and high dimensional examples.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Disentangled Representation Learning with Wasserstein Total Correlation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2019.html#a1912-12818</link>
+    <guid isPermaLink="false">arxiv:1912.12818</guid>
+    <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yijun Xiao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Unsupervised learning of disentangled representations involves uncovering of different factors of variations that contribute to the data generation process. Total correlation penalization has been a key component in recent methods towards disentanglement. However, Kullback-Leibler (KL) divergence-based total correlation is metric-agnostic and sensitive to data samples. In this paper, we introduce Wasserstein total correlation in both variational autoencoder and Wasserstein autoencoder settings to learn disentangled latent representations. A critic is adversarially trained along with the main objective to estimate the Wasserstein total correlation term. We discuss the benefits of using Wasserstein distance over KL divergence to measure independence and conduct quantitative and qualitative experiments on several data sets. Moreover, we introduce a new metric to measure disentanglement. We show that the proposed approach has comparable performances on disentanglement with smaller sacrifices in reconstruction abilities.</p>]]></description>
+  </item>
 
   <item>
     <title>Orthogonal Wasserstein GANs</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luke de Oliveira et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Ben Nachman) — original abstract; no AI summary.</em></p>
 <p>High-precision modeling of subatomic particle interactions is critical for many fields within the physical sciences, such as nuclear physics and high energy particle physics. Most simulation pipelines in the sciences are computationally intensive &ndash; in a variety of scientific fields, Generative Adversarial Networks have been suggested as a solution to speed up the forward component of simulation, with promising results. An important component of any simulation system for the sciences is the ability to condition on any number of physically meaningful latent characteristics that can effect the forward generation procedure. We introduce an auxiliary task to the training of a Generative Adversarial Network on particle showers in a multi-layer electromagnetic calorimeter, which allows our model to learn an attribute-aware conditioning mechanism.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Aggregated Wasserstein Metric and State Registration for Hidden Markov Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1711-05792</link>
-    <guid isPermaLink="false">arxiv:1711.05792</guid>
-    <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yukun Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a framework, named Aggregated Wasserstein, for computing a dissimilarity measure or distance between two Hidden Markov Models with state conditional distributions being Gaussian. For such HMMs, the marginal distribution at any time position follows a Gaussian mixture distribution, a fact exploited to softly match, aka register, the states in two HMMs. We refer to such HMMs as Gaussian mixture model-HMM (GMM-HMM). The registration of states is inspired by the intrinsic relationship of optimal transport and the Wasserstein metric between distributions. Specifically, the components of the marginal GMMs are matched by solving an optimal transport problem where the cost between components is the Wasserstein metric for Gaussian distributions. The solution of the optimization problem is a fast approximation to the Wasserstein metric between two GMMs. The new Aggregated Wasserstein distance is a semi-metric and can be computed without generating Monte Carlo samples. It is invariant to relabeling or permutation of states. The distance is defined meaningfully even for two HMMs that are estimated from data of different dimensionality, a situation that can arise due to missing variables. This distance quantifies the dissimilarity of GMM-HMMs by measuring both the difference between the two marginal GMMs and that between the two transition matrices. Our new distance is tested on tasks of retrieval, classification, and t-SNE visualization of time series. Experiments on both synthetic and real data have demonstrated its advantages in terms of accuracy as well as efficiency in comparison with existing distances based on the Kullback-Leibler divergence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced Wasserstein Distance for Learning Gaussian Mixture Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1711-05376</link>
-    <guid isPermaLink="false">arxiv:1711.05376</guid>
-    <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheil Kolouri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gaussian mixture models (GMM) are powerful parametric tools with many applications in machine learning and computer vision. Expectation maximization (EM) is the most popular algorithm for estimating the GMM parameters. However, EM guarantees only convergence to a stationary point of the log-likelihood function, which could be arbitrarily worse than the optimal solution. Inspired by the relationship between the negative log-likelihood function and the Kullback-Leibler (KL) divergence, we propose an alternative formulation for estimating the GMM parameters using the sliced Wasserstein distance, which gives rise to a new algorithm. Specifically, we propose minimizing the sliced-Wasserstein distance between the mixture model and the data distribution with respect to the GMM parameters. In contrast to the KL-divergence, the energy landscape for the sliced-Wasserstein distance is more well-behaved and therefore more suitable for a stochastic gradient descent scheme to obtain the optimal GMM parameters. We show that our formulation results in parameter estimates that are more robust to random initializations and demonstrate that it can estimate high-dimensional data distributions more faithfully than the EM algorithm.</p>]]></description>
   </item>
 
 </channel>

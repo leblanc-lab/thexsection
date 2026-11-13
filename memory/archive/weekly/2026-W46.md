@@ -1,77 +1,55 @@
-# The Cross Section: Rolling synthesis, week ending 2026-11-11
+# The Cross Section: Rolling Synthesis, week ending 2026-11-13
 
-*Covers digests of 11-05, 11-06, 11-09, 11-10 and 11-11.*
-
-The week's strongest signal was methodological. Papers increasingly audited what data and fits can actually identify. This started with BSM blind directions and quantum-information measures, and by Wednesday it had reached lattice estimators, perturbative QCD and the global neutrino-ordering fit. Two physics threads heated up alongside it. The first is the $t\bar t$ threshold question (toponium vs CP-odd Higgs). The second is a late-week finding that neutrino precision is now limited by interaction modeling. The light-ion flow and FCC-ee/$e^+e^-$ precision threads were steady. Two proposed rescues of live anomalies, the gallium deficit and CMB birefringence, were closed off.
+This week's dominant habit was **self-audit**. Papers kept separating what a fit can actually support from what it appears to support: quantum-information claims, lattice estimators, resummation, the neutrino-ordering preference, LEP's $N_\nu$, and supercooled transitions all got this treatment. The second strong thread is the **LZ 248 keV event**, which closed the week with its first elastic interpretation and a recomputed solar-capture bound. Neutrino ordering was shown to be limited by neutrino–nucleus modeling. The top-threshold excess got a QCD-side answer, and quantum algorithms entered haloscope design. *Coverage: digests for 11-09, 11-10, 11-11 and 11-13. No 11-12 summary was provided, so don't assume continuity through that day.*
 
 ## Running themes
 
-- **Identifiability audits (heating up).** Each of these papers marks where its own result stops being trustworthy:
-  - Serao et al. ([arXiv:2611.06129](https://arxiv.org/abs/2611.06129)) found unbounded X17 nucleon-coupling directions.
-  - Abbas et al. ([arXiv:2611.06824](https://arxiv.org/abs/2611.06824)) showed $c_{5,1}$ is known only to ±24, and that the quoted 283 is an extrapolation.
-  - Shen et al. ([arXiv:2611.08586](https://arxiv.org/abs/2611.08586)) showed "minimal magic" conclusions depend on the choice of measure.
-  - Bleau et al. ([arXiv:2611.08595](https://arxiv.org/abs/2611.08595)) found mean-field oscillations suffice at large $N$, which undercuts claims of quantum advantage.
-  - Moerschbacher et al. ([arXiv:2611.10773](https://arxiv.org/abs/2611.10773)) showed precision and robustness are separate axes for lattice estimators.
-  - Kang et al. ([arXiv:2611.12073](https://arxiv.org/abs/2611.12073)) separated "a pole fits" from "this region is required" in glueball sum rules.
-  - Chargeishvili ([arXiv:2611.11600](https://arxiv.org/abs/2611.11600)) kept NLO as his central prediction because his own NNLL kernel fails.
-  - Banerjee et al. ([arXiv:2611.14473](https://arxiv.org/abs/2611.14473)) showed linear-coupling pNGB bounds break down near sources.
+- **LZ 248 keV event, heating.** Since September, models have been inelastic and built to survive solar capture. Bera et al. [arXiv:2611.15957](https://arxiv.org/abs/2611.15957) fit it elastically with an anapole-only Majorana fermion. The relic abundance comes out right at ~300 GeV, and the model predicts more events at lower recoil. Dai et al. [arXiv:2611.16553](https://arxiv.org/abs/2611.16553) add a $B-L$ model with the first three-bin likelihood, an improvement on the 11-03 Higgs-portal rate estimates.
 
-  This is now the digest's default frame. Future digests should name it when warranted rather than reflexively.
+- **Fits that state their limits, heating and spreading.**
+  - *Quantum information:* Shen et al. [arXiv:2611.08586](https://arxiv.org/abs/2611.08586) and Bleau et al. [arXiv:2611.08595](https://arxiv.org/abs/2611.08595).
+  - *Lattice and QCD:* Moerschbacher et al. [arXiv:2611.10773](https://arxiv.org/abs/2611.10773) find that precision and robustness are separate axes. Chargeishvili [arXiv:2611.11600](https://arxiv.org/abs/2611.11600) keeps NLO as central because his own NNLL fails. Kang et al. [arXiv:2611.12073](https://arxiv.org/abs/2611.12073) distinguish "fits" from "required."
+  - *Cosmology:* Zhang et al. [arXiv:2611.14593](https://arxiv.org/abs/2611.14593) show homogeneous cosmology fails near the completion boundary. Cassidy et al. [arXiv:2611.15856](https://arxiv.org/abs/2611.15856) find the Higgs trilinear is not robust to dimension-six operators.
 
-- **$t\bar t$ threshold (heating up).** The underlying question is CMS's threshold excess. On the scalar side:
-  - Lessa et al. ([arXiv:2611.08459](https://arxiv.org/abs/2611.08459)) showed spin assignments are degenerate in the EFT.
-  - Banfi et al. ([arXiv:2611.08388](https://arxiv.org/abs/2611.08388)) provide an NLO 2HDM–QCD interference tool in POWHEG.
-  - Djouadi et al. ([arXiv:2611.09666](https://arxiv.org/abs/2611.09666)) found interference effects of tens of percent at low $\tan\beta$.
+  This extends last week's identifiability audits (Serao, Shen).
 
-  On the QCD side, Re ([arXiv:2611.09299](https://arxiv.org/abs/2611.09299)) gives perturbative $\alpha_s/v$ reweighting that agrees with data. Aushev et al. ([arXiv:2611.09797](https://arxiv.org/abs/2611.09797)) reach 30 GeV $m_{t\bar t}$ resolution with ML, limited by the $\nu\bar\nu$ approximation. The trend: the bound-state reading may need less new machinery, while the scalar reading needs interference handled properly.
+- **Neutrino ordering is now an interaction-physics problem, heating.** After Machado et al. (see below), the percent-level target falls on $\nu$–nucleus modeling. Ježo et al. [arXiv:2611.13618](https://arxiv.org/abs/2611.13618) find $F_4/F_5$ suppress CC $\nu_\tau$ by up to 40%. Fatima et al. [arXiv:2611.13602](https://arxiv.org/abs/2611.13602) find medium effects suppress $\eta$ production on C and Ar. Both continue the 11-02 generator-rebuilding thread.
 
-- **Neutrino interaction modeling as the bottleneck (heating up, late week).** Machado et al. ([arXiv:2611.13629](https://arxiv.org/abs/2611.13629)) located the ordering-sensitivity limit in $\nu_\mu$ energy reconstruction. Several papers bear on that target:
-  - Ježo et al. ([arXiv:2611.13618](https://arxiv.org/abs/2611.13618)): heavy-quark $F_4$/$F_5$ suppress CC $\nu_\tau$ cross sections by up to 40%.
-  - Fatima et al. ([arXiv:2611.13602](https://arxiv.org/abs/2611.13602)): medium effects suppress $\eta$ production on C and Ar.
-  - Gauld et al. ([arXiv:2611.08221](https://arxiv.org/abs/2611.08221)): EW corrections to CC DIS can exceed 10%.
+- **Quantum and broadband routes for wavelike dark matter, heating.** Bogorad et al. [arXiv:2611.14641](https://arxiv.org/abs/2611.14641) get a Grover gain of $\sqrt{N_{\rm bins}}$, and Bao et al. [arXiv:2611.14629](https://arxiv.org/abs/2611.14629) find the transmon version needs $10^6$ qubits. Takeuchi et al. [arXiv:2611.12774](https://arxiv.org/abs/2611.12774) set broadband dark-photon limits. Hainje et al. [arXiv:2611.13090](https://arxiv.org/abs/2611.13090) give the first SPHEREx ALP limits. Banerjee et al. [arXiv:2611.14473](https://arxiv.org/abs/2611.14473) show low-mass fifth-force reach collapses for pNGBs.
 
-  These extend the 11-02 generator-rebuilding thread, which now has a percent-level target.
+- **Top threshold excess, steady.** Re [arXiv:2611.09299](https://arxiv.org/abs/2611.09299) shows that a few powers of $\alpha_s/v$ reproduce threshold data. Djouadi et al. [arXiv:2611.09666](https://arxiv.org/abs/2611.09666) show interference matters for the $H/A$ reading. Aushev et al. [arXiv:2611.09797](https://arxiv.org/abs/2611.09797) reach 30 GeV $m_{t\bar t}$ resolution. All three build on last week's NNLO toponium and 2HDM interference work.
 
-- **Nuclear structure in heavy-ion flow (steady).**
-  - ALICE ([arXiv:2611.08327](https://arxiv.org/abs/2611.08327)) traces partonic collectivity down to $N_{\rm ch}\geq25$. Below that the signal is limited by uncertainty, not null.
-  - Duguet et al. ([arXiv:2611.08122](https://arxiv.org/abs/2611.08122)) show O/Ne eccentricities respond to chiral LECs.
-  - Zakharov ([arXiv:2611.09404](https://arxiv.org/abs/2611.09404)) adds Pb vibrations to address the ultracentral $v_2$/$v_3$ puzzle.
-  - Karmakar et al. ([arXiv:2611.12404](https://arxiv.org/abs/2611.12404)) fit O through Pb with one parameter set.
-  - Yang et al. ([arXiv:2611.11347](https://arxiv.org/abs/2611.11347)) find strange-quark $v_2$ exceeds NCQ scaling at the LHC, a caution against reading the 10-28 O–O φ result through simple scaling.
-
-- **$e^+e^-$ precision and FCC-ee as arbiter (steady, with a cost check).**
-  - Greljo et al. ([arXiv:2611.05464](https://arxiv.org/abs/2611.05464)) and Vignaroli ([arXiv:2611.05501](https://arxiv.org/abs/2611.05501)) give sharp Tera-Z falsification targets.
-  - Delorme et al. ([arXiv:2611.07067](https://arxiv.org/abs/2611.07067)) report KKMC and SHERPA agreeing at ≲0.04% on radiative corrections, in the regime of the BaBar ISR ππ dispute. Arbuzov et al. ([arXiv:2611.09408](https://arxiv.org/abs/2611.09408)) review the QED-PDF side.
-  - Madison ([arXiv:2611.12265](https://arxiv.org/abs/2611.12265)) estimates s-channel Higgs monochromatization would need ~10 m of horizontal dispersion.
+- **Heavy-ion system size, steady.** Zakharov [arXiv:2611.09404](https://arxiv.org/abs/2611.09404) adds Pb vibrations to address the $v_2/v_3$ puzzle. Karmakar et al. [arXiv:2611.12404](https://arxiv.org/abs/2611.12404) use one DREENA parameter set from O to Pb.
 
 ## Turning points
 
-- **Birefringence:** Reig ([arXiv:2611.07578](https://arxiv.org/abs/2611.07578)) shows the neutrino-asymmetry route to CMB birefringence is excluded. The axion Chern–Simons reading of the hint remains.
-- **Gallium:** realistic nuclear structure does not rescue the non-factorization fix for the gallium deficit ([arXiv:2611.09788](https://arxiv.org/abs/2611.09788)). The cross section still comes out ~20% high.
-- **Mass ordering:** the 1.9σ preference is now understood as conflicting pulls. Reactor+T2K and reactor+NOvA favor opposite orderings, and JUNO alone tops out near 3σ ([arXiv:2611.13629](https://arxiv.org/abs/2611.13629)).
-- **LEP $N_\nu$:** Madison ([arXiv:2611.12265](https://arxiv.org/abs/2611.12265)) reports $N_\nu=2.9965\pm0.0040$, nearly halving the error. This holds only under an assumed common rescaling of experiment-specific uncertainties.
-- **Method adopted:** Born spreading is now public in MadGraph5_aMC@NLO, including FxFx, with 6× faster $W$+jets generation ([arXiv:2611.06769](https://arxiv.org/abs/2611.06769)).
+- **Solar capture recomputed.** Lin et al. [arXiv:2611.16689](https://arxiv.org/abs/2611.16689) find that when scattering is rare, captured DM never thermalizes and annihilation drops by orders of magnitude. For the inelastic higgsino, though, the splitting bound *tightens* by tens of keV. This reshapes the constraint every LZ model since Pospelov designed around.
+- **Ordering preference dissected.** Machado et al. [arXiv:2611.13629](https://arxiv.org/abs/2611.13629) show the 1.9σ preference against inverted ordering is a balance of conflicting pulls: reactor+T2K and reactor+NOvA point opposite ways. JUNO alone tops out near 3σ.
+- **Gallium fix killed.** Castillo et al. [arXiv:2611.09788](https://arxiv.org/abs/2611.09788) find the shell model leaves the cross section 20% above measurement, so the non-factorization proposal fails.
+- **$N_\nu$ recount.** Madison [arXiv:2611.12265](https://arxiv.org/abs/2611.12265) gets $2.9965\pm0.0040$, but the reduced error rests on an assumption the author flags. The paper also estimates ~10 m dispersion for FCC-ee monochromatization.
+- **Measure-dependence of "magic."** Shen et al. undercut the year's EW-scattering magic thread.
 
 ## Open questions
 
-- **$t\bar t$ excess:** is it a bound state or an elementary CP-odd scalar? Watch for interference-aware HL-LHC projections and data comparisons that use Re's reweighting.
-- **Mass ordering:** watch for resolution of the ~3.5% $\Delta m^2$ tension between T2K and NOvA.
-- **X17:** FASER (11-04) left only the high-coupling window open, but Serao's analysis leaves unbounded directions.
-- **CMB birefringence:** the hint stands at 4.8σ, or 3.5σ after dust.
-- **Belle II $K^+$+invisible excess:** missing-mass fits favor a two-body state near 2.1 GeV ([arXiv:2611.10218](https://arxiv.org/abs/2611.10218)).
-- **Muon puzzle:** Rubtsov et al. ([arXiv:2611.13833](https://arxiv.org/abs/2611.13833)) find an excess consistent across four experiments. It favors more energetic early-cascade parents over extra soft multiplicity.
-- **Super-K $\bar\nu_e$ excess:** Chevallier et al. ([arXiv:2611.08440](https://arxiv.org/abs/2611.08440)) offer a pion-DM explanation testable at JUNO. The link to the 10-27 2.6σ DSNB indication is unconfirmed.
-- **Charm CPV:** all Belle/Belle II asymmetries are consistent with zero ([arXiv:2611.11957](https://arxiv.org/abs/2611.11957)), so the question stays open.
+- Does the anapole model survive solar capture, which its abstract doesn't address? Does LZ's full run show the predicted low-energy events?
+- Is the top threshold excess toponium or a CP-odd scalar?
+- Belle II $K^+$+invisible excess: Novoa-Brunet [arXiv:2611.10218](https://arxiv.org/abs/2611.10218) favors a ~2.1 GeV two-body state, and Escalona et al. [arXiv:2611.14616](https://arxiv.org/abs/2611.14616) offer a leptoquark fit.
+- What is NA62's *measured* BR$(K^+\to\pi^+\nu\bar\nu)$? [arXiv:2611.16530](https://arxiv.org/abs/2611.16530) gives only the expected sensitivity.
+- Strange-quark $v_2$ exceeds NCQ scaling at LHC energies (Yang et al. [arXiv:2611.11347](https://arxiv.org/abs/2611.11347)). This is relevant for reading ALICE's O–O φ result.
+- Cheap falsifiables:
+  - Xing's $\theta_{23}=43.46^\circ$ [arXiv:2611.09478](https://arxiv.org/abs/2611.09478)
+  - The flat $v_2^{\rm SP}/(1-R_{AA})$ for light ions
+  - The muon-puzzle discriminator from Rubtsov et al. [arXiv:2611.13833](https://arxiv.org/abs/2611.13833)
+- Charm CPV is still null at Belle/Belle II [arXiv:2611.11957](https://arxiv.org/abs/2611.11957), including the $K^0_SK^0_S$ mode targeted on 11-04.
 
 ## Recurring references
 
-These papers were cited again on later days this week:
-
-- [arXiv:2611.06129](https://arxiv.org/abs/2611.06129) (Serao): blind directions. Recalled 11-10 as the origin of the audit habit.
-- [arXiv:2611.08586](https://arxiv.org/abs/2611.08586) (Shen): magic-measure dependence. Recalled 11-10.
-- [arXiv:2611.07067](https://arxiv.org/abs/2611.07067) (Delorme): KKMC/SHERPA radiative return. Recalled 11-09.
-- [arXiv:2611.08122](https://arxiv.org/abs/2611.08122) (Duguet): flow as a chiral-EFT constraint. Recalled 11-09.
-- [arXiv:2611.08388](https://arxiv.org/abs/2611.08388) (Banfi): 2HDM interference tool. Recalled 11-09.
-- [arXiv:2611.10816](https://arxiv.org/abs/2611.10816) (Alexandrou, $g_A$): extended 11-11 by [arXiv:2611.14103](https://arxiv.org/abs/2611.14103) ($\sigma_{\pi N}$).
-
-These are likely future anchors: [arXiv:2611.09299](https://arxiv.org/abs/2611.09299) (Re), [arXiv:2611.13629](https://arxiv.org/abs/2611.13629) (Machado) and [arXiv:2611.12265](https://arxiv.org/abs/2611.12265) (Madison).
+- **LZ event:** [arXiv:2611.15957](https://arxiv.org/abs/2611.15957), [arXiv:2611.16689](https://arxiv.org/abs/2611.16689), [arXiv:2611.16553](https://arxiv.org/abs/2611.16553)
+- **Neutrino ordering and interactions:** [arXiv:2611.13629](https://arxiv.org/abs/2611.13629), [arXiv:2611.13618](https://arxiv.org/abs/2611.13618)
+- **Top threshold:** [arXiv:2611.09299](https://arxiv.org/abs/2611.09299), [arXiv:2611.09666](https://arxiv.org/abs/2611.09666)
+- **Audit thread:** [arXiv:2611.08586](https://arxiv.org/abs/2611.08586), [arXiv:2611.10773](https://arxiv.org/abs/2611.10773)
+- **Lattice nucleon anchors:** Alexandrou et al. $g_A$ [arXiv:2611.10816](https://arxiv.org/abs/2611.10816) and $\sigma_{\pi N}$ [arXiv:2611.14103](https://arxiv.org/abs/2611.14103), both on four spacings at physical pion mass
+- **Precision infrastructure:**
+  - Local Unitarity at hadron colliders [arXiv:2611.13184](https://arxiv.org/abs/2611.13184), plus the group's PRL comment [arXiv:2611.13087](https://arxiv.org/abs/2611.13087)
+  - Six-loop QED [arXiv:2611.15366](https://arxiv.org/abs/2611.15366)
+  - Multi-process top SMEFT template [arXiv:2611.16347](https://arxiv.org/abs/2611.16347)

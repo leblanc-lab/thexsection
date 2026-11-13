@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Sparsely-Supervised Data Assimilation via Physics-Informed Schrödinger Bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-22319</link>
+    <guid isPermaLink="false">arxiv:2603.22319</guid>
+    <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dohyun Bu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Data assimilation (DA) for systems governed by partial differential equations (PDE) aims to reconstruct full spatiotemporal fields from sparse high-fidelity (HF) observations while respecting physical constraints. While full-grid low-fidelity (LF) simulations provide informative priors in multi-fidelity settings, recovering an HF field consistent with both sparse observations and the governing PDE typically requires per-instance test-time optimization, which becomes a major bottleneck in time-critical applications. To alleviate this, amortized reconstruction using generative models has recently been proposed; however, such approaches rely on full-field HF supervision during training, which is often impractical in real-world settings. From a more realistic perspective, we propose the Physics-Informed Conditional Schrödinger Bridge (PICSB), which transports an informative LF prior toward an observation-conditioned HF posterior without any additional inference-time guidance. To enable learning without HF endpoints, PICSB employs an iterative surrogate-endpoint refresh scheme, and directly incorporates PDE residuals into the training objective while enforcing observations via hard conditioning throughout sampling. Experiments on fluid PDE benchmarks demonstrate that PICSB enables extremely fast spatiotemporal field reconstruction while maintaining competitive accuracy under sparse HF supervision.</p>]]></description>
+  </item>
 
   <item>
     <title>Reasoning over mathematical objects: on-policy reward modeling and test time aggregation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yingying Sun et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
 <p>Artificial intelligence (AI) is transforming scientific research, including proteomics. Advances in mass spectrometry (MS)-based proteomics data quality, diversity, and scale, combined with groundbreaking AI techniques, are unlocking new challenges and opportunities in biological discovery. Here, we highlight key areas where AI is driving innovation, from data analysis to new biological insights. These include developing an AI-friendly ecosystem for proteomics data generation, sharing, and analysis; improving peptide and protein identification and quantification; characterizing protein-protein interactions and protein complexes; advancing spatial and perturbation proteomics; integrating multi-omics data; and ultimately enabling AI-empowered virtual cells.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Not-So-Optimal Transport Flows for 3D Point Cloud Generation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2502-12456</link>
-    <guid isPermaLink="false">arxiv:2502.12456</guid>
-    <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ka-Hei Hui et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Learning generative models of 3D point clouds is one of the fundamental problems in 3D generative learning. One of the key properties of point clouds is their permutation invariance, i.e., changing the order of points in a point cloud does not change the shape they represent. In this paper, we analyze the recently proposed equivariant OT flows that learn permutation invariant generative models for point-based molecular data and we show that these models scale poorly on large point clouds. Also, we observe learning (equivariant) OT flows is generally challenging since straightening flow trajectories makes the learned flow model complex at the beginning of the trajectory. To remedy these, we propose not-so-optimal transport flow models that obtain an approximate OT by an offline OT precomputation, enabling an efficient construction of OT pairs for training. During training, we can additionally construct a hybrid coupling by combining our approximate OT and independent coupling to make the target flow models easier to learn. In an extensive empirical study, we show that our proposed model outperforms prior diffusion- and flow-based approaches on a wide range of unconditional generation and shape completion on the ShapeNet benchmark.</p>]]></description>
   </item>
 
 </channel>

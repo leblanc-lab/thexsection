@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>CaloHadronic: a diffusion model for the generation of hadronic showers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2506-21720</link>
+    <guid isPermaLink="false">arxiv:2506.21720</guid>
+    <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Simulating showers of particles in highly-granular calorimeters is a key frontier in the application of machine learning to particle physics. Achieving high accuracy and speed with generative machine learning models can enable them to augment traditional simulations and alleviate a major computing constraint. Recent developments have shown how diffusion based generative shower simulation approaches that do not rely on a fixed structure, but instead generate geometry-independent point clouds, are very efficient. We present a transformer-based extension to previous architectures which were developed for simulating electromagnetic showers in the highly granular electromagnetic calorimeter of the International Large Detector, ILD. The attention mechanism now allows us to generate complex hadronic showers with more pronounced substructure across both the electromagnetic and hadronic calorimeters. This is the first time that machine learning methods are used to holistically generate showers across the electromagnetic and hadronic calorimeter in highly granular imaging calorimeter systems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OptiMAG: Structure-Semantic Alignment via Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22856</link>
+    <guid isPermaLink="false">arxiv:2601.22856</guid>
+    <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yilong Zuo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multimodal Attributed Graphs (MAGs) have been widely adopted for modeling complex systems by integrating multi-modal information, such as text and images, on nodes. However, we identify a discrepancy between the implicit semantic structure induced by different modality embeddings and the explicit graph structure. For instance, neighbors in the explicit graph structure may be close in one modality but distant in another. Since existing methods typically perform message passing over the fixed explicit graph structure, they inadvertently aggregate dissimilar features, introducing modality-specific noise and impeding effective node representation learning. To address this, we propose OptiMAG, an Unbalanced Optimal Transport-based regularization framework. OptiMAG employs the Fused Gromov-Wasserstein distance to explicitly guide cross-modal structural consistency within local neighborhoods, effectively mitigating structural-semantic conflicts. Moreover, a KL divergence penalty enables adaptive handling of cross-modal inconsistencies. This framework can be seamlessly integrated into existing multimodal graph models, acting as an effective drop-in regularizer. Experiments demonstrate that OptiMAG consistently outperforms baselines across multiple tasks, ranging from graph-centric tasks (e.g., node classification, link prediction) to multimodal-centric generation tasks (e.g., graph2text, graph2image). The source code will be available upon acceptance.</p>]]></description>
+  </item>
 
   <item>
     <title>SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Johann Brehmer et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Jesse Thaler, Tilman Plehn) — original abstract; no AI summary.</em></p>
 <p>We show that the Lorentz-Equivariant Geometric Algebra Transformer (L-GATr) yields state-of-the-art performance for a wide range of machine learning tasks at the Large Hadron Collider. L-GATr represents data in a geometric algebra over space-time and is equivariant under Lorentz transformations. The underlying architecture is a versatile and scalable transformer, which is able to break symmetries if needed. We demonstrate the power of L-GATr for amplitude regression and jet classification, and then benchmark it as the first Lorentz-equivariant generative network. For all three LHC tasks, we find significant improvements over previous architectures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Are We Really Learning the Score Function? Reinterpreting Diffusion Models Through Wasserstein Gradient Flow Matching</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-00336</link>
-    <guid isPermaLink="false">arxiv:2509.00336</guid>
-    <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">An B. Vuong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Diffusion models are commonly interpreted as learning the score function, i.e., the gradient of the log-density of noisy data. However, this assumption implies that the target of learning is a conservative vector field, which is not enforced by the neural network architectures used in practice. We present numerical evidence that trained diffusion networks violate both integral and differential constraints required of true score functions, demonstrating that the learned vector fields are not conservative. Despite this, the models perform remarkably well as generative mechanisms. To explain this apparent paradox, we advocate a new theoretical perspective: diffusion training is better understood as flow matching to the velocity field of a Wasserstein Gradient Flow (WGF), rather than as score learning for a reverse-time stochastic differential equation. Under this view, the &ldquo;probability flow&rdquo; arises naturally from the WGF framework, eliminating the need to invoke reverse-time SDE theory and clarifying why generative sampling remains successful even when the neural vector field is not a true score. We further show that non-conservative errors from neural approximation do not necessarily harm density transport. Our results advocate for adopting the WGF perspective as a principled, elegant, and theoretically grounded framework for understanding diffusion generative models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Machine-learning based particle-flow algorithm in CMS</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-20541</link>
-    <guid isPermaLink="false">arxiv:2508.20541</guid>
-    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farouk Mokhtar</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle flow, particle-flow) — original abstract; no AI summary.</em></p>
-<p>The particle-flow (PF) algorithm provides a global event description by reconstructing final-state particles and is central to event reconstruction in CMS. Recently, end-to-end machine learning (ML) approaches have been proposed to directly optimize physical quantities of interest and to leverage heterogeneous computing architectures. One such approach, machine-learned particle flow (MLPF), uses a transformer model to infer particles directly from tracks and clusters in a single pass. We present recent CMS developments in MLPF, including training datasets, model architecture, reconstruction metrics, and integration with offline reconstruction software.</p>]]></description>
   </item>
 
 </channel>

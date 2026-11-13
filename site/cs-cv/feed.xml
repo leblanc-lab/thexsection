@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>OT-BLS: Optimal-Transport-based Backbone Layer Selection for Frozen DINOv3 in Cross-Domain Few-Shot Segmentation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-15187</link>
+    <guid isPermaLink="false">arxiv:2611.15187</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Natsuo Okamoto et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal-transport) — original abstract; no AI summary.</em></p>
+<p>Cross-domain few-shot segmentation (CD-FSS) aims to segment a target class in images from a previously unseen domain using only a few annotated support examples. Training-free CD-FSS methods, which typically leverage vision foundation models such as DINOv3, achieve competitive performance without parameter updates. However, the optimal DINOv3 layer for mask prediction varies across support&ndash;query episodes. Although several layer-selection criteria have been proposed, they do not explicitly evaluate whether the predicted query foreground and background labels agree with the corresponding support labels. To address this limitation, we propose a novel layer-selection criterion, Optimal-Transport-Based Backbone Layer Selection (OT-BLS). Our key insight is that an effective layer-selection criterion can be derived from the optimal-transport correspondence between query and support patch-token features. Based on this insight, we first estimate the transport plan using a well-established optimal transport algorithm and then compute a layer-selection score by aggregating the transported mass according to the foreground&ndash;background partition defined by each candidate query mask. The resulting score reflects how well the predicted foreground and background of the query correspond to those of the support. Experiments on eight benchmark datasets demonstrate the effectiveness of OT-BLS. It outperforms the conventional last-layer baseline in 12 of 16 dataset/shot settings. Furthermore, OT-BLS improves the average mIoU from 55.72 to 57.62 and achieves a 2.99-point improvement over the best-performing existing layer-selection criterion while running 3.7&ndash;14.6× faster.</p>]]></description>
+  </item>
 
   <item>
     <title>ABRR: Transforming Temporal Sentence Grounding with Wasserstein-Adaptive Refinement and Precision Ranking</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunpeng Shi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Many applications of computer vision rely on the alignment of similar but non-identical images. We present a fast algorithm for aligning heterogeneous images based on optimal transport. Our approach combines the speed of fast Fourier methods with the robustness of sliced probability metrics and allows us to efficiently compute the alignment between two L ×L images using the sliced 2-Wasserstein distance in O(L² logL) operations. We show that our method is robust to translations, rotations and deformations in the images.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ExpertSim: Fast Particle Detector Simulation Using Mixture-of-Generative-Experts</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-20991</link>
-    <guid isPermaLink="false">arxiv:2508.20991</guid>
-    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patryk Będkowski et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Simulating detector responses is a crucial part of understanding the inner workings of particle collisions in the Large Hadron Collider at CERN. Such simulations are currently performed with statistical Monte Carlo methods, which are computationally expensive and put a significant strain on CERN&rsquo;s computational grid. Therefore, recent proposals advocate for generative machine learning methods to enable more efficient simulations. However, the distribution of the data varies significantly across the simulations, which is hard to capture with out-of-the-box methods. In this study, we present ExpertSim - a deep learning simulation approach tailored for the Zero Degree Calorimeter in the ALICE experiment. Our method utilizes a Mixture-of-Generative-Experts architecture, where each expert specializes in simulating a different subset of the data. This allows for a more precise and efficient generation process, as each expert focuses on a specific aspect of the calorimeter response. ExpertSim not only improves accuracy, but also provides a significant speedup compared to the traditional Monte-Carlo methods, offering a promising solution for high-efficiency detector simulations in particle physics experiments at CERN. We make the code available at https://github.com/patrick-bedkowski/expertsim-mix-of-generative-experts.</p>]]></description>
   </item>
 
 </channel>

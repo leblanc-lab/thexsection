@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Optimal Transport-Assisted Risk-Sensitive Q-Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-11774</link>
+    <guid isPermaLink="false">arxiv:2406.11774</guid>
+    <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zahra Shahrooei et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The primary goal of reinforcement learning is to develop decision-making policies that prioritize optimal performance without considering risk or safety. In contrast, safe reinforcement learning aims to mitigate or avoid unsafe states. This paper presents a risk-sensitive Q-learning algorithm that leverages optimal transport theory to enhance the agent safety. By integrating optimal transport into the Q-learning framework, our approach seeks to optimize the policy&rsquo;s expected return while minimizing the Wasserstein distance between the policy&rsquo;s stationary distribution and a predefined risk distribution, which encapsulates safety preferences from domain experts. We validate the proposed algorithm in a Gridworld environment. The results indicate that our method significantly reduces the frequency of visits to risky states and achieves faster convergence to a stable policy compared to the traditional Q-learning algorithm.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-09498</link>
+    <guid isPermaLink="false">arxiv:2407.09498</guid>
+    <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunbei Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Vision Transformers (ViTs) have demonstrated remarkable capabilities in learning representations, but their performance is compromised when applied to unseen domains. Previous methods either engage in prompt learning during the training phase or modify model parameters at test time through entropy minimization. The former often overlooks unlabeled target data, while the latter doesn&rsquo;t fully address domain shifts. In this work, our approach, Optimal Transport-guided Test-Time Visual Prompting (OT-VP), handles these problems by leveraging prompt learning at test time to align the target and source domains without accessing the training process or altering pre-trained model parameters. This method involves learning a universal visual prompt for the target domain by optimizing the Optimal Transport distance.OT-VP, with only four learned prompt tokens, exceeds state-of-the-art performance across three stylistic datasets-PACS, VLCS, OfficeHome, and one corrupted dataset ImageNet-C. Additionally, OT-VP operates efficiently, both in terms of memory and computation, and is adaptable for extension to online settings.</p>]]></description>
+  </item>
 
   <item>
     <title>Low Latency Transformer Inference on FPGAs for Physics Applications with hls4ml</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Castorena</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
 <p>In this work, we propose the use of a causal collider structured model to describe the underlying data generative process assumptions in disentangled representation learning. This extends the conventional i.i.d. factorization assumption model p(𝐲) = ∏_i p(𝐲_i ), inadequate to handle learning from biased datasets (e.g., with sampling selection bias). The collider structure, explains that conditional dependencies between the underlying generating variables may be exist, even when these are in reality unrelated, complicating disentanglement. Under the rubric of causal inference, we show this issue can be reconciled under the condition of causal identification; attainable from data and a combination of constraints, aimed at controlling the dependencies characteristic of the \textit{collider} model. For this, we propose regularization by identification (ReI), a modular regularization engine designed to align the behavior of large scale generative models with the disentanglement constraints imposed by causal identification. Empirical evidence on standard benchmarks demonstrates the superiority of ReI in learning disentangled representations in a variational framework. In a real-world dataset we additionally show that our framework, results in interpretable representations robust to out-of-distribution examples and that align with the true expected effect from domain knowledge.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Validating Climate Models with Spherical Convolutional Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-14657</link>
-    <guid isPermaLink="false">arxiv:2401.14657</guid>
-    <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Robert C. Garrett et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The validation of global climate models is crucial to ensure the accuracy and efficacy of model output. We introduce the spherical convolutional Wasserstein distance to more comprehensively measure differences between climate models and reanalysis data. This new similarity measure accounts for spatial variability using convolutional projections and quantifies local differences in the distribution of climate variables. We apply this method to evaluate the historical model outputs of the Coupled Model Intercomparison Project (CMIP) members by comparing them to observational and reanalysis data products. Additionally, we investigate the progression from CMIP phase 5 to phase 6 and find modest improvements in the phase 6 models regarding their ability to produce realistic climatologies.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neural Sinkhorn Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-14069</link>
-    <guid isPermaLink="false">arxiv:2401.14069</guid>
-    <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huminhao Zhu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Wasserstein Gradient Flows (WGF) with respect to specific functionals have been widely used in the machine learning literature. Recently, neural networks have been adopted to approximate certain intractable parts of the underlying Wasserstein gradient flow and result in efficient inference procedures. In this paper, we introduce the Neural Sinkhorn Gradient Flow (NSGF) model, which parametrizes the time-varying velocity field of the Wasserstein gradient flow w.r.t. the Sinkhorn divergence to the target distribution starting a given source distribution. We utilize the velocity field matching training scheme in NSGF, which only requires samples from the source and target distribution to compute an empirical velocity field approximation. Our theoretical analyses show that as the sample size increases to infinity, the mean-field limit of the empirical approximation converges to the true underlying velocity field. To further enhance model efficiency on high-dimensional tasks, a two-phase NSGF++ model is devised, which first follows the Sinkhorn flow to approach the image manifold quickly (≤5 NFEs) and then refines the samples along a simple straight flow. Numerical experiments with synthetic and real-world benchmark datasets support our theoretical results and demonstrate the effectiveness of the proposed methods.</p>]]></description>
   </item>
 
 </channel>

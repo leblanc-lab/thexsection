@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Linear Partial Gromov-Wasserstein Embedding</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-16669</link>
+    <guid isPermaLink="false">arxiv:2410.16669</guid>
+    <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikun Bai et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) problem, a variant of the classical optimal transport (OT) problem, has attracted growing interest in the machine learning and data science communities due to its ability to quantify similarity between measures in different metric spaces. However, like the classical OT problem, GW imposes an equal mass constraint between measures, which restricts its application in many machine learning tasks. To address this limitation, the partial Gromov-Wasserstein (PGW) problem has been introduced. It relaxes the equal mass constraint, allowing the comparison of general positive Radon measures. Despite this, both GW and PGW face significant computational challenges due to their non-convex nature. To overcome these challenges, we propose the linear partial Gromov-Wasserstein (LPGW) embedding, a linearized embedding technique for the PGW problem. For K different metric measure spaces, the pairwise computation of the PGW distance requires solving the PGW problem O(K²⁾ times. In contrast, the proposed linearization technique reduces this to O(K) times. Similar to the linearization technique for the classical OT problem, we prove that LPGW defines a valid metric for metric measure spaces. Finally, we demonstrate the effectiveness of LPGW in practical applications such as shape retrieval and learning with transport-based embeddings, showing that LPGW preserves the advantages of PGW in partial matching while significantly enhancing computational efficiency. The code is available at https://github.com/mint-vu/Linearized_Partial_Gromov_Wasserstein.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Hopf-Cole Transform for Control-affine Schrödinger Bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-17640</link>
+    <guid isPermaLink="false">arxiv:2503.17640</guid>
+    <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexis Teter et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>The purpose of this note is to clarify the importance of the relation gg^⊤∝σσ^⊤ in solving control-affine Schrödinger bridge problems via the Hopf-Cole transform, where g, are the control and noise coefficients, respectively. We show that the Hopf-Cole transform applied to the conditions of optimality for generic control-affine Schrödinger bridge problems, i.e., without the assumption gg^⊤∝σσ^⊤, gives a pair of forward-backward PDEs that are neither linear nor equation-level decoupled. We explain how the resulting PDEs can be interpreted as nonlinear forward-backward advection-diffusion-reaction equations, where the nonlinearity stem from additional drift and reaction terms involving the gradient of the log-likelihood a.k.a. the score. These additional drift and reaction vanish when gg^⊤∝σσ^⊤, and the resulting boundary-coupled system of linear PDEs can then be solved by dynamic Sinkhorn recursions. A key takeaway of our work is that the numerical solution of the generic control-affine Schrödinger bridge requires further algorithmic development, possibly generalizing the dynamic Sinkhorn recursion or otherwise.</p>]]></description>
+  </item>
 
   <item>
     <title>Spherical Tree-Sliced Wasserstein Distance</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Ibrahim et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We study the problem of multiclass classification for settings where data features 𝐱 and their labels 𝐲 are uncertain. We identify that distributionally robust one-vs-all (OVA) classifiers often struggle in settings with imbalanced data. To address this issue, we use Wasserstein distributionally robust optimization to develop a robust version of the multiclass support vector machine (SVM) characterized by the Crammer-Singer (CS) loss. First, we prove that the CS loss is bounded from above by a Lipschitz continuous function for all 𝐱 ∈𝒳 and 𝐲 ∈𝒴, then we exploit strong duality results to express the dual of the worst-case risk problem, and we show that the worst-case risk minimization problem admits a tractable convex reformulation due to the regularity of the CS loss. Moreover, we develop a kernel version of our proposed model to account for nonlinear class separation, and we show that it admits a tractable convex upper bound. We also propose a projected subgradient method algorithm for a special case of our proposed linear model to improve scalability. Our numerical experiments demonstrate that our model outperforms state-of-the art OVA models in settings where the training data is highly imbalanced. We also show through experiments on popular real-world datasets that our proposed model often outperforms its regularized counterpart as the first accounts for uncertain labels unlike the latter.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport-Assisted Risk-Sensitive Q-Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-11774</link>
-    <guid isPermaLink="false">arxiv:2406.11774</guid>
-    <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zahra Shahrooei et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The primary goal of reinforcement learning is to develop decision-making policies that prioritize optimal performance without considering risk or safety. In contrast, safe reinforcement learning aims to mitigate or avoid unsafe states. This paper presents a risk-sensitive Q-learning algorithm that leverages optimal transport theory to enhance the agent safety. By integrating optimal transport into the Q-learning framework, our approach seeks to optimize the policy&rsquo;s expected return while minimizing the Wasserstein distance between the policy&rsquo;s stationary distribution and a predefined risk distribution, which encapsulates safety preferences from domain experts. We validate the proposed algorithm in a Gridworld environment. The results indicate that our method significantly reduces the frequency of visits to risky states and achieves faster convergence to a stable policy compared to the traditional Q-learning algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2407-09498</link>
-    <guid isPermaLink="false">arxiv:2407.09498</guid>
-    <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunbei Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Vision Transformers (ViTs) have demonstrated remarkable capabilities in learning representations, but their performance is compromised when applied to unseen domains. Previous methods either engage in prompt learning during the training phase or modify model parameters at test time through entropy minimization. The former often overlooks unlabeled target data, while the latter doesn&rsquo;t fully address domain shifts. In this work, our approach, Optimal Transport-guided Test-Time Visual Prompting (OT-VP), handles these problems by leveraging prompt learning at test time to align the target and source domains without accessing the training process or altering pre-trained model parameters. This method involves learning a universal visual prompt for the target domain by optimizing the Optimal Transport distance.OT-VP, with only four learned prompt tokens, exceeds state-of-the-art performance across three stylistic datasets-PACS, VLCS, OfficeHome, and one corrupted dataset ImageNet-C. Additionally, OT-VP operates efficiently, both in terms of memory and computation, and is adaptable for extension to online settings.</p>]]></description>
   </item>
 
 </channel>

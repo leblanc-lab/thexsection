@@ -7,7 +7,48 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Benchmarking Machine-Learning Top Taggers from JetClass to a Full-Simulation Z'→tt̅ Search</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-15274</link>
+    <guid isPermaLink="false">arxiv:2611.15274</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Manisha Kumari et al.</dc:creator>
+    <description><![CDATA[<p>Seven taggers (XGBoost BDT on 19 R=0.2 subjet observables, a 40×40 CNN, ResNeXt-50, ParticleNet, ParT, UParT, GloParT) are trained on JetClass (TTBar vs ZJetsToNuNu, 500–1000 GeV). They are then applied without retraining to CMS Open Data UL16 Geant4 samples: Z&rsquo; at 1.2–2.5 TeV, HT-binned QCD and hadronic tt̅. Jets are clustered from raw PF candidates with no CHS or PUPPI, at ⟨n_PV⟩=17.9.</p>
+<ul>
+<li><strong>AUC drop:</strong> mean AUC falls by 0.065–0.085 for every tagger (GloParT 0.928, ParT 0.927, BDT 0.887). UParT, best on JetClass at 0.9959, falls behind ParT and GloParT in the search.</li>
+<li><strong>Fully merged jets:</strong> the fully merged fraction rises from 44% to 74% with m_Z&rsquo;. Restricted to fully merged tops, every tagger degrades with mass. Transformers lose 0.01–0.02 in AUC, the others 0.03–0.05.</li>
+<li><strong>Common pT bin (750–850 GeV), 1% background efficiency:</strong> ParT keeps 37–47% of signal versus 12–21% for the CNN.</li>
+<li><strong>Pileup:</strong> after per-n_PV pT reweighting, pileup effects are minor for all taggers.</li>
+<li><strong>Significance (Asimov, jet-level):</strong> the transformer/BDT ratio grows from 1.3 at 90% rejection to 3.3 at 99.9%. The jet-level 5σ reach is 1800 GeV for transformers, 1600 GeV for ParticleNet and the image taggers, and 1400 GeV for the BDT.</li>
+<li><strong>Latency per jet:</strong> 0.15 ms for transformers versus 0.014 ms for the CNN. ResNeXt gives no gain over the CNN at 21× the cost.</li>
+</ul>
+<p>The useful message for the field is that in-window benchmark AUC understates both the high-rejection gaps between taggers and the out-of-range extrapolation behaviour.</p>
+<p>Caveats:
+- The abstract&rsquo;s &ldquo;similar AUC, 3× significance&rdquo; is really transformer versus BDT, which differ by about 0.04 AUC in-search.
+- ParticleNet receives no PID or displacement inputs, so the gap between ParticleNet and the transformers is confounded with input features.
+- The BDT lacks jet mass and τ_32.
+- The 50-constituent truncation differs from training for the BDT and image taggers.
+- Training and application backgrounds differ (Z+jets vs QCD multijet).
+- Cross sections are LO, there are no systematics, and there is no mistag calibration. The last matters because the claimed gains sit at 99.9% rejection, exactly where ATLAS&rsquo;s accuracy-vs-precision study found the largest uncertainties.
+- The ranking within each tagger group is not stable across seeds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Performance of the ATLAS tau trigger in Run 3 and future prospects</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-16454</link>
+    <guid isPermaLink="false">arxiv:2611.16454</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
+    <description><![CDATA[<p><em>Abstract only.</em> This paper is tangential to substructure: it covers hadronic-τ trigger performance, not boosted-jet tagging.</p>
+<ul>
+<li><strong>Plateau efficiency:</strong> 90–98% for single-τ triggers at √(s)=13.6 TeV.</li>
+<li><strong>Scale factors:</strong> data/MC factors from 2022–2023 τ-enriched data are 0.95–1.05, with 2–3% uncertainties over a wide p_T range.</li>
+<li><strong>Upgrades:</strong> improved trigger-level τ identification is evaluated on 2026 data in test chains. The abstract does not say whether these use constituent-level ML.</li>
+</ul>
+<p>The relevance here is mainly as a calibration reference point for narrow-jet ID at trigger level.</p>]]></description>
+  </item>
 
   <item>
     <title>AlphaHits: Full-Event Tracking and Reconstruction Towards a Hit-Level Foundation Model</title>
@@ -1224,7 +1265,7 @@
     <guid isPermaLink="false">arxiv:2609.36523</guid>
     <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shuo Lin et al.</dc:creator>
-    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong>_T = <strong>l</strong>′<em>T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
+    <description><![CDATA[<p>Lin and Zhou replace the lepton–jet imbalance with a jet-free fiducial imbalance, <strong>q</strong><em>T = <strong>l</strong>′_T + Σ</em>{h∈|η|&lt;Δη/2} <strong>p</strong>_hT. By momentum conservation this equals minus the total p_T outside the window, so the rapidity window plays the role of the jet boundary. At one loop, the jet-radius coefficients c₀(R), c₁(R) are replaced by analytic B₀(Δη) = −Δη − 2ln(1−e^{−Δη}) and B₁(Δη) = 4 atanh(e^{−Δη/2}) − 2e^{−Δη/2}. For reference, inclusive-k_T at R=1 gives c₀ = −0.253 and c₁ = 0.782.</p>
 <p>The non-global treatment has three parts:
 - They derive closed-form two-loop angular coefficients I₀ and I₁ (dilogarithm expressions).
 - The azimuthal-average NGL U₀ is resummed at LL, large-N_c, with a BMS dipole-shower Monte Carlo using a 1 − J₀(bk_T) weight.
@@ -3014,26 +3055,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pahal D. Patel et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet substructure, Lund plane, Lund jet plane, jet tagging, jet taggers, ParticleNet) — abstract only, not yet read for a briefing.</em></p>
 <p>Graph neural networks such as ParticleNet and transformer based networks on point clouds such as ParticleTransformer achieve state-of-the-art performance on jet tagging benchmarks at the Large Hadron Collider, yet the physical reasoning behind their predictions remains opaque. We present different methods, i.e. perturbation-based (GNNExplainer), Shapley-value-based (GNNShap), and gradient-based (GRADCam); adapted to operate on LundNet&rsquo;s Lund-plane graph representation. Leveraging the fact that each node in the Lund plane corresponds to a physically meaningful parton splitting, we construct Monte Carlo truth explanation masks and introduce a physics-informed evaluation framework that goes beyond standard fidelity metrics. We perform the analysis in three transverse-momentum bins (p_T ∈[500,700], [800,1000], and the inclusive region [500,1000] GeV), revealing how explanation quality and focus shift between non-perturbative and perturbative regimes. We further quantify the correlation between explainer-assigned node importance and classical jet substructure observables &ndash; N-subjettiness ratios τ_21 and τ_32 and the energy correlation functions &ndash; establishing the degree to which the model has learned known QCD features. We find that overall the weight assigned by explainability methods has a correlation with analytic observables, with expected shift across different phase space regimes, indicating that a trained neural network indeed learns some aspects of jet-substructure moments. Our open-source implementation enables reproducible explainability studies for graph-based jet taggers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for associated production of a Higgs boson and two vector bosons via vector boson scattering at √(s) = 13 TeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-24531</link>
-    <guid isPermaLink="false">arxiv:2604.24531</guid>
-    <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (large-radius jet) — abstract only, not yet read for a briefing.</em></p>
-<p>A search for Higgs boson (H) production in association with two vector bosons (V = W, Z) via vector boson scattering (VBS) is presented using proton-proton collision data collected at √(s) = 13 TeV by the CMS experiment, corresponding to an integrated luminosity of 138 fb⁻¹. Events containing two forward jets consistent with VBS, a large-radius jet from the decay of a boosted H to a pair of b quarks, and 0, 1, or 2 charged leptons coming from V decays are selected. The process is excluded at 95% CL for observed (expected) values of the VVHH coupling modifier κ_VV outside the interval 0.40  κ_VV  1.60 (0.34  κ_VV  1.66), assuming standard model values for all other couplings, thus establishing a novel probe of the VVHH interaction. Constraints are also set on the individual κ_2W and κ_2Z coupling modifiers, and on the allowed region in the κ_2W-κ_2Z plane.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hydrodynamics and Energy Correlators</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-21971</link>
-    <guid isPermaLink="false">arxiv:2604.21971</guid>
-    <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">João Barata et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy correlators) — abstract only, not yet read for a briefing.</em></p>
-<p>We study energy-energy correlators (EECs) in many-body quantum states, focusing on the matter produced in the aftermath of heavy-ion collisions. We analyze the angular structure of EECs in the collinear limit and identify a sequence of dynamical regimes. At the largest angular separations within the small-angle regime, the observable is dominated by disconnected contributions, leading to a classical scaling determined by the collective flow of the medium. We explicitly construct this contribution for hadrons produced from a hydrodynamic medium described by boost-invariant Gubser flow, obtaining the angular dependence of the EEC analytically. We further consider azimuthal perturbations to this flow, illustrating how EECs can be used to probe anisotropies in the initial state. At smaller angular separations, connected contributions become increasingly important. We argue that in this regime the EEC is controlled by collective hydrodynamic modes. The resulting angular behavior is similar to the one identified in the EECs of heavy and large-charge states of conformal field theories. At even smaller angles, this regime is expected to match onto the structure determined by the light-ray operator product expansion, before eventually crossing over to the smallest-angle behavior characteristic of dilute hadronic matter. Altogether, these results provide a unified picture of the angular structure of EECs in many-body QCD states and suggest new observables sensitive to the properties of matter in heavy-ion collisions.</p>]]></description>
   </item>
 
 </channel>

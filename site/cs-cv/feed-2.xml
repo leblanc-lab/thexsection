@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>ExpertSim: Fast Particle Detector Simulation Using Mixture-of-Generative-Experts</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2508-20991</link>
+    <guid isPermaLink="false">arxiv:2508.20991</guid>
+    <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Patryk Będkowski et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Simulating detector responses is a crucial part of understanding the inner workings of particle collisions in the Large Hadron Collider at CERN. Such simulations are currently performed with statistical Monte Carlo methods, which are computationally expensive and put a significant strain on CERN&rsquo;s computational grid. Therefore, recent proposals advocate for generative machine learning methods to enable more efficient simulations. However, the distribution of the data varies significantly across the simulations, which is hard to capture with out-of-the-box methods. In this study, we present ExpertSim - a deep learning simulation approach tailored for the Zero Degree Calorimeter in the ALICE experiment. Our method utilizes a Mixture-of-Generative-Experts architecture, where each expert specializes in simulating a different subset of the data. This allows for a more precise and efficient generation process, as each expert focuses on a specific aspect of the calorimeter response. ExpertSim not only improves accuracy, but also provides a significant speedup compared to the traditional Monte-Carlo methods, offering a promising solution for high-efficiency detector simulations in particle physics experiments at CERN. We make the code available at https://github.com/patrick-bedkowski/expertsim-mix-of-generative-experts.</p>]]></description>
+  </item>
 
   <item>
     <title>Generalizing Monocular 3D Object Detection</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keanu Sisouk et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper presents a computational framework for the concise encoding of an ensemble of persistence diagrams, in the form of weighted Wasserstein barycenters [100], [102] of a dictionary of atom diagrams. We introduce a multi-scale gradient descent approach for the efficient resolution of the corresponding minimization problem, which interleaves the optimization of the barycenter weights with the optimization of the atom diagrams. Our approach leverages the analytic expressions for the gradient of both sub-problems to ensure fast iterations and it additionally exploits shared-memory parallelism. Extensive experiments on public ensembles demonstrate the efficiency of our approach, with Wasserstein dictionary computations in the orders of minutes for the largest examples. We show the utility of our contributions in two applications. First, we apply Wassserstein dictionaries to data reduction and reliably compress persistence diagrams by concisely representing them with their weights in the dictionary. Second, we present a dimensionality reduction framework based on a Wasserstein dictionary defined with a small number of atoms (typically three) and encode the dictionary as a low dimensional simplex embedded in a visual space (typically in 2D). In both applications, quantitative experiments assess the relevance of our framework. Finally, we provide a C++ implementation that can be used to reproduce our results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Meta-Learning Regrasping Strategies for Physical-Agnostic Objects</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2023.html#a2205-11110</link>
-    <guid isPermaLink="false">arxiv:2205.11110</guid>
-    <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ning Gao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Grasping inhomogeneous objects in real-world applications remains a challenging task due to the unknown physical properties such as mass distribution and coefficient of friction. In this study, we propose a meta-learning algorithm called ConDex, which incorporates Conditional Neural Processes (CNP) with DexNet-2.0 to autonomously discern the underlying physical properties of objects using depth images. ConDex efficiently acquires physical embeddings from limited trials, enabling precise grasping point estimation. Furthermore, ConDex is capable of updating the predicted grasping quality iteratively from new trials in an online fashion. To the best of our knowledge, we are the first who generate two object datasets focusing on inhomogeneous physical properties with varying mass distributions and friction coefficients. Extensive evaluations in simulation demonstrate ConDex&rsquo;s superior performance over DexNet-2.0 and existing meta-learning-based grasping pipelines. Furthermore, ConDex shows robust generalization to previously unseen real-world objects despite training solely in the simulation. The synthetic and real-world datasets will be published as well.</p>]]></description>
   </item>
 
 </channel>

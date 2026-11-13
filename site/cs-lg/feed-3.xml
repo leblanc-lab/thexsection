@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Multi-Headed Transformer Architectures as Time-dependent Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18870</link>
+    <guid isPermaLink="false">arxiv:2605.18870</guid>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Massucco et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In recent years, transformer architectures have revolutionized the field of language processing, opening the door to previously unforeseen possibilities. However, from a theoretical point of view, the mathematical models proposed in the literature often lack direct contact with the actual architectures and depend on strong simplifying assumptions. In this paper, we reduce this gap by modelling the data flow in multi-headed transformer architectures as time-dependent gradient flows for a suitable interaction energy capturing the design of the attention mechanism. The explicit dependence on time allows us to consider different weights for each head and for each layer, without imposing constraints on the initialization method. Moreover, we prove that, under a suitable integrability assumption on the evolution of the weights, each element of the ω-limit set of the gradient flows is a stationary point of the interaction energy at a limiting weight distribution. Finally, we analyse the stability of the gradient flows considering perturbations of both the initial data and the weights. Specifically, on the one hand, we study the robustness of the proposed models with respect to noisy inputs, establishing a continuous dependence of the gradient flows on the initial data and uniqueness of the flows. On the other hand, we prove the Γ-convergence of the perturbed interaction energy to the unperturbed one, leading to the convergence of the corresponding gradient flows. We complement these theoretical results with numerical experiments that confirm the predicted energy-dissipation identity and clarify the asymptotic behavior of the dynamics in both the autonomous-like (Ornstein&ndash;Uhlenbeck) and the genuinely non-autonomous (oscillating-weights) regimes.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Preconditioned Regularized Wasserstein Proximal Sampling</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-01685</link>
+    <guid isPermaLink="false">arxiv:2509.01685</guid>
+    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hong Ye Tan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider sampling from a Gibbs distribution by evolving finitely many particles. We propose a preconditioned version of a recently proposed noise-free sampling method, governed by approximating the score function with the numerically tractable score of a regularized Wasserstein proximal operator. This is derived by a Cole&ndash;Hopf transformation on coupled anisotropic heat equations, yielding a kernel formulation for the preconditioned regularized Wasserstein proximal. The diffusion component of the proposed method is also interpreted as a modified self-attention block, as in transformer architectures. For quadratic potentials, we provide a discrete-time non-asymptotic convergence analysis and explicitly characterize the bias, which is dependent on regularization and independent of step-size. Experiments demonstrate acceleration and particle-level stability on various log-concave and non-log-concave toy examples to Bayesian total-variation regularized image deconvolution, and competitive/better performance on non-convex Bayesian neural network training when utilizing variable preconditioning matrices.</p>]]></description>
+  </item>
 
   <item>
     <title>Geometry-Aware Decoding with Wasserstein-Regularized Truncation and Mass Penalties for Large Language Models</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We address the convergence problem in learning the Optimal Transport (OT) map, where the OT Map refers to a map from one distribution to another while minimizing the transport cost. Semi-dual Neural OT, a widely used approach for learning OT Maps with neural networks, often generates fake solutions that fail to transfer one distribution to another accurately. We identify a sufficient condition under which the max-min solution of Semi-dual Neural OT recovers the true OT Map. Moreover, to address cases when this sufficient condition is not satisfied, we propose a novel method, OTP, which learns both the OT Map and the Optimal Transport Plan, representing the optimal coupling between two distributions. Under sharp assumptions on the distributions, we prove that our model eliminates the fake solution issue and correctly solves the OT problem. Our experiments show that the OTP model recovers the optimal transport map where existing methods fail and outperforms current OT-based models in image-to-image translation tasks. Notably, the OTP model can learn stochastic transport maps when deterministic OT Maps do not exist, such as one-to-many tasks like colorization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CaloHadronic: a diffusion model for the generation of hadronic showers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2506-21720</link>
-    <guid isPermaLink="false">arxiv:2506.21720</guid>
-    <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>Simulating showers of particles in highly-granular calorimeters is a key frontier in the application of machine learning to particle physics. Achieving high accuracy and speed with generative machine learning models can enable them to augment traditional simulations and alleviate a major computing constraint. Recent developments have shown how diffusion based generative shower simulation approaches that do not rely on a fixed structure, but instead generate geometry-independent point clouds, are very efficient. We present a transformer-based extension to previous architectures which were developed for simulating electromagnetic showers in the highly granular electromagnetic calorimeter of the International Large Detector, ILD. The attention mechanism now allows us to generate complex hadronic showers with more pronounced substructure across both the electromagnetic and hadronic calorimeters. This is the first time that machine learning methods are used to holistically generate showers across the electromagnetic and hadronic calorimeter in highly granular imaging calorimeter systems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OptiMAG: Structure-Semantic Alignment via Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-22856</link>
-    <guid isPermaLink="false">arxiv:2601.22856</guid>
-    <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yilong Zuo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Multimodal Attributed Graphs (MAGs) have been widely adopted for modeling complex systems by integrating multi-modal information, such as text and images, on nodes. However, we identify a discrepancy between the implicit semantic structure induced by different modality embeddings and the explicit graph structure. For instance, neighbors in the explicit graph structure may be close in one modality but distant in another. Since existing methods typically perform message passing over the fixed explicit graph structure, they inadvertently aggregate dissimilar features, introducing modality-specific noise and impeding effective node representation learning. To address this, we propose OptiMAG, an Unbalanced Optimal Transport-based regularization framework. OptiMAG employs the Fused Gromov-Wasserstein distance to explicitly guide cross-modal structural consistency within local neighborhoods, effectively mitigating structural-semantic conflicts. Moreover, a KL divergence penalty enables adaptive handling of cross-modal inconsistencies. This framework can be seamlessly integrated into existing multimodal graph models, acting as an effective drop-in regularizer. Experiments demonstrate that OptiMAG consistently outperforms baselines across multiple tasks, ranging from graph-centric tasks (e.g., node classification, link prediction) to multimodal-centric generation tasks (e.g., graph2text, graph2image). The source code will be available upon acceptance.</p>]]></description>
   </item>
 
 </channel>

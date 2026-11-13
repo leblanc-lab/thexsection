@@ -7,7 +7,27 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-10365</link>
+    <guid isPermaLink="false">arxiv:2209.10365</guid>
+    <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haobo Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Partial-label learning (PLL) is a peculiar weakly-supervised learning task where the training samples are generally associated with a set of candidate labels instead of single ground truth. While a variety of label disambiguation methods have been proposed in this domain, they normally assume a class-balanced scenario that may not hold in many real-world applications. Empirically, we observe degenerated performance of the prior methods when facing the combinatorial challenge from the long-tailed distribution and partial-labeling. In this work, we first identify the major reasons that the prior work failed. We subsequently propose SoLar, a novel Optimal Transport-based framework that allows to refine the disambiguated labels towards matching the marginal class prior distribution. SoLar additionally incorporates a new and systematic mechanism for estimating the long-tailed class prior distribution under the PLL setup. Through extensive experiments, SoLar exhibits substantially superior results on standardized benchmarks compared to the previous state-of-the-art PLL methods. Code and data are available at: https://github.com/hbzju/SoLar .</p>]]></description>
+  </item>
+
+  <item>
+    <title>Deep Generalized Schrödinger Bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-09893</link>
+    <guid isPermaLink="false">arxiv:2209.09893</guid>
+    <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guan-Horng Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Mean-Field Game (MFG) serves as a crucial mathematical framework in modeling the collective behavior of individual agents interacting stochastically with a large population. In this work, we aim at solving a challenging class of MFGs in which the differentiability of these interacting preferences may not be available to the solver, and the population is urged to converge exactly to some desired distribution. These setups are, despite being well-motivated for practical purposes, complicated enough to paralyze most (deep) numerical solvers. Nevertheless, we show that Schrödinger Bridge - as an entropy-regularized optimal transport model - can be generalized to accepting mean-field structures, hence solving these MFGs. This is achieved via the application of Forward-Backward Stochastic Differential Equations theory, which, intriguingly, leads to a computational framework with a similar structure to Temporal Difference learning. As such, it opens up novel algorithmic connections to Deep Reinforcement Learning that we leverage to facilitate practical training. We show that our proposed objective function provides necessary and sufficient conditions to the mean-field problem. Our method, named Deep Generalized Schrödinger Bridge (DeepGSB), not only outperforms prior methods in solving classical population navigation MFGs, but is also capable of solving 1000-dimensional opinion depolarization, setting a new state-of-the-art numerical solver for high-dimensional MFGs. Our code will be made available at https://github.com/ghliu/DeepGSB.</p>]]></description>
+  </item>
 
   <item>
     <title>Intentional Choreography with Semi-Supervised Recurrent VAEs</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ernesto Arganda et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>We study several simplified dark matter (DM) models and their signatures at the LHC using neural networks. We focus on the usual monojet plus missing transverse energy channel, but to train the algorithms we organize the data in 2D histograms instead of event-by-event arrays. This results in a large performance boost to distinguish between standard model (SM) only and SM plus new physics signals. We use the kinematic monojet features as input data which allow us to describe families of models with a single data sample. We found that the neural network performance does not depend on the simulated number of background events if they are presented as a function of S/√(B), where S and B are the number of signal and background events per histogram, respectively. This provides flexibility to the method, since testing a particular model in that case only requires knowing the new physics monojet cross section. Furthermore, we also discuss the network performance under incorrect assumptions about the true DM nature. Finally, we propose multimodel classifiers to search and identify new signals in a more general way, for the next LHC run.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence of Batch Greenkhorn for Regularized Multimarginal Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2112-00838</link>
-    <guid isPermaLink="false">arxiv:2112.00838</guid>
-    <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vladimir Kostic et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this work we propose a batch version of the Greenkhorn algorithm for multimarginal regularized optimal transport problems. Our framework is general enough to cover, as particular cases, some existing algorithms like Sinkhorn and Greenkhorn algorithm for the bi-marginal setting, and (greedy) MultiSinkhorn for multimarginal optimal transport. We provide a complete convergence analysis, which is based on the properties of the iterative Bregman projections (IBP) method with greedy control. Global linear rate of convergence and explicit bound on the iteration complexity are obtained. When specialized to above mentioned algorithms, our results give new insights and/or improve existing ones.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Optimal Transport for Unsupervised Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2112-02073</link>
-    <guid isPermaLink="false">arxiv:2112.02073</guid>
-    <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mourad El Hamri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this paper, we propose a novel approach for unsupervised domain adaptation, that relates notions of optimal transport, learning probability measures and unsupervised learning. The proposed approach, HOT-DA, is based on a hierarchical formulation of optimal transport, that leverages beyond the geometrical information captured by the ground metric, richer structural information in the source and target domains. The additional information in the labeled source domain is formed instinctively by grouping samples into structures according to their class labels. While exploring hidden structures in the unlabeled target domain is reduced to the problem of learning probability measures through Wasserstein barycenter, which we prove to be equivalent to spectral clustering. Experiments on a toy dataset with controllable complexity and two challenging visual adaptation datasets show the superiority of the proposed approach over the state-of-the-art.</p>]]></description>
   </item>
 
 </channel>
