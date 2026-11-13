@@ -333,3 +333,12 @@ additional fetching or LLM calls. Its initial coverage is limited to those
 stored snapshots; export-API and OAI history are excluded because historical
 metadata does not reconstruct daily announcement types. Future daily builds
 include newly fetched announcements automatically.
+
+## License
+
+Code (`pipeline/`, `templates/`, `static/`, `prompts/`, `tests/`, workflows) is
+MIT-licensed; see [`LICENSE`](LICENSE). The written content (digests, memory,
+watch/radar posts and the generated site) is
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see
+[`LICENSE-CONTENT`](LICENSE-CONTENT). Titles, authors and abstracts quoted from
+arXiv stay under arXiv's own terms.
