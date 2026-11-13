@@ -31,6 +31,8 @@ jobs:
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Inputs reach shell code via env, never ${{ }} interpolation into run:.
+      INPUT_DATE: ${{ inputs.date }}
       # Present only when the SMTP secrets are configured; the reminder step
       # below checks env.MAIL_USERNAME and skips itself when they're absent.
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
@@ -46,8 +48,8 @@ jobs:
 
       - name: Fetch today's papers
         run: |
-          if [ -n "${{ inputs.date }}" ]; then
-            python -m pipeline.fetch --backfill "${{ inputs.date }}"
+          if [ -n "$INPUT_DATE" ]; then
+            python -m pipeline.fetch --backfill "$INPUT_DATE"
           else
             python -m pipeline.fetch
           fi
@@ -63,7 +65,7 @@ jobs:
           # remaining stages to finish at full price inside the step timeout.
           export LLM_RUN_DEADLINE=$(( $(date +%s) + 80 * 60 ))
           DATE_ARG=""
-          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
+          if [ -n "$INPUT_DATE" ]; then DATE_ARG="--date $INPUT_DATE"; fi
           python -m pipeline.digest $DATE_ARG
           python -m pipeline.deep_dive $DATE_ARG
           python -m pipeline.watchlist $DATE_ARG
@@ -92,7 +94,7 @@ jobs:
             echo "Nothing new to commit."
             echo "committed=false" >> "$GITHUB_OUTPUT"
           else
-            DIGEST_DATE="${{ inputs.date }}"
+            DIGEST_DATE="$INPUT_DATE"
             [ -n "$DIGEST_DATE" ] || DIGEST_DATE="$(date -u +%F)"
             MSG="digest: $DIGEST_DATE"
             [ "${{ steps.llm.outcome }}" = "success" ] || MSG="$MSG (partial: LLM step ${{ steps.llm.outcome }})"
@@ -104,7 +106,7 @@ jobs:
             # Friday is the week's last posting day (no weekend arXiv), so the
             # rolling Long View is now final for the week — flag it for the
             # weekend Substack post. Real cron Fridays only, not date backfills.
-            if [ "$(date -u +%u)" = "5" ] && [ -z "${{ inputs.date }}" ]; then
+            if [ "$(date -u +%u)" = "5" ] && [ -z "$INPUT_DATE" ]; then
               echo "friday=true" >> "$GITHUB_OUTPUT"
             fi
           fi
@@ -126,7 +128,7 @@ jobs:
             exit 0
           fi
           DATE_ARG=""
-          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
+          if [ -n "$INPUT_DATE" ]; then DATE_ARG="--date $INPUT_DATE"; fi
           python -m pipeline.substack $DATE_ARG
 
       # Nudge to go publish the draft. Only fires when a digest was actually

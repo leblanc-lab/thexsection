@@ -31,6 +31,9 @@ jobs:
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Inputs reach shell code via env, never ${{ }} interpolation into run:.
+      INPUT_DATE: ${{ inputs.date }}
+      INPUT_TIER: ${{ inputs.tier }}
     steps:
       - uses: actions/checkout@v4
 
@@ -44,8 +47,8 @@ jobs:
       - name: Re-synthesize memory tier
         run: |
           DATE_ARG=""
-          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
-          python -m pipeline.memory --tier ${{ inputs.tier }} $DATE_ARG
+          if [ -n "$INPUT_DATE" ]; then DATE_ARG="--date $INPUT_DATE"; fi
+          python -m pipeline.memory --tier "$INPUT_TIER" $DATE_ARG
 
       - name: Build site
         run: python -m pipeline.build_site
@@ -58,7 +61,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No memory changes to commit."
           else
-            git commit -m "memory: refresh ${{ inputs.tier }}"
+            git commit -m "memory: refresh $INPUT_TIER"
             git pull --rebase origin main
             git push
           fi

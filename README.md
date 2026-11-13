@@ -4,6 +4,11 @@ A daily zeitgeist digest of new arXiv postings — not a paper list, but a read 
 *what the field is collectively thinking about today* and how it connects to the
 recent past, at multiple timescales.
 
+Read it at **https://leblanc-lab.github.io/thexsection/** (RSS: `feed.xml`) or on
+Substack at **https://thexsection.substack.com**. Digests are written by an LLM
+(Claude) from arXiv abstracts and full-text HTML; treat them as a starting
+point, not a substitute for reading the papers.
+
 ## How it works
 
 Once a day (GitHub Actions cron), the pipeline:
@@ -18,9 +23,9 @@ Once a day (GitHub Actions cron), the pipeline:
    Autumn = Sep–Jan, Spring = Feb–Apr, Summer = May–Aug); `year.md` on Sep 1.
 5. **Citation radar** (Fridays): queries INSPIRE-HEP for highly-cited recent
    papers the deep dives missed and covers them.
-6. **Rebuilds the static site** into `site/` (committed — the repo is private,
-   so open `site/index.html` locally, or read the digests right in GitHub),
-   including `feed.xml` and any topic mirrors (below).
+6. **Rebuilds the static site** into `site/` (committed, and deployed to GitHub
+   Pages by `.github/workflows/pages.yml`), including `feed.xml` and any topic
+   mirrors (below).
 
 Published content is files in this repo; the digests and memory tiers double as
 the model's context. No server. The optional full-history category harvest uses
@@ -32,7 +37,7 @@ Development/testing runs on the **Gemini free tier** ($0). Production on
 **Claude Opus 5.5** ($4/$20 per MTok) costs roughly **$0.60/day (~$14/month)** for
 hep-ex+hep-ph before the Batches API discount: ~40K input tokens for the digest,
 plus deep dives and the memory refresh. Levers, cheapest first: `deep_dive.count: 0`,
-switch `llm.provider`/model (e.g. `claude-sonnet-5`), or keep `llm.batch: true`
+switch `llm.provider`/model (e.g. `claude-sonnet-5-5`), or keep `llm.batch: true`
 (50% off, already on for the nightly run).
 
 ## Running locally
@@ -187,10 +192,7 @@ place the deployed location is recorded; change it if the site moves.
 
 ## Future ideas
 
-- Hosted private site for the group: Cloudflare Pages + Cloudflare Access
-  (free ≤ 50 users). If the site goes public: GitHub Pages toggle.
-- Batches API (halves API cost), email delivery, theme trend charts,
-  semantic search over the archive.
+- Theme trend charts, semantic search over the archive.
 
 ## Extra category feeds (no LLM)
 

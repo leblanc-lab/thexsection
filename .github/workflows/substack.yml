@@ -33,6 +33,10 @@ jobs:
     env:
       SUBSTACK_COOKIES: ${{ secrets.SUBSTACK_COOKIES }}
       SUBSTACK_PUBLICATION_URL: ${{ secrets.SUBSTACK_PUBLICATION_URL }}
+      # Inputs reach shell code via env, never ${{ }} interpolation into run:.
+      INPUT_DATE: ${{ inputs.date }}
+      INPUT_KIND: ${{ inputs.kind }}
+      INPUT_PUBLISH: ${{ inputs.publish }}
     steps:
       - uses: actions/checkout@v4
 
@@ -49,7 +53,7 @@ jobs:
             echo "::error::SUBSTACK_COOKIES secret is not set. Add it under Settings → Secrets → Actions."
             exit 1
           fi
-          ARGS="--kind ${{ inputs.kind }}"
-          if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
-          if [ "${{ inputs.publish }}" = "true" ]; then ARGS="$ARGS --publish"; fi
+          ARGS="--kind $INPUT_KIND"
+          if [ -n "$INPUT_DATE" ]; then ARGS="$ARGS --date $INPUT_DATE"; fi
+          if [ "$INPUT_PUBLISH" = "true" ]; then ARGS="$ARGS --publish"; fi
           python -m pipeline.substack $ARGS
