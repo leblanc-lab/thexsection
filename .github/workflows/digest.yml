@@ -2,11 +2,12 @@ name: Daily digest
 
 on:
   schedule:
-    # arXiv announces the new batch around 10 PM Eastern; run just after midnight
-    # Eastern for a fresh, early digest. GitHub cron is UTC-only (no DST), so
-    # 05:07 UTC = 12:07 AM EST (winter) / 1:07 AM EDT (summer) — always at or
-    # after midnight Eastern, never the night before.
-    - cron: "7 5 * * *"
+    # arXiv announces the new batch around 8 PM Eastern, but the RSS feeds can
+    # read empty around midnight Eastern while they roll over (05:07 UTC hit that
+    # in EST and missed 11-03/11-10/11-13). GitHub cron is UTC-only (no DST), so
+    # 07:07 UTC = 2:07 AM EST (winter) / 3:07 AM EDT (summer): well clear of the
+    # rollover and still done well before morning.
+    - cron: "7 7 * * *"
   workflow_dispatch:
     inputs:
       date:
