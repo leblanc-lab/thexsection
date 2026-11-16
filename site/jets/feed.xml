@@ -7,7 +7,88 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Novel observables for exploring jet quenching effects in individual jets</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-17801</link>
+    <guid isPermaLink="false">arxiv:2611.17801</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jin-Wen Kang et al.</dc:creator>
+    <description><![CDATA[<p>The authors boost each jet&rsquo;s constituents into the jet frame of Baty–Gardner–Li (z* along the jet axis) and compute two shapes in the plane transverse to the axis: transverse thrust τ⊥ = 1 − T⊥, and linearized transverse sphericity S⊥ = 2λ₂/(λ₁+λ₂). They use the linearized tensor because it is IRC safe. Setup:</p>
+<ul>
+<li>JEWEL 2.6.0, pp and 0–10% Pb+Pb at 5.02 TeV.</li>
+<li>Anti-kt R=0.4 jets with p_t &gt; 60 GeV and |η| &lt; 1.6.</li>
+<li>Hadron constituents with p_t &gt; 0.3 GeV; event-level constituent subtraction.</li>
+</ul>
+<p>Results:</p>
+<ul>
+<li><strong>With recoil:</strong> τ⊥ and S⊥ both shift to larger values, meaning a more azimuthally isotropic j⊥ configuration. η* shows peripheral enhancement and core suppression.</li>
+<li><strong>Without recoil:</strong> the τ⊥/S⊥ modification reverses (more pencil-like), and η* migrates toward the axis.</li>
+<li><strong>j⊥ spectrum:</strong> softens in both cases, so it gives no evidence of intra-jet broadening.</li>
+<li><strong>Raising the constituent p_t threshold</strong> progressively weakens the enhancement. This points to soft medium-response hadrons as the driver.</li>
+</ul>
+<p>The pitch is a scale-invariant, multi-particle probe of medium response that complements jet shapes and angularities.</p>
+<p>Caveats:</p>
+<ul>
+<li>Everything is single-model. JEWEL&rsquo;s free-streaming recoil is a limiting case, and they say so.</li>
+<li>There are no detector effects, no realistic background fluctuations, and no quantified sensitivity versus existing observables. Ratio magnitudes are only shown in figures.</li>
+<li>They concede that raising the p_t threshold also strips soft shower particles, so it is not equivalent to dropping recoil.</li>
+<li>My own note, not in the paper: with E-scheme axes the constituent j⊥ sum to zero by construction, which presumably shapes the τ⊥ distribution. The authors do not discuss this.</li>
+</ul>]]></description>
+  </item>
+
+  <item>
+    <title>N³LO Prediction for the Radiative B⁻ → γℓ⁻ν̄ Decay</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-18202</link>
+    <guid isPermaLink="false">arxiv:2611.18202</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong-Kang Huang et al.</dc:creator>
+    <description><![CDATA[<p>This paper matched on &ldquo;jet function&rdquo; in the SCET sense. It is not about collider jets or substructure; it is relevant mainly if you follow multi-loop jet-function technology.</p>
+<p>They compute the three-loop photonic radiative jet function J_γ two independent ways in Feynman gauge, and the two agree:</p>
+<ul>
+<li><strong>SCET operator matrix element:</strong> 1372 diagrams, Kira reduction to 68 masters. The 46 nontrivial masters were evaluated with AMFlow plus PSLQ at 80 digits and also analytically via HyperInt.</li>
+<li><strong>Hard-collinear expansion of full QCD.</strong></li>
+</ul>
+<p>A new photon-singlet structure appears at three loops, with color factor ∝ d^{abc}d^{abc}. It is finite and L-independent.</p>
+<p>Numerical results:</p>
+<ul>
+<li>At L=0: J_γ ≈ 1 − 3.527a_s − 64.86a_s² − 1588.9a_s³. At μ = 1.5 GeV the successive orders are −9.8%, −5.0%, −3.4%.</li>
+<li><strong>Form factor:</strong> F_LP = 0.340 → 0.318 → 0.300 going from NLO+LL to N³LO+NNLL. Three-loop matching alone gives −5.96%.</li>
+<li><strong>LCDA-shape dependence of the jet term:</strong> −4.2%, +2.5%, −5.8% for α = 2.0, 1.7, 2.5.</li>
+<li><strong>λ_B from Belle R_π:</strong> 501 → 462 → 430 MeV across orders. The jet coefficient alone moves it from 449 to 430 MeV.</li>
+</ul>
+<p>Caveats:</p>
+<ul>
+<li>Only the leading-power factorization is treated.</li>
+<li>No scale-variation bands are shown; results are at reference scales only.</li>
+<li>The Belle input is weak: R_π = (1.7 ± 1.4)×10⁻².</li>
+</ul>]]></description>
+  </item>
+
+  <item>
+    <title>RG evolution of the B-meson LCDA and radiative jet function at three loops</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-18206</link>
+    <guid isPermaLink="false">arxiv:2611.18206</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ze Long Liu et al.</dc:creator>
+    <description><![CDATA[<p>This is also SCET jet-function work, not jet substructure. It is an independent group&rsquo;s simultaneous calculation of the three-loop Lange–Neubert kernel plus the three-loop radiative jet function. That gives a cross-check of the inputs used in <a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a>.</p>
+<p>Method:</p>
+<ul>
+<li>The LCDA is written as the discontinuity of a matrix element with an inverse covariant-derivative propagator (reverse unitarity).</li>
+<li>IR poles of the on-shell partonic matrix element are removed by the known heavy-light form-factor factor Z_hl. No off-shellness or mass regulator is needed, so gauge invariance is preserved.</li>
+<li>The calculation uses 702 diagrams, 556 masters, and canonical DEs with 14 letters. The final h^(3)(x) contains only logs, Li₂ and Li₃.</li>
+</ul>
+<p>Checks:</p>
+<ul>
+<li>Predicted poles from 1/ε⁶ to 1/ε² match the explicit calculation.</li>
+<li>An independent jet-function calculation (3348 diagrams, 69 quasi-finite integrals, AMFlow check) has all poles removed by the derived Z_J. This establishes three-loop RG consistency.</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>N³LL versus</li>
+</ul>]]></description>
+  </item>
 
   <item>
     <title>Benchmarking Machine-Learning Top Taggers from JetClass to a Full-Simulation Z'→tt̅ Search</title>
@@ -3025,36 +3106,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rushil Saraswat et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (energy correlators) — abstract only, not yet read for a briefing.</em></p>
 <p>Energy-energy correlators (EECs) provide a sensitive probe of both perturbative and nonperturbative dynamics in relativistic heavy-ion collisions. Jet-medium interactions enhance particle multiplicity within the jet cone, which must be properly accounted for when extracting the EEC of jet shower hadrons in experiments. To address this issue, we develop an augmentation method that exploits momentum conservation between the near-side and away-side regions, using γ-jet events with 0-10\% centrality in Pb+Pb collisions at √(s_NN) = 5.02 TeV simulated with the CoLBT-hydro model. This approach yields an experimentally reconstructed EEC that shows improved agreement with the EEC of hadrons originating primarily from jet parton splittings. Comparing EECs of jets from Pb+Pb and p+p collisions with different matching conditions can be sensitive to jet medium interaction dynamics, and provide a novel means to test the scenario of jet energy loss in the QGP, followed by fragmentations outside the QGP.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Les Houches study on inclusive jet production at NNLO+NNLL</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-25490</link>
-    <guid isPermaLink="false">arxiv:2604.25490</guid>
-    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Terry Generet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, jet radius) — abstract only, not yet read for a briefing.</em></p>
-<p>Jet production at the LHC is a powerful probe of QCD, making it ideal for precision tests and determinations of QCD parameters such as parton distribution functions and the strong coupling constant. To make the most of the abundant jet production data collected at the LHC, precise calculations are required. While state-of-the-art calculations reach next-to-next-to-leading order (NNLO) QCD accuracy, a critical assessment of the remaining uncertainties arising from non-perturbative effects and missing higher orders remains crucial for correctly interpreting comparisons between theory and data. Scale variation is nearly always used to determine effects from missing higher orders. In this article, we reassess this method in the context of inclusive jet production by performing NNLO QCD calculations supplemented by small-jet-radius resummation through next-to-next-to-leading-logarithmic accuracy (NNLL). We find that NNLL resummation can have an appreciable impact on the scale uncertainty for inclusive jet cross sections, and, for some scale choices, can lead to sizeable shifts of the central cross section. We conclude that scale variations in fixed-order and resummed calculations can drastically underestimate the impact of higher orders for commonly used jet radius parameters, and that missing higher-order estimates obtained via scale variations should be considered unreliable. Our findings add further evidence to the importance of going beyond scale variations in jet and jet substructure calculations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Simultaneous measurements of N-subjettiness observables in jets from gluons and light-flavour quarks, and in decays of boosted W bosons and top quarks</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-25538</link>
-    <guid isPermaLink="false">arxiv:2604.25538</guid>
-    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, large-radius jets, boosted W) — abstract only, not yet read for a briefing.</em></p>
-<p>A simultaneous measurement of 25 substructure observables is presented using large-radius jets with high transverse momentum from proton-proton collisions at √(s) = 13 TeV. The measurement is carried out on dijet events and tt̅ events enriched in Lorentz-boosted W bosons and top quarks decaying hadronically. The three data samples consist of jets with one, two, or three prongs from the showering and hadronization of a gluon or light-flavour quark, two quarks, or three quarks, respectively. The data correspond to an integrated luminosity of 138 fb⁻¹, recorded by the CMS experiment in 2016-2018. A detailed characterization of the jet substructure is provided using a 6-body basis of N-subjettiness observables that overconstrains the phase space of the resolved emissions in the jet. The measurements are unfolded to the level of stable particles, and an estimate of the particle-level correlations between observables is provided, ensuring that the results can be used to systematically assess and refine the modelling of radiation in jets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Explainable AI for Jet Tagging: A Comparative Study of GNNExplainer, GNNShap, and GradCAM for Jet Tagging in the Lund Jet Plane</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-25885</link>
-    <guid isPermaLink="false">arxiv:2604.25885</guid>
-    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pahal D. Patel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, Lund plane, Lund jet plane, jet tagging, jet taggers, ParticleNet) — abstract only, not yet read for a briefing.</em></p>
-<p>Graph neural networks such as ParticleNet and transformer based networks on point clouds such as ParticleTransformer achieve state-of-the-art performance on jet tagging benchmarks at the Large Hadron Collider, yet the physical reasoning behind their predictions remains opaque. We present different methods, i.e. perturbation-based (GNNExplainer), Shapley-value-based (GNNShap), and gradient-based (GRADCam); adapted to operate on LundNet&rsquo;s Lund-plane graph representation. Leveraging the fact that each node in the Lund plane corresponds to a physically meaningful parton splitting, we construct Monte Carlo truth explanation masks and introduce a physics-informed evaluation framework that goes beyond standard fidelity metrics. We perform the analysis in three transverse-momentum bins (p_T ∈[500,700], [800,1000], and the inclusive region [500,1000] GeV), revealing how explanation quality and focus shift between non-perturbative and perturbative regimes. We further quantify the correlation between explainer-assigned node importance and classical jet substructure observables &ndash; N-subjettiness ratios τ_21 and τ_32 and the energy correlation functions &ndash; establishing the degree to which the model has learned known QCD features. We find that overall the weight assigned by explainability methods has a correlation with analytic observables, with expected shift across different phase space regimes, indicating that a trained neural network indeed learns some aspects of jet-substructure moments. Our open-source implementation enables reproducible explainability studies for graph-based jet taggers.</p>]]></description>
   </item>
 
 </channel>
