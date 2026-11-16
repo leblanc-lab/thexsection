@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Curvature-Aware Edge Dynamic GNNs for Low-p_T Track Reconstruction at HL-LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-17343</link>
+    <guid isPermaLink="false">arxiv:2611.17343</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Syed Haider Ali et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, collider) — original abstract; no AI summary.</em></p>
+<p>Particle track reconstruction in high-energy collider experiments is a computationally demanding combinatorial problem, traditionally solved by Kalman filters that scale poorly with increasing detector occupancy. Graph Neural Networks (GNNs) have recently emerged as a promising alternative. In this work, we introduce the Manifold Helical-IN, a novel Interaction Network architecture that explicitly embeds detector spacepoints onto a helical manifold chart using curvature-aware features. This geometric projection mathematically unrolls the tightly curling trajectories of low-momentum particles. Consequently, the network can distinguish true physical tracks from combinatorial noise with good precision. Evaluated on the TrackML challenge dataset, the proposed Manifold Helical-IN achieves a reconstruction efficiency of 0.9675 in the experimentally critical p_T &gt; 0.5 GeV regime, approaching recently reported Transformer-based approaches. Crucially, the manifold embedding yields a fake track rate of 0.0037. This represents a 13-fold improvement over the baseline Helical-IN (0.0508). Furthermore, the model maintains good track coherence, as quantified by our proposed Mean Hit Recovery Fraction (MHRF) of 0.858, and achieves a highly efficient inference latency of approximately 150 ms per event on a single NVIDIA A100 GPU. These results represent a critical step toward real-time soft particle tracking for the High-Level Trigger (HLT). By operating within practical HLT latency budgets, this geometry-aware approach provides a pathway to recover soft, anomalous Beyond Standard Model signatures such as unclustered energy patterns (SUEPs), that routinely evade standard hardware filters.</p>]]></description>
+  </item>
 
   <item>
     <title>FADO: Learning Causal Explanations with Prior-Fitted Networks</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikai Xu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population distribution. To this end, we propose Wasserstein Filtering (WF), a novel sample selection framework that discards a fraction of suspicious samples and estimates the target distribution using the empirical measure of the remaining data. The core insight is to select a subset of samples whose empirical distribution maximizes its Wasserstein distance to the fully contaminated empirical distribution, thereby preferentially isolating and removing geometrically influential outliers. To render this optimization computationally tractable, we introduce three algorithms: a marginal screening scheme, SinkMarg, and two joint optimization algorithms, SinkWF and SlicedWF, leveraging entropic optimal transport and sliced Wasserstein approximations, respectively. On the theoretical front, we introduce the Far Exclusion and Local Projection (FELP) contamination model, which characterizes corruptions consisting of well-separated outliers and locally indistinguishable perturbations. Under this model, we prove that the WF estimator achieves minimax optimality over distribution families with bounded covariance. Extensive numerical experiments on synthetic datasets, benchmark anomaly detection suites, and robust generative learning with diffusion models demonstrate that WF serves as a highly practical, model-agnostic preprocessing tool. It delivers competitive outlier detection performance and provides substantial downstream benefits for generative modeling under heavy contamination.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Unknown Unknowns: Model Misspecification in Machine Learning for Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-13633</link>
-    <guid isPermaLink="false">arxiv:2608.13633</guid>
-    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Cruz-Martinez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Machine learning is now a central tool for solving inverse problems in particle physics and astronomy. Models are trained on simulation and deployed on real data, raising the question not just of whether they fit, but of whether they are wrong in ways we did not anticipate: the unknown unknowns. This challenge of model misspecification is not unique to machine learning. In physics, misspecification is sometimes exactly what we want to find: new discoveries appear as failures of existing models. At other times, we want such effects absorbed into the analysis without biasing the measurement. A robust analysis is one that absorbs the misspecifications we are not interested in, while preserving sensitivity to the ones we are. Machine learning can both amplify misspecification and provide new tools to address it. We discuss the challenges of model misspecification, diagnostics for detecting it, and strategies for mitigation. No single diagnostic can confirm that a model is correctly specified: detection and mitigation are two halves of an iterative loop, in which a battery of complementary diagnostics is applied, the model is updated, and the process repeated. Robustness against unknown unknowns is ultimately less about any single technique than about a disposition: a willingness to suspect one&rsquo;s own model, and to design analyses that can survive being wrong in ways one did not anticipate.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Multiscale Supervised Unbalanced Optimal Transport Flow Matching</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-16529</link>
+    <guid isPermaLink="false">arxiv:2605.16529</guid>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiangwei Peng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Unbalanced optimal transport (UOT) provides a principled framework for modeling single-cell transitions and birth-death dynamics, but its high computational cost limits scalability to large-scale datasets. Although single-cell data often contain hierarchical annotations and known transition priors, existing UOT approximations rarely exploit this multiscale structure or prior knowledge. We introduce Multiscale Supervised Unbalanced Optimal Transport Flow Matching (MUST-FM), a simulation-free framework that scales UOT by leveraging hierarchical data structure. MUST-FM further supports an optional supervised formulation that incorporates transition priors, such as cell lineages, to guide the learning of displacement fields and mass variations. Experiments show that MUST-FM reduces computational overhead while achieving robust and biologically meaningful trajectory inference, enabling dynamic modeling of atlas-scale single-cell datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>Multi-Headed Transformer Architectures as Time-dependent Wasserstein Gradient Flows</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Seo Taek Kong et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper derives non-asymptotic error bounds for nonlinear stochastic approximation algorithms in the Wasserstein-p distance. To obtain explicit finite-sample guarantees for the last iterate, we develop a coupling argument that compares the discrete-time process to a limiting Ornstein-Uhlenbeck process. Our analysis applies to algorithms driven by general noise conditions, including martingale differences and functions of ergodic Markov chains. Complementing this result, we handle the convergence rate of the Polyak-Ruppert average through a direct analysis that applies under the same general setting. Assuming the driving noise satisfies a non-asymptotic central limit theorem, we show that the normalized last iterates converge to a Gaussian distribution in the p-Wasserstein distance at a rate of order γ_n¹/6, where γ_n is the step size. Similarly, the Polyak-Ruppert average is shown to converge in the Wasserstein distance at a rate of order n⁻¹/6. These distributional guarantees imply high-probability concentration inequalities that improve upon those derived from moment bounds and Markov&rsquo;s inequality. We demonstrate the utility of this approach by considering two applications: (1) linear stochastic approximation, where we explicitly quantify the transition from heavy-tailed to Gaussian behavior of the iterates, thereby bridging the gap between recent finite-sample analyses and asymptotic theory and (2) stochastic gradient descent, where we establish rate of convergence to the central limit theorem.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Overcoming Spurious Solutions in Semi-Dual Neural Optimal Transport: A Smoothing Approach for Learning the Optimal Transport Plan</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-04583</link>
-    <guid isPermaLink="false">arxiv:2502.04583</guid>
-    <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We address the convergence problem in learning the Optimal Transport (OT) map, where the OT Map refers to a map from one distribution to another while minimizing the transport cost. Semi-dual Neural OT, a widely used approach for learning OT Maps with neural networks, often generates fake solutions that fail to transfer one distribution to another accurately. We identify a sufficient condition under which the max-min solution of Semi-dual Neural OT recovers the true OT Map. Moreover, to address cases when this sufficient condition is not satisfied, we propose a novel method, OTP, which learns both the OT Map and the Optimal Transport Plan, representing the optimal coupling between two distributions. Under sharp assumptions on the distributions, we prove that our model eliminates the fake solution issue and correctly solves the OT problem. Our experiments show that the OTP model recovers the optimal transport map where existing methods fail and outperforms current OT-based models in image-to-image translation tasks. Notably, the OTP model can learn stochastic transport maps when deterministic OT Maps do not exist, such as one-to-many tasks like colorization.</p>]]></description>
   </item>
 
 </channel>

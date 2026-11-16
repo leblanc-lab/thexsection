@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Overcoming Spurious Solutions in Semi-Dual Neural Optimal Transport: A Smoothing Approach for Learning the Optimal Transport Plan</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-04583</link>
+    <guid isPermaLink="false">arxiv:2502.04583</guid>
+    <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We address the convergence problem in learning the Optimal Transport (OT) map, where the OT Map refers to a map from one distribution to another while minimizing the transport cost. Semi-dual Neural OT, a widely used approach for learning OT Maps with neural networks, often generates fake solutions that fail to transfer one distribution to another accurately. We identify a sufficient condition under which the max-min solution of Semi-dual Neural OT recovers the true OT Map. Moreover, to address cases when this sufficient condition is not satisfied, we propose a novel method, OTP, which learns both the OT Map and the Optimal Transport Plan, representing the optimal coupling between two distributions. Under sharp assumptions on the distributions, we prove that our model eliminates the fake solution issue and correctly solves the OT problem. Our experiments show that the OTP model recovers the optimal transport map where existing methods fail and outperforms current OT-based models in image-to-image translation tasks. Notably, the OTP model can learn stochastic transport maps when deterministic OT Maps do not exist, such as one-to-many tasks like colorization.</p>]]></description>
+  </item>
 
   <item>
     <title>CaloHadronic: a diffusion model for the generation of hadronic showers</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iman Seyedi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>The assignment problem, a cornerstone of operations research, seeks an optimal one-to-one mapping between agents and tasks to minimize total cost. This work traces its evolution from classical formulations and algorithms to modern optimal transport (OT) theory, positioning the Quadratic Assignment Problem (QAP) and related structural matching tasks within this framework. We connect the linear assignment problem to Monge&rsquo;s transport problem, Kantorovich&rsquo;s relaxation, and Wasserstein distances, then extend to cases where source and target lie in different metric-measure spaces requiring Gromov-Wasserstein (GW) distances. GW formulations, including the fused GW variant that integrates structural and feature information, naturally address QAP-like problems by optimizing alignment based on both intra-domain distances and cross-domain attributes. Applications include graph matching, keypoint correspondence, and feature-based assignments. We present exact solvers, Genetic Algorithms (GA), and multiple GW variants, including a proposed multi-initialization strategy (GW-MultiInit) that mitigates the risk of getting stuck in local optima alongside entropic Sinkhorn-based approximations and fused GW. Computational experiments on capacitated QAP instances show that GW-MultiInit consistently achieves near-optimal solutions and scales efficiently to large problems where exact methods become impractical, while parameterized EGW and FGW variants provide flexible trade-offs between accuracy and runtime. Our findings provide theoretical foundations, computational insights, and practical guidelines for applying OT and GW methods to QAP and other real-world matching problems, such as those in machine learning and logistics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Lorentz-Equivariant Transformer for All of the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2411-00446</link>
-    <guid isPermaLink="false">arxiv:2411.00446</guid>
-    <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Johann Brehmer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Jesse Thaler, Tilman Plehn) — original abstract; no AI summary.</em></p>
-<p>We show that the Lorentz-Equivariant Geometric Algebra Transformer (L-GATr) yields state-of-the-art performance for a wide range of machine learning tasks at the Large Hadron Collider. L-GATr represents data in a geometric algebra over space-time and is equivariant under Lorentz transformations. The underlying architecture is a versatile and scalable transformer, which is able to break symmetries if needed. We demonstrate the power of L-GATr for amplitude regression and jet classification, and then benchmark it as the first Lorentz-equivariant generative network. For all three LHC tasks, we find significant improvements over previous architectures.</p>]]></description>
   </item>
 
 </channel>

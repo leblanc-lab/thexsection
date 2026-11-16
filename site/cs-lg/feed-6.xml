@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Implicit Image-to-Image Schrodinger Bridge for Image Restoration</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2403-06069</link>
+    <guid isPermaLink="false">arxiv:2403.06069</guid>
+    <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuang Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrodinger bridge) — original abstract; no AI summary.</em></p>
+<p>Diffusion-based models have demonstrated remarkable effectiveness in image restoration tasks; however, their iterative denoising process, which starts from Gaussian noise, often leads to slow inference speeds. The Image-to-Image Schrödinger Bridge (I²SB) offers a promising alternative by initializing the generative process from corrupted images while leveraging training techniques from score-based diffusion models. In this paper, we introduce the Implicit Image-to-Image Schrödinger Bridge (I³SB) to further accelerate the generative process of I²SB. I³SB restructures the generative process into a non-Markovian framework by incorporating the initial corrupted image at each generative step, effectively preserving and utilizing its information. To enable direct use of pretrained I²SB models without additional training, we ensure consistency in marginal distributions. Extensive experiments across many image corruptions, including noise, low resolution, JPEG compression, and sparse sampling, and multiple image modalities, such as natural, human face, and medical images, demonstrate the acceleration benefits of I³SB. Compared to I²SB, I³SB achieves the same perceptual quality with fewer generative steps, while maintaining or improving fidelity to the ground truth.</p>]]></description>
+  </item>
 
   <item>
     <title>Linear Partial Gromov-Wasserstein Embedding</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Valentin De Bortoli et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
 <p>Mass transport problems arise in many areas of machine learning whereby one wants to compute a map transporting one distribution to another. Generative modeling techniques like Generative Adversarial Networks (GANs) and Denoising Diffusion Models (DDMs) have been successfully adapted to solve such transport problems, resulting in CycleGAN and Bridge Matching respectively. However, these methods do not approximate Optimal Transport (OT) maps, which are known to have desirable properties. Existing techniques approximating OT maps for high-dimensional data-rich problems, such as DDM-based Rectified Flow and Schrödinger Bridge procedures, require fully training a DDM-type model at each iteration, or use mini-batch techniques which can introduce significant errors. We propose a novel algorithm to compute the Schrödinger Bridge, a dynamic entropy-regularised version of OT, that eliminates the need to train multiple DDM-like models. This algorithm corresponds to a discretisation of a flow of path measures, which we call the Schrödinger Bridge Flow, whose only stationary point is the Schrödinger Bridge. We demonstrate the performance of our algorithm on a variety of unpaired data translation tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Distributionally Robust Multiclass Support Vector Machine</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-08409</link>
-    <guid isPermaLink="false">arxiv:2409.08409</guid>
-    <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Ibrahim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We study the problem of multiclass classification for settings where data features 𝐱 and their labels 𝐲 are uncertain. We identify that distributionally robust one-vs-all (OVA) classifiers often struggle in settings with imbalanced data. To address this issue, we use Wasserstein distributionally robust optimization to develop a robust version of the multiclass support vector machine (SVM) characterized by the Crammer-Singer (CS) loss. First, we prove that the CS loss is bounded from above by a Lipschitz continuous function for all 𝐱 ∈𝒳 and 𝐲 ∈𝒴, then we exploit strong duality results to express the dual of the worst-case risk problem, and we show that the worst-case risk minimization problem admits a tractable convex reformulation due to the regularity of the CS loss. Moreover, we develop a kernel version of our proposed model to account for nonlinear class separation, and we show that it admits a tractable convex upper bound. We also propose a projected subgradient method algorithm for a special case of our proposed linear model to improve scalability. Our numerical experiments demonstrate that our model outperforms state-of-the art OVA models in settings where the training data is highly imbalanced. We also show through experiments on popular real-world datasets that our proposed model often outperforms its regularized counterpart as the first accounts for uncertain labels unlike the latter.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Distributionally Robust Multiclass Support Vector Machine</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-08409</link>
+    <guid isPermaLink="false">arxiv:2409.08409</guid>
+    <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Ibrahim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the problem of multiclass classification for settings where data features 𝐱 and their labels 𝐲 are uncertain. We identify that distributionally robust one-vs-all (OVA) classifiers often struggle in settings with imbalanced data. To address this issue, we use Wasserstein distributionally robust optimization to develop a robust version of the multiclass support vector machine (SVM) characterized by the Crammer-Singer (CS) loss. First, we prove that the CS loss is bounded from above by a Lipschitz continuous function for all 𝐱 ∈𝒳 and 𝐲 ∈𝒴, then we exploit strong duality results to express the dual of the worst-case risk problem, and we show that the worst-case risk minimization problem admits a tractable convex reformulation due to the regularity of the CS loss. Moreover, we develop a kernel version of our proposed model to account for nonlinear class separation, and we show that it admits a tractable convex upper bound. We also propose a projected subgradient method algorithm for a special case of our proposed linear model to improve scalability. Our numerical experiments demonstrate that our model outperforms state-of-the art OVA models in settings where the training data is highly imbalanced. We also show through experiments on popular real-world datasets that our proposed model often outperforms its regularized counterpart as the first accounts for uncertain labels unlike the latter.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Transport-Assisted Risk-Sensitive Q-Learning</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport provides a metric which quantifies the dissimilarity between probability measures. For measures supported in discrete metric spaces, finding the optimal transport distance has cubic time complexity in the size of the space. However, measures supported on trees admit a closed-form optimal transport that can be computed in linear time. In this paper, we aim to find an optimal tree structure for a given discrete metric space so that the tree-Wasserstein distance approximates the optimal transport distance in the original space. One of our key ideas is to cast the problem in ultrametric spaces. This helps us optimize over the space of ultrametric trees &ndash; a mixed-discrete and continuous optimization problem &ndash; via projected gradient decent over the space of ultrametric matrices. During optimization, we project the parameters to the ultrametric space via a hierarchical minimum spanning tree algorithm, equivalent to the closest projection to ultrametrics under the supremum norm. Experimental results on real datasets show that our approach outperforms previous approaches (e.g. Flowtree, Quadtree) in approximating optimal transport distances. Finally, experiments on synthetic data generated on ground truth trees show that our algorithm can accurately uncover the underlying trees.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Representation Disentaglement via Regularization by Causal Identification</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2303-00128</link>
-    <guid isPermaLink="false">arxiv:2303.00128</guid>
-    <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Castorena</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>In this work, we propose the use of a causal collider structured model to describe the underlying data generative process assumptions in disentangled representation learning. This extends the conventional i.i.d. factorization assumption model p(𝐲) = ∏_i p(𝐲_i ), inadequate to handle learning from biased datasets (e.g., with sampling selection bias). The collider structure, explains that conditional dependencies between the underlying generating variables may be exist, even when these are in reality unrelated, complicating disentanglement. Under the rubric of causal inference, we show this issue can be reconciled under the condition of causal identification; attainable from data and a combination of constraints, aimed at controlling the dependencies characteristic of the \textit{collider} model. For this, we propose regularization by identification (ReI), a modular regularization engine designed to align the behavior of large scale generative models with the disentanglement constraints imposed by causal identification. Empirical evidence on standard benchmarks demonstrates the superiority of ReI in learning disentangled representations in a variational framework. In a real-world dataset we additionally show that our framework, results in interpretable representations robust to out-of-distribution examples and that align with the true expected effect from domain knowledge.</p>]]></description>
   </item>
 
 </channel>
