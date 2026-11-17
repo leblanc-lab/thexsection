@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Spatially Aware Linear Transformer (SAL-T) for Particle Jet Tagging</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-23641</link>
+    <guid isPermaLink="false">arxiv:2510.23641</guid>
+    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aaron Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC) — original abstract; no AI summary.</em></p>
+<p>Transformers are very effective in capturing both global and local correlations within high-energy particle collisions, but they present deployment challenges in high-data-throughput environments, such as the CERN LHC. The quadratic complexity of transformer models demands substantial resources and increases latency during inference. In order to address these issues, we introduce the Spatially Aware Linear Transformer (SAL-T), a physics-inspired enhancement of the linformer architecture that maintains linear attention. Our method incorporates spatially aware partitioning of particles based on kinematic features, thereby computing attention between regions of physical significance. Additionally, we employ convolutional layers to capture local correlations, informed by insights from jet physics. In addition to outperforming the standard linformer in jet classification tasks, SAL-T also achieves classification results comparable to full-attention transformers, while using considerably fewer resources with lower latency during inference. Experiments on a generic point cloud classification dataset (ModelNet10) further confirm this trend. Our code is available at https://github.com/aaronw5/SAL-T4HEP.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Detecting Localized Density Anomalies in Multivariate Data via Coin-Flip Statistics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2503-23927</link>
+    <guid isPermaLink="false">arxiv:2503.23927</guid>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Springer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Detecting localized differences between two samples is a central task in scientific data analysis, required for the identification of signal events, regime changes, or model mismatch. We introduce EagleEye, a method that pinpoints local over- and under-densities in multivariate feature spaces. EagleEye assigns each point an anomaly score by encoding its ordered k-nearest-neighbour list as a binary membership sequence and testing whether the cumulative number of successes in this sequence is consistent with a binomial (coin-flipping) null model. In the presence of a genuine local anomaly, neighbours will preferentially belong to one of the two datasts, yielding an excess of ``successes&rsquo;&rsquo; relative to the binomial null model. These local, pointwise detections are consolidated into interpretable anomaly sets through a deterministic refinement procedure that can also estimate the irreducible background and local density anomaly purity. We demonstrate EagleEye&rsquo;s efficacy in three scenarios. We first consider an artificial data example with known localized over- and under-densities. Second, we demonstrate how EagleEye may be used for new physics searches at particle collider experiments in the presence of systematic background modelling differences. Finally, we conduct a climate analysis study that reveals localized changes in spatiotemporal temperature-pattern recurrence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Intrinsic Wasserstein Rates for Score-Based Generative Models on Smooth Manifolds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-15822</link>
+    <guid isPermaLink="false">arxiv:2605.15822</guid>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guoji Fu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Score-based generative models are trained in high-dimensional ambient spaces, yet many data distributions are supported on low-dimensional nonlinear structures. We prove that, for compact d-dimensional smooth manifolds ℳ ⊂[0,1]^D with d &gt; 2 and β-Hölder densities strictly positive on ℳ, a variance-preserving SGM estimator attains the intrinsic Wasserstein&ndash;1 sample exponent 𝒪̃(D^𝒪_β(d)n⁻⁽β+1)/(d+2β)), up to logarithmic factors and explicit geometry and density factors. The full nonasymptotic bound explicitly isolates the finite-order geometry envelope, Hölder radius, density lower bound, ambient dependence, and finite-order correction terms. The analysis separates score approximation into a large-noise tangent-cell regime and a small-noise projection-centered, de-Gaussianized Laplace regime. The key technical ingredient is a ReLU implementation of nearest-projection coordinates via finite intrinsic anchors and Gauss&ndash;Newton iterations, rather than approximating the manifold projection as a black-box high-dimensional smooth map. Consequently, for families with polynomially controlled geometry and density lower bounds, the constructed score-network parameters have polynomial ambient dependence.</p>]]></description>
+  </item>
 
   <item>
     <title>Multiscale Supervised Unbalanced Optimal Transport Flow Matching</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alessandro Micheli et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Computational optimal transport (OT) offers a principled framework for generative modeling. Neural OT methods, which use neural networks to learn an OT map (or potential) from data in an amortized way, can be evaluated out of sample after training, but existing approaches are tailored to Euclidean geometry. Extending neural OT to high-dimensional Riemannian manifolds remains an open challenge. In this paper, we prove that any method for OT on manifolds that produces discrete approximations of transport maps necessarily suffers from the curse of dimensionality: achieving a fixed accuracy requires a number of parameters that grows exponentially with the manifold dimension. Motivated by this limitation, we introduce Riemannian Neural OT (RNOT) maps, which are continuous neural-network parameterizations of OT maps on manifolds that avoid discretization and incorporate geometric structure by construction. Under mild regularity assumptions, we prove that RNOT maps approximate Riemannian OT maps with sub-exponential complexity in the dimension. Experiments on synthetic and real datasets demonstrate improved scalability and competitive performance relative to discretization-based baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Semantic-aware Wasserstein Policy Regularization for Large Language Model Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-01685</link>
-    <guid isPermaLink="false">arxiv:2602.01685</guid>
-    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byeonghu Na et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Large language models (LLMs) are commonly aligned with human preferences using reinforcement learning from human feedback (RLHF). In this method, LLM policies are generally optimized through reward maximization with Kullback-Leibler (KL) divergence regularization of the reference policy. However, KL and its f-divergence variants only compare token probabilities at identical indices, failing to capture semantic similarity. We propose Wasserstein Policy Regularization (WPR), a semantic-aware regularization for the RLHF framework based on the entropy-regularized Wasserstein distance, which incorporates the geometry of the token space. The dual formulation of the distance expresses the regularization as penalty terms applied to the reward via optimal dual variables, which yield a tractable objective compatible with standard RL algorithms. Empirically, our method outperforms KL- and f-divergence-based baselines, demonstrating the benefits of semantic-aware policy distances for alignment. Our code is available at https://github.com/aailab-kaist/WPR.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Softmax Linear Attention: Reclaiming Global Competition</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-01744</link>
-    <guid isPermaLink="false">arxiv:2602.01744</guid>
-    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingwei Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>While linear attention reduces the quadratic complexity of standard Transformers to linear time, it often lags behind in expressivity due to the removal of softmax normalization. This omission eliminates \emph{global competition}, a critical mechanism that enables models to sharply focus on relevant information amidst long-context noise. In this work, we propose \textbf{Softmax Linear Attention (SLA)}, a framework designed to restore this competitive selection without sacrificing efficiency. By lifting the softmax operation from the token level to the head level, SLA leverages attention heads as coarse semantic slots, applying a competitive gating mechanism to dynamically select the most relevant subspaces. This reintroduces the ``winner-take-all&rsquo;&rsquo; dynamics essential for precise retrieval and robust long-context understanding. Distinct from prior methods that focus on refining local kernel functions, SLA adopts a broader perspective by exploiting the higher-level multi-head aggregation structure. Extensive experiments demonstrate that SLA consistently enhances state-of-the-art linear baselines (RetNet, GLA, GDN) across language modeling and long-context benchmarks, particularly in challenging retrieval scenarios where it significantly boosts robustness against noise, validating its capability to restore precise focus while maintaining linear complexity.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Finite-Sample Wasserstein Error Bounds and Concentration Inequalities for Nonlinear Stochastic Approximation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-02445</link>
-    <guid isPermaLink="false">arxiv:2602.02445</guid>
-    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Seo Taek Kong et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper derives non-asymptotic error bounds for nonlinear stochastic approximation algorithms in the Wasserstein-p distance. To obtain explicit finite-sample guarantees for the last iterate, we develop a coupling argument that compares the discrete-time process to a limiting Ornstein-Uhlenbeck process. Our analysis applies to algorithms driven by general noise conditions, including martingale differences and functions of ergodic Markov chains. Complementing this result, we handle the convergence rate of the Polyak-Ruppert average through a direct analysis that applies under the same general setting. Assuming the driving noise satisfies a non-asymptotic central limit theorem, we show that the normalized last iterates converge to a Gaussian distribution in the p-Wasserstein distance at a rate of order γ_n¹/6, where γ_n is the step size. Similarly, the Polyak-Ruppert average is shown to converge in the Wasserstein distance at a rate of order n⁻¹/6. These distributional guarantees imply high-probability concentration inequalities that improve upon those derived from moment bounds and Markov&rsquo;s inequality. We demonstrate the utility of this approach by considering two applications: (1) linear stochastic approximation, where we explicitly quantify the transition from heavy-tailed to Gaussian behavior of the iterates, thereby bridging the gap between recent finite-sample analyses and asymptotic theory and (2) stochastic gradient descent, where we establish rate of convergence to the central limit theorem.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Jet tagging in the Lund plane with graph networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2012-08526</link>
+    <guid isPermaLink="false">arxiv:2012.08526</guid>
+    <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Frédéric A. Dreyer et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Lund plane, jet tagging, boosted objects, top tagging, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The identification of boosted heavy particles such as top quarks or vector bosons is one of the key problems arising in experimental studies at the Large Hadron Collider. In this article, we introduce LundNet, a novel jet tagging method which relies on graph neural networks and an efficient description of the radiation patterns within a jet to optimally disentangle signatures of boosted objects from background events. We apply this framework to a number of different benchmarks, showing significantly improved performance for top tagging compared to existing state-of-the-art algorithms. We study the robustness of the LundNet taggers to non-perturbative and detector effects, and show how kinematic cuts in the Lund plane can mitigate overfitting of the neural network to model-dependent contributions. Finally, we consider the computational complexity of this method and its scaling as a function of kinematic Lund plane cuts, showing an order of magnitude improvement in speed over previous graph-based taggers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-05176</link>
+    <guid isPermaLink="false">arxiv:2102.05176</guid>
+    <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tomáš Chobola et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>MetaDL Challenge 2020 focused on image classification tasks in few-shot settings. This paper describes second best submission in the competition. Our meta learning approach modifies the distribution of classes in a latent space produced by a backbone network for each class in order to better follow the Gaussian distribution. After this operation which we call Latent Space Transform algorithm, centers of classes are further aligned in an iterative fashion of the Expectation Maximisation algorithm to utilize information in unlabeled data that are often provided on top of few labelled instances. For this task, we utilize optimal transport mapping using the Sinkhorn algorithm. Our experiments show that this approach outperforms previous works as well as other variants of the algorithm, using K-Nearest Neighbour algorithm, Gaussian Mixture Models, etc.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Existence of Optimal Transport Gradient for Learning Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-05542</link>
+    <guid isPermaLink="false">arxiv:2102.05542</guid>
+    <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Houdard et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The use of optimal transport cost for learning generative models has become popular with Wasserstein Generative Adversarial Networks (WGAN). Training of WGAN relies on a theoretical background: the calculation of the gradient of the optimal transport cost with respect to the generative model parameters. We first demonstrate that such gradient may not be defined, which can result in numerical instabilities during gradient-based optimization. We address this issue by stating a valid differentiation theorem in the case of entropic regularized transport and specify conditions under which existence is ensured. By exploiting the discrete nature of empirical data, we formulate the gradient in a semi-discrete setting and propose an algorithm for the optimization of the generative model parameters. Finally, we illustrate numerically the advantage of the proposed framework.</p>]]></description>
+  </item>
 
   <item>
     <title>A Trainable Optimal Transport Embedding for Feature Aggregation and its Relationship to Attention</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric Wong et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: sinkhorn) — original abstract; no AI summary.</em></p>
 <p>A rapidly growing area of work has studied the existence of adversarial examples, datapoints which have been perturbed to fool a classifier, but the vast majority of these works have focused primarily on threat models defined by ℓ_p norm-bounded perturbations. In this paper, we propose a new threat model for adversarial attacks based on the Wasserstein distance. In the image classification setting, such distances measure the cost of moving pixel mass, which naturally cover &ldquo;standard&rdquo; image manipulations such as scaling, rotation, translation, and distortion (and can potentially be applied to other settings as well). To generate Wasserstein adversarial examples, we develop a procedure for projecting onto the Wasserstein ball, based upon a modified version of the Sinkhorn iteration. The resulting algorithm can successfully attack image classification models, bringing traditional CIFAR10 models down to 3% accuracy within a Wasserstein ball with radius 0.1 (i.e., moving 10% of the image mass 1 pixel), and we demonstrate that PGD-based adversarial training can improve this adversarial accuracy to 76%. In total, this work opens up a new direction of study in adversarial robustness, more formally considering convex metrics that accurately capture the invariances that we typically believe should exist in classifiers. Code for all experiments in the paper is available at https://github.com/locuslab/projected_sinkhorn.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Screening Sinkhorn Algorithm for Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1906-08540</link>
-    <guid isPermaLink="false">arxiv:1906.08540</guid>
-    <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mokhtar Z. Alaya et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We introduce in this paper a novel strategy for efficiently approximating the Sinkhorn distance between two discrete measures. After identifying neglectable components of the dual solution of the regularized Sinkhorn problem, we propose to screen those components by directly setting them at that value before entering the Sinkhorn problem. This allows us to solve a smaller Sinkhorn problem while ensuring approximation with provable guarantees. More formally, the approach is based on a new formulation of dual of Sinkhorn divergence problem and on the KKT optimality conditions of this problem, which enable identification of dual components to be screened. This new analysis leads to the Screenkhorn algorithm. We illustrate the efficiency of Screenkhorn on complex tasks such as dimensionality reduction and domain adaptation involving regularized optimal transport.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Extracting more from boosted decision trees: A high energy physics case study</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2001-06033</link>
-    <guid isPermaLink="false">arxiv:2001.06033</guid>
-    <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vidhi Lalchand</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Particle identification is one of the core tasks in the data analysis pipeline at the Large Hadron Collider (LHC). Statistically, this entails the identification of rare signal events buried in immense backgrounds that mimic the properties of the former. In machine learning parlance, particle identification represents a classification problem characterized by overlapping and imbalanced classes. Boosted decision trees (BDTs) have had tremendous success in the particle identification domain but more recently have been overshadowed by deep learning (DNNs) approaches. This work proposes an algorithm to extract more out of standard boosted decision trees by targeting their main weakness, susceptibility to overfitting. This novel construction harnesses the meta-learning techniques of boosting and bagging simultaneously and performs remarkably well on the ATLAS Higgs (H) to tau-tau data set (ATLAS et al., 2014) which was the subject of the 2014 Higgs ML Challenge (Adam-Bourdarios et al., 2015). While the decay of Higgs to a pair of tau leptons was established in 2018 (CMS collaboration et al., 2017) at the 4.9σ significance based on the 2016 data taking period, the 2014 public data set continues to serve as a benchmark data set to test the performance of supervised classification schemes. We show that the score achieved by the proposed algorithm is very close to the published winning score which leverages an ensemble of deep neural networks (DNNs). Although this paper focuses on a single application, it is expected that this simple and robust technique will find wider applications in high energy physics.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Neural Processes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1910-00668</link>
-    <guid isPermaLink="false">arxiv:1910.00668</guid>
-    <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrew Carr et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Neural Processes (NPs) are a class of models that learn a mapping from a context set of input-output pairs to a distribution over functions. They are traditionally trained using maximum likelihood with a KL divergence regularization term. We show that there are desirable classes of problems where NPs, with this loss, fail to learn any reasonable distribution. We also show that this drawback is solved by using approximations of Wasserstein distance which calculates optimal transport distances even for distributions of disjoint support. We give experimental justification for our method and demonstrate performance. These Wasserstein Neural Processes (WNPs) maintain all of the benefits of traditional NPs while being able to approximate a new class of function mappings.</p>]]></description>
   </item>
 
 </channel>

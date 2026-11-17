@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Semantic-aware Wasserstein Policy Regularization for Large Language Model Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-01685</link>
+    <guid isPermaLink="false">arxiv:2602.01685</guid>
+    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byeonghu Na et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Large language models (LLMs) are commonly aligned with human preferences using reinforcement learning from human feedback (RLHF). In this method, LLM policies are generally optimized through reward maximization with Kullback-Leibler (KL) divergence regularization of the reference policy. However, KL and its f-divergence variants only compare token probabilities at identical indices, failing to capture semantic similarity. We propose Wasserstein Policy Regularization (WPR), a semantic-aware regularization for the RLHF framework based on the entropy-regularized Wasserstein distance, which incorporates the geometry of the token space. The dual formulation of the distance expresses the regularization as penalty terms applied to the reward via optimal dual variables, which yield a tractable objective compatible with standard RL algorithms. Empirically, our method outperforms KL- and f-divergence-based baselines, demonstrating the benefits of semantic-aware policy distances for alignment. Our code is available at https://github.com/aailab-kaist/WPR.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Softmax Linear Attention: Reclaiming Global Competition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-01744</link>
+    <guid isPermaLink="false">arxiv:2602.01744</guid>
+    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingwei Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
+<p>While linear attention reduces the quadratic complexity of standard Transformers to linear time, it often lags behind in expressivity due to the removal of softmax normalization. This omission eliminates \emph{global competition}, a critical mechanism that enables models to sharply focus on relevant information amidst long-context noise. In this work, we propose \textbf{Softmax Linear Attention (SLA)}, a framework designed to restore this competitive selection without sacrificing efficiency. By lifting the softmax operation from the token level to the head level, SLA leverages attention heads as coarse semantic slots, applying a competitive gating mechanism to dynamically select the most relevant subspaces. This reintroduces the ``winner-take-all&rsquo;&rsquo; dynamics essential for precise retrieval and robust long-context understanding. Distinct from prior methods that focus on refining local kernel functions, SLA adopts a broader perspective by exploiting the higher-level multi-head aggregation structure. Extensive experiments demonstrate that SLA consistently enhances state-of-the-art linear baselines (RetNet, GLA, GDN) across language modeling and long-context benchmarks, particularly in challenging retrieval scenarios where it significantly boosts robustness against noise, validating its capability to restore precise focus while maintaining linear complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Finite-Sample Wasserstein Error Bounds and Concentration Inequalities for Nonlinear Stochastic Approximation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-02445</link>
+    <guid isPermaLink="false">arxiv:2602.02445</guid>
+    <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Seo Taek Kong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper derives non-asymptotic error bounds for nonlinear stochastic approximation algorithms in the Wasserstein-p distance. To obtain explicit finite-sample guarantees for the last iterate, we develop a coupling argument that compares the discrete-time process to a limiting Ornstein-Uhlenbeck process. Our analysis applies to algorithms driven by general noise conditions, including martingale differences and functions of ergodic Markov chains. Complementing this result, we handle the convergence rate of the Polyak-Ruppert average through a direct analysis that applies under the same general setting. Assuming the driving noise satisfies a non-asymptotic central limit theorem, we show that the normalized last iterates converge to a Gaussian distribution in the p-Wasserstein distance at a rate of order γ_n¹/6, where γ_n is the step size. Similarly, the Polyak-Ruppert average is shown to converge in the Wasserstein distance at a rate of order n⁻¹/6. These distributional guarantees imply high-probability concentration inequalities that improve upon those derived from moment bounds and Markov&rsquo;s inequality. We demonstrate the utility of this approach by considering two applications: (1) linear stochastic approximation, where we explicitly quantify the transition from heavy-tailed to Gaussian behavior of the iterates, thereby bridging the gap between recent finite-sample analyses and asymptotic theory and (2) stochastic gradient descent, where we establish rate of convergence to the central limit theorem.</p>]]></description>
+  </item>
 
   <item>
     <title>Overcoming Spurious Solutions in Semi-Dual Neural Optimal Transport: A Smoothing Approach for Learning the Optimal Transport Plan</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Karthik Elamvazhuthi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We revisit the optimal transport problem over angular velocity dynamics given by the controlled Euler equation. The solution of this problem enables stochastic guidance of spin states of a rigid body (e.g., spacecraft) over a hard deadline constraint by transferring a given initial state statistics to a desired terminal state statistics. This is an instance of generalized optimal transport over a nonlinear dynamical system. While prior work has reported existence-uniqueness and numerical solution of this dynamical optimal transport problem, here we present structural results about the equivalent Kantorovich a.k.a. optimal coupling formulation. Specifically, we focus on deriving the ground cost for the associated Kantorovich optimal coupling formulation. The ground cost is equal to the cost of transporting unit amount of mass from a specific realization of the initial or source joint probability measure to a realization of the terminal or target joint probability measure, and determines the Kantorovich formulation. Finding the ground cost leads to solving a structured deterministic nonlinear optimal control problem, which is shown to be amenable to an analysis technique pioneered by Athans et al. We show that such techniques have broader applicability in determining the ground cost (thus Kantorovich formulation) for a class of generalized optimal mass transport problems involving nonlinear dynamics with translated norm-invariant drift.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Real-Time Analysis of Unstructured Data with Machine Learning on Heterogeneous Architectures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2508-07423</link>
-    <guid isPermaLink="false">arxiv:2508.07423</guid>
-    <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fotis I. Giasemis</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>As the particle physics community needs higher and higher precisions in order to test our current model of the subatomic world, larger and larger datasets are necessary. With upgrades scheduled for the detectors of colliding-beam experiments around the world, and specifically at the Large Hadron Collider at CERN, more collisions and more complex interactions are expected. This directly implies an increase in data produced and consequently in the computational resources needed to process them. At CERN, the amount of data produced is gargantuan. This is why the data have to be heavily filtered and selected in real time before being permanently stored. This data can then be used to perform physics analyses, in order to expand our current understanding of the universe and improve the Standard Model of physics. This real-time filtering, known as triggering, involves complex processing happening often at frequencies as high as 40 MHz. This thesis contributes to understanding how machine learning models can be efficiently deployed in such environments, in order to maximize throughput and minimize energy consumption. Inevitably, modern hardware designed for such tasks and contemporary algorithms are needed in order to meet the challenges posed by the stringent, high-frequency data rates. In this work, I present our graph neural network-based pipeline, developed for charged particle track reconstruction at the LHCb experiment at CERN. The pipeline was implemented end-to-end inside LHCb&rsquo;s first-level trigger, entirely on GPUs. Its performance was compared against the classical tracking algorithms currently in production at LHCb. The pipeline was also accelerated on the FPGA architecture, and its performance in terms of power consumption and processing speed was compared against the GPU implementation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Morphological Perceptron with Competitive Layer: Training Using Convex-Concave Procedure</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-05697</link>
-    <guid isPermaLink="false">arxiv:2509.05697</guid>
-    <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iara Cunha et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
-<p>A morphological perceptron is a multilayer feedforward neural network in which neurons perform elementary operations from mathematical morphology. For multiclass classification tasks, a morphological perceptron with a competitive layer (MPCL) is obtained by integrating a winner-take-all output layer into the standard morphological architecture. The non-differentiability of morphological operators renders gradient-based optimization methods unsuitable for training such networks. Consequently, alternative strategies that do not depend on gradient information are commonly adopted. This paper proposes the use of the convex-concave procedure (CCP) for training MPCL networks. The training problem is formulated as a difference of convex (DC) functions and solved iteratively using CCP, resulting in a sequence of linear programming subproblems. Computational experiments demonstrate the effectiveness of the proposed training method in addressing classification tasks with MPCL networks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gromov-Wasserstein and optimal transport: from assignment problems to probabilistic numeric</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-04089</link>
-    <guid isPermaLink="false">arxiv:2509.04089</guid>
-    <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iman Seyedi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The assignment problem, a cornerstone of operations research, seeks an optimal one-to-one mapping between agents and tasks to minimize total cost. This work traces its evolution from classical formulations and algorithms to modern optimal transport (OT) theory, positioning the Quadratic Assignment Problem (QAP) and related structural matching tasks within this framework. We connect the linear assignment problem to Monge&rsquo;s transport problem, Kantorovich&rsquo;s relaxation, and Wasserstein distances, then extend to cases where source and target lie in different metric-measure spaces requiring Gromov-Wasserstein (GW) distances. GW formulations, including the fused GW variant that integrates structural and feature information, naturally address QAP-like problems by optimizing alignment based on both intra-domain distances and cross-domain attributes. Applications include graph matching, keypoint correspondence, and feature-based assignments. We present exact solvers, Genetic Algorithms (GA), and multiple GW variants, including a proposed multi-initialization strategy (GW-MultiInit) that mitigates the risk of getting stuck in local optima alongside entropic Sinkhorn-based approximations and fused GW. Computational experiments on capacitated QAP instances show that GW-MultiInit consistently achieves near-optimal solutions and scales efficiently to large problems where exact methods become impractical, while parameterized EGW and FGW variants provide flexible trade-offs between accuracy and runtime. Our findings provide theoretical foundations, computational insights, and practical guidelines for applying OT and GW methods to QAP and other real-world matching problems, such as those in machine learning and logistics.</p>]]></description>
   </item>
 
 </channel>

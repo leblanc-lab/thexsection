@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Distribution Steering via Sliced Optimal Transport Control</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-12828</link>
+    <guid isPermaLink="false">arxiv:2608.12828</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kaito Ito et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Distribution steering seeks feedback laws that drive the state law of a dynamical system between prescribed initial and terminal distributions. Optimal transport provides a natural geometric approach, but its implementation generally requires a transport map or coupling in the full state space. Sliced optimal transport avoids this full-dimensional construction through one-dimensional projections. Yet, the resulting projected maps specify only directional displacements and do not by themselves prescribe a realizable feedback law. To this end, we develop a finite-horizon control framework based on sliced optimal transport. At each sampling instant, a projected optimal transport map defines a directional terminal condition, whose minimum-energy realization yields a randomized single-direction controller. Averaging over projection directions gives a deterministic sliced feedback. For the single-integrator dynamics, the averaged feedback makes the sliced Wasserstein distance to the target non-increasing. For Gaussian endpoint laws, it is affine, preserves Gaussianity, and steers the mean and covariance to their prescribed terminal values. We further identify a law-dependent gain that yields linear decay of the sliced Wasserstein distance together with an explicit characterization of the control energy. We also prove that the randomized controller converges to the averaged sliced flow as the sampling period vanishes. Finally, we extend the construction to linear dynamical systems. Reachability-normalized coordinates allow instantaneous realization of the sliced velocity for uniformly fully actuated systems, while local controllability Gramians provide exact finite-step realization for general controllable systems. Numerical examples illustrate the resulting distributional flows.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sinkhorn Linearization and the Spectral Proxy: Unifying the Statistical and Algorithmic Theory of Feature-Parameterized Inverse Optimal Transport via a Single Spectral Sandwich</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-13201</link>
+    <guid isPermaLink="false">arxiv:2608.13201</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Han Dong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We develop the statistical and algorithmic theory of inverse optimal transport (IOT) under the feature-parameterized cost C_theta(i,j) = -theta^T phi(i,j). The core technical contribution is the Sinkhorn linearization &ndash; the implicit-function sensitivity of the entropic OT plan to the cost &ndash; together with its spectral proxy, a formula that is spectrally exact yet geometrically transparent. The restricted Hessian on the tangent space satisfies the spectral sandwich (pi_min/epsilon) I &lt;= H_T^{-1} &lt;= (pi_max/epsilon) I, yielding the single core bound sigma_min &gt;= (pi_min/(a_max epsilon)) sqrt(lambda_min(Sigma)) that drives the entire theory. On this core we establish four theorems and one observation. T1 (identifiability): theta is globally injective on the quotient of the gauge kernel, with dimension bound F &lt;= (K-1)^2. T2 (sparsistency): the l1-penalized estimator recovers the true support under irrepresentability and score concentration, with exponential failure probability. T3 (well-posedness): the feature-moment map M(theta) = Phi^T x_theta is strongly monotone, and the inverse is Lipschitz with constant L &lt;= epsilon ||Phi^T S_a||_op / (pi_min lambda_min(Sigma)). T4 (convergence): local strong convexity with mu &gt;= pi_min^2 lambda_min(Sigma) / epsilon^2 guarantees monotone gradient descent convergence. O5 (misspecification): the estimator converges to the OT-model projection of the truth; the Holder continuity of the projection map is assessed numerically, yielding setting-dependent empirical exponents alpha_eff in (0,1).</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-13418</link>
+    <guid isPermaLink="false">arxiv:2608.13418</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikai Xu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population distribution. To this end, we propose Wasserstein Filtering (WF), a novel sample selection framework that discards a fraction of suspicious samples and estimates the target distribution using the empirical measure of the remaining data. The core insight is to select a subset of samples whose empirical distribution maximizes its Wasserstein distance to the fully contaminated empirical distribution, thereby preferentially isolating and removing geometrically influential outliers. To render this optimization computationally tractable, we introduce three algorithms: a marginal screening scheme, SinkMarg, and two joint optimization algorithms, SinkWF and SlicedWF, leveraging entropic optimal transport and sliced Wasserstein approximations, respectively. On the theoretical front, we introduce the Far Exclusion and Local Projection (FELP) contamination model, which characterizes corruptions consisting of well-separated outliers and locally indistinguishable perturbations. Under this model, we prove that the WF estimator achieves minimax optimality over distribution families with bounded covariance. Extensive numerical experiments on synthetic datasets, benchmark anomaly detection suites, and robust generative learning with diffusion models demonstrate that WF serves as a highly practical, model-agnostic preprocessing tool. It delivers competitive outlier detection performance and provides substantial downstream benefits for generative modeling under heavy contamination.</p>]]></description>
+  </item>
 
   <item>
     <title>Unknown Unknowns: Model Misspecification in Machine Learning for Physics</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Cao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Bi-causal optimal transport (OT) is a natural framework for comparing and coupling stochastic processes under nonanticipative information constraints, with important applications in robust finance, sequential uncertainty quantification, and multistage stochastic optimization. In particular, a learned bi-causal coupling naturally serves as a simulator for generating joint sample paths that respect both prescribed marginal laws and the underlying information flow. Its practical use, however, is limited by the computational difficulty of enforcing bi-causal coupling constraints over path space, especially for continuous distributions and long horizons. We develop a scalable stochastic-optimization framework for computing bi-causal OT couplings under general marginals. Our approach introduces a Kullback&ndash;Leibler (KL)-penalized relaxation that replaces hard marginal constraints with tractable divergence penalties while preserving the recursive structure of the problem. We establish dynamic programming principles for both the original and relaxed formulations, prove that the relaxed problem converges to the original bi-causal OT problem as the penalty grows, and derive explicit policy-gradient representations for the relaxed objective. Building on these results, we propose a practical policy-gradient algorithm with unbiased mini-batch estimators, variance reduction, and nonasymptotic regret guarantees. Numerical experiments show that the method accurately captures marginal laws and temporal dependence, and performs well in applications including robust subhedging and time series statistical downscaling. These results provide a scalable computational approach to bi-causal OT and broaden its applicability in settings where nonanticipative information constraints are essential.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Spatially Aware Linear Transformer (SAL-T) for Particle Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-23641</link>
-    <guid isPermaLink="false">arxiv:2510.23641</guid>
-    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aaron Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, LHC) — original abstract; no AI summary.</em></p>
-<p>Transformers are very effective in capturing both global and local correlations within high-energy particle collisions, but they present deployment challenges in high-data-throughput environments, such as the CERN LHC. The quadratic complexity of transformer models demands substantial resources and increases latency during inference. In order to address these issues, we introduce the Spatially Aware Linear Transformer (SAL-T), a physics-inspired enhancement of the linformer architecture that maintains linear attention. Our method incorporates spatially aware partitioning of particles based on kinematic features, thereby computing attention between regions of physical significance. Additionally, we employ convolutional layers to capture local correlations, informed by insights from jet physics. In addition to outperforming the standard linformer in jet classification tasks, SAL-T also achieves classification results comparable to full-attention transformers, while using considerably fewer resources with lower latency during inference. Experiments on a generic point cloud classification dataset (ModelNet10) further confirm this trend. Our code is available at https://github.com/aaronw5/SAL-T4HEP.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Detecting Localized Density Anomalies in Multivariate Data via Coin-Flip Statistics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2503-23927</link>
-    <guid isPermaLink="false">arxiv:2503.23927</guid>
-    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian Springer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Detecting localized differences between two samples is a central task in scientific data analysis, required for the identification of signal events, regime changes, or model mismatch. We introduce EagleEye, a method that pinpoints local over- and under-densities in multivariate feature spaces. EagleEye assigns each point an anomaly score by encoding its ordered k-nearest-neighbour list as a binary membership sequence and testing whether the cumulative number of successes in this sequence is consistent with a binomial (coin-flipping) null model. In the presence of a genuine local anomaly, neighbours will preferentially belong to one of the two datasts, yielding an excess of ``successes&rsquo;&rsquo; relative to the binomial null model. These local, pointwise detections are consolidated into interpretable anomaly sets through a deterministic refinement procedure that can also estimate the irreducible background and local density anomaly purity. We demonstrate EagleEye&rsquo;s efficacy in three scenarios. We first consider an artificial data example with known localized over- and under-densities. Second, we demonstrate how EagleEye may be used for new physics searches at particle collider experiments in the presence of systematic background modelling differences. Finally, we conduct a climate analysis study that reveals localized changes in spatiotemporal temperature-pattern recurrence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Intrinsic Wasserstein Rates for Score-Based Generative Models on Smooth Manifolds</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-15822</link>
-    <guid isPermaLink="false">arxiv:2605.15822</guid>
-    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guoji Fu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based generative models are trained in high-dimensional ambient spaces, yet many data distributions are supported on low-dimensional nonlinear structures. We prove that, for compact d-dimensional smooth manifolds ℳ ⊂[0,1]^D with d &gt; 2 and β-Hölder densities strictly positive on ℳ, a variance-preserving SGM estimator attains the intrinsic Wasserstein&ndash;1 sample exponent 𝒪̃(D^𝒪_β(d)n⁻⁽β+1)/(d+2β)), up to logarithmic factors and explicit geometry and density factors. The full nonasymptotic bound explicitly isolates the finite-order geometry envelope, Hölder radius, density lower bound, ambient dependence, and finite-order correction terms. The analysis separates score approximation into a large-noise tangent-cell regime and a small-noise projection-centered, de-Gaussianized Laplace regime. The key technical ingredient is a ReLU implementation of nearest-projection coordinates via finite intrinsic anchors and Gauss&ndash;Newton iterations, rather than approximating the manifold projection as a black-box high-dimensional smooth map. Consequently, for families with polynomially controlled geometry and density lower bounds, the constructed score-network parameters have polynomial ambient dependence.</p>]]></description>
   </item>
 
 </channel>

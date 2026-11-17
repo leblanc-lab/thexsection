@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Riemannian Approach to Ground Metric Learning for Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-10085</link>
+    <guid isPermaLink="false">arxiv:2409.10085</guid>
+    <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pratik Jawanpuria et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) theory has attracted much attention in machine learning and signal processing applications. OT defines a notion of distance between probability distributions of source and target data points. A crucial factor that influences OT-based distances is the ground metric of the embedding space in which the source and target data points lie. In this work, we propose to learn a suitable latent ground metric parameterized by a symmetric positive definite matrix. We use the rich Riemannian geometry of symmetric positive definite matrices to jointly learn the OT distance along with the ground metric. Empirical results illustrate the efficacy of the learned metric in OT-based domain adaptation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>PolyLUT-Add: FPGA-based LUT Inference with Wide Inputs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2406-04910</link>
+    <guid isPermaLink="false">arxiv:2406.04910</guid>
+    <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Binglei Lou et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet substructure) — original abstract; no AI summary.</em></p>
+<p>FPGAs have distinct advantages as a technology for deploying deep neural networks (DNNs) at the edge. Lookup Table (LUT) based networks, where neurons are directly modeled using LUTs, help maximize this promise of offering ultra-low latency and high area efficiency on FPGAs. Unfortunately, LUT resource usage scales exponentially with the number of inputs to the LUT, restricting PolyLUT to small LUT sizes. This work introduces PolyLUT-Add, a technique that enhances neuron connectivity by combining A PolyLUT sub-neurons via addition to improve accuracy. Moreover, we describe a novel architecture to improve its scalability. We evaluated our implementation over the MNIST, Jet Substructure classification, and Network Intrusion Detection benchmark and found that for similar accuracy, PolyLUT-Add achieves a LUT reduction of 2.0-13.9× with a 1.2-1.6× decrease in latency.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Schrödinger Bridge Flow for Unpaired Data Translation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-09347</link>
+    <guid isPermaLink="false">arxiv:2409.09347</guid>
+    <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Valentin De Bortoli et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Mass transport problems arise in many areas of machine learning whereby one wants to compute a map transporting one distribution to another. Generative modeling techniques like Generative Adversarial Networks (GANs) and Denoising Diffusion Models (DDMs) have been successfully adapted to solve such transport problems, resulting in CycleGAN and Bridge Matching respectively. However, these methods do not approximate Optimal Transport (OT) maps, which are known to have desirable properties. Existing techniques approximating OT maps for high-dimensional data-rich problems, such as DDM-based Rectified Flow and Schrödinger Bridge procedures, require fully training a DDM-type model at each iteration, or use mini-batch techniques which can introduce significant errors. We propose a novel algorithm to compute the Schrödinger Bridge, a dynamic entropy-regularised version of OT, that eliminates the need to train multiple DDM-like models. This algorithm corresponds to a discretisation of a flow of path measures, which we call the Schrödinger Bridge Flow, whose only stationary point is the Schrödinger Bridge. We demonstrate the performance of our algorithm on a variety of unpaired data translation tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein Distributionally Robust Multiclass Support Vector Machine</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tuan Nguyen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Unsupervised domain adaptation (UDA) aims to transfer knowledge from a labeled source domain to an unlabeled target domain. In this paper, we introduce a novel approach called class-aware optimal transport (OT), which measures the OT distance between a distribution over the source class-conditional distributions and a mixture of source and target data distribution. Our class-aware OT leverages a cost function that determines the matching extent between a given data example and a source class-conditional distribution. By optimizing this cost function, we find the optimal matching between target examples and source class-conditional distributions, effectively addressing the data and label shifts that occur between the two domains. To handle the class-aware OT efficiently, we propose an amortization solution that employs deep neural networks to formulate the transportation probabilities and the cost function. Additionally, we propose minimizing class-aware Higher-order Moment Matching (HMM) to align the corresponding class regions on the source and target domains. The class-aware HMM component offers an economical computational approach for accurately evaluating the HMM distance between the two distributions. Extensive experiments on benchmark datasets demonstrate that our proposed method significantly outperforms existing state-of-the-art baselines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Combined track finding with GNN &amp; CKF</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-16016</link>
-    <guid isPermaLink="false">arxiv:2401.16016</guid>
-    <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lukas Heinrich et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The application of Graph Neural Networks (GNN) in track reconstruction is a promising approach to cope with the challenges arising at the High-Luminosity upgrade of the Large Hadron Collider (HL-LHC). GNNs show good track-finding performance in high-multiplicity scenarios and are naturally parallelizable on heterogeneous compute architectures. Typical high-energy-physics detectors have high resolution in the innermost layers to support vertex reconstruction but lower resolution in the outer parts. GNNs mainly rely on 3D space-point information, which can cause reduced track-finding performance in the outer regions. In this contribution, we present a novel combination of GNN-based track finding with the classical Combinatorial Kalman Filter (CKF) algorithm to circumvent this issue: The GNN resolves the track candidates in the inner pixel region, where 3D space points can represent measurements very well. These candidates are then picked up by the CKF in the outer regions, where the CKF performs well even for 1D measurements. Using the ACTS infrastructure, we present a proof of concept based on truth tracking in the pixels as well as a dedicated GNN pipeline trained on tt̅ events with pile-up 200 in the OpenDataDetector.</p>]]></description>
-  </item>
-
-  <item>
-    <title>MMD-Regularized Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2011-05001</link>
-    <guid isPermaLink="false">arxiv:2011.05001</guid>
-    <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyushi Manupriya et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the unbalanced optimal transport (UOT) problem, where the marginal constraints are enforced using Maximum Mean Discrepancy (MMD) regularization. Our work is motivated by the observation that the literature on UOT is focused on regularization based on ϕ-divergence (e.g., KL divergence). Despite the popularity of MMD, its role as a regularizer in the context of UOT seems less understood. We begin by deriving a specific dual of MMD-regularized UOT (MMD-UOT), which helps us prove several useful properties. One interesting outcome of this duality result is that MMD-UOT induces novel metrics, which not only lift the ground metric like the Wasserstein but are also sample-wise efficient to estimate like the MMD. Further, for real-world applications involving non-discrete measures, we present an estimator for the transport plan that is supported only on the given (m) samples. Under certain conditions, we prove that the estimation error with this finitely-supported transport plan is also 𝒪(1/√(m)). As far as we know, such error bounds that are free from the curse of dimensionality are not known for ϕ-divergence regularized UOT. Finally, we discuss how the proposed estimator can be computed efficiently using accelerated gradient descent. Our experiments show that MMD-UOT consistently outperforms popular baselines, including KL-regularized UOT and MMD, in diverse machine learning applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Ultrametric Trees for Optimal Transport Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2210-12288</link>
-    <guid isPermaLink="false">arxiv:2210.12288</guid>
-    <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport provides a metric which quantifies the dissimilarity between probability measures. For measures supported in discrete metric spaces, finding the optimal transport distance has cubic time complexity in the size of the space. However, measures supported on trees admit a closed-form optimal transport that can be computed in linear time. In this paper, we aim to find an optimal tree structure for a given discrete metric space so that the tree-Wasserstein distance approximates the optimal transport distance in the original space. One of our key ideas is to cast the problem in ultrametric spaces. This helps us optimize over the space of ultrametric trees &ndash; a mixed-discrete and continuous optimization problem &ndash; via projected gradient decent over the space of ultrametric matrices. During optimization, we project the parameters to the ultrametric space via a hierarchical minimum spanning tree algorithm, equivalent to the closest projection to ultrametrics under the supremum norm. Experimental results on real datasets show that our approach outperforms previous approaches (e.g. Flowtree, Quadtree) in approximating optimal transport distances. Finally, experiments on synthetic data generated on ground truth trees show that our algorithm can accurately uncover the underlying trees.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Returning The Favour: When Regression Benefits From Probabilistic Causal Knowledge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-11214</link>
+    <guid isPermaLink="false">arxiv:2301.11214</guid>
+    <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shahine Bouabid et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>A directed acyclic graph (DAG) provides valuable prior knowledge that is often discarded in regression tasks in machine learning. We show that the independences arising from the presence of collider structures in DAGs provide meaningful inductive biases, which constrain the regression hypothesis space and improve predictive performance. We introduce collider regression, a framework to incorporate probabilistic causal knowledge from a collider in a regression problem. When the hypothesis space is a reproducing kernel Hilbert space, we prove a strictly positive generalisation benefit under mild assumptions and provide closed-form estimators of the empirical risk minimiser. Experiments on synthetic and climate model data demonstrate performance gains of the proposed methodology.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Mirror Sinkhorn: Fast Online Optimization on Transport Polytopes</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-10420</link>
+    <guid isPermaLink="false">arxiv:2211.10420</guid>
+    <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marin Ballu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Optimal transport is an important tool in machine learning, allowing to capture geometric properties of the data through a linear program on transport polytopes. We present a single-loop optimization algorithm for minimizing general convex objectives on these domains, utilizing the principles of Sinkhorn matrix scaling and mirror descent. The proposed algorithm is robust to noise, and can be used in an online setting. We provide theoretical guarantees for convex objectives and experimental results showcasing it effectiveness on both synthetic and real-world data.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Mutual Wasserstein Discrepancy Minimization for Sequential Recommendation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-12197</link>
+    <guid isPermaLink="false">arxiv:2301.12197</guid>
+    <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziwei Fan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Self-supervised sequential recommendation significantly improves recommendation performance by maximizing mutual information with well-designed data augmentations. However, the mutual information estimation is based on the calculation of Kullback Leibler divergence with several limitations, including asymmetrical estimation, the exponential need of the sample size, and training instability. Also, existing data augmentations are mostly stochastic and can potentially break sequential correlations with random modifications. These two issues motivate us to investigate an alternative robust mutual information measurement capable of modeling uncertainty and alleviating KL divergence limitations. To this end, we propose a novel self-supervised learning framework based on Mutual WasserStein discrepancy minimization MStein for the sequential recommendation. We propose the Wasserstein Discrepancy Measurement to measure the mutual information between augmented sequences. Wasserstein Discrepancy Measurement builds upon the 2-Wasserstein distance, which is more robust, more efficient in small batch sizes, and able to model the uncertainty of stochastic augmentation processes. We also propose a novel contrastive learning loss based on Wasserstein Discrepancy Measurement. Extensive experiments on four benchmark datasets demonstrate the effectiveness of MStein over baselines. More quantitative analyses show the robustness against perturbations and training efficiency in batch size. Finally, improvements analysis indicates better representations of popular users or items with significant uncertainty. The source code is at https://github.com/zfan20/MStein.</p>]]></description>
+  </item>
 
   <item>
     <title>Vector Quantized Wasserstein Auto-Encoder</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tom Dooney et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Simulating time-domain observations of gravitational wave (GW) detector environments will allow for a better understanding of GW sources, augment datasets for GW signal detection and help in characterizing the noise of the detectors, leading to better physics. This paper presents a novel approach to simulating fixed-length time-domain signals using a three-player Wasserstein Generative Adversarial Network (WGAN), called DVGAN, that includes an auxiliary discriminator that discriminates on the derivatives of input signals. An ablation study is used to compare the effects of including adversarial feedback from an auxiliary derivative discriminator with a vanilla two-player WGAN. We show that discriminating on derivatives can stabilize the learning of GAN components on 1D continuous signals during their training phase. This results in smoother generated signals that are less distinguishable from real samples and better capture the distributions of the training data. DVGAN is also used to simulate real transient noise events captured in the advanced LIGO GW detector.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Rectified Flow: A Marginal Preserving Approach to Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-14577</link>
-    <guid isPermaLink="false">arxiv:2209.14577</guid>
-    <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiang Liu</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We present a flow-based approach to the optimal transport (OT) problem between two continuous distributions π_0,π_1 on ℝ^d, of minimizing a transport cost 𝔼[c(X_1-X_0)] in the set of couplings (X_0,X_1) whose marginal distributions on X_0,X_1 equals π_0,π_1, respectively, where c is a cost function. Our method iteratively constructs a sequence of neural ordinary differentiable equations (ODE), each learned by solving a simple unconstrained regression problem, which monotonically reduce the transport cost while automatically preserving the marginal constraints. This yields a monotonic interior approach that traverses inside the set of valid couplings to decrease the transport cost, which distinguishes itself from most existing approaches that enforce the coupling constraints from the outside. The main idea of the method draws from rectified flow, a recent approach that simultaneously decreases the whole family of transport costs induced by convex functions c (and is hence multi-objective in nature), but is not tailored to minimize a specific transport cost. Our method is a single-object variant of rectified flow that guarantees to solve the OT problem for a fixed, user-specified convex cost function c.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Efficiency-Envy Trade-Off via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-15416</link>
-    <guid isPermaLink="false">arxiv:2209.15416</guid>
-    <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steven Yin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We consider the problem of allocating a distribution of items to n recipients where each recipient has to be allocated a fixed, prespecified fraction of all items, while ensuring that each recipient does not experience too much envy. We show that this problem can be formulated as a variant of the semi-discrete optimal transport (OT) problem, whose solution structure in this case has a concise representation and a simple geometric interpretation. Unlike existing literature that treats envy-freeness as a hard constraint, our formulation allows us to \emph{optimally} trade off efficiency and envy continuously. Additionally, we study the statistical properties of the space of our OT based allocation policies by showing a polynomial bound on the number of samples needed to approximate the optimal solution from samples. Our approach is suitable for large-scale fair allocation problems such as the blood donation matching problem, and we show numerically that it performs well on a prior realistic data simulator.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Amortized Projection Optimization for Sliced Wasserstein Generative Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2203-13417</link>
-    <guid isPermaLink="false">arxiv:2203.13417</guid>
-    <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Seeking informative projecting directions has been an important task in utilizing sliced Wasserstein distance in applications. However, finding these directions usually requires an iterative optimization procedure over the space of projecting directions, which is computationally expensive. Moreover, the computational issue is even more severe in deep learning applications, where computing the distance between two mini-batch probability measures is repeated several times. This nested loop has been one of the main challenges that prevent the usage of sliced Wasserstein distances based on good projections in practice. To address this challenge, we propose to utilize the learning-to-optimize technique or amortized optimization to predict the informative direction of any given two mini-batch probability measures. To the best of our knowledge, this is the first work that bridges amortized optimization and sliced Wasserstein generative models. In particular, we derive linear amortized models, generalized linear amortized models, and non-linear amortized models which are corresponding to three types of novel mini-batch losses, named amortized sliced Wasserstein. We demonstrate the favorable performance of the proposed sliced losses in deep generative modeling on standard benchmark datasets.</p>]]></description>
   </item>
 
 </channel>

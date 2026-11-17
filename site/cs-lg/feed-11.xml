@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>On the complexity of the optimal transport problem with graph-structured cost</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2110-00627</link>
+    <guid isPermaLink="false">arxiv:2110.00627</guid>
+    <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiaojiao Fan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multi-marginal optimal transport (MOT) is a generalization of optimal transport to multiple marginals. Optimal transport has evolved into an important tool in many machine learning applications, and its multi-marginal extension opens up for addressing new challenges in the field of machine learning. However, the usage of MOT has been largely impeded by its computational complexity which scales exponentially in the number of marginals. Fortunately, in many applications, such as barycenter or interpolation problems, the cost function adheres to structures, which has recently been exploited for developing efficient computational methods. In this work we derive computational bounds for these methods. With m marginal distributions supported on n points, we provide a Õ(d(G)m n²ε⁻²⁾ bound for a ε-accuracy when the problem is associated with a tree with diameter d(G). For the special case of the Wasserstein barycenter problem, which corresponds to a star-shaped tree, our bound is in alignment with the existing complexity bound for it.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Nonparametric mixture MLEs under Gaussian-smoothed optimal transport distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2112-02421</link>
+    <guid isPermaLink="false">arxiv:2112.02421</guid>
+    <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fang Han et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Gaussian-smoothed optimal transport (GOT) framework, pioneered in Goldfeld et al. (2020) and followed up by a series of subsequent papers, has quickly caught attention among researchers in statistics, machine learning, information theory, and related fields. One key observation made therein is that, by adapting to the GOT framework instead of its unsmoothed counterpart, the curse of dimensionality for using the empirical measure to approximate the true data generating distribution can be lifted. The current paper shows that a related observation applies to the estimation of nonparametric mixing distributions in discrete exponential family models, where under the GOT cost the estimation accuracy of the nonparametric MLE can be accelerated to a polynomial rate. This is in sharp contrast to the classical sub-polynomial rates based on unsmoothed metrics, which cannot be improved from an information-theoretical perspective. A key step in our analysis is the establishment of a new Jackson-type approximation bound of Gaussian-convoluted Lipschitz functions. This insight bridges existing techniques of analyzing the nonparametric MLEs and the new GOT framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein barycenters are NP-hard to compute</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2101-01100</link>
+    <guid isPermaLink="false">arxiv:2101.01100</guid>
+    <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason M. Altschuler et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Computing Wasserstein barycenters (a.k.a. Optimal Transport barycenters) is a fundamental problem in geometry which has recently attracted considerable attention due to many applications in data science. While there exist polynomial-time algorithms in any fixed dimension, all known running times suffer exponentially in the dimension. It is an open question whether this exponential dependence is improvable to a polynomial dependence. This paper proves that unless P=NP, the answer is no. This uncovers a &ldquo;curse of dimensionality&rdquo; for Wasserstein barycenter computation which does not occur for Optimal Transport computation. Moreover, our hardness results for computing Wasserstein barycenters extend to approximate computation, to seemingly simple cases of the problem, and to averaging probability distributions in other Optimal Transport metrics.</p>]]></description>
+  </item>
 
   <item>
     <title>Towards a method to anticipate dark matter signals with deep learning at the LHC</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Tong Lin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We introduce a new method for training generative adversarial networks by applying the Wasserstein-2 metric proximal on the generators. The approach is based on Wasserstein information geometry. It defines a parametrization invariant natural gradient by pulling back optimal transport structures from probability space to parameter space. We obtain easy-to-implement iterative regularizers for the parameter updates of implicit deep generative models. Our experiments demonstrate that this method improves the speed and stability of training in terms of wall-clock time and Fréchet Inception Distance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Jet tagging in the Lund plane with graph networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2012-08526</link>
-    <guid isPermaLink="false">arxiv:2012.08526</guid>
-    <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Frédéric A. Dreyer et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Lund plane, jet tagging, boosted objects, top tagging, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The identification of boosted heavy particles such as top quarks or vector bosons is one of the key problems arising in experimental studies at the Large Hadron Collider. In this article, we introduce LundNet, a novel jet tagging method which relies on graph neural networks and an efficient description of the radiation patterns within a jet to optimally disentangle signatures of boosted objects from background events. We apply this framework to a number of different benchmarks, showing significantly improved performance for top tagging compared to existing state-of-the-art algorithms. We study the robustness of the LundNet taggers to non-perturbative and detector effects, and show how kinematic cuts in the Lund plane can mitigate overfitting of the neural network to model-dependent contributions. Finally, we consider the computational complexity of this method and its scaling as a function of kinematic Lund plane cuts, showing an order of magnitude improvement in speed over previous graph-based taggers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-05176</link>
-    <guid isPermaLink="false">arxiv:2102.05176</guid>
-    <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tomáš Chobola et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>MetaDL Challenge 2020 focused on image classification tasks in few-shot settings. This paper describes second best submission in the competition. Our meta learning approach modifies the distribution of classes in a latent space produced by a backbone network for each class in order to better follow the Gaussian distribution. After this operation which we call Latent Space Transform algorithm, centers of classes are further aligned in an iterative fashion of the Expectation Maximisation algorithm to utilize information in unlabeled data that are often provided on top of few labelled instances. For this task, we utilize optimal transport mapping using the Sinkhorn algorithm. Our experiments show that this approach outperforms previous works as well as other variants of the algorithm, using K-Nearest Neighbour algorithm, Gaussian Mixture Models, etc.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On the Existence of Optimal Transport Gradient for Learning Generative Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-05542</link>
-    <guid isPermaLink="false">arxiv:2102.05542</guid>
-    <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Houdard et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The use of optimal transport cost for learning generative models has become popular with Wasserstein Generative Adversarial Networks (WGAN). Training of WGAN relies on a theoretical background: the calculation of the gradient of the optimal transport cost with respect to the generative model parameters. We first demonstrate that such gradient may not be defined, which can result in numerical instabilities during gradient-based optimization. We address this issue by stating a valid differentiation theorem in the case of entropic regularized transport and specify conditions under which existence is ensured. By exploiting the discrete nature of empirical data, we formulate the gradient in a semi-discrete setting and propose an algorithm for the optimization of the generative model parameters. Finally, we illustrate numerically the advantage of the proposed framework.</p>]]></description>
   </item>
 
 </channel>

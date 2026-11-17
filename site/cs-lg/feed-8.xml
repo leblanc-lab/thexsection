@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Combined track finding with GNN &amp; CKF</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-16016</link>
+    <guid isPermaLink="false">arxiv:2401.16016</guid>
+    <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lukas Heinrich et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The application of Graph Neural Networks (GNN) in track reconstruction is a promising approach to cope with the challenges arising at the High-Luminosity upgrade of the Large Hadron Collider (HL-LHC). GNNs show good track-finding performance in high-multiplicity scenarios and are naturally parallelizable on heterogeneous compute architectures. Typical high-energy-physics detectors have high resolution in the innermost layers to support vertex reconstruction but lower resolution in the outer parts. GNNs mainly rely on 3D space-point information, which can cause reduced track-finding performance in the outer regions. In this contribution, we present a novel combination of GNN-based track finding with the classical Combinatorial Kalman Filter (CKF) algorithm to circumvent this issue: The GNN resolves the track candidates in the inner pixel region, where 3D space points can represent measurements very well. These candidates are then picked up by the CKF in the outer regions, where the CKF performs well even for 1D measurements. Using the ACTS infrastructure, we present a proof of concept based on truth tracking in the pixels as well as a dedicated GNN pipeline trained on tt̅ events with pile-up 200 in the OpenDataDetector.</p>]]></description>
+  </item>
+
+  <item>
+    <title>MMD-Regularized Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2011-05001</link>
+    <guid isPermaLink="false">arxiv:2011.05001</guid>
+    <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piyushi Manupriya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the unbalanced optimal transport (UOT) problem, where the marginal constraints are enforced using Maximum Mean Discrepancy (MMD) regularization. Our work is motivated by the observation that the literature on UOT is focused on regularization based on ϕ-divergence (e.g., KL divergence). Despite the popularity of MMD, its role as a regularizer in the context of UOT seems less understood. We begin by deriving a specific dual of MMD-regularized UOT (MMD-UOT), which helps us prove several useful properties. One interesting outcome of this duality result is that MMD-UOT induces novel metrics, which not only lift the ground metric like the Wasserstein but are also sample-wise efficient to estimate like the MMD. Further, for real-world applications involving non-discrete measures, we present an estimator for the transport plan that is supported only on the given (m) samples. Under certain conditions, we prove that the estimation error with this finitely-supported transport plan is also 𝒪(1/√(m)). As far as we know, such error bounds that are free from the curse of dimensionality are not known for ϕ-divergence regularized UOT. Finally, we discuss how the proposed estimator can be computed efficiently using accelerated gradient descent. Our experiments show that MMD-UOT consistently outperforms popular baselines, including KL-regularized UOT and MMD, in diverse machine learning applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning Ultrametric Trees for Optimal Transport Regression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2210-12288</link>
+    <guid isPermaLink="false">arxiv:2210.12288</guid>
+    <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samantha Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport provides a metric which quantifies the dissimilarity between probability measures. For measures supported in discrete metric spaces, finding the optimal transport distance has cubic time complexity in the size of the space. However, measures supported on trees admit a closed-form optimal transport that can be computed in linear time. In this paper, we aim to find an optimal tree structure for a given discrete metric space so that the tree-Wasserstein distance approximates the optimal transport distance in the original space. One of our key ideas is to cast the problem in ultrametric spaces. This helps us optimize over the space of ultrametric trees &ndash; a mixed-discrete and continuous optimization problem &ndash; via projected gradient decent over the space of ultrametric matrices. During optimization, we project the parameters to the ultrametric space via a hierarchical minimum spanning tree algorithm, equivalent to the closest projection to ultrametrics under the supremum norm. Experimental results on real datasets show that our approach outperforms previous approaches (e.g. Flowtree, Quadtree) in approximating optimal transport distances. Finally, experiments on synthetic data generated on ground truth trees show that our algorithm can accurately uncover the underlying trees.</p>]]></description>
+  </item>
 
   <item>
     <title>Representation Disentaglement via Regularization by Causal Identification</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arthur Charpentier et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>The insurance industry is heavily reliant on predictions of risks based on characteristics of potential customers. Although the use of said models is common, researchers have long pointed out that such practices perpetuate discrimination based on sensitive features such as gender or race. Given that such discrimination can often be attributed to historical data biases, an elimination or at least mitigation is desirable. With the shift from more traditional models to machine-learning based predictions, calls for greater mitigation have grown anew, as simply excluding sensitive variables in the pricing process can be shown to be ineffective. In this article, we first investigate why predictions are a necessity within the industry and why correcting biases is not as straightforward as simply identifying a sensitive variable. We then propose to ease the biases through the use of Wasserstein barycenters instead of simple scaling. To demonstrate the effects and effectiveness of the approach we employ it on real data and discuss its implications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Returning The Favour: When Regression Benefits From Probabilistic Causal Knowledge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-11214</link>
-    <guid isPermaLink="false">arxiv:2301.11214</guid>
-    <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shahine Bouabid et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>A directed acyclic graph (DAG) provides valuable prior knowledge that is often discarded in regression tasks in machine learning. We show that the independences arising from the presence of collider structures in DAGs provide meaningful inductive biases, which constrain the regression hypothesis space and improve predictive performance. We introduce collider regression, a framework to incorporate probabilistic causal knowledge from a collider in a regression problem. When the hypothesis space is a reproducing kernel Hilbert space, we prove a strictly positive generalisation benefit under mild assumptions and provide closed-form estimators of the empirical risk minimiser. Experiments on synthetic and climate model data demonstrate performance gains of the proposed methodology.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Mirror Sinkhorn: Fast Online Optimization on Transport Polytopes</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2211-10420</link>
-    <guid isPermaLink="false">arxiv:2211.10420</guid>
-    <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marin Ballu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Optimal transport is an important tool in machine learning, allowing to capture geometric properties of the data through a linear program on transport polytopes. We present a single-loop optimization algorithm for minimizing general convex objectives on these domains, utilizing the principles of Sinkhorn matrix scaling and mirror descent. The proposed algorithm is robust to noise, and can be used in an online setting. We provide theoretical guarantees for convex objectives and experimental results showcasing it effectiveness on both synthetic and real-world data.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Mutual Wasserstein Discrepancy Minimization for Sequential Recommendation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2301-12197</link>
-    <guid isPermaLink="false">arxiv:2301.12197</guid>
-    <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziwei Fan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Self-supervised sequential recommendation significantly improves recommendation performance by maximizing mutual information with well-designed data augmentations. However, the mutual information estimation is based on the calculation of Kullback Leibler divergence with several limitations, including asymmetrical estimation, the exponential need of the sample size, and training instability. Also, existing data augmentations are mostly stochastic and can potentially break sequential correlations with random modifications. These two issues motivate us to investigate an alternative robust mutual information measurement capable of modeling uncertainty and alleviating KL divergence limitations. To this end, we propose a novel self-supervised learning framework based on Mutual WasserStein discrepancy minimization MStein for the sequential recommendation. We propose the Wasserstein Discrepancy Measurement to measure the mutual information between augmented sequences. Wasserstein Discrepancy Measurement builds upon the 2-Wasserstein distance, which is more robust, more efficient in small batch sizes, and able to model the uncertainty of stochastic augmentation processes. We also propose a novel contrastive learning loss based on Wasserstein Discrepancy Measurement. Extensive experiments on four benchmark datasets demonstrate the effectiveness of MStein over baselines. More quantitative analyses show the robustness against perturbations and training efficiency in batch size. Finally, improvements analysis indicates better representations of popular users or items with significant uncertainty. The source code is at https://github.com/zfan20/MStein.</p>]]></description>
   </item>
 
 </channel>
