@@ -7,7 +7,87 @@
   <description>New experimental high-energy physics papers</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Integer Quantization of Graph Neural Networks for Real-Time FPGA Track Finding</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-28144</link>
+    <guid isPermaLink="false">arxiv:2609.28144</guid>
+    <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Cardini et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>Real-time track finding for displaced-muon signatures in the CMS Level-1 trigger must operate under strict fixed-latency constraints of 12.5 μs while processing high-throughput detector data. Because muon hits map naturally onto sparse, irregular graphs, graph neural networks (GNNs) are attractive candidates; however, mapping message-passing models to field-programmable gate arrays (FPGAs) requires careful co-design of numerical precision, microarchitecture, and high-level synthesis (HLS) implementation. This work presents a reproducible, bit-exact workflow bridging GNN design and FPGA prototyping for fixed-latency inference. The methodology is demonstrated by implementing a two-layer GraphSAGE network onto an XCVU13P FPGA, using the Cora citation network as a fixed-size benchmark for firmware evaluation that decouples deployment feasibility from the physics task. Starting from a 32-bit floating-point reference that exceeds the available FPGA resource budget, we derive an integer-only datapath through post-training quantization (INT8 weights and activations, INT32 biases), a power-of-two scale approximation that replaces rescaling multipliers with arithmetic shifts, and data-driven bit-width narrowing. Every stage is validated bit-exactly against a Python integer emulator in Vitis HLS C-simulation. The optimized INT8 power-of-two design achieves an inference latency of 19 clock cycles (52.8 ns at the nominal 360 MHz clock) at 20\% DSP, 6\% FF, and 27\% LUT utilization, with 75.0±1.1\% accuracy compared to the 78.0±0.8\% for FP32. Accuracy is reported as the average across multiple training seeds. The resulting workflow establishes a concrete, transferable path toward fixed-latency GNN-based track reconstruction in the CMS Level-1 trigger.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Search for boosted vector boson scattering W^±W^±H production in final states with same-sign leptons and b-jets in proton-proton collisions at √(s)=13 TeV with the ATLAS detector</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25153</link>
+    <guid isPermaLink="false">arxiv:2609.25153</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>A search for the electroweak production of a Higgs boson in association with a same-sign W boson pair and two forward jets (W^±W^±Hjj) is presented. The full Run 2 proton-proton collision dataset recorded at a center-of-mass energy of √(s)=13 TeV by the ATLAS detector at the Large Hadron Collider is used, corresponding to an integrated luminosity of 140 fb⁻¹. The search targets events where both W bosons decay leptonically, yielding a final state with two same-sign charged leptons, missing transverse momentum, and a Higgs boson candidate. The high-momentum Higgs-boson candidate decaying into a bb̅ pair is reconstructed as a single large-radius jet. This process provides direct sensitivity to the quartic WWHH interaction. Possible deviations from the Standard Model prediction are parameterized through the coupling modifier κ_WW, where κ_WW=1 corresponds to the Standard Model. No significant excess over the Standard Model prediction is observed. Upper limits at the 95% confidence level are set on the W^±W^±Hjj production cross-section as a function of κ_WW. Observed (expected) values of κ_WW outside the interval -2.1 &lt; κ_WW &lt; 4.1 (-1.9 &lt; κ_WW &lt; 3.9) are excluded.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Observation of η(2600) and Threshold Enhancements in the ΛΛ̅ System</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25158</link>
+    <guid isPermaLink="false">arxiv:2609.25158</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">BESIII Collaboration et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>Using 2712.4 ±14.3 million ψ(3686) events collected with the BESIII detector, the ΛΛ̅ system produced in ψ(3686) radiative decays is studied. A model-independent partial wave analysis reveals a significant threshold enhancement structure dominated by the ¹S_0 and ³P_0 partial waves, corresponding to J^PC = 0⁻⁺ and 0⁺⁺, respectively. In addition, a new pseudoscalar resonance, designated as η(2600), is observed in the ¹S_0 partial wave with a mass value consistent with the previously reported X(2600) state, which represents the heaviest light meson observed to date. These results enhance our understanding of baryon-antibaryon threshold dynamics and the pseudoscalar light hadron spectroscopy.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discovery of an unexpectedly light and narrow beauty-strange state</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25178</link>
+    <guid isPermaLink="false">arxiv:2609.25178</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">LHCb collaboration et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>As the essential building blocks of visible matter, hadrons have traditionally been classified by the quark model as mesons composed of quark-antiquark pairs and baryons built from three valence quarks. Yet, this classical picture does not account for the intricate chiral dynamics of the strong force and the emergence of exotic multi-quark hadrons. While experimental evidence for such unconventional dynamics has surfaced in the charm sector, the open-beauty system remains the long-sought frontier for testing the universality of these mechanisms. Here the observation of a new resonance in the beauty-strange sector with a global significance exceeding seven standard deviations is reported using proton-proton collision data recorded by the Large Hadron Collider beauty (LHCb) experiment at the European Organization for Nuclear Research (CERN). It exhibits a narrow natural width and a substantial mass deficit compared to the conventional quark model predictions. This result marks the first observation of a nonconventional single-beauty hadron, providing crucial insights into the chiral dynamics of the strong interaction and heavy-quark spin symmetry in the exotic domain.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast Timing at Colliders: From Scintillator Hodoscopes to MicroPattern Arrays</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25358</link>
+    <guid isPermaLink="false">arxiv:2609.25358</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sebastian N. White</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>We give a select overview of charged particle timing at colliders. Roughly speaking, three eras capture the evolution of timing arrays. While luminosity and multiplicity dictate the detector technologies, there is also a need to review the various approaches to signal capture and processing, and their role in changing conditions for calibration. For the current era&ndash;the High-Luminosity LHC upgrades&ndash;the technique of dual-threshold timing can significantly simplify the crucial correction for amplitude walk.This correction often spans a time range an order of magnitude larger than the target resolution. Furthermore, because operating conditions vary in the high radiation environment, calibration can no longer be thought of as a one-time procedure. The TOFHIR2C ASIC designed for a CMS upgrade can be configured to provide dual threshold timing. In this report, we use this capability to demonstrate the power of this technique suitable for our new era.}</p>]]></description>
+  </item>
+
+  <item>
+    <title>Measurement of the Ω_b⁻ baryon lifetime</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25370</link>
+    <guid isPermaLink="false">arxiv:2609.25370</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">LHCb collaboration et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>The lifetime ratio r_τ≡τ_Ω_b⁻/τ_Ξ_b⁻ between the Ω_b⁻ and Ξ_b⁻ baryons is measured using a sample of pp collision data corresponding to an integrated luminosity of 6 fb⁻¹ and collected by the LHCb experiment during LHC Run 2 (2015-2018). The ratio r_τ is measured in two sets of decays modes, (Ω_b⁻,Ξ_b⁻⁾→(Ω_c⁰π⁻,Ξ_c⁰π⁻⁾ and (Ω_b⁻,Ξ_b⁻⁾→(J/ψΩ⁻, J/ψΞ⁻⁾, with (Ω_c⁰,Ξ_c⁰⁾→pK⁻K⁻π⁺, (Ω⁻,Ξ⁻⁾→(Λ⁰ K⁻,Λ⁰π⁻⁾, Λ⁰→pπ⁻ and J/ψ→μ⁺μ⁻. The measured r_τ values are averaged and combined with Run 1 (2011-2012) measurements in the same decay modes to obtain r_τ = 1.109±0.055±0.010. Multiplying by the known Ξ_b⁻ lifetime results in the Ω_b⁻ lifetime τ_Ω_b⁻ = 1.751±0.089±0.022 ps, where the uncertainties are statistical and systematic. This measurement improves on the precision of the Ω_b⁻ lifetime by about a factor of two over the previous world average. The value of r_τ is in agreement with the most recent theoretical predictions from the heavy quark expansion framework.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Spin-spin correlations in ΛΛ̅ pair production at the SPD experiment at NICA</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25383</link>
+    <guid isPermaLink="false">arxiv:2609.25383</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">D. Gubachev et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>Recent measurements by the STAR collaboration have demonstrated that spin correlations of ΛΛ̅ pairs provide sensitivity to the spin structure of ss̅ pairs and to spin transfer during hadronization.These results, together with recent CMS measurements at higher energies, open a new avenue for studying spin dynamics in the transition from partons to hadrons. A feasibility study of spin-spin correlations in ΛΛ̅ pairs at the SPD experiment at NICA is presented for pp and dd collisions at √(s_NN)≤27~GeV. The expected correlation P_ΛΛ̅ is estimated within the SU(6) and Burkardt&ndash;Jaffe models for a spin-triplet ss̅ pair. The kinematic properties of the process are analysed, and the suitability of the detector for such measurements is evaluated using a full simulation. The SPD experiment provides an opportunity to investigate the relative contributions of non-perturbative and perturbative ss̅-production mechanisms and, with polarized beams, to study the role of initial-state polarization in spin-dependent partonic dynamics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Search for the ¹⁶O(ppp) →¹³C π⁺ π⁺ e⁺ Decay Mode in Super-Kamiokande Using Machine Learning Techniques</title>
+    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2609-25681</link>
+    <guid isPermaLink="false">arxiv:2609.25681</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kamiokande Collaboration et al.</dc:creator>
+    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
+<p>We report a new partial lifetime limit of 4.2 ×10³² years for the trinucleon decay mode ¹⁶O(ppp) →¹³C π⁺ π⁺ e⁺, obtained from a search conducted using the Super-Kamiokande detector with 0.401 megaton-years of exposure across five operational periods (SK-I: 1996&ndash;2001, SK-II: 2002&ndash;2005, SK-III: 2006&ndash;2008, SK-IV: 2008&ndash;2018, SK-V: 2019&ndash;2020). This represents an improvement of six orders of magnitude over previous experimental constraints. The analysis utilizes a convolutional neural network (CNN) incorporating an attention mechanism&mdash;a computational technique that enables the model to focus on the most relevant regions of Cherenkov ring patterns&mdash;to enhance event classification, thereby improving the sensitivity of the search. This is the first application of a CNN to a nucleon decay search in Super-Kamiokande. Furthermore, the large dataset available in Super-Kamiokande (hereafter &ldquo;SK&rdquo;) strengthens the statistical power of the study, enabling a more stringent constraint than those set by prior experiments.</p>]]></description>
+  </item>
 
   <item>
     <title>Feasibility Study of e⁺e⁻→η_cJ/ψ Production and Fully-Charmed Tetraquark Searches at STCF</title>
@@ -1921,86 +2001,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TEXONO Collaboration et al.</dc:creator>
     <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
 <p>We present results of a search for Axion-Like Particles (ALPs) produced via Primakoff and Compton-like scattering channels, using data acquired with TEXONO experiment at the Kuo-Sheng Nuclear Power Station. The analysis is based on 278.91 days of reactor-ON and 43.60 days of reactor-OFF data. These datasets were collected using a 1.06 kg high-purity germanium detector located 28 m from a 2.9 GW reactor core. No significant excess is observed in the residual spectrum from the reactor-ON and reactor-OFF data subtraction. Using data acquired with low-background germanium detectors, upper limits on both the ALP-photon (g_aγγ) and ALP-electron (g_aee) couplings are derived for ALP masses ranging from 1 eV to 3 MeV at 90\% confidence level. Since both g_aγγ and g_aee couplings contribute to ALP production and detection, a combined analysis is performed by treating both channels as active parameters.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Study of tt̅H and tH production in the H→ττ channel in pp collisions at √(s)=13 TeV and 13.6 TeV with the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-27276</link>
-    <guid isPermaLink="false">arxiv:2607.27276</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A study of the production of the Higgs boson in association with either a top-quark pair (tt̅H) or a single top quark (tH) in the τ-lepton-pair decay channel is presented. The analysis relies on final states featuring fully hadronic decays of the top quarks and the τ-leptons. It employs data samples of proton&ndash;proton collisions at √(s)=13 and 13.6 TeV recorded with the ATLAS detector at the CERN Large Hadron Collider and corresponding to integrated luminosities of 140 fb⁻¹ and 161 fb⁻¹, respectively. The measured signal strength (μ), defined as the measured cross-section normalised to the Standard Model prediction, is μ_tt̅H=1.51⁺⁰.71_-0.62 for tt̅H and μ_tH=-0.4⁺⁵.6_-5.1 for tH. Additionally, the tt̅H cross-section is measured differentially in three bins of the Higgs boson transverse momentum in the simplified template cross-section framework.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for heavy Majorana neutrinos in vector boson scattering with τ-lepton final states with the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-27307</link>
-    <guid isPermaLink="false">arxiv:2607.27307</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A search for heavy Majorana neutrinos coupling to third-generation leptons in vector boson scattering at the LHC is presented. The search is performed in the final state with a same-sign ττ, eτ or μτ pair using data of proton&ndash;proton collisions at √(s) = 13 TeV, recorded with the ATLAS detector and corresponding to an integrated luminosity of 140 fb⁻¹. No significant deviation from the Standard Model background is observed. Constraints on the squared mixing matrix element between the τ-lepton and the heavy Majorana neutrino (|V_τN|²) are derived for heavy Majorana neutrino masses between 92 GeV and 6.5 TeV. Additionally, two-dimensional constraints on (|V_eN|², |V_τN|²) and (|V_μN|², |V_τN|²) are set. These results improve the limits on heavy Majorana neutrinos coupling to third-generation leptons for heavy Majorana neutrino masses above 1.0 TeV, and extend the exclusion limits to an unexplored mass range above 1.5 TeV.</p>]]></description>
-  </item>
-
-  <item>
-    <title>First Experimental Bounds on Transverse Plasmon Solar Axions with ANAIS-112</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-27346</link>
-    <guid isPermaLink="false">arxiv:2607.27346</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">S. J. Hollick et al.</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>Solar axion-like particles (ALPs) can be resonantly produced through the conversion of transverse plasmons in the magnetic field of the solar interior, introducing a production mechanism complementary to the conventional Primakoff process. In this Letter, we report the first experimental search for solar ALPs produced through this mechanism. Using an exposure of 625.75 kg×yr from ANAIS-112, we search for the annual modulation of the flux induced by the variation of the Earth&ndash;Sun distance, assuming detection through inverse Primakoff conversion in the detector. Modulation amplitudes fitted in 1 keV bins between 1&ndash;20 keV are consistent with the absence of modulation, yielding the first constraints on the axion&ndash;photon coupling that include the resonant transverse-plasmon flux, g_aγ &lt; 1.32×10⁻⁹ GeV⁻¹ (90\% C.L.) at m_a ≃150 eV. This previously unexplored production channel extends the sensitivity of ANAIS-112 in the mass range 35&ndash;280 eV, where, for the expected solar magnetic-field models, the transverse-plasmon flux exceeds the Primakoff flux by up to two orders of magnitude.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for tH production in the H →ττ decay mode, and a combination with other searches, using pp collisions at 13 TeV and 13.6 TeV with the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-27708</link>
-    <guid isPermaLink="false">arxiv:2607.27708</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A search for the production of a Higgs boson in association with a single top quark in multi-lepton final states including τ-leptons is presented, using an integrated luminosity of 140 fb⁻¹ of proton-proton collision data at a centre-of-mass energy of √(s) = 13 TeV collected by the ATLAS detector at the LHC. The analysis targets the H →ττ decay, where at least one τ-lepton decays hadronically, to indicate the presence of the Higgs boson. No significant excess over the expected background is observed, and an observed (expected) upper limit at the 95% confidence level on the signal strength is set at 8.6 (9.3) times the Standard Model prediction. This measurement is combined with previous publications of the ATLAS Collaboration targeting the same production process but in different final states, using 140 fb⁻¹ of proton-proton collision data at √(s) = 13 TeV and 164 fb⁻¹ at 13.6 TeV. The combined measurement of the signal strength yields μ_tH = 3.3⁺¹.7_-1.5 = 3.3 ±1.2 (stat.)⁺¹.1_-1.0 (sys.) times the Standard Model expectation, corresponding to an observed (expected) tH significance of 2.3 (0.8) standard deviations. The combined observed (expected) upper limit at the 95% confidence level on the signal strength is set at 6.1 (2.7) times the Standard Model prediction. This combination represents the most precise measurement of tH production to date.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Comment on the preprint: First Limits on Axion Dark Matter from a DALI Prototype arXiv:2603.21951</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-28095</link>
-    <guid isPermaLink="false">arxiv:2607.28095</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Erika Garutti et al.</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>We report on an independent assessment of the sensitivity of the DALI setup to axion-like particle (ALP) dark matter, as described in [1]. Our analysys is based on the information provided in the preprint and using the formalism developed within the MADMAX collaboration. We do not identify any mode below 12 GHz with significant coupling to the axion field to account for the reported sensitivity. We provide recommendations for assessing the axion coupling of electromagnetic modes in dielectric haloscope experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for high-mass dilepton resonances in pp collisions at √(s)=13.6 TeV combined with 13 TeV results using the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-28334</link>
-    <guid isPermaLink="false">arxiv:2607.28334</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A search for spin-1 ee and μμ resonances in the high-mass range is presented. Two proton-proton (pp) collision datasets recorded by the ATLAS detector at CERN&rsquo;s Large Hadron Collider are utilised. A search is first performed using a dataset recorded at a center-of-mass energy of 13.6 TeV between 2022 and 2024, corresponding to an integrated luminosity of 165 fb⁻¹. The results of this search are subsequently statistically combined with results using 140 fb⁻¹ of data recorded between 2015 and 2018 at 13 TeV. The dilepton invariant mass spectrum is fitted with a functional form to model the contribution from Standard Model background processes. A generic spin-1 signal shape is used to determine the significance of observed deviations from the background expectation. No significant deviation is observed, therefore upper limits are placed at the 95% confidence level on the fiducial cross-section times branching ratio for a spin-1 resonance with various width hypotheses, individually for ee, μμ final states and for their combination. From the combined 13 TeV and 13.6 TeV results, mass limits are extracted for various benchmark model bosons, including a Z^&rsquo;_SSM (5.5 TeV), Z^&rsquo;_χ (5.1 TeV) and Z^&rsquo;_ψ (4.8 TeV). These results represent the most stringent limits to date on high-mass dilepton resonances on the considered Z&rsquo; models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for pair-production of vector-like T quarks decaying into a top quark and a spin-0 particle in the diphoton final state in proton proton collisions at √(s)=13 TeV with the ATLAS detector</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-28381</link>
-    <guid isPermaLink="false">arxiv:2607.28381</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A search for pair-produced vector-like T quarks (VLQs) is presented. Each VLQ is assumed to decay into a top quark and an exotic (pseudo)scalar S. The search targets events with at least one resonant S →γγ decay and large summed transverse momentum and missing transverse momentum from other final-state particles. The analysis uses data from pp collisions at a centre-of-mass energy of √(s) = 13 TeV recorded by the ATLAS detector from 2015 to 2018 and corresponding to an integrated luminosity of 140 fb⁻¹. This is the first VLQ search performed in this final state. No significant excess over the Standard Model background is observed. The analysis is model-independent to a large extent but targets cascade decays into final states with electroweak bosons or tt̅. Results are provided in the form of upper limits on the fiducial cross-section times branching ratio as a function of the masses of the VLQ and the spin-0 particle. The fiducial volume is defined by kinematic requirements on the photons from the spin-0 decay.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A measurement of the Higgs boson mass in the diphoton decay channel in proton-proton collisions at √(s) = 13 TeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/hep-ex/2026.html#a2607-28396</link>
-    <guid isPermaLink="false">arxiv:2607.28396</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>New hep-ex announcement — original abstract; no AI summary.</em></p>
-<p>A measurement of the Higgs boson mass in the diphoton decay channel is performed using proton-proton collision data at a center-of-mass energy of 13 TeV. The data set recorded with the CMS detector between 2016 and 2018 is used, corresponding to an integrated luminosity of 138 fb⁻¹. A refined detector calibration and new analysis techniques are employed to improve the precision of the results compared to earlier measurements. The Higgs boson mass is measured to be m_H = 125.13 ± 0.15 GeV = 125.13 ± 0.10 (stat) ± 0.12 (syst) GeV. In addition, a combination with the mass measurement at center-of-mass energies of 7 and 8 TeV in the diphoton final state is performed resulting in m_H = 125.06 ± 0.14 GeV = 125.06 ± 0.09 (stat) ± 0.11 (syst) GeV.</p>]]></description>
   </item>
 
 </channel>

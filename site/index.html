@@ -34,86 +34,120 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Monday, November 16, 2026</h1>
+  <h1 class="issue-date">Tuesday, November 17, 2026</h1>
   <div class="meta">
-    <span class="count">49 papers read</span>
-    <span class="chip">Exclusive B at three loops</span><span class="chip">Lattice and LCSR form factors</span><span class="chip">Non-unique bubble hydrodynamics</span><span class="chip">Dark-matter bounds recalibrated</span>
+    <span class="count">65 papers read</span>
+    <span class="chip">V_ud from EFT</span><span class="chip">nucleation rates hold up</span><span class="chip">mass-ordering bookkeeping</span><span class="chip">charm hadrons, both sides</span><span class="chip">proofs and fits audited</span>
   </div>
-  <h2 id="btogammaellnu-goes-to-three-loops"><span class="arithmatex">\(B\to\gamma\ell\nu\)</span> goes to three loops</h2>
-<p>Three groups posted pieces of an N³LO prediction for <span class="arithmatex">\(B^-\to\gamma\ell^-\bar\nu\)</span> on the same day. Two compute the photonic radiative jet function at three loops. Two obtain the three-loop Lange–Neubert kernel for the <span class="arithmatex">\(B\)</span>-meson LCDA, one by direct calculation and one by a conformal bootstrap that needs no new three-loop diagrams. The practical payoff is a cleaner extraction of <span class="arithmatex">\(\lambda_B\)</span>. This carries 11-13&rsquo;s loop-count run from QED and <span class="arithmatex">\(V\)</span>+jet into heavy-flavor SCET. Elsewhere: FCC-ee tomography joins the <span class="arithmatex">\(\kappa_\lambda\)</span> question, bubble-wall hydrodynamics turns out to be non-unique, and dark-matter limits move in both directions.</p>
-<h2 id="themes">Themes</h2>
-<h3 id="exclusive-b-at-n3lo">Exclusive B at N³LO</h3>
-<p>Huang et al. <a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a> find that the largest three-loop effect comes from the jet function, not the recently computed hard correction. Liu et al. <a href="https://arxiv.org/abs/2611.18206">arXiv:2611.18206</a> compute both the kernel and the jet function using a regulator-free IR subtraction, which enables N³LL resummation. Ji et al. <a href="https://arxiv.org/abs/2611.18204">arXiv:2611.18204</a> bootstrap the kernel and verify RG invariance of the factorization formula. None of the abstracts reports a comparison of the overlapping results, so that is the first thing to look for.</p>
-<h3 id="form-factors-a-sign-and-a-v_cb-input">Form factors: a sign and a <span class="arithmatex">\(|V_{cb}|\)</span> input</h3>
-<p>Zhang et al. <a href="https://arxiv.org/abs/2611.17800">arXiv:2611.17800</a> find that the <span class="arithmatex">\(K^+\to\pi^+\ell^+\ell^-\)</span> vector form factor is negative, <span class="arithmatex">\(V(0)&lt;0\)</span>. The significance is 5.8–7.9σ at a heavy charm mass, falling to 2.0–3.4σ after extrapolation to physical charm. Qu et al. <a href="https://arxiv.org/abs/2611.17945">arXiv:2611.17945</a> combine LCSR at large recoil with FNAL/MILC and HPQCD lattice data in BGL to extract <span class="arithmatex">\(|V_{cb}|\)</span> and <span class="arithmatex">\(R(D)\)</span>. The abstract quotes neither number, so it&rsquo;s unclear which side of September&rsquo;s inclusive-vs-exclusive <span class="arithmatex">\(|V_{cb}|\)</span> split it lands on.</p>
-<h3 id="bubble-walls-without-a-unique-profile">Bubble walls without a unique profile</h3>
-<p>Barni et al. <a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a> <a href="https://arxiv.org/abs/2611.17411">arXiv:2611.17411</a> show that when the sound speeds on either side of the wall differ, <span class="arithmatex">\((\xi_w,\alpha_N)\)</span> no longer determines a single stationary flow. A new &ldquo;mixed hybrid&rdquo; class appears, and its GW spectrum is mimicked by ordinary hybrids. Specifying the microphysics removes the ambiguity, and the public code HydróDex implements the full classification. This sharpens 11-13&rsquo;s warning that a GW forecast is only as good as its transition dynamics. Formaggio et al. <a href="https://arxiv.org/abs/2611.17401">arXiv:2611.17401</a> add that a first-order QCD transition needs <span class="arithmatex">\(b\gtrsim0.028\)</span>, which then has to be diluted by ~6.5 e-folds of little inflation.</p>
-<h3 id="dark-matter-bounds-in-both-directions">Dark-matter bounds, in both directions</h3>
+  <h2 id="v_ud-meets-its-contact-terms"><span class="arithmatex">\(V_{ud}\)</span> meets its contact terms</h2>
+<p>The most consequential posting is a pair from Novario et al. <a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>. They give the first EFT evaluation of <span class="arithmatex">\(\bar\delta_{\rm NS}\)</span> across 12 superallowed transitions, using coupled-cluster calculations benchmarked against QMC.</p>
 <ul>
-<li><strong>Supernova core heating.</strong> Suezaki et al. <a href="https://arxiv.org/abs/2611.17922">arXiv:2611.17922</a> count each DM particle once, which weakens the Fornax <span class="arithmatex">\(\sigma_{\nu\chi}\)</span> limit by ~50×. Applied to low-surface-brightness galaxies, the same method gives <span class="arithmatex">\(8.5\times10^{-25}\)</span> cm² at 1 GeV.</li>
-<li><strong>Supernova cooling.</strong> Cappiello et al. <a href="https://arxiv.org/abs/2611.17604">arXiv:2611.17604</a> show that resonant <span class="arithmatex">\(s\)</span>-channel scattering on neutrinos can trap neutrinophilic DM and weaken or evade cooling bounds.</li>
-<li><strong>Superfluid helium.</strong> TESSERACT Collaboration et al. <a href="https://arxiv.org/abs/2611.17365">arXiv:2611.17365</a> measure &gt;99% loss of the phonon signal into superfluid ⁴He, which rules out submerged sensors.</li>
+<li><strong>Scale uncertainty:</strong> now negligible.</li>
+<li><strong>Three-body terms:</strong> some <span class="arithmatex">\(\mathcal{O}(\alpha^2)\)</span> nuclear matrix elements matter, because they grow coherently as <span class="arithmatex">\(Z^2\)</span>.</li>
+<li><strong>The floor:</strong> short-distance contact terms in the magnetic Gamow–Teller pieces. One combination fits from data. The other is strongly correlated with <span class="arithmatex">\(V_{ud}\)</span> itself, which leaves <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span>.</li>
 </ul>
-<p>This is the week&rsquo;s audit habit, now applied to limits.</p>
+<p>The abstracts do not say where this leaves first-row unitarity, so the reader has to open the paper for the verdict. Elsewhere, nucleation theory turns out more robust than this week&rsquo;s GW-forecast worries suggested, and the mass-ordering decomposition gets a general formalism.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="nucleation-rates-checked-from-two-sides">Nucleation rates, checked from two sides</h3>
+<p>Zhou et al. <a href="https://arxiv.org/abs/2611.18794">arXiv:2611.18794</a> compute the thermal nucleation rate nonperturbatively on the lattice, using multicanonical HMC plus real-time Langevin, and take the continuum limit. The result differs from one loop by only ~8% in a 3D real scalar theory. Gil et al. <a href="https://arxiv.org/abs/2611.20938">arXiv:2611.20938</a> add higher-dimensional operators to the bounce consistently, prove field-redefinition invariance, and find modest corrections for moderately strong transitions. This week&rsquo;s thread was that GW forecasts are hostage to transition dynamics. Today&rsquo;s evidence suggests the rate is not the weak link; the ambiguity sits further downstream, in wall hydrodynamics (Barni, 11-16).</p>
+<h3 id="mass-ordering-as-bookkeeping">Mass ordering, as bookkeeping</h3>
+<p>Cerrone et al. <a href="https://arxiv.org/abs/2611.21252">arXiv:2611.21252</a> show that each experiment&rsquo;s wrong-ordering <span class="arithmatex">\(\Delta m^2_{31}\)</span> is a precision-weighted average over its bins. The weights depend on detector resolution, so each experiment reduces to one intercept, and how much two experiments help each other depends on how far apart their intercepts sit. This is the general machinery behind Machado&rsquo;s 11-11 finding that the 1.9σ hint is a balance of opposing pulls. Cao et al. <a href="https://arxiv.org/abs/2611.19416">arXiv:2611.19416</a> give a cautionary companion: FRB+CMB <span class="arithmatex">\(\sum m_\nu\)</span> limits loosen to 0.3–0.4 eV once <span class="arithmatex">\(w_0w_a\)</span> is allowed.</p>
+<h3 id="charm-hadrons-measured-and-computed">Charm hadrons, measured and computed</h3>
+<ul>
+<li><strong>Strong phases:</strong> BESIII, presented by Zeng <a href="https://arxiv.org/abs/2611.18944">arXiv:2611.18944</a>, updates strong-phase inputs for <span class="arithmatex">\(\gamma\)</span> and charm mixing. The talk also reports the first observation of <span class="arithmatex">\(C\)</span>-even <span class="arithmatex">\(D\bar D\)</span> pairs above <span class="arithmatex">\(\psi(3770)\)</span>.</li>
+<li><strong><span class="arithmatex">\(D_{s1}(2460)\)</span> structure:</strong> Belle et al. <a href="https://arxiv.org/abs/2611.20531">arXiv:2611.20531</a> observe <span class="arithmatex">\(D_{s1}(2460)^+\to D_s^{*+}\gamma\)</span> at &gt;10σ, with a ratio to <span class="arithmatex">\(D_s^+\gamma\)</span> of 0.74±0.08 (stat. and syst. combined).</li>
+<li><strong>Lifetimes:</strong> Chia-Wei Liu <a href="https://arxiv.org/abs/2611.20747">arXiv:2611.20747</a> computes dimension-seven spectator terms at NLO. They make the published <span class="arithmatex">\(D^+\)</span> width positive, giving <span class="arithmatex">\(\tau(D^+)=1.41^{+\infty}_{-0.76}\)</span> ps. That upper error is not a typo.</li>
+</ul>
+<h3 id="proofs-and-fits-audited">Proofs and fits, audited</h3>
+<ul>
+<li><strong>Lattice chiral fermions:</strong> Lu et al. <a href="https://arxiv.org/abs/2611.20084">arXiv:2611.20084</a> show the overlap Weyl fermion behind Lüscher&rsquo;s construction is not reflection positive in 2D or 4D at finite spacing. That bears directly on the Witten/Hsu/Liu chiral-lattice thread from 11-05 and 11-13.</li>
+<li><strong>GUT no-go:</strong> Chen et al. <a href="https://arxiv.org/abs/2611.20386">arXiv:2611.20386</a> formalize a SUSY-GUT <span class="arithmatex">\(R\)</span>-symmetry no-go in Lean 4, and find and close a gap in the published proof along the way.</li>
+<li><strong>Likelihood fits:</strong> Zhu et al. <a href="https://arxiv.org/abs/2611.19355">arXiv:2611.19355</a> are covered under Worth a look.</li>
+</ul>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a></strong> (Huang et al.): The paper to open from the trio. It identifies where the three-loop weight sits and connects it directly to the <span class="arithmatex">\(\lambda_B\)</span> extraction.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.18136">arXiv:2611.18136</a></strong> (Altomonte et al.): <span class="arithmatex">\(Z\)</span> density-matrix tomography in <span class="arithmatex">\(ZH\)</span> at FCC-ee gives <span class="arithmatex">\(\kappa_\lambda\)</span> to ±2.9 independent of the rate, close to the quantum-Fisher-information limit of about ±1. It reports magic in three measures, which partly answers Shen&rsquo;s measure-dependence audit (11-09).</li>
-<li><strong><a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a></strong> (Barni et al.): The standard two-parameter description of bubble flows can be ambiguous, and dense matter is where that ambiguity is physically realized.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.17800">arXiv:2611.17800</a></strong> (Zhang et al.): The first near-physical-pion lattice determination of the sign of <span class="arithmatex">\(V(0)\)</span>. Read the charm extrapolation before quoting the significance.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.17416">arXiv:2611.17416</a></strong> (Tong): What a detector actually sees after monopole–fermion scattering. Hard tracks carry the standard quantum numbers, and a soft cloud of pairs carries the exotic ones.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a></strong> (Novario et al.): The long version of the <span class="arithmatex">\(V_{ud}\)</span> result, with an explicit roadmap for which nuclear input would break the contact-term degeneracy.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.21252">arXiv:2611.21252</a></strong> (Cerrone et al.): Extends the mass-ordering sum rule to atmospheric neutrinos in matter. For DeepCore, the intercept separation from JUNO is nearly independent of <span class="arithmatex">\(\delta_{CP}\)</span> and <span class="arithmatex">\(\theta_{23}\)</span>.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a></strong> (Foster et al.): A gravitational &ldquo;Auger effect&rdquo; drains the first superradiant level of the QCD axion after saturation. It can suppress continuous-GW signals, and the authors say existing spin-down limits need revising.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.20356">arXiv:2611.20356</a></strong> (Ahmed et al.): Closed-form triple-exchange bispectrum. The Planck template overestimates the amplitude by up to 1.8× and biases the mass low.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.19355">arXiv:2611.19355</a></strong> (Zhu et al.): Adaptive integrators can make the normalization jump discontinuously, producing artificially low NLLs. The motivating case is a CMS fully-charmed tetraquark search, and tighter tolerances alone don&rsquo;t fix sharply localized terms.</li>
 </ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.17651">arXiv:2611.17651</a></strong> <em><span class="arithmatex">\(^8\)</span>B Solar Neutrino Measurements of Solar Core Size and Temperature…</em> — Kamiokande Collaboration et al. (hep-ex). Combined with SNO, the core&rsquo;s outer bound is 0.268 <span class="arithmatex">\(R_\odot\)</span> (B16+GS98). The quoted central temperature assumes nominal core density and size.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.17422">arXiv:2611.17422</a></strong> <em>The Full-Shape Analysis of the Fading Dark Sector Model</em> — Georges Obied et al. (astro-ph.CO). The model is preferred over ΛCDM at 4.1σ and beats <span class="arithmatex">\(w_0w_a\)</span> by <span class="arithmatex">\(\Delta\chi^2=-4\)</span> at equal parameter count.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.17990">arXiv:2611.17990</a></strong> <em>ESME stays positive: event generation with positive weights</em> — Melissa van Beekveld (hep-ph). Positive-definite NLO+PS matching in PanScales, a structural fix for the negative weights that Frederix&rsquo;s Born spreading (11-05) reduced.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.18290">arXiv:2611.18290</a></strong> <em>Are hybrid hydrodynamic models missing soft-pion physics?</em> — Osvaldo Ferreira (ExTrEMe Collaboration) et al. (nucl-th). No parameter set fits ALICE&rsquo;s low-<span class="arithmatex">\(p_T\)</span> pions, while kaons and protons are fine.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.19498">arXiv:2611.19498</a></strong> <em><span class="arithmatex">\(K_1^*(1870)\)</span> and <span class="arithmatex">\(3S\)</span>-<span class="arithmatex">\(2D\)</span> mixing in the strange meson sector</em> — Ting-Yan Li et al. (hep-ph). The first interpretation of BESIII&rsquo;s 11-10 state. A <span class="arithmatex">\(3S\)</span>–<span class="arithmatex">\(2D\)</span> mixture gets the mass and width right, but the authors flag that the predicted <span class="arithmatex">\(K\eta'\)</span> mode is subordinate, which sits awkwardly with the channel the state was seen in.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.20762">arXiv:2611.20762</a></strong> <em>Muon and Tau Anomalies and <span class="arithmatex">\(\Delta\alpha_{had}^{(5)}(M_Z^2)\)</span> in the Standard Model</em> — Stephan Narison (hep-ph). A data-driven HVP review that still finds a 2.1–3.5σ <span class="arithmatex">\(g-2\)</span> window and questions the White Paper&rsquo;s lattice averaging.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.19831">arXiv:2611.19831</a></strong> <em>Exploring X17 Couplings through Meson Dalitz Decays</em> — Xuan Wang et al. (hep-ph). Pure-vector X17 couplings are in tension with charm Dalitz data, and axial <span class="arithmatex">\(|g^A_{c,s}|\sim10^{-3}\)</span> is needed.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.21338">arXiv:2611.21338</a></strong> <em>Generating a simple silicon detector simulation with an open-weight large language model</em> — Charlie H R Bamber et al. (hep-ex). A local 27B model with MCP tools; 42% of runs match the reference simulation.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<h3 id="arxiv261118202-next-to-next-to-next-to-leading-order-prediction-for-the-radiative-b_u-togammaell-barnu_ell-decay-yong-kang-huang-et-al"><a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a> — Next-to-Next-to-Next-to-Leading-Order Prediction for the Radiative <span class="arithmatex">\(B_u^-\to\gamma\ell^-\bar\nu_\ell\)</span> Decay (Yong-Kang Huang et al.)</h3>
-<p><strong>What they did.</strong> The photonic radiative jet function <span class="arithmatex">\(J_\gamma\)</span> is now known at three loops, which completes the leading-power N³LO ingredients for <span class="arithmatex">\(B^-\to\gamma\ell\bar\nu\)</span>. Two independent Feynman-gauge calculations agree: one from the SCET operator definition (1372 diagrams, 68 masters) and one from the hard-collinear region of full QCD. The masters were obtained both analytically and with AMFlow to 80 digits. A new photon-singlet colour structure, <span class="arithmatex">\(d^{abc}d^{abc}\)</span>, appears with weight <span class="arithmatex">\(Q_\Sigma/Q_{\rm ext}=1\)</span> for <span class="arithmatex">\(u,d,s,c\)</span>. It is finite and independent of <span class="arithmatex">\(L\)</span>.</p>
-<p>At <span class="arithmatex">\(\mu=1.5\)</span> GeV, the one-, two- and three-loop terms shift <span class="arithmatex">\(J_\gamma\)</span> by −9.8%, −5.0% and −3.4%. The form factor at <span class="arithmatex">\(E_\gamma=2.2\)</span> GeV moves 0.340 → 0.318 → 0.300 from NLO+LL to N³LO+NNLL. Using Belle&rsquo;s <span class="arithmatex">\(R_\pi\)</span>, the extracted <span class="arithmatex">\(\lambda_B(1\,\text{GeV})\)</span> goes 501 → 462 → 430 MeV. The new jet coefficient alone accounts for 449 → 430 MeV.</p>
-<p><strong>Why it matters.</strong> This supports the digest&rsquo;s headline: the three-loop jet term, not the hard term, drives the latest shift in <span class="arithmatex">\(\lambda_B\)</span>. All 27 logarithmic coefficients match the RG prediction built from the companion three-loop LN kernel (overlapping authors). No comparison with Liu et al.&rsquo;s independent jet function appears in the text.</p>
-<p><strong>Caveats.</strong>
-- The perturbative series decreases slowly.
-- The three-loop jet effect depends on the LCDA shape at fixed <span class="arithmatex">\(\lambda_B\)</span>: −4.2%, +2.5% and −5.8% for <span class="arithmatex">\(\alpha=2.0\)</span>, 1.7 and 2.5.
-- <span class="arithmatex">\(R_\pi\)</span> and <span class="arithmatex">\(R_\tau\)</span> give <span class="arithmatex">\(\lambda_B\)</span> values about 57 MeV apart.
-- The experimental input is weak: <span class="arithmatex">\(R_\pi=(1.7\pm1.4)\times10^{-2}\)</span>.</p>
-<h3 id="arxiv261118136-quantum-tomography-of-higgsstrahlung-higgs-boson-self-coupling-and-z-boson-anomalous-couplings-clelia-altomonte-et-al"><a href="https://arxiv.org/abs/2611.18136">arXiv:2611.18136</a> — Quantum tomography of Higgsstrahlung: Higgs boson self-coupling and <span class="arithmatex">\(Z\)</span> boson anomalous couplings (Clelia Altomonte et al.)</h3>
-<p><strong>What they did.</strong> The three <span class="arithmatex">\(\lambda_{hhh}\)</span> diagrams in <span class="arithmatex">\(e^+e^-\to ZH\)</span> are UV-finite as a set. They project onto only two structures:
-- a tree-level rescaling <span class="arithmatex">\(c(s)\)</span>, which sets the rate;
-- an effective CP-even coupling <span class="arithmatex">\(b_Z=\kappa_\lambda\beta(s)\)</span>, with <span class="arithmatex">\(\beta\approx5.6\times10^{-4}\)</span> at 240 GeV, which changes the <span class="arithmatex">\(Z\)</span> polarization.</p>
-<p>Since the normalized <span class="arithmatex">\(Z\)</span> density matrix is blind to <span class="arithmatex">\(c(s)\)</span>, tomography constrains <span class="arithmatex">\(\kappa_\lambda\)</span> independently of the rate:
-- <strong><span class="arithmatex">\(\kappa_\lambda\)</span>:</strong> ±3.9, or ±2.9 with full angular information. The quantum-Fisher-information limit is about ±1, while the rate alone gives 28%.
-- <strong>Anomalous couplings (no assumptions):</strong> bounds at the <span class="arithmatex">\(10^{-3}\)</span> level, e.g. <span class="arithmatex">\(\delta\,\mathrm{Re}\,b_Z=1.1\times10^{-3}\)</span>.
-- <strong>Rate-blind couplings:</strong> <span class="arithmatex">\(\mathrm{Im}\,b_Z\)</span> and <span class="arithmatex">\(\mathrm{Re}\,\tilde b_Z\)</span> are accessible only through the <span class="arithmatex">\(\hat T\)</span>-odd density-matrix entries.</p>
-<p><strong>Quantum observables.</strong> At 365 GeV and <span class="arithmatex">\(\theta=\pi/2\)</span>, the KCBS contextuality inequality is violated: 2.06 against the bound of 2. The inclusive state is neither contextual nor magic. The three magic measures disagree on where magic appears, and all are basis-dependent.</p>
-<p><strong>Caveats.</strong>
-- Signal versus SM background: the <span class="arithmatex">\(\kappa_\lambda\)</span>-independent SM loops generate <span class="arithmatex">\(\bar b\approx-5.5\times10^{-3}\)</span>, ten times the <span class="arithmatex">\(\kappa_\lambda\)</span> piece. The per-unit-<span class="arithmatex">\(\kappa_\lambda\)</span> Fano shifts (<span class="arithmatex">\(\sim10^{-4}\)</span>) are comparable to the assumed 10% theory uncertainty on that background.
-- Hard ISR is deferred to reconstruction.
-- The quantum properties are insensitive to the anomalous couplings, shifting by at most a few <span class="arithmatex">\(\times10^{-3}\)</span>.</p>
-<h3 id="arxiv261117402-microscopic-realizability-of-non-unique-bubble-hydrodynamics-giulio-barni-et-al"><a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a> — Microscopic Realizability of Non-unique Bubble Hydrodynamics (Giulio Barni et al.)</h3>
-<p><strong>What they did.</strong> The setup is a constant-sound-speed equation of state with <span class="arithmatex">\(c_+&gt;c_-\)</span>, i.e. a stiff phase ahead of the wall and a softer one behind it.
-- <strong>New flows:</strong> &ldquo;mixed hybrids&rdquo; appear for <span class="arithmatex">\(c_-&lt;\xi_w&lt;c_+\)</span>, with rarefactions on both sides of the wall.
-- <strong>Non-uniqueness:</strong> for larger hierarchies, the map from wall state to <span class="arithmatex">\((\xi_w,\alpha_N)\)</span> folds. This happens only on the direct-hybrid, inverse-detonation and MH⁻ branches, and the direct-hybrid onset threshold is given analytically.
-- <strong>Benchmark <span class="arithmatex">\((0.9,0.16)\)</span>:</strong> up to three profiles coexist at fixed <span class="arithmatex">\((\xi_w,\alpha_N)\)</span>, and inverse solutions reach <span class="arithmatex">\(\alpha_N\simeq0.35\)</span>.
-- <strong>Resolution:</strong> fixing the phase normalization <span class="arithmatex">\(\Psi_N\)</span> plus an entropy-production ratio <span class="arithmatex">\(\mathcal R\)</span> selects at most one profile.</p>
-<p><strong>Where the hierarchy can occur.</strong>
-- <strong>Thermal plasmas:</strong> <span class="arithmatex">\(c_+/c_-\simeq[\tfrac43\ln(m/T_+)]^{1/2}\)</span>. Fold onset needs <span class="arithmatex">\(m/T_+\approx70\)</span>, and a ratio of 5 needs <span class="arithmatex">\(m/T_+\sim10^9\)</span>.
-- <strong>SU(3) Yang–Mills:</strong> only superheated transitions place the softer phase behind the wall, giving <span class="arithmatex">\(c_+/c_-\lesssim2.8\)</span>, i.e. at most onset.
-- <strong>Finite density:</strong> <span class="arithmatex">\(\mu_+\gamma_+=\mu_-\gamma_-\)</span>, so any hierarchy needs only <span class="arithmatex">\(\mu_-\)</span> near the mass threshold. Free nucleons at saturation give <span class="arithmatex">\(c_-\approx0.16\)</span>, the benchmark value.</p>
-<p><strong>Why it matters.</strong> It sharpens the digest&rsquo;s point that GW forecasts inherit transition microphysics. For thermal early-universe plasmas the ambiguity is mostly academic; in neutron-star matter it may be real.</p>
-<p><strong>Caveats.</strong>
-- Sound speeds are taken as constant.
-- The finite-density case is treated only in the barotropic limit.
-- That <span class="arithmatex">\(\Psi_N\)</span> separates competing profiles is verified only for the benchmark.
-- No lattice data exist for metastable phases.</p>
+<h3 id="arxiv261118843-ab-initio-calculations-of-bardelta_rm-ns-and-extraction-of-v_ud-using-effective-field-theory-samuel-novario-et-al"><a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a> — Ab initio calculations of <span class="arithmatex">\(\bar\delta_{\rm NS}\)</span> and extraction of <span class="arithmatex">\(V_{ud}\)</span> using effective field theory (Samuel Novario et al.)</h3>
+<p>The result is a nuclear-structure floor of <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span>, about twice the <span class="arithmatex">\(3\times10^{-4}\)</span> quoted for the standard <span class="arithmatex">\(V_{ud}=0.97373(31)\)</span>. It comes from the second, unfitted combination of the contact LECs <span class="arithmatex">\(g^{NN}_{V1,2}\)</span> that renormalize the magnetic GT NMEs, which is strongly correlated with <span class="arithmatex">\(V_{ud}\)</span>.</p>
+<p>The main new input is coupled-cluster NMEs for all 12 transitions from <span class="arithmatex">\(^{10}\)</span>C to <span class="arithmatex">\(^{54}\)</span>Co, computed with the 1.8/2.0 (EM) and NNLO<span class="arithmatex">\(_{\rm sat}\)</span> interactions. The CC uncertainty combines CCSDT-1 triples corrections with <span class="arithmatex">\(N_{\max}\)</span> 8→10 convergence. Several other ingredients feed the analysis:
+- <strong>Three-body Fermi NMEs:</strong> The <span class="arithmatex">\(Z^2\)</span>-enhanced <span class="arithmatex">\(\mathcal{O}(\alpha^2)\)</span> terms come from a density approximation. It reaches <span class="arithmatex">\(|M^{+\rm 3b}_{F,p}|\sim200\)</span> for <span class="arithmatex">\(^{54}\)</span>Co and matches QMC (<span class="arithmatex">\(-18.6\)</span> vs. density estimates <span class="arithmatex">\(-17.7\)</span> to <span class="arithmatex">\(-20.3\)</span> for <span class="arithmatex">\(^{14}\)</span>O).
+- <strong>Single-nucleon input:</strong> <span class="arithmatex">\(g_V(m_n)=1.01143(12)\)</span>, with the γW-box choice worth <span class="arithmatex">\(7\times10^{-5}\)</span> in <span class="arithmatex">\(V_{ud}\)</span>.
+- <strong>Corrections to earlier work:</strong> The authors restore a missing <span class="arithmatex">\(\mathbf L^{\rm CM}\)</span> term and fix a sign error in the spin-orbit potential. Both changes are numerically non-negligible because of large cancellations.</p>
+<p>Caveats:
+- For <span class="arithmatex">\(^{10}\)</span>C, the CC <span class="arithmatex">\(M^{\rm mag}_{\rm GT,p}\)</span> is 30% below QMC. The authors suspect clustering or Hamiltonian differences, and say this degrades the <span class="arithmatex">\(V_{ud}\)</span> fit quality.
+- <span class="arithmatex">\(\bar\delta_C\)</span> is still taken from the traditional evaluation rather than computed ab initio.
+- The extracted text ends before the fit section, so neither the central <span class="arithmatex">\(V_{ud}\)</span> nor the first-row unitarity verdict could be checked here.</p>
+<h3 id="arxiv261121252-mass-ordering-synergies-and-the-role-of-the-detector-response-vanessa-cerrone-et-al"><a href="https://arxiv.org/abs/2611.21252">arXiv:2611.21252</a> — Mass ordering synergies and the role of the detector response (Vanessa Cerrone et al.)</h3>
+<p>The wrong-ordering solution of any experiment is an inverse-variance weighted average of per-bin preferred <span class="arithmatex">\(\Delta m^2_{31,\rm IO}\)</span>. Every experiment then reduces to one intercept <span class="arithmatex">\(b=\Delta m^2_{31,\rm IO}+\Delta m^2_{31,\rm NO}\)</span>, and pairwise synergy is <span class="arithmatex">\((b_A-b_B)^2/(\sigma_A^2+\sigma_B^2)\)</span>. Intercepts below are in units of <span class="arithmatex">\(10^{-6}\)</span> eV².</p>
+<table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>Intercept <span class="arithmatex">\(b\)</span></th>
+<th>Main dependence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JUNO</td>
+<td>25.7 at <span class="arithmatex">\(a_{\rm res}=2.61\%\)</span> (data: 27)</td>
+<td>Moves ~10 between 2% and 4% resolution</td>
+</tr>
+<tr>
+<td>Accelerators</td>
+<td><span class="arithmatex">\(103.8-11.6(\cos\delta_{CP}+\cos\delta^{\rm IO}_{CP})\)</span></td>
+<td><span class="arithmatex">\(\delta_{CP}\)</span></td>
+</tr>
+<tr>
+<td>DeepCore (<span class="arithmatex">\(\nu_\mu\)</span> disappearance, reference)</td>
+<td>119.7</td>
+<td><span class="arithmatex">\(\theta_{23}\)</span></td>
+</tr>
+<tr>
+<td>ORCA6</td>
+<td>~11 below DeepCore</td>
+<td>Mostly from the shower sample</td>
+</tr>
+</tbody>
+</table>
+<p>Above the MSW resonance the <span class="arithmatex">\(\nu_\mu\)</span> frequency is <span class="arithmatex">\(\delta_{CP}\)</span>-independent, so the atmospheric intercept barely moves with <span class="arithmatex">\(\delta_{CP}\)</span>. As a result, JUNO+DeepCore (all channels) synergy is nearly fixed. JUNO+NOvA synergy, by contrast, varies by about 2× with the true <span class="arithmatex">\(\delta_{CP}\)</span>.</p>
+<p>Caveats:
+- The analysis uses statistics only, with solar parameters and <span class="arithmatex">\(\theta_{13}\)</span> fixed.
+- DeepCore is modeled on the 21,402-event golden sample. The 9.3-yr CNN sample lies above the computed band.
+- The NOvA–DeepCore estimates are lower bounds.
+- Published uncertainties cannot yet separate the accelerator and DeepCore bands.</p>
+<h3 id="arxiv261118833-black-hole-superradiance-and-the-gravitational-auger-effect-joshua-w-foster-et-al"><a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a> — Black Hole Superradiance and the Gravitational Auger Effect (Joshua W. Foster et al.)</h3>
+<p>Newtonian self-gravity mediates <span class="arithmatex">\(211+211\to322+\)</span>BH transitions, with amplitude coefficient <span class="arithmatex">\(\mathcal I_G\simeq-0.0914\)</span>. That is ~50× the quartic coefficient <span class="arithmatex">\(\mathcal I_\lambda\simeq+0.00184\)</span>. The two have opposite signs because black-hole recoil cancels the uniform field and leaves only the tidal part.</p>
+<p>Self-gravity dominates for <span class="arithmatex">\(f&gt;f_\times\simeq6.1\times10^{16}\)</span> GeV <span class="arithmatex">\((\alpha/0.1)\)</span>. That puts the QCD axion permanently in the moderate self-coupling regime: cancellation would need <span class="arithmatex">\(\alpha\simeq0.6\)</span>, beyond where 211 is superradiant.</p>
+<p>The authors evolve a 33-level model for <span class="arithmatex">\(10\,M_\odot\)</span>, <span class="arithmatex">\(\chi_0=0.9\)</span>, <span class="arithmatex">\(\alpha_0=0.1\)</span>:
+- <strong>211 depletion:</strong> 211 drains to <span class="arithmatex">\(10^{-3}\)</span> of its peak within <span class="arithmatex">\(10^5\)</span> yr, versus <span class="arithmatex">\(5\times10^8\)</span> yr without scattering. The two-level estimates are <span class="arithmatex">\(T_{\rm SG}\sim0.3\)</span> yr against <span class="arithmatex">\(T_{\rm GW}\sim4\times10^5\)</span> yr at <span class="arithmatex">\(\alpha=0.1\)</span>.
+- <strong>Continuous-GW lines at aLIGO design sensitivity:</strong> 211 drops from up to <span class="arithmatex">\(10^4\)</span> lines to &lt;0.05. 322 drops from ~<span class="arithmatex">\(10^3\)</span> to &lt;0.1.
+- <strong>Spin-down:</strong> <span class="arithmatex">\(n44\)</span> overtones cap 322 at ≲<span class="arithmatex">\(10^{-4}\)</span> of the BH mass. 322 spin-down therefore starts earlier but proceeds slower.</p>
+<p>The spin-down nuance matters. The authors say the net effect on spin constraints is unclear and needs population studies. Only bounds using levels beyond 211 need revision; supermassive-BH 211-only limits are largely unaffected.</p>
+<p>Caveats: the treatment is hydrogenic <span class="arithmatex">\(\alpha\ll1\)</span> with Newtonian self-gravity. It neglects self-energy level shifts and GW cross-annihilation, and the rates are unreliable for <span class="arithmatex">\(\alpha_0&gt;0.2\)</span>–0.3.</p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-11-16.html"><span class="date">Monday, November 16, 2026</span></a>
+      <span class="themes"><span class="chip">Exclusive B at three loops</span><span class="chip">Lattice and LCSR form factors</span><span class="chip">Non-unique bubble hydrodynamics</span><span class="chip">Dark-matter bounds recalibrated</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-11-13.html"><span class="date">Friday, November 13, 2026</span></a>
@@ -145,11 +179,6 @@
       <span class="themes"><span class="chip">Chiral fermions on lattices</span><span class="chip">Tera-Z as arbiter</span><span class="chip">Axion readout hardware</span><span class="chip">What observables actually fix</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-11-04.html"><span class="date">Wednesday, November 4, 2026</span></a>
-      <span class="themes"><span class="chip">BaBar two-pion HVP</span><span class="chip">NRQCD at higher order</span><span class="chip">Old signals, closed windows</span><span class="chip">Light ions, density ordering</span><span class="chip">Low-energy weak mixing</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -159,7 +188,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-17 07:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-17 14:07 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
