@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Designing Observables for Measurements with Deep Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-08717</link>
+    <guid isPermaLink="false">arxiv:2310.08717</guid>
+    <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Owen Long et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman) — original abstract; no AI summary.</em></p>
+<p>Many analyses in particle and nuclear physics use simulations to infer fundamental, effective, or phenomenological parameters of the underlying physics models. When the inference is performed with unfolded cross sections, the observables are designed using physics intuition and heuristics. We propose to design targeted observables with machine learning. Unfolded, differential cross sections in a neural network output contain the most information about parameters of interest and can be well-measured by construction. The networks are trained using a custom loss function that rewards outputs that are sensitive to the parameter(s) of interest while simultaneously penalizing outputs that are different between particle-level and detector-level (to minimize detector distortions). We demonstrate this idea in simulation using two physics models for inclusive measurements in deep inelastic scattering. We find that the new approach is more sensitive than classical observables at distinguishing the two models and also has a reduced unfolding uncertainty due to the reduced detector distortions.</p>]]></description>
+  </item>
 
   <item>
     <title>A Riemannian Approach to Ground Metric Learning for Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huilin Qu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, ParticleNet, particle transformer) — original abstract; no AI summary.</em></p>
 <p>Jet tagging is a critical yet challenging classification task in particle physics. While deep learning has transformed jet tagging and significantly improved performance, the lack of a large-scale public dataset impedes further enhancement. In this work, we present JetClass, a new comprehensive dataset for jet tagging. The JetClass dataset consists of 100 M jets, about two orders of magnitude larger than existing public datasets. A total of 10 types of jets are simulated, including several types unexplored for tagging so far. Based on the large dataset, we propose a new Transformer-based architecture for jet tagging, called Particle Transformer (ParT). By incorporating pairwise particle interactions in the attention mechanism, ParT achieves higher tagging performance than a plain Transformer and surpasses the previous state-of-the-art, ParticleNet, by a large margin. The pre-trained ParT models, once fine-tuned, also substantially enhance the performance on two widely adopted jet tagging benchmarks. The dataset, code and models are publicly available at https://github.com/jet-universe/particle_transformer.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Class-aware Optimal Transport Approach with Higher-Order Moment Matching for Unsupervised Domain Adaptation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2401-15952</link>
-    <guid isPermaLink="false">arxiv:2401.15952</guid>
-    <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tuan Nguyen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Unsupervised domain adaptation (UDA) aims to transfer knowledge from a labeled source domain to an unlabeled target domain. In this paper, we introduce a novel approach called class-aware optimal transport (OT), which measures the OT distance between a distribution over the source class-conditional distributions and a mixture of source and target data distribution. Our class-aware OT leverages a cost function that determines the matching extent between a given data example and a source class-conditional distribution. By optimizing this cost function, we find the optimal matching between target examples and source class-conditional distributions, effectively addressing the data and label shifts that occur between the two domains. To handle the class-aware OT efficiently, we propose an amortization solution that employs deep neural networks to formulate the transportation probabilities and the cost function. Additionally, we propose minimizing class-aware Higher-order Moment Matching (HMM) to align the corresponding class regions on the source and target domains. The class-aware HMM component offers an economical computational approach for accurately evaluating the HMM distance between the two distributions. Extensive experiments on benchmark datasets demonstrate that our proposed method significantly outperforms existing state-of-the-art baselines.</p>]]></description>
   </item>
 
 </channel>

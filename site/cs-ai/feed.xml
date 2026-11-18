@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Learning Optimal Transport Plans Via Autoregressive Token Regression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2611-22218</link>
+    <guid isPermaLink="false">arxiv:2611.22218</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ivan Jaen Marquez et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal Transport (OT) provides a principled framework for finding the minimum cost coupling between probability distributions. Classical solvers remain the gold standard for this task. At the same time, OT is an ideal testbed for studying whether learning-based amortized models can internalize the structure of OT type problems. Here, ground-truth solutions are available and marginal constraints are explicitly defined. Also, exact discrete solutions have well-characterized sparsity. We describe ToR-OT, a transformer-based model that learns to predict discrete OT plans through autoregressive token regression. We reframe OT into a structured sequence generation task. ToR-OT decodes sparse transport plans as sequences instead of solving an optimization task at test time. We focus on three properties: (a) Zero-shot generalization: pretraining on a large synthetic corpus of OT instances allows a single model to generalize to unseen distribution pairs and heterogeneous cost metrics without retraining, (b) Sparse primal decoding: by exploiting the inherent sparsity in exact discrete OT solutions, the decoder predicts only nonzero entries (avoids dense coupling outputs), (c) Amortized inference: on low-dimensional discrete problems, ToR-OT gives accurate approximate plans and compares favorably with per-instance neural OT baselines. Overall, ToR-OT is not yet a replacement for classical solvers, but a step toward understanding how autoregressive transformers can learn structure of constrained optimization problems like OT.</p>]]></description>
+  </item>
 
   <item>
     <title>Reward-Driven Collider Physics Challenges for Self-Improving Agentic AI via Reinforcement Learning</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Diego F. Vasquez Plaza et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, b-jet, flavor tagging, jet flavor, quark jet, ParticleNet, LHC) — original abstract; no AI summary.</em></p>
 <p>Jet flavor tagging plays an important role in precise Standard Model measurement enabling the extraction of mass dependence in jet-quark interaction and quark-gluon plasma (QGP) interactions. They also enable inferring the nature of particles produced in high-energy particle collisions that contain heavy quarks. The classification of bottom jets is vital for exploring new Physics scenarios in proton-proton collisions. In this research, we present a hybrid deep learning architecture that integrates edge convolutions with transformer self-attention mechanisms, into one single architecture called the Edge Convolution Transformer (ECT) model for bottom-quark jet tagging. ECT processes track-level features (impact parameters, momentum, and their significances) alongside jet-level observables (vertex information and kinematics) to achieve state-of-the-art performance. The study utilizes the ATLAS simulation dataset. We demonstrate that ECT achieves 0.9333 AUC for b-jet versus combined charm and light jet discrimination, surpassing ParticleNet (0.8904 AUC) and the pure transformer baseline (0.9216 AUC). The model maintains inference latency below 0.060 ms per jet on modern GPUs, meeting the stringent requirements for real-time event selection at the LHC. Our results demonstrate that hybrid architectures combining local and global features offer superior performance for challenging jet classification tasks. The proposed architecture achieves good results in b-jet tagging, particularly excelling in charm jet rejection (the most challenging task), while maintaining competitive light-jet discrimination comparable to pure transformer models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sinkhorn Based Associative Memory Retrieval Using Spherical Hellinger Kantorovich Dynamics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-20656</link>
-    <guid isPermaLink="false">arxiv:2603.20656</guid>
-    <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aratrika Mustafi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We propose a dense associative memory for empirical measures (weighted point clouds). Stored patterns and queries are finitely supported probability measures, and retrieval is defined by minimizing a Hopfield-style log-sum-exp energy built from the debiased Sinkhorn divergence. We derive retrieval dynamics as a spherical Hellinger Kantorovich (SHK) gradient flow, which updates both support locations and weights. Discretizing the flow yields a deterministic algorithm that uses Sinkhorn potentials to compute barycentric transport steps and a multiplicative simplex reweighting. Under local separation and PL-type conditions we prove basin invariance, geometric convergence to a local minimizer, and a bound showing the minimizer remains close to the corresponding stored pattern. Under a random pattern model, we further show that these Sinkhorn basins are disjoint with high probability, implying exponential capacity in the ambient dimension. Experiments on synthetic Gaussian point-cloud memories demonstrate robust recovery from perturbed queries versus a Euclidean Hopfield-type baseline.</p>]]></description>
   </item>
 
 </channel>

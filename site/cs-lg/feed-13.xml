@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Adversarial Examples via Projected Sinkhorn Iterations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1902-07906</link>
+    <guid isPermaLink="false">arxiv:1902.07906</guid>
+    <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric Wong et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>A rapidly growing area of work has studied the existence of adversarial examples, datapoints which have been perturbed to fool a classifier, but the vast majority of these works have focused primarily on threat models defined by ℓ_p norm-bounded perturbations. In this paper, we propose a new threat model for adversarial attacks based on the Wasserstein distance. In the image classification setting, such distances measure the cost of moving pixel mass, which naturally cover &ldquo;standard&rdquo; image manipulations such as scaling, rotation, translation, and distortion (and can potentially be applied to other settings as well). To generate Wasserstein adversarial examples, we develop a procedure for projecting onto the Wasserstein ball, based upon a modified version of the Sinkhorn iteration. The resulting algorithm can successfully attack image classification models, bringing traditional CIFAR10 models down to 3% accuracy within a Wasserstein ball with radius 0.1 (i.e., moving 10% of the image mass 1 pixel), and we demonstrate that PGD-based adversarial training can improve this adversarial accuracy to 76%. In total, this work opens up a new direction of study in adversarial robustness, more formally considering convex metrics that accurately capture the invariances that we typically believe should exist in classifiers. Code for all experiments in the paper is available at https://github.com/locuslab/projected_sinkhorn.</p>]]></description>
+  </item>
 
   <item>
     <title>Screening Sinkhorn Algorithm for Regularized Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Arjovsky et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to other distances between distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Deep Neural Networks for Physics Analysis on low-level whole-detector data at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2017.html#a1711-03573</link>
-    <guid isPermaLink="false">arxiv:1711.03573</guid>
-    <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wahid Bhimji et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>There has been considerable recent activity applying deep convolutional neural nets (CNNs) to data from particle physics experiments. Current approaches on ATLAS/CMS have largely focussed on a subset of the calorimeter, and for identifying objects or particular particle types. We explore approaches that use the entire calorimeter, combined with track information, for directly conducting physics analyses: i.e. classifying events as known-physics background or new-physics signals. We use an existing RPV-Supersymmetry analysis as a case study and explore CNNs on multi-channel, high-resolution sparse images: applied on GPU and multi-node CPU architectures (including Knights Landing (KNL) Xeon Phi nodes) on the Cori supercomputer at NERSC.</p>]]></description>
   </item>
 
 </channel>

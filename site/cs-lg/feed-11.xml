@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FGOT: Graph Distances based on Filters and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2109-04442</link>
+    <guid isPermaLink="false">arxiv:2109.04442</guid>
+    <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hermina Petric Maretic et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Graph comparison deals with identifying similarities and dissimilarities between graphs. A major obstacle is the unknown alignment of graphs, as well as the lack of accurate and inexpensive comparison metrics. In this work we introduce the filter graph distance. It is an optimal transport based distance which drives graph comparison through the probability distribution of filtered graph signals. This creates a highly flexible distance, capable of prioritising different spectral information in observed graphs, offering a wide range of choices for a comparison metric. We tackle the problem of graph alignment by computing graph permutations that minimise our new filter distances, which implicitly solves the graph comparison problem. We then propose a new approximate cost function that circumvents many computational difficulties inherent to graph comparison and permits the exploitation of fast algorithms such as mirror gradient descent, without grossly sacrificing the performance. We finally propose a novel algorithm derived from a stochastic version of mirror gradient descent, which accommodates the non-convexity of the alignment problem, offering a good trade-off between performance accuracy and speed. The experiments on graph alignment and classification show that the flexibility gained through filter graph distances can have a significant impact on performance, while the difference in speed offered by the approximation cost makes the framework applicable in practical settings.</p>]]></description>
+  </item>
 
   <item>
     <title>On the complexity of the optimal transport problem with graph-structured cost</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arash Givchi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We consider constrained policy optimization in Reinforcement Learning, where the constraints are in form of marginals on state visitations and global action executions. Given these distributions, we formulate policy optimization as unbalanced optimal transport over the space of occupancy measures. We propose a general purpose RL objective based on Bregman divergence and optimize it using Dykstra&rsquo;s algorithm. The approach admits an actor-critic algorithm for when the state or action space is large, and only samples from the marginals are available. We discuss applications of our approach and provide demonstrations to show the effectiveness of our algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Proximal of GANs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-06862</link>
-    <guid isPermaLink="false">arxiv:2102.06862</guid>
-    <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Tong Lin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce a new method for training generative adversarial networks by applying the Wasserstein-2 metric proximal on the generators. The approach is based on Wasserstein information geometry. It defines a parametrization invariant natural gradient by pulling back optimal transport structures from probability space to parameter space. We obtain easy-to-implement iterative regularizers for the parameter updates of implicit deep generative models. Our experiments demonstrate that this method improves the speed and stability of training in terms of wall-clock time and Fréchet Inception Distance.</p>]]></description>
   </item>
 
 </channel>

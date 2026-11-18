@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>DVGAN: Stabilize Wasserstein GAN training for time-domain Gravitational Wave physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-13592</link>
+    <guid isPermaLink="false">arxiv:2209.13592</guid>
+    <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tom Dooney et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Simulating time-domain observations of gravitational wave (GW) detector environments will allow for a better understanding of GW sources, augment datasets for GW signal detection and help in characterizing the noise of the detectors, leading to better physics. This paper presents a novel approach to simulating fixed-length time-domain signals using a three-player Wasserstein Generative Adversarial Network (WGAN), called DVGAN, that includes an auxiliary discriminator that discriminates on the derivatives of input signals. An ablation study is used to compare the effects of including adversarial feedback from an auxiliary derivative discriminator with a vanilla two-player WGAN. We show that discriminating on derivatives can stabilize the learning of GAN components on 1D continuous signals during their training phase. This results in smoother generated signals that are less distinguishable from real samples and better capture the distributions of the training data. DVGAN is also used to simulate real transient noise events captured in the advanced LIGO GW detector.</p>]]></description>
+  </item>
 
   <item>
     <title>Rectified Flow: A Marginal Preserving Approach to Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keisuke Kawano et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We consider a general task called partial Wasserstein covering with the goal of providing information on what patterns are not being taken into account in a dataset (e.g., dataset used during development) compared with another dataset(e.g., dataset obtained from actual applications). We model this task as a discrete optimization problem with partial Wasserstein divergence as an objective function. Although this problem is NP-hard, we prove that it satisfies the submodular property, allowing us to use a greedy algorithm with a 0.63 approximation. However, the greedy algorithm is still inefficient because it requires solving linear programming for each objective function evaluation. To overcome this inefficiency, we propose quasi-greedy algorithms that consist of a series of acceleration techniques, such as sensitivity analysis based on strong duality and the so-called C-transform in the optimal transport field. Experimentally, we demonstrate that we can efficiently fill in the gaps between the two datasets and find missing scene in real driving scenes datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FGOT: Graph Distances based on Filters and Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2109-04442</link>
-    <guid isPermaLink="false">arxiv:2109.04442</guid>
-    <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hermina Petric Maretic et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Graph comparison deals with identifying similarities and dissimilarities between graphs. A major obstacle is the unknown alignment of graphs, as well as the lack of accurate and inexpensive comparison metrics. In this work we introduce the filter graph distance. It is an optimal transport based distance which drives graph comparison through the probability distribution of filtered graph signals. This creates a highly flexible distance, capable of prioritising different spectral information in observed graphs, offering a wide range of choices for a comparison metric. We tackle the problem of graph alignment by computing graph permutations that minimise our new filter distances, which implicitly solves the graph comparison problem. We then propose a new approximate cost function that circumvents many computational difficulties inherent to graph comparison and permits the exploitation of fast algorithms such as mirror gradient descent, without grossly sacrificing the performance. We finally propose a novel algorithm derived from a stochastic version of mirror gradient descent, which accommodates the non-convexity of the alignment problem, offering a good trade-off between performance accuracy and speed. The experiments on graph alignment and classification show that the flexibility gained through filter graph distances can have a significant impact on performance, while the difference in speed offered by the approximation cost makes the framework applicable in practical settings.</p>]]></description>
   </item>
 
 </channel>

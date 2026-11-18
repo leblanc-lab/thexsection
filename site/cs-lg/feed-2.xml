@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Fine-tuned Normalizing Flows for ALICE Zero Degree Calorimeter Fast Simulation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-12795</link>
+    <guid isPermaLink="false">arxiv:2608.12795</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Emilia Majerz et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Simulating the ALICE Zero Degree Calorimeter (ZDC) neutron detector responses at the LHC is computationally expensive, requiring complex Monte Carlo chains. We develop a generative surrogate, focusing on Normalizing Flows (NFs). Through transfer learning, we pre-train on the full imbalanced dataset and fine-tune specialized models for different particle types (γ, n, Λ, K_S⁰, Σ⁺) using two gradual-unfreezing schemes. As standard ZDC metrics like Wasserstein distance overlook conditional structure, we introduce refined metrics: conditional weighted MAE, dispersion ratio, and Jaccard co-activation error, that better capture physics-relevant input-output dependencies and response variability. Our ensemble of fine-tuned models achieves a Wasserstein distance of 1.61 ±0.02, outperforming baselines across all metrics. This work provides a generalizable NF-based framework for LHC detector simulation, combining NFs, conditional fine-tuning, and physics-motivated evaluation.</p>]]></description>
+  </item>
 
   <item>
     <title>Distribution Steering via Sliced Optimal Transport Control</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuta Koike</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This paper studies sampling error bounds for denoising diffusion probabilistic models (DDPMs) in the 2-Wasserstein distance. Our contributions are threefold. (i) Under general Lipschitz-type conditions on the score function and for a broad class of variance schedules, including the cosine schedule, we establish sharp upper bounds that are optimal in both the dimension and the number of steps, and recover several sharp error bounds previously obtained in the literature. (ii) We prove that the same Lipschitz-type conditions, which encompass those commonly imposed on the (learned) score, imply a logarithmic Sobolev inequality and hence a quadratic transportation cost inequality for the DDPM. As a consequence, in settings covered by existing work, an optimal Wasserstein bound, up to a logarithmic factor, follows from the recently obtained sharp error bound in the Kullback-Leibler divergence under geometric-type variance schedules. (iii) We show that for general log-concave target distributions, the optimal Wasserstein error bound remains attainable even without a quadratic transportation cost inequality for the target. Our analysis is based on viewing the DDPM sampler as a discretization of the Föllmer process rather than the conventional reverse Ornstein-Uhlenbeck process.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scalable Bi-causal Optimal Transport via KL Relaxation and Policy Gradients</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-17271</link>
-    <guid isPermaLink="false">arxiv:2605.17271</guid>
-    <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Cao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Bi-causal optimal transport (OT) is a natural framework for comparing and coupling stochastic processes under nonanticipative information constraints, with important applications in robust finance, sequential uncertainty quantification, and multistage stochastic optimization. In particular, a learned bi-causal coupling naturally serves as a simulator for generating joint sample paths that respect both prescribed marginal laws and the underlying information flow. Its practical use, however, is limited by the computational difficulty of enforcing bi-causal coupling constraints over path space, especially for continuous distributions and long horizons. We develop a scalable stochastic-optimization framework for computing bi-causal OT couplings under general marginals. Our approach introduces a Kullback&ndash;Leibler (KL)-penalized relaxation that replaces hard marginal constraints with tractable divergence penalties while preserving the recursive structure of the problem. We establish dynamic programming principles for both the original and relaxed formulations, prove that the relaxed problem converges to the original bi-causal OT problem as the penalty grows, and derive explicit policy-gradient representations for the relaxed objective. Building on these results, we propose a practical policy-gradient algorithm with unbiased mini-batch estimators, variance reduction, and nonasymptotic regret guarantees. Numerical experiments show that the method accurately captures marginal laws and temporal dependence, and performs well in applications including robust subhedging and time series statistical downscaling. These results provide a scalable computational approach to bi-causal OT and broaden its applicability in settings where nonanticipative information constraints are essential.</p>]]></description>
   </item>
 
 </channel>
