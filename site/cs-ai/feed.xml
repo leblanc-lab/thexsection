@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Mitigating fix reversal: Counterfactual constraints for function-level vulnerability detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2611-24489</link>
+    <guid isPermaLink="false">arxiv:2611.24489</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yun Bian et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>Function-level vulnerability detectors often exhibit fix reversal, assigning a higher vulnerability probability to a fixed version than to its vulnerable counterpart. Fixes usually lengthen functions, and larger length increases are associated with more severe reversal. Code-transformation experiments indicate that fix reversal mainly stems from a length shortcut: vulnerability probability increases with function length when content is fixed. We propose CFVul to address this problem. Sliding-window encoding covers complete functions, retaining fix information beyond the truncation boundary. During training, a content constraint encourages the vulnerable version to receive a higher vulnerability probability under a common length input. During inference, a length constraint averages vulnerability probabilities over fixed reference lengths, reducing the influence of actual length changes. On PrimeVul, CFVul achieves a fix-pair ranking metric, PairRank, of 59.4\%, exceeding the existing methods compared. For fixes that increase function length by more than 15\%, PairRank rises from CodeBERT&rsquo;s 25.8\% to 48.4\%. PairRank also improves in experiments with four additional models and three additional datasets. By weakening the length shortcut, CFVul reduces cases in which fixed versions receive higher vulnerability probabilities than vulnerable versions. It requires only existing fix pairs and applies to multiple pretrained code models, facilitating adoption in existing detectors.</p>]]></description>
+  </item>
 
   <item>
     <title>Learning Optimal Transport Plans Via Autoregressive Token Regression</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Baglio et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>The development of new drugs is a tedious, time-consuming, and expensive process, for which the average costs are estimated to be up to around $2.5 billion. The first step in this long process is the design of the new drug, for which de novo drug design, assisted by artificial intelligence, has blossomed in recent years and revolutionized the field. In particular, generative artificial intelligence has delivered promising results in drug discovery and development, reducing costs and the time to solution. However, classical generative models, such as generative adversarial networks (GANs), are difficult to train due to barren plateaus and prone to mode collapse. Quantum computing may be an avenue to overcome these issues and provide models with fewer parameters, thereby enhancing the generalizability of GANs. We propose a new style-based quantum GAN (QGAN) architecture for drug design that implements noise encoding at every rotational gate of the circuit and a gradient penalty in the loss function to mitigate mode collapse. Our pipeline employs a variational autoencoder to represent the molecular structure in a latent space, which is then used as input to our QGAN. Our baseline model runs on up to 15 qubits to validate our architecture on quantum simulators, and a 156-qubit IBM Heron quantum computer in the five-qubit setup is used for inference to investigate the effects of using real quantum hardware on the analysis. We benchmark our results against classical models as provided by the MOSES benchmark suite.</p>]]></description>
-  </item>
-
-  <item>
-    <title>B-jet Tagging Using a Hybrid Edge Convolution and Transformer Architecture</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-21326</link>
-    <guid isPermaLink="false">arxiv:2603.21326</guid>
-    <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Diego F. Vasquez Plaza et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, b-jet, flavor tagging, jet flavor, quark jet, ParticleNet, LHC) — original abstract; no AI summary.</em></p>
-<p>Jet flavor tagging plays an important role in precise Standard Model measurement enabling the extraction of mass dependence in jet-quark interaction and quark-gluon plasma (QGP) interactions. They also enable inferring the nature of particles produced in high-energy particle collisions that contain heavy quarks. The classification of bottom jets is vital for exploring new Physics scenarios in proton-proton collisions. In this research, we present a hybrid deep learning architecture that integrates edge convolutions with transformer self-attention mechanisms, into one single architecture called the Edge Convolution Transformer (ECT) model for bottom-quark jet tagging. ECT processes track-level features (impact parameters, momentum, and their significances) alongside jet-level observables (vertex information and kinematics) to achieve state-of-the-art performance. The study utilizes the ATLAS simulation dataset. We demonstrate that ECT achieves 0.9333 AUC for b-jet versus combined charm and light jet discrimination, surpassing ParticleNet (0.8904 AUC) and the pure transformer baseline (0.9216 AUC). The model maintains inference latency below 0.060 ms per jet on modern GPUs, meeting the stringent requirements for real-time event selection at the LHC. Our results demonstrate that hybrid architectures combining local and global features offer superior performance for challenging jet classification tasks. The proposed architecture achieves good results in b-jet tagging, particularly excelling in charm jet rejection (the most challenging task), while maintaining competitive light-jet discrimination comparable to pure transformer models.</p>]]></description>
   </item>
 
 </channel>

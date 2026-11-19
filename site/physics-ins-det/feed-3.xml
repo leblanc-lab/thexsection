@@ -7,7 +7,27 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Results for pixel and strip centimeter-scale AC-LGAD sensors with a 120 GeV proton beam</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2407-09928</link>
+    <guid isPermaLink="false">arxiv:2407.09928</guid>
+    <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Irene Dutta et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>We present the results of an extensive evaluation of strip and pixel AC-LGAD sensors tested with a 120 GeV proton beam, focusing on the influence of design parameters on the sensor temporal and spatial resolutions. Results show that reducing the thickness of pixel sensors significantly enhances their time resolution, with 20 μm-thick sensors achieving around 20 ps. Uniform performance is attainable with optimized sheet resistance, making these sensors ideal for future timing detectors. Conversely, 20 μm-thick strip sensors exhibit higher jitter than similar pixel sensors, negatively impacting time resolution, despite reduced Landau fluctuations with respect to the 50 μm-thick versions. Additionally, it is observed that a low resistivity in strip sensors limits signal size and time resolution, whereas higher resistivity improves performance. This study highlights the importance of tuning the n⁺ sheet resistance and suggests that further improvements should target specific applications like the Electron-Ion Collider or other future collider experiments. In addition, the detailed performance of four AC-LGADs sensor designs is reported as examples of possible candidates for specific detector applications. These advancements position AC-LGADs as promising candidates for future 4D tracking systems, pending the development of specialized readout electronics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A look-up table algorithm to model radiation damage effects in Monte Carlo events for HL-LHC experiments</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2025.html#a2501-12253</link>
+    <guid isPermaLink="false">arxiv:2501.12253</guid>
+    <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marco Bomben et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Radiation damage significantly impacts the performance of silicon tracking detectors in Large Hadron Collider (LHC) experiments such as ATLAS and CMS, with signal reduction being the most critical effect. Adjusting sensor bias voltage and detection thresholds can help mitigate these effects, but generating simulated data that accurately mirror the performance evolution with the accumulation of luminosity, hence fluence, is crucial. The ATLAS collaboration has developed and implemented algorithms to correct simulated Monte Carlo (MC) events for radiation damage effects, achieving impressive agreement between collision data and simulated events. In preparation for the high-luminosity phase (HL-LHC), the demand for a faster ATLAS MC production algorithm becomes imperative due to escalating collision, events, tracks, and particle hit rates, imposing stringent constraints on available computing resources. This article outlines the philosophy behind the new algorithm, its implementation strategy, and the essential components involved. The results from closure tests indicate that the events simulated using the new algorithm agree with fully simulated events at the level of few \%. The first tests on computing performance show that the new algorithm is as fast as it is when no radiation damage corrections are applied.</p>]]></description>
+  </item>
 
   <item>
     <title>Tagging Efficiency Study of Incoherent Diffractive Vector Meson Production at the Second Interaction Region at the Electron-Ion Collider</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">I. Zatocilova et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>In the passive CMOS Strips Project, strip sensors were designed at the University of Bonn and produced by LFoundry in 150 nm technology, with an additional backside processing from IZM Berlin. Up to five individual reticules were connected by stitching at the foundry in order to obtain the typical strip lengths required for the LHC Phase-II upgrade of ATLAS or CMS trackers. After dicing, sensors were tested in a probe station and characterised with a Sr90-source as well as laser-based edge- and top-TCT systems. Sensors were also simulated using Sentaurus TCAD. At last, detector modules were constructed from several sensors and thoroughly studied in two beam campaigns at DESY. All of these measurements were performed before and after irradiation. This contribution provides an overview of simulation results, summarises the laboratory measurements and in particular presents first test beam results for irradiated and unirradiated passive CMOS strip sensors. We are demonstrating that large area sensors with sufficient radiation hardness can be obtained by stitching during the CMOS process, and presenting our plans for the next submission in the framework of this project.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generalizing to new geometries with Geometry-Aware Autoregressive Models (GAAMs) for fast calorimeter simulation</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2305-11531</link>
-    <guid isPermaLink="false">arxiv:2305.11531</guid>
-    <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junze Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (wasserstein, Large Hadron Collider, collider, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>Generation of simulated detector response to collision products is crucial to data analysis in particle physics, but computationally very expensive. One subdetector, the calorimeter, dominates the computational time due to the high granularity of its cells and complexity of the interactions. Generative models can provide more rapid sample production, but currently require significant effort to optimize performance for specific detector geometries, often requiring many models to describe the varying cell sizes and arrangements, without the ability to generalize to other geometries. We develop a geometry-aware autoregressive model, which learns how the calorimeter response varies with geometry, and is capable of generating simulated responses to unseen geometries without additional training. The geometry-aware model outperforms a baseline unaware model by over 50% in several metrics such as the Wasserstein distance between the generated and the true distributions of key quantities which summarize the simulated response. A single geometry-aware model could replace the hundreds of generative models currently designed for calorimeter simulation by physicists analyzing data collected at the Large Hadron Collider. This proof-of-concept study motivates the design of a foundational model that will be a crucial tool for the study of future detectors, dramatically reducing the large upfront investment usually needed to develop generative calorimeter models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>High-rate tests on Resistive Plate Chambers operated with eco-friendly gas mixtures</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2023.html#a2311-08259</link>
-    <guid isPermaLink="false">arxiv:2311.08259</guid>
-    <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Abbrescia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Results obtained by the RPC ECOgas@GIF++ Collaboration, using Resistive Plate Chambers operated with new, eco-friendly gas mixtures, based on Tetrafluoropropene and carbon dioxide, are shown and discussed in this paper. Tests aimed to assess the performance of this kind of detectors in high-irradiation conditions, analogous to the ones foreseen for the coming years at the Large Hadron Collider experiments, were performed, and demonstrate a performance basically similar to the one obtained with the gas mixtures currently in use, based on Tetrafluoroethane, which is being progressively phased out for its possible contribution to the greenhouse effect. Long term aging tests are also being carried out, with the goal to demonstrate the possibility of using these eco-friendly gas mixtures during the whole High Luminosity phase of the Large Hadron Collider.</p>]]></description>
   </item>
 
 </channel>

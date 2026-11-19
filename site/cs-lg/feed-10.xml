@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Revisiting Global Pooling through the Lens of Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-09191</link>
+    <guid isPermaLink="false">arxiv:2201.09191</guid>
+    <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minjie Cheng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Global pooling is one of the most significant operations in many machine learning models and tasks, whose implementation, however, is often empirical in practice. In this study, we develop a novel and solid global pooling framework through the lens of optimal transport. We demonstrate that most existing global pooling methods are equivalent to solving some specializations of an unbalanced optimal transport (UOT) problem. Making the parameters of the UOT problem learnable, we unify various global pooling methods in the same framework, and accordingly, propose a generalized global pooling layer called UOT-Pooling (UOTP) for neural networks. Besides implementing the UOTP layer based on the classic Sinkhorn-scaling algorithm, we design a new model architecture based on the Bregman ADMM algorithm, which has better numerical stability and can reproduce existing pooling layers more effectively. We test our UOTP layers in several application scenarios, including multi-instance learning, graph classification, and image classification. Our UOTP layers can either imitate conventional global pooling layers or learn some new pooling mechanisms leading to better performance.</p>]]></description>
+  </item>
 
   <item>
     <title>DVGAN: Stabilize Wasserstein GAN training for time-domain Gravitational Wave physics</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vladislav Belavin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
 <p>We introduce a first-ever algorithm for the reconstruction of multiple showers from the data collected with electromagnetic (EM) sampling calorimeters. Such detectors are widely used in High Energy Physics to measure the energy and kinematics of in-going particles. In this work, we consider the case when many electrons pass through an Emulsion Cloud Chamber (ECC) brick, initiating electron-induced electromagnetic showers, which can be the case with long exposure times or large input particle flux. For example, SHiP experiment is planning to use emulsion detectors for dark matter search and neutrino physics investigation. The expected full flux of SHiP experiment is about 10^20 particles over five years. To reduce the cost of the experiment associated with the replacement of the ECC brick and off-line data taking (emulsion scanning), it is decided to increase exposure time. Thus, we expect to observe a lot of overlapping showers, which turn EM showers reconstruction into a challenging point cloud segmentation problem. Our reconstruction pipeline consists of a Graph Neural Network that predicts an adjacency matrix and a clustering algorithm. We propose a new layer type (EmulsionConv) that takes into account geometrical properties of shower development in ECC brick. For the clustering of overlapping showers, we use a modified hierarchical density-based clustering algorithm. Our method does not use any prior information about the incoming particles and identifies up to 87% of electromagnetic showers in emulsion detectors. The main test bench for the algorithm for reconstructing electromagnetic showers is going to be SND@LHC.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Partial Wasserstein Covering</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-00886</link>
-    <guid isPermaLink="false">arxiv:2106.00886</guid>
-    <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keisuke Kawano et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We consider a general task called partial Wasserstein covering with the goal of providing information on what patterns are not being taken into account in a dataset (e.g., dataset used during development) compared with another dataset(e.g., dataset obtained from actual applications). We model this task as a discrete optimization problem with partial Wasserstein divergence as an objective function. Although this problem is NP-hard, we prove that it satisfies the submodular property, allowing us to use a greedy algorithm with a 0.63 approximation. However, the greedy algorithm is still inefficient because it requires solving linear programming for each objective function evaluation. To overcome this inefficiency, we propose quasi-greedy algorithms that consist of a series of acceleration techniques, such as sensitivity analysis based on strong duality and the so-called C-transform in the optimal transport field. Experimentally, we demonstrate that we can efficiently fill in the gaps between the two datasets and find missing scene in real driving scenes datasets.</p>]]></description>
   </item>
 
 </channel>

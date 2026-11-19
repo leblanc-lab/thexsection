@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Selectively increasing the diversity of GAN-generated samples</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2207-01561</link>
+    <guid isPermaLink="false">arxiv:2207.01561</guid>
+    <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jan Dubiński et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Generative Adversarial Networks (GANs) are powerful models able to synthesize data samples closely resembling the distribution of real data, yet the diversity of those generated samples is limited due to the so-called mode collapse phenomenon observed in GANs. Especially prone to mode collapse are conditional GANs, which tend to ignore the input noise vector and focus on the conditional information. Recent methods proposed to mitigate this limitation increase the diversity of generated samples, yet they reduce the performance of the models when similarity of samples is required. To address this shortcoming, we propose a novel method to selectively increase the diversity of GAN-generated samples. By adding a simple, yet effective regularization to the training loss function we encourage the generator to discover new data modes for inputs related to diverse outputs while generating consistent samples for the remaining ones. More precisely, we maximise the ratio of distances between generated images and input latent vectors scaling the effect according to the diversity of samples for a given conditional input. We show the superiority of our method in a synthetic benchmark as well as a real-life scenario of simulating data from the Zero Degree Calorimeter of ALICE experiment in LHC, CERN.</p>]]></description>
+  </item>
 
   <item>
     <title>Mitigating Discrimination in Insurance with Wasserstein Barycenters</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (collider, energy mover, Mike Williams) — original abstract; no AI summary.</em></p>
 <p>A novel neural architecture was recently developed that enforces an exact upper bound on the Lipschitz constant of the model by constraining the norm of its weights in a minimal way, resulting in higher expressiveness compared to other techniques. We present a new and interesting direction for this architecture: estimation of the Wasserstein metric (Earth Mover&rsquo;s Distance) in optimal transport by employing the Kantorovich-Rubinstein duality to enable its use in geometric fitting applications. Specifically, we focus on the field of high-energy particle physics, where it has been shown that a metric for the space of particle-collider events can be defined based on the Wasserstein metric, referred to as the Energy Mover&rsquo;s Distance (EMD). This metrization has the potential to revolutionize data-driven collider phenomenology. The work presented here represents a major step towards realizing this goal by providing a differentiable way of directly calculating the EMD. We show how the flexibility that our approach enables can be used to develop novel clustering algorithms.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Revisiting Global Pooling through the Lens of Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-09191</link>
-    <guid isPermaLink="false">arxiv:2201.09191</guid>
-    <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minjie Cheng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Global pooling is one of the most significant operations in many machine learning models and tasks, whose implementation, however, is often empirical in practice. In this study, we develop a novel and solid global pooling framework through the lens of optimal transport. We demonstrate that most existing global pooling methods are equivalent to solving some specializations of an unbalanced optimal transport (UOT) problem. Making the parameters of the UOT problem learnable, we unify various global pooling methods in the same framework, and accordingly, propose a generalized global pooling layer called UOT-Pooling (UOTP) for neural networks. Besides implementing the UOTP layer based on the classic Sinkhorn-scaling algorithm, we design a new model architecture based on the Bregman ADMM algorithm, which has better numerical stability and can reproduce existing pooling layers more effectively. We test our UOTP layers in several application scenarios, including multi-instance learning, graph classification, and image classification. Our UOTP layers can either imitate conventional global pooling layers or learn some new pooling mechanisms leading to better performance.</p>]]></description>
   </item>
 
 </channel>

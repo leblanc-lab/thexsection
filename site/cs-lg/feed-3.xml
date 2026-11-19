@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein bounds for denoising diffusion probabilistic models via the Föllmer process</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18069</link>
+    <guid isPermaLink="false">arxiv:2605.18069</guid>
+    <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuta Koike</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper studies sampling error bounds for denoising diffusion probabilistic models (DDPMs) in the 2-Wasserstein distance. Our contributions are threefold. (i) Under general Lipschitz-type conditions on the score function and for a broad class of variance schedules, including the cosine schedule, we establish sharp upper bounds that are optimal in both the dimension and the number of steps, and recover several sharp error bounds previously obtained in the literature. (ii) We prove that the same Lipschitz-type conditions, which encompass those commonly imposed on the (learned) score, imply a logarithmic Sobolev inequality and hence a quadratic transportation cost inequality for the DDPM. As a consequence, in settings covered by existing work, an optimal Wasserstein bound, up to a logarithmic factor, follows from the recently obtained sharp error bound in the Kullback-Leibler divergence under geometric-type variance schedules. (iii) We show that for general log-concave target distributions, the optimal Wasserstein error bound remains attainable even without a quadratic transportation cost inequality for the target. Our analysis is based on viewing the DDPM sampler as a discretization of the Föllmer process rather than the conventional reverse Ornstein-Uhlenbeck process.</p>]]></description>
+  </item>
 
   <item>
     <title>Scalable Bi-causal Optimal Transport via KL Relaxation and Policy Gradients</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ferdinand Genans et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Solving large scale Optimal Transport (OT) in machine learning typically relies on sampling measures to obtain a tractable discrete problem. While the discrete solver&rsquo;s accuracy is controllable, the rate of convergence of the discretization error is governed by the intrinsic dimension of our data. Therefore, the true bottleneck is the knowledge and control of the sampling error. In this work, we tackle this issue by introducing novel estimators for both sampling error and intrinsic dimension. The key finding is a simple, tuning-free estimator of OT_c(ρ, ) that utilizes the semi-dual OT functional and, remarkably, requires no OT solver. Furthermore, we derive a fast intrinsic dimension estimator from the multi-scale decay of our sampling error estimator. This framework unlocks significant computational and statistical advantages in practice, enabling us to (i) quantify the convergence rate of the discretization error, (ii) calibrate the entropic regularization of Sinkhorn divergences to the data&rsquo;s intrinsic geometry, and (iii) introduce a novel, intrinsic-dimension-based Richardson extrapolation estimator that strongly debiases Wasserstein distance estimation. Numerical experiments demonstrate that our geometry-aware pipeline effectively mitigates the discretization error bottleneck while maintaining computational efficiency.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Tight Robustness Certificates and Wasserstein Distributional Attacks for Deep Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2510-10000</link>
-    <guid isPermaLink="false">arxiv:2510.10000</guid>
-    <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bach C. Le et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein distributionally robust optimization (WDRO) provides a framework for adversarial robustness, yet existing methods based on global Lipschitz continuity or strong duality often yield loose upper bounds or require prohibitive computation. We address these limitations with a primal approach and adopt a notion of exact Lipschitz certificates to tighten this upper bound of WDRO. For ReLU networks, we leverage the piecewise-affine structure on activation cells to obtain an exact tractable characterization of the corresponding WDRO problem. We further extend our analysis to modern architectures with smooth activations (e.g., GELU, SiLU), such as Transformers. Additionally, we propose novel Wasserstein Distributional Attacks (WDA, WDA++) that construct candidates for the worst-case distribution. Compared to existing attacks that are restricted to point-wise perturbations, our methods offer greater flexibility in the number and location of attack points. Extensive evaluations demonstrate that our proposed framework achieves competitive robust accuracy against state-of-the-art baselines while offering tighter certificates than existing methods. Our code is available at https://github.com/OLab-Repo/WDA.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Tight Nonasymptotic Local Convergence of Sinkhorn-Knopp</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-11760</link>
+    <guid isPermaLink="false">arxiv:2608.11760</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wenzhi Gao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We revisit the Sinkhorn-Knopp (SK) algorithm for the matrix scaling problem. Despite extensive literature on the global convergence of SK and its variants, its local linear convergence behavior remains less understood. We address this gap by providing the first nonasymptotic local analysis of SK that matches the rate obtained from existing asymptotic Jacobian-based arguments. We show that under certain connectivity conditions, SK is a polynomial-time algorithm for doubly stochastic matrix scaling. With the developed tools, we showcase the local suboptimality of SK and provide accelerated variants. Finally, for dense matrices, we improve the complexity of existing first-order matrix scaling algorithms from O(n⁷/3ε²/3) to O(n⁹/4√(ε)).</p>]]></description>
+  </item>
 
   <item>
     <title>Fine-tuned Normalizing Flows for ALICE Zero Degree Calorimeter Fast Simulation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenguang Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We develop a unified theoretical framework for data-free one-step sampling from unnormalized target distributions based on Wasserstein gradient flows. For a broad class of standard f-divergence objectives, we show that the induced velocity field admits the universal form 𝐕(x)=w(r(x)) β(x), where β(x)=∇log(p(x)/q(x)) is shared across objectives and w is determined solely by the choice of divergence. This decomposition shows that standard f-divergence drifts share the same asymptotic target distribution p and differ primarily in how they redistribute transient repair effort across under-covered regions. To formalize this distinction, we derive a one-step regional-response theory for a soft under-coverage functional and obtain a compression&ndash;elasticity identity that links divergence choice to the geometry of mass transport into under-covered regions. We further extend the framework beyond the f-divergence family to the Log-Variance (LV) divergence, analyze how the reference distribution alters the resulting drift structure, and motivate a practical LV-inspired surrogate for data-free training. Based on this theory, we instantiate the framework with a KDE-based implementation and describe a complementary normalizing-flow route, enabling one-step inference after training. Experiments on multimodal Gaussian-mixture benchmarks are consistent with the theoretical predictions and demonstrate effective one-step sampling on these targets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein bounds for denoising diffusion probabilistic models via the Föllmer process</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18069</link>
-    <guid isPermaLink="false">arxiv:2605.18069</guid>
-    <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuta Koike</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper studies sampling error bounds for denoising diffusion probabilistic models (DDPMs) in the 2-Wasserstein distance. Our contributions are threefold. (i) Under general Lipschitz-type conditions on the score function and for a broad class of variance schedules, including the cosine schedule, we establish sharp upper bounds that are optimal in both the dimension and the number of steps, and recover several sharp error bounds previously obtained in the literature. (ii) We prove that the same Lipschitz-type conditions, which encompass those commonly imposed on the (learned) score, imply a logarithmic Sobolev inequality and hence a quadratic transportation cost inequality for the DDPM. As a consequence, in settings covered by existing work, an optimal Wasserstein bound, up to a logarithmic factor, follows from the recently obtained sharp error bound in the Kullback-Leibler divergence under geometric-type variance schedules. (iii) We show that for general log-concave target distributions, the optimal Wasserstein error bound remains attainable even without a quadratic transportation cost inequality for the target. Our analysis is based on viewing the DDPM sampler as a discretization of the Föllmer process rather than the conventional reverse Ornstein-Uhlenbeck process.</p>]]></description>
   </item>
 
 </channel>

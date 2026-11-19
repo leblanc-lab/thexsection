@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Partial Wasserstein Covering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2106-00886</link>
+    <guid isPermaLink="false">arxiv:2106.00886</guid>
+    <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keisuke Kawano et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We consider a general task called partial Wasserstein covering with the goal of providing information on what patterns are not being taken into account in a dataset (e.g., dataset used during development) compared with another dataset(e.g., dataset obtained from actual applications). We model this task as a discrete optimization problem with partial Wasserstein divergence as an objective function. Although this problem is NP-hard, we prove that it satisfies the submodular property, allowing us to use a greedy algorithm with a 0.63 approximation. However, the greedy algorithm is still inefficient because it requires solving linear programming for each objective function evaluation. To overcome this inefficiency, we propose quasi-greedy algorithms that consist of a series of acceleration techniques, such as sensitivity analysis based on strong duality and the so-called C-transform in the optimal transport field. Experimentally, we demonstrate that we can efficiently fill in the gaps between the two datasets and find missing scene in real driving scenes datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>FGOT: Graph Distances based on Filters and Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Wang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>We propose a projected Wasserstein gradient descent method (pWGD) for high-dimensional Bayesian inference problems. The underlying density function of a particle system of WGD is approximated by kernel density estimation (KDE), which faces the long-standing curse of dimensionality. We overcome this challenge by exploiting the intrinsic low-rank structure in the difference between the posterior and prior distributions. The parameters are projected into a low-dimensional subspace to alleviate the approximation error of KDE in high dimensions. We formulate a projected Wasserstein gradient flow and analyze its convergence property under mild assumptions. Several numerical experiments illustrate the accuracy, convergence, and complexity scalability of pWGD with respect to parameter dimension, sample size, and processor cores.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Distributionally-Constrained Policy Optimization via Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-07889</link>
-    <guid isPermaLink="false">arxiv:2102.07889</guid>
-    <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arash Givchi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We consider constrained policy optimization in Reinforcement Learning, where the constraints are in form of marginals on state visitations and global action executions. Given these distributions, we formulate policy optimization as unbalanced optimal transport over the space of occupancy measures. We propose a general purpose RL objective based on Bregman divergence and optimize it using Dykstra&rsquo;s algorithm. The approach admits an actor-critic algorithm for when the state or action space is large, and only samples from the marginals are available. We discuss applications of our approach and provide demonstrations to show the effectiveness of our algorithm.</p>]]></description>
   </item>
 
 </channel>

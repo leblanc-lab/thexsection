@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Target-Consistent Action Guidance via Semi-Unbalanced Optimal Transport for Drifting World Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-24222</link>
+    <guid isPermaLink="false">arxiv:2611.24222</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Md Abtahi Majeed Chowdhury et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Action-conditioned world models let robots imagine the outcomes of their actions for planning and offline policy evaluation, but these uses need many rollouts, which multi-step diffusion makes expensive. Drifting models move the iteration from inference to training and generate samples in one network pass. DriftWorld brought this paradigm to action-conditioned world models; to strengthen action following, it repels predictions from the current frame, a construction borrowed from classifier-free guidance. We show that this accentuation has a target bias: the push persists even when a prediction matches the recorded future, in kernel, balanced, and unbalanced Wasserstein drifting fields alike. We introduce Mass-Share Accentuation (MSA) to remove this bias. MSA treats the current frame as a counterfactual destination competing with the recorded future in a semi-relaxed optimal transport problem; subtracting the closed-form share of the correct future makes the guidance vanish at the target, and the remainder is shared by all predictions. We prove that the recorded future is the unique fixed point along the motion direction for collapsed predictions, and that the guidance fades with prediction error. On Push-T, Robomimic, and BridgeV2, where trained models under-react rather than overshoot, MSA improves action ranking, response slope, and moving-region error over latent-space baselines at no inference cost, though these benchmarks do not isolate bias removal as the cause.</p>]]></description>
+  </item>
 
   <item>
     <title>OT-BLS: Optimal-Transport-based Backbone Layer Selection for Frozen DINOv3 in Cross-Domain Few-Shot Segmentation</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junying Meng et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Despite signi cant progress in semi-supervised medical image segmentation, most existing segmentation networks overlook e ective methodological guidance for feature extraction and important prior information from datasets. In this paper, we develop a semi-supervised medical image segmentation framework that e ectively integrates spatial regularization methods and volume priors. Speci cally, our approach integrates a strong explicit volume prior at the image scale and Threshold Dynamics spatial regularization, both derived from variational models, into the backbone segmentation network. The target region volumes for each unlabeled image are estimated by a regression network, which e ectively regularizes the backbone segmentation network through an image-scale Wasserstein distance constraint, ensuring that the class ratios in the segmentation results for each unlabeled image match those predicted by the regression network. Additionally, we design a dataset-scale Wasserstein distance loss function based on a weak implicit volume prior, which enforces that the volume distribution predicted for the unlabeled dataset is similar to that of labeled dataset. Experimental results on the 2017 ACDC dataset, PROMISE12 dataset, and thigh muscle MR image dataset show the superiority of the proposed method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fast rigid alignment of heterogeneous images in sliced Wasserstein distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2503-13756</link>
-    <guid isPermaLink="false">arxiv:2503.13756</guid>
-    <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yunpeng Shi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Many applications of computer vision rely on the alignment of similar but non-identical images. We present a fast algorithm for aligning heterogeneous images based on optimal transport. Our approach combines the speed of fast Fourier methods with the robustness of sliced probability metrics and allows us to efficiently compute the alignment between two L ×L images using the sliced 2-Wasserstein distance in O(L² logL) operations. We show that our method is robust to translations, rotations and deformations in the images.</p>]]></description>
   </item>
 
 </channel>

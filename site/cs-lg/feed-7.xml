@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Hard-Label Cryptanalytic Extraction of Neural Network Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-11646</link>
+    <guid isPermaLink="false">arxiv:2409.11646</guid>
+    <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>The machine learning problem of extracting neural network parameters has been proposed for nearly three decades. Functionally equivalent extraction is a crucial goal for research on this problem. When the adversary has access to the raw output of neural networks, various attacks, including those presented at CRYPTO 2020 and EUROCRYPT 2024, have successfully achieved this goal. However, this goal is not achieved when neural networks operate under a hard-label setting where the raw output is inaccessible. In this paper, we propose the first attack that theoretically achieves functionally equivalent extraction under the hard-label setting, which applies to ReLU neural networks. The effectiveness of our attack is validated through practical experiments on a wide range of ReLU neural networks, including neural networks trained on two real benchmarking datasets (MNIST, CIFAR10) widely used in computer vision. For a neural network consisting of 10⁵ parameters, our attack only requires several hours on a single core.</p>]]></description>
+  </item>
 
   <item>
     <title>Designing Observables for Measurements with Deep Learning</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianyi Lin et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Kernel-based optimal transport (OT) estimators offer an alternative, functional estimation procedure to address OT problems from samples. Recent works suggest that these estimators are more statistically efficient than plug-in (linear programming-based) OT estimators when comparing probability measures in high-dimensions~\citep{Vacher-2021-Dimension}. Unfortunately, that statistical benefit comes at a very steep computational price: because their computation relies on the short-step interior-point method (SSIPM), which comes with a large iteration count in practice, these estimators quickly become intractable w.r.t. sample size n. To scale these estimators to larger n, we propose a nonsmooth fixed-point model for the kernel-based OT problem, and show that it can be efficiently solved via a specialized semismooth Newton (SSN) method: We show, exploring the problem&rsquo;s structure, that the per-iteration cost of performing one SSN step can be significantly reduced in practice. We prove that our SSN method achieves a global convergence rate of O(1/√(k)), and a local quadratic convergence rate under standard regularity conditions. We show substantial speedups over SSIPM on both synthetic and real datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Particle Transformer for Jet Tagging</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2202-03772</link>
-    <guid isPermaLink="false">arxiv:2202.03772</guid>
-    <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Huilin Qu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet tagging, ParticleNet, particle transformer) — original abstract; no AI summary.</em></p>
-<p>Jet tagging is a critical yet challenging classification task in particle physics. While deep learning has transformed jet tagging and significantly improved performance, the lack of a large-scale public dataset impedes further enhancement. In this work, we present JetClass, a new comprehensive dataset for jet tagging. The JetClass dataset consists of 100 M jets, about two orders of magnitude larger than existing public datasets. A total of 10 types of jets are simulated, including several types unexplored for tagging so far. Based on the large dataset, we propose a new Transformer-based architecture for jet tagging, called Particle Transformer (ParT). By incorporating pairwise particle interactions in the attention mechanism, ParT achieves higher tagging performance than a plain Transformer and surpasses the previous state-of-the-art, ParticleNet, by a large margin. The pre-trained ParT models, once fine-tuned, also substantially enhance the performance on two widely adopted jet tagging benchmarks. The dataset, code and models are publicly available at https://github.com/jet-universe/particle_transformer.</p>]]></description>
   </item>
 
 </channel>
