@@ -36,13 +36,133 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">285 papers</span>
-  <span class="count">94 days</span>
+  <span class="count">288 papers</span>
+  <span class="count">95 days</span>
   <span class="count">since 2026</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../digest/2026-11-19.html">Thursday, November 19, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2611-24065">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.24065" target="_blank" rel="noopener">arXiv:2611.24065</a>
+      
+      <a class="permalink" href="#a2611-24065" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">An Updated Meta-Analysis of LHC Exotic Physics Results</h3>
+    <p class="byline">Ece \c{S}ahin et al.</p>
+    <div class="paper-body"><p>ATLAS expected-limit bands are miscalibrated, while CMS bands look fine. Şahin and Özcan extracted observed limits and ±1σ/±2σ bands directly from the SVG geometry of 168 ATLAS and 205 CMS exclusion plots. These come from 55 exotics publications (2020–25), with uncertainties from a bootstrap over publications. In normalized averaging, CMS sits at 66.1±4.4% (1σ) and 95.3±1.9% (2σ). ATLAS has 73.3±7.6% inside 1σ, compatible with nominal, and 99.2±0.4% inside 2σ, well above nominal. The raw-averaged ATLAS 1σ fraction is 81.8±5.9%, which is +2.3σ.</p>
+<p>The 2σ excess survives several checks:
+- It persists in columns where the band edges are well separated (99.5±0.3%).
+- It holds in both publication-year halves and on a citation-independent subset.
+- The plot reading matches HEPData for 1522 of 1523 cross-checked points.</p>
+<p>In the 2019 study, both experiments matched nominal coverage.</p>
+<p>The pyhf toys separate the candidate explanations by which side of the band the observed limits avoid:
+- <strong>Low counts:</strong> with one expected event, 92% of limits land inside 1σ and none below. This mainly empties the lower side.
+- <strong>A-posteriori bands:</strong> reach about 99% inside 2σ only when the signal region itself constrains an uncertainty of half the background or more.</p>
+<p>ATLAS has almost no points beyond <em>either</em> 2σ edge. The authors therefore favour bands that are too wide, from conservative uncertainties or a-posteriori computation, over low counts alone. Because most analyses fix backgrounds with control regions, they doubt a-posteriori bands explain the whole effect.</p>
+<p>Caveats:
+- The scope is a topic-restricted exotics subset.
+- The authors cannot tell common practice from a few analyses. Single publications move ATLAS by up to about 1σ.
+- Özcan is an ATLAS author.
+- No paper in the sample states whether its bands are a priori or a posteriori.</p>
+<p>The authors&rsquo; four-item disclosure list (tool and version, limit type, asymptotic vs. toys, convention) is the actionable output.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-24270">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.24270" target="_blank" rel="noopener">arXiv:2611.24270</a>
+      
+      <a class="permalink" href="#a2611-24270" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A fully differential charged-particle phase-space measurement of Z+jets production with ATLAS</h3>
+    <p class="byline">ATLAS Collaboration</p>
+    <div class="paper-body"><p>ATLAS has published Z→μμ+jets (140 fb⁻¹, <span class="arithmatex">\(p_T^{\mu\mu}&gt;200\)</span> GeV) as an unbinned unfold of the full charged-particle final state. Each event averages about 50 tracks and exceeds 250 in some, so the unfold is effectively 150–750 dimensional. The release is particle-level MG5+Py8 events with OmniFold weights in fb, plus 162 weight variations (27 systematic, 135 bootstrap).</p>
+<p>The method changes against the earlier 24-observable MultiFold analysis:
+- Particle Transformers replace the earlier MLPs.
+- Networks are pretrained on about 14M MG5+Py8-vs-Sherpa events. The authors call this essential because only about 247k data events pass selection.
+- Unfolding runs seven iterations.
+- Compute cost was roughly 400k A100-hours.</p>
+<p>Showcase results:
+- <strong>Charged multiplicity:</strong> MG5+Py8 overshoots and Sherpa undershoots <span class="arithmatex">\(n_{ch}\)</span>, by up to about 50%.
+- <strong>Energy correlator:</strong> the first all-charged-particle EEC in pp, at ≤5% precision, with clear perturbative, free-hadron and wide-angle regimes. Both generators miss the smallest-z region.
+- <strong>Jet shapes:</strong> C/A, <span class="arithmatex">\(k_t\)</span> and anti-<span class="arithmatex">\(k_t\)</span> jet shapes come from the same sample without recalibration.
+- <strong>Intrinsic dimension:</strong> the first measured jet intrinsic dimension, below 10 at all EMD scales.</p>
+<p>Caveats:
+- Only charged particles are measured.
+- Hadron-species fractions and process labels are not constrained; they come from MG5+Py8.
+- The unfolding uncertainty is among the dominant terms and grows in low-statistics regions.
+- Users must validate each new observable on the released pseudodata, with at least 5000 effective events per bin. This is not a formality: finer <span class="arithmatex">\(n_{ch}\)</span> binning drops to p=0.041, and <span class="arithmatex">\(m_{j1}\)</span> already sits at p=0.016.
+- No goodness-of-fit procedure is yet recommended for genuinely unbinned downstream use.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-23371">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.23371" target="_blank" rel="noopener">arXiv:2611.23371</a>
+      
+      <a class="permalink" href="#a2611-23371" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Seeing through the fog: astrophysical priors and the evidence for new physics in PTAs</h3>
+    <p class="byline">Torsten Bringmann et al.</p>
+    <div class="paper-body"><p>binaryfog emulates holodeck SMBHB population spectra, including per-bin median, width and skew of the realisation scatter, in about 0.2 ms instead of about 3 min. That speed makes it feasible to profile over all six astrophysical parameters in new-physics fits to the 2026 re-run NANOGrav 15-yr CURN free spectrum.</p>
+<p>Under NANOGrav&rsquo;s own priors, replacing the <span class="arithmatex">\((A,\gamma)\)</span> power law with the population model lowers every new-physics preference:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Power law</th>
+<th>Population model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase transition</td>
+<td>2.8σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Cosmic superstrings</td>
+<td>2.9σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Inflation</td>
+<td>2.8σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Domain walls</td>
+<td>2.1σ</td>
+<td>0.7σ</td>
+</tr>
+</tbody>
+</table>
+<p>The driver is that binary lifetime τ_f and inner hardening index can bend the binary spectrum at low frequency, which a power law cannot.</p>
+<p>The result is prior-dominated:
+- <strong>Flat priors:</strong> 0.2σ.
+- <strong>Tomczak–Kormendy priors</strong> (the narrower widths of the underlying fits): 3.3σ, because those priors predict too faint a background.
+- <strong>Survey-average priors</strong> (the authors&rsquo; recommendation): 1.7σ.
+- <strong>HD+MP+DP+CURN spectrum:</strong> 0.6σ.
+- <strong>Lowering the spectrum by 0.1–0.2 dex</strong>, as pulsar red-noise priors may require: down to 1.0σ.</p>
+<p>The binaries-alone fit pins τ_f near the 0.1 Gyr edge of its prior. Under survey-average priors, requiring τ_f &gt; 2 Gyr pushes the phase-transition preference above 2σ, and τ_f &gt; 6.5 Gyr pushes it above 3σ. The verdict is therefore tied to the final-parsec problem.</p>
+<p>Caveats:
+- Significances are nominal. The χ² conversion ignores parameters that are non-identifiable under the null.
+- Orbits are assumed circular.
+- Frequency bins are treated as independent.
+- The per-realisation Gaussian likelihood is justified only in the three lowest bins.
+- The best-fit phase transitions sit at α≫1, beyond where the sound-wave template was simulated (α up to about 0.1). A strongly supercooled template gives 1.9σ, against 3.2σ with the power law.</p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -5693,7 +5813,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-18 07:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-19 07:24 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

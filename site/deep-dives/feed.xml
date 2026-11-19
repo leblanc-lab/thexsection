@@ -7,7 +7,111 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>An Updated Meta-Analysis of LHC Exotic Physics Results</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-24065</link>
+    <guid isPermaLink="false">arxiv:2611.24065</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ece \c{S}ahin et al.</dc:creator>
+    <description><![CDATA[<p>ATLAS expected-limit bands are miscalibrated, while CMS bands look fine. Şahin and Özcan extracted observed limits and ±1σ/±2σ bands directly from the SVG geometry of 168 ATLAS and 205 CMS exclusion plots. These come from 55 exotics publications (2020–25), with uncertainties from a bootstrap over publications. In normalized averaging, CMS sits at 66.1±4.4% (1σ) and 95.3±1.9% (2σ). ATLAS has 73.3±7.6% inside 1σ, compatible with nominal, and 99.2±0.4% inside 2σ, well above nominal. The raw-averaged ATLAS 1σ fraction is 81.8±5.9%, which is +2.3σ.</p>
+<p>The 2σ excess survives several checks:
+- It persists in columns where the band edges are well separated (99.5±0.3%).
+- It holds in both publication-year halves and on a citation-independent subset.
+- The plot reading matches HEPData for 1522 of 1523 cross-checked points.</p>
+<p>In the 2019 study, both experiments matched nominal coverage.</p>
+<p>The pyhf toys separate the candidate explanations by which side of the band the observed limits avoid:
+- <strong>Low counts:</strong> with one expected event, 92% of limits land inside 1σ and none below. This mainly empties the lower side.
+- <strong>A-posteriori bands:</strong> reach about 99% inside 2σ only when the signal region itself constrains an uncertainty of half the background or more.</p>
+<p>ATLAS has almost no points beyond <em>either</em> 2σ edge. The authors therefore favour bands that are too wide, from conservative uncertainties or a-posteriori computation, over low counts alone. Because most analyses fix backgrounds with control regions, they doubt a-posteriori bands explain the whole effect.</p>
+<p>Caveats:
+- The scope is a topic-restricted exotics subset.
+- The authors cannot tell common practice from a few analyses. Single publications move ATLAS by up to about 1σ.
+- Özcan is an ATLAS author.
+- No paper in the sample states whether its bands are a priori or a posteriori.</p>
+<p>The authors&rsquo; four-item disclosure list (tool and version, limit type, asymptotic vs. toys, convention) is the actionable output.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A fully differential charged-particle phase-space measurement of Z+jets production with ATLAS</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-24270</link>
+    <guid isPermaLink="false">arxiv:2611.24270</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ATLAS Collaboration</dc:creator>
+    <description><![CDATA[<p>ATLAS has published Z→μμ+jets (140 fb⁻¹, p_T^μμ&gt;200 GeV) as an unbinned unfold of the full charged-particle final state. Each event averages about 50 tracks and exceeds 250 in some, so the unfold is effectively 150–750 dimensional. The release is particle-level MG5+Py8 events with OmniFold weights in fb, plus 162 weight variations (27 systematic, 135 bootstrap).</p>
+<p>The method changes against the earlier 24-observable MultiFold analysis:
+- Particle Transformers replace the earlier MLPs.
+- Networks are pretrained on about 14M MG5+Py8-vs-Sherpa events. The authors call this essential because only about 247k data events pass selection.
+- Unfolding runs seven iterations.
+- Compute cost was roughly 400k A100-hours.</p>
+<p>Showcase results:
+- <strong>Charged multiplicity:</strong> MG5+Py8 overshoots and Sherpa undershoots n_ch, by up to about 50%.
+- <strong>Energy correlator:</strong> the first all-charged-particle EEC in pp, at ≤5% precision, with clear perturbative, free-hadron and wide-angle regimes. Both generators miss the smallest-z region.
+- <strong>Jet shapes:</strong> C/A, k_t and anti-k_t jet shapes come from the same sample without recalibration.
+- <strong>Intrinsic dimension:</strong> the first measured jet intrinsic dimension, below 10 at all EMD scales.</p>
+<p>Caveats:
+- Only charged particles are measured.
+- Hadron-species fractions and process labels are not constrained; they come from MG5+Py8.
+- The unfolding uncertainty is among the dominant terms and grows in low-statistics regions.
+- Users must validate each new observable on the released pseudodata, with at least 5000 effective events per bin. This is not a formality: finer n_ch binning drops to p=0.041, and m_j1 already sits at p=0.016.
+- No goodness-of-fit procedure is yet recommended for genuinely unbinned downstream use.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Seeing through the fog: astrophysical priors and the evidence for new physics in PTAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-23371</link>
+    <guid isPermaLink="false">arxiv:2611.23371</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Torsten Bringmann et al.</dc:creator>
+    <description><![CDATA[<p>binaryfog emulates holodeck SMBHB population spectra, including per-bin median, width and skew of the realisation scatter, in about 0.2 ms instead of about 3 min. That speed makes it feasible to profile over all six astrophysical parameters in new-physics fits to the 2026 re-run NANOGrav 15-yr CURN free spectrum.</p>
+<p>Under NANOGrav&rsquo;s own priors, replacing the (A,γ) power law with the population model lowers every new-physics preference:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Power law</th>
+<th>Population model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase transition</td>
+<td>2.8σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Cosmic superstrings</td>
+<td>2.9σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Inflation</td>
+<td>2.8σ</td>
+<td>1.5σ</td>
+</tr>
+<tr>
+<td>Domain walls</td>
+<td>2.1σ</td>
+<td>0.7σ</td>
+</tr>
+</tbody>
+</table>
+<p>The driver is that binary lifetime τ_f and inner hardening index can bend the binary spectrum at low frequency, which a power law cannot.</p>
+<p>The result is prior-dominated:
+- <strong>Flat priors:</strong> 0.2σ.
+- <strong>Tomczak–Kormendy priors</strong> (the narrower widths of the underlying fits): 3.3σ, because those priors predict too faint a background.
+- <strong>Survey-average priors</strong> (the authors&rsquo; recommendation): 1.7σ.
+- <strong>HD+MP+DP+CURN spectrum:</strong> 0.6σ.
+- <strong>Lowering the spectrum by 0.1–0.2 dex</strong>, as pulsar red-noise priors may require: down to 1.0σ.</p>
+<p>The binaries-alone fit pins τ_f near the 0.1 Gyr edge of its prior. Under survey-average priors, requiring τ_f &gt; 2 Gyr pushes the phase-transition preference above 2σ, and τ_f &gt; 6.5 Gyr pushes it above 3σ. The verdict is therefore tied to the final-parsec problem.</p>
+<p>Caveats:
+- Significances are nominal. The χ² conversion ignores parameters that are non-identifiable under the null.
+- Orbits are assumed circular.
+- Frequency bins are treated as independent.
+- The per-realisation Gaussian likelihood is justified only in the three lowest bins.
+- The best-fit phase transitions sit at α≫1, beyond where the sound-wave template was simulated (α up to about 0.1). A strongly supercooled template gives 1.9σ, against 3.2σ with the power law.</p>]]></description>
+  </item>
 
   <item>
     <title>Search for the low-mass isotropic signature of QCD instantons in pp collisions at √(s)=13 TeV using the ATLAS detector</title>
@@ -3249,37 +3353,6 @@
     <description><![CDATA[<p>Haisch and Stefanek upgrade SMEFT predictions for electroweak precision observables to next-to-leading-logarithmic accuracy by combining one-loop EW matching with two- and one-loop RG evolution from Λ to m_Z, leveraging the newly available two-loop SMEFT beta functions. A key methodological point, proven via the T-parameter contribution of the right-handed four-top operator Q_uu³³³³: two-loop matching is <em>not</em> needed for NLL — higher-order matching cannot generate ln(Λ/m_Z) logarithms, so one-loop matching plus NLL running suffices. The headline deliverable is numerical NLL expressions encoding the full dependence on all 210 independent Wilson coefficients (excluding only Q_H, which enters at NNLL), released as ancillary files, with explicit results tabulated for five benchmark operators.</p>
 <p><strong>Why it matters:</strong> whereas tree-level matching reaches only 23 operators, NLL running opens EWPO sensitivity to the entire operator set — including operators contributing <em>only</em> at two-loop order (Q_G, Q_HG, Q_uH³³), which have no one-loop EWPO effect at all. For the top chromomagnetic dipole Q_uG³³, the genuine two-loop L (green) terms actually dominate the L²/L (red) terms, driven by a large y_t³ beta function mixing into Q_HD. This is positioned as the reference basis for FCC-ee/CEPC global fits at sub-permille precision, continuing the SMEFT-precision thread.</p>
 <p><strong>Caveats:</strong> the framework is illustrated on current LEP/SLC fits and projections rather than delivering a full global result here; couplings are fixed at m_Z (differences are NNLL). The authors note complementary concurrent work (Mantani et al.; Born et al.), and stress that a complete analysis must retain both oblique and non-oblique observables.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neutrinoless Double-Beta Decays from Operator Mixing</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-07657</link>
-    <guid isPermaLink="false">arxiv:2608.07657</guid>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">J. de Vries et al.</dc:creator>
-    <description><![CDATA[<p><em>(abstract only)</em> A complete one-loop SMEFT renormalization-group analysis shows that dimension-seven operators which do not contribute to 0νββ at tree level nonetheless generate sizable contributions via operator mixing under RG running. Accounting for the full one-loop evolution, the resulting 0νββ constraints become the most stringent bounds to date on numerous dim-7 operators — improving on limits from meson decays. The authors stress that effects beyond the first leading logarithm can dominate for specific operators and flavor combinations.</p>
-<p>Why it matters: this is the day&rsquo;s most experiment-adjacent rigor, converting the extreme sensitivity of 0νββ into a systematic constraint on the broader lepton-number-violating operator basis rather than a single-parameter mass bound. Caveat: only the abstract is available, so the numerical bounds and the flavor/operator specifics cannot be verified here.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The π/12 model: trimaximal first-column lepton mixing with charged-lepton μ–τ breaking</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-08394</link>
-    <guid isPermaLink="false">arxiv:2608.08394</guid>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vernon Barger</dc:creator>
-    <description><![CDATA[<p>Barger decomposes the first PMNS column into two independent conditions — the trimaximal norm |U_e1|²⁼²/3 (ε_1) and the μ–τ balance |U_μ1|=|U_τ1| (ε_2) — and shows that including the first JUNO result the data treat them asymmetrically: ε_1=+0.014±0.010 (consistent with zero at 1.4σ) while ε_2=+0.29⁺⁰.07_-0.13, large in central value but disfavoring zero only at 1.5σ because the profile likelihood in δ is shallow. A TM_1 neutrino sector with the electron-row condition |U_e2|/|U_e3|=2+√(3) fixes sin²θ_13=(2-√(3))/12=0.02233 and sin²θ_12=0.31811; a single charged-lepton 2–3 rotation (angle θ_e≃-1.9^∘, phase forced to α=0 by flavon alignment in an S_4×C_4×C_3×C_2 realization) generates ε_2=sin2θ_ecosα and pins δ=272^∘±2^∘, with ε_2=-0.066 — opposite in sign to the measured central value.</p>
-<p>Why it matters: the framework is unusually falsifiable. The predicted δ sits 1.7σ from the current central value on the present profile likelihood, and Hyper-Kamiokande&rsquo;s 20^∘ design precision resolves it at 3σ; a confirmed second octant (δ≈177^∘) would exclude it at &gt;4σ. Caveat: the rigid mass sum Σm_ν=65.6 meV sits at/just beyond the DESI ΛCDM bound (64.2 meV), requiring dynamical dark energy if cosmology tightens; m_ββ=5.4 meV is below current 0νββ reach.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Challenge of Detecting Quantum Nature of Gravitational Waves</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-08803</link>
-    <guid isPermaLink="false">arxiv:2608.08803</guid>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu Miyauchi et al.</dc:creator>
-    <description><![CDATA[<p>Working with Gaussian states and a linear single-mode detector coupling, Miyauchi et al. use a squeezing witness W=|M|-N (W&gt;0 certifies sub-vacuum quadrature variance impossible for any coherent-state mixture) to track whether source squeezing survives projection onto the detector-accessible wave-packet mode. Three source scenarios all fail: inflationary two-mode squeezing reduces to a thermal marginal (W_A=-N_A&lt;0); a single-mode-squeezed stochastic background has random phases across coherence patches, washing out |M_A|; an isolated source is suppressed geometrically by W_A≤ΔΩ(ℓ_eff+1)²/8π, giving ΔΩ∼(3 km/100 Mpc)²∼10⁻⁴² for ground detectors unless emission is collimated to ℓ_eff≳10²¹.</p>
-<p>They then show source squeezing is inessential: a pre-squeezed <em>detector</em> state acquires a positive witness W⁽Q)_b̃&lt;sin²ϵ/2 from a quantized wave even when the incident mode is unexcited, whereas a classical c-number field only displaces the detector (W⁽C)_b̃=0). But the witness is throttled by the graviton–detector coupling ϵ̅=h_QG/h_th, which their strain-sensitivity table gives as ∼10⁻¹⁷–10⁻³³ across nHz–THz; detection needs ϵ≳N_trial⁻¹/4, and coherent integration (ϵ∝√(ωT)) reaches only ∼10⁻⁸.5 for a THz signal over a year.</p>
-<p>Why it matters: this is the second no-go in two weeks, explicitly extending the Bao et al. (2607.27313) coarse-graining/weak-transfer argument to gravitational waves. The detector-squeezing loophole is real but doesn&rsquo;t defeat the coupling suppression — the program&rsquo;s wall is confirmed from another direction. Caveat: results are restricted to Gaussian states and linear single-mode coupling, which the authors argue is the optimistic case.</p>]]></description>
   </item>
 
 </channel>
