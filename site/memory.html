@@ -38,64 +38,82 @@ digest thinks with. Read these to catch up after time away.</p>
 <article class="issue tier">
   <p class="kicker">The last seven days of postings, compressed.</p>
   <h2 class="issue-date">This week</h2>
-  <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-11-19">The Cross Section — Rolling synthesis, week ending 2026-11-19</h1>
-<p>The week&rsquo;s dominant mood was <strong>auditing</strong>: what quoted limits, error bars, priors and proofs actually mean. The field&rsquo;s own results were the main target. Two physics threads kept pace with the audits. The first was steady model-building around the 248 keV LZ event, now centered on solar capture. The second was the gravitational-wave phase-transition program. Its weak links moved this week: away from the nucleation rate, and toward wall hydrodynamics and astrophysical priors. Superallowed <span class="arithmatex">\(V_{ud}\)</span> became a new nuclear-theory front. A fresh 3.5σ ATLAS excess arrived the day before a paper questioning how ATLAS builds its expected limits.</p>
+  <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-11-20">The Cross Section: rolling synthesis, week ending 2026-11-20</h1>
+<p>This week&rsquo;s main habit was self-audit: of predictions, of priors and of how error bars are built. The longest thread is gravitational-wave (GW) phase-transition forecasts. Each day the fragility appeared at a different point, ending with a resummation ambiguity worth up to nine orders of magnitude. Superradiance bounds on axions took three independent hits, each from a different mechanism. The <span class="arithmatex">\(V_{ud}\)</span> nuclear-correction floor became explicit and now has a QMC cross-check. Two default references were replaced: Higgs Report 5 supersedes YR4, and LHCb published a new γ combination. A scrutiny of how ATLAS builds its expected limits arrived just as the list of unclosed LHC excesses grew by an instanton-like 3.5σ entry. Inelastic-DM models built for the LZ excess kept multiplying, and the newest ones skip the solar-capture test.</p>
 <h2 id="running-themes">Running themes</h2>
 <ul>
-<li><strong>LZ 248 keV event (steady, maturing).</strong></li>
-<li>Models now get judged by whether they survive solar capture.</li>
-<li>Bera et al. broke the all-inelastic pattern with an elastic anapole Majorana fermion: ~300 GeV, relic density matched, more events predicted at low energy. The abstract doesn&rsquo;t address solar capture.</li>
-<li>Lin et al. recomputed capture with a transport equation. When nuclear scattering is rare, annihilation drops by orders of magnitude. For the inelastic higgsino, the splitting bound tightens by tens of keV.</li>
-<li>Buttazzo et al. (composite Higgs, few TeV, ~300 keV splitting) is the first in this run to claim solar capture, the high-energy sideband and gamma rays together.</li>
-<li>Leng et al. (radion portal) used only a solar-neutrino proxy.</li>
-<li>Dai et al. added the first three-bin likelihood fit.</li>
-<li><strong>GW phase-transition forecasts (heating).</strong></li>
-<li>11-13 to 11-16: forecasts are only as good as the transition dynamics. Zhang et al. showed homogeneity fails near the completion boundary. Barni et al. showed <span class="arithmatex">\((\xi_w,\alpha_N)\)</span> need not fix a unique wall flow.</li>
-<li>11-17: Zhou et al.&rsquo;s lattice nucleation rate sits only ~8% from one loop, and Gil et al. found modest higher-dimension-operator corrections. The rate itself looks robust.</li>
-<li>11-19: the same fragility appeared on the data side. Bringmann et al. cut the PTA preference for a phase transition from 2.8σ to 1.5σ with a realistic SMBHB population. AbdusSalam et al. found LVK constraints are prior-dominated.</li>
-<li><strong>Self-audit of limits and inputs (heating).</strong></li>
-<li>Bounds loosened first: Suezaki&rsquo;s supernova core-heating recount (~50× weaker Fornax limit) and Cappiello&rsquo;s resonant trapping.</li>
-<li>Windows then closed: Blinov&rsquo;s pion chimney and Fiorillo&rsquo;s SN 1987A neutrino dipole bound.</li>
-<li>Inputs were audited too: HERA systematics treated as uncertain (Canonero), adaptive-integrator NLL artifacts (Zhu), and a gap found and closed in a published proof using Lean 4 (Chen).</li>
-<li>11-19: Şahin et al. found ATLAS places 99.2% of observed limits inside its 2σ band, against CMS&rsquo;s nominal 95.3%.</li>
-<li><strong>Superallowed <span class="arithmatex">\(V_{ud}\)</span> (new, heating).</strong></li>
-<li>Novario et al. (coupled-cluster EFT, 12 transitions) leave a floor of <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span> from a contact-term combination that is correlated with <span class="arithmatex">\(V_{ud}\)</span> itself.</li>
-<li>Chambers-Wall et al. (QMC) find three-nucleon <span class="arithmatex">\(\mathcal{O}(\alpha^2)\)</span> terms that move <span class="arithmatex">\(V_{ud}\)</span> at the 10⁻⁴ level.</li>
-<li><strong>Loop counts (steady).</strong></li>
-<li>Six-loop QED (Li), with six-loop QCD flagged as next.</li>
-<li>Three-loop <span class="arithmatex">\(V\)</span>+jet (Gehrmann).</li>
-<li>Same-day N³LO pieces for <span class="arithmatex">\(B\to\gamma\ell\nu\)</span> from three groups (Huang, Liu, Ji), aimed at <span class="arithmatex">\(\lambda_B\)</span>.</li>
-<li><strong>Superradiance clouds shrinking (emerging).</strong></li>
-<li>Foster et al.&rsquo;s gravitational Auger effect and Bottaro et al.&rsquo;s self-interaction cap reach the same conclusion by different mechanisms: black-hole spin bounds on axions need revisiting.</li>
+<li><strong>GW phase-transition fragility (heating up).</strong> The weak link moved every day:</li>
+<li>11-16: wall hydrodynamics is non-unique when sound speeds differ (<a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>).</li>
+<li>11-17: the nucleation rate proved robust, ~8% from one loop (<a href="https://arxiv.org/abs/2611.18794">arXiv:2611.18794</a>).</li>
+<li>11-19: the data side is prior-dominated. With a realistic SMBHB population, the PTA preference drops from 2.8σ to 1.5σ (<a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a>), and LVK constraints depend strongly on the prior (<a href="https://arxiv.org/abs/2611.24625">arXiv:2611.24625</a>).</li>
+<li>11-20: thermal resummation choice alone moves the GW peak amplitude by up to 10⁹ (<a href="https://arxiv.org/abs/2611.26417">arXiv:2611.26417</a>).</li>
 </ul>
+<p>Expect LISA projections to be challenged on these grounds.</p>
+<ul>
+<li><strong>Superradiance clouds smaller than assumed (heating up).</strong> Three mechanisms all deplete or cap the clouds:</li>
+<li>Gravitational &ldquo;Auger&rdquo; effect (<a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>, 11-17).</li>
+<li>Self-interaction feeding of the ground state (<a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a>, 11-19).</li>
+<li>Self-gravity (<a href="https://arxiv.org/abs/2611.26541">arXiv:2611.26541</a>, 11-20).</li>
+</ul>
+<p>The shared conclusion is that black-hole spin bounds on axions need revision. A binary companion can partly offset the depletion, so environment now enters the bounds.</p>
+<ul>
+<li>
+<p><strong><span class="arithmatex">\(V_{ud}\)</span> nuclear corrections (steady, sharpening).</strong> Novario et al. (<a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>) make the scale uncertainty negligible. The remaining floor, <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span>, comes from contact terms. QMC three-body terms (<a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a>) move <span class="arithmatex">\(V_{ud}\)</span> at the 10⁻⁴ level.</p>
+</li>
+<li>
+<p><strong>Error bars and limits, audited (steady, broadening).</strong></p>
+</li>
+<li>Limits loosened (11-16): supernova core heating gives ~50× weaker DM–neutrino limits (<a href="https://arxiv.org/abs/2611.17922">arXiv:2611.17922</a>).</li>
+<li>Windows closed (11-18): the ALP <span class="arithmatex">\(\pi^0\)</span> &ldquo;chimney&rdquo; (<a href="https://arxiv.org/abs/2611.21728">arXiv:2611.21728</a>) and an SN 1987A neutrino dipole bound.</li>
+<li>Inputs re-examined: treating HERA systematics as uncertain cuts χ² from 1363 to 1306 (<a href="https://arxiv.org/abs/2611.22891">arXiv:2611.22891</a>), and adaptive integrators can produce artificially low NLLs (<a href="https://arxiv.org/abs/2611.19355">arXiv:2611.19355</a>).</li>
+<li>
+<p>Most pointed: ATLAS limit-band coverage (<a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a>).</p>
+</li>
+<li>
+<p><strong>LZ inelastic-DM model-building (steady, templating).</strong></p>
+</li>
+<li>Buttazzo et al. (<a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a>) check solar capture, the LZ sideband and gamma rays.</li>
+<li>Leng et al. (<a href="https://arxiv.org/abs/2611.22890">arXiv:2611.22890</a>) check solar capture only by proxy.</li>
+<li>Wang et al. (<a href="https://arxiv.org/abs/2611.25931">arXiv:2611.25931</a>) and Yin et al. (<a href="https://arxiv.org/abs/2611.26274">arXiv:2611.26274</a>) post near-identical photon-mediated templates and never mention solar capture.</li>
+</ul>
+<p>The field&rsquo;s standard is drifting, which is worth flagging.</p>
 <h2 id="turning-points">Turning points</h2>
 <ul>
-<li><strong>Solar capture recomputed</strong> (Lin et al.). It is now the yardstick for LZ models, and its verdict cuts both ways depending on the scattering regime.</li>
-<li><strong>Nucleation exonerated, hydrodynamics implicated.</strong> The lattice result moves GW-forecast scrutiny downstream to walls. Barni et al.&rsquo;s public code HydróDex is the tool to watch.</li>
-<li><strong>PTA phase-transition hint softened</strong> to 1.5σ. It returns above 3σ only if binaries take more than ~6.5 Gyr to merge.</li>
-<li><strong>ATLAS limit coverage anomaly.</strong> The leading explanation is expected limits computed after a fit to data, which is the default in common tools. This recasts how ATLAS excesses and limits should be read.</li>
-<li><strong>Method adoption:</strong> ATLAS published the first unbinned, fully differential collider cross section (OmniFold Z+jets), released as reusable events with unfolded weights.</li>
+<li><strong>YR4 retired.</strong> LHC Higgs WG Report 5 (<a href="https://arxiv.org/abs/2611.26281">arXiv:2611.26281</a>) is the new default citation. PDFs now lead the uncertainty for the best-predicted modes, and the ggF PDF-order mismatch uncertainty is doubled.</li>
+<li><strong>γ = 63.2°⁺²·³₋₂.₂</strong> from LHCb (<a href="https://arxiv.org/abs/2611.26449">arXiv:2611.26449</a>), with the most precise charm-mixing parameters to date.</li>
+<li><strong>ATLAS limit coverage.</strong> 99.2% of ATLAS observed limits fall inside the 2σ band, against nominal coverage for CMS. Likely culprits include expected limits computed after a fit to data. The recommendation is that publications state the method.</li>
+<li><strong>First LHC instanton search.</strong> ATLAS (<a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a>) finds a 3.5σ isotropic low-mass excess.</li>
+<li><strong>Nucleation rate cleared.</strong> It is no longer considered the weak link in GW forecasts.</li>
+<li><strong>First unbinned, fully differential collider cross section</strong> (ATLAS Z+jets via OmniFold, <a href="https://arxiv.org/abs/2611.24270">arXiv:2611.24270</a>). This may become a template for future measurements.</li>
 </ul>
 <h2 id="open-questions">Open questions</h2>
 <ul>
-<li><strong>ATLAS instanton-like excess (3.5σ).</strong> Is it local? Is the minimum-bias background modeling sound? It joins the 13.6 GeV diphoton and 146 GeV <span class="arithmatex">\(e\mu\)</span> excesses on the unclosed list.</li>
-<li><strong>Expected-limit method.</strong> Which method did each ATLAS search use? Watch for responses to Şahin&rsquo;s disclosure recommendation.</li>
-<li><strong>LZ.</strong> Do Bera&rsquo;s anapole model and Leng&rsquo;s radion model survive Lin&rsquo;s capture calculation? The full LZ run will test Bera&rsquo;s low-energy prediction and the sideband.</li>
-<li><strong><span class="arithmatex">\(V_{ud}\)</span>.</strong> Neither abstract gives a first-row unitarity verdict. In ¹⁰C, coupled-cluster sits 30% below QMC. Which nuclear input breaks the contact-term degeneracy?</li>
-<li><strong><span class="arithmatex">\(B\to\gamma\ell\nu\)</span>.</strong> The three groups&rsquo; overlapping three-loop results have not yet been compared.</li>
-<li><strong>Chiral lattice fermions.</strong> Liu proved that Craig&rsquo;s overlap measure and the Hsu/Witten continuum determinant agree for one SU(5) generation on <span class="arithmatex">\(T^4\)</span>. This answers the comparison Witten&rsquo;s 11-05 note invited. Lu et al. then showed the overlap Weyl fermion is not reflection positive at finite spacing. How the two results fit together is unresolved.</li>
-<li><strong>Unreported numbers.</strong> The NA62 <span class="arithmatex">\(K^+\to\pi^+\nu\bar\nu\)</span> central value is not in the abstract. Neither is which side of the inclusive/exclusive split Qu et al.&rsquo;s <span class="arithmatex">\(|V_{cb}|\)</span> lands on.</li>
-<li><strong>Spectroscopy.</strong> The glueball reading of X(2370) is weakening (Peng et al.; Kang&rsquo;s 11-10 sum-rule result). BESIII&rsquo;s <span class="arithmatex">\(K_1^*(1870)\)</span> <span class="arithmatex">\(K\eta'\)</span> channel sits awkwardly with the 3S–2D interpretation.</li>
+<li><strong>ATLAS instanton excess.</strong> Is the 3.5σ local? How robust is the minimum-bias background? It joins the 13.6 GeV diphoton and 146 GeV <span class="arithmatex">\(e\mu\)</span> excesses on the unclosed list.</li>
+<li><strong>¹⁰C discrepancy.</strong> Coupled-cluster sits 30% below QMC; what does Chambers-Wall&rsquo;s ¹⁰C <span class="arithmatex">\(V_{ud}\)</span> value show? And where does first-row unitarity land?</li>
+<li><strong>B→γℓν at N³LO.</strong> Do the overlapping three-loop results agree (<a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a>, <a href="https://arxiv.org/abs/2611.18206">arXiv:2611.18206</a>, <a href="https://arxiv.org/abs/2611.18204">arXiv:2611.18204</a>)?</li>
+<li><strong><span class="arithmatex">\(|V_{cb}|\)</span> split.</strong> Which side of the inclusive–exclusive split does Qu et al. (<a href="https://arxiv.org/abs/2611.17945">arXiv:2611.17945</a>) land on?</li>
+<li><strong>Sign of the <span class="arithmatex">\(K^+\to\pi^+\ell^+\ell^-\)</span> form factor.</strong> The significance falls to 2.0–3.4σ at physical charm (<a href="https://arxiv.org/abs/2611.17800">arXiv:2611.17800</a>).</li>
+<li><strong>Keshet WIMP lines.</strong> The blind scan gives 2.8σ; the 6.1σ appears only after combining with the author&rsquo;s earlier samples (<a href="https://arxiv.org/abs/2611.21595">arXiv:2611.21595</a>).</li>
+<li><strong>Factorization in pure QED.</strong> Hager et al. (<a href="https://arxiv.org/abs/2611.26026">arXiv:2611.26026</a>) conjecture that soft–collinear factorization fails, which matters for FCC-ee non-global observables.</li>
+<li><strong>Spectroscopy readings.</strong> The glueball interpretation of X(2370) is weakened (<a href="https://arxiv.org/abs/2611.24372">arXiv:2611.24372</a>). The <span class="arithmatex">\(K_1^*(1870)\)</span> predicted <span class="arithmatex">\(K\eta'\)</span> mode is subordinate, which conflicts with the channel the state was seen in.</li>
+<li><strong>Charm CP asymmetries.</strong> LHCb&rsquo;s <span class="arithmatex">\(A_{CP}(KK)\)</span> and <span class="arithmatex">\(A_{CP}(\pi\pi)\)</span> values are not given in the abstract.</li>
 </ul>
 <h2 id="recurring-references">Recurring references</h2>
 <ul>
-<li>LZ: <a href="https://arxiv.org/abs/2611.16689">arXiv:2611.16689</a> (solar capture), <a href="https://arxiv.org/abs/2611.15957">arXiv:2611.15957</a> (anapole), <a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a> (composite), <a href="https://arxiv.org/abs/2611.22890">arXiv:2611.22890</a> (radion), <a href="https://arxiv.org/abs/2611.16553">arXiv:2611.16553</a> (B−L fit)</li>
-<li>GW: <a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>, <a href="https://arxiv.org/abs/2611.17411">arXiv:2611.17411</a> (wall hydrodynamics), <a href="https://arxiv.org/abs/2611.18794">arXiv:2611.18794</a> (lattice nucleation), <a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a> (PTA priors), <a href="https://arxiv.org/abs/2611.24625">arXiv:2611.24625</a> (LVK priors)</li>
-<li><span class="arithmatex">\(V_{ud}\)</span>: <a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>, <a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a></li>
-<li>LHC statistics: <a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a> (instanton excess), <a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a> (limit coverage), <a href="https://arxiv.org/abs/2611.24270">arXiv:2611.24270</a> (OmniFold)</li>
-<li>Superradiance: <a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>, <a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a></li>
-<li>Chiral lattice: <a href="https://arxiv.org/abs/2611.16544">arXiv:2611.16544</a>, <a href="https://arxiv.org/abs/2611.20084">arXiv:2611.20084</a></li>
-<li><span class="arithmatex">\(B\to\gamma\ell\nu\)</span>: <a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a>, <a href="https://arxiv.org/abs/2611.18206">arXiv:2611.18206</a>, <a href="https://arxiv.org/abs/2611.18204">arXiv:2611.18204</a></li>
+<li><a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>: Barni, non-unique bubble-wall hydrodynamics</li>
+<li><a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>: Novario, EFT <span class="arithmatex">\(\bar\delta_{\rm NS}\)</span> and the <span class="arithmatex">\(V_{ud}\)</span> floor</li>
+<li><a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a>: Chambers-Wall, QMC three-body δ_NS</li>
+<li><a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>: Foster, gravitational Auger effect</li>
+<li><a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a>: Bottaro, cloud-mass cap from self-interactions</li>
+<li><a href="https://arxiv.org/abs/2611.26541">arXiv:2611.26541</a>: Bošković, self-gravity depletion</li>
+<li><a href="https://arxiv.org/abs/2611.26417">arXiv:2611.26417</a>: Zhao, resummation ambiguity in GW forecasts</li>
+<li><a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a>: Bringmann, PTA priors (binaryfog)</li>
+<li><a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a>: ATLAS, instanton-like excess</li>
+<li><a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a>: Şahin, limit-band coverage</li>
+<li><a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a>: Buttazzo, composite inelastic DM for LZ</li>
+<li><a href="https://arxiv.org/abs/2611.21252">arXiv:2611.21252</a>: Cerrone, general mass-ordering formalism (extends Machado 11-11)</li>
+<li><a href="https://arxiv.org/abs/2611.26281">arXiv:2611.26281</a>: Higgs WG Report 5</li>
+<li><a href="https://arxiv.org/abs/2611.26449">arXiv:2611.26449</a>: LHCb γ/charm-mixing combination</li>
 </ul>
 </article>
 
@@ -466,64 +484,82 @@ digest thinks with. Read these to catch up after time away.</p>
   <article class="issue tier">
     <p class="kicker">week</p>
     <h2 class="issue-date">2026-W47</h2>
-    <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-11-19">The Cross Section — Rolling synthesis, week ending 2026-11-19</h1>
-<p>The week&rsquo;s dominant mood was <strong>auditing</strong>: what quoted limits, error bars, priors and proofs actually mean. The field&rsquo;s own results were the main target. Two physics threads kept pace with the audits. The first was steady model-building around the 248 keV LZ event, now centered on solar capture. The second was the gravitational-wave phase-transition program. Its weak links moved this week: away from the nucleation rate, and toward wall hydrodynamics and astrophysical priors. Superallowed <span class="arithmatex">\(V_{ud}\)</span> became a new nuclear-theory front. A fresh 3.5σ ATLAS excess arrived the day before a paper questioning how ATLAS builds its expected limits.</p>
+    <h1 id="the-cross-section-rolling-synthesis-week-ending-2026-11-20">The Cross Section: rolling synthesis, week ending 2026-11-20</h1>
+<p>This week&rsquo;s main habit was self-audit: of predictions, of priors and of how error bars are built. The longest thread is gravitational-wave (GW) phase-transition forecasts. Each day the fragility appeared at a different point, ending with a resummation ambiguity worth up to nine orders of magnitude. Superradiance bounds on axions took three independent hits, each from a different mechanism. The <span class="arithmatex">\(V_{ud}\)</span> nuclear-correction floor became explicit and now has a QMC cross-check. Two default references were replaced: Higgs Report 5 supersedes YR4, and LHCb published a new γ combination. A scrutiny of how ATLAS builds its expected limits arrived just as the list of unclosed LHC excesses grew by an instanton-like 3.5σ entry. Inelastic-DM models built for the LZ excess kept multiplying, and the newest ones skip the solar-capture test.</p>
 <h2 id="running-themes">Running themes</h2>
 <ul>
-<li><strong>LZ 248 keV event (steady, maturing).</strong></li>
-<li>Models now get judged by whether they survive solar capture.</li>
-<li>Bera et al. broke the all-inelastic pattern with an elastic anapole Majorana fermion: ~300 GeV, relic density matched, more events predicted at low energy. The abstract doesn&rsquo;t address solar capture.</li>
-<li>Lin et al. recomputed capture with a transport equation. When nuclear scattering is rare, annihilation drops by orders of magnitude. For the inelastic higgsino, the splitting bound tightens by tens of keV.</li>
-<li>Buttazzo et al. (composite Higgs, few TeV, ~300 keV splitting) is the first in this run to claim solar capture, the high-energy sideband and gamma rays together.</li>
-<li>Leng et al. (radion portal) used only a solar-neutrino proxy.</li>
-<li>Dai et al. added the first three-bin likelihood fit.</li>
-<li><strong>GW phase-transition forecasts (heating).</strong></li>
-<li>11-13 to 11-16: forecasts are only as good as the transition dynamics. Zhang et al. showed homogeneity fails near the completion boundary. Barni et al. showed <span class="arithmatex">\((\xi_w,\alpha_N)\)</span> need not fix a unique wall flow.</li>
-<li>11-17: Zhou et al.&rsquo;s lattice nucleation rate sits only ~8% from one loop, and Gil et al. found modest higher-dimension-operator corrections. The rate itself looks robust.</li>
-<li>11-19: the same fragility appeared on the data side. Bringmann et al. cut the PTA preference for a phase transition from 2.8σ to 1.5σ with a realistic SMBHB population. AbdusSalam et al. found LVK constraints are prior-dominated.</li>
-<li><strong>Self-audit of limits and inputs (heating).</strong></li>
-<li>Bounds loosened first: Suezaki&rsquo;s supernova core-heating recount (~50× weaker Fornax limit) and Cappiello&rsquo;s resonant trapping.</li>
-<li>Windows then closed: Blinov&rsquo;s pion chimney and Fiorillo&rsquo;s SN 1987A neutrino dipole bound.</li>
-<li>Inputs were audited too: HERA systematics treated as uncertain (Canonero), adaptive-integrator NLL artifacts (Zhu), and a gap found and closed in a published proof using Lean 4 (Chen).</li>
-<li>11-19: Şahin et al. found ATLAS places 99.2% of observed limits inside its 2σ band, against CMS&rsquo;s nominal 95.3%.</li>
-<li><strong>Superallowed <span class="arithmatex">\(V_{ud}\)</span> (new, heating).</strong></li>
-<li>Novario et al. (coupled-cluster EFT, 12 transitions) leave a floor of <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span> from a contact-term combination that is correlated with <span class="arithmatex">\(V_{ud}\)</span> itself.</li>
-<li>Chambers-Wall et al. (QMC) find three-nucleon <span class="arithmatex">\(\mathcal{O}(\alpha^2)\)</span> terms that move <span class="arithmatex">\(V_{ud}\)</span> at the 10⁻⁴ level.</li>
-<li><strong>Loop counts (steady).</strong></li>
-<li>Six-loop QED (Li), with six-loop QCD flagged as next.</li>
-<li>Three-loop <span class="arithmatex">\(V\)</span>+jet (Gehrmann).</li>
-<li>Same-day N³LO pieces for <span class="arithmatex">\(B\to\gamma\ell\nu\)</span> from three groups (Huang, Liu, Ji), aimed at <span class="arithmatex">\(\lambda_B\)</span>.</li>
-<li><strong>Superradiance clouds shrinking (emerging).</strong></li>
-<li>Foster et al.&rsquo;s gravitational Auger effect and Bottaro et al.&rsquo;s self-interaction cap reach the same conclusion by different mechanisms: black-hole spin bounds on axions need revisiting.</li>
+<li><strong>GW phase-transition fragility (heating up).</strong> The weak link moved every day:</li>
+<li>11-16: wall hydrodynamics is non-unique when sound speeds differ (<a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>).</li>
+<li>11-17: the nucleation rate proved robust, ~8% from one loop (<a href="https://arxiv.org/abs/2611.18794">arXiv:2611.18794</a>).</li>
+<li>11-19: the data side is prior-dominated. With a realistic SMBHB population, the PTA preference drops from 2.8σ to 1.5σ (<a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a>), and LVK constraints depend strongly on the prior (<a href="https://arxiv.org/abs/2611.24625">arXiv:2611.24625</a>).</li>
+<li>11-20: thermal resummation choice alone moves the GW peak amplitude by up to 10⁹ (<a href="https://arxiv.org/abs/2611.26417">arXiv:2611.26417</a>).</li>
 </ul>
+<p>Expect LISA projections to be challenged on these grounds.</p>
+<ul>
+<li><strong>Superradiance clouds smaller than assumed (heating up).</strong> Three mechanisms all deplete or cap the clouds:</li>
+<li>Gravitational &ldquo;Auger&rdquo; effect (<a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>, 11-17).</li>
+<li>Self-interaction feeding of the ground state (<a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a>, 11-19).</li>
+<li>Self-gravity (<a href="https://arxiv.org/abs/2611.26541">arXiv:2611.26541</a>, 11-20).</li>
+</ul>
+<p>The shared conclusion is that black-hole spin bounds on axions need revision. A binary companion can partly offset the depletion, so environment now enters the bounds.</p>
+<ul>
+<li>
+<p><strong><span class="arithmatex">\(V_{ud}\)</span> nuclear corrections (steady, sharpening).</strong> Novario et al. (<a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>) make the scale uncertainty negligible. The remaining floor, <span class="arithmatex">\(\delta V_{ud}\simeq6\times10^{-4}\)</span>, comes from contact terms. QMC three-body terms (<a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a>) move <span class="arithmatex">\(V_{ud}\)</span> at the 10⁻⁴ level.</p>
+</li>
+<li>
+<p><strong>Error bars and limits, audited (steady, broadening).</strong></p>
+</li>
+<li>Limits loosened (11-16): supernova core heating gives ~50× weaker DM–neutrino limits (<a href="https://arxiv.org/abs/2611.17922">arXiv:2611.17922</a>).</li>
+<li>Windows closed (11-18): the ALP <span class="arithmatex">\(\pi^0\)</span> &ldquo;chimney&rdquo; (<a href="https://arxiv.org/abs/2611.21728">arXiv:2611.21728</a>) and an SN 1987A neutrino dipole bound.</li>
+<li>Inputs re-examined: treating HERA systematics as uncertain cuts χ² from 1363 to 1306 (<a href="https://arxiv.org/abs/2611.22891">arXiv:2611.22891</a>), and adaptive integrators can produce artificially low NLLs (<a href="https://arxiv.org/abs/2611.19355">arXiv:2611.19355</a>).</li>
+<li>
+<p>Most pointed: ATLAS limit-band coverage (<a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a>).</p>
+</li>
+<li>
+<p><strong>LZ inelastic-DM model-building (steady, templating).</strong></p>
+</li>
+<li>Buttazzo et al. (<a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a>) check solar capture, the LZ sideband and gamma rays.</li>
+<li>Leng et al. (<a href="https://arxiv.org/abs/2611.22890">arXiv:2611.22890</a>) check solar capture only by proxy.</li>
+<li>Wang et al. (<a href="https://arxiv.org/abs/2611.25931">arXiv:2611.25931</a>) and Yin et al. (<a href="https://arxiv.org/abs/2611.26274">arXiv:2611.26274</a>) post near-identical photon-mediated templates and never mention solar capture.</li>
+</ul>
+<p>The field&rsquo;s standard is drifting, which is worth flagging.</p>
 <h2 id="turning-points">Turning points</h2>
 <ul>
-<li><strong>Solar capture recomputed</strong> (Lin et al.). It is now the yardstick for LZ models, and its verdict cuts both ways depending on the scattering regime.</li>
-<li><strong>Nucleation exonerated, hydrodynamics implicated.</strong> The lattice result moves GW-forecast scrutiny downstream to walls. Barni et al.&rsquo;s public code HydróDex is the tool to watch.</li>
-<li><strong>PTA phase-transition hint softened</strong> to 1.5σ. It returns above 3σ only if binaries take more than ~6.5 Gyr to merge.</li>
-<li><strong>ATLAS limit coverage anomaly.</strong> The leading explanation is expected limits computed after a fit to data, which is the default in common tools. This recasts how ATLAS excesses and limits should be read.</li>
-<li><strong>Method adoption:</strong> ATLAS published the first unbinned, fully differential collider cross section (OmniFold Z+jets), released as reusable events with unfolded weights.</li>
+<li><strong>YR4 retired.</strong> LHC Higgs WG Report 5 (<a href="https://arxiv.org/abs/2611.26281">arXiv:2611.26281</a>) is the new default citation. PDFs now lead the uncertainty for the best-predicted modes, and the ggF PDF-order mismatch uncertainty is doubled.</li>
+<li><strong>γ = 63.2°⁺²·³₋₂.₂</strong> from LHCb (<a href="https://arxiv.org/abs/2611.26449">arXiv:2611.26449</a>), with the most precise charm-mixing parameters to date.</li>
+<li><strong>ATLAS limit coverage.</strong> 99.2% of ATLAS observed limits fall inside the 2σ band, against nominal coverage for CMS. Likely culprits include expected limits computed after a fit to data. The recommendation is that publications state the method.</li>
+<li><strong>First LHC instanton search.</strong> ATLAS (<a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a>) finds a 3.5σ isotropic low-mass excess.</li>
+<li><strong>Nucleation rate cleared.</strong> It is no longer considered the weak link in GW forecasts.</li>
+<li><strong>First unbinned, fully differential collider cross section</strong> (ATLAS Z+jets via OmniFold, <a href="https://arxiv.org/abs/2611.24270">arXiv:2611.24270</a>). This may become a template for future measurements.</li>
 </ul>
 <h2 id="open-questions">Open questions</h2>
 <ul>
-<li><strong>ATLAS instanton-like excess (3.5σ).</strong> Is it local? Is the minimum-bias background modeling sound? It joins the 13.6 GeV diphoton and 146 GeV <span class="arithmatex">\(e\mu\)</span> excesses on the unclosed list.</li>
-<li><strong>Expected-limit method.</strong> Which method did each ATLAS search use? Watch for responses to Şahin&rsquo;s disclosure recommendation.</li>
-<li><strong>LZ.</strong> Do Bera&rsquo;s anapole model and Leng&rsquo;s radion model survive Lin&rsquo;s capture calculation? The full LZ run will test Bera&rsquo;s low-energy prediction and the sideband.</li>
-<li><strong><span class="arithmatex">\(V_{ud}\)</span>.</strong> Neither abstract gives a first-row unitarity verdict. In ¹⁰C, coupled-cluster sits 30% below QMC. Which nuclear input breaks the contact-term degeneracy?</li>
-<li><strong><span class="arithmatex">\(B\to\gamma\ell\nu\)</span>.</strong> The three groups&rsquo; overlapping three-loop results have not yet been compared.</li>
-<li><strong>Chiral lattice fermions.</strong> Liu proved that Craig&rsquo;s overlap measure and the Hsu/Witten continuum determinant agree for one SU(5) generation on <span class="arithmatex">\(T^4\)</span>. This answers the comparison Witten&rsquo;s 11-05 note invited. Lu et al. then showed the overlap Weyl fermion is not reflection positive at finite spacing. How the two results fit together is unresolved.</li>
-<li><strong>Unreported numbers.</strong> The NA62 <span class="arithmatex">\(K^+\to\pi^+\nu\bar\nu\)</span> central value is not in the abstract. Neither is which side of the inclusive/exclusive split Qu et al.&rsquo;s <span class="arithmatex">\(|V_{cb}|\)</span> lands on.</li>
-<li><strong>Spectroscopy.</strong> The glueball reading of X(2370) is weakening (Peng et al.; Kang&rsquo;s 11-10 sum-rule result). BESIII&rsquo;s <span class="arithmatex">\(K_1^*(1870)\)</span> <span class="arithmatex">\(K\eta'\)</span> channel sits awkwardly with the 3S–2D interpretation.</li>
+<li><strong>ATLAS instanton excess.</strong> Is the 3.5σ local? How robust is the minimum-bias background? It joins the 13.6 GeV diphoton and 146 GeV <span class="arithmatex">\(e\mu\)</span> excesses on the unclosed list.</li>
+<li><strong>¹⁰C discrepancy.</strong> Coupled-cluster sits 30% below QMC; what does Chambers-Wall&rsquo;s ¹⁰C <span class="arithmatex">\(V_{ud}\)</span> value show? And where does first-row unitarity land?</li>
+<li><strong>B→γℓν at N³LO.</strong> Do the overlapping three-loop results agree (<a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a>, <a href="https://arxiv.org/abs/2611.18206">arXiv:2611.18206</a>, <a href="https://arxiv.org/abs/2611.18204">arXiv:2611.18204</a>)?</li>
+<li><strong><span class="arithmatex">\(|V_{cb}|\)</span> split.</strong> Which side of the inclusive–exclusive split does Qu et al. (<a href="https://arxiv.org/abs/2611.17945">arXiv:2611.17945</a>) land on?</li>
+<li><strong>Sign of the <span class="arithmatex">\(K^+\to\pi^+\ell^+\ell^-\)</span> form factor.</strong> The significance falls to 2.0–3.4σ at physical charm (<a href="https://arxiv.org/abs/2611.17800">arXiv:2611.17800</a>).</li>
+<li><strong>Keshet WIMP lines.</strong> The blind scan gives 2.8σ; the 6.1σ appears only after combining with the author&rsquo;s earlier samples (<a href="https://arxiv.org/abs/2611.21595">arXiv:2611.21595</a>).</li>
+<li><strong>Factorization in pure QED.</strong> Hager et al. (<a href="https://arxiv.org/abs/2611.26026">arXiv:2611.26026</a>) conjecture that soft–collinear factorization fails, which matters for FCC-ee non-global observables.</li>
+<li><strong>Spectroscopy readings.</strong> The glueball interpretation of X(2370) is weakened (<a href="https://arxiv.org/abs/2611.24372">arXiv:2611.24372</a>). The <span class="arithmatex">\(K_1^*(1870)\)</span> predicted <span class="arithmatex">\(K\eta'\)</span> mode is subordinate, which conflicts with the channel the state was seen in.</li>
+<li><strong>Charm CP asymmetries.</strong> LHCb&rsquo;s <span class="arithmatex">\(A_{CP}(KK)\)</span> and <span class="arithmatex">\(A_{CP}(\pi\pi)\)</span> values are not given in the abstract.</li>
 </ul>
 <h2 id="recurring-references">Recurring references</h2>
 <ul>
-<li>LZ: <a href="https://arxiv.org/abs/2611.16689">arXiv:2611.16689</a> (solar capture), <a href="https://arxiv.org/abs/2611.15957">arXiv:2611.15957</a> (anapole), <a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a> (composite), <a href="https://arxiv.org/abs/2611.22890">arXiv:2611.22890</a> (radion), <a href="https://arxiv.org/abs/2611.16553">arXiv:2611.16553</a> (B−L fit)</li>
-<li>GW: <a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>, <a href="https://arxiv.org/abs/2611.17411">arXiv:2611.17411</a> (wall hydrodynamics), <a href="https://arxiv.org/abs/2611.18794">arXiv:2611.18794</a> (lattice nucleation), <a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a> (PTA priors), <a href="https://arxiv.org/abs/2611.24625">arXiv:2611.24625</a> (LVK priors)</li>
-<li><span class="arithmatex">\(V_{ud}\)</span>: <a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>, <a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a></li>
-<li>LHC statistics: <a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a> (instanton excess), <a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a> (limit coverage), <a href="https://arxiv.org/abs/2611.24270">arXiv:2611.24270</a> (OmniFold)</li>
-<li>Superradiance: <a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>, <a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a></li>
-<li>Chiral lattice: <a href="https://arxiv.org/abs/2611.16544">arXiv:2611.16544</a>, <a href="https://arxiv.org/abs/2611.20084">arXiv:2611.20084</a></li>
-<li><span class="arithmatex">\(B\to\gamma\ell\nu\)</span>: <a href="https://arxiv.org/abs/2611.18202">arXiv:2611.18202</a>, <a href="https://arxiv.org/abs/2611.18206">arXiv:2611.18206</a>, <a href="https://arxiv.org/abs/2611.18204">arXiv:2611.18204</a></li>
+<li><a href="https://arxiv.org/abs/2611.17402">arXiv:2611.17402</a>: Barni, non-unique bubble-wall hydrodynamics</li>
+<li><a href="https://arxiv.org/abs/2611.18830">arXiv:2611.18830</a>, <a href="https://arxiv.org/abs/2611.18843">arXiv:2611.18843</a>: Novario, EFT <span class="arithmatex">\(\bar\delta_{\rm NS}\)</span> and the <span class="arithmatex">\(V_{ud}\)</span> floor</li>
+<li><a href="https://arxiv.org/abs/2611.24825">arXiv:2611.24825</a>: Chambers-Wall, QMC three-body δ_NS</li>
+<li><a href="https://arxiv.org/abs/2611.18833">arXiv:2611.18833</a>: Foster, gravitational Auger effect</li>
+<li><a href="https://arxiv.org/abs/2611.23384">arXiv:2611.23384</a>: Bottaro, cloud-mass cap from self-interactions</li>
+<li><a href="https://arxiv.org/abs/2611.26541">arXiv:2611.26541</a>: Bošković, self-gravity depletion</li>
+<li><a href="https://arxiv.org/abs/2611.26417">arXiv:2611.26417</a>: Zhao, resummation ambiguity in GW forecasts</li>
+<li><a href="https://arxiv.org/abs/2611.23371">arXiv:2611.23371</a>: Bringmann, PTA priors (binaryfog)</li>
+<li><a href="https://arxiv.org/abs/2611.22092">arXiv:2611.22092</a>: ATLAS, instanton-like excess</li>
+<li><a href="https://arxiv.org/abs/2611.24065">arXiv:2611.24065</a>: Şahin, limit-band coverage</li>
+<li><a href="https://arxiv.org/abs/2611.21737">arXiv:2611.21737</a>: Buttazzo, composite inelastic DM for LZ</li>
+<li><a href="https://arxiv.org/abs/2611.21252">arXiv:2611.21252</a>: Cerrone, general mass-ordering formalism (extends Machado 11-11)</li>
+<li><a href="https://arxiv.org/abs/2611.26281">arXiv:2611.26281</a>: Higgs WG Report 5</li>
+<li><a href="https://arxiv.org/abs/2611.26449">arXiv:2611.26449</a>: LHCb γ/charm-mixing combination</li>
 </ul>
   </article>
   
@@ -1566,7 +1602,7 @@ digest thinks with. Read these to catch up after time away.</p>
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-19 07:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-20 07:24 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

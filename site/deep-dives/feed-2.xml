@@ -6,7 +6,40 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>An improved direct limit on the muon electric dipole moment</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-11124</link>
+    <guid isPermaLink="false">arxiv:2608.11124</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">2 Collaboration et al.</dc:creator>
+    <description><![CDATA[<p>The Fermilab Muon g−2 collaboration sets d_μ⁺⁼⁽⁻⁰.35±0.19_stat±0.34_sys)×10⁻¹⁹ ecm from its 2019–20 straw-tracker data (2.34×10⁹ positrons across Run-2, Run-3a, Run-3b), yielding |d_μ|&lt;1.10×10⁻¹⁹ ecm at 95% CL — a factor 1.5 improvement on the BNL E821 limit. The measurement uses the traceback method: a muon EDM tilts the spin-precession plane, producing an oscillation in the average vertical decay angle ⟨θ_y⟩ that is π/2 out of phase with the anomalous precession. Data are fit in 8 momentum bins × 2 stations × 3 runs (48 measurements, average reduced χ²⁼¹.08), combined via BLUE. Combining with BNL tightens the bound to |d_μ|&lt;0.98(0.86)×10⁻¹⁹ ecm at 95(90)% CL.</p>
+<p><strong>Why it matters:</strong> the result stays ~19 orders of magnitude above the SM prediction (∼10⁻³⁸ ecm), so it functions as a clean BSM null test on a CP-violating source independent of the anomalous-moment program, complementing the model-dependent indirect bound (1.9×10⁻²⁰).</p>
+<p><strong>Caveat, honestly flagged:</strong> this is systematics-limited, dominated (by far) by the vertical-alignment false-signal correction (3.12×10⁻²⁰, vs. 1.87 statistical). Notably, the analysis <em>failed</em> the initial soft-unblinding 3σ check, triggering the internal review that uncovered the vertical-misalignment and longitudinal-field systematics; a data-driven correction was then developed while still blinded. The alignment uncertainty is itself statistics-limited and should shrink with Runs 4–6 (2.5× the present dataset).</p>]]></description>
+  </item>
+
+  <item>
+    <title>TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-10961</link>
+    <guid isPermaLink="false">arxiv:2608.10961</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Winterbottom et al.</dc:creator>
+    <description><![CDATA[<p>TauPolaris estimates the undetected neutrino momenta in τ decays with a conditional normalizing flow (nine spline-coupling blocks, transformer conditioning network), modeling the full joint density p(ν|𝐜) rather than a point regression. This preserves the correlations between momentum components — crucially reconstructing the τ mass at the physical 1.78 GeV, where an MSE-trained transformer biases low and pushes the neutrino collinear with the visible τ. A gradient-ascent MAP estimate in the flow&rsquo;s latent space gives per-event neutrino configurations with ~40% better angular resolution than the transformer and ~20% better than sampling. On simulated LHC pp collisions with Delphes+CMS-HPS detector modeling, three applications are demonstrated: distinguishing quantum entanglement from a classically-correlated null in H→ττ at &gt;4.3σ (and Bell witness m_12 at 4.0σ) with 3 ab⁻¹; improving CP-violation sensitivity via ϕ_CP by 18% overall (up to 88% in 3π^±0π⁰–3π^±0π⁰, and enabling 3π^±1π⁰ reconstruction for the first time); and new polarimetric variables to suppress Z→ττ.</p>
+<p><strong>Why it matters:</strong> this moves the collider-QI program from top-quark tomography toward a deployable analysis tool, extending the optimal polarimetric-vector method to <em>every</em> τ decay topology (previously restricted to 3-prong modes with secondary vertices).</p>
+<p><strong>Caveats:</strong> entirely simulation-based, with hand-added track smearing to patch Delphes; the entanglement 4.3σ is an upper limit set by finite pseudoexperiments, and yields are extrapolated from a single BDT window assuming preserved S/B. The 𝒞/m_12 estimators are biased on finite data, requiring pseudoexperiment calibration.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Electroweak precision observables at NLL order in the SMEFT</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-10064</link>
+    <guid isPermaLink="false">arxiv:2608.10064</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ulrich A. Haisch et al.</dc:creator>
+    <description><![CDATA[<p>Haisch and Stefanek upgrade SMEFT predictions for electroweak precision observables to next-to-leading-logarithmic accuracy by combining one-loop EW matching with two- and one-loop RG evolution from Λ to m_Z, leveraging the newly available two-loop SMEFT beta functions. A key methodological point, proven via the T-parameter contribution of the right-handed four-top operator Q_uu³³³³: two-loop matching is <em>not</em> needed for NLL — higher-order matching cannot generate ln(Λ/m_Z) logarithms, so one-loop matching plus NLL running suffices. The headline deliverable is numerical NLL expressions encoding the full dependence on all 210 independent Wilson coefficients (excluding only Q_H, which enters at NNLL), released as ancillary files, with explicit results tabulated for five benchmark operators.</p>
+<p><strong>Why it matters:</strong> whereas tree-level matching reaches only 23 operators, NLL running opens EWPO sensitivity to the entire operator set — including operators contributing <em>only</em> at two-loop order (Q_G, Q_HG, Q_uH³³), which have no one-loop EWPO effect at all. For the top chromomagnetic dipole Q_uG³³, the genuine two-loop L (green) terms actually dominate the L²/L (red) terms, driven by a large y_t³ beta function mixing into Q_HD. This is positioned as the reference basis for FCC-ee/CEPC global fits at sub-permille precision, continuing the SMEFT-precision thread.</p>
+<p><strong>Caveats:</strong> the framework is illustrated on current LEP/SLC fits and projections rather than delivering a full global result here; couplings are fixed at m_Z (differences are NNLL). The authors note complementary concurrent work (Mantani et al.; Born et al.), and stress that a complete analysis must retain both oblique and non-oblique observables.</p>]]></description>
+  </item>
 
   <item>
     <title>Neutrinoless Double-Beta Decays from Operator Mixing</title>
