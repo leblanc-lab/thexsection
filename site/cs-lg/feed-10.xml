@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Finding NEEMo: Geometric Fitting using Neural Estimation of the Energy Mover's Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-15624</link>
+    <guid isPermaLink="false">arxiv:2209.15624</guid>
+    <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ouail Kitouni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, energy mover, Mike Williams) — original abstract; no AI summary.</em></p>
+<p>A novel neural architecture was recently developed that enforces an exact upper bound on the Lipschitz constant of the model by constraining the norm of its weights in a minimal way, resulting in higher expressiveness compared to other techniques. We present a new and interesting direction for this architecture: estimation of the Wasserstein metric (Earth Mover&rsquo;s Distance) in optimal transport by employing the Kantorovich-Rubinstein duality to enable its use in geometric fitting applications. Specifically, we focus on the field of high-energy particle physics, where it has been shown that a metric for the space of particle-collider events can be defined based on the Wasserstein metric, referred to as the Energy Mover&rsquo;s Distance (EMD). This metrization has the potential to revolutionize data-driven collider phenomenology. The work presented here represents a major step towards realizing this goal by providing a differentiable way of directly calculating the EMD. We show how the flexibility that our approach enables can be used to develop novel clustering algorithms.</p>]]></description>
+  </item>
 
   <item>
     <title>Revisiting Global Pooling through the Lens of Optimal Transport</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanjukta Krishnagopal et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>While variational autoencoders have been successful in several tasks, the use of conventional priors are limited in their ability to encode the underlying structure of input data. We introduce an Encoded Prior Sliced Wasserstein AutoEncoder wherein an additional prior-encoder network learns an embedding of the data manifold which preserves topological and geometric properties of the data, thus improving the structure of latent space. The autoencoder and prior-encoder networks are iteratively trained using the Sliced Wasserstein distance. The effectiveness of the learned manifold encoding is explored by traversing latent space through interpolations along geodesics which generate samples that lie on the data manifold and hence are more realistic compared to Euclidean interpolation. To this end, we introduce a graph-based algorithm for exploring the data manifold and interpolating along network-geodesics in latent space by maximizing the density of samples along the path while minimizing total energy. We use the 3D-spiral data to show that the prior encodes the geometry underlying the data unlike conventional autoencoders, and to demonstrate the exploration of the embedded data manifold through the network algorithm. We apply our framework to benchmarked image datasets to demonstrate the advantages of learning data representations in outlier generation, latent structure, and geodesic interpolation.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Segmentation of EM showers for neutrino experiments with deep graph neural networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-02040</link>
-    <guid isPermaLink="false">arxiv:2104.02040</guid>
-    <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vladislav Belavin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>We introduce a first-ever algorithm for the reconstruction of multiple showers from the data collected with electromagnetic (EM) sampling calorimeters. Such detectors are widely used in High Energy Physics to measure the energy and kinematics of in-going particles. In this work, we consider the case when many electrons pass through an Emulsion Cloud Chamber (ECC) brick, initiating electron-induced electromagnetic showers, which can be the case with long exposure times or large input particle flux. For example, SHiP experiment is planning to use emulsion detectors for dark matter search and neutrino physics investigation. The expected full flux of SHiP experiment is about 10^20 particles over five years. To reduce the cost of the experiment associated with the replacement of the ECC brick and off-line data taking (emulsion scanning), it is decided to increase exposure time. Thus, we expect to observe a lot of overlapping showers, which turn EM showers reconstruction into a challenging point cloud segmentation problem. Our reconstruction pipeline consists of a Graph Neural Network that predicts an adjacency matrix and a clustering algorithm. We propose a new layer type (EmulsionConv) that takes into account geometrical properties of shower development in ECC brick. For the clustering of overlapping showers, we use a modified hierarchical density-based clustering algorithm. Our method does not use any prior information about the incoming particles and identifies up to 87% of electromagnetic showers in emulsion detectors. The main test bench for the algorithm for reconstructing electromagnetic showers is going to be SND@LHC.</p>]]></description>
   </item>
 
 </channel>

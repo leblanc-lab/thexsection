@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Multimarginal flow matching with optimal transport potentials</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-05327</link>
+    <guid isPermaLink="false">arxiv:2606.05327</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raghav Kansal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Flow matching (FM) has emerged as a powerful framework for learning dynamic transport maps between two empirical distributions. However, less explored is the setting with intermediate observed marginals that can help constrain the flows between the endpoints. This &ldquo;multimarginal&rdquo; regime is central to modeling temporal evolution in dynamical systems in many scientific domains that can sample sequential distributions. We tackle this problem with a novel approach that leverages the connection between FM and dynamic optimal transport (OT), softly steering the flow towards the intermediate marginals through potential terms in the dynamic OT action. By extending the conditional FM learning target to incorporate these potentials, we derive an efficient, simulation-free algorithm for multimarginal FM that offers considerable flexibility in the spatiotemporal dynamics of the learned flows. We demonstrate state-of-the-art performance and training efficiency of OT-potential FM (OTP-FM) on diverse single-cell RNA sequencing, oceanographic, and meteorological datasets. Our code is available at https://github.com/Bexorg-Inc/OTP-FM.</p>]]></description>
+  </item>
 
   <item>
     <title>Tight Nonasymptotic Local Convergence of Sinkhorn-Knopp</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Cao et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Transfer learning is an essential technique for many machine learning/AI models of complex structures such as large language models and generative AI. The essence of transfer learning is to leverage knowledge from resolved source tasks for a new target task, especially when the sample size m of the training data for the latter is low. In this work, we rigorously analyze the potential benefit of transfer learning in terms of sample efficiency. Specifically, taking an optimal transport viewpoint of transfer learning, we find that when the data dimension d is higher than 3, the sample complexity for transfer learning is O(m⁻⁽α+1)/d), with α indicating the smoothness of the data distribution, as opposed to the O(m⁻p/d) sample complexity for direct learning with p indicating the smoothness of the optimal target model. Our finding theoretically supports a better sample efficiency for transfer learning, when the target task is optimizing over a family of not-so-smooth models (i.e., highly complex networks with the possible use of non-smooth activation functions). Using image classification as an example, we numerically demonstrate the sample efficiency for transfer learning, that is, in the data hungry regime, the model performance can be significantly improved by transfer learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Unified Framework for Data-Free One-Step Sampling via Wasserstein Gradient Flows</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-17808</link>
-    <guid isPermaLink="false">arxiv:2605.17808</guid>
-    <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenguang Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We develop a unified theoretical framework for data-free one-step sampling from unnormalized target distributions based on Wasserstein gradient flows. For a broad class of standard f-divergence objectives, we show that the induced velocity field admits the universal form 𝐕(x)=w(r(x)) β(x), where β(x)=∇log(p(x)/q(x)) is shared across objectives and w is determined solely by the choice of divergence. This decomposition shows that standard f-divergence drifts share the same asymptotic target distribution p and differ primarily in how they redistribute transient repair effort across under-covered regions. To formalize this distinction, we derive a one-step regional-response theory for a soft under-coverage functional and obtain a compression&ndash;elasticity identity that links divergence choice to the geometry of mass transport into under-covered regions. We further extend the framework beyond the f-divergence family to the Log-Variance (LV) divergence, analyze how the reference distribution alters the resulting drift structure, and motivate a practical LV-inspired surrogate for data-free training. Based on this theory, we instantiate the framework with a KDE-based implementation and describe a complementary normalizing-flow route, enabling one-step inference after training. Experiments on multimodal Gaussian-mixture benchmarks are consistent with the theoretical predictions and demonstrate effective one-step sampling on these targets.</p>]]></description>
   </item>
 
 </channel>

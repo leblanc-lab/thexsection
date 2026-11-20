@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Unified Framework for Data-Free One-Step Sampling via Wasserstein Gradient Flows</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-17808</link>
+    <guid isPermaLink="false">arxiv:2605.17808</guid>
+    <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chenguang Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We develop a unified theoretical framework for data-free one-step sampling from unnormalized target distributions based on Wasserstein gradient flows. For a broad class of standard f-divergence objectives, we show that the induced velocity field admits the universal form 𝐕(x)=w(r(x)) β(x), where β(x)=∇log(p(x)/q(x)) is shared across objectives and w is determined solely by the choice of divergence. This decomposition shows that standard f-divergence drifts share the same asymptotic target distribution p and differ primarily in how they redistribute transient repair effort across under-covered regions. To formalize this distinction, we derive a one-step regional-response theory for a soft under-coverage functional and obtain a compression&ndash;elasticity identity that links divergence choice to the geometry of mass transport into under-covered regions. We further extend the framework beyond the f-divergence family to the Log-Variance (LV) divergence, analyze how the reference distribution alters the resulting drift structure, and motivate a practical LV-inspired surrogate for data-free training. Based on this theory, we instantiate the framework with a KDE-based implementation and describe a complementary normalizing-flow route, enabling one-step inference after training. Experiments on multimodal Gaussian-mixture benchmarks are consistent with the theoretical predictions and demonstrate effective one-step sampling on these targets.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein bounds for denoising diffusion probabilistic models via the Föllmer process</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raymond Chu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Semi-dual neural optimal transport learns a transport map via a max-min objective, yet training can converge to incorrect or degenerate maps. We fully characterize these spurious solutions in the common regime where data concentrate on low-dimensional manifold: the objective is underconstrained off the data manifold, while the on-manifold transport signal remains identifiable. Following Choi, Choi, and Kwon (2025), we study additive-noise smoothing as a remedy and prove new map recovery guarantees as the noise vanishes. Our main practical contribution is a computable terminal noise level ε_stat(N) that attains the optimal statistical rate, with scaling governed by the intrinsic dimension m of the data. The formula arises from a theoretical unified analysis of (i) quantitative stability of optimal plans, (ii) smoothing-induced bias, and (iii) finite-sample error, yielding rates that depend on m rather than the ambient dimension. Finally, we show that the reduced semi-dual objective becomes increasingly ill-conditioned as ε↓0. This provides a principled stopping rule: annealing below ε_stat(N) can worsen optimization conditioning without improving statistical accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-04335</link>
-    <guid isPermaLink="false">arxiv:2602.04335</guid>
-    <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ferdinand Genans et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Solving large scale Optimal Transport (OT) in machine learning typically relies on sampling measures to obtain a tractable discrete problem. While the discrete solver&rsquo;s accuracy is controllable, the rate of convergence of the discretization error is governed by the intrinsic dimension of our data. Therefore, the true bottleneck is the knowledge and control of the sampling error. In this work, we tackle this issue by introducing novel estimators for both sampling error and intrinsic dimension. The key finding is a simple, tuning-free estimator of OT_c(ρ, ) that utilizes the semi-dual OT functional and, remarkably, requires no OT solver. Furthermore, we derive a fast intrinsic dimension estimator from the multi-scale decay of our sampling error estimator. This framework unlocks significant computational and statistical advantages in practice, enabling us to (i) quantify the convergence rate of the discretization error, (ii) calibrate the entropic regularization of Sinkhorn divergences to the data&rsquo;s intrinsic geometry, and (iii) introduce a novel, intrinsic-dimension-based Richardson extrapolation estimator that strongly debiases Wasserstein distance estimation. Numerical experiments demonstrate that our geometry-aware pipeline effectively mitigates the discretization error bottleneck while maintaining computational efficiency.</p>]]></description>
   </item>
 
 </channel>

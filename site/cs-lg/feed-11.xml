@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Segmentation of EM showers for neutrino experiments with deep graph neural networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2104-02040</link>
+    <guid isPermaLink="false">arxiv:2104.02040</guid>
+    <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vladislav Belavin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>We introduce a first-ever algorithm for the reconstruction of multiple showers from the data collected with electromagnetic (EM) sampling calorimeters. Such detectors are widely used in High Energy Physics to measure the energy and kinematics of in-going particles. In this work, we consider the case when many electrons pass through an Emulsion Cloud Chamber (ECC) brick, initiating electron-induced electromagnetic showers, which can be the case with long exposure times or large input particle flux. For example, SHiP experiment is planning to use emulsion detectors for dark matter search and neutrino physics investigation. The expected full flux of SHiP experiment is about 10^20 particles over five years. To reduce the cost of the experiment associated with the replacement of the ECC brick and off-line data taking (emulsion scanning), it is decided to increase exposure time. Thus, we expect to observe a lot of overlapping showers, which turn EM showers reconstruction into a challenging point cloud segmentation problem. Our reconstruction pipeline consists of a Graph Neural Network that predicts an adjacency matrix and a clustering algorithm. We propose a new layer type (EmulsionConv) that takes into account geometrical properties of shower development in ECC brick. For the clustering of overlapping showers, we use a modified hierarchical density-based clustering algorithm. Our method does not use any prior information about the incoming particles and identifies up to 87% of electromagnetic showers in emulsion detectors. The main test bench for the algorithm for reconstructing electromagnetic showers is going to be SND@LHC.</p>]]></description>
+  </item>
 
   <item>
     <title>Partial Wasserstein Covering</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh Ha Quang</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>This work studies the convergence and finite sample approximations of entropic regularized Wasserstein distances in the Hilbert space setting. Our first main result is that for Gaussian measures on an infinite-dimensional Hilbert space, convergence in the 2-Sinkhorn divergence is {\it strictly weaker} than convergence in the exact 2-Wasserstein distance. Specifically, a sequence of centered Gaussian measures converges in the 2-Sinkhorn divergence if the corresponding covariance operators converge in the Hilbert-Schmidt norm. This is in contrast to the previous known result that a sequence of centered Gaussian measures converges in the exact 2-Wasserstein distance if and only if the covariance operators converge in the trace class norm. In the reproducing kernel Hilbert space (RKHS) setting, the {\it kernel Gaussian-Sinkhorn divergence}, which is the Sinkhorn divergence between Gaussian measures defined on an RKHS, defines a semi-metric on the set of Borel probability measures on a Polish space, given a characteristic kernel on that space. With the Hilbert-Schmidt norm convergence, we obtain {\it dimension-independent} convergence rates for finite sample approximations of the kernel Gaussian-Sinkhorn divergence, with the same order as the Maximum Mean Discrepancy. These convergence rates apply in particular to Sinkhorn divergence between Gaussian measures on Euclidean and infinite-dimensional Hilbert spaces. The sample complexity for the 2-Wasserstein distance between Gaussian measures on Euclidean space, while dimension-dependent and larger than that of the Sinkhorn divergence, is exponentially faster than the worst case scenario in the literature.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Projected Wasserstein gradient descent for high-dimensional Bayesian inference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-06350</link>
-    <guid isPermaLink="false">arxiv:2102.06350</guid>
-    <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yifei Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We propose a projected Wasserstein gradient descent method (pWGD) for high-dimensional Bayesian inference problems. The underlying density function of a particle system of WGD is approximated by kernel density estimation (KDE), which faces the long-standing curse of dimensionality. We overcome this challenge by exploiting the intrinsic low-rank structure in the difference between the posterior and prior distributions. The parameters are projected into a low-dimensional subspace to alleviate the approximation error of KDE in high dimensions. We formulate a projected Wasserstein gradient flow and analyze its convergence property under mild assumptions. Several numerical experiments illustrate the accuracy, convergence, and complexity scalability of pWGD with respect to parameter dimension, sample size, and processor cores.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Specialized Semismooth Newton Method for Kernel-Based Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-14087</link>
+    <guid isPermaLink="false">arxiv:2310.14087</guid>
+    <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tianyi Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Kernel-based optimal transport (OT) estimators offer an alternative, functional estimation procedure to address OT problems from samples. Recent works suggest that these estimators are more statistically efficient than plug-in (linear programming-based) OT estimators when comparing probability measures in high-dimensions~\citep{Vacher-2021-Dimension}. Unfortunately, that statistical benefit comes at a very steep computational price: because their computation relies on the short-step interior-point method (SSIPM), which comes with a large iteration count in practice, these estimators quickly become intractable w.r.t. sample size n. To scale these estimators to larger n, we propose a nonsmooth fixed-point model for the kernel-based OT problem, and show that it can be efficiently solved via a specialized semismooth Newton (SSN) method: We show, exploring the problem&rsquo;s structure, that the per-iteration cost of performing one SSN step can be significantly reduced in practice. We prove that our SSN method achieves a global convergence rate of O(1/√(k)), and a local quadratic convergence rate under standard regularity conditions. We show substantial speedups over SSIPM on both synthetic and real datasets.</p>]]></description>
+  </item>
 
   <item>
     <title>Particle Transformer for Jet Tagging</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jose M Munoz et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
 <p>Deep learning approaches for jet tagging in high-energy physics are characterized as black boxes that process a large amount of information from which it is difficult to extract key distinctive observables. In this proceeding, we present an alternative to deep learning approaches, Boost Invariant Polynomials, which enables direct analysis of simple analytic expressions representing the most important features in a given task. Further, we show how this approach provides an extremely low dimensional classifier with a minimum set of features representing %effective discriminating physically relevant observables and how it consequently speeds up the algorithm execution, with relatively close performance to the algorithm using the full information.</p>]]></description>
-  </item>
-
-  <item>
-    <title>ν-Flows: Conditional Neutrino Regression</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2207-00664</link>
-    <guid isPermaLink="false">arxiv:2207.00664</guid>
-    <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthew Leigh et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>We present ν-Flows, a novel method for restricting the likelihood space of neutrino kinematics in high energy collider experiments using conditional normalizing flows and deep invertible neural networks. This method allows the recovery of the full neutrino momentum which is usually left as a free parameter and permits one to sample neutrino values under a learned conditional likelihood given event observations. We demonstrate the success of ν-Flows in a case study by applying it to simulated semileptonic tt̅ events and show that it can lead to more accurate momentum reconstruction, particularly of the longitudinal coordinate. We also show that this has direct benefits in a downstream task of jet association, leading to an improvement of up to a factor of 1.41 compared to conventional methods.</p>]]></description>
   </item>
 
 </channel>
