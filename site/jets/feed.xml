@@ -7,7 +7,61 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Agent-guided construction of Feynman integral bases</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-26688</link>
+    <guid isPermaLink="false">arxiv:2611.26688</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pau Petit Rosas et al.</dc:creator>
+    <description><![CDATA[<p><strong>Relevance:</strong> this paper matched on &ldquo;jet function&rdquo; and is not really about jets or substructure. The &ldquo;radiative jet function&rdquo; here is an SCET operator matrix element with Wilson lines. It enters the factorization of QED form factors at next-to-leading power in the fermion mass. The paper is about building master-integral bases, not jet observables.</p>
+<p><strong>What they did:</strong>
+- They wrote two Claude Code &ldquo;skills&rdquo;: <code>maximal-cut-basis</code> and <code>pole-free-basis</code>.
+- Each skill is about 2k lines of instructions plus 6–9k lines of mostly-Mathematica code.
+- They call out to Kira, FiniteFlow, LiteRed, LiteIBP and BaikovPackage.
+- Every candidate basis is gated by an exact-in-ε IBP reduction at a kinematic slice.</p>
+<p><strong>Jet-function superfamily (the part relevant to you):</strong>
+- 124 masters in 70 sectors, 4 scales (m², s, q², b₀).
+- The agent classified 63 sectors as canonical and 6 as elliptic, and identified one K3 sector, which the authors confirmed.
+- It reached a differential equation that is pole-free in ε and at most quadratic in ε.
+- It then reached a fully ε-factorized form using the method of Ref. [24], for which no dedicated skill had been written. That change of basis involves 8 elliptic periods, 3 K3 periods and 108 auxiliary functions.
+- Cost: roughly 207 agent-hours and about US$1040 at list prices, mostly on a laptop.</p>
+<p><strong>Five-point QED family</strong> (e⁺e⁻→μ⁺μ⁻γ, 7 invariants): 232 masters, 18 elliptic sectors, 5 sectors needing nested square roots. The ε-polynomial form was reached after about 155 accepted basis changes over 8 days.</p>
+<p><strong>Caveats:</strong>
+- The bases are not optimized for evaluation.
+- The five-point equation was obtained only on slices; it has not been analytically reconstructed.
+- One human intervention corrected a wrong &ldquo;impossible&rdquo; conclusion by the agent.</p>
+<p><strong>Takeaway for jets:</strong> if you follow NLP mass-factorization ingredients, the jet-function masters are released as ancillary files.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A resolution-based framework for coherent and decoherent jet energy loss in NLO pQCD</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-27324</link>
+    <guid isPermaLink="false">arxiv:2611.27324</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peng-Hui Hu et al.</dc:creator>
+    <description><![CDATA[<p>This is the paper that is actually on topic today.</p>
+<p><strong>Setup:</strong>
+- pp baseline from NLOJet++: 2→2 at NLO for inclusive and reclustered jets; 2→3 at NLO for r_g and jet mass.
+- Pb+Pb adds EPPS21 nPDFs, Glauber geometry, CLVisc hydro and Higher-Twist radiative energy loss.
+- Out-of-cone loss is handled analytically. A Gaussian q̂-broadening kick is convolved with the jet-cone boundary k_c, which yields a Marcum Q₁(a,b) factor: the Rician probability that the gluon ends up outside the cone.</p>
+<p><strong>Key new ingredient: coherence criterion.</strong> Final-state partons are sequentially clustered by pair invariant mass Q_ij ≈ √(p_T^i p_T^j) θ_ij. Pairs with Q_ij &lt; Q_c lose energy as one color source; otherwise they lose it independently. Two variants are used:
+- a step form, Θ(Q_med − Q_ij);
+- a smooth form, 1 − exp[−(Q_med/Q_ij)²], derived from an inverse-Rayleigh distribution of Q_c.</p>
+<p><strong>Results:</strong>
+- <strong>PYTHIA validation:</strong> jets have about 1 coherent cluster below 200 GeV, about 2 prongs at 300–800 GeV, and ≥3 above 900 GeV.
+- <strong>Inclusive jet R_AA:</strong> coherent-only loss (with α_s tuned to the lowest-p_T ATLAS point per centrality) under-suppresses at high p_T. Adding the Q_ij-based decoherence fits the data with Q_med = 10–20 GeV. A fixed angular criterion (θ_c = 0.2) only shifts R_AA overall.
+- <strong>Reclustered jets (ATLAS R = 1.0, R_sub = 0.2):</strong> the same Q_med reproduces the multi-subjet R_AA; single-subjet jets stay effectively coherent.
+- <strong>r_g and m/p_T:</strong> coherent-only loss gives a flat R_AA. Decoherence generates the measured substructure dependence, and the smooth form fits better than the step form.</p>
+<p><strong>Caveats:</strong>
+- Jets contain at most 2 partons (inclusive) or 3 (substructure), so suppression of multi-prong jets is underestimated at the highest p_T.
+- α_s is refit per configuration (0.190 vs 0.167).
+- Jet flavour is assigned from LO quark/gluon fractions.
+- IRC safety is argued only for the step form at large Q_c; the authors say a complete demonstration is still needed.
+- The smooth form is explicitly phenomenological.
+- The relation Q_c² ~ p_T²/(q̂L³) is a dimensional guess, not derived.</p>]]></description>
+  </item>
 
   <item>
     <title>Twist-4 QCD Factorization for One-Point Correlators at Next-to-Leading Order in Electron-Ion Collisions</title>
@@ -3129,26 +3183,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeonjoon Kim et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (flavor tagging) — abstract only, not yet read for a briefing.</em></p>
 <p>Flavor-tagging calibrations are often provided either as scale factors measured at a finite set of working points or as binned corrections to a chosen one-dimensional discriminant. However, this approach falls short of providing continuous, event-level calibration across the full multicomponent outputs of modern taggers. This limitation leads to information loss in analyses that demand high-performance flavor tagging, restricting analyses to a limited set of predefined variables. In this work, we propose a geometry-aware framework that formulates flavor-tagger calibration as an optimal transport problem on the probability simplex. The transport maps are parameterized and trained in the isometric log-ratio coordinate system. Because the quadratic Euclidean cost of Brenier transport in this coordinate system is equivalent to the Aitchison distance on the simplex, the learned map induces a minimal deformation under the Aitchison geometry. Furthermore, we extract flavor-conditional target distributions directly from control-region data using an expectation-maximization (EM) technique that simultaneously fits multiple control regions, models each flavor component with a normalizing flow, and estimates the regional mixture fractions. The extracted targets are subsequently used to learn flavor-factorized transport maps. Because the joint estimation of mixture fractions and flexible component densities admits weakly constrained directions, we further introduce a linearized feedback-operator analysis that propagates the fitted composition covariance into the extracted component densities, separating data-constrained modes from those dominated by the composition prior. The simulation-based closure study demonstrates improved closure in dedicated control regions and in independent validation mixtures.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimisation of a silicon-tungsten electromagnetic calorimeter energy response to photons</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-27853</link>
-    <guid isPermaLink="false">arxiv:2604.27853</guid>
-    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yukun Shi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle flow) — abstract only, not yet read for a briefing.</em></p>
-<p>An innovative path for the detectors at future colliders to achieve higher performances is to use a Particle Flow approach, which requires highly granular calorimeters to image individual showers. The silicon-tungsten electromagnetic calorimeter (SiW-ECAL) aims at fulfilling all the expected physical and technical requirements. SiW-ECAL has been developed by the CALICE and ILD collaborations for more than two decades and is now reaching maturity, for linear machines. However, with the tendency towards circular machines, the progress of electronics and the rapid advancement of machine learning (ML) techniques, the SiW-ECAL design needs to be reoptimised to enhance its performance. This study develops ML-based reconstruction approaches for SiW-ECAL, achieving an approximate 20% improvement in energy resolution in the low-energy range and effectively correcting energy leakage in the high-energy range. Subsequently, the SiW-ECAL design is reoptimized based on this method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Simplified approach to extracting nucleon transversity in collinear factorization using near-side energy-energy correlators</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2604-28131</link>
-    <guid isPermaLink="false">arxiv:2604.28131</guid>
-    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhong-Bo Kang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (energy-energy correlator, energy correlator, energy correlators) — abstract only, not yet read for a briefing.</em></p>
-<p>We develop a novel strategy for accessing the transversity parton distribution function (PDF) of the nucleon within collinear factorization using near-side energy-energy correlators in the dihadron fragmentation framework. We show how this removes the complications of previous approaches that must model either intrinsic parton transverse momentum or resonances in the invariant mass distribution of a final-state dihadron. We present leading-order analytical results for transverse-spin observables in semi-inclusive deep-inelastic scattering and electron-positron annihilation, highlighting their close similarity to the expressions one uses in extracting (un)polarized PDFs and (single-hadron) fragmentation functions in collinear factorization. We make predictions for kinematics relevant for existing and future facilities that demonstrate the feasibility of an energy-energy correlator program in extracting the transversity PDF.</p>]]></description>
   </item>
 
 </channel>

@@ -39,6 +39,63 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Monday, November 23, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
+  </div>
+  <h1 id="private-briefing-todays-arxiv-postings-on-your-watched-topics">Private briefing: today&rsquo;s arXiv postings on your watched topics</h1>
+<h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261126688-agent-guided-construction-of-feynman-integral-bases-pau-petit-rosas-et-al"><a href="https://arxiv.org/abs/2611.26688">arXiv:2611.26688</a> — Agent-guided construction of Feynman integral bases (Pau Petit Rosas et al.)</h3>
+<p><strong>Relevance:</strong> this paper matched on &ldquo;jet function&rdquo; and is not really about jets or substructure. The &ldquo;radiative jet function&rdquo; here is an SCET operator matrix element with Wilson lines. It enters the factorization of QED form factors at next-to-leading power in the fermion mass. The paper is about building master-integral bases, not jet observables.</p>
+<p><strong>What they did:</strong>
+- They wrote two Claude Code &ldquo;skills&rdquo;: <code>maximal-cut-basis</code> and <code>pole-free-basis</code>.
+- Each skill is about 2k lines of instructions plus 6–9k lines of mostly-Mathematica code.
+- They call out to Kira, FiniteFlow, LiteRed, LiteIBP and BaikovPackage.
+- Every candidate basis is gated by an exact-in-ε IBP reduction at a kinematic slice.</p>
+<p><strong>Jet-function superfamily (the part relevant to you):</strong>
+- 124 masters in 70 sectors, 4 scales (m², s, q², b₀).
+- The agent classified 63 sectors as canonical and 6 as elliptic, and identified one K3 sector, which the authors confirmed.
+- It reached a differential equation that is pole-free in ε and at most quadratic in ε.
+- It then reached a fully ε-factorized form using the method of Ref. [24], for which no dedicated skill had been written. That change of basis involves 8 elliptic periods, 3 K3 periods and 108 auxiliary functions.
+- Cost: roughly 207 agent-hours and about US$1040 at list prices, mostly on a laptop.</p>
+<p><strong>Five-point QED family</strong> (e⁺e⁻→μ⁺μ⁻γ, 7 invariants): 232 masters, 18 elliptic sectors, 5 sectors needing nested square roots. The ε-polynomial form was reached after about 155 accepted basis changes over 8 days.</p>
+<p><strong>Caveats:</strong>
+- The bases are not optimized for evaluation.
+- The five-point equation was obtained only on slices; it has not been analytically reconstructed.
+- One human intervention corrected a wrong &ldquo;impossible&rdquo; conclusion by the agent.</p>
+<p><strong>Takeaway for jets:</strong> if you follow NLP mass-factorization ingredients, the jet-function masters are released as ancillary files.</p>
+<h3 id="arxiv261127324-a-resolution-based-framework-for-coherent-and-decoherent-jet-energy-loss-in-nlo-pqcd-peng-hui-hu-et-al"><a href="https://arxiv.org/abs/2611.27324">arXiv:2611.27324</a> — A resolution-based framework for coherent and decoherent jet energy loss in NLO pQCD (Peng-Hui Hu et al.)</h3>
+<p>This is the paper that is actually on topic today.</p>
+<p><strong>Setup:</strong>
+- pp baseline from NLOJet++: 2→2 at NLO for inclusive and reclustered jets; 2→3 at NLO for r_g and jet mass.
+- Pb+Pb adds EPPS21 nPDFs, Glauber geometry, CLVisc hydro and Higher-Twist radiative energy loss.
+- Out-of-cone loss is handled analytically. A Gaussian q̂-broadening kick is convolved with the jet-cone boundary k_c, which yields a Marcum Q₁(a,b) factor: the Rician probability that the gluon ends up outside the cone.</p>
+<p><strong>Key new ingredient: coherence criterion.</strong> Final-state partons are sequentially clustered by pair invariant mass Q_ij ≈ √(p_T^i p_T^j) θ_ij. Pairs with Q_ij &lt; Q_c lose energy as one color source; otherwise they lose it independently. Two variants are used:
+- a step form, Θ(Q_med − Q_ij);
+- a smooth form, 1 − exp[−(Q_med/Q_ij)²], derived from an inverse-Rayleigh distribution of Q_c.</p>
+<p><strong>Results:</strong>
+- <strong>PYTHIA validation:</strong> jets have about 1 coherent cluster below 200 GeV, about 2 prongs at 300–800 GeV, and ≥3 above 900 GeV.
+- <strong>Inclusive jet R_AA:</strong> coherent-only loss (with α_s tuned to the lowest-p_T ATLAS point per centrality) under-suppresses at high p_T. Adding the Q_ij-based decoherence fits the data with Q_med = 10–20 GeV. A fixed angular criterion (θ_c = 0.2) only shifts R_AA overall.
+- <strong>Reclustered jets (ATLAS R = 1.0, R_sub = 0.2):</strong> the same Q_med reproduces the multi-subjet R_AA; single-subjet jets stay effectively coherent.
+- <strong>r_g and m/p_T:</strong> coherent-only loss gives a flat R_AA. Decoherence generates the measured substructure dependence, and the smooth form fits better than the step form.</p>
+<p><strong>Caveats:</strong>
+- Jets contain at most 2 partons (inclusive) or 3 (substructure), so suppression of multi-prong jets is underestimated at the highest p_T.
+- α_s is refit per configuration (0.190 vs 0.167).
+- Jet flavour is assigned from LO quark/gluon fractions.
+- IRC safety is argued only for the step form at large Q_c; the authors say a complete demonstration is still needed.
+- The smooth form is explicitly phenomenological.
+- The relation Q_c² ~ p_T²/(q̂L³) is a dimensional guess, not derived.</p>
+<h2 id="muon-collider">Muon collider</h2>
+<h3 id="arxiv261126844-unstable-particle-collisions-in-space-and-time-irene-corral-lorences-et-al"><a href="https://arxiv.org/abs/2611.26844">arXiv:2611.26844</a> — Unstable particle collisions in space and time (Irene Corral Lorences et al.)</h3>
+<p><strong>Problem addressed:</strong> Corral Lorences, Liu, Panico and Wulzer target the non-integrable t-channel singularity in processes like μ⁻μ⁺→e⁻ν̄_eW⁺. There an on-shell ν_μ from muon decay scatters off the other beam. Earlier work showed that finite beam size regulates the singularity (the &ldquo;neutrino beam&rdquo; picture). It did not give a principled definition of the muon-initiated cross section; previous proposals used ad hoc phase-space exclusion.</p>
+<p><strong>Formalism:</strong>
+- They extend the Kotkin et al. wave-packet formalism with a new Lorentz-scalar Wigner density, defined in terms of the classical momentum P = m p/√(p²).
+- They define the classical beam limit as κ → 0, with κ ~ 1/beam size (about 0.02 eV for a 10 μm beam), required to satisfy κ ≪ mass gap.
+- The transition probability becomes the Wigner densities convolved with a collision function 𝔠(S, −p̃²).
+- Terms analytic at p̃ = 0 are short-distance. At leading order they reproduce σ·ṽ</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Thursday, November 19, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -2435,7 +2492,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-22 07:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-23 07:27 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
