@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Conditional Neural Optimal Transport for Predicting Cellular Phenotypes from Molecular Structure</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-14293</link>
+    <guid isPermaLink="false">arxiv:2608.14293</guid>
+    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gauthier Avité et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>High-content microscopy enables systematic profiling of cellular responses to chemical perturbations, but the scale of the chemical space makes exhaustive phenotypic characterization experimentally infeasible. This motivates computational models that can predict image-derived phenotypes without acquiring the corresponding treated cells. We formulate molecule-induced phenotype prediction as an inductive conditional transport problem in image representation space. Given a negative-control phenotype and the structure of a molecule, we aim to predict the phenotype induced by the corresponding molecule. We first evaluate classical optimal transport baselines and show that static couplings do not yield useful predictions on large-scale phenotypic image datasets. We then introduce a molecule-conditioned Neural Optimal Transport (NOT) model with a Monge-Gap regularization training objective that learns to transport negative-control unperturbed phenotypes toward perturbed phenotypes using molecular structure as conditioning information. NOT recovers molecule-specific phenotypic effects while reducing microscopy-associated technical variation, thereby facilitating comparisons across experimental batches. On unseen active molecules, the model outperforms baseline approaches, demonstrating that chemically conditioned transport can generalize beyond the molecules observed during training. We identified the molecular encoder as the main limitation to this generalization, while transport in a compressed representation space improves performance and scalability. These results establish NOT as a promising framework for predicting cellular phenotypes from molecular structure and negative-control phenotypes, while highlighting the development of more informative molecular representations as a key direction for improving out-of-distribution performance.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Note-Chord-Voice Framework: Structured Source Separation and Causal Inference for EV Charging Data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-14756</link>
+    <guid isPermaLink="false">arxiv:2608.14756</guid>
+    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiajie Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>Real-world EV charging data exhibit three interlocking pathologies: hardware fragmentation (network timeouts and billing resets split sessions), physical violations (independent energy/duration models produce impossible states like 50 kWh in 10 min on a 7 kW charger), and collider bias (clustering on post-treatment outcomes opens backdoor paths for price elasticity). We propose the Note-Chord-Voice framework, a music-inspired, axiom-driven pipeline that separates data cleaning (Repair Chords), structural pattern discovery (Harmonic Chords), descriptive source separation (NMF Voices), and causal inference into distinct, falsifiable stages. Key innovations: (i) falsification gates (A1-A5, G3, G10) that test data suitability before modeling; (ii) Gamma-initialized NMF with input rescaling for convergence stability from STL decomposition; (iii) tag-based coupon grading (A/B/C/D) to isolate quasi-random treatment from night-time confounders and targeted promotions; (iv) separate per-voice OLS to avoid simplex collinearity; (v) Foote novelty curves for structural regime detection. Applied to the Jiangmen dataset (495,707 sessions, 20 stations, from July 2024 to March 2025), all core axioms pass except G3 (no strong 168 h cycle). NMF achieves R^2=0.9921; the physically constrained duration model yields aggregate R^2=0.5409. Two voices are price-sensitive (beta = -11 to -14 min, p&lt;0.001), of which one is stable (Voice 3, beta=-14.16) and one treatment-driven (Voice 1, beta=-11.10); only the stable voice supports causal claims. Counterfactual simulation shows targeting discounts to price-sensitive voices recovers 52.8% of discount expenditures (~0.85M CNY/year); restricting to the single stable price-sensitive voice yields a more conservative estimate.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Training Non-Differentiable Networks via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-01928</link>
+    <guid isPermaLink="false">arxiv:2605.01928</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">An T. Le</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We optimize losses that jump: spiking thresholds, quantized layers, and discrete routing put jumps in the forward pass, where backpropagation does not apply. Finite differences fail: at a derivative-estimating radius, 99.5% of probe pairs on a quantized network leave the loss bit-identical, against 1.6% on a smooth control. At a jump, Clarke and conservative stationarity are undefined, and any radius-h smoothing steepens like 1/h, so no vanishing radius defines a derivative. Fixed-resolution stationarity survives. PolyStep attains it from forward passes alone, ranking probe points on a rotated polytope and stepping along a softmax-weighted average of their directions, the λ=0 endpoint of a KL-penalized transport program. A second impossibility fixes the frame: on a plateau wider than the probes reach, every rule that reweights one cost row freezes, softmax included, and only the column constraint escapes. In expectation, the cost-weighted average of the probed directions is exactly a gradient step on a smoothed loss, for every bounded measurable objective, with no probe asked to clear the jump set. Over T steps it reaches subspace stationarity at rate O(T⁻⁽¹/2-γ)) up to a bias floor with an interior optimal probe radius, upgrading to Goldstein stationarity where the loss is Lipschitz. At matched optimizer steps, PolyStep leads all 36 comparisons of six architectures against six gradient-free baselines. It reaches 93.0% on hard LIF spiking networks against 79.6% for the best tuned baseline, and satisfies 92.6% of clauses on million-variable MAX-SAT against an 87.5% random floor. Matching total evaluations instead reverses argmax attention and one MAX-SAT size, and levels hard MoE. A step costs one forward pass per subspace dimension, leaving PolyStep at chance at 4.2M parameters from scratch; where gradients exist Adam is faster and more accurate.</p>]]></description>
+  </item>
 
   <item>
     <title>Multimarginal flow matching with optimal transport potentials</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Houédry et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport provides a powerful framework for comparing measures while respecting the geometry of their support, but comes with an expensive computational cost, hindering its potential application to real world use cases. On manifolds, convolutional algorithms based on the heat kernel have been proposed to alleviate this cost, but their theoretical properties remain largely unexplored. We establish that the heat kernel cost converges to the optimal transport cost as time vanishes in the balanced and unbalanced cases. In the specific case of the 2-sphere 𝕊², we ensure that the associated Sinkhorn divergences retains the desirable geometric and analytic properties of classical optimal transport discrepancies. Moreover, we leverage the harmonic structure of the sphere to derive a fast Sinkhorn algorithm, requiring only 𝒪(n) memory and 𝒪(n³/2) time per iteration, with fully dense GPU-friendly operations. We validate its computational efficiency on synthetic data, and discuss its potential use in the evaluation of global climate models, providing both spatial and seasonal insights into models performances.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Take It or Leave It: Intent-Controlled Partial Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20030</link>
-    <guid isPermaLink="false">arxiv:2605.20030</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Salil Parth Tripathi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>While optimal transport (OT) enforces a rigid constraint by requiring two measures to be matched exactly, partial optimal transport relaxes this requirement by allowing mass to remain unmatched through a global budget, scalar rebate, or uniform rejection rule. However, many applications call for more structured, pointwise rejection mechanisms, where the decision to leave mass unmatched depends on side-specific reliability, support geometry, or external information about which components should participate in the comparison. We introduce \emph{intent-controlled partial optimal transport} (IC-POT), a targeted generalization of partial transport that replaces the global rejection paradigm with pointwise rejection costs over both measures. We show that the resulting optimization problem admits a dual interpretation in terms of local acceptance thresholds and can be solved by recasting it as a balanced Kantorovich OT problem on an augmented support. Beyond theoretical analysis, we demonstrate the practical relevance of IC-POT in settings where rejection is driven by side information. In positive-unlabeled learning and open-partial domain adaptation, incorporating pointwise rejection rules that encode statistical structure improves fixed baseline pipelines. Finally, we motivate the use of IC-POT with a geophysical practical case: multi-modal satellite ocean measurements, for which physical and sensors priors naturally inform the rejection mechanism and define the retrieved comparable signal information.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimizing Computational-Statistical Runtime for Wasserstein Distance Estimation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20122</link>
-    <guid isPermaLink="false">arxiv:2605.20122</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Matthew Jacobs et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Squared Wasserstein distance is a frequently used tool to measure discrepancy between probability distributions. This distance is typically computed between empirical measures of size n from two underlying random samples. Unfortunately, even in lower dimensional Euclidean space problems ( d ∈{2,3} ), algorithms for Wasserstein distance computation with approximate or exact precision guarantees scale poorly in the runtime as a function of n and the desired precision. In response, we consider the computational-statistical runtime, where the goal is to estimate from samples the Wasserstein distance between potentially smooth measures up to ε-additive error in expectation with respect to the sampling; we allow O(1) computational cost for collecting a sample. Towards this, we develop a Sample-Sketch-Solve paradigm where we introduce a regular cartesian grid sketch of the samples. We show that (especially under α-Hölder smooth distributions) this can compress the data without increasing asymptotic error, and also regularizes the structure which enables faster exact algorithms. Ultimately, we approximate W_2²⁽P,Q) within ε error in ε⁻max(2,d+1+o(1)/1+α) time for 0 &lt; α&lt; 1 Hölder smooth distributions P,Q on (0,1)^d; an optimal Θ(ε⁻²⁾ for α&gt; 1/2 when d=2 and nearly optimal as α→1 when d = 3.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sample Complexity of Transfer Learning: An Optimal Transport Approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20545</link>
-    <guid isPermaLink="false">arxiv:2605.20545</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Cao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Transfer learning is an essential technique for many machine learning/AI models of complex structures such as large language models and generative AI. The essence of transfer learning is to leverage knowledge from resolved source tasks for a new target task, especially when the sample size m of the training data for the latter is low. In this work, we rigorously analyze the potential benefit of transfer learning in terms of sample efficiency. Specifically, taking an optimal transport viewpoint of transfer learning, we find that when the data dimension d is higher than 3, the sample complexity for transfer learning is O(m⁻⁽α+1)/d), with α indicating the smoothness of the data distribution, as opposed to the O(m⁻p/d) sample complexity for direct learning with p indicating the smoothness of the optimal target model. Our finding theoretically supports a better sample efficiency for transfer learning, when the target task is optimizing over a family of not-so-smooth models (i.e., highly complex networks with the possible use of non-smooth activation functions). Using image classification as an example, we numerically demonstrate the sample efficiency for transfer learning, that is, in the data hungry regime, the model performance can be significantly improved by transfer learning.</p>]]></description>
   </item>
 
 </channel>

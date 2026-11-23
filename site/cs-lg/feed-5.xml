@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-14444</link>
+    <guid isPermaLink="false">arxiv:2509.14444</guid>
+    <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Herlock et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Federated Learning (FL) allows distributed model training without sharing raw data, but suffers when client participation is partial. In practice, the distribution of available users (\emph{availability distribution} q) rarely aligns with the distribution defining the optimization objective (\emph{importance distribution} p), leading to biased and unstable updates under classical FedAvg. We propose \textbf{Fereated AVerage with Optimal Transport (\textbf{FedAVOT})}, which formulates aggregation as a masked optimal transport problem aligning q and p. Using Sinkhorn scaling, \textbf{FedAVOT} computes transport-based aggregation weights with provable convergence guarantees. \textbf{FedAVOT} achieves a standard 𝒪(1/√(T)) rate under a nonsmooth convex FL setting, independent of the number of participating users per round. Our experiments confirm drastically improved performance compared to FedAvg across heterogeneous, fairness-sensitive, and low-availability regimes, even when only two clients participate per round.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Particle-Flow Algorithm for Free-Support Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-11435</link>
+    <guid isPermaLink="false">arxiv:2509.11435</guid>
+    <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kisung You</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle-flow, title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein barycenter extends the Euclidean mean to the space of probability measures by minimizing the weighted sum of squared 2-Wasserstein distances. We develop a free-support algorithm for computing Wasserstein barycenters that avoids entropic regularization and instead follows the formal Riemannian geometry of Wasserstein space. In our approach, barycenter atoms evolve as particles advected by averaged optimal-transport displacements, with barycentric projections of optimal transport plans used in place of Monge maps when the latter do not exist. This yields a geometry-aware particle-flow update that preserves sharp features of the Wasserstein barycenter while remaining computationally tractable. We establish theoretical guarantees, including consistency of barycentric projections, monotone descent and convergence to stationary points, stability with respect to perturbations of the inputs, and resolution consistency as the number of atoms increases. Empirical studies on averaging probability distributions, Bayesian posterior aggregation, image prototypes and classification, and large-scale clustering demonstrate accuracy and scalability of the proposed particle-flow approach, positioning it as a principled alternative to both linear programming and regularized solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>E-ROBOT: a dimension-free method for robust statistics and machine learning via Schrödinger bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-11532</link>
+    <guid isPermaLink="false">arxiv:2509.11532</guid>
+    <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davide La Vecchia et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We propose the Entropic-regularized Robust Optimal Transport (E-ROBOT) framework, a novel method that combines the robustness of ROBOT with the computational and statistical benefits of entropic regularization. We show that, rooted in the Schrödinger bridge problem theory, E-ROBOT defines the robust Sinkhorn divergence W_ε,λ, where the parameter λ controls robustness and ε governs the regularization strength. Letting n∈ℕ denote the sample size, a central theoretical contribution is establishing that the sample complexity of W_ε,λ is 𝒪(n⁻¹/2), thereby avoiding the curse of dimensionality that plagues standard ROBOT. This dimension-free property unlocks the use of W_ε,λ as a loss function in large-dimensional statistical and machine learning tasks. With this regard, we demonstrate its utility through four applications: goodness-of-fit testing; computation of barycenters for corrupted 2D and 3D shapes; definition of gradient flows; and image colour transfer. From the computation standpoint, a perk of our novel method is that it can be easily implemented by modifying existing (\texttt{Python}) routines. From the theoretical standpoint, our work opens the door to many research directions in statistics and machine learning: we discuss some of them.</p>]]></description>
+  </item>
 
   <item>
     <title>Optimal Multimarginal Schrödinger Bridge: Minimum Spanning Tree over Measure-valued Vertices</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal Transport (OT) theory investigates the cost-minimizing transport map that moves a source distribution to a target distribution. Recently, several approaches have emerged for learning the optimal transport map for a given cost function using neural networks. We refer to these approaches as the OT Map. OT Map provides a powerful tool for diverse machine learning tasks, such as generative modeling and unpaired image-to-image translation. However, existing methods that utilize max-min optimization often experience training instability and sensitivity to hyperparameters. In this paper, we propose a novel method to improve stability and achieve a better approximation of the OT Map by exploiting displacement interpolation, dubbed Displacement Interpolation Optimal Transport Model (DIOTM). We derive the dual formulation of displacement interpolation at specific time t and prove how these dual problems are related across time. This result allows us to utilize the entire trajectory of displacement interpolation in learning the OT Map. Our method improves the training stability and achieves superior results in estimating optimal transport maps. We demonstrate that DIOTM outperforms existing OT-based models on image-to-image translation tasks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Partial Gromov-Wasserstein Metric</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2402-03664</link>
-    <guid isPermaLink="false">arxiv:2402.03664</guid>
-    <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yikun Bai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) distance has gained increasing interest in the machine learning community in recent years, as it allows for the comparison of measures in different metric spaces. To overcome the limitations imposed by the equal mass requirements of the classical GW problem, researchers have begun exploring its application in unbalanced settings. However, Unbalanced GW (UGW) can only be regarded as a discrepancy rather than a rigorous metric/distance between two metric measure spaces (mm-spaces). In this paper, we propose a particular case of the UGW problem, termed Partial Gromov-Wasserstein (PGW). We establish that PGW is a well-defined metric between mm-spaces and discuss its theoretical properties, including the existence of a minimizer for the PGW problem and the relationship between PGW and GW, among others. We then propose two variants of the Frank-Wolfe algorithm for solving the PGW problem and show that they are mathematically and computationally equivalent. Moreover, based on our PGW metric, we introduce the analogous concept of barycenters for mm-spaces. Finally, we validate the effectiveness of our PGW metric and related solvers in applications such as shape matching, shape retrieval, and shape interpolation, comparing them against existing baselines. Our code is available at https://github.com/mint-vu/PGW_Metric.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Formation Shape Control using the Gromov-Wasserstein Metric</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-21538</link>
-    <guid isPermaLink="false">arxiv:2503.21538</guid>
-    <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haruto Nakashima et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>This article introduces a formation shape control algorithm, in the optimal control framework, for steering an initial population of agents to a desired configuration via employing the Gromov-Wasserstein distance. The underlying dynamical system is assumed to be a constrained linear system and the objective function is a sum of quadratic control-dependent stage cost and a Gromov-Wasserstein terminal cost. The inclusion of the Gromov-Wasserstein cost transforms the resulting optimal control problem into a well-known NP-hard problem, making it both numerically demanding and difficult to solve with high accuracy. Towards that end, we employ a recent semi-definite relaxation-driven technique to tackle the Gromov-Wasserstein distance. A numerical example is provided to illustrate our results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fusion of Graph Neural Networks via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-21579</link>
-    <guid isPermaLink="false">arxiv:2503.21579</guid>
-    <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weronika Ormaniec et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In this paper, we explore the idea of combining GCNs into one model. To that end, we align the weights of different models layer-wise using optimal transport (OT). We present and evaluate three types of transportation costs and show that the studied fusion method consistently outperforms the performance of vanilla averaging. Finally, we present results suggesting that model fusion using OT is harder in the case of GCNs than MLPs and that incorporating the graph structure into the process does not improve the performance of the method.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Take It or Leave It: Intent-Controlled Partial Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20030</link>
+    <guid isPermaLink="false">arxiv:2605.20030</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Salil Parth Tripathi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>While optimal transport (OT) enforces a rigid constraint by requiring two measures to be matched exactly, partial optimal transport relaxes this requirement by allowing mass to remain unmatched through a global budget, scalar rebate, or uniform rejection rule. However, many applications call for more structured, pointwise rejection mechanisms, where the decision to leave mass unmatched depends on side-specific reliability, support geometry, or external information about which components should participate in the comparison. We introduce \emph{intent-controlled partial optimal transport} (IC-POT), a targeted generalization of partial transport that replaces the global rejection paradigm with pointwise rejection costs over both measures. We show that the resulting optimization problem admits a dual interpretation in terms of local acceptance thresholds and can be solved by recasting it as a balanced Kantorovich OT problem on an augmented support. Beyond theoretical analysis, we demonstrate the practical relevance of IC-POT in settings where rejection is driven by side information. In positive-unlabeled learning and open-partial domain adaptation, incorporating pointwise rejection rules that encode statistical structure improves fixed baseline pipelines. Finally, we motivate the use of IC-POT with a geophysical practical case: multi-modal satellite ocean measurements, for which physical and sensors priors naturally inform the rejection mechanism and define the retrieved comparable signal information.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimizing Computational-Statistical Runtime for Wasserstein Distance Estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20122</link>
+    <guid isPermaLink="false">arxiv:2605.20122</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Matthew Jacobs et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Squared Wasserstein distance is a frequently used tool to measure discrepancy between probability distributions. This distance is typically computed between empirical measures of size n from two underlying random samples. Unfortunately, even in lower dimensional Euclidean space problems ( d ∈{2,3} ), algorithms for Wasserstein distance computation with approximate or exact precision guarantees scale poorly in the runtime as a function of n and the desired precision. In response, we consider the computational-statistical runtime, where the goal is to estimate from samples the Wasserstein distance between potentially smooth measures up to ε-additive error in expectation with respect to the sampling; we allow O(1) computational cost for collecting a sample. Towards this, we develop a Sample-Sketch-Solve paradigm where we introduce a regular cartesian grid sketch of the samples. We show that (especially under α-Hölder smooth distributions) this can compress the data without increasing asymptotic error, and also regularizes the structure which enables faster exact algorithms. Ultimately, we approximate W_2²⁽P,Q) within ε error in ε⁻max(2,d+1+o(1)/1+α) time for 0 &lt; α&lt; 1 Hölder smooth distributions P,Q on (0,1)^d; an optimal Θ(ε⁻²⁾ for α&gt; 1/2 when d=2 and nearly optimal as α→1 when d = 3.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sample Complexity of Transfer Learning: An Optimal Transport Approach</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20545</link>
+    <guid isPermaLink="false">arxiv:2605.20545</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyang Cao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Transfer learning is an essential technique for many machine learning/AI models of complex structures such as large language models and generative AI. The essence of transfer learning is to leverage knowledge from resolved source tasks for a new target task, especially when the sample size m of the training data for the latter is low. In this work, we rigorously analyze the potential benefit of transfer learning in terms of sample efficiency. Specifically, taking an optimal transport viewpoint of transfer learning, we find that when the data dimension d is higher than 3, the sample complexity for transfer learning is O(m⁻⁽α+1)/d), with α indicating the smoothness of the data distribution, as opposed to the O(m⁻p/d) sample complexity for direct learning with p indicating the smoothness of the optimal target model. Our finding theoretically supports a better sample efficiency for transfer learning, when the target task is optimizing over a family of not-so-smooth models (i.e., highly complex networks with the possible use of non-smooth activation functions). Using image classification as an example, we numerically demonstrate the sample efficiency for transfer learning, that is, in the data hungry regime, the model performance can be significantly improved by transfer learning.</p>]]></description>
+  </item>
 
   <item>
     <title>A Unified Framework for Data-Free One-Step Sampling via Wasserstein Gradient Flows</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Klein et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>Bayesian optimal experimental design (BOED) seeks to maximize the expected information gain (EIG) of experiments. This requires a likelihood estimate, which in many settings is intractable. Simulation-based inference (SBI) provides powerful tools for this regime. However, existing work explicitly connecting SBI and BOED is restricted to a single contrastive EIG bound. We show that the EIG admits multiple formulations which can directly leverage modern SBI density estimators, encompassing neural posterior, likelihood, and ratio estimation. Building on this perspective, we define a novel EIG estimator using neural likelihood estimation. Further, we identify optimization as a key bottleneck of gradient based EIG maximization and show that a simple multi-start parallel gradient ascent procedure can substantially improve reliability and performance. With these innovations, our SBI-based BOED methods are able to match or outperform by up to 22% existing state-of-the-art approaches across standard BOED benchmarks.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Solving Prior Distribution Mismatch in Diffusion Models via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2410-13431</link>
-    <guid isPermaLink="false">arxiv:2410.13431</guid>
-    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhanpeng Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Diffusion Models (DMs) have achieved remarkable progress in generative modeling. However, the mismatch between the forward terminal distribution and reverse initial distribution introduces prior error, leading to deviations of sampling trajectories from the true distribution and severely limiting model performance. This issue further triggers cascading problems, including non-zero Signal-to-Noise Ratio, accumulated denoising errors, degraded generation quality, and constrained sampling efficiency. To address this issue, this paper proposes a prior error elimination framework based on Optimal Transport (OT). Specifically, an OT map from the reverse initial distribution to the forward terminal distribution is constructed to achieve precise matching of the two distributions. Meanwhile, the upper bound of the prior error is quantified using the Wasserstein distance, proving that the prior error can be effectively eliminated via the OT map. Additionally, by deriving the asymptotic consistency between dynamic OT and probability flow, this method is revealed to be highly compatible with the intrinsic mechanism of the diffusion process. Experimental results demonstrate that the proposed method completely eliminates the prior error both theoretically and practically, providing a universal and rigorous solution for optimizing the performance of DMs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On optimal solutions of classical and sliced Wasserstein GANs with non-Gaussian data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-06505</link>
-    <guid isPermaLink="false">arxiv:2509.06505</guid>
-    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu-Jui Huang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The generative adversarial network (GAN) aims to approximate an unknown distribution via a parameterized neural network (NN). While GANs have been widely applied in reinforcement and semi-supervised learning as well as computer vision tasks, selecting their parameters often needs an exhaustive search, and only a few selection methods have been proven to be theoretically optimal. One of the most promising GAN variants is the Wasserstein GAN (WGAN). Prior work on optimal parameters for population WGAN is limited to the linear-quadratic-Gaussian (LQG) setting, where the generator NN is linear, and the data is Gaussian. In this paper, we focus on the characterization of optimal solutions of population WGAN beyond the LQG setting. As a basic result, closed-form optimal parameters for one-dimensional WGAN are derived when the NN has non-linear activation functions, and the data is non-Gaussian. For high-dimensional data, we adopt the sliced Wasserstein framework and show that the linear generator can be asymptotically optimal. Moreover, the original sliced WGAN only constrains the projected data marginal instead of the whole one in classical WGAN, and thus, we propose another new unprojected sliced WGAN and identify its asymptotic optimality. Empirical studies show that compared to the celebrated r-principal component analysis (r-PCA) solution, which has cubic complexity to the data dimension, our generator for sliced WGAN can achieve better performance with only linear complexity.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Rate-Optimal Noise Annealing in Semi-Dual Neural Optimal Transport: Tangential Identifiability, Off-Manifold Ambiguity, and Guaranteed Recovery</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-04110</link>
-    <guid isPermaLink="false">arxiv:2602.04110</guid>
-    <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raymond Chu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Semi-dual neural optimal transport learns a transport map via a max-min objective, yet training can converge to incorrect or degenerate maps. We fully characterize these spurious solutions in the common regime where data concentrate on low-dimensional manifold: the objective is underconstrained off the data manifold, while the on-manifold transport signal remains identifiable. Following Choi, Choi, and Kwon (2025), we study additive-noise smoothing as a remedy and prove new map recovery guarantees as the noise vanishes. Our main practical contribution is a computable terminal noise level ε_stat(N) that attains the optimal statistical rate, with scaling governed by the intrinsic dimension m of the data. The formula arises from a theoretical unified analysis of (i) quantitative stability of optimal plans, (ii) smoothing-induced bias, and (iii) finite-sample error, yielding rates that depend on m rather than the ambient dimension. Finally, we show that the reduced semi-dual objective becomes increasingly ill-conditioned as ε↓0. This provides a principled stopping rule: annealing below ε_stat(N) can worsen optimization conditioning without improving statistical accuracy.</p>]]></description>
   </item>
 
 </channel>

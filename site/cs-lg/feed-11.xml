@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A Homotopy Algorithm for Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2112-06763</link>
+    <guid isPermaLink="false">arxiv:2112.06763</guid>
+    <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roozbeh Yousefzadeh</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The optimal transport problem has many applications in machine learning, physics, biology, economics, etc. Although its goal is very clear and mathematically well-defined, finding its optimal solution can be challenging for large datasets in high-dimensional space. Here, we propose a homotopy algorithm that first transforms the problem into an easy form, by changing the target distribution. It then transforms the problem back to the original form through a series of iterations, tracing a path of solutions until it finds the optimal solution for the original problem. We define the homotopy path as a subspace rotation based on the orthogonal Procrustes problem, and then we discretize the homotopy path using eigenvalue decomposition of the rotation matrix. Our goal is to provide an algorithm with complexity bound 𝒪(n² log(n)), faster than the existing methods in the literature.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Gamifying optimization: a Wasserstein distance-based analysis of human search</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2112-06292</link>
+    <guid isPermaLink="false">arxiv:2112.06292</guid>
+    <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonio Candelieri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The main objective of this paper is to outline a theoretical framework to characterise humans&rsquo; decision-making strategies under uncertainty, in particular active learning in a black-box optimization task and trading-off between information gathering (exploration) and reward seeking (exploitation). Humans&rsquo; decisions making according to these two objectives can be modelled in terms of Pareto rationality. If a decision set contains a Pareto efficient strategy, a rational decision maker should always select the dominant strategy over its dominated alternatives. A distance from the Pareto frontier determines whether a choice is Pareto rational. To collect data about humans&rsquo; strategies we have used a gaming application that shows the game field, with previous decisions and observations, as well as the score obtained. The key element in this paper is the representation of behavioural patterns of human learners as a discrete probability distribution. This maps the problem of the characterization of humans&rsquo; behaviour into a space whose elements are probability distributions structured by a distance between histograms, namely the Wasserstein distance (WST). The distributional analysis gives new insights about human search strategies and their deviations from Pareto rationality. Since the uncertainty is one of the two objectives defining the Pareto frontier, the analysis has been performed for three different uncertainty quantification measures to identify which better explains the Pareto compliant behavioural patterns. Beside the analysis of individual patterns WST has also enabled a global analysis computing the barycenters and WST k-means clustering. A further analysis has been performed by a decision tree to relate non-Paretian behaviour, characterized by exasperated exploitation, to the dynamics of the evolution of the reward seeking process.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Encoded Prior Sliced Wasserstein AutoEncoder for learning latent manifold representations</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2010-01037</link>
+    <guid isPermaLink="false">arxiv:2010.01037</guid>
+    <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sanjukta Krishnagopal et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>While variational autoencoders have been successful in several tasks, the use of conventional priors are limited in their ability to encode the underlying structure of input data. We introduce an Encoded Prior Sliced Wasserstein AutoEncoder wherein an additional prior-encoder network learns an embedding of the data manifold which preserves topological and geometric properties of the data, thus improving the structure of latent space. The autoencoder and prior-encoder networks are iteratively trained using the Sliced Wasserstein distance. The effectiveness of the learned manifold encoding is explored by traversing latent space through interpolations along geodesics which generate samples that lie on the data manifold and hence are more realistic compared to Euclidean interpolation. To this end, we introduce a graph-based algorithm for exploring the data manifold and interpolating along network-geodesics in latent space by maximizing the density of samples along the path while minimizing total energy. We use the 3D-spiral data to show that the prior encodes the geometry underlying the data unlike conventional autoencoders, and to demonstrate the exploration of the embedded data manifold through the network algorithm. We apply our framework to benchmarked image datasets to demonstrate the advantages of learning data representations in outlier generation, latent structure, and geodesic interpolation.</p>]]></description>
+  </item>
 
   <item>
     <title>Segmentation of EM showers for neutrino experiments with deep graph neural networks</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kweku Kwegyir-Aggrey et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>To study discrimination in automated decision-making systems, scholars have proposed several definitions of fairness, each expressing a different fair ideal. These definitions require practitioners to make complex decisions regarding which notion to employ and are often difficult to use in practice since they make a binary judgement a system is fair or unfair instead of explaining the structure of the detected unfairness. We present an optimal transport-based approach to fairness that offers an interpretable and quantifiable exploration of bias and its structure by comparing a pair of outcomes to one another. In this work, we use the optimal transport map to examine individual, subgroup, and group fairness. Our framework is able to recover well known examples of algorithmic discrimination, detect unfairness when other metrics fail, and explore recourse opportunities.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Discretizations of Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-07956</link>
-    <guid isPermaLink="false">arxiv:2102.07956</guid>
-    <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junqi Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Obtaining solutions to Optimal Transportation (OT) problems is typically intractable when the marginal spaces are continuous. Recent research has focused on approximating continuous solutions with discretization methods based on i.i.d. sampling, and has proven convergence as the sample size increases. However, obtaining OT solutions with large sample sizes requires intensive computation effort, that can be prohibitive in practice. In this paper, we propose an algorithm for calculating discretizations with a given number of points for marginal distributions, by minimizing the (entropy-regularized) Wasserstein distance, and result in plans that are comparable to those obtained with much larger numbers of i.i.d. samples. Moreover, a local version of such discretizations which is parallelizable for large scale applications is proposed. We prove bounds for our approximation and demonstrate performance on a wide range of problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Random Forests and Applications in Heterogeneous Treatment Effects</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-04709</link>
-    <guid isPermaLink="false">arxiv:2006.04709</guid>
-    <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qiming Du et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We present new insights into causal inference in the context of Heterogeneous Treatment Effects by proposing natural variants of Random Forests to estimate the key conditional distributions. To achieve this, we recast Breiman&rsquo;s original splitting criterion in terms of Wasserstein distances between empirical measures. This reformulation indicates that Random Forests are well adapted to estimate conditional distributions and provides a natural extension of the algorithm to multivariate outputs. Following the philosophy of Breiman&rsquo;s construction, we propose some variants of the splitting rule that are well-suited to the conditional distribution estimation problem. Some preliminary theoretical connections are established along with various numerical experiments, which show how our approach may help to conduct more transparent causal inference in complex situations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence and finite sample approximations of entropic regularized Wasserstein distances in Gaussian and RKHS settings</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2101-01429</link>
-    <guid isPermaLink="false">arxiv:2101.01429</guid>
-    <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh Ha Quang</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This work studies the convergence and finite sample approximations of entropic regularized Wasserstein distances in the Hilbert space setting. Our first main result is that for Gaussian measures on an infinite-dimensional Hilbert space, convergence in the 2-Sinkhorn divergence is {\it strictly weaker} than convergence in the exact 2-Wasserstein distance. Specifically, a sequence of centered Gaussian measures converges in the 2-Sinkhorn divergence if the corresponding covariance operators converge in the Hilbert-Schmidt norm. This is in contrast to the previous known result that a sequence of centered Gaussian measures converges in the exact 2-Wasserstein distance if and only if the covariance operators converge in the trace class norm. In the reproducing kernel Hilbert space (RKHS) setting, the {\it kernel Gaussian-Sinkhorn divergence}, which is the Sinkhorn divergence between Gaussian measures defined on an RKHS, defines a semi-metric on the set of Borel probability measures on a Polish space, given a characteristic kernel on that space. With the Hilbert-Schmidt norm convergence, we obtain {\it dimension-independent} convergence rates for finite sample approximations of the kernel Gaussian-Sinkhorn divergence, with the same order as the Maximum Mean Discrepancy. These convergence rates apply in particular to Sinkhorn divergence between Gaussian measures on Euclidean and infinite-dimensional Hilbert spaces. The sample complexity for the 2-Wasserstein distance between Gaussian measures on Euclidean space, while dimension-dependent and larger than that of the Sinkhorn divergence, is exponentially faster than the worst case scenario in the literature.</p>]]></description>
   </item>
 
 </channel>

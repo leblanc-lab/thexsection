@@ -7,7 +7,37 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Solving Prior Distribution Mismatch in Diffusion Models via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2410-13431</link>
+    <guid isPermaLink="false">arxiv:2410.13431</guid>
+    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhanpeng Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Diffusion Models (DMs) have achieved remarkable progress in generative modeling. However, the mismatch between the forward terminal distribution and reverse initial distribution introduces prior error, leading to deviations of sampling trajectories from the true distribution and severely limiting model performance. This issue further triggers cascading problems, including non-zero Signal-to-Noise Ratio, accumulated denoising errors, degraded generation quality, and constrained sampling efficiency. To address this issue, this paper proposes a prior error elimination framework based on Optimal Transport (OT). Specifically, an OT map from the reverse initial distribution to the forward terminal distribution is constructed to achieve precise matching of the two distributions. Meanwhile, the upper bound of the prior error is quantified using the Wasserstein distance, proving that the prior error can be effectively eliminated via the OT map. Additionally, by deriving the asymptotic consistency between dynamic OT and probability flow, this method is revealed to be highly compatible with the intrinsic mechanism of the diffusion process. Experimental results demonstrate that the proposed method completely eliminates the prior error both theoretically and practically, providing a universal and rigorous solution for optimizing the performance of DMs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On optimal solutions of classical and sliced Wasserstein GANs with non-Gaussian data</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-06505</link>
+    <guid isPermaLink="false">arxiv:2509.06505</guid>
+    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yu-Jui Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The generative adversarial network (GAN) aims to approximate an unknown distribution via a parameterized neural network (NN). While GANs have been widely applied in reinforcement and semi-supervised learning as well as computer vision tasks, selecting their parameters often needs an exhaustive search, and only a few selection methods have been proven to be theoretically optimal. One of the most promising GAN variants is the Wasserstein GAN (WGAN). Prior work on optimal parameters for population WGAN is limited to the linear-quadratic-Gaussian (LQG) setting, where the generator NN is linear, and the data is Gaussian. In this paper, we focus on the characterization of optimal solutions of population WGAN beyond the LQG setting. As a basic result, closed-form optimal parameters for one-dimensional WGAN are derived when the NN has non-linear activation functions, and the data is non-Gaussian. For high-dimensional data, we adopt the sliced Wasserstein framework and show that the linear generator can be asymptotically optimal. Moreover, the original sliced WGAN only constrains the projected data marginal instead of the whole one in classical WGAN, and thus, we propose another new unprojected sliced WGAN and identify its asymptotic optimality. Empirical studies show that compared to the celebrated r-principal component analysis (r-PCA) solution, which has cubic complexity to the data dimension, our generator for sliced WGAN can achieve better performance with only linear complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Rate-Optimal Noise Annealing in Semi-Dual Neural Optimal Transport: Tangential Identifiability, Off-Manifold Ambiguity, and Guaranteed Recovery</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-04110</link>
+    <guid isPermaLink="false">arxiv:2602.04110</guid>
+    <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Raymond Chu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Semi-dual neural optimal transport learns a transport map via a max-min objective, yet training can converge to incorrect or degenerate maps. We fully characterize these spurious solutions in the common regime where data concentrate on low-dimensional manifold: the objective is underconstrained off the data manifold, while the on-manifold transport signal remains identifiable. Following Choi, Choi, and Kwon (2025), we study additive-noise smoothing as a remedy and prove new map recovery guarantees as the noise vanishes. Our main practical contribution is a computable terminal noise level ε_stat(N) that attains the optimal statistical rate, with scaling governed by the intrinsic dimension m of the data. The formula arises from a theoretical unified analysis of (i) quantitative stability of optimal plans, (ii) smoothing-induced bias, and (iii) finite-sample error, yielding rates that depend on m rather than the ambient dimension. Finally, we show that the reduced semi-dual objective becomes increasingly ill-conditioned as ε↓0. This provides a principled stopping rule: annealing below ε_stat(N) can worsen optimization conditioning without improving statistical accuracy.</p>]]></description>
+  </item>
 
   <item>
     <title>Geometry-Aware Optimal Transport: Fast Intrinsic Dimension and Wasserstein Distance Estimation</title>
@@ -1977,36 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arsenii Gavrikov et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Ensuring reliable data collection in large-scale particle physics experiments demands Data Quality Monitoring (DQM) procedures to detect possible detector malfunctions and preserve data integrity. Traditionally, this resource-intensive task has been handled by human shifters who struggle with frequent changes in operational conditions. We present DINAMO: a novel, interpretable, robust, and scalable DQM framework designed to automate anomaly detection in time-dependent settings. Our approach constructs evolving histogram templates with built-in uncertainties, featuring both a statistical variant - extending the classical Exponentially Weighted Moving Average (EWMA) - and a machine learning (ML)-enhanced version that leverages a transformer encoder for improved adaptability. Experimental validations on synthetic datasets demonstrate the high accuracy, adaptability, and interpretability of these methods. The statistical variant is being commissioned in the LHCb experiment at the Large Hadron Collider, underscoring its real-world impact. The code used in this study is available at https://github.com/ArseniiGav/DINAMO.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-14444</link>
-    <guid isPermaLink="false">arxiv:2509.14444</guid>
-    <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Herlock et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Federated Learning (FL) allows distributed model training without sharing raw data, but suffers when client participation is partial. In practice, the distribution of available users (\emph{availability distribution} q) rarely aligns with the distribution defining the optimization objective (\emph{importance distribution} p), leading to biased and unstable updates under classical FedAvg. We propose \textbf{Fereated AVerage with Optimal Transport (\textbf{FedAVOT})}, which formulates aggregation as a masked optimal transport problem aligning q and p. Using Sinkhorn scaling, \textbf{FedAVOT} computes transport-based aggregation weights with provable convergence guarantees. \textbf{FedAVOT} achieves a standard 𝒪(1/√(T)) rate under a nonsmooth convex FL setting, independent of the number of participating users per round. Our experiments confirm drastically improved performance compared to FedAvg across heterogeneous, fairness-sensitive, and low-availability regimes, even when only two clients participate per round.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Particle-Flow Algorithm for Free-Support Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-11435</link>
-    <guid isPermaLink="false">arxiv:2509.11435</guid>
-    <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kisung You</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle-flow, title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Wasserstein barycenter extends the Euclidean mean to the space of probability measures by minimizing the weighted sum of squared 2-Wasserstein distances. We develop a free-support algorithm for computing Wasserstein barycenters that avoids entropic regularization and instead follows the formal Riemannian geometry of Wasserstein space. In our approach, barycenter atoms evolve as particles advected by averaged optimal-transport displacements, with barycentric projections of optimal transport plans used in place of Monge maps when the latter do not exist. This yields a geometry-aware particle-flow update that preserves sharp features of the Wasserstein barycenter while remaining computationally tractable. We establish theoretical guarantees, including consistency of barycentric projections, monotone descent and convergence to stationary points, stability with respect to perturbations of the inputs, and resolution consistency as the number of atoms increases. Empirical studies on averaging probability distributions, Bayesian posterior aggregation, image prototypes and classification, and large-scale clustering demonstrate accuracy and scalability of the proposed particle-flow approach, positioning it as a principled alternative to both linear programming and regularized solvers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>E-ROBOT: a dimension-free method for robust statistics and machine learning via Schrödinger bridge</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-11532</link>
-    <guid isPermaLink="false">arxiv:2509.11532</guid>
-    <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Davide La Vecchia et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We propose the Entropic-regularized Robust Optimal Transport (E-ROBOT) framework, a novel method that combines the robustness of ROBOT with the computational and statistical benefits of entropic regularization. We show that, rooted in the Schrödinger bridge problem theory, E-ROBOT defines the robust Sinkhorn divergence W_ε,λ, where the parameter λ controls robustness and ε governs the regularization strength. Letting n∈ℕ denote the sample size, a central theoretical contribution is establishing that the sample complexity of W_ε,λ is 𝒪(n⁻¹/2), thereby avoiding the curse of dimensionality that plagues standard ROBOT. This dimension-free property unlocks the use of W_ε,λ as a loss function in large-dimensional statistical and machine learning tasks. With this regard, we demonstrate its utility through four applications: goodness-of-fit testing; computation of barycenters for corrupted 2D and 3D shapes; definition of gradient flows; and image colour transfer. From the computation standpoint, a perk of our novel method is that it can be easily implemented by modifying existing (\texttt{Python}) routines. From the theoretical standpoint, our work opens the door to many research directions in statistics and machine learning: we discuss some of them.</p>]]></description>
   </item>
 
 </channel>
