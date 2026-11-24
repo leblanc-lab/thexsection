@@ -7,7 +7,27 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Track reconstruction as a service for collider physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2501-05520</link>
+    <guid isPermaLink="false">arxiv:2501.05520</guid>
+    <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoran Zhao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran, Philip Harris) — abstract only, not yet read for a briefing.</em></p>
+<p>Optimizing charged-particle track reconstruction algorithms is crucial for efficient event reconstruction in Large Hadron Collider (LHC) experiments due to their significant computational demands. Existing track reconstruction algorithms have been adapted to run on massively parallel coprocessors, such as graphics processing units (GPUs), to reduce processing time. Nevertheless, challenges remain in fully harnessing the computational capacity of coprocessors in a scalable and non-disruptive manner. This paper proposes an inference-as-a-service approach for particle tracking in high energy physics experiments. To evaluate the efficacy of this approach, two distinct tracking algorithms are tested: Patatrack, a rule-based algorithm, and Exa.TrkX, a machine learning-based algorithm. The as-a-service implementations show enhanced GPU utilization and can process requests from multiple CPU cores concurrently without increasing per-request latency. The impact of data transfer is minimal and insignificant compared to running on local coprocessors. This approach greatly improves the computational efficiency of charged particle tracking, providing a solution to the computing challenges anticipated in the High-Luminosity LHC era.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OmniJet-α_C: Learning point cloud calorimeter simulations using generative transformers</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2501-05534</link>
+    <guid isPermaLink="false">arxiv:2501.05534</guid>
+    <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
+<p>We show the first use of generative transformers for generating calorimeter showers as point clouds in a high-granularity calorimeter. Using the tokenizer and generative part of the OmniJet-α model, we represent the hits in the detector as sequences of integers. This model allows variable-length sequences, which means that it supports realistic shower development and does not need to be conditioned on the number of hits. Since the tokenization represents the showers as point clouds, the model learns the geometry of the showers without being restricted to any particular voxel grid.</p>]]></description>
+  </item>
 
   <item>
     <title>Robust resonant anomaly detection with NPLM</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aritra Bal et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Vinicius Mikuni) — abstract only, not yet read for a briefing.</em></p>
 <p>Knowledge distillation is a form of model compression that allows artificial neural networks of different sizes to learn from one another. Its main application is the compactification of large deep neural networks to free up computational resources, in particular on edge devices. In this article, we consider proton-proton collisions at the High-Luminosity LHC (HL-LHC) and demonstrate a successful knowledge transfer from an event-level graph neural network (GNN) to a particle-level small deep neural network (DNN). Our algorithm, DistillNet, is a DNN that is trained to learn about the provenance of particles, as provided by the soft labels that are the GNN outputs, to predict whether or not a particle originates from the primary interaction vertex. The results indicate that for this problem, which is one of the main challenges at the HL-LHC, there is minimal loss during the transfer of knowledge to the small student network, while improving significantly the computational resource needs compared to the teacher. This is demonstrated for the distilled student network on a CPU, as well as for a quantized and pruned student network deployed on a field-programmable gate array. Our study proves that knowledge transfer between networks of different complexity can be used for fast artificial intelligence (AI) in high-energy physics that improves the expressiveness of observables over non-AI-based reconstruction algorithms. Such an approach can become essential at the HL-LHC experiments, e.g., to comply with the resource budget of their trigger stages.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Non-resonant Anomaly Detection with Background Extrapolation</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2023.html#a2311-12924</link>
-    <guid isPermaLink="false">arxiv:2311.12924</guid>
-    <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kehang Bai et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Radha Mastandrea) — abstract only, not yet read for a briefing.</em></p>
-<p>Complete anomaly detection strategies that are both signal sensitive and compatible with background estimation have largely focused on resonant signals. Non-resonant new physics scenarios are relatively under-explored and may arise from off-shell effects or final states with significant missing energy. In this paper, we extend a class of weakly supervised anomaly detection strategies developed for resonant physics to the non-resonant case. Machine learning models are trained to reweight, generate, or morph the background, extrapolated from a control region. A classifier is then trained in a signal region to distinguish the estimated background from the data. The new methods are demonstrated using a semi-visible jet signature as a benchmark signal model, and are shown to automatically identify the anomalous events without specifying the signal ahead of time.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The profile of the Higgs boson -- status and prospects</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2023.html#a2311-10346</link>
-    <guid isPermaLink="false">arxiv:2311.10346</guid>
-    <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Karl Jakobs et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Giulia Zanderighi) — abstract only, not yet read for a briefing.</em></p>
-<p>The Higgs boson, which was discovered at CERN in 2012, stands out as a remarkable elementary particle with distinct characteristics. Unlike any other observed particle, it possesses zero spin within the Standard Model (SM) of particle physics. Theoretical predictions had anticipated the existence of this scalar boson, postulating its interaction with the W and Z bosons as well as through Yukawa interactions with fermions. Furthermore the Higgs boson can interact with itself, commonly referred to as the Higgs self-interaction. In this review, the current state of experimental and theoretical investigations of Higgs boson production at the LHC and the ongoing efforts to unravel its properties are described, and an up-to-date assessment of our understanding of the Higgs sector of the SM is provided. In addition, potential links between the Higgs boson and significant unresolved questions within the realm of particle physics are presented.</p>]]></description>
   </item>
 
 </channel>

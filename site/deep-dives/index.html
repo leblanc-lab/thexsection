@@ -36,13 +36,87 @@
 </p>
 
 <div class="readout meta" aria-label="Stream summary">
-  <span class="count">294 papers</span>
-  <span class="count">97 days</span>
+  <span class="count">297 papers</span>
+  <span class="count">98 days</span>
   <span class="count">since 2026</span>
   <a class="chip chip-link" href="feed.xml">RSS feed</a>
 </div>
 
 
+
+<section class="issue topic-day">
+  <h2 class="issue-date">
+    <a href="../digest/2026-11-24.html">Tuesday, November 24, 2026</a>
+    
+  </h2>
+  
+
+  
+  <article class="paper" id="a2611-28194">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.28194" target="_blank" rel="noopener">arXiv:2611.28194</a>
+      
+      <a class="permalink" href="#a2611-28194" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</h3>
+    <p class="byline">Andrzej Nov\'ak et al.</p>
+    <div class="paper-body"><p>Each agent gets one session of at most 7.5 h on a public world built from 2016 CMS open simulation (MiniAOD, full detector simulation). It must deliver a single pipeline, which is then frozen and rerun on 10–40 sealed worlds per task. Every world has a hidden truth (<span class="arithmatex">\(m_H\)</span>, <span class="arithmatex">\(\mu\)</span>, <span class="arithmatex">\(\Gamma_H/\Gamma_H^{SM}\)</span>, or lepton and jet corrections) and one of 13 detector profiles that distort scale, resolution and efficiencies. The score is a strictly proper log score relative to an expert reference run on the same worlds. A shared-bias term growing like <span class="arithmatex">\(\sqrt N\)</span> is added, along with weighted reviewer checks: goodness of fit, truthfulness against an evaluator refit, and Z-peak closure. With <span class="arithmatex">\(\gamma=2\)</span>, the ratio reads as an effective fraction of the data.</p>
+<p>Across 99 sessions per task and eleven models:
+- Gemini 4 Argon averages 60±8% of the reference, GPT 6 Astra 38%, Claude Opus 5.5 31%.
+- No open-weight model exceeds 10%.
+- Sessions undercover far more often than they overcover.
+- Run-to-run spread exceeds the differences between prompt tiers. Opus 5.5 on HiggsLepMass reaches 89% in its best session against a 49% mean.
+- The P2 expert plan adds nothing over P1.</p>
+<p>The harness is validated adversarially. A memorised 125 GeV scores &lt;1% and understated uncertainties score 34%. With ten worlds, every flawed archetype falls below the reference in ≥96% of draws.</p>
+<p>Caveats the authors flag:
+- Worlds vary detector response and signal, but not generators. The six JetCalib sessions that beat the reference gain mainly because the reference&rsquo;s modelling-dominated JES uncertainties exceed the injected variations.
+- Scores depend on the chosen reference and weights.
+- Only one experiment is covered.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-29072">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.29072" target="_blank" rel="noopener">arXiv:2611.29072</a>
+      
+      <a class="permalink" href="#a2611-29072" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">A billion colour states: exact soft-gluon evolution beyond leading colour for many-jet QCD</h3>
+    <p class="byline">Bakar Chargeishvili</p>
+    <div class="paper-body"><p>Leading colour degrades steadily with multiplicity. Take a soft veto outside the jets at <span class="arithmatex">\(t=0.1\)</span> (<span class="arithmatex">\(Q/Q_0\approx14\)</span>), inside the <span class="arithmatex">\(t\approx0.05\)</span>–0.12 range the author maps to LHC dijet vetoes. There, LC overestimates the full-colour no-emission factor by median factors of 1.27, 1.83 and 6.6 at 8, 10 and 14 partons. The gap fraction is off by 2.2 at <span class="arithmatex">\(n=14\)</span>. Pairs among the three hardest jets form a colour singlet 3–9% of the time; LC sets this to zero.</p>
+<p>The method builds an orthogonal multiplet basis by coupling partons one leg at a time, with each step fixed by a Casimir eigenvalue (Jucys–Murphy elements). Norms come in closed form, and dipoles act only on the label segment between the two partons, via small recoupling tables. <span class="arithmatex">\(\Gamma\)</span> is therefore never stored: <span class="arithmatex">\(\Gamma x\)</span> is a block &ldquo;sweep&rdquo; and <span class="arithmatex">\(e^{-t\Gamma}\)</span> a Krylov iteration. Fourteen gluons take about an hour on one A100. Fifteen gluons (827,888,726 states) take 3–7 h per <span class="arithmatex">\(t\)</span> value on a CPU node with up to 857 GB.</p>
+<p>For showers, the formal <span class="arithmatex">\(1/N_c^2\)</span> suppression is outweighed by the growing number of unconnected pairs. Caveats:
+- The calculation uses one-loop <span class="arithmatex">\(\Gamma\)</span> at fixed coupling, with colour-diagonal factors dropped.
+- Events are flat in phase space, and real emission is included only up to five hard partons.
+- Independent cross-checks stop at <span class="arithmatex">\(n\le7\)</span>. Beyond that, validation rests on internal consistency.
+- The <span class="arithmatex">\(n=15\)</span> points show feasibility and do not enter the LC comparison.</p></div>
+  </article>
+  
+  <article class="paper" id="a2611-29197">
+    <p class="paper-id">
+      <a href="https://arxiv.org/abs/2611.29197" target="_blank" rel="noopener">arXiv:2611.29197</a>
+      
+      <a class="permalink" href="#a2611-29197" aria-label="Permalink to this paper">§</a>
+    </p>
+    <h3 class="paper-title">Quantifying the Impact of Galactic Dark Matter Halo Models on LZ Results</h3>
+    <p class="byline">Jialiang Shao et al.</p>
+    <div class="paper-body"><p>The authors rescale LZ limits by the ratio of predicted yields across 22 self-consistent BCFS halos, truncated at a common <span class="arithmatex">\(v_{esc}=544\)</span> km/s.</p>
+<p>Elastic results:
+- Above about 40 GeV, the SI envelope is <span class="arithmatex">\(R\approx0.8\)</span>–1.3 relative to the SHM.
+- At 9 GeV it opens to 0.17–1.63 (class B).
+- Extending the class-D cutoff to 1000 km/s drives <span class="arithmatex">\(R\)</span> to about 0.04.
+- At 9 GeV, the <span class="arithmatex">\(v_{esc}\)</span> scan (factor ~2 for classes A/B) and the efficiency treatment (factor 2–3) matter about as much as the halo.
+- In the SD channel at 40 GeV, nuclear-structure uncertainty (factors 3.6 and 13 for neutron and proton) still exceeds the roughly 2× halo spread.</p>
+<p>For the 248 keV event (LZ: 3.4σ local, 2.6σ global), they use a background-free single-event likelihood at 1.1 TeV. The tail sets the inelastic ceiling: <span class="arithmatex">\(\delta_{max}\approx384\)</span> keV for the SHM and 556 keV for an LMC-like tail. The higgsino cross section (~7×10⁻³⁹ cm²) crosses these two contours at δ≈360 and 455 keV, both below the 566 keV solar-neutrino threshold. Some anisotropic contours reach 700–775 keV, but only at cross sections well below the higgsino value (D1/D3 near 3×10⁻⁴⁰ cm²).</p>
+<p>Caveats:
+- Limits are rescaled by yield ratio rather than refit with the LZ likelihood.
+- The suite is not a posterior, and it mixes profile, rotation and anisotropy.
+- The 1000 km/s cutoffs are sensitivity tests, not measurements.
+- The single-event fit assumes unit efficiency, and its coverage is uncalibrated.</p>
+<hr />
+<p><em>Full text for <a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a> (Chen et al.) and <a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a> (Reboud et al.) was not supplied, so those picks are not expanded here.</em></p></div>
+  </article>
+  
+</section>
 
 <section class="issue topic-day">
   <h2 class="issue-date">
@@ -5966,7 +6040,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="../hep-ex/index.html">Experimental HEP</a> · <a href="../physics-ins-det/index.html">physics.ins-det</a> · <a href="../cs-cv/index.html">cs.CV</a> · <a href="../cs-ai/index.html">cs.AI</a> · <a href="../cs-lg/index.html">cs.LG</a> · <a href="../methods/index.html">Data & computational methods</a> · <a href="../physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 07:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 15:33 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="../watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

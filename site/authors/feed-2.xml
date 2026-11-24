@@ -7,7 +7,27 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>AllShowers: One model for all calorimeter showers</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2601-11716</link>
+    <guid isPermaLink="false">arxiv:2601.11716</guid>
+    <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thorsten Buss et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
+<p>Accurate and efficient detector simulation is essential for modern collider experiments. To reduce the high computational cost, various fast machine learning surrogate models have been proposed. Traditional surrogate models for calorimeter shower modeling train separate networks for each particle species, limiting scalability and reuse. We introduce AllShowers, a unified generative model that simulates calorimeter showers across multiple particle types using a single generative model. AllShowers is a continuous normalizing flow model with a Transformer architecture, enabling it to generate complex spatial and energy correlations in variable-length point cloud representations of showers. Trained on a diverse dataset of simulated showers in the highly granular ILD detector, the model demonstrates the ability to generate realistic showers for electrons, photons, and charged and neutral hadrons across a wide range of incident energies and angles without retraining. In addition to unifying shower generation for multiple particle types, AllShowers surpasses the fidelity of previous single-particle-type models for hadronic showers. Key innovations include the use of a layer embedding, allowing the model to learn all relevant calorimeter layer properties; a custom attention masking scheme to reduce computational demands and introduce a helpful inductive bias; and a shower- and layer-wise optimal transport mapping to improve training convergence and sample quality. AllShowers marks a significant step towards a universal model for calorimeter shower simulations in collider experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>OmniMol: Transferring Particle Physics Knowledge to Molecular Dynamics with Point-Edge Transformers</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2601-10791</link>
+    <guid isPermaLink="false">arxiv:2601.10791</guid>
+    <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ibrahim Elsharkawy et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — abstract only, not yet read for a briefing.</em></p>
+<p>We present OmniMol, a state-of-the-art all-to-all transformer-based small molecule machine-learned interatomic potential (MLIP). OmniMol is built by adapting Omnilearned, a foundation model for particle jets found in high-energy physics (HEP) experiments such as at the Large Hadron Collider (LHC). Omnilearned is built with a Point-Edge-Transformer (PET) and pre-trained using a diverse set of one billion particle jets. It includes an interaction-matrix attention bias that injects pairwise sub-nuclear (HEP) or atomic (molecular-dynamics) physics directly into the transformer&rsquo;s attention logits, steering the network toward physically meaningful neighborhoods without sacrificing expressivity. We demonstrate OmniMol using the oMol dataset and find excellent performance even with relatively few examples for fine-tuning. Further, due to architectural transfer from Omnilearned, we demonstrate uniquely fast inference. This study lays the foundation for building interdisciplinary connections given datasets represented as collections of point clouds.</p>]]></description>
+  </item>
 
   <item>
     <title>Towards a Self-Driving Trigger at the LHC: Adaptive Response in Real Time</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Weitz et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Nhan Tran) — abstract only, not yet read for a briefing.</em></p>
 <p>We develop a pipeline to streamline neural architecture codesign for physics applications to reduce the need for ML expertise when designing models for novel tasks. Our method employs neural architecture search and network compression in a two-stage approach to discover hardware efficient models. This approach consists of a global search stage that explores a wide range of architectures while considering hardware constraints, followed by a local search stage that fine-tunes and compresses the most promising candidates. We exceed performance on various tasks and show further speedup through model compression techniques such as quantization-aware-training and neural network pruning. We synthesize the optimal models to high level synthesis code for FPGA deployment with the hls4ml library. Additionally, our hierarchical search space provides greater flexibility in optimization, which can easily extend to other tasks and domains. We demonstrate this with two case studies: Bragg peak finding in materials science and jet classification in high energy physics, achieving models with improved accuracy, smaller latencies, or reduced resource utilization relative to the baseline models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Track reconstruction as a service for collider physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2501-05520</link>
-    <guid isPermaLink="false">arxiv:2501.05520</guid>
-    <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoran Zhao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Nhan Tran, Philip Harris) — abstract only, not yet read for a briefing.</em></p>
-<p>Optimizing charged-particle track reconstruction algorithms is crucial for efficient event reconstruction in Large Hadron Collider (LHC) experiments due to their significant computational demands. Existing track reconstruction algorithms have been adapted to run on massively parallel coprocessors, such as graphics processing units (GPUs), to reduce processing time. Nevertheless, challenges remain in fully harnessing the computational capacity of coprocessors in a scalable and non-disruptive manner. This paper proposes an inference-as-a-service approach for particle tracking in high energy physics experiments. To evaluate the efficacy of this approach, two distinct tracking algorithms are tested: Patatrack, a rule-based algorithm, and Exa.TrkX, a machine learning-based algorithm. The as-a-service implementations show enhanced GPU utilization and can process requests from multiple CPU cores concurrently without increasing per-request latency. The impact of data transfer is minimal and insignificant compared to running on local coprocessors. This approach greatly improves the computational efficiency of charged particle tracking, providing a solution to the computing challenges anticipated in the High-Luminosity LHC era.</p>]]></description>
-  </item>
-
-  <item>
-    <title>OmniJet-α_C: Learning point cloud calorimeter simulations using generative transformers</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2025.html#a2501-05534</link>
-    <guid isPermaLink="false">arxiv:2501.05534</guid>
-    <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joschka Birk et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
-<p>We show the first use of generative transformers for generating calorimeter showers as point clouds in a high-granularity calorimeter. Using the tokenizer and generative part of the OmniJet-α model, we represent the hits in the detector as sequences of integers. This model allows variable-length sequences, which means that it supports realistic shower development and does not need to be conditioned on the number of hits. Since the tokenization represents the showers as point clouds, the model learns the geometry of the showers without being restricted to any particular voxel grid.</p>]]></description>
   </item>
 
 </channel>

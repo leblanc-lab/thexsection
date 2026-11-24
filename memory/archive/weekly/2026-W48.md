@@ -1,72 +1,61 @@
-# The Cross Section: rolling synthesis, week ending 2026-11-23
+# The Cross Section: rolling synthesis, week ending 2026-11-24
 
-This week the field kept auditing its own error bars, and the audits mostly made things worse. Phase-transition gravitational-wave forecasts lost robustness at every stage, from the data-side priors to the effective potential. Three independent mechanisms shrank axion superradiance clouds. A survey of LHC exclusion plots raised doubts about how ATLAS computes expected limits, landing the day after ATLAS posted a 3.5σ instanton-like excess. Default reference numbers were replaced: Higgs cross sections moved to Report 5 and the CKM angle γ was tightened. The week ended with a structural result on the $t\bar t$ threshold excess: toponium and a pseudoscalar must interfere, so fits that add them separately are wrong by construction. AI agents also crossed from reproducing known results to producing new, verifiable ones.
+The field spent this week checking its own instruments. Papers re-examined quoted errors, priors, expected-limit bands and halo assumptions, and the checks tended to widen uncertainty without moving central values. Three threads converged:
+
+- **Superradiance:** three independent mechanisms now cut cloud masses.
+- **GW forecasts:** fragility on both the theory and the data side.
+- **AI agents:** a split between verifiable theory output and blind-scored analysis work.
+
+Default reference numbers changed: YR4 gave way to LHC Higgs WG Report 5, and LHCb updated γ. The toponium fight gained a structural constraint that invalidates additive fits. LZ inelastic model-building continued, still judged by solar capture.
 
 ## Running themes
 
-**GW phase-transition forecasts: heating up, and the weak link keeps moving.**
-- **11-17, rate looks robust.** The nucleation rate held up: the lattice result is ~8% from one loop ([arXiv:2611.18794](https://arxiv.org/abs/2611.18794)), and EFT corrections to the bounce are modest ([arXiv:2611.20938](https://arxiv.org/abs/2611.20938)). Blame shifted to wall hydrodynamics.
-- **11-19, data side is fragile.** Using a realistic SMBHB population drops the PTA phase-transition preference from 2.8σ to 1.5σ ([arXiv:2611.23371](https://arxiv.org/abs/2611.23371)). LVK constraints turn out to be prior-dominated ([arXiv:2611.24625](https://arxiv.org/abs/2611.24625)).
-- **11-20, potential itself in question.** Thermal-resummation prescriptions differ by up to nine orders of magnitude in GW peak amplitude ([arXiv:2611.26417](https://arxiv.org/abs/2611.26417)). An improved partial-dressing scheme followed ([arXiv:2611.26303](https://arxiv.org/abs/2611.26303)).
+- **Auditing the error bars (heating).** HERA systematics treated as uncertain cut χ² from 1363 to 1306 without shifting central PDFs ([arXiv:2611.22891](https://arxiv.org/abs/2611.22891)). ATLAS puts 99.2% of observed limits inside its 2σ bands, possibly because expected limits are computed after a fit to data ([arXiv:2611.24065](https://arxiv.org/abs/2611.24065)). The lensing H₀ trend falls to about 1σ once mass-sheet uncertainty is propagated ([arXiv:2611.21821](https://arxiv.org/abs/2611.21821)). On 11-24 the habit reached dark matter: halo anisotropy moves LZ limits by up to 10× below 15 GeV ([arXiv:2611.29197](https://arxiv.org/abs/2611.29197)), and dropping kinetic equilibrium at the Higgs resonance shifts the relic coupling by up to 10× ([arXiv:2611.28230](https://arxiv.org/abs/2611.28230)). Expect more.
+- **Superradiance clouds shrinking (heating, converging).** Three mechanisms now independently reduce cloud masses:
+  - Foster's gravitational Auger effect (11-17)
+  - self-interactions ([arXiv:2611.23384](https://arxiv.org/abs/2611.23384))
+  - self-gravity ([arXiv:2611.26541](https://arxiv.org/abs/2611.26541))
 
-**Superradiance clouds: converging, three hits in four days.**
-- **11-17:** a gravitational Auger effect ([arXiv:2611.18833](https://arxiv.org/abs/2611.18833)).
-- **11-19:** self-interaction feeding of the ground state caps the 211 cloud, with the cap scaling as $f_a^2$ ([arXiv:2611.23384](https://arxiv.org/abs/2611.23384)).
-- **11-20:** self-gravity depletes clouds by orders of magnitude ([arXiv:2611.26541](https://arxiv.org/abs/2611.26541)).
-- **Consensus:** free-field cloud models are never realized, so black-hole spin bounds on axions need revising. Binary environments are a new wrinkle that can partly offset the depletion.
+  Black-hole spin bounds on axions need rechecking. A new sub-thread is that binary environment matters: a companion partly offsets depletion ([arXiv:2611.26541](https://arxiv.org/abs/2611.26541)), and a companion-sourced Yukawa force can halt growth ([arXiv:2611.29939](https://arxiv.org/abs/2611.29939)).
+- **GW phase-transition forecasts (heating).** The weak link has moved upstream, from wall hydrodynamics (last week) to the effective potential itself. Resummation choice alone moves the GW peak amplitude by up to nine orders of magnitude ([arXiv:2611.26417](https://arxiv.org/abs/2611.26417)); a fix for partial dressing is proposed in [arXiv:2611.26303](https://arxiv.org/abs/2611.26303). On the data side, the PTA preference for a transition drops from 2.8σ to 1.5σ under realistic SMBHB populations ([arXiv:2611.23371](https://arxiv.org/abs/2611.23371)), and LVK constraints are prior-dominated ([arXiv:2611.24625](https://arxiv.org/abs/2611.24625)).
+- **AI agents (heating).** The thread moved from reproduction to evaluation:
+  - Codex reproduced CMS J/ψ cross sections, with a 21% RMS spread ([arXiv:2611.22723](https://arxiv.org/abs/2611.22723)).
+  - Alimena set an "evidence over code" standard ([arXiv:2611.23330](https://arxiv.org/abs/2611.23330)).
+  - Claude Opus 5.5 produced new, verifiable Feynman-integral bases ([arXiv:2611.26688](https://arxiv.org/abs/2611.26688)).
+  - The first blind benchmark for experimental analysis followed ([arXiv:2611.28194](https://arxiv.org/abs/2611.28194)). Expert-relative scores were 60% for Gemini 4 Argon, 38% for GPT 6 Astra and 31% for Opus 5.5.
 
-**Statistical self-audit: steady.**
-- **Fit artifacts:** adaptive-integrator normalization jumps produce artificially low NLLs ([arXiv:2611.19355](https://arxiv.org/abs/2611.19355)).
-- **HERA:** treating HERA systematics as uncertain absorbs much of the data–theory tension ([arXiv:2611.22891](https://arxiv.org/abs/2611.22891)).
-- **ATLAS coverage:** ATLAS puts 99.2% of observed limits inside its 2σ bands, while CMS matches nominal coverage ([arXiv:2611.24065](https://arxiv.org/abs/2611.24065)). A leading explanation is expected limits computed after a fit to data.
-- **Limits that did tighten:** an ALP window near the $\pi^0$ was closed ([arXiv:2611.21728](https://arxiv.org/abs/2611.21728)), and SN 1987A gives $\mu_{\nu_e}\lesssim4.8\times10^{-13}\mu_B$ ([arXiv:2611.21729](https://arxiv.org/abs/2611.21729)).
-
-**Thermal inelastic-DM models for the LZ signal: steady, but sloppy.** The models keep coming:
-- composite-Higgs resonances ([arXiv:2611.21737](https://arxiv.org/abs/2611.21737)), the only one this week to check solar capture, the sideband and gamma rays together;
-- a radion portal ([arXiv:2611.22890](https://arxiv.org/abs/2611.22890)), which checks solar neutrinos only by proxy;
-- two near-identical photon-mediated templates ([arXiv:2611.25931](https://arxiv.org/abs/2611.25931), [arXiv:2611.26274](https://arxiv.org/abs/2611.26274)) that skip solar capture entirely.
-
-**AI agents: heating up.**
-- **11-18, reproduction:** a Codex reproduction of CMS $J/\psi$ cross sections had a 21% RMS spread ([arXiv:2611.22723](https://arxiv.org/abs/2611.22723)).
-- **11-19, the standard:** Alimena argued competence should be judged by the evidence behind a result ([arXiv:2611.23330](https://arxiv.org/abs/2611.23330)).
-- **11-23, new results:** an agent produced new Feynman-integral bases, chosen because the output is checkable ([arXiv:2611.26688](https://arxiv.org/abs/2611.26688)). Interpretability work also repaired an infrared-safety failure in a jet foundation model ([arXiv:2611.27079](https://arxiv.org/abs/2611.27079)).
+  Interpretability now reaches into IR-safety repair ([arXiv:2611.27079](https://arxiv.org/abs/2611.27079)).
+- **LZ inelastic DM (steady, templated).** Thermal and composite models keep landing near TeV mass with δ≈300–350 keV ([arXiv:2611.21737](https://arxiv.org/abs/2611.21737), [arXiv:2611.22890](https://arxiv.org/abs/2611.22890), [arXiv:2611.25931](https://arxiv.org/abs/2611.25931), [arXiv:2611.26274](https://arxiv.org/abs/2611.26274)). Only [arXiv:2611.21737](https://arxiv.org/abs/2611.21737) checks solar capture, the sideband and gamma rays together. Others skip solar capture or use proxies.
+- **New, 11-24: nanosecond triggers.** Signature-agnostic selection now fits inside the L1 latency budget ([arXiv:2611.28355](https://arxiv.org/abs/2611.28355), [arXiv:2611.30896](https://arxiv.org/abs/2611.30896), [arXiv:2611.30394](https://arxiv.org/abs/2611.30394)). Watch whether this persists.
 
 ## Turning points
 
-- **Toponium vs. CP-odd $A$ (11-23).** Both sit in the same ${}^1S_0$ colour-singlet channel, so they must interfere. Unitarity then fixes the line shape through one complex ratio $\kappa$, with an exact amplitude zero above $M_A$. Additive fits are invalid ([arXiv:2611.27704](https://arxiv.org/abs/2611.27704)). A same-day general argument relates such amplitude zeros to UV structure ([arXiv:2611.27681](https://arxiv.org/abs/2611.27681)). Context: measured threshold cross sections span 3–13 pb ([arXiv:2611.22421](https://arxiv.org/abs/2611.22421)).
-- **YR4 retired.** LHCHWG Report 5 is the new Higgs cross-section citation ([arXiv:2611.26281](https://arxiv.org/abs/2611.26281)). PDFs are now the leading uncertainty for the best-predicted modes, and the gluon-fusion N³LO-PDF mismatch uncertainty is doubled relative to YR4.
-- **γ = 63.2°⁺²·³₋₂.₂.** This comes from LHCb's new combination, which also gives the most precise charm-mixing parameters to date ([arXiv:2611.26449](https://arxiv.org/abs/2611.26449)).
-- **$V_{ud}$ floor identified.** The first EFT evaluation of $\bar\delta_{\rm NS}$ across 12 transitions finds that short-distance contact terms leave $\delta V_{ud}\simeq6\times10^{-4}$ ([arXiv:2611.18830](https://arxiv.org/abs/2611.18830), [arXiv:2611.18843](https://arxiv.org/abs/2611.18843)). A QMC follow-up shows three-body $\mathcal{O}(\alpha^2)$ terms move $V_{ud}$ at the 10⁻⁴ level ([arXiv:2611.24825](https://arxiv.org/abs/2611.24825)).
+- **YR4 retired.** LHC Higgs WG Report 5 ([arXiv:2611.26281](https://arxiv.org/abs/2611.26281)) is the new citation for Higgs cross sections. PDFs are now the leading uncertainty, and the gluon-fusion N³LO–PDF mismatch uncertainty is doubled.
+- **γ = 63.2°⁺²·³₋₂.₂.** LHCb's new combination ([arXiv:2611.26449](https://arxiv.org/abs/2611.26449)) also gives the most precise charm-mixing parameters to date.
+- **Toponium vs. CP-odd A must interfere.** In [arXiv:2611.27704](https://arxiv.org/abs/2611.27704), unitarity fixes the line shape through a single complex ratio κ, with an exact amplitude zero above M_A. Additive template fits are wrong by construction. [arXiv:2611.27681](https://arxiv.org/abs/2611.27681) independently generalizes interference zeros below heavy thresholds.
+- **Windows closed.** The ALP window around the π⁰ is closed ([arXiv:2611.21728](https://arxiv.org/abs/2611.21728)), and SN 1987A bounds μ_νe ≲ 4.8×10⁻¹³ μ_B ([arXiv:2611.21729](https://arxiv.org/abs/2611.21729)).
+- **Unbinned unfolding published.** ATLAS released Z+jets via OmniFold as particle-level events with unfolded weights ([arXiv:2611.24270](https://arxiv.org/abs/2611.24270)).
 
 ## Open questions
 
-- **ATLAS instanton excess** ([arXiv:2611.22092](https://arxiv.org/abs/2611.22092)): is the 3.5σ local? How robust is the minimum-bias background? It joins the 13.6 GeV diphoton and 146 GeV $e\mu$ excesses on the unclosed list.
-- **ATLAS expected limits:** watch for disclosure of the expected-limit method.
-- **Keshet's WIMP line triads** ([arXiv:2611.21595](https://arxiv.org/abs/2611.21595)): only 2.8σ trial-corrected in the blind scan. The 6.1σ requires combining with the author's earlier samples.
-- **$V_{ud}$:**
-  - no first-row unitarity verdict in either abstract;
-  - the ¹⁰C transition, where coupled-cluster came in 30% below QMC, is still unresolved.
-- **PTA phase-transition preference:** rises back above 3σ if SMBHB merger times exceed ~6.5 Gyr.
-- **Heavy-hadron tensions:**
-  - **$D_{s1}(2460)$ radiative ratio:** Belle measures 0.74±0.08 ([arXiv:2611.20531](https://arxiv.org/abs/2611.20531)); theory predicts 0.57 ([arXiv:2611.27363](https://arxiv.org/abs/2611.27363)).
-  - **KPW rule:** fails at 6.3σ in $\Xi_c^0\to pK^-$, and eight $\Lambda_c$ modes would decide whether it survives ([arXiv:2611.27716](https://arxiv.org/abs/2611.27716)).
-  - **$K_1^*(1870)$:** the $3S$–$2D$ interpretation predicts a subordinate $K\eta'$ mode, awkward given that is the discovery channel ([arXiv:2611.19498](https://arxiv.org/abs/2611.19498)).
-  - **X(2370):** interference among known pseudoscalars removes the need for X(2800) and undercuts the glueball reading ([arXiv:2611.24372](https://arxiv.org/abs/2611.24372)).
-- **LZ models:** watch for any that confront solar capture.
-- **Charm CPV:** the γ combination ([arXiv:2611.26449](https://arxiv.org/abs/2611.26449)) includes $A_{CP}(KK)$ and $A_{CP}(\pi\pi)$, but the abstract gives no values.
-- **Radiative-return generators:** the new YFS+NLO generator agrees with BabaYaga at the per-mille level but differs from KKMC by up to 2%, which matters for HVP ([arXiv:2611.27883](https://arxiv.org/abs/2611.27883)).
-- **Mass ordering:**
-  - the precision-weighted intercept formalism ([arXiv:2611.21252](https://arxiv.org/abs/2611.21252)) generalizes Machado's 11-11 balance-of-pulls finding;
-  - matter effects make the usual no-T-violation test in $\nu_\mu$ disappearance an identity ([arXiv:2611.27985](https://arxiv.org/abs/2611.27985));
-  - SBND νe-on-argon data prefer lower-cross-section generators ([arXiv:2611.25098](https://arxiv.org/abs/2611.25098)).
+- **ATLAS instanton-like excess (3.5σ, [arXiv:2611.22092](https://arxiv.org/abs/2611.22092)).** Is the significance local, and how robust is the minimum-bias background? It joins the 13.6 GeV diphoton and 146 GeV eμ excesses on the unclosed list, all of which should now be read in light of [arXiv:2611.24065](https://arxiv.org/abs/2611.24065).
+- **ATLAS expected-limit method.** Will publications start stating how expected limits are computed?
+- **The 248 keV LZ event.** Anisotropic halos reopen kinematic access to the higgsino reading ([arXiv:2611.29197](https://arxiv.org/abs/2611.29197)), but the authors stress this does not establish viability.
+- **V_ud from ¹⁰C.** The QMC three-body result ([arXiv:2611.24825](https://arxiv.org/abs/2611.24825)) gives no value in the abstract. It must be compared against Novario's coupled-cluster result, which was 30% lower.
+- **KPW rule.** It fails at 6.3σ for Ξc⁰→pK⁻ ([arXiv:2611.27716](https://arxiv.org/abs/2611.27716)), and eight Λc modes are listed as decisive.
+- **Radiative-return generators.** They disagree by up to 2% with KKMC ([arXiv:2611.27883](https://arxiv.org/abs/2611.27883)), which matters for HVP. NNLO K K̄ corrections are large at CMD-3 energies ([arXiv:2611.31080](https://arxiv.org/abs/2611.31080)).
+- **PTA phase transition.** The preference rises back above 3σ if binaries take more than 6.5 Gyr to merge ([arXiv:2611.23371](https://arxiv.org/abs/2611.23371)).
+- **Unverified or minor hints.**
+  - Keshet's WIMP line triads: 2.8σ blind, 6.1σ only after self-combination ([arXiv:2611.21595](https://arxiv.org/abs/2611.21595)).
+  - Planck PR4 EB mildly prefers nonzero CPT-odd coefficients ([arXiv:2611.23082](https://arxiv.org/abs/2611.23082)).
+  - D_s1(2460) radiative ratio: predicted 0.57 vs. Belle's 0.74 ([arXiv:2611.27363](https://arxiv.org/abs/2611.27363)).
 
 ## Recurring references
 
-- **GW forecasts:** [arXiv:2611.18794](https://arxiv.org/abs/2611.18794), [arXiv:2611.23371](https://arxiv.org/abs/2611.23371), [arXiv:2611.26417](https://arxiv.org/abs/2611.26417)
-- **Superradiance:** [arXiv:2611.18833](https://arxiv.org/abs/2611.18833), [arXiv:2611.23384](https://arxiv.org/abs/2611.23384), [arXiv:2611.26541](https://arxiv.org/abs/2611.26541)
-- **$V_{ud}$:** [arXiv:2611.18843](https://arxiv.org/abs/2611.18843), [arXiv:2611.24825](https://arxiv.org/abs/2611.24825)
-- **LHC statistics and excesses:** [arXiv:2611.24065](https://arxiv.org/abs/2611.24065), [arXiv:2611.22092](https://arxiv.org/abs/2611.22092)
-- **Top threshold:** [arXiv:2611.27704](https://arxiv.org/abs/2611.27704)
-- **New standard references:** [arXiv:2611.26281](https://arxiv.org/abs/2611.26281), [arXiv:2611.26449](https://arxiv.org/abs/2611.26449)
-- **LZ models:** [arXiv:2611.21737](https://arxiv.org/abs/2611.21737)
-- **Triple-exchange bispectra (two in one week):** [arXiv:2611.20356](https://arxiv.org/abs/2611.20356), [arXiv:2611.27611](https://arxiv.org/abs/2611.27611)
+- [arXiv:2611.24065](https://arxiv.org/abs/2611.24065): limit-band coverage. This is the lens for every new excess.
+- [arXiv:2611.27704](https://arxiv.org/abs/2611.27704): the reference for any threshold-excess fit. See also [arXiv:2611.22421](https://arxiv.org/abs/2611.22421) for the 3–13 pb spread in measured cross sections.
+- [arXiv:2611.26281](https://arxiv.org/abs/2611.26281): Higgs cross sections (Report 5).
+- [arXiv:2611.23384](https://arxiv.org/abs/2611.23384), [arXiv:2611.26541](https://arxiv.org/abs/2611.26541): superradiance depletion.
+- [arXiv:2611.26417](https://arxiv.org/abs/2611.26417), [arXiv:2611.23371](https://arxiv.org/abs/2611.23371): GW fragility on the theory and data sides.
+- [arXiv:2611.26688](https://arxiv.org/abs/2611.26688), [arXiv:2611.28194](https://arxiv.org/abs/2611.28194), [arXiv:2611.23330](https://arxiv.org/abs/2611.23330): agent evaluation.
+- [arXiv:2611.21737](https://arxiv.org/abs/2611.21737), [arXiv:2611.29197](https://arxiv.org/abs/2611.29197): LZ model viability.

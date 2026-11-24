@@ -39,6 +39,119 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Tuesday, November 24, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261131011-lorentz-symmetry-in-self-supervised-representation-learning-andreas-hermansen-et-al"><a href="https://arxiv.org/abs/2611.31011">arXiv:2611.31011</a> — Lorentz symmetry in self-supervised representation learning (Andreas Hermansen et al.)</h3>
+<p>The authors pre-train with LeJEPA on 100M JetClass jets and no labels. LeJEPA&rsquo;s loss combines (1−λ) times a view-invariance MSE to the per-jet mean embedding with λ times SIGReg, an Epps–Pulley characteristic-function test over 256 random projections, using λ = 0.02. They compare a plain Transformer (ParT-style inputs plus register tokens) against L-GATr-slim (with beam/time spurions), at a matched d = 128 and 6 encoder layers. Views come from JetCLR augmentations (collinear splits, p_T-dependent η/φ smearing, 30% dropout) or RINO-style k_T subjet views, optionally plus global SO⁺(1,3) boosts and rotations.</p>
+<p>The key result is that latent Lorentz invariance is decisive:
+- <strong>Without boosts/rotations:</strong> linear probes collapse to 0.33–0.48.
+- <strong>With boosts/rotations:</strong> they recover to 0.76–0.77.
+- <strong>Spurion-free L-GATr-slim (fully invariant):</strong> stays at about 0.763 regardless of augmentation, and gives the best MLP probe (0.806). Dropping beam-axis symmetry breaking costs nothing here.</p>
+<p>Best configurations (linear / MLP probe):</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Linear</th>
+<th>MLP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LeJEPA, Transformer</td>
+<td>0.762</td>
+<td>0.792</td>
+</tr>
+<tr>
+<td>LeJEPA, L-GATr-slim</td>
+<td>0.774</td>
+<td>0.800</td>
+</tr>
+<tr>
+<td>SSFM masked-particle modelling</td>
+<td>0.635</td>
+<td>0.715</td>
+</tr>
+<tr>
+<td>RINO</td>
+<td>0.533</td>
+<td>0.648</td>
+</tr>
+<tr>
+<td>Next-token prediction</td>
+<td>0.430</td>
+<td>0.554</td>
+</tr>
+</tbody>
+</table>
+<p>Other findings:
+- A multivariate-Laplace SIGReg target beats the Gaussian target (0.774 vs 0.723 linear).
+- Masking plus SO⁺(1,3) alone already reaches 0.709.
+- LeJEPA wins in low-data fine-tuning, in CWoLa top-vs-QCD SIC at 1% FPR, and in transfer to the top-tagging dataset (no transfer numbers are quoted in the text).
+- SSFM beats RINO on probes, but the order flips under fine-tuning, so probe accuracy is an imperfect proxy.</p>
+<p><strong>Caveats:</strong>
+- Models are small, and scaling is explicitly left open.
+- The baselines were modified to emit a single pooled token. The authors note this is not comparable to the original attention-pooled NTP/SSFM evaluations.
+- Only one pre-training run per model; seeds vary only in fine-tuning.
+- Everything is Delphes simulation.
+- No fully supervised reference number is quoted in the text.</p>
+<h3 id="arxiv261128180-machine-learning-assisted-photon-pairing-for-neutral-pion-reconstruction-at-future-higgs-factories-yi-wang-et-al"><a href="https://arxiv.org/abs/2611.28180">arXiv:2611.28180</a> — Machine-learning-assisted photon pairing for neutral-pion reconstruction at future Higgs factories (Yi Wang et al.)</h3>
+<p>This paper is only adjacent to the topic. It selects resolved π⁰→γγ pairs, including inside hadronic Z/H final states. The connection to jets is that it repurposes ParticleNet and ParT with a symmetric per-pair readout u_ij = [h_i+h_j, |h_i−h_j|, p_ij] in place of the jet-level head.</p>
+<p>Setup:
+- Simulation is Delphes with the CEPC 4th-concept card, with the photon threshold lowered from 0.5 to 0.01 GeV.
+- Samples are Z→ττ and Z→qq̄ at 91.2 GeV, and ννH and ZH(Z→qq̄) at 240 GeV.
+- The figure of merit is efficiency × purity.</p>
+<p>At the reference resolution (α = 0.03, β = 0.01), ParT reaches 0.863, 0.662, 0.568 and 0.526 across the four samples. The optimized mass window gives 0.539, 0.329, 0.275 and 0.231, i.e. ParT gains of +60% to +128%. ParticleNet gains +53% to +95%, while BDT and MLP sit around +26% to +45%.</p>
+<p>The gain is almost entirely purity. For example, in ννH:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purity</th>
+<th>Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass window</td>
+<td>35.4%</td>
+<td>77.7%</td>
+</tr>
+<tr>
+<td>ParticleNet</td>
+<td>67.7%</td>
+<td>71.0%</td>
+</tr>
+<tr>
+<td>ParT</td>
+<td>76.5%</td>
+<td>74.2%</td>
+</tr>
+</tbody>
+</table>
+<p>The advantage persists out to α = 0.25 (ParT 30.4% vs mass window 15.0% in ZH). The transformer needs large training samples: ParT on Z→qq̄ goes from 47.6% at 10⁴ events to 66.1% at 9.5×10⁵, and at low statistics both graph models can fall below the mass window. Learning curves show a two-stage rise driven by purity. For jet work, the main relevance is cleaner π⁰ inputs for particle-flow and hadronic-τ/ρ reconstruction in dense jets.</p>
+<p><strong>Caveats:</strong>
+- No exclusive pairing is applied, so a photon can enter several selected pairs.
+- Efficiency is conditional on both photons being reconstructed and truth-matched.
+- Merged or unresolved photons are not addressed.
+- Pair features differ between models, so the gain from event context is not isolated (the authors say so).
+- Most training-size points are single runs.
+- Models are retrained per resolution setting, so detector transfer is untested.</p>
+<h3 id="arxiv261130429-revealing-nuclear-shape-through-identified-hadron-flow-decorrelations-hadi-mehrabpour-et-al"><a href="https://arxiv.org/abs/2611.30429">arXiv:2611.30429</a> — Revealing Nuclear Shape through Identified-Hadron Flow Decorrelations (Hadi Mehrabpour et al.)</h3>
+<p>This is not a jet paper; it presumably matched on correlation vocabulary. It is heavy-ion flow phenomenology, and the summary is kept short.</p>
+<p>The study uses TRENTo initial conditions, viscous hydrodynamics (η/s = 0.08) and UrQMD. It computes p_T-dependent factorization-breaking coefficients r₂ and r₂,₂ for π, K and p in central U+U at 193 GeV and Ne+Ne at 5.36 TeV, scanning quadrupole deformation β₂ and triaxiality γ.</p>
+<p>The authors define &ldquo;crossing coordinates&rdquo;: the p_T where the π/K and π/p ratios of these coefficients intersect, and the common ratio value there. Different (β₂, γ) values trace distinct trajectories in this plane, with neighbouring configurations separated at Z ≈ 2–5 in simulation. For example, U+U with r₂ spans P_cross ≈ 1.58–1.74 GeV and R_cross ≈ 1.09–1.23. Replacing UrQMD with SMASH preserves the qualitative trends.</p>
+<p><strong>Caveats:</strong>
+- The approach is model-only.
+- Nonflow and self-correlations are not treated.
+- r₂,₂ relies on an equal-normalized-fourth-moment approximation.
+- Ne+Ne α-clustering is not modelled.</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Monday, November 23, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="muon/index.html">Muon collider</a>
@@ -2492,7 +2605,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 07:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 15:33 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

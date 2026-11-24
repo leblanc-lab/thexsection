@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Permutation invariant networks to learn Wasserstein metrics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2010-05820</link>
+    <guid isPermaLink="false">arxiv:2010.05820</guid>
+    <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arijit Sehanobish et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Understanding the space of probability measures on a metric space equipped with a Wasserstein distance is one of the fundamental questions in mathematical analysis. The Wasserstein metric has received a lot of attention in the machine learning community especially for its principled way of comparing distributions. In this work, we use a permutation invariant network to map samples from probability measures into a low-dimensional space such that the Euclidean distance between the encoded samples reflects the Wasserstein distance between probability measures. We show that our network can generalize to correctly compute distances between unseen densities. We also show that these networks can learn the first and the second moments of probability distributions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neural Empirical Bayes: Source Distribution Estimation and its Applications to Simulation-Based Inference</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2011-05836</link>
+    <guid isPermaLink="false">arxiv:2011.05836</guid>
+    <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxime Vandegar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (collider, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>We revisit empirical Bayes in the absence of a tractable likelihood function, as is typical in scientific domains relying on computer simulations. We investigate how the empirical Bayesian can make use of neural density estimators first to use all noise-corrupted observations to estimate a prior or source distribution over uncorrupted samples, and then to perform single-observation posterior inference using the fitted source distribution. We propose an approach based on the direct maximization of the log-marginal likelihood of the observations, examining both biased and de-biased estimators, and comparing to variational approaches. We find that, up to symmetries, a neural empirical Bayes approach recovers ground truth source distributions. With the learned source distribution in hand, we show the applicability to likelihood-free inference and examine the quality of the resulting posterior estimates. Finally, we demonstrate the applicability of Neural Empirical Bayes on an inverse problem from collider physics.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Equitable and Optimal Transport with Multiple Agents</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-07260</link>
+    <guid isPermaLink="false">arxiv:2006.07260</guid>
+    <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Meyer Scetbon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We introduce an extension of the Optimal Transport problem when multiple costs are involved. Considering each cost as an agent, we aim to share equally between agents the work of transporting one distribution to another. To do so, we minimize the transportation cost of the agent who works the most. Another point of view is when the goal is to partition equitably goods between agents according to their heterogeneous preferences. Here we aim to maximize the utility of the least advantaged agent. This is a fair division problem. Like Optimal Transport, the problem can be cast as a linear optimization problem. When there is only one agent, we recover the Optimal Transport problem. When two agents are considered, we are able to recover Integral Probability Metrics defined by α-Hölder functions, which include the widely-known Dudley metric. To the best of our knowledge, this is the first time a link is given between the Dudley metric and Optimal Transport. We provide an entropic regularization of that problem which leads to an alternative algorithm faster than the standard linear program.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning to Generate Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-12178</link>
+    <guid isPermaLink="false">arxiv:2102.12178</guid>
+    <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Lacombe et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Optimal transport is a notoriously difficult problem to solve numerically, with current approaches often remaining intractable for very large scale applications such as those encountered in machine learning. Wasserstein barycenters &ndash; the problem of finding measures in-between given input measures in the optimal transport sense &ndash; is even more computationally demanding as it requires to solve an optimization problem involving optimal transport distances. By training a deep convolutional neural network, we improve by a factor of 60 the computational speed of Wasserstein barycenters over the fastest state-of-the-art approach on the GPU, resulting in milliseconds computational times on 512×512 regular grids. We show that our network, trained on Wasserstein barycenters of pairs of measures, generalizes well to the problem of finding Wasserstein barycenters of more than two measures. We demonstrate the efficiency of our approach for computing barycenters of sketches and transferring colors between multiple images.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convex Potential Flows: Universal Probability Distributions with Optimal Transport and Convex Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2012-05942</link>
+    <guid isPermaLink="false">arxiv:2012.05942</guid>
+    <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chin-Wei Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Flow-based models are powerful tools for designing probabilistic models with tractable density. This paper introduces Convex Potential Flows (CP-Flow), a natural and efficient parameterization of invertible models inspired by the optimal transport (OT) theory. CP-Flows are the gradient map of a strongly convex neural potential function. The convexity implies invertibility and allows us to resort to convex optimization to solve the convex conjugate for efficient inversion. To enable maximum likelihood training, we derive a new gradient estimator of the log-determinant of the Jacobian, which involves solving an inverse-Hessian vector product using the conjugate gradient method. The gradient estimator has constant-memory cost, and can be made effectively unbiased by reducing the error tolerance level of the convex optimization routine. Theoretically, we prove that CP-Flows are universal density approximators and are optimal in the OT sense. Our empirical results show that CP-Flow performs competitively on standard benchmarks of density estimation and variational inference.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Everything is Relative: Understanding Fairness with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2102-10349</link>
+    <guid isPermaLink="false">arxiv:2102.10349</guid>
+    <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kweku Kwegyir-Aggrey et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>To study discrimination in automated decision-making systems, scholars have proposed several definitions of fairness, each expressing a different fair ideal. These definitions require practitioners to make complex decisions regarding which notion to employ and are often difficult to use in practice since they make a binary judgement a system is fair or unfair instead of explaining the structure of the detected unfairness. We present an optimal transport-based approach to fairness that offers an interpretable and quantifiable exploration of bias and its structure by comparing a pair of outcomes to one another. In this work, we use the optimal transport map to examine individual, subgroup, and group fairness. Our framework is able to recover well known examples of algorithmic discrimination, detect unfairness when other metrics fail, and explore recourse opportunities.</p>]]></description>
+  </item>
 
   <item>
     <title>Efficient Discretizations of Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kelvin Shuangjian Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Discretized Langevin diffusions are efficient Monte Carlo methods for sampling from high dimensional target densities that are log-Lipschitz-smooth and (strongly) log-concave. In particular, the Euclidean Langevin Monte Carlo sampling algorithm has received much attention lately, leading to a detailed understanding of its non-asymptotic convergence properties and of the role that smoothness and log-concavity play in the convergence rate. Distributions that do not possess these regularity properties can be addressed by considering a Riemannian Langevin diffusion with a metric capturing the local geometry of the log-density. However, the Monte Carlo algorithms derived from discretizations of such Riemannian Langevin diffusions are notoriously difficult to analyze. In this paper, we consider Langevin diffusions on a Hessian-type manifold and study a discretization that is closely related to the mirror-descent scheme. We establish for the first time a non-asymptotic upper-bound on the sampling error of the resulting Hessian Riemannian Langevin Monte Carlo algorithm. This bound is measured according to a Wasserstein distance induced by a Riemannian metric ground cost capturing the Hessian structure and closely related to a self-concordance-like condition. The upper-bound implies, for instance, that the iterates contract toward a Wasserstein ball around the target density whose radius is made explicit. Our theory recovers existing Euclidean results and can cope with a wide variety of Hessian metrics related to highly non-flat geometries.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Geometric Dataset Distances via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-02923</link>
-    <guid isPermaLink="false">arxiv:2002.02923</guid>
-    <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Alvarez-Melis et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The notion of task similarity is at the core of various machine learning paradigms, such as domain adaptation and meta-learning. Current methods to quantify it are often heuristic, make strong assumptions on the label sets across the tasks, and many are architecture-dependent, relying on task-specific optimal parameters (e.g., require training a model on each dataset). In this work we propose an alternative notion of distance between datasets that (i) is model-agnostic, (ii) does not involve training, (iii) can compare datasets even if their label sets are completely disjoint and (iv) has solid theoretical footing. This distance relies on optimal transport, which provides it with rich geometry awareness, interpretable correspondences and well-understood properties. Our results show that this novel distance provides meaningful comparison of datasets, and correlates well with transfer learning hardness across various experimental settings and datasets.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Snippext: Semi-supervised Opinion Mining with Augmented Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-03049</link>
-    <guid isPermaLink="false">arxiv:2002.03049</guid>
-    <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhengjie Miao et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (two-prong) — original abstract; no AI summary.</em></p>
-<p>Online services are interested in solutions to opinion mining, which is the problem of extracting aspects, opinions, and sentiments from text. One method to mine opinions is to leverage the recent success of pre-trained language models which can be fine-tuned to obtain high-quality extractions from reviews. However, fine-tuning language models still requires a non-trivial amount of training data. In this paper, we study the problem of how to significantly reduce the amount of labeled training data required in fine-tuning language models for opinion mining. We describe Snippext, an opinion mining system developed over a language model that is fine-tuned through semi-supervised learning with augmented data. A novelty of Snippext is its clever use of a two-prong approach to achieve state-of-the-art (SOTA) performance with little labeled training data through: (1) data augmentation to automatically generate more labeled training data from existing ones, and (2) a semi-supervised learning technique to leverage the massive amount of unlabeled data in addition to the (limited amount of) labeled data. We show with extensive experiments that Snippext performs comparably and can even exceed previous SOTA results on several opinion mining tasks with only half the training data required. Furthermore, it achieves new SOTA results when all training data are leveraged. By comparison to a baseline pipeline, we found that Snippext extracts significantly more fine-grained opinions which enable new opportunities of downstream applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Intelligent Arxiv: Sort daily papers by learning users topics preference</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-02460</link>
-    <guid isPermaLink="false">arxiv:2002.02460</guid>
-    <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ezequiel Alvarez et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Manuel Szewc) — original abstract; no AI summary.</em></p>
-<p>Current daily paper releases are becoming increasingly large and areas of research are growing in diversity. This makes it harder for scientists to keep up to date with current state of the art and identify relevant work within their lines of interest. The goal of this article is to address this problem using Machine Learning techniques. We model a scientific paper to be built as a combination of different scientific knowledge from diverse topics into a new problem. In light of this, we implement the unsupervised Machine Learning technique of Latent Dirichlet Allocation (LDA) on the corpus of papers in a given field to: i) define and extract underlying topics in the corpus; ii) get the topics weight vector for each paper in the corpus; and iii) get the topics weight vector for new papers. By registering papers preferred by a user, we build a user vector of weights using the information of the vectors of the selected papers. Hence, by performing an inner product between the user vector and each paper in the daily Arxiv release, we can sort the papers according to the user preference on the underlying topics. We have created the website IArxiv.org where users can read sorted daily Arxiv releases (and more) while the algorithm learns each users preference, yielding a more accurate sorting every day. Current IArxiv.org version runs on Arxiv categories astro-ph, gr-qc, hep-ph and hep-th and we plan to extend to others. We propose several new useful and relevant implementations to be additionally developed as well as new Machine Learning techniques beyond LDA to further improve the accuracy of this new tool.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Exponential Kernels</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-01878</link>
-    <guid isPermaLink="false">arxiv:2002.01878</guid>
-    <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henri De Plaen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In the context of kernel methods, the similarity between data points is encoded by the kernel function which is often defined thanks to the Euclidean distance, a common example being the squared exponential kernel. Recently, other distances relying on optimal transport theory - such as the Wasserstein distance between probability distributions - have shown their practical relevance for different machine learning techniques. In this paper, we study the use of exponential kernels defined thanks to the regularized Wasserstein distance and discuss their positive definiteness. More specifically, we define Wasserstein feature maps and illustrate their interest for supervised learning problems involving shapes and images. Empirically, Wasserstein squared exponential kernels are shown to yield smaller classification errors on small training sets of shapes, compared to analogous classifiers using Euclidean distances.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Regularization Helps with Mitigating Poisoning Attacks: Distributionally-Robust Machine Learning Using the Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2001-10655</link>
-    <guid isPermaLink="false">arxiv:2001.10655</guid>
-    <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Farhad Farokhi</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We use distributionally-robust optimization for machine learning to mitigate the effect of data poisoning attacks. We provide performance guarantees for the trained model on the original data (not including the poison records) by training the model for the worst-case distribution on a neighbourhood around the empirical distribution (extracted from the training dataset corrupted by a poisoning attack) defined using the Wasserstein distance. We relax the distributionally-robust machine learning problem by finding an upper bound for the worst-case fitness based on the empirical sampled-averaged fitness and the Lipschitz-constant of the fitness function (on the data for given model parameters) as regularizer. For regression models, we prove that this regularizer is equal to the dual norm of the model parameters. We use the Wine Quality dataset, the Boston Housing Market dataset, and the Adult dataset for demonstrating the results of this paper.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Structural-Aware Sentence Similarity with Recursive Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-00745</link>
-    <guid isPermaLink="false">arxiv:2002.00745</guid>
-    <pubDate>Tue, 28 Jan 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zihao Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Measuring sentence similarity is a classic topic in natural language processing. Light-weighted similarities are still of particular practical significance even when deep learning models have succeeded in many other tasks. Some light-weighted similarities with more theoretical insights have been demonstrated to be even stronger than supervised deep learning approaches. However, the successful light-weighted models such as Word Mover&rsquo;s Distance [Kusner et al., 2015] or Smooth Inverse Frequency [Arora et al., 2017] failed to detect the difference from the structure of sentences, i.e. order of words. To address this issue, we present Recursive Optimal Transport (ROT) framework to incorporate the structural information with the classic OT. Moreover, we further develop Recursive Optimal Similarity (ROTS) for sentences with the valuable semantic insights from the connections between cosine similarity of weighted average of word vectors and optimal transport. ROTS is structural-aware and with low time complexity compared to optimal transport. Our experiments over 20 sentence textural similarity (STS) datasets show the clear advantage of ROTS over all weakly supervised approaches. Detailed ablation study demonstrate the effectiveness of ROT and the semantic insights.</p>]]></description>
   </item>
 
 </channel>

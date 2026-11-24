@@ -7,7 +7,65 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-28194</link>
+    <guid isPermaLink="false">arxiv:2611.28194</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrzej Nov\'ak et al.</dc:creator>
+    <description><![CDATA[<p>Each agent gets one session of at most 7.5 h on a public world built from 2016 CMS open simulation (MiniAOD, full detector simulation). It must deliver a single pipeline, which is then frozen and rerun on 10–40 sealed worlds per task. Every world has a hidden truth (m_H, μ, Γ_H/Γ_H^SM, or lepton and jet corrections) and one of 13 detector profiles that distort scale, resolution and efficiencies. The score is a strictly proper log score relative to an expert reference run on the same worlds. A shared-bias term growing like √(N) is added, along with weighted reviewer checks: goodness of fit, truthfulness against an evaluator refit, and Z-peak closure. With γ=2, the ratio reads as an effective fraction of the data.</p>
+<p>Across 99 sessions per task and eleven models:
+- Gemini 4 Argon averages 60±8% of the reference, GPT 6 Astra 38%, Claude Opus 5.5 31%.
+- No open-weight model exceeds 10%.
+- Sessions undercover far more often than they overcover.
+- Run-to-run spread exceeds the differences between prompt tiers. Opus 5.5 on HiggsLepMass reaches 89% in its best session against a 49% mean.
+- The P2 expert plan adds nothing over P1.</p>
+<p>The harness is validated adversarially. A memorised 125 GeV scores &lt;1% and understated uncertainties score 34%. With ten worlds, every flawed archetype falls below the reference in ≥96% of draws.</p>
+<p>Caveats the authors flag:
+- Worlds vary detector response and signal, but not generators. The six JetCalib sessions that beat the reference gain mainly because the reference&rsquo;s modelling-dominated JES uncertainties exceed the injected variations.
+- Scores depend on the chosen reference and weights.
+- Only one experiment is covered.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A billion colour states: exact soft-gluon evolution beyond leading colour for many-jet QCD</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-29072</link>
+    <guid isPermaLink="false">arxiv:2611.29072</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bakar Chargeishvili</dc:creator>
+    <description><![CDATA[<p>Leading colour degrades steadily with multiplicity. Take a soft veto outside the jets at t=0.1 (Q/Q_0≈14), inside the t≈0.05–0.12 range the author maps to LHC dijet vetoes. There, LC overestimates the full-colour no-emission factor by median factors of 1.27, 1.83 and 6.6 at 8, 10 and 14 partons. The gap fraction is off by 2.2 at n=14. Pairs among the three hardest jets form a colour singlet 3–9% of the time; LC sets this to zero.</p>
+<p>The method builds an orthogonal multiplet basis by coupling partons one leg at a time, with each step fixed by a Casimir eigenvalue (Jucys–Murphy elements). Norms come in closed form, and dipoles act only on the label segment between the two partons, via small recoupling tables. Γ is therefore never stored: Γx is a block &ldquo;sweep&rdquo; and e⁻tΓ a Krylov iteration. Fourteen gluons take about an hour on one A100. Fifteen gluons (827,888,726 states) take 3–7 h per t value on a CPU node with up to 857 GB.</p>
+<p>For showers, the formal 1/N_c² suppression is outweighed by the growing number of unconnected pairs. Caveats:
+- The calculation uses one-loop Γ at fixed coupling, with colour-diagonal factors dropped.
+- Events are flat in phase space, and real emission is included only up to five hard partons.
+- Independent cross-checks stop at n≤7. Beyond that, validation rests on internal consistency.
+- The n=15 points show feasibility and do not enter the LC comparison.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Quantifying the Impact of Galactic Dark Matter Halo Models on LZ Results</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-29197</link>
+    <guid isPermaLink="false">arxiv:2611.29197</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jialiang Shao et al.</dc:creator>
+    <description><![CDATA[<p>The authors rescale LZ limits by the ratio of predicted yields across 22 self-consistent BCFS halos, truncated at a common v_esc=544 km/s.</p>
+<p>Elastic results:
+- Above about 40 GeV, the SI envelope is R≈0.8–1.3 relative to the SHM.
+- At 9 GeV it opens to 0.17–1.63 (class B).
+- Extending the class-D cutoff to 1000 km/s drives R to about 0.04.
+- At 9 GeV, the v_esc scan (factor ~2 for classes A/B) and the efficiency treatment (factor 2–3) matter about as much as the halo.
+- In the SD channel at 40 GeV, nuclear-structure uncertainty (factors 3.6 and 13 for neutron and proton) still exceeds the roughly 2× halo spread.</p>
+<p>For the 248 keV event (LZ: 3.4σ local, 2.6σ global), they use a background-free single-event likelihood at 1.1 TeV. The tail sets the inelastic ceiling: δ_max≈384 keV for the SHM and 556 keV for an LMC-like tail. The higgsino cross section (~7×10⁻³⁹ cm²) crosses these two contours at δ≈360 and 455 keV, both below the 566 keV solar-neutrino threshold. Some anisotropic contours reach 700–775 keV, but only at cross sections well below the higgsino value (D1/D3 near 3×10⁻⁴⁰ cm²).</p>
+<p>Caveats:
+- Limits are rescaled by yield ratio rather than refit with the LZ likelihood.
+- The suite is not a posterior, and it mixes profile, rotation and anisotropy.
+- The 1000 km/s cutoffs are sensitivity tests, not measurements.
+- The single-event fit assumes unit efficiency, and its coverage is uncalibrated.</p>
+<hr />
+<p><em>Full text for <a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a> (Chen et al.) and <a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a> (Reboud et al.) was not supplied, so those picks are not expanded here.</em></p>]]></description>
+  </item>
 
   <item>
     <title>A pseudoscalar Higgs boson interfering with toponium: a QCD analysis of gg→A→tt̅ near threshold</title>
@@ -3381,36 +3439,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">LHCb collaboration et al.</dc:creator>
     <description><![CDATA[<p>LHCb performs a time-dependent, flavour-tagged amplitude analysis of ~94,000 B⁰ₛ→J/ψπ⁺π⁻ signal decays from the full Run 2 6 fb⁻¹ sample (38 fs decay-time resolution, 4.5% tagging power), extracting φₛ = −0.077 ± 0.034 ± 0.007 rad, |λ| = 0.993 ± 0.026 ± 0.007, and Γ_H = 0.610 ± 0.002 ± 0.004 ps⁻¹. The π⁺π⁻ spectrum is modelled with six resonances plus a nonresonant term — adding an f₂(1565) contribution to a small ~1.6 GeV peak relative to earlier work — with the CP-odd f₀(980) carrying 72.5% fit fraction. Combining with Run 1 gives φₛ = −0.046 ± 0.031 rad; folding in all other LHCb channels yields φₛ = −0.041 ± 0.017 rad (χ²/ndf = 35/30), consistent with the J/ψφ average and improving precision by ~15%.</p>
 <p>Why it matters: against a week where the flavour front ran on anomalies, this is a clean null. The result sits squarely on the SM prediction φₛ^SM = −0.0376₋₀.₀₀₀₅⁺⁰·⁰⁰⁰⁶ rad, and no direct CP violation is seen (|λ| compatible with 1). The main caveat is explicit in the text: subleading penguin contributions are neglected throughout — externally constrained to a Δφₛ = 5.0 ± 4.6 mrad shift from B⁰→J/ψρ⁰ — and the production asymmetry A_P is fixed to zero (a ±2% variation is taken as systematic). Systematics remain subdominant to the 34 mrad statistical uncertainty on φₛ.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Observation of several sources of CP violation in B⁺→K⁺π⁺π⁻</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-12614</link>
-    <guid isPermaLink="false">arxiv:2608.12614</guid>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">LHCb collaboration et al.</dc:creator>
-    <description><![CDATA[<p>Working the full 3 fb⁻¹ Run 1 sample (115,102 candidates, 88.7% purity), LHCb performs an amplitude analysis of B⁺→K⁺π⁺π⁻ with three independent treatments of the troublesome Kπ and ππ S-waves (isobar/GLASS, K-matrix, and a first-of-its-kind quasi-model-independent binning of two crossing partial waves). All three agree, and six CP-violation phenomena clear observation-level significance at once. The headline first observations: quasi-two-body CPV in B⁺→ρ(770)⁰K⁺, 𝒜_CP=+0.280±0.022±0.029 (minimum 5.9σ across S-wave models); and in B⁺→f_2(1270)K⁺, rejected at 8.2–9.1σ at amplitude level. First evidence appears for CPV in the elastic ππ-ππ rescattering S-wave below the 4π threshold (𝒜^S_CP=+0.665±0.032±0.053), in S–P interference with ρ(770) (5.4σ), in S–D interference near the f_2(1270) (≥4.4σ), and — a genuine first — in a spin-3 state, ρ_3(1690)⁰ (≥3.3σ).</p>
-<p>Notably, no CPV is seen in ρ⁰–ω mixing, contrary to several predictions; this dilution explains why the fitted ρ(770) asymmetry exceeds the model-independent P-wave value (0.150±0.022). A large positive asymmetry immediately above ππ threshold resists all three models, hinting at sizeable cc̅-loop or isospin-2 contributions. Systematics are comparable to statistical uncertainties throughout — good model control, but a signal that Run 1 statistics can no longer fully exploit. This is the measurement-side counterpart to the season&rsquo;s flavor anomalies, sharpening reference points for γ extraction and B→Kπ-type isospin sum rules.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Probing CP-violating top-quark dipole moments with tomographic observables</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-12463</link>
-    <guid isPermaLink="false">arxiv:2608.12463</guid>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxim Perelstein et al.</dc:creator>
-    <description><![CDATA[<p>Perelstein, Shaik and Youn recast tt̅ spin tomography as a CP-violation search. Symmetry fixes which Fano coefficients a CP-odd (chromo-)electric dipole can populate: the normal polarization difference ΔB_n and the antisymmetric normal-plane correlations A_rn, A_kn, all exactly zero in the SM (three-loop suppressed). They compute the production density matrix in closed form for e⁺e⁻, qq̅ and gg, build the statistically optimal CP-odd observable O_opt=f_1/f_0 (proven to saturate the Cramér–Rao bound), and carry the analysis to Delphes detector level. Projected 95% CL reach on inverse couplings: 10–15 TeV for the electroweak electric dipoles d_γ,d_Z at FCC-ee (365 GeV, 3 ab⁻¹), and 40 (200) TeV for the top chromo-EDM at LHC Run 2 (HL-LHC) — exceeding the conventional triple/quadruple-product observables (e.g. the CMS O_1 search) used today. d_γ projects mainly onto A_rn, d_Z onto ΔB_n; the optimal weight combines them for ~40 TeV parton-level FCC-ee reach.</p>
-<p>A sharp negative result accompanies this: they prove a no-go theorem that the top–antitop discord asymmetry Δ𝒟 (and geometric discord, steering asymmetry) vanishes identically for the dipoles, contradicting a recent claim that advertised it as a CP probe — the reported nonzero values are CP-even absorptive artifacts. Caveats: reach at FCC-ee threshold is diluted by poor top-direction reconstruction (∼40^∘, dilution factors 0.24–0.40); systematics are assumed subdominant, and the EFT-consistent linear-order truncation neglects dimension-eight-degenerate terms.</p>]]></description>
-  </item>
-
-  <item>
-    <title>High-precision measurement of the space-like η' transition form factor</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-12793</link>
-    <guid isPermaLink="false">arxiv:2608.12793</guid>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">BESIII Collaboration et al.</dc:creator>
-    <description><![CDATA[<p>BESIII measures the single-virtual space-like η&rsquo; TFF via single-tag two-photon fusion e⁺e⁻→e⁺e⁻η&rsquo; on 20.3 fb⁻¹ at 3.773 GeV, reconstructing η&rsquo;→π⁺π⁻γ and π⁺π⁻η. The result spans Q²∈[0.1,6.0] GeV² in 18 fine bins, reaches better than 3% precision below 1.5 GeV², and provides the first direct determination at Q²&lt;0.3 GeV² — filling the gap between BaBar (&gt;4 GeV²) and L3 (&lt;0.15 GeV², which inferred Q² indirectly from the η&rsquo; transverse momentum). Tight control of the untagged-photon virtuality (Q²_miss∈[0,0.08] GeV², with a +1.0% correction to Q²_miss=0) is the key improvement; total systematics run 2.5–4.7% on the cross section, halved on the TFF.</p>
-<p>The extracted values are the most precise to date and lie systematically above earlier data — attributed to the larger, less-controlled Q²_miss of prior measurements. Crucially, the data agree with lattice QCD (BMW) and holographic (LMR) predictions while sitting above data-driven dispersive models. Since LQCD and holographic approaches also predict a larger a_μ^η&rsquo; than the data-driven evaluation, this input feeds directly into the hadronic light-by-light contribution to muon g-2 — where LQCD HLbL now runs ~50% above the 2020 white-paper number — and the authors flag that existing data-driven analyses may warrant re-evaluation. The result also constrains the η&rsquo; gluonic component and η&rsquo; production models.</p>]]></description>
   </item>
 
 </channel>

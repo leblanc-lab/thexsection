@@ -7,7 +7,17 @@
   <description>Artificial intelligence</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Latent Style-based Quantum Wasserstein GAN for Drug Design</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2026.html#a2603-22399</link>
+    <guid isPermaLink="false">arxiv:2603.22399</guid>
+    <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Julien Baglio et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The development of new drugs is a tedious, time-consuming, and expensive process, for which the average costs are estimated to be up to around $2.5 billion. The first step in this long process is the design of the new drug, for which de novo drug design, assisted by artificial intelligence, has blossomed in recent years and revolutionized the field. In particular, generative artificial intelligence has delivered promising results in drug discovery and development, reducing costs and the time to solution. However, classical generative models, such as generative adversarial networks (GANs), are difficult to train due to barren plateaus and prone to mode collapse. Quantum computing may be an avenue to overcome these issues and provide models with fewer parameters, thereby enhancing the generalizability of GANs. We propose a new style-based quantum GAN (QGAN) architecture for drug design that implements noise encoding at every rotational gate of the circuit and a gradient penalty in the loss function to mitigate mode collapse. Our pipeline employs a variational autoencoder to represent the molecular structure in a latent space, which is then used as input to our QGAN. Our baseline model runs on up to 15 qubits to validate our architecture on quantum simulators, and a 156-qubit IBM Heron quantum computer in the five-qubit setup is used for inference to investigate the effects of using real quantum hardware on the analysis. We benchmark our results against classical models as provided by the MOSES benchmark suite.</p>]]></description>
+  </item>
 
   <item>
     <title>B-jet Tagging Using a Hybrid Edge Convolution and Transformer Architecture</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Network alignment, which aims to find node correspondence across different networks, is the cornerstone of various downstream multi-network and Web mining tasks. Most of the embedding-based methods indirectly model cross-network node relationships by contrasting positive and negative node pairs sampled from hand-crafted strategies, which are vulnerable to graph noises and lead to potential misalignment of nodes. Another line of work based on the optimal transport (OT) theory directly models cross-network node relationships and generates noise-reduced alignments. However, OT methods heavily rely on fixed, pre-defined cost functions that prohibit end-to-end training and are hard to generalize. In this paper, we aim to unify the embedding and OT-based methods in a mutually beneficial manner and propose a joint optimal transport and embedding framework for network alignment named JOENA. For one thing (OT for embedding), through a simple yet effective transformation, the noise-reduced OT mapping serves as an adaptive sampling strategy directly modeling all cross-network node pairs for robust embedding learning.For another (embedding for OT), on top of the learned embeddings, the OT cost can be gradually trained in an end-to-end fashion, which further enhances the alignment quality. With a unified objective, the mutual benefits of both methods can be achieved by an alternating optimization schema with guaranteed convergence. Extensive experiments on real-world networks validate the effectiveness and scalability of JOENA, achieving up to 16% improvement in MRR and 20x speedup compared with the state-of-the-art alignment methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Tur[k]ingBench: A Challenge Benchmark for Web Agents</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-ai/2025.html#a2403-11905</link>
-    <guid isPermaLink="false">arxiv:2403.11905</guid>
-    <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kevin Xu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
-<p>Can advanced multi-modal models effectively tackle complex web-based tasks? Such tasks are often found on crowdsourcing platforms, where crowdworkers engage in challenging micro-tasks within web-based environments. Building on this idea, we present TurkingBench, a benchmark consisting of tasks presented as web pages with textual instructions and multi-modal contexts. Unlike previous approaches that rely on artificially synthesized web pages, our benchmark uses natural HTML pages originally designed for crowdsourcing workers to perform various annotation tasks. Each task&rsquo;s HTML instructions are instantiated with different values derived from crowdsourcing tasks, creating diverse instances. This benchmark includes 32.2K instances spread across 158 tasks. To support the evaluation of TurkingBench, we have developed a framework that links chatbot responses to actions on web pages (e.g., modifying a text box, selecting a radio button). We assess the performance of cutting-edge private and open-source models, including language-only and vision-language models (such as GPT4 and InternVL), on this benchmark. Our results show that while these models outperform random chance, there is still significant room for improvement. We hope that this benchmark will drive progress in the evaluation and development of web-based agents.</p>]]></description>
   </item>
 
 </channel>

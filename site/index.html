@@ -34,78 +34,96 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Monday, November 23, 2026</h1>
+  <h1 class="issue-date">Tuesday, November 24, 2026</h1>
   <div class="meta">
-    <span class="count">36 papers read</span>
-    <span class="chip">Toponium meets a pseudoscalar</span><span class="chip">Agents with verifiable output</span><span class="chip">Heavy-hadron rules under strain</span><span class="chip">Lepton-collider generators</span>
+    <span class="count">85 papers read</span>
+    <span class="chip">Blind benchmarks for analysis agents</span><span class="chip">Nanosecond Level-1 triggers</span><span class="chip">Dark-matter assumptions audited</span><span class="chip">EFT fit plumbing</span>
   </div>
-  <h2 id="toponium-and-a-pseudoscalar-must-interfere">Toponium and a pseudoscalar must interfere</h2>
-<p>The year&rsquo;s longest interpretive fight asks whether the <span class="arithmatex">\(t\bar t\)</span> threshold excess is NRQCD <span class="arithmatex">\(\eta_t\)</span> or a top-philic CP-odd Higgs. Djouadi et al. <a href="https://arxiv.org/abs/2611.27704">arXiv:2611.27704</a> show the two readings cannot be fitted separately. An <span class="arithmatex">\(A\)</span> near <span class="arithmatex">\(2m_t\)</span> sits in the same colour-singlet <span class="arithmatex">\({}^1S_0\)</span> channel with the same Coulomb interaction, so the two must interfere. Unitarity then fixes the line shape through a single complex ratio <span class="arithmatex">\(\kappa\)</span>, with an exact amplitude zero just above <span class="arithmatex">\(M_A\)</span>. Fits that simply add toponium and <span class="arithmatex">\(A\)</span> templates are therefore wrong by construction. Also today: an LLM agent delivering new Feynman-integral bases, a 6.3σ strike against the Körner–Pati–Woo rule, and the first NNLO+PS generator for <span class="arithmatex">\(e^+e^-\)</span>.</p>
+  <h2 id="analysis-agents-scored-blind">Analysis agents, scored blind</h2>
+<p>Novák et al. <a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> give the AI-agent thread its first scorecard for experimental analysis. Each agent builds a single workflow on CMS open data, and that workflow is then run on sealed datasets with injected signals and shifted detector settings. Averaged over four tasks, Gemini 4 Argon reaches 60% of the expert reference score, GPT 6 Astra 38% and Claude Opus 5.5 31%. The last is the same model that delivered verified Feynman-integral bases yesterday. Theory output can be checked exactly; analysis output has to be checked by injection, and this is the first benchmark to do that, putting into practice Alimena&rsquo;s evidence-over-code standard from 11-19. Also today: three trigger papers working at tens to hundreds of nanoseconds, a list of DM assumptions that matter more than expected, and colour that refuses to stay subleading.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="zeros-from-interference">Zeros from interference</h3>
-<p>For <span class="arithmatex">\(A\)</span> decaying to tops, Djouadi et al. find <span class="arithmatex">\(\mathrm{Im}\,\kappa=-1\)</span> exactly and <span class="arithmatex">\(|\kappa|\approx1.5\)</span>–1.7. An <span class="arithmatex">\(A\)</span> carrying half the excess would shift the toponium peak by 10–70%. Cesarotti et al. <a href="https://arxiv.org/abs/2611.27681">arXiv:2611.27681</a> make the general case: in strongly coupled UV completions, destructive interference can put an amplitude zero parametrically below the heavy threshold. Absorptive effects turn that zero into a dip, and its position, depth and curvature constrain the UV. The two papers appeared independently on the same day.</p>
-<h3 id="agents-where-the-answer-can-be-checked">Agents, where the answer can be checked</h3>
-<p>Petit Rosas et al. <a href="https://arxiv.org/abs/2611.26688">arXiv:2611.26688</a> had Claude Opus 5.5 work autonomously for days. It produced ε-pole-free bases for a two-loop five-point family with 18 elliptic sectors and an ε-factorized basis for a radiative-jet-function superfamily with a K3 sector. The authors pick the task because the output is verifiable, which is the standard Alimena argued for on 11-19. That contrasts with last week&rsquo;s Codex reproduction of CMS <span class="arithmatex">\(J/\psi\)</span> cross sections, which carried a 21% RMS spread. Bonnet-Guerrini et al. <a href="https://arxiv.org/abs/2611.27079">arXiv:2611.27079</a> find a jet foundation model whose classification flips when one soft neutral particle is added. They trace the infrared-safety failure to mixed reconstruction thresholds in pretraining. They then repair it either by removing three sparse-autoencoder directions or by letting an agent edit the weights directly in 50 queries.</p>
-<h3 id="heavy-hadron-rules-under-strain">Heavy-hadron rules under strain</h3>
-<p>Di Wang et al. <a href="https://arxiv.org/abs/2611.27716">arXiv:2611.27716</a> find that the KPW+SU(3)<span class="arithmatex">\(_F\)</span> prediction for <span class="arithmatex">\(\Xi_c^0\to pK^-\)</span> overshoots the measured rate by 17±6×, a 6.3σ discrepancy in a joint fit. Shirui Zhao et al. <a href="https://arxiv.org/abs/2611.27363">arXiv:2611.27363</a> predict <span class="arithmatex">\(D_{s1}(2460)\)</span> radiative ratio 0.57, below Belle&rsquo;s 0.74±0.08 from 11-17. They read the state as a <span class="arithmatex">\(^1P_1\)</span>/<span class="arithmatex">\(^3P_1\)</span> mixture with a possible tetraquark component. Jiaxing Zhao et al. <a href="https://arxiv.org/abs/2611.27014">arXiv:2611.27014</a> fit bottomonium and lattice <span class="arithmatex">\(\Omega_{bbb}\)</span> jointly, and the fit favours Y-shaped over Δ-shaped confinement.</p>
-<h3 id="lepton-collider-generators">Lepton-collider generators</h3>
-<p>König et al. <a href="https://arxiv.org/abs/2611.26718">arXiv:2611.26718</a> build MiNNLO for lepton collisions and apply it to dijets in Powheg. Dave et al. <a href="https://arxiv.org/abs/2611.27883">arXiv:2611.27883</a> match YFS soft-photon resummation to NLO for radiative-return <span class="arithmatex">\(\mu\mu/\pi\pi\)</span>. They agree with BabaYaga at the per-mille level but differ from KKMC by up to 2%, which matters for HVP inputs.</p>
+<h3 id="triggers-in-nanoseconds">Triggers in nanoseconds</h3>
+<p>This is new; nothing in recent memory covers it.
+- <strong>Learned event embedding.</strong> Rozanov et al. <a href="https://arxiv.org/abs/2611.28355">arXiv:2611.28355</a> distill an offline transformer into a 7512-parameter quantised Level-1 encoder running in 147 ns. It rejects 99% of background while keeping 96% of held-out SM processes and 88% of 52 BSM benchmarks.
+- <strong>Symbolic anomaly detector.</strong> Bollhalder et al. <a href="https://arxiv.org/abs/2611.30896">arXiv:2611.30896</a> distill a normalising-flow anomaly detector into an explicit 577-operation formula that runs in 42.8 ns.
+- <strong>CMS Phase-2 muons.</strong> Estrada et al. <a href="https://arxiv.org/abs/2611.30394">arXiv:2611.30394</a> detect muon showers from Drift Tube hits in about 20 ns.</p>
+<p>Signature-agnostic selection now fits inside the L1 latency budget.</p>
+<h3 id="dark-matters-quieter-assumptions">Dark matter&rsquo;s quieter assumptions</h3>
+<ul>
+<li><strong>Halo shape.</strong> Shao et al. <a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> find that halo anisotropy moves LZ elastic limits by ±30% above 40 GeV but by up to 10× below 15 GeV.</li>
+<li><strong>Resonant freeze-out.</strong> Arcadi et al. <a href="https://arxiv.org/abs/2611.28230">arXiv:2611.28230</a> drop the kinetic-equilibrium assumption at the Higgs resonance. The coupling needed for the relic abundance shifts by up to 10× for pseudoscalar fermion DM, which strengthens direct-detection constraints.</li>
+<li><strong>Single-electron backgrounds.</strong> Santos-Olmsted et al. <a href="https://arxiv.org/abs/2611.28211">arXiv:2611.28211</a> propose using xenon detectors&rsquo; full dark-electron rate in an annual-modulation search. Sensitivity then scales as <span class="arithmatex">\(S\lesssim\sqrt{B}\)</span> rather than <span class="arithmatex">\(S\lesssim B\)</span>, with no new hardware.</li>
+</ul>
+<p>This continues the week&rsquo;s habit of auditing error bars, now applied to dark matter.</p>
+<h3 id="plumbing-for-eft-fits">Plumbing for EFT fits</h3>
+<ul>
+<li><strong>SMEFT plus PDFs.</strong> Cole et al. <a href="https://arxiv.org/abs/2611.28216">arXiv:2611.28216</a> fit 15 Wilson coefficients and the proton PDFs simultaneously. They add parity violation via LEFT matching and include charged-current high-mass Drell–Yan for the first time. The PDFs barely move.</li>
+<li><strong>EFT-safe acceptance.</strong> ATLAS <a href="https://arxiv.org/abs/2611.30272">arXiv:2611.30272</a> recasts <span class="arithmatex">\(H\to4\ell\)</span> STXS into a Lorentz-invariant fiducial region with <span class="arithmatex">\(A^{LIF}_{SM}=0.8546\)</span>, production-independent to 0.07%. EFT reinterpretations then need no EFT-dependent efficiency corrections.</li>
+</ul>
+<p>EFT is the year&rsquo;s standard collider language, and these papers are infrastructure for it.</p>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.27704">arXiv:2611.27704</a></strong> (Djouadi et al.): Required reading before anyone fits the threshold excess with a scalar component again.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.26688">arXiv:2611.26688</a></strong> (Petit Rosas et al.): The first agent paper here where the agent produced new results rather than reproducing old ones.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.27716">arXiv:2611.27716</a></strong> (Wang et al.): Lists eight <span class="arithmatex">\(\Lambda_c\)</span> modes that would decide whether KPW survives. Experimentalists can act on that list directly.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.27985">arXiv:2611.27985</a></strong> (Barenboim et al.): Asymmetric matter gives <span class="arithmatex">\(\nu_\mu\)</span> survival a genuine <span class="arithmatex">\(\sin\delta\)</span> T-odd term, and the usual &ldquo;no T violation in disappearance&rdquo; test is an identity. This is relevant because <span class="arithmatex">\(\nu_\mu\)</span> disappearance anchors the mass-ordering fits dissected on 11-11 and 11-17.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.26718">arXiv:2611.26718</a></strong> (König et al.): The first complete NNLO+PS event generator for lepton collisions.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a></strong> (Novák et al.): The model rankings will date fast. The sealed-world design, with injection tests applied to a single fixed workflow, is the lasting contribution.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a></strong> (Chargeishvili): Exact full-colour soft evolution up to 15 gluons, an 8×10⁸-dimensional colour space handled on one node. For gap-vetoed jet rates, leading colour overestimates the full result by 1.3×, 1.8× and 6.6× at 8, 10 and 14 partons.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a></strong> (Shao et al.): For the 248 keV LZ event, some anisotropic halos make splittings kinematically accessible where solar-neutrino bounds on the higgsino lose force. That is the constraint that has excluded the higgsino reading since Pospelov. The authors stress that kinematic access does not establish viability.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a></strong> (Chen et al.): Magic production vanishes for single gluon, photon, W, Higgs and graviton exchange, and for leptonic Z exchange at <span class="arithmatex">\(\sin^2\theta_W=1/4\)</span>. The result is computed in the chirality basis, so the basis-dependence of magic measures reported by Altomonte et al. on 11-16 applies here too.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a></strong> (Reboud et al.): Subtract one simple pole per narrow resonance, then convolve the smooth remainder on a grid set by the detector resolution. This is a structural answer to the normalisation problems from sharply localized terms that Zhu et al. flagged on 11-17.</li>
 </ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.27611">arXiv:2611.27611</a></strong> <em>Cosmological Correlators with Triple Massive Exchanges</em> — Shuntaro Aoki et al. (hep-th). A second analytic triple-exchange bispectrum in a week, now with unequal masses.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.27265">arXiv:2611.27265</a></strong> <em>Features investigated…</em> — Steen Hannestad et al. (astro-ph.CO). A Δχ² = 10 monodromy feature disappears once ACT/SPT data are added; <span class="arithmatex">\(A_{\rm osc}&lt;0.056\)</span>.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.26691">arXiv:2611.26691</a></strong> <em>The cosmological lithium problem and how decaying relics still solve it</em> — Maksym Ovchynnikov (hep-ph). Few-hour relics decaying to ~100 MeV <span class="arithmatex">\(\bar\nu_e\)</span> survive the current D, ⁴He and <span class="arithmatex">\(N_{\rm eff}\)</span> bounds.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.27456">arXiv:2611.27456</a></strong> <em>Flavor-Modulated Neutrino Communication…</em> — Bipin Singh Koranga et al. (hep-ph). Through-Earth neutrino messaging reaches 1.4×10⁻⁴ bit/s at best.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31214">arXiv:2611.31214</a></strong> <em>Massive de Sitter correlators at one loop</em> — Amara McCune (hep-th). Exact squeezed signals from heavy SM loops come out 10–30× larger than late-time estimates. This is the week&rsquo;s third exact cosmological-correlator result.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29939">arXiv:2611.29939</a></strong> <em>Ionization of gravitational atoms by a companion-sourced Yukawa potential</em> — Yi Wang et al. (gr-qc). A Yukawa force sourced by the companion can halt superradiant growth, extending the binary-environment effect on superradiance clouds noted on 11-20.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.28208">arXiv:2611.28208</a></strong> <em>Bring Your Own Instanton…</em> — Csaba Csáki et al. (hep-th). Rubakov–Callan catalysis proceeds via sourced instantons without exponential suppression. It is an IR effect: the scattering fermions never reach the monopole core.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31080">arXiv:2611.31080</a></strong> <em>Kaon-pair production with NNLO effects</em> — Yizhou Fang et al. (hep-ph). McMule now covers <span class="arithmatex">\(e^+e^-\to K\bar K\)</span> at NNLO in initial-state QED, with very large corrections at CMD-3 energies. Relevant to HVP and the radiative-return generator comparison from 11-23.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<h3 id="arxiv261127704-a-pseudoscalar-higgs-boson-interfering-with-toponium-a-qcd-analysis-of-ggto-ato-tbar-t-near-threshold-abdelhak-djouadi-et-al"><a href="https://arxiv.org/abs/2611.27704">arXiv:2611.27704</a> — A pseudoscalar Higgs boson interfering with toponium: a QCD analysis of <span class="arithmatex">\(gg\to A\to t\bar t\)</span> near threshold (Abdelhak Djouadi et al.)</h3>
-<p>Djouadi and Ellis show that an <span class="arithmatex">\(A\)</span> near <span class="arithmatex">\(2m_t\)</span> must interfere with <span class="arithmatex">\(\eta_t\)</span>, and that its line shape is a Fano profile fixed by one complex number <span class="arithmatex">\(\kappa\)</span>. Both live in the colour-singlet <span class="arithmatex">\({}^1S_0\)</span> channel and share the same Coulomb Green function. If <span class="arithmatex">\(A\)</span> decays only to <span class="arithmatex">\(t\bar t\)</span>, unitarity forces <span class="arithmatex">\(\mathrm{Im}\,\kappa=-1\)</span> exactly and independently of <span class="arithmatex">\(g_{Att}\)</span>. The narrow-width rate then changes by <span class="arithmatex">\(\delta=-2/|\kappa|^2\)</span>, with an exact amplitude zero at <span class="arithmatex">\(\epsilon=-\mathrm{Re}\,\kappa\)</span>. Coulomb resummation enhances <span class="arithmatex">\(\Gamma_A\)</span> by 1.2–3.5×, which gives resummed <span class="arithmatex">\(\kappa\approx-1.14\)</span> to <span class="arithmatex">\(-1.37\)</span> minus <span class="arithmatex">\(i\)</span>, so <span class="arithmatex">\(|\kappa|\approx1.5\)</span>–1.7: maximal distortion. The zero then sits at <span class="arithmatex">\(\epsilon\approx1.1\)</span>–1.4, and the <span class="arithmatex">\({}^1S_0\)</span> rate drops 70–90% relative to signal alone.</p>
-<p>Because toponium lies below <span class="arithmatex">\(M_A\)</span>, where <span class="arithmatex">\(\mathrm{Re}\,\kappa&lt;0\)</span>, the interference there is constructive. For <span class="arithmatex">\(f=50\%\)</span>, the <span class="arithmatex">\(\eta_t\)</span> peak rises by 1.69, 1.19 and 1.12 at <span class="arithmatex">\(M_A=350\)</span>, 365 and 380 GeV. The threshold excess over toponium is 0.95, 1.22 and 1.45 coherently, versus 1.57, 1.44 and 1.41 incoherently. An <span class="arithmatex">\(A\)</span> at 350 GeV carrying half the excess is thus essentially invisible. At 20% <span class="arithmatex">\(m_{t\bar t}\)</span> resolution, toponium and toponium+<span class="arithmatex">\(A\)</span> differ mainly in normalization.</p>
-<p>Caveats are stated plainly:
-- The hard process is LO without <span class="arithmatex">\(K\)</span>-factors.
-- The Coulomb potential is LO with a constant <span class="arithmatex">\(\Gamma_t\)</span>.
-- The matching to fixed order is an interpolation.
-- Top decays and spin correlations are not simulated.</p>
-<p>Peak enhancements still move by up to ~20% under these variations. The paper also retracts the robustness of its own earlier wide-window probe, which shifts from ≈4 to ≈3, or ≈6 with a frozen form factor.</p>
-<h3 id="arxiv261126688-agent-guided-construction-of-feynman-integral-bases-pau-petit-rosas-et-al"><a href="https://arxiv.org/abs/2611.26688">arXiv:2611.26688</a> — Agent-guided construction of Feynman integral bases (Pau Petit Rosas et al.)</h3>
-<p>Claude Opus 5.5, driven by two &ldquo;skills&rdquo; (roughly 4,500 lines of instructions and 15k lines of mostly Mathematica code), produced bases for two families. For each, the authors state that no such basis existed before. Every candidate passes a deterministic gate before acceptance: an exact-in-<span class="arithmatex">\(\varepsilon\)</span> IBP reduction on a kinematic slice, an honesty check, and an invertibility check. An agent error can therefore waste CPU time but cannot enter an accepted basis.</p>
-<p><strong>Two-loop five-point QED pentabox with <span class="arithmatex">\(m_e,m_\mu\)</span></strong> (seven scales, 232 masters):
-- <strong>Classification.</strong> The agent classified 80 sectors as canonical and 18 as elliptic. Five of the canonical sectors need nested roots.
-- <strong>Pole removal.</strong> It started from 23,254 entries with <span class="arithmatex">\(1/(a+b\varepsilon)\)</span> poles. After ~155 accepted master changes over eight days, the census of offending entries was empty.
-- <strong>Result.</strong> The final system is pole-free and at most quadratic in <span class="arithmatex">\(\varepsilon\)</span>. Its diagonal blocks are <span class="arithmatex">\(\varepsilon\)</span>-factorized in all 75 non-nested canonical sectors.</p>
-<p><strong>Radiative-jet-function superfamily</strong> (124 masters):
-- <strong>K3 sector.</strong> On a second pass, the agent identified a K3 sector, which the authors confirmed.
-- <strong><span class="arithmatex">\(\varepsilon\)</span>-factorized form.</strong> It then reached full <span class="arithmatex">\(\varepsilon\)</span>-factorized form in ~4 days with no dedicated skill. That change of basis uses 8 elliptic periods, 3 K3 periods and 108 DE-defined functions.</p>
-<p>Total list-price costs were ~$1.8k and ~$1.0k.</p>
+<h3 id="arxiv261128194-hep-ex-bench-evaluating-agentic-performance-in-high-energy-physics-experiment-data-analyses-with-sealed-worlds-andrzej-novak-et-al"><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> — HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds (Andrzej Nov'ak et al.)</h3>
+<p>Each agent gets one session of at most 7.5 h on a public world built from 2016 CMS open simulation (MiniAOD, full detector simulation). It must deliver a single pipeline, which is then frozen and rerun on 10–40 sealed worlds per task. Every world has a hidden truth (<span class="arithmatex">\(m_H\)</span>, <span class="arithmatex">\(\mu\)</span>, <span class="arithmatex">\(\Gamma_H/\Gamma_H^{SM}\)</span>, or lepton and jet corrections) and one of 13 detector profiles that distort scale, resolution and efficiencies. The score is a strictly proper log score relative to an expert reference run on the same worlds. A shared-bias term growing like <span class="arithmatex">\(\sqrt N\)</span> is added, along with weighted reviewer checks: goodness of fit, truthfulness against an evaluator refit, and Z-peak closure. With <span class="arithmatex">\(\gamma=2\)</span>, the ratio reads as an effective fraction of the data.</p>
+<p>Across 99 sessions per task and eleven models:
+- Gemini 4 Argon averages 60±8% of the reference, GPT 6 Astra 38%, Claude Opus 5.5 31%.
+- No open-weight model exceeds 10%.
+- Sessions undercover far more often than they overcover.
+- Run-to-run spread exceeds the differences between prompt tiers. Opus 5.5 on HiggsLepMass reaches 89% in its best session against a 49% mean.
+- The P2 expert plan adds nothing over P1.</p>
+<p>The harness is validated adversarially. A memorised 125 GeV scores &lt;1% and understated uncertainties score 34%. With ten worlds, every flawed archetype falls below the reference in ≥96% of draws.</p>
+<p>Caveats the authors flag:
+- Worlds vary detector response and signal, but not generators. The six JetCalib sessions that beat the reference gain mainly because the reference&rsquo;s modelling-dominated JES uncertainties exceed the injected variations.
+- Scores depend on the chosen reference and weights.
+- Only one experiment is covered.</p>
+<h3 id="arxiv261129072-a-billion-colour-states-exact-soft-gluon-evolution-beyond-leading-colour-for-many-jet-qcd-bakar-chargeishvili"><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a> — A billion colour states: exact soft-gluon evolution beyond leading colour for many-jet QCD (Bakar Chargeishvili)</h3>
+<p>Leading colour degrades steadily with multiplicity. Take a soft veto outside the jets at <span class="arithmatex">\(t=0.1\)</span> (<span class="arithmatex">\(Q/Q_0\approx14\)</span>), inside the <span class="arithmatex">\(t\approx0.05\)</span>–0.12 range the author maps to LHC dijet vetoes. There, LC overestimates the full-colour no-emission factor by median factors of 1.27, 1.83 and 6.6 at 8, 10 and 14 partons. The gap fraction is off by 2.2 at <span class="arithmatex">\(n=14\)</span>. Pairs among the three hardest jets form a colour singlet 3–9% of the time; LC sets this to zero.</p>
+<p>The method builds an orthogonal multiplet basis by coupling partons one leg at a time, with each step fixed by a Casimir eigenvalue (Jucys–Murphy elements). Norms come in closed form, and dipoles act only on the label segment between the two partons, via small recoupling tables. <span class="arithmatex">\(\Gamma\)</span> is therefore never stored: <span class="arithmatex">\(\Gamma x\)</span> is a block &ldquo;sweep&rdquo; and <span class="arithmatex">\(e^{-t\Gamma}\)</span> a Krylov iteration. Fourteen gluons take about an hour on one A100. Fifteen gluons (827,888,726 states) take 3–7 h per <span class="arithmatex">\(t\)</span> value on a CPU node with up to 857 GB.</p>
+<p>For showers, the formal <span class="arithmatex">\(1/N_c^2\)</span> suppression is outweighed by the growing number of unconnected pairs. Caveats:
+- The calculation uses one-loop <span class="arithmatex">\(\Gamma\)</span> at fixed coupling, with colour-diagonal factors dropped.
+- Events are flat in phase space, and real emission is included only up to five hard partons.
+- Independent cross-checks stop at <span class="arithmatex">\(n\le7\)</span>. Beyond that, validation rests on internal consistency.
+- The <span class="arithmatex">\(n=15\)</span> points show feasibility and do not enter the LC comparison.</p>
+<h3 id="arxiv261129197-quantifying-the-impact-of-galactic-dark-matter-halo-models-on-lz-results-jialiang-shao-et-al"><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> — Quantifying the Impact of Galactic Dark Matter Halo Models on LZ Results (Jialiang Shao et al.)</h3>
+<p>The authors rescale LZ limits by the ratio of predicted yields across 22 self-consistent BCFS halos, truncated at a common <span class="arithmatex">\(v_{esc}=544\)</span> km/s.</p>
+<p>Elastic results:
+- Above about 40 GeV, the SI envelope is <span class="arithmatex">\(R\approx0.8\)</span>–1.3 relative to the SHM.
+- At 9 GeV it opens to 0.17–1.63 (class B).
+- Extending the class-D cutoff to 1000 km/s drives <span class="arithmatex">\(R\)</span> to about 0.04.
+- At 9 GeV, the <span class="arithmatex">\(v_{esc}\)</span> scan (factor ~2 for classes A/B) and the efficiency treatment (factor 2–3) matter about as much as the halo.
+- In the SD channel at 40 GeV, nuclear-structure uncertainty (factors 3.6 and 13 for neutron and proton) still exceeds the roughly 2× halo spread.</p>
+<p>For the 248 keV event (LZ: 3.4σ local, 2.6σ global), they use a background-free single-event likelihood at 1.1 TeV. The tail sets the inelastic ceiling: <span class="arithmatex">\(\delta_{max}\approx384\)</span> keV for the SHM and 556 keV for an LMC-like tail. The higgsino cross section (~7×10⁻³⁹ cm²) crosses these two contours at δ≈360 and 455 keV, both below the 566 keV solar-neutrino threshold. Some anisotropic contours reach 700–775 keV, but only at cross sections well below the higgsino value (D1/D3 near 3×10⁻⁴⁰ cm²).</p>
 <p>Caveats:
-- The five-point DE exists only on slices; its full kinematic reconstruction is outstanding.
-- Neither basis is optimized for evaluation.
-- Humans intervened once substantively: the agent wrongly concluded two blocks couldn&rsquo;t be factorized because it held higher-sector bases fixed.</p>
-<h3 id="arxiv261127716-challenging-the-kornerpatiwoo-theorem-in-charmed-baryon-decays-di-wang-et-al"><a href="https://arxiv.org/abs/2611.27716">arXiv:2611.27716</a> — Challenging the Körner–Pati–Woo Theorem in Charmed Baryon Decays (Di Wang et al.)</h3>
-<p>KPW+SU(3)<span class="arithmatex">\(_F\)</span> links <span class="arithmatex">\(\Lambda_c^+\to\Xi^0K^+\)</span> to <span class="arithmatex">\(\Xi_c^0\to pK^-\)</span>. Using BESIII partial waves, the relation predicts <span class="arithmatex">\(\mathcal B(\Xi_c^0\to pK^-)\)</span> at <span class="arithmatex">\(17.2\pm6.0\)</span> times LHCb&rsquo;s measured value. A five-observable joint fit gives <span class="arithmatex">\(\chi^2_{\min}=45.2\)</span> for 2 dof, a 6.3σ discrepancy. The fit has to drag <span class="arithmatex">\(\mathcal B(\Lambda_c^+\to\Xi^0K^+)\)</span> from <span class="arithmatex">\(5.5\)</span> to <span class="arithmatex">\(1.38\times10^{-3}\)</span>, a 5.9σ pull.</p>
-<p>Rescuing KPW requires large SU(3)<span class="arithmatex">\(_F\)</span> breaking:
-- <strong><span class="arithmatex">\(pK^-\)</span> channel:</strong> S/P-wave magnitude shifts of at least 76% and relative phases of at least 17.8°.
-- <strong>Decuplet sector:</strong> predicted <span class="arithmatex">\(\alpha(\Lambda_c^+\to\Delta^{++}K^-)\in[-0.91,-0.83]\)</span> against a measured <span class="arithmatex">\(+0.55\pm0.04\)</span>, a 16–20σ sign flip. Fixing it needs a P–D phase shift of at least 93.5°.</p>
-<p>The theoretical argument is qualitative. Colour-sextet diquarks embedded in larger singlets, via gluons or baryon–meson colour space, evade the valence-colour projection.</p>
-<p>Caveats:
-- BESIII also allows an S-wave-dominated <span class="arithmatex">\(\Xi^0K^+\)</span> solution.
-- Branching fractions alone give a wider ratio range, <span class="arithmatex">\([5.6\pm1.5,\,18.7\pm5.0]\)</span>.
-- The companion <span class="arithmatex">\(\Sigma^+K^-\)</span> test depends on the disputed <span class="arithmatex">\(\Xi_c^0\to\Xi^-\pi^+\)</span> normalization.</p>
-<p>The actionable output is a set of isospin-only KPW relations, where breaking is expected at ~1%. These cover eight <span class="arithmatex">\(\Lambda_c^+\)</span> modes and include the requirement <span class="arithmatex">\(\Delta^+\eta^{(\prime)}=0\)</span>. One already looks strained: the predicted <span class="arithmatex">\(\mathcal B(\Delta^+K_S^0)=(2.99\pm0.13)\times10^{-3}\)</span> sits above BESIII&rsquo;s <span class="arithmatex">\(&lt;2.54\times10^{-3}\)</span>.</p>
-<p><em>Full text for the Barenboim et al. (<a href="https://arxiv.org/abs/2611.27985">arXiv:2611.27985</a>) and König et al. (<a href="https://arxiv.org/abs/2611.26718">arXiv:2611.26718</a>) picks was not supplied, so no deep dive is given for them.</em></p>
+- Limits are rescaled by yield ratio rather than refit with the LZ likelihood.
+- The suite is not a posterior, and it mixes profile, rotation and anisotropy.
+- The 1000 km/s cutoffs are sensitivity tests, not measurements.
+- The single-event fit assumes unit efficiency, and its coverage is uncalibrated.</p>
+<hr />
+<p><em>Full text for <a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a> (Chen et al.) and <a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a> (Reboud et al.) was not supplied, so those picks are not expanded here.</em></p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-11-23.html"><span class="date">Monday, November 23, 2026</span></a>
+      <span class="themes"><span class="chip">Toponium meets a pseudoscalar</span><span class="chip">Agents with verifiable output</span><span class="chip">Heavy-hadron rules under strain</span><span class="chip">Lepton-collider generators</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-11-20.html"><span class="date">Friday, November 20, 2026</span></a>
@@ -137,11 +155,6 @@
       <span class="themes"><span class="chip">LZ event, elastic reading</span><span class="chip">Loop orders climbing</span><span class="chip">Quantum-computing DM searches</span><span class="chip">Supercooling consistency checks</span><span class="chip">Top SMEFT strategies</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-11-11.html"><span class="date">Wednesday, November 11, 2026</span></a>
-      <span class="themes"><span class="chip">mass-ordering preference decomposed</span><span class="chip">neutrino interaction modeling</span><span class="chip">light-field bounds recalibrated</span><span class="chip">precision-theory plumbing</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -151,7 +164,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 07:42 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 15:33 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

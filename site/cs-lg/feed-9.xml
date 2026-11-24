@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Unbalanced Optimal Transport: A Unified Framework for Object Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-02402</link>
+    <guid isPermaLink="false">arxiv:2307.02402</guid>
+    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henri De Plaen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>During training, supervised object detection tries to correctly match the predicted bounding boxes and associated classification scores to the ground truth. This is essential to determine which predictions are to be pushed towards which solutions, or to be discarded. Popular matching strategies include matching to the closest ground truth box (mostly used in combination with anchors), or matching via the Hungarian algorithm (mostly used in anchor-free methods). Each of these strategies comes with its own properties, underlying losses, and heuristics. We show how Unbalanced Optimal Transport unifies these different approaches and opens a whole continuum of methods in between. This allows for a finer selection of the desired properties. Experimentally, we show that training an object detection model with Unbalanced Optimal Transport is able to reach the state-of-the-art both in terms of Average Precision and Average Recall as well as to provide a faster initial convergence. The approach is well suited for GPU implementation, which proves to be an advantage for large-scale models.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-02460</link>
+    <guid isPermaLink="false">arxiv:2307.02460</guid>
+    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Feiyang Kang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling laws that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called <projektor>, which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel <em>two-stage</em> performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model&rsquo;s performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications demonstrates that <projektor> significantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also, <projektor> outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On a Relation Between the Rate-Distortion Function and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-00246</link>
+    <guid isPermaLink="false">arxiv:2307.00246</guid>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eric Lei et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We discuss a relationship between rate-distortion and optimal transport (OT) theory, even though they seem to be unrelated at first glance. In particular, we show that a function defined via an extremal entropic OT distance is equivalent to the rate-distortion function. We numerically verify this result as well as previous results that connect the Monge and Kantorovich problems to optimal scalar quantization. Thus, we unify solving scalar quantization and rate-distortion functions in an alternative fashion by using their respective optimal transport solvers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Safe Screening for Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-00247</link>
+    <guid isPermaLink="false">arxiv:2307.00247</guid>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xun Su et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper introduces a framework that utilizes the Safe Screening technique to accelerate the optimization process of the Unbalanced Optimal Transport (UOT) problem by proactively identifying and eliminating zero elements in the sparse solutions. We demonstrate the feasibility of applying Safe Screening to the UOT problem with ℓ_2-penalty and KL-penalty by conducting an analysis of the solution&rsquo;s bounds and considering the local strong convexity of the dual problem. Considering the specific structural characteristics of the UOT in comparison to general Lasso problems on the index matrix, we specifically propose a novel approximate projection, an elliptical safe region construction, and a two-hyperplane relaxation method. These enhancements significantly improve the screening efficiency for the UOT&rsquo;s without altering the algorithm&rsquo;s complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Approximating Probability Distributions by using Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2103-10060</link>
+    <guid isPermaLink="false">arxiv:2103.10060</guid>
+    <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yihang Gao et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Studied here are Wasserstein generative adversarial networks (WGANs) with GroupSort neural networks as their discriminators. It is shown that the error bound of the approximation for the target distribution depends on the width and depth (capacity) of the generators and discriminators and the number of samples in training. A quantified generalization bound is established for the Wasserstein distance between the generated and target distributions. According to the theoretical results, WGANs have a higher requirement for the capacity of discriminators than that of generators, which is consistent with some existing results. More importantly, the results with overly deep and wide (high-capacity) generators may be worse than those with low-capacity generators if discriminators are insufficiently strong. Numerical results obtained using Swiss roll and MNIST datasets confirm the theoretical results.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low Latency Edge Classification GNN for Particle Trajectory Tracking on FPGAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-11330</link>
+    <guid isPermaLink="false">arxiv:2306.11330</guid>
+    <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shi-Yu Huang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>In-time particle trajectory reconstruction in the Large Hadron Collider is challenging due to the high collision rate and numerous particle hits. Using GNN (Graph Neural Network) on FPGA has enabled superior accuracy with flexible trajectory classification. However, existing GNN architectures have inefficient resource usage and insufficient parallelism for edge classification. This paper introduces a resource-efficient GNN architecture on FPGAs for low latency particle tracking. The modular architecture facilitates design scalability to support large graphs. Leveraging the geometric properties of hit detectors further reduces graph complexity and resource usage. Our results on Xilinx UltraScale+ VU9P demonstrate 1625x and 1574x performance improvement over CPU and GPU respectively.</p>]]></description>
+  </item>
 
   <item>
     <title>Wasserstein Generative Regression</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Moodie</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>In this thesis, we present recent advances at the precision frontier of higher-order quantum chromodynamics (QCD) calculations. We consider massless two-loop five-point amplitudes, with a particular focus on diphoton-plus-jet production through gluon fusion. We build a library of infrared functions up to at most next-to-next-to-leading order (NNLO) in QCD, which can be used to validate amplitudes and construct counterterms in subtraction schemes at NNLO. We review progress in the novel use of machine learning technology to optimise the evaluation of amplitudes in hadron collider simulations. We present the full-colour virtual QCD corrections to diphoton-plus-jet production through gluon fusion, discussing the new techniques developed to calculate these non-planar two-loop amplitudes. We use these amplitudes to compute the next-to-leading QCD corrections to the differential cross sections of diphoton-plus-jet production through gluon fusion at the Large Hadron Collider. We also present the leading-colour double-virtual corrections to hadronic trijet production. All derived amplitudes are made available in a public implementation that is ready for further phenomenological application.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein K-means for clustering probability distributions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2209-06975</link>
-    <guid isPermaLink="false">arxiv:2209.06975</guid>
-    <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yubo Zhuang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Clustering is an important exploratory data analysis technique to group objects based on their similarity. The widely used K-means clustering method relies on some notion of distance to partition data into a fewer number of groups. In the Euclidean space, centroid-based and distance-based formulations of the K-means are equivalent. In modern machine learning applications, data often arise as probability distributions and a natural generalization to handle measure-valued data is to use the optimal transport metric. Due to non-negative Alexandrov curvature of the Wasserstein space, barycenters suffer from regularity and non-robustness issues. The peculiar behaviors of Wasserstein barycenters may make the centroid-based formulation fail to represent the within-cluster data points, while the more direct distance-based K-means approach and its semidefinite program (SDP) relaxation are capable of recovering the true cluster labels. In the special case of clustering Gaussian distributions, we show that the SDP relaxed Wasserstein K-means can achieve exact recovery given the clusters are well-separated under the 2-Wasserstein metric. Our simulation and real data examples also demonstrate that distance-based K-means can achieve better classification performance over the standard centroid-based K-means for clustering probability distributions and images.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gaussian Processes on Distributions based on Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-06574</link>
-    <guid isPermaLink="false">arxiv:2210.06574</guid>
-    <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François Bachoc et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We present a novel kernel over the space of probability measures based on the dual formulation of optimal regularized transport. We propose an Hilbertian embedding of the space of probabilities using their Sinkhorn potentials, which are solutions of the dual entropic relaxed optimal transport between the probabilities and a reference measure 𝒰. We prove that this construction enables to obtain a valid kernel, by using the Hilbert norms. We prove that the kernel enjoys theoretical properties such as universality and some invariances, while still being computationally feasible. Moreover we provide theoretical guarantees on the behaviour of a Gaussian process based on this kernel. The empirical performances are compared with other traditional choices of kernels for processes indexed on distributions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Mirror Descent with Relative Smoothness in Measure Spaces, with application to Sinkhorn and EM</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2206-08873</link>
-    <guid isPermaLink="false">arxiv:2206.08873</guid>
-    <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre-Cyril Aubin-Frankowski et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Many problems in machine learning can be formulated as optimizing a convex functional over a vector space of measures. This paper studies the convergence of the mirror descent algorithm in this infinite-dimensional setting. Defining Bregman divergences through directional derivatives, we derive the convergence of the scheme for relatively smooth and convex pairs of functionals. Such assumptions allow to handle non-smooth functionals such as the Kullback&ndash;Leibler (KL) divergence. Applying our result to joint distributions and KL, we show that Sinkhorn&rsquo;s primal iterations for entropic optimal transport in the continuous setting correspond to a mirror descent, and we obtain a new proof of its (sub)linear convergence. We also show that Expectation Maximization (EM) can always formally be written as a mirror descent. When optimizing only on the latent distribution while fixing the mixtures parameters &ndash; which corresponds to the Richardson&ndash;Lucy deconvolution scheme in signal processing &ndash; we derive sublinear rates of convergence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adaptive Distribution Calibration for Few-Shot Learning with Hierarchical Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-04144</link>
-    <guid isPermaLink="false">arxiv:2210.04144</guid>
-    <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dandan Guo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Few-shot classification aims to learn a classifier to recognize unseen classes during training, where the learned model can easily become over-fitted based on the biased distribution formed by only a few training examples. A recent solution to this problem is calibrating the distribution of these few sample classes by transferring statistics from the base classes with sufficient examples, where how to decide the transfer weights from base classes to novel classes is the key. However, principled approaches for learning the transfer weights have not been carefully studied. To this end, we propose a novel distribution calibration method by learning the adaptive weight matrix between novel samples and base classes, which is built upon a hierarchical Optimal Transport (H-OT) framework. By minimizing the high-level OT distance between novel samples and base classes, we can view the learned transport plan as the adaptive weight information for transferring the statistics of base classes. The learning of the cost function between a base class and novel class in the high-level OT leads to the introduction of the low-level OT, which considers the weights of all the data samples in the base class. Experimental results on standard benchmarks demonstrate that our proposed plug-and-play model outperforms competing approaches and owns desired cross-domain generalization ability, indicating the effectiveness of the learned adaptive weights.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Adversarial network training using higher-order moments in a modified Wasserstein distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-03354</link>
-    <guid isPermaLink="false">arxiv:2210.03354</guid>
-    <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oliver Serang</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Generative-adversarial networks (GANs) have been used to produce data closely resembling example data in a compressed, latent space that is close to sufficient for reconstruction in the original vector space. The Wasserstein metric has been used as an alternative to binary cross-entropy, producing more numerically stable GANs with greater mode covering behavior. Here, a generalization of the Wasserstein distance, using higher-order moments than the mean, is derived. Training a GAN with this higher-order Wasserstein metric is demonstrated to exhibit superior performance, even when adjusted for slightly higher computational cost. This is illustrated generating synthetic antibody sequences.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Topological Continual Learning with Wasserstein Distance and Barycenter</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-02661</link>
-    <guid isPermaLink="false">arxiv:2210.02661</guid>
-    <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Tananun Songdechakraiwut et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Continual learning in neural networks suffers from a phenomenon called catastrophic forgetting, in which a network quickly forgets what was learned in a previous task. The human brain, however, is able to continually learn new tasks and accumulate knowledge throughout life. Neuroscience findings suggest that continual learning success in the human brain is potentially associated with its modular structure and memory consolidation mechanisms. In this paper we propose a novel topological regularization that penalizes cycle structure in a neural network during training using principled theory from persistent homology and optimal transport. The penalty encourages the network to learn modular structure during training. The penalization is based on the closed-form expressions of the Wasserstein distance and barycenter for the topological features of a 1-skeleton representation for the network. Our topological continual learning method combines the proposed regularization with a tiny episodic memory to mitigate forgetting. We demonstrate that our method is effective in both shallow and deep network architectures for multiple image classification datasets.</p>]]></description>
   </item>
 
 </channel>

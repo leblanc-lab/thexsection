@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>EMS Coreset: An Efficient Expectation-Maximization Algorithm for Sinkhorn Coreset</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-16101</link>
+    <guid isPermaLink="false">arxiv:2608.16101</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyun Yin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Coresets distill large datasets into small, representative subsets for efficient downstream learning. Yet Optimal Transport (OT)-based selection typically requires intensive computation of transport plans, limiting scalability. We introduce a scalable Sinkhorn coreset method that permits closed-form updates of the entropically regularized OT coupling by allowing non-uniform coreset weights. This produces centroids that generalize k-means via soft assignments. We establish asymptotic consistency of the selected measure and Lipschitz stability to data perturbations, providing accuracy and robustness guarantees. Across synthetic and real-world benchmarks, the proposed method achieves competitive or improved approximation quality while substantially reducing runtime compared to Wasserstein- and standard Sinkhorn-based coreset selection, especially at large scale.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Density-Reweighted Entropic Optimal Transport: Decoupling Geometry from Sampling Density</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-16506</link>
+    <guid isPermaLink="false">arxiv:2608.16506</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keyi Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Dataset alignment is a central step in data analysis across science and engineering, where the goal is to match observations between datasets. Entropic Optimal Transport (EOT) offers a computationally tractable framework for this task by encoding cross-dataset affinities in a transport plan. However, when two datasets are sampled from geometrically similar low-dimensional structures with substantially different sampling densities, the EOT plan may match points by relative sampling density rather than geometric proximity, yielding geometrically misleading correspondences. To address this issue, we propose a density-reweighted EOT framework in which the influence of sampling density on the transport plan can be discounted to a desired degree, ranging from standard EOT to alignment driven purely by underlying geometry. Under suitable regularity conditions, we establish convergence of the reweighted EOT plan to a family of population-level plans whose dependence on sampling density is made explicit. Through simulations, we show that our approach recovers geometrically faithful correspondences, improving over related EOT-based frameworks when datasets exhibit substantial sampling density disparity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Lymphocyte Mimicry Correction via Region-Level Tissue Reasoning and Unbalanced Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-17151</link>
+    <guid isPermaLink="false">arxiv:2608.17151</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Cell mimicry arises when different cell types appear morphologically similar. Human pathologists resolve this ambiguity using surrounding tissue context, whereas current vision models either lack contextual reasoning (cell foundation models) or cannot operate at the cell level (pathology MLLMs). We present Loki-OT, which propagates region-level tissue reasoning to individual cell predictions via Unbalanced Optimal Transport, using MLLM-derived density priors as soft guidance for ambiguous cell reassignment. Loki-OT is motivated by the observation that pretrained cell foundation model features already encode discriminative information, including tissue context, but standard cell-level supervision fails to use tissue context effectively. The resulting transport plan is distilled into a lightweight student MLP classifier that learns context-aware decision boundaries within the pretrained feature space. On the independent TCGA-BRCA cohort, Loki-OT achieved lower patient-level MAE than the fully supervised in-domain PanopTILs classifier and improved F1 in epithelium-rich mimicry tissues, using 278 weak region-level MLLM estimates built on a general-domain cell foundation model. Code: https://github.com/xiangli980/Lymphocyte_Mimicry_Correction_via_Loki_OT</p>]]></description>
+  </item>
+
+  <item>
+    <title>Interpreting "Interpretability" and Explaining "Explainability" in Machine Learning in Physics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-26228</link>
+    <guid isPermaLink="false">arxiv:2606.26228</guid>
+    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rikab Gambhir et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler, Rikab Gambhir) — original abstract; no AI summary.</em></p>
+<p>We review the concepts of interpretability and explainability as they apply to machine learning in physics. We define interpretability as concerning the structural transparency of a model (the ability to understand or approximate its inner workings) and explainability as concerning the scientific content of a model (the ability to map it onto domain knowledge). We discuss the trade-offs each entails (interpretability vs. expressivity; explainability vs. adaptability), the contexts in which each is needed, and the intrinsic and post-hoc tools available for achieving them. Throughout, we emphasize that machine-learned models are subject to the same scientific questions as classical models, differing only in scale, and that interpretability and explainability are best understood as deliberate modeling choices rather than inherent properties. We also emphasize the importance of task specification and intervention plans as a core aspect of model design.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Functional anatomy of Pythia-Herwig differences with Kolmogorov-Arnold networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-15952</link>
+    <guid isPermaLink="false">arxiv:2608.15952</guid>
+    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arghya Chattopadhyay</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet mass) — original abstract; no AI summary.</em></p>
+<p>Differences between high-energy event generators can arise at several stages of the collision simulation, from the hard scattering through parton showering and hadronization to the final event. These differences are usually summarized using observable distributions or global classifier scores. While these quantify the disagreement, they do not reveal which observable-level structures carry it or whether those structures persist through different stages of event generation. In this work, we formulate this problem as a staged functional analysis of generator-model differences. Following the same hard dijet events through Pythia and Herwig at shower-only, hadronized, and full-generator levels, we use an additive Kolmogorov-Arnold network (KAN) representation of the classifier-derived log density ratio to decompose the learned discrepancy into explicit one-dimensional observable responses that can be isolated, recomposed, and transported between generator stages. Within the same eight-observable jet representation, the Pythia-Herwig difference is driven mainly by multiplicity at shower level, shifts toward jet mass and shape after hadronization, and develops a mixed shape-multiplicity driven structure in the full-generator configuration. Transporting the individual shower-level functional components downstream shows that shower-level multiplicity information can retain its reweighting power, whereas the corresponding shape responses need not do so even though shape becomes important again at later stages. The jet-mass factors, meanwhile, are limited by poor statistical support. This KAN-based framework therefore provides a functional anatomy of generator-model dependence, exposing both persistent structures and support failures that are hidden inside a single global classifier-derived reweighting function.</p>]]></description>
+  </item>
+
+  <item>
+    <title>The Observable Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09916</link>
+    <guid isPermaLink="false">arxiv:2605.09916</guid>
+    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Edivaldo Lopes dos Santos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We introduce the observable Wasserstein distance, a framework for deriving lower bounds on the Wasserstein distance between probability measures on Polish metric spaces, designed to bypass the computational intractability of exact optimal transport in large-scale, non-Euclidean datasets. Analogous to the sliced Wasserstein distance in ℝ^d, our approach projects measures onto the real line via 1-Lipschitz observables and computes the Wasserstein distances between the resulting pushforward distributions. We define a hierarchy of pseudo-metrics by restricting observables to a nested chain of subspaces. A central theoretical contribution is an injectivity result linking the metric covering dimension of the support of a measure to the specific order in the hierarchy that guarantees unique recovery. This serves as a metric-space analogue to the Cramér-Wold Device for Euclidean distributions. We demonstrate that this hierarchy offers a tunable trade-off between sharpness as a lower bound on the Wasserstein distance and computational efficiency. We also present a discrete computational model for finite grids and numerical experiments validating the efficacy and utility of these approximations.</p>]]></description>
+  </item>
 
   <item>
     <title>Conditional Neural Optimal Transport for Predicting Cellular Phenotypes from Molecular Structure</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mehmet Yigit Balik et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Single-cell RNA sequencing provides insights into gene expression at single-cell resolution, yet inferring temporal processes from these static snapshot measurements remains a fundamental challenge. Current approaches utilizing neural differential equations and flows are sensitive to overfitting and lack careful considerations of biological variability. In this work, we propose a generative framework that models population trends using a latent heteroscedastic Gaussian process (GP) approximated by Hilbert space methods. To address the absence of genuine cell trajectories, we leverage an optimal transport (OT) objective that aligns generated and observed population distributions. Our method explicitly captures biological heterogeneity by incorporating cell-specific latent time and cell type conditioning to disentangle temporal asynchrony and trajectories to different cell types. We demonstrate state-of-the-art performance on complex interpolation and extrapolation benchmarks and introduce a novel gradient-based strategy for inferring perturbation trajectories.</p>]]></description>
-  </item>
-
-  <item>
-    <title>UOTIP: Unbalanced Optimal Transport Map for Unpaired Inverse Problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-21094</link>
-    <guid isPermaLink="false">arxiv:2605.21094</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donggyu Lee et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We investigate unpaired image inverse problems, a challenging setting where only independent, non-paired sets of noisy measurements and clean target signals are available for training. We propose a novel inverse problem solver based on Unbalanced Optimal Transport, called Unbalanced Optimal Transport Map for Inverse Problems (UOTIP). Our method formulates the reconstruction task, predicting clean target signals from noisy measurements, as learning a UOT Map from noisy measurement distribution to clean signal distribution by incorporating a likelihood-based cost function. By relaxing the exact marginal constraint, the UOT framework provides key advantages to our model: robustness to multi-level observation noise, adaptability to class imbalance between noisy and clean datasets, and generalizability to diverse noise-type scenarios. Furthermore, we theoretically demonstrate that incorporating a quadratic cost term ensures the existence and uniqueness of the transport map by satisfying the twist condition, even for ill-posed inverse problems. Our experiments demonstrate that UOTIP achieves state-of-the-art performance on unpaired image inverse problem benchmarks, across linear and nonlinear inverse problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On the Regularity and Generalization of One-Step Wasserstein-guided Generative Models for PDE-Induced Measures</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-21388</link>
-    <guid isPermaLink="false">arxiv:2605.21388</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Likun Lin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Despite the remarkable empirical success of generative models, the available theory on their statistical accuracy in scientific computing remains largely pessimistic. This paper develops a theoretical framework for understanding the regularity of transport maps and the generalization properties of one-step Wasserstein-guided generative models for PDE-induced probability measures. We consider normalized target densities associated with linear elliptic and parabolic equations on bounded domains, as well as diffusion and Fokker&ndash;Planck equations on the torus. Under standard structural assumptions, we prove that these target measures satisfy doubling conditions. By combining this fact with regularity theory for optimal transport between doubling measures, we show that the optimal transport map from a uniform source measure to the target measure is Hölder continuous. This regularity yields an approximation-theoretic justification for one-step generative models that learn PDE-induced distributions via a single pushforward map. As a representative instance, we study DeepParticle and derive excess-risk bounds characterizing the discrepancy between the learned map and the population-optimal map. We also establish a robustness estimate under target shift and illustrate the theory with experiments which support the derived rates.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Control, Optimal Transport and Neural Differential Equations in Supervised Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2503-15105</link>
-    <guid isPermaLink="false">arxiv:2503.15105</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh-Nhat Phung et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We study the fundamental computational problem of approximating optimal transport (OT) equations using neural differential equations (Neural ODEs). More specifically, we develop a novel framework for approximating unbalanced optimal transport (UOT) in the continuum using Neural ODEs. By generalizing a discrete UOT problem with Pearson divergence, we constructively design vector fields for Neural ODEs that converge to the true UOT dynamics, thereby advancing the mathematical foundations of computational transport and machine learning. To this end, we design a numerical scheme inspired by the Sinkhorn algorithm to solve the corresponding minimization problem and rigorously prove its convergence, providing explicit error estimates. From the obtained numerical solutions, we derive vector fields defining the transport dynamics and construct the corresponding transport equation. Finally, from the numerically obtained transport equation, we construct a neural differential equation whose flow converges to the true transport dynamics in an appropriate limiting regime.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stochastic Gradient Variational Inference with Price's Gradient Estimator from Bures-Wasserstein to Parameter Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-18718</link>
-    <guid isPermaLink="false">arxiv:2602.18718</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kyurae Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>For approximating a target distribution given only its unnormalized log-density, stochastic gradient-based variational inference (VI) algorithms are a popular approach. For example, Wasserstein VI (WVI) and black-box VI (BBVI) perform gradient descent in measure space (Bures-Wasserstein space) and parameter space, respectively. Previously, for the Gaussian variational family, convergence guarantees for WVI have shown superiority over existing results for black-box VI with the reparametrization gradient, suggesting the measure space approach might provide some unique benefits. In this work, however, we close this gap by obtaining identical state-of-the-art iteration complexity guarantees for both. In particular, we identify that WVI&rsquo;s superiority stems from the specific gradient estimator it uses, which BBVI can also leverage with minor modifications. The estimator in question is usually associated with Price&rsquo;s theorem and utilizes second-order information (Hessians) of the target log-density. We will refer to this as Price&rsquo;s gradient. On the flip side, WVI can be made more widely applicable by using the reparametrization gradient, which requires only gradients of the log-density. We empirically demonstrate that the use of Price&rsquo;s gradient is the major source of performance improvement.</p>]]></description>
-  </item>
-
-  <item>
-    <title>CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-17889</link>
-    <guid isPermaLink="false">arxiv:2605.17889</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muyoung Son et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>The Mixture-of-Experts (MoE) architecture improves computational efficiency via sparse expert activation, but throughput-oriented inference faces substantial GPU memory pressure due to a significant parameter size and intermediate data. Prior works attempt to mitigate this using expert offloading with micro-batching or by offloading computation to the CPU. However, the fragmented workload resulting from micro-batching degrades operational intensity, causing expert execution to become memory-bound. Meanwhile, CPU offloading is constrained by slow PCIe transfers and its limited applicability to attention computation in the decode stage. Consequently, these inefficiencies prevent effective system utilization, severely restricting the end-to-end throughput of MoE inference. To address these challenges, this paper proposes CoX-MoE, an Advanced Matrix Extensions (AMX)-enabled CPU-GPU collaborative system that comprehensively optimizes MoE inference by combining coalesced expert execution with strategic workload orchestration for higher throughput. CoX-MoE introduces (i) a coalescing-aware orchestration policy to jointly optimize resource allocation by adopting ordinary batch, instead of micro-batch, for expert computation and selective attention offloading, and (ii) a static expert-aware stratification scheme that pre-assigns frequently activated experts to the GPU, mitigating PCIe transfer overhead and balancing workload for the CPU and GPU during inference. Compared to state-of-the-art frameworks, CoX-MoE delivers significant gains, achieving up to 7.1x and 2.4x higher throughput than FlexGen and MoE-Lightning, respectively.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Spherical Harmonic Optimal Transport: Application to Climate Models Comparisons</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18389</link>
-    <guid isPermaLink="false">arxiv:2605.18389</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Houédry et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport provides a powerful framework for comparing measures while respecting the geometry of their support, but comes with an expensive computational cost, hindering its potential application to real world use cases. On manifolds, convolutional algorithms based on the heat kernel have been proposed to alleviate this cost, but their theoretical properties remain largely unexplored. We establish that the heat kernel cost converges to the optimal transport cost as time vanishes in the balanced and unbalanced cases. In the specific case of the 2-sphere 𝕊², we ensure that the associated Sinkhorn divergences retains the desirable geometric and analytic properties of classical optimal transport discrepancies. Moreover, we leverage the harmonic structure of the sphere to derive a fast Sinkhorn algorithm, requiring only 𝒪(n) memory and 𝒪(n³/2) time per iteration, with fully dense GPU-friendly operations. We validate its computational efficiency on synthetic data, and discuss its potential use in the evaluation of global climate models, providing both spatial and seasonal insights into models performances.</p>]]></description>
   </item>
 
 </channel>

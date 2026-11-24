@@ -7,7 +7,133 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Lorentz symmetry in self-supervised representation learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-31011</link>
+    <guid isPermaLink="false">arxiv:2611.31011</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Hermansen et al.</dc:creator>
+    <description><![CDATA[<p>The authors pre-train with LeJEPA on 100M JetClass jets and no labels. LeJEPA&rsquo;s loss combines (1−λ) times a view-invariance MSE to the per-jet mean embedding with λ times SIGReg, an Epps–Pulley characteristic-function test over 256 random projections, using λ = 0.02. They compare a plain Transformer (ParT-style inputs plus register tokens) against L-GATr-slim (with beam/time spurions), at a matched d = 128 and 6 encoder layers. Views come from JetCLR augmentations (collinear splits, p_T-dependent η/φ smearing, 30% dropout) or RINO-style k_T subjet views, optionally plus global SO⁺(1,3) boosts and rotations.</p>
+<p>The key result is that latent Lorentz invariance is decisive:
+- <strong>Without boosts/rotations:</strong> linear probes collapse to 0.33–0.48.
+- <strong>With boosts/rotations:</strong> they recover to 0.76–0.77.
+- <strong>Spurion-free L-GATr-slim (fully invariant):</strong> stays at about 0.763 regardless of augmentation, and gives the best MLP probe (0.806). Dropping beam-axis symmetry breaking costs nothing here.</p>
+<p>Best configurations (linear / MLP probe):</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Linear</th>
+<th>MLP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LeJEPA, Transformer</td>
+<td>0.762</td>
+<td>0.792</td>
+</tr>
+<tr>
+<td>LeJEPA, L-GATr-slim</td>
+<td>0.774</td>
+<td>0.800</td>
+</tr>
+<tr>
+<td>SSFM masked-particle modelling</td>
+<td>0.635</td>
+<td>0.715</td>
+</tr>
+<tr>
+<td>RINO</td>
+<td>0.533</td>
+<td>0.648</td>
+</tr>
+<tr>
+<td>Next-token prediction</td>
+<td>0.430</td>
+<td>0.554</td>
+</tr>
+</tbody>
+</table>
+<p>Other findings:
+- A multivariate-Laplace SIGReg target beats the Gaussian target (0.774 vs 0.723 linear).
+- Masking plus SO⁺(1,3) alone already reaches 0.709.
+- LeJEPA wins in low-data fine-tuning, in CWoLa top-vs-QCD SIC at 1% FPR, and in transfer to the top-tagging dataset (no transfer numbers are quoted in the text).
+- SSFM beats RINO on probes, but the order flips under fine-tuning, so probe accuracy is an imperfect proxy.</p>
+<p><strong>Caveats:</strong>
+- Models are small, and scaling is explicitly left open.
+- The baselines were modified to emit a single pooled token. The authors note this is not comparable to the original attention-pooled NTP/SSFM evaluations.
+- Only one pre-training run per model; seeds vary only in fine-tuning.
+- Everything is Delphes simulation.
+- No fully supervised reference number is quoted in the text.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Machine-learning-assisted photon pairing for neutral-pion reconstruction at future Higgs factories</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-28180</link>
+    <guid isPermaLink="false">arxiv:2611.28180</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Wang et al.</dc:creator>
+    <description><![CDATA[<p>This paper is only adjacent to the topic. It selects resolved π⁰→γγ pairs, including inside hadronic Z/H final states. The connection to jets is that it repurposes ParticleNet and ParT with a symmetric per-pair readout u_ij = [h_i+h_j, |h_i−h_j|, p_ij] in place of the jet-level head.</p>
+<p>Setup:
+- Simulation is Delphes with the CEPC 4th-concept card, with the photon threshold lowered from 0.5 to 0.01 GeV.
+- Samples are Z→ττ and Z→qq̄ at 91.2 GeV, and ννH and ZH(Z→qq̄) at 240 GeV.
+- The figure of merit is efficiency × purity.</p>
+<p>At the reference resolution (α = 0.03, β = 0.01), ParT reaches 0.863, 0.662, 0.568 and 0.526 across the four samples. The optimized mass window gives 0.539, 0.329, 0.275 and 0.231, i.e. ParT gains of +60% to +128%. ParticleNet gains +53% to +95%, while BDT and MLP sit around +26% to +45%.</p>
+<p>The gain is almost entirely purity. For example, in ννH:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purity</th>
+<th>Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass window</td>
+<td>35.4%</td>
+<td>77.7%</td>
+</tr>
+<tr>
+<td>ParticleNet</td>
+<td>67.7%</td>
+<td>71.0%</td>
+</tr>
+<tr>
+<td>ParT</td>
+<td>76.5%</td>
+<td>74.2%</td>
+</tr>
+</tbody>
+</table>
+<p>The advantage persists out to α = 0.25 (ParT 30.4% vs mass window 15.0% in ZH). The transformer needs large training samples: ParT on Z→qq̄ goes from 47.6% at 10⁴ events to 66.1% at 9.5×10⁵, and at low statistics both graph models can fall below the mass window. Learning curves show a two-stage rise driven by purity. For jet work, the main relevance is cleaner π⁰ inputs for particle-flow and hadronic-τ/ρ reconstruction in dense jets.</p>
+<p><strong>Caveats:</strong>
+- No exclusive pairing is applied, so a photon can enter several selected pairs.
+- Efficiency is conditional on both photons being reconstructed and truth-matched.
+- Merged or unresolved photons are not addressed.
+- Pair features differ between models, so the gain from event context is not isolated (the authors say so).
+- Most training-size points are single runs.
+- Models are retrained per resolution setting, so detector transfer is untested.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Revealing Nuclear Shape through Identified-Hadron Flow Decorrelations</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-30429</link>
+    <guid isPermaLink="false">arxiv:2611.30429</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hadi Mehrabpour et al.</dc:creator>
+    <description><![CDATA[<p>This is not a jet paper; it presumably matched on correlation vocabulary. It is heavy-ion flow phenomenology, and the summary is kept short.</p>
+<p>The study uses TRENTo initial conditions, viscous hydrodynamics (η/s = 0.08) and UrQMD. It computes p_T-dependent factorization-breaking coefficients r₂ and r₂,₂ for π, K and p in central U+U at 193 GeV and Ne+Ne at 5.36 TeV, scanning quadrupole deformation β₂ and triaxiality γ.</p>
+<p>The authors define &ldquo;crossing coordinates&rdquo;: the p_T where the π/K and π/p ratios of these coefficients intersect, and the common ratio value there. Different (β₂, γ) values trace distinct trajectories in this plane, with neighbouring configurations separated at Z ≈ 2–5 in simulation. For example, U+U with r₂ spans P_cross ≈ 1.58–1.74 GeV and R_cross ≈ 1.09–1.23. Replacing UrQMD with SMASH preserves the qualitative trends.</p>
+<p><strong>Caveats:</strong>
+- The approach is model-only.
+- Nonflow and self-correlations are not treated.
+- r₂,₂ relies on an equal-normalized-fourth-moment approximation.
+- Ne+Ne α-clustering is not modelled.</p>]]></description>
+  </item>
 
   <item>
     <title>Agent-guided construction of Feynman integral bases</title>
@@ -3153,36 +3279,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthias Schott et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (jet tagging, gluon jet) — abstract only, not yet read for a briefing.</em></p>
 <p>Machine-learning models in high-energy physics are often trained on simulated data, where fully simulated samples are computationally expensive while fast simulation provides large statistics at reduced realism. In this work, we systematically study transfer learning between fast-simulated and fully simulated datasets in a realistic LHC environment. We consider three representative tasks, signal-background classification, quark-gluon jet tagging, and missing transverse energy reconstruction, using dense neural networks, graph neural networks, and transformer-based architectures. Models are pretrained on ATLAS-like fast simulation and adapted to CMS-like fast simulation and to fully simulated ATLAS Open Data. Across all tasks, pretrained models consistently outperform independently trained baselines and require significantly less target-domain training data, typically reducing the needed statistics by about a factor of two. These results demonstrate that fast simulation can be used to learn robust, reusable representations and motivate publishing trained models as reusable scientific assets beyond large foundation models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Physics inspired quantum algorithm for QCD splitting functions</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2605-06789</link>
-    <guid isPermaLink="false">arxiv:2605.06789</guid>
-    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gabriel Rouxinol et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, three-prong, four-prong) — abstract only, not yet read for a briefing.</em></p>
-<p>We introduce a modular quantum circuit primitive to model entanglement dynamics in QCD parton splitting and use it as a composable building block for data-driven, physics-consistent event generation. For the pure-gluon channel, we derive an analytic expression for the helicity entanglement generated at the splitting vertex, quantified via the concurrence, and construct a two-qubit circuit whose measurement outcomes encode the momentum shared between outgoing gluons while reproducing the QCD-predicted entanglement structure. Calibrating the circuit parameters to LHC jet substructure data maps, reconstructed momentum-sharing fractions are directly related to circuit rotation angles. Composing multiple splitting primitives yields multi-prong momentum-fraction distributions; we validate the three- and four-prong cases against experimental data and find good agreement. For the three-prong configuration, we execute the circuit on superconducting quantum hardware and obtain results consistent with simulation after standard quality cuts, enabled by the low qubit count and shallow circuit depth. This work provides a concrete framework for quantum-native parton-shower modules that encode quantum correlations at the level of splitting dynamics, and offers physics-informed ansätze for future quantum algorithms for QCD.</p>]]></description>
-  </item>
-
-  <item>
-    <title>From Information Geometry to Jet Substructure: A Triality of Cumulant Tensors, Energy Correlators, and Hypergraphs</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2605-03063</link>
-    <guid isPermaLink="false">arxiv:2605.03063</guid>
-    <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aritra Bal et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet substructure, energy correlators) — abstract only, not yet read for a briefing.</em></p>
-<p>Pairwise Fisher graphs capture local covariance information, but they cannot distinguish an irreducible multi-observable radiation pattern from a collection of ordinary pairwise correlations. We show that this missing structure is naturally supplied by higher-order Fisher tensors. In a finite basis of binned EECs, ECFs, or EFPs, and in the natural exponential-family coordinates generated by that basis, the same local tensor has three equivalent interpretations: a coefficient in the local Kullback-Leibler expansion, a connected cumulant of the chosen correlator observables, and a signed weight on a hyperedge linking those observables. This gives an exact Fisher-correlator-hypergraph triality in the local exponential-family embedding. The triality provides a direct construction of physics-informed hypergraphs from correlator data. Extending the quadratic Fisher matrix to the first non-trivial higher tensor identifies genuinely connected multi-observable radiation patterns, supplies hyperedge weights for higher-order Laplacians and message passing, and gives a principled criterion for compressing observable bases beyond pairwise information. We develop these constructions and spell out why the exact cumulant interpretation is special to natural exponential-family coordinates. We illustrate the framework in four applications. In a minimal local-KL study, the cubic Fisher tensor reduces the KL truncation error and isolates the dominant triplet structure. In a two-versus-three prong jet substructure benchmark, the hypergraph selector improves compressed-basis classification. In a 33-observable basis-design problem, the Fisher hypergraph retains more third-order local response at twelve observables. A low-capacity learning benchmark then shows how the same Fisher hyperedges can be used as an interpretable inductive bias for message passing on correlator observables.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Data-Driven, Geometry-Aware Optimal-Transport Calibration of Flavor Tagger</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2605-01363</link>
-    <guid isPermaLink="false">arxiv:2605.01363</guid>
-    <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeonjoon Kim et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (flavor tagging) — abstract only, not yet read for a briefing.</em></p>
-<p>Flavor-tagging calibrations are often provided either as scale factors measured at a finite set of working points or as binned corrections to a chosen one-dimensional discriminant. However, this approach falls short of providing continuous, event-level calibration across the full multicomponent outputs of modern taggers. This limitation leads to information loss in analyses that demand high-performance flavor tagging, restricting analyses to a limited set of predefined variables. In this work, we propose a geometry-aware framework that formulates flavor-tagger calibration as an optimal transport problem on the probability simplex. The transport maps are parameterized and trained in the isometric log-ratio coordinate system. Because the quadratic Euclidean cost of Brenier transport in this coordinate system is equivalent to the Aitchison distance on the simplex, the learned map induces a minimal deformation under the Aitchison geometry. Furthermore, we extract flavor-conditional target distributions directly from control-region data using an expectation-maximization (EM) technique that simultaneously fits multiple control regions, models each flavor component with a normalizing flow, and estimates the regional mixture fractions. The extracted targets are subsequently used to learn flavor-factorized transport maps. Because the joint estimation of mixture fractions and flexible component densities admits weakly constrained directions, we further introduce a linearized feedback-operator analysis that propagates the fitted composition covariance into the extracted component densities, separating data-constrained modes from those dominated by the composition prior. The simulation-based closure study demonstrates improved closure in dedicated control regions and in independent validation mixtures.</p>]]></description>
   </item>
 
 </channel>

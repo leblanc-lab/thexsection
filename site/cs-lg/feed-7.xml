@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Adaptive Learning of the Latent Space of Wasserstein Generative Adversarial Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-18374</link>
+    <guid isPermaLink="false">arxiv:2409.18374</guid>
+    <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixuan Qiu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Generative models based on latent variables, such as generative adversarial networks (GANs) and variational auto-encoders (VAEs), have gained lots of interests due to their impressive performance in many fields. However, many data such as natural images usually do not populate the ambient Euclidean space but instead reside in a lower-dimensional manifold. Thus an inappropriate choice of the latent dimension fails to uncover the structure of the data, possibly resulting in mismatch of latent representations and poor generative qualities. Towards addressing these problems, we propose a novel framework called the latent Wasserstein GAN (LWGAN) that fuses the Wasserstein auto-encoder and the Wasserstein GAN so that the intrinsic dimension of the data manifold can be adaptively learned by a modified informative latent distribution. We prove that there exist an encoder network and a generator network in such a way that the intrinsic dimension of the learned encoding distribution is equal to the dimension of the data manifold. We theoretically establish that our estimated intrinsic dimension is a consistent estimate of the true dimension of the data manifold. Meanwhile, we provide an upper bound on the generalization error of LWGAN, implying that we force the synthetic data distribution to be similar to the real data distribution from a population perspective. Comprehensive empirical experiments verify our framework and show that LWGAN is able to identify the correct intrinsic dimension under several scenarios, and simultaneously generate high-quality synthetic data by sampling from the learned latent distribution.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Distance-Weighted Adversarial Network for Cross-Domain Credit Risk Assessment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-18544</link>
+    <guid isPermaLink="false">arxiv:2409.18544</guid>
+    <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohan Jiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper delves into the application of adversarial domain adaptation (ADA) for enhancing credit risk assessment in financial institutions. It addresses two critical challenges: the cold start problem, where historical lending data is scarce, and the data imbalance issue, where high-risk transactions are underrepresented. The paper introduces an improved ADA framework, the Wasserstein Distance Weighted Adversarial Domain Adaptation Network (WD-WADA), which leverages the Wasserstein distance to align source and target domains effectively. The proposed method includes an innovative weighted strategy to tackle data imbalance, adjusting for both the class distribution and the difficulty level of predictions. The paper demonstrates that WD-WADA not only mitigates the cold start problem but also provides a more accurate measure of domain differences, leading to improved cross-domain credit risk assessment. Extensive experiments on real-world credit datasets validate the model&rsquo;s effectiveness, showcasing superior performance in cross-domain learning, classification accuracy, and model stability compared to traditional methods.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Physics-aligned Schrödinger bridge</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-17825</link>
+    <guid isPermaLink="false">arxiv:2409.17825</guid>
+    <pubDate>Thu, 26 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zeyu Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>The reconstruction of physical fields from sparse measurements is pivotal in both scientific research and engineering applications. Traditional methods are increasingly supplemented by deep learning models due to their efficacy in extracting features from data. However, except for the low accuracy on complex physical systems, these models often fail to comply with essential physical constraints, such as governing equations and boundary conditions. To overcome this limitation, we introduce a novel data-driven field reconstruction framework, termed the Physics-aligned Schrödinger Bridge (PalSB). This framework leverages a diffusion Schrödinger bridge mechanism that is specifically tailored to align with physical constraints. The PalSB approach incorporates a dual-stage training process designed to address both local reconstruction mapping and global physical principles. Additionally, a boundary-aware sampling technique is implemented to ensure adherence to physical boundary conditions. We demonstrate the effectiveness of PalSB through its application to three complex nonlinear systems: cylinder flow from Particle Image Velocimetry experiments, two-dimensional turbulence, and a reaction-diffusion system. The results reveal that PalSB not only achieves higher accuracy but also exhibits enhanced compliance with physical constraints compared to existing methods. This highlights PalSB&rsquo;s capability to generate high-quality representations of intricate physical interactions, showcasing its potential for advancing field reconstruction techniques.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Schrödinger bridge based deep conditional generative learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-17294</link>
+    <guid isPermaLink="false">arxiv:2409.17294</guid>
+    <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hanwen Huang</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Conditional generative models represent a significant advancement in the field of machine learning, allowing for the controlled synthesis of data by incorporating additional information into the generation process. In this work we introduce a novel Schrödinger bridge based deep generative method for learning conditional distributions. We start from a unit-time diffusion process governed by a stochastic differential equation (SDE) that transforms a fixed point at time 0 into a desired target conditional distribution at time 1. For effective implementation, we discretize the SDE with Euler-Maruyama method where we estimate the drift term nonparametrically using a deep neural network. We apply our method to both low-dimensional and high-dimensional conditional generation problems. The numerical studies demonstrate that though our method does not directly provide the conditional density estimation, the samples generated by this method exhibit higher quality compared to those obtained by several existing methods. Moreover, the generated samples can be effectively utilized to estimate the conditional density and related statistical quantities, such as conditional mean and conditional standard deviation.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Robust Estimation under the Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2302-01237</link>
+    <guid isPermaLink="false">arxiv:2302.01237</guid>
+    <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sloan Nietert et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the problem of robust distribution estimation under the Wasserstein distance, a popular discrepancy measure between probability distributions rooted in optimal transport (OT) theory. Given n samples from an unknown distribution μ, of which εn are adversarially corrupted, we seek an estimate for μ with minimal Wasserstein error. To address this task, we draw upon two frameworks from OT and robust statistics: partial OT (POT) and minimum distance estimation (MDE). We prove new structural properties for POT and use them to show that MDE under a partial Wasserstein distance achieves the minimax-optimal robust estimation risk in many settings. Along the way, we derive a novel dual form for POT that adds a sup-norm penalty to the classic Kantorovich dual for standard OT. Since the popular Wasserstein generative adversarial network (WGAN) framework implements Wasserstein MDE via Kantorovich duality, our penalized dual enables large-scale generative modeling with contaminated datasets via an elementary modification to WGAN. Numerical experiments demonstrating the efficacy of our approach in mitigating the impact of adversarial corruptions are provided.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Triggering Dark Showers with Conditional Dual Auto-Encoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2306-12955</link>
+    <guid isPermaLink="false">arxiv:2306.12955</guid>
+    <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Luca Anzalone et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, colliders) — original abstract; no AI summary.</em></p>
+<p>We present a family of conditional dual auto-encoders (CoDAEs) for generic and model-independent new physics searches at colliders. New physics signals, which arise from new types of particles and interactions, are considered in our study as anomalies causing deviations in data with respect to expected background events. In this work, we perform a normal-only anomaly detection, which employs only background samples, to search for manifestations of a dark version of strong force applying (variational) auto-encoders on raw detector images, which are large and highly sparse, without leveraging any physics-based pre-processing or strong assumption on the signals. The proposed CoDAE has a dual-encoder design, which is general and can learn an auxiliary yet compact latent space through spatial conditioning, showing a neat improvement over competitive physics-based baselines and related approaches, therefore also reducing the gap with fully supervised models. It is the first time an unsupervised model is shown to exhibit excellent discrimination against multiple dark shower models, illustrating the suitability of this method as an accurate, fast, model-independent algorithm to deploy, e.g., in the real-time event triggering systems of Large Hadron Collider experiments such as ATLAS and CMS.</p>]]></description>
+  </item>
 
   <item>
     <title>Improvement and generalization of ABCD method with Bayesian inference</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vinicius Mikuni et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
 <p>Methods for anomaly detection of new physics processes are often limited to low-dimensional spaces due to the difficulty of learning high-dimensional probability densities. Particularly at the constituent level, incorporating desirable properties such as permutation invariance and variable-length inputs becomes difficult within popular density estimation methods. In this work, we introduce a permutation-invariant density estimator for particle physics data based on diffusion models, specifically designed to handle variable-length inputs. We demonstrate the efficacy of our methodology by utilizing the learned density as a permutation-invariant anomaly detection score, effectively identifying jets with low likelihood under the background-only hypothesis. To validate our density estimation method, we investigate the ratio of learned densities and compare to those obtained by a supervised classification algorithm.</p>]]></description>
-  </item>
-
-  <item>
-    <title>On Wasserstein distances for affine transformations of random vectors</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-03945</link>
-    <guid isPermaLink="false">arxiv:2310.03945</guid>
-    <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keaton Hamm et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We expound on some known lower bounds of the quadratic Wasserstein distance between random vectors in ℝⁿ with an emphasis on affine transformations that have been used in manifold learning of data in Wasserstein space. In particular, we give concrete lower bounds for rotated copies of random vectors in ℝ² by computing the Bures metric between the covariance matrices. We also derive upper bounds for compositions of affine maps which yield a fruitful variety of diffeomorphisms applied to an initial data measure. We apply these bounds to various distributions including those lying on a 1-dimensional manifold in ℝ² and illustrate the quality of the bounds. Finally, we give a framework for mimicking handwritten digit or alphabet datasets that can be applied in a manifold learning framework.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Heuristic Optimal Transport in Branching Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2311-06650</link>
-    <guid isPermaLink="false">arxiv:2311.06650</guid>
-    <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M. Andrecut</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport aims to learn a mapping of sources to targets by minimizing the cost, which is typically defined as a function of distance. The solution to this problem consists of straight line segments optimally connecting sources to targets, and it does not exhibit branching. These optimal solutions are in stark contrast with both natural, and man-made transportation networks, where branching structures are prevalent. Here we discuss a fast heuristic branching method for optimal transport in networks. We also provide several numerical applications to synthetic examples, a simplified cardiovascular network, and the &ldquo;Santa Claus&rdquo; distribution network which includes 141,182 cities around the world, with known location and population.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Generative Modeling through the Semi-dual Formulation of Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2305-14777</link>
-    <guid isPermaLink="false">arxiv:2305.14777</guid>
-    <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal Transport (OT) problem investigates a transport map that bridges two distributions while minimizing a given cost function. In this regard, OT between tractable prior distribution and data has been utilized for generative modeling tasks. However, OT-based methods are susceptible to outliers and face optimization challenges during training. In this paper, we propose a novel generative model based on the semi-dual formulation of Unbalanced Optimal Transport (UOT). Unlike OT, UOT relaxes the hard constraint on distribution matching. This approach provides better robustness against outliers, stability during training, and faster convergence. We validate these properties empirically through experiments. Moreover, we study the theoretical upper-bound of divergence between distributions in UOT. Our model outperforms existing OT-based generative models, achieving FID scores of 2.97 on CIFAR-10 and 6.36 on CelebA-HQ-256. The code is available at \url{https://github.com/Jae-Moo/UOTM}.</p>]]></description>
-  </item>
-
-  <item>
-    <title>An Empirical Study of Self-supervised Learning with Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-10143</link>
-    <guid isPermaLink="false">arxiv:2310.10143</guid>
-    <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Makoto Yamada et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this study, we delve into the problem of self-supervised learning (SSL) utilizing the 1-Wasserstein distance on a tree structure (a.k.a., Tree-Wasserstein distance (TWD)), where TWD is defined as the L1 distance between two tree-embedded vectors. In SSL methods, the cosine similarity is often utilized as an objective function; however, it has not been well studied when utilizing the Wasserstein distance. Training the Wasserstein distance is numerically challenging. Thus, this study empirically investigates a strategy for optimizing the SSL with the Wasserstein distance and finds a stable training procedure. More specifically, we evaluate the combination of two types of TWD (total variation and ClusterTree) and several probability models, including the softmax function, the ArcFace probability model, and simplicial embedding. We propose a simple yet effective Jeffrey divergence-based regularization method to stabilize optimization. Through empirical experiments on STL10, CIFAR10, CIFAR100, and SVHN, we find that a simple combination of the softmax function and TWD can obtain significantly lower results than the standard SimCLR. Moreover, a simple combination of TWD and SimSiam fails to train the model. We find that the model performance depends on the combination of TWD and probability model, and that the Jeffrey divergence regularization helps in model training. Finally, we show that the appropriate combination of the TWD and probability model outperforms cosine similarity-based representation learning.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving EEG Signal Classification Accuracy Using Wasserstein Generative Adversarial Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-09453</link>
-    <guid isPermaLink="false">arxiv:2402.09453</guid>
-    <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joshua Park et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Electroencephalography (EEG) plays a vital role in recording brain activities and is integral to the development of brain-computer interface (BCI) technologies. However, the limited availability and high variability of EEG signals present substantial challenges in creating reliable BCIs. To address this issue, we propose a practical solution drawing on the latest developments in deep learning and Wasserstein Generative Adversarial Network (WGAN). The WGAN was trained on the BCI2000 dataset, consisting of around 1500 EEG recordings and 64 channels from 45 individuals. The generated EEG signals were evaluated via three classifiers yielding improved average accuracies. The quality of generated signals measured using Frechet Inception Distance (FID) yielded scores of 1.345 and 11.565 for eyes-open and closed respectively. Even without a spectral or spatial loss term, our WGAN model was able to emulate the spectral and spatial properties of the EEG training data. The WGAN-generated data mirrored the dominant alpha activity during closed-eye resting and high delta waves in the training data in its topographic map and power spectral density (PSD) plot. Our research testifies to the potential of WGANs in addressing the limited EEG data issue for BCI development by enhancing a small dataset to improve classifier generalizability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Correlational Lagrangian Schrödinger Bridge: Learning Dynamics with Population-Level Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-10227</link>
-    <guid isPermaLink="false">arxiv:2402.10227</guid>
-    <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yuning You et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Accurate modeling of system dynamics holds intriguing potential in broad scientific fields including cytodynamics and fluid mechanics. This task often presents significant challenges when (i) observations are limited to cross-sectional samples (where individual trajectories are inaccessible for learning), and moreover, (ii) the behaviors of individual particles are heterogeneous (especially in biological systems due to biodiversity). To address them, we introduce a novel framework dubbed correlational Lagrangian Schrödinger bridge (CLSB), aiming to seek for the evolution &ldquo;bridging&rdquo; among cross-sectional observations, while regularized for the minimal population &ldquo;cost&rdquo;. In contrast to prior methods relying on \textit{individual}-level regularizers for all particles \textit{homogeneously} (e.g. restraining individual motions), CLSB operates at the population level admitting the heterogeneity nature, resulting in a more generalizable modeling in practice. To this end, our contributions include (1) a new class of population regularizers capturing the temporal variations in multivariate relations, with the tractable formulation derived, (2) three domain-informed instantiations based on genetic co-expression stability, and (3) an integration of population regularizers into data-driven generative models as constrained optimization, and a numerical solution, with further extension to conditional generative models. Empirically, we demonstrate the superiority of CLSB in single-cell sequencing data analyses such as simulating cell development over time and predicting cellular responses to drugs of varied doses.</p>]]></description>
   </item>
 
 </channel>

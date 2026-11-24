@@ -7,7 +7,45 @@
   <description>Instrumentation and detectors</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Machine-learning-assisted photon pairing for neutral-pion reconstruction at future Higgs factories</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2611-28180</link>
+    <guid isPermaLink="false">arxiv:2611.28180</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (ParticleNet, particle transformer, colliders) — original abstract; no AI summary.</em></p>
+<p>Neutral-pion (π⁰) reconstruction is important for precision measurements at high-energy colliders, particularly in flavor, τ, and Higgs physics. We study π⁰ candidate selection in four benchmark physics processes at electron&ndash;positron colliders, comparing an optimized diphoton mass-window (MW) baseline with four machine-learning methods: a boosted decision tree (BDT), a multilayer perceptron (MLP), ParticleNet (PN), and Particle Transformer (ParT). Performance is evaluated using the product of selection efficiency and purity. At the reference ECAL energy resolution, all four machine-learning methods outperform MW. PN and ParT achieve relative improvements of 53%&ndash;95% and 60%&ndash;128%, respectively, primarily through better rejection of incorrectly matched photon pairs. Their performance advantage is maintained across the investigated ECAL energy resolutions. Training-sample-size scans reveal two periods of rapid performance improvement separated by slower growth in most PN and ParT learning curves. The improved candidate selection provides a starting point for further studies of ρ and hadronic τ reconstruction.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Real-time event-level zero-shot learning at 150 ns: towards a foundation model for particle physics experiment triggering</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2611-28355</link>
+    <guid isPermaLink="false">arxiv:2611.28355</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leo Rozanov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The hardware-based Level-1 triggers of the Large Hadron Collider (LHC) experiments select collisions with algorithms designed for one signature each, acting on a coarse, low-latency view of every event. We present a learned event embedding for several trigger tasks and evaluate its transfer to processes absent from training. Using paired offline and Level-1 views of the same simulated collisions, we train an offline transformer with a supervised metric loss and distil it, event by event, into a quantised Level-1 transformer whose bit widths are learned under a fixed resource budget. Trained on 25 Standard Model processes, the embedding places 28 held-out processes next to their physical relatives. A nearest-neighbour selection against background collisions, which never enter encoder training, rejects 99% of them. It retains a median of 90% of seen and 96% of unseen Standard Model events and 88% of a set of 52 beyond-the-Standard-Model benchmark samples, the best-performing score across the three groups among the baselines evaluated on the same events. A second gate against the seen processes isolates high-mass dilepton signals into label-free clusters, and long-lived signals too when displaced-track information is available. With 7512 parameters and an FPGA latency of 147 ns, the encoder uses one event representation, learned once, to derive several selections, opening the door to a foundation model for the LHC&rsquo;s hardware-based triggers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Development of a Hybrid Scintillator Strip-Drift Tube Muon Detector for the FCC-ee (Jiajin Ge (on behalf of the University of Michigan FCC-ee R&amp;D team))</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2611-29331</link>
+    <guid isPermaLink="false">arxiv:2611.29331</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
+<p>The Future Circular Collider (FCC-ee) is a proposed high-luminosity e⁺e⁻ collider for precision measurements at the electroweak, Higgs, and top-quark energy scales. A high-performance, cost-effective muon system is essential for muon identification, triggering, momentum measurement, and long-lived particle detection. We present the R&amp;D of a hybrid muon detector concept combining fast extruded plastic scintillator strips with precision drift tubes. The scintillator strips were produced at Fermilab, while detector prototypes with SiPM readout and pressurized drift tubes were designed, constructed, and integrated at the University of Michigan. The hybrid detector was tested at the CERN test beam facility in 2025 and 2026. The scintillator strips achieved a position resolution of 1.6 mm and a time resolution of approximately 350 ps, while the drift tubes provided a single-hit spatial resolution better than 100 μm. These results demonstrate the feasibility of a high-performance hybrid muon spectrometer for the FCC-ee.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FGPA-based advanced muon trigger algorithms for long-lived particle detection at the High-Luminosity LHC (Daniel Estrada (for the CMS Collaboration) et al.)</title>
+    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2611-30394</link>
+    <guid isPermaLink="false">arxiv:2611.30394</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>The CMS Level-1 trigger must reconstruct muons in real time under stringent latency and hardware resource constraints. Conventional algorithms lose efficiency for high-energy muons undergoing radiative energy losses and can be suboptimal for displaced trajectories, limiting sensitivity to exotic signatures such as long-lived particles (LLPs). The Phase-2 upgrade introduces advanced FPGAs that enable more sophisticated reconstruction algorithms. This work presents two complementary developments addressing these challenges. In the barrel region, a dedicated algorithm detects showers from Drift Tube hit patterns at the first processing stage. At the subsequent filtering stage, shower primitives are correlated with conventional trigger primitives, currently targeting radiatively showering high-momentum muons, with LLP signatures as a broader objective. Simulation studies yield approximately 80% shower-classification accuracy and an estimated matching efficiency above 80% for radiating muons. Firmware prototypes demonstrate a shower-detection latency of approximately 20 ns and sub-bunch-crossing latency for preliminary matching logic. In parallel, a hardware-oriented optimization methodology is investigated for future graph neural network based displaced-muon reconstruction in the barrel&ndash;endcap overlap region. Using a GraphSAGE proxy on a benchmark dataset, a workflow combining integer quantization, power-of-two scaling, and data-driven bit-width optimization achieves (75.0 ±1.1)% accuracy and a deterministic latency of 19 cycles (52.8 ns at 360 MHz), with only 20% digital signal processor utilization. These results establish a basis for implementation studies using CMS muon data.</p>]]></description>
+  </item>
 
   <item>
     <title>The Barrel Imaging Calorimeter of the ePIC detector at the Electron-Ion Collider (Bobae Kim (BIC) et al.)</title>
@@ -1963,46 +2001,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guillermo Hijano et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Driven by the increasing volume of recorded data, the demand for simulation from experiments based at the Large Hadron Collider will rise sharply in the coming years. Addressing this demand solely with existing computationally intensive workflows is not feasible. This paper introduces a new fast simulation tool designed to address this demand at the LHCb experiment. This tool emulates the detector response to arbitrary multibody decay topologies at LHCb. Rather than memorising specific decay channels, the model learns generalisable patterns within the response, allowing it to interpolate to channels not present in the training data. Novel heterogeneous graph neural network architectures are employed that are designed to embed the physical characteristics of the task directly into the network structure. We demonstrate the performance of the tool across a range of decay topologies, showing the networks can correctly model the relationships between complex variables. The architectures and methods presented are generic and could readily be adapted to emulate workflows at other simulation-intensive particle physics experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards High-Efficiency Particle Detection Using Superconducting Microwire Arrays</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2510-11725</link>
-    <guid isPermaLink="false">arxiv:2510.11725</guid>
-    <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Christina Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (muon collider, collider) — original abstract; no AI summary.</em></p>
-<p>We present a detailed study of an 8-channel 1×1 mm² WSi superconducting microwire single photon detector (SMSPD) array exposed to 120 GeV hadron beam and 120 GeV muon beam at the CERN Super Proton Synchrotron H6 beamline. Following up on our first detailed characterization of the efficiency and response of an SMSPD fabricated on a 3 nm WSi film, we report measurements of enhanced particle detection efficiency using a sensor fabricated from a thicker 4.7nm-thick WSi film. We also report the first SMSPD detection efficiency measurement made for muons. Measurements are enabled by a silicon tracking telescope providing 10 μm in-situ spatial resolution. The results show a fill factor-normalized detection efficiency of 75% and a time resolution of about 130 ps across pixels. These findings represent a significant advancement toward developing high-efficiency SMSPD charged particle tracking systems with simultaneous precision timing, with potential applications in future accelerator-based experiments such as the FCC-ee and Muon Collider.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The ePIC Silicon Vertex Tracker: Design and Status</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2601-09408</link>
-    <guid isPermaLink="false">arxiv:2601.09408</guid>
-    <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">R. Turrisi</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>The ePIC collaboration is developing a multidetector system to explore the fundamental properties of the strong interaction at the future Electron-Ion Collider (EIC), to be built at Brookhaven National Laboratory. A key component of the ePIC detector is the Silicon Vertex Tracker (SVT), which provides high-precision tracking and microvertex reconstruction. The SVT consists of the Inner Barrel (IB), the Outer Barrel (OB), and the Forward/Backward Disks, all based on Monolithic Active Pixel Sensors (MAPS) that combine high granularity, low power consumption, and minimal material budget. This paper presents a concise overview of the SVT design and its development status.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards a Self-Driving Trigger at the LHC: Adaptive Response in Real Time</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2601-08910</link>
-    <guid isPermaLink="false">arxiv:2601.08910</guid>
-    <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shaghayegh Emami et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider, Nhan Tran) — original abstract; no AI summary.</em></p>
-<p>Real-time data filtering and selection &ndash; or trigger &ndash; systems at high-throughput scientific facilities such as the experiments at the Large Hadron Collider (LHC) must process extremely high-rate data streams under stringent bandwidth, latency, and storage constraints. Yet these systems are typically designed as static, hand-tuned menus of selection criteria grounded in prior knowledge and simulation. In this work, we further explore the concept of a self-driving trigger, an autonomous data-filtering framework that reallocates resources and adjusts thresholds dynamically in real-time to optimize signal efficiency, rate stability, and computational cost as instrumentation and environmental conditions evolve. We introduce a benchmark ecosystem to emulate realistic collider scenarios and demonstrate real-time optimization of a menu including canonical energy sum triggers as well as modern anomaly-detection algorithms that target non-standard event topologies using machine learning. Using simulated data streams and publicly available collision data from the Compact Muon Solenoid (CMS) experiment, we demonstrate the capability to dynamically and automatically optimize trigger performance under specific cost objectives without manual retuning. Our adaptive strategy shifts trigger design from static menus with heuristic tuning to intelligent, automated, data-driven control, unlocking greater flexibility and discovery potential in future high-energy physics analyses.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The design and expected performance of the ALICE ITS3 upgrade</title>
-    <link>https://leblanc-lab.github.io/thexsection/physics-ins-det/2026.html#a2601-07405</link>
-    <guid isPermaLink="false">arxiv:2601.07405</guid>
-    <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jory Sonneveld</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>During the LHC Long Shutdown 3 (2026-29) ALICE will replace its three innermost tracking layers by a new detector, the &ldquo;ITS3&rdquo;. It will be based on newly developed, wafer-scale monolithic active pixel sensors, which are bent into truly cylindrical layers and held in place by light mechanics made from carbon foam. Unprecedented low values of material budget (0.09\% X_0 per layer) and proximity to the interaction point (19 mm) lead to a factor two improvement in pointing resolutions for particles from very low p_T (O(100 MeV/c)), achieving, for example, 20 μm and 15 μm in the transversal and longitudinal directions, respectively, for 1 GeV/c particles. After a successful R&amp;D phase (2019-2023), which demonstrated the feasibility of this innovative detector and led to the Technical Design Report (https://cds.cern.ch/record/2890181/), the final sensor and mechanics are being developed right now. This contribution will review the conceptual design and the main R&amp;D achievements, as well as the current activities and road to completion and installation. It includes a projection of the improved physics performance, in particular for heavy-flavor mesons and baryons, as well as for thermal dielectrons that will come into reach with this new detector installed.</p>]]></description>
   </item>
 
 </channel>

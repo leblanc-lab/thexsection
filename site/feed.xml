@@ -7,7 +7,89 @@
   <description>An AI-powered digest and trend analysis of hep-ex and hep-ph</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Tuesday, November 24, 2026</title>
+    <link>https://leblanc-lab.github.io/thexsection/digest/2026-11-24.html</link>
+    <guid isPermaLink="true">https://leblanc-lab.github.io/thexsection/digest/2026-11-24.html</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<h2 id="analysis-agents-scored-blind">Analysis agents, scored blind</h2>
+<p>Novák et al. <a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> give the AI-agent thread its first scorecard for experimental analysis. Each agent builds a single workflow on CMS open data, and that workflow is then run on sealed datasets with injected signals and shifted detector settings. Averaged over four tasks, Gemini 4 Argon reaches 60% of the expert reference score, GPT 6 Astra 38% and Claude Opus 5.5 31%. The last is the same model that delivered verified Feynman-integral bases yesterday. Theory output can be checked exactly; analysis output has to be checked by injection, and this is the first benchmark to do that, putting into practice Alimena&rsquo;s evidence-over-code standard from 11-19. Also today: three trigger papers working at tens to hundreds of nanoseconds, a list of DM assumptions that matter more than expected, and colour that refuses to stay subleading.</p>
+<h2 id="themes">Themes</h2>
+<h3 id="triggers-in-nanoseconds">Triggers in nanoseconds</h3>
+<p>This is new; nothing in recent memory covers it.
+- <strong>Learned event embedding.</strong> Rozanov et al. <a href="https://arxiv.org/abs/2611.28355">arXiv:2611.28355</a> distill an offline transformer into a 7512-parameter quantised Level-1 encoder running in 147 ns. It rejects 99% of background while keeping 96% of held-out SM processes and 88% of 52 BSM benchmarks.
+- <strong>Symbolic anomaly detector.</strong> Bollhalder et al. <a href="https://arxiv.org/abs/2611.30896">arXiv:2611.30896</a> distill a normalising-flow anomaly detector into an explicit 577-operation formula that runs in 42.8 ns.
+- <strong>CMS Phase-2 muons.</strong> Estrada et al. <a href="https://arxiv.org/abs/2611.30394">arXiv:2611.30394</a> detect muon showers from Drift Tube hits in about 20 ns.</p>
+<p>Signature-agnostic selection now fits inside the L1 latency budget.</p>
+<h3 id="dark-matters-quieter-assumptions">Dark matter&rsquo;s quieter assumptions</h3>
+<ul>
+<li><strong>Halo shape.</strong> Shao et al. <a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> find that halo anisotropy moves LZ elastic limits by ±30% above 40 GeV but by up to 10× below 15 GeV.</li>
+<li><strong>Resonant freeze-out.</strong> Arcadi et al. <a href="https://arxiv.org/abs/2611.28230">arXiv:2611.28230</a> drop the kinetic-equilibrium assumption at the Higgs resonance. The coupling needed for the relic abundance shifts by up to 10× for pseudoscalar fermion DM, which strengthens direct-detection constraints.</li>
+<li><strong>Single-electron backgrounds.</strong> Santos-Olmsted et al. <a href="https://arxiv.org/abs/2611.28211">arXiv:2611.28211</a> propose using xenon detectors&rsquo; full dark-electron rate in an annual-modulation search. Sensitivity then scales as S≲√(B) rather than S≲B, with no new hardware.</li>
+</ul>
+<p>This continues the week&rsquo;s habit of auditing error bars, now applied to dark matter.</p>
+<h3 id="plumbing-for-eft-fits">Plumbing for EFT fits</h3>
+<ul>
+<li><strong>SMEFT plus PDFs.</strong> Cole et al. <a href="https://arxiv.org/abs/2611.28216">arXiv:2611.28216</a> fit 15 Wilson coefficients and the proton PDFs simultaneously. They add parity violation via LEFT matching and include charged-current high-mass Drell–Yan for the first time. The PDFs barely move.</li>
+<li><strong>EFT-safe acceptance.</strong> ATLAS <a href="https://arxiv.org/abs/2611.30272">arXiv:2611.30272</a> recasts H→4ℓ STXS into a Lorentz-invariant fiducial region with A^LIF_SM=0.8546, production-independent to 0.07%. EFT reinterpretations then need no EFT-dependent efficiency corrections.</li>
+</ul>
+<p>EFT is the year&rsquo;s standard collider language, and these papers are infrastructure for it.</p>
+<h2 id="worth-a-look">Worth a look</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a></strong> (Novák et al.): The model rankings will date fast. The sealed-world design, with injection tests applied to a single fixed workflow, is the lasting contribution.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a></strong> (Chargeishvili): Exact full-colour soft evolution up to 15 gluons, an 8×10⁸-dimensional colour space handled on one node. For gap-vetoed jet rates, leading colour overestimates the full result by 1.3×, 1.8× and 6.6× at 8, 10 and 14 partons.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a></strong> (Shao et al.): For the 248 keV LZ event, some anisotropic halos make splittings kinematically accessible where solar-neutrino bounds on the higgsino lose force. That is the constraint that has excluded the higgsino reading since Pospelov. The authors stress that kinematic access does not establish viability.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a></strong> (Chen et al.): Magic production vanishes for single gluon, photon, W, Higgs and graviton exchange, and for leptonic Z exchange at sin²θ_W=1/4. The result is computed in the chirality basis, so the basis-dependence of magic measures reported by Altomonte et al. on 11-16 applies here too.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a></strong> (Reboud et al.): Subtract one simple pole per narrow resonance, then convolve the smooth remainder on a grid set by the detector resolution. This is a structural answer to the normalisation problems from sharply localized terms that Zhu et al. flagged on 11-17.</li>
+</ul>
+<h2 id="also-noted">Also noted</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.31214">arXiv:2611.31214</a></strong> <em>Massive de Sitter correlators at one loop</em> — Amara McCune (hep-th). Exact squeezed signals from heavy SM loops come out 10–30× larger than late-time estimates. This is the week&rsquo;s third exact cosmological-correlator result.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.29939">arXiv:2611.29939</a></strong> <em>Ionization of gravitational atoms by a companion-sourced Yukawa potential</em> — Yi Wang et al. (gr-qc). A Yukawa force sourced by the companion can halt superradiant growth, extending the binary-environment effect on superradiance clouds noted on 11-20.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.28208">arXiv:2611.28208</a></strong> <em>Bring Your Own Instanton…</em> — Csaba Csáki et al. (hep-th). Rubakov–Callan catalysis proceeds via sourced instantons without exponential suppression. It is an IR effect: the scattering fermions never reach the monopole core.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31080">arXiv:2611.31080</a></strong> <em>Kaon-pair production with NNLO effects</em> — Yizhou Fang et al. (hep-ph). McMule now covers e⁺e⁻→KK̅ at NNLO in initial-state QED, with very large corrections at CMD-3 energies. Relevant to HVP and the radiative-return generator comparison from 11-23.</li>
+</ul>
+<h2 id="deep-dives">Deep dives</h2>
+<h3 id="arxiv261128194-hep-ex-bench-evaluating-agentic-performance-in-high-energy-physics-experiment-data-analyses-with-sealed-worlds-andrzej-novak-et-al"><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> — HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds (Andrzej Novák et al.)</h3>
+<p>Each agent gets one session of at most 7.5 h on a public world built from 2016 CMS open simulation (MiniAOD, full detector simulation). It must deliver a single pipeline, which is then frozen and rerun on 10–40 sealed worlds per task. Every world has a hidden truth (m_H, μ, Γ_H/Γ_H^SM, or lepton and jet corrections) and one of 13 detector profiles that distort scale, resolution and efficiencies. The score is a strictly proper log score relative to an expert reference run on the same worlds. A shared-bias term growing like √(N) is added, along with weighted reviewer checks: goodness of fit, truthfulness against an evaluator refit, and Z-peak closure. With γ=2, the ratio reads as an effective fraction of the data.</p>
+<p>Across 99 sessions per task and eleven models:
+- Gemini 4 Argon averages 60±8% of the reference, GPT 6 Astra 38%, Claude Opus 5.5 31%.
+- No open-weight model exceeds 10%.
+- Sessions undercover far more often than they overcover.
+- Run-to-run spread exceeds the differences between prompt tiers. Opus 5.5 on HiggsLepMass reaches 89% in its best session against a 49% mean.
+- The P2 expert plan adds nothing over P1.</p>
+<p>The harness is validated adversarially. A memorised 125 GeV scores &lt;1% and understated uncertainties score 34%. With ten worlds, every flawed archetype falls below the reference in ≥96% of draws.</p>
+<p>Caveats the authors flag:
+- Worlds vary detector response and signal, but not generators. The six JetCalib sessions that beat the reference gain mainly because the reference&rsquo;s modelling-dominated JES uncertainties exceed the injected variations.
+- Scores depend on the chosen reference and weights.
+- Only one experiment is covered.</p>
+<h3 id="arxiv261129072-a-billion-colour-states-exact-soft-gluon-evolution-beyond-leading-colour-for-many-jet-qcd-bakar-chargeishvili"><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a> — A billion colour states: exact soft-gluon evolution beyond leading colour for many-jet QCD (Bakar Chargeishvili)</h3>
+<p>Leading colour degrades steadily with multiplicity. Take a soft veto outside the jets at t=0.1 (Q/Q_0≈14), inside the t≈0.05–0.12 range the author maps to LHC dijet vetoes. There, LC overestimates the full-colour no-emission factor by median factors of 1.27, 1.83 and 6.6 at 8, 10 and 14 partons. The gap fraction is off by 2.2 at n=14. Pairs among the three hardest jets form a colour singlet 3–9% of the time; LC sets this to zero.</p>
+<p>The method builds an orthogonal multiplet basis by coupling partons one leg at a time, with each step fixed by a Casimir eigenvalue (Jucys–Murphy elements). Norms come in closed form, and dipoles act only on the label segment between the two partons, via small recoupling tables. Γ is therefore never stored: Γx is a block &ldquo;sweep&rdquo; and e⁻tΓ a Krylov iteration. Fourteen gluons take about an hour on one A100. Fifteen gluons (827,888,726 states) take 3–7 h per t value on a CPU node with up to 857 GB.</p>
+<p>For showers, the formal 1/N_c² suppression is outweighed by the growing number of unconnected pairs. Caveats:
+- The calculation uses one-loop Γ at fixed coupling, with colour-diagonal factors dropped.
+- Events are flat in phase space, and real emission is included only up to five hard partons.
+- Independent cross-checks stop at n≤7. Beyond that, validation rests on internal consistency.
+- The n=15 points show feasibility and do not enter the LC comparison.</p>
+<h3 id="arxiv261129197-quantifying-the-impact-of-galactic-dark-matter-halo-models-on-lz-results-jialiang-shao-et-al"><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> — Quantifying the Impact of Galactic Dark Matter Halo Models on LZ Results (Jialiang Shao et al.)</h3>
+<p>The authors rescale LZ limits by the ratio of predicted yields across 22 self-consistent BCFS halos, truncated at a common v_esc=544 km/s.</p>
+<p>Elastic results:
+- Above about 40 GeV, the SI envelope is R≈0.8–1.3 relative to the SHM.
+- At 9 GeV it opens to 0.17–1.63 (class B).
+- Extending the class-D cutoff to 1000 km/s drives R to about 0.04.
+- At 9 GeV, the v_esc scan (factor ~2 for classes A/B) and the efficiency treatment (factor 2–3) matter about as much as the halo.
+- In the SD channel at 40 GeV, nuclear-structure uncertainty (factors 3.6 and 13 for neutron and proton) still exceeds the roughly 2× halo spread.</p>
+<p>For the 248 keV event (LZ: 3.4σ local, 2.6σ global), they use a background-free single-event likelihood at 1.1 TeV. The tail sets the inelastic ceiling: δ_max≈384 keV for the SHM and 556 keV for an LMC-like tail. The higgsino cross section (~7×10⁻³⁹ cm²) crosses these two contours at δ≈360 and 455 keV, both below the 566 keV solar-neutrino threshold. Some anisotropic contours reach 700–775 keV, but only at cross sections well below the higgsino value (D1/D3 near 3×10⁻⁴⁰ cm²).</p>
+<p>Caveats:
+- Limits are rescaled by yield ratio rather than refit with the LZ likelihood.
+- The suite is not a posterior, and it mixes profile, rotation and anisotropy.
+- The 1000 km/s cutoffs are sensitivity tests, not measurements.
+- The single-event fit assumes unit efficiency, and its coverage is uncalibrated.</p>
+<hr />
+<p><em>Full text for <a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a> (Chen et al.) and <a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a> (Reboud et al.) was not supplied, so those picks are not expanded here.</em></p>]]></description>
+  </item>
 
   <item>
     <title>Monday, November 23, 2026</title>
@@ -2524,69 +2606,6 @@
 - <strong>Solar-compatible:</strong> singlino ground states, and Higgsino ground states with weak inelastic transitions.
 - <strong>Escape route:</strong> an elastic Higgsino alternative evades the solar bound by closing the inelastic transition that drives capture.</p>
 <p>The abstract gives no quantitative limits. The authors acknowledge residual degeneracies tied to annihilation, halo and detector assumptions.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wednesday, October 7, 2026</title>
-    <link>https://leblanc-lab.github.io/thexsection/digest/2026-10-07.html</link>
-    <guid isPermaLink="true">https://leblanc-lab.github.io/thexsection/digest/2026-10-07.html</guid>
-    <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<h2 id="three-bids-for-the-b_s1">Three bids for the B_s1</h2>
-<p>Two more groups interpret LHCb&rsquo;s B_s0^<em>(5700) today. With last week&rsquo;s Albaladejo et al., all three now place the 1⁺ partner between 5740 and 5755 MeV. That agreement says less than it seems. Albaladejo already noted that the 1⁺–0⁺ splitting essentially equals the B_s^</em>–B_s difference, so the partner mass is nearly fixed by heavy-quark spin symmetry. The models actually differ on widths and on how much of the state is a bare bs̅ core. The rest of the day is spectroscopy-heavy, with steady precision inputs and one LZ paper.</p>
-<h2 id="themes">Themes</h2>
-<h3 id="molecular-dressing-of-the-b_s0">Molecular dressing of the B_s0^*</h3>
-<p>Hao et al. <a href="https://arxiv.org/abs/2610.07106">arXiv:2610.07106</a> find that a compact quark model overshoots the mass by ~120 MeV. Adding BK coupled channels pulls the pole to ~5727 MeV and explains the narrow width. Sánchez-Illana et al. <a href="https://arxiv.org/abs/2610.07171">arXiv:2610.07171</a> work in the hidden-gauge formalism and predict five further states. A bare component cuts the B_s⁰π⁰ width from 50 keV to 10–20 keV. Albaladejo&rsquo;s models gave 34–82.5 keV, so the isospin-violating width is now the discriminating number. Kinugawa et al. <a href="https://arxiv.org/abs/2610.08340">arXiv:2610.08340</a> add the general theory of how Coulomb interactions modify compositeness universality near threshold.</p>
-<h3 id="multiquark-methods-and-a-glueball-radius">Multiquark methods, and a glueball radius</h3>
-<p>Zhang et al. <a href="https://arxiv.org/abs/2610.07818">arXiv:2610.07818</a> diagonalize a potential model exactly on a lattice. Note that this is a discretized quark model, not lattice QCD. They find a ccc̅c̅ 0⁺ state 33 MeV below η_cη_c and claim it is robust against the choice of potential. Jiang et al. <a href="https://arxiv.org/abs/2610.06979">arXiv:2610.06979</a> read X(3790) and G(3900) as P-wave DD̅⁽*) configurations. Mamo <a href="https://arxiv.org/abs/2610.08545">arXiv:2610.08545</a> gives the first holographic glueball gravitational form factors. The scalar Breit mass radius of 0.276 fm sits close to Issifu et al.&rsquo;s 0.28 fm from last Thursday, though the radius definitions may differ.</p>
-<h3 id="perturbative-inputs-for-the-next-machine">Perturbative inputs for the next machine</h3>
-<p>Maier et al. <a href="https://arxiv.org/abs/2610.08282">arXiv:2610.08282</a> compute four-loop top-mediated QCD corrections to Δr and Δκ. The resulting m_W shift is a few hundred keV, which the authors call relevant at FCC-ee. Guzzi et al. <a href="https://arxiv.org/abs/2610.07233">arXiv:2610.07233</a> lay out CT&rsquo;s route to partial-N³LO fits. Their evolution still uses approximate four-loop splitting functions. Chen et al. <a href="https://arxiv.org/abs/2610.07145">arXiv:2610.07145</a> resum the back-to-back EEC plateau through N³LL in 𝒩=4 SYM and interpolate it to strong coupling. They do this with a &ldquo;human-in-the-loop agentic workflow,&rdquo; another entry in last week&rsquo;s LLMs-inside-the-calculation thread.</p>
-<h3 id="fast-but-not-lossy">Fast, but not lossy</h3>
-<p>Pizzichemi et al.&rsquo;s HybridMC <a href="https://arxiv.org/abs/2610.08054">arXiv:2610.08054</a> parametrizes optical transport for LHCb&rsquo;s ECAL Upgrade II and gains a factor of 150–480 in speed. The authors explicitly position it against generative flash sims, which cannot reproduce the photon arrival times that tens-of-ps timing needs. This is a useful counterpoint to the surrogate enthusiasm of 09-28. Bustamante&rsquo;s Magnus <a href="https://arxiv.org/abs/2610.07159">arXiv:2610.07159</a> covers the oscillation side.</p>
-<h2 id="worth-a-look">Worth a look</h2>
-<ul>
-<li><strong><a href="https://arxiv.org/abs/2610.07106">arXiv:2610.07106</a></strong>: Shows quantitatively why the compact picture fails by ~120 MeV. It names B_s1(5747) and its radiative modes as the Run 3 test.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07818">arXiv:2610.07818</a></strong>: A deeply bound, strong-decay-stable fully charmed tetraquark is a bold claim. Worth reading to see how much weight &ldquo;exact diagonalization&rdquo; can carry inside a potential model.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.08282">arXiv:2610.08282</a></strong>: A four-loop electroweak-relation input that FCC-ee m_W projections will need.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07159">arXiv:2610.07159</a></strong>: Magnus is a Magnus-expansion oscillation solver for any Hermitian Hamiltonian, flavor count and density profile. It is the fastest high-accuracy public code among those the author compared, and likely to be widely adopted.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07150">arXiv:2610.07150</a></strong>: Craig et al. show the electroweak anomaly alone induces ΔB=ΔL∈3ℤ in monopole–fermion scattering, even with B and L classically conserved.</li>
-</ul>
-<h2 id="also-noted">Also noted</h2>
-<ul>
-<li><strong><a href="https://arxiv.org/abs/2610.08606">arXiv:2610.08606</a></strong> <em>Missing Mass Matters: Neutrinophilic Scalar in D-Meson Decays</em> — Jin-Man Cai et al. (hep-ph). Modelling the M²_miss distribution makes the D⁺ bound substantially weaker than prior estimates. File it under corrections the size of errors.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07493">arXiv:2610.07493</a></strong> <em>Neutral Pseudoscalar Mesons, Hadron Light-by-Light Scattering, and the Muon Anomalous Magnetic Moment</em> — Cong-Cong Ye et al. (hep-ph). Finds π⁰⁺η+η&rsquo; poles at 84.3(0.8)×10⁻¹¹, lower than some estimates. The authors argue the pole term is not known to better than 5%.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.08648">arXiv:2610.08648</a></strong> <em>Testing Dark Matter Coscattering with the High-Energy LZ Recoil</em> — Sreemanti Chakraborti et al. (hep-ph). The day&rsquo;s only LZ paper: dark-photon-enhanced singlet–doublet DM at 750 GeV–1.6 TeV with a ~100 keV splitting. The abstract does not address solar capture.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07054">arXiv:2610.07054</a></strong> <em>First observation of the electromagnetic Dalitz decay ψ(3686)→μ⁺μ⁻η&rsquo;</em> — BESIII Collaboration et al. (hep-ex). Observed at 6.1σ and consistent with vector meson dominance; no lepton-universality violation.</li>
-<li><strong><a href="https://arxiv.org/abs/2610.07155">arXiv:2610.07155</a></strong> <em>Coherent versus incoherent amplification…</em> — Clemente Smarra et al. (hep-ph). Reconciles the g_aγ and g_aγ² scalings of stimulated axion decay through the axion coherence length.</li>
-</ul>
-<h2 id="deep-dives">Deep dives</h2>
-<h3 id="arxiv261007106-molecular-structure-effects-in-low-lying-p-wave-bottom-strange-meson-spectrum-wei-hao-et-al"><a href="https://arxiv.org/abs/2610.07106">arXiv:2610.07106</a> — Molecular Structure Effects in Low-Lying P-wave Bottom-Strange Meson Spectrum (Wei Hao et al.)</h3>
-<p>A compact bs̅ picture cannot reach the B_s0^<em>(5700): the plain confinement+OGE model puts the 0⁺ at 5851 MeV. One-loop (α_s²) corrections to the OGE potential lower it only to 5816 MeV, still ~120 MeV above LHCb&rsquo;s 5698.9±1.5±0.6 MeV. Coupling the bare state to BK/B^</em>K via ³P_0 vertices supplies the missing shift and brings the 0⁺ to 5727 MeV, within ~30 MeV of data. Near-threshold phase-space suppression accounts for the narrow width. The same machinery puts the 1⁺ partner at 5755 MeV (B^<em>K-dominated), close to Nowak–Zahed&rsquo;s chiral-doubling 5747±2 MeV. The j_ℓ=3/2 states stay essentially compact. The authors give E1 widths of 45 keV for B_s0^</em>→B_s^<em>γ and ~55–58 keV for the 1⁺→B_s⁽</em>)γ modes, which they propose as the Run 3 discovery channels.</p>
-<p>Caveats:
-- <strong>Molecular content not quantified.</strong> The paper does not report a B_s⁰π⁰ width. That is today&rsquo;s discriminating number against Albaladejo et al. and Sánchez-Illana et al. It also gives no explicit compositeness, despite promising to quantify the admixture.
-- <strong>Radiative widths may be mislabeled.</strong> The quoted 58/55 keV values come from the Table 4 rows for B&rsquo;_s1(1P). The B_s1(1P) rows, which correspond to the state assigned to 5747 in Table 3, give 50.9/34.6 keV.
-- <strong>Bare-state wavefunctions.</strong> All radiative widths use quark-model wavefunctions, not the dressed ones.
-- <em><em>B_s2^</em> width is a fit, not a test.</em><strong>The ³P_0 strengt</strong>γ_0 was fitted to the B_s2^*(5840) width, so reproducing its 1.5 MeV is not an independent check.
-- <strong>Residual offset.</strong> The 0⁺ still misses by ~30 MeV.</p>
-<h3 id="arxiv261007818-fully-charmed-tetraquarks-on-the-lattice-with-controlled-errors-zhenyu-zhang-et-al"><a href="https://arxiv.org/abs/2610.07818">arXiv:2610.07818</a> — Fully charmed tetraquarks on the Lattice with controlled errors (Zhenyu Zhang et al.)</h3>
-<p>The headline result is a J^P=0⁺ ccc̅c̅ state at 5934.8(13) MeV, 33.2(13) MeV below η_cη_c, and therefore strong-decay-stable. The authors discretize a standard OGE+linear potential model on a periodic lattice and diagonalize it with Lanczos (&ldquo;LQPM&rdquo;). This is a lattice-discretized quark model, not lattice QCD. Benchmarks are good:
-- η_c, J/ψ and the 2S states land within a few MeV of experiment.
-- Ω_ccc=4817.3(9) MeV agrees with NNQS and lies below the variational GEM value of 4823.</p>
-<p>They also find a 1⁺ only 10.9 MeV below η_cJ/ψ, which they flag as potential-dependent. The 2⁺ sits 24 MeV above J/ψJ/ψ, and they connect it to the CMS near-threshold 2⁺ structure. A bound 0⁺ contradicts essentially every prior model, including DeepQuark. The authors attribute their ~500 MeV lower masses to enforcing full antisymmetry with non-symmetric spatial parts. Restricting to symmetric spatial functions recovers NNQS (~6414–6508 MeV).</p>
-<p>The &ldquo;controlled errors&rdquo; claim deserves scrutiny:
-- <strong>Coarse spacing.</strong> The tetraquark is computed at a≈0.2 fm, a spacing at which the supplement says charmonium has <em>not</em> converged. Finer spacings &ldquo;do not converge.&rdquo;
-- <strong>Threshold mismatch.</strong> The quoted 5968 MeV threshold equals twice the fine-lattice η_c mass. The text does not show it evaluated at a≈0.2 fm.
-- <strong>Small boxes, poor fits.</strong> Only five boxes are used, up to 1.8 fm. The extrapolation adds 16 MeV beyond the largest box, and the fits have χ²/dof=15–28. The ±1.3 MeV error is fit-only.
-- <strong>Scattering-like color structure.</strong> The color ratio converges to the 2:1 value characteristic of meson–meson scattering states.</p>
-<h3 id="arxiv261008282-relations-between-electroweak-parameters-to-order-_s3-andreas-maier-et-al"><a href="https://arxiv.org/abs/2610.08282">arXiv:2610.08282</a> — Relations between electroweak parameters to order α_s³ (Andreas Maier et al.)</h3>
-<p>Maier and Marquard complete the top-mediated four-loop QCD corrections to Δr̅ and Δκ beyond the leading Δρ term. They supply the missing pieces:
-- the four-loop flavour-singlet polarization functions;
-- top-mass corrections to the bb correlator;
-- a sixth low-energy term in the axial correlator.</p>
-<p>The expansion in M_Z²/m_t² is taken to M_Z¹⁰/m_t¹⁰, with negligible truncation error. The new α_s³ m_t^≤0 terms shift M_W by ≈ −0.8 MeV with an on-shell top mass and ≈ −0.2 MeV in MS. For comparison, FCC-ee projects 0.16 MeV systematic and 0.18 MeV statistical uncertainty, so these terms are relevant at that precision.</p>
-<p>Two points matter for projections:
-- <strong>Scheme dependence.</strong> In MS the subleading α_s³m̅_t⁰ term (−0.22 MeV) exceeds the formally leading α_s³m̅_t² term (−0.03 MeV). The factor-of-four scheme spread at this order is itself a theory uncertainty at the FCC-ee scale.
-- <strong>Five loops needed.</strong> Extrapolating the on-shell pattern, the authors expect α_s⁴ M_t² to contribute several hundred keV. That makes five-loop ρ desirable.</p>
-<p>Scope is pure QCD on top/bottom loops, and the numerical study neglects the Δr–Δr̅ difference. Results are supplied in electronic form.</p>]]></description>
   </item>
 
 </channel>

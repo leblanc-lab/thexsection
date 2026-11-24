@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>UOTIP: Unbalanced Optimal Transport Map for Unpaired Inverse Problems</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-21094</link>
+    <guid isPermaLink="false">arxiv:2605.21094</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Donggyu Lee et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We investigate unpaired image inverse problems, a challenging setting where only independent, non-paired sets of noisy measurements and clean target signals are available for training. We propose a novel inverse problem solver based on Unbalanced Optimal Transport, called Unbalanced Optimal Transport Map for Inverse Problems (UOTIP). Our method formulates the reconstruction task, predicting clean target signals from noisy measurements, as learning a UOT Map from noisy measurement distribution to clean signal distribution by incorporating a likelihood-based cost function. By relaxing the exact marginal constraint, the UOT framework provides key advantages to our model: robustness to multi-level observation noise, adaptability to class imbalance between noisy and clean datasets, and generalizability to diverse noise-type scenarios. Furthermore, we theoretically demonstrate that incorporating a quadratic cost term ensures the existence and uniqueness of the transport map by satisfying the twist condition, even for ill-posed inverse problems. Our experiments demonstrate that UOTIP achieves state-of-the-art performance on unpaired image inverse problem benchmarks, across linear and nonlinear inverse problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Regularity and Generalization of One-Step Wasserstein-guided Generative Models for PDE-Induced Measures</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-21388</link>
+    <guid isPermaLink="false">arxiv:2605.21388</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Likun Lin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Despite the remarkable empirical success of generative models, the available theory on their statistical accuracy in scientific computing remains largely pessimistic. This paper develops a theoretical framework for understanding the regularity of transport maps and the generalization properties of one-step Wasserstein-guided generative models for PDE-induced probability measures. We consider normalized target densities associated with linear elliptic and parabolic equations on bounded domains, as well as diffusion and Fokker&ndash;Planck equations on the torus. Under standard structural assumptions, we prove that these target measures satisfy doubling conditions. By combining this fact with regularity theory for optimal transport between doubling measures, we show that the optimal transport map from a uniform source measure to the target measure is Hölder continuous. This regularity yields an approximation-theoretic justification for one-step generative models that learn PDE-induced distributions via a single pushforward map. As a representative instance, we study DeepParticle and derive excess-risk bounds characterizing the discrepancy between the learned map and the population-optimal map. We also establish a robustness estimate under target shift and illustrate the theory with experiments which support the derived rates.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Control, Optimal Transport and Neural Differential Equations in Supervised Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2503-15105</link>
+    <guid isPermaLink="false">arxiv:2503.15105</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Minh-Nhat Phung et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We study the fundamental computational problem of approximating optimal transport (OT) equations using neural differential equations (Neural ODEs). More specifically, we develop a novel framework for approximating unbalanced optimal transport (UOT) in the continuum using Neural ODEs. By generalizing a discrete UOT problem with Pearson divergence, we constructively design vector fields for Neural ODEs that converge to the true UOT dynamics, thereby advancing the mathematical foundations of computational transport and machine learning. To this end, we design a numerical scheme inspired by the Sinkhorn algorithm to solve the corresponding minimization problem and rigorously prove its convergence, providing explicit error estimates. From the obtained numerical solutions, we derive vector fields defining the transport dynamics and construct the corresponding transport equation. Finally, from the numerically obtained transport equation, we construct a neural differential equation whose flow converges to the true transport dynamics in an appropriate limiting regime.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stochastic Gradient Variational Inference with Price's Gradient Estimator from Bures-Wasserstein to Parameter Space</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-18718</link>
+    <guid isPermaLink="false">arxiv:2602.18718</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kyurae Kim et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>For approximating a target distribution given only its unnormalized log-density, stochastic gradient-based variational inference (VI) algorithms are a popular approach. For example, Wasserstein VI (WVI) and black-box VI (BBVI) perform gradient descent in measure space (Bures-Wasserstein space) and parameter space, respectively. Previously, for the Gaussian variational family, convergence guarantees for WVI have shown superiority over existing results for black-box VI with the reparametrization gradient, suggesting the measure space approach might provide some unique benefits. In this work, however, we close this gap by obtaining identical state-of-the-art iteration complexity guarantees for both. In particular, we identify that WVI&rsquo;s superiority stems from the specific gradient estimator it uses, which BBVI can also leverage with minor modifications. The estimator in question is usually associated with Price&rsquo;s theorem and utilizes second-order information (Hessians) of the target log-density. We will refer to this as Price&rsquo;s gradient. On the flip side, WVI can be made more widely applicable by using the reparametrization gradient, which requires only gradients of the log-density. We empirically demonstrate that the use of Price&rsquo;s gradient is the major source of performance improvement.</p>]]></description>
+  </item>
+
+  <item>
+    <title>CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-17889</link>
+    <guid isPermaLink="false">arxiv:2605.17889</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muyoung Son et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
+<p>The Mixture-of-Experts (MoE) architecture improves computational efficiency via sparse expert activation, but throughput-oriented inference faces substantial GPU memory pressure due to a significant parameter size and intermediate data. Prior works attempt to mitigate this using expert offloading with micro-batching or by offloading computation to the CPU. However, the fragmented workload resulting from micro-batching degrades operational intensity, causing expert execution to become memory-bound. Meanwhile, CPU offloading is constrained by slow PCIe transfers and its limited applicability to attention computation in the decode stage. Consequently, these inefficiencies prevent effective system utilization, severely restricting the end-to-end throughput of MoE inference. To address these challenges, this paper proposes CoX-MoE, an Advanced Matrix Extensions (AMX)-enabled CPU-GPU collaborative system that comprehensively optimizes MoE inference by combining coalesced expert execution with strategic workload orchestration for higher throughput. CoX-MoE introduces (i) a coalescing-aware orchestration policy to jointly optimize resource allocation by adopting ordinary batch, instead of micro-batch, for expert computation and selective attention offloading, and (ii) a static expert-aware stratification scheme that pre-assigns frequently activated experts to the GPU, mitigating PCIe transfer overhead and balancing workload for the CPU and GPU during inference. Compared to state-of-the-art frameworks, CoX-MoE delivers significant gains, achieving up to 7.1x and 2.4x higher throughput than FlexGen and MoE-Lightning, respectively.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Spherical Harmonic Optimal Transport: Application to Climate Models Comparisons</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-18389</link>
+    <guid isPermaLink="false">arxiv:2605.18389</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Houédry et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport provides a powerful framework for comparing measures while respecting the geometry of their support, but comes with an expensive computational cost, hindering its potential application to real world use cases. On manifolds, convolutional algorithms based on the heat kernel have been proposed to alleviate this cost, but their theoretical properties remain largely unexplored. We establish that the heat kernel cost converges to the optimal transport cost as time vanishes in the balanced and unbalanced cases. In the specific case of the 2-sphere 𝕊², we ensure that the associated Sinkhorn divergences retains the desirable geometric and analytic properties of classical optimal transport discrepancies. Moreover, we leverage the harmonic structure of the sphere to derive a fast Sinkhorn algorithm, requiring only 𝒪(n) memory and 𝒪(n³/2) time per iteration, with fully dense GPU-friendly operations. We validate its computational efficiency on synthetic data, and discuss its potential use in the evaluation of global climate models, providing both spatial and seasonal insights into models performances.</p>]]></description>
+  </item>
 
   <item>
     <title>Take It or Leave It: Intent-Controlled Partial Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonio Candelieri et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Exploiting the analogy between Gaussian Distributions and Gaussian Processes&rsquo; posterior, we present how the weighted Wasserstein Barycenter of Gaussian Processes (W2BGP) can be used to unify, under a common framework, different exotic Bayesian Optimization (BO) tasks. Specifically, collaborative/federated BO, (synchronous) batch BO, and multi-fidelity BO are considered in this paper. Our empirical analysis proves that each one of these tasks requires just an appropriate weighting schema for the W2BGP, while the entire framework remains untouched. Moreover, we demonstrate that the most well-known BO acquisition functions can be easily re-interpreted under the proposed framework and also enable a more computationally efficient way to deal with the computation of the Wasserstein Barycenter, compared with state-of-the-art methods from the Machine Learning literature. Finally, research perspectives branching from the proposed approach are presented.</p>]]></description>
-  </item>
-
-  <item>
-    <title>LOTFormer: Doubly-Stochastic Linear Attention via Low-Rank Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-23436</link>
-    <guid isPermaLink="false">arxiv:2509.23436</guid>
-    <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashkan Shahbazi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Transformers have proven highly effective across modalities, but standard softmax attention scales quadratically with sequence length, limiting long context modeling. Linear attention mitigates this by approximating attention with kernel feature maps, yet most attention mechanisms remain row normalized and can over concentrate mass on a few tokens, harming robustness and information flow. Doubly stochastic attention counteracts this by balancing token participation across both rows and columns, but existing approaches often add significant overhead. We propose LOTFormer, a linear time doubly stochastic attention mechanism derived from an optimal transport view of attention as a coupling between query and key measures. LOTFormer enforces a low rank transport plan by conditioning on a learnable pivot measure with small support. We solve two entropic transport problems, queries to pivot and pivot to keys, and compose them into a conditional coupling that is provably doubly stochastic, has rank at most r ≪n, and applies to values in O(nr) time without forming the full n ×n matrix. The pivot locations and masses are learned end-to-end. Across vision and text benchmarks, LOTFormer delivers strong accuracy efficiency tradeoffs when plugged into standard backbones including Swin, DeiT, and BERT.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Distribution Learning with Error Bounds in Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08063</link>
-    <guid isPermaLink="false">arxiv:2602.08063</guid>
-    <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Figueiredo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Wasserstein distance has emerged as a key metric to quantify distances between probability distributions, with applications in various fields, including machine learning, control theory, decision theory, and biological systems. Consequently, learning an unknown distribution with non-asymptotic and easy-to-compute error bounds in Wasserstein distance has become a fundamental problem in many fields. In this paper, we devise a novel algorithmic and theoretical framework to approximate an unknown probability distribution ℙ from a finite set of samples by an approximate discrete distribution ℙ while bounding the Wasserstein distance between ℙ and ℙ. Our framework leverages optimal transport, nonlinear optimization, and concentration inequalities. In particular, we show that, even if ℙ is unknown, the Wasserstein distance between ℙ and ℙ can be efficiently bounded with high confidence by solving a tractable optimization problem (a mixed integer linear program) of a size that only depends on the size of the support of ℙ. This enables us to develop intelligent clustering algorithms to optimally find the support of ℙ while minimizing the Wasserstein distance error. On a set of benchmarks, we demonstrate that our approach outperforms state-of-the-art comparable methods by generally returning approximating distributions with substantially smaller support and tighter error bounds.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Note on computational complexity of the Gromov-Wasserstein distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2408-06525</link>
-    <guid isPermaLink="false">arxiv:2408.06525</guid>
-    <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Natalia Kravtsova</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>This note addresses computational difficulty of the Gromov-Wasserstein distance frequently mentioned in the literature. We provide details on the structure of the Gromov-Wasserstein distance optimization problem that show its non-convex quadratic nature for any instance of an input data. We further illustrate the non-convexity of the problem with several explicit examples.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Federated Sinkhorn</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-07021</link>
-    <guid isPermaLink="false">arxiv:2502.07021</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremy Kulcsar et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>We study distributed Sinkhorn iterations for entropy-regularized optimal transport when the Gibbs kernel operator is row-partitioned across c workers and cannot be centralized. We present Federated Sinkhorn, two exact synchronous protocols that exchange only scaling-vector slices: (i) an All-to-All scheme implemented by Allgather, and (ii) a Star (parameter-server) scheme implemented by client to server sends and server to client broadcasts. For both, we derive closed-form per-iteration compute, communication, and memory costs under an alpha-beta latency&ndash;bandwidth model, and show that the distributed iterates match centralized Sinkhorn under standard positivity assumptions. Multi-node CPU/GPU experiments validate the model and show that repeated global scaling exchange quickly becomes the dominant bottleneck as c increases. We also report an optional bounded-delay asynchronous schedule and an optional privacy measurement layer for communicated log-scalings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Radon--Wasserstein Gradient Flows for Interacting-Particle Sampling in High Dimensions</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-05227</link>
-    <guid isPermaLink="false">arxiv:2602.05227</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elias Hess-Childs et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Gradient flows of the Kullback&ndash;Leibler (KL) divergence, such as the Fokker&ndash;Planck equation and Stein Variational Gradient Descent, evolve a distribution toward a target density known only up to a normalizing constant. We introduce new gradient flows of the KL divergence with a remarkable combination of properties: they admit accurate interacting-particle approximations in high dimensions, and the per-step cost scales linearly in both the number of particles and the dimension. These gradient flows are based on new transportation-based Riemannian geometries on the space of probability measures: the Radon&ndash;Wasserstein geometry and the related Regularized Radon&ndash;Wasserstein (RRW) geometry. We define these geometries using the Radon transform so that the gradient-flow velocities depend only on one-dimensional projections. This yields interacting-particle-based algorithms whose per-step cost follows from efficient Fast Fourier Transform-based evaluation of the required 1D convolutions. We additionally provide numerical experiments that study the performance of the proposed algorithms and compare convergence behavior and quantization. Finally, we prove some theoretical results including well-posedness of the flows and long-time convergence guarantees for the RRW flow.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Supercharging Simulation-Based Inference for Bayesian Optimal Experimental Design</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-06900</link>
-    <guid isPermaLink="false">arxiv:2602.06900</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Klein et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
-<p>Bayesian optimal experimental design (BOED) seeks to maximize the expected information gain (EIG) of experiments. This requires a likelihood estimate, which in many settings is intractable. Simulation-based inference (SBI) provides powerful tools for this regime. However, existing work explicitly connecting SBI and BOED is restricted to a single contrastive EIG bound. We show that the EIG admits multiple formulations which can directly leverage modern SBI density estimators, encompassing neural posterior, likelihood, and ratio estimation. Building on this perspective, we define a novel EIG estimator using neural likelihood estimation. Further, we identify optimization as a key bottleneck of gradient based EIG maximization and show that a simple multi-start parallel gradient ascent procedure can substantially improve reliability and performance. With these innovations, our SBI-based BOED methods are able to match or outperform by up to 22% existing state-of-the-art approaches across standard BOED benchmarks.</p>]]></description>
   </item>
 
 </channel>

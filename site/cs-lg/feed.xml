@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-28194</link>
+    <guid isPermaLink="false">arxiv:2611.28194</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrzej Nov\'ak et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris, Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Agentic systems are increasingly being explored for automating experimental high-energy physics measurements, but the correctness of their results can today be reliably evaluated only via extensive expert review. To address this, we propose a method to perform detailed quantitative evaluations of agent-driven analyses through the use of blind analysis and injection tests, which are critical in a typical expert review. Agents develop a data analysis pipeline on a public dataset, while the evaluation is performed on programmatically generated sealed private datasets where signals are injected and simulation settings varied within realistic detector uncertainties. By requiring agents to provide a single workflow that is evaluated across these &ldquo;sealed worlds&rdquo;, we are able to test the accuracy and robustness of the workflows. We demonstrate the approach on four tasks built from CMS open data and present it as a way to reliably benchmark scientific work in experimental high-energy physics. At the time of writing, the best-performing model, Gemini 4 Argon, reaches 60% of the score of the expert reference analyses on average, ahead of GPT 6 Astra at 38% and Claude Opus 5.5 at 31%. In individual sessions on one of the tasks, Gemini 4 Argon exceeds the reference. The benchmark is hosted at https://hep-ex-bench.github.io</p>]]></description>
+  </item>
+
+  <item>
+    <title>Real-time event-level zero-shot learning at 150 ns: towards a foundation model for particle physics experiment triggering</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-28355</link>
+    <guid isPermaLink="false">arxiv:2611.28355</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leo Rozanov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The hardware-based Level-1 triggers of the Large Hadron Collider (LHC) experiments select collisions with algorithms designed for one signature each, acting on a coarse, low-latency view of every event. We present a learned event embedding for several trigger tasks and evaluate its transfer to processes absent from training. Using paired offline and Level-1 views of the same simulated collisions, we train an offline transformer with a supervised metric loss and distil it, event by event, into a quantised Level-1 transformer whose bit widths are learned under a fixed resource budget. Trained on 25 Standard Model processes, the embedding places 28 held-out processes next to their physical relatives. A nearest-neighbour selection against background collisions, which never enter encoder training, rejects 99% of them. It retains a median of 90% of seen and 96% of unseen Standard Model events and 88% of a set of 52 beyond-the-Standard-Model benchmark samples, the best-performing score across the three groups among the baselines evaluated on the same events. A second gate against the seen processes isolates high-mass dilepton signals into label-free clusters, and long-lived signals too when displaced-track information is available. With 7512 parameters and an FPGA latency of 147 ns, the encoder uses one event representation, learned once, to derive several selections, opening the door to a foundation model for the LHC&rsquo;s hardware-based triggers.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Is the learner or the summary the limit? Auditing machine-learning energy reconstruction for air-shower arrays on KASCADE and GRAPES-3</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-29363</link>
+    <guid isPermaLink="false">arxiv:2611.29363</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mugdha Raje Ashiya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Machine-learning energy estimators for cosmic-ray arrays are usually trained on a few fitted shower parameters, not station signals. When their resolution stops improving, standard diagnostics cannot say whether a better model would help or the summary has run out of information. We use a five-step audit that compares trained models with a learner-independent estimate of the lowest error the summary allows (its squared-loss Bayes risk, or floor), tests which inputs add information and flags inputs merely computed from the fit. We apply it to public KASCADE simulations with three hadronic-interaction models (QGSJET-II-04, EPOS-LHC and SIBYLL-2.3d), to 13,848,509 measured KASCADE events and to simulated GRAPES-3 events. Within known energy decades below 10^16 eV, gradient boosting on nine reconstructed features is within 2.2% of the estimated floor under every estimator setting, so more capacity is not expected to gain more than about 2%. The floor is an estimate, accurate to about 1% in a semi-synthetic benchmark with intervals that under-cover, and not a bound on the true Bayes risk. Replacing reconstructed by true particle numbers removes 70 to 72% of the error variance below 10^15 eV and 24 to 26% between 10^16 and 10^17 eV on all three models, yet simulated station signals close about a tenth of that gap. On GRAPES-3, networks given images rendered from the fit do no better than the fit. In measured data, the mean muon size at fixed electron size lies within every model&rsquo;s proton-to-iron bracket and a label-free probe finds the muon channel used as in simulation; neither fixes the energy scale. Energy-labelled results are simulated.</p>]]></description>
+  </item>
+
+  <item>
+    <title>JKO-GRPO: Augmenting GRPO with Wasserstein Proximal Steps for Flow-Matching VLAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-29646</link>
+    <guid isPermaLink="false">arxiv:2611.29646</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiyong Kwon et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Flow-based vision-language-action (VLA) models such as π_0,π_0.5 generate continuous action chunks by flow matching, and online reinforcement learning (RL) can improve them beyond supervised fine-tuning. Existing methods, such as Flow-GRPO and π_RL, optimize likelihood ratios of stochastic denoising transitions, which reweight the sampled actions by their advantages but do not use the distances between them. We propose JKO-GRPO, which augments Flow-GRPO with Wasserstein proximal steps, with two contributions: (1) At each state, we treat the group of sampled actions as an empirical distribution and formulate policy improvement as a Jordan-Kinderlehrer-Otto (JKO) step. We use a soft discrete c-transform to construct transport targets from group-relative advantages and combine shared-noise regression of the deterministic flow sampler onto these targets and combined with the clipped Flow-GRPO objective without Kullback-Leibler (KL) regularization. (2) We extend this approach to sequential VLA control through random-time branching: we select one or multiple action-chunk indices along old-policy trajectories and independently apply group-level JKO updates using candidate continuations from the corresponding states.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Low-Rank Tensor Representations for Efficient Multimarginal Optimal Transport (Johann Cl{ément-Cottuz</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-30376</link>
+    <guid isPermaLink="false">arxiv:2611.30376</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">UNIROUEN et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Multimarginal Optimal Transport (MOT) suffers from exponential computational and memory costs in the number of marginals, as transport plans are represented by high-dimensional tensors. We introduce Low-Rank Multimarginal Optimal Transport (LRMOT), which restricts transport plans to tensors with bounded multilinear rank, providing a compact and structured representation of multimarginal couplings. This structure enables efficient algorithms with a low memory footprint. We establish approximation bounds for the resulting low-rank formulations and demonstrate experimentally that the proposed algorithms substantially reduce computational time while achieving solutions with low transport cost.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Lorentz symmetry in self-supervised representation learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-31011</link>
+    <guid isPermaLink="false">arxiv:2611.31011</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Hermansen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (jet tagging) — original abstract; no AI summary.</em></p>
+<p>Self-supervised learning (SSL) and explicit physical inductive biases have driven major advances in jet tagging, yet they are typically pursued along separate tracks. In this work, we unify both paradigms by integrating the Lorentz-equivariant Geometric Algebra Transformer slim (L-GATr-slim) architecture with the LeJEPA framework for representation learning. Pre-training on 100 million jets from the JetClass dataset, we optimize towards a latent space, which is invariant across physics-motivated jet augmentations. We demonstrate that enforcing Lorentz symmetry in the latent space is critical for representation quality and that this can be achieved either architecturally or learned via kinematic augmentations. With a standard non-invariant Transformer backbone, LeJEPA outperforms established autoregressive, masked particle modelling, and self-distillation baselines in linear- and MLP-probe accuracy, with L-GATr-slim providing further complementary gains. Across downstream benchmarks, our pre-trained models consistently outperform baselines trained from scratch or through different pre-training objectives.</p>]]></description>
+  </item>
 
   <item>
     <title>Distributional Algebro-Geometric Persistence (dAGP): Wasserstein-Stable Polynomial-Relation Signatures</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
 <p>Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from O(HWK²C_inC_out) to O(n²C_inC_out) and the storage from O(HWC) to O(nC) when n²≪HW. Because computation always runs over a single pre-specified pixel budget that is frozen at synthesis, the inference latency is data-independent and constant at runtime. We show that, for identifying neutrino interactions in naturally sparse LArTPC images with 4k pixels, a standard CNN with a compact size of 4k parameters incurs an inference latency of 48.665 μs on an FPGA, whereas a sparse CNN of the same base architecture, computing on less than 1% of the input pixels, achieves a ×73 speedup to 0.665 μs with resource utilization well within on-chip budgets, trading only a small percent-level performance loss. This work aims to benefit future algorithm development for efficient data readout in modern experiments with strict latency requirements of microseconds or below.</p>]]></description>
-  </item>
-
-  <item>
-    <title>EMS Coreset: An Efficient Expectation-Maximization Algorithm for Sinkhorn Coreset</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-16101</link>
-    <guid isPermaLink="false">arxiv:2608.16101</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Haoyun Yin et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Coresets distill large datasets into small, representative subsets for efficient downstream learning. Yet Optimal Transport (OT)-based selection typically requires intensive computation of transport plans, limiting scalability. We introduce a scalable Sinkhorn coreset method that permits closed-form updates of the entropically regularized OT coupling by allowing non-uniform coreset weights. This produces centroids that generalize k-means via soft assignments. We establish asymptotic consistency of the selected measure and Lipschitz stability to data perturbations, providing accuracy and robustness guarantees. Across synthetic and real-world benchmarks, the proposed method achieves competitive or improved approximation quality while substantially reducing runtime compared to Wasserstein- and standard Sinkhorn-based coreset selection, especially at large scale.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Density-Reweighted Entropic Optimal Transport: Decoupling Geometry from Sampling Density</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-16506</link>
-    <guid isPermaLink="false">arxiv:2608.16506</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keyi Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Dataset alignment is a central step in data analysis across science and engineering, where the goal is to match observations between datasets. Entropic Optimal Transport (EOT) offers a computationally tractable framework for this task by encoding cross-dataset affinities in a transport plan. However, when two datasets are sampled from geometrically similar low-dimensional structures with substantially different sampling densities, the EOT plan may match points by relative sampling density rather than geometric proximity, yielding geometrically misleading correspondences. To address this issue, we propose a density-reweighted EOT framework in which the influence of sampling density on the transport plan can be discounted to a desired degree, ranging from standard EOT to alignment driven purely by underlying geometry. Under suitable regularity conditions, we establish convergence of the reweighted EOT plan to a family of population-level plans whose dependence on sampling density is made explicit. Through simulations, we show that our approach recovers geometrically faithful correspondences, improving over related EOT-based frameworks when datasets exhibit substantial sampling density disparity.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Lymphocyte Mimicry Correction via Region-Level Tissue Reasoning and Unbalanced Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-17151</link>
-    <guid isPermaLink="false">arxiv:2608.17151</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Cell mimicry arises when different cell types appear morphologically similar. Human pathologists resolve this ambiguity using surrounding tissue context, whereas current vision models either lack contextual reasoning (cell foundation models) or cannot operate at the cell level (pathology MLLMs). We present Loki-OT, which propagates region-level tissue reasoning to individual cell predictions via Unbalanced Optimal Transport, using MLLM-derived density priors as soft guidance for ambiguous cell reassignment. Loki-OT is motivated by the observation that pretrained cell foundation model features already encode discriminative information, including tissue context, but standard cell-level supervision fails to use tissue context effectively. The resulting transport plan is distilled into a lightweight student MLP classifier that learns context-aware decision boundaries within the pretrained feature space. On the independent TCGA-BRCA cohort, Loki-OT achieved lower patient-level MAE than the fully supervised in-domain PanopTILs classifier and improved F1 in epithelium-rich mimicry tissues, using 278 weak region-level MLLM estimates built on a general-domain cell foundation model. Code: https://github.com/xiangli980/Lymphocyte_Mimicry_Correction_via_Loki_OT</p>]]></description>
-  </item>
-
-  <item>
-    <title>Interpreting "Interpretability" and Explaining "Explainability" in Machine Learning in Physics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-26228</link>
-    <guid isPermaLink="false">arxiv:2606.26228</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rikab Gambhir et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Jesse Thaler, Rikab Gambhir) — original abstract; no AI summary.</em></p>
-<p>We review the concepts of interpretability and explainability as they apply to machine learning in physics. We define interpretability as concerning the structural transparency of a model (the ability to understand or approximate its inner workings) and explainability as concerning the scientific content of a model (the ability to map it onto domain knowledge). We discuss the trade-offs each entails (interpretability vs. expressivity; explainability vs. adaptability), the contexts in which each is needed, and the intrinsic and post-hoc tools available for achieving them. Throughout, we emphasize that machine-learned models are subject to the same scientific questions as classical models, differing only in scale, and that interpretability and explainability are best understood as deliberate modeling choices rather than inherent properties. We also emphasize the importance of task specification and intervention plans as a core aspect of model design.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Functional anatomy of Pythia-Herwig differences with Kolmogorov-Arnold networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-15952</link>
-    <guid isPermaLink="false">arxiv:2608.15952</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arghya Chattopadhyay</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (jet mass) — original abstract; no AI summary.</em></p>
-<p>Differences between high-energy event generators can arise at several stages of the collision simulation, from the hard scattering through parton showering and hadronization to the final event. These differences are usually summarized using observable distributions or global classifier scores. While these quantify the disagreement, they do not reveal which observable-level structures carry it or whether those structures persist through different stages of event generation. In this work, we formulate this problem as a staged functional analysis of generator-model differences. Following the same hard dijet events through Pythia and Herwig at shower-only, hadronized, and full-generator levels, we use an additive Kolmogorov-Arnold network (KAN) representation of the classifier-derived log density ratio to decompose the learned discrepancy into explicit one-dimensional observable responses that can be isolated, recomposed, and transported between generator stages. Within the same eight-observable jet representation, the Pythia-Herwig difference is driven mainly by multiplicity at shower level, shifts toward jet mass and shape after hadronization, and develops a mixed shape-multiplicity driven structure in the full-generator configuration. Transporting the individual shower-level functional components downstream shows that shower-level multiplicity information can retain its reweighting power, whereas the corresponding shape responses need not do so even though shape becomes important again at later stages. The jet-mass factors, meanwhile, are limited by poor statistical support. This KAN-based framework therefore provides a functional anatomy of generator-model dependence, exposing both persistent structures and support failures that are hidden inside a single global classifier-derived reweighting function.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The Observable Wasserstein Distance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-09916</link>
-    <guid isPermaLink="false">arxiv:2605.09916</guid>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Edivaldo Lopes dos Santos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We introduce the observable Wasserstein distance, a framework for deriving lower bounds on the Wasserstein distance between probability measures on Polish metric spaces, designed to bypass the computational intractability of exact optimal transport in large-scale, non-Euclidean datasets. Analogous to the sliced Wasserstein distance in ℝ^d, our approach projects measures onto the real line via 1-Lipschitz observables and computes the Wasserstein distances between the resulting pushforward distributions. We define a hierarchy of pseudo-metrics by restricting observables to a nested chain of subspaces. A central theoretical contribution is an injectivity result linking the metric covering dimension of the support of a measure to the specific order in the hierarchy that guarantees unique recovery. This serves as a metric-space analogue to the Cramér-Wold Device for Euclidean distributions. We demonstrate that this hierarchy offers a tunable trade-off between sharpness as a lower bound on the Wasserstein distance and computational efficiency. We also present a discrete computational model for finite grids and numerical experiments validating the efficacy and utility of these approximations.</p>]]></description>
   </item>
 
 </channel>

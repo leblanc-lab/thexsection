@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Recovering Wasserstein Distance Matrices from Few Measurements</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-19250</link>
+    <guid isPermaLink="false">arxiv:2509.19250</guid>
+    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Rana et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>This paper proposes two algorithms for estimating square Wasserstein distance matrices from a small number of entries. These matrices are used to compute manifold learning embeddings like multidimensional scaling (MDS) or Isomap, but contrary to Euclidean distance matrices, are extremely costly to compute. We analyze matrix completion from upper triangular samples and Nyström completion in which 𝒪(dlog(d)) columns of the distance matrices are computed where d is the desired embedding dimension, prove stability of MDS under Nyström completion, and show that it can outperform matrix completion for a fixed budget of sample distances. Finally, we show that classification of the OrganCMNIST dataset from the MedMNIST benchmark is stable on data embedded from the Nyström estimation of the distance matrix even when only 10\% of the columns are computed.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein Convergence of Score-based Generative Models under Semiconvexity and Discontinuous Gradients</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-03432</link>
+    <guid isPermaLink="false">arxiv:2505.03432</guid>
+    <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Bruno et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Score-based Generative Models (SGMs) approximate a data distribution by perturbing it with Gaussian noise and subsequently denoising it via a learned reverse diffusion process. These models excel at modeling complex data distributions and generating diverse samples, achieving state-of-the-art performance across domains such as computer vision, audio generation, reinforcement learning, and computational biology. Despite their empirical success, existing Wasserstein-2 convergence analysis typically assume strong regularity conditions-such as smoothness or strict log-concavity of the data distribution-that are rarely satisfied in practice. In this work, we establish the first non-asymptotic Wasserstein-2 convergence guarantees for SGMs targeting semiconvex distributions with potentially discontinuous gradients. Our upper bounds are explicit and sharp in key parameters, achieving optimal dependence of O(√(d)) on the data dimension d and convergence rate of order one. The framework accommodates a wide class of practically relevant distributions, including symmetric modified half-normal distributions, Gaussian mixtures, double-well potentials, and elastic net potentials. By leveraging semiconvexity without requiring smoothness assumptions on the potential such as differentiability, our results substantially broaden the theoretical foundations of SGMs, bridging the gap between empirical success and rigorous guarantees in non-smooth, complex data regimes.</p>]]></description>
+  </item>
+
+  <item>
+    <title>HOTA: Hamiltonian framework for Optimal Transport Advection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-17513</link>
+    <guid isPermaLink="false">arxiv:2507.17513</guid>
+    <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nazar Buzun et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Optimal transport (OT) has become a natural framework for guiding the probability flows. Yet, the majority of recent generative models assume trivial geometry (e.g., Euclidean) and rely on strong density-estimation assumptions, yielding trajectories that do not respect the true principles of optimality in the underlying manifold. We present Hamiltonian Optimal Transport Advection (HOTA), a Hamilton-Jacobi-Bellman based method that tackles the dual dynamical OT problem explicitly through Kantorovich potentials, enabling efficient and scalable trajectory optimization. Our approach effectively evades the need for explicit density modeling, performing even when the cost functionals are non-smooth. Empirically, HOTA outperforms all baselines in standard benchmarks, as well as in custom datasets with non-differentiable costs, both in terms of feasibility and optimality.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Spatio-Temporal Anomaly Detection with Graph Networks for Data Quality Monitoring of the Hadron Calorimeter</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2311-04190</link>
+    <guid isPermaLink="false">arxiv:2311.04190</guid>
+    <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mulugeta Weldezgina Asres et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>The Compact Muon Solenoid (CMS) experiment is a general-purpose detector for high-energy collision at the Large Hadron Collider (LHC) at CERN. It employs an online data quality monitoring (DQM) system to promptly spot and diagnose particle data acquisition problems to avoid data quality loss. In this study, we present a semi-supervised spatio-temporal anomaly detection (AD) monitoring system for the physics particle reading channels of the Hadron Calorimeter (HCAL) of the CMS using three-dimensional digi-occupancy map data of the DQM. We propose the GraphSTAD system, which employs convolutional and graph neural networks to learn local spatial characteristics induced by particles traversing the detector and the global behavior owing to shared backend circuit connections and housing boxes of the channels, respectively. Recurrent neural networks capture the temporal evolution of the extracted spatial features. We validate the accuracy of the proposed AD system in capturing diverse channel fault types using the LHC collision data sets. The GraphSTAD system achieves production-level accuracy and is being integrated into the CMS core production system for real-time monitoring of the HCAL. We provide a quantitative performance comparison with alternative benchmark models to demonstrate the promising leverage of the presented system. Code: https://github.com/muleina/CMS_HCAL_ML_OnlineDQM .</p>]]></description>
+  </item>
+
+  <item>
+    <title>Towards Pre-trained Graph Condensation via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-14722</link>
+    <guid isPermaLink="false">arxiv:2509.14722</guid>
+    <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeyu Yan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Graph condensation (GC) aims to distill the original graph into a small-scale graph, mitigating redundancy and accelerating GNN training. However, conventional GC approaches heavily rely on rigid GNNs and task-specific supervision. Such a dependency severely restricts their reusability and generalization across various tasks and architectures. In this work, we revisit the goal of ideal GC from the perspective of GNN optimization consistency, and then a generalized GC optimization objective is derived, by which those traditional GC methods can be viewed nicely as special cases of this optimization paradigm. Based on this, Pre-trained Graph Condensation (PreGC) via optimal transport is proposed to transcend the limitations of task- and architecture-dependent GC methods. Specifically, a hybrid-interval graph diffusion augmentation is presented to suppress the weak generalization ability of the condensed graph on particular architectures by enhancing the uncertainty of node states. Meanwhile, the matching between optimal graph transport plan and representation transport plan is tactfully established to maintain semantic consistencies across source graph and condensed graph spaces, thereby freeing graph condensation from task dependencies. To further facilitate the adaptation of condensed graphs to various downstream tasks, a traceable semantic harmonizer from source nodes to condensed nodes is proposed to bridge semantic associations through the optimized representation transport plan in pre-training. Extensive experiments verify the superiority and versatility of PreGC, demonstrating its task-independent nature and seamless compatibility with arbitrary GNNs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>DINAMO: Dynamic and INterpretable Anomaly MOnitoring for Large-Scale Particle Physics Experiments</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-19237</link>
+    <guid isPermaLink="false">arxiv:2501.19237</guid>
+    <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arsenii Gavrikov et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Ensuring reliable data collection in large-scale particle physics experiments demands Data Quality Monitoring (DQM) procedures to detect possible detector malfunctions and preserve data integrity. Traditionally, this resource-intensive task has been handled by human shifters who struggle with frequent changes in operational conditions. We present DINAMO: a novel, interpretable, robust, and scalable DQM framework designed to automate anomaly detection in time-dependent settings. Our approach constructs evolving histogram templates with built-in uncertainties, featuring both a statistical variant - extending the classical Exponentially Weighted Moving Average (EWMA) - and a machine learning (ML)-enhanced version that leverages a transformer encoder for improved adaptability. Experimental validations on synthetic datasets demonstrate the high accuracy, adaptability, and interpretability of these methods. The statistical variant is being commissioned in the LHCb experiment at the Large Hadron Collider, underscoring its real-world impact. The code used in this study is available at https://github.com/ArseniiGav/DINAMO.</p>]]></description>
+  </item>
 
   <item>
     <title>FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weijie Liu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Many-to-many matching seeks to match multiple points in one set and multiple points in another set, which is a basis for a wide range of data mining problems. It can be naturally recast in the framework of Optimal Transport (OT). However, existing OT methods either lack the ability to accomplish many-to-many matching or necessitate careful tuning of a regularization parameter to achieve satisfactory results. This paper proposes a novel many-to-many matching method to explicitly encode many-to-many constraints while preventing the degeneration into one-to-one matching. The proposed method consists of the following two components. The first component is the matching budget constraints on each row and column of a transport plan, which specify how many points can be matched to a point at most. The second component is the deformed q-entropy regularization, which encourages a point to meet the matching budget maximally. While the deformed q-entropy was initially proposed to sparsify a transport plan, we employ it to avoid the degeneration into one-to-one matching. We optimize the objective via a penalty algorithm, which is efficient and theoretically guaranteed to converge. Experimental results on various tasks demonstrate that the proposed method achieves good performance by gleaning meaningful many-to-many matchings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Exploring the Effect of Reinforcement Learning on Video Understanding: Insights from SEED-Bench-R1</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-24376</link>
-    <guid isPermaLink="false">arxiv:2503.24376</guid>
-    <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Yi Chen) — original abstract; no AI summary.</em></p>
-<p>Recent advancements in Chain of Thought (COT) generation have significantly improved the reasoning capabilities of Large Language Models (LLMs), with reinforcement learning (RL) emerging as an effective post-training approach. Multimodal Large Language Models (MLLMs) inherit this reasoning potential but remain underexplored in tasks requiring both perception and logical reasoning. To address this, we introduce SEED-Bench-R1, a benchmark designed to systematically evaluate post-training methods for MLLMs in video understanding. It includes intricate real-world videos and complex everyday planning tasks in the format of multiple-choice questions, requiring sophisticated perception and reasoning. SEED-Bench-R1 assesses generalization through a three-level hierarchy: in-distribution, cross-environment, and cross-environment-task scenarios, equipped with a large-scale training dataset with easily verifiable ground-truth answers. Using Qwen2-VL-Instruct-7B as a base model, we compare RL with supervised fine-tuning (SFT), demonstrating RL&rsquo;s data efficiency and superior performance on both in-distribution and out-of-distribution tasks, even outperforming SFT on general video understanding benchmarks like LongVideoBench. Our detailed analysis reveals that RL enhances visual perception but often produces less logically coherent reasoning chains. We identify key limitations such as inconsistent reasoning and overlooked visual cues, and suggest future improvements in base model reasoning, reward modeling, and RL robustness against noisy signals.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Building Machine Learning Challenges for Anomaly Detection in Science</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-02112</link>
-    <guid isPermaLink="false">arxiv:2503.02112</guid>
-    <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elizabeth G. Campolongo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Scientific discoveries are often made by finding a pattern or object that was not predicted by the known rules of science. Oftentimes, these anomalous events or objects that do not conform to the norms are an indication that the rules of science governing the data are incomplete, and something new needs to be present to explain these unexpected outliers. The challenge of finding anomalies can be confounding since it requires codifying a complete knowledge of the known scientific behaviors and then projecting these known behaviors on the data to look for deviations. When utilizing machine learning, this presents a particular challenge since we require that the model not only understands scientific data perfectly but also recognizes when the data is inconsistent and out of the scope of its trained behavior. In this paper, we present three datasets aimed at developing machine learning-based anomaly detection for disparate scientific domains covering astrophysics, genomics, and polar science. We present the different datasets along with a scheme to make machine learning challenges around the three datasets findable, accessible, interoperable, and reusable (FAIR). Furthermore, we present an approach that generalizes to future machine learning challenges, enabling the possibility of large, more compute-intensive challenges that can ultimately lead to scientific discovery.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Structure-enhanced Temporal Point Processes with Gromov-Wasserstein Regularization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-23002</link>
-    <guid isPermaLink="false">arxiv:2503.23002</guid>
-    <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qingmei Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>Real-world event sequences are often generated by different temporal point processes (TPPs) and thus have clustering structures. Nonetheless, in the modeling and prediction of event sequences, most existing TPPs ignore the inherent clustering structures of the event sequences, leading to the models with unsatisfactory interpretability. In this study, we learn structure-enhanced TPPs with the help of Gromov-Wasserstein (GW) regularization, which imposes clustering structures on the sequence-level embeddings of the TPPs in the maximum likelihood estimation framework.In the training phase, the proposed method leverages a nonparametric TPP kernel to regularize the similarity matrix derived based on the sequence embeddings. In large-scale applications, we sample the kernel matrix and implement the regularization as a Gromov-Wasserstein (GW) discrepancy term, which achieves a trade-off between regularity and computational efficiency.The TPPs learned through this method result in clustered sequence embeddings and demonstrate competitive predictive and clustering performance, significantly improving the model interpretability without compromising prediction accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>The geomagnetic storm and Kp prediction using Wasserstein transformer</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-23102</link>
-    <guid isPermaLink="false">arxiv:2503.23102</guid>
-    <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Beibei Li</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The accurate forecasting of geomagnetic activity is important. In this work, we present a novel multimodal Transformer based framework for predicting the 3 days and 5 days planetary Kp index by integrating heterogeneous data sources, including satellite measurements, solar images, and KP time series. A key innovation is the incorporation of the Wasserstein distance into the transformer and the loss function to align the probability distributions across modalities. Comparative experiments with the NOAA model demonstrate performance, accurately capturing both the quiet and storm phases of geomagnetic activity. This study underscores the potential of integrating machine learning techniques with traditional models for improved real time forecasting.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Manifold learning in Wasserstein space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2311-08549</link>
-    <guid isPermaLink="false">arxiv:2311.08549</guid>
-    <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Keaton Hamm et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper aims at building the theoretical foundations for manifold learning algorithms in the space of absolutely continuous probability measures 𝒫_a.c.(Ω) with Ω a compact and convex subset of ℝ^d, metrized with the Wasserstein-2 distance 𝕎. We begin by introducing a construction of submanifolds Λ in 𝒫_a.c.(Ω) equipped with metric 𝕎_Λ, the geodesic restriction of 𝕎 to Λ. In contrast to other constructions, these submanifolds are not necessarily flat, but still allow for local linearizations in a similar fashion to Riemannian submanifolds of ℝ^d. We then show how the latent manifold structure of (Λ,𝕎_Λ) can be learned from samples {λ_i}_i=1^N of Λ and pairwise extrinsic Wasserstein distances 𝕎 on 𝒫_a.c.(Ω) only. In particular, we show that the metric space (Λ,𝕎_Λ) can be asymptotically recovered in the sense of Gromov&ndash;Wasserstein from a graph with nodes {λ_i}_i=1^N and edge weights W(λ_i,λ_j). In addition, we demonstrate how the tangent space at a sample λ can be asymptotically recovered via spectral analysis of a suitable ``covariance operator&rsquo;&rsquo; using optimal transport maps from λ to sufficiently close and diverse samples {λ_i}_i=1^N. The paper closes with some explicit constructions of submanifolds Λ and numerical examples on the recovery of tangent spaces through spectral analysis.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improving Neural Optimal Transport via Displacement Interpolation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-03783</link>
-    <guid isPermaLink="false">arxiv:2410.03783</guid>
-    <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaemoo Choi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal Transport (OT) theory investigates the cost-minimizing transport map that moves a source distribution to a target distribution. Recently, several approaches have emerged for learning the optimal transport map for a given cost function using neural networks. We refer to these approaches as the OT Map. OT Map provides a powerful tool for diverse machine learning tasks, such as generative modeling and unpaired image-to-image translation. However, existing methods that utilize max-min optimization often experience training instability and sensitivity to hyperparameters. In this paper, we propose a novel method to improve stability and achieve a better approximation of the OT Map by exploiting displacement interpolation, dubbed Displacement Interpolation Optimal Transport Model (DIOTM). We derive the dual formulation of displacement interpolation at specific time t and prove how these dual problems are related across time. This result allows us to utilize the entire trajectory of displacement interpolation in learning the OT Map. Our method improves the training stability and achieves superior results in estimating optimal transport maps. We demonstrate that DIOTM outperforms existing OT-based models on image-to-image translation tasks.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,67 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>LOTFormer: Doubly-Stochastic Linear Attention via Low-Rank Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2509-23436</link>
+    <guid isPermaLink="false">arxiv:2509.23436</guid>
+    <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ashkan Shahbazi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Transformers have proven highly effective across modalities, but standard softmax attention scales quadratically with sequence length, limiting long context modeling. Linear attention mitigates this by approximating attention with kernel feature maps, yet most attention mechanisms remain row normalized and can over concentrate mass on a few tokens, harming robustness and information flow. Doubly stochastic attention counteracts this by balancing token participation across both rows and columns, but existing approaches often add significant overhead. We propose LOTFormer, a linear time doubly stochastic attention mechanism derived from an optimal transport view of attention as a coupling between query and key measures. LOTFormer enforces a low rank transport plan by conditioning on a learnable pivot measure with small support. We solve two entropic transport problems, queries to pivot and pivot to keys, and compose them into a conditional coupling that is provably doubly stochastic, has rank at most r ≪n, and applies to values in O(nr) time without forming the full n ×n matrix. The pivot locations and masses are learned end-to-end. Across vision and text benchmarks, LOTFormer delivers strong accuracy efficiency tradeoffs when plugged into standard backbones including Swin, DeiT, and BERT.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Efficient Distribution Learning with Error Bounds in Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08063</link>
+    <guid isPermaLink="false">arxiv:2602.08063</guid>
+    <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eduardo Figueiredo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Wasserstein distance has emerged as a key metric to quantify distances between probability distributions, with applications in various fields, including machine learning, control theory, decision theory, and biological systems. Consequently, learning an unknown distribution with non-asymptotic and easy-to-compute error bounds in Wasserstein distance has become a fundamental problem in many fields. In this paper, we devise a novel algorithmic and theoretical framework to approximate an unknown probability distribution ℙ from a finite set of samples by an approximate discrete distribution ℙ while bounding the Wasserstein distance between ℙ and ℙ. Our framework leverages optimal transport, nonlinear optimization, and concentration inequalities. In particular, we show that, even if ℙ is unknown, the Wasserstein distance between ℙ and ℙ can be efficiently bounded with high confidence by solving a tractable optimization problem (a mixed integer linear program) of a size that only depends on the size of the support of ℙ. This enables us to develop intelligent clustering algorithms to optimally find the support of ℙ while minimizing the Wasserstein distance error. On a set of benchmarks, we demonstrate that our approach outperforms state-of-the-art comparable methods by generally returning approximating distributions with substantially smaller support and tighter error bounds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Note on computational complexity of the Gromov-Wasserstein distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2408-06525</link>
+    <guid isPermaLink="false">arxiv:2408.06525</guid>
+    <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Natalia Kravtsova</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>This note addresses computational difficulty of the Gromov-Wasserstein distance frequently mentioned in the literature. We provide details on the structure of the Gromov-Wasserstein distance optimization problem that show its non-convex quadratic nature for any instance of an input data. We further illustrate the non-convexity of the problem with several explicit examples.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Federated Sinkhorn</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2502-07021</link>
+    <guid isPermaLink="false">arxiv:2502.07021</guid>
+    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jeremy Kulcsar et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>We study distributed Sinkhorn iterations for entropy-regularized optimal transport when the Gibbs kernel operator is row-partitioned across c workers and cannot be centralized. We present Federated Sinkhorn, two exact synchronous protocols that exchange only scaling-vector slices: (i) an All-to-All scheme implemented by Allgather, and (ii) a Star (parameter-server) scheme implemented by client to server sends and server to client broadcasts. For both, we derive closed-form per-iteration compute, communication, and memory costs under an alpha-beta latency&ndash;bandwidth model, and show that the distributed iterates match centralized Sinkhorn under standard positivity assumptions. Multi-node CPU/GPU experiments validate the model and show that repeated global scaling exchange quickly becomes the dominant bottleneck as c increases. We also report an optional bounded-delay asynchronous schedule and an optional privacy measurement layer for communicated log-scalings.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Radon--Wasserstein Gradient Flows for Interacting-Particle Sampling in High Dimensions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-05227</link>
+    <guid isPermaLink="false">arxiv:2602.05227</guid>
+    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Elias Hess-Childs et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Gradient flows of the Kullback&ndash;Leibler (KL) divergence, such as the Fokker&ndash;Planck equation and Stein Variational Gradient Descent, evolve a distribution toward a target density known only up to a normalizing constant. We introduce new gradient flows of the KL divergence with a remarkable combination of properties: they admit accurate interacting-particle approximations in high dimensions, and the per-step cost scales linearly in both the number of particles and the dimension. These gradient flows are based on new transportation-based Riemannian geometries on the space of probability measures: the Radon&ndash;Wasserstein geometry and the related Regularized Radon&ndash;Wasserstein (RRW) geometry. We define these geometries using the Radon transform so that the gradient-flow velocities depend only on one-dimensional projections. This yields interacting-particle-based algorithms whose per-step cost follows from efficient Fast Fourier Transform-based evaluation of the required 1D convolutions. We additionally provide numerical experiments that study the performance of the proposed algorithms and compare convergence behavior and quantization. Finally, we prove some theoretical results including well-posedness of the flows and long-time convergence guarantees for the RRW flow.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Supercharging Simulation-Based Inference for Bayesian Optimal Experimental Design</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-06900</link>
+    <guid isPermaLink="false">arxiv:2602.06900</guid>
+    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samuel Klein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
+<p>Bayesian optimal experimental design (BOED) seeks to maximize the expected information gain (EIG) of experiments. This requires a likelihood estimate, which in many settings is intractable. Simulation-based inference (SBI) provides powerful tools for this regime. However, existing work explicitly connecting SBI and BOED is restricted to a single contrastive EIG bound. We show that the EIG admits multiple formulations which can directly leverage modern SBI density estimators, encompassing neural posterior, likelihood, and ratio estimation. Building on this perspective, we define a novel EIG estimator using neural likelihood estimation. Further, we identify optimization as a key bottleneck of gradient based EIG maximization and show that a simple multi-start parallel gradient ascent procedure can substantially improve reliability and performance. With these innovations, our SBI-based BOED methods are able to match or outperform by up to 22% existing state-of-the-art approaches across standard BOED benchmarks.</p>]]></description>
+  </item>
 
   <item>
     <title>Solving Prior Distribution Mismatch in Diffusion Models via Optimal Transport</title>
@@ -1947,66 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Rana et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>This paper proposes the use of the Hellinger&ndash;Kantorovich metric from unbalanced optimal transport (UOT) in a dimensionality reduction and learning (supervised and unsupervised) pipeline. The performance of UOT is compared to that of regular OT and Euclidean-based dimensionality reduction methods on several benchmark datasets including MedMNIST. The experimental results demonstrate that, on average, UOT shows improvement over both Euclidean and OT-based methods as verified by statistical hypothesis tests. In particular, on the MedMNIST datasets, UOT outperforms OT in classification 81\% of the time. For clustering MedMNIST, UOT outperforms OT 83\% of the time and outperforms both other metrics 58\% of the time.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Recovering Wasserstein Distance Matrices from Few Measurements</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-19250</link>
-    <guid isPermaLink="false">arxiv:2509.19250</guid>
-    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Rana et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>This paper proposes two algorithms for estimating square Wasserstein distance matrices from a small number of entries. These matrices are used to compute manifold learning embeddings like multidimensional scaling (MDS) or Isomap, but contrary to Euclidean distance matrices, are extremely costly to compute. We analyze matrix completion from upper triangular samples and Nyström completion in which 𝒪(dlog(d)) columns of the distance matrices are computed where d is the desired embedding dimension, prove stability of MDS under Nyström completion, and show that it can outperform matrix completion for a fixed budget of sample distances. Finally, we show that classification of the OrganCMNIST dataset from the MedMNIST benchmark is stable on data embedded from the Nyström estimation of the distance matrix even when only 10\% of the columns are computed.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Convergence of Score-based Generative Models under Semiconvexity and Discontinuous Gradients</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2505-03432</link>
-    <guid isPermaLink="false">arxiv:2505.03432</guid>
-    <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Stefano Bruno et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score-based Generative Models (SGMs) approximate a data distribution by perturbing it with Gaussian noise and subsequently denoising it via a learned reverse diffusion process. These models excel at modeling complex data distributions and generating diverse samples, achieving state-of-the-art performance across domains such as computer vision, audio generation, reinforcement learning, and computational biology. Despite their empirical success, existing Wasserstein-2 convergence analysis typically assume strong regularity conditions-such as smoothness or strict log-concavity of the data distribution-that are rarely satisfied in practice. In this work, we establish the first non-asymptotic Wasserstein-2 convergence guarantees for SGMs targeting semiconvex distributions with potentially discontinuous gradients. Our upper bounds are explicit and sharp in key parameters, achieving optimal dependence of O(√(d)) on the data dimension d and convergence rate of order one. The framework accommodates a wide class of practically relevant distributions, including symmetric modified half-normal distributions, Gaussian mixtures, double-well potentials, and elastic net potentials. By leveraging semiconvexity without requiring smoothness assumptions on the potential such as differentiability, our results substantially broaden the theoretical foundations of SGMs, bridging the gap between empirical success and rigorous guarantees in non-smooth, complex data regimes.</p>]]></description>
-  </item>
-
-  <item>
-    <title>HOTA: Hamiltonian framework for Optimal Transport Advection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-17513</link>
-    <guid isPermaLink="false">arxiv:2507.17513</guid>
-    <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nazar Buzun et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) has become a natural framework for guiding the probability flows. Yet, the majority of recent generative models assume trivial geometry (e.g., Euclidean) and rely on strong density-estimation assumptions, yielding trajectories that do not respect the true principles of optimality in the underlying manifold. We present Hamiltonian Optimal Transport Advection (HOTA), a Hamilton-Jacobi-Bellman based method that tackles the dual dynamical OT problem explicitly through Kantorovich potentials, enabling efficient and scalable trajectory optimization. Our approach effectively evades the need for explicit density modeling, performing even when the cost functionals are non-smooth. Empirically, HOTA outperforms all baselines in standard benchmarks, as well as in custom datasets with non-differentiable costs, both in terms of feasibility and optimality.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Spatio-Temporal Anomaly Detection with Graph Networks for Data Quality Monitoring of the Hadron Calorimeter</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2311-04190</link>
-    <guid isPermaLink="false">arxiv:2311.04190</guid>
-    <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mulugeta Weldezgina Asres et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>The Compact Muon Solenoid (CMS) experiment is a general-purpose detector for high-energy collision at the Large Hadron Collider (LHC) at CERN. It employs an online data quality monitoring (DQM) system to promptly spot and diagnose particle data acquisition problems to avoid data quality loss. In this study, we present a semi-supervised spatio-temporal anomaly detection (AD) monitoring system for the physics particle reading channels of the Hadron Calorimeter (HCAL) of the CMS using three-dimensional digi-occupancy map data of the DQM. We propose the GraphSTAD system, which employs convolutional and graph neural networks to learn local spatial characteristics induced by particles traversing the detector and the global behavior owing to shared backend circuit connections and housing boxes of the channels, respectively. Recurrent neural networks capture the temporal evolution of the extracted spatial features. We validate the accuracy of the proposed AD system in capturing diverse channel fault types using the LHC collision data sets. The GraphSTAD system achieves production-level accuracy and is being integrated into the CMS core production system for real-time monitoring of the HCAL. We provide a quantitative performance comparison with alternative benchmark models to demonstrate the promising leverage of the presented system. Code: https://github.com/muleina/CMS_HCAL_ML_OnlineDQM .</p>]]></description>
-  </item>
-
-  <item>
-    <title>Towards Pre-trained Graph Condensation via Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-14722</link>
-    <guid isPermaLink="false">arxiv:2509.14722</guid>
-    <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yeyu Yan et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Graph condensation (GC) aims to distill the original graph into a small-scale graph, mitigating redundancy and accelerating GNN training. However, conventional GC approaches heavily rely on rigid GNNs and task-specific supervision. Such a dependency severely restricts their reusability and generalization across various tasks and architectures. In this work, we revisit the goal of ideal GC from the perspective of GNN optimization consistency, and then a generalized GC optimization objective is derived, by which those traditional GC methods can be viewed nicely as special cases of this optimization paradigm. Based on this, Pre-trained Graph Condensation (PreGC) via optimal transport is proposed to transcend the limitations of task- and architecture-dependent GC methods. Specifically, a hybrid-interval graph diffusion augmentation is presented to suppress the weak generalization ability of the condensed graph on particular architectures by enhancing the uncertainty of node states. Meanwhile, the matching between optimal graph transport plan and representation transport plan is tactfully established to maintain semantic consistencies across source graph and condensed graph spaces, thereby freeing graph condensation from task dependencies. To further facilitate the adaptation of condensed graphs to various downstream tasks, a traceable semantic harmonizer from source nodes to condensed nodes is proposed to bridge semantic associations through the optimized representation transport plan in pre-training. Extensive experiments verify the superiority and versatility of PreGC, demonstrating its task-independent nature and seamless compatibility with arbitrary GNNs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>DINAMO: Dynamic and INterpretable Anomaly MOnitoring for Large-Scale Particle Physics Experiments</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2501-19237</link>
-    <guid isPermaLink="false">arxiv:2501.19237</guid>
-    <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Arsenii Gavrikov et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Ensuring reliable data collection in large-scale particle physics experiments demands Data Quality Monitoring (DQM) procedures to detect possible detector malfunctions and preserve data integrity. Traditionally, this resource-intensive task has been handled by human shifters who struggle with frequent changes in operational conditions. We present DINAMO: a novel, interpretable, robust, and scalable DQM framework designed to automate anomaly detection in time-dependent settings. Our approach constructs evolving histogram templates with built-in uncertainties, featuring both a statistical variant - extending the classical Exponentially Weighted Moving Average (EWMA) - and a machine learning (ML)-enhanced version that leverages a transformer encoder for improved adaptability. Experimental validations on synthetic datasets demonstrate the high accuracy, adaptability, and interpretability of these methods. The statistical variant is being commissioned in the LHCb experiment at the Large Hadron Collider, underscoring its real-world impact. The code used in this study is available at https://github.com/ArseniiGav/DINAMO.</p>]]></description>
   </item>
 
 </channel>
