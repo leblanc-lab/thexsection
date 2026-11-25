@@ -34,91 +34,118 @@
 
 <article class="issue">
   <p class="kicker">Latest issue</p>
-  <h1 class="issue-date">Tuesday, November 24, 2026</h1>
+  <h1 class="issue-date">Wednesday, November 25, 2026</h1>
   <div class="meta">
-    <span class="count">85 papers read</span>
-    <span class="chip">Blind benchmarks for analysis agents</span><span class="chip">Nanosecond Level-1 triggers</span><span class="chip">Dark-matter assumptions audited</span><span class="chip">EFT fit plumbing</span>
+    <span class="count">53 papers read</span>
+    <span class="chip">Four-loop integral technology</span><span class="chip">Energy correlators, bounded and resolved</span><span class="chip">Oscillation updates</span>
   </div>
-  <h2 id="analysis-agents-scored-blind">Analysis agents, scored blind</h2>
-<p>Novák et al. <a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> give the AI-agent thread its first scorecard for experimental analysis. Each agent builds a single workflow on CMS open data, and that workflow is then run on sealed datasets with injected signals and shifted detector settings. Averaged over four tasks, Gemini 4 Argon reaches 60% of the expert reference score, GPT 6 Astra 38% and Claude Opus 5.5 31%. The last is the same model that delivered verified Feynman-integral bases yesterday. Theory output can be checked exactly; analysis output has to be checked by injection, and this is the first benchmark to do that, putting into practice Alimena&rsquo;s evidence-over-code standard from 11-19. Also today: three trigger papers working at tens to hundreds of nanoseconds, a list of DM assumptions that matter more than expected, and colour that refuses to stay subleading.</p>
+  <h2 id="calabiyau-periods-in-electron-g2">Calabi–Yau periods in electron g−2</h2>
+<p>Forner et al. <a href="https://arxiv.org/abs/2611.32854">arXiv:2611.32854</a> compute every master integral in the four-loop ladder family of the QED electron self-energy. The kernels involve sunrise elliptic curves and a Calabi–Yau threefold. On shell, this single family already spans all the non-polylogarithmic constants of the planar four-loop electron <span class="arithmatex">\(g-2\)</span>.</p>
+<p>It anchors a day heavy on integral technology, including a second agent-plus-verifier framework for canonical bases. Also notable: Djouadi carries Monday&rsquo;s toponium <span class="arithmatex">\(\kappa\)</span> formalism into heavy MSSM Higgs searches. Monday&rsquo;s toponium paper <a href="https://arxiv.org/abs/2611.27704">arXiv:2611.27704</a> and yesterday&rsquo;s HEP-Ex-Bench <a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> reappear in today&rsquo;s listing; both were covered earlier this week.</p>
 <h2 id="themes">Themes</h2>
-<h3 id="triggers-in-nanoseconds">Triggers in nanoseconds</h3>
-<p>This is new; nothing in recent memory covers it.
-- <strong>Learned event embedding.</strong> Rozanov et al. <a href="https://arxiv.org/abs/2611.28355">arXiv:2611.28355</a> distill an offline transformer into a 7512-parameter quantised Level-1 encoder running in 147 ns. It rejects 99% of background while keeping 96% of held-out SM processes and 88% of 52 BSM benchmarks.
-- <strong>Symbolic anomaly detector.</strong> Bollhalder et al. <a href="https://arxiv.org/abs/2611.30896">arXiv:2611.30896</a> distill a normalising-flow anomaly detector into an explicit 577-operation formula that runs in 42.8 ns.
-- <strong>CMS Phase-2 muons.</strong> Estrada et al. <a href="https://arxiv.org/abs/2611.30394">arXiv:2611.30394</a> detect muon showers from Drift Tube hits in about 20 ns.</p>
-<p>Signature-agnostic selection now fits inside the L1 latency budget.</p>
-<h3 id="dark-matters-quieter-assumptions">Dark matter&rsquo;s quieter assumptions</h3>
+<h3 id="four-loop-integral-technology">Four-loop integral technology</h3>
 <ul>
-<li><strong>Halo shape.</strong> Shao et al. <a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> find that halo anisotropy moves LZ elastic limits by ±30% above 40 GeV but by up to 10× below 15 GeV.</li>
-<li><strong>Resonant freeze-out.</strong> Arcadi et al. <a href="https://arxiv.org/abs/2611.28230">arXiv:2611.28230</a> drop the kinetic-equilibrium assumption at the Higgs resonance. The coupling needed for the relic abundance shifts by up to 10× for pseudoscalar fermion DM, which strengthens direct-detection constraints.</li>
-<li><strong>Single-electron backgrounds.</strong> Santos-Olmsted et al. <a href="https://arxiv.org/abs/2611.28211">arXiv:2611.28211</a> propose using xenon detectors&rsquo; full dark-electron rate in an annual-modulation search. Sensitivity then scales as <span class="arithmatex">\(S\lesssim\sqrt{B}\)</span> rather than <span class="arithmatex">\(S\lesssim B\)</span>, with no new hardware.</li>
+<li><strong>Higher residue pairings.</strong> Brunello et al. <a href="https://arxiv.org/abs/2611.32544">arXiv:2611.32544</a> build differential equations directly from intersection numbers, with no IBP reduction. They obtain canonical DEs for massless planar ladders that are new at four loops.</li>
+<li><strong>Diphoton with a top loop.</strong> Bera et al. <a href="https://arxiv.org/abs/2611.32553">arXiv:2611.32553</a> give two-loop <span class="arithmatex">\(pp\to\gamma\gamma\)</span> amplitudes with a closed top loop, with elliptic sectors handled without a canonical basis. They ship a C++ hard function.</li>
+<li><strong>CANON.</strong> Jian et al. <a href="https://arxiv.org/abs/2611.33100">arXiv:2611.33100</a> let an agent pick basis-construction methods while independent programs verify each proposal and force retries on failure. This is the same deterministic-gate design as Petit Rosas&rsquo;s Opus run (11-23), though demonstrated only on two- and three-loop families.</li>
 </ul>
-<p>This continues the week&rsquo;s habit of auditing error bars, now applied to dark matter.</p>
-<h3 id="plumbing-for-eft-fits">Plumbing for EFT fits</h3>
+<h3 id="energy-correlators-bounded-and-resolved">Energy correlators, bounded and resolved</h3>
 <ul>
-<li><strong>SMEFT plus PDFs.</strong> Cole et al. <a href="https://arxiv.org/abs/2611.28216">arXiv:2611.28216</a> fit 15 Wilson coefficients and the proton PDFs simultaneously. They add parity violation via LEFT matching and include charged-current high-mass Drell–Yan for the first time. The PDFs barely move.</li>
-<li><strong>EFT-safe acceptance.</strong> ATLAS <a href="https://arxiv.org/abs/2611.30272">arXiv:2611.30272</a> recasts <span class="arithmatex">\(H\to4\ell\)</span> STXS into a Lorentz-invariant fiducial region with <span class="arithmatex">\(A^{LIF}_{SM}=0.8546\)</span>, production-independent to 0.07%. EFT reinterpretations then need no EFT-dependent efficiency corrections.</li>
+<li><strong>Positivity bounds.</strong> Ricci et al. <a href="https://arxiv.org/abs/2611.31587">arXiv:2611.31587</a> derive the complete set of positivity constraints on multi-point correlators. They use them to bound three-point multipoles in QCD from LEP one- and two-point data.</li>
+<li><strong>Quarkonium.</strong> Ee et al. <a href="https://arxiv.org/abs/2611.31445">arXiv:2611.31445</a> give the first full LO analytic quarkonium EEC. The channel shapes are ordered by the <span class="arithmatex">\(c\bar c\)</span> pair&rsquo;s angular momentum <span class="arithmatex">\(J\)</span>, which LHC forward coverage exposes better than sPHENIX.</li>
+<li><strong>Boosted bosons.</strong> Jobilal et al. <a href="https://arxiv.org/abs/2611.33057">arXiv:2611.33057</a> reach N³LL in the small-acoplanarity limit, with Collins-function sensitivity in <span class="arithmatex">\(Z\gamma\)</span>.</li>
 </ul>
-<p>EFT is the year&rsquo;s standard collider language, and these papers are infrastructure for it.</p>
+<p>These are natural theory partners for ATLAS&rsquo;s all-charged-particle EEC from last week&rsquo;s OmniFold release.</p>
+<h3 id="oscillation-updates">Oscillation updates</h3>
+<p>T2K <a href="https://arxiv.org/abs/2611.32106">arXiv:2611.32106</a> adds its first Gd-loaded Super-K data and still favours normal ordering, near-maximal CP violation and, slightly, the upper octant. The abstract quotes no significances. That matters because accelerator <span class="arithmatex">\(\nu_\mu\)</span> data is one of the opposing pulls behind the 1.9σ global ordering hint (Machado, 11-11). Minakata <a href="https://arxiv.org/abs/2611.32481">arXiv:2611.32481</a> shows that Nunokawa&rsquo;s <span class="arithmatex">\(L/E\)</span>-dependent <span class="arithmatex">\(\Delta m^2_{\rm eff}\)</span> is exact, not an approximation.</p>
 <h2 id="worth-a-look">Worth a look</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a></strong> (Novák et al.): The model rankings will date fast. The sealed-world design, with injection tests applied to a single fixed workflow, is the lasting contribution.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a></strong> (Chargeishvili): Exact full-colour soft evolution up to 15 gluons, an 8×10⁸-dimensional colour space handled on one node. For gap-vetoed jet rates, leading colour overestimates the full result by 1.3×, 1.8× and 6.6× at 8, 10 and 14 partons.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a></strong> (Shao et al.): For the 248 keV LZ event, some anisotropic halos make splittings kinematically accessible where solar-neutrino bounds on the higgsino lose force. That is the constraint that has excluded the higgsino reading since Pospelov. The authors stress that kinematic access does not establish viability.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a></strong> (Chen et al.): Magic production vanishes for single gluon, photon, W, Higgs and graviton exchange, and for leptonic Z exchange at <span class="arithmatex">\(\sin^2\theta_W=1/4\)</span>. The result is computed in the chirality basis, so the basis-dependence of magic measures reported by Altomonte et al. on 11-16 applies here too.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a></strong> (Reboud et al.): Subtract one simple pole per narrow resonance, then convolve the smooth remainder on a grid set by the detector resolution. This is a structural answer to the normalisation problems from sharply localized terms that Zhu et al. flagged on 11-17.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.32854">arXiv:2611.32854</a></strong> (Forner et al.): Weight-seven boundary constants plus numerical transport across all <span class="arithmatex">\(p^2\)</span>. This is the geometric input the four-loop electron <span class="arithmatex">\(g-2\)</span> needs.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.09666">arXiv:2611.09666</a></strong> (Djouadi et al.): Signal–background interference in <span class="arithmatex">\(H/A\to VV, hh, Zh\)</span> at low <span class="arithmatex">\(\tan\beta\)</span>, governed by the same complex <span class="arithmatex">\(\kappa\)</span> as the toponium paper. Interference raises signal rates by tens of percent. That barely moves current limits except at the high-mass end of <span class="arithmatex">\(H\to hh\)</span>, but it matters for HL-LHC.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31359">arXiv:2611.31359</a></strong> (Münzenberg et al.): Extends partial dressing to gauge and ghost modes, the piece Zhao et al.&rsquo;s nine-orders-of-magnitude 2HDM comparison (11-20) left at Debye level. Dressing the transverse modes removes the SM barrier altogether, though the authors warn the treatment isn&rsquo;t quantitatively reliable there.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.32516">arXiv:2611.32516</a></strong> (Nayak): At equal multiplicity, published ATLAS spectra give a lower Ne+Ne/O+O <span class="arithmatex">\(\langle p_T\rangle\)</span>, a ratio of 0.9822 at 6.6σ. This is a size-dependence test for the year&rsquo;s small-system QGP payoff.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31600">arXiv:2611.31600</a></strong> (Mojahed): A thermodynamic argument against SM warm inflation. Biases in the range where friction has been simulated imply chemical potentials large enough to condense the Higgs, so the linear-friction assumption can&rsquo;t be used as is.</li>
 </ul>
 <h2 id="also-noted">Also noted</h2>
 <ul>
-<li><strong><a href="https://arxiv.org/abs/2611.31214">arXiv:2611.31214</a></strong> <em>Massive de Sitter correlators at one loop</em> — Amara McCune (hep-th). Exact squeezed signals from heavy SM loops come out 10–30× larger than late-time estimates. This is the week&rsquo;s third exact cosmological-correlator result.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.29939">arXiv:2611.29939</a></strong> <em>Ionization of gravitational atoms by a companion-sourced Yukawa potential</em> — Yi Wang et al. (gr-qc). A Yukawa force sourced by the companion can halt superradiant growth, extending the binary-environment effect on superradiance clouds noted on 11-20.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.28208">arXiv:2611.28208</a></strong> <em>Bring Your Own Instanton…</em> — Csaba Csáki et al. (hep-th). Rubakov–Callan catalysis proceeds via sourced instantons without exponential suppression. It is an IR effect: the scattering fermions never reach the monopole core.</li>
-<li><strong><a href="https://arxiv.org/abs/2611.31080">arXiv:2611.31080</a></strong> <em>Kaon-pair production with NNLO effects</em> — Yizhou Fang et al. (hep-ph). McMule now covers <span class="arithmatex">\(e^+e^-\to K\bar K\)</span> at NNLO in initial-state QED, with very large corrections at CMD-3 energies. Relevant to HVP and the radiative-return generator comparison from 11-23.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31388">arXiv:2611.31388</a></strong> <em>Charge-resolved four-lepton probes of an <span class="arithmatex">\(e\mu\)</span>-flavour-violating scalar at FCC-ee</em> — Kuldeep Deka et al. (hep-ph). Targets CMS&rsquo;s 146 GeV <span class="arithmatex">\(e\mu\)</span> excess. The same-sign channel reaches <span class="arithmatex">\(|h|\simeq1.7\times10^{-3}\)</span>, below the electron <span class="arithmatex">\(g-2\)</span> bound.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.33105">arXiv:2611.33105</a></strong> <em>Triple-Higgs production: a window on the Higgs potential and anomalous top-Higgs couplings</em> — John M. Campbell et al. (hep-ph). Gives <span class="arithmatex">\(\kappa_3/\kappa_4\)</span> parametrisations and the first direct constraint on <span class="arithmatex">\(\kappa_{3t}\)</span>.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31311">arXiv:2611.31311</a></strong> <em>Machine learning for trigger, reconstruction and generation</em> — Marco Giacalone (physics.ins-det). Confirms the AXOL1TL and GELATO anomaly triggers are running in Run 3, context for yesterday&rsquo;s nanosecond-trigger papers.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31272">arXiv:2611.31272</a></strong> <em>In-in formalism &amp; <span class="arithmatex">\(\mathcal{T}_C^\star\)</span>-product: no contribution from total time derivatives</em> — Yohei Ema et al. (astro-ph.CO). Boundary terms at the turning point cancel.</li>
+<li><strong><a href="https://arxiv.org/abs/2611.31749">arXiv:2611.31749</a></strong> <em>Parton Physics in the Schwinger Model from Matrix Product States</em> — Mari Carmen Bañuls et al. (hep-lat). Paired with Hormaza et al. <a href="https://arxiv.org/abs/2611.31745">arXiv:2611.31745</a>: both compute PDFs and LCDAs in Minkowski space from tensor networks.</li>
 </ul>
 <h2 id="deep-dives">Deep dives</h2>
-<h3 id="arxiv261128194-hep-ex-bench-evaluating-agentic-performance-in-high-energy-physics-experiment-data-analyses-with-sealed-worlds-andrzej-novak-et-al"><a href="https://arxiv.org/abs/2611.28194">arXiv:2611.28194</a> — HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds (Andrzej Nov'ak et al.)</h3>
-<p>Each agent gets one session of at most 7.5 h on a public world built from 2016 CMS open simulation (MiniAOD, full detector simulation). It must deliver a single pipeline, which is then frozen and rerun on 10–40 sealed worlds per task. Every world has a hidden truth (<span class="arithmatex">\(m_H\)</span>, <span class="arithmatex">\(\mu\)</span>, <span class="arithmatex">\(\Gamma_H/\Gamma_H^{SM}\)</span>, or lepton and jet corrections) and one of 13 detector profiles that distort scale, resolution and efficiencies. The score is a strictly proper log score relative to an expert reference run on the same worlds. A shared-bias term growing like <span class="arithmatex">\(\sqrt N\)</span> is added, along with weighted reviewer checks: goodness of fit, truthfulness against an evaluator refit, and Z-peak closure. With <span class="arithmatex">\(\gamma=2\)</span>, the ratio reads as an effective fraction of the data.</p>
-<p>Across 99 sessions per task and eleven models:
-- Gemini 4 Argon averages 60±8% of the reference, GPT 6 Astra 38%, Claude Opus 5.5 31%.
-- No open-weight model exceeds 10%.
-- Sessions undercover far more often than they overcover.
-- Run-to-run spread exceeds the differences between prompt tiers. Opus 5.5 on HiggsLepMass reaches 89% in its best session against a 49% mean.
-- The P2 expert plan adds nothing over P1.</p>
-<p>The harness is validated adversarially. A memorised 125 GeV scores &lt;1% and understated uncertainties score 34%. With ten worlds, every flawed archetype falls below the reference in ≥96% of draws.</p>
-<p>Caveats the authors flag:
-- Worlds vary detector response and signal, but not generators. The six JetCalib sessions that beat the reference gain mainly because the reference&rsquo;s modelling-dominated JES uncertainties exceed the injected variations.
-- Scores depend on the chosen reference and weights.
-- Only one experiment is covered.</p>
-<h3 id="arxiv261129072-a-billion-colour-states-exact-soft-gluon-evolution-beyond-leading-colour-for-many-jet-qcd-bakar-chargeishvili"><a href="https://arxiv.org/abs/2611.29072">arXiv:2611.29072</a> — A billion colour states: exact soft-gluon evolution beyond leading colour for many-jet QCD (Bakar Chargeishvili)</h3>
-<p>Leading colour degrades steadily with multiplicity. Take a soft veto outside the jets at <span class="arithmatex">\(t=0.1\)</span> (<span class="arithmatex">\(Q/Q_0\approx14\)</span>), inside the <span class="arithmatex">\(t\approx0.05\)</span>–0.12 range the author maps to LHC dijet vetoes. There, LC overestimates the full-colour no-emission factor by median factors of 1.27, 1.83 and 6.6 at 8, 10 and 14 partons. The gap fraction is off by 2.2 at <span class="arithmatex">\(n=14\)</span>. Pairs among the three hardest jets form a colour singlet 3–9% of the time; LC sets this to zero.</p>
-<p>The method builds an orthogonal multiplet basis by coupling partons one leg at a time, with each step fixed by a Casimir eigenvalue (Jucys–Murphy elements). Norms come in closed form, and dipoles act only on the label segment between the two partons, via small recoupling tables. <span class="arithmatex">\(\Gamma\)</span> is therefore never stored: <span class="arithmatex">\(\Gamma x\)</span> is a block &ldquo;sweep&rdquo; and <span class="arithmatex">\(e^{-t\Gamma}\)</span> a Krylov iteration. Fourteen gluons take about an hour on one A100. Fifteen gluons (827,888,726 states) take 3–7 h per <span class="arithmatex">\(t\)</span> value on a CPU node with up to 857 GB.</p>
-<p>For showers, the formal <span class="arithmatex">\(1/N_c^2\)</span> suppression is outweighed by the growing number of unconnected pairs. Caveats:
-- The calculation uses one-loop <span class="arithmatex">\(\Gamma\)</span> at fixed coupling, with colour-diagonal factors dropped.
-- Events are flat in phase space, and real emission is included only up to five hard partons.
-- Independent cross-checks stop at <span class="arithmatex">\(n\le7\)</span>. Beyond that, validation rests on internal consistency.
-- The <span class="arithmatex">\(n=15\)</span> points show feasibility and do not enter the LC comparison.</p>
-<h3 id="arxiv261129197-quantifying-the-impact-of-galactic-dark-matter-halo-models-on-lz-results-jialiang-shao-et-al"><a href="https://arxiv.org/abs/2611.29197">arXiv:2611.29197</a> — Quantifying the Impact of Galactic Dark Matter Halo Models on LZ Results (Jialiang Shao et al.)</h3>
-<p>The authors rescale LZ limits by the ratio of predicted yields across 22 self-consistent BCFS halos, truncated at a common <span class="arithmatex">\(v_{esc}=544\)</span> km/s.</p>
-<p>Elastic results:
-- Above about 40 GeV, the SI envelope is <span class="arithmatex">\(R\approx0.8\)</span>–1.3 relative to the SHM.
-- At 9 GeV it opens to 0.17–1.63 (class B).
-- Extending the class-D cutoff to 1000 km/s drives <span class="arithmatex">\(R\)</span> to about 0.04.
-- At 9 GeV, the <span class="arithmatex">\(v_{esc}\)</span> scan (factor ~2 for classes A/B) and the efficiency treatment (factor 2–3) matter about as much as the halo.
-- In the SD channel at 40 GeV, nuclear-structure uncertainty (factors 3.6 and 13 for neutron and proton) still exceeds the roughly 2× halo spread.</p>
-<p>For the 248 keV event (LZ: 3.4σ local, 2.6σ global), they use a background-free single-event likelihood at 1.1 TeV. The tail sets the inelastic ceiling: <span class="arithmatex">\(\delta_{max}\approx384\)</span> keV for the SHM and 556 keV for an LMC-like tail. The higgsino cross section (~7×10⁻³⁹ cm²) crosses these two contours at δ≈360 and 455 keV, both below the 566 keV solar-neutrino threshold. Some anisotropic contours reach 700–775 keV, but only at cross sections well below the higgsino value (D1/D3 near 3×10⁻⁴⁰ cm²).</p>
+<h3 id="arxiv261132854-the-four-loop-ladder-integral-family-for-the-qed-electron-self-energy-felix-forner-et-al"><a href="https://arxiv.org/abs/2611.32854">arXiv:2611.32854</a> — The Four-Loop Ladder Integral Family for the QED Electron Self-Energy (Felix Forner et al.)</h3>
+<p>All 160 master integrals (72 sectors) of the planar four-loop ladder family are now in canonical form. Their on-shell boundary values reproduce every non-polylogarithmic constant class in the planar four-loop electron <span class="arithmatex">\(g-2\)</span>, plus two new independent weight-seven constants.</p>
+<p>On their maximal cuts, 53 sectors are polylogarithmic, 18 are elliptic, and one, the equal-mass four-loop banana, carries a Calabi–Yau threefold. Even so, the threefold leaks into most of the 27 extra functions <span class="arithmatex">\(G_i\)</span> needed for <span class="arithmatex">\(\epsilon\)</span>-factorisation. It enters through couplings to eyeball and double-eyeball sectors, and to the cat-eye sector, where two differently parametrised sunrise curves already couple on the maximal cut. The resulting differential equation has 100 kernels, of which only 13 are dlog.</p>
+<p>Boundary constants were fitted from AMFlow inputs to 300–350 digits:
+- <strong>At <span class="arithmatex">\(p^2\to\infty\)</span>:</strong> pure alternating MZVs through weight seven, with no geometric trace.
+- <strong>On shell:</strong> alternating MZVs and polylogs at sixth roots of unity. Sector 1145 needed 4000 digits from series transport (6700 orders on 39 patches).
+- <strong>Plus</strong> the Laporta non-polylogarithmic basis.</p>
+<p>Numerical transport evaluates all 160 integrals through <span class="arithmatex">\(\epsilon^7\)</span> at any <span class="arithmatex">\(p^2\)</span> in 0.06–0.28 s, with errors between <span class="arithmatex">\(6\times10^{-10}\)</span> and <span class="arithmatex">\(7\times10^{-7}\)</span>.</p>
 <p>Caveats:
-- Limits are rescaled by yield ratio rather than refit with the LZ likelihood.
-- The suite is not a posterior, and it mixes profile, rotation and anisotropy.
-- The 1000 km/s cutoffs are sensitivity tests, not measurements.
-- The single-event fit assumes unit efficiency, and its coverage is uncalibrated.</p>
-<hr />
-<p><em>Full text for <a href="https://arxiv.org/abs/2611.29717">arXiv:2611.29717</a> (Chen et al.) and <a href="https://arxiv.org/abs/2611.30877">arXiv:2611.30877</a> (Reboud et al.) was not supplied, so those picks are not expanded here.</em></p>
+- This is one family, not <span class="arithmatex">\(g-2\)</span> itself.
+- The two extra constants are left numerical. They may not enter the physical result, or they may obey relations visible only at higher precision.
+- The <span class="arithmatex">\(z=0\)</span> constant basis is conjectured.
+- Removing logarithms at non-MUM points works here but is unproven in general.</p>
+<p>The authors also note that this basis construction lends itself to AI agents, which fits today&rsquo;s CANON theme.</p>
+<h3 id="arxiv261109666-interference-effects-in-mssm-higgs-boson-searches-at-low-tanbeta-abdelhak-djouadi-et-al"><a href="https://arxiv.org/abs/2611.09666">arXiv:2611.09666</a> — Interference effects in MSSM Higgs boson searches at low <span class="arithmatex">\(\tan\beta\)</span> (Abdelhak Djouadi et al.)</h3>
+<p>Djouadi and Ellis show that narrow (<span class="arithmatex">\(\Gamma/M\sim1\)</span>–2%) heavy <span class="arithmatex">\(H/A\)</span> resonances at low <span class="arithmatex">\(\tan\beta\)</span> still interfere strongly with the <span class="arithmatex">\(gg\)</span> continuum. The size of the effect is set by the Fano ratio <span class="arithmatex">\(\kappa\)</span> of resonant to non-resonant amplitude at the peak, not by <span class="arithmatex">\(\Gamma/M\)</span>. The digest ties this <span class="arithmatex">\(\kappa\)</span> to Monday&rsquo;s toponium formalism.</p>
+<p>Suppressed <span class="arithmatex">\(\cos(\beta-\alpha)\)</span> couplings plus <span class="arithmatex">\(t\bar t\)</span>-dominated widths make <span class="arithmatex">\(|\kappa|\propto 1/M_A^2\)</span>, nearly independent of <span class="arithmatex">\(\tan\beta\)</span>. At <span class="arithmatex">\(\tan\beta=2\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(M_A\)</span></th>
+<th><span class="arithmatex">\(\lvert\kappa\rvert\)</span>: <span class="arithmatex">\(ZZ\)</span> / <span class="arithmatex">\(hh\)</span> / <span class="arithmatex">\(Zh\)</span></th>
+<th>Rate increase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>600 GeV</td>
+<td>4.5 / 9 / 3</td>
+<td><span class="arithmatex">\(ZZ\)</span> +20%, <span class="arithmatex">\(hh\)</span> +10%</td>
+</tr>
+<tr>
+<td>800 GeV</td>
+<td>2.7 / 6 / 2.4</td>
+<td><span class="arithmatex">\(ZZ\)</span> +50%, <span class="arithmatex">\(hh\)</span> +17%</td>
+</tr>
+<tr>
+<td>1 TeV</td>
+<td>2 / 4.6 / 2</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>At 500 GeV the <span class="arithmatex">\(ZZ\)</span> increase is 9%. The enhancement comes from the absorptive part of the top box above <span class="arithmatex">\(2m_t\)</span>, which gives Im<span class="arithmatex">\(\,\kappa&gt;0\)</span>, so exact <span class="arithmatex">\(m_t\)</span> dependence is essential.</p>
+<p>Applied to ATLAS&rsquo;s 2024 hMSSM summary, the contours shift as follows:
+- <span class="arithmatex">\(ZZ\)</span> moves by <span class="arithmatex">\(\le4\)</span> GeV.
+- <span class="arithmatex">\(Zh\)</span> moves by <span class="arithmatex">\(\Delta\tan\beta\approx0.2\)</span>.
+- <span class="arithmatex">\(WW\)</span> does not move.
+- The high-mass <span class="arithmatex">\(hh\)</span> edge at <span class="arithmatex">\(\tan\beta=1\)</span> moves from 686 to 706 GeV.</p>
+<p>Only the <span class="arithmatex">\(hh\)</span> strip at <span class="arithmatex">\(M_A\approx560\)</span>–710 GeV still matters, since <span class="arithmatex">\(h\)</span>-coupling fits exclude <span class="arithmatex">\(M_A\lesssim560\)</span> GeV. For HL-LHC masses of 600 GeV–1 TeV the effect becomes <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</p>
+<p>Caveats:
+- The calculation is LO, with Goldstone equivalence for the longitudinal amplitudes.
+- Detector resolution is modelled as Gaussian, with a fixed-background fit.
+- The ATLAS contours were digitised from a figure.</p>
+<h3 id="arxiv261131359-superdaisy-resummation-in-theories-with-broken-gauge-symmetries-martin-munzenberg-et-al"><a href="https://arxiv.org/abs/2611.31359">arXiv:2611.31359</a> — Superdaisy Resummation in Theories with Broken Gauge Symmetries (Martin M"unzenberg et al.)</h3>
+<p>Partial-dressing (tadpole) resummation is extended to the gauge and ghost sectors of spontaneously broken theories. The construction works in a general <span class="arithmatex">\(R_\xi\)</span> gauge, with separate gap equations for the transverse, longitudinal and gauge-direction modes. It solves for <span class="arithmatex">\(Z\)</span>–photon mixing self-consistently and keeps the full mass dependence of the thermal self-energies. Earlier SM gauge gap studies used the high-<span class="arithmatex">\(T\)</span> expansion with <span class="arithmatex">\(g'=0\)</span>. Recent 2HDM PD work, which the digest links to Zhao et al., kept gauge bosons at leading Debye masses.</p>
+<p>The provided text breaks off before the numerical section, so the results below come from the abstract:
+- Beyond-<span class="arithmatex">\(\mathcal{O}(T^2)\)</span> corrections matter mainly for the gauge thermal masses and only slightly shift the scalar spectrum.
+- Self-consistent longitudinal dressing lowers the SM barrier.
+- Dressing the transverse modes removes it entirely, consistent with the lattice crossover.</p>
+<p>The authors&rsquo; own power counting limits this. The transverse thermal mass scales as <span class="arithmatex">\(g^2T\)</span>, so the effective coupling <span class="arithmatex">\(\gamma_T\sim1\)</span> near <span class="arithmatex">\(h\to0\)</span>, giving <span class="arithmatex">\(\mathcal{O}(1)\)</span> uncertainty exactly where the transition is decided. Lollipop diagrams and momentum-overlap (sunset/bubble) corrections are also omitted. Mixed gauge–scalar and fermion bubbles lack the vertex suppression that justifies this omission in the scalar case. The paper therefore establishes that transverse modes control the transition&rsquo;s character, but does not yet give a quantitative barrier.</p>
 </article>
 
 <section class="recent">
   <h2 class="section-label">Previous issues</h2>
   <ul class="issue-list">
+  
+    <li>
+      <a href="digest/2026-11-24.html"><span class="date">Tuesday, November 24, 2026</span></a>
+      <span class="themes"><span class="chip">Blind benchmarks for analysis agents</span><span class="chip">Nanosecond Level-1 triggers</span><span class="chip">Dark-matter assumptions audited</span><span class="chip">EFT fit plumbing</span></span>
+    </li>
   
     <li>
       <a href="digest/2026-11-23.html"><span class="date">Monday, November 23, 2026</span></a>
@@ -150,11 +177,6 @@
       <span class="themes"><span class="chip">Exclusive B at three loops</span><span class="chip">Lattice and LCSR form factors</span><span class="chip">Non-unique bubble hydrodynamics</span><span class="chip">Dark-matter bounds recalibrated</span></span>
     </li>
   
-    <li>
-      <a href="digest/2026-11-13.html"><span class="date">Friday, November 13, 2026</span></a>
-      <span class="themes"><span class="chip">LZ event, elastic reading</span><span class="chip">Loop orders climbing</span><span class="chip">Quantum-computing DM searches</span><span class="chip">Supercooling consistency checks</span><span class="chip">Top SMEFT strategies</span></span>
-    </li>
-  
   </ul>
 </section>
 
@@ -164,7 +186,7 @@
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-24 15:33 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-25 07:26 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"

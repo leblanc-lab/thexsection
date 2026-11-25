@@ -7,7 +7,68 @@
   <description>The standout papers, read in full</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>The Four-Loop Ladder Integral Family for the QED Electron Self-Energy</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-32854</link>
+    <guid isPermaLink="false">arxiv:2611.32854</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Felix Forner et al.</dc:creator>
+    <description><![CDATA[<p>All 160 master integrals (72 sectors) of the planar four-loop ladder family are now in canonical form. Their on-shell boundary values reproduce every non-polylogarithmic constant class in the planar four-loop electron g-2, plus two new independent weight-seven constants.</p>
+<p>On their maximal cuts, 53 sectors are polylogarithmic, 18 are elliptic, and one, the equal-mass four-loop banana, carries a Calabi–Yau threefold. Even so, the threefold leaks into most of the 27 extra functions G_i needed for ϵ-factorisation. It enters through couplings to eyeball and double-eyeball sectors, and to the cat-eye sector, where two differently parametrised sunrise curves already couple on the maximal cut. The resulting differential equation has 100 kernels, of which only 13 are dlog.</p>
+<p>Boundary constants were fitted from AMFlow inputs to 300–350 digits:
+- <strong>At p²→∞:</strong> pure alternating MZVs through weight seven, with no geometric trace.
+- <strong>On shell:</strong> alternating MZVs and polylogs at sixth roots of unity. Sector 1145 needed 4000 digits from series transport (6700 orders on 39 patches).
+- <strong>Plus</strong> the Laporta non-polylogarithmic basis.</p>
+<p>Numerical transport evaluates all 160 integrals through ϵ⁷ at any p² in 0.06–0.28 s, with errors between 6×10⁻¹⁰ and 7×10⁻⁷.</p>
+<p>Caveats:
+- This is one family, not g-2 itself.
+- The two extra constants are left numerical. They may not enter the physical result, or they may obey relations visible only at higher precision.
+- The z=0 constant basis is conjectured.
+- Removing logarithms at non-MUM points works here but is unproven in general.</p>
+<p>The authors also note that this basis construction lends itself to AI agents, which fits today&rsquo;s CANON theme.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Interference effects in MSSM Higgs boson searches at low tanβ</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-09666</link>
+    <guid isPermaLink="false">arxiv:2611.09666</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Abdelhak Djouadi et al.</dc:creator>
+    <description><![CDATA[<p>Djouadi and Ellis show that narrow (Γ/M∼1–2%) heavy H/A resonances at low tanβ still interfere strongly with the gg continuum. The size of the effect is set by the Fano ratio κ of resonant to non-resonant amplitude at the peak, not by Γ/M. The digest ties this κ to Monday&rsquo;s toponium formalism.</p>
+<p>Suppressed cos(β-α) couplings plus tt̅-dominated widths make |κ|∝1/M_A², nearly independent of tanβ. At tanβ=2:</p>
+<p>| M_A | |κ|: ZZ / hh / Zh | Rate increase |
+|&mdash;|&mdash;|&mdash;|
+| 600 GeV | 4.5 / 9 / 3 | ZZ +20%, hh +10% |
+| 800 GeV | 2.7 / 6 / 2.4 | ZZ +50%, hh +17% |
+| 1 TeV | 2 / 4.6 / 2 | — |</p>
+<p>At 500 GeV the ZZ increase is 9%. The enhancement comes from the absorptive part of the top box above 2m_t, which gives Imκ&gt;0, so exact m_t dependence is essential.</p>
+<p>Applied to ATLAS&rsquo;s 2024 hMSSM summary, the contours shift as follows:
+- ZZ moves by ≤4 GeV.
+- Zh moves by Δtanβ≈0.2.
+- WW does not move.
+- The high-mass hh edge at tanβ=1 moves from 686 to 706 GeV.</p>
+<p>Only the hh strip at M_A≈560–710 GeV still matters, since h-coupling fits exclude M_A≲560 GeV. For HL-LHC masses of 600 GeV–1 TeV the effect becomes 𝒪(1).</p>
+<p>Caveats:
+- The calculation is LO, with Goldstone equivalence for the longitudinal amplitudes.
+- Detector resolution is modelled as Gaussian, with a fixed-background fit.
+- The ATLAS contours were digitised from a figure.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Superdaisy Resummation in Theories with Broken Gauge Symmetries</title>
+    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2611-31359</link>
+    <guid isPermaLink="false">arxiv:2611.31359</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin M\"unzenberg et al.</dc:creator>
+    <description><![CDATA[<p>Partial-dressing (tadpole) resummation is extended to the gauge and ghost sectors of spontaneously broken theories. The construction works in a general R_ξ gauge, with separate gap equations for the transverse, longitudinal and gauge-direction modes. It solves for Z–photon mixing self-consistently and keeps the full mass dependence of the thermal self-energies. Earlier SM gauge gap studies used the high-T expansion with g&rsquo;=0. Recent 2HDM PD work, which the digest links to Zhao et al., kept gauge bosons at leading Debye masses.</p>
+<p>The provided text breaks off before the numerical section, so the results below come from the abstract:
+- Beyond-𝒪(T²⁾ corrections matter mainly for the gauge thermal masses and only slightly shift the scalar spectrum.
+- Self-consistent longitudinal dressing lowers the SM barrier.
+- Dressing the transverse modes removes it entirely, consistent with the lattice crossover.</p>
+<p>The authors&rsquo; own power counting limits this. The transverse thermal mass scales as g²T, so the effective coupling γ_T∼1 near h→0, giving 𝒪(1) uncertainty exactly where the transition is decided. Lollipop diagrams and momentum-overlap (sunset/bubble) corrections are also omitted. Mixed gauge–scalar and fermion bubbles lack the vertex suppression that justifies this omission in the scalar case. The paper therefore establishes that transverse modes control the transition&rsquo;s character, but does not yet give a quantitative barrier.</p>]]></description>
+  </item>
 
   <item>
     <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
@@ -3409,36 +3470,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wen-Xuan Zhang et al.</dc:creator>
     <description><![CDATA[<p>Zhang, Luo and Liu ask whether the radial excitation ladder of quarkonia terminates, solving a screened relativized Godfrey–Isgur Hamiltonian for cc̅ and bb̅ via the Gaussian expansion method (N_max=20, r_max=30 fm) up to n=14. Screened confinement replaces the linear term&rsquo;s unbounded rise with a plateau M_∞=m_1+m_2+b/μ+c, giving limiting masses of <strong>4.74 GeV</strong> (cc̅) and <strong>11.67 GeV</strong> (bb̅). Crucially, while masses saturate — adjacent gaps dropping below 10 MeV — RMS radii keep diverging to ∼10–50 fm, an order of magnitude past the confinement scale. This &ldquo;mass–radius decoupling&rdquo; defines a breakdown of the qq̅ picture. A threshold criterion (min gap &lt;10 MeV with radius increments &gt;3/2 fm), corroborated by CUSUM/two-segment changepoint analysis of log(ΔR/ΔM) and a resolvability index χ_n=ΔM_n R_n collapsing below unity, locates operational upper limits at n≈8–10 for charmonium (D-waves first, then P, then S) and n≈12–13 for bottomonium. Staged χ² fits give RMS mass residuals of 34/24 MeV (10/4 MeV for low-lying states), with the charmonium screening length μ⁻¹≈1.4 fm inside the lattice string-breaking range.</p>
 <p>Why it matters: this is the first quantitative answer to a long-standing spectroscopy question, and it is directly testable — no new charmonia should appear above ∼4.7 GeV, and BESIII/Belle II/LHCb can probe this. Caveats are candidly stated: high-n bottomonium shows round-off artifacts; the thresholds are empirical; and the truncation value is model-input-dependent (alternative fits give 4.61–4.83 GeV). Formal parameter errors are not quoted. The manuscript was substantially AI-drafted (Grok, GPT-5.4), per the authors&rsquo; declaration.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Beyond Δm²: Absolute Mass Sensitivity in Neutrino Oscillations</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-13736</link>
-    <guid isPermaLink="false">arxiv:2608.13736</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gustavo F. S. Alves et al.</dc:creator>
-    <description><![CDATA[<p>The headline is conceptual: the oscillation phase, expanded beyond leading order in mᵢ/E, contains a term ∝ (mᵢ⁴−mⱼ⁴)L/E₀³ = Δmᵢⱼ²(mᵢ²+mⱼ²)L/E₀³, so oscillations <em>do</em> carry absolute-mass information through the mass-squared <em>sum</em>. The authors show this cannot be recovered from naive plane-wave prescriptions — equal-energy, equal-momentum, and various t↔L replacements disagree at NLO — and derive it properly with a wave-packet treatment that fixes each eigenstate&rsquo;s mean energy/momentum from beta-decay kinematics (an effective two-body decay N_A→(N_B e)+ν̄). The production-dependent correction enters only at the per-mille level (E₀/m_A ≲ 10⁻⁴). Applied to JUNO&rsquo;s 52.5 km reactor baseline, a χ² fit to ~9.5×10⁴ IBD events over six years yields sensitivity m₁ &lt; 305 keV (1σ), 434 keV (2σ) with oscillation parameters profiled; the solar channel dominates because its broad dip lands in JUNO&rsquo;s high-statistics band and survives energy smearing intact.</p>
-<p>Why it matters: this overturns the textbook statement that oscillations measure only Δm². It is a genuinely new, mechanism-independent absolute-mass probe, sensitive to a different combination than beta decay (m_νe), 0νββ (m_ββ), or cosmology (Σmᵢ). The honest caveat is scale: at few-hundred-keV, this is ~10⁴× weaker than KATRIN (0.45 eV) and ~10⁷× weaker than cosmology (0.053 eV), and the sensitivity is limited by a degeneracy in which the NLO shift mimics a rescaling Δm₂₁²→Δm₂₁²(1+m₁²/2E₀²), broken only by the 1/E₀² energy dependence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Enhanced Three-Particle Contribution to Electroweak Penguin B-Meson Decays</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-14341</link>
-    <guid isPermaLink="false">arxiv:2608.14341</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong-Kang Huang et al.</dc:creator>
-    <description><![CDATA[<p>Using SCET with two-step QCD→SCET_I→SCET_II matching, the authors compute for the first time the subleading-twist correction to B→{K,π}ℓ⁺ℓ⁻ from the three-particle twist-three B-meson distribution amplitude at NLO, plus new NNLO corrections to the spectator-scattering (C-type) and weak-annihilation topologies and the O(α_s) D-type spectator term. This is billed as the last missing ingredient for a complete leading-power factorization proof of the b→{s,d}ℓ⁺ℓ⁻ matrix element. The three-particle convolution integrals over the two soft momenta are shown to converge, and the new jet function J_C^(3P) is validated by a second, method-of-regions calculation. Numerically, the newly included leading-power effects shift both real and imaginary parts of the top-sector amplitude T_π⁰ by O(30%) in q²∈[1.5, 4.0] GeV², driven by cancellation among A- and B-type pieces; the largest phenomenological impact is on the direct-CP-asymmetry differences ΔA_CP(B→Pℓℓ), shifted 15–20% at large recoil, where the nontrivial strong phase of J_C^(3P) dominates.</p>
-<p>Why it matters: this is the theory-side counterpart to the week&rsquo;s C₉ story — tightening the leading-power factorization control that any short-distance NP interpretation of b→sℓℓ requires. The honest caveat is that it does not resolve the anomaly: branching fractions for B⁰→K⁰ℓℓ and B⁺→K⁺ℓℓ &ldquo;remain in sharp tension&rdquo; with Belle/CDF/LHCb/CMS at large recoil, and the new B⁺→π⁺ℓℓ predictions actually favor old LHCb data over the latest full-Run-1+2 result (1.1–2.5σ).</p>]]></description>
-  </item>
-
-  <item>
-    <title>Improved measurement of CP violation in B⁰ₛ→J/ψπ⁺π⁻ decays</title>
-    <link>https://leblanc-lab.github.io/thexsection/deep-dives/2026.html#a2608-14119</link>
-    <guid isPermaLink="false">arxiv:2608.14119</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">LHCb collaboration et al.</dc:creator>
-    <description><![CDATA[<p>LHCb performs a time-dependent, flavour-tagged amplitude analysis of ~94,000 B⁰ₛ→J/ψπ⁺π⁻ signal decays from the full Run 2 6 fb⁻¹ sample (38 fs decay-time resolution, 4.5% tagging power), extracting φₛ = −0.077 ± 0.034 ± 0.007 rad, |λ| = 0.993 ± 0.026 ± 0.007, and Γ_H = 0.610 ± 0.002 ± 0.004 ps⁻¹. The π⁺π⁻ spectrum is modelled with six resonances plus a nonresonant term — adding an f₂(1565) contribution to a small ~1.6 GeV peak relative to earlier work — with the CP-odd f₀(980) carrying 72.5% fit fraction. Combining with Run 1 gives φₛ = −0.046 ± 0.031 rad; folding in all other LHCb channels yields φₛ = −0.041 ± 0.017 rad (χ²/ndf = 35/30), consistent with the J/ψφ average and improving precision by ~15%.</p>
-<p>Why it matters: against a week where the flavour front ran on anomalies, this is a clean null. The result sits squarely on the SM prediction φₛ^SM = −0.0376₋₀.₀₀₀₅⁺⁰·⁰⁰⁰⁶ rad, and no direct CP violation is seen (|λ| compatible with 1). The main caveat is explicit in the text: subleading penguin contributions are neglected throughout — externally constrained to a Δφₛ = 5.0 ± 4.6 mrad shift from B⁰→J/ψρ⁰ — and the production asymmetry A_P is fixed to zero (a ±2% variation is taken as systematic). Systematics remain subdominant to the 34 mrad statistical uncertainty on φₛ.</p>]]></description>
   </item>
 
 </channel>

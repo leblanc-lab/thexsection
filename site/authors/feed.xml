@@ -7,7 +7,27 @@
   <description>New from people worth following</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2611-28194</link>
+    <guid isPermaLink="false">arxiv:2611.28194</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrzej Nov\'ak et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris, Michael Kagan) — abstract only, not yet read for a briefing.</em></p>
+<p>Agentic systems are increasingly being explored for automating experimental high-energy physics measurements, but the correctness of their results can today be reliably evaluated only via extensive expert review. To address this, we propose a method to perform detailed quantitative evaluations of agent-driven analyses through the use of blind analysis and injection tests, which are critical in a typical expert review. Agents develop a data analysis pipeline on a public dataset, while the evaluation is performed on programmatically generated sealed private datasets where signals are injected and simulation settings varied within realistic detector uncertainties. By requiring agents to provide a single workflow that is evaluated across these &ldquo;sealed worlds&rdquo;, we are able to test the accuracy and robustness of the workflows. We demonstrate the approach on four tasks built from CMS open data and present it as a way to reliably benchmark scientific work in experimental high-energy physics. At the time of writing, the best-performing model, Gemini 4 Argon, reaches 60% of the score of the expert reference analyses on average, ahead of GPT 6 Astra at 38% and Claude Opus 5.5 at 31%. In individual sessions on one of the tasks, Gemini 4 Argon exceeds the reference. The benchmark is hosted at https://hep-ex-bench.github.io</p>]]></description>
+  </item>
+
+  <item>
+    <title>OmniX: A first jet and event model</title>
+    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2611-31403</link>
+    <guid isPermaLink="false">arxiv:2611.31403</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anna Hallin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — abstract only, not yet read for a briefing.</em></p>
+<p>Foundation models are a new approach to building machine learning algorithms for particle physics. Their central idea is that a single model can be adapted to a variety of downstream tasks, amortizing training costs. So far, most foundation model prototypes have operated on the constituents of a single jet. This limits their usefulness for physics problems at the scale of full events, such as distinguishing different processes, and restricts their performance, as global correla- tions are invisible to the model. Here, we introduce OmniX, an architecture that operates on both single jets and whole events within a single model. Using the jet-level JetClass and Top-tagging datasets and the event-level Collide-2V dataset, we demonstrate that OmniX trained jointly on single jets and full events matches or exceeds otherwise equivalent jet-only and event-only models in generation and classification.</p>]]></description>
+  </item>
 
   <item>
     <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Gillies et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Andrea Banfi) — abstract only, not yet read for a briefing.</em></p>
 <p>In this letter, we test clipping effective field theory (EFT) simulations as a method of ensuring EFT validity. The procedure imposes that, at the level of the simulation, the invariant mass of a W⁺W⁻ pair M_WW is less than the new physics scale Λ. We compare this to two other methods, comparison bin by bin of dimension-6 and dimension-8 squared contributions and implementing a cut on data. We find that setting M_WW &lt; Λ is not strict enough to ensure that the hierarchy of EFT operators is respected for dimension-6 and dimension-8 contributions. We also show that, even when using a stricter cut on M_WW, due to different correlations between M_WW and M_eμ at different EFT orders, the bins in M_eμ (the invariant mass of the leptons originating from W decays) used in an EFT fit may not truly be in the regime of EFT validity when performing a dimension-6 fit with M_WW &lt; Λ. We also explore the correlations of three transverse mass observables: M_T1, M_T2 and M_T3, finding that M_T1 and M_T3 follow the M_WW distribution more closely than M_eμ. We present sensitivity studies using both the M_T3 distribution and M_eμ distribution. We test implementing an experimental cut on M_T3 in place of clipping the EFT simulation at M_WW &lt; Λ. We finally comment that adding M_WW &lt; Λ cuts only to the EFT simulation could be interpreted as modifying the SMEFT expansion by a form factor and could therefore impact the model independence of EFT fits under this procedure.</p>]]></description>
-  </item>
-
-  <item>
-    <title>EveNet: A Foundation Model for Particle Collision Data Analysis</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2601-17126</link>
-    <guid isPermaLink="false">arxiv:2601.17126</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ting-Hsiang Hsu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — abstract only, not yet read for a briefing.</em></p>
-<p>While deep learning is transforming data analysis in high-energy physics, computational challenges limit its potential. We address these challenges in the context of collider physics by introducing EveNet, an event-level foundation model pretrained on 500 million simulated collision events using a hybrid objective of self-supervised learning and physics-informed supervision. By leveraging a shared particle-cloud representation, EveNet outperforms state-of-the-art baselines across diverse tasks, including searches for heavy resonances and exotic Higgs decays, and demonstrates exceptional data efficiency in low-statistics regimes. Crucially, we validate the transferability of the model to experimental data by rediscovering the Υ meson in CMS Open Data and show its capacity for precision physics through the robust extraction of quantum correlation observables stable against systematic uncertainties. These results indicate that EveNet can successfully encode the fundamental physical structure of particle interactions, which offers a unified and resource-efficient framework to accelerate discovery at current and future colliders.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Scaling laws for amplitude surrogates</title>
-    <link>https://leblanc-lab.github.io/thexsection/authors/2026.html#a2601-13308</link>
-    <guid isPermaLink="false">arxiv:2601.13308</guid>
-    <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Henning Bahl et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Anja Butter) — abstract only, not yet read for a briefing.</em></p>
-<p>Scaling laws describing the dependence of neural network performance on the amount of training data, the spent compute, and the network size have emerged across a huge variety of machine learning task and datasets. In this work, we systematically investigate these scaling laws in the context of amplitude surrogates for particle physics. We show that the scaling coefficients are connected to the number of external particles of the process. Our results demonstrate that scaling laws are a useful tool to achieve desired precision targets.</p>]]></description>
   </item>
 
 </channel>
