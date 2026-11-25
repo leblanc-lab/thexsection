@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A note on convergence of Wasserstein policy optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-22622</link>
+    <guid isPermaLink="false">arxiv:2605.22622</guid>
+    <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Šiška et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein Policy Optimization (WPO) is a recently proposed reinforcement learning algorithm that leverages Wasserstein gradient flows to optimize stochastic policies in continuous action spaces. Despite its empirical success, the theoretical convergence properties of WPO in environments with continuous state and action spaces have yet to be fully established. In this note, we argue that WPO within the framework of entropy-regularised Markov Decision Processes converges linearly. This is done by leveraging recent advances in mean-field analysis for convergence of gradient flows using log-Sobole inequalities. Assuming existence of sufficiently regular solution to the gradient flow equation we demonstrate monotonic energy dissipation along the flow and establish a local log-Sobolev inequality. Ultimately, these properties allow us to argue that the value function should converge linearly to the global optimum.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Sliced-Regularized Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23944</link>
+    <guid isPermaLink="false">arxiv:2604.23944</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>We propose a new regularized optimal transport (OT) formulation, termed sliced-regularized optimal transport (SROT). Unlike entropic OT (EOT), which regularizes the transport plan toward an independent coupling, SROT regularizes it toward a smoothened sliced OT (SOT) plan. To the best of our knowledge, SROT is the first approach to leverage a version of SOT plan as a reference to improve classical OT. We provide a formal definition of SROT, derive its dual formulation, and provide a post-Bayesian interpretation of SROT. We then develop a Sinkhorn-style algorithm for efficient computation, retaining the same scalability advantages as EOT. By incorporating a scalable SOT plan as a prior, SROT yields more accurate approximations of the exact OT plan than EOT under the same level of regularization. Moreover, the resulting transport plan improves upon the reference SOT plan itself. We further introduce the corresponding OT divergence induced by SROT, named SROT divergence, and analyze its topological and computational properties. Finally, we validate our approach through experiments on synthetic datasets and color transfer tasks, demonstrating that SROT is better than both EOT and SOT in approximating exact OT. Additional experiments on gradient flows further highlight the advantages of SROT divergence.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning fMRI activations dictionaries across individual geometries via optimal transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20883</link>
+    <guid isPermaLink="false">arxiv:2605.20883</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sonia Mazelet et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Dictionary learning is a powerful tool for creating interpretable representations. When applied to functional magnetic resonance imaging (fMRI) data, the resulting patterns of brain activity can be used for various downstream tasks, such as brain state classification or population-level analysis. However, a major challenge is the variability in brain geometry across individuals. This is usually addressed by projecting each individual brain geometry onto a common template, which removes subject-specific information. In this work, we introduce a novel approach to dictionary learning on fMRI data that explicitly accounts for this variability. We use the optimal transport-based Fused Gromov-Wasserstein (FGW) distance to compare graphs with different geometries and features. To address the challenge of computing multiple FGW distances for large graphs such as those arising from fMRI data, we rely on amortized optimization to learn a neural network that predicts an approximation of the optimal transport plans, which substantially reduces the computational cost. Additionally, we learn dictionary atoms that depend on the FGW trade-off parameter, which controls the balance between feature alignment and structural consistency. Numerical experiments on the HCP dataset demonstrate that the proposed approach captures different levels of geometric variability in the data and provides representations that preserve essential information.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Modeling Temporal scRNA-seq Data with Latent Gaussian Process and Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20989</link>
+    <guid isPermaLink="false">arxiv:2605.20989</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mehmet Yigit Balik et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Single-cell RNA sequencing provides insights into gene expression at single-cell resolution, yet inferring temporal processes from these static snapshot measurements remains a fundamental challenge. Current approaches utilizing neural differential equations and flows are sensitive to overfitting and lack careful considerations of biological variability. In this work, we propose a generative framework that models population trends using a latent heteroscedastic Gaussian process (GP) approximated by Hilbert space methods. To address the absence of genuine cell trajectories, we leverage an optimal transport (OT) objective that aligns generated and observed population distributions. Our method explicitly captures biological heterogeneity by incorporating cell-specific latent time and cell type conditioning to disentangle temporal asynchrony and trajectories to different cell types. We demonstrate state-of-the-art performance on complex interpolation and extrapolation benchmarks and introduce a novel gradient-based strategy for inferring perturbation trajectories.</p>]]></description>
+  </item>
 
   <item>
     <title>UOTIP: Unbalanced Optimal Transport Map for Unpaired Inverse Problems</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wanxin Li et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Fairness testing evaluates whether a model satisfies a specified fairness criterion across different groups, yet most research has focused on classification models, leaving regression models underexplored. This paper introduces a framework for fairness testing in regression models, leveraging Wasserstein distance to project data distribution and focusing on expectation-based criteria. Upon categorizing fairness criteria for regression, we derive a Wasserstein projection test statistic from dual reformulation, and derive asymptotic bounds and limiting distributions, allowing us to formulate both a hypothesis-testing procedure and an optimal data perturbation method to improve fairness while balancing accuracy. Experiments on synthetic data demonstrate that the proposed hypothesis-testing approach offers higher specificity compared to permutation-based tests. To illustrate its potential applications, we apply our framework to two case studies on real data, showing (1) statistically significant gender disparities that appear on student performance data across multiple models, and (2) significant unfairness between pollution areas under multiple fairness criteria affecting housing price data, robust to different group divisions, with feature-level analysis identifying spatial and socioeconomic drivers.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Differentiable Logic Synthesis: Spectral Coefficient Selection via Sinkhorn-Constrained Composition</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13953</link>
-    <guid isPermaLink="false">arxiv:2601.13953</guid>
-    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gorgi Pavlov</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
-<p>Learning precise Boolean logic via gradient descent remains challenging: neural networks typically converge to &ldquo;fuzzy&rdquo; approximations that degrade under quantization. We introduce Hierarchical Spectral Composition, a differentiable architecture that selects spectral coefficients from a frozen Boolean Fourier basis and composes them via Sinkhorn-constrained routing with column-sign modulation. Our approach draws on recent insights from Manifold-Constrained Hyper-Connections (mHC), which demonstrated that projecting routing matrices onto the Birkhoff polytope preserves identity mappings and stabilizes large-scale training. We adapt this framework to logic synthesis, adding column-sign modulation to enable Boolean negation &ndash; a capability absent in standard doubly stochastic routing. We validate our approach across four phases of increasing complexity: (1) For n=2 (16 Boolean operations over 4-dim basis), gradient descent achieves 100% accuracy with zero routing drift and zero-loss quantization to ternary masks. (2) For n=3 (10 three-variable operations), gradient descent achieves 76% accuracy, but exhaustive enumeration over 3^8 = 6561 configurations proves that optimal ternary masks exist for all operations (100% accuracy, 39% sparsity). (3) For n=4 (10 four-variable operations over 16-dim basis), spectral synthesis &ndash; combining exact Walsh-Hadamard coefficients, ternary quantization, and MCMC refinement with parallel tempering &ndash; achieves 100% accuracy on all operations. This progression establishes (a) that ternary polynomial threshold representations exist for all tested functions, and (b) that finding them requires methods beyond pure gradient descent as dimensionality grows. All operations enable single-cycle combinational logic inference at 10,959 MOps/s on GPU, demonstrating viability for hardware-efficient neuro-symbolic logic synthesis.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Discrete Adjoint Schrödinger Bridge Sampler</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08243</link>
-    <guid isPermaLink="false">arxiv:2602.08243</guid>
-    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Guo et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>Learning discrete neural samplers is challenging due to the lack of gradients and combinatorial complexity. While stochastic optimal control (SOC) and Schrödinger bridge (SB) provide principled solutions, efficient SOC solvers like adjoint matching (AM), which excel in continuous domains, remain unexplored for discrete spaces. We bridge this gap by revealing that the core mechanism of AM is 𝑠𝑡𝑎𝑡𝑒-𝑠𝑝𝑎𝑐𝑒 𝑎𝑔𝑛𝑜𝑠𝑡𝑖𝑐, and introduce 𝐝𝐢𝐬𝐜𝐫𝐞𝐭𝐞 𝐀𝐒𝐁𝐒, a unified framework that extends AM and adjoint Schrödinger bridge sampler (ASBS) to discrete spaces. Theoretically, we analyze the optimality conditions of the discrete SB problem and its connection to SOC, identifying a necessary cyclic group structure on the state space to enable this extension. Empirically, discrete ASBS achieves competitive sample quality with significant advantages in training efficiency and scalability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Schrödinger bridge problem via empirical risk minimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08374</link>
-    <guid isPermaLink="false">arxiv:2602.08374</guid>
-    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Denis Belomestny et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
-<p>We study the Schrödinger bridge problem when the endpoint distributions are available only through samples. Classical computational approaches estimate Schrödinger potentials via Sinkhorn iterations on empirical measures and then construct a time-inhomogeneous drift by differentiating a kernel-smoothed dual solution. In contrast, we propose a learning-theoretic route: we rewrite the Schrödinger system in terms of a single positive transformed potential that satisfies a nonlinear fixed-point equation and estimate this potential by empirical risk minimization over a function class. We establish uniform concentration of the empirical risk around its population counterpart under sub-Gaussian assumptions on the reference kernel and terminal density. We plug the learned potential into a stochastic control representation of the bridge to generate samples. We illustrate performance of the suggested approach with numerical experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Weighted Wasserstein Barycenter of Gaussian Processes for exotic Bayesian Optimization tasks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-09181</link>
-    <guid isPermaLink="false">arxiv:2602.09181</guid>
-    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonio Candelieri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Exploiting the analogy between Gaussian Distributions and Gaussian Processes&rsquo; posterior, we present how the weighted Wasserstein Barycenter of Gaussian Processes (W2BGP) can be used to unify, under a common framework, different exotic Bayesian Optimization (BO) tasks. Specifically, collaborative/federated BO, (synchronous) batch BO, and multi-fidelity BO are considered in this paper. Our empirical analysis proves that each one of these tasks requires just an appropriate weighting schema for the W2BGP, while the entire framework remains untouched. Moreover, we demonstrate that the most well-known BO acquisition functions can be easily re-interpreted under the proposed framework and also enable a more computationally efficient way to deal with the computation of the Wasserstein Barycenter, compared with state-of-the-art methods from the Machine Learning literature. Finally, research perspectives branching from the proposed approach are presented.</p>]]></description>
   </item>
 
 </channel>

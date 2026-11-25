@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Permuted and Unlinked Monotone Regression in ℝ^d: an approach based on mixture modeling and optimal transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-03528</link>
+    <guid isPermaLink="false">arxiv:2201.03528</guid>
+    <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Martin Slawski et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Suppose that we have a regression problem with response variable Y in ℝ^d and predictor X in ℝ^d, for d ≥1. In permuted or unlinked regression we have access to separate unordered data on X and Y, as opposed to data on (X,Y)-pairs in usual regression. So far in the literature the case d=1 has received attention, see e.g., the recent papers by Rigollet and Weed [Information &amp; Inference, 8, 619&ndash;717] and Balabdaoui et al. [J. Mach. Learn. Res., 22(172), 1&ndash;60]. In this paper, we consider the general multivariate setting with d ≥1. We show that the notion of cyclical monotonicity of the regression function is sufficient for identification and estimation in the permuted/unlinked regression model. We study permutation recovery in the permuted regression setting and develop a computationally efficient and easy-to-use algorithm for denoising based on the Kiefer-Wolfowitz [Ann. Math. Statist., 27, 887&ndash;906] nonparametric maximum likelihood estimator and techniques from the theory of optimal transport. We provide explicit upper bounds on the associated mean squared denoising error for Gaussian noise. As in previous work on the case d = 1, the permuted/unlinked setting involves slow (logarithmic) rates of convergence rooting in the underlying deconvolution problem. Numerical studies corroborate our theoretical analysis and show that the proposed approach performs at least on par with the methods in the aforementioned prior work in the case d = 1 while achieving substantial reductions in terms of computational complexity.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport using GANs for Lineage Tracing</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2007-12098</link>
+    <guid isPermaLink="false">arxiv:2007.12098</guid>
+    <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Neha Prasad et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In this paper, we present Super-OT, a novel approach to computational lineage tracing that combines a supervised learning framework with optimal transport based on Generative Adversarial Networks (GANs). Unlike previous approaches to lineage tracing, Super-OT has the flexibility to integrate paired data. We benchmark Super-OT based on single-cell RNA-seq data against Waddington-OT, a popular approach for lineage tracing that also employs optimal transport. We show that Super-OT achieves gains over Waddington-OT in predicting the class outcome of cells during differentiation, since it allows the integration of additional information during training.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fast Approximation of the Sliced-Wasserstein Distance Using Concentration of Random Projections</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2106-15427</link>
+    <guid isPermaLink="false">arxiv:2106.15427</guid>
+    <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kimia Nadjahi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Sliced-Wasserstein distance (SW) is being increasingly used in machine learning applications as an alternative to the Wasserstein distance and offers significant computational and statistical benefits. Since it is defined as an expectation over random projections, SW is commonly approximated by Monte Carlo. We adopt a new perspective to approximate SW by making use of the concentration of measure phenomenon: under mild assumptions, one-dimensional projections of a high-dimensional random vector are approximately Gaussian. Based on this observation, we develop a simple deterministic approximation for SW. Our method does not require sampling a number of random projections, and is therefore both accurate and easy to use compared to the usual Monte Carlo approximation. We derive nonasymptotical guarantees for our approach, and show that the approximation error goes to zero as the dimension increases, under a weak dependence condition on the data distribution. We validate our theoretical findings on synthetic datasets, and illustrate the proposed approximation on a generative modeling problem.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Faster Unbalanced Optimal Transport: Translation invariant Sinkhorn and 1-D Frank-Wolfe</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2201-00730</link>
+    <guid isPermaLink="false">arxiv:2201.00730</guid>
+    <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thibault Séjourné et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport, title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Unbalanced optimal transport (UOT) extends optimal transport (OT) to take into account mass variations to compare distributions. This is crucial to make OT successful in ML applications, making it robust to data normalization and outliers. The baseline algorithm is Sinkhorn, but its convergence speed might be significantly slower for UOT than for OT. In this work, we identify the cause for this deficiency, namely the lack of a global normalization of the iterates, which equivalently corresponds to a translation of the dual OT potentials. Our first contribution leverages this idea to develop a provably accelerated Sinkhorn algorithm (coined &lsquo;translation invariant Sinkhorn&rsquo;) for UOT, bridging the computational gap with OT. Our second contribution focusses on 1-D UOT and proposes a Frank-Wolfe solver applied to this translation invariant formulation. The linear oracle of each steps amounts to solving a 1-D OT problems, resulting in a linear time complexity per iteration. Our last contribution extends this method to the computation of UOT barycenter of 1-D measures. Numerical simulations showcase the convergence speed improvement brought by these three approaches.</p>]]></description>
+  </item>
 
   <item>
     <title>Improved YOLOv5 network for real-time multi-scale traffic sign detection</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Samir Chowdhury et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
 <p>We establish a bridge between spectral clustering and Gromov-Wasserstein Learning (GWL), a recent optimal transport-based approach to graph partitioning. This connection both explains and improves upon the state-of-the-art performance of GWL. The Gromov-Wasserstein framework provides probabilistic correspondences between nodes of source and target graphs via a quadratic programming relaxation of the node matching problem. Our results utilize and connect the observations that the GW geometric structure remains valid for any rank-2 tensor, in particular the adjacency, distance, and various kernel matrices on graphs, and that the heat kernel outperforms the adjacency matrix in producing stable and informative node correspondences. Using the heat kernel in the GWL framework provides new multiscale graph comparisons without compromising theoretical guarantees, while immediately yielding improved empirical results. A key insight of the GWL framework toward graph partitioning was to compute GW correspondences from a source graph to a template graph with isolated, self-connected nodes. We show that when comparing against a two-node template graph using the heat kernel at the infinite time limit, the resulting partition agrees with the partition produced by the Fiedler vector. This in turn yields a new insight into the k-cut graph partitioning problem through the lens of optimal transport. Our experiments on a range of real-world networks achieve comparable results to, and in many cases outperform, the state-of-the-art achieved by GWL.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Embedding for Graph Learning</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-09430</link>
-    <guid isPermaLink="false">arxiv:2006.09430</guid>
-    <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheil Kolouri et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We present Wasserstein Embedding for Graph Learning (WEGL), a novel and fast framework for embedding entire graphs in a vector space, in which various machine learning models are applicable for graph-level prediction tasks. We leverage new insights on defining similarity between graphs as a function of the similarity between their node embedding distributions. Specifically, we use the Wasserstein distance to measure the dissimilarity between node embeddings of different graphs. Unlike prior work, we avoid pairwise calculation of distances between graphs and reduce the computational complexity from quadratic to linear in the number of graphs. WEGL calculates Monge maps from a reference distribution to each node embedding and, based on these maps, creates a fixed-sized vector representation of the graph. We evaluate our new graph embedding approach on various benchmark graph-property prediction tasks, showing state-of-the-art classification performance while having superior computational efficiency. The code is available at https://github.com/navid-naderi/WEGL.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Computationally Efficient Wasserstein Loss for Structured Labels</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-00899</link>
-    <guid isPermaLink="false">arxiv:2103.00899</guid>
-    <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ayato Toyokuni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The problem of estimating the probability distribution of labels has been widely studied as a label distribution learning (LDL) problem, whose applications include age estimation, emotion analysis, and semantic segmentation. We propose a tree-Wasserstein distance regularized LDL algorithm, focusing on hierarchical text classification tasks. We propose predicting the entire label hierarchy using neural networks, where the similarity between predicted and true labels is measured using the tree-Wasserstein distance. Through experiments using synthetic and real-world datasets, we demonstrate that the proposed method successfully considers the structure of labels during training, and it compares favorably with the Sinkhorn algorithm in terms of computation time and memory usage.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Convergence of Gaussian-smoothed optimal transport distance with sub-gamma distributions and dependent samples</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-00394</link>
-    <guid isPermaLink="false">arxiv:2103.00394</guid>
-    <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixing Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>The Gaussian-smoothed optimal transport (GOT) framework, recently proposed by Goldfeld et al., scales to high dimensions in estimation and provides an alternative to entropy regularization. This paper provides convergence guarantees for estimating the GOT distance under more general settings. For the Gaussian-smoothed p-Wasserstein distance in d dimensions, our results require only the existence of a moment greater than d + 2p. For the special case of sub-gamma distributions, we quantify the dependence on the dimension d and establish a phase transition with respect to the scale parameter. We also prove convergence for dependent samples, only requiring a condition on the pairwise dependence of the samples measured by the covariance of the feature map of a kernel space. A key step in our analysis is to show that the GOT distance is dominated by a family of kernel maximum mean discrepancy (MMD) distances with a kernel that depends on the cost function as well as the amount of Gaussian smoothing. This insight provides further interpretability for the GOT framework and also introduces a class of kernel MMD distances with desirable properties. The theoretical results are supported by numerical experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Representation Transfer by Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2007-06737</link>
-    <guid isPermaLink="false">arxiv:2007.06737</guid>
-    <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuhong Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Learning generic representations with deep networks requires massive training samples and significant computer resources. To learn a new specific task, an important issue is to transfer the generic teacher&rsquo;s representation to a student network. In this paper, we propose to use a metric between representations that is based on a functional view of neurons. We use optimal transport to quantify the match between two representations, yielding a distance that embeds some invariances inherent to the representation of deep networks. This distance defines a regularizer promoting the similarity of the student&rsquo;s representation with that of the teacher. Our approach can be used in any learning context where representation transfer is applicable. We experiment here on two standard settings: inductive transfer learning, where the teacher&rsquo;s representation is transferred to a student network of same architecture for a new related task, and knowledge distillation, where the teacher&rsquo;s representation is transferred to a student of simpler architecture for the same task (model compression). Our approach also lends itself to solving new learning problems; we demonstrate this by showing how to directly transfer the teacher&rsquo;s representation to a simpler architecture student for a new related task.</p>]]></description>
   </item>
 
 </channel>

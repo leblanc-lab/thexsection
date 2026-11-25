@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>A generative flow for conditional sampling via optimal transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-04102</link>
+    <guid isPermaLink="false">arxiv:2307.04102</guid>
+    <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Alfonso et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Sampling conditional distributions is a fundamental task for Bayesian inference and density estimation. Generative models, such as normalizing flows and generative adversarial networks, characterize conditional distributions by learning a transport map that pushes forward a simple reference (e.g., a standard Gaussian) to a target distribution. While these approaches successfully describe many non-Gaussian problems, their performance is often limited by parametric bias and the reliability of gradient-based (adversarial) optimizers to learn these transformations. This work proposes a non-parametric generative model that iteratively maps reference samples to the target. The model uses block-triangular transport maps, whose components are shown to characterize conditionals of the target distribution. These maps arise from solving an optimal transport problem with a weighted L² cost function, thereby extending the data-driven approach in [Trigila and Tabak, 2016] for conditional sampling. The proposed approach is demonstrated on a two dimensional example and on a parameter inference problem involving nonlinear ODEs.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stability Analysis Framework for Particle-based Distance GANs with Wasserstein Gradient Flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-01879</link>
+    <guid isPermaLink="false">arxiv:2307.01879</guid>
+    <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chuqi Chen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>In this paper, we investigate the training process of generative networks that use a type of probability density distance named particle-based distance as the objective function, e.g. MMD GAN, Cramér GAN, EIEG GAN. However, these GANs often suffer from the problem of unstable training. In this paper, we analyze the stability of the training process of these GANs from the perspective of probability density dynamics. In our framework, we regard the discriminator D in these GANs as a feature transformation mapping that maps high dimensional data into a feature space, while the generator G maps random variables to samples that resemble real data in terms of feature space. This perspective enables us to perform stability analysis for the training of GANs using the Wasserstein gradient flow of the probability density function. We find that the training process of the discriminator is usually unstable due to the formulation of min_G max_D E(G, D) in GANs. To address this issue, we add a stabilizing term in the discriminator loss function. We conduct experiments to validate our stability analysis and stabilizing method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Fairness in Multi-Task Learning via Wasserstein Barycenters</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-10155</link>
+    <guid isPermaLink="false">arxiv:2306.10155</guid>
+    <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François Hu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Algorithmic Fairness is an established field in machine learning that aims to reduce biases in data. Recent advances have proposed various methods to ensure fairness in a univariate environment, where the goal is to de-bias a single task. However, extending fairness to a multi-task setting, where more than one objective is optimised using a shared representation, remains underexplored. To bridge this gap, we develop a method that extends the definition of Strong Demographic Parity to multi-task learning using multi-marginal Wasserstein barycenters. Our approach provides a closed form solution for the optimal fair multi-task predictor including both regression and binary classification tasks. We develop a data-driven estimation procedure for the solution and run numerical experiments on both synthetic and real datasets. The empirical results highlight the practical value of our post-processing methodology in promoting fair decision-making.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Detailed Study of Interpretability of Deep Neural Network based Top Taggers</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-04371</link>
+    <guid isPermaLink="false">arxiv:2210.04371</guid>
+    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ayush Khot et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (particle flow, top tagging, top tagger, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
+<p>Recent developments in the methods of explainable AI (XAI) allow researchers to explore the inner workings of deep neural networks (DNNs), revealing crucial information about input-output relationships and realizing how data connects with machine learning models. In this paper we explore interpretability of DNN models designed to identify jets coming from top quark decay in high energy proton-proton collisions at the Large Hadron Collider (LHC). We review a subset of existing top tagger models and explore different quantitative methods to identify which features play the most important roles in identifying the top jets. We also investigate how and why feature importance varies across different XAI metrics, how correlations among features impact their explainability, and how latent space representations encode information as well as correlate with physically meaningful quantities. Our studies uncover some major pitfalls of existing XAI methods and illustrate how they can be overcome to obtain consistent and meaningful interpretation of these models. We additionally illustrate the activity of hidden layers as Neural Activation Pattern (NAP) diagrams and demonstrate how they can be used to understand how DNNs relay information across the layers and how this understanding can help to make such models significantly simpler by allowing effective model reoptimization and hyperparameter tuning. These studies not only facilitate a methodological approach to interpreting models but also unveil new insights about what these models learn. Incorporating these observations into augmented model design, we propose the Particle Flow Interaction Network (PFIN) model and demonstrate how interpretability-inspired model augmentation can improve top tagging performance.</p>]]></description>
+  </item>
 
   <item>
     <title>Unbalanced Optimal Transport: A Unified Framework for Object Detection</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jingyu Zhang et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Jingyu Zhang) — original abstract; no AI summary.</em></p>
 <p>Existing work on controlled text generation (CTG) assumes a control interface of categorical attributes. In this work, we propose a natural language (NL) interface, where we craft a PCFG to embed the control attributes into natural language commands, and propose variants of existing CTG models that take commands as input. In our experiments, we design tailored setups to test model&rsquo;s generalization abilities. We find our PCFG-based command generation approach is effective for handling unseen commands compared to fix-set templates; our proposed NL models can effectively generalize to unseen attributes, a new ability enabled by the NL interface, as well as unseen attribute combinations. Interestingly, we discover that the simple conditional generation approach, enhanced with our proposed NL interface, is a strong baseline in those challenging settings.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Theory and Approximate Solvers for Branched Optimal Transport with Multiple Sources</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-07702</link>
-    <guid isPermaLink="false">arxiv:2210.07702</guid>
-    <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Peter Lippmann et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Branched Optimal Transport (BOT) is a generalization of optimal transport in which transportation costs along an edge are subadditive. This subadditivity models an increase in transport efficiency when shipping mass along the same route, favoring branched transportation networks. We here study the NP-hard optimization of BOT networks connecting a finite number of sources and sinks in ℝ². First, we show how to efficiently find the best geometry of a BOT network for many sources and sinks, given a topology. Second, we argue that a topology with more than three edges meeting at a branching point is never optimal. Third, we show that the results obtained for the Euclidean plane generalize directly to optimal transportation networks on two-dimensional Riemannian manifolds. Finally, we present a simple but effective approximate BOT solver combining geometric optimization with a combinatorial optimization of the network topology.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Barycenter-based Model Fusion and Linear Mode Connectivity of Neural Networks</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-06671</link>
-    <guid isPermaLink="false">arxiv:2210.06671</guid>
-    <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aditya Kumar Akash et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Based on the concepts of Wasserstein barycenter (WB) and Gromov-Wasserstein barycenter (GWB), we propose a unified mathematical framework for neural network (NN) model fusion and utilize it to reveal new insights about the linear mode connectivity of SGD solutions. In our framework, the fusion occurs in a layer-wise manner and builds on an interpretation of a node in a network as a function of the layer preceding it. The versatility of our mathematical framework allows us to talk about model fusion and linear mode connectivity for a broad class of NNs, including fully connected NN, CNN, ResNet, RNN, and LSTM, in each case exploiting the specific structure of the network architecture. We present extensive numerical experiments to: 1) illustrate the strengths of our approach in relation to other model fusion methodologies and 2) from a certain perspective, provide new empirical evidence for recent conjectures which say that two local minima found by gradient-based methods end up lying on the same basin of the loss landscape after a proper permutation of weights is applied to one of the models.</p>]]></description>
-  </item>
-
-  <item>
-    <title>COLLIDER: A Robust Training Framework for Backdoor Data</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-06704</link>
-    <guid isPermaLink="false">arxiv:2210.06704</guid>
-    <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hadi M. Dolatabadi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>Deep neural network (DNN) classifiers are vulnerable to backdoor attacks. An adversary poisons some of the training data in such attacks by installing a trigger. The goal is to make the trained DNN output the attacker&rsquo;s desired class whenever the trigger is activated while performing as usual for clean data. Various approaches have recently been proposed to detect malicious backdoored DNNs. However, a robust, end-to-end training approach, like adversarial training, is yet to be discovered for backdoor poisoned data. In this paper, we take the first step toward such methods by developing a robust training framework, COLLIDER, that selects the most prominent samples by exploiting the underlying geometric structures of the data. Specifically, we effectively filter out candidate poisoned data at each training epoch by solving a geometrical coreset selection objective. We first argue how clean data samples exhibit (1) gradients similar to the clean majority of data and (2) low local intrinsic dimensionality (LID). Based on these criteria, we define a novel coreset selection objective to find such samples, which are used for training a DNN. We show the effectiveness of the proposed method for robust training of DNNs on various poisoned datasets, reducing the backdoor success rate significantly.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Precision QCD corrections to gluon-initiated diphoton-plus-jet production at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2022.html#a2210-07115</link>
-    <guid isPermaLink="false">arxiv:2210.07115</guid>
-    <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Moodie</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>In this thesis, we present recent advances at the precision frontier of higher-order quantum chromodynamics (QCD) calculations. We consider massless two-loop five-point amplitudes, with a particular focus on diphoton-plus-jet production through gluon fusion. We build a library of infrared functions up to at most next-to-next-to-leading order (NNLO) in QCD, which can be used to validate amplitudes and construct counterterms in subtraction schemes at NNLO. We review progress in the novel use of machine learning technology to optimise the evaluation of amplitudes in hadron collider simulations. We present the full-colour virtual QCD corrections to diphoton-plus-jet production through gluon fusion, discussing the new techniques developed to calculate these non-planar two-loop amplitudes. We use these amplitudes to compute the next-to-leading QCD corrections to the differential cross sections of diphoton-plus-jet production through gluon fusion at the Large Hadron Collider. We also present the leading-colour double-virtual corrections to hadronic trijet production. All derived amplitudes are made available in a public implementation that is ready for further phenomenological application.</p>]]></description>
   </item>
 
 </channel>

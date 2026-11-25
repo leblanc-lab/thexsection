@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Robust Risk Under Evolving Uncertainty: A Wasserstein Counterpart of the Entropic Value-at-Risk</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-19073</link>
+    <guid isPermaLink="false">arxiv:2608.19073</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deep Kumar Ganguly et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>An agent still learning its environment should be cautious while ignorant and bold once confident. The entropic value-at-risk captures this through a robust-optimization identity&mdash;a confidence level fixes the radius of a relative-entropy ball of alternative models&mdash;but that ball cannot reach catastrophes the nominal deems impossible, precisely what a safe agent must hedge. We instead use an optimal-transport ball and study the coherent risk measure it induces, the Wasserstein entropic value-at-risk. It has a variational dual mirroring the entropic formula (an inverse temperature becomes a transport price), occupies a definite place in the risk hierarchy, and provably accounts for the reachable catastrophes the entropic measure ignores; we verify both dualities numerically. Driving the transport radius by belief entropy then yields a closed-form robust dynamic-programming operator whose caution contracts as the belief sharpens, with a certified safety sandwich and a sharp safety switch.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Pathology Transport: Optimal-Transport Explanations for Clinical Data, and When Their Heatmaps (Fail to) Localize Disease</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-17370</link>
+    <guid isPermaLink="false">arxiv:2608.17370</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lalit Kumar</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal-transport) — original abstract; no AI summary.</em></p>
+<p>Generative models promise a route to explainable clinical AI: rather than probe a classifier, model the distributions of healthy and diseased patients and read explanations off the geometry between them. We build such a system - an optimal-transport rectified flow trained between two clinical distributions - and use it to ask a pointed question the field too rarely tests: do the resulting explanation heatmaps actually localize disease? On tabular tumour biomarkers (Breast Cancer Wisconsin) a single flow yields per-patient counterfactuals, an unsupervised malignancy score (AUROC 0.91; 0.93 +/- 0.01 across five seeds), and a label-free attribution that agrees with a supervised classifier (r ~ 0.5) - a compact, honest interpretability engine, though it never out-predicts logistic regression. Moving to chest X-rays, we show the transport heatmap is a population-level signal, not a localiser; a reconstruction-based, identity-preserving variant does localize synthetic lesions (pointing game 0.52), yet on real RSNA radiologist boxes it collapses to chance while only supervised Grad-CAM stays above it. The central result is a synthetic-to-real gap: label-free heatmaps that look compelling on planted lesions are not evidence of real localisation. We contribute a reusable optimal-transport recipe for generative explanations and a controlled benchmark for stress-testing whether they localize.</p>]]></description>
+  </item>
+
+  <item>
+    <title>From Inference to Adaptation: A Unified Optimal Transport View of Vision Language Model</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-18339</link>
+    <guid isPermaLink="false">arxiv:2608.18339</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Vision-language models (VLMs) have demonstrated remarkable zero-shot capabilities yet remain sensitive to real-world distribution shifts during inference. Although significant efforts are devoted to adapting VLMs at test time, they rely heavily on noisy pseudo-labels predicted directly from raw embedding similarities during inference, which are unreliable under distribution shift and mislead the adaptation. To avoid noise amplification, existing works craft coarse-grained surrogate objectives during adaptation, which fail to explicitly model sample-level relationships across different modalities, creating objective mismatch with inference, thus leading to marginal performance improvement. In this work, we aim to bridge the detached objectives of inference and adaptation for VLMs, and propose a principled VLM TTA method called \algname. For VLM inference, we formulate the zero-shot image classification task as a cross-modal alignment problem encoded via a Wasserstein OT formulation, providing robust pseudo-labels at the sample-level to effectively adapt VLMs. For VLM adaptation, we adopt a soft-label InfoNCE loss to adapt VLMs based on the OT-induced pseudo-labels, leveraging fine-grained supervisions to explicitly model relationships of individual image-text pairs via contrastive learning, which empowers accurate inference at the same granularity. Moreover, we theoretically reveal that the InfoNCE loss can be neatly reformulated as a Wasserstein OT formulation, thereby unifying the objectives of the inference and adaptation of VLMs to achieve their mutual benefits. Extensive experiments demonstrate the effectiveness and efficiency of our methods, outperforming the best-performing methods by up to 7% with state-of-the-art efficiency.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SparsePixels: Efficient Convolution for Sparse Data on FPGAs</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-06208</link>
+    <guid isPermaLink="false">arxiv:2512.06208</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
+<p>Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from O(HWK²C_inC_out) to O(n²C_inC_out) and the storage from O(HWC) to O(nC) when n²≪HW. Because computation always runs over a single pre-specified pixel budget that is frozen at synthesis, the inference latency is data-independent and constant at runtime. We show that, for identifying neutrino interactions in naturally sparse LArTPC images with 4k pixels, a standard CNN with a compact size of 4k parameters incurs an inference latency of 48.665 μs on an FPGA, whereas a sparse CNN of the same base architecture, computing on less than 1% of the input pixels, achieves a ×73 speedup to 0.665 μs with resource utilization well within on-chip budgets, trading only a small percent-level performance loss. This work aims to benefit future algorithm development for efficient data readout in modern experiments with strict latency requirements of microseconds or below.</p>]]></description>
+  </item>
 
   <item>
     <title>EMS Coreset: An Efficient Expectation-Maximization Algorithm for Sinkhorn Coreset</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shehu AbdusSalam</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
 <p>Global fits of Beyond the Standard Model (BSM) physics often involve a two-way interplay between theory and experiment. Theoretical models provide guidance for experimental searches, while experimental results, in turn, constrain theoretical frameworks. A crucial aspect of this feedback loop is the direct inclusion of measurements and exclusion limits <code>online'' global fits, i.e. during the parameter scans aspects of the global fits. However, incorporating the Large Hadron Collider (LHC) limits into such analyses has been computationally prohibitive, often due to time taken per parameter point exceeding the scales acceptable for global fit frameworks. In this study, we show that LHC limits can be incorporated</code>online&rsquo;&rsquo; global fits by leveraging approximations derived from symbolic regression techniques. We utilize a dataset of ATLAS constraints from searches for electroweakino productions to derive a mathematical expression capable of classifying the phenomenological Minimal Supersymmetric Standard Model (pMSSM) parameter space as allowed or excluded. This is subsequently incorporated for making a global fit of the pMSSM to data, including the LHC Run-2 limits.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A note on convergence of Wasserstein policy optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-22622</link>
-    <guid isPermaLink="false">arxiv:2605.22622</guid>
-    <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">David Šiška et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Wasserstein Policy Optimization (WPO) is a recently proposed reinforcement learning algorithm that leverages Wasserstein gradient flows to optimize stochastic policies in continuous action spaces. Despite its empirical success, the theoretical convergence properties of WPO in environments with continuous state and action spaces have yet to be fully established. In this note, we argue that WPO within the framework of entropy-regularised Markov Decision Processes converges linearly. This is done by leveraging recent advances in mean-field analysis for convergence of gradient flows using log-Sobole inequalities. Assuming existence of sufficiently regular solution to the gradient flow equation we demonstrate monotonic energy dissipation along the flow and establish a local log-Sobolev inequality. Ultimately, these properties allow us to argue that the value function should converge linearly to the global optimum.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Sliced-Regularized Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2604-23944</link>
-    <guid isPermaLink="false">arxiv:2604.23944</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khai Nguyen</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>We propose a new regularized optimal transport (OT) formulation, termed sliced-regularized optimal transport (SROT). Unlike entropic OT (EOT), which regularizes the transport plan toward an independent coupling, SROT regularizes it toward a smoothened sliced OT (SOT) plan. To the best of our knowledge, SROT is the first approach to leverage a version of SOT plan as a reference to improve classical OT. We provide a formal definition of SROT, derive its dual formulation, and provide a post-Bayesian interpretation of SROT. We then develop a Sinkhorn-style algorithm for efficient computation, retaining the same scalability advantages as EOT. By incorporating a scalable SOT plan as a prior, SROT yields more accurate approximations of the exact OT plan than EOT under the same level of regularization. Moreover, the resulting transport plan improves upon the reference SOT plan itself. We further introduce the corresponding OT divergence induced by SROT, named SROT divergence, and analyze its topological and computational properties. Finally, we validate our approach through experiments on synthetic datasets and color transfer tasks, demonstrating that SROT is better than both EOT and SOT in approximating exact OT. Additional experiments on gradient flows further highlight the advantages of SROT divergence.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning fMRI activations dictionaries across individual geometries via optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20883</link>
-    <guid isPermaLink="false">arxiv:2605.20883</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sonia Mazelet et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Dictionary learning is a powerful tool for creating interpretable representations. When applied to functional magnetic resonance imaging (fMRI) data, the resulting patterns of brain activity can be used for various downstream tasks, such as brain state classification or population-level analysis. However, a major challenge is the variability in brain geometry across individuals. This is usually addressed by projecting each individual brain geometry onto a common template, which removes subject-specific information. In this work, we introduce a novel approach to dictionary learning on fMRI data that explicitly accounts for this variability. We use the optimal transport-based Fused Gromov-Wasserstein (FGW) distance to compare graphs with different geometries and features. To address the challenge of computing multiple FGW distances for large graphs such as those arising from fMRI data, we rely on amortized optimization to learn a neural network that predicts an approximation of the optimal transport plans, which substantially reduces the computational cost. Additionally, we learn dictionary atoms that depend on the FGW trade-off parameter, which controls the balance between feature alignment and structural consistency. Numerical experiments on the HCP dataset demonstrate that the proposed approach captures different levels of geometric variability in the data and provides representations that preserve essential information.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Modeling Temporal scRNA-seq Data with Latent Gaussian Process and Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2605-20989</link>
-    <guid isPermaLink="false">arxiv:2605.20989</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mehmet Yigit Balik et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Single-cell RNA sequencing provides insights into gene expression at single-cell resolution, yet inferring temporal processes from these static snapshot measurements remains a fundamental challenge. Current approaches utilizing neural differential equations and flows are sensitive to overfitting and lack careful considerations of biological variability. In this work, we propose a generative framework that models population trends using a latent heteroscedastic Gaussian process (GP) approximated by Hilbert space methods. To address the absence of genuine cell trajectories, we leverage an optimal transport (OT) objective that aligns generated and observed population distributions. Our method explicitly captures biological heterogeneity by incorporating cell-specific latent time and cell type conditioning to disentangle temporal asynchrony and trajectories to different cell types. We demonstrate state-of-the-art performance on complex interpolation and extrapolation benchmarks and introduce a novel gradient-based strategy for inferring perturbation trajectories.</p>]]></description>
   </item>
 
 </channel>

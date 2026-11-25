@@ -6,7 +6,27 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Image Hashing by Minimizing Discrete Component-wise Wasserstein Distance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2020.html#a2003-00134</link>
+    <guid isPermaLink="false">arxiv:2003.00134</guid>
+    <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khoa D. Doan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Image hashing is one of the fundamental problems that demand both efficient and effective solutions for various practical scenarios. Adversarial autoencoders are shown to be able to implicitly learn a robust, locality-preserving hash function that generates balanced and high-quality hash codes. However, the existing adversarial hashing methods are inefficient to be employed for large-scale image retrieval applications. Specifically, they require an exponential number of samples to be able to generate optimal hash codes and a significantly high computational cost to train. In this paper, we show that the high sample-complexity requirement often results in sub-optimal retrieval performance of the adversarial hashing methods. To address this challenge, we propose a new adversarial-autoencoder hashing approach that has a much lower sample requirement and computational cost. Specifically, by exploiting the desired properties of the hash function in the low-dimensional, discrete space, our method efficiently estimates a better variant of Wasserstein distance by averaging a set of easy-to-compute one-dimensional Wasserstein distances. The resulting hashing approach has an order-of-magnitude better sample complexity, thus better generalization property, compared to the other adversarial hashing methods. In addition, the computational cost is significantly reduced using our approach. We conduct experiments on several real-world datasets and show that the proposed method outperforms the competing hashing methods, achieving up to 10% improvement over the current state-of-the-art image hashing methods. The code accompanying this paper is available on Github (https://github.com/khoadoan/adversarial-hashing).</p>]]></description>
+  </item>
+
+  <item>
+    <title>CPOT: Channel Pruning via Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2020.html#a2005-10451</link>
+    <guid isPermaLink="false">arxiv:2005.10451</guid>
+    <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yucong Shen et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Recent advances in deep neural networks (DNNs) lead to tremendously growing network parameters, making the deployments of DNNs on platforms with limited resources extremely difficult. Therefore, various pruning methods have been developed to compress the deep network architectures and accelerate the inference process. Most of the existing channel pruning methods discard the less important filters according to well-designed filter ranking criteria. However, due to the limited interpretability of deep learning models, designing an appropriate ranking criterion to distinguish redundant filters is difficult. To address such a challenging issue, we propose a new technique of Channel Pruning via Optimal Transport, dubbed CPOT. Specifically, we locate the Wasserstein barycenter for channels of each layer in the deep models, which is the mean of a set of probability distributions under the optimal transport metric. Then, we prune the redundant information located by Wasserstein barycenters. At last, we empirically demonstrate that, for classification tasks, CPOT outperforms the state-of-the-art methods on pruning ResNet-20, ResNet-32, ResNet-56, and ResNet-110. Furthermore, we show that the proposed CPOT technique is good at compressing the StarGAN models by pruning in the more difficult case of image-to-image translation tasks.</p>]]></description>
+  </item>
 
   <item>
     <title>2D Wasserstein Loss for Robust Facial Landmark Detection</title>

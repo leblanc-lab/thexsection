@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Wasserstein Embedding for Graph Learning</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2006-09430</link>
+    <guid isPermaLink="false">arxiv:2006.09430</guid>
+    <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Soheil Kolouri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We present Wasserstein Embedding for Graph Learning (WEGL), a novel and fast framework for embedding entire graphs in a vector space, in which various machine learning models are applicable for graph-level prediction tasks. We leverage new insights on defining similarity between graphs as a function of the similarity between their node embedding distributions. Specifically, we use the Wasserstein distance to measure the dissimilarity between node embeddings of different graphs. Unlike prior work, we avoid pairwise calculation of distances between graphs and reduce the computational complexity from quadratic to linear in the number of graphs. WEGL calculates Monge maps from a reference distribution to each node embedding and, based on these maps, creates a fixed-sized vector representation of the graph. We evaluate our new graph embedding approach on various benchmark graph-property prediction tasks, showing state-of-the-art classification performance while having superior computational efficiency. The code is available at https://github.com/navid-naderi/WEGL.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Computationally Efficient Wasserstein Loss for Structured Labels</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-00899</link>
+    <guid isPermaLink="false">arxiv:2103.00899</guid>
+    <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ayato Toyokuni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The problem of estimating the probability distribution of labels has been widely studied as a label distribution learning (LDL) problem, whose applications include age estimation, emotion analysis, and semantic segmentation. We propose a tree-Wasserstein distance regularized LDL algorithm, focusing on hierarchical text classification tasks. We propose predicting the entire label hierarchy using neural networks, where the similarity between predicted and true labels is measured using the tree-Wasserstein distance. Through experiments using synthetic and real-world datasets, we demonstrate that the proposed method successfully considers the structure of labels during training, and it compares favorably with the Sinkhorn algorithm in terms of computation time and memory usage.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Convergence of Gaussian-smoothed optimal transport distance with sub-gamma distributions and dependent samples</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2103-00394</link>
+    <guid isPermaLink="false">arxiv:2103.00394</guid>
+    <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yixing Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The Gaussian-smoothed optimal transport (GOT) framework, recently proposed by Goldfeld et al., scales to high dimensions in estimation and provides an alternative to entropy regularization. This paper provides convergence guarantees for estimating the GOT distance under more general settings. For the Gaussian-smoothed p-Wasserstein distance in d dimensions, our results require only the existence of a moment greater than d + 2p. For the special case of sub-gamma distributions, we quantify the dependence on the dimension d and establish a phase transition with respect to the scale parameter. We also prove convergence for dependent samples, only requiring a condition on the pairwise dependence of the samples measured by the covariance of the feature map of a kernel space. A key step in our analysis is to show that the GOT distance is dominated by a family of kernel maximum mean discrepancy (MMD) distances with a kernel that depends on the cost function as well as the amount of Gaussian smoothing. This insight provides further interpretability for the GOT framework and also introduces a class of kernel MMD distances with desirable properties. The theoretical results are supported by numerical experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Representation Transfer by Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2021.html#a2007-06737</link>
+    <guid isPermaLink="false">arxiv:2007.06737</guid>
+    <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xuhong Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Learning generic representations with deep networks requires massive training samples and significant computer resources. To learn a new specific task, an important issue is to transfer the generic teacher&rsquo;s representation to a student network. In this paper, we propose to use a metric between representations that is based on a functional view of neurons. We use optimal transport to quantify the match between two representations, yielding a distance that embeds some invariances inherent to the representation of deep networks. This distance defines a regularizer promoting the similarity of the student&rsquo;s representation with that of the teacher. Our approach can be used in any learning context where representation transfer is applicable. We experiment here on two standard settings: inductive transfer learning, where the teacher&rsquo;s representation is transferred to a student network of same architecture for a new related task, and knowledge distillation, where the teacher&rsquo;s representation is transferred to a student of simpler architecture for the same task (model compression). Our approach also lends itself to solving new learning problems; we demonstrate this by showing how to directly transfer the teacher&rsquo;s representation to a simpler architecture student for a new related task.</p>]]></description>
+  </item>
 
   <item>
     <title>Permutation invariant networks to learn Wasserstein metrics</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujia Xie et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>The top-k operation, i.e., finding the k largest or smallest elements from a collection of scores, is an important model component, which is widely used in information retrieval, machine learning, and data mining. However, if the top-k operation is implemented in an algorithmic way, e.g., using bubble algorithm, the resulting model cannot be trained in an end-to-end way using prevalent gradient descent algorithms. This is because these implementations typically involve swapping indices, whose gradient cannot be computed. Moreover, the corresponding mapping from the input scores to the indicator vector of whether this element belongs to the top-k set is essentially discontinuous. To address the issue, we propose a smoothed approximation, namely the SOFT (Scalable Optimal transport-based diFferenTiable) top-k operator. Specifically, our SOFT top-k operator approximates the output of the top-k operation as the solution of an Entropic Optimal Transport (EOT) problem. The gradient of the SOFT operator can then be efficiently approximated based on the optimality conditions of EOT problem. We apply the proposed operator to the k-nearest neighbors and beam search algorithms, and demonstrate improved performance.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Wasserstein Minimum Velocity Approach to Learning Unnormalized Models</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-07501</link>
-    <guid isPermaLink="false">arxiv:2002.07501</guid>
-    <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ziyu Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Score matching provides an effective approach to learning flexible unnormalized models, but its scalability is limited by the need to evaluate a second-order derivative. In this paper, we present a scalable approximation to a general family of learning objectives including score matching, by observing a new connection between these objectives and Wasserstein gradient flows. We present applications with promise in learning neural density estimators on manifolds, and training implicit variational and Wasserstein auto-encoders with a manifold-valued prior.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Social-WaGDAT: Interaction-aware Trajectory Prediction via Wasserstein Graph Double-Attention Network</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-06241</link>
-    <guid isPermaLink="false">arxiv:2002.06241</guid>
-    <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jiachen Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Effective understanding of the environment and accurate trajectory prediction of surrounding dynamic obstacles are indispensable for intelligent mobile systems (like autonomous vehicles and social robots) to achieve safe and high-quality planning when they navigate in highly interactive and crowded scenarios. Due to the existence of frequent interactions and uncertainty in the scene evolution, it is desired for the prediction system to enable relational reasoning on different entities and provide a distribution of future trajectories for each agent. In this paper, we propose a generic generative neural system (called Social-WaGDAT) for multi-agent trajectory prediction, which makes a step forward to explicit interaction modeling by incorporating relational inductive biases with a dynamic graph representation and leverages both trajectory and scene context information. We also employ an efficient kinematic constraint layer applied to vehicle trajectory prediction which not only ensures physical feasibility but also enhances model performance. The proposed system is evaluated on three public benchmark datasets for trajectory prediction, where the agents cover pedestrians, cyclists and on-road vehicles. The experimental results demonstrate that our model achieves better performance than various baseline approaches in terms of prediction accuracy.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Kernelized Wasserstein Natural Gradient</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a1910-09652</link>
-    <guid isPermaLink="false">arxiv:1910.09652</guid>
-    <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michael Arbel et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Many machine learning problems can be expressed as the optimization of some cost functional over a parametric family of probability distributions. It is often beneficial to solve such optimization problems using natural gradient methods. These methods are invariant to the parametrization of the family, and thus can yield more effective optimization. Unfortunately, computing the natural gradient is challenging as it requires inverting a high dimensional matrix at each iteration. We propose a general framework to approximate the natural gradient for the Wasserstein metric, by leveraging a dual formulation of the metric restricted to a Reproducing Kernel Hilbert Space. Our approach leads to an estimator for gradient direction that can trade-off accuracy and computational cost, with theoretical guarantees. We verify its accuracy on simple examples, and show the advantage of using such an estimator in classification tasks on Cifar10 and Cifar100 empirically.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein Control of Mirror Langevin Monte Carlo</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-04363</link>
-    <guid isPermaLink="false">arxiv:2002.04363</guid>
-    <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kelvin Shuangjian Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Discretized Langevin diffusions are efficient Monte Carlo methods for sampling from high dimensional target densities that are log-Lipschitz-smooth and (strongly) log-concave. In particular, the Euclidean Langevin Monte Carlo sampling algorithm has received much attention lately, leading to a detailed understanding of its non-asymptotic convergence properties and of the role that smoothness and log-concavity play in the convergence rate. Distributions that do not possess these regularity properties can be addressed by considering a Riemannian Langevin diffusion with a metric capturing the local geometry of the log-density. However, the Monte Carlo algorithms derived from discretizations of such Riemannian Langevin diffusions are notoriously difficult to analyze. In this paper, we consider Langevin diffusions on a Hessian-type manifold and study a discretization that is closely related to the mirror-descent scheme. We establish for the first time a non-asymptotic upper-bound on the sampling error of the resulting Hessian Riemannian Langevin Monte Carlo algorithm. This bound is measured according to a Wasserstein distance induced by a Riemannian metric ground cost capturing the Hessian structure and closely related to a self-concordance-like condition. The upper-bound implies, for instance, that the iterates contract toward a Wasserstein ball around the target density whose radius is made explicit. Our theory recovers existing Euclidean results and can cope with a wide variety of Hessian metrics related to highly non-flat geometries.</p>]]></description>
   </item>
 
 </channel>

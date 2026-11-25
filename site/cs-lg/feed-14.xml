@@ -6,7 +6,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Learning Latent Permutations with Gumbel-Sinkhorn Networks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2018.html#a1802-08665</link>
+    <guid isPermaLink="false">arxiv:1802.08665</guid>
+    <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gonzalo Mena et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Permutations and matchings are core building blocks in a variety of latent variable models, as they allow us to align, canonicalize, and sort data. Learning in such models is difficult, however, because exact marginalization over these combinatorial objects is intractable. In response, this paper introduces a collection of new methods for end-to-end learning in such models that approximate discrete maximum-weight matching using the continuous Sinkhorn operator. Sinkhorn iteration is attractive because it functions as a simple, easy-to-implement analog of the softmax operator. With this, we can define the Gumbel-Sinkhorn method, an extension of the Gumbel-Softmax method (Jang et al. 2016, Maddison2016 et al. 2016) to distributions over latent matchings. We demonstrate the effectiveness of our method by outperforming competitive baselines on a range of qualitatively different tasks: sorting numbers, solving jigsaw puzzles, and identifying neural signals in worms.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Smooth and Sparse Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2018.html#a1710-06276</link>
+    <guid isPermaLink="false">arxiv:1710.06276</guid>
+    <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mathieu Blondel et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Entropic regularization is quickly emerging as a new standard in optimal transport (OT). It enables to cast the OT computation as a differentiable and unconstrained convex optimization problem, which can be efficiently solved using the Sinkhorn algorithm. However, entropy keeps the transportation plan strictly positive and therefore completely dense, unlike unregularized OT. This lack of sparsity can be problematic in applications where the transportation plan itself is of interest. In this paper, we explore regularizing the primal and dual OT formulations with a strongly convex term, which corresponds to relaxing the dual and primal constraints with smooth approximations. We show how to incorporate squared 2-norm and group lasso regularizations within that framework, leading to sparse and group-sparse transportation plans. On the theoretical side, we bound the approximation error introduced by regularizing the primal and dual formulations. Our results suggest that, for the regularized primal, the approximation error can often be smaller with squared 2-norm than with entropic regularization. We showcase our proposed framework on the task of color transfer.</p>]]></description>
+  </item>
+
+  <item>
+    <title>On the Latent Space of Wasserstein Auto-Encoders</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2018.html#a1802-03761</link>
+    <guid isPermaLink="false">arxiv:1802.03761</guid>
+    <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul K. Rubenstein et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We study the role of latent space dimensionality in Wasserstein auto-encoders (WAEs). Through experimentation on synthetic and real datasets, we argue that random encoders should be preferred over deterministic encoders. We highlight the potential of WAEs for representation learning with promising results on a benchmark disentanglement task.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal transport maps for distribution preserving operations on latent spaces of Generative Models</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2018.html#a1711-01970</link>
+    <guid isPermaLink="false">arxiv:1711.01970</guid>
+    <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Eirikur Agustsson et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Generative models such as Variational Auto Encoders (VAEs) and Generative Adversarial Networks (GANs) are typically trained for a fixed prior distribution in the latent space, such as uniform or Gaussian. After a trained model is obtained, one can sample the Generator in various forms for exploration and understanding, such as interpolating between two samples, sampling in the vicinity of a sample or exploring differences between a pair of samples applied to a third sample. In this paper, we show that the latent space operations used in the literature so far induce a distribution mismatch between the resulting outputs and the prior distribution the model was trained on. To address this, we propose to use distribution matching transport maps to ensure that such latent space operations preserve the prior distribution, while minimally modifying the original operation. Our experimental results validate that the proposed operations give higher quality samples compared to the original operations.</p>]]></description>
+  </item>
 
   <item>
     <title>Brenier approach for optimal transportation between a quasi-discrete measure and a discrete measure</title>

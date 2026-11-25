@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Differentiable Logic Synthesis: Spectral Coefficient Selection via Sinkhorn-Constrained Composition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2601-13953</link>
+    <guid isPermaLink="false">arxiv:2601.13953</guid>
+    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gorgi Pavlov</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: sinkhorn) — original abstract; no AI summary.</em></p>
+<p>Learning precise Boolean logic via gradient descent remains challenging: neural networks typically converge to &ldquo;fuzzy&rdquo; approximations that degrade under quantization. We introduce Hierarchical Spectral Composition, a differentiable architecture that selects spectral coefficients from a frozen Boolean Fourier basis and composes them via Sinkhorn-constrained routing with column-sign modulation. Our approach draws on recent insights from Manifold-Constrained Hyper-Connections (mHC), which demonstrated that projecting routing matrices onto the Birkhoff polytope preserves identity mappings and stabilizes large-scale training. We adapt this framework to logic synthesis, adding column-sign modulation to enable Boolean negation &ndash; a capability absent in standard doubly stochastic routing. We validate our approach across four phases of increasing complexity: (1) For n=2 (16 Boolean operations over 4-dim basis), gradient descent achieves 100% accuracy with zero routing drift and zero-loss quantization to ternary masks. (2) For n=3 (10 three-variable operations), gradient descent achieves 76% accuracy, but exhaustive enumeration over 3^8 = 6561 configurations proves that optimal ternary masks exist for all operations (100% accuracy, 39% sparsity). (3) For n=4 (10 four-variable operations over 16-dim basis), spectral synthesis &ndash; combining exact Walsh-Hadamard coefficients, ternary quantization, and MCMC refinement with parallel tempering &ndash; achieves 100% accuracy on all operations. This progression establishes (a) that ternary polynomial threshold representations exist for all tested functions, and (b) that finding them requires methods beyond pure gradient descent as dimensionality grows. All operations enable single-cycle combinational logic inference at 10,959 MOps/s on GPU, demonstrating viability for hardware-efficient neuro-symbolic logic synthesis.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Discrete Adjoint Schrödinger Bridge Sampler</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08243</link>
+    <guid isPermaLink="false">arxiv:2602.08243</guid>
+    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wei Guo et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>Learning discrete neural samplers is challenging due to the lack of gradients and combinatorial complexity. While stochastic optimal control (SOC) and Schrödinger bridge (SB) provide principled solutions, efficient SOC solvers like adjoint matching (AM), which excel in continuous domains, remain unexplored for discrete spaces. We bridge this gap by revealing that the core mechanism of AM is 𝑠𝑡𝑎𝑡𝑒-𝑠𝑝𝑎𝑐𝑒 𝑎𝑔𝑛𝑜𝑠𝑡𝑖𝑐, and introduce 𝐝𝐢𝐬𝐜𝐫𝐞𝐭𝐞 𝐀𝐒𝐁𝐒, a unified framework that extends AM and adjoint Schrödinger bridge sampler (ASBS) to discrete spaces. Theoretically, we analyze the optimality conditions of the discrete SB problem and its connection to SOC, identifying a necessary cyclic group structure on the state space to enable this extension. Empirically, discrete ASBS achieves competitive sample quality with significant advantages in training efficiency and scalability.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Schrödinger bridge problem via empirical risk minimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-08374</link>
+    <guid isPermaLink="false">arxiv:2602.08374</guid>
+    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Denis Belomestny et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: Schrödinger bridge) — original abstract; no AI summary.</em></p>
+<p>We study the Schrödinger bridge problem when the endpoint distributions are available only through samples. Classical computational approaches estimate Schrödinger potentials via Sinkhorn iterations on empirical measures and then construct a time-inhomogeneous drift by differentiating a kernel-smoothed dual solution. In contrast, we propose a learning-theoretic route: we rewrite the Schrödinger system in terms of a single positive transformed potential that satisfies a nonlinear fixed-point equation and estimate this potential by empirical risk minimization over a function class. We establish uniform concentration of the empirical risk around its population counterpart under sub-Gaussian assumptions on the reference kernel and terminal density. We plug the learned potential into a stochastic control representation of the bridge to generate samples. We illustrate performance of the suggested approach with numerical experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Weighted Wasserstein Barycenter of Gaussian Processes for exotic Bayesian Optimization tasks</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2602-09181</link>
+    <guid isPermaLink="false">arxiv:2602.09181</guid>
+    <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antonio Candelieri et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Exploiting the analogy between Gaussian Distributions and Gaussian Processes&rsquo; posterior, we present how the weighted Wasserstein Barycenter of Gaussian Processes (W2BGP) can be used to unify, under a common framework, different exotic Bayesian Optimization (BO) tasks. Specifically, collaborative/federated BO, (synchronous) batch BO, and multi-fidelity BO are considered in this paper. Our empirical analysis proves that each one of these tasks requires just an appropriate weighting schema for the W2BGP, while the entire framework remains untouched. Moreover, we demonstrate that the most well-known BO acquisition functions can be easily re-interpreted under the proposed framework and also enable a more computationally efficient way to deal with the computation of the Wasserstein Barycenter, compared with state-of-the-art methods from the Machine Learning literature. Finally, research perspectives branching from the proposed approach are presented.</p>]]></description>
+  </item>
 
   <item>
     <title>LOTFormer: Doubly-Stochastic Linear Attention via Low-Rank Optimal Transport</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Salman Beigi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>We study optimal transport between two high-dimensional distributions μ,ν in Rⁿ from an algorithmic perspective: given x ∼μ, find a close y ∼ν in poly(n) time, where n is the dimension of x,y. Thus, running time depends on the dimension rather than the full representation size of μ,ν. Our main result is a general algorithm for transporting any product distribution μ to any ν with cost Δ+ δ under ℓ_p^p, where Δ is the Knothe-Rosenblatt transport cost and δ is a computational error decreasing with runtime. This requires ν to be &ldquo;sequentially samplable&rdquo; with bounded average sampling cost, a new but natural notion. We further prove: An algorithmic version of Talagrand&rsquo;s inequality for transporting the standard Gaussian Φⁿ to arbitrary ν under squared Euclidean cost. For ν= Φⁿ conditioned on a set 𝒮 of measure ε, we construct the sequential sampler in expected time poly(n/ε) using membership oracle access to 𝒮. This yields an algorithmic transport from Φⁿ to Φⁿ|𝒮 in poly(n/ε) time and expected squared distance O(log1/ε), optimal for general 𝒮 of measure ε. As corollary, we obtain the first computational concentration result (Etesami et al. SODA 2020) for Gaussian measure under Euclidean distance with dimension-independent transportation cost, resolving an open question of Etesami et al. Specifically, for any 𝒮 of Gaussian measure ε, most Φⁿ samples can be mapped to 𝒮 within distance O(√(log1/ε)) in poly(n/ε) time.</p>]]></description>
-  </item>
-
-  <item>
-    <title>FAIR Universe HiggsML Uncertainty Dataset and Competition</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-02867</link>
-    <guid isPermaLink="false">arxiv:2410.02867</guid>
-    <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lisa Benato et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Ben Nachman, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>The FAIR Universe HiggsML Uncertainty Challenge focused on measuring the physical properties of elementary particles with imperfect simulators. Participants were required to compute and report confidence intervals for a parameter of interest regarding the Higgs boson while accounting for various systematic (epistemic) uncertainties. The dataset is a tabular dataset of 28 features and 280 million instances. Each instance represents a simulated proton-proton collision as observed at CERN&rsquo;s Large Hadron Collider in Geneva, Switzerland. The features of these simulations were chosen to capture key characteristics of different types of particles. These include primary attributes, such as the energy and three-dimensional momentum of the particles, as well as derived attributes, which are calculated from the primary ones using domain-specific knowledge. Additionally, a label feature designates each instance&rsquo;s type of proton-proton collision, distinguishing the Higgs boson events of interest from three background sources. As outlined in this paper, the permanent release of the dataset allows long-term benchmarking of new techniques. The leading submissions, including Contrastive Normalising Flows and Density Ratios estimation through classification, are described. Our challenge has brought together the physics and machine learning communities to advance our understanding and methodologies in handling systematic uncertainties within AI techniques.</p>]]></description>
-  </item>
-
-  <item>
-    <title>GradNetOT: Learning Optimal Transport Maps with GradNets</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-13191</link>
-    <guid isPermaLink="false">arxiv:2507.13191</guid>
-    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shreyas Chaudhari et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Monotone gradient functions play a central role in solving the Monge formulation of the optimal transport (OT) problem, which arises in modern applications ranging from fluid dynamics to robot swarm control. When the transport cost is the squared Euclidean distance, Brenier&rsquo;s theorem guarantees that the unique optimal transport map satisfies a Monge-Ampère equation and is the gradient of a convex function. In [arXiv:2301.10862] [arXiv:2404.07361], we proposed Monotone Gradient Networks (mGradNets), neural networks that directly parameterize the space of monotone gradient maps. In this work, we leverage mGradNets to directly learn the optimal transport mapping by minimizing a training loss function defined using the Monge-Ampère equation. We empirically show that the structural bias of mGradNets facilitates the learning of optimal transport maps across both image morphing tasks and high-dimensional OT problems.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Efficient Sliced Wasserstein Distance Computation via Adaptive Bayesian Optimization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-17405</link>
-    <guid isPermaLink="false">arxiv:2509.17405</guid>
-    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Manish Acharya et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>The sliced Wasserstein distance (SW) reduces optimal transport on ℝ^d to a sum of one-dimensional projections, and thanks to this efficiency, it is widely used in geometry, generative modeling, and registration tasks. Recent work shows that quasi-Monte Carlo constructions for computing SW (QSW) yield direction sets with excellent approximation error. This paper presents an alternate, novel approach: learning directions with Bayesian optimization (BO), particularly in settings where SW appears inside an optimization loop (e.g., gradient flows). We introduce a family of drop-in selectors for projection directions: BOSW, a one-shot BO scheme on the unit sphere; RBOSW, a periodic-refresh variant; ABOSW, an adaptive hybrid that seeds from competitive QSW sets and performs a few lightweight BO refinements; and ARBOSW, a restarted hybrid that periodically relearns directions during optimization. Our BO approaches can be composed with QSW and its variants (demonstrated by ABOSW/ARBOSW) and require no changes to downstream losses or gradients. We provide numerical experiments where our methods achieve state-of-the-art performance, and on the experimental suite of the original QSW paper, we find that ABOSW and ARBOSW can achieve convergence comparable to the best QSW variants with modest runtime overhead.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Neighbor Embeddings Using Unbalanced Optimal Transport Metrics</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-19226</link>
-    <guid isPermaLink="false">arxiv:2509.19226</guid>
-    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Rana et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>This paper proposes the use of the Hellinger&ndash;Kantorovich metric from unbalanced optimal transport (UOT) in a dimensionality reduction and learning (supervised and unsupervised) pipeline. The performance of UOT is compared to that of regular OT and Euclidean-based dimensionality reduction methods on several benchmark datasets including MedMNIST. The experimental results demonstrate that, on average, UOT shows improvement over both Euclidean and OT-based methods as verified by statistical hypothesis tests. In particular, on the MedMNIST datasets, UOT outperforms OT in classification 81\% of the time. For clustering MedMNIST, UOT outperforms OT 83\% of the time and outperforms both other metrics 58\% of the time.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>FAIR Universe HiggsML Uncertainty Dataset and Competition</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2410-02867</link>
+    <guid isPermaLink="false">arxiv:2410.02867</guid>
+    <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lisa Benato et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Large Hadron Collider, collider, Ben Nachman, Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>The FAIR Universe HiggsML Uncertainty Challenge focused on measuring the physical properties of elementary particles with imperfect simulators. Participants were required to compute and report confidence intervals for a parameter of interest regarding the Higgs boson while accounting for various systematic (epistemic) uncertainties. The dataset is a tabular dataset of 28 features and 280 million instances. Each instance represents a simulated proton-proton collision as observed at CERN&rsquo;s Large Hadron Collider in Geneva, Switzerland. The features of these simulations were chosen to capture key characteristics of different types of particles. These include primary attributes, such as the energy and three-dimensional momentum of the particles, as well as derived attributes, which are calculated from the primary ones using domain-specific knowledge. Additionally, a label feature designates each instance&rsquo;s type of proton-proton collision, distinguishing the Higgs boson events of interest from three background sources. As outlined in this paper, the permanent release of the dataset allows long-term benchmarking of new techniques. The leading submissions, including Contrastive Normalising Flows and Density Ratios estimation through classification, are described. Our challenge has brought together the physics and machine learning communities to advance our understanding and methodologies in handling systematic uncertainties within AI techniques.</p>]]></description>
+  </item>
+
+  <item>
+    <title>GradNetOT: Learning Optimal Transport Maps with GradNets</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2507-13191</link>
+    <guid isPermaLink="false">arxiv:2507.13191</guid>
+    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Shreyas Chaudhari et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Monotone gradient functions play a central role in solving the Monge formulation of the optimal transport (OT) problem, which arises in modern applications ranging from fluid dynamics to robot swarm control. When the transport cost is the squared Euclidean distance, Brenier&rsquo;s theorem guarantees that the unique optimal transport map satisfies a Monge-Ampère equation and is the gradient of a convex function. In [arXiv:2301.10862] [arXiv:2404.07361], we proposed Monotone Gradient Networks (mGradNets), neural networks that directly parameterize the space of monotone gradient maps. In this work, we leverage mGradNets to directly learn the optimal transport mapping by minimizing a training loss function defined using the Monge-Ampère equation. We empirically show that the structural bias of mGradNets facilitates the learning of optimal transport maps across both image morphing tasks and high-dimensional OT problems.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Efficient Sliced Wasserstein Distance Computation via Adaptive Bayesian Optimization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-17405</link>
+    <guid isPermaLink="false">arxiv:2509.17405</guid>
+    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Manish Acharya et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>The sliced Wasserstein distance (SW) reduces optimal transport on ℝ^d to a sum of one-dimensional projections, and thanks to this efficiency, it is widely used in geometry, generative modeling, and registration tasks. Recent work shows that quasi-Monte Carlo constructions for computing SW (QSW) yield direction sets with excellent approximation error. This paper presents an alternate, novel approach: learning directions with Bayesian optimization (BO), particularly in settings where SW appears inside an optimization loop (e.g., gradient flows). We introduce a family of drop-in selectors for projection directions: BOSW, a one-shot BO scheme on the unit sphere; RBOSW, a periodic-refresh variant; ABOSW, an adaptive hybrid that seeds from competitive QSW sets and performs a few lightweight BO refinements; and ARBOSW, a restarted hybrid that periodically relearns directions during optimization. Our BO approaches can be composed with QSW and its variants (demonstrated by ABOSW/ARBOSW) and require no changes to downstream losses or gradients. We provide numerical experiments where our methods achieve state-of-the-art performance, and on the experimental suite of the original QSW paper, we find that ABOSW and ARBOSW can achieve convergence comparable to the best QSW variants with modest runtime overhead.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Neighbor Embeddings Using Unbalanced Optimal Transport Metrics</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2509-19226</link>
+    <guid isPermaLink="false">arxiv:2509.19226</guid>
+    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Muhammad Rana et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>This paper proposes the use of the Hellinger&ndash;Kantorovich metric from unbalanced optimal transport (UOT) in a dimensionality reduction and learning (supervised and unsupervised) pipeline. The performance of UOT is compared to that of regular OT and Euclidean-based dimensionality reduction methods on several benchmark datasets including MedMNIST. The experimental results demonstrate that, on average, UOT shows improvement over both Euclidean and OT-based methods as verified by statistical hypothesis tests. In particular, on the MedMNIST datasets, UOT outperforms OT in classification 81\% of the time. For clustering MedMNIST, UOT outperforms OT 83\% of the time and outperforms both other metrics 58\% of the time.</p>]]></description>
+  </item>
 
   <item>
     <title>Recovering Wasserstein Distance Matrices from Few Measurements</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xingrui Yu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Learning diverse and high-performance behaviors from a limited set of demonstrations is a grand challenge. Traditional imitation learning methods usually fail in this task because most of them are designed to learn one specific behavior even with multiple demonstrations. Therefore, novel techniques for \textit{quality diversity imitation learning}, which bridges the quality diversity optimization and imitation learning methods, are needed to solve the above challenge. This work introduces Wasserstein Quality Diversity Imitation Learning (WQDIL), which 1) improves the stability of imitation learning in the quality diversity setting with latent adversarial training based on a Wasserstein Auto-Encoder (WAE), and 2) mitigates a behavior-overfitting issue using a measure-conditioned reward function with a single-step archive exploration bonus. Empirically, our method significantly outperforms state-of-the-art IL methods, achieving near-expert or beyond-expert QD performance on the challenging continuous control tasks derived from MuJoCo environments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning Broken Symmetries with Approximate Invariance</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-18773</link>
-    <guid isPermaLink="false">arxiv:2412.18773</guid>
-    <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Seth Nabat et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
-<p>Recognizing symmetries in data allows for significant boosts in neural network training, which is especially important where training data are limited. In many cases, however, the exact underlying symmetry is present only in an idealized dataset, and is broken in actual data, due to asymmetries in the detector, or varying response resolution as a function of particle momentum. Standard approaches, such as data augmentation or equivariant networks fail to represent the nature of the full, broken symmetry, effectively overconstraining the response of the neural network. We propose a learning model which balances the generality and asymptotic performance of unconstrained networks with the rapid learning of constrained networks. This is achieved through a dual-subnet structure, where one network is constrained by the symmetry and the other is not, along with a learned symmetry factor. In a simplified toy example that demonstrates violation of Lorentz invariance, our model learns as rapidly as symmetry-constrained networks but escapes its performance limitations.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Truncated Newton Method for Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-02067</link>
-    <guid isPermaLink="false">arxiv:2504.02067</guid>
-    <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mete Kemertas et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Developing a contemporary optimal transport (OT) solver requires navigating trade-offs among several critical requirements: GPU parallelization, scalability to high-dimensional problems, theoretical convergence guarantees, empirical performance in terms of precision versus runtime, and numerical stability in practice. With these challenges in mind, we introduce a specialized truncated Newton algorithm for entropic-regularized OT. In addition to proving that locally quadratic convergence is possible without assuming a Lipschitz Hessian, we provide strategies to maximally exploit the high rate of local convergence in practice. Our GPU-parallel algorithm exhibits exceptionally favorable runtime performance, achieving high precision orders of magnitude faster than many existing alternatives. This is evidenced by wall-clock time experiments on 24 problem sets (12 datasets × 2 cost functions). The scalability of the algorithm is showcased on an extremely large OT problem with n ≈10⁶, solved approximately under weak entopric regularization.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Learning to Normalize on the SPD Manifold under Bures-Wasserstein Geometry</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-00660</link>
-    <guid isPermaLink="false">arxiv:2504.00660</guid>
-    <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Wang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Covariance matrices have proven highly effective across many scientific fields. Since these matrices lie within the Symmetric Positive Definite (SPD) manifold - a Riemannian space with intrinsic non-Euclidean geometry, the primary challenge in representation learning is to respect this underlying geometric structure. Drawing inspiration from the success of Euclidean deep learning, researchers have developed neural networks on the SPD manifolds for more faithful covariance embedding learning. A notable advancement in this area is the implementation of Riemannian batch normalization (RBN), which has been shown to improve the performance of SPD network models. Nonetheless, the Riemannian metric beneath the existing RBN might fail to effectively deal with the ill-conditioned SPD matrices (ICSM), undermining the effectiveness of RBN. In contrast, the Bures-Wasserstein metric (BWM) demonstrates superior performance for ill-conditioning. In addition, the recently introduced Generalized BWM (GBWM) parameterizes the vanilla BWM via an SPD matrix, allowing for a more nuanced representation of vibrant geometries of the SPD manifold. Therefore, we propose a novel RBN algorithm based on the GBW geometry, incorporating a learnable metric parameter. Moreover, the deformation of GBWM by matrix power is also introduced to further enhance the representational capacity of GBWM-based RBN. Experimental results on different datasets validate the effectiveness of our proposed method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Many-to-Many Matching via Sparsity Controlled Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-24204</link>
-    <guid isPermaLink="false">arxiv:2503.24204</guid>
-    <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weijie Liu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Many-to-many matching seeks to match multiple points in one set and multiple points in another set, which is a basis for a wide range of data mining problems. It can be naturally recast in the framework of Optimal Transport (OT). However, existing OT methods either lack the ability to accomplish many-to-many matching or necessitate careful tuning of a regularization parameter to achieve satisfactory results. This paper proposes a novel many-to-many matching method to explicitly encode many-to-many constraints while preventing the degeneration into one-to-one matching. The proposed method consists of the following two components. The first component is the matching budget constraints on each row and column of a transport plan, which specify how many points can be matched to a point at most. The second component is the deformed q-entropy regularization, which encourages a point to meet the matching budget maximally. While the deformed q-entropy was initially proposed to sparsify a transport plan, we employ it to avoid the degeneration into one-to-one matching. We optimize the objective via a penalty algorithm, which is efficient and theoretically guaranteed to converge. Experimental results on various tasks demonstrate that the proposed method achieves good performance by gleaning meaningful many-to-many matchings.</p>]]></description>
   </item>
 
 </channel>

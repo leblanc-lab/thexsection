@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>OmniX: A first jet and event model</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-31403</link>
+    <guid isPermaLink="false">arxiv:2611.31403</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anna Hallin et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka) — original abstract; no AI summary.</em></p>
+<p>Foundation models are a new approach to building machine learning algorithms for particle physics. Their central idea is that a single model can be adapted to a variety of downstream tasks, amortizing training costs. So far, most foundation model prototypes have operated on the constituents of a single jet. This limits their usefulness for physics problems at the scale of full events, such as distinguishing different processes, and restricts their performance, as global correla- tions are invisible to the model. Here, we introduce OmniX, an architecture that operates on both single jets and whole events within a single model. Using the jet-level JetClass and Top-tagging datasets and the event-level Collide-2V dataset, we demonstrate that OmniX trained jointly on single jets and full events matches or exceeds otherwise equivalent jet-only and event-only models in generation and classification.</p>]]></description>
+  </item>
+
+  <item>
+    <title>SOTS: Signature-based Optimal Transport Selection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-31525</link>
+    <guid isPermaLink="false">arxiv:2611.31525</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Khalid Akhmouch et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Training data selection for machine learning models is a critical bottleneck in industrial applications where expert annotation is costly and time-consuming. Existing coreset selection methods for time series either ignore temporal structure entirely or cannot handle variable-length, irregularly sampled, multi-channel signals, the setting most common in industrial monitoring and testing. We introduce SOTS (Signature-based Optimal Transport Selection), an unsupervised coreset selection framework for irregular multivariate time series (IMTS) classification. Each sample is mapped to a truncated path signature, capturing the joint geometric structure of its channels, and the coreset is selected by greedily minimizing the Sliced Wasserstein distance between the empirical signature distributions of the candidate subset and the full dataset, a criterion for which we establish a convergence guarantee for random coresets. We validate SOTS on a real-world, highly imbalanced industrial I&amp;C testing dataset, where SOTS-Greedy exceeds 95% of full-dataset accuracy using only 30% of the training data, outperforming standard coreset baselines at most budgets. This advantage generalizes to public UEA regular multivariate time series benchmarks specifically when class-discriminative information is purely geometric.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Optimal Transport Meets t-SNE: Integrated Visualization without Batch Effects in OT-tSNE</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-32402</link>
+    <guid isPermaLink="false">arxiv:2611.32402</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Azhar Akhmetova et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Visual exploration is an integral step in understanding the structure of datasets. However, systematic variation between datasets collected under different conditions, known as batch effects, can obscure shared structure and complicate their joint visualization. Existing methods often rely on cross-batch nearest-neighbor relations to integrate the batches. Yet, these local correspondences can be unreliable for challenging cross-batch geometries. We propose optimal-transport t-SNE (OT-tSNE), which replaces nearest-neighbor-based matching with globally coupled affinities derived from entropic optimal transport. Controlled synthetic experiments demonstrated that nearest-neighbor-based methods can deteriorate, while optimal-transport affinities and OT-tSNE embeddings remain robust. Across seven real single-cell datasets, we benchmarked OT-tSNE against a broad range of integration and visualization methods and found that it achieves a Pareto-efficient trade-off between batch mixing and biological conservation, and integrates batches particularly well.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Contact Geometry for Generative Models: An Unbalanced Optimal Transport Formulation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-32547</link>
+    <guid isPermaLink="false">arxiv:2611.32547</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrea Testa et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Real-world generative problems in biology, medical imaging, or robotics, rarely come with perfectly paired source and target distributions. While unbalanced Optimal Transport (uOT) provides a robust framework to bridge unpaired datasets via minimum-length paths in probability space, existing formulations based on the Wasserstein-Fisher-Rao (WFR) geometry introduce a structural bias toward high density regions, often triggering mode collapse. We introduce Contact unbalanced Optimal Transport (CuOT), a novel uOT formulation grounded in contact geometry that decouples density transport direction from mass growth to eliminate structural bias. This allows CuOT to adapt sampling steps to the local data structure, naturally reducing step sizes in high-density regions to prevent overshooting and ensuring stable convergence. The result is a stable, scalable path-length minimization solver that consistently outperforms WFR-based methods on biological dynamics reconstruction, unpaired image-to-image translation, and video generation.</p>]]></description>
+  </item>
 
   <item>
     <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ibrahim Elsharkawy et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
 <p>Foundation models (FMs) trained on large datasets and fine-tuned on downstream tasks have emerged as a powerful paradigm in AI for science. Industrial FMs are typically trained using self-supervision with masking due to the lack of labels. In many scientific domains, accurate simulations are plentiful and facilitate large, labeled datasets. This opens up new possibilities for pre-training. We present a systematic comparison of pre-training methods using the OmniLearned High Energy Physics FM framework. We test supervised classification, flow-matching generation, and self-supervised masked particle modeling. All models are pre-trained on the JetClass dataset and fine-tuned on two representative downstream tasks, top jet classification and JetNet conditional generation. Among other observations, for classification tasks, we find that pure classifier pre-training is optimal when downstream labels and model capacity are plentiful, but combining it with self-supervised masked particle modeling (MPM) is uniquely powerful in the low-finetuning label regime. Flow matching-based generative pre-training seems to provide little benefit for downstream classification, and interestingly, for downstream generation, we find that flow matching must be in the pre-training objective to see a significant finetuning advantage, hinting at the orthogonality of classification and generation tasks. That is, for a model to transfer to both generative and classification downstream tasks, it must be pre-trained on both. This study provides a template for controlled scaling analysis of pre-training objectives for foundation models in simulation-based sciences.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Robust Risk Under Evolving Uncertainty: A Wasserstein Counterpart of the Entropic Value-at-Risk</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-19073</link>
-    <guid isPermaLink="false">arxiv:2608.19073</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Deep Kumar Ganguly et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>An agent still learning its environment should be cautious while ignorant and bold once confident. The entropic value-at-risk captures this through a robust-optimization identity&mdash;a confidence level fixes the radius of a relative-entropy ball of alternative models&mdash;but that ball cannot reach catastrophes the nominal deems impossible, precisely what a safe agent must hedge. We instead use an optimal-transport ball and study the coherent risk measure it induces, the Wasserstein entropic value-at-risk. It has a variational dual mirroring the entropic formula (an inverse temperature becomes a transport price), occupies a definite place in the risk hierarchy, and provably accounts for the reachable catastrophes the entropic measure ignores; we verify both dualities numerically. Driving the transport radius by belief entropy then yields a closed-form robust dynamic-programming operator whose caution contracts as the belief sharpens, with a certified safety sandwich and a sharp safety switch.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Pathology Transport: Optimal-Transport Explanations for Clinical Data, and When Their Heatmaps (Fail to) Localize Disease</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-17370</link>
-    <guid isPermaLink="false">arxiv:2608.17370</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lalit Kumar</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal-transport) — original abstract; no AI summary.</em></p>
-<p>Generative models promise a route to explainable clinical AI: rather than probe a classifier, model the distributions of healthy and diseased patients and read explanations off the geometry between them. We build such a system - an optimal-transport rectified flow trained between two clinical distributions - and use it to ask a pointed question the field too rarely tests: do the resulting explanation heatmaps actually localize disease? On tabular tumour biomarkers (Breast Cancer Wisconsin) a single flow yields per-patient counterfactuals, an unsupervised malignancy score (AUROC 0.91; 0.93 +/- 0.01 across five seeds), and a label-free attribution that agrees with a supervised classifier (r ~ 0.5) - a compact, honest interpretability engine, though it never out-predicts logistic regression. Moving to chest X-rays, we show the transport heatmap is a population-level signal, not a localiser; a reconstruction-based, identity-preserving variant does localize synthetic lesions (pointing game 0.52), yet on real RSNA radiologist boxes it collapses to chance while only supervised Grad-CAM stays above it. The central result is a synthetic-to-real gap: label-free heatmaps that look compelling on planted lesions are not evidence of real localisation. We contribute a reusable optimal-transport recipe for generative explanations and a controlled benchmark for stress-testing whether they localize.</p>]]></description>
-  </item>
-
-  <item>
-    <title>From Inference to Adaptation: A Unified Optimal Transport View of Vision Language Model</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2608-18339</link>
-    <guid isPermaLink="false">arxiv:2608.18339</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qi Yu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Vision-language models (VLMs) have demonstrated remarkable zero-shot capabilities yet remain sensitive to real-world distribution shifts during inference. Although significant efforts are devoted to adapting VLMs at test time, they rely heavily on noisy pseudo-labels predicted directly from raw embedding similarities during inference, which are unreliable under distribution shift and mislead the adaptation. To avoid noise amplification, existing works craft coarse-grained surrogate objectives during adaptation, which fail to explicitly model sample-level relationships across different modalities, creating objective mismatch with inference, thus leading to marginal performance improvement. In this work, we aim to bridge the detached objectives of inference and adaptation for VLMs, and propose a principled VLM TTA method called \algname. For VLM inference, we formulate the zero-shot image classification task as a cross-modal alignment problem encoded via a Wasserstein OT formulation, providing robust pseudo-labels at the sample-level to effectively adapt VLMs. For VLM adaptation, we adopt a soft-label InfoNCE loss to adapt VLMs based on the OT-induced pseudo-labels, leveraging fine-grained supervisions to explicitly model relationships of individual image-text pairs via contrastive learning, which empowers accurate inference at the same granularity. Moreover, we theoretically reveal that the InfoNCE loss can be neatly reformulated as a Wasserstein OT formulation, thereby unifying the objectives of the inference and adaptation of VLMs to achieve their mutual benefits. Extensive experiments demonstrate the effectiveness and efficiency of our methods, outperforming the best-performing methods by up to 7% with state-of-the-art efficiency.</p>]]></description>
-  </item>
-
-  <item>
-    <title>SparsePixels: Efficient Convolution for Sparse Data on FPGAs</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2512-06208</link>
-    <guid isPermaLink="false">arxiv:2512.06208</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ho Fung Tsoi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Philip Harris) — original abstract; no AI summary.</em></p>
-<p>Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from O(HWK²C_inC_out) to O(n²C_inC_out) and the storage from O(HWC) to O(nC) when n²≪HW. Because computation always runs over a single pre-specified pixel budget that is frozen at synthesis, the inference latency is data-independent and constant at runtime. We show that, for identifying neutrino interactions in naturally sparse LArTPC images with 4k pixels, a standard CNN with a compact size of 4k parameters incurs an inference latency of 48.665 μs on an FPGA, whereas a sparse CNN of the same base architecture, computing on less than 1% of the input pixels, achieves a ×73 speedup to 0.665 μs with resource utilization well within on-chip budgets, trading only a small percent-level performance loss. This work aims to benefit future algorithm development for efficient data readout in modern experiments with strict latency requirements of microseconds or below.</p>]]></description>
   </item>
 
 </channel>

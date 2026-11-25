@@ -7,7 +7,27 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>MSW: a Multi-Scale Sliced Wasserstein Distance Between Image Distributions</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-31647</link>
+    <guid isPermaLink="false">arxiv:2611.31647</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Youssef Haouchat et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We propose the multi-scale sliced Wasserstein (MSW) distance between image distributions, which operates in pixel space and requires no trained network. MSW convolves images with a fixed bank of discrete cosine filters at several scales, pools the responses over all positions, and compares the resulting one-dimensional distributions using the Wasserstein distance. We pair MSW with an exact two-sample test that gives calibrated p-values. Most metrics compare two image sets in the latent space of a pretrained network. We show that these metrics are insensitive to simple perturbations of the images, because the latent space is nearly invariant to them. In contrast, MSW detects smaller perturbations than latent-space metrics and needs far fewer images to do so. Although it uses no learned features, it still detects semantic changes of the image distribution. Finally, MSW matches or outperforms existing Wasserstein-based metrics in our experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>FaceNet versus VGG Features in Wasserstein Distortion for Face Image Compression</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-32220</link>
+    <guid isPermaLink="false">arxiv:2611.32220</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xinyu Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Wasserstein distortion (WD) compares local statistics of deep features and has been used to optimize learned image codecs for perceptual quality, but existing WD objectives rely on features from networks trained for generic image classification, such as VGG. We ask whether features from a face recognition network better reflect the perceived quality of compressed faces. In the Cool-Chic codec, we replace the VGG features in a WD-based objective with intermediate feature maps of FaceNet, and compare the two objectives on 20 LFW face images at a matched average bitrate of about 0.15 bits per pixel. In a preliminary pairwise human study, FaceNet-based reconstructions were preferred in 72.5% of judgments and by a majority of participants on 16 of the 20 images. These results suggest that the choice of feature network inside WD affects the perceived quality of face images, and that face recognition features are a promising direction for face-aware perceptual compression.</p>]]></description>
+  </item>
 
   <item>
     <title>Target-Consistent Action Guidance via Semi-Unbalanced Optimal Transport for Drifting World Models</title>
@@ -1987,26 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fei Wen et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Optimal transport (OT) has recently been shown as a promising criterion for unsupervised restoration when no explicit prior model is available. Despite its theoretical appeal, OT still significantly falls short of supervised methods on challenging tasks such as super-resolution, deraining, and dehazing. In this paper, we propose a \emph{sparsity-aware optimal transport} (SOT) framework to bridge this gap by leveraging a key observation: the degradations in these tasks exhibit distinct sparsity in the frequency domain. Incorporating this sparsity prior into OT can significantly reduce the ambiguity of the inverse mapping for restoration and substantially boost performance. We provide analysis to show exploiting degradation sparsity benefits unsupervised restoration learning. Extensive experiments on real-world super-resolution, deraining, and dehazing demonstrate that SOT offers notable performance gains over standard OT, while achieving superior perceptual quality compared to existing supervised and unsupervised methods. In particular, SOT consistently outperforms existing unsupervised methods across all three tasks and narrows the performance gap to supervised counterparts.</p>]]></description>
-  </item>
-
-  <item>
-    <title>WIPUNet: A Physics-inspired Network with Weighted Inductive Biases for Image Denoising</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2509-05662</link>
-    <guid isPermaLink="false">arxiv:2509.05662</guid>
-    <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wasikul Islam</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (collider) — original abstract; no AI summary.</em></p>
-<p>In high-energy particle physics, collider measurements are contaminated by &ldquo;pileup&rdquo;, overlapping soft interactions that obscure the hard-scatter signal of interest. Dedicated subtraction strategies exploit physical priors such as conservation, locality, and isolation. Inspired by this analogy, we investigate how such principles can inform image denoising by embedding physics-guided inductive biases into neural architectures. This paper is a proof of concept: rather than targeting state-of-the-art (SOTA) benchmarks, we ask whether physics-inspired priors improve robustness under strong corruption. We introduce a hierarchy of PU-inspired denoisers: a residual CNN with conservation constraints, its Gaussian-noise variants, and the Weighted Inductive Pileup-physics-inspired U-Network for Denoising (WIPUNet), which integrates these ideas into a UNet backbone. On CIFAR-10 with Gaussian noise at σ∈{15,25,50,75,100}, PU-inspired CNNs are competitive with standard baselines, while WIPUNet shows a \emph{widening margin} at higher noise. Complementary BSD500 experiments show the same trend, suggesting physics-inspired priors provide stability where purely data-driven models degrade. Our contributions are: (i) translating pileup-mitigation principles into modular inductive biases; (ii) integrating them into UNet; and (iii) demonstrating robustness gains at high noise without relying on heavy SOTA machinery.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Dual-Scale Volume Priors with Wasserstein-Based Consistency for Semi-Supervised Medical Image Segmentation</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2509-04273</link>
-    <guid isPermaLink="false">arxiv:2509.04273</guid>
-    <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Junying Meng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Despite signi cant progress in semi-supervised medical image segmentation, most existing segmentation networks overlook e ective methodological guidance for feature extraction and important prior information from datasets. In this paper, we develop a semi-supervised medical image segmentation framework that e ectively integrates spatial regularization methods and volume priors. Speci cally, our approach integrates a strong explicit volume prior at the image scale and Threshold Dynamics spatial regularization, both derived from variational models, into the backbone segmentation network. The target region volumes for each unlabeled image are estimated by a regression network, which e ectively regularizes the backbone segmentation network through an image-scale Wasserstein distance constraint, ensuring that the class ratios in the segmentation results for each unlabeled image match those predicted by the regression network. Additionally, we design a dataset-scale Wasserstein distance loss function based on a weak implicit volume prior, which enforces that the volume distribution predicted for the unlabeled dataset is similar to that of labeled dataset. Experimental results on the 2017 ACDC dataset, PROMISE12 dataset, and thigh muscle MR image dataset show the superiority of the proposed method.</p>]]></description>
   </item>
 
 </channel>

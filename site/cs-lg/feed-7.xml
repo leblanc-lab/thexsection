@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Gromov-Wasserstein-like Distances in the Gaussian Mixture Models Space</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-11256</link>
+    <guid isPermaLink="false">arxiv:2310.11256</guid>
+    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Salmona et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
+<p>The Gromov-Wasserstein (GW) distance is frequently used in machine learning to compare distributions across distinct metric spaces. Despite its utility, it remains computationally intensive, especially for large-scale problems. Recently, a novel Wasserstein distance specifically tailored for Gaussian mixture models (GMMs) and known as MW2 (mixture Wasserstein) has been introduced by several authors. In scenarios where data exhibit clustering, this approach simplifies to a small-scale discrete optimal transport problem, which complexity depends solely on the number of Gaussian components in the GMMs. This paper aims to incorporate invariance properties into MW2. This is done by introducing new Gromov-type distances, designed to be isometry-invariant in Euclidean spaces and applicable for comparing GMMs across different dimensional spaces. Our first contribution is the Mixture Gromov Wasserstein distance (MGW2), which can be viewed as a &ldquo;Gromovized&rdquo; version of MW2. This new distance has a straightforward discrete formulation, making it highly efficient for estimating distances between GMMs in practical applications. To facilitate the derivation of a transport plan between GMMs, we present a second distance, the Embedded Wasserstein distance (EW2). This distance turns out to be closely related to several recent alternatives to Gromov-Wasserstein. We show that EW2 can be adapted to derive a distance as well as optimal transportation plans between GMMs. We demonstrate the efficiency of these newly proposed distances on medium to large-scale problems, including shape matching and hyperspectral image color transfer.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Novel machine learning applications at the LHC</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-20413</link>
+    <guid isPermaLink="false">arxiv:2409.20413</guid>
+    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier M. Duarte</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
+<p>Machine learning (ML) is a rapidly growing area of research in the field of particle physics, with a vast array of applications at the CERN LHC. ML has changed the way particle physicists conduct searches and measurements as a versatile tool used to improve existing approaches and enable fundamentally new ones. In these proceedings, we describe novel ML techniques and recent results for improved classification, fast simulation, unfolding, and anomaly detection in LHC experiments.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Stochastic Inverse Problem: stability, regularization and Wasserstein gradient flow</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2410-00229</link>
+    <guid isPermaLink="false">arxiv:2410.00229</guid>
+    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qin Li et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Inverse problems in physical or biological sciences often involve recovering an unknown parameter that is random. The sought-after quantity is a probability distribution of the unknown parameter, that produces data that aligns with measurements. Consequently, these problems are naturally framed as stochastic inverse problems. In this paper, we explore three aspects of this problem: direct inversion, variational formulation with regularization, and optimization via gradient flows, drawing parallels with deterministic inverse problems. A key difference from the deterministic case is the space in which we operate. Here, we work within probability space rather than Euclidean or Sobolev spaces, making tools from measure transport theory necessary for the study. Our findings reveal that the choice of metric &ndash; both in the design of the loss function and in the optimization process &ndash; significantly impacts the stability and properties of the optimizer.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A New Perspective On Denoising Based On Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-08135</link>
+    <guid isPermaLink="false">arxiv:2312.08135</guid>
+    <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Garcia Trillos et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>In the standard formulation of the denoising problem, one is given a probabilistic model relating a latent variable Θ∈Ω⊂ℝ^m   (m≥1) and an observation Z ∈ℝ^d according to: Z |Θ∼p(·|Θ) and Θ∼G^<em>, and the goal is to construct a map to recover the latent variable from the observation. The posterior mean, a natural candidate for estimating Θ from Z, attains the minimum Bayes risk (under the squared error loss) but at the expense of over-shrinking the Z, and in general may fail to capture the geometric features of the prior distribution G^</em> (e.g., low dimensionality, discreteness, sparsity, etc.). To rectify these drawbacks, we take a new perspective on this denoising problem that is inspired by optimal transport (OT) theory and use it to study a different, OT-based, denoiser at the population level setting. We rigorously prove that, under general assumptions on the model, this OT-based denoiser is mathematically well-defined and unique, and is closely connected to the solution to a Monge OT problem. We then prove that, under appropriate identifiability assumptions on the model, the OT-based denoiser can be recovered solely from information of the marginal distribution of Z and the posterior mean of the model, after solving a linear relaxation problem over a suitable space of couplings that is reminiscent of standard multimarginal OT problems. In particular, thanks to Tweedie&rsquo;s formula, when the likelihood model { p(·|θ) }_θ∈Ω is an exponential family of distributions, the OT based-denoiser can be recovered solely from the marginal distribution of Z. In general, our family of OT-like relaxations is of interest in its own right and for the denoising problem suggests alternative numerical methods inspired by the rich literature on computational OT.</p>]]></description>
+  </item>
 
   <item>
     <title>Adaptive Learning of the Latent Space of Wasserstein Generative Adversarial Networks</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Theus et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Structural pruning of neural networks conventionally relies on identifying and discarding less important neurons, a practice often resulting in significant accuracy loss that necessitates subsequent fine-tuning efforts. This paper introduces a novel approach named Intra-Fusion, challenging this prevailing pruning paradigm. Unlike existing methods that focus on designing meaningful neuron importance metrics, Intra-Fusion redefines the overlying pruning procedure. Through utilizing the concepts of model fusion and Optimal Transport, we leverage an agnostically given importance metric to arrive at a more effective sparse model representation. Notably, our approach achieves substantial accuracy recovery without the need for resource-intensive fine-tuning, making it an efficient and promising tool for neural network compression. Additionally, we explore how fusion can be added to the pruning process to significantly decrease the training time while maintaining competitive performance. We benchmark our results for various networks on commonly used datasets such as CIFAR-10, CIFAR-100, and ImageNet. More broadly, we hope that the proposed Intra-Fusion approach invigorates exploration into a fresh alternative to the predominant compression approaches. Our code is available here: https://github.com/alexandertheus/Intra-Fusion.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Hierarchical Multi-Marginal Optimal Transport for Network Alignment</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-04470</link>
-    <guid isPermaLink="false">arxiv:2310.04470</guid>
-    <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhichen Zeng et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Finding node correspondence across networks, namely multi-network alignment, is an essential prerequisite for joint learning on multiple networks. Despite great success in aligning networks in pairs, the literature on multi-network alignment is sparse due to the exponentially growing solution space and lack of high-order discrepancy measures. To fill this gap, we propose a hierarchical multi-marginal optimal transport framework named HOT for multi-network alignment. To handle the large solution space, multiple networks are decomposed into smaller aligned clusters via the fused Gromov-Wasserstein (FGW) barycenter. To depict high-order relationships across multiple networks, the FGW distance is generalized to the multi-marginal setting, based on which networks can be aligned jointly. A fast proximal point method is further developed with guaranteed convergence to a local optimum. Extensive experiments and analysis show that our proposed HOT achieves significant improvements over the state-of-the-art in both effectiveness and scalability.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Event-Keyed Summarization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-06973</link>
-    <guid isPermaLink="false">arxiv:2402.06973</guid>
-    <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Gantt et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (MuC) — original abstract; no AI summary.</em></p>
-<p>We introduce event-keyed summarization (EKS), a novel task that marries traditional summarization and document-level event extraction, with the goal of generating a contextualized summary for a specific event, given a document and an extracted event structure. We introduce a dataset for this task, MUCSUM, consisting of summaries of all events in the classic MUC-4 dataset, along with a set of baselines that comprises both pretrained LM standards in the summarization literature, as well as larger frontier models. We show that ablations that reduce EKS to traditional summarization or structure-to-text yield inferior summaries of target events and that MUCSUM is a robust benchmark for this task. Lastly, we conduct a human evaluation of both reference and model summaries, and provide some detailed analysis of the results.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Wasserstein proximal operators describe score-based generative models and resolve memorization</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-06162</link>
-    <guid isPermaLink="false">arxiv:2402.06162</guid>
-    <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin J. Zhang et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>We focus on the fundamental mathematical structure of score-based generative models (SGMs). We first formulate SGMs in terms of the Wasserstein proximal operator (WPO) and demonstrate that, via mean-field games (MFGs), the WPO formulation reveals mathematical structure that describes the inductive bias of diffusion and score-based models. In particular, MFGs yield optimality conditions in the form of a pair of coupled partial differential equations: a forward-controlled Fokker-Planck (FP) equation, and a backward Hamilton-Jacobi-Bellman (HJB) equation. Via a Cole-Hopf transformation and taking advantage of the fact that the cross-entropy can be related to a linear functional of the density, we show that the HJB equation is an uncontrolled FP equation. Second, with the mathematical structure at hand, we present an interpretable kernel-based model for the score function which dramatically improves the performance of SGMs in terms of training samples and training time. In addition, the WPO-informed kernel model is explicitly constructed to avoid the recently studied memorization effects of score-based generative models. The mathematical form of the new kernel-based models in combination with the use of the terminal condition of the MFG reveals new explanations for the manifold learning and generalization properties of SGMs, and provides a resolution to their memorization effects. Finally, our mathematically informed, interpretable kernel-based model suggests new scalable bespoke neural network architectures for high-dimensional applications.</p>]]></description>
-  </item>
-
-  <item>
-    <title>High-dimensional and Permutation Invariant Anomaly Detection</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2306-03933</link>
-    <guid isPermaLink="false">arxiv:2306.03933</guid>
-    <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vinicius Mikuni et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
-<p>Methods for anomaly detection of new physics processes are often limited to low-dimensional spaces due to the difficulty of learning high-dimensional probability densities. Particularly at the constituent level, incorporating desirable properties such as permutation invariance and variable-length inputs becomes difficult within popular density estimation methods. In this work, we introduce a permutation-invariant density estimator for particle physics data based on diffusion models, specifically designed to handle variable-length inputs. We demonstrate the efficacy of our methodology by utilizing the learned density as a permutation-invariant anomaly detection score, effectively identifying jets with low likelihood under the background-only hypothesis. To validate our density estimation method, we investigate the ratio of learned densities and compare to those obtained by a supervised classification algorithm.</p>]]></description>
   </item>
 
 </channel>

@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Learning Broken Symmetries with Approximate Invariance</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2412-18773</link>
+    <guid isPermaLink="false">arxiv:2412.18773</guid>
+    <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Seth Nabat et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Gregor Kasieczka, Daniel Whiteson, Aishik Ghosh) — original abstract; no AI summary.</em></p>
+<p>Recognizing symmetries in data allows for significant boosts in neural network training, which is especially important where training data are limited. In many cases, however, the exact underlying symmetry is present only in an idealized dataset, and is broken in actual data, due to asymmetries in the detector, or varying response resolution as a function of particle momentum. Standard approaches, such as data augmentation or equivariant networks fail to represent the nature of the full, broken symmetry, effectively overconstraining the response of the neural network. We propose a learning model which balances the generality and asymptotic performance of unconstrained networks with the rapid learning of constrained networks. This is achieved through a dual-subnet structure, where one network is constrained by the symmetry and the other is not, along with a learned symmetry factor. In a simplified toy example that demonstrates violation of Lorentz invariance, our model learns as rapidly as symmetry-constrained networks but escapes its performance limitations.</p>]]></description>
+  </item>
+
+  <item>
+    <title>A Truncated Newton Method for Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-02067</link>
+    <guid isPermaLink="false">arxiv:2504.02067</guid>
+    <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mete Kemertas et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Developing a contemporary optimal transport (OT) solver requires navigating trade-offs among several critical requirements: GPU parallelization, scalability to high-dimensional problems, theoretical convergence guarantees, empirical performance in terms of precision versus runtime, and numerical stability in practice. With these challenges in mind, we introduce a specialized truncated Newton algorithm for entropic-regularized OT. In addition to proving that locally quadratic convergence is possible without assuming a Lipschitz Hessian, we provide strategies to maximally exploit the high rate of local convergence in practice. Our GPU-parallel algorithm exhibits exceptionally favorable runtime performance, achieving high precision orders of magnitude faster than many existing alternatives. This is evidenced by wall-clock time experiments on 24 problem sets (12 datasets × 2 cost functions). The scalability of the algorithm is showcased on an extremely large OT problem with n ≈10⁶, solved approximately under weak entopric regularization.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Learning to Normalize on the SPD Manifold under Bures-Wasserstein Geometry</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2504-00660</link>
+    <guid isPermaLink="false">arxiv:2504.00660</guid>
+    <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rui Wang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>Covariance matrices have proven highly effective across many scientific fields. Since these matrices lie within the Symmetric Positive Definite (SPD) manifold - a Riemannian space with intrinsic non-Euclidean geometry, the primary challenge in representation learning is to respect this underlying geometric structure. Drawing inspiration from the success of Euclidean deep learning, researchers have developed neural networks on the SPD manifolds for more faithful covariance embedding learning. A notable advancement in this area is the implementation of Riemannian batch normalization (RBN), which has been shown to improve the performance of SPD network models. Nonetheless, the Riemannian metric beneath the existing RBN might fail to effectively deal with the ill-conditioned SPD matrices (ICSM), undermining the effectiveness of RBN. In contrast, the Bures-Wasserstein metric (BWM) demonstrates superior performance for ill-conditioning. In addition, the recently introduced Generalized BWM (GBWM) parameterizes the vanilla BWM via an SPD matrix, allowing for a more nuanced representation of vibrant geometries of the SPD manifold. Therefore, we propose a novel RBN algorithm based on the GBW geometry, incorporating a learnable metric parameter. Moreover, the deformation of GBWM by matrix power is also introduced to further enhance the representational capacity of GBWM-based RBN. Experimental results on different datasets validate the effectiveness of our proposed method.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Many-to-Many Matching via Sparsity Controlled Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2025.html#a2503-24204</link>
+    <guid isPermaLink="false">arxiv:2503.24204</guid>
+    <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Weijie Liu et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Many-to-many matching seeks to match multiple points in one set and multiple points in another set, which is a basis for a wide range of data mining problems. It can be naturally recast in the framework of Optimal Transport (OT). However, existing OT methods either lack the ability to accomplish many-to-many matching or necessitate careful tuning of a regularization parameter to achieve satisfactory results. This paper proposes a novel many-to-many matching method to explicitly encode many-to-many constraints while preventing the degeneration into one-to-one matching. The proposed method consists of the following two components. The first component is the matching budget constraints on each row and column of a transport plan, which specify how many points can be matched to a point at most. The second component is the deformed q-entropy regularization, which encourages a point to meet the matching budget maximally. While the deformed q-entropy was initially proposed to sparsify a transport plan, we employ it to avoid the degeneration into one-to-one matching. We optimize the objective via a penalty algorithm, which is efficient and theoretically guaranteed to converge. Experimental results on various tasks demonstrate that the proposed method achieves good performance by gleaning meaningful many-to-many matchings.</p>]]></description>
+  </item>
 
   <item>
     <title>Exploring the Effect of Reinforcement Learning on Video Understanding: Insights from SEED-Bench-R1</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthew Leigh et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (Michael Kagan) — original abstract; no AI summary.</em></p>
 <p>In this work, we significantly enhance masked particle modeling (MPM), a self-supervised learning scheme for constructing highly expressive representations of unordered sets relevant to developing foundation models for high-energy physics. In MPM, a model is trained to recover the missing elements of a set, a learning objective that requires no labels and can be applied directly to experimental data. We achieve significant performance improvements over previous work on MPM by addressing inefficiencies in the implementation and incorporating a more powerful decoder. We compare several pre-training tasks and introduce new reconstruction methods that utilize conditional generative models without data tokenization or discretization. We show that these new methods outperform the tokenized learning objective from the original MPM on a new test bed for foundation models for jets, which includes using a wide variety of downstream tasks relevant to jet physics, such as classification, secondary vertex finding, and track identification.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Gromov-Wasserstein-like Distances in the Gaussian Mixture Models Space</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-11256</link>
-    <guid isPermaLink="false">arxiv:2310.11256</guid>
-    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Antoine Salmona et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein, title: Gromov-Wasserstein) — original abstract; no AI summary.</em></p>
-<p>The Gromov-Wasserstein (GW) distance is frequently used in machine learning to compare distributions across distinct metric spaces. Despite its utility, it remains computationally intensive, especially for large-scale problems. Recently, a novel Wasserstein distance specifically tailored for Gaussian mixture models (GMMs) and known as MW2 (mixture Wasserstein) has been introduced by several authors. In scenarios where data exhibit clustering, this approach simplifies to a small-scale discrete optimal transport problem, which complexity depends solely on the number of Gaussian components in the GMMs. This paper aims to incorporate invariance properties into MW2. This is done by introducing new Gromov-type distances, designed to be isometry-invariant in Euclidean spaces and applicable for comparing GMMs across different dimensional spaces. Our first contribution is the Mixture Gromov Wasserstein distance (MGW2), which can be viewed as a &ldquo;Gromovized&rdquo; version of MW2. This new distance has a straightforward discrete formulation, making it highly efficient for estimating distances between GMMs in practical applications. To facilitate the derivation of a transport plan between GMMs, we present a second distance, the Embedded Wasserstein distance (EW2). This distance turns out to be closely related to several recent alternatives to Gromov-Wasserstein. We show that EW2 can be adapted to derive a distance as well as optimal transportation plans between GMMs. We demonstrate the efficiency of these newly proposed distances on medium to large-scale problems, including shape matching and hyperspectral image color transfer.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Novel machine learning applications at the LHC</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2409-20413</link>
-    <guid isPermaLink="false">arxiv:2409.20413</guid>
-    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Javier M. Duarte</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (LHC) — original abstract; no AI summary.</em></p>
-<p>Machine learning (ML) is a rapidly growing area of research in the field of particle physics, with a vast array of applications at the CERN LHC. ML has changed the way particle physicists conduct searches and measurements as a versatile tool used to improve existing approaches and enable fundamentally new ones. In these proceedings, we describe novel ML techniques and recent results for improved classification, fast simulation, unfolding, and anomaly detection in LHC experiments.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stochastic Inverse Problem: stability, regularization and Wasserstein gradient flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2410-00229</link>
-    <guid isPermaLink="false">arxiv:2410.00229</guid>
-    <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Qin Li et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Inverse problems in physical or biological sciences often involve recovering an unknown parameter that is random. The sought-after quantity is a probability distribution of the unknown parameter, that produces data that aligns with measurements. Consequently, these problems are naturally framed as stochastic inverse problems. In this paper, we explore three aspects of this problem: direct inversion, variational formulation with regularization, and optimization via gradient flows, drawing parallels with deterministic inverse problems. A key difference from the deterministic case is the space in which we operate. Here, we work within probability space rather than Euclidean or Sobolev spaces, making tools from measure transport theory necessary for the study. Our findings reveal that the choice of metric &ndash; both in the design of the loss function and in the optimization process &ndash; significantly impacts the stability and properties of the optimizer.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A New Perspective On Denoising Based On Optimal Transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2312-08135</link>
-    <guid isPermaLink="false">arxiv:2312.08135</guid>
-    <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicolas Garcia Trillos et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>In the standard formulation of the denoising problem, one is given a probabilistic model relating a latent variable Θ∈Ω⊂ℝ^m   (m≥1) and an observation Z ∈ℝ^d according to: Z |Θ∼p(·|Θ) and Θ∼G^<em>, and the goal is to construct a map to recover the latent variable from the observation. The posterior mean, a natural candidate for estimating Θ from Z, attains the minimum Bayes risk (under the squared error loss) but at the expense of over-shrinking the Z, and in general may fail to capture the geometric features of the prior distribution G^</em> (e.g., low dimensionality, discreteness, sparsity, etc.). To rectify these drawbacks, we take a new perspective on this denoising problem that is inspired by optimal transport (OT) theory and use it to study a different, OT-based, denoiser at the population level setting. We rigorously prove that, under general assumptions on the model, this OT-based denoiser is mathematically well-defined and unique, and is closely connected to the solution to a Monge OT problem. We then prove that, under appropriate identifiability assumptions on the model, the OT-based denoiser can be recovered solely from information of the marginal distribution of Z and the posterior mean of the model, after solving a linear relaxation problem over a suitable space of couplings that is reminiscent of standard multimarginal OT problems. In particular, thanks to Tweedie&rsquo;s formula, when the likelihood model { p(·|θ) }_θ∈Ω is an exponential family of distributions, the OT based-denoiser can be recovered solely from the marginal distribution of Z. In general, our family of OT-like relaxations is of interest in its own right and for the denoising problem suggests alternative numerical methods inspired by the rich literature on computational OT.</p>]]></description>
   </item>
 
 </channel>

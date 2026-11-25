@@ -7,7 +7,47 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Hierarchical Multi-Marginal Optimal Transport for Network Alignment</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2310-04470</link>
+    <guid isPermaLink="false">arxiv:2310.04470</guid>
+    <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhichen Zeng et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Finding node correspondence across networks, namely multi-network alignment, is an essential prerequisite for joint learning on multiple networks. Despite great success in aligning networks in pairs, the literature on multi-network alignment is sparse due to the exponentially growing solution space and lack of high-order discrepancy measures. To fill this gap, we propose a hierarchical multi-marginal optimal transport framework named HOT for multi-network alignment. To handle the large solution space, multiple networks are decomposed into smaller aligned clusters via the fused Gromov-Wasserstein (FGW) barycenter. To depict high-order relationships across multiple networks, the FGW distance is generalized to the multi-marginal setting, based on which networks can be aligned jointly. A fast proximal point method is further developed with guaranteed convergence to a local optimum. Extensive experiments and analysis show that our proposed HOT achieves significant improvements over the state-of-the-art in both effectiveness and scalability.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Event-Keyed Summarization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-06973</link>
+    <guid isPermaLink="false">arxiv:2402.06973</guid>
+    <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Gantt et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (MuC) — original abstract; no AI summary.</em></p>
+<p>We introduce event-keyed summarization (EKS), a novel task that marries traditional summarization and document-level event extraction, with the goal of generating a contextualized summary for a specific event, given a document and an extracted event structure. We introduce a dataset for this task, MUCSUM, consisting of summaries of all events in the classic MUC-4 dataset, along with a set of baselines that comprises both pretrained LM standards in the summarization literature, as well as larger frontier models. We show that ablations that reduce EKS to traditional summarization or structure-to-text yield inferior summaries of target events and that MUCSUM is a robust benchmark for this task. Lastly, we conduct a human evaluation of both reference and model summaries, and provide some detailed analysis of the results.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Wasserstein proximal operators describe score-based generative models and resolve memorization</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2402-06162</link>
+    <guid isPermaLink="false">arxiv:2402.06162</guid>
+    <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin J. Zhang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
+<p>We focus on the fundamental mathematical structure of score-based generative models (SGMs). We first formulate SGMs in terms of the Wasserstein proximal operator (WPO) and demonstrate that, via mean-field games (MFGs), the WPO formulation reveals mathematical structure that describes the inductive bias of diffusion and score-based models. In particular, MFGs yield optimality conditions in the form of a pair of coupled partial differential equations: a forward-controlled Fokker-Planck (FP) equation, and a backward Hamilton-Jacobi-Bellman (HJB) equation. Via a Cole-Hopf transformation and taking advantage of the fact that the cross-entropy can be related to a linear functional of the density, we show that the HJB equation is an uncontrolled FP equation. Second, with the mathematical structure at hand, we present an interpretable kernel-based model for the score function which dramatically improves the performance of SGMs in terms of training samples and training time. In addition, the WPO-informed kernel model is explicitly constructed to avoid the recently studied memorization effects of score-based generative models. The mathematical form of the new kernel-based models in combination with the use of the terminal condition of the MFG reveals new explanations for the manifold learning and generalization properties of SGMs, and provides a resolution to their memorization effects. Finally, our mathematically informed, interpretable kernel-based model suggests new scalable bespoke neural network architectures for high-dimensional applications.</p>]]></description>
+  </item>
+
+  <item>
+    <title>High-dimensional and Permutation Invariant Anomaly Detection</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2024.html#a2306-03933</link>
+    <guid isPermaLink="false">arxiv:2306.03933</guid>
+    <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vinicius Mikuni et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni) — original abstract; no AI summary.</em></p>
+<p>Methods for anomaly detection of new physics processes are often limited to low-dimensional spaces due to the difficulty of learning high-dimensional probability densities. Particularly at the constituent level, incorporating desirable properties such as permutation invariance and variable-length inputs becomes difficult within popular density estimation methods. In this work, we introduce a permutation-invariant density estimator for particle physics data based on diffusion models, specifically designed to handle variable-length inputs. We demonstrate the efficacy of our methodology by utilizing the learned density as a permutation-invariant anomaly detection score, effectively identifying jets with low likelihood under the background-only hypothesis. To validate our density estimation method, we investigate the ratio of learned densities and compare to those obtained by a supervised classification algorithm.</p>]]></description>
+  </item>
 
   <item>
     <title>On Wasserstein distances for affine transformations of random vectors</title>
@@ -1967,46 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Hu Ding et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Many real-world problems can be formulated as the alignment between two geometric patterns. Previously, a great amount of research focus on the alignment of 2D or 3D patterns in the field of computer vision. Recently, the alignment problem in high dimensions finds several novel applications in practice. However, the research is still rather limited in the algorithmic aspect. To the best of our knowledge, most existing approaches are just simple extensions of their counterparts for 2D and 3D cases, and often suffer from the issues such as high computational complexities. In this paper, we propose an effective framework to compress the high dimensional geometric patterns. Any existing alignment method can be applied to the compressed geometric patterns and the time complexity can be significantly reduced. Our idea is inspired by the observation that high dimensional data often has a low intrinsic dimension. Our framework is a ``data-dependent&rsquo;&rsquo; approach that has the complexity depending on the intrinsic dimension of the input data. Our experimental results reveal that running the alignment algorithm on compressed patterns can achieve similar qualities, comparing with the results on the original patterns, but the runtimes (including the times cost for compression) are substantially lower.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A generative flow for conditional sampling via optimal transport</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-04102</link>
-    <guid isPermaLink="false">arxiv:2307.04102</guid>
-    <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jason Alfonso et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Sampling conditional distributions is a fundamental task for Bayesian inference and density estimation. Generative models, such as normalizing flows and generative adversarial networks, characterize conditional distributions by learning a transport map that pushes forward a simple reference (e.g., a standard Gaussian) to a target distribution. While these approaches successfully describe many non-Gaussian problems, their performance is often limited by parametric bias and the reliability of gradient-based (adversarial) optimizers to learn these transformations. This work proposes a non-parametric generative model that iteratively maps reference samples to the target. The model uses block-triangular transport maps, whose components are shown to characterize conditionals of the target distribution. These maps arise from solving an optimal transport problem with a weighted L² cost function, thereby extending the data-driven approach in [Trigila and Tabak, 2016] for conditional sampling. The proposed approach is demonstrated on a two dimensional example and on a parameter inference problem involving nonlinear ODEs.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Stability Analysis Framework for Particle-based Distance GANs with Wasserstein Gradient Flow</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2307-01879</link>
-    <guid isPermaLink="false">arxiv:2307.01879</guid>
-    <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Chuqi Chen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>In this paper, we investigate the training process of generative networks that use a type of probability density distance named particle-based distance as the objective function, e.g. MMD GAN, Cramér GAN, EIEG GAN. However, these GANs often suffer from the problem of unstable training. In this paper, we analyze the stability of the training process of these GANs from the perspective of probability density dynamics. In our framework, we regard the discriminator D in these GANs as a feature transformation mapping that maps high dimensional data into a feature space, while the generator G maps random variables to samples that resemble real data in terms of feature space. This perspective enables us to perform stability analysis for the training of GANs using the Wasserstein gradient flow of the probability density function. We find that the training process of the discriminator is usually unstable due to the formulation of min_G max_D E(G, D) in GANs. To address this issue, we add a stabilizing term in the discriminator loss function. We conduct experiments to validate our stability analysis and stabilizing method.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Fairness in Multi-Task Learning via Wasserstein Barycenters</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2306-10155</link>
-    <guid isPermaLink="false">arxiv:2306.10155</guid>
-    <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">François Hu et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
-<p>Algorithmic Fairness is an established field in machine learning that aims to reduce biases in data. Recent advances have proposed various methods to ensure fairness in a univariate environment, where the goal is to de-bias a single task. However, extending fairness to a multi-task setting, where more than one objective is optimised using a shared representation, remains underexplored. To bridge this gap, we develop a method that extends the definition of Strong Demographic Parity to multi-task learning using multi-marginal Wasserstein barycenters. Our approach provides a closed form solution for the optimal fair multi-task predictor including both regression and binary classification tasks. We develop a data-driven estimation procedure for the solution and run numerical experiments on both synthetic and real datasets. The empirical results highlight the practical value of our post-processing methodology in promoting fair decision-making.</p>]]></description>
-  </item>
-
-  <item>
-    <title>A Detailed Study of Interpretability of Deep Neural Network based Top Taggers</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2023.html#a2210-04371</link>
-    <guid isPermaLink="false">arxiv:2210.04371</guid>
-    <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ayush Khot et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle flow, top tagging, top tagger, LHC, Large Hadron Collider, collider) — original abstract; no AI summary.</em></p>
-<p>Recent developments in the methods of explainable AI (XAI) allow researchers to explore the inner workings of deep neural networks (DNNs), revealing crucial information about input-output relationships and realizing how data connects with machine learning models. In this paper we explore interpretability of DNN models designed to identify jets coming from top quark decay in high energy proton-proton collisions at the Large Hadron Collider (LHC). We review a subset of existing top tagger models and explore different quantitative methods to identify which features play the most important roles in identifying the top jets. We also investigate how and why feature importance varies across different XAI metrics, how correlations among features impact their explainability, and how latent space representations encode information as well as correlate with physically meaningful quantities. Our studies uncover some major pitfalls of existing XAI methods and illustrate how they can be overcome to obtain consistent and meaningful interpretation of these models. We additionally illustrate the activity of hidden layers as Neural Activation Pattern (NAP) diagrams and demonstrate how they can be used to understand how DNNs relay information across the layers and how this understanding can help to make such models significantly simpler by allowing effective model reoptimization and hyperparameter tuning. These studies not only facilitate a methodological approach to interpreting models but also unveil new insights about what these models learn. Incorporating these observations into augmented model design, we propose the Particle Flow Interaction Network (PFIN) model and demonstrate how interpretability-inspired model augmentation can improve top tagging performance.</p>]]></description>
   </item>
 
 </channel>
