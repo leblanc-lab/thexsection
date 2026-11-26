@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>CARROT: Competitive Adaptive Graph Clustering via Semi-Relaxed Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2611-34012</link>
+    <guid isPermaLink="false">arxiv:2611.34012</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ching Fan Chiang et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Deep graph clustering (DGC) has emerged as a prominent paradigm for unsupervised attributed graph clustering. However, existing methods often struggle with two practical challenges encountered in real-world applications: the number of clusters K is unknown a priori, and cluster sizes are frequently highly imbalanced. Methods relying on a pre-specified K may fail to recover the underlying clustering structure when K is misspecified, while many approaches implicitly favor balanced partitions, hindering the discovery of minority clusters. We propose CARROT, a Competitive Adaptive gRaph clustering framework via semi-Relaxed Optimal Transport, which introduces semi-relaxed optimal transport into deep graph clustering to jointly address both challenges. CARROT first pre-trains node embeddings to establish a meaningful embedding space, and then jointly optimizes embeddings and cluster assignments through an Adaptive Clustering Mechanism. The mechanism combines semi-relaxed optimal transport to adapt cluster capacities to the underlying data, a competition loss to concentrate mass onto well-supported cluster prototypes, thereby starving degenerate ones, and hard pruning to progressively eliminate them. Extensive experiments on five public benchmarks demonstrate that CARROT achieves state-of-the-art NMI and ARI, accurately recovers the number of clusters without supervision, and faithfully preserves size-imbalanced community structures.</p>]]></description>
+  </item>
 
   <item>
     <title>OmniX: A first jet and event model</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nicholas Barnfield et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (winner-take-all) — original abstract; no AI summary.</em></p>
 <p>How many key-value associations can a d×d linear memory store? The answer depends not only on the d² degrees of freedom in the memory matrix, but also on the retrieval criterion. Under isotropic Gaussian embeddings, we prove a sharp threshold for top-1 retrieval, where every signal must beat its largest distractor: the critical value of d²/(nlogn) is 2. Above the threshold, we explicitly construct a linear memory that retrieves all n associations with high probability; below it, no data-dependent linear memory can do so. The logn factor is therefore the unavoidable extreme-value cost of winner-take-all decoding. Without the logarithmic factor&mdash;that is, when n/d²∈(0,∞)&mdash;simultaneous top-1 retrieval is impossible. The matched target can nevertheless remain near the top of the ranking. We capture this weaker retrieval goal with the Tail-Average Margin (TAM), which, for list size k, compares each signal with the average of its k strongest competitors; a positive TAM margin certifies that the target belongs to the top-k candidate list. When k/n→r∈(0,1), we learn the memory by empirical risk minimization with a smoothed TAM objective and derive an exact high-dimensional characterization through a two-parameter scalar variational problem. The result gives limiting laws for signal and competitor scores, margins, and percentile ranks. Sending the ridge parameter to zero after the high-dimensional limit yields a closed-form critical load α_c(r) separating vanishing from positive average loss. The analysis in this work also develops a coupled leave-one-out method for matrix-valued empirical risk problems in which each sample enters many dependent comparisons, a tool that may be useful beyond associative memory.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Pre-Training for Simulation-Based Science: A Study on Jet Foundation Model Training Objectives</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2026.html#a2606-14870</link>
-    <guid isPermaLink="false">arxiv:2606.14870</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ibrahim Elsharkawy et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (Ben Nachman, Vinicius Mikuni, Gregor Kasieczka) — original abstract; no AI summary.</em></p>
-<p>Foundation models (FMs) trained on large datasets and fine-tuned on downstream tasks have emerged as a powerful paradigm in AI for science. Industrial FMs are typically trained using self-supervision with masking due to the lack of labels. In many scientific domains, accurate simulations are plentiful and facilitate large, labeled datasets. This opens up new possibilities for pre-training. We present a systematic comparison of pre-training methods using the OmniLearned High Energy Physics FM framework. We test supervised classification, flow-matching generation, and self-supervised masked particle modeling. All models are pre-trained on the JetClass dataset and fine-tuned on two representative downstream tasks, top jet classification and JetNet conditional generation. Among other observations, for classification tasks, we find that pure classifier pre-training is optimal when downstream labels and model capacity are plentiful, but combining it with self-supervised masked particle modeling (MPM) is uniquely powerful in the low-finetuning label regime. Flow matching-based generative pre-training seems to provide little benefit for downstream classification, and interestingly, for downstream generation, we find that flow matching must be in the pre-training objective to see a significant finetuning advantage, hinting at the orthogonality of classification and generation tasks. That is, for a model to transfer to both generative and classification downstream tasks, it must be pre-trained on both. This study provides a template for controlled scaling analysis of pre-training objectives for foundation models in simulation-based sciences.</p>]]></description>
   </item>
 
 </channel>

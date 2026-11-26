@@ -7,7 +7,17 @@
   <description>Computer vision and pattern recognition</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Spectral Optimal Transport for Dynamics-Aware Sign Language Generation</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2026.html#a2611-33818</link>
+    <guid isPermaLink="false">arxiv:2611.33818</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nabeela Khan et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>Sign language generation (SLG) translates spoken-language text into pose sequences that convey its meaning. Recently, flow-based models with optimal transport (OT) have become a strong SLG baseline by handling the one-to-many nature of text-to-sign. While classifier-free guidance (CFG) could be applied to further strengthen the semantic alignment theoretically, its training involves conditional and unconditional training, which may contradict the pose-space OT, thus reducing the generation quality. Under the condition dropout, one noise sample can be paired with target motions exhibiting incompatible motion dynamics, interfering with the semantic guidance when the text condition is present. To address this issue, we propose Spectral Optimal Transport (SOT), which augments the pose-space cost with a spectral feature distance, reweighting the coupling toward the temporal-frequency structure of the target motions, thereby improving the performance when using CFG. The quantitative and qualitative experiments demonstrate the effectiveness of the proposed method.</p>]]></description>
+  </item>
 
   <item>
     <title>MSW: a Multi-Scale Sliced Wasserstein Distance Between Image Distributions</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marian Lupascu et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
 <p>Image editing in rectified flow models remains challenging due to the fundamental trade-off between reconstruction fidelity and editing flexibility. While inversion-based methods suffer from trajectory deviation, recent inversion-free approaches like FlowEdit offer direct editing pathways but can benefit from additional guidance to improve structure preservation. In this work, we demonstrate that optimal transport theory provides a unified framework for improving both paradigms in rectified flow editing. We introduce a zero-shot transport-guided inversion framework that leverages optimal transport during the reverse diffusion process, and extend optimal transport principles to enhance inversion-free methods through transport-optimized velocity field corrections. Incorporating transport-based guidance can effectively balance reconstruction accuracy and editing controllability across different rectified flow editing approaches. For inversion-based editing, our method achieves high-fidelity reconstruction with LPIPS scores of 0.001 and SSIM of 0.992 on face editing benchmarks, observing 7.8% to 12.9% improvements over RF-Inversion on LSUN datasets. For inversion-free editing with FlowEdit on FLUX and Stable Diffusion 3, we demonstrate consistent improvements in semantic consistency and structure preservation across diverse editing scenarios. Our semantic face editing experiments show an 11.2% improvement in identity preservation and enhanced perceptual quality. The unified optimal transport framework produces visually compelling edits with superior detail preservation across both inversion-based and direct editing paradigms. Code is available for RF-Inversion and FlowEdit at: https://github.com/marianlupascu/OT-RF</p>]]></description>
-  </item>
-
-  <item>
-    <title>Optimal Transport Based Unsupervised Restoration Learning Exploiting Degradation Sparsity</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-cv/2025.html#a2305-00273</link>
-    <guid isPermaLink="false">arxiv:2305.00273</guid>
-    <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fei Wen et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) has recently been shown as a promising criterion for unsupervised restoration when no explicit prior model is available. Despite its theoretical appeal, OT still significantly falls short of supervised methods on challenging tasks such as super-resolution, deraining, and dehazing. In this paper, we propose a \emph{sparsity-aware optimal transport} (SOT) framework to bridge this gap by leveraging a key observation: the degradations in these tasks exhibit distinct sparsity in the frequency domain. Incorporating this sparsity prior into OT can significantly reduce the ambiguity of the inverse mapping for restoration and substantially boost performance. We provide analysis to show exploiting degradation sparsity benefits unsupervised restoration learning. Extensive experiments on real-world super-resolution, deraining, and dehazing demonstrate that SOT offers notable performance gains over standard OT, while achieving superior perceptual quality compared to existing supervised and unsupervised methods. In particular, SOT consistently outperforms existing unsupervised methods across all three tasks and narrows the performance gap to supervised counterparts.</p>]]></description>
   </item>
 
 </channel>

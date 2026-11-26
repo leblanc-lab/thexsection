@@ -7,7 +7,17 @@
   <description>Machine learning</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Differentiable Top-k Operator with Optimal Transport</title>
+    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2020.html#a2002-06504</link>
+    <guid isPermaLink="false">arxiv:2002.06504</guid>
+    <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yujia Xie et al.</dc:creator>
+    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
+<p>The top-k operation, i.e., finding the k largest or smallest elements from a collection of scores, is an important model component, which is widely used in information retrieval, machine learning, and data mining. However, if the top-k operation is implemented in an algorithmic way, e.g., using bubble algorithm, the resulting model cannot be trained in an end-to-end way using prevalent gradient descent algorithms. This is because these implementations typically involve swapping indices, whose gradient cannot be computed. Moreover, the corresponding mapping from the input scores to the indicator vector of whether this element belongs to the top-k set is essentially discontinuous. To address the issue, we propose a smoothed approximation, namely the SOFT (Scalable Optimal transport-based diFferenTiable) top-k operator. Specifically, our SOFT top-k operator approximates the output of the top-k operation as the solution of an Entropic Optimal Transport (EOT) problem. The gradient of the SOFT operator can then be efficiently approximated based on the optimality conditions of EOT problem. We apply the proposed operator to the k-nearest neighbors and beam search algorithms, and demonstrate improved performance.</p>]]></description>
+  </item>
 
   <item>
     <title>A Wasserstein Minimum Velocity Approach to Learning Unnormalized Models</title>
@@ -1997,16 +2007,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Xiang Wei et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (title: wasserstein) — original abstract; no AI summary.</em></p>
 <p>Despite being impactful on a variety of problems and applications, the generative adversarial nets (GANs) are remarkably difficult to train. This issue is formally analyzed by \cite{arjovsky2017towards}, who also propose an alternative direction to avoid the caveats in the minmax two-player training of GANs. The corresponding algorithm, called Wasserstein GAN (WGAN), hinges on the 1-Lipschitz continuity of the discriminator. In this paper, we propose a novel approach to enforcing the Lipschitz continuity in the training procedure of WGANs. Our approach seamlessly connects WGAN with one of the recent semi-supervised learning methods. As a result, it gives rise to not only better photo-realistic samples than the previous methods but also state-of-the-art semi-supervised learning results. In particular, our approach gives rise to the inception score of more than 5.0 with only 1,000 CIFAR-10 images and is the first that exceeds the accuracy of 90% on the CIFAR-10 dataset using only 4,000 labeled images, to the best of our knowledge.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Greedy stochastic algorithms for entropy-regularized optimal transport problems</title>
-    <link>https://leblanc-lab.github.io/thexsection/cs-lg/2018.html#a1803-01347</link>
-    <guid isPermaLink="false">arxiv:1803.01347</guid>
-    <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brahim Khalil Abid et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (title: optimal transport) — original abstract; no AI summary.</em></p>
-<p>Optimal transport (OT) distances are finding evermore applications in machine learning and computer vision, but their wide spread use in larger-scale problems is impeded by their high computational cost. In this work we develop a family of fast and practical stochastic algorithms for solving the optimal transport problem with an entropic penalization. This work extends the recently developed Greenkhorn algorithm, in the sense that, the Greenkhorn algorithm is a limiting case of this family. We also provide a simple and general convergence theorem for all algorithms in the class, with rates that match the best known rates of Greenkorn and the Sinkhorn algorithm, and conclude with numerical experiments that show under what regime of penalization the new stochastic methods are faster than the aforementioned methods.</p>]]></description>
   </item>
 
 </channel>
