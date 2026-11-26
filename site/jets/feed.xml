@@ -7,7 +7,52 @@
   <description>Hadronic final states, from clustering to correlators</description>
   <language>en</language>
   <generator>The Cross Section (pipeline.build_site)</generator>
-  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Continuous Universal Fake Factors for jet-to-tau background estimation</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-33221</link>
+    <guid isPermaLink="false">arxiv:2611.33221</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lei Guo et al.</dc:creator>
+    <description><![CDATA[<p><strong>Relevance to this topic:</strong> This is a tau fake-background paper. Its link to jet substructure is narrow. The fake-factor (FF) networks use associated-jet track multiplicity, track width and C₁ as inputs. The UFF baseline uses track multiplicity as its quark/gluon template variable, standing in for the published q/g discriminant.</p>
+<p><strong>What they did:</strong> CUFF extends ATLAS&rsquo;s Universal Fake Factor (UFF) method. It uses the ATLAS 2015–16 Open Data (36.6 fb⁻¹), restricted to 20 &lt; p_T^jet ≤ 60 GeV.
+- Four reference regions: SS W, tt̄, and two multijet regions split by NNJvt (MJ-pass, MJ-fail).
+- Each reference region gets a network that learns the Loose fake factor plus the passing-score density. The density is a mixture of 8 Beta components, i.e. a degree-7 Bernstein basis.
+- Any Tau-ID threshold is then obtained by integrating that density, with no retraining.
+- A second network sets per-candidate weights over the four references. Its inputs include an order-invariant 14-entry summary of the target fail-Loose sample, so no template fit is needed.</p>
+<p><strong>Results:</strong>
+- Known-proportion mixtures (Medium ID): closure of +0.7% to +4.3%; the learned combination itself shifts yields by only −0.62 to +0.13 pp.
+- Validation regions (Medium ID): underprediction of −21.85 ± 1.58% (N_b = 0) and −45.84 ± 6.03% (μ3j).
+- Versus UFF adapted to public inputs (Loose ID): −19.7% vs −55.1% in N_b = 0; −50.2% vs −43.5% in μ3j.
+- Shapes: CUFF is closer to data in 5 of 7 observables per region. This includes H_T, which is not a model input (D_shape reduced by 4.30 ± 0.76 pp and 5.57 ± 1.49 pp).</p>
+<p><strong>Caveats:</strong>
+- The quoted error budget is dominated by the MC transfer variation, roughly [−70, +58] pp. Some influential μ3j groups contain only 8–9 MC ID records. The validation discrepancies sit inside this range, which is a weak test.
+- The MJ-fail reference alone fails closure by +15.5%.
+- No efficiency scale factors are applied, and detector, PDF and generator uncertainties are not estimated.
+- Systematics are not propagated to the four intermediate thresholds.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Heavy-flavor transverse energy-energy correlators in the color-glass condensate</title>
+    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2611-34815</link>
+    <guid isPermaLink="false">arxiv:2611.34815</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Zhong-Bo Kang et al.</dc:creator>
+    <description><![CDATA[<p><strong>What they did:</strong> A leading-order Color Glass Condensate (CGC) calculation of the cross-branch hadron–hadron transverse energy-energy correlator (TEEC) for forward QQ̄ production in pA collisions.
+- Retains the quark mass, exact massive kinematics and the full azimuthal dependence, with no correlation-limit approximation.
+- Includes splitting both before and after the shockwave; target correlators are taken at large N_c.
+- Fragmentation functions cancel via the momentum sum rule. This requires the collinear prescription p⃗_h = ξ p⃗ and complete sums over hadrons in each branch. The observable is therefore idealized: it assumes branch assignment is possible.
+- Target: MV initial condition from the HERA fit of Casuga et al. (Q²_s0 = 0.061 GeV², γ = 1), evolved with running-coupling BK. Nuclear scaling is Q²_s0,A = c A^{1/3} Q²_s0, with c between 0.5 and 1.</p>
+<p><strong>Kinematics and reach:</strong>
+- RHIC: charm at √s_NN = 200 GeV, η = 3.5 (STAR forward). TEEC-weighted ⟨x_t⟩ ≈ 1.4×10⁻³.
+- LHC: charm and bottom at 5.02 TeV, η = 4 (LHCb). ⟨x_t⟩ ≈ 3×10⁻⁵ (charm) and 9×10⁻⁵ (bottom).
+- RHIC bottom is dropped because ⟨x_t⟩ ≈ 10⁻².</p>
+<p><strong>Results:</strong>
+- R_pA^Σ is suppressed and rises with τ, i.e. more weight away from back-to-back, consistent with saturation-scale broadening.
+- In the dilute limit Σ_A/Σ_p = 1 exactly. The suppression therefore comes from multiple scattering and nonlinear evolution, amplified by projectile-PDF reweighting toward larger x_p.
+- The authors explicitly warn that the stronger suppression at RHIC does not</p>]]></description>
+  </item>
 
   <item>
     <title>Machine learning for trigger, reconstruction and generation</title>
@@ -3290,26 +3335,6 @@
     <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parichehr Kangaziankangazi et al.</dc:creator>
     <description><![CDATA[<p><em>Watchlist hit (boosted jets) — abstract only, not yet read for a briefing.</em></p>
 <p>We present a quantum enhanced tagger to identify jets with large Lorentz boost at colliders. For the first time, a convolutional quantum graph neural network (QGNN) is designed to discriminate boosted jets arising from hadronic decays of the Z boson, against those produced from gluons with large momentum. The network receives data without any physics-driven refinement, relying solely on the dimensionality reduction. The reduction is performed using a convolutional autoencoder whose performance is improved in the presence of added noise. The latent data are put into a graph format and fed to the QGNN of ten qubits. The autoencoder and the QGNN are trained separately, and simultaneously, and the resulting performances are compared with a classic algorithm based on graph networks. The findings indicate a strong potential of quantum graph networks to reproduce the performance of classical methods.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Higgs Physics with the XFEL Compton γγ Collider Concept at √(s)=125 GeV</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2605-16756</link>
-    <guid isPermaLink="false">arxiv:2605.16756</guid>
-    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Umar Sohail Qureshi et al.</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (particle-flow) — abstract only, not yet read for a briefing.</em></p>
-<p>We investigate single Higgs production in √(s)=125 GeV γγ collisions at the X-Ray Free Electron (XFEL) Compton Collider (XCC) concept and present an analysis targeting the major hadronic, semi-leptonic, and fully leptonic final states of the Higgs boson, including H→ss. In addition to studying Higgs production at a novel collider concept, our approach couples a novel set transformer-based deep learning framework that acts on particle-flow object point clouds with a genetic algorithm optimizer for signal-background discrimination, yielding significantly higher sensitivity than traditional methods. Our results demonstrate that an XFEL γγ collider can probe the Higgs sector with extremely high precision and enable new physics opportunities, complementary to proposed e⁺e⁻ machines.</p>]]></description>
-  </item>
-
-  <item>
-    <title>Search for new physics in triple boson production in proton-proton collisions at √(s) = 13 TeV using the effective field theory approach</title>
-    <link>https://leblanc-lab.github.io/thexsection/jets/2026.html#a2605-15023</link>
-    <guid isPermaLink="false">arxiv:2605.15023</guid>
-    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CMS Collaboration</dc:creator>
-    <description><![CDATA[<p><em>Watchlist hit (large-radius jet, boosted W) — abstract only, not yet read for a briefing.</em></p>
-<p>A search for new physics in the production of three massive gauge bosons (VVV, where V is a W or Z boson) is presented. The event selection is most effective in the Lorentz-boosted regime in which all three bosons have a transverse momentum (p_T) above 200 GeV. Standard model (SM) processes contribute few events in this regime. When a boosted W or Z boson decays hadronically, the decay products tend to form a large-radius jet with substructure that reflects the presence of two quarks from the decay; such jets are called V-tagged jets. Special techniques to reconstruct and select V-tagged jets are applied. Events are categorized according to the number and kinematic features of charged leptons and V-tagged jets. Event yields are obtained in bins of a suitable kinematic variable such as the scalar p_T sum of the reconstructed objects in the event. No excess over SM expectations is observed. Bounds are placed on Wilson coefficients for a set of mass dimension-6 and -8 operators in the framework of SM effective field theory. The two most stringent bounds placed by this analysis are -0.13  c_W/Λ²  0.12 TeV⁻² and -0.24  c_Hq3/Λ²  0.21 TeV⁻² at 95% CL, where c_W and c_Hq3 are dimension-6 Wilson coefficients in the Warsaw basis and Λ is the mass scale of new physics.</p>]]></description>
   </item>
 
 </channel>

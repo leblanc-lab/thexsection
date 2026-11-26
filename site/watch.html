@@ -39,6 +39,45 @@ their own:
 <a href="muon/index.html">Muon collider</a>, <a href="jets/index.html">Jets and jet substructure</a>, <a href="optimal-transport/index.html">Optimal transport</a>, <a href="authors/index.html">Authors to watch</a>.</p>
 
 <article class="issue watch-post">
+  <h2 class="issue-date">Thursday, November 26, 2026</h2>
+  <div class="meta">
+    <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a><a class="chip chip-link" href="optimal-transport/index.html">Optimal transport</a>
+  </div>
+  <h2 id="jets-and-jet-substructure">Jets and jet substructure</h2>
+<h3 id="arxiv261133221-continuous-universal-fake-factors-for-jet-to-tau-background-estimation-lei-guo-et-al"><a href="https://arxiv.org/abs/2611.33221">arXiv:2611.33221</a> — Continuous Universal Fake Factors for jet-to-tau background estimation (Lei Guo et al.)</h3>
+<p><strong>Relevance to this topic:</strong> This is a tau fake-background paper. Its link to jet substructure is narrow. The fake-factor (FF) networks use associated-jet track multiplicity, track width and C₁ as inputs. The UFF baseline uses track multiplicity as its quark/gluon template variable, standing in for the published q/g discriminant.</p>
+<p><strong>What they did:</strong> CUFF extends ATLAS&rsquo;s Universal Fake Factor (UFF) method. It uses the ATLAS 2015–16 Open Data (36.6 fb⁻¹), restricted to 20 &lt; p_T^jet ≤ 60 GeV.
+- Four reference regions: SS W, tt̄, and two multijet regions split by NNJvt (MJ-pass, MJ-fail).
+- Each reference region gets a network that learns the Loose fake factor plus the passing-score density. The density is a mixture of 8 Beta components, i.e. a degree-7 Bernstein basis.
+- Any Tau-ID threshold is then obtained by integrating that density, with no retraining.
+- A second network sets per-candidate weights over the four references. Its inputs include an order-invariant 14-entry summary of the target fail-Loose sample, so no template fit is needed.</p>
+<p><strong>Results:</strong>
+- Known-proportion mixtures (Medium ID): closure of +0.7% to +4.3%; the learned combination itself shifts yields by only −0.62 to +0.13 pp.
+- Validation regions (Medium ID): underprediction of −21.85 ± 1.58% (N_b = 0) and −45.84 ± 6.03% (μ3j).
+- Versus UFF adapted to public inputs (Loose ID): −19.7% vs −55.1% in N_b = 0; −50.2% vs −43.5% in μ3j.
+- Shapes: CUFF is closer to data in 5 of 7 observables per region. This includes H_T, which is not a model input (D_shape reduced by 4.30 ± 0.76 pp and 5.57 ± 1.49 pp).</p>
+<p><strong>Caveats:</strong>
+- The quoted error budget is dominated by the MC transfer variation, roughly [−70, +58] pp. Some influential μ3j groups contain only 8–9 MC ID records. The validation discrepancies sit inside this range, which is a weak test.
+- The MJ-fail reference alone fails closure by +15.5%.
+- No efficiency scale factors are applied, and detector, PDF and generator uncertainties are not estimated.
+- Systematics are not propagated to the four intermediate thresholds.</p>
+<h3 id="arxiv261134815-heavy-flavor-transverse-energy-energy-correlators-in-the-color-glass-condensate-zhong-bo-kang-et-al"><a href="https://arxiv.org/abs/2611.34815">arXiv:2611.34815</a> — Heavy-flavor transverse energy-energy correlators in the color-glass condensate (Zhong-Bo Kang et al.)</h3>
+<p><strong>What they did:</strong> A leading-order Color Glass Condensate (CGC) calculation of the cross-branch hadron–hadron transverse energy-energy correlator (TEEC) for forward QQ̄ production in pA collisions.
+- Retains the quark mass, exact massive kinematics and the full azimuthal dependence, with no correlation-limit approximation.
+- Includes splitting both before and after the shockwave; target correlators are taken at large N_c.
+- Fragmentation functions cancel via the momentum sum rule. This requires the collinear prescription p⃗_h = ξ p⃗ and complete sums over hadrons in each branch. The observable is therefore idealized: it assumes branch assignment is possible.
+- Target: MV initial condition from the HERA fit of Casuga et al. (Q²_s0 = 0.061 GeV², γ = 1), evolved with running-coupling BK. Nuclear scaling is Q²_s0,A = c A^{1/3} Q²_s0, with c between 0.5 and 1.</p>
+<p><strong>Kinematics and reach:</strong>
+- RHIC: charm at √s_NN = 200 GeV, η = 3.5 (STAR forward). TEEC-weighted ⟨x_t⟩ ≈ 1.4×10⁻³.
+- LHC: charm and bottom at 5.02 TeV, η = 4 (LHCb). ⟨x_t⟩ ≈ 3×10⁻⁵ (charm) and 9×10⁻⁵ (bottom).
+- RHIC bottom is dropped because ⟨x_t⟩ ≈ 10⁻².</p>
+<p><strong>Results:</strong>
+- R_pA^Σ is suppressed and rises with τ, i.e. more weight away from back-to-back, consistent with saturation-scale broadening.
+- In the dilute limit Σ_A/Σ_p = 1 exactly. The suppression therefore comes from multiple scattering and nonlinear evolution, amplified by projectile-PDF reweighting toward larger x_p.
+- The authors explicitly warn that the stronger suppression at RHIC does not</p>
+</article>
+
+<article class="issue watch-post">
   <h2 class="issue-date">Wednesday, November 25, 2026</h2>
   <div class="meta">
     <a class="chip chip-link" href="jets/index.html">Jets and jet substructure</a>
@@ -2656,7 +2695,7 @@ their own:
 <footer>
   <div class="beamline" aria-hidden="true"></div>
   <p>Abstract feeds: <a href="hep-ex/index.html">Experimental HEP</a> · <a href="physics-ins-det/index.html">physics.ins-det</a> · <a href="cs-cv/index.html">cs.CV</a> · <a href="cs-ai/index.html">cs.AI</a> · <a href="cs-lg/index.html">cs.LG</a> · <a href="methods/index.html">Data & computational methods</a> · <a href="physics-perspectives/index.html">Physics perspectives</a></p>
-  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-25 07:41 ·
+  <p>Synthesized daily from arXiv abstracts by AI: unedited, reader beware! · built 2026-11-26 07:25 ·
      an experiment in reading the field's mood, not a substitute for the papers. <a class="secret" href="watch.html" title="Standing waves" aria-label="Standing waves">◈</a></p>
 </footer>
 <script data-goatcounter="https://thexsection.goatcounter.com/count"
